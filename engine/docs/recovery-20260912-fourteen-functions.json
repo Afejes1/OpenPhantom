@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "date": "2026-09-12",
+  "scope": "fresh-checkout restore on the same Windows host",
+  "bundle_manifest_sha256": "0a8cb9497f003f50739a962f0f5e6504e20390140a60c02945c6ef3d67040fca",
+  "source_revision": "20f2819c7906618098b50d58de6efac2085c1ebb",
+  "payload_file_count": 590,
+  "payload_bytes": 203823003,
+  "portable_toolchain_sha256": "d97769847051bec0a16e6ff5e16405da29fdee5707e74a86e3fec5825591e25c",
+  "runtime_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "build_id": "20260912-144516-0f3f4e28",
+  "verification_event_sha256": "7430f5bd58d92d88b86719ccff5536900ad1b85e950167acfa8d71c0608347ea",
+  "source_snapshot_equal": true,
+  "cxx_checkout_bytes_equal": true,
+  "toolchain_inventory_equal": true,
+  "vc5_behavior_passed": true,
+  "matching_function_count": 14,
+  "synthetic_tests_passed": 76,
+  "original_reference_included": false,
+  "whole_executable_match": false,
+  "off_machine_backup_verified": false,
+  "second_physical_host_tested": false
+}

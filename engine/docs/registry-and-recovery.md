@@ -104,17 +104,17 @@ or independence from the installed host prerequisites. Copy the completed
 private bundle and separately retained checksum to your chosen backup medium
 before treating it as protection against loss of this computer.
 
-## Latest recovery checkpoint: thirteen functions
+## Latest recovery checkpoint: fourteen functions
 
-The [2026-09-12 recovery receipt](recovery-20260912-thirteen-functions.json)
-records a fresh-checkout rebuild from source 14afb1442c2db0f448f4e006d9c8c46cb6251fef.
-All thirteen full function comparisons, VC5 behavior checks and 76 tooling tests
+The [2026-09-12 recovery receipt](recovery-20260912-fourteen-functions.json)
+records a fresh-checkout rebuild from source 20f2819c7906618098b50d58de6efac2085c1ebb.
+All fourteen full function comparisons, VC5 behavior checks and 76 tooling tests
 passed. The recovered C++ source retained its exact bytes, and the portable
 compiler/header/library inventory and saved runtime image identity agreed.
 
-The private checkpoint is engine/private/recovery/checkpoint-20260912-thirteen-functions.
+The private checkpoint is engine/private/recovery/checkpoint-20260912-fourteen-functions.
 Its separately retained manifest SHA-256 is
-89c338a3d55fdba817dd1f7b4d88133d157848b67fd454325b69e380156b9ade.
+0a8cb9497f003f50739a962f0f5e6504e20390140a60c02945c6ef3d67040fca.
 The receipt and sanitized build record are public; the private payload is not.
 This was a same-host recovery test, not an off-machine backup or a second-host test.
-The earlier seven-function receipt remains a historical checkpoint.
+The earlier seven- and thirteen-function receipts remain historical checkpoints.
