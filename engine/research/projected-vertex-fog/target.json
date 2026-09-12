@@ -1,0 +1,97 @@
+{
+  "id": "commit_projected_vertices",
+  "address": 4202566,
+  "size": 234,
+  "source": "src/commit_projected_vertices.c",
+  "symbol": "_op_commit_projected_vertices",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 5101264,
+      "symbol": "_op_vertex_fog_enabled"
+    },
+    {
+      "offset": 20,
+      "address": 5101292,
+      "symbol": "_op_projected_vertex_count"
+    },
+    {
+      "offset": 40,
+      "address": 5101292,
+      "symbol": "_op_projected_vertex_count"
+    },
+    {
+      "offset": 71,
+      "address": 4970176,
+      "symbol": "_op_projected_vertices",
+      "addend": 8
+    },
+    {
+      "offset": 77,
+      "address": 5101260,
+      "symbol": "_op_fog_start_reciprocal"
+    },
+    {
+      "offset": 103,
+      "address": 4970176,
+      "symbol": "_op_projected_vertices",
+      "addend": 8
+    },
+    {
+      "offset": 109,
+      "address": 5101252,
+      "symbol": "_op_fog_end_reciprocal"
+    },
+    {
+      "offset": 128,
+      "address": 4970176,
+      "symbol": "_op_projected_vertices",
+      "addend": 8
+    },
+    {
+      "offset": 134,
+      "address": 4882456,
+      "float32": 1.0
+    },
+    {
+      "offset": 140,
+      "address": 5101276,
+      "symbol": "_op_fog_start"
+    },
+    {
+      "offset": 149,
+      "address": 5101272,
+      "symbol": "_op_fog_range"
+    },
+    {
+      "offset": 155,
+      "address": 4882464,
+      "float64": 255.0
+    },
+    {
+      "offset": 163,
+      "address": 4826188,
+      "symbol": "__ftol",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 201,
+      "address": 5855744,
+      "symbol": "_op_vertex_fog_alpha"
+    },
+    {
+      "offset": 212,
+      "address": 5101292,
+      "symbol": "_op_projected_vertex_count"
+    },
+    {
+      "offset": 221,
+      "address": 5101292,
+      "symbol": "_op_projected_vertex_count"
+    }
+  ]
+}

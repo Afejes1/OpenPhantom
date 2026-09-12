@@ -193,6 +193,25 @@
         "Retain descriptive local names because VC5 stack-slot assignment changes with identifiers"
       ],
       "exceptions": []
+    },
+    {
+      "id": "submit_gathered_surfaces",
+      "module": "render_queue",
+      "analysis_name": "submit_gathered_b3d_surfaces",
+      "purpose": "Submit nonempty gathered surface buckets with the original three cdecl arguments and retain the returned count",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/gathered-submission-evidence.md"
+      ],
+      "behavior_tests": [
+        "tests/gathered_behavior.h"
+      ],
+      "quirks": [
+        "Zero count leaves the previous result untouched and does not call the renderer",
+        "Preserve camera-plus-eight and count arguments although the reviewed callee does not read them",
+        "Compare all eight trailing NOP alignment bytes"
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

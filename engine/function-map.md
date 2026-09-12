@@ -14,3 +14,5 @@ Address | Original Name | New Name | Confidence | Purpose | Evidence
 
 See [view/projection evidence](docs/view-projection-evidence.md) for scope and
 remaining questions. Other existing Ghidra names are preserved.
+
+| 0x00406830 | FUN_00406830 | submit_gathered_b3d_surfaces | HIGH | Submit nonempty gathered surfaces and store returned count | Full body and eight padding bytes; caller render_active_b3d_world; callee draw_b3d_surface_buckets; four global accesses and three cdecl arguments; docs/gathered-submission-evidence.md |

@@ -1,0 +1,199 @@
+diff --git a/engine/registry.json b/engine/registry.json
+index 0a59840..eb6be67 100644
+--- a/engine/registry.json
++++ b/engine/registry.json
+@@ -193,6 +193,26 @@
+         "Retain descriptive local names because VC5 stack-slot assignment changes with identifiers"
+       ],
+       "exceptions": []
++    },
++    {
++      "id": "commit_projected_vertices",
++      "module": "render_queue",
++      "analysis_name": "FUN_00402046",
++      "confidence": "HIGH",
++      "purpose": "Commit projected vertices and compute packed software fog alpha from reciprocal depth",
++      "evidence": [
++        "docs/vertex-fog-evidence.md",
++        "docs/relative-call-verification.md"
++      ],
++      "behavior_tests": [
++        "tests/fog_behavior.h"
++      ],
++      "quirks": [
++        "Unsigned count addition wraps; no capacity check",
++        "Preserve x87 C0-only comparison behavior for unordered reciprocal depth",
++        "Retain low-byte alpha wrapping with no clamp; CRT conversion truncates toward zero"
++      ],
++      "exceptions": []
+     }
+   ],
+   "open_program_questions": [
+diff --git a/engine/src/baseline.h b/engine/src/baseline.h
+index 38fee29..55636b5 100644
+--- a/engine/src/baseline.h
++++ b/engine/src/baseline.h
+@@ -96,4 +96,10 @@ op_projected_vertex *op_peek_projected_vertices(unsigned int requested);
+ op_face_packet *op_peek_face_packet(void);
+ int op_queue_face_packet(op_face_packet *packet);
+ 
++extern int op_vertex_fog_enabled;
++extern float op_fog_start, op_fog_range;
++extern float op_fog_start_reciprocal, op_fog_end_reciprocal;
++extern unsigned int op_vertex_fog_alpha[];
++int op_commit_projected_vertices(unsigned int requested);
++
+ #endif
+diff --git a/engine/target.json b/engine/target.json
+index 6fc9bcc..962beea 100644
+--- a/engine/target.json
++++ b/engine/target.json
+@@ -406,6 +406,103 @@
+           "symbol": "_op_face_packet_count"
+         }
+       ]
++    },
++    {
++      "id": "commit_projected_vertices",
++      "address": 4202566,
++      "size": 234,
++      "source": "src/commit_projected_vertices.c",
++      "symbol": "_op_commit_projected_vertices",
++      "flags": [
++        "/Od",
++        "/MT"
++      ],
++      "bindings": [
++        {
++          "offset": 8,
++          "address": 5101264,
++          "symbol": "_op_vertex_fog_enabled"
++        },
++        {
++          "offset": 20,
++          "address": 5101292,
++          "symbol": "_op_projected_vertex_count"
++        },
++        {
++          "offset": 40,
++          "address": 5101292,
++          "symbol": "_op_projected_vertex_count"
++        },
++        {
++          "offset": 71,
++          "address": 4970176,
++          "symbol": "_op_projected_vertices",
++          "addend": 8
++        },
++        {
++          "offset": 77,
++          "address": 5101260,
++          "symbol": "_op_fog_start_reciprocal"
++        },
++        {
++          "offset": 103,
++          "address": 4970176,
++          "symbol": "_op_projected_vertices",
++          "addend": 8
++        },
++        {
++          "offset": 109,
++          "address": 5101252,
++          "symbol": "_op_fog_end_reciprocal"
++        },
++        {
++          "offset": 128,
++          "address": 4970176,
++          "symbol": "_op_projected_vertices",
++          "addend": 8
++        },
++        {
++          "offset": 134,
++          "address": 4882456,
++          "float32": 1.0
++        },
++        {
++          "offset": 140,
++          "address": 5101276,
++          "symbol": "_op_fog_start"
++        },
++        {
++          "offset": 149,
++          "address": 5101272,
++          "symbol": "_op_fog_range"
++        },
++        {
++          "offset": 155,
++          "address": 4882464,
++          "float64": 255.0
++        },
++        {
++          "offset": 163,
++          "address": 4826188,
++          "symbol": "__ftol",
++          "kind": "rel32-call"
++        },
++        {
++          "offset": 201,
++          "address": 5855744,
++          "symbol": "_op_vertex_fog_alpha"
++        },
++        {
++          "offset": 212,
++          "address": 5101292,
++          "symbol": "_op_projected_vertex_count"
++        },
++        {
++          "offset": 221,
++          "address": 5101292,
++          "symbol": "_op_projected_vertex_count"
++        }
++      ]
+     }
+   ]
+ }
+diff --git a/engine/tests/CMakeLists.txt b/engine/tests/CMakeLists.txt
+index 2465a97..da8ba55 100644
+--- a/engine/tests/CMakeLists.txt
++++ b/engine/tests/CMakeLists.txt
+@@ -5,7 +5,7 @@ if(NOT MSVC OR NOT CMAKE_SIZEOF_VOID_P EQUAL 4)
+ endif()
+ add_executable(behavior_smoke behavior.c ../src/material_mode.c ../src/grid_cell.c
+   ../src/plane_coordinate.c ../src/update_projection.c ../src/face_clip_flags.c ../src/transform_project.c ../src/set_mesh_render_thing.c
+-  ../src/peek_projected_vertices.c ../src/peek_face_packet.c ../src/queue_face_packet.c)
++  ../src/peek_projected_vertices.c ../src/peek_face_packet.c ../src/queue_face_packet.c ../src/commit_projected_vertices.c)
+ target_compile_options(behavior_smoke PRIVATE /W4 /WX /Od /fp:precise)
+ enable_testing()
+ add_test(NAME supplemental_behavior COMMAND behavior_smoke)
+diff --git a/engine/tests/behavior.c b/engine/tests/behavior.c
+index 59c4294..35f1fc7 100644
+--- a/engine/tests/behavior.c
++++ b/engine/tests/behavior.c
+@@ -30,6 +30,11 @@ op_material_bucket op_material_buckets[64];
+ op_material_bucket *op_last_material_bucket;
+ unsigned char op_render_queue_tag;
+ 
++int op_vertex_fog_enabled;
++float op_fog_start, op_fog_range;
++float op_fog_start_reciprocal, op_fog_end_reciprocal;
++unsigned int op_vertex_fog_alpha[8192];
++
+ static int failures;
+ static void check(int condition, int line) { if (!condition) { ++failures; printf("Failed at line %d\n", line); } }
+ #define CHECK(test) check(!!(test), __LINE__)
+@@ -112,6 +117,7 @@ static void clip_flag_tests(void)
+ #include "projection_behavior.h"
+ #include "mesh_behavior.h"
+ #include "queue_behavior.h"
++#include "fog_behavior.h"
+ 
+ int main(void)
+ {
+@@ -148,6 +154,7 @@ int main(void)
+     projection_tests();
+     mesh_context_tests();
+     queue_tests();
++    fog_tests();
+     if (failures) return 1;
+ #ifdef OP_VC5_BEHAVIOR
+     puts("VC5 behavioral fixture passed, including x87 unordered fallback.");

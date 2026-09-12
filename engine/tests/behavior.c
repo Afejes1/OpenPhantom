@@ -112,6 +112,7 @@ static void clip_flag_tests(void)
 #include "projection_behavior.h"
 #include "mesh_behavior.h"
 #include "queue_behavior.h"
+#include "gathered_behavior.h"
 
 int main(void)
 {
@@ -148,6 +149,7 @@ int main(void)
     projection_tests();
     mesh_context_tests();
     queue_tests();
+    gathered_tests();
     if (failures) return 1;
 #ifdef OP_VC5_BEHAVIOR
     puts("VC5 behavioral fixture passed, including x87 unordered fallback.");

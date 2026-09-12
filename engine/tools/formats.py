@@ -148,6 +148,12 @@ class Symbol:
     storage: int
 
 
+@dataclass
+class Relocation:
+    kind: int
+    symbol: Symbol
+
+
 class COFF:
     def __init__(self, data):
         self.data = data
@@ -194,13 +200,13 @@ class COFF:
         occupied = set()
         for i in range(section.reloc_count):
             offset, sym_index, kind = unpack("<IIH", self.data, section.reloc_offset + i * 10)
-            require(kind == 6, "only x86 DIR32 object relocations supported in first batch")
+            require(kind in (6, 20), "only x86 DIR32 and REL32 object relocations supported")
             require(sym_index in self.symbols, "relocation references missing/auxiliary symbol")
             require(offset + 4 <= section.size, "relocation outside function")
             region = set(range(offset, offset + 4))
             require(not occupied & region, "overlapping COFF relocations")
             occupied.update(region)
-            relocs[offset] = self.symbols[sym_index]
+            relocs[offset] = Relocation(kind, self.symbols[sym_index])
         return span(self.data, section.offset, section.size), relocs
 
     def symbol_bytes(self, symbol, addend, size):

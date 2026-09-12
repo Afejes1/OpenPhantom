@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "module_order": [
+    "bp/bapdraw.c",
+    "bp/bapmodel.c",
+    "bp/bapmap.c"
+  ],
+  "coordination": "Current local focus only; no team reservation or external message made",
+  "pending_candidates": [
+    {
+      "address": "0x00402046",
+      "source": "research/projected-vertex-fog/README.md"
+    }
+  ]
+}

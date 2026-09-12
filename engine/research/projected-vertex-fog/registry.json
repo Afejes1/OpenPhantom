@@ -1,0 +1,20 @@
+{
+  "id": "commit_projected_vertices",
+  "module": "render_queue",
+  "analysis_name": "FUN_00402046",
+  "confidence": "HIGH",
+  "purpose": "Commit projected vertices and compute packed software fog alpha from reciprocal depth",
+  "evidence": [
+    "docs/vertex-fog-evidence.md",
+    "docs/relative-call-verification.md"
+  ],
+  "behavior_tests": [
+    "tests/fog_behavior.h"
+  ],
+  "quirks": [
+    "Unsigned count addition wraps; no capacity check",
+    "Preserve x87 C0-only comparison behavior for unordered reciprocal depth",
+    "Retain low-byte alpha wrapping with no clamp; CRT conversion truncates toward zero"
+  ],
+  "exceptions": []
+}

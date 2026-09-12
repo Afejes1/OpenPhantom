@@ -3,7 +3,8 @@ import json
 from pathlib import Path
 import re
 from formats import require
-from matching import MATCHES, canonical_hash, digest
+from matching import (MATCHES, canonical_hash, digest, binding_kind,
+                      expected_operand, validate_bindings)
 from source_policy import validate_source_policy
 
 
@@ -67,11 +68,16 @@ def validate_event(event):
         require(result["size"] == result["candidate_size"] == spec["size"], "history size differs")
         require(result["address"] == spec["address"], "history address differs")
         require(result["body_size"] == spec.get("body_size", spec["size"]), "history body size differs")
+        validate_bindings(spec)
         adjusted = len(spec["bindings"]) * 4
+        call_bytes = sum(4 for b in spec["bindings"] if binding_kind(b) == "rel32-call")
+        require(result.get("rel32_call_bytes", 0) == call_bytes, "history relative-call accounting differs")
+        require(result.get("dir32_bytes", adjusted) == adjusted - call_bytes, "history absolute accounting differs")
         require(result["adjusted_bytes"] == adjusted and result["compared_bytes"] + adjusted == spec["size"],
                 "history byte accounting differs")
         require(result["status"] == ("relocation-adjusted-match" if adjusted else "raw-code-match"), "wrong matching category")
-        require(result["raw_bytes_equal"] is (adjusted == 0), "inconsistent raw equality")
+        expected_raw = all(expected_operand(spec, b) == b.get("addend", 0) for b in spec["bindings"])
+        require(result["raw_bytes_equal"] is expected_raw, "inconsistent raw equality")
         require(result["layout_verified"] is False and result["literal_function_match"] is False, "unsupported linked claim")
     return event
 

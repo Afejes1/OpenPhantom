@@ -96,4 +96,11 @@ op_projected_vertex *op_peek_projected_vertices(unsigned int requested);
 op_face_packet *op_peek_face_packet(void);
 int op_queue_face_packet(op_face_packet *packet);
 
+/* The callee currently consumes world; retain all three original ABI arguments. */
+extern unsigned int op_gathered_surface_count;
+extern void *op_gathered_world;
+extern int op_last_submitted_surface_count;
+int op_draw_surface_buckets(void *world, const void *camera_data, unsigned int count);
+void op_submit_gathered_surfaces(void);
+
 #endif

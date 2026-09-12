@@ -111,7 +111,8 @@ not successful zero-function runs. JSON reports stay in the build directory.
 - `raw-code-match`: the entire one-function object code section equals the
   original function's bytes. Linked placement remains unverified.
 - `relocation-adjusted-match`: other bytes are equal, and every adjusted DIR32
-  operand matches its declared symbol/addend or defined constant. Resolving
+  operand matches its declared symbol/addend or defined constant. Explicit REL32
+  near-call bindings are also checked against their exact destination and symbol. Resolving
   those operands in a comparison buffer must produce the same SHA-256 as the
   entire reference span. Reports distinguish function bodies, complete section
   sizes, and adjusted-byte counts; no original file or object is rewritten.
@@ -153,6 +154,14 @@ been verified with this container profile. It is not an acceptance gate.
 
 No changes to `legacy/` or `installer/` are required. Do not ship this fixture
 or any original game data in a commit, release, or issue attachment.
+
+## Team coordination
+
+The [team manifest work order](docs/team-work-order.md) joins the supplied
+2026-09-12 inventory to our original-address registry. Team-reported done status
+is scheduling input, not a local verification result. Current focus is
+bp/bapdraw.c, followed by bp/bapmodel.c and bp/bapmap.c. Rebuild this view with
+`python engine/team_progress.py`; CI checks it with `--check`.
 
 ## Registry and recovery
 

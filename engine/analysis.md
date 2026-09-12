@@ -43,3 +43,11 @@ PE metadata before claiming the complete original binary. Registered function
 counts do not establish total application coverage or equivalence of the modern
 TPM engine. The generated [progress report](docs/progress.md) is authoritative
 for recorded matching results.
+
+## Gathered surface wrapper
+
+The 0x00406830 wrapper submits nonempty surface buckets through 0x0041B070 and
+retains its return value. It preserves a previous result on an empty queue.
+See [evidence](docs/gathered-submission-evidence.md). The team manifest lists
+this in bp/bapdraw.c as not done; their labels guide scheduling separately from
+our own comparison records.

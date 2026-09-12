@@ -406,6 +406,46 @@
           "symbol": "_op_face_packet_count"
         }
       ]
+    },
+    {
+      "id": "submit_gathered_surfaces",
+      "address": 4220976,
+      "size": 48,
+      "body_size": 40,
+      "source": "src/submit_gathered_surfaces.c",
+      "symbol": "_op_submit_gathered_surfaces",
+      "flags": [
+        "/O2",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 1,
+          "address": 5889724,
+          "symbol": "_op_gathered_surface_count"
+        },
+        {
+          "offset": 11,
+          "address": 5889880,
+          "symbol": "_op_gathered_world"
+        },
+        {
+          "offset": 17,
+          "address": 7308260,
+          "symbol": "_op_camera"
+        },
+        {
+          "offset": 27,
+          "address": 4305008,
+          "symbol": "_op_draw_surface_buckets",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 35,
+          "address": 9169188,
+          "symbol": "_op_last_submitted_surface_count"
+        }
+      ]
     }
   ]
 }

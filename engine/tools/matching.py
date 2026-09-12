@@ -45,16 +45,77 @@ def load_target(path):
                 "source must be within engine/src")
         require(spec["flags"] in (["/Od", "/MT"], ["/O2", "/MT"], ["/Ox", "/MT"]),
                 "unapproved candidate compiler options")
-        occupied = set()
-        for binding in spec["bindings"]:
-            offset = binding["offset"]
-            require(0 <= offset <= spec["size"] - 4, "binding outside function")
-            region = set(range(offset, offset + 4))
-            require(not occupied & region, "overlapping bindings")
-            occupied.update(region)
-            require(("symbol" in binding) != ("float32" in binding), "ambiguous binding")
-            require(0 <= binding["address"] <= 0xffffffff, "invalid binding address")
+        validate_bindings(spec)
     return target
+
+
+def binding_kind(binding):
+    return binding.get("kind", "dir32")
+
+
+def constant_bytes(binding):
+    key = next((k for k in ("float32", "float64") if k in binding), None)
+    require(key is not None, "binding has no numeric constant")
+    try:
+        return struct.pack("<f" if key == "float32" else "<d", binding[key])
+    except (struct.error, OverflowError, TypeError) as error:
+        raise VerificationError("invalid numeric constant") from error
+
+
+def expected_operand(spec, binding):
+    address = binding["address"] + binding.get("addend", 0)
+    require(0 <= address <= 0xffffffff, "binding target exceeds x86 address space")
+    if binding_kind(binding) == "rel32-call":
+        return (address - (spec["address"] + binding["offset"] + 4)) & 0xffffffff
+    return address
+
+
+def validate_bindings(spec):
+    occupied = set()
+    for binding in spec["bindings"]:
+        offset = binding["offset"]
+        require(type(offset) is int and 0 <= offset <= spec["size"] - 4, "binding outside function")
+        region = set(range(offset, offset + 4))
+        require(not occupied & region, "overlapping bindings")
+        occupied.update(region)
+        kind = binding_kind(binding)
+        require(kind in ("dir32", "rel32-call"), "unsupported binding kind")
+        require(sum(k in binding for k in ("symbol", "float32", "float64")) == 1, "ambiguous binding")
+        require(type(binding["address"]) is int and 0 <= binding["address"] <= 0xffffffff,
+                "invalid binding address")
+        require(type(binding.get("addend", 0)) is int and 0 <= binding.get("addend", 0) <= 0xffffffff,
+                "unsupported binding addend")
+        if kind == "rel32-call":
+            require("symbol" in binding and offset >= 1 and binding.get("addend", 0) == 0,
+                    "relative calls require an external symbol and zero addend")
+        elif "symbol" not in binding:
+            constant_bytes(binding)
+        expected_operand(spec, binding)
+
+
+def verify_bound_operand(original, code, spec, binding):
+    offset = binding["offset"]
+    value = struct.unpack_from("<I", code, offset)[0]
+    require(value == expected_operand(spec, binding), "original relocation target differs")
+    address = spec["address"] + offset
+    if binding_kind(binding) == "rel32-call":
+        # The instruction boundary is reviewed in Ghidra and recorded in the
+        # evidence. This is a bounded operand verifier, not an x86 disassembler.
+        require(code[offset - 1] == 0xe8, "relative binding is not a near CALL")
+        require(not any(address - 3 <= r < address + 4 for r in original.relocations),
+                "relative call overlaps a PE base relocation")
+        target = binding["address"]
+        require(any(s.flags & 0x20 and original.image_base + s.address <= target <
+                    original.image_base + s.address + s.size for s in original.sections),
+                "relative call target is not backed by code")
+        original.read_va(target, 1)
+    else:
+        require(address in original.relocations, "operand is not a PE relocation")
+        if "symbol" not in binding:
+            constant = constant_bytes(binding)
+            require(original.read_va(value, len(constant)) == constant,
+                    "original constant differs")
+    return value
 
 
 def verify_reference(data, target):
@@ -62,24 +123,20 @@ def verify_reference(data, target):
             "reference identity mismatch; the documented retail WMAIN.EXE is required")
     pe = PE(data)
     require(pe.image_base == target["image_base"], "reference image base mismatch")
-    # Validate every operand before compiling or opening candidate artifacts.
     for spec in target["functions"]:
+        validate_bindings(spec)
         code = pe.read_va(spec["address"], spec["size"])
-        bindings = {b["offset"]: b for b in spec["bindings"]}
+        absolute = {b["offset"] for b in spec["bindings"] if binding_kind(b) == "dir32"}
         relocs = {at - spec["address"] for at in pe.relocations
                   if spec["address"] - 3 <= at < spec["address"] + spec["size"]}
-        require(relocs == set(bindings), "reference relocation inventory disagrees with " + spec["id"])
-        for offset, binding in bindings.items():
-            address = struct.unpack_from("<I", code, offset)[0]
-            require(address == binding["address"] + binding.get("addend", 0),
-                    "reference operand disagrees with " + spec["id"])
-            if "float32" in binding:
-                require(pe.read_va(address, 4) == struct.pack("<f", binding["float32"]),
-                        "reference constant disagrees with binding")
+        require(relocs == absolute, "reference relocation inventory disagrees with " + spec["id"])
+        for binding in spec["bindings"]:
+            verify_bound_operand(pe, code, spec, binding)
     return pe
 
 
 def compare_function(original, obj, spec):
+    validate_bindings(spec)
     expected = original.read_va(spec["address"], spec["size"])
     actual, relocations = obj.function(spec["symbol"])
     result = {"id": spec["id"], "address": spec["address"], "size": spec["size"],
@@ -93,31 +150,35 @@ def compare_function(original, obj, spec):
     require(set(relocations) == set(bindings), "COFF relocation inventory differs from expected operands")
     adjusted = set()
     resolved = bytearray(actual)
+    call_bytes = 0
     for offset, binding in bindings.items():
-        symbol = relocations[offset]
+        relocation = relocations[offset]
+        symbol = relocation.symbol
+        is_call = binding_kind(binding) == "rel32-call"
+        require(relocation.kind == (20 if is_call else 6), "COFF relocation kind differs from binding")
         addend = struct.unpack_from("<I", actual, offset)[0]
         require(addend == binding.get("addend", 0), "relocation addend differs")
-        original_value = struct.unpack_from("<I", expected, offset)[0]
-        require(original_value == binding["address"] + addend, "original relocation target differs")
-        require(spec["address"] + offset in original.relocations, "operand is not a PE relocation")
+        original_value = verify_bound_operand(original, expected, spec, binding)
+        if is_call:
+            require(actual[offset - 1] == 0xe8, "candidate relative binding is not a near CALL")
+            call_bytes += 4
         if "symbol" in binding:
-            require(symbol.name == binding["symbol"] and symbol.section == 0 and symbol.value == 0,
-                    "relocation references the wrong external symbol")
+            require(symbol.name == binding["symbol"] and symbol.section == 0 and symbol.value == 0
+                    and symbol.storage == 2, "relocation references the wrong external symbol")
         else:
-            constant = struct.pack("<f", binding["float32"])
-            require(obj.symbol_bytes(symbol, addend, 4) == constant, "candidate constant differs")
-            require(original.read_va(original_value, 4) == constant, "original constant differs")
-        # Resolve only this fully verified COFF fixup in a comparison buffer.
-        # Neither the object file nor the original image is rewritten.
-        struct.pack_into("<I", resolved, offset, binding["address"] + addend)
+            constant = constant_bytes(binding)
+            require(obj.symbol_bytes(symbol, addend, len(constant)) == constant, "candidate constant differs")
+        # Resolve only the verified fixup in a comparison buffer. Never rewrite
+        # an object or the original executable.
+        struct.pack_into("<I", resolved, offset, original_value)
         adjusted.update(range(offset, offset + 4))
     differences = [i for i, (a, b) in enumerate(zip(expected, resolved)) if a != b]
     result.update(adjusted_bytes=len(adjusted), compared_bytes=len(actual) - len(adjusted),
+                  dir32_bytes=len(adjusted) - call_bytes, rel32_call_bytes=call_bytes,
                   different_bytes=len(differences), raw_bytes_equal=actual == expected,
                   relocated_bytes_equal=resolved == expected,
                   reference_span_sha256=digest(expected), resolved_span_sha256=digest(resolved))
     if differences:
-        # No original bytes in reports; detailed disassembly stays in Ghidra/reccmp locally.
         result.update(reason="non-relocation bytes differ", first_difference_offset=differences[0])
     else:
         result["status"] = "raw-code-match" if not adjusted else "relocation-adjusted-match"
