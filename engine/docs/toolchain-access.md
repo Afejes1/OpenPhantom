@@ -3,7 +3,7 @@
 The calibrated code generator is Visual C++ 5.0 RTM, cl.exe 11.00.7022. The
 observed linker is 5.00.7022. This agrees with the compiler identified by
 [OpenPhantom's compilation research](../engine-identification.md#1a-resolved-the-toolchain-by-byte-for-byte-compilation).
-All four functions and the synthetic behavioral fixture have been compiled
+The initial four functions and the synthetic behavioral fixture were compiled
 with those original tools inside Docker/wibo. Compiler execution on the Windows
 host was not used for this calibration.
 

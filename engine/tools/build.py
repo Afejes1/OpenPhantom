@@ -12,6 +12,7 @@ import uuid
 from formats import VerificationError, read_binary, require
 from matching import canonical_hash, digest
 from runners import run_tool, runtime_identity, validate_runner
+from source_policy import validate_source_policy
 
 
 COMMON_FLAGS = ["/nologo", "/c", "/W4", "/WX", "/Zi"]
@@ -96,11 +97,12 @@ def source_snapshot(root):
         files.append(root / "registry.json")
     for folder in ("src", "tools"):
         files.extend(p for p in (root / folder).rglob("*") if p.suffix in (".c", ".h", ".py"))
-    files.append(root / "tests" / "behavior.c")
+    files.extend(p for p in (root / "tests").rglob("*") if p.suffix in (".c", ".h"))
     return {p.relative_to(root).as_posix(): digest(p.read_bytes()) for p in sorted(files)}
 
 
 def run_build(root, target, config, lock):
+    validate_source_policy(root, target)
     check_lock(config, lock)
     env = environment(config)
     out = root / "build" / (time.strftime("%Y%m%d-%H%M%S-") + uuid.uuid4().hex[:8])

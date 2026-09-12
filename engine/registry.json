@@ -91,6 +91,36 @@
         "Compare all six trailing NOP alignment bytes"
       ],
       "exceptions": []
+    },
+    {
+      "id": "transform_project",
+      "module": "view_projection",
+      "analysis_name": "FUN_0040efd0",
+      "confidence": "HIGH",
+      "purpose": "Transform selected vertices, project to screen coordinates, generate clip codes and map depth with original x87 precision",
+      "evidence": [
+        "docs/view-projection-evidence.md",
+        "docs/x87-projection-evidence.md"
+      ],
+      "behavior_tests": [
+        "tests/projection_behavior.h"
+      ],
+      "quirks": [
+        "Reconstructed inline x87 kernel with compiler-generated C frame and alignment; original source text remains unknown",
+        "Raw positive-zero depth check distinguishes negative zero; unordered comparisons retain original condition flags",
+        "Retain reciprocal in x87 precision while storing its rounded float value",
+        "Zero selection entries leave output and clip slots unchanged; selected indices are one-based",
+        "Compare all nine trailing NOP bytes"
+      ],
+      "diagnostic_waivers": [
+        {
+          "code": 4725,
+          "reason": "Preserve original x87 FDIV instructions despite the advisory about defective early Pentium processors",
+          "scope": "src/transform_project.c function; warning level 4 explicitly restored afterward",
+          "evidence": "docs/x87-projection-evidence.md"
+        }
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

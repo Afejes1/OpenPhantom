@@ -4,19 +4,28 @@ from pathlib import Path
 import re
 from formats import require
 from matching import MATCHES, canonical_hash, digest
+from source_policy import validate_source_policy
 
 
 def load_registry(root, target):
+    validate_source_policy(root, target)
     value = json.loads((root / "registry.json").read_text(encoding="utf-8"))
     require(value.get("schema") == 1 and value.get("target") == target["target"], "invalid registry")
     entries = value["functions"]
     require(len({s["id"] for s in entries}) == len(entries), "duplicate registry entry")
     require({s["id"] for s in entries} == {s["id"] for s in target["functions"]}, "registry and target inventories differ")
+    specs = {s["id"]: s for s in target["functions"]}
     for entry in entries:
         for key in ("module", "analysis_name", "purpose"):
             require(isinstance(entry[key], str) and entry[key].strip(), "missing registry " + key)
         require(entry["confidence"] in ("HIGH", "MEDIUM", "LOW"), "invalid confidence")
         require(isinstance(entry["quirks"], list) and all(isinstance(q, str) and q for q in entry["quirks"]), "invalid quirks")
+        waivers = entry.get("diagnostic_waivers", [])
+        require([w["code"] for w in waivers] == specs[entry["id"]].get("diagnostic_waivers", []), "diagnostic waiver metadata differs")
+        for waiver in waivers:
+            require(waiver.get("reason") and waiver.get("scope"), "incomplete diagnostic waiver")
+            evidence = (root / waiver["evidence"]).resolve()
+            require(evidence.is_relative_to(root.resolve()) and evidence.is_file(), "missing diagnostic waiver evidence")
         require(isinstance(entry["exceptions"], list), "invalid exceptions")
         for exception in entry["exceptions"]:
             require(all(exception.get(k) for k in ("id", "reason", "scope", "evidence")), "incomplete exception")
@@ -50,6 +59,8 @@ def validate_event(event):
         require(function["id"] == spec["id"] == result["id"], "history identity differs")
         require(function["spec_sha256"] == canonical_hash(spec), "history specification hash differs")
         require(not function["exceptions"], "exceptions cannot be counted as matching")
+        require([w["code"] for w in function.get("diagnostic_waivers", [])] == spec.get("diagnostic_waivers", []),
+                "history diagnostic waivers differ")
         require(result["status"] in MATCHES and result["different_bytes"] == 0, "history function does not match")
         require(result["relocated_bytes_equal"] is True, "missing resolved equality")
         require(result["reference_span_sha256"] == result["resolved_span_sha256"], "history span hashes differ")
@@ -125,6 +136,7 @@ def record_event(root, out, target, registry, config, lock, build, comparison):
              "behavior_passed": True, "whole_executable_match": False, "linked_placement_verified": False,
              "functions": [{"id": s["id"], "module": metadata[s["id"]]["module"], "spec": s,
                             "spec_sha256": canonical_hash(s), "exceptions": metadata[s["id"]]["exceptions"],
+                            "diagnostic_waivers": metadata[s["id"]].get("diagnostic_waivers", []),
                             "result": results[s["id"]]} for s in target["functions"]]}
     validate_event(event)
     if history:
@@ -176,5 +188,8 @@ def render_progress(root, target, registry, history):
     for entry in registry["functions"]:
         lines.append("- **%s**: %s. Exceptions: %s." % (entry["id"], "; ".join(entry["quirks"]) or "None",
                                                         json.dumps(entry["exceptions"]) if entry["exceptions"] else "none"))
+        for waiver in entry.get("diagnostic_waivers", []):
+            lines.append("  Compiler diagnostic waiver C%d: %s. Scope: %s. No byte exclusion." %
+                         (waiver["code"], waiver["reason"], waiver["scope"]))
     lines += ["", "## Unresolved program work", ""] + ["- " + q for q in registry["open_program_questions"]] + [""]
     return "\n".join(lines)

@@ -26,8 +26,8 @@ records observed layouts and unresolved module boundaries.
 
 ## Outstanding architecture work
 
-Reconstruct the full transform/project routine, then follow its downstream
-consumers. Recover original translation-unit boundaries, source/link order,
+The transform/project kernel now matches with documented inline assembly and
+a C4725 compiler-advisory waiver. Follow its downstream clip/queue consumers. Recover original translation-unit boundaries, source/link order,
 resources, runtime initialization, imports, data construction, and historical
 PE metadata before claiming the complete original binary. Registered function
 counts do not establish total application coverage or equivalence of the modern

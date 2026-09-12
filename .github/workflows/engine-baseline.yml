@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  synthetic-and-finite-behavior:
+  synthetic-and-supplemental-behavior:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,7 +29,7 @@ jobs:
         run: cmake -S engine/tests -B engine/build/modern-smoke -A Win32
       - name: Build supplemental fixture with warnings as errors
         run: cmake --build engine/build/modern-smoke --config Release
-      - name: Test finite behavior only
+      - name: Test supplemental behavior without retail-match claims
         run: ctest --test-dir engine/build/modern-smoke -C Release --output-on-failure
       # This job deliberately makes no retail-match claim. The private VC5 check
       # requires the original executable and licensed tools; absence is a failure

@@ -40,6 +40,7 @@ extern unsigned int op_width_bits, op_height_bits;
 extern float op_focal, op_depth_scale;
 extern float op_edge_18, op_edge_1c, op_edge_20, op_edge_24;
 extern float op_far, op_near;
+extern int op_depth_mode;
 
 int op_material_mode(int mode);
 unsigned char *op_grid_cell(int x, int y);
@@ -47,5 +48,8 @@ float op_plane_coordinate(int axis, float *vertex, float *normal, float *point);
 void op_update_projection(void);
 unsigned int op_face_clip_flags(const op_face_indices *face,
                                const unsigned char *clip_codes);
+void op_transform_project(const float *vertices, float *output,
+                          const int *indices, unsigned char *codes,
+                          int count, const float *matrix);
 
 #endif

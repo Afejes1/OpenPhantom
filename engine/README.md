@@ -1,20 +1,26 @@
-# Original-toolchain matching baseline
+# Original-toolchain matching reconstruction
 
-This fork contains comparison infrastructure and four **VC5-calibrated C
-functions**. It is not yet a playable reconstructed OpenPhantom engine.
+This fork contains a growing set of VC5-calibrated reconstructions. The
+[generated progress report](docs/progress.md) lists current functions, source
+locations, comparison categories, compiler waivers, and remaining work.
+It is not yet a playable reconstructed OpenPhantom engine.
 
 The required code generator is the original **Visual C++ 5.0 RTM** identified in
 [engine-identification.md](engine-identification.md#1a-resolved-the-toolchain-by-byte-for-byte-compilation).
 The verified profile uses Windows Docker Desktop with a pinned Linux/wibo
-runtime to run the actual compiler and linker. All four function bodies match
-the retail reference after explicitly verified address relocations; the first
-function also matches without relocation. Projection alignment padding is
-compared too. [Two-run calibration evidence](docs/calibration-20260912.json)
-records the source/tool fingerprints and matching span hashes. Modern MSVC remains a separate finite-behavior smoke test.
+runtime to run the actual compiler and linker. The comparator checks complete
+code sections, verified address relocations, and all alignment padding.
+[Initial calibration](docs/calibration-20260912.json) records the first four
+functions; [chained build evidence](evidence/runs) records subsequent expansion.
+
+Candidates use reconstructed C, including documented inline assembly for the
+[x87 projection kernel](docs/x87-projection-evidence.md). Its C4725 advisory
+waiver does not exclude any comparison bytes. Modern MSVC provides a separate
+supplemental behavior test and never certifies original-toolchain matching.
 
 ## What is available
 
-- A pinned retail reference manifest with four full function extents and explicit
+- A pinned retail reference manifest with full function extents and explicit
   address-operand bindings, validated against a contributor's local executable.
 - An original-toolchain driver with private configuration, complete tool/header/
   library and runtime fingerprints, per-source options, fresh build directories, artifact
@@ -27,17 +33,18 @@ See [baseline evidence](docs/baseline-evidence.md) for addresses, layouts,
 floating-point behavior, comparison limits, and remaining reconstruction work.
 [Toolchain access](docs/toolchain-access.md) records acquisition provenance and
 reproducible Docker setup. [The upstream proposal](docs/upstream-proposal.md) is an unpublished
-draft; this experiment has not been agreed with upstream.
+experiment; the contributor has confirmed direct discussion with the authors
+and authorized continued work in this fork.
 
 ## Tests that need no original compiler or game
 
-Run from the repository root with Python 3.10 or newer:
+Run from the repository root with Python 3.13 or newer:
 
 ```powershell
 python -m unittest discover -s engine/tests -p "test_*.py" -v
 ```
 
-For the supplemental finite-behavior smoke, use modern MSVC and CMake:
+For the supplemental x86 behavior smoke, use modern MSVC and CMake:
 
 ```powershell
 cmake -S engine/tests -B engine/build/modern-smoke -A Win32
@@ -46,8 +53,9 @@ ctest --test-dir engine/build/modern-smoke -C Release --output-on-failure
 ```
 
 This test checks synthetic inputs and 32-bit structure offsets. It does **not**
-prove VC5 code generation or x87 unordered-comparison behavior. The latter is
-tested by the fixture only when built through the original-toolchain driver.
+prove VC5 code generation. It also exercises the reconstructed x87 kernel's
+edge cases; the plane solver's original-compiler unordered behavior is tested
+only through the original-toolchain driver.
 A green public CI run makes only the synthetic/supplemental claims in its name.
 
 ## Private original-toolchain workflow
@@ -80,7 +88,7 @@ reference in place and never executes or modifies it.
    again. A changed source or driver invalidates old outputs. The linked
    `WMAIN.EXE` here is a **console test fixture**, never the game or an installer
    payload. Only that verified fixture is executed by the `test` command.
-4. When all four code comparisons and VC5 behavioral tests pass, establish a
+4. When all registered code comparisons and VC5 behavioral tests pass, establish a
    separately named private baseline:
    ```powershell
    python engine/verify.py accept --reference $retail --build $buildDir --baseline engine/private/baseline-01.json
@@ -108,7 +116,7 @@ not successful zero-function runs. JSON reports stay in the build directory.
   entire reference span. Reports distinguish function bodies, complete section
   sizes, and adjusted-byte counts; no original file or object is rewritten.
 - `mismatch` / `unresolved`: the function is not accepted.
-- `complete` in a comparison report requires all four code checks plus the
+- `complete` in a comparison report requires all registered code checks plus the
   hashed VC5 behavioral fixture result. It is not whole-executable completion.
 
 First-batch objects must contain one complete code section for one function.

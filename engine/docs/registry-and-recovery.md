@@ -34,7 +34,9 @@ commands remain stricter: they require the identical target manifest and private
 lock. An intentional definition correction requires an explicit evidence-backed
 migration, not resetting history or silently changing the comparison denominator.
 
-Quirks describe source choices that still match every compared byte. Exceptions
+Quirks describe source choices that still match every compared byte. Registered
+compiler diagnostic waivers (currently C4725 for the x87 kernel only) are tracked
+separately from comparison exclusions and do not relax byte equality. Exceptions
 describe unresolved exclusions and are never counted as matching by the recorder.
 Raw code equality, equality after verified relocation resolution, behavioral
 evidence, and whole-file equality remain distinct. No current record certifies

@@ -145,6 +145,79 @@
         "/MT"
       ],
       "bindings": []
+    },
+    {
+      "id": "transform_project",
+      "address": 4255696,
+      "size": 416,
+      "body_size": 407,
+      "symbol": "_op_transform_project",
+      "source": "src/transform_project.c",
+      "flags": [
+        "/O2",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 36,
+          "address": 5988328,
+          "symbol": "_op_height_bits"
+        },
+        {
+          "offset": 42,
+          "address": 6000220,
+          "symbol": "_op_width_bits"
+        },
+        {
+          "offset": 48,
+          "address": 5989432,
+          "symbol": "_op_focal"
+        },
+        {
+          "offset": 221,
+          "address": 5988400,
+          "symbol": "_op_edge_18"
+        },
+        {
+          "offset": 239,
+          "address": 5988356,
+          "symbol": "_op_edge_20"
+        },
+        {
+          "offset": 257,
+          "address": 5988404,
+          "symbol": "_op_edge_1c"
+        },
+        {
+          "offset": 275,
+          "address": 5988360,
+          "symbol": "_op_edge_24"
+        },
+        {
+          "offset": 293,
+          "address": 5988352,
+          "symbol": "_op_near"
+        },
+        {
+          "offset": 323,
+          "address": 5988348,
+          "symbol": "_op_depth_scale"
+        },
+        {
+          "offset": 329,
+          "address": 8810440,
+          "symbol": "_op_depth_mode"
+        },
+        {
+          "offset": 351,
+          "address": 8810440,
+          "symbol": "_op_depth_mode"
+        }
+      ],
+      "diagnostic_waivers": [
+        4725
+      ],
+      "implementation": "c-with-inline-assembly"
     }
   ]
 }

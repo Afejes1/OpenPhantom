@@ -13,7 +13,7 @@ have been recovered or that the complete module is finished.
 - 0x0040EFD0 transforms/project vertices and produces per-vertex clip codes.
   Eight incoming calls were found, including mesh submission, sprites,
   screen-space polylines, particles and linked sphere effects. Reconstruction
-  remains pending; a decompiler rendering is not accepted as implementation.
+  uses a reconstructed inline x87 kernel; see [kernel evidence](x87-projection-evidence.md).
 - 0x0040F170 combines indexed per-vertex clip codes for a face. Its incoming call
   at 0x0040F5EF is in queue_model_mesh_faces, after the projection call.
 
@@ -27,7 +27,8 @@ comment was added, and the analysis program was saved.
 
 ## Face clip-code reducer
 
-Address: 0x0040F170. Current analysis name: FUN_0040f170.
+Address: 0x0040F170. Original analysis name: FUN_0040f170.
+Current name: combine_face_vertex_clip_codes.
 Reconstructed symbol: op_face_clip_flags. Confidence: HIGH for observed behavior.
 
 The first argument points to a partial face layout: unsigned count at +0x14 and
@@ -52,7 +53,8 @@ separately in the generated progress report and immutable build history.
 
 ## Remaining work
 
-Match the complete transform/project routine at 0x0040EFD0, including selected
-vertex indices, optional clip output, zero-depth behavior, depth-mode selection,
-and the original x87 evaluation order. Then inspect module boundaries and the
-downstream clip/queue consumers before claiming a complete original module.
+The update, transform/project, and face-code reduction routines now have matching
+candidates. Inspect original module boundaries and downstream clip/queue consumers
+before claiming a complete source module. The [x87 evidence](x87-projection-evidence.md)
+records the source-form inference, compiler advisory, precision, signed-zero,
+selection, and clipping contracts.

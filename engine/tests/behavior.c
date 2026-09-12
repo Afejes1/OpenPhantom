@@ -18,6 +18,7 @@ unsigned int op_width_bits, op_height_bits;
 float op_focal, op_depth_scale;
 float op_edge_18, op_edge_1c, op_edge_20, op_edge_24;
 float op_far, op_near;
+int op_depth_mode;
 
 static int failures;
 static void check(int condition, int line) { if (!condition) { ++failures; printf("Failed at line %d\n", line); } }
@@ -98,6 +99,8 @@ static void clip_flag_tests(void)
     CHECK(op_face_clip_flags(&face, codes) == 0);
 }
 
+#include "projection_behavior.h"
+
 int main(void)
 {
     op_viewport viewport;
@@ -130,11 +133,12 @@ int main(void)
     CHECK(op_edge_18 == -5.0f && op_edge_1c == 10.0f);
     CHECK(op_edge_20 == 635.0f && op_edge_24 == 470.0f);
     CHECK(op_near == 0.5f && op_far == 8.0f);
+    projection_tests();
     if (failures) return 1;
 #ifdef OP_VC5_BEHAVIOR
     puts("VC5 behavioral fixture passed, including x87 unordered fallback.");
 #else
-    puts("Modern x86 finite-behavior smoke passed; VC5 codegen and unordered behavior NOT verified.");
+    puts("Modern x86 behavior smoke passed; VC5 codegen and plane-solver unordered behavior NOT verified.");
 #endif
     return 0;
 }

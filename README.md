@@ -7,7 +7,7 @@
 
 OpenPhantom is a PC fix and modding project for Star Wars Episode I: The Phantom Menace (1999). It gets the original PC game running on Windows 10 and Windows 11, and on Linux and Steam Deck through Proton, with a modern installer that works from your original CD, widescreen and ultrawide resolutions, uncapped FPS, a corrected field of view, mouse look, and working music and video. Alongside the fixes, OpenPhantom reverse engineers and reconstructs the game's engine as documented, maintainable source code, with tools for modding, editing and extending the game.
 
-**[Download the latest release](https://github.com/OpenPhantom/OpenPhantom/releases/latest)** · [Installation guide](https://github.com/OpenPhantom/OpenPhantom/wiki/Installation-Guide) · [Discord](https://discord.gg/73UbZN2y7x)
+**[Download the latest release](https://github.com/OpenPhantom/OpenPhantom/releases/latest)** Â· [Installation guide](https://github.com/OpenPhantom/OpenPhantom/wiki/Installation-Guide) Â· [Discord](https://discord.gg/73UbZN2y7x)
 
 The project has two parts. The legacy patches are useful today: they modify the retail executable in memory so the game you already own runs with modern fixes. The reconstructed engine is the long-term work: rebuilding the game's systems from the ground up as clean source code that can support deeper modding and new features.
 
@@ -27,7 +27,7 @@ The project has two parts. The legacy patches are useful today: they modify the 
 |---|---|
 | [`installer/`](installer/) | **Working** A wizard that installs the game from your own disc and then the parts of the patch you tick. It carries no game data: the disc archive is expanded on your machine. Everything it installs ships inside it and nothing is downloaded, so an installation does not depend on somebody else's hosting still being there. See its [README](installer/README.md) |
 | [`legacy/`](legacy/) | **Working**  Fixes that patch the original 1999 executable in memory: field of view, resolutions, frame rate, mouse look, music, decals and more. A loader and one DLL per feature, built with CMake. See its [README](legacy/README.md) |
-| [`engine/`](engine/) | VC5 matching infrastructure and four calibrated C functions. No playable engine |
+| [`engine/`](engine/) | VC5 matching reconstruction, function registry, and private recovery tooling. No playable engine |
 | `editor/` | Tools for maps, assets and game content. Not started |
 | `architecture/` | How the original engine is put together, written down. Not started |
 
