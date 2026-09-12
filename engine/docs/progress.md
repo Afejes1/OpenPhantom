@@ -18,8 +18,8 @@ Registered functions: **5**. Last recorded matches with unchanged definitions: *
 Current source fingerprint agrees with the latest run: **yes**.
 This count is not whole-program coverage and does not certify the modern TPM reconstruction.
 
-Latest build: '20260912-114434-045541b5', source commit 'f0787dc1e203c966a97e2260117f56d8d3f5ad6f'.
-History contains 3 verified build records.
+Latest build: '20260912-114605-4ce36a61', source commit '0c8354dd390ba2106d7cdc124bb4198ac6ddb7b0'.
+History contains 4 verified build records.
 
 ## Workarounds and exceptions
 
