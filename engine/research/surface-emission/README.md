@@ -1,14 +1,15 @@
 # Surface-emission, scan-culling and cell-collection research batch
 
-All four functions are reported not done in bp/bapdraw.c. None is accepted by
+All five functions are reported not done in bp/bapdraw.c. None is accepted by
 the matching registry. The existing fourteen-function history remains unchanged.
 
 | Address | Team name | Candidate | Current comparison |
 |---|---|---|---|
 | 0x00406300 | bapdraw_emitFace | [C++ source](candidate.cpp) | Correct 432-byte extent; relocation positions and register allocation differ |
 | 0x00405A50 | bapdrawOld_emitFace | [C source](legacy_candidate.c) | Correct 672-byte extent; relocation inventory and instructions differ |
-| 0x00403FA0 | bapdrawOld_cullAgainstPlane | [C source](culling_candidate.c) | Correct 480-byte extent and all 22 relocations; ten instruction bytes differ |
+| 0x00403FA0 | bapdrawOld_cullAgainstPlane | [C source](culling_candidate.c) | Correct 480-byte extent and all 22 relocations; six instruction bytes differ |
 | 0x004064B0 | bapdraw_gatherCell | [C++ source](collection_candidate.cpp) | Correct 896-byte extent and all 40 relocations; five instruction bytes differ |
+| 0x004056C0 | bapdrawOld_gatherCell | [C source](legacy_collection_candidate.c) | Correct 816-byte extent and 34 relocations; operand positions and instructions differ |
 
 The JSON target definitions preserve complete original extents, embedded tables,
 alignment, constant widths, symbol addends and calls. These pending specifications
@@ -21,13 +22,14 @@ From the repository root, using the existing private compiler configuration:
     python engine/research/surface-emission/probe.py compare --reference C:/PrivateGame/WMAIN.EXE
     python engine/research/surface-emission/probe.py behavior
 
-The compare command compiles all four candidates with the original VC5 compiler
+The compare command compiles all five candidates with the original VC5 compiler
 and the strict comparator. It returns 1 for nonmatching candidates, 2 for
 prerequisite/build failures, and 0 only if all complete spans agree. The behavior
-command builds three separate synthetic executables: emission with a controlled
+command builds four separate synthetic executables: emission with a controlled
 culling stub and the matched bucket helper; the actual culling candidate with a
 controlled projection callback; and the collector with a controlled affine
-callee. It requires the locked Docker runner and does not read or execute the game.
+callee; and the legacy collector with controlled bucket, culling and emission
+callees. It requires the locked Docker runner and does not read or execute the game.
 
 Each run records commands, compiler/runtime fingerprints, candidate and verifier
 source hashes, object/comparison results, VC5 /FAcs assembly listings and fixture
@@ -45,7 +47,7 @@ four- and three-candidate snapshots.
 
 ## Focused fixture coverage
 
-All three fixtures passed with VC5 RTM on 2026-09-12. These are unit fixtures with
+All four fixtures passed with VC5 RTM on 2026-09-12. These are unit fixtures with
 controlled callees, not complete game behavior or integrated renderer coverage.
 
 - Emission covers all 256 packed-opacity values, room masks, gates and duplicate
@@ -60,6 +62,10 @@ controlled callees, not complete game behavior or integrated renderer coverage.
   at three x87 precisions. Extra owned test storage permits observing the
   entry-only capacity check without inferring the original buffer allocation.
 
+- Legacy collection passes 1,195 checks covering linked/discovered groups,
+  capacity boundaries, callback-visible reloads, slab selection, raw float
+  arguments, inline records, seen references and null-reference visit counting.
+
 ## Remaining compiler work
 
 The newer emitter still needs the original extra callee-saved register and cached
@@ -70,10 +76,10 @@ The legacy emitter retains converted height on x87 and uses separate calls for
 conditional culling extents. That reaches the required 672-byte section, but
 relocation inventory and instruction scheduling still disagree.
 
-The culler initializes its loop counter before copying the base point. Its ten
-remaining bytes encode early instruction scheduling and swapped EBX/EBP retention
-of base Y/Z. Processor/optimizer, arithmetic, inline-vector and table-indexing
-probes did not remove them. No new compiler profile was accepted. Before registry
+The culler initializes its loop counter before copying the base point. A float
+array with inline memcpy restores the original EBP/EBX retention of base Y/Z.
+Its six remaining bytes encode the plane-index load and base-Y store ordering.
+No compiler profile or comparison exception was accepted. Before registry
 promotion, report its embedded table bytes separately from alignment in aggregate
 coverage accounting; accepted functions currently have no such table.
 
@@ -91,3 +97,10 @@ See [emission evidence](../../docs/surface-emission-evidence.md),
 [collection evidence](../../docs/static-cell-evidence.md). Continue the batch
 before a full original-toolchain acceptance checkpoint. A behavior pass cannot
 resolve a byte mismatch.
+
+The legacy collector retains both duplicated group walks and the three traversal
+phases. C/C++ frontend, loop-index ordering, array indexing and scan-position
+copy probes retain an 816-byte section with 34 relocations but do not reproduce
+their original locations. It remains outside the accepted registry. See
+[legacy-cell evidence](../../docs/legacy-cell-evidence.md) and the
+[five-candidate checkpoint](../../docs/legacy-cell-batch-20260912.json).

@@ -1,0 +1,192 @@
+{
+  "id": "gather_legacy_cell",
+  "address": 4216512,
+  "size": 816,
+  "body_size": 809,
+  "source": "src/gather_legacy_cell.c",
+  "symbol": "_op_gather_legacy_cell",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 24,
+      "address": 5889724,
+      "symbol": "_op_gathered_surface_count"
+    },
+    {
+      "offset": 50,
+      "address": 5889880,
+      "symbol": "_op_active_world"
+    },
+    {
+      "offset": 68,
+      "address": 9173664,
+      "symbol": "_op_surface_group_state"
+    },
+    {
+      "offset": 82,
+      "address": 9173664,
+      "symbol": "_op_surface_group_state"
+    },
+    {
+      "offset": 143,
+      "address": 5889904,
+      "symbol": "_op_legacy_selected_room_mask"
+    },
+    {
+      "offset": 154,
+      "address": 4217328,
+      "symbol": "_op_push_surface_draw_entry",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 160,
+      "address": 5889724,
+      "symbol": "_op_gathered_surface_count"
+    },
+    {
+      "offset": 179,
+      "address": 9062528,
+      "symbol": "_op_surface_draw_entries"
+    },
+    {
+      "offset": 185,
+      "address": 5889724,
+      "symbol": "_op_gathered_surface_count"
+    },
+    {
+      "offset": 298,
+      "address": 5889880,
+      "symbol": "_op_active_world"
+    },
+    {
+      "offset": 316,
+      "address": 9173664,
+      "symbol": "_op_surface_group_state"
+    },
+    {
+      "offset": 330,
+      "address": 9173664,
+      "symbol": "_op_surface_group_state"
+    },
+    {
+      "offset": 369,
+      "address": 9173664,
+      "symbol": "_op_surface_group_state"
+    },
+    {
+      "offset": 385,
+      "address": 5889724,
+      "symbol": "_op_gathered_surface_count"
+    },
+    {
+      "offset": 429,
+      "address": 5889904,
+      "symbol": "_op_legacy_selected_room_mask"
+    },
+    {
+      "offset": 440,
+      "address": 4217328,
+      "symbol": "_op_push_surface_draw_entry",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 446,
+      "address": 5889724,
+      "symbol": "_op_gathered_surface_count"
+    },
+    {
+      "offset": 465,
+      "address": 9062528,
+      "symbol": "_op_surface_draw_entries"
+    },
+    {
+      "offset": 471,
+      "address": 5889724,
+      "symbol": "_op_gathered_surface_count"
+    },
+    {
+      "offset": 534,
+      "address": 9169384,
+      "symbol": "_op_legacy_scan_cull_side"
+    },
+    {
+      "offset": 543,
+      "address": 9169220,
+      "symbol": "_op_legacy_inverted_height"
+    },
+    {
+      "offset": 589,
+      "address": 4210592,
+      "symbol": "_op_cull_scan_plane",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 605,
+      "address": 9169384,
+      "symbol": "_op_legacy_scan_cull_side"
+    },
+    {
+      "offset": 614,
+      "address": 9169220,
+      "symbol": "_op_legacy_inverted_height"
+    },
+    {
+      "offset": 648,
+      "address": 4210592,
+      "symbol": "_op_cull_scan_plane",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 653,
+      "address": 5889872,
+      "symbol": "_op_legacy_cull_enabled"
+    },
+    {
+      "offset": 661,
+      "address": 5889712,
+      "symbol": "_op_legacy_scan_position"
+    },
+    {
+      "offset": 669,
+      "address": 5889712,
+      "symbol": "_op_legacy_scan_position",
+      "addend": 4
+    },
+    {
+      "offset": 678,
+      "address": 5889712,
+      "symbol": "_op_legacy_scan_position",
+      "addend": 8
+    },
+    {
+      "offset": 684,
+      "address": 5889924,
+      "symbol": "_op_legacy_cached_height"
+    },
+    {
+      "offset": 733,
+      "address": 9160992,
+      "symbol": "_op_surface_seen"
+    },
+    {
+      "offset": 749,
+      "address": 4217424,
+      "symbol": "_op_emit_legacy_surface",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 758,
+      "address": 5889868,
+      "symbol": "_op_legacy_reference_visit_count"
+    },
+    {
+      "offset": 778,
+      "address": 4217424,
+      "symbol": "_op_emit_legacy_surface",
+      "kind": "rel32-call"
+    }
+  ]
+}

@@ -16,7 +16,8 @@ from runners import run_tool
 
 CASES = (("candidate.cpp", "target.json"), ("legacy_candidate.c", "legacy-target.json"),
          ("culling_candidate.c", "culling-target.json"),
-         ("collection_candidate.cpp", "collection-target.json"))
+         ("collection_candidate.cpp", "collection-target.json"),
+         ("legacy_collection_candidate.c", "legacy-collection-target.json"))
 
 
 def candidate_artifact(source, spec, obj, listing):
@@ -53,10 +54,10 @@ def main():
     check_lock(config, lock)
     out = ROOT / "build" / ("surface-batch-" + uuid.uuid4().hex[:12])
     out.mkdir()
-    inputs = [ROOT / "src/baseline.h", HERE / "batch_surface.h", HERE / "culling.h", HERE / "collection.h"]
+    inputs = [ROOT / "src/baseline.h", HERE / "batch_surface.h", HERE / "culling.h", HERE / "collection.h", HERE / "legacy_collection.h"]
     inputs += [HERE / name for pair in CASES for name in pair]
     if args.command == "behavior":
-        inputs += [HERE / "focused_behavior.c", HERE / "culling_behavior.c", HERE / "collection_behavior.c", ROOT / "src/push_surface_draw_entry.cpp"]
+        inputs += [HERE / "focused_behavior.c", HERE / "culling_behavior.c", HERE / "collection_behavior.c", HERE / "legacy_collection_behavior.c", ROOT / "src/push_surface_draw_entry.cpp"]
     # Hash the runner and verifier too; a research report identifies the code that judged it.
     provenance = inputs + [Path(__file__).resolve(), ROOT / "target.json"]
     provenance += [ROOT / "tools" / name for name in
@@ -116,9 +117,11 @@ def main():
             emission_test = compile_fixture("focused_behavior.c", ["/Od", "/MT"])
             culling_test = compile_fixture("culling_behavior.c", ["/Od", "/MT"])
             collection_test = compile_fixture("collection_behavior.c", ["/Od", "/MT"])
+            legacy_collection_test = compile_fixture("legacy_collection_behavior.c", ["/Od", "/MT"])
             suites = (("emission", [objects["emit_surface"], objects["emit_legacy_surface"], helper, emission_test]),
                       ("culling", [objects["cull_scan_plane"], culling_test]),
-                      ("collection", [objects["gather_static_cell"], collection_test]))
+                      ("collection", [objects["gather_static_cell"], collection_test]),
+                      ("legacy-collection", [objects["gather_legacy_cell"], legacy_collection_test]))
             for name, fixture_objects in suites:
                 executable = out / (name + "-focused.exe")
                 invoke([config["linker"], "/NOLOGO", "/MACHINE:IX86", "/SUBSYSTEM:CONSOLE",

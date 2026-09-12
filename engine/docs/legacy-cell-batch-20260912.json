@@ -1,0 +1,242 @@
+{
+  "schema": 1,
+  "kind": "focused-legacy-cell-batch-checkpoint",
+  "date": "2026-09-12",
+  "accepted_history_record": false,
+  "accepted_function_count_unchanged": 14,
+  "whole_executable_match": false,
+  "exclusions": [],
+  "compiler": "Microsoft VC5 RTM 11.00.7022",
+  "linker": "Microsoft 5.00.7022",
+  "candidate_flags": [
+    "/nologo",
+    "/c",
+    "/W4",
+    "/WX",
+    "/Zi",
+    "/O2",
+    "/MT",
+    "/FAcs"
+  ],
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "comparison_build": "surface-batch-4852a7686618",
+  "comparison_report_sha256": "bf55190795443eb714deefb88c7f31d7af36593219423216854d0ed83ac558dc",
+  "behavior_build": "surface-batch-b6a87f89b16c",
+  "behavior_report_sha256": "f866d22a4fa7d63c170bcf625416544276048a755896c837879a49f62e354257",
+  "source_snapshot": {
+    "src/baseline.h": "f6e7690e2616f4c2f1660fe7495a012e32b1e0cfec3de451ce3e5a4de8b2e6cd",
+    "research/surface-emission/batch_surface.h": "34491506ad4ccb8517f4a11d0741ebca5d0379b75a506a25cb3d07a86e4df7dd",
+    "research/surface-emission/culling.h": "ebd71fe200eb12f498890a0fe6f74934dbc75f13a749846621e4713e5e69d29b",
+    "research/surface-emission/collection.h": "fd06b474cf4192928d99de5dbc5de18691ad0f6100a81176e800f6df47a61068",
+    "research/surface-emission/legacy_collection.h": "e0599c7491e2d9817825ebc29243a8f1583129216f3ac1dd991138a6eebe6d1f",
+    "research/surface-emission/candidate.cpp": "3cefd0a1f071f7357399fd77a45bb430711e9720167d590e02e04f364dc913e2",
+    "research/surface-emission/target.json": "10c82742f0bb8d15983f3cced8a4d0dea5b82db2adc6e483b834b7baec504ecf",
+    "research/surface-emission/legacy_candidate.c": "227ed96443862bc84b2d5da95b7f50fb036a3d63dd654c9e23d8b63126d5e330",
+    "research/surface-emission/legacy-target.json": "1980dca6bf64b030f72b8160ca4d3f58edc5dc9f43c141dc3b8f67216d3a40b5",
+    "research/surface-emission/culling_candidate.c": "6bfeacfe94dee75b30f06014f812c55ee3d2beda5d8ffa37757c0e53e825112a",
+    "research/surface-emission/culling-target.json": "15200b90d414d7144ec160ffe6153a274f5d79dd9b11b429c1712bd4c16e4e5c",
+    "research/surface-emission/collection_candidate.cpp": "32421b4a7dae6c3d5944b6f518afbee77099e84fae1797a93f68edcda1ae2b8d",
+    "research/surface-emission/collection-target.json": "4c48850c9ac633344e28375ef6583df21095b506cc85324f711d4fb29dd48a69",
+    "research/surface-emission/legacy_collection_candidate.c": "bcf28d09bce6a8d0caa4b49e81772e89710b10fb4abd291f9db8c0bbdb9a55bd",
+    "research/surface-emission/legacy-collection-target.json": "77d05616c3bd2449da6a89fb07c80e7fc000752a35f74944e27c18cd22b7b6d4",
+    "research/surface-emission/focused_behavior.c": "5e75f5c38078eb064f694deee86d0331b9750b96605f5b3a049fddda5c097516",
+    "research/surface-emission/culling_behavior.c": "85a496b0140250c624a13a9be7c6cf28beb61add1434f6d78cc4cda1fa67ca02",
+    "research/surface-emission/collection_behavior.c": "663d80e56784a006ce2edca25021b6924eded2908e8b731d49d7024b2783387e",
+    "research/surface-emission/legacy_collection_behavior.c": "cb85001acf6e8d268cf11ab1576347e83e7c755f21f7f2a065d2f5c26b5ec8f1",
+    "src/push_surface_draw_entry.cpp": "5c96e10256c625a4ee3581a074e958754d0f567fbd5f4bb3ba907e71c24e72b3",
+    "research/surface-emission/probe.py": "bf1e16e581268d4f2d58618bff01ff2b3c7981ad18e9154d62a78b26934a19c9",
+    "target.json": "b8398f0a1f85e40e34af828082a8587587b7c4f88a9ecea96b21b2706a33b996",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "b9b2d9741912c9d58b77f636811b9e652d30777cc8eeb93ad434896a412bc1e0",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "comparison_artifacts": [
+    {
+      "id": "emit_surface",
+      "source": "candidate.cpp",
+      "symbol": "_op_emit_surface",
+      "object": "emit_surface.obj",
+      "object_sha256": "56b8d96bf4c4aff8bedd85d8d3b3501e305562a201a9a243217bc56dbb70479b",
+      "function_section_bytes": 432,
+      "function_section_sha256": "74a61b855e3ceba2010b1825849331cccc34fe0073c231dd1a9ff46003649270",
+      "relocation_count": 22,
+      "assembly_listing": "candidate.cod",
+      "assembly_listing_sha256": "577265348f3ef69c1d9f902c275757fb3e223074794f26633d5d9be489905f20"
+    },
+    {
+      "id": "emit_legacy_surface",
+      "source": "legacy_candidate.c",
+      "symbol": "_op_emit_legacy_surface",
+      "object": "emit_legacy_surface.obj",
+      "object_sha256": "2720930de2af175ee11d5d3c5bcce6b444d3950facf47e6a74180066636a47e2",
+      "function_section_bytes": 672,
+      "function_section_sha256": "d836069eb5e41c340c57126532e93c3957a6b8592cdd16b335a541f6f5c81c06",
+      "relocation_count": 44,
+      "assembly_listing": "legacy_candidate.cod",
+      "assembly_listing_sha256": "7720a50b3df19547b2bc6cf7efc2394a8ab411bb6a6c617d263b26233d757c45"
+    },
+    {
+      "id": "cull_scan_plane",
+      "source": "culling_candidate.c",
+      "symbol": "_op_cull_scan_plane",
+      "object": "cull_scan_plane.obj",
+      "object_sha256": "ed5c0ea415be797dc2315329d03fe4cc92f0b9f4a65887b97967acdea778f8a1",
+      "function_section_bytes": 480,
+      "function_section_sha256": "5a2df2d4720aeec492d7b44ab522a675a56e151e580edc81847382a0f08e3011",
+      "relocation_count": 22,
+      "assembly_listing": "culling_candidate.cod",
+      "assembly_listing_sha256": "83eac2e7467392c4ff8eeb6750ba11418f116a80683341cd69dbcce93f14b267"
+    },
+    {
+      "id": "gather_static_cell",
+      "source": "collection_candidate.cpp",
+      "symbol": "_op_gather_static_cell",
+      "object": "gather_static_cell.obj",
+      "object_sha256": "cd731de6d7f6de7819ca1cb62761a541a5b15647d4698f02968c8496a6568d34",
+      "function_section_bytes": 896,
+      "function_section_sha256": "fb4ba6cc46e1d12ad87dfa418bcfcde20c27920190f85f1229e4f15e9596ee94",
+      "relocation_count": 40,
+      "assembly_listing": "collection_candidate.cod",
+      "assembly_listing_sha256": "687985cb98885a2b196217d5a294df123105cb82e9e8dc3c7ebc46fdce6e59f0"
+    },
+    {
+      "id": "gather_legacy_cell",
+      "source": "legacy_collection_candidate.c",
+      "symbol": "_op_gather_legacy_cell",
+      "object": "gather_legacy_cell.obj",
+      "object_sha256": "937778241aab1fba7576b63f8054a6e156057e5eb48ae50bce9b4837ab4a16b6",
+      "function_section_bytes": 816,
+      "function_section_sha256": "55dffbea8f07f5906695841d5726a1c5a720b6b377ddb07459e2b3d70eebfc45",
+      "relocation_count": 34,
+      "assembly_listing": "legacy_collection_candidate.cod",
+      "assembly_listing_sha256": "962d054e7ccdde81a7242d2936d139d6c993bbf826bf7fa5d2d4e0bb6a789881"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "emit_surface",
+      "status": "unresolved",
+      "reason": "COFF relocation inventory differs from expected operands"
+    },
+    {
+      "id": "emit_legacy_surface",
+      "status": "unresolved",
+      "reason": "COFF relocation inventory differs from expected operands"
+    },
+    {
+      "id": "cull_scan_plane",
+      "address": 4210592,
+      "size": 480,
+      "candidate_size": 480,
+      "body_size": 449,
+      "status": "mismatch",
+      "literal_function_match": false,
+      "layout_verified": false,
+      "adjusted_bytes": 88,
+      "object_sha256": "ed5c0ea415be797dc2315329d03fe4cc92f0b9f4a65887b97967acdea778f8a1",
+      "compared_bytes": 392,
+      "dir32_bytes": 88,
+      "rel32_call_bytes": 0,
+      "internal_dir32_bytes": 20,
+      "different_bytes": 6,
+      "raw_bytes_equal": false,
+      "relocated_bytes_equal": false,
+      "reference_span_sha256": "9cc1965b735a76ee6331f04039278c761b1188a10bcb0006c8ccfe67a622dba6",
+      "resolved_span_sha256": "8af286d87a36e2dedecf3d4196c47adbc35ca3d58944af56c7ded55354576840",
+      "reason": "non-relocation bytes differ",
+      "first_difference_offset": 104
+    },
+    {
+      "id": "gather_static_cell",
+      "address": 4220080,
+      "size": 896,
+      "candidate_size": 896,
+      "body_size": 895,
+      "status": "mismatch",
+      "literal_function_match": false,
+      "layout_verified": false,
+      "adjusted_bytes": 160,
+      "object_sha256": "cd731de6d7f6de7819ca1cb62761a541a5b15647d4698f02968c8496a6568d34",
+      "compared_bytes": 736,
+      "dir32_bytes": 148,
+      "rel32_call_bytes": 12,
+      "internal_dir32_bytes": 0,
+      "different_bytes": 5,
+      "raw_bytes_equal": false,
+      "relocated_bytes_equal": false,
+      "reference_span_sha256": "b91c463bde7f7f3facf3f3ae58f1658a9a24f7c3da897963db44a76a49849ce9",
+      "resolved_span_sha256": "7aa692cb969e88e1cb9d2562b4cc751d17ede20b7e5daee804b3b214fad620d2",
+      "reason": "non-relocation bytes differ",
+      "first_difference_offset": 244
+    },
+    {
+      "id": "gather_legacy_cell",
+      "status": "unresolved",
+      "reason": "COFF relocation inventory differs from expected operands"
+    }
+  ],
+  "fixtures": [
+    {
+      "name": "emission",
+      "sha256": "e5e902866c00be07e1d001c9ef55b8e27e178808a67eb6a554de0b489997240a",
+      "passed": true,
+      "stdout": "Focused emission candidate behavior passed; byte matching remains unverified.\n"
+    },
+    {
+      "name": "culling",
+      "sha256": "0a72adcd70622f591880037bb02c9d476dd71bd309d66e7f65c6a0f2c50a630e",
+      "passed": true,
+      "stdout": "Culling fixture: 3038 checks, 0 failures across three x87 precisions\n"
+    },
+    {
+      "name": "collection",
+      "sha256": "84628cc34d96631c3ed8aa836a3dc092f8b7de0af3e76bba9ed150602fcdca0b",
+      "passed": true,
+      "stdout": "Static-cell fixture: 4208 checks, 0 failures across three x87 precisions\n"
+    },
+    {
+      "name": "legacy-collection",
+      "sha256": "8090c1c9457435b04218b7b829c68cc7723ab4f04f8f5708b943e7008ce492fb",
+      "passed": true,
+      "stdout": "Legacy collection: 1195 checks, 0 failures\n"
+    }
+  ],
+  "focused_python_artifact_tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "history_validation": {
+    "records": 19,
+    "accepted_functions": 14,
+    "whole_source_fresh": false
+  },
+  "full_regression_repeated": false,
+  "recovery_repeated": false,
+  "new_candidate_original_extent": {
+    "address": "0x004056C0",
+    "body_bytes": 809,
+    "padding_bytes": 7,
+    "span_bytes": 816,
+    "absolute_operands": 28,
+    "call_operands": 6
+  },
+  "culler_original_extent": {
+    "body_bytes": 449,
+    "embedded_table_bytes": 16,
+    "alignment_bytes": 15,
+    "span_bytes": 480
+  },
+  "notes": [
+    "Five candidates remain unverified; no history record or accepted target was added.",
+    "Culler float-array base restores EBP/EBX retention; six instruction bytes still differ at +0x68.",
+    "Collector retains five instruction-order differences at +0xF4 with all 40 operands verified.",
+    "Legacy collector matches total section size and relocation count, but operand positions differ. No adjusted byte-difference score assigned.",
+    "Sixteen legacy collector C/C++ layout probes were all unresolved; no source variant or compiler exception adopted.",
+    "Original executable was statically read only. Authored synthetic executables ran in the locked Docker runner with networking disabled.",
+    "Ghidra descriptive legacy-collector name, two-argument prototype and evidence comment saved; both world-traversal callers re-decompiled.",
+    "Historical recovery checkpoint remains unchanged; accepted current definitions still number 14, but current whole-source fingerprint differs from that historical full build."
+  ]
+}

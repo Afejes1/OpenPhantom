@@ -91,7 +91,7 @@ height/basis offset, rejects nonpositive or unordered camera depth, and invokes
 a scalar projection callback through camera+0x4C. Four boundary comparisons
 short-circuit on a passing corner. All four scalar callback variants were
 reviewed to establish the ABI and projected depth coordinate. The candidate's
-480-byte extent and checked internal switch-table destinations agree, but ten
+480-byte extent and checked internal switch-table destinations agree, but six
 instruction bytes differ. Its focused fixture passes; it remains outside the
 accepted registry. See [scan-culling evidence](docs/scan-culling-evidence.md).
 
@@ -106,5 +106,17 @@ x87 comparison trade places. Its focused VC5 fixture passes 4,208 checks,
 including opposite-infinity cases that exposed and corrected an unordered-bound
 discrepancy. See [static-cell evidence](docs/static-cell-evidence.md).
 The culler's additional processor/optimizer, arithmetic, inline-vector and
-indexing probes retained its ten-byte mismatch; no new compiler profile was
-accepted. The fourteen-function history remains unchanged.
+indexing probes did not resolve scheduling. A float-array base copy reduces
+its mismatch to six bytes; no new compiler profile was accepted. The fourteen-function history remains unchanged.
+
+## Legacy-cell collection under reconstruction
+
+The legacy collector at 0x004056C0 first traverses three optional header group
+indexes, then discovers active groups through eligible inline records. It reserves
+entries after the bucket helper, preserving callback-visible count and pointer
+reloads. Slab culling follows those group phases. Accepted cells publish scan
+position and zero cached height, then emit normal records or unseen references.
+A null unseen reference still increments an integer visit counter. The authored
+candidate has the full 816-byte extent and 34 relocations, but operand locations
+and instructions differ. Its focused fixture passes 1,195 checks. See
+[legacy-cell evidence](docs/legacy-cell-evidence.md). No new function is accepted.

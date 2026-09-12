@@ -1,17 +1,20 @@
 #include "culling.h"
+#include <string.h>
 /* FUNCTION: WMAIN 0x00403FA0 */
 int op_cull_scan_plane(int plane, const float *position, float height)
 {
-    op_scan_vector base, corner, projected;
+    float base[3];
+    op_scan_vector corner;
+    op_scan_vector projected;
     int index = 0;
     int *pair;
-    base = *(const op_scan_vector *)position;
-    if (height != 0.0f) base.x += height * op_scan_step_z[0];
-    base.y += height * op_scan_step_z[1];
-    base.z += height * op_scan_step_z[2];
+    memcpy(base, position, sizeof(base));
+    if (height != 0.0f) base[0] += height * op_scan_step_z[0];
+    base[1] += height * op_scan_step_z[1];
+    base[2] += height * op_scan_step_z[2];
     pair = &op_scan_corner_pairs[plane][1];
     for (; index < 4; index += 2, pair += 2) {
-        corner = base;
+        memcpy(&corner, base, sizeof(corner));
         if (pair[-1] != 0) {
             corner.x += op_scan_step_x[0];
             corner.y += op_scan_step_x[1];

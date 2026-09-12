@@ -77,10 +77,11 @@ classes/types, targets, addends, relocation inventories, instructions and paddin
 ## Current evidence and limits
 
 VC5 RTM 11.00.7022, /O2 /MT with /W4 /WX /Zi produces a 480-byte object section.
-All 22 relocation locations and all five internal label targets agree, but ten
+All 22 relocation locations and all five internal label targets agree, but six
 instruction bytes differ starting at function+0x68. The original loads the plane
-index before storing base Y and retains base Y/Z in EBP/EBX; this candidate
-stores Y before the index load and retains Y/Z in EBX/EBP. Neither matching
+index before storing base Y and retains base Y/Z in EBP/EBX. Using a float
+array for the copied base with inline memcpy restores the original retained registers; this candidate
+still stores Y before loading the plane index. Neither matching
 instruction count nor passing behavior is accepted as byte equality.
 
 The original-compiler synthetic fixture passed 3,038 checks over corner
@@ -94,5 +95,12 @@ only. See the [batch receipt](surface-batch-20260912.json).
 A later metadata pass stored the plain C three-argument Ghidra prototype
 (int plane, float *position, float height) and refreshed the legacy emitter
 caller. Position is only read by the observed function; the authored source
-retains const qualification. This metadata recovery does not change the ten-byte
-compiled mismatch or grant a new accepted function.
+retains const qualification. This metadata recovery does not establish a
+compiled match or add an accepted function.
+
+The later array-copy checkpoint reduces ten differing bytes to six. All 22
+operands and the complete 480-byte extent still verify, and all 3,038 focused
+checks pass. Source ordering, C/C++ frontend, header and multi-function context
+probes did not remove the remaining instruction-order difference. Multi-function
+objects were diagnostic only; no verifier or compiler-profile policy changed.
+See [the five-candidate receipt](legacy-cell-batch-20260912.json).
