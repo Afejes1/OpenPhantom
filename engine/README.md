@@ -13,7 +13,9 @@ code sections, verified address relocations, and all alignment padding.
 [Initial calibration](docs/calibration-20260912.json) records the first four
 functions; [chained build evidence](evidence/runs) records subsequent expansion.
 
-Candidates use reconstructed C, including documented inline assembly for the
+Candidates use reconstructed C and, where explicitly recorded, VC5 C++. The
+[surface-entry helper](docs/surface-entry-evidence.md) records its C++ frontend
+choice. Candidates also include documented inline assembly for the
 [x87 projection kernel](docs/x87-projection-evidence.md). Its C4725 advisory
 waiver does not exclude any comparison bytes. Modern MSVC provides a separate
 supplemental behavior test and never certifies original-toolchain matching.

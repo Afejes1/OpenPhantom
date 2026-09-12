@@ -6,22 +6,24 @@ Generated from registry.json, target.json and chained verification records. No g
 
 Whole executable: **incomplete**. Original linked placement: **unverified**.
 
-| Module | Function / source | Original address | Last verified result | Bytes / address bytes |
-|---|---|---|---|---|
-| material | [material_mode](../src/material_mode.c) | 0x0040E840 | raw-code-match | 41 / 0 |
-| spatial_grid | [grid_cell](../src/grid_cell.c) | 0x00406E22 | relocation-adjusted-match | 24 / 4 |
-| map_geometry | [plane_coordinate](../src/plane_coordinate.c) | 0x0040DCEE | relocation-adjusted-match | 384 / 8 |
-| view_projection | [update_projection](../src/update_projection.c) | 0x0040EF40 | relocation-adjusted-match | 144 / 48 |
-| view_projection | [face_clip_flags](../src/face_clip_flags.c) | 0x0040F170 | raw-code-match | 64 / 0 |
-| view_projection | [transform_project](../src/transform_project.c) | 0x0040EFD0 | relocation-adjusted-match | 416 / 44 |
-| mesh_submission | [set_mesh_render_thing](../src/set_mesh_render_thing.c) | 0x0040F1B0 | relocation-adjusted-match | 48 / 16 |
-| render_queue | [peek_projected_vertices](../src/peek_projected_vertices.c) | 0x00402130 | relocation-adjusted-match | 37 / 12 |
-| render_queue | [peek_face_packet](../src/peek_face_packet.c) | 0x00402021 | relocation-adjusted-match | 37 / 12 |
-| render_queue | [queue_face_packet](../src/queue_face_packet.c) | 0x00401EB8 | relocation-adjusted-match | 361 / 68 |
-| render_queue | [submit_gathered_surfaces](../src/submit_gathered_surfaces.c) | 0x00406830 | relocation-adjusted-match | 48 / 20 |
+| Module | Function / source | Original address | VC5 frontend | Last verified result | Bytes / address bytes |
+|---|---|---|---|---|---|
+| material | [material_mode](../src/material_mode.c) | 0x0040E840 | c | raw-code-match (historical; current source unverified) | 41 / 0 |
+| spatial_grid | [grid_cell](../src/grid_cell.c) | 0x00406E22 | c | relocation-adjusted-match (historical; current source unverified) | 24 / 4 |
+| map_geometry | [plane_coordinate](../src/plane_coordinate.c) | 0x0040DCEE | c | relocation-adjusted-match (historical; current source unverified) | 384 / 8 |
+| view_projection | [update_projection](../src/update_projection.c) | 0x0040EF40 | c | relocation-adjusted-match (historical; current source unverified) | 144 / 48 |
+| view_projection | [face_clip_flags](../src/face_clip_flags.c) | 0x0040F170 | c | raw-code-match (historical; current source unverified) | 64 / 0 |
+| view_projection | [transform_project](../src/transform_project.c) | 0x0040EFD0 | c | relocation-adjusted-match (historical; current source unverified) | 416 / 44 |
+| mesh_submission | [set_mesh_render_thing](../src/set_mesh_render_thing.c) | 0x0040F1B0 | c | relocation-adjusted-match (historical; current source unverified) | 48 / 16 |
+| render_queue | [peek_projected_vertices](../src/peek_projected_vertices.c) | 0x00402130 | c | relocation-adjusted-match (historical; current source unverified) | 37 / 12 |
+| render_queue | [peek_face_packet](../src/peek_face_packet.c) | 0x00402021 | c | relocation-adjusted-match (historical; current source unverified) | 37 / 12 |
+| render_queue | [queue_face_packet](../src/queue_face_packet.c) | 0x00401EB8 | c | relocation-adjusted-match (historical; current source unverified) | 361 / 68 |
+| render_queue | [submit_gathered_surfaces](../src/submit_gathered_surfaces.c) | 0x00406830 | c | relocation-adjusted-match (historical; current source unverified) | 48 / 20 |
+| render_queue | [set_frame_state](../src/set_frame_state.c) | 0x00401D30 | c | unverified | 392 / 172 |
+| render_queue | [push_surface_draw_entry](../src/push_surface_draw_entry.cpp) | 0x004059F0 | c++ | unverified | 96 / 24 |
 
-Registered functions: **11**. Last recorded matches with unchanged definitions: **11**.
-Current source fingerprint agrees with the latest run: **yes**.
+Registered functions: **13**. Last recorded matches with unchanged definitions: **11**.
+Current source fingerprint agrees with the latest run: **no**.
 This count is not whole-program coverage and does not certify the modern TPM reconstruction.
 
 Latest build: '20260912-134617-fd23e5ce', source commit 'e699b564c701b5b69a5c65111edd65701a287148'.
@@ -41,6 +43,8 @@ History contains 13 verified build records.
 - **peek_face_packet**: Signed upper-bound check only; counter validity is a caller invariant; does not reserve a packet. Exceptions: none.
 - **queue_face_packet**: Write render tag before face/material validation; Increment then roll back the bucket count on capacity failure; Successful submission appends in FIFO order and advances the packet count; no independent packet-capacity check; Retain descriptive local names because VC5 stack-slot assignment changes with identifiers. Exceptions: none.
 - **submit_gathered_surfaces**: Zero count leaves the previous result untouched and does not call the renderer; Preserve camera-plus-eight and count arguments although the reviewed callee does not read them; Compare all eight trailing NOP alignment bytes. Exceptions: none.
+- **set_frame_state**: Initial frame flags are written before being replaced by backend flags; Software-fog values remain stale when setup is skipped; Reciprocals and range are written before rejecting negative or VC5-unordered ranges; zero range stays enabled; An auxiliary frame flag at 0x0059DA00 has no reads in the returned direct-XREF set; its purpose remains unresolved. Exceptions: none.
+- **push_surface_draw_entry**: VC5 RTM C++ frontend is required for the matching five-bit opacity instruction order in this reconstruction; Nonzero packed flags select the special bucket even when the low five bits expand to zero; Preserve existing nonzero opacity and all entry fields except next; caller advances count and writes surface; Compare both trailing NOP bytes; caller owns record and bucket bounds. Exceptions: none.
 
 ## Unresolved program work
 

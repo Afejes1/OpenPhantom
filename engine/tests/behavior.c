@@ -113,6 +113,8 @@ static void clip_flag_tests(void)
 #include "mesh_behavior.h"
 #include "queue_behavior.h"
 #include "gathered_behavior.h"
+#include "frame_state_behavior.h"
+#include "surface_entry_behavior.h"
 
 int main(void)
 {
@@ -150,6 +152,8 @@ int main(void)
     mesh_context_tests();
     queue_tests();
     gathered_tests();
+    frame_state_tests();
+    surface_entry_tests();
     if (failures) return 1;
 #ifdef OP_VC5_BEHAVIOR
     puts("VC5 behavioral fixture passed, including x87 unordered fallback.");

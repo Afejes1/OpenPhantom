@@ -4,7 +4,7 @@ from pathlib import Path
 import re
 from formats import require
 from matching import (MATCHES, canonical_hash, digest, binding_kind,
-                      expected_operand, validate_bindings)
+                      expected_operand, validate_bindings, source_language)
 from source_policy import validate_source_policy
 
 
@@ -68,6 +68,7 @@ def validate_event(event):
         require(result["size"] == result["candidate_size"] == spec["size"], "history size differs")
         require(result["address"] == spec["address"], "history address differs")
         require(result["body_size"] == spec.get("body_size", spec["size"]), "history body size differs")
+        source_language(spec)
         validate_bindings(spec)
         adjusted = len(spec["bindings"]) * 4
         call_bytes = sum(4 for b in spec["bindings"] if binding_kind(b) == "rel32-call")
@@ -175,15 +176,15 @@ def render_progress(root, target, registry, history):
     lines = ["# Reconstruction progress", "", registry["inventory_scope"] + ".", "",
              "Generated from registry.json, target.json and chained verification records. No game bytes are stored here.", "",
              "Whole executable: **incomplete**. Original linked placement: **unverified**.", "",
-             "| Module | Function / source | Original address | Last verified result | Bytes / address bytes |", "|---|---|---|---|---|"]
+             "| Module | Function / source | Original address | VC5 frontend | Last verified result | Bytes / address bytes |", "|---|---|---|---|---|---|"]
     for spec in target["functions"]:
         previous = results.get(spec["id"])
         valid = bool(previous) and previous["spec"] == spec and not entries[spec["id"]]["exceptions"]
         status = previous["result"]["status"] if valid else "unverified"
         matched += int(valid)
         label = status if source_current or not valid else status + " (historical; current source unverified)"
-        lines.append("| %s | [%s](../%s) | 0x%08X | %s | %d / %d |" % (
-            entries[spec["id"]]["module"], spec["id"], spec["source"], spec["address"], label, spec["size"], len(spec["bindings"]) * 4))
+        lines.append("| %s | [%s](../%s) | 0x%08X | %s | %s | %d / %d |" % (
+            entries[spec["id"]]["module"], spec["id"], spec["source"], spec["address"], source_language(spec), label, spec["size"], len(spec["bindings"]) * 4))
     lines += ["", "Registered functions: **%d**. Last recorded matches with unchanged definitions: **%d**." % (len(entries), matched),
               "Current source fingerprint agrees with the latest run: **%s**." % ("yes" if source_current else "no"),
               "This count is not whole-program coverage and does not certify the modern TPM reconstruction.", ""]

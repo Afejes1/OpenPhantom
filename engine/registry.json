@@ -212,6 +212,46 @@
         "Compare all eight trailing NOP alignment bytes"
       ],
       "exceptions": []
+    },
+    {
+      "id": "set_frame_state",
+      "module": "render_queue",
+      "analysis_name": "initialize_model_frame_state",
+      "purpose": "Reset model queue counters, publish camera projection, configure frame flags and initialize software-fog globals",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/frame-state-evidence.md"
+      ],
+      "behavior_tests": [
+        "tests/frame_state_behavior.h"
+      ],
+      "quirks": [
+        "Initial frame flags are written before being replaced by backend flags",
+        "Software-fog values remain stale when setup is skipped",
+        "Reciprocals and range are written before rejecting negative or VC5-unordered ranges; zero range stays enabled",
+        "An auxiliary frame flag at 0x0059DA00 has no reads in the returned direct-XREF set; its purpose remains unresolved"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "push_surface_draw_entry",
+      "module": "render_queue",
+      "analysis_name": "link_surface_draw_entry",
+      "purpose": "Select a texture or special-opacity bucket and prepend the current gathered surface entry without reserving it",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/surface-entry-evidence.md"
+      ],
+      "behavior_tests": [
+        "tests/surface_entry_behavior.h"
+      ],
+      "quirks": [
+        "VC5 RTM C++ frontend is required for the matching five-bit opacity instruction order in this reconstruction",
+        "Nonzero packed flags select the special bucket even when the low five bits expand to zero",
+        "Preserve existing nonzero opacity and all entry fields except next; caller advances count and writes surface",
+        "Compare both trailing NOP bytes; caller owns record and bucket bounds"
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

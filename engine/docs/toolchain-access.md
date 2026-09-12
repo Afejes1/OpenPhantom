@@ -37,7 +37,9 @@ Windows installation or Hyper-V VM was needed for the successful calibration.
 
 1. Start Docker Desktop and obtain your private VC5 tree. Retain its acquisition
    provenance. The required native files include bin/cl.exe, bin/link.exe,
-   bin/c1.dll, **bin/c2.exe**, include/, and lib/libcmt.lib.
+   bin/c1.dll, **bin/c2.exe**, include/, and lib/libcmt.lib. Sources recorded as
+   C++ also require fingerprinted bin/c1xx.dll; the current private inventory
+   already includes it.
 2. From the repository root, download the pinned open-source wibo runtime:
    ```powershell
    New-Item -ItemType Directory -Force engine/private/container-runtime | Out-Null

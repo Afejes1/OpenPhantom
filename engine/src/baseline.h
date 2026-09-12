@@ -1,6 +1,10 @@
 #ifndef OPENPHANTOM_BASELINE_H
 #define OPENPHANTOM_BASELINE_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* Partial layouts only. Names describe observed accesses, not original symbols. */
 typedef struct op_viewport {
     unsigned char opaque_00[8];
@@ -102,5 +106,47 @@ extern void *op_gathered_world;
 extern int op_last_submitted_surface_count;
 int op_draw_surface_buckets(void *world, const void *camera_data, unsigned int count);
 void op_submit_gathered_surfaces(void);
+
+/* Partial world fields read by frame setup, not a complete world definition. */
+typedef struct op_world_fog {
+    unsigned char opaque_00[0x210];
+    unsigned int flags;
+    unsigned char opaque_214[4];
+    float fog_start, fog_end;
+} op_world_fog;
+extern op_world_fog *op_active_world;
+extern unsigned int op_frame_render_flags;
+extern int op_frame_option_89fde4, op_frame_option_89fdec, op_frame_option_59da00;
+extern int op_frame_mode, op_vertex_fog_enabled;
+extern unsigned int op_frame_extra_render_flags;
+extern float op_fog_start, op_fog_end, op_fog_range;
+extern float op_fog_start_reciprocal, op_fog_end_reciprocal;
+void op_backend_begin_frame(void);
+unsigned int op_backend_render_flags(void);
+int op_backend_fog_capability(void);
+void op_set_frame_state(void);
+
+/* Partial surface and gathered-list layouts established at the call sites. */
+typedef struct op_draw_surface {
+    unsigned char opaque_00[0x0e];
+    unsigned char opacity;
+    unsigned char opaque_0f[0x15];
+    unsigned char texture_index;
+    unsigned char opaque_25[6];
+    unsigned char packed_opacity;
+} op_draw_surface;
+typedef struct op_surface_draw_entry {
+    op_draw_surface *surface;
+    struct op_surface_draw_entry *next;
+    unsigned int opaque_08;
+} op_surface_draw_entry;
+extern unsigned int op_special_surface_bucket;
+extern op_surface_draw_entry op_surface_draw_entries[];
+extern op_surface_draw_entry *op_surface_buckets[];
+void op_push_surface_draw_entry(op_draw_surface *surface);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif

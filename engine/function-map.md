@@ -16,3 +16,7 @@ See [view/projection evidence](docs/view-projection-evidence.md) for scope and
 remaining questions. Other existing Ghidra names are preserved.
 
 | 0x00406830 | FUN_00406830 | submit_gathered_b3d_surfaces | HIGH | Submit nonempty gathered surfaces and store returned count | Full body and eight padding bytes; caller render_active_b3d_world; callee draw_b3d_surface_buckets; four global accesses and three cdecl arguments; docs/gathered-submission-evidence.md |
+
+| 0x00401D30 | FUN_00401d30 | initialize_model_frame_state | HIGH | Reset queue/projection state, select frame flags and initialize software fog | Complete body; three callers, four callees, world fields and downstream flag reader; docs/frame-state-evidence.md |
+
+| 0x004059F0 | FUN_004059f0 | link_surface_draw_entry | HIGH | Expand missing opacity and prepend the current entry to its texture/special bucket | Full body and padding; both callers own allocation; world.texture_count supplies special bucket; docs/surface-entry-evidence.md |

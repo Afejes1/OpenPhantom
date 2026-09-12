@@ -11,7 +11,7 @@ def validate_source_policy(root, target):
         require(spec["source"] not in expected, "one source file per current function is required")
         expected[spec["source"]] = codes
     for path in (root / "src").rglob("*"):
-        if path.suffix not in (".c", ".h"):
+        if path.suffix not in (".c", ".cpp", ".h"):
             continue
         text = path.read_text(encoding="utf-8")
         code = re.sub(r"/\*.*?\*/|//[^\n]*", "", text, flags=re.S)
@@ -23,4 +23,4 @@ def validate_source_policy(root, target):
         require(actual == required, "unrecorded or unbalanced warning policy in " + relative)
         require(not re.search(r"\b(?:__pragma|_Pragma)\b", code), "unreviewed diagnostic directive")
         require(not re.search(r"\b(?:_emit|__emit)\b|__declspec\s*\(\s*naked\s*\)", code),
-                "raw byte insertion or manufactured function frames are not matching C evidence")
+                "raw byte insertion or manufactured function frames are not matching C/C++ evidence")

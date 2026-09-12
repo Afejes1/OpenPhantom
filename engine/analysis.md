@@ -51,3 +51,19 @@ retains its return value. It preserves a previous result on an empty queue.
 See [evidence](docs/gathered-submission-evidence.md). The team manifest lists
 this in bp/bapdraw.c as not done; their labels guide scheduling separately from
 our own comparison records.
+
+## Model frame initialization
+
+The 0x00401D30 initializer connects the matched projection and queue routines
+to frame flags and software fog. It writes reciprocals and range before rejecting
+negative or unordered ranges; zero range stays enabled. The extra word at
+0x004DD6C8 is a render-flag mask, confirmed by its downstream OR operation.
+See [frame evidence](docs/frame-state-evidence.md).
+
+## Legacy surface bucket insertion
+
+The 0x004059F0 helper chooses the ordinary texture bucket or the extra bucket
+indexed by world.texture_count, preserving or expanding opacity before prepending
+the current entry. Callers fill and reserve entries. Its matching reconstruction
+uses the original VC5 C++ frontend, recorded separately from historical-language
+claims. See [surface-entry evidence](docs/surface-entry-evidence.md).

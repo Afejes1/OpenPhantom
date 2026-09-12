@@ -10,7 +10,7 @@ import tempfile
 import uuid
 
 from formats import VerificationError, read_binary, require
-from matching import canonical_hash, digest
+from matching import canonical_hash, digest, source_language
 from runners import run_tool, runtime_identity, validate_runner
 from source_policy import validate_source_policy
 
@@ -96,14 +96,21 @@ def source_snapshot(root):
     if (root / "registry.json").exists():
         files.append(root / "registry.json")
     for folder in ("src", "tools"):
-        files.extend(p for p in (root / folder).rglob("*") if p.suffix in (".c", ".h", ".py"))
-    files.extend(p for p in (root / "tests").rglob("*") if p.suffix in (".c", ".h"))
+        files.extend(p for p in (root / folder).rglob("*") if p.suffix in (".c", ".cpp", ".h", ".py"))
+    files.extend(p for p in (root / "tests").rglob("*") if p.suffix in (".c", ".cpp", ".h"))
     return {p.relative_to(root).as_posix(): digest(p.read_bytes()) for p in sorted(files)}
+
+
+def check_frontends(target, lock):
+    if any(source_language(s) == "c++" for s in target["functions"]):
+        require(any(Path(p).name.lower() == "c1xx.dll" for p in lock["files"]),
+                "VC5 C++ frontend c1xx.dll must be fingerprinted")
 
 
 def run_build(root, target, config, lock):
     validate_source_policy(root, target)
     check_lock(config, lock)
+    check_frontends(target, lock)
     env = environment(config)
     out = root / "build" / (time.strftime("%Y%m%d-%H%M%S-") + uuid.uuid4().hex[:8])
     out.mkdir(parents=True, exist_ok=False)

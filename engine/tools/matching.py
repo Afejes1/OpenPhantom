@@ -45,8 +45,18 @@ def load_target(path):
                 "source must be within engine/src")
         require(spec["flags"] in (["/Od", "/MT"], ["/O2", "/MT"], ["/Ox", "/MT"]),
                 "unapproved candidate compiler options")
+        source_language(spec)
         validate_bindings(spec)
     return target
+
+
+
+def source_language(spec):
+    suffix = Path(spec["source"]).suffix
+    require(suffix in (".c", ".cpp"), "unsupported source language extension")
+    expected = "c++" if suffix == ".cpp" else "c"
+    require(spec.get("language", expected) == expected, "source extension and language differ")
+    return expected
 
 
 def binding_kind(binding):
