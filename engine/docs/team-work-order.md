@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **11** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **958**.
+Our last recorded matches cover **12** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **957**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -31,7 +31,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x00402130 | bapdraw_reserveVerts | not_done | Recorded match: [peek_projected_vertices](../src/peek_projected_vertices.c) |
 | 0x00402155 | bapdraw_flushQueue | not_done | Queued; no local match recorded |
 | 0x004025B0 | bapdraw_clipSlopePlane &#124; bapdraw_clipPoly &#124; bapdraw_clipDepthPlane &#124; bapdraw_clipSwap | not_done | Queued; no local match recorded |
-| 0x00403EF0 | bapdrawOld_stepScan | not_done | Queued; no local match recorded |
+| 0x00403EF0 | bapdrawOld_stepScan | not_done | Recorded match: [step_scan](../src/step_scan.c) |
 | 0x00403FA0 | bapdrawOld_cullAgainstPlane | not_done | Queued; no local match recorded |
 | 0x00404180 | bapdrawOld_frameSetup | not_done | Queued; no local match recorded |
 | 0x00404730 | bapdraw_drawWorld | not_done | Queued; no local match recorded |
@@ -47,7 +47,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 
 | Reported file | Team not done | Local recorded matches within that list | Remaining |
 |---|---|---|---|
-| bp/bapdraw.c | 18 | 6 | 12 |
+| bp/bapdraw.c | 18 | 7 | 11 |
 | bp/bapmodel.c | 8 | 4 | 4 |
 | bp/bapmap.c | 14 | 1 | 13 |
 | bp/baplight.c | 6 | 0 | 6 |
