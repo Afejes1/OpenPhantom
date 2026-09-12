@@ -19,6 +19,29 @@ CASES = (("candidate.cpp", "target.json"), ("legacy_candidate.c", "legacy-target
          ("collection_candidate.cpp", "collection-target.json"))
 
 
+def candidate_artifact(source, spec, obj, listing):
+    """Keep inspectable provenance even when strict comparison cannot proceed."""
+    object_bytes = obj.read_bytes()
+    function_bytes, relocations = COFF(object_bytes).function(spec["symbol"])
+    listing_bytes = listing.read_bytes()
+    require(bool(listing_bytes.strip()), "compiler assembly listing is empty")
+    return {"id": spec["id"], "source": source, "symbol": spec["symbol"],
+            "object": obj.name, "object_sha256": digest(object_bytes),
+            "function_section_bytes": len(function_bytes),
+            "function_section_sha256": digest(function_bytes),
+            "relocation_count": len(relocations),
+            "assembly_listing": listing.name,
+            "assembly_listing_sha256": digest(listing_bytes)}
+
+
+def verify_artifacts(out, artifacts):
+    for artifact in artifacts:
+        for name, checksum in (("object", "object_sha256"),
+                               ("assembly_listing", "assembly_listing_sha256")):
+            require(digest((out / artifact[name]).read_bytes()) == artifact[checksum],
+                    "research artifact changed during build: " + artifact[name])
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=("compare", "behavior"))
@@ -52,10 +75,11 @@ def main():
     if args.command == "compare":
         require(args.reference is not None, "compare requires --reference")
         original = verify_reference(args.reference.read_bytes(), target)
-    report = {"schema": 1, "scope": "unverified-surface-research-candidates",
+    report = {"schema": 2, "scope": "unverified-surface-research-candidates",
               "accepted_history_record": False, "whole_executable_match": False,
               "toolchain_lock_sha256": canonical_hash(lock), "source_snapshot": snapshot,
-              "commands": [], "comparisons": [], "fixtures": [], "behavior_passed": None,
+              "commands": [], "artifacts": [], "comparisons": [], "fixtures": [],
+              "behavior_passed": None,
               "completed": False}
     def invoke(command):
         process, invoked = run_tool(config, command, ROOT, out, environment(config), 60)
@@ -69,8 +93,11 @@ def main():
         objects = {}
         for (source, _), spec in zip(CASES, specs):
             obj = out / (spec["id"] + ".obj")
-            invoke([config["compiler"], *COMMON_FLAGS, *spec["flags"],
+            # /FAcs writes a source-stem .cod listing in the build working directory.
+            listing = out / (Path(source).stem + ".cod")
+            invoke([config["compiler"], *COMMON_FLAGS, *spec["flags"], "/FAcs",
                     "/Fd" + str(out / "probe.pdb"), "/Fo" + str(obj), str(out / source)])
+            report["artifacts"].append(candidate_artifact(source, spec, obj, listing))
             objects[spec["id"]] = obj
             if original is not None:
                 try:
@@ -104,6 +131,7 @@ def main():
                 fixture.update(passed=True, stdout=process.stdout)
                 print(process.stdout, end="")
         require(snapshot == snapshot_inputs(), "research inputs changed during build")
+        verify_artifacts(out, report["artifacts"])
         check_lock(config, lock)
         if args.command == "behavior":
             report["behavior_passed"] = True

@@ -1,0 +1,180 @@
+{
+  "schema": 1,
+  "kind": "focused-research-artifact-checkpoint",
+  "date": "2026-09-12",
+  "accepted_history_record": false,
+  "accepted_function_count_unchanged": 14,
+  "whole_executable_match": false,
+  "compiler": "Microsoft VC5 RTM 11.00.7022",
+  "linker": "Microsoft 5.00.7022",
+  "listing_option": "/FAcs",
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "runner_sha256": "fa6de9123876d2e4003864f4b63f86324b962fcccc44a634801166980f1eb2b2",
+  "comparison_build": "surface-batch-70b12481e4dd",
+  "comparison_report_sha256": "5259eb24b947238159922722661068ed0d4277b9855efa9777977258e9bb3f9a",
+  "behavior_build": "surface-batch-2f206a10a4e9",
+  "behavior_report_sha256": "0a9b9f8cc6bbd250e113644f97523be414e46541a0f9f8e6de31706f34168833",
+  "comparison_artifacts": [
+    {
+      "id": "emit_surface",
+      "source": "candidate.cpp",
+      "symbol": "_op_emit_surface",
+      "object": "emit_surface.obj",
+      "object_sha256": "9b209bb14a9756f2241426c366492c202a0f2d6ff41feb03db1d8091c5e27337",
+      "function_section_bytes": 432,
+      "function_section_sha256": "74a61b855e3ceba2010b1825849331cccc34fe0073c231dd1a9ff46003649270",
+      "relocation_count": 22,
+      "assembly_listing": "candidate.cod",
+      "assembly_listing_sha256": "577265348f3ef69c1d9f902c275757fb3e223074794f26633d5d9be489905f20"
+    },
+    {
+      "id": "emit_legacy_surface",
+      "source": "legacy_candidate.c",
+      "symbol": "_op_emit_legacy_surface",
+      "object": "emit_legacy_surface.obj",
+      "object_sha256": "fe5cfdb5835c93b50f62f62f8b2383e80e22ce59a14fe9b00e31db9c4046183c",
+      "function_section_bytes": 672,
+      "function_section_sha256": "d836069eb5e41c340c57126532e93c3957a6b8592cdd16b335a541f6f5c81c06",
+      "relocation_count": 44,
+      "assembly_listing": "legacy_candidate.cod",
+      "assembly_listing_sha256": "7720a50b3df19547b2bc6cf7efc2394a8ab411bb6a6c617d263b26233d757c45"
+    },
+    {
+      "id": "cull_scan_plane",
+      "source": "culling_candidate.c",
+      "symbol": "_op_cull_scan_plane",
+      "object": "cull_scan_plane.obj",
+      "object_sha256": "01d38802994275ae24454f3a7a8a7046a3695bd470e711842fb8677f2537d0cc",
+      "function_section_bytes": 480,
+      "function_section_sha256": "32d8ed3d86c6f39976effb6e997bf40b762fd7bb4af7bc7b0479d86c0c064a15",
+      "relocation_count": 22,
+      "assembly_listing": "culling_candidate.cod",
+      "assembly_listing_sha256": "9b655dea2208f45cc60bf9eae9970e4464810db509649b06f8e6cf661a8a16cf"
+    },
+    {
+      "id": "gather_static_cell",
+      "source": "collection_candidate.cpp",
+      "symbol": "_op_gather_static_cell",
+      "object": "gather_static_cell.obj",
+      "object_sha256": "df3efd675acf2edf23f734d7800a61c0e5792eac8389e5e4dcd135bf3612b684",
+      "function_section_bytes": 896,
+      "function_section_sha256": "06bdec30efadc264235af23e535b7c93733ecf84ca36cad4d0a4d811536b49d3",
+      "relocation_count": 40,
+      "assembly_listing": "collection_candidate.cod",
+      "assembly_listing_sha256": "e5be18705a84b26476fbeeb635d90f593a2055c592b0db3563da36fa975db345"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "emit_surface",
+      "status": "unresolved",
+      "reason": "COFF relocation inventory differs from expected operands"
+    },
+    {
+      "id": "emit_legacy_surface",
+      "status": "unresolved",
+      "reason": "COFF relocation inventory differs from expected operands"
+    },
+    {
+      "id": "cull_scan_plane",
+      "address": 4210592,
+      "size": 480,
+      "candidate_size": 480,
+      "body_size": 449,
+      "status": "mismatch",
+      "literal_function_match": false,
+      "layout_verified": false,
+      "adjusted_bytes": 88,
+      "object_sha256": "01d38802994275ae24454f3a7a8a7046a3695bd470e711842fb8677f2537d0cc",
+      "compared_bytes": 392,
+      "dir32_bytes": 88,
+      "rel32_call_bytes": 0,
+      "internal_dir32_bytes": 20,
+      "different_bytes": 10,
+      "raw_bytes_equal": false,
+      "relocated_bytes_equal": false,
+      "reference_span_sha256": "9cc1965b735a76ee6331f04039278c761b1188a10bcb0006c8ccfe67a622dba6",
+      "resolved_span_sha256": "d770706b2cb4acfc73bf1a2491d91cf851afbea7fcac6eb94cc0945157e6addb",
+      "reason": "non-relocation bytes differ",
+      "first_difference_offset": 104
+    },
+    {
+      "id": "gather_static_cell",
+      "status": "unresolved",
+      "reason": "COFF relocation inventory differs from expected operands"
+    }
+  ],
+  "behavior_artifacts": [
+    {
+      "id": "emit_surface",
+      "source": "candidate.cpp",
+      "symbol": "_op_emit_surface",
+      "object": "emit_surface.obj",
+      "object_sha256": "bb3b1288c0e15e53f821bb8a65c296838b17a13890ee23998c23da7e60d734df",
+      "function_section_bytes": 432,
+      "function_section_sha256": "74a61b855e3ceba2010b1825849331cccc34fe0073c231dd1a9ff46003649270",
+      "relocation_count": 22,
+      "assembly_listing": "candidate.cod",
+      "assembly_listing_sha256": "577265348f3ef69c1d9f902c275757fb3e223074794f26633d5d9be489905f20"
+    },
+    {
+      "id": "emit_legacy_surface",
+      "source": "legacy_candidate.c",
+      "symbol": "_op_emit_legacy_surface",
+      "object": "emit_legacy_surface.obj",
+      "object_sha256": "af3e6cdcb9ba17e816b4a331298c3aa4009b840cf5883ae3262761f46b6ea2e3",
+      "function_section_bytes": 672,
+      "function_section_sha256": "d836069eb5e41c340c57126532e93c3957a6b8592cdd16b335a541f6f5c81c06",
+      "relocation_count": 44,
+      "assembly_listing": "legacy_candidate.cod",
+      "assembly_listing_sha256": "7720a50b3df19547b2bc6cf7efc2394a8ab411bb6a6c617d263b26233d757c45"
+    },
+    {
+      "id": "cull_scan_plane",
+      "source": "culling_candidate.c",
+      "symbol": "_op_cull_scan_plane",
+      "object": "cull_scan_plane.obj",
+      "object_sha256": "fd0fded8a7775bc4d3b2ae42dec96af4c0974b116ee975e2eb807655c4bc104b",
+      "function_section_bytes": 480,
+      "function_section_sha256": "32d8ed3d86c6f39976effb6e997bf40b762fd7bb4af7bc7b0479d86c0c064a15",
+      "relocation_count": 22,
+      "assembly_listing": "culling_candidate.cod",
+      "assembly_listing_sha256": "9b655dea2208f45cc60bf9eae9970e4464810db509649b06f8e6cf661a8a16cf"
+    },
+    {
+      "id": "gather_static_cell",
+      "source": "collection_candidate.cpp",
+      "symbol": "_op_gather_static_cell",
+      "object": "gather_static_cell.obj",
+      "object_sha256": "aa12738db23750db8764a407f470ee473bd4bf395d6d80cf2e66ca690ce68478",
+      "function_section_bytes": 896,
+      "function_section_sha256": "06bdec30efadc264235af23e535b7c93733ecf84ca36cad4d0a4d811536b49d3",
+      "relocation_count": 40,
+      "assembly_listing": "collection_candidate.cod",
+      "assembly_listing_sha256": "e5be18705a84b26476fbeeb635d90f593a2055c592b0db3563da36fa975db345"
+    }
+  ],
+  "fixtures": [
+    {
+      "name": "emission",
+      "sha256": "64115825ce4a6389059c8bbc24d0d01abee09c4b79c7bd5617d2356290f6e335",
+      "passed": true,
+      "stdout": "Focused emission candidate behavior passed; byte matching remains unverified.\n"
+    },
+    {
+      "name": "culling",
+      "sha256": "90d90def5ddef060927178e924de2ef21d3778e395bae2e40337e30ba7d5a09a",
+      "passed": true,
+      "stdout": "Culling fixture: 3038 checks, 0 failures across three x87 precisions\n"
+    },
+    {
+      "name": "collection",
+      "sha256": "bfca87ef0605cc6606ccc7c860d0d1e72540b528ab010c0e217b6a9604281e6f",
+      "passed": true,
+      "stdout": "Static-cell fixture: 4184 checks, 0 failures across three x87 precisions\n"
+    }
+  ],
+  "additional_artifact_tamper_tests_run": false,
+  "exclusions": []
+}

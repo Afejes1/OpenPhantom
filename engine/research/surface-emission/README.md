@@ -30,12 +30,16 @@ controlled projection callback; and the collector with a controlled affine
 callee. It requires the locked Docker runner and does not read or execute the game.
 
 Each run records commands, compiler/runtime fingerprints, candidate and verifier
-source hashes, object/comparison results and fixture hashes in a fresh private
-build directory. Completion is set only after source/toolchain freshness checks.
+source hashes, object/comparison results, VC5 /FAcs assembly listings and fixture
+hashes in a fresh private build directory. Schema 2 records object, complete raw
+function-section and listing hashes even for unresolved comparisons. Completion
+requires source/toolchain freshness and unchanged object/listing hashes.
 No command creates an accepted full-build history record. The
-[latest focused receipt](../../docs/static-cell-batch-20260912.json) records this
-four-candidate checkpoint; the [earlier receipt](../../docs/surface-batch-20260912.json)
-retains the previous three-candidate snapshot.
+[artifact checkpoint](../../docs/surface-artifacts-20260912.md) explains the
+latest focused build and remaining compiler findings, with a linked hash receipt.
+The [collector receipt](../../docs/static-cell-batch-20260912.json) and
+[earlier receipt](../../docs/surface-batch-20260912.json) retain the preceding
+four- and three-candidate snapshots.
 
 ## Focused fixture coverage
 
