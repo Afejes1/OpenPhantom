@@ -1,0 +1,136 @@
+{
+  "id": "cull_scan_plane",
+  "address": 4210592,
+  "size": 480,
+  "body_size": 449,
+  "source": "src/cull_scan_plane.c",
+  "symbol": "_op_cull_scan_plane",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 17,
+      "address": 4882476,
+      "float32": 0.0
+    },
+    {
+      "offset": 56,
+      "address": 9169412,
+      "symbol": "_op_scan_step_z"
+    },
+    {
+      "offset": 78,
+      "address": 9169412,
+      "symbol": "_op_scan_step_z",
+      "addend": 4
+    },
+    {
+      "offset": 86,
+      "address": 9169412,
+      "symbol": "_op_scan_step_z",
+      "addend": 8
+    },
+    {
+      "offset": 129,
+      "address": 5889784,
+      "symbol": "_op_scan_corner_pairs",
+      "addend": 4
+    },
+    {
+      "offset": 172,
+      "address": 9169388,
+      "symbol": "_op_scan_step_x"
+    },
+    {
+      "offset": 180,
+      "address": 9169388,
+      "symbol": "_op_scan_step_x",
+      "addend": 4
+    },
+    {
+      "offset": 188,
+      "address": 9169388,
+      "symbol": "_op_scan_step_x",
+      "addend": 8
+    },
+    {
+      "offset": 229,
+      "address": 9169400,
+      "symbol": "_op_scan_step_y"
+    },
+    {
+      "offset": 237,
+      "address": 9169400,
+      "symbol": "_op_scan_step_y",
+      "addend": 4
+    },
+    {
+      "offset": 245,
+      "address": 9169400,
+      "symbol": "_op_scan_step_y",
+      "addend": 8
+    },
+    {
+      "offset": 271,
+      "address": 4882476,
+      "float32": 0.0
+    },
+    {
+      "offset": 288,
+      "address": 7308260,
+      "symbol": "_op_camera"
+    },
+    {
+      "offset": 320,
+      "address": 4211044,
+      "kind": "dir32-internal",
+      "target_offset": 452
+    },
+    {
+      "offset": 330,
+      "address": 9169364,
+      "symbol": "_op_scan_edge_20"
+    },
+    {
+      "offset": 349,
+      "address": 9169360,
+      "symbol": "_op_scan_edge_18"
+    },
+    {
+      "offset": 368,
+      "address": 4882480,
+      "float32": 0.08
+    },
+    {
+      "offset": 387,
+      "address": 9169368,
+      "symbol": "_op_scan_edge_1c"
+    },
+    {
+      "offset": 452,
+      "address": 4210916,
+      "kind": "dir32-internal",
+      "target_offset": 324
+    },
+    {
+      "offset": 456,
+      "address": 4210935,
+      "kind": "dir32-internal",
+      "target_offset": 343
+    },
+    {
+      "offset": 460,
+      "address": 4210954,
+      "kind": "dir32-internal",
+      "target_offset": 362
+    },
+    {
+      "offset": 464,
+      "address": 4210973,
+      "kind": "dir32-internal",
+      "target_offset": 381
+    }
+  ]
+}

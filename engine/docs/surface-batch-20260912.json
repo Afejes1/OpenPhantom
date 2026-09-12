@@ -1,0 +1,146 @@
+{
+  "schema": 1,
+  "kind": "focused-research-batch",
+  "date": "2026-09-12",
+  "accepted_history_record": false,
+  "accepted_function_count_unchanged": 14,
+  "whole_executable_match": false,
+  "exclusions": [],
+  "compiler": "Microsoft VC5 RTM 11.00.7022",
+  "linker": "Microsoft 5.00.7022",
+  "runtime": "locked Docker/wibo; network none; read-only root/toolchain/source; only fresh build output writable",
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "comparison_report_sha256": "70c9235f87f542af5e97309a5ce8e8dbef3cb66e856c785c4ff3d0d7befdf33a",
+  "behavior_report_sha256": "1a27b91a407287bb89e032c663a3bfae453bc34412e665d2a6605e3e31273938",
+  "comparison_sources": {
+    "src/baseline.h": "f6e7690e2616f4c2f1660fe7495a012e32b1e0cfec3de451ce3e5a4de8b2e6cd",
+    "research/surface-emission/batch_surface.h": "2194765fdd48201a30a2f1afe455691af10241eaf7944671b33b989fc16f15bb",
+    "research/surface-emission/culling.h": "ebd71fe200eb12f498890a0fe6f74934dbc75f13a749846621e4713e5e69d29b",
+    "research/surface-emission/candidate.cpp": "3cefd0a1f071f7357399fd77a45bb430711e9720167d590e02e04f364dc913e2",
+    "research/surface-emission/target.json": "10c82742f0bb8d15983f3cced8a4d0dea5b82db2adc6e483b834b7baec504ecf",
+    "research/surface-emission/legacy_candidate.c": "227ed96443862bc84b2d5da95b7f50fb036a3d63dd654c9e23d8b63126d5e330",
+    "research/surface-emission/legacy-target.json": "1980dca6bf64b030f72b8160ca4d3f58edc5dc9f43c141dc3b8f67216d3a40b5",
+    "research/surface-emission/culling_candidate.c": "4e59eb5c0346d078c2efe92ee041834027bd9bfc4a5e721449f33e856462fe6b",
+    "research/surface-emission/culling-target.json": "15200b90d414d7144ec160ffe6153a274f5d79dd9b11b429c1712bd4c16e4e5c",
+    "research/surface-emission/probe.py": "99664c48fd664dcc90cc2e466879cf453c0e207b40fe1353ef311098551444a3",
+    "target.json": "b8398f0a1f85e40e34af828082a8587587b7c4f88a9ecea96b21b2706a33b996",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "b9b2d9741912c9d58b77f636811b9e652d30777cc8eeb93ad434896a412bc1e0",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "behavior_sources": {
+    "src/baseline.h": "f6e7690e2616f4c2f1660fe7495a012e32b1e0cfec3de451ce3e5a4de8b2e6cd",
+    "research/surface-emission/batch_surface.h": "2194765fdd48201a30a2f1afe455691af10241eaf7944671b33b989fc16f15bb",
+    "research/surface-emission/culling.h": "ebd71fe200eb12f498890a0fe6f74934dbc75f13a749846621e4713e5e69d29b",
+    "research/surface-emission/candidate.cpp": "3cefd0a1f071f7357399fd77a45bb430711e9720167d590e02e04f364dc913e2",
+    "research/surface-emission/target.json": "10c82742f0bb8d15983f3cced8a4d0dea5b82db2adc6e483b834b7baec504ecf",
+    "research/surface-emission/legacy_candidate.c": "227ed96443862bc84b2d5da95b7f50fb036a3d63dd654c9e23d8b63126d5e330",
+    "research/surface-emission/legacy-target.json": "1980dca6bf64b030f72b8160ca4d3f58edc5dc9f43c141dc3b8f67216d3a40b5",
+    "research/surface-emission/culling_candidate.c": "4e59eb5c0346d078c2efe92ee041834027bd9bfc4a5e721449f33e856462fe6b",
+    "research/surface-emission/culling-target.json": "15200b90d414d7144ec160ffe6153a274f5d79dd9b11b429c1712bd4c16e4e5c",
+    "research/surface-emission/focused_behavior.c": "5e75f5c38078eb064f694deee86d0331b9750b96605f5b3a049fddda5c097516",
+    "research/surface-emission/culling_behavior.c": "85a496b0140250c624a13a9be7c6cf28beb61add1434f6d78cc4cda1fa67ca02",
+    "src/push_surface_draw_entry.cpp": "5c96e10256c625a4ee3581a074e958754d0f567fbd5f4bb3ba907e71c24e72b3",
+    "research/surface-emission/probe.py": "99664c48fd664dcc90cc2e466879cf453c0e207b40fe1353ef311098551444a3",
+    "target.json": "b8398f0a1f85e40e34af828082a8587587b7c4f88a9ecea96b21b2706a33b996",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "b9b2d9741912c9d58b77f636811b9e652d30777cc8eeb93ad434896a412bc1e0",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "functions": [
+    {
+      "id": "emit_surface",
+      "candidate_extent": 432,
+      "required_extent": 432,
+      "candidate_relocations": 22,
+      "required_relocations": 21,
+      "object_sha256": "fd7d2fb60338ccf068d5120b27cf18d8864aefb843424e401d07079ff33c53bf",
+      "comparison": {
+        "id": "emit_surface",
+        "status": "unresolved",
+        "reason": "COFF relocation inventory differs from expected operands"
+      }
+    },
+    {
+      "id": "emit_legacy_surface",
+      "candidate_extent": 672,
+      "required_extent": 672,
+      "candidate_relocations": 44,
+      "required_relocations": 43,
+      "object_sha256": "67fb2a50e7c40f11683b749aba37a0f96dbdc4d52a0e09528163211c7f2e9a53",
+      "comparison": {
+        "id": "emit_legacy_surface",
+        "status": "unresolved",
+        "reason": "COFF relocation inventory differs from expected operands"
+      }
+    },
+    {
+      "id": "cull_scan_plane",
+      "candidate_extent": 480,
+      "required_extent": 480,
+      "candidate_relocations": 22,
+      "required_relocations": 22,
+      "object_sha256": "46515e6306b021cda695c3bfa127920790b0f2af6cf41f1a0c2c06c415234a08",
+      "comparison": {
+        "id": "cull_scan_plane",
+        "address": 4210592,
+        "size": 480,
+        "candidate_size": 480,
+        "body_size": 449,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 88,
+        "object_sha256": "46515e6306b021cda695c3bfa127920790b0f2af6cf41f1a0c2c06c415234a08",
+        "compared_bytes": 392,
+        "dir32_bytes": 88,
+        "rel32_call_bytes": 0,
+        "internal_dir32_bytes": 20,
+        "different_bytes": 10,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": false,
+        "reference_span_sha256": "9cc1965b735a76ee6331f04039278c761b1188a10bcb0006c8ccfe67a622dba6",
+        "resolved_span_sha256": "d770706b2cb4acfc73bf1a2491d91cf851afbea7fcac6eb94cc0945157e6addb",
+        "reason": "non-relocation bytes differ",
+        "first_difference_offset": 104
+      }
+    }
+  ],
+  "fixtures": [
+    {
+      "name": "emission",
+      "sha256": "eea0802b5192ee485a7f222dd9da3c855b627845f6dd59e6a51637a162dc8b41",
+      "passed": true,
+      "stdout": "Focused emission candidate behavior passed; byte matching remains unverified.\n"
+    },
+    {
+      "name": "culling",
+      "sha256": "edfd9580225c0be99cf503a49e7d62b08a0d013510068e56c1f222ecc0948357",
+      "passed": true,
+      "stdout": "Culling fixture: 3038 checks, 0 failures across three x87 precisions\n"
+    }
+  ],
+  "focused_tooling_tests": {
+    "count": 60,
+    "passed": true,
+    "modules": [
+      "test_matching",
+      "test_relative_calls",
+      "test_internal_labels",
+      "test_registry",
+      "test_build",
+      "test_cpp_sources",
+      "test_source_policy"
+    ]
+  },
+  "scope_limits": [
+    "Three research candidates remain unverified for byte equality.",
+    "Emitter and culler are tested in separate synthetic fixtures with controlled callees.",
+    "No full accepted-function rebuild, full regression, recovery checkpoint or game execution was performed for this batch.",
+    "Shared verifier changes invalidate freshness of prior build outputs for any new acceptance; historical verified records remain unchanged."
+  ]
+}

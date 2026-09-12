@@ -89,13 +89,19 @@ def validate_bindings(spec):
         require(not occupied & region, "overlapping bindings")
         occupied.update(region)
         kind = binding_kind(binding)
-        require(kind in ("dir32", "rel32-call"), "unsupported binding kind")
-        require(sum(k in binding for k in ("symbol", "float32", "float64")) == 1, "ambiguous binding")
+        require(kind in ("dir32", "rel32-call", "dir32-internal"), "unsupported binding kind")
+        require(sum(k in binding for k in ("symbol", "float32", "float64", "target_offset")) == 1, "ambiguous binding")
         require(type(binding["address"]) is int and 0 <= binding["address"] <= 0xffffffff,
                 "invalid binding address")
         require(type(binding.get("addend", 0)) is int and 0 <= binding.get("addend", 0) <= 0xffffffff,
                 "unsupported binding addend")
-        if kind == "rel32-call":
+        if kind == "dir32-internal":
+            local = binding.get("target_offset")
+            require(type(local) is int and 0 <= local < spec["size"],
+                    "internal destination outside function")
+            require(binding["address"] == spec["address"] + local and
+                    binding.get("addend", 0) == 0, "internal destination/addend differs")
+        elif kind == "rel32-call":
             require("symbol" in binding and offset >= 1 and binding.get("addend", 0) == 0,
                     "relative calls require an external symbol and zero addend")
         elif "symbol" not in binding:
@@ -121,7 +127,11 @@ def verify_bound_operand(original, code, spec, binding):
         original.read_va(target, 1)
     else:
         require(address in original.relocations, "operand is not a PE relocation")
-        if "symbol" not in binding:
+        if binding_kind(binding) == "dir32-internal":
+            require(any(s.flags & 0x20 and original.image_base + s.address <= value <
+                        original.image_base + s.address + s.size for s in original.sections),
+                    "internal destination is not backed by code")
+        elif "symbol" not in binding:
             constant = constant_bytes(binding)
             require(original.read_va(value, len(constant)) == constant,
                     "original constant differs")
@@ -136,7 +146,7 @@ def verify_reference(data, target):
     for spec in target["functions"]:
         validate_bindings(spec)
         code = pe.read_va(spec["address"], spec["size"])
-        absolute = {b["offset"] for b in spec["bindings"] if binding_kind(b) == "dir32"}
+        absolute = {b["offset"] for b in spec["bindings"] if binding_kind(b) != "rel32-call"}
         relocs = {at - spec["address"] for at in pe.relocations
                   if spec["address"] - 3 <= at < spec["address"] + spec["size"]}
         require(relocs == absolute, "reference relocation inventory disagrees with " + spec["id"])
@@ -161,6 +171,8 @@ def compare_function(original, obj, spec):
     adjusted = set()
     resolved = bytearray(actual)
     call_bytes = 0
+    internal_bytes = 0
+    function_symbol = next(s for s in obj.symbols.values() if s.name == spec["symbol"])
     for offset, binding in bindings.items():
         relocation = relocations[offset]
         symbol = relocation.symbol
@@ -172,7 +184,12 @@ def compare_function(original, obj, spec):
         if is_call:
             require(actual[offset - 1] == 0xe8, "candidate relative binding is not a near CALL")
             call_bytes += 4
-        if "symbol" in binding:
+        if binding_kind(binding) == "dir32-internal":
+            require(symbol.section == function_symbol.section and symbol.storage == 6 and
+                    symbol.kind == 0 and symbol.value == binding["target_offset"],
+                    "internal relocation references the wrong local label")
+            internal_bytes += 4
+        elif "symbol" in binding:
             require(symbol.name == binding["symbol"] and symbol.section == 0 and symbol.value == 0
                     and symbol.storage == 2, "relocation references the wrong external symbol")
         else:
@@ -185,6 +202,7 @@ def compare_function(original, obj, spec):
     differences = [i for i, (a, b) in enumerate(zip(expected, resolved)) if a != b]
     result.update(adjusted_bytes=len(adjusted), compared_bytes=len(actual) - len(adjusted),
                   dir32_bytes=len(adjusted) - call_bytes, rel32_call_bytes=call_bytes,
+                  internal_dir32_bytes=internal_bytes,
                   different_bytes=len(differences), raw_bytes_equal=actual == expected,
                   relocated_bytes_equal=resolved == expected,
                   reference_span_sha256=digest(expected), resolved_span_sha256=digest(resolved))

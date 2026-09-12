@@ -1,16 +1,17 @@
-# Surface-emission research batch
+# Surface-emission and scan-culling research batch
 
-Both functions are reported not done in bp/bapdraw.c. Neither is accepted by
+All three functions are reported not done in bp/bapdraw.c. None is accepted by
 the matching registry. The existing fourteen-function baseline remains intact.
 
 | Address | Team name | Candidate | Current comparison |
 |---|---|---|---|
-| 0x00406300 | bapdraw_emitFace | [C++ source](candidate.cpp) | 432-byte section, but relocation positions and register allocation differ |
-| 0x00405A50 | bapdrawOld_emitFace | [C source](legacy_candidate.c) | 688-byte section versus required 672 bytes; instruction differences remain |
+| 0x00406300 | bapdraw_emitFace | [C++ source](candidate.cpp) | Correct 432-byte extent; relocation positions and register allocation differ |
+| 0x00405A50 | bapdrawOld_emitFace | [C source](legacy_candidate.c) | Reduced from 688 to the required 672 bytes; relocation inventory and instructions still differ |
+| 0x00403FA0 | bapdrawOld_cullAgainstPlane | [C source](culling_candidate.c) | Correct 480-byte extent and all 22 relocations; ten instruction bytes differ |
 
-The JSON target definitions preserve complete original extents, padding,
-constant widths, symbol addends and calls. They are pending specifications;
-they do not extend engine/target.json or claim accepted matches.
+The JSON target definitions preserve complete original extents, embedded tables,
+alignment, constant widths, symbol addends and calls. These pending specifications
+do not extend engine/target.json or claim accepted matches. No bytes are excluded.
 
 ## Focused commands
 
@@ -19,34 +20,48 @@ From the repository root, using the existing private compiler configuration:
     python engine/research/surface-emission/probe.py compare --reference C:/PrivateGame/WMAIN.EXE
     python engine/research/surface-emission/probe.py behavior
 
-The compare command compiles only these two candidates and uses the existing
-strict comparator. It returns 1 for nonmatching candidates, 2 for prerequisites
-or build failures, and 0 only if both complete spans agree. The behavior command
-also compiles the previously matched bucket helper and the synthetic fixture.
-It requires the locked Docker runner and does not read or execute the game.
-All commands, source hashes and results stay in a fresh private build directory.
-No command creates an accepted full-build history record.
+The compare command compiles this three-function batch with the original VC5
+compiler and the strict comparator. It returns 1 for nonmatching candidates,
+2 for prerequisites/build failures, and 0 only if all complete spans agree.
+The behavior command builds two separate synthetic executables: emission with a
+controlled culling stub and the matched bucket helper, and the real culling
+candidate with a controlled projection callback. It requires the locked Docker
+runner and does not read or execute the game.
 
-The focused fixture passed with the original compiler on 2026-09-12. It covers
-all 256 packed-opacity values, room-mask combinations, gates and duplicate
-marking, new-path fade clamping, legacy sixteen-step integer fades, height
-updates, and culling-call interactions. The culler is a fixture stub; its actual
-implementation and complete game behavior are not certified. A behavior pass
-does not resolve either byte mismatch.
+Each run records commands, compiler/runtime fingerprints, candidate and verifier
+source hashes, object/comparison results and fixture hashes in a fresh private
+build directory. No command creates an accepted full-build history record.
+See the [public batch receipt](../../docs/surface-batch-20260912.json).
+
+Both focused fixtures passed with the original compiler on 2026-09-12. Emission
+covers all 256 packed-opacity values, room masks, gates and duplicate marking,
+new-path fade clamping, legacy sixteen-step integer fades, height updates and
+culling-call interactions. Culling adds 3,038 checks covering all four planes,
+all sixteen selections of two corners, nonzero flag values, input/state retention,
+early returns, inclusive thresholds, signed zero and NaNs at three x87 precisions.
+The projection callback is controlled test code. These are separate unit fixtures,
+not an integrated emitter-to-culler test or a full game-behavior claim.
 
 ## Remaining compiler work
 
-For the newer emitter, plain C/C++, explicit byte caches, readable local-name
-variants, register hints and /Ox probes have not reproduced the original extra
-callee-saved register and cached membership/mask schedule. Keep the original
-432-byte extent and all operands unchanged.
+The newer emitter still needs the original extra callee-saved register and cached
+membership/mask schedule. C/C++ language, local names, register hints, packed-byte
+caches, signedness and optimization probes have not reproduced it.
 
-For the legacy emitter, height retention, explicit vector intermediates and
-separate culling-extent assignments have not reduced the candidate to the
-required complete 672-byte span. The original retains converted height on x87
-across the update; the current candidate reloads it. The conditional float
-argument and mask loads also differ. Do not use padding changes to hide this.
+The legacy emitter now retains converted height on x87 and uses separate calls
+for conditional culling extents. That reaches the required 672-byte section but
+still has 44 relocations against the original 43, plus register/scheduling
+mismatches. The previous extra sixteen bytes are no longer the blocker.
 
-See [static evidence](../../docs/surface-emission-evidence.md). Continue this
-batch before a full original-toolchain checkpoint. The preserved candidates
-compile without warnings and pass only the stated focused behavior tests.
+The culler now initializes its loop counter before copying the base point.
+Its remaining ten bytes encode early instruction scheduling and swapped EBX/EBP
+retention of base Y/Z. Moving pair setup, arithmetic promotion, local names,
+declaration order, explicit scalar copies and vector-pointer/memcpy forms did not
+resolve this. Keep the full switch table and all alignment in the comparison.
+Before registry promotion, report embedded table bytes separately from alignment
+in aggregate coverage accounting; current accepted functions have no such table.
+
+See [emission evidence](../../docs/surface-emission-evidence.md) and
+[culling evidence](../../docs/scan-culling-evidence.md). Continue this batch before
+a full original-toolchain acceptance checkpoint. A behavior pass cannot resolve
+a byte mismatch.

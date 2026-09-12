@@ -83,3 +83,14 @@ fade and uniqueness-marking rules. Current emission uses a float time fraction;
 legacy scan emission uses a sixteen-step integer counter and updates camera-space
 height before culling. Both candidates are unverified for byte equality and are
 excluded from accepted counts. See [evidence](docs/surface-emission-evidence.md).
+
+## Legacy scan-plane culling under reconstruction
+
+The legacy scan culler at 0x00403FA0 tests two table-selected corners after a
+height/basis offset, rejects nonpositive or unordered camera depth, and invokes
+a scalar projection callback through camera+0x4C. Four boundary comparisons
+short-circuit on a passing corner. All four scalar callback variants were
+reviewed to establish the ABI and projected depth coordinate. The candidate's
+480-byte extent and checked internal switch-table destinations agree, but ten
+instruction bytes differ. Its focused fixture passes; it remains outside the
+accepted registry. See [scan-culling evidence](docs/scan-culling-evidence.md).

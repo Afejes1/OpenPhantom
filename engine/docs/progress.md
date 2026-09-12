@@ -8,23 +8,23 @@ Whole executable: **incomplete**. Original linked placement: **unverified**.
 
 | Module | Function / source | Original address | VC5 frontend | Last verified result | Bytes / address bytes |
 |---|---|---|---|---|---|
-| material | [material_mode](../src/material_mode.c) | 0x0040E840 | c | raw-code-match | 41 / 0 |
-| spatial_grid | [grid_cell](../src/grid_cell.c) | 0x00406E22 | c | relocation-adjusted-match | 24 / 4 |
-| map_geometry | [plane_coordinate](../src/plane_coordinate.c) | 0x0040DCEE | c | relocation-adjusted-match | 384 / 8 |
-| view_projection | [update_projection](../src/update_projection.c) | 0x0040EF40 | c | relocation-adjusted-match | 144 / 48 |
-| view_projection | [face_clip_flags](../src/face_clip_flags.c) | 0x0040F170 | c | raw-code-match | 64 / 0 |
-| view_projection | [transform_project](../src/transform_project.c) | 0x0040EFD0 | c | relocation-adjusted-match | 416 / 44 |
-| mesh_submission | [set_mesh_render_thing](../src/set_mesh_render_thing.c) | 0x0040F1B0 | c | relocation-adjusted-match | 48 / 16 |
-| render_queue | [peek_projected_vertices](../src/peek_projected_vertices.c) | 0x00402130 | c | relocation-adjusted-match | 37 / 12 |
-| render_queue | [peek_face_packet](../src/peek_face_packet.c) | 0x00402021 | c | relocation-adjusted-match | 37 / 12 |
-| render_queue | [queue_face_packet](../src/queue_face_packet.c) | 0x00401EB8 | c | relocation-adjusted-match | 361 / 68 |
-| render_queue | [submit_gathered_surfaces](../src/submit_gathered_surfaces.c) | 0x00406830 | c | relocation-adjusted-match | 48 / 20 |
-| render_queue | [set_frame_state](../src/set_frame_state.c) | 0x00401D30 | c | relocation-adjusted-match | 392 / 172 |
-| render_queue | [push_surface_draw_entry](../src/push_surface_draw_entry.cpp) | 0x004059F0 | c++ | relocation-adjusted-match | 96 / 24 |
-| legacy_scan | [step_scan](../src/step_scan.c) | 0x00403EF0 | c | relocation-adjusted-match | 176 / 48 |
+| material | [material_mode](../src/material_mode.c) | 0x0040E840 | c | raw-code-match (historical; current source unverified) | 41 / 0 |
+| spatial_grid | [grid_cell](../src/grid_cell.c) | 0x00406E22 | c | relocation-adjusted-match (historical; current source unverified) | 24 / 4 |
+| map_geometry | [plane_coordinate](../src/plane_coordinate.c) | 0x0040DCEE | c | relocation-adjusted-match (historical; current source unverified) | 384 / 8 |
+| view_projection | [update_projection](../src/update_projection.c) | 0x0040EF40 | c | relocation-adjusted-match (historical; current source unverified) | 144 / 48 |
+| view_projection | [face_clip_flags](../src/face_clip_flags.c) | 0x0040F170 | c | raw-code-match (historical; current source unverified) | 64 / 0 |
+| view_projection | [transform_project](../src/transform_project.c) | 0x0040EFD0 | c | relocation-adjusted-match (historical; current source unverified) | 416 / 44 |
+| mesh_submission | [set_mesh_render_thing](../src/set_mesh_render_thing.c) | 0x0040F1B0 | c | relocation-adjusted-match (historical; current source unverified) | 48 / 16 |
+| render_queue | [peek_projected_vertices](../src/peek_projected_vertices.c) | 0x00402130 | c | relocation-adjusted-match (historical; current source unverified) | 37 / 12 |
+| render_queue | [peek_face_packet](../src/peek_face_packet.c) | 0x00402021 | c | relocation-adjusted-match (historical; current source unverified) | 37 / 12 |
+| render_queue | [queue_face_packet](../src/queue_face_packet.c) | 0x00401EB8 | c | relocation-adjusted-match (historical; current source unverified) | 361 / 68 |
+| render_queue | [submit_gathered_surfaces](../src/submit_gathered_surfaces.c) | 0x00406830 | c | relocation-adjusted-match (historical; current source unverified) | 48 / 20 |
+| render_queue | [set_frame_state](../src/set_frame_state.c) | 0x00401D30 | c | relocation-adjusted-match (historical; current source unverified) | 392 / 172 |
+| render_queue | [push_surface_draw_entry](../src/push_surface_draw_entry.cpp) | 0x004059F0 | c++ | relocation-adjusted-match (historical; current source unverified) | 96 / 24 |
+| legacy_scan | [step_scan](../src/step_scan.c) | 0x00403EF0 | c | relocation-adjusted-match (historical; current source unverified) | 176 / 48 |
 
 Registered functions: **14**. Last recorded matches with unchanged definitions: **14**.
-Current source fingerprint agrees with the latest run: **yes**.
+Current source fingerprint agrees with the latest run: **no**.
 This count is not whole-program coverage and does not certify the modern TPM reconstruction.
 
 Latest build: '20260912-144516-0f3f4e28', source commit '20f2819c7906618098b50d58de6efac2085c1ebb'.

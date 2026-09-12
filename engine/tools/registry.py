@@ -74,6 +74,8 @@ def validate_event(event):
         call_bytes = sum(4 for b in spec["bindings"] if binding_kind(b) == "rel32-call")
         require(result.get("rel32_call_bytes", 0) == call_bytes, "history relative-call accounting differs")
         require(result.get("dir32_bytes", adjusted) == adjusted - call_bytes, "history absolute accounting differs")
+        internal_bytes = sum(4 for b in spec["bindings"] if binding_kind(b) == "dir32-internal")
+        require(result.get("internal_dir32_bytes", 0) == internal_bytes, "history internal accounting differs")
         require(result["adjusted_bytes"] == adjusted and result["compared_bytes"] + adjusted == spec["size"],
                 "history byte accounting differs")
         require(result["status"] == ("relocation-adjusted-match" if adjusted else "raw-code-match"), "wrong matching category")

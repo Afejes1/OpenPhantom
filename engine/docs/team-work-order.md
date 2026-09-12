@@ -32,7 +32,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x00402155 | bapdraw_flushQueue | not_done | Queued; no local match recorded |
 | 0x004025B0 | bapdraw_clipSlopePlane &#124; bapdraw_clipPoly &#124; bapdraw_clipDepthPlane &#124; bapdraw_clipSwap | not_done | Queued; no local match recorded |
 | 0x00403EF0 | bapdrawOld_stepScan | not_done | Recorded match: [step_scan](../src/step_scan.c) |
-| 0x00403FA0 | bapdrawOld_cullAgainstPlane | not_done | Queued; no local match recorded |
+| 0x00403FA0 | bapdrawOld_cullAgainstPlane | not_done | Unverified candidate: [research](../research/surface-emission/README.md) |
 | 0x00404180 | bapdrawOld_frameSetup | not_done | Queued; no local match recorded |
 | 0x00404730 | bapdraw_drawWorld | not_done | Queued; no local match recorded |
 | 0x004056C0 | bapdrawOld_gatherCell | not_done | Queued; no local match recorded |

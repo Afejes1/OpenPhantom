@@ -14,7 +14,8 @@ from formats import COFF, VerificationError, require
 from matching import MATCHES, canonical_hash, compare_function, digest, load_target, verify_reference
 from runners import run_tool
 
-CASES = (("candidate.cpp", "target.json"), ("legacy_candidate.c", "legacy-target.json"))
+CASES = (("candidate.cpp", "target.json"), ("legacy_candidate.c", "legacy-target.json"),
+         ("culling_candidate.c", "culling-target.json"))
 
 
 def main():
@@ -28,11 +29,17 @@ def main():
     check_lock(config, lock)
     out = ROOT / "build" / ("surface-batch-" + uuid.uuid4().hex[:12])
     out.mkdir()
-    inputs = [ROOT / "src/baseline.h", HERE / "batch_surface.h"]
+    inputs = [ROOT / "src/baseline.h", HERE / "batch_surface.h", HERE / "culling.h"]
     inputs += [HERE / name for pair in CASES for name in pair]
     if args.command == "behavior":
-        inputs += [HERE / "focused_behavior.c", ROOT / "src/push_surface_draw_entry.cpp"]
-    snapshot = {str(p): digest(p.read_bytes()) for p in inputs}
+        inputs += [HERE / "focused_behavior.c", HERE / "culling_behavior.c", ROOT / "src/push_surface_draw_entry.cpp"]
+    # Hash the runner and verifier too; a research report identifies the code that judged it.
+    provenance = inputs + [Path(__file__).resolve(), ROOT / "target.json"]
+    provenance += [ROOT / "tools" / name for name in
+                   ("build.py", "formats.py", "matching.py", "runners.py", "source_policy.py")]
+    def snapshot_inputs():
+        return {p.relative_to(ROOT).as_posix(): digest(p.read_bytes()) for p in provenance}
+    snapshot = snapshot_inputs()
     for path in inputs:
         (out / path.name).write_bytes(path.read_bytes())
     specs = [json.loads((HERE / spec).read_text()) for _, spec in CASES]
@@ -47,7 +54,8 @@ def main():
     report = {"schema": 1, "scope": "unverified-surface-research-candidates",
               "accepted_history_record": False, "whole_executable_match": False,
               "toolchain_lock_sha256": canonical_hash(lock), "source_snapshot": snapshot,
-              "commands": [], "comparisons": [], "behavior_passed": None}
+              "commands": [], "comparisons": [], "fixtures": [], "behavior_passed": None,
+              "completed": False}
     def invoke(command):
         process, invoked = run_tool(config, command, ROOT, out, environment(config), 60)
         report["commands"].append({"argv": command, "invoked": invoked, "returncode": process.returncode})
@@ -57,12 +65,12 @@ def main():
         require(not re.search(r"\bwarning\b", text, re.I), "warning in focused build; inspect " + str(out))
         return process
     try:
-        objects = []
+        objects = {}
         for (source, _), spec in zip(CASES, specs):
             obj = out / (spec["id"] + ".obj")
             invoke([config["compiler"], *COMMON_FLAGS, *spec["flags"],
                     "/Fd" + str(out / "probe.pdb"), "/Fo" + str(obj), str(out / source)])
-            objects.append(obj)
+            objects[spec["id"]] = obj
             if original is not None:
                 try:
                     result = compare_function(original, COFF(obj.read_bytes()), spec)
@@ -71,24 +79,32 @@ def main():
                 report["comparisons"].append(result)
                 print(spec["id"] + ": " + result["status"] + "; " + result.get("reason", "complete span agrees"))
         if args.command == "behavior":
-            for source, flags in (("push_surface_draw_entry.cpp", ["/O2", "/MT"]),
-                                  ("focused_behavior.c", ["/Od", "/MT"])):
+            def compile_fixture(source, flags):
                 obj = out / (source + ".obj")
                 invoke([config["compiler"], *COMMON_FLAGS, *flags,
                         "/Fd" + str(out / "probe.pdb"), "/Fo" + str(obj), str(out / source)])
-                objects.append(obj)
-            executable = out / "focused.exe"
-            invoke([config["linker"], "/NOLOGO", "/MACHINE:IX86", "/SUBSYSTEM:CONSOLE",
-                    "/INCREMENTAL:NO", "/OUT:" + str(executable), *map(str, objects),
-                    "libcmt.lib", "kernel32.lib"])
-            report["fixture_sha256"] = digest(executable.read_bytes())
-            process = invoke([str(executable)])
-            require(digest(executable.read_bytes()) == report["fixture_sha256"], "fixture changed during execution")
-            report["behavior_passed"] = True
-            report["behavior_stdout"] = process.stdout
-            print(process.stdout, end="")
-        require(snapshot == {str(p): digest(p.read_bytes()) for p in inputs}, "research inputs changed during build")
+                return obj
+            helper = compile_fixture("push_surface_draw_entry.cpp", ["/O2", "/MT"])
+            emission_test = compile_fixture("focused_behavior.c", ["/Od", "/MT"])
+            culling_test = compile_fixture("culling_behavior.c", ["/Od", "/MT"])
+            suites = (("emission", [objects["emit_surface"], objects["emit_legacy_surface"], helper, emission_test]),
+                      ("culling", [objects["cull_scan_plane"], culling_test]))
+            for name, fixture_objects in suites:
+                executable = out / (name + "-focused.exe")
+                invoke([config["linker"], "/NOLOGO", "/MACHINE:IX86", "/SUBSYSTEM:CONSOLE",
+                        "/INCREMENTAL:NO", "/OUT:" + str(executable), *map(str, fixture_objects),
+                        "libcmt.lib", "kernel32.lib"])
+                fixture = {"name": name, "sha256": digest(executable.read_bytes()), "passed": False}
+                report["fixtures"].append(fixture)
+                process = invoke([str(executable)])
+                require(digest(executable.read_bytes()) == fixture["sha256"], "fixture changed during execution")
+                fixture.update(passed=True, stdout=process.stdout)
+                print(process.stdout, end="")
+        require(snapshot == snapshot_inputs(), "research inputs changed during build")
         check_lock(config, lock)
+        if args.command == "behavior":
+            report["behavior_passed"] = True
+        report["completed"] = True
     finally:
         (out / "research-result.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
         print(out)
