@@ -8,19 +8,19 @@ Whole executable: **incomplete**. Original linked placement: **unverified**.
 
 | Module | Function / source | Original address | Last verified result | Bytes / address bytes |
 |---|---|---|---|---|
-| material | [material_mode](../src/material_mode.c) | 0x0040E840 | raw-code-match (historical; current source unverified) | 41 / 0 |
-| spatial_grid | [grid_cell](../src/grid_cell.c) | 0x00406E22 | relocation-adjusted-match (historical; current source unverified) | 24 / 4 |
-| map_geometry | [plane_coordinate](../src/plane_coordinate.c) | 0x0040DCEE | relocation-adjusted-match (historical; current source unverified) | 384 / 8 |
-| view_projection | [update_projection](../src/update_projection.c) | 0x0040EF40 | relocation-adjusted-match (historical; current source unverified) | 144 / 48 |
-| view_projection | [face_clip_flags](../src/face_clip_flags.c) | 0x0040F170 | raw-code-match (historical; current source unverified) | 64 / 0 |
-| view_projection | [transform_project](../src/transform_project.c) | 0x0040EFD0 | unverified | 416 / 44 |
+| material | [material_mode](../src/material_mode.c) | 0x0040E840 | raw-code-match | 41 / 0 |
+| spatial_grid | [grid_cell](../src/grid_cell.c) | 0x00406E22 | relocation-adjusted-match | 24 / 4 |
+| map_geometry | [plane_coordinate](../src/plane_coordinate.c) | 0x0040DCEE | relocation-adjusted-match | 384 / 8 |
+| view_projection | [update_projection](../src/update_projection.c) | 0x0040EF40 | relocation-adjusted-match | 144 / 48 |
+| view_projection | [face_clip_flags](../src/face_clip_flags.c) | 0x0040F170 | raw-code-match | 64 / 0 |
+| view_projection | [transform_project](../src/transform_project.c) | 0x0040EFD0 | relocation-adjusted-match | 416 / 44 |
 
-Registered functions: **6**. Last recorded matches with unchanged definitions: **5**.
-Current source fingerprint agrees with the latest run: **no**.
+Registered functions: **6**. Last recorded matches with unchanged definitions: **6**.
+Current source fingerprint agrees with the latest run: **yes**.
 This count is not whole-program coverage and does not certify the modern TPM reconstruction.
 
-Latest build: '20260912-114605-4ce36a61', source commit '0c8354dd390ba2106d7cdc124bb4198ac6ddb7b0'.
-History contains 4 verified build records.
+Latest build: '20260912-121126-940afd74', source commit '817a41e231e64271f49e0285f5059970c553370d'.
+History contains 5 verified build records.
 
 ## Workarounds and exceptions
 
