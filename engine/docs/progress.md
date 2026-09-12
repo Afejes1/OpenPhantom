@@ -8,20 +8,20 @@ Whole executable: **incomplete**. Original linked placement: **unverified**.
 
 | Module | Function / source | Original address | Last verified result | Bytes / address bytes |
 |---|---|---|---|---|
-| material | [material_mode](../src/material_mode.c) | 0x0040E840 | raw-code-match (historical; current source unverified) | 41 / 0 |
-| spatial_grid | [grid_cell](../src/grid_cell.c) | 0x00406E22 | relocation-adjusted-match (historical; current source unverified) | 24 / 4 |
-| map_geometry | [plane_coordinate](../src/plane_coordinate.c) | 0x0040DCEE | relocation-adjusted-match (historical; current source unverified) | 384 / 8 |
-| view_projection | [update_projection](../src/update_projection.c) | 0x0040EF40 | relocation-adjusted-match (historical; current source unverified) | 144 / 48 |
-| view_projection | [face_clip_flags](../src/face_clip_flags.c) | 0x0040F170 | raw-code-match (historical; current source unverified) | 64 / 0 |
-| view_projection | [transform_project](../src/transform_project.c) | 0x0040EFD0 | relocation-adjusted-match (historical; current source unverified) | 416 / 44 |
-| mesh_submission | [set_mesh_render_thing](../src/set_mesh_render_thing.c) | 0x0040F1B0 | unverified | 48 / 16 |
+| material | [material_mode](../src/material_mode.c) | 0x0040E840 | raw-code-match | 41 / 0 |
+| spatial_grid | [grid_cell](../src/grid_cell.c) | 0x00406E22 | relocation-adjusted-match | 24 / 4 |
+| map_geometry | [plane_coordinate](../src/plane_coordinate.c) | 0x0040DCEE | relocation-adjusted-match | 384 / 8 |
+| view_projection | [update_projection](../src/update_projection.c) | 0x0040EF40 | relocation-adjusted-match | 144 / 48 |
+| view_projection | [face_clip_flags](../src/face_clip_flags.c) | 0x0040F170 | raw-code-match | 64 / 0 |
+| view_projection | [transform_project](../src/transform_project.c) | 0x0040EFD0 | relocation-adjusted-match | 416 / 44 |
+| mesh_submission | [set_mesh_render_thing](../src/set_mesh_render_thing.c) | 0x0040F1B0 | relocation-adjusted-match | 48 / 16 |
 
-Registered functions: **7**. Last recorded matches with unchanged definitions: **6**.
-Current source fingerprint agrees with the latest run: **no**.
+Registered functions: **7**. Last recorded matches with unchanged definitions: **7**.
+Current source fingerprint agrees with the latest run: **yes**.
 This count is not whole-program coverage and does not certify the modern TPM reconstruction.
 
-Latest build: '20260912-121232-fedb0cc6', source commit 'cf9629be97e9f760217388fee02164f8b804c856'.
-History contains 6 verified build records.
+Latest build: '20260912-121742-e121a172', source commit '8d306026ed692f7db33f549bb6bcba3057ed2cea'.
+History contains 7 verified build records.
 
 ## Workarounds and exceptions
 
