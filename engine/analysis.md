@@ -24,6 +24,10 @@ VC5 code-section comparison. [function-map.md](function-map.md) records the
 analysis metadata change; [module evidence](docs/view-projection-evidence.md)
 records observed layouts and unresolved module boundaries.
 
+The mesh-submission group now includes the matched active-Thing/opacity setup
+helper. Its projectile caller and ordinary actor sibling identify the shared
+render context used by mesh submission. See [mesh evidence](docs/mesh-submission-evidence.md).
+
 ## Outstanding architecture work
 
 The transform/project kernel now matches with documented inline assembly and

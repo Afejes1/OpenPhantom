@@ -8,15 +8,16 @@ Whole executable: **incomplete**. Original linked placement: **unverified**.
 
 | Module | Function / source | Original address | Last verified result | Bytes / address bytes |
 |---|---|---|---|---|
-| material | [material_mode](../src/material_mode.c) | 0x0040E840 | raw-code-match | 41 / 0 |
-| spatial_grid | [grid_cell](../src/grid_cell.c) | 0x00406E22 | relocation-adjusted-match | 24 / 4 |
-| map_geometry | [plane_coordinate](../src/plane_coordinate.c) | 0x0040DCEE | relocation-adjusted-match | 384 / 8 |
-| view_projection | [update_projection](../src/update_projection.c) | 0x0040EF40 | relocation-adjusted-match | 144 / 48 |
-| view_projection | [face_clip_flags](../src/face_clip_flags.c) | 0x0040F170 | raw-code-match | 64 / 0 |
-| view_projection | [transform_project](../src/transform_project.c) | 0x0040EFD0 | relocation-adjusted-match | 416 / 44 |
+| material | [material_mode](../src/material_mode.c) | 0x0040E840 | raw-code-match (historical; current source unverified) | 41 / 0 |
+| spatial_grid | [grid_cell](../src/grid_cell.c) | 0x00406E22 | relocation-adjusted-match (historical; current source unverified) | 24 / 4 |
+| map_geometry | [plane_coordinate](../src/plane_coordinate.c) | 0x0040DCEE | relocation-adjusted-match (historical; current source unverified) | 384 / 8 |
+| view_projection | [update_projection](../src/update_projection.c) | 0x0040EF40 | relocation-adjusted-match (historical; current source unverified) | 144 / 48 |
+| view_projection | [face_clip_flags](../src/face_clip_flags.c) | 0x0040F170 | raw-code-match (historical; current source unverified) | 64 / 0 |
+| view_projection | [transform_project](../src/transform_project.c) | 0x0040EFD0 | relocation-adjusted-match (historical; current source unverified) | 416 / 44 |
+| mesh_submission | [set_mesh_render_thing](../src/set_mesh_render_thing.c) | 0x0040F1B0 | unverified | 48 / 16 |
 
-Registered functions: **6**. Last recorded matches with unchanged definitions: **6**.
-Current source fingerprint agrees with the latest run: **yes**.
+Registered functions: **7**. Last recorded matches with unchanged definitions: **6**.
+Current source fingerprint agrees with the latest run: **no**.
 This count is not whole-program coverage and does not certify the modern TPM reconstruction.
 
 Latest build: '20260912-121232-fedb0cc6', source commit 'cf9629be97e9f760217388fee02164f8b804c856'.
@@ -31,6 +32,7 @@ History contains 6 verified build records.
 - **face_clip_flags**: Unsigned vertex count; zero count returns 0xFF00 without array reads; Compare all six trailing NOP alignment bytes. Exceptions: none.
 - **transform_project**: Reconstructed inline x87 kernel with compiler-generated C frame and alignment; original source text remains unknown; Raw positive-zero depth check distinguishes negative zero; unordered comparisons retain original condition flags; Retain reciprocal in x87 precision while storing its rounded float value; Zero selection entries leave output and clip slots unchanged; selected indices are one-based; Compare all nine trailing NOP bytes. Exceptions: none.
   Compiler diagnostic waiver C4725: Preserve original x87 FDIV instructions despite the advisory about defective early Pentium processors. Scope: src/transform_project.c function; warning level 4 explicitly restored afterward. No byte exclusion.
+- **set_mesh_render_thing**: No opacity clamping; preserve out-of-range and nonfinite multiplication; Compare all five trailing NOP alignment bytes. Exceptions: none.
 
 ## Unresolved program work
 

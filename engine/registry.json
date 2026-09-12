@@ -121,6 +121,24 @@
         }
       ],
       "exceptions": []
+    },
+    {
+      "id": "set_mesh_render_thing",
+      "module": "mesh_submission",
+      "analysis_name": "FUN_0040f1b0",
+      "confidence": "HIGH",
+      "purpose": "Publish the active render Thing and scale its opacity by 255, with a null reset",
+      "evidence": [
+        "docs/mesh-submission-evidence.md"
+      ],
+      "behavior_tests": [
+        "tests/mesh_behavior.h"
+      ],
+      "quirks": [
+        "No opacity clamping; preserve out-of-range and nonfinite multiplication",
+        "Compare all five trailing NOP alignment bytes"
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

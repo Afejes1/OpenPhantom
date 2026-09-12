@@ -19,6 +19,8 @@ float op_focal, op_depth_scale;
 float op_edge_18, op_edge_1c, op_edge_20, op_edge_24;
 float op_far, op_near;
 int op_depth_mode;
+op_render_thing *op_active_render_thing;
+float op_mesh_opacity;
 
 static int failures;
 static void check(int condition, int line) { if (!condition) { ++failures; printf("Failed at line %d\n", line); } }
@@ -100,6 +102,7 @@ static void clip_flag_tests(void)
 }
 
 #include "projection_behavior.h"
+#include "mesh_behavior.h"
 
 int main(void)
 {
@@ -134,6 +137,7 @@ int main(void)
     CHECK(op_edge_20 == 635.0f && op_edge_24 == 470.0f);
     CHECK(op_near == 0.5f && op_far == 8.0f);
     projection_tests();
+    mesh_context_tests();
     if (failures) return 1;
 #ifdef OP_VC5_BEHAVIOR
     puts("VC5 behavioral fixture passed, including x87 unordered fallback.");

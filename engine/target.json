@@ -218,6 +218,40 @@
         4725
       ],
       "implementation": "c-with-inline-assembly"
+    },
+    {
+      "id": "set_mesh_render_thing",
+      "address": 4256176,
+      "size": 48,
+      "body_size": 43,
+      "source": "src/set_mesh_render_thing.c",
+      "symbol": "_op_set_mesh_render_thing",
+      "flags": [
+        "/O2",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 7,
+          "address": 6000232,
+          "symbol": "_op_active_render_thing"
+        },
+        {
+          "offset": 21,
+          "address": 4882684,
+          "float32": 255.0
+        },
+        {
+          "offset": 27,
+          "address": 6000228,
+          "symbol": "_op_mesh_opacity"
+        },
+        {
+          "offset": 34,
+          "address": 6000228,
+          "symbol": "_op_mesh_opacity"
+        }
+      ]
     }
   ]
 }

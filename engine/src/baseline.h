@@ -34,6 +34,13 @@ typedef struct op_face_indices {
     const unsigned int *vertex_indices;
 } op_face_indices;
 
+typedef struct op_render_thing {
+    unsigned char opaque_00[0x150];
+    float render_opacity;
+} op_render_thing;
+
+extern op_render_thing *op_active_render_thing;
+extern float op_mesh_opacity;
 extern unsigned char op_grid[];
 extern op_camera_state *op_camera;
 extern unsigned int op_width_bits, op_height_bits;
@@ -51,5 +58,7 @@ unsigned int op_face_clip_flags(const op_face_indices *face,
 void op_transform_project(const float *vertices, float *output,
                           const int *indices, unsigned char *codes,
                           int count, const float *matrix);
+
+void op_set_mesh_render_thing(op_render_thing *thing);
 
 #endif
