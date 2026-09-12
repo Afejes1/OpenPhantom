@@ -156,6 +156,9 @@ or any original game data in a commit, release, or issue attachment.
 
 ## Registry and recovery
 
+[Process alignment and reproducibility](docs/process-alignment.md) explains
+what matching proves, which build inputs are committed, and what public CI checks.
+
 See [the generated progress report](docs/progress.md) and
 [registry and private recovery instructions](docs/registry-and-recovery.md).
 The registry records evidence and compiler quirks per function; immutable build
