@@ -36,7 +36,7 @@ class DockerRunnerTests(unittest.TestCase):
         mounts = [argv[i + 1] for i, value in enumerate(argv) if value == "--mount"]
         self.assertEqual(len(mounts), 4)
         self.assertEqual(sum(value.endswith(",readonly") for value in mounts), 3)
-        self.assertIn("type=bind,source=" + str(self.out) + ",target=/build", mounts)
+        self.assertIn("type=bind,source=" + str(self.out.resolve()) + ",target=/build", mounts)
         self.assertIn(r"/FoZ:\build\sample.obj", argv)
         self.assertIn(r"Z:\source\src\sample.c", argv)
         self.assertIn(r"INCLUDE=Z:\toolchain\include", argv)
