@@ -40,7 +40,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x00405A50 | bapdrawOld_emitFace | not_done | Unverified candidate: [research](../research/surface-emission/README.md) |
 | 0x00405CF0 | bapdraw_gatherCellMovers | not_done | Queued; no local match recorded |
 | 0x00406300 | bapdraw_emitFace | not_done | Unverified candidate: [research](../research/surface-emission/README.md) |
-| 0x004064B0 | bapdraw_gatherCell | not_done | Queued; no local match recorded |
+| 0x004064B0 | bapdraw_gatherCell | not_done | Unverified candidate: [research](../research/surface-emission/README.md) |
 | 0x00406830 | bapdraw_submitGathered | not_done | Recorded match: [submit_gathered_surfaces](../src/submit_gathered_surfaces.c) |
 
 ## Remaining work by reported file

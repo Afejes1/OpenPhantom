@@ -90,3 +90,9 @@ masked exceptions. Its projection callback is a stub, so it does not certify
 projection implementations, emitter/culler integration, other rounding modes,
 unmasked exceptions or whole-game behavior. The original was statically read
 only. See the [batch receipt](surface-batch-20260912.json).
+
+A later metadata pass stored the plain C three-argument Ghidra prototype
+(int plane, float *position, float height) and refreshed the legacy emitter
+caller. Position is only read by the observed function; the authored source
+retains const qualification. This metadata recovery does not change the ten-byte
+compiled mismatch or grant a new accepted function.

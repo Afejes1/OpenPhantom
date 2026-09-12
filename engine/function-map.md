@@ -27,3 +27,5 @@ remaining questions. Other existing Ghidra names are preserved.
 | 0x00405A50 | FUN_00405a50 | queue_legacy_scan_surface | HIGH behavior; compilation unverified | Apply legacy integer fade, update scan height, cull and queue a surface | Full body, both legacy cell callers, camera/basis state and three call sites; docs/surface-emission-evidence.md |
 
 | 0x00403FA0 | FUN_00403fa0 | cull_camera_space_scan_plane | HIGH behavior; compilation unverified | Test two selected camera-space corners through a scalar projection callback and reject against one scan boundary | Complete body/table/alignment, seven incoming calls, camera callback selector and four scalar callees, setup/basis/edge writers; docs/scan-culling-evidence.md |
+
+| 0x004064B0 | FUN_004064b0 | gather_visible_static_cell_surfaces | HIGH behavior; compilation unverified | Traverse static cell surface groups, apply room/frustum skips and queue visible surfaces | Complete body and alignment, sole world-traversal caller, affine callee, bound/counter writers and consumers; docs/static-cell-evidence.md |

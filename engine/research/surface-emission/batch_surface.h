@@ -2,9 +2,10 @@
 #define OP_SURFACE_EMISSION_RESEARCH_H
 #include "baseline.h"
 typedef struct op_emission_surface {
- unsigned char opaque_00[12];
+ unsigned short record_tag;
+ unsigned char opaque_02[10];
  unsigned char reject_flags, opaque_0d, opacity, opaque_0f[13];
- unsigned char height, opaque_1d[7];
+ unsigned char height, frustum_skip_extra, room_skip_extra, opaque_1f[5];
  unsigned char texture_index, opaque_25[2], clip_marker;
  unsigned char render_flags, opaque_29, visibility_group, packed_opacity;
  unsigned short flags;

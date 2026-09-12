@@ -94,3 +94,15 @@ reviewed to establish the ABI and projected depth coordinate. The candidate's
 480-byte extent and checked internal switch-table destinations agree, but ten
 instruction bytes differ. Its focused fixture passes; it remains outside the
 accepted registry. See [scan-culling evidence](docs/scan-culling-evidence.md).
+
+## Static-cell collection under reconstruction
+
+The ordinary cell collector at 0x004064B0 processes 64-byte records after a
+16-byte cell header, using extra-record room/frustum skips and a last-height
+cache before current-path emission. Capacity is checked only at function entry.
+The four-candidate research batch now includes this C++ reconstruction: its
+896-byte extent is correct, but relocation positions still differ. Its focused
+VC5 fixture passes 4,184 checks. See [static-cell evidence](docs/static-cell-evidence.md).
+The culler's additional processor/optimizer, arithmetic, inline-vector and
+indexing probes retained its ten-byte mismatch; no new compiler profile was
+accepted. The fourteen-function history remains unchanged.

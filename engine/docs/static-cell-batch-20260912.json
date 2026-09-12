@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "kind": "focused-research-batch",
+  "date": "2026-09-12",
+  "accepted_history_record": false,
+  "accepted_function_count_unchanged": 14,
+  "whole_executable_match": false,
+  "exclusions": [],
+  "compiler": "Microsoft VC5 RTM 11.00.7022",
+  "linker": "Microsoft 5.00.7022",
+  "candidate_flags": ["/nologo", "/c", "/W4", "/WX", "/Zi", "/O2", "/MT"],
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "comparison_report_sha256": "2352dc5710c05441604bf86bb028de3e2f228608a422949002c1efd24564db64",
+  "behavior_report_sha256": "26f5a0e6e9480bec412f31648d671f2c590b7c0a7804c4bf309dac7543796580",
+  "collector": {
+    "id": "gather_static_cell",
+    "address": "0x004064B0",
+    "team_module": "bp/bapdraw.c",
+    "team_status": "not_done",
+    "source": "research/surface-emission/collection_candidate.cpp",
+    "source_sha256": "70da8182cf8ada79f065d355141cabe0eb17bd193eefcca7776a8d9005844bbc",
+    "target_sha256": "4c48850c9ac633344e28375ef6583df21095b506cc85324f711d4fb29dd48a69",
+    "fixture_source_sha256": "5ba05c2e85953a04de9ccd3e9b34a6329f7261e90b511df61e79d97c8b839023",
+    "object_sha256": "0812c20d8e2bdf77d3827df8f23974a5bf351531265b2b470f58e5da1147dd74",
+    "required_extent": 896,
+    "candidate_extent": 896,
+    "body_size": 895,
+    "alignment_bytes": 1,
+    "required_relocations": 40,
+    "candidate_relocations": 40,
+    "comparison_status": "unresolved",
+    "comparison_reason": "COFF relocation inventory differs from expected operands"
+  },
+  "other_comparisons": [
+    {"id": "emit_surface", "status": "unresolved", "reason": "COFF relocation inventory differs from expected operands"},
+    {"id": "emit_legacy_surface", "status": "unresolved", "reason": "COFF relocation inventory differs from expected operands"},
+    {"id": "cull_scan_plane", "status": "mismatch", "different_bytes": 10, "reason": "non-relocation bytes differ"}
+  ],
+  "fixtures": [
+    {"name": "emission", "passed": true, "sha256": "9e920862bead2dfcac198e5c0364bfdb0b664a52bdd9e8ca8dc5af35ca5a6ea2"},
+    {"name": "culling", "passed": true, "checks": 3038, "sha256": "b34c64fcec33cba3f02831bc8236f40b210077ac15cf71fe6cefaa59da960792"},
+    {"name": "collection", "passed": true, "checks": 4184, "sha256": "59674cc650b3506562ea68d9a4459775b97ad694791cc9ea5fbb9c2837e60da5"}
+  ],
+  "scope_limits": [
+    "Four research candidates remain outside the accepted function registry.",
+    "The culler uses a controlled projection callback and the collector uses a controlled affine callee.",
+    "The collector fixture intentionally owns extra queue storage to test the single entry guard.",
+    "No original game execution, full regression or recovery checkpoint was performed."
+  ]
+}
