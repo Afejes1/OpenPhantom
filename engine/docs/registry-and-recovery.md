@@ -42,6 +42,9 @@ Raw code equality, equality after verified relocation resolution, behavioral
 evidence, and whole-file equality remain distinct. No current record certifies
 original linked placement. A stale source snapshot is labelled historical.
 
+The [batch cadence](verification-cadence.md) controls when broader checks and
+recovery drills run. It does not weaken the conditions for an accepted record.
+
 ## Record and review a build
 
 Commit source, target, registry, and tool changes before building so each public

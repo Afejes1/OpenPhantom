@@ -38,6 +38,13 @@ reproducible Docker setup. [The upstream proposal](docs/upstream-proposal.md) is
 experiment; the contributor has confirmed direct discussion with the authors
 and authorized continued work in this fork.
 
+## Working in batches
+
+Follow the [verification cadence](docs/verification-cadence.md): strict per-function
+byte checks during reconstruction, one full build record at a batch checkpoint,
+and full regression before integration. Ordinary feature-branch push CI checks evidence and
+annotations; pull requests, manual runs and develop/main pushes execute the broader suite.
+
 ## Tests that need no original compiler or game
 
 Run from the repository root with Python 3.13 or newer:
@@ -95,7 +102,8 @@ reference in place and never executes or modifies it.
    ```powershell
    python engine/verify.py accept --reference $retail --build $buildDir --baseline engine/private/baseline-01.json
    ```
-   Build and test again from scratch, then check that second run:
+   When repeat-build verification is warranted by a toolchain change or a
+   reproducibility investigation, build and test again from scratch, then check:
    ```powershell
    python engine/verify.py check --reference $retail --build $buildDir --baseline engine/private/baseline-01.json
    ```
