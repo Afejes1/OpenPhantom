@@ -33,9 +33,15 @@ callees. It requires the locked Docker runner and does not read or execute the g
 
 Each run records commands, compiler/runtime fingerprints, candidate and verifier
 source hashes, object/comparison results, VC5 /FAcs assembly listings and fixture
-hashes in a fresh private build directory. Schema 2 records object, complete raw
-function-section and listing hashes even for unresolved comparisons. Completion
-requires source/toolchain freshness and unchanged object/listing hashes.
+hashes in a fresh private build directory. Schema 3 records object, complete raw
+function-section, listing and private byte/relocation-inventory hashes even for
+unresolved comparisons. The pinned Docker runtime emits truncated .cod files;
+each is explicitly flagged by missing function/file terminators. Complete object
+inventories are checked against the COFF section, including tables and padding.
+Completion requires source/toolchain freshness and unchanged artifact hashes.
+An optional native diagnostic produces terminated listings only after checking
+identical function bytes and relocations against the Docker-built object. See
+[listing integrity](../../docs/listing-integrity-20260912.md).
 No command creates an accepted full-build history record. The
 [artifact checkpoint](../../docs/surface-artifacts-20260912.md) explains the
 listing/report format, with its historical hash receipt. The

@@ -3,6 +3,7 @@ import argparse
 import json
 from pathlib import Path
 import re
+import struct
 import sys
 import uuid
 
@@ -20,27 +21,73 @@ CASES = (("candidate.cpp", "target.json"), ("legacy_candidate.c", "legacy-target
          ("legacy_collection_candidate.c", "legacy-collection-target.json"))
 
 
+def listing_terminators(data, symbol):
+    """Detect missing VC5 function/file endings; this is not a disassembler."""
+    lines = [line.strip() for line in data.decode("ascii", errors="replace").splitlines()
+             if line.strip() and not line.lstrip().startswith(";")]
+    start = re.compile(re.escape(symbol) + r"\s+PROC(?:\s|$)")
+    finish = re.compile(re.escape(symbol) + r"\s+ENDP(?:\s|$)")
+    starts = [i for i, line in enumerate(lines) if start.match(line)]
+    ends = [i for i, line in enumerate(lines) if finish.match(line)]
+    return (len(starts) == len(ends) == 1 and starts[0] < ends[0] and
+            ends[0] < len(lines) - 1 and lines[-1] == "END")
+
+
+def function_inventory(object_bytes, symbol):
+    """Complete private object bytes and fixups, including tables and padding."""
+    code, relocations = COFF(object_bytes).function(symbol)
+    return {"schema": 1, "kind": "authored-candidate-object-section",
+            "addressing": "unresolved-COFF-relative", "symbol": symbol,
+            "object_sha256": digest(object_bytes),
+            "function_section_bytes": len(code), "function_section_sha256": digest(code),
+            "rows": [{"offset": offset, "hex": code[offset:offset + 16].hex(" ")}
+                     for offset in range(0, len(code), 16)],
+            "relocations": [{"offset": offset, "kind": relocation.kind,
+                             "addend": struct.unpack_from("<I", code, offset)[0],
+                             "symbol": {"name": relocation.symbol.name,
+                                        "value": relocation.symbol.value,
+                                        "section": relocation.symbol.section,
+                                        "kind": relocation.symbol.kind,
+                                        "storage": relocation.symbol.storage}}
+                            for offset, relocation in sorted(relocations.items())]}
+
+
+def verify_inventory(object_bytes, symbol, inventory):
+    require(inventory == function_inventory(object_bytes, symbol),
+            "private function inventory differs from complete COFF section")
+
+
 def candidate_artifact(source, spec, obj, listing):
-    """Keep inspectable provenance even when strict comparison cannot proceed."""
+    """Retain complete bytes/fixups even if the compiler's listing is truncated."""
     object_bytes = obj.read_bytes()
     function_bytes, relocations = COFF(object_bytes).function(spec["symbol"])
     listing_bytes = listing.read_bytes()
     require(bool(listing_bytes.strip()), "compiler assembly listing is empty")
+    inventory = function_inventory(object_bytes, spec["symbol"])
+    inventory_path = obj.with_suffix(".function.json")
+    inventory_path.write_text(json.dumps(inventory, indent=2) + "\n", encoding="utf-8")
+    verify_inventory(object_bytes, spec["symbol"], json.loads(inventory_path.read_bytes()))
     return {"id": spec["id"], "source": source, "symbol": spec["symbol"],
             "object": obj.name, "object_sha256": digest(object_bytes),
             "function_section_bytes": len(function_bytes),
             "function_section_sha256": digest(function_bytes),
             "relocation_count": len(relocations),
             "assembly_listing": listing.name,
-            "assembly_listing_sha256": digest(listing_bytes)}
+            "assembly_listing_sha256": digest(listing_bytes),
+            "assembly_listing_has_terminators": listing_terminators(listing_bytes, spec["symbol"]),
+            "function_inventory": inventory_path.name,
+            "function_inventory_sha256": digest(inventory_path.read_bytes())}
 
 
 def verify_artifacts(out, artifacts):
     for artifact in artifacts:
         for name, checksum in (("object", "object_sha256"),
-                               ("assembly_listing", "assembly_listing_sha256")):
+                               ("assembly_listing", "assembly_listing_sha256"),
+                               ("function_inventory", "function_inventory_sha256")):
             require(digest((out / artifact[name]).read_bytes()) == artifact[checksum],
                     "research artifact changed during build: " + artifact[name])
+        verify_inventory((out / artifact["object"]).read_bytes(), artifact["symbol"],
+                         json.loads((out / artifact["function_inventory"]).read_bytes()))
 
 
 def main():
@@ -76,10 +123,10 @@ def main():
     if args.command == "compare":
         require(args.reference is not None, "compare requires --reference")
         original = verify_reference(args.reference.read_bytes(), target)
-    report = {"schema": 2, "scope": "unverified-surface-research-candidates",
+    report = {"schema": 3, "scope": "unverified-surface-research-candidates",
               "accepted_history_record": False, "whole_executable_match": False,
               "toolchain_lock_sha256": canonical_hash(lock), "source_snapshot": snapshot,
-              "commands": [], "artifacts": [], "comparisons": [], "fixtures": [],
+              "commands": [], "artifacts": [], "artifact_notices": [], "comparisons": [], "fixtures": [],
               "behavior_passed": None,
               "completed": False}
     def invoke(command):
@@ -98,7 +145,12 @@ def main():
             listing = out / (Path(source).stem + ".cod")
             invoke([config["compiler"], *COMMON_FLAGS, *spec["flags"], "/FAcs",
                     "/Fd" + str(out / "probe.pdb"), "/Fo" + str(obj), str(out / source)])
-            report["artifacts"].append(candidate_artifact(source, spec, obj, listing))
+            artifact = candidate_artifact(source, spec, obj, listing)
+            report["artifacts"].append(artifact)
+            if not artifact["assembly_listing_has_terminators"]:
+                notice = spec["id"] + ": compiler listing lacks terminators; complete object inventory retained"
+                report["artifact_notices"].append(notice)
+                print(notice)
             objects[spec["id"]] = obj
             if original is not None:
                 try:

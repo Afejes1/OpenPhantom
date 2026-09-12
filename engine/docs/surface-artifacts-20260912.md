@@ -4,6 +4,16 @@ This checkpoint adds inspectable original-compiler artifacts to the focused
 research runner. Four candidates remain unverified; the fourteen accepted
 functions and nineteen historical verification records are unchanged.
 
+## Later correction: truncated compiler listings
+
+A later review found that the schema-2 .cod files retained by this checkpoint
+end mid-line and lack the function ENDP/file END terminators. Their hashes
+correctly identify the retained files, but nonempty output did not establish a
+complete listing. The complete COFF sections and strict comparisons remain
+valid. [Schema 3](listing-integrity-20260912.md) records this limitation explicitly
+and adds independently checked, complete byte/relocation inventories. Historical
+receipts are retained without rewriting their results.
+
 ## Recorded artifacts
 
 VC5 RTM 11.00.7022 now receives /FAcs for each candidate. With source and machine

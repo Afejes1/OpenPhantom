@@ -80,6 +80,10 @@ here successfully links the synthetic fixture, but this does not establish the
 retail startup/heap library revision. Upstream reports possible SP1/SP2 code.
 Keep that question open until compared; no copied startup bytes are used.
 
-The native Windows configuration remains available for independently authorized
-installations. It was not exercised with this community archive. The verified
-setup is the container profile described above.
+A later authorized native Windows compilation diagnostic used the same
+fingerprinted community-archive compiler for all five surface research
+candidates. Their complete function bytes and relocations agree with Docker.
+Native compilation provides complete .cod listings where the pinned wibo
+runtime truncates them. This does not replace the Docker build/test profile,
+revalidate the full historical baseline natively, or execute generated programs
+on the host. See [listing integrity](listing-integrity-20260912.md).
