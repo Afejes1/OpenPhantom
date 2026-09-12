@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **9** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **960**.
+Our last recorded matches cover **11** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **958**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -24,7 +24,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 
 | Original address | Team name | Team status | Local evidence |
 |---|---|---|---|
-| 0x00401D30 | bapdraw_setFrameState | not_done | Queued; no local match recorded |
+| 0x00401D30 | bapdraw_setFrameState | not_done | Recorded match: [set_frame_state](../src/set_frame_state.c) |
 | 0x00401EB8 | bapdraw_queuePoly | not_done | Recorded match: [queue_face_packet](../src/queue_face_packet.c) |
 | 0x00402021 | bapdraw_reservePoly | not_done | Recorded match: [peek_face_packet](../src/peek_face_packet.c) |
 | 0x00402046 | bapdraw_commitVerts | not_done | Unverified candidate: [research](../research/projected-vertex-fog/README.md) |
@@ -36,7 +36,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x00404180 | bapdrawOld_frameSetup | not_done | Queued; no local match recorded |
 | 0x00404730 | bapdraw_drawWorld | not_done | Queued; no local match recorded |
 | 0x004056C0 | bapdrawOld_gatherCell | not_done | Queued; no local match recorded |
-| 0x004059F0 | bapdrawOld_pushDrawEntry | not_done | Queued; no local match recorded |
+| 0x004059F0 | bapdrawOld_pushDrawEntry | not_done | Recorded match: [push_surface_draw_entry](../src/push_surface_draw_entry.cpp) |
 | 0x00405A50 | bapdrawOld_emitFace | not_done | Queued; no local match recorded |
 | 0x00405CF0 | bapdraw_gatherCellMovers | not_done | Queued; no local match recorded |
 | 0x00406300 | bapdraw_emitFace | not_done | Queued; no local match recorded |
@@ -47,7 +47,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 
 | Reported file | Team not done | Local recorded matches within that list | Remaining |
 |---|---|---|---|
-| bp/bapdraw.c | 18 | 4 | 14 |
+| bp/bapdraw.c | 18 | 6 | 12 |
 | bp/bapmodel.c | 8 | 4 | 4 |
 | bp/bapmap.c | 14 | 1 | 13 |
 | bp/baplight.c | 6 | 0 | 6 |
