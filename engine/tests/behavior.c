@@ -71,6 +71,33 @@ static void plane_tests(void)
 #endif
 }
 
+static void clip_flag_tests(void)
+{
+    op_face_indices face;
+    unsigned int indices[4] = {2, 0, 1, 0};
+    unsigned char codes[3] = {1, 9, 128};
+    CHECK(offsetof(op_face_indices, vertex_count) == 0x14);
+    CHECK(offsetof(op_face_indices, vertex_indices) == 0x18);
+    face.vertex_count = 0;
+    face.vertex_indices = 0;
+    CHECK(op_face_clip_flags(&face, 0) == 0xff00);
+    face.vertex_indices = indices;
+    face.vertex_count = 1;
+    CHECK(op_face_clip_flags(&face, codes) == 0x8080);
+    face.vertex_count = 3;
+    CHECK(op_face_clip_flags(&face, codes) == 0x0089);
+    face.vertex_indices = indices + 1;
+    face.vertex_count = 2;
+    CHECK(op_face_clip_flags(&face, codes) == 0x0109);
+    codes[1] = 2;
+    CHECK(op_face_clip_flags(&face, codes) == 0x0003);
+    face.vertex_count = 3;
+    CHECK(op_face_clip_flags(&face, codes) == 0x0003);
+    codes[0] = 0;
+    face.vertex_count = 1;
+    CHECK(op_face_clip_flags(&face, codes) == 0);
+}
+
 int main(void)
 {
     op_viewport viewport;
@@ -90,6 +117,7 @@ int main(void)
     CHECK(op_grid_cell(0, 0) == op_grid);
     CHECK(op_grid_cell(255, 1) == op_grid + 65408);
     plane_tests();
+    clip_flag_tests();
     viewport.width_bits = 640; viewport.height_bits = 480;
     viewport.edge_18 = -5; viewport.edge_1c = 10;
     viewport.edge_20 = 635; viewport.edge_24 = 470;

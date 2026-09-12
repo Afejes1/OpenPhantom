@@ -28,6 +28,12 @@ typedef struct op_camera_state {
     op_frustum *frustum;
 } op_camera_state;
 
+typedef struct op_face_indices {
+    unsigned char opaque_00[20];
+    unsigned int vertex_count;
+    const unsigned int *vertex_indices;
+} op_face_indices;
+
 extern unsigned char op_grid[];
 extern op_camera_state *op_camera;
 extern unsigned int op_width_bits, op_height_bits;
@@ -39,5 +45,7 @@ int op_material_mode(int mode);
 unsigned char *op_grid_cell(int x, int y);
 float op_plane_coordinate(int axis, float *vertex, float *normal, float *point);
 void op_update_projection(void);
+unsigned int op_face_clip_flags(const op_face_indices *face,
+                               const unsigned char *clip_codes);
 
 #endif

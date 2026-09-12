@@ -6,29 +6,145 @@
   "sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
   "image_base": 4194304,
   "functions": [
-    {"id": "material_mode", "address": 4253760, "size": 41,
-     "source": "src/material_mode.c", "symbol": "_op_material_mode", "flags": ["/Od", "/MT"], "bindings": []},
-    {"id": "grid_cell", "address": 4222498, "size": 24,
-     "source": "src/grid_cell.c", "symbol": "_op_grid_cell", "flags": ["/Od", "/MT"],
-     "bindings": [{"offset": 18, "address": 5889984, "symbol": "_op_grid"}]},
-    {"id": "plane_coordinate", "address": 4250862, "size": 384,
-     "source": "src/plane_coordinate.c", "symbol": "_op_plane_coordinate", "flags": ["/Od", "/MT"],
-     "bindings": [{"offset": 15, "address": 4882636, "float32": 0.0}, {"offset": 51, "address": 4882640, "float32": 1.0}]},
-    {"id": "update_projection", "address": 4255552, "size": 144, "body_size": 129,
-     "source": "src/update_projection.c", "symbol": "_op_update_projection", "flags": ["/O2", "/MT"],
-     "bindings": [
-       {"offset": 1, "address": 7308260, "symbol": "_op_camera"},
-       {"offset": 13, "address": 6000220, "symbol": "_op_width_bits"},
-       {"offset": 25, "address": 5988328, "symbol": "_op_height_bits"},
-       {"offset": 34, "address": 5989432, "symbol": "_op_focal"},
-       {"offset": 46, "address": 4882680, "float32": 1.0},
-       {"offset": 52, "address": 5988348, "symbol": "_op_depth_scale"},
-       {"offset": 64, "address": 5988400, "symbol": "_op_edge_18"},
-       {"offset": 76, "address": 5988404, "symbol": "_op_edge_1c"},
-       {"offset": 88, "address": 5988356, "symbol": "_op_edge_20"},
-       {"offset": 100, "address": 5988360, "symbol": "_op_edge_24"},
-       {"offset": 112, "address": 6000756, "symbol": "_op_far"},
-       {"offset": 124, "address": 5988352, "symbol": "_op_near"}
-     ]}
+    {
+      "id": "material_mode",
+      "address": 4253760,
+      "size": 41,
+      "source": "src/material_mode.c",
+      "symbol": "_op_material_mode",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "grid_cell",
+      "address": 4222498,
+      "size": 24,
+      "source": "src/grid_cell.c",
+      "symbol": "_op_grid_cell",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 18,
+          "address": 5889984,
+          "symbol": "_op_grid"
+        }
+      ]
+    },
+    {
+      "id": "plane_coordinate",
+      "address": 4250862,
+      "size": 384,
+      "source": "src/plane_coordinate.c",
+      "symbol": "_op_plane_coordinate",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 15,
+          "address": 4882636,
+          "float32": 0.0
+        },
+        {
+          "offset": 51,
+          "address": 4882640,
+          "float32": 1.0
+        }
+      ]
+    },
+    {
+      "id": "update_projection",
+      "address": 4255552,
+      "size": 144,
+      "body_size": 129,
+      "source": "src/update_projection.c",
+      "symbol": "_op_update_projection",
+      "flags": [
+        "/O2",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 1,
+          "address": 7308260,
+          "symbol": "_op_camera"
+        },
+        {
+          "offset": 13,
+          "address": 6000220,
+          "symbol": "_op_width_bits"
+        },
+        {
+          "offset": 25,
+          "address": 5988328,
+          "symbol": "_op_height_bits"
+        },
+        {
+          "offset": 34,
+          "address": 5989432,
+          "symbol": "_op_focal"
+        },
+        {
+          "offset": 46,
+          "address": 4882680,
+          "float32": 1.0
+        },
+        {
+          "offset": 52,
+          "address": 5988348,
+          "symbol": "_op_depth_scale"
+        },
+        {
+          "offset": 64,
+          "address": 5988400,
+          "symbol": "_op_edge_18"
+        },
+        {
+          "offset": 76,
+          "address": 5988404,
+          "symbol": "_op_edge_1c"
+        },
+        {
+          "offset": 88,
+          "address": 5988356,
+          "symbol": "_op_edge_20"
+        },
+        {
+          "offset": 100,
+          "address": 5988360,
+          "symbol": "_op_edge_24"
+        },
+        {
+          "offset": 112,
+          "address": 6000756,
+          "symbol": "_op_far"
+        },
+        {
+          "offset": 124,
+          "address": 5988352,
+          "symbol": "_op_near"
+        }
+      ]
+    },
+    {
+      "id": "face_clip_flags",
+      "address": 4256112,
+      "size": 64,
+      "body_size": 58,
+      "source": "src/face_clip_flags.c",
+      "symbol": "_op_face_clip_flags",
+      "flags": [
+        "/O2",
+        "/MT"
+      ],
+      "bindings": []
+    }
   ]
 }

@@ -179,7 +179,8 @@ class FormatTests(unittest.TestCase):
 class ManifestAndCLITests(unittest.TestCase):
     def test_real_manifest_is_structurally_valid_without_retail_input(self):
         manifest = load_target(ROOT / "target.json")
-        self.assertEqual(sum(s["size"] for s in manifest["functions"]), 593)
+        original_ids = {"material_mode", "grid_cell", "plane_coordinate", "update_projection"}
+        self.assertEqual(sum(s["size"] for s in manifest["functions"] if s["id"] in original_ids), 593)
 
     def test_invalid_binding_and_source_paths(self):
         for mutation in (lambda m: m["functions"][0].update(source="../elsewhere.c"),

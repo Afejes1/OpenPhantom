@@ -4,7 +4,7 @@ if(NOT MSVC OR NOT CMAKE_SIZEOF_VOID_P EQUAL 4)
   message(FATAL_ERROR "This supplemental smoke test requires modern MSVC x86. Use verify.py for VC5.")
 endif()
 add_executable(finite_behavior behavior.c ../src/material_mode.c ../src/grid_cell.c
-  ../src/plane_coordinate.c ../src/update_projection.c)
+  ../src/plane_coordinate.c ../src/update_projection.c ../src/face_clip_flags.c)
 target_compile_options(finite_behavior PRIVATE /W4 /WX /Od /fp:precise)
 enable_testing()
 add_test(NAME finite_behavior_only COMMAND finite_behavior)

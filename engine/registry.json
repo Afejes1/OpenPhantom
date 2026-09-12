@@ -73,6 +73,24 @@
         "Compare all 15 trailing NOP alignment bytes"
       ],
       "exceptions": []
+    },
+    {
+      "id": "face_clip_flags",
+      "module": "view_projection",
+      "analysis_name": "FUN_0040f170",
+      "purpose": "Combine indexed vertex clip codes into their union and shifted intersection",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/view-projection-evidence.md"
+      ],
+      "behavior_tests": [
+        "tests/behavior.c"
+      ],
+      "quirks": [
+        "Unsigned vertex count; zero count returns 0xFF00 without array reads",
+        "Compare all six trailing NOP alignment bytes"
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
