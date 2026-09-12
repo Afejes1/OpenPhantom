@@ -18,7 +18,7 @@ from runners import run_tool
 CASES = (("candidate.cpp", "target.json"), ("legacy_candidate.c", "legacy-target.json"),
          ("culling_candidate.c", "culling-target.json"),
          ("collection_candidate.cpp", "collection-target.json"),
-         ("legacy_collection_candidate.c", "legacy-collection-target.json"))
+         ("legacy_collection_candidate.cpp", "legacy-collection-target.json"))
 
 
 def listing_terminators(data, symbol):

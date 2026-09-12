@@ -117,6 +117,7 @@ entries after the bucket helper, preserving callback-visible count and pointer
 reloads. Slab culling follows those group phases. Accepted cells publish scan
 position and zero cached height, then emit normal records or unseen references.
 A null unseen reference still increments an integer visit counter. The authored
-candidate has the full 816-byte extent and 34 relocations, but operand locations
-and instructions differ. Its focused fixture passes 1,195 checks. See
+C++ reconstruction matches the full 816-byte span with all 34 address operands
+verified and no byte exclusions. Its focused fixture passes 1,195 checks; the
+match awaits the shared batch acceptance checkpoint. See
 [legacy-cell evidence](docs/legacy-cell-evidence.md). No new function is accepted.

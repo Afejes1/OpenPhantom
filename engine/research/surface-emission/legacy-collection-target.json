@@ -3,7 +3,7 @@
   "address": 4216512,
   "size": 816,
   "body_size": 809,
-  "source": "src/gather_legacy_cell.c",
+  "source": "src/gather_legacy_cell.cpp",
   "symbol": "_op_gather_legacy_cell",
   "flags": [
     "/O2",
@@ -188,5 +188,6 @@
       "symbol": "_op_emit_legacy_surface",
       "kind": "rel32-call"
     }
-  ]
+  ],
+  "language": "c++"
 }

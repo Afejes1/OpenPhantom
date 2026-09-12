@@ -1,7 +1,8 @@
 # Surface-emission, scan-culling and cell-collection research batch
 
-All five functions are reported not done in bp/bapdraw.c. None is accepted by
-the matching registry. The existing fourteen-function history remains unchanged.
+All five functions are reported not done in bp/bapdraw.c. The legacy collector now has a strict focused byte match awaiting the batch
+acceptance checkpoint; the other four remain unmatched. None has been added to
+the accepted registry. The existing fourteen-function history remains unchanged.
 
 | Address | Team name | Candidate | Current comparison |
 |---|---|---|---|
@@ -9,7 +10,7 @@ the matching registry. The existing fourteen-function history remains unchanged.
 | 0x00405A50 | bapdrawOld_emitFace | [C source](legacy_candidate.c) | Correct 672-byte extent; relocation inventory and instructions differ |
 | 0x00403FA0 | bapdrawOld_cullAgainstPlane | [C source](culling_candidate.c) | Correct 480-byte extent and all 22 relocations; six instruction bytes differ |
 | 0x004064B0 | bapdraw_gatherCell | [C++ source](collection_candidate.cpp) | Correct 896-byte extent and all 40 relocations; five instruction bytes differ |
-| 0x004056C0 | bapdrawOld_gatherCell | [C source](legacy_collection_candidate.c) | Correct 816-byte extent and 34 relocations; operand positions and instructions differ |
+| 0x004056C0 | bapdrawOld_gatherCell | [C++ source](legacy_collection_candidate.cpp) | Focused byte match across all 816 bytes and 34 verified relocations; awaiting batch acceptance |
 
 The JSON target definitions preserve complete original extents, embedded tables,
 alignment, constant widths, symbol addends and calls. These pending specifications
@@ -104,9 +105,15 @@ See [emission evidence](../../docs/surface-emission-evidence.md),
 before a full original-toolchain acceptance checkpoint. A behavior pass cannot
 resolve a byte mismatch.
 
-The legacy collector retains both duplicated group walks and the three traversal
-phases. C/C++ frontend, loop-index ordering, array indexing and scan-position
-copy probes retain an 816-byte section with 34 relocations but do not reproduce
-their original locations. It remains outside the accepted registry. See
+The legacy collector now matches the entire 816-byte span after verifying all
+34 address operands. Guarded do-while traversal, direct queue-counter use and
+field cursors reproduce the original allocation and layout. C++ is required for
+the final base/index addressing byte; an unsigned greater-than-zero reference
+count test reproduces the original branch opcode. It remains outside the
+accepted registry pending the shared batch checkpoint. See
 [legacy-cell evidence](../../docs/legacy-cell-evidence.md) and the
 [five-candidate checkpoint](../../docs/legacy-cell-batch-20260912.json).
+
+The [focused exact-match receipt](../../docs/legacy-cell-match-20260912.json)
+records source hashes, the equal reference/resolved span hashes, and the current
+Docker/native and synthetic-fixture checks. No full regression was repeated.

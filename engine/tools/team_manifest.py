@@ -97,6 +97,7 @@ def render_team_progress(doc, order, target, history):
              "Our last recorded matches cover **%d** team-not-done entries and **%d** team-done entries." % (local_not_done, local_done),
              "Team-not-done entries without a local recorded match: **%d**." % (counts["not_done"] - local_not_done), "",
              "These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.", "",
+             "Research links include focused matches awaiting a batch checkpoint. Only recorded matches contribute to the counts above.", "",
              "Address plus the pinned retail binary identifies a function. Reported names (including aliases) and file assignments are preserved as supplied, not automatically applied to Ghidra or accepted source definitions.", "",
              "## Work order", "", "1. **%s**: current local focus." % priorities[0]]
     lines += ["%d. **%s**: queued after the active module." % (i + 2, p) for i, p in enumerate(priorities[1:])]
@@ -119,7 +120,7 @@ def render_team_progress(doc, order, target, history):
         elif row["reported_status"] == "done":
             local = "Deferred; team reports done, local verification pending"
         elif address in pending:
-            local = "Unverified candidate: [research](../%s)" % pending[address]["source"]
+            local = "Research candidate (not registered): [research](../%s)" % pending[address]["source"]
         else:
             local = "Queued; no local match recorded"
         lines.append("| 0x%08X | %s | %s | %s |" % (address, row["reported_name"].replace("|", "&#124;"), row["reported_status"], local))

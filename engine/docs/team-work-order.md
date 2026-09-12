@@ -8,6 +8,8 @@ Team-not-done entries without a local recorded match: **957**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
+Research links include focused matches awaiting a batch checkpoint. Only recorded matches contribute to the counts above.
+
 Address plus the pinned retail binary identifies a function. Reported names (including aliases) and file assignments are preserved as supplied, not automatically applied to Ghidra or accepted source definitions.
 
 ## Work order
@@ -27,20 +29,20 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x00401D30 | bapdraw_setFrameState | not_done | Recorded match: [set_frame_state](../src/set_frame_state.c) |
 | 0x00401EB8 | bapdraw_queuePoly | not_done | Recorded match: [queue_face_packet](../src/queue_face_packet.c) |
 | 0x00402021 | bapdraw_reservePoly | not_done | Recorded match: [peek_face_packet](../src/peek_face_packet.c) |
-| 0x00402046 | bapdraw_commitVerts | not_done | Unverified candidate: [research](../research/projected-vertex-fog/README.md) |
+| 0x00402046 | bapdraw_commitVerts | not_done | Research candidate (not registered): [research](../research/projected-vertex-fog/README.md) |
 | 0x00402130 | bapdraw_reserveVerts | not_done | Recorded match: [peek_projected_vertices](../src/peek_projected_vertices.c) |
 | 0x00402155 | bapdraw_flushQueue | not_done | Queued; no local match recorded |
 | 0x004025B0 | bapdraw_clipSlopePlane &#124; bapdraw_clipPoly &#124; bapdraw_clipDepthPlane &#124; bapdraw_clipSwap | not_done | Queued; no local match recorded |
 | 0x00403EF0 | bapdrawOld_stepScan | not_done | Recorded match: [step_scan](../src/step_scan.c) |
-| 0x00403FA0 | bapdrawOld_cullAgainstPlane | not_done | Unverified candidate: [research](../research/surface-emission/README.md) |
+| 0x00403FA0 | bapdrawOld_cullAgainstPlane | not_done | Research candidate (not registered): [research](../research/surface-emission/README.md) |
 | 0x00404180 | bapdrawOld_frameSetup | not_done | Queued; no local match recorded |
 | 0x00404730 | bapdraw_drawWorld | not_done | Queued; no local match recorded |
-| 0x004056C0 | bapdrawOld_gatherCell | not_done | Unverified candidate: [research](../research/surface-emission/README.md) |
+| 0x004056C0 | bapdrawOld_gatherCell | not_done | Research candidate (not registered): [research](../research/surface-emission/README.md) |
 | 0x004059F0 | bapdrawOld_pushDrawEntry | not_done | Recorded match: [push_surface_draw_entry](../src/push_surface_draw_entry.cpp) |
-| 0x00405A50 | bapdrawOld_emitFace | not_done | Unverified candidate: [research](../research/surface-emission/README.md) |
+| 0x00405A50 | bapdrawOld_emitFace | not_done | Research candidate (not registered): [research](../research/surface-emission/README.md) |
 | 0x00405CF0 | bapdraw_gatherCellMovers | not_done | Queued; no local match recorded |
-| 0x00406300 | bapdraw_emitFace | not_done | Unverified candidate: [research](../research/surface-emission/README.md) |
-| 0x004064B0 | bapdraw_gatherCell | not_done | Unverified candidate: [research](../research/surface-emission/README.md) |
+| 0x00406300 | bapdraw_emitFace | not_done | Research candidate (not registered): [research](../research/surface-emission/README.md) |
+| 0x004064B0 | bapdraw_gatherCell | not_done | Research candidate (not registered): [research](../research/surface-emission/README.md) |
 | 0x00406830 | bapdraw_submitGathered | not_done | Recorded match: [submit_gathered_surfaces](../src/submit_gathered_surfaces.c) |
 
 ## Remaining work by reported file

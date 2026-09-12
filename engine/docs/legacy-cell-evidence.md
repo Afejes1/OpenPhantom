@@ -4,8 +4,9 @@ The team manifest marks 0x004056C0, bapdrawOld_gatherCell in bp/bapdraw.c,
 not done. The descriptive name gather_legacy_cell_surfaces has HIGH behavioral
 confidence from the complete static body, two incoming world-traversal calls,
 three callees and their shared state. It is not claimed as an original symbol.
-The authored [C candidate](../research/surface-emission/legacy_collection_candidate.c)
-is not accepted as a compiled match.
+The authored [C++ reconstruction](../research/surface-emission/legacy_collection_candidate.cpp)
+now passes focused strict byte comparison. It awaits the shared batch acceptance
+checkpoint and has not been added to the accepted registry.
 
 ## Callers, ABI and complete extent
 
@@ -80,14 +81,31 @@ maximum reference count or seen-buffer allocation.
 
 ## Focused validation and remaining work
 
-The original VC5 RTM compiler, /O2 /MT /W4 /WX /Zi, produces one 816-byte
-function section with 34 relocations. Operand positions and instructions differ;
-the strict comparator rejects it before assigning an instruction-difference
-count. Equal extent and equal relocation count are not a byte-match claim.
-Sixteen C/C++ layout probes did not resolve those positions.
+The original VC5 RTM C++ frontend, /O2 /MT /W4 /WX /Zi, now produces the
+complete matching 816-byte span. All 28 absolute operands (112 bytes) and six
+near-call operands (24 bytes) verify their exact symbols, addends and original
+destinations. The other 680 bytes, including every padding byte, agree exactly.
+Reference and resolved-candidate SHA-256 are both
+2bce02537cc0ccb8d3a916cc5269ab50ed310bd2a35da52255c79d9e91c76bc0.
+There are no exclusions or warning waivers. Linked placement and the complete
+retail executable are still unverified.
+
+Guarding nonempty traversal before initializing cursors restores the original
+register lifetime and load schedule. Referencing the global queue counter
+lets VC5 retain it in ECX across the relevant loops. Part iteration uses the
+surface-array field at part+0x4C, discovered records use flags at +0x28, and
+reference records use the count at +2; the cursor increments retain the original
+0x9C/64/12-byte strides. Those fields and offsets are independently documented
+above and checked by the synthetic fixture. No stack-frame or raw-byte assembly
+was introduced. A greater-than-zero byte test emits the original JBE, whereas
+an equivalent nonzero test emits JZ. The C frontend leaves one SIB byte different;
+C++ emits the exact original base/index ordering. This establishes the frontend
+needed by this reconstruction, not the original source text or file extension.
 
 The actual candidate linked to controlled bucket/culler/emitter stubs passes
-1,195 assertions in locked Docker. Cases include all three linked slots,
+1,195 assertions in locked Docker. Native compilation with the same compiler
+also reproduces identical function bytes and relocations and supplies a complete
+listing; no generated executable runs on the host. Cases include all three linked slots,
 duplicate/zero/out-of-range indexes, active/null groups, signed counts,
 part/surface strides, room filtering, state-before-capacity returns, both queue
 boundaries, post-callback count/pointer/count-limit reloads, both slab calls,
@@ -98,4 +116,8 @@ Stub mutations establish source behavior at call boundaries, not a claim that
 real callees perform those mutations. This fixture does not establish integrated
 renderer or whole-game equivalence. The original executable was read statically
 only. No full regression or recovery cycle was repeated. See the
-[focused receipt](legacy-cell-batch-20260912.json).
+[focused exact-match receipt](legacy-cell-match-20260912.json).
+
+Per the [batch cadence](verification-cadence.md), the full original-toolchain
+registry build and immutable record will follow when several functions are
+ready. The accepted baseline currently remains fourteen historical functions.
