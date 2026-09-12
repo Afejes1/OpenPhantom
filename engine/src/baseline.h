@@ -61,4 +61,39 @@ void op_transform_project(const float *vertices, float *output,
 
 void op_set_mesh_render_thing(op_render_thing *thing);
 
+/* Queue layouts established by the allocation, submission and flush routines. */
+typedef struct op_projected_vertex {
+    float x, y, reciprocal_depth, mapped_depth;
+} op_projected_vertex;
+
+typedef struct op_packet_face {
+    unsigned char opaque_00[0x20];
+    void *material;
+} op_packet_face;
+
+typedef struct op_face_packet {
+    struct op_face_packet *next;
+    op_packet_face *face;
+    unsigned char opaque_08[0x0f];
+    unsigned char render_tag;
+    unsigned char opaque_18[0xa0];
+} op_face_packet;
+
+typedef struct op_material_bucket {
+    void *material;
+    op_face_packet *head, *tail;
+} op_material_bucket;
+
+extern unsigned int op_projected_vertex_count;
+extern op_projected_vertex op_projected_vertices[];
+extern int op_face_packet_count, op_material_bucket_count;
+extern op_face_packet op_face_packets[];
+extern op_material_bucket op_material_buckets[];
+extern op_material_bucket *op_last_material_bucket;
+extern unsigned char op_render_queue_tag;
+
+op_projected_vertex *op_peek_projected_vertices(unsigned int requested);
+op_face_packet *op_peek_face_packet(void);
+int op_queue_face_packet(op_face_packet *packet);
+
 #endif

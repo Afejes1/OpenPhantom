@@ -28,6 +28,12 @@ The mesh-submission group now includes the matched active-Thing/opacity setup
 helper. Its projectile caller and ordinary actor sibling identify the shared
 render context used by mesh submission. See [mesh evidence](docs/mesh-submission-evidence.md).
 
+The render-queue group connects projected vertices to material-bucket submission.
+Availability helpers do not reserve storage; successful face submission advances
+the packet counter, while a separate fog/vertex commit advances the vertex count.
+Material submission preserves cached lookup, FIFO ordering, and partial writes on
+failure. See [render queue evidence](docs/render-queue-evidence.md).
+
 ## Outstanding architecture work
 
 The transform/project kernel now matches with documented inline assembly and

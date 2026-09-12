@@ -252,6 +252,160 @@
           "symbol": "_op_mesh_opacity"
         }
       ]
+    },
+    {
+      "id": "peek_projected_vertices",
+      "address": 4202800,
+      "size": 37,
+      "source": "src/peek_projected_vertices.c",
+      "symbol": "_op_peek_projected_vertices",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 5101292,
+          "symbol": "_op_projected_vertex_count"
+        },
+        {
+          "offset": 23,
+          "address": 5101292,
+          "symbol": "_op_projected_vertex_count"
+        },
+        {
+          "offset": 31,
+          "address": 4970176,
+          "symbol": "_op_projected_vertices"
+        }
+      ]
+    },
+    {
+      "id": "peek_face_packet",
+      "address": 4202529,
+      "size": 37,
+      "source": "src/peek_face_packet.c",
+      "symbol": "_op_peek_face_packet",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 5101280,
+          "symbol": "_op_face_packet_count"
+        },
+        {
+          "offset": 20,
+          "address": 5101280,
+          "symbol": "_op_face_packet_count"
+        },
+        {
+          "offset": 31,
+          "address": 5101296,
+          "symbol": "_op_face_packets"
+        }
+      ]
+    },
+    {
+      "id": "queue_face_packet",
+      "address": 4202168,
+      "size": 361,
+      "source": "src/queue_face_packet.c",
+      "symbol": "_op_queue_face_packet",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 31,
+          "address": 9173920,
+          "symbol": "_op_render_queue_tag"
+        },
+        {
+          "offset": 91,
+          "address": 5101248,
+          "symbol": "_op_last_material_bucket"
+        },
+        {
+          "offset": 99,
+          "address": 5101248,
+          "symbol": "_op_last_material_bucket"
+        },
+        {
+          "offset": 112,
+          "address": 5101248,
+          "symbol": "_op_last_material_bucket"
+        },
+        {
+          "offset": 144,
+          "address": 5855736,
+          "symbol": "_op_material_bucket_count"
+        },
+        {
+          "offset": 158,
+          "address": 5854968,
+          "symbol": "_op_material_buckets"
+        },
+        {
+          "offset": 184,
+          "address": 5855736,
+          "symbol": "_op_material_bucket_count"
+        },
+        {
+          "offset": 204,
+          "address": 5855736,
+          "symbol": "_op_material_bucket_count"
+        },
+        {
+          "offset": 212,
+          "address": 5854968,
+          "symbol": "_op_material_buckets"
+        },
+        {
+          "offset": 221,
+          "address": 5855736,
+          "symbol": "_op_material_bucket_count"
+        },
+        {
+          "offset": 230,
+          "address": 5855736,
+          "symbol": "_op_material_bucket_count"
+        },
+        {
+          "offset": 236,
+          "address": 5855736,
+          "symbol": "_op_material_bucket_count"
+        },
+        {
+          "offset": 245,
+          "address": 5855736,
+          "symbol": "_op_material_bucket_count"
+        },
+        {
+          "offset": 254,
+          "address": 5855736,
+          "symbol": "_op_material_bucket_count"
+        },
+        {
+          "offset": 333,
+          "address": 5101248,
+          "symbol": "_op_last_material_bucket"
+        },
+        {
+          "offset": 339,
+          "address": 5101280,
+          "symbol": "_op_face_packet_count"
+        },
+        {
+          "offset": 348,
+          "address": 5101280,
+          "symbol": "_op_face_packet_count"
+        }
+      ]
     }
   ]
 }

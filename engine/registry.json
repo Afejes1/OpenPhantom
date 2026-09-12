@@ -139,6 +139,60 @@
         "Compare all five trailing NOP alignment bytes"
       ],
       "exceptions": []
+    },
+    {
+      "id": "peek_projected_vertices",
+      "module": "render_queue",
+      "analysis_name": "FUN_00402130",
+      "confidence": "HIGH",
+      "purpose": "Return current projected-vertex buffer position when the unsigned sum fits the 8192-slot capacity",
+      "evidence": [
+        "docs/render-queue-evidence.md"
+      ],
+      "behavior_tests": [
+        "tests/queue_behavior.h"
+      ],
+      "quirks": [
+        "Unsigned count addition wraps before the bound check; the helper does not reserve slots"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "peek_face_packet",
+      "module": "render_queue",
+      "analysis_name": "FUN_00402021",
+      "confidence": "HIGH",
+      "purpose": "Return the current 184-byte model face packet when the signed count is below 4096",
+      "evidence": [
+        "docs/render-queue-evidence.md"
+      ],
+      "behavior_tests": [
+        "tests/queue_behavior.h"
+      ],
+      "quirks": [
+        "Signed upper-bound check only; counter validity is a caller invariant; does not reserve a packet"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "queue_face_packet",
+      "module": "render_queue",
+      "analysis_name": "FUN_00401eb8",
+      "confidence": "HIGH",
+      "purpose": "Append a model face packet to a cached or searched material bucket, with a 64-material limit",
+      "evidence": [
+        "docs/render-queue-evidence.md"
+      ],
+      "behavior_tests": [
+        "tests/queue_behavior.h"
+      ],
+      "quirks": [
+        "Write render tag before face/material validation",
+        "Increment then roll back the bucket count on capacity failure",
+        "Successful submission appends in FIFO order and advances the packet count; no independent packet-capacity check",
+        "Retain descriptive local names because VC5 stack-slot assignment changes with identifiers"
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

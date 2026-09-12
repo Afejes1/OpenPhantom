@@ -22,6 +22,14 @@ int op_depth_mode;
 op_render_thing *op_active_render_thing;
 float op_mesh_opacity;
 
+unsigned int op_projected_vertex_count;
+op_projected_vertex op_projected_vertices[8192];
+int op_face_packet_count, op_material_bucket_count;
+op_face_packet op_face_packets[4096];
+op_material_bucket op_material_buckets[64];
+op_material_bucket *op_last_material_bucket;
+unsigned char op_render_queue_tag;
+
 static int failures;
 static void check(int condition, int line) { if (!condition) { ++failures; printf("Failed at line %d\n", line); } }
 #define CHECK(test) check(!!(test), __LINE__)
@@ -103,6 +111,7 @@ static void clip_flag_tests(void)
 
 #include "projection_behavior.h"
 #include "mesh_behavior.h"
+#include "queue_behavior.h"
 
 int main(void)
 {
@@ -138,6 +147,7 @@ int main(void)
     CHECK(op_near == 0.5f && op_far == 8.0f);
     projection_tests();
     mesh_context_tests();
+    queue_tests();
     if (failures) return 1;
 #ifdef OP_VC5_BEHAVIOR
     puts("VC5 behavioral fixture passed, including x87 unordered fallback.");
