@@ -10,6 +10,10 @@ tools and reference files, explicit relocation accounting, and regression
 checks that preserve existing matches. Separate code-generation matching from
 literal equality of the linked executable.
 
+The fork now calibrates all four reference functions with VC5 RTM inside
+Docker/wibo and verifies projection padding as well as instruction bytes.
+Public proof metadata contains hashes and counts; private binaries stay local.
+
 Proposed layout: engine/src for candidates, engine/tools for build/comparison,
 engine/tests for synthetic tests, and engine/docs for evidence and instructions.
 No game executable, extracted data, compiler package, or binary diff is included.

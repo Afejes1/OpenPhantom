@@ -22,7 +22,7 @@ class ProvenanceTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         for folder in ("bin", "include", "lib", "src", "tools", "tests"):
             (self.root / folder).mkdir()
-        for name in ("cl.exe", "link.exe", "c1.dll", "c2.dll"):
+        for name in ("cl.exe", "link.exe", "c1.dll", "c2.exe"):
             (self.root / "bin" / name).write_bytes(b"SYNTHETIC NOT EXECUTABLE")
         (self.root / "lib/libcmt.lib").write_bytes(b"SYNTHETIC LIBRARY")
         (self.root / "include/float.h").write_text("/* synthetic */")
@@ -36,7 +36,7 @@ class ProvenanceTests(unittest.TestCase):
                 "banners": {"compiler": "Compiler Version 11.00.7022", "linker": "Version 5.00.7022"}}
 
     def test_compiler_backend_header_library_and_added_file_changes_rejected(self):
-        for relative in ("bin/c2.dll", "include/float.h", "lib/libcmt.lib", "include/new.h"):
+        for relative in ("bin/c2.exe", "include/float.h", "lib/libcmt.lib", "include/new.h"):
             lock = self.lock()
             path = self.root / relative
             old = path.read_bytes() if path.exists() else None
@@ -47,6 +47,12 @@ class ProvenanceTests(unittest.TestCase):
                 path.unlink()
             else:
                 path.write_bytes(old)
+
+    def test_missing_vc5_codegen_executable_is_rejected(self):
+        (self.root / "bin/c2.exe").unlink()
+        (self.root / "bin/c2.dll").write_bytes(b"WRONG BACKEND LAYOUT")
+        with self.assertRaises(VerificationError):
+            tool_files(self.config)
 
     def test_changed_configuration_rejected(self):
         lock = self.lock()
@@ -76,6 +82,16 @@ class ProvenanceTests(unittest.TestCase):
         completed = subprocess.CompletedProcess([], 0, "Compiler Version 19.44.35228\nVersion 14.44.35228", "")
         with patch("build.subprocess.run", return_value=completed), self.assertRaises(VerificationError):
             configure(self.config)
+
+    @unittest.skipUnless(os.name == "nt", "native Windows build profile")
+    def test_command_line_warning_with_success_exit_is_rejected(self):
+        target = self.prepare_sources()
+        warning = subprocess.CompletedProcess([], 0, "Command line warning D4002 : ignoring unknown option", "")
+        with patch("build.subprocess.run", return_value=warning), patch("build.subprocess.check_output", return_value="fake-revision"):
+            with self.assertRaises(VerificationError):
+                run_build(self.root, target, self.config, self.lock())
+        records = list((self.root / "build").glob("*/build.json"))
+        self.assertFalse(json.loads(records[0].read_text())["complete"])
 
     def prepare_sources(self):
         for name in ("target.json", "verify.py", "src/candidate.c", "tools/driver.py", "tests/behavior.c"):

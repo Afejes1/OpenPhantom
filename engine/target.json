@@ -14,7 +14,7 @@
     {"id": "plane_coordinate", "address": 4250862, "size": 384,
      "source": "src/plane_coordinate.c", "symbol": "_op_plane_coordinate", "flags": ["/Od", "/MT"],
      "bindings": [{"offset": 15, "address": 4882636, "float32": 0.0}, {"offset": 51, "address": 4882640, "float32": 1.0}]},
-    {"id": "update_projection", "address": 4255552, "size": 129,
+    {"id": "update_projection", "address": 4255552, "size": 144, "body_size": 129,
      "source": "src/update_projection.c", "symbol": "_op_update_projection", "flags": ["/O2", "/MT"],
      "bindings": [
        {"offset": 1, "address": 7308260, "symbol": "_op_camera"},

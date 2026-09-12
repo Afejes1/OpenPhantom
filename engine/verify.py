@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Native VC5 build, private comparison, and regression entry point."""
+"""Original VC5 build, private comparison, and regression entry point."""
 import argparse
 import importlib.metadata
 import json
@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "tools"))
 from build import (check_lock, configure, environment, load_config, run_build,
                    validate_build)
+from runners import run_tool
 from formats import VerificationError, read_binary, require
 from matching import (canonical_hash, check_regression, compare_batch,
                       compare_whole, digest, load_target, verify_reference)
@@ -84,11 +85,10 @@ def main(argv=None):
     if args.command == "test":
         require(os.name == "nt", "native Windows test runner required")
         # Only the hashed, newly built fixture executable is ever executed here.
-        process = subprocess.run([str(out / "WMAIN.EXE")], cwd=out, env=environment(config),
-                                 capture_output=True, text=True, errors="replace", timeout=30, check=False)
+        process, invoked = run_tool(config, [str(out / "WMAIN.EXE")], ROOT, out, environment(config), 30)
         validate_build(ROOT, out, target, lock)
         result = {"passed": process.returncode == 0, "returncode": process.returncode,
-                  "build_sha256": canonical_hash(record), "stdout": process.stdout, "stderr": process.stderr}
+                  "build_sha256": canonical_hash(record), "invoked": invoked, "stdout": process.stdout, "stderr": process.stderr}
         write_json(out / "behavior.json", result)
         print(process.stdout)
         return 0 if result["passed"] else 1

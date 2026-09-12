@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "provenance": "Describe the source and revision of your privately obtained VC5 installation",
+  "compiler": "C:/PrivateTools/VC5/bin/cl.exe",
+  "linker": "C:/PrivateTools/VC5/bin/link.exe",
+  "bin_dirs": [
+    "C:/PrivateTools/VC5/bin"
+  ],
+  "include_dirs": [
+    "C:/PrivateTools/VC5/include"
+  ],
+  "lib_dirs": [
+    "C:/PrivateTools/VC5/lib"
+  ],
+  "runner": {
+    "kind": "docker-wibo",
+    "docker": "C:/Program Files/Docker/Docker/resources/bin/docker.exe",
+    "image": "Replace with the sha256 content ID printed by docker image inspect",
+    "toolchain_root": "C:/PrivateTools/VC5"
+  }
+}

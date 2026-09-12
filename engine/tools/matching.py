@@ -35,6 +35,7 @@ def load_target(path):
         require(fid not in ids and spec["symbol"] not in symbols, "duplicate function")
         ids.add(fid)
         symbols.add(spec["symbol"])
+        require(0 < spec.get("body_size", spec["size"]) <= spec["size"], "invalid function body extent")
         require(spec["size"] > 0 and spec["address"] >= target["image_base"], "invalid function extent")
         start, end = spec["address"], spec["address"] + spec["size"]
         require(not any(start < b and a < end for a, b in intervals), "overlapping functions")
@@ -82,7 +83,7 @@ def compare_function(original, obj, spec):
     expected = original.read_va(spec["address"], spec["size"])
     actual, relocations = obj.function(spec["symbol"])
     result = {"id": spec["id"], "address": spec["address"], "size": spec["size"],
-              "candidate_size": len(actual), "status": "mismatch",
+              "candidate_size": len(actual), "body_size": spec.get("body_size", spec["size"]), "status": "mismatch",
               "literal_function_match": False, "layout_verified": False,
               "adjusted_bytes": 0, "object_sha256": digest(obj.data)}
     if len(actual) != len(expected):
@@ -91,6 +92,7 @@ def compare_function(original, obj, spec):
     bindings = {b["offset"]: b for b in spec["bindings"]}
     require(set(relocations) == set(bindings), "COFF relocation inventory differs from expected operands")
     adjusted = set()
+    resolved = bytearray(actual)
     for offset, binding in bindings.items():
         symbol = relocations[offset]
         addend = struct.unpack_from("<I", actual, offset)[0]
@@ -105,10 +107,15 @@ def compare_function(original, obj, spec):
             constant = struct.pack("<f", binding["float32"])
             require(obj.symbol_bytes(symbol, addend, 4) == constant, "candidate constant differs")
             require(original.read_va(original_value, 4) == constant, "original constant differs")
+        # Resolve only this fully verified COFF fixup in a comparison buffer.
+        # Neither the object file nor the original image is rewritten.
+        struct.pack_into("<I", resolved, offset, binding["address"] + addend)
         adjusted.update(range(offset, offset + 4))
-    differences = [i for i, (a, b) in enumerate(zip(expected, actual)) if i not in adjusted and a != b]
+    differences = [i for i, (a, b) in enumerate(zip(expected, resolved)) if a != b]
     result.update(adjusted_bytes=len(adjusted), compared_bytes=len(actual) - len(adjusted),
-                  different_bytes=len(differences), raw_bytes_equal=actual == expected)
+                  different_bytes=len(differences), raw_bytes_equal=actual == expected,
+                  relocated_bytes_equal=resolved == expected,
+                  reference_span_sha256=digest(expected), resolved_span_sha256=digest(resolved))
     if differences:
         # No original bytes in reports; detailed disassembly stays in Ghidra/reccmp locally.
         result.update(reason="non-relocation bytes differ", first_difference_offset=differences[0])
@@ -152,6 +159,11 @@ def check_regression(current, baseline):
             require(new[field] == old[field], "comparison extent changed: " + fid)
         require(new["different_bytes"] == old["different_bytes"] == 0, "mismatch in accepted report")
         require(new["status"] == old["status"], "matching category changed: " + fid)
+        for report in (new, old):
+            require(report["relocated_bytes_equal"] is True and
+                    report["reference_span_sha256"] == report["resolved_span_sha256"],
+                    "resolved byte equality is missing: " + fid)
+        require(new["reference_span_sha256"] == old["reference_span_sha256"], "reference span changed: " + fid)
 
 
 def compare_whole(original, candidate):

@@ -28,6 +28,17 @@ class ComparisonTests(unittest.TestCase):
             with self.subTest(code=code):
                 self.assertEqual(compare_function(PE(pe(b"\x90\xc3")), COFF(coff(code)), spec(2))["status"], "mismatch")
 
+    def test_padding_is_compared_even_when_body_extent_is_shorter(self):
+        definition = spec(4)
+        definition["body_size"] = 2
+        original = PE(pe(b"\x90\xc3\x90\x90"))
+        good = compare_function(original, COFF(coff(b"\x90\xc3\x90\x90")), definition)
+        self.assertEqual(good["body_size"], 2)
+        self.assertEqual(good["compared_bytes"], 4)
+        self.assertEqual(good["reference_span_sha256"], good["resolved_span_sha256"])
+        for code in (b"\x90\xc3", b"\x90\xc3\x90\xcc"):
+            self.assertEqual(compare_function(original, COFF(coff(code)), definition)["status"], "mismatch")
+
     def relocation_case(self, symbol="_global", addend=0, kind=6):
         original = PE(pe(b"\xa1" + struct.pack("<I", 0x402000) + b"\xc3", [1]))
         obj = COFF(coff(b"\xa1" + struct.pack("<I", addend) + b"\xc3", [(1, symbol, kind)]))
@@ -38,6 +49,8 @@ class ComparisonTests(unittest.TestCase):
         result = compare_function(*self.relocation_case())
         self.assertEqual(result["status"], "relocation-adjusted-match")
         self.assertEqual(result["adjusted_bytes"], 4)
+        self.assertTrue(result["relocated_bytes_equal"])
+        self.assertEqual(result["reference_span_sha256"], result["resolved_span_sha256"])
         self.assertEqual(result["compared_bytes"], 2)
 
     def test_wrong_target_or_addend_never_gets_wildcarded(self):
@@ -166,7 +179,7 @@ class FormatTests(unittest.TestCase):
 class ManifestAndCLITests(unittest.TestCase):
     def test_real_manifest_is_structurally_valid_without_retail_input(self):
         manifest = load_target(ROOT / "target.json")
-        self.assertEqual(sum(s["size"] for s in manifest["functions"]), 578)
+        self.assertEqual(sum(s["size"] for s in manifest["functions"]), 593)
 
     def test_invalid_binding_and_source_paths(self):
         for mutation in (lambda m: m["functions"][0].update(source="../elsewhere.c"),

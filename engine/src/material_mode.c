@@ -1,7 +1,7 @@
 #include "baseline.h"
 
 // FUNCTION: WMAIN 0x0040e840
-/* Candidate: input 1 selects zero, every other value selects two.
+/* VC5-calibrated: input 1 selects zero, every other value selects two.
  * The explicit switch preserves the observed /Od control-flow shape.
  */
 int op_material_mode(int mode)

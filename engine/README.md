@@ -1,20 +1,23 @@
 # Original-toolchain matching baseline
 
-This fork contains comparison infrastructure and four **unverified C source
-candidates**, not a playable reconstructed OpenPhantom engine.
+This fork contains comparison infrastructure and four **VC5-calibrated C
+functions**. It is not yet a playable reconstructed OpenPhantom engine.
 
 The required code generator is the original **Visual C++ 5.0 RTM** identified in
 [engine-identification.md](engine-identification.md#1a-resolved-the-toolchain-by-byte-for-byte-compilation).
-This profile runs it natively on Windows. No VC5 toolchain has been obtained or
-run in this fork yet; **zero functions are claimed as verified matches**.
-Modern MSVC is used only for a separate finite-behavior smoke test.
+The verified profile uses Windows Docker Desktop with a pinned Linux/wibo
+runtime to run the actual compiler and linker. All four function bodies match
+the retail reference after explicitly verified address relocations; the first
+function also matches without relocation. Projection alignment padding is
+compared too. [Two-run calibration evidence](docs/calibration-20260912.json)
+records the source/tool fingerprints and matching span hashes. Modern MSVC remains a separate finite-behavior smoke test.
 
 ## What is available
 
 - A pinned retail reference manifest with four full function extents and explicit
   address-operand bindings, validated against a contributor's local executable.
 - An original-toolchain driver with private configuration, complete tool/header/
-  library fingerprints, per-source options, fresh build directories, artifact
+  library and runtime fingerprints, per-source options, fresh build directories, artifact
   hashes, and stale-build rejection.
 - A bounded PE32/COFF comparator, regression gate, and literal whole-file check.
 - Optional pinned reccmp 0.1.7 diagnostics. Its scores never grant strict matches.
@@ -22,8 +25,8 @@ Modern MSVC is used only for a separate finite-behavior smoke test.
 
 See [baseline evidence](docs/baseline-evidence.md) for addresses, layouts,
 floating-point behavior, comparison limits, and remaining reconstruction work.
-[Toolchain access](docs/toolchain-access.md) records the unresolved acquisition
-prerequisite. [The upstream proposal](docs/upstream-proposal.md) is an unpublished
+[Toolchain access](docs/toolchain-access.md) records acquisition provenance and
+reproducible Docker setup. [The upstream proposal](docs/upstream-proposal.md) is an unpublished
 draft; this experiment has not been agreed with upstream.
 
 ## Tests that need no original compiler or game
@@ -54,7 +57,9 @@ control. Do not copy any game binary into this checkout. The driver reads the
 reference in place and never executes or modifies it.
 
 1. Obtain the original toolchain as described in the access document. Create
-   `engine/private/toolchain.json` from `engine/toolchain.example.json`; replace
+   `engine/private/toolchain.json` from `engine/toolchain.docker.example.json`
+   (or the native `engine/toolchain.example.json` for an independently authorized
+   native installation); replace
    paths and provenance with real values.
 2. Set the reference path to your retail copy. Both its SHA-256 and every
    configured original operand must agree:
@@ -98,8 +103,10 @@ not successful zero-function runs. JSON reports stay in the build directory.
 - `raw-code-match`: the entire one-function object code section equals the
   original function's bytes. Linked placement remains unverified.
 - `relocation-adjusted-match`: other bytes are equal, and every adjusted DIR32
-  operand matches its declared symbol/addend or defined constant. Reports give
-  both complete code size and adjusted-byte count.
+  operand matches its declared symbol/addend or defined constant. Resolving
+  those operands in a comparison buffer must produce the same SHA-256 as the
+  entire reference span. Reports distinguish function bodies, complete section
+  sizes, and adjusted-byte counts; no original file or object is rewritten.
 - `mismatch` / `unresolved`: the function is not accepted.
 - `complete` in a comparison report requires all four code checks plus the
   hashed VC5 behavioral fixture result. It is not whole-executable completion.
@@ -133,8 +140,8 @@ engine/.venv/Scripts/python.exe engine/verify.py diagnose --reference $retail --
 Detailed HTML disassembly remains in the ignored build directory. The shared
 reccmp project file contains only metadata; generated user/build files are
 ignored. The Python comparator does not import or copy reccmp implementation
-code. The original-toolchain PDB/HTML path cannot be validated until VC5 is
-available.
+code. The VC5 build produces a PDB, but the optional HTML diagnostic path has not
+been verified with this container profile. It is not an acceptance gate.
 
 No changes to `legacy/` or `installer/` are required. Do not ship this fixture
 or any original game data in a commit, release, or issue attachment.

@@ -1,17 +1,20 @@
-"""Explicit native-Windows VC5 invocation; never fall back to PATH compilers."""
+"""Explicit VC5 invocation through a locked native or Docker runner."""
 import json
 import os
+import re
 from pathlib import Path
 import subprocess
 import sys
 import time
+import tempfile
 import uuid
 
 from formats import VerificationError, read_binary, require
 from matching import canonical_hash, digest
+from runners import run_tool, runtime_identity, validate_runner
 
 
-COMMON_FLAGS = ["/nologo", "/c", "/W4", "/WX", "/Zi", "/Gy-"]
+COMMON_FLAGS = ["/nologo", "/c", "/W4", "/WX", "/Zi"]
 
 
 def load_config(path):
@@ -28,6 +31,7 @@ def load_config(path):
     for name in ("compiler", "linker"):
         require(Path(config[name]).resolve().parent in [Path(p).resolve() for p in config["bin_dirs"]],
                 name + " must be in a fingerprinted bin directory")
+    validate_runner(config)
     return config
 
 
@@ -53,7 +57,8 @@ def tool_files(config):
                     files[str(path.resolve())] = digest(read_binary(path))
     require(files, "empty toolchain inventory")
     require(any(Path(p).name.lower() == "libcmt.lib" for p in files), "LIBCMT.LIB is missing")
-    for name in ("c1.dll", "c2.dll"):
+    # VC5 RTM uses a DLL C front end and an executable code generator.
+    for name in ("c1.dll", "c2.exe"):
         require(any(Path(p).name.lower() == name for p in files), "missing compiler backend " + name)
     return files
 
@@ -61,14 +66,17 @@ def tool_files(config):
 def configure(config):
     env = environment(config)
     banners = {}
-    for name in ("compiler", "linker"):
-        process = subprocess.run([config[name]], env=env, capture_output=True, text=True,
-                                 errors="replace", timeout=30, check=False)
-        banners[name] = process.stdout + process.stderr
+    root = Path(__file__).resolve().parents[1]
+    (root / "build").mkdir(exist_ok=True)
+    runtime = runtime_identity(config)
+    with tempfile.TemporaryDirectory(prefix="probe-", dir=root / "build") as directory:
+        for name in ("compiler", "linker"):
+            process, _ = run_tool(config, [config[name]], root, Path(directory), env, 30)
+            banners[name] = process.stdout + process.stderr
     require("Compiler Version 11.00.7022" in banners["compiler"], "expected VC5 RTM compiler 11.00.7022")
     require("Version 5.00." in banners["linker"], "expected original 5.00-series linker")
     return {"schema": 1, "config_sha256": canonical_hash(config),
-            "banners": banners, "files": tool_files(config),
+            "banners": banners, "files": tool_files(config), "runtime": runtime,
             "runtime_startup_revision": "unresolved",
             "codegen_calibrated": False}
 
@@ -78,6 +86,7 @@ def check_lock(config, lock):
     require(lock["config_sha256"] == canonical_hash(config), "toolchain configuration changed")
     require("Compiler Version 11.00.7022" in lock["banners"]["compiler"], "lock is not VC5 RTM")
     require("Version 5.00." in lock["banners"]["linker"], "lock is not the original linker family")
+    require(lock.get("runtime", {"kind": "native"}) == runtime_identity(config), "execution runtime changed")
     require(lock["files"] == tool_files(config), "toolchain inventory changed; review and relock explicitly")
 
 
@@ -119,11 +128,12 @@ def run_build(root, target, config, lock):
                          *[str(out / (s["id"] + ".obj")) for s in target["functions"]],
                          str(out / "behavior.obj"), "libcmt.lib", "kernel32.lib"])
         for index, command in enumerate(commands):
-            completed = subprocess.run(command, cwd=out, env=env, capture_output=True,
-                                       text=True, errors="replace", timeout=120, check=False)
+            completed, invoked = run_tool(config, command, root, out, env, 120)
             (out / ("command-%02d.log" % index)).write_text(completed.stdout + completed.stderr, encoding="utf-8")
-            record["commands"].append({"argv": command, "returncode": completed.returncode})
+            record["commands"].append({"argv": command, "invoked": invoked, "returncode": completed.returncode})
             require(completed.returncode == 0, "original-toolchain build failed; inspect " + str(out))
+            require(not re.search(r"\bwarning\b", completed.stdout + completed.stderr, re.IGNORECASE),
+                    "original-toolchain emitted a warning; inspect " + str(out))
         require(source_snapshot(root) == snapshot, "sources changed during build")
         check_lock(config, lock)
         for name in [s["id"] + ".obj" for s in target["functions"]] + ["WMAIN.EXE", "WMAIN.PDB", "WMAIN.MAP"]:

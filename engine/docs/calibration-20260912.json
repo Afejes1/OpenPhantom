@@ -1,0 +1,158 @@
+{
+  "schema": 1,
+  "date": "2026-09-12",
+  "scope": "four complete object code sections; original-address fixups resolved only after symbol/addend/constant validation",
+  "whole_executable_match": false,
+  "linked_placement_verified": false,
+  "reference_sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
+  "target_spec_sha256": "c54b1eba4b7c1d63a11a09f06fed069302d0ab35a5175990687e2afeba38d656",
+  "source_snapshot": {
+    "src/baseline.h": "a765d502a0324b4b685469e4dfb46f2e389df3b866c09edd429c553c5e4168ff",
+    "src/grid_cell.c": "2ab0bc909b2c77ca3773a57807d61e0a44545341ec7a780a583ee4d4b185ed4f",
+    "src/material_mode.c": "59cbb8934824e0716a8692c43d9f727eaf4c870cab129725fa8c03251b680356",
+    "src/plane_coordinate.c": "ac776c46500f818115abebabb3b9bdfd69bf3550b9ab10d143f5bc5a09bbf943",
+    "src/update_projection.c": "b5f3d56e19ef03799846c5034758167f599e7b7f966e896824ed466a7a7de64e",
+    "target.json": "49a475c2a3b8e5734d366f79ead073bc5a3390dadfb6f6253a1756434129e783",
+    "tests/behavior.c": "7adc69df87d4d607df0275aa89ee0b5e9696c6f89b49f598f4c47331293b02ee",
+    "tools/build.py": "89e2862be8a0d62ba78d6a6aaa30b0f3601719f571f9acd220eccabf01e5c233",
+    "tools/formats.py": "9b5577a3e4a9743209f9a2721f0a2207128b923a88b8567d8ef287acc9a7a21e",
+    "tools/matching.py": "7a6f3bcdb9acb3c211081b523bb3b08645eebe40dafb5bc90828f1bc21296930",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "verify.py": "98dff7e3546427398828efff7c50ac5b4b6cf7723f62cf83ab4e95c2c7160456"
+  },
+  "toolchain": {
+    "compiler_version": "11.00.7022",
+    "linker_version": "5.00.7022",
+    "archive_repository": "https://github.com/archaic-msvc/msvc500",
+    "archive_commit": "8abf95ce980161ad87b0b02402269cce76988953",
+    "archive_sha256": "5f7728d1b3b8b8c61bb35e42a7680211019d290b30376c1a0a8faaa6d166cd1f",
+    "source_provenance_limit": "Community archive; not authenticated against original Microsoft installation media.",
+    "inventory_file_count": 588,
+    "relative_inventory_sha256": "2e7984768cf132bbe172c7afeab1688974f027e9d82e6c72b9feb46f8f7cf5b5",
+    "selected_file_sha256": {
+      "bin/c1.dll": "e519dfe6f45cc0503b7aac43d125b2f156305269b89f0dc765c40d29627c0943",
+      "bin/c1xx.dll": "fea1e9fbbc2d204202f1a5ea61e5a938b17a92acda57e16dd53d4ec01c9d186b",
+      "bin/c2.exe": "6d1406af5f62647347cfa7175cd7e108b838d6841a546396f29252198a14d73d",
+      "bin/cl.exe": "bf9f9c74f756fed96e13f7f9a4273495c7dde0a1fb968e3ef6d760ad6d73dfeb",
+      "bin/link.exe": "279544809e6353c8e622eb88aea94e86b0258f3c4b8a976373bf4d68a41b63e1",
+      "bin/mspdb50.dll": "06aaaca9c928bdef790259c9c30328529e10d1ec2f77da09c4ff74de7734fe69",
+      "lib/kernel32.lib": "095f231e13cb3e6a6c4913d33ca8048506011034c89774b6ba0857466abba3cf",
+      "lib/libcmt.lib": "7e161e461fd97f6fd5a8e6c1fdb5c7ec1b408e75bfacbc1c226f7556ccd1995b"
+    },
+    "runtime": {
+      "kind": "docker-wibo",
+      "image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+      "platform": "linux/amd64"
+    },
+    "wibo_release": "1.2.0",
+    "wibo_i686_sha256": "2575d3b0a2f408b2c2b0850db56f1af5d005a138394a6774eba77b6708ecc304"
+  },
+  "common_flags": [
+    "/nologo",
+    "/c",
+    "/W4",
+    "/WX",
+    "/Zi"
+  ],
+  "runs": [
+    {
+      "build_directory": "20260912-105900-a54e9271",
+      "source_snapshot_sha256": "491cc372972067e55b35a45e224fda194bd7525f013e23829b5ec7f9536a11bd",
+      "warning_free": true,
+      "vc5_behavior_passed": true,
+      "x87_unordered_case_passed": true,
+      "function_count": 4,
+      "all_resolved_spans_equal": true
+    },
+    {
+      "build_directory": "20260912-110015-c0ba9ed0",
+      "source_snapshot_sha256": "491cc372972067e55b35a45e224fda194bd7525f013e23829b5ec7f9536a11bd",
+      "warning_free": true,
+      "vc5_behavior_passed": true,
+      "x87_unordered_case_passed": true,
+      "function_count": 4,
+      "all_resolved_spans_equal": true
+    }
+  ],
+  "regression_check_passed": true,
+  "functions": [
+    {
+      "id": "material_mode",
+      "address": 4253760,
+      "body_size": 41,
+      "size": 41,
+      "candidate_size": 41,
+      "status": "raw-code-match",
+      "adjusted_bytes": 0,
+      "compared_bytes": 41,
+      "different_bytes": 0,
+      "raw_bytes_equal": true,
+      "relocated_bytes_equal": true,
+      "reference_span_sha256": "59a1cbd4a232327b0ab2f035d19fb936e689e53db372a190b2a84b97b0f5743e",
+      "resolved_span_sha256": "59a1cbd4a232327b0ab2f035d19fb936e689e53db372a190b2a84b97b0f5743e"
+    },
+    {
+      "id": "grid_cell",
+      "address": 4222498,
+      "body_size": 24,
+      "size": 24,
+      "candidate_size": 24,
+      "status": "relocation-adjusted-match",
+      "adjusted_bytes": 4,
+      "compared_bytes": 20,
+      "different_bytes": 0,
+      "raw_bytes_equal": false,
+      "relocated_bytes_equal": true,
+      "reference_span_sha256": "8bc9a6f2e1bd241742353292a3717fe9d259cd15e2887fb5cb64ad7fd6073d11",
+      "resolved_span_sha256": "8bc9a6f2e1bd241742353292a3717fe9d259cd15e2887fb5cb64ad7fd6073d11"
+    },
+    {
+      "id": "plane_coordinate",
+      "address": 4250862,
+      "body_size": 384,
+      "size": 384,
+      "candidate_size": 384,
+      "status": "relocation-adjusted-match",
+      "adjusted_bytes": 8,
+      "compared_bytes": 376,
+      "different_bytes": 0,
+      "raw_bytes_equal": false,
+      "relocated_bytes_equal": true,
+      "reference_span_sha256": "3befde1ce7ce43393244df74a54a26f9bebb88cef27d1cd53256401496d3479b",
+      "resolved_span_sha256": "3befde1ce7ce43393244df74a54a26f9bebb88cef27d1cd53256401496d3479b"
+    },
+    {
+      "id": "update_projection",
+      "address": 4255552,
+      "body_size": 129,
+      "size": 144,
+      "candidate_size": 144,
+      "status": "relocation-adjusted-match",
+      "adjusted_bytes": 48,
+      "compared_bytes": 96,
+      "different_bytes": 0,
+      "raw_bytes_equal": false,
+      "relocated_bytes_equal": true,
+      "reference_span_sha256": "3244370489f5aa61026b8e35926e9b0fe945ee81cfe2571805bbf87125baed5e",
+      "resolved_span_sha256": "3244370489f5aa61026b8e35926e9b0fe945ee81cfe2571805bbf87125baed5e"
+    }
+  ],
+  "totals": {
+    "function_body_bytes": 578,
+    "alignment_padding_bytes": 15,
+    "complete_section_bytes": 593,
+    "verified_address_bytes": 60,
+    "non_address_bytes_compared": 533
+  },
+  "supplemental_checks": {
+    "synthetic_tooling_tests_passed": 35,
+    "modern_x86_finite_smoke_passed": true,
+    "reccmp_source_annotation_lint_passed": true
+  },
+  "limitations": [
+    "Whole-retail executable reconstruction remains incomplete.",
+    "Retail CRT startup/heap revision is unresolved.",
+    "Optional reccmp HTML diagnostics are not validated with this container profile.",
+    "Original game was read statically and never executed."
+  ]
+}
