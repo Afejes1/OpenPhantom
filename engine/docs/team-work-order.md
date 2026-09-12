@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **8** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **961**.
+Our last recorded matches cover **9** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **960**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -41,13 +41,13 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x00405CF0 | bapdraw_gatherCellMovers | not_done | Queued; no local match recorded |
 | 0x00406300 | bapdraw_emitFace | not_done | Queued; no local match recorded |
 | 0x004064B0 | bapdraw_gatherCell | not_done | Queued; no local match recorded |
-| 0x00406830 | bapdraw_submitGathered | not_done | Queued; no local match recorded |
+| 0x00406830 | bapdraw_submitGathered | not_done | Recorded match: [submit_gathered_surfaces](../src/submit_gathered_surfaces.c) |
 
 ## Remaining work by reported file
 
 | Reported file | Team not done | Local recorded matches within that list | Remaining |
 |---|---|---|---|
-| bp/bapdraw.c | 18 | 3 | 15 |
+| bp/bapdraw.c | 18 | 4 | 14 |
 | bp/bapmodel.c | 8 | 4 | 4 |
 | bp/bapmap.c | 14 | 1 | 13 |
 | bp/baplight.c | 6 | 0 | 6 |

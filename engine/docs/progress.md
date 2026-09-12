@@ -8,24 +8,24 @@ Whole executable: **incomplete**. Original linked placement: **unverified**.
 
 | Module | Function / source | Original address | Last verified result | Bytes / address bytes |
 |---|---|---|---|---|
-| material | [material_mode](../src/material_mode.c) | 0x0040E840 | raw-code-match (historical; current source unverified) | 41 / 0 |
-| spatial_grid | [grid_cell](../src/grid_cell.c) | 0x00406E22 | relocation-adjusted-match (historical; current source unverified) | 24 / 4 |
-| map_geometry | [plane_coordinate](../src/plane_coordinate.c) | 0x0040DCEE | relocation-adjusted-match (historical; current source unverified) | 384 / 8 |
-| view_projection | [update_projection](../src/update_projection.c) | 0x0040EF40 | relocation-adjusted-match (historical; current source unverified) | 144 / 48 |
-| view_projection | [face_clip_flags](../src/face_clip_flags.c) | 0x0040F170 | raw-code-match (historical; current source unverified) | 64 / 0 |
-| view_projection | [transform_project](../src/transform_project.c) | 0x0040EFD0 | relocation-adjusted-match (historical; current source unverified) | 416 / 44 |
-| mesh_submission | [set_mesh_render_thing](../src/set_mesh_render_thing.c) | 0x0040F1B0 | relocation-adjusted-match (historical; current source unverified) | 48 / 16 |
-| render_queue | [peek_projected_vertices](../src/peek_projected_vertices.c) | 0x00402130 | relocation-adjusted-match (historical; current source unverified) | 37 / 12 |
-| render_queue | [peek_face_packet](../src/peek_face_packet.c) | 0x00402021 | relocation-adjusted-match (historical; current source unverified) | 37 / 12 |
-| render_queue | [queue_face_packet](../src/queue_face_packet.c) | 0x00401EB8 | relocation-adjusted-match (historical; current source unverified) | 361 / 68 |
-| render_queue | [submit_gathered_surfaces](../src/submit_gathered_surfaces.c) | 0x00406830 | unverified | 48 / 20 |
+| material | [material_mode](../src/material_mode.c) | 0x0040E840 | raw-code-match | 41 / 0 |
+| spatial_grid | [grid_cell](../src/grid_cell.c) | 0x00406E22 | relocation-adjusted-match | 24 / 4 |
+| map_geometry | [plane_coordinate](../src/plane_coordinate.c) | 0x0040DCEE | relocation-adjusted-match | 384 / 8 |
+| view_projection | [update_projection](../src/update_projection.c) | 0x0040EF40 | relocation-adjusted-match | 144 / 48 |
+| view_projection | [face_clip_flags](../src/face_clip_flags.c) | 0x0040F170 | raw-code-match | 64 / 0 |
+| view_projection | [transform_project](../src/transform_project.c) | 0x0040EFD0 | relocation-adjusted-match | 416 / 44 |
+| mesh_submission | [set_mesh_render_thing](../src/set_mesh_render_thing.c) | 0x0040F1B0 | relocation-adjusted-match | 48 / 16 |
+| render_queue | [peek_projected_vertices](../src/peek_projected_vertices.c) | 0x00402130 | relocation-adjusted-match | 37 / 12 |
+| render_queue | [peek_face_packet](../src/peek_face_packet.c) | 0x00402021 | relocation-adjusted-match | 37 / 12 |
+| render_queue | [queue_face_packet](../src/queue_face_packet.c) | 0x00401EB8 | relocation-adjusted-match | 361 / 68 |
+| render_queue | [submit_gathered_surfaces](../src/submit_gathered_surfaces.c) | 0x00406830 | relocation-adjusted-match | 48 / 20 |
 
-Registered functions: **11**. Last recorded matches with unchanged definitions: **10**.
-Current source fingerprint agrees with the latest run: **no**.
+Registered functions: **11**. Last recorded matches with unchanged definitions: **11**.
+Current source fingerprint agrees with the latest run: **yes**.
 This count is not whole-program coverage and does not certify the modern TPM reconstruction.
 
-Latest build: '20260912-125459-d5442a69', source commit 'a023e5213c65d6c82c7955aed4a1395c07f6a4e2'.
-History contains 11 verified build records.
+Latest build: '20260912-134427-ff2b1718', source commit 'c616afedbd420612e543cdfd49badd58d49ffbbf'.
+History contains 12 verified build records.
 
 ## Workarounds and exceptions
 
