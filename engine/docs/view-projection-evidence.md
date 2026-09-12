@@ -19,9 +19,11 @@ have been recovered or that the complete module is finished.
 
 The mesh caller tests the reducer's result against 0xFF80. It rejects a face if
 any behind-camera bit is set or if all vertices share a clipping plane bit.
-Otherwise it retains the low-byte union for later clipping. The current Ghidra
-signature for the caller's rendering omits an argument; stack disassembly, not
-the inferred decompiler signature, establishes this reducer's two arguments.
+Otherwise it retains the low-byte union for later clipping. The initial Ghidra
+signature omitted an argument. Stack disassembly established both arguments;
+the recovered signature now exposes the clip-code table at 0x005B6038 in the
+caller. The reducer was renamed combine_face_vertex_clip_codes, its evidence
+comment was added, and the analysis program was saved.
 
 ## Face clip-code reducer
 
