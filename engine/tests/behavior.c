@@ -115,6 +115,7 @@ static void clip_flag_tests(void)
 #include "gathered_behavior.h"
 #include "frame_state_behavior.h"
 #include "surface_entry_behavior.h"
+#include "scan_behavior.h"
 
 int main(void)
 {
@@ -154,6 +155,7 @@ int main(void)
     gathered_tests();
     frame_state_tests();
     surface_entry_tests();
+    scan_tests();
     if (failures) return 1;
 #ifdef OP_VC5_BEHAVIOR
     puts("VC5 behavioral fixture passed, including x87 unordered fallback.");

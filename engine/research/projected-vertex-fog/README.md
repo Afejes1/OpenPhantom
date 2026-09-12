@@ -16,6 +16,10 @@ header, test and target wiring; review it before applying to a later baseline.
 These files are excluded from the accepted build, source-annotation scan and
 synthetic behavior fixture. See ../../docs/vertex-fog-evidence.md for analysis.
 
-Next work stays in bp/bapdraw.c and first verifies its gathered-surface submission
-wrapper, exercising the new strict relative-call verifier. Return to this fog
-candidate afterward; parking it does not declare it complete or abandon it.
+The gathered-surface wrapper and frame setup are now accepted separately.
+Further original-compiler probes confirmed that neither C++ nor /Op- or /Oa
+fixes the reciprocal width; a float reciprocal, including a comma-expression
+variant, still reverses the load/divide operands. No new candidate was accepted.
+These targeted experiments leave the same constant-width and stack-slot work
+outstanding. Continue other team-not-done functions in bp/bapdraw.c while keeping
+this candidate visible in the work order.

@@ -252,6 +252,26 @@
         "Compare both trailing NOP bytes; caller owns record and bucket bounds"
       ],
       "exceptions": []
+    },
+    {
+      "id": "step_scan",
+      "module": "legacy_scan",
+      "analysis_name": "step_camera_space_grid_position",
+      "purpose": "Advance a camera-space position by signed unit grid steps, applying the X basis before Y",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/scan-step-evidence.md"
+      ],
+      "behavior_tests": [
+        "tests/scan_behavior.h"
+      ],
+      "quirks": [
+        "Only exact +1 and -1 directions act; other values do not dereference the position for that axis",
+        "Preserve separate float stores after X before applying Y",
+        "Explicit double promotions on the last two positive coordinates reproduce original VC5 x87 operand scheduling",
+        "All three trailing NOP bytes are compared; no byte exclusions"
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

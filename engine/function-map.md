@@ -20,3 +20,5 @@ remaining questions. Other existing Ghidra names are preserved.
 | 0x00401D30 | FUN_00401d30 | initialize_model_frame_state | HIGH | Reset queue/projection state, select frame flags and initialize software fog | Complete body; three callers, four callees, world fields and downstream flag reader; docs/frame-state-evidence.md |
 
 | 0x004059F0 | FUN_004059f0 | link_surface_draw_entry | HIGH | Expand missing opacity and prepend the current entry to its texture/special bucket | Full body and padding; both callers own allocation; world.texture_count supplies special bucket; docs/surface-entry-evidence.md |
+
+| 0x00403EF0 | FUN_00403ef0 | step_camera_space_grid_position | HIGH | Advance a camera-space triplet by signed unit X/Y grid steps | Complete body/padding, three incoming calls, transform copy and affine/culler consumers; docs/scan-step-evidence.md |

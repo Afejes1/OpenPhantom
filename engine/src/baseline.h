@@ -145,6 +145,10 @@ extern op_surface_draw_entry op_surface_draw_entries[];
 extern op_surface_draw_entry *op_surface_buckets[];
 void op_push_surface_draw_entry(op_draw_surface *surface);
 
+/* First two basis vectors of the camera transform copied by legacy scan setup. */
+extern float op_scan_step_x[3], op_scan_step_y[3];
+void op_step_scan(float *position, int x_step, int y_step);
+
 #ifdef __cplusplus
 }
 #endif

@@ -67,3 +67,11 @@ indexed by world.texture_count, preserving or expanding opacity before prependin
 the current entry. Callers fill and reserve entries. Its matching reconstruction
 uses the original VC5 C++ frontend, recorded separately from historical-language
 claims. See [surface-entry evidence](docs/surface-entry-evidence.md).
+
+## Legacy camera-space scan
+
+The 0x00403EF0 helper advances the transformed scan position by the camera
+first two basis vectors. Only exact signed unit directions act, with separate
+float stores between axes. Setup copies the camera transform and the world
+renderer combines affine initialization with these incremental steps.
+See [scan-step evidence](docs/scan-step-evidence.md).
