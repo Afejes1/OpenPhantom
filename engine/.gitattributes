@@ -1,5 +1,6 @@
 # Stable source bytes across Windows checkouts for build provenance.
 *.c text eol=lf
+*.cpp text eol=lf
 *.h text eol=lf
 *.py text eol=lf
 *.json text eol=lf
@@ -7,3 +8,4 @@
 *.md text eol=lf
 *.txt text eol=lf
 .gitignore text eol=lf
+.gitattributes text eol=lf

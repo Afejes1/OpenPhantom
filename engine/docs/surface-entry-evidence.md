@@ -39,6 +39,7 @@ historical source language or original source text. The team's reported .c
 module assignment remains unchanged in the external scheduling manifest.
 
 Source fingerprints and diagnostic/raw-emission policy now include .cpp files.
+Git attributes pin .cpp line endings to LF for fresh-checkout reproducibility.
 Builds reject missing fingerprinted c1xx.dll or a language/extension conflict;
 public history records source path, language, source hash and compiler inventory.
 The progress report displays the frontend explicitly. Existing accepted source

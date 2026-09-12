@@ -124,7 +124,8 @@ static void frame_state_tests(void)
     frame_prepare(); frame_world.fog_start = 4; frame_world.fog_end = 4;
     op_set_frame_state();
     CHECK(op_vertex_fog_enabled == 1 && op_fog_range == 0);
-    frame_prepare(); frame_world.fog_start = -0.0f; frame_world.fog_end = 0.0f;
+    frame_prepare(); frame_world.fog_start = projection_float(0x80000000u); frame_world.fog_end = 0.0f;
+    CHECK(projection_bits(frame_world.fog_start) == 0x80000000u);
     op_set_frame_state();
     CHECK(op_vertex_fog_enabled == 1 && op_fog_range == 0);
     CHECK(projection_bits(op_fog_start_reciprocal) == 0xff800000u);

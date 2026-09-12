@@ -31,8 +31,8 @@ op_material_bucket *op_last_material_bucket;
 unsigned char op_render_queue_tag;
 
 static int failures;
-static void check(int condition, int line) { if (!condition) { ++failures; printf("Failed at line %d\n", line); } }
-#define CHECK(test) check(!!(test), __LINE__)
+static void check(int condition, const char *file, int line) { if (!condition) { ++failures; printf("Failed at %s:%d\n", file, line); } }
+#define CHECK(test) check(!!(test), __FILE__, __LINE__)
 
 static void plane_tests(void)
 {

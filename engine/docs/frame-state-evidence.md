@@ -47,3 +47,8 @@ interaction tests, not claims that those renderer functions are reconstructed.
 The complete C function matches under VC5 RTM /Od /MT after verifying 39 DIR32
 operands and four REL32 near calls. No byte exclusion, inline assembly or warning
 waiver is introduced. Clean build records determine accepted matching status.
+
+The signed-zero fixture constructs 0x80000000 explicitly and checks its input
+bits before the call, so acceptance does not depend on VC5 preserving a negative
+zero literal during constant folding. Fixture failures print their source file
+as well as line number to distinguish assertions in different included tests.
