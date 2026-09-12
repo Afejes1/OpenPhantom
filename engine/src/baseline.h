@@ -1,0 +1,43 @@
+#ifndef OPENPHANTOM_BASELINE_H
+#define OPENPHANTOM_BASELINE_H
+
+/* Partial layouts only. Names describe observed accesses, not original symbols. */
+typedef struct op_viewport {
+    unsigned char opaque_00[8];
+    unsigned int width_bits;
+    unsigned int height_bits;
+    unsigned char opaque_10[8];
+    int edge_18;
+    int edge_1c;
+    int edge_20;
+    int edge_24;
+} op_viewport;
+
+typedef struct op_frustum {
+    unsigned char opaque_00[4];
+    float near_bound;
+    float far_bound;
+} op_frustum;
+
+typedef struct op_camera_state {
+    unsigned char opaque_00[4];
+    op_viewport *viewport;
+    unsigned char opaque_08[52];
+    float focal;
+    unsigned char opaque_40[8];
+    op_frustum *frustum;
+} op_camera_state;
+
+extern unsigned char op_grid[];
+extern op_camera_state *op_camera;
+extern unsigned int op_width_bits, op_height_bits;
+extern float op_focal, op_depth_scale;
+extern float op_edge_18, op_edge_1c, op_edge_20, op_edge_24;
+extern float op_far, op_near;
+
+int op_material_mode(int mode);
+unsigned char *op_grid_cell(int x, int y);
+float op_plane_coordinate(int axis, float *vertex, float *normal, float *point);
+void op_update_projection(void);
+
+#endif

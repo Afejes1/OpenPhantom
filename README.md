@@ -27,7 +27,7 @@ The project has two parts. The legacy patches are useful today: they modify the 
 |---|---|
 | [`installer/`](installer/) | **Working** A wizard that installs the game from your own disc and then the parts of the patch you tick. It carries no game data: the disc archive is expanded on your machine. Everything it installs ships inside it and nothing is downloaded, so an installation does not depend on somebody else's hosting still being there. See its [README](installer/README.md) |
 | [`legacy/`](legacy/) | **Working**  Fixes that patch the original 1999 executable in memory: field of view, resolutions, frame rate, mouse look, music, decals and more. A loader and one DLL per feature, built with CMake. See its [README](legacy/README.md) |
-| `engine/` | The reimplementation. Not started |
+| [`engine/`](engine/) | Experimental VC5 matching infrastructure and four unverified source candidates. No playable engine |
 | `editor/` | Tools for maps, assets and game content. Not started |
 | `architecture/` | How the original engine is put together, written down. Not started |
 

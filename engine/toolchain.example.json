@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "provenance": "Replace with your original-media or authorized-download provenance",
+  "compiler": "C:/PrivateTools/VC5/VC/bin/cl.exe",
+  "linker": "C:/PrivateTools/VC5/VC/bin/link.exe",
+  "bin_dirs": ["C:/PrivateTools/VC5/VC/bin", "C:/PrivateTools/VC5/SharedIDE/bin"],
+  "include_dirs": ["C:/PrivateTools/VC5/VC/include"],
+  "lib_dirs": ["C:/PrivateTools/VC5/VC/lib"]
+}

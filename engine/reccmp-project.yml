@@ -1,0 +1,6 @@
+targets:
+  WMAIN:
+    filename: WMAIN.EXE
+    source-root: src
+    hash:
+      sha256: 02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11

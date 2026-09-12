@@ -1,0 +1,112 @@
+/* Synthetic data only. Modern builds exercise finite behavior and x86 layouts;
+ * the unordered x87 contract is asserted only in the original-toolchain build.
+ */
+#include "../src/baseline.h"
+#include <float.h>
+#include <stddef.h>
+#include <stdio.h>
+
+#ifdef OP_VC5_BEHAVIOR
+#if !defined(_MSC_VER) || _MSC_VER != 1100
+#error Original-toolchain behavioral verification requires VC5.
+#endif
+#endif
+
+unsigned char op_grid[65536];
+op_camera_state *op_camera;
+unsigned int op_width_bits, op_height_bits;
+float op_focal, op_depth_scale;
+float op_edge_18, op_edge_1c, op_edge_20, op_edge_24;
+float op_far, op_near;
+
+static int failures;
+static void check(int condition, int line) { if (!condition) { ++failures; printf("Failed at line %d\n", line); } }
+#define CHECK(test) check(!!(test), __LINE__)
+
+static void plane_tests(void)
+{
+    int axis;
+    float vertex[3] = {10.0f, 20.0f, 30.0f};
+    float point[3], normal[3], result;
+    for (axis = 0; axis < 3; ++axis) {
+        point[0] = 1.0f; point[1] = 2.0f; point[2] = 3.0f;
+        normal[0] = 2.0f; normal[1] = 2.0f; normal[2] = 2.0f;
+        result = op_plane_coordinate(axis, vertex, normal, point);
+        CHECK(result == 55.0f + (float)axis);
+        CHECK(point[axis] == result);
+        point[axis] = -17.0f;
+        normal[axis] = 0.0f;
+        CHECK(op_plane_coordinate(axis, vertex, normal, point) == vertex[axis]);
+        CHECK(point[axis] == -17.0f);
+        normal[axis] = -0.0f;
+        CHECK(op_plane_coordinate(axis, vertex, normal, point) == vertex[axis]);
+        CHECK(point[axis] == -17.0f);
+        normal[axis] = 1.0f;
+        CHECK(op_plane_coordinate(axis, vertex, normal, point) == vertex[axis]);
+        CHECK(point[axis] == -17.0f);
+    }
+    point[0] = 1.0f; point[1] = 2.0f; point[2] = 3.0f;
+    normal[0] = -2.0f; normal[1] = 2.0f; normal[2] = 2.0f;
+    CHECK(op_plane_coordinate(0, vertex, normal, point) == -35.0f);
+#ifdef OP_VC5_BEHAVIOR
+    {
+        union { unsigned int u; float f; } special;
+        unsigned int before = _controlfp(0, 0);
+        _controlfp(_MCW_EM | _PC_53 | _RC_NEAR, _MCW_EM | _MCW_PC | _MCW_RC);
+        printf("x87 control word for nonfinite tests: %x\n", _controlfp(0, 0));
+        for (axis = 0; axis < 3; ++axis) {
+            special.u = 0x7fc00000u;
+            normal[axis] = special.f;
+            point[axis] = -17.0f;
+            CHECK(op_plane_coordinate(axis, vertex, normal, point) == vertex[axis]);
+            CHECK(point[axis] == -17.0f);
+        }
+        normal[0] = 2.0f; normal[1] = 2.0f;
+        point[0] = 1.0f; point[1] = 2.0f;
+        special.u = 0x7f800000u;
+        normal[2] = special.f;
+        CHECK(op_plane_coordinate(2, vertex, normal, point) == vertex[2]);
+        _controlfp(before, _MCW_EM | _MCW_PC | _MCW_RC);
+    }
+#endif
+}
+
+int main(void)
+{
+    op_viewport viewport;
+    op_frustum frustum;
+    op_camera_state camera;
+    CHECK(sizeof(void *) == 4 && sizeof(int) == 4 && sizeof(float) == 4);
+    CHECK(offsetof(op_viewport, width_bits) == 8);
+    CHECK(offsetof(op_viewport, edge_18) == 0x18);
+    CHECK(offsetof(op_viewport, edge_24) == 0x24);
+    CHECK(offsetof(op_camera_state, viewport) == 4);
+    CHECK(offsetof(op_camera_state, focal) == 0x3c);
+    CHECK(offsetof(op_camera_state, frustum) == 0x48);
+    CHECK(offsetof(op_frustum, near_bound) == 4 && offsetof(op_frustum, far_bound) == 8);
+    CHECK(op_material_mode(1) == 0);
+    CHECK(op_material_mode(0) == 2 && op_material_mode(-1) == 2);
+    CHECK(op_material_mode(2) == 2 && op_material_mode(2147483647) == 2);
+    CHECK(op_grid_cell(0, 0) == op_grid);
+    CHECK(op_grid_cell(255, 1) == op_grid + 65408);
+    plane_tests();
+    viewport.width_bits = 640; viewport.height_bits = 480;
+    viewport.edge_18 = -5; viewport.edge_1c = 10;
+    viewport.edge_20 = 635; viewport.edge_24 = 470;
+    frustum.near_bound = 0.5f; frustum.far_bound = 8.0f;
+    camera.viewport = &viewport; camera.focal = 320.0f; camera.frustum = &frustum;
+    op_camera = &camera;
+    op_update_projection();
+    CHECK(op_width_bits == 640 && op_height_bits == 480);
+    CHECK(op_focal == 320.0f && op_depth_scale == 0.125f);
+    CHECK(op_edge_18 == -5.0f && op_edge_1c == 10.0f);
+    CHECK(op_edge_20 == 635.0f && op_edge_24 == 470.0f);
+    CHECK(op_near == 0.5f && op_far == 8.0f);
+    if (failures) return 1;
+#ifdef OP_VC5_BEHAVIOR
+    puts("VC5 behavioral fixture passed, including x87 unordered fallback.");
+#else
+    puts("Modern x86 finite-behavior smoke passed; VC5 codegen and unordered behavior NOT verified.");
+#endif
+    return 0;
+}

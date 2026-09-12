@@ -1,0 +1,34 @@
+name: engine-baseline-tooling
+on:
+  push:
+    paths: ['engine/**', '.github/workflows/engine-baseline.yml']
+  pull_request:
+    paths: ['engine/**', '.github/workflows/engine-baseline.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-and-finite-behavior:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Test comparison failures and build provenance without game inputs
+        run: python -m unittest discover -s engine/tests -p "test_*.py" -v
+      - name: Install pinned external diagnostics
+        run: python -m pip install -r engine/requirements-diagnostics.txt
+      - name: Check source annotations
+        run: reccmp-decomplint --target WMAIN --warnfail engine/src
+      - name: Configure supplemental modern x86 behavioral smoke
+        run: cmake -S engine/tests -B engine/build/modern-smoke -A Win32
+      - name: Build supplemental fixture with warnings as errors
+        run: cmake --build engine/build/modern-smoke --config Release
+      - name: Test finite behavior only
+        run: ctest --test-dir engine/build/modern-smoke -C Release --output-on-failure
+      # This job deliberately makes no retail-match claim. The private VC5 check
+      # requires the original executable and licensed tools; absence is a failure
+      # in verify.py, not a successful/empty comparison or public CI skip.
