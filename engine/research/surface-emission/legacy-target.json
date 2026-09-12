@@ -1,0 +1,242 @@
+{
+  "id": "emit_legacy_surface",
+  "address": 4217424,
+  "size": 672,
+  "body_size": 663,
+  "source": "src/emit_legacy_surface.c",
+  "symbol": "_op_emit_legacy_surface",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 2,
+      "address": 5889724,
+      "symbol": "_op_gathered_surface_count"
+    },
+    {
+      "offset": 20,
+      "address": 5889856,
+      "symbol": "_op_allow_upper_surfaces"
+    },
+    {
+      "offset": 36,
+      "address": 9044252,
+      "symbol": "_op_legacy_camera_state"
+    },
+    {
+      "offset": 87,
+      "address": 9173664,
+      "symbol": "_op_surface_group_state"
+    },
+    {
+      "offset": 119,
+      "address": 9160992,
+      "symbol": "_op_surface_seen"
+    },
+    {
+      "offset": 156,
+      "address": 5889932,
+      "symbol": "_op_legacy_fade_frames"
+    },
+    {
+      "offset": 169,
+      "address": 5889936,
+      "symbol": "_op_room_new_mask"
+    },
+    {
+      "offset": 183,
+      "address": 5889920,
+      "symbol": "_op_room_old_mask"
+    },
+    {
+      "offset": 237,
+      "address": 5889920,
+      "symbol": "_op_room_old_mask"
+    },
+    {
+      "offset": 284,
+      "address": 5889904,
+      "symbol": "_op_legacy_selected_room_mask"
+    },
+    {
+      "offset": 328,
+      "address": 5889924,
+      "symbol": "_op_legacy_cached_height"
+    },
+    {
+      "offset": 338,
+      "address": 4882520,
+      "float32": 1.0
+    },
+    {
+      "offset": 351,
+      "address": 5889712,
+      "symbol": "_op_legacy_scan_position"
+    },
+    {
+      "offset": 357,
+      "address": 5889712,
+      "symbol": "_op_legacy_scan_position",
+      "addend": 4
+    },
+    {
+      "offset": 363,
+      "address": 5889712,
+      "symbol": "_op_legacy_scan_position",
+      "addend": 8
+    },
+    {
+      "offset": 371,
+      "address": 9169412,
+      "symbol": "_op_scan_step_z"
+    },
+    {
+      "offset": 379,
+      "address": 9169412,
+      "symbol": "_op_scan_step_z",
+      "addend": 4
+    },
+    {
+      "offset": 387,
+      "address": 9169412,
+      "symbol": "_op_scan_step_z",
+      "addend": 8
+    },
+    {
+      "offset": 395,
+      "address": 5889712,
+      "symbol": "_op_legacy_scan_position"
+    },
+    {
+      "offset": 409,
+      "address": 4882476,
+      "float32": 0.0
+    },
+    {
+      "offset": 436,
+      "address": 9169412,
+      "symbol": "_op_scan_step_z"
+    },
+    {
+      "offset": 444,
+      "address": 9169412,
+      "symbol": "_op_scan_step_z",
+      "addend": 4
+    },
+    {
+      "offset": 452,
+      "address": 9169412,
+      "symbol": "_op_scan_step_z",
+      "addend": 8
+    },
+    {
+      "offset": 460,
+      "address": 5889712,
+      "symbol": "_op_legacy_scan_position"
+    },
+    {
+      "offset": 468,
+      "address": 5889712,
+      "symbol": "_op_legacy_scan_position",
+      "addend": 4
+    },
+    {
+      "offset": 476,
+      "address": 5889712,
+      "symbol": "_op_legacy_scan_position",
+      "addend": 8
+    },
+    {
+      "offset": 484,
+      "address": 5889712,
+      "symbol": "_op_legacy_scan_position"
+    },
+    {
+      "offset": 490,
+      "address": 5889712,
+      "symbol": "_op_legacy_scan_position",
+      "addend": 4
+    },
+    {
+      "offset": 496,
+      "address": 5889712,
+      "symbol": "_op_legacy_scan_position",
+      "addend": 8
+    },
+    {
+      "offset": 501,
+      "address": 5889872,
+      "symbol": "_op_legacy_cull_enabled"
+    },
+    {
+      "offset": 507,
+      "address": 5889924,
+      "symbol": "_op_legacy_cached_height"
+    },
+    {
+      "offset": 516,
+      "address": 9169384,
+      "symbol": "_op_legacy_scan_cull_side"
+    },
+    {
+      "offset": 525,
+      "address": 9169220,
+      "symbol": "_op_legacy_inverted_height"
+    },
+    {
+      "offset": 555,
+      "address": 5889712,
+      "symbol": "_op_legacy_scan_position"
+    },
+    {
+      "offset": 562,
+      "address": 4210592,
+      "symbol": "_op_cull_scan_plane",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 578,
+      "address": 5889712,
+      "symbol": "_op_legacy_scan_position"
+    },
+    {
+      "offset": 585,
+      "address": 4210592,
+      "symbol": "_op_cull_scan_plane",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 597,
+      "address": 5889928,
+      "symbol": "_op_special_surface_bucket"
+    },
+    {
+      "offset": 612,
+      "address": 4217328,
+      "symbol": "_op_push_surface_draw_entry",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 617,
+      "address": 5889724,
+      "symbol": "_op_gathered_surface_count"
+    },
+    {
+      "offset": 629,
+      "address": 5889724,
+      "symbol": "_op_gathered_surface_count"
+    },
+    {
+      "offset": 636,
+      "address": 9062528,
+      "symbol": "_op_surface_draw_entries"
+    },
+    {
+      "offset": 654,
+      "address": 9160992,
+      "symbol": "_op_surface_seen"
+    }
+  ]
+}

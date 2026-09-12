@@ -75,3 +75,11 @@ first two basis vectors. Only exact signed unit directions act, with separate
 float stores between axes. Setup copies the camera transform and the world
 renderer combines affine initialization with these incremental steps.
 See [scan-step evidence](docs/scan-step-evidence.md).
+
+## Surface emission paths under reconstruction
+
+The two emitters share authored opacity and bucket storage but retain distinct
+fade and uniqueness-marking rules. Current emission uses a float time fraction;
+legacy scan emission uses a sixteen-step integer counter and updates camera-space
+height before culling. Both candidates are unverified for byte equality and are
+excluded from accepted counts. See [evidence](docs/surface-emission-evidence.md).

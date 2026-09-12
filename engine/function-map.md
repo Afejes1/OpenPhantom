@@ -22,3 +22,6 @@ remaining questions. Other existing Ghidra names are preserved.
 | 0x004059F0 | FUN_004059f0 | link_surface_draw_entry | HIGH | Expand missing opacity and prepend the current entry to its texture/special bucket | Full body and padding; both callers own allocation; world.texture_count supplies special bucket; docs/surface-entry-evidence.md |
 
 | 0x00403EF0 | FUN_00403ef0 | step_camera_space_grid_position | HIGH | Advance a camera-space triplet by signed unit X/Y grid steps | Complete body/padding, three incoming calls, transform copy and affine/culler consumers; docs/scan-step-evidence.md |
+
+| 0x00406300 | FUN_00406300 | queue_visible_surface | HIGH behavior; compilation unverified | Apply current visibility/fade rules and prepend a surface entry | Full body, two mover callers, shared frame-mask writers and bucket consumer; docs/surface-emission-evidence.md |
+| 0x00405A50 | FUN_00405a50 | queue_legacy_scan_surface | HIGH behavior; compilation unverified | Apply legacy integer fade, update scan height, cull and queue a surface | Full body, both legacy cell callers, camera/basis state and three call sites; docs/surface-emission-evidence.md |

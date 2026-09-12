@@ -37,9 +37,9 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x00404730 | bapdraw_drawWorld | not_done | Queued; no local match recorded |
 | 0x004056C0 | bapdrawOld_gatherCell | not_done | Queued; no local match recorded |
 | 0x004059F0 | bapdrawOld_pushDrawEntry | not_done | Recorded match: [push_surface_draw_entry](../src/push_surface_draw_entry.cpp) |
-| 0x00405A50 | bapdrawOld_emitFace | not_done | Queued; no local match recorded |
+| 0x00405A50 | bapdrawOld_emitFace | not_done | Unverified candidate: [research](../research/surface-emission/README.md) |
 | 0x00405CF0 | bapdraw_gatherCellMovers | not_done | Queued; no local match recorded |
-| 0x00406300 | bapdraw_emitFace | not_done | Queued; no local match recorded |
+| 0x00406300 | bapdraw_emitFace | not_done | Unverified candidate: [research](../research/surface-emission/README.md) |
 | 0x004064B0 | bapdraw_gatherCell | not_done | Queued; no local match recorded |
 | 0x00406830 | bapdraw_submitGathered | not_done | Recorded match: [submit_gathered_surfaces](../src/submit_gathered_surfaces.c) |
 

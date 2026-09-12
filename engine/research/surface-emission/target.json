@@ -1,0 +1,123 @@
+{
+  "id": "emit_surface",
+  "address": 4219648,
+  "size": 432,
+  "body_size": 428,
+  "source": "src/emit_surface.cpp",
+  "symbol": "_op_emit_surface",
+  "language": "c++",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 2,
+      "address": 5889876,
+      "symbol": "_op_surface_reject_flags"
+    },
+    {
+      "offset": 44,
+      "address": 9173664,
+      "symbol": "_op_surface_group_state"
+    },
+    {
+      "offset": 69,
+      "address": 9160992,
+      "symbol": "_op_surface_seen"
+    },
+    {
+      "offset": 85,
+      "address": 5889860,
+      "symbol": "_op_room_reject_mask"
+    },
+    {
+      "offset": 95,
+      "address": 5889944,
+      "symbol": "_op_rejected_surface_count"
+    },
+    {
+      "offset": 143,
+      "address": 5889888,
+      "symbol": "_op_room_fade_active"
+    },
+    {
+      "offset": 157,
+      "address": 5889936,
+      "symbol": "_op_room_new_mask"
+    },
+    {
+      "offset": 163,
+      "address": 5889920,
+      "symbol": "_op_room_old_mask"
+    },
+    {
+      "offset": 201,
+      "address": 5889708,
+      "symbol": "_op_room_fade_remaining"
+    },
+    {
+      "offset": 206,
+      "address": 4826188,
+      "symbol": "__ftol",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 258,
+      "address": 4882520,
+      "float32": 1.0
+    },
+    {
+      "offset": 264,
+      "address": 5889708,
+      "symbol": "_op_room_fade_remaining"
+    },
+    {
+      "offset": 275,
+      "address": 4826188,
+      "symbol": "__ftol",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 312,
+      "address": 5889928,
+      "symbol": "_op_special_surface_bucket"
+    },
+    {
+      "offset": 359,
+      "address": 5889724,
+      "symbol": "_op_gathered_surface_count"
+    },
+    {
+      "offset": 366,
+      "address": 9160832,
+      "symbol": "_op_surface_buckets"
+    },
+    {
+      "offset": 379,
+      "address": 9062528,
+      "symbol": "_op_surface_draw_entries",
+      "addend": 4
+    },
+    {
+      "offset": 385,
+      "address": 9062528,
+      "symbol": "_op_surface_draw_entries"
+    },
+    {
+      "offset": 392,
+      "address": 9160832,
+      "symbol": "_op_surface_buckets"
+    },
+    {
+      "offset": 398,
+      "address": 5889724,
+      "symbol": "_op_gathered_surface_count"
+    },
+    {
+      "offset": 418,
+      "address": 9160992,
+      "symbol": "_op_surface_seen"
+    }
+  ]
+}
