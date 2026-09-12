@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "kind": "focused-collector-ordering-checkpoint",
+  "date": "2026-09-12",
+  "accepted_history_record": false,
+  "accepted_function_count_unchanged": 14,
+  "whole_executable_match": false,
+  "exclusions": [],
+  "compiler": "Microsoft VC5 RTM 11.00.7022",
+  "linker": "Microsoft 5.00.7022",
+  "candidate_flags": [
+    "/nologo",
+    "/c",
+    "/W4",
+    "/WX",
+    "/Zi",
+    "/O2",
+    "/MT",
+    "/FAcs"
+  ],
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "comparison_build": "surface-batch-4d8663a194df",
+  "comparison_report_sha256": "884493bcd34f3d20264918e77e1962422e41ddffd42e591cd06602f85aafebab",
+  "behavior_build": "surface-batch-b5fc0f85c336",
+  "behavior_report_sha256": "90b23d3a611f68345ed98a498bed71f5105607d7463b0e99631de3e31a0d10e9",
+  "source_snapshot": {
+    "src/baseline.h": "f6e7690e2616f4c2f1660fe7495a012e32b1e0cfec3de451ce3e5a4de8b2e6cd",
+    "research/surface-emission/batch_surface.h": "34491506ad4ccb8517f4a11d0741ebca5d0379b75a506a25cb3d07a86e4df7dd",
+    "research/surface-emission/culling.h": "ebd71fe200eb12f498890a0fe6f74934dbc75f13a749846621e4713e5e69d29b",
+    "research/surface-emission/collection.h": "fd06b474cf4192928d99de5dbc5de18691ad0f6100a81176e800f6df47a61068",
+    "research/surface-emission/candidate.cpp": "3cefd0a1f071f7357399fd77a45bb430711e9720167d590e02e04f364dc913e2",
+    "research/surface-emission/target.json": "10c82742f0bb8d15983f3cced8a4d0dea5b82db2adc6e483b834b7baec504ecf",
+    "research/surface-emission/legacy_candidate.c": "227ed96443862bc84b2d5da95b7f50fb036a3d63dd654c9e23d8b63126d5e330",
+    "research/surface-emission/legacy-target.json": "1980dca6bf64b030f72b8160ca4d3f58edc5dc9f43c141dc3b8f67216d3a40b5",
+    "research/surface-emission/culling_candidate.c": "4e59eb5c0346d078c2efe92ee041834027bd9bfc4a5e721449f33e856462fe6b",
+    "research/surface-emission/culling-target.json": "15200b90d414d7144ec160ffe6153a274f5d79dd9b11b429c1712bd4c16e4e5c",
+    "research/surface-emission/collection_candidate.cpp": "32421b4a7dae6c3d5944b6f518afbee77099e84fae1797a93f68edcda1ae2b8d",
+    "research/surface-emission/collection-target.json": "4c48850c9ac633344e28375ef6583df21095b506cc85324f711d4fb29dd48a69",
+    "research/surface-emission/focused_behavior.c": "5e75f5c38078eb064f694deee86d0331b9750b96605f5b3a049fddda5c097516",
+    "research/surface-emission/culling_behavior.c": "85a496b0140250c624a13a9be7c6cf28beb61add1434f6d78cc4cda1fa67ca02",
+    "research/surface-emission/collection_behavior.c": "663d80e56784a006ce2edca25021b6924eded2908e8b731d49d7024b2783387e",
+    "src/push_surface_draw_entry.cpp": "5c96e10256c625a4ee3581a074e958754d0f567fbd5f4bb3ba907e71c24e72b3",
+    "research/surface-emission/probe.py": "fa6de9123876d2e4003864f4b63f86324b962fcccc44a634801166980f1eb2b2",
+    "target.json": "b8398f0a1f85e40e34af828082a8587587b7c4f88a9ecea96b21b2706a33b996",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "b9b2d9741912c9d58b77f636811b9e652d30777cc8eeb93ad434896a412bc1e0",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "comparison_artifacts": [
+    {
+      "id": "emit_surface",
+      "source": "candidate.cpp",
+      "symbol": "_op_emit_surface",
+      "object": "emit_surface.obj",
+      "object_sha256": "c959ab3f5d4ee53410c4f22d14e033fc611f5ce42bb67e08f3413dab6eabed48",
+      "function_section_bytes": 432,
+      "function_section_sha256": "74a61b855e3ceba2010b1825849331cccc34fe0073c231dd1a9ff46003649270",
+      "relocation_count": 22,
+      "assembly_listing": "candidate.cod",
+      "assembly_listing_sha256": "577265348f3ef69c1d9f902c275757fb3e223074794f26633d5d9be489905f20"
+    },
+    {
+      "id": "emit_legacy_surface",
+      "source": "legacy_candidate.c",
+      "symbol": "_op_emit_legacy_surface",
+      "object": "emit_legacy_surface.obj",
+      "object_sha256": "78cce960f8ab56d00da95c8c43d63ce7ac95f3cbbac704ca309780998e2d8176",
+      "function_section_bytes": 672,
+      "function_section_sha256": "d836069eb5e41c340c57126532e93c3957a6b8592cdd16b335a541f6f5c81c06",
+      "relocation_count": 44,
+      "assembly_listing": "legacy_candidate.cod",
+      "assembly_listing_sha256": "7720a50b3df19547b2bc6cf7efc2394a8ab411bb6a6c617d263b26233d757c45"
+    },
+    {
+      "id": "cull_scan_plane",
+      "source": "culling_candidate.c",
+      "symbol": "_op_cull_scan_plane",
+      "object": "cull_scan_plane.obj",
+      "object_sha256": "56f269593f2984bb65bb5774ec17ae60d947523feefeabb03d0c9ccb04474302",
+      "function_section_bytes": 480,
+      "function_section_sha256": "32d8ed3d86c6f39976effb6e997bf40b762fd7bb4af7bc7b0479d86c0c064a15",
+      "relocation_count": 22,
+      "assembly_listing": "culling_candidate.cod",
+      "assembly_listing_sha256": "9b655dea2208f45cc60bf9eae9970e4464810db509649b06f8e6cf661a8a16cf"
+    },
+    {
+      "id": "gather_static_cell",
+      "source": "collection_candidate.cpp",
+      "symbol": "_op_gather_static_cell",
+      "object": "gather_static_cell.obj",
+      "object_sha256": "9d1bf42cf304a23f95cfb097a04fad69a2fe542cf696e043c4d042c0a3886d93",
+      "function_section_bytes": 896,
+      "function_section_sha256": "fb4ba6cc46e1d12ad87dfa418bcfcde20c27920190f85f1229e4f15e9596ee94",
+      "relocation_count": 40,
+      "assembly_listing": "collection_candidate.cod",
+      "assembly_listing_sha256": "687985cb98885a2b196217d5a294df123105cb82e9e8dc3c7ebc46fdce6e59f0"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "emit_surface",
+      "status": "unresolved",
+      "reason": "COFF relocation inventory differs from expected operands"
+    },
+    {
+      "id": "emit_legacy_surface",
+      "status": "unresolved",
+      "reason": "COFF relocation inventory differs from expected operands"
+    },
+    {
+      "id": "cull_scan_plane",
+      "address": 4210592,
+      "size": 480,
+      "candidate_size": 480,
+      "body_size": 449,
+      "status": "mismatch",
+      "literal_function_match": false,
+      "layout_verified": false,
+      "adjusted_bytes": 88,
+      "object_sha256": "56f269593f2984bb65bb5774ec17ae60d947523feefeabb03d0c9ccb04474302",
+      "compared_bytes": 392,
+      "dir32_bytes": 88,
+      "rel32_call_bytes": 0,
+      "internal_dir32_bytes": 20,
+      "different_bytes": 10,
+      "raw_bytes_equal": false,
+      "relocated_bytes_equal": false,
+      "reference_span_sha256": "9cc1965b735a76ee6331f04039278c761b1188a10bcb0006c8ccfe67a622dba6",
+      "resolved_span_sha256": "d770706b2cb4acfc73bf1a2491d91cf851afbea7fcac6eb94cc0945157e6addb",
+      "reason": "non-relocation bytes differ",
+      "first_difference_offset": 104
+    },
+    {
+      "id": "gather_static_cell",
+      "address": 4220080,
+      "size": 896,
+      "candidate_size": 896,
+      "body_size": 895,
+      "status": "mismatch",
+      "literal_function_match": false,
+      "layout_verified": false,
+      "adjusted_bytes": 160,
+      "object_sha256": "9d1bf42cf304a23f95cfb097a04fad69a2fe542cf696e043c4d042c0a3886d93",
+      "compared_bytes": 736,
+      "dir32_bytes": 148,
+      "rel32_call_bytes": 12,
+      "internal_dir32_bytes": 0,
+      "different_bytes": 5,
+      "raw_bytes_equal": false,
+      "relocated_bytes_equal": false,
+      "reference_span_sha256": "b91c463bde7f7f3facf3f3ae58f1658a9a24f7c3da897963db44a76a49849ce9",
+      "resolved_span_sha256": "7aa692cb969e88e1cb9d2562b4cc751d17ede20b7e5daee804b3b214fad620d2",
+      "reason": "non-relocation bytes differ",
+      "first_difference_offset": 244
+    }
+  ],
+  "fixtures": [
+    {
+      "name": "emission",
+      "sha256": "da60a33a822ef0755040729e342ce403f95ae32f3b43f57c90f772842a0025d0",
+      "passed": true,
+      "stdout": "Focused emission candidate behavior passed; byte matching remains unverified.\n"
+    },
+    {
+      "name": "culling",
+      "sha256": "8dc1757e98730d44391acd94d12c78a2d2dd0ae254244f4ef2bcef3b870812cc",
+      "passed": true,
+      "stdout": "Culling fixture: 3038 checks, 0 failures across three x87 precisions\n"
+    },
+    {
+      "name": "collection",
+      "sha256": "d7369e4acb9f0934e8e78a9035dd68c636da6ffdaee6c3c832893e5854dce623",
+      "passed": true,
+      "stdout": "Static-cell fixture: 4208 checks, 0 failures across three x87 precisions\n"
+    }
+  ],
+  "collector_fixture_checks": 4208,
+  "culling_fixture_checks": 3038,
+  "baseline_behavior_discrepancy": {
+    "build": "surface-batch-4b6d12cc4631",
+    "report_sha256": "a43115f9788f3d192ff046908f8f8725422cfba05666163746b5594b20c44333",
+    "completed": false,
+    "collector_checks": 4205,
+    "collector_failures": 6,
+    "description": "The earlier candidate rejected both opposite-infinity upper-bound cases at each of three x87 precisions."
+  },
+  "artifact_provenance_tests": {
+    "passed": true,
+    "count": 6,
+    "command": "python -m unittest discover -s engine/tests -p test_research_artifacts.py -v",
+    "source": "tests/test_research_artifacts.py",
+    "source_sha256": "07d34766748f60eeeb961d0cc65150866eada6c9983c13364c02009e5e5196c7"
+  },
+  "remaining_collector_difference": {
+    "first_offset": 244,
+    "length": 5,
+    "description": "Original FCOMPP followed by ADD ESP,12; candidate schedules ADD ESP,12 before FCOMPP."
+  },
+  "scope_limits": [
+    "All four candidates remain outside the accepted function registry.",
+    "Fixtures execute authored code with controlled callees and masked x87 exceptions.",
+    "No original executable execution, full regression or recovery checkpoint was performed.",
+    "Private processor and debug-information diagnostics did not change accepted compiler policy."
+  ]
+}

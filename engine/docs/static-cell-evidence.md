@@ -85,21 +85,52 @@ binds all 37 DIR32 and three REL32 operands: 160 address bytes in 896 total byte
 Full-width and single-precision constants, all call targets and all padding stay
 in scope. There are no byte exclusions or new compiler waivers.
 
-The first authored source produced 880 bytes with both VC5 frontends. Explicit
-rejection predicates, unsigned sentinel comparison and initialization order
-bring the retained C++ candidate to the required 896-byte extent and 40 COFF
-relocations. Their positions still disagree with the original, so the strict
-result is unresolved, not a match. Remaining work includes x87 operand ordering,
-branch layout and inlined-emitter register choices.
+The first authored source produced 880 bytes. Rejection predicates, unsigned
+sentinel comparison and initialization order first brought it to 896 bytes,
+but its relocation positions and several floating-point branches disagreed.
+The current candidate verifies all forty operands within that complete span.
+Five instruction bytes remain different, at +0xF4 through +0xF8: the original
+performs FCOMPP followed by ADD ESP,12; the candidate schedules the stack cleanup
+first. Every other byte agrees after strictly verified address resolution.
+This remains a mismatch, with no instruction-order exception or excluded bytes.
 
-The original VC5 RTM compiler and linker built the focused fixtures without
-warnings. The collector fixture passed 4,184 checks over record traversal,
-extra skips, sentinel caching, all four finite side boundaries, far-boundary
-neighbors, selected unordered cases, all 256 packed opacity values, room masks,
-queue order and duplicate handling at x87 24/53/64-bit precision. Its affine
-callee is controlled fixture code. No full-game execution, modern-engine
-regression, full accepted-function rebuild or recovery checkpoint was performed.
-See the [focused receipt](static-cell-batch-20260912.json).
+The second and third side-bound branches reject on ordered greater-than.
+Writing the candidate rejection with the upper bound on the left of a less-than
+comparison reproduces those branches with VC5. Retaining the negative horizontal
+extent in a float local reproduces its reuse and subsequent negation for the
+fourth bound. The preceding source's reversed x87 operands differed for unordered
+inputs, despite agreeing on the finite boundary cases already tested.
+
+Two new cases make only an upper bound unordered: negative infinite projected Z
+with positive infinite vertical padding, and the corresponding X/horizontal
+case. Static instruction analysis predicts acceptance, while the preceding
+authored candidate rejected both in all three x87 precision modes. The current
+candidate accepts them. Two positive-infinity cases instead make a lower-bound
+comparison unordered and must reject; they also pass. These fixtures execute
+only authored code with controlled affine results, never the original game.
+
+Explicit byte-mask temporaries remove an extra copy in the inlined fade path.
+Initializing the bucket before its guard restores the original register choices.
+An authored inline packed-opacity helper restores the byte-register copy/shift
+order; it generates no separate function section or additional matched-function
+claim. The remaining five-byte stack-cleanup discrepancy persists with the two
+approved optimized profiles, first-bound inline/local expression forms, and
+several private processor/debug-information diagnostics. Those diagnostics do
+not change the accepted compiler policy. Related mask changes in the separate
+emitters corrected relocation counts but not positions, so those sources remain
+unchanged in this checkpoint.
+
+VC5 RTM and the original linker built all three focused fixtures without
+warnings. The collector now passes 4,208 checks at x87 24/53/64-bit precision;
+the emission and 3,038-check culling fixtures also pass. Six synthetic tests
+separately verify recorded artifact hashes, complete section coverage, missing
+or empty listings, object/listing modification and removal, wrong symbols, and
+the difference between COFF metadata hashes and function-section hashes.
+No full regression, accepted-function rebuild, or recovery checkpoint was run.
+The fourteen-function accepted history is unchanged. See the
+[current focused receipt](static-cell-ordering-20260912.json); the
+[earlier receipt](static-cell-batch-20260912.json) preserves the initial collector
+checkpoint and its narrower fixture coverage.
 
 Ghidra's descriptive name, three-argument signature and evidence comment were
 saved. The plain C prototype was accepted through the function-name API. It

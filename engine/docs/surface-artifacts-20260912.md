@@ -70,3 +70,12 @@ bytes. A proposed /Op probe was rejected by the existing compiler-option policy
 before compilation. No flag policy was changed. Both source and target were
 restored to the preceding 896-byte candidate. No source or compiler experiment
 from this pass was promoted to the accepted registry.
+
+## Subsequent collector checkpoint
+
+The [collector evidence](static-cell-evidence.md) now records a source correction
+and executed opposite-infinity fixtures for the discrepancy above. Its complete
+span and all forty operands verify, with five instruction bytes still different.
+The six artifact-provenance tests previously deferred here were subsequently
+implemented and passed. This document and its original receipt describe the
+historical artifact-tracking checkpoint, not the newer source/test state.

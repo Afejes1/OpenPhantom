@@ -130,6 +130,20 @@ static void boundary_tests(void)
     reset(1); supplied[0].z = from_bits(0x7fc00000u); gather(); CHECK(op_frustum_group_count == 1);
     reset(1); op_cell_far_limit = from_bits(0x7fc00000u); gather();
     CHECK(op_frustum_group_count == 0 && op_gathered_surface_count == 1);
+    /* Opposite infinities make only an upper bound unordered. Original accepts. */
+    reset(1); supplied[0].z = from_bits(0xff800000u);
+    op_cell_vertical_padding = from_bits(0x7f800000u); gather();
+    CHECK(op_frustum_group_count == 0 && op_gathered_surface_count == 1);
+    reset(1); supplied[0].x = from_bits(0xff800000u);
+    op_cell_horizontal_padding = from_bits(0x7f800000u); gather();
+    CHECK(op_frustum_group_count == 0 && op_gathered_surface_count == 1);
+    /* Equal positive infinities make the opposite rejection bound unordered. */
+    reset(1); supplied[0].z = from_bits(0x7f800000u);
+    op_cell_vertical_padding = from_bits(0x7f800000u); gather();
+    CHECK(op_frustum_group_count == 1 && op_gathered_surface_count == 0);
+    reset(1); supplied[0].x = from_bits(0x7f800000u);
+    op_cell_horizontal_padding = from_bits(0x7f800000u); gather();
+    CHECK(op_frustum_group_count == 1 && op_gathered_surface_count == 0);
 }
 static void emission_tests(void)
 {

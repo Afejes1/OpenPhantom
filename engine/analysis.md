@@ -100,9 +100,11 @@ accepted registry. See [scan-culling evidence](docs/scan-culling-evidence.md).
 The ordinary cell collector at 0x004064B0 processes 64-byte records after a
 16-byte cell header, using extra-record room/frustum skips and a last-height
 cache before current-path emission. Capacity is checked only at function entry.
-The four-candidate research batch now includes this C++ reconstruction: its
-896-byte extent is correct, but relocation positions still differ. Its focused
-VC5 fixture passes 4,184 checks. See [static-cell evidence](docs/static-cell-evidence.md).
+The C++ candidate now has the correct 896-byte extent and all forty relocation
+operands verified. Five instruction bytes still differ: stack cleanup and one
+x87 comparison trade places. Its focused VC5 fixture passes 4,208 checks,
+including opposite-infinity cases that exposed and corrected an unordered-bound
+discrepancy. See [static-cell evidence](docs/static-cell-evidence.md).
 The culler's additional processor/optimizer, arithmetic, inline-vector and
 indexing probes retained its ten-byte mismatch; no new compiler profile was
 accepted. The fourteen-function history remains unchanged.

@@ -8,7 +8,7 @@ the matching registry. The existing fourteen-function history remains unchanged.
 | 0x00406300 | bapdraw_emitFace | [C++ source](candidate.cpp) | Correct 432-byte extent; relocation positions and register allocation differ |
 | 0x00405A50 | bapdrawOld_emitFace | [C source](legacy_candidate.c) | Correct 672-byte extent; relocation inventory and instructions differ |
 | 0x00403FA0 | bapdrawOld_cullAgainstPlane | [C source](culling_candidate.c) | Correct 480-byte extent and all 22 relocations; ten instruction bytes differ |
-| 0x004064B0 | bapdraw_gatherCell | [C++ source](collection_candidate.cpp) | Correct 896-byte extent and 40 relocations; relocation positions and instructions differ |
+| 0x004064B0 | bapdraw_gatherCell | [C++ source](collection_candidate.cpp) | Correct 896-byte extent and all 40 relocations; five instruction bytes differ |
 
 The JSON target definitions preserve complete original extents, embedded tables,
 alignment, constant widths, symbol addends and calls. These pending specifications
@@ -36,7 +36,9 @@ function-section and listing hashes even for unresolved comparisons. Completion
 requires source/toolchain freshness and unchanged object/listing hashes.
 No command creates an accepted full-build history record. The
 [artifact checkpoint](../../docs/surface-artifacts-20260912.md) explains the
-latest focused build and remaining compiler findings, with a linked hash receipt.
+listing/report format, with its historical hash receipt. The
+[latest collector receipt](../../docs/static-cell-ordering-20260912.json) records
+the five-byte mismatch and strengthened fixture.
 The [collector receipt](../../docs/static-cell-batch-20260912.json) and
 [earlier receipt](../../docs/surface-batch-20260912.json) retain the preceding
 four- and three-candidate snapshots.
@@ -52,9 +54,9 @@ controlled callees, not complete game behavior or integrated renderer coverage.
 - Culling passes 3,038 checks covering four planes, sixteen selections of two
   corners, nonzero flags, input/state retention, early returns, inclusive bounds,
   signed zero and NaNs at three x87 precisions.
-- Collection passes 4,184 checks covering records and extra-group skips, height
+- Collection passes 4,208 checks covering records and extra-group skips, height
   caching and sentinel behavior, four side boundaries, far-boundary neighbors,
-  selected NaNs, packed opacity, room masks, queue order and duplicate handling
+  selected NaNs, opposite-infinity cancellation, packed opacity, room masks, queue order and duplicate handling
   at three x87 precisions. Extra owned test storage permits observing the
   entry-only capacity check without inferring the original buffer allocation.
 
@@ -75,12 +77,14 @@ probes did not remove them. No new compiler profile was accepted. Before registr
 promotion, report its embedded table bytes separately from alignment in aggregate
 coverage accounting; accepted functions currently have no such table.
 
-The collector's first source produced 880 bytes. Explicit rejection predicates,
-unsigned sentinel comparison and initialization order bring it to 896 bytes.
-Its original form uses a cached height, extra-record skips, a capacity guard only
-at entry, and inlined emission. Remaining differences include x87 compare order,
-branch layout and emitter register choices. The initial setup ordering is
-preserved intentionally; do not simplify it without recompiling and comparing.
+The collector now verifies all forty address operands within the complete
+896-byte span. Correct comparison direction and a retained negative horizontal
+extent preserve unordered behavior. Explicit mask caching, bucket initialization
+before its guard, and an inlined packed-opacity helper reproduce the emitter's
+register choices. Only five bytes differ: FCOMPP and ADD ESP,12 trade places at
++0xF4. Its initial setup and source expression boundaries are intentional; do not
+simplify them without recompiling and comparing. A fixture pass does not excuse
+this instruction-order mismatch.
 
 See [emission evidence](../../docs/surface-emission-evidence.md),
 [culling evidence](../../docs/scan-culling-evidence.md) and
