@@ -8,14 +8,17 @@ Whole executable: **incomplete**. Original linked placement: **unverified**.
 
 | Module | Function / source | Original address | Last verified result | Bytes / address bytes |
 |---|---|---|---|---|
-| material | [material_mode](../src/material_mode.c) | 0x0040E840 | unverified | 41 / 0 |
-| spatial_grid | [grid_cell](../src/grid_cell.c) | 0x00406E22 | unverified | 24 / 4 |
-| map_geometry | [plane_coordinate](../src/plane_coordinate.c) | 0x0040DCEE | unverified | 384 / 8 |
-| view_projection | [update_projection](../src/update_projection.c) | 0x0040EF40 | unverified | 144 / 48 |
+| material | [material_mode](../src/material_mode.c) | 0x0040E840 | raw-code-match | 41 / 0 |
+| spatial_grid | [grid_cell](../src/grid_cell.c) | 0x00406E22 | relocation-adjusted-match | 24 / 4 |
+| map_geometry | [plane_coordinate](../src/plane_coordinate.c) | 0x0040DCEE | relocation-adjusted-match | 384 / 8 |
+| view_projection | [update_projection](../src/update_projection.c) | 0x0040EF40 | relocation-adjusted-match | 144 / 48 |
 
-Registered functions: **4**. Last recorded matches with unchanged definitions: **0**.
-Current source fingerprint agrees with the latest run: **no**.
+Registered functions: **4**. Last recorded matches with unchanged definitions: **4**.
+Current source fingerprint agrees with the latest run: **yes**.
 This count is not whole-program coverage and does not certify the modern TPM reconstruction.
+
+Latest build: '20260912-113630-9cd2d060', source commit '316c99f5278de80379dda34063a9f88f8c6b4ecf'.
+History contains 1 verified build records.
 
 ## Workarounds and exceptions
 
