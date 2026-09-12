@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 from build import (check_lock, configure, environment, load_config, run_build,
                    validate_build)
 from runners import run_tool
+from registry import load_registry, record_event
 from formats import VerificationError, read_binary, require
 from matching import (canonical_hash, check_regression, compare_batch,
                       compare_whole, digest, load_target, verify_reference)
@@ -52,7 +53,7 @@ def behavior_record(out, record):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["reference", "configure", "preflight", "build", "test", "compare", "check", "accept", "whole", "diagnose"])
+    parser.add_argument("command", choices=["reference", "configure", "preflight", "build", "test", "compare", "check", "accept", "record", "whole", "diagnose"])
     parser.add_argument("--reference", type=Path)
     parser.add_argument("--config", type=Path, default=ROOT / "private/toolchain.json")
     parser.add_argument("--lock", type=Path, default=ROOT / "private/toolchain.lock.json")
@@ -122,6 +123,8 @@ def main(argv=None):
         print("%s: %s%s" % (function["id"], function["status"],
                             "; " + function["reason"] if "reason" in function else ""))
     print("VC5 behavioral tests:", "passed" if result["behavior"]["passed"] else "not passed")
+    if args.command == "record":
+        print(record_event(ROOT, out, target, load_registry(ROOT, target), config, lock, record, result))
     if args.command in ("check", "accept"):
         require(args.baseline, "supply --baseline (use a new private filename for accept)")
         if args.command == "check":

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "target": "WMAIN",
+  "inventory_scope": "Registered reconstruction work only; not a whole-program census",
+  "functions": [
+    {
+      "id": "material_mode",
+      "module": "material",
+      "analysis_name": "FUN_0040e840",
+      "purpose": "Return zero for mode one and two otherwise; material interpretation remains tentative",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/baseline-evidence.md"
+      ],
+      "behavior_tests": [
+        "tests/behavior.c"
+      ],
+      "quirks": [
+        "Retain switch-shaped stack-local code generation under /Od"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "grid_cell",
+      "module": "spatial_grid",
+      "analysis_name": "FUN_00406e22",
+      "purpose": "Address a cell using observed 128-byte and 32768-byte strides",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/baseline-evidence.md"
+      ],
+      "behavior_tests": [
+        "tests/behavior.c"
+      ],
+      "quirks": [
+        "Evaluate Y before X to reproduce EAX/ECX allocation",
+        "Caller bounds and full grid extent remain unestablished"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "plane_coordinate",
+      "module": "map_geometry",
+      "analysis_name": "solve_b3d_plane_coordinate",
+      "purpose": "Solve a selected plane coordinate with the original conditional point stores",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/baseline-evidence.md"
+      ],
+      "behavior_tests": [
+        "tests/behavior.c"
+      ],
+      "quirks": [
+        "Y/Z divisions use explicit double intermediates and float stores",
+        "VC5 x87 C3-only comparisons take the early return on unordered input"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "update_projection",
+      "module": "view_projection",
+      "analysis_name": "FUN_0040ef40",
+      "purpose": "Transfer camera viewport and frustum fields to projection globals",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/baseline-evidence.md"
+      ],
+      "behavior_tests": [
+        "tests/behavior.c"
+      ],
+      "quirks": [
+        "Local float retains the original reciprocal load/divide order",
+        "Compare all 15 trailing NOP alignment bytes"
+      ],
+      "exceptions": []
+    }
+  ],
+  "open_program_questions": [
+    "Original CRT startup/heap library revision",
+    "Complete source-module inventory and original translation-unit boundaries",
+    "Retail link order, placements, resources, data, and historical PE metadata"
+  ]
+}

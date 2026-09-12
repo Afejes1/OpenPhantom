@@ -91,7 +91,9 @@ def check_lock(config, lock):
 
 
 def source_snapshot(root):
-    files = [root / "target.json", root / "verify.py"]
+    files = [root / "target.json", *root.glob("*.py")]
+    if (root / "registry.json").exists():
+        files.append(root / "registry.json")
     for folder in ("src", "tools"):
         files.extend(p for p in (root / folder).rglob("*") if p.suffix in (".c", ".h", ".py"))
     files.append(root / "tests" / "behavior.c")

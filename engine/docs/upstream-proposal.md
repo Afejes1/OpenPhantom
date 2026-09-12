@@ -1,7 +1,10 @@
 # Draft: original-toolchain matching baseline
 
-This is an unpublished proposal for upstream discussion. Work on this fork is
-experimental; upstream has not approved the component design.
+This remains an unpublished experiment in the contributor's fork. On 2026-09-12
+the contributor confirmed direct discussion with the authors and authorized
+continued registry, restore, and module reconstruction work. A public issue is
+not a prerequisite for this fork's work. This does not claim upstream acceptance
+or publication of the component design.
 
 Establish a VC5 RTM build and comparison workflow for the retail WMAIN.EXE
 identified in engine-identification.md, beginning with its four reference
@@ -20,7 +23,7 @@ No game executable, extracted data, compiler package, or binary diff is included
 Public CI can test the tooling without retail inputs. A private verification run
 must supply the pinned original executable and a fingerprinted VC5 installation.
 
-Before expanding into complete engine modules, agree on this layout and the
-acceptance criteria. The unresolved startup/heap runtime-library revision is
+Module expansion uses the recorded comparison and regression criteria. The
+unresolved startup/heap runtime-library revision is
 tracked independently; original machine-code fragments will not be copied into
 the reconstruction to conceal that gap.

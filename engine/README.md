@@ -145,3 +145,12 @@ been verified with this container profile. It is not an acceptance gate.
 
 No changes to `legacy/` or `installer/` are required. Do not ship this fixture
 or any original game data in a commit, release, or issue attachment.
+
+## Registry and recovery
+
+See [the generated progress report](docs/progress.md) and
+[registry and private recovery instructions](docs/registry-and-recovery.md).
+The registry records evidence and compiler quirks per function; immutable build
+records preserve previous matches as the inventory grows. The private recovery
+commands archive the source history, fingerprinted compiler files, and exact
+Docker image, then restore into a fresh checkout without overwriting old work.

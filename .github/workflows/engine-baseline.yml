@@ -19,6 +19,8 @@ jobs:
           python-version: '3.13'
       - name: Test comparison failures and build provenance without game inputs
         run: python -m unittest discover -s engine/tests -p "test_*.py" -v
+      - name: Validate registry, immutable evidence history, and progress report
+        run: python engine/progress.py --check
       - name: Install pinned external diagnostics
         run: python -m pip install -r engine/requirements-diagnostics.txt
       - name: Check source annotations
