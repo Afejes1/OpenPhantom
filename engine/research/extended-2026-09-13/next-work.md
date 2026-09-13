@@ -1,32 +1,11 @@
-# Next work within the fixed window
+# Next bounded batch
 
-Acceptance003 is complete:26 registered exact functions and23 immutable records,
-with189 new shared-world fixture checks. Source5e54b23, acceptance7cb9c97.
-No repeat acceptance build is needed. Campaign018 is the active six-function
-world cleanup/wrapper batch; use its campaign.json and per-case worker/results
-receipts to resume actual remaining review and publication.
+The current shared baseline has40 accepted functions and28 immutable records. No implementation remains active. Fourteen eligible exact functions from this window are queued for shared integration; retain the six near matches, one research candidate and two team-done overlaps in their separate categories.
 
-A private prepared Campaign019 packet exists at engine/private/campaign019-prepared.json.
-It contains six untouched team-not_done readers: dialog, global/local vertices,
-materials and two light arrays,907 full bytes and6 calls. All intervals, terminal
-returns, next entries, PE relocation coverage, dispatcher callers and stream ABI
-were independently checked. Start only after018 publication. Local vertices return1
-on payload mismatch, unlike sibling readers; do not normalize this behavior.
-Dialog captures its world pointer AFTER the read callback and clears16-byte record
-links; other readers capture it BEFORE their loops. Contracts specify signed live
-loop bounds, unsigned wrapped products and callback mutation fixture cases.
+Recommended first slice: integrate the stream/chunk helpers `world_read_chunk_header` (Campaign020,112bytes), `world_skip_chunk` (Campaign017,93bytes), and `world_load_via_skip` (Campaign018,32bytes). Reconfirm the shared stream/header layout before source changes. The wrapper uses header offset0x2D4, not current payload0x800. Its real skip callee uses two cdecl stack arguments; the stale Ghidra thiscall annotation must not introduce an argument. The wrapper ignores skip failure and returns1. The chunk reader consumes12bytes, has a23-entry live comparison table, and must preserve zero-read versus negative-success behavior and callback mutation ordering. Use authored tags, no original strings.
 
-Use one Sol medium worker and independent review. Keep the15-minute individual
-and45-minute campaign caps. Do not revisit parked cases by resetting their clocks.
-Keep full regression for batch integration; normal new research uses focused
-native/Docker proof and fixture plus lightweight publication checks.
+Prepare one shared fixture that calls the actual reconstructed helpers, observes callbacks and complete state, and retains their full spans and existing address bindings. Then one clean original-toolchain build/test/compare/record checkpoint and full supplemental CI. Do not rerun broad regression for every intervening research commit.
 
-After a further source batch, consider one bounded cleanup acceptance integration
-with shared partial world layout and actual inter-function cleanup calls. Start
-with a15-minute type/ABI preparation cap; preserve accepted sources and field
-semantics. Do not expand unverified array capacity claims merely to merge types.
+Other exact queues include cleanup helpers from017/018, world allocate/destroy from020, and grid/cell helpers from021. Pointer-table620 capacity remains unresolved; do not promote a four-slot fixture view as the actual full table. Cell wrapper integration depends on preserved near-match distinctions and the parked content-flags padding case. Do not reset exhausted source timeboxes.
 
-Window remains11:54:31-16:24:31 UTC on2026-09-13. Stop new implementation16:14:31;
-publish/close and pause the existing heartbeat by16:24:31. The broad goal stays
-paused. Preserve original assets, compiler binaries and private artifacts outside
-Git. The original executable must never run.
+Keep zero differing bytes for exact acceptance. Use one writer plus independent review, manifest eligibility before implementation, and preserve all failed attempts. The user must authorize a new execution window; the current4.5-hour heartbeat is being closed, not extended.

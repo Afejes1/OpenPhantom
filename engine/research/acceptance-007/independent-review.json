@@ -11,5 +11,9 @@
   "focused_checks": 3856,
   "shared_sequence_checks": 256,
   "expected_combined_checks": 4112,
-  "original_game_executed": false
+  "original_game_executed": false,
+  "compatibility_fix_reviewed": true,
+  "compatibility_review": "VC5 control path unchanged; modern _controlfp_s query/set/restore return values checked; unique aggregate counter removes shadow; no production or ABI change.",
+  "vc5_checks": 4112,
+  "modern_expected_checks": 4115
 }
