@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "id": "campaign-035",
+  "started_utc": "2026-09-13T23:29:00Z",
+  "completed_utc": "2026-09-13T23:41:46.716947+00:00",
+  "new_exact_functions": 9,
+  "new_exact_bytes": 422,
+  "research_candidates": 1,
+  "near_matches": 0,
+  "implementation_attempts": 10,
+  "final_native_docker_pairs": 10,
+  "fixture_checks": 5382,
+  "source_snapshot_inputs_verified": 140,
+  "final_reports_verified": 20,
+  "original_game_executed": false
+}

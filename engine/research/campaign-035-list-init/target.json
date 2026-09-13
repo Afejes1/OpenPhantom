@@ -1,0 +1,14 @@
+{
+  "id": "list_init",
+  "address": 4800436,
+  "size": 24,
+  "body_size": 24,
+  "source": "src/list_init.c",
+  "symbol": "_op_list_init",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

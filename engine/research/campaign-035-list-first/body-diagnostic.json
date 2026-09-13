@@ -1,0 +1,11 @@
+{
+  "scope": "diagnostic-body-only-not-full-span-acceptance",
+  "bytes": 36,
+  "full_target_bytes": 42,
+  "missing_alignment_bytes": 6,
+  "raw_body_equal": true,
+  "original_body_sha256": "e33e6cfadafe94ef617e3875b28bf7041fedad56d11ec13724fe24ca1bd3774b",
+  "candidate_body_sha256": "e33e6cfadafe94ef617e3875b28bf7041fedad56d11ec13724fe24ca1bd3774b",
+  "source_result": "result.json",
+  "accepted": false
+}

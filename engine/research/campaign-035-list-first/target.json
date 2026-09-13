@@ -1,0 +1,14 @@
+{
+  "id": "list_first",
+  "address": 4800582,
+  "size": 42,
+  "body_size": 36,
+  "source": "src/list_first.c",
+  "symbol": "_op_list_first",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

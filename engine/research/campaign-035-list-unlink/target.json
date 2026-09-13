@@ -1,0 +1,14 @@
+{
+  "id": "list_unlink",
+  "address": 4800334,
+  "size": 68,
+  "body_size": 68,
+  "source": "src/list_unlink.c",
+  "symbol": "_op_list_unlink",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

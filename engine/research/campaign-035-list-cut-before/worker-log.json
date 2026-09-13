@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "list_cut_before",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full linked-list lifecycle contract",
+      "started_utc": "2026-09-13T23:35:16.984011+00:00",
+      "finished_utc": "2026-09-13T23:35:18.558405+00:00",
+      "returncode": 0,
+      "source_sha256": "becdd60ad0f5e5e960201c3a5c8dd5afd88433e8f138f6d86c5360204c01c840",
+      "report": "engine/build/campaign-001-list_cut_before-7e3b2b566157/research-result.json",
+      "report_sha256": "ca9ce91d1677b6309737cff82accf6d7bba7074f3c2cb8cb6aa45e73054106e8",
+      "status": "raw-code-match",
+      "candidate_size": 34,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.356294,
+      "stderr": ""
+    }
+  ]
+}

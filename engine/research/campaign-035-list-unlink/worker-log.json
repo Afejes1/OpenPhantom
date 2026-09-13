@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "list_unlink",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full linked-list lifecycle contract",
+      "started_utc": "2026-09-13T23:35:15.405418+00:00",
+      "finished_utc": "2026-09-13T23:35:16.978262+00:00",
+      "returncode": 0,
+      "source_sha256": "b7de190d02c3ff49cf9a4f70e6571a98fc2acf48307b07572ff93d1345fead58",
+      "report": "engine/build/campaign-001-list_unlink-63fcd62aa599/research-result.json",
+      "report_sha256": "2226c8b13830e1a541a80aa722fe97bd5583987f44074899943d0eba4282f342",
+      "status": "raw-code-match",
+      "candidate_size": 68,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.353038,
+      "stderr": ""
+    }
+  ]
+}

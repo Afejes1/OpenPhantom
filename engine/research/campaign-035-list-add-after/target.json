@@ -1,0 +1,14 @@
+{
+  "id": "list_add_after",
+  "address": 4800160,
+  "size": 57,
+  "body_size": 57,
+  "source": "src/list_add_after.c",
+  "symbol": "_op_list_add_after",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

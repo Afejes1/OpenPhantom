@@ -1,0 +1,14 @@
+{
+  "id": "list_advance",
+  "address": 4800504,
+  "size": 40,
+  "body_size": 40,
+  "source": "src/list_advance.c",
+  "symbol": "_op_list_advance",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "list_count",
+  "address": 4800460,
+  "size": 44,
+  "body_size": 44,
+  "source": "src/list_count.c",
+  "symbol": "_op_list_count",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

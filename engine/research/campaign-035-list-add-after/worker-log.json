@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "list_add_after",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full linked-list lifecycle contract",
+      "started_utc": "2026-09-13T23:35:10.584307+00:00",
+      "finished_utc": "2026-09-13T23:35:12.233189+00:00",
+      "returncode": 0,
+      "source_sha256": "8cabaa69baabe8f00bda048c221b8fbf691c81eb3e1cde4273fe78e05515d7eb",
+      "report": "engine/build/campaign-001-list_add_after-02282ed64402/research-result.json",
+      "report_sha256": "6193ede5ff59c5b77cb9e214137344bd003b7ddc04e9a42d33c4a35bd596c81d",
+      "status": "raw-code-match",
+      "candidate_size": 57,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.425841,
+      "stderr": ""
+    }
+  ]
+}

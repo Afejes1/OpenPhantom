@@ -1,0 +1,14 @@
+{
+  "id": "list_last",
+  "address": 4800544,
+  "size": 38,
+  "body_size": 38,
+  "source": "src/list_last.c",
+  "symbol": "_op_list_last",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

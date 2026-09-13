@@ -1,0 +1,14 @@
+{
+  "id": "list_insert_before",
+  "address": 4800217,
+  "size": 56,
+  "body_size": 56,
+  "source": "src/list_insert_before.c",
+  "symbol": "_op_list_insert_before",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

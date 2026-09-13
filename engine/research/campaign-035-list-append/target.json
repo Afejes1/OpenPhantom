@@ -1,0 +1,14 @@
+{
+  "id": "list_append",
+  "address": 4800273,
+  "size": 61,
+  "body_size": 61,
+  "source": "src/list_append.c",
+  "symbol": "_op_list_append",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

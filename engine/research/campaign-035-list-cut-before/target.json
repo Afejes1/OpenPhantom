@@ -1,0 +1,14 @@
+{
+  "id": "list_cut_before",
+  "address": 4800402,
+  "size": 34,
+  "body_size": 34,
+  "source": "src/list_cut_before.c",
+  "symbol": "_op_list_cut_before",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

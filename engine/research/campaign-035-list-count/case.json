@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "list_count",
+  "candidate": "candidate.c",
+  "symbol": "_op_list_count",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}
