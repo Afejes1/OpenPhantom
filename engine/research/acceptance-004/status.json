@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "acceptance-004",
+  "status": "review-complete-build-pending",
+  "started_utc": "2026-09-13T13:50:00Z",
+  "start_timestamp_basis": "Conservative coordinator scheduling anchor; exact worker start will be retained if captured.",
+  "implementation_stop_utc": "2026-09-13T14:15:00Z",
+  "deadline_utc": "2026-09-13T14:35:00Z",
+  "baseline_commit": "40d7db760a3054977bfae6d83c925706fe4b3c85",
+  "registered_before": 26,
+  "planned_promotions": 2,
+  "planned_bytes": 301,
+  "functions": [
+    "world_read_global_vertices",
+    "world_read_local_vertices"
+  ],
+  "original_game_executed": false,
+  "worker_finished_utc": "2026-09-13T14:02:01.2574427Z",
+  "review_completed_utc": "2026-09-13T14:04:46.576952+00:00",
+  "registered_after_prepared": 28,
+  "existing_26_targets_unchanged": true,
+  "existing_26_registry_entries_unchanged": true,
+  "existing_test_function_bodies_preserved": 8,
+  "fixture_sha256": "eb4e40c6a6fe2db59bf75be995f9bf01480e89771a3f1a1e70020b541d756a38",
+  "tooling_tests_passed": 100
+}

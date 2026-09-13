@@ -21,3 +21,15 @@ stream backend and game are never executed. Zero/NULL/huge I/O cases establish
 forwarding only; final whole-executable placement remains pending.
 
 See ../research/acceptance-003/results.md for completed evidence when available.
+
+## Vertex-reader extension
+
+Acceptance004 adds global and local vertex records at header48/4C and50/54,
+world94/9C andA4/AC, with opaque32-byte and28-byte records. Existing fields and
+structure extents are unchanged. The global payload mismatch returns0; the local
+payload mismatch returns1. Both capture the starting record pointer before the
+loop, reload signed count and read size across callbacks, and copy the final live
+count only after success. The shared fixture includes both actual readers in
+sequence, empty and high-bit counts, signed size words, callback mutations,
+guarded original/alternate buffers and partial failures. See
+../research/acceptance-004/results.md for the eventual acceptance receipt.

@@ -1208,6 +1208,48 @@
           "symbol": "_op_stream_read"
         }
       ]
+    },
+    {
+      "id": "world_read_global_vertices",
+      "address": 4315374,
+      "size": 149,
+      "body_size": 149,
+      "source": "src/world_read_global_vertices.c",
+      "symbol": "_op_world_read_global_vertices",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 99,
+          "address": 4654982,
+          "kind": "rel32-call",
+          "symbol": "_op_stream_read"
+        }
+      ]
+    },
+    {
+      "id": "world_read_local_vertices",
+      "address": 4315523,
+      "size": 152,
+      "body_size": 152,
+      "source": "src/world_read_local_vertices.c",
+      "symbol": "_op_world_read_local_vertices",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 102,
+          "address": 4654982,
+          "kind": "rel32-call",
+          "symbol": "_op_stream_read"
+        }
+      ]
     }
   ]
 }

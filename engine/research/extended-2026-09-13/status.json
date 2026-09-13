@@ -74,7 +74,7 @@
     },
     {
       "id": "campaign-019",
-      "status": "verification-complete-publication-pending",
+      "status": "published",
       "new_exact_functions": 2,
       "new_exact_bytes": 301,
       "near_matches": 3,
@@ -82,16 +82,19 @@
       "fixture_checks": 627,
       "promotions": 0,
       "results": "../campaign-019/results.md",
-      "verified_utc": "2026-09-13T13:40:56.369347+00:00"
+      "verified_utc": "2026-09-13T13:40:56.369347+00:00",
+      "source_commit": "40d7db760a3054977bfae6d83c925706fe4b3c85",
+      "focused_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34760951329",
+      "focused_ci_conclusion": "success"
     }
   ],
-  "current_work": "Campaign019 reviewed:2 exact/3 near/1 research,627 focused checks. Publish then acceptance004 for two exact vertex readers.",
+  "current_work": "Acceptance004 integration in progress: two exact vertex readers. Campaign019 published with successful focused CI.",
   "original_game_executed": false,
-  "weekly_shared_usage_latest_percent": 42,
+  "weekly_shared_usage_latest_percent": 43,
   "last_checkpoint_utc": "2026-09-13T13:49:01.701050+00:00",
-  "last_source_commit": "3bb9c83c2bd3dc186f99a1a8f87a2e1fa34c0451",
-  "usage_observed_utc": "2026-09-13T13:25:02.575556+00:00",
-  "usage_observation_scope": "Rounded account-wide weekly usage;39 at window start,42 now, not isolated campaign billing.",
+  "last_source_commit": "40d7db760a3054977bfae6d83c925706fe4b3c85",
+  "usage_observed_utc": "2026-09-13T13:59:42.009190+00:00",
+  "usage_observation_scope": "Rounded account-wide weekly usage;39 at window start,43 now, not isolated campaign billing.",
   "new_near_matches": 3,
   "new_research_candidates": 1
 }

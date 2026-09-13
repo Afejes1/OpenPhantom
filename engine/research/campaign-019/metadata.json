@@ -8,7 +8,8 @@
     "byte_category": "research-candidate",
     "comment_updated": true,
     "evidence": "All eight differences are the two swapped pointer/index local stack displacements. Bulk-read argument forwarding, no payload validation, pre-read count reset, post-callback pointer capture, signed live count, guarded typed link clears and callback failure retention.",
-    "contract": "research/campaign-019-world-read-dialog/contract.md"
+    "contract": "research/campaign-019-world-read-dialog/contract.md",
+    "existing_name": "read_b3d_dialog_chunk"
   },
   {
     "id": "world_read_global_vertices",
@@ -19,7 +20,8 @@
     "byte_category": "exact-function-match",
     "comment_updated": true,
     "evidence": "Complete original span matches after the independently verified stream-read binding. Guarded normal three-read path; first/middle failure with callback mutations; captured pre-loop pointer despite retargeting; live count expansion/contraction and size changes; mismatch/zero/high-bit/wrapped products; negative success; zero-sized positive-count reads; exact callback arguments and retained bytes.",
-    "contract": "research/campaign-019-world-read-global-vertices/contract.md"
+    "contract": "research/campaign-019-world-read-global-vertices/contract.md",
+    "existing_name": "read_b3d_global_vertices_chunk"
   },
   {
     "id": "world_read_local_vertices",
@@ -30,7 +32,8 @@
     "byte_category": "exact-function-match",
     "comment_updated": true,
     "evidence": "Complete original span matches after the independently verified stream-read binding. Guarded normal three-read path; first/middle failure with callback mutations; captured pre-loop pointer despite retargeting; live count expansion/contraction and size changes; mismatch/zero/high-bit/wrapped products; negative success; zero-sized positive-count reads; exact callback arguments and retained bytes.",
-    "contract": "research/campaign-019-world-read-local-vertices/contract.md"
+    "contract": "research/campaign-019-world-read-local-vertices/contract.md",
+    "existing_name": "read_b3d_local_vertices_chunk"
   },
   {
     "id": "world_read_materials",
@@ -41,7 +44,8 @@
     "byte_category": "near-match",
     "comment_updated": true,
     "evidence": "All six differences are the swapped size/index local stack displacements. Guarded normal three-read path; first/middle failure with callback mutations; captured pre-loop pointer despite retargeting; live count expansion/contraction and size changes; mismatch/zero/high-bit/wrapped products; negative success; zero-sized positive-count reads; exact callback arguments and retained bytes.",
-    "contract": "research/campaign-019-world-read-materials/contract.md"
+    "contract": "research/campaign-019-world-read-materials/contract.md",
+    "existing_name": "read_b3d_materials_chunk"
   },
   {
     "id": "world_read_light1",
@@ -52,7 +56,8 @@
     "byte_category": "near-match",
     "comment_updated": true,
     "evidence": "All six differences are the swapped size/index local stack displacements. Guarded normal three-read path; first/middle failure with callback mutations; captured pre-loop pointer despite retargeting; live count expansion/contraction and size changes; mismatch/zero/high-bit/wrapped products; negative success; zero-sized positive-count reads; exact callback arguments and retained bytes.",
-    "contract": "research/campaign-019-world-read-light1/contract.md"
+    "contract": "research/campaign-019-world-read-light1/contract.md",
+    "existing_name": "read_b3d_light1_chunk"
   },
   {
     "id": "world_read_light2",
@@ -63,6 +68,7 @@
     "byte_category": "near-match",
     "comment_updated": true,
     "evidence": "All six differences are the swapped size/index local stack displacements. Guarded normal three-read path; first/middle failure with callback mutations; captured pre-loop pointer despite retargeting; live count expansion/contraction and size changes; mismatch/zero/high-bit/wrapped products; negative success; zero-sized positive-count reads; exact callback arguments and retained bytes.",
-    "contract": "research/campaign-019-world-read-light2/contract.md"
+    "contract": "research/campaign-019-world-read-light2/contract.md",
+    "existing_name": "read_b3d_light2_chunk"
   }
 ]

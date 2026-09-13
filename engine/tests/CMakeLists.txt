@@ -8,7 +8,8 @@ add_executable(behavior_smoke behavior.c ../src/material_mode.c ../src/grid_cell
   ../src/peek_projected_vertices.c ../src/peek_face_packet.c ../src/queue_face_packet.c ../src/submit_gathered_surfaces.c ../src/set_frame_state.c ../src/push_surface_draw_entry.cpp ../src/step_scan.c
   ../src/bgl_identity.c ../src/bgl_push.c ../src/bgl_pop.c ../src/bgl_load_matrix.c ../src/bgl_get_matrix.c ../src/bgl_get_translation.c ../src/bgl_get_translation_xyz.c
   ../src/extended_load_colormap.c ../src/extended_free_colormaps.c
-  ../src/world_read_emitters.c ../src/world_read_sprite_refs.c ../src/world_read_palettes.c)
+  ../src/world_read_emitters.c ../src/world_read_sprite_refs.c ../src/world_read_palettes.c
+  ../src/world_read_global_vertices.c ../src/world_read_local_vertices.c)
 target_compile_options(behavior_smoke PRIVATE /W4 /WX /Od /fp:precise)
 enable_testing()
 add_test(NAME supplemental_behavior COMMAND behavior_smoke)

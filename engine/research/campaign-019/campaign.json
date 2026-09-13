@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "campaign": "019",
-  "status": "verification-complete-publication-pending",
+  "status": "published",
   "prepared_utc": "2026-09-13T13:04:15.951151+00:00",
   "preparation_started_utc": "2026-09-13T13:02:00Z",
   "preparation_cap_minutes": 15,
@@ -76,5 +76,8 @@
   "research_candidates": 1,
   "fixture_checks": 627,
   "accepted_promotions": 0,
-  "next_work": "Acceptance004: integrate only exact global/local vertex readers; parked cases remain research."
+  "next_work": "Acceptance004: integrate only exact global/local vertex readers; parked cases remain research.",
+  "source_commit": "40d7db760a3054977bfae6d83c925706fe4b3c85",
+  "focused_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34760951329",
+  "focused_ci_conclusion": "success"
 }

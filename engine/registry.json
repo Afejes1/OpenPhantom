@@ -502,6 +502,44 @@
         "Shared offset-checked world/header views; callback mutations are observed in original order"
       ],
       "exceptions": []
+    },
+    {
+      "id": "world_read_global_vertices",
+      "module": "b3d_chunk_readers",
+      "analysis_name": "read_b3d_global_vertices_chunk",
+      "purpose": "Validate and read global vertex records using live signed loop bounds and record sizes",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/world-readers-acceptance.md",
+        "research/campaign-019-world-read-global-vertices/README.md"
+      ],
+      "behavior_tests": [
+        "tests/world_readers_behavior.c"
+      ],
+      "quirks": [
+        "Unsigned payload products preserve32-bit wrapping; explicit signed stream-size boundary preserves original argument words",
+        "World record pointer is captured before the loop; header count and record size remain live across callbacks"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "world_read_local_vertices",
+      "module": "b3d_chunk_readers",
+      "analysis_name": "read_b3d_local_vertices_chunk",
+      "purpose": "Validate and read local vertex records while preserving the mismatch-success return",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/world-readers-acceptance.md",
+        "research/campaign-019-world-read-local-vertices/README.md"
+      ],
+      "behavior_tests": [
+        "tests/world_readers_behavior.c"
+      ],
+      "quirks": [
+        "Payload mismatch returns one without callbacks or stores",
+        "World record pointer is captured before the loop; header count and record size remain live across callbacks"
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
