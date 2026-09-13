@@ -1,0 +1,105 @@
+{
+  "id": "frame_setup",
+  "status": "reviewed-tested-candidate",
+  "accepted_history_record": false,
+  "exact_comparison": {
+    "status": "not-attempted"
+  },
+  "reference_layout": {
+    "address": 4211072,
+    "size": 1456,
+    "body_size": 1449,
+    "trailing_bytes": 7,
+    "reference_span_sha256": "438f4f084f625ded4d21116286f5231dd70e1418eae8d3851719778a7d73a9ff",
+    "binding_inventory_verified": false,
+    "reference_identity_sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11"
+  },
+  "source_snapshot": {
+    "research/campaign-001-frame-setup/candidate.c": "f5943a5efb099f26ccf63bc4d34d8c558a1ba6baf38326855fcd23b3a7d72426",
+    "research/campaign-001-frame-setup/frame.h": "65af1745d5e4893aabb0e9ae24a763f9da0530cc8895df9cb181de8f3909a66c",
+    "src/baseline.h": "f6e7690e2616f4c2f1660fe7495a012e32b1e0cfec3de451ce3e5a4de8b2e6cd",
+    "research/campaign-001-frame-setup/behavior.c": "236da82349e0c8d427aa193574938cb77184c346882629a10af13a92341eeac8",
+    "research/campaign-001-frame-setup/case.json": "c8a374cad05f0090d86f3b8b143dc2f5a7864894bcb161d2cdc2f21c6d996b21",
+    "research/campaign-001/verify.py": "aa199595b48eeb589a4212040edc731d6bd14f3c370f02c98e292a50f55b68e7",
+    "target.json": "b8398f0a1f85e40e34af828082a8587587b7c4f88a9ecea96b21b2706a33b996",
+    "research/campaign-001-frame-setup/target.json": "3986545250eeb7c407f22db2233ed6e2c447d9f45c525c2b35d53fa725946fdc",
+    "research/surface-emission/probe.py": "cd4ef4126dacfc16197636a4b0c7007639efe1033e8e2b329e4939a6083c5f1b",
+    "research/surface-emission/native_listing_diagnostic.py": "3cad0339396c73301ef5861eed3c40f925482fd7c2e4ec45f801e9d0e5d34665",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "b9b2d9741912c9d58b77f636811b9e652d30777cc8eeb93ad434896a412bc1e0",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "artifact": {
+    "id": "frame_setup",
+    "source": "candidate.c",
+    "symbol": "_op_frame_setup",
+    "object": "candidate.obj",
+    "object_sha256": "5027543f17890508c89647b70bce8eb9ae8b1b39366c4a7e49f48035d406b2e5",
+    "function_section_bytes": 1376,
+    "function_section_sha256": "798962c628ac8e6c529a9037563b686533dd394ebb45cb9be09871aa962c578c",
+    "relocation_count": 135,
+    "assembly_listing": "candidate.cod",
+    "assembly_listing_sha256": "7aef2fb2400da812e9da190d499da8dd2312b679c99efabcc630d31195024d75",
+    "assembly_listing_has_terminators": false,
+    "function_inventory": "candidate.function.json",
+    "function_inventory_sha256": "714f3899590ada3b2bba5a2e78f97a30685cfcef61361028efbcd70ab6c0e28f"
+  },
+  "cross_runner_comparison": {
+    "scope": "function-code-and-relocations",
+    "equal": true
+  },
+  "fixture": {
+    "sha256": "54e3dc3d8784da5cd8d886a25eae930707524155c272c75f9c0a07fdb82e7f5e",
+    "passed": true,
+    "stdout": "Frame setup: 6548 checks, 0 failures\n",
+    "checks": 6548,
+    "failures": 0
+  },
+  "native_report": "engine/build/campaign-001-frame_setup-f2d25d355f62/research-result.json",
+  "native_report_sha256": "0e8d5d283add77d5f048adcc977dc78c1ca16e20232287a0f50fa79cd3a189cc",
+  "docker_report": "engine/build/campaign-001-frame_setup-782a8acba5b8/research-result.json",
+  "docker_report_sha256": "f5c63e771e078ee26736d9182e107ff670cff7dbecc4a834df7be3468d0cabfc",
+  "native_elapsed_seconds": 1.46792,
+  "docker_elapsed_seconds": 5.752028,
+  "native_phases": [
+    {
+      "phase": "candidate-compile",
+      "seconds": 0.063788
+    }
+  ],
+  "docker_phases": [
+    {
+      "phase": "candidate-compile",
+      "seconds": 1.174476
+    },
+    {
+      "phase": "fixture-compile",
+      "seconds": 1.165988
+    },
+    {
+      "phase": "fixture-link",
+      "seconds": 0.928077
+    },
+    {
+      "phase": "fixture-execute",
+      "seconds": 0.606972
+    }
+  ],
+  "worker_reported_candidate_compiles": 8,
+  "worker_reported_fixture_executions": 3,
+  "final_parent_candidate_compiles": 2,
+  "final_parent_fixture_executions": 1,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "worker_checkpoint": {
+    "compiler_iterations": 8,
+    "behavior_checks": 2177,
+    "native_report": "engine/build/campaign-001-frame_setup-f181dd135c88/research-result.json",
+    "docker_behavior_report": "engine/build/campaign-001-frame_setup-c2efbbf408a8/research-result.json"
+  }
+}

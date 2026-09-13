@@ -35,12 +35,12 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x004025B0 | bapdraw_clipSlopePlane &#124; bapdraw_clipPoly &#124; bapdraw_clipDepthPlane &#124; bapdraw_clipSwap | not_done | Queued; no local match recorded |
 | 0x00403EF0 | bapdrawOld_stepScan | not_done | Recorded match: [step_scan](../src/step_scan.c) |
 | 0x00403FA0 | bapdrawOld_cullAgainstPlane | not_done | Research candidate (not registered): [research](../research/surface-emission/README.md) |
-| 0x00404180 | bapdrawOld_frameSetup | not_done | Queued; no local match recorded |
+| 0x00404180 | bapdrawOld_frameSetup | not_done | Research candidate (not registered): [research](../research/campaign-001-frame-setup/README.md) |
 | 0x00404730 | bapdraw_drawWorld | not_done | Queued; no local match recorded |
 | 0x004056C0 | bapdrawOld_gatherCell | not_done | Research candidate (not registered): [research](../research/surface-emission/README.md) |
 | 0x004059F0 | bapdrawOld_pushDrawEntry | not_done | Recorded match: [push_surface_draw_entry](../src/push_surface_draw_entry.cpp) |
 | 0x00405A50 | bapdrawOld_emitFace | not_done | Research candidate (not registered): [research](../research/surface-emission/README.md) |
-| 0x00405CF0 | bapdraw_gatherCellMovers | not_done | Queued; no local match recorded |
+| 0x00405CF0 | bapdraw_gatherCellMovers | not_done | Research candidate (not registered): [research](../research/campaign-001-mover-gather/README.md) |
 | 0x00406300 | bapdraw_emitFace | not_done | Research candidate (not registered): [research](../research/surface-emission/README.md) |
 | 0x004064B0 | bapdraw_gatherCell | not_done | Research candidate (not registered): [research](../research/surface-emission/README.md) |
 | 0x00406830 | bapdraw_submitGathered | not_done | Recorded match: [submit_gathered_surfaces](../src/submit_gathered_surfaces.c) |

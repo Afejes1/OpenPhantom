@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "frame_setup",
+  "candidate": "candidate.c",
+  "symbol": "_op_frame_setup",
+  "inputs": [
+    "candidate.c",
+    "frame.h",
+    "../../src/baseline.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": null,
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "reference_layout": "target.json"
+}

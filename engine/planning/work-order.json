@@ -34,6 +34,14 @@
     {
       "address": "0x00402155",
       "source": "research/queue-flush/README.md"
+    },
+    {
+      "address": "0x00404180",
+      "source": "research/campaign-001-frame-setup/README.md"
+    },
+    {
+      "address": "0x00405CF0",
+      "source": "research/campaign-001-mover-gather/README.md"
     }
   ]
 }

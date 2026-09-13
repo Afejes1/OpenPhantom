@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "campaign": "001",
+  "reviewer": "parent",
+  "issues": [
+    {
+      "id": "F01",
+      "case": "frame_setup",
+      "finding": "Referenced constants guessed instead of read",
+      "evidence": "Direction scale 512, distance +1 and +0.8999999761581421 verified statically",
+      "status": "addressed",
+      "verification": "Coordinator reviewed the correction against static evidence and included it in the passing final focused fixture; full equivalence remains unverified."
+    },
+    {
+      "id": "F02",
+      "case": "frame_setup",
+      "finding": "Direction integers conflated with grid positions",
+      "evidence": "008BE978/97C differ from 008BE98C/990",
+      "status": "addressed",
+      "verification": "Coordinator reviewed the correction against static evidence and included it in the passing final focused fixture; full equivalence remains unverified."
+    },
+    {
+      "id": "F03",
+      "case": "frame_setup",
+      "finding": "First distance ratio reversed",
+      "evidence": "00404354..00404362 selects larger trig output divided by smaller",
+      "status": "addressed",
+      "verification": "Coordinator reviewed the correction against static evidence and included it in the passing final focused fixture; full equivalence remains unverified."
+    },
+    {
+      "id": "F04",
+      "case": "frame_setup",
+      "finding": "Step callback received transform instead of position",
+      "evidence": "008BEA1C position differs from 008BE9EC transform",
+      "status": "addressed",
+      "verification": "Coordinator reviewed the correction against static evidence and included it in the passing final focused fixture; full equivalence remains unverified."
+    },
+    {
+      "id": "F05",
+      "case": "frame_setup",
+      "finding": "Line advance omitted stored current steps",
+      "evidence": "Line+10/+14 feed following callback",
+      "status": "addressed",
+      "verification": "Coordinator reviewed the correction against static evidence and included it in the passing final focused fixture; full equivalence remains unverified."
+    },
+    {
+      "id": "F06",
+      "case": "frame_setup",
+      "finding": "Explicit float conversion helper changed ABI and precision",
+      "evidence": "Original compiler __ftol consumes x87 value",
+      "status": "addressed",
+      "verification": "Coordinator reviewed the correction against static evidence and included it in the passing final focused fixture; full equivalence remains unverified."
+    },
+    {
+      "id": "M01",
+      "case": "mover_gather",
+      "finding": "Mover cell index read at wrong offset",
+      "evidence": "Mover+2A indexes cell; mover+2 is map count in another phase",
+      "status": "addressed",
+      "verification": "Coordinator reviewed the correction against static evidence and included it in the passing final focused fixture; full equivalence remains unverified."
+    },
+    {
+      "id": "M02",
+      "case": "mover_gather",
+      "finding": "Single visibility table represented by independent arrays",
+      "evidence": "Both uses address 008BFAA0",
+      "status": "addressed",
+      "verification": "Coordinator reviewed the correction against static evidence and included it in the passing final focused fixture; full equivalence remains unverified."
+    },
+    {
+      "id": "M03",
+      "case": "mover_gather",
+      "finding": "Phase-specific visit transitions and validity checks merged",
+      "evidence": "Seed 0-to-2 differs from mover 0-to-1 then conditional 2",
+      "status": "addressed",
+      "verification": "Coordinator reviewed the correction against static evidence and included it in the passing final focused fixture; full equivalence remains unverified."
+    },
+    {
+      "id": "M04",
+      "case": "mover_gather",
+      "finding": "First room-rejection gate incremented a counter",
+      "evidence": "Original duplicate inner gate follows earlier exclusion",
+      "status": "addressed",
+      "verification": "Coordinator reviewed the correction against static evidence and included it in the passing final focused fixture; full equivalence remains unverified."
+    },
+    {
+      "id": "M05",
+      "case": "mover_gather",
+      "finding": "Negative fade result collided with no-fade sentinel",
+      "evidence": "Actual -1 result must clamp to 0 rather than bypass fade",
+      "status": "addressed",
+      "verification": "Coordinator reviewed the correction against static evidence and included it in the passing final focused fixture; full equivalence remains unverified."
+    },
+    {
+      "id": "M06",
+      "case": "mover_gather",
+      "finding": "Fixture always returned success",
+      "evidence": "Failures must increment count and return nonzero",
+      "status": "addressed",
+      "verification": "Coordinator reviewed the correction against static evidence and included it in the passing final focused fixture; full equivalence remains unverified."
+    },
+    {
+      "id": "F07",
+      "case": "frame_setup",
+      "finding": "Float assignment can change raw transform payloads instead of preserving original DWORD copies",
+      "evidence": "Original copies raw transform words; authored memcpy preserves signaling-NaN and signed-zero bit patterns",
+      "status": "addressed",
+      "verification": "Final Docker fixture compares raw copied payloads with memcmp."
+    }
+  ],
+  "limitations": [
+    "Review findings addressed does not establish semantic equivalence over all inputs.",
+    "Fixtures use authored stubs and expected state; they do not execute the original binary.",
+    "Frame x87 intermediate precision and nonfinite control flow need further study.",
+    "Mover helper factoring remains different from the original inline layout."
+  ]
+}

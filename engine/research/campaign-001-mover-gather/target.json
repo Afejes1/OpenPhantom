@@ -1,0 +1,13 @@
+{
+  "id": "mover_gather",
+  "address": 4218096,
+  "size": 1552,
+  "body_size": 1537,
+  "padding": { "offset": 1537, "size": 15, "kind": "nop" },
+  "source": "src/mover_gather.cpp",
+  "symbol": "_op_mover_gather",
+  "language": "c++",
+  "flags": ["/O2", "/MT"],
+  "bindings": [],
+  "binding_status": "pending static relocation inventory; no inferred offsets asserted"
+}

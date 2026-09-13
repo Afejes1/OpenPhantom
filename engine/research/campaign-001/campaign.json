@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "campaign": "001",
+  "status": "evaluation-complete",
+  "started_utc": "2026-09-13T00:22:54Z",
+  "stop_utc": "2026-09-13T01:07:54Z",
+  "baseline_commit": "385b27fbef1069fa88c35bbe1c95064ca06226e8",
+  "accepted_functions_at_start": 14,
+  "weekly_account_usage_start_percent": 20,
+  "usage_scope": "account-wide integer reading; not campaign-only billing",
+  "max_concurrent_workers": 2,
+  "max_compiler_experiments_per_worker": 20,
+  "worker_stop_utc": "2026-09-13T00:52:00Z",
+  "worker_checkpoint_utc": "2026-09-13T00:40:00Z",
+  "assignments": [
+    {
+      "worker": "frame_setup",
+      "model": "gpt-5.6-sol",
+      "reasoning": "medium",
+      "address": "0x00404180",
+      "team_name": "bapdrawOld_frameSetup",
+      "module": "bp/bapdraw.c",
+      "owned_source": "research/campaign-001-frame-setup",
+      "status": "reviewed-tested-candidate"
+    },
+    {
+      "worker": "mover_gather",
+      "model": "gpt-5.6-terra",
+      "reasoning": "high",
+      "address": "0x00405CF0",
+      "team_name": "bapdraw_gatherCellMovers",
+      "module": "bp/bapdraw.c",
+      "owned_source": "research/campaign-001-mover-gather",
+      "status": "reviewed-tested-candidate"
+    }
+  ],
+  "quality_rules": [
+    "Original executable static only",
+    "Native original-compiler compilation only",
+    "Synthetic execution only in locked Docker",
+    "No shared worker edits or worker commits",
+    "Complete target spans; no byte exclusions, new waivers, raw-byte insertion or fabricated stack frames",
+    "Parent independently reviews source and verifies artifacts",
+    "Research status never creates accepted history"
+  ],
+  "stop_rules": [
+    "Stop workers at the deadline even without exact matches",
+    "Stop a hypothesis search at 20 candidate compiles",
+    "Retain useful partial source and explicit blockers",
+    "No automatic second campaign"
+  ],
+  "evaluation": [
+    "New reviewed compiling candidates",
+    "Distinct focused behavioral cases passed",
+    "Complete exact matches counted separately",
+    "Build timing and worker experiment counts",
+    "Account-wide usage before and after with attribution limits"
+  ],
+  "comparison_limitations": [
+    "Different functions and reasoning settings: this is an orchestration pilot, not a controlled model benchmark",
+    "Byte similarity is a diagnostic, not a correctness score"
+  ],
+  "verification_finished_utc": "2026-09-13T00:52:19Z",
+  "weekly_account_usage_after_verification_percent": 21,
+  "usage_after_verification_observed_utc": "2026-09-13T00:52:19Z",
+  "outcome": {
+    "new_reviewed_candidates": 2,
+    "new_exact_matches": 0,
+    "new_accepted_functions": 0,
+    "historically_accepted_functions": 14,
+    "full_regression_run": false,
+    "next_campaign_started": false
+  },
+  "publication_receipts_refreshed_utc": "2026-09-13T00:59:04Z"
+}

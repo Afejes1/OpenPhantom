@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "mover_gather",
+  "candidate": "candidate.cpp",
+  "symbol": "_op_mover_gather",
+  "inputs": ["candidate.cpp", "mover.h", "../../src/baseline.h", "behavior.c"],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": null,
+  "reference_layout": "target.json",
+  "flags": ["/O2", "/MT"]
+}

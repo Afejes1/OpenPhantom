@@ -131,3 +131,15 @@ body matches all 1,112 bytes with 24 verified operands and passes 5,480 focused
 checks. The full 1,115-byte span remains unmatched because three trailing
 alignment bytes need verified layout reproduction. No accepted count changes.
 See [queue-flush evidence](docs/queue-flush-evidence.md).
+
+## Bounded parallel campaign: frame setup and mover gathering
+
+Frame setup at 0x00404180 copies camera state, derives octant/scan limits and
+fills the offset table. Mover gathering at 0x00405CF0 expands seed and mover
+cells, applies opacity/bucket rules, then visits animation maps/direct movers.
+Two worker candidates received independent coordinator review and focused VC5
+Docker verification (6,548 and 36 assertions). Native/Docker output agrees at
+the documented artifact scope. Complete binding inventories remain pending;
+no new exact match or accepted record is claimed. See the
+[campaign results](research/campaign-001/results.md) for findings, timings and
+source hashes. Whole-code regression was deferred under the batch cadence.

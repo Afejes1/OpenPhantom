@@ -1,0 +1,11 @@
+{
+  "id": "frame_setup",
+  "address": 4211072,
+  "size": 1456,
+  "body_size": 1449,
+  "source": "src/frame_setup.c",
+  "symbol": "_op_frame_setup",
+  "language": "c",
+  "flags": ["/O2", "/MT"],
+  "bindings": []
+}
