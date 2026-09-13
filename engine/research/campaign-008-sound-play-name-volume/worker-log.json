@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "case": "sound_play_name_volume",
+  "started_utc": "2026-09-13T05:22:07.1037487Z",
+  "finished_utc": "2026-09-13T05:22:19.9885225Z",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural setter, mode, play and restoring-setter order reproduces the wrapper while retaining a local result.",
+      "candidate_sha256": "9727835ebbe545ec59ee32a1575d3c44f2be9e205877fc2ac758d8f5362b1987",
+      "report": "engine/build/campaign-001-sound_play_name_volume-1ed64cda4e96/research-result.json",
+      "outcome": "complete 92-byte relocation-adjusted match; five bindings; zero differences"
+    }
+  ],
+  "status": "frozen-exact",
+  "fixture_execution": "deferred to coordinator locked Docker verification",
+  "timestamp_basis": "Exact packet-reading start was not captured; start is candidate.c CreationTimeUtc and finish is research-result.json LastWriteTimeUtc.",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 38,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_play_name_volume-67ef8a9e1bee/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_play_name_volume-9ff329f3fba4/research-result.json",
+    "result": "result.json",
+    "result_sha256": "74ffbcb701a1c2846300f30271aff440bf74c25ce1e0c1ff844ebb1cff03468f"
+  }
+}

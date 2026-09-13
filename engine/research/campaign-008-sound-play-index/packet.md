@@ -1,0 +1,8 @@
+# Prepared target: sound_play_index
+
+Team-not-done bp/bapsound.c. Fullinterval0x00417143..0x004171A1, 94 bytes, no alignment excluded. Fullassembly/body and boundaries/caller/calleecontext reviewed. Complete PE relocation inventory and all operands independently verified. Pinned VC5 C /Od /MT.
+
+void op_sound_play_index(unsigned index,int *handle,float *position); extern int op_sound_mode; descriptor exactly64 bytes; world has unsigned descriptor_count at0xCC4 and descriptor pointer at0xCC8, extern world *op_sound_world. int op_sound_start_descriptor(descriptor *desc,int *handle,float *position).
+No null-world/initguard. If unsigned index>=world->descriptor_count return untouched; else local descriptor pointer =world->descriptors; advance by index (64-byte records). If signed mode<0 then mode=8. Call start_descriptor(pointer,handle,position) and discard result. No re-gating or resets. Fullcaller scheduler00416232 and three independent callers, full callee0041681F reviewed; existing trustworthy name start_b3d_indexed_sound retained. Fixture realworld and owned descriptor array; index0,last,count,UINT_MAX (rejected without forming out-of-bounds pointer), negative/zero/positive mode, exact handle/position identities and pointer/offset layout, callback mutations retained, no fictitious return requirement.
+
+Worker owns candidate.c/api.h/behavior.c/README.md/worker-log.json only. Same15min/10candidate compile/five nonimprovements cap; native compileonly, authored fixture executiononlylocked Docker; no target/sharedtool/Git/Ghidra changes. Workerstop05:43:20,publication05:53:20UTC.

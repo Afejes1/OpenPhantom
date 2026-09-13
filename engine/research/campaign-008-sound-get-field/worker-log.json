@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "case": "sound_get_field",
+  "started_utc": "2026-09-13T05:16:14.3577671Z",
+  "finished_utc": "2026-09-13T05:17:38.8025875Z",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "A natural six-case switch in packet order reproduces the instruction body and compiler switch table.",
+      "candidate_sha256": "b7c68cc79bf0dd6d27342e6cbbf13f3d641ed80124bfe6814bd8f9f5d64374c3",
+      "report": "engine/build/campaign-001-sound_get_field-43223d4b1fad/research-result.json",
+      "outcome": "complete 128-byte relocation-adjusted match; 13 bindings verified; zero differing bytes"
+    }
+  ],
+  "status": "frozen-exact",
+  "fixture_execution": "deferred to coordinator locked Docker verification",
+  "timestamp_basis": "Start is the captured campaign clock; finish is research-result.json LastWriteTimeUtc.",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 17,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_get_field-582f41ad3a22/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_get_field-1f78134ac504/research-result.json",
+    "result": "result.json",
+    "result_sha256": "245791f82964715dd456ce36c06389d9088a1e8a41004fe53a9385246a68ef26"
+  }
+}

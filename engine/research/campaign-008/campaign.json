@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "campaign": "008",
+  "status": "complete-focused-checkpoint",
+  "started_utc": "2026-09-13T05:08:20Z",
+  "worker_stop_utc": "2026-09-13T05:43:20Z",
+  "stop_utc": "2026-09-13T05:53:20Z",
+  "baseline_commit": "fd3d93e9f62b86bad01e123aa45e5600d1300c05",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "weekly_shared_account_first_observation": {
+    "used_percent": 29,
+    "observed_utc": "2026-09-13T05:09:00Z",
+    "note": "Rounded account-wide observation near batch start; not exact campaign cost."
+  },
+  "assignments": [
+    {
+      "id": "sound_get_field",
+      "address": "0x0041668F",
+      "case": "research/campaign-008-sound-get-field",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-008-sound-get-field/result.json"
+    },
+    {
+      "id": "sound_set_field",
+      "address": "0x0041670F",
+      "case": "research/campaign-008-sound-set-field",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-008-sound-set-field/result.json"
+    },
+    {
+      "id": "sound_shutdown",
+      "address": "0x00415AB5",
+      "case": "research/campaign-008-sound-shutdown",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-008-sound-shutdown/result.json"
+    },
+    {
+      "id": "sound_play_name",
+      "address": "0x00416787",
+      "case": "research/campaign-008-sound-play-name",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-008-sound-play-name/result.json"
+    },
+    {
+      "id": "sound_play_name_volume",
+      "address": "0x004167C3",
+      "case": "research/campaign-008-sound-play-name-volume",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-008-sound-play-name-volume/result.json"
+    },
+    {
+      "id": "sound_periodic",
+      "address": "0x00415D1D",
+      "case": "research/campaign-008-sound-periodic",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-008-sound-periodic/result.json"
+    },
+    {
+      "id": "sound_play_index",
+      "address": "0x00417143",
+      "case": "research/campaign-008-sound-play-index",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-008-sound-play-index/result.json"
+    },
+    {
+      "id": "sound_poll_channel",
+      "address": "0x00415D8A",
+      "case": "research/campaign-008-sound-poll-channel",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-008-sound-poll-channel/result.json"
+    }
+  ],
+  "worker_handoff_completed_utc": "2026-09-13T05:32:15Z",
+  "worker_handoff_time_basis": "First coordinator clock observation after final worker handoff and read-only review; upper bound, not exact worker completion time.",
+  "final_verification_completed_utc": "2026-09-13T05:33:11.691819+00:00"
+}

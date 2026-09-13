@@ -31,12 +31,12 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x004157D0 | bapsound_resourceHandler | not_done | Queued; no local match recorded |
 | 0x004158F0 | bapsound_moduleProc | not_done | Queued; no local match recorded |
 | 0x004159F0 | bapsound_moduleInit | not_done | Queued; no local match recorded |
-| 0x00415AB5 | bapsound_moduleShutdown | not_done | Queued; no local match recorded |
+| 0x00415AB5 | bapsound_moduleShutdown | not_done | Research candidate (not registered): [research](../research/campaign-008-sound-shutdown/README.md) |
 | 0x00415B38 | bapsound_registerLevelSounds | not_done | Queued; no local match recorded |
 | 0x00415C40 | bapsound_removeLevelSounds | not_done | Queued; no local match recorded |
 | 0x00415D13 | FUN_00415d13 | not_done | Research candidate (not registered): [research](../research/campaign-007-sound-tick/README.md) |
-| 0x00415D1D | bapsound_periodic | not_done | Queued; no local match recorded |
-| 0x00415D8A | bapsound_pollChannel | not_done | Queued; no local match recorded |
+| 0x00415D1D | bapsound_periodic | not_done | Research candidate (not registered): [research](../research/campaign-008-sound-periodic/README.md) |
+| 0x00415D8A | bapsound_pollChannel | not_done | Research candidate (not registered): [research](../research/campaign-008-sound-poll-channel/README.md) |
 | 0x00415E30 | bapsound_updateChannel | not_done | Queued; no local match recorded |
 | 0x0041609E | bapsound_initChannels | not_done | Queued; no local match recorded |
 | 0x0041612F | bapsound_releaseSlotHandle | not_done | Research candidate (not registered): [research](../research/campaign-007-sound-release-handle/README.md) |
@@ -44,15 +44,15 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x00416232 | bapsound_updatePlaces | not_done | Queued; no local match recorded |
 | 0x00416589 | bapsound_freeExtraRefs | not_done | Queued; no local match recorded |
 | 0x00416634 | bapsound_resetPlaces | not_done | Research candidate (not registered): [research](../research/campaign-007-sound-reset-places/README.md) |
-| 0x0041668F | bapsound_getField | not_done | Queued; no local match recorded |
-| 0x0041670F | bapsound_getField &#124; bapsound_setField | not_done | Queued; no local match recorded |
-| 0x00416787 | bapsound_playName | not_done | Queued; no local match recorded |
-| 0x004167C3 | bapsound_playNameVol | not_done | Queued; no local match recorded |
+| 0x0041668F | bapsound_getField | not_done | Research candidate (not registered): [research](../research/campaign-008-sound-get-field/README.md) |
+| 0x0041670F | bapsound_getField &#124; bapsound_setField | not_done | Research candidate (not registered): [research](../research/campaign-008-sound-set-field/README.md) |
+| 0x00416787 | bapsound_playName | not_done | Research candidate (not registered): [research](../research/campaign-008-sound-play-name/README.md) |
+| 0x004167C3 | bapsound_playNameVol | not_done | Research candidate (not registered): [research](../research/campaign-008-sound-play-name-volume/README.md) |
 | 0x0041681F | bapsound_play | not_done | Queued; no local match recorded |
 | 0x004169BD | bapsound_startChannel | not_done | Queued; no local match recorded |
 | 0x00417043 | bapsound_findRef | not_done | Research candidate (not registered): [research](../research/campaign-006-sound-find-record/README.md) |
 | 0x0041705B | bapsound_addExtraRef | not_done | Queued; no local match recorded |
-| 0x00417143 | bapsound_playCall | not_done | Queued; no local match recorded |
+| 0x00417143 | bapsound_playCall | not_done | Research candidate (not registered): [research](../research/campaign-008-sound-play-index/README.md) |
 | 0x004171A1 | bapsound_playByName | not_done | Queued; no local match recorded |
 | 0x004172B4 | bapsound_playVoice | not_done | Queued; no local match recorded |
 | 0x00417368 | bapsound_stopChannel | not_done | Research candidate (not registered): [research](../research/campaign-006-sound-stop-channel/README.md) |

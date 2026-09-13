@@ -1,0 +1,80 @@
+{
+  "id": "sound_poll_channel",
+  "address": 4283786,
+  "size": 166,
+  "body_size": 166,
+  "source": "src/sound_poll_channel.c",
+  "symbol": "_op_sound_poll_channel",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "address": 6008480,
+      "kind": "dir32",
+      "symbol": "_op_sound_channels",
+      "offset": 14,
+      "addend": 8
+    },
+    {
+      "address": 6008480,
+      "kind": "dir32",
+      "symbol": "_op_sound_channels",
+      "offset": 29,
+      "addend": 4
+    },
+    {
+      "address": 9181064,
+      "kind": "dir32",
+      "symbol": "_op_sound_status3d",
+      "offset": 36
+    },
+    {
+      "address": 6008480,
+      "kind": "dir32",
+      "symbol": "_op_sound_channels",
+      "offset": 53
+    },
+    {
+      "address": 9181068,
+      "kind": "dir32",
+      "symbol": "_op_sound_status2d",
+      "offset": 60
+    },
+    {
+      "address": 6008480,
+      "kind": "dir32",
+      "symbol": "_op_sound_channels",
+      "offset": 95,
+      "addend": 12
+    },
+    {
+      "address": 6008480,
+      "kind": "dir32",
+      "symbol": "_op_sound_channels",
+      "offset": 110,
+      "addend": 16
+    },
+    {
+      "address": 6008480,
+      "kind": "dir32",
+      "symbol": "_op_sound_channels",
+      "offset": 128,
+      "addend": 16
+    },
+    {
+      "address": 4289895,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_release_slot",
+      "offset": 137
+    },
+    {
+      "address": 4283952,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_update_slot",
+      "offset": 155
+    }
+  ]
+}

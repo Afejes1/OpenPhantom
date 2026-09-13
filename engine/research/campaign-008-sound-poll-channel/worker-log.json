@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "case": "sound_poll_channel",
+  "started_utc": "2026-09-13T05:27:15.6927946Z",
+  "finished_utc": "2026-09-13T05:27:31.2617896Z",
+  "timestamp_basis": "Exact packet-reading start was not captured; start is candidate.c CreationTimeUtc and finish is research-result.json LastWriteTimeUtc.",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural direct indexed field accesses, saved status and switch reproduce the two callback paths.",
+      "candidate_sha256": "2fcd70d5f528baa4042b17a36d9ba0a3a46b328427dd2dbad28cdff312ecb704",
+      "report": "engine/build/campaign-001-sound_poll_channel-4dfbd7de7d05/research-result.json",
+      "outcome": "complete 166-byte relocation-adjusted match; ten bindings; zero differences"
+    }
+  ],
+  "status": "frozen-exact",
+  "fixture_execution": "deferred to coordinator locked Docker verification",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 48,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_poll_channel-ac7e77c3b00a/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_poll_channel-c570f631f12f/research-result.json",
+    "result": "result.json",
+    "result_sha256": "fa3416f7e885e4b3c572a04af91df80a4b118372cd12f133a5a48fdd6abe1efe"
+  }
+}

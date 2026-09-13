@@ -1,0 +1,87 @@
+{
+  "id": "sound_shutdown",
+  "address": 4283061,
+  "size": 131,
+  "body_size": 131,
+  "source": "src/sound_shutdown.c",
+  "symbol": "_op_sound_shutdown",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "address": 6010040,
+      "kind": "dir32",
+      "symbol": "_op_sound_initialized",
+      "offset": 6
+    },
+    {
+      "address": 4289775,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_resume_all",
+      "offset": 18
+    },
+    {
+      "address": 4290275,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_stop_all",
+      "offset": 23
+    },
+    {
+      "address": 4285833,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_free_extra_refs",
+      "offset": 28
+    },
+    {
+      "address": 4284719,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_release_handle",
+      "offset": 61
+    },
+    {
+      "address": 4281530,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_clear_backend",
+      "offset": 71
+    },
+    {
+      "address": 6010032,
+      "kind": "dir32",
+      "symbol": "_op_sound_registry",
+      "offset": 77
+    },
+    {
+      "address": 6010032,
+      "kind": "dir32",
+      "symbol": "_op_sound_registry",
+      "offset": 86
+    },
+    {
+      "address": 4799124,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_destroy_registry",
+      "offset": 92
+    },
+    {
+      "address": 6010032,
+      "kind": "dir32",
+      "symbol": "_op_sound_registry",
+      "offset": 101
+    },
+    {
+      "address": 9181072,
+      "kind": "dir32",
+      "symbol": "_op_sound_quick_shutdown",
+      "offset": 111
+    },
+    {
+      "address": 6010040,
+      "kind": "dir32",
+      "symbol": "_op_sound_initialized",
+      "offset": 117
+    }
+  ]
+}

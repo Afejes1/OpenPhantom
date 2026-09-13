@@ -200,6 +200,38 @@
     {
       "address": "0x00417711",
       "source": "research/campaign-007-sound-activate-place/README.md"
+    },
+    {
+      "address": "0x0041668F",
+      "source": "research/campaign-008-sound-get-field/README.md"
+    },
+    {
+      "address": "0x0041670F",
+      "source": "research/campaign-008-sound-set-field/README.md"
+    },
+    {
+      "address": "0x00415AB5",
+      "source": "research/campaign-008-sound-shutdown/README.md"
+    },
+    {
+      "address": "0x00416787",
+      "source": "research/campaign-008-sound-play-name/README.md"
+    },
+    {
+      "address": "0x004167C3",
+      "source": "research/campaign-008-sound-play-name-volume/README.md"
+    },
+    {
+      "address": "0x00415D1D",
+      "source": "research/campaign-008-sound-periodic/README.md"
+    },
+    {
+      "address": "0x00417143",
+      "source": "research/campaign-008-sound-play-index/README.md"
+    },
+    {
+      "address": "0x00415D8A",
+      "source": "research/campaign-008-sound-poll-channel/README.md"
     }
   ]
 }

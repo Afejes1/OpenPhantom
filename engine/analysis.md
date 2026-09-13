@@ -238,3 +238,15 @@ Three fixture-only review corrections preceded execution; no candidate semantic
 correction was needed. A Ghidra auto-this convention correction remains pending
 for activation despite independently established one-stack-argument source ABI.
 See [campaign results](research/campaign-007/results.md).
+
+## Campaign 008: sound accessors and lifecycle
+
+Eight team-not-done functions reproduce900 complete bytes after69 verified address
+fixups, including48 total generated switch-table bytes. All454 authored
+fixture checks pass on final frozen native/Docker pairs. See
+[results](research/campaign-008/results.md) and [review](research/campaign-008/review.json).
+No byte exclusions, warning waivers, target changes or accepted-history promotion.
+Metadata naming/comments are saved; previously inferred ECX/this parameters may
+remain in decompiler output because of the known calling-convention bridge limit.
+Worker timestamp audit distinguishes observed file/report times from unmeasured
+task duration. Original game static only; full regression deferred.

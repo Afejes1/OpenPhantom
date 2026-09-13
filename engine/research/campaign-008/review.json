@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "campaign": "008",
+  "reviews": {
+    "sound_get_field": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 128,
+      "source_review": "Reviewed natural six-case switch, all float-copy paths and signed FILD conversion, default no-dereference behavior, full 24-byte jump table and 13 bindings. Independent boundary and ties-to-even expectations; fixture uses quiet NaN sentinels because its float-return helper passes through x87.",
+      "fixture_checks": 17,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_set_field": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 120,
+      "source_review": "Reviewed natural full switch and all14 operands including __ftol; ordinary cast invokes pinned CRT truncate-and-restore behavior. Independent finite signed truncation boundaries and all selected/unselected bit-store paths checked.",
+      "fixture_checks": 44,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_shutdown": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 131,
+      "source_review": "Reviewed all cleanup calls and12-slot loop, live registry gate, clear-after-destroy and initialized-clear-last order. Independent bounded event oracle and callback mutation cases include initialized cleared during first callback without re-gating; final quick callback registry mutation survives.",
+      "fixture_checks": 115,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_play_name": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 60,
+      "source_review": "Reviewed initialized guard, mode1 write and exact five argument callback order; saved signed result and callback global mutations preserved. Caller assembly proves two source arguments despite stale auto-this metadata.",
+      "fixture_checks": 20,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_play_name_volume": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 92,
+      "source_review": "Reviewed setter-play-setter order, mode timing, flags0x800, saved signed return and bit-preserving volume argument; fixture first setter clears init to prove no re-gate. All five address operands and three source arguments independently verified.",
+      "fixture_checks": 38,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_periodic": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 109,
+      "source_review": "Reviewed exact-equality gates, mode write, listener then placements, live paused reload and twelve polls with no loop re-gating. Fixture independently covers noncanonical nonzero flags and callback changes before and during polling.",
+      "fixture_checks": 144,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_play_index": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 94,
+      "source_review": "Reviewed unsigned bound,64-byte descriptor stride, signed mode default and exact three-argument callback. Parent added explicit mode-at-callback expectations for negative,zero and positive cases, including INT_MIN, plus a fixture index guard before forming the expected pointer.",
+      "fixture_checks": 28,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_poll_channel": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 166,
+      "source_review": "Reviewed128-byte channel layout and type-selected stdcall query, saved status switch, live record and flags after callback, clear-before-release and update mode4. Fixture guards all indices and independently checks complete final flag values and unchanged neighbors.",
+      "fixture_checks": 48,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    }
+  },
+  "issues": [
+    {
+      "kind": "fixture-only",
+      "cases": [
+        "sound_get_field",
+        "sound_shutdown",
+        "sound_play_name_volume",
+        "sound_play_index",
+        "sound_poll_channel"
+      ],
+      "status": "corrected-before-final-execution",
+      "detail": "Parent review required quiet-NaN helper sentinels, independent rounding/category/complete-flag oracles, callback init mutation cases, and real bounds guards. Worker also corrected its periodic fixture poll counter before handoff. No candidate source correction."
+    },
+    {
+      "kind": "measurement",
+      "status": "corrected-and-disclosed",
+      "detail": "Unsupported manually entered worker times were replaced with captured clock or filesystem/report observations and a basis in every log. Source-file/report times are not full task durations; exact per-case task start and review duration are unavailable."
+    }
+  ],
+  "full_regression_run": false,
+  "worker_final_readonly_review": {
+    "observed_by_coordinator_utc": "2026-09-13T05:32:15Z",
+    "cases": 8,
+    "result": "No material remaining source, ABI, bounds, numeric-oracle or callback-order findings; final polling receipt subsequently passed48 checks."
+  },
+  "ghidra_pending_convention_metadata": "Previously propagated ECX/this parameters may remain; caller stack and callee accesses establish source ABI, known bridge convention setter issue remains deferred.",
+  "ghidra_metadata": {
+    "renames": 7,
+    "comments": 8,
+    "saved": true,
+    "observed_utc": "2026-09-13T05:35:22Z",
+    "affected_callers_redecompiled": [
+      "00463031",
+      "004167C3",
+      "00415D1D",
+      "00415D13",
+      "004158F0"
+    ],
+    "convention_repair_deferred": true
+  }
+}

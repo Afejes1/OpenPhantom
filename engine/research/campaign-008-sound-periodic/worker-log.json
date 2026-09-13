@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "case": "sound_periodic",
+  "started_utc": "2026-09-13T05:23:29.9260525Z",
+  "finished_utc": "2026-09-13T05:23:44.2612395Z",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Packet-order exact gates and a signed twelve-channel loop reproduce the periodic function.",
+      "candidate_sha256": "0363d551ee80a7455b441aa13b5b43209a4a404c10d87bacb2c9aceb15f1879d",
+      "report": "engine/build/campaign-001-sound_periodic-a39d843ae1ca/research-result.json",
+      "outcome": "complete 109-byte relocation-adjusted match; seven bindings; zero differences"
+    }
+  ],
+  "status": "frozen-exact",
+  "fixture_execution": "deferred to coordinator locked Docker verification",
+  "timestamp_basis": "Exact packet-reading start was not captured; start is candidate.c CreationTimeUtc and finish is research-result.json LastWriteTimeUtc. Fixture-only edits followed without recompiling the frozen candidate.",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 144,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_periodic-2f6d3a71c808/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_periodic-1f2797920a2e/research-result.json",
+    "result": "result.json",
+    "result_sha256": "0d7a682f2e24a5c34d6359f1721eabe81ba17bd43b10e586c0eba5d3c0ffbcae"
+  }
+}

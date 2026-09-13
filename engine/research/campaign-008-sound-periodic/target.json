@@ -1,0 +1,57 @@
+{
+  "id": "sound_periodic",
+  "address": 4283677,
+  "size": 109,
+  "body_size": 109,
+  "source": "src/sound_periodic.c",
+  "symbol": "_op_sound_periodic",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "address": 6010040,
+      "kind": "dir32",
+      "symbol": "_op_sound_initialized",
+      "offset": 6
+    },
+    {
+      "address": 4892948,
+      "kind": "dir32",
+      "symbol": "_op_sound_mode",
+      "offset": 22
+    },
+    {
+      "address": 6010044,
+      "kind": "dir32",
+      "symbol": "_op_sound_world_enabled",
+      "offset": 32
+    },
+    {
+      "address": 4280059,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_update_listener",
+      "offset": 40
+    },
+    {
+      "address": 4284978,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_update_placements",
+      "offset": 45
+    },
+    {
+      "address": 6010024,
+      "kind": "dir32",
+      "symbol": "_op_sound_paused",
+      "offset": 51
+    },
+    {
+      "address": 4283786,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_poll_channel",
+      "offset": 94
+    }
+  ]
+}

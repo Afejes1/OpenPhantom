@@ -1,0 +1,45 @@
+{
+  "id": "sound_play_name_volume",
+  "address": 4286403,
+  "size": 92,
+  "body_size": 92,
+  "source": "src/sound_play_name_volume.c",
+  "symbol": "_op_sound_play_name_volume",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "address": 6010040,
+      "kind": "dir32",
+      "symbol": "_op_sound_initialized",
+      "offset": 6
+    },
+    {
+      "address": 4286223,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_set_field",
+      "offset": 25
+    },
+    {
+      "address": 4892948,
+      "kind": "dir32",
+      "symbol": "_op_sound_mode",
+      "offset": 34
+    },
+    {
+      "address": 4288929,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_play_descriptor_name",
+      "offset": 60
+    },
+    {
+      "address": 4286223,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_set_field",
+      "offset": 78
+    }
+  ]
+}

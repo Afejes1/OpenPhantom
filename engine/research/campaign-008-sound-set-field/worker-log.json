@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "case": "sound_set_field",
+  "started_utc": "2026-09-13T05:18:41.8893074Z",
+  "finished_utc": "2026-09-13T05:18:58.4071256Z",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "A natural six-case switch and ordinary int cast reproduce the switch table and pinned __ftol call.",
+      "candidate_sha256": "78c5cf7dd82a01f6bdd169eae272ce6f9dbbc8589e5cd8cbbf418b4ef9efab09",
+      "report": "engine/build/campaign-001-sound_set_field-732b6bc1f6d1/research-result.json",
+      "outcome": "complete 120-byte relocation-adjusted match; 14 bindings verified; zero differing bytes"
+    }
+  ],
+  "status": "frozen-exact",
+  "fixture_execution": "deferred to coordinator locked Docker verification",
+  "timestamp_basis": "Exact packet-reading start was not captured; start is candidate.c CreationTimeUtc and finish is research-result.json LastWriteTimeUtc.",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 44,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-sound_set_field-cde38e0c58a8/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_set_field-e84c588f82bd/research-result.json",
+    "result": "result.json",
+    "result_sha256": "e368c43ba631c54b825750e5612096654740f8f8fb1dfa03565f8239b33d99ea"
+  }
+}

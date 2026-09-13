@@ -1,0 +1,8 @@
+# Prepared target: sound_play_name_volume
+
+Team-not-done bp/bapsound.c. Complete interval0x004167C3..0x0041681F, 92 bytes, no alignment exclusions. Full assembly/body/boundary and caller/callee context reviewed; all operands and complete PE relocation inventory independently validated. Pinned VC5 C /Od /MT.
+
+int op_sound_play_name_volume(const char *name,float volume,unsigned flags); extern int op_sound_initialized,op_sound_mode; void op_sound_set_field(int field,float value); int op_sound_play_descriptor_name(int slot,const char *name,int *handle,float *position,unsigned flags);
+Uninitialized returns -1 no callbacks/writes. Else set_field(0,volume), then mode=2, then local result=play_descriptor_name(-1,name,0,0,flags|0x800), then set_field(0,2.0f), return saved result. Setter and play callback may mutate globals; no re-gate and only mode write shown. First setter sees OLD mode; play sees2; finalsetter sees callback's currentmode; finalcallback cannot change savedresult. Verify callback order, flags and exact float bits including signedzero/qNaN passed as rawwords (no arithmetic). All5 caller arguments confirmed by fullassembly and fullcallee; no ECX sourceargument. Focused fixtures bounded captures and argument identities; stub setter sufficient for call-boundary contract.
+
+Worker owns candidate.c/api.h/behavior.c/README.md/worker-log.json only. Same15min/10candidate compile/five nonimprovements cap. Native compile-only; authored fixture execution only locked Docker. No target/tool/Git/Ghidra changes, raw instructions, warnings or exclusions. Freeze and hand off; workerstop05:43:20 UTC, publication05:53:20 UTC.

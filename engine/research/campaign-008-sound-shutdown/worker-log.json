@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "case": "sound_shutdown",
+  "started_utc": "2026-09-13T05:20:00.6100309Z",
+  "finished_utc": "2026-09-13T05:20:11.9134742Z",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "The packet-order cleanup sequence with a signed twelve-slot loop and live registry reads reproduces the target.",
+      "candidate_sha256": "02783a246bd168b6d4622b5ebb4825445991d44f0520397005fb268039fc1b4f",
+      "report": "engine/build/campaign-001-sound_shutdown-fc1668fb2e69/research-result.json",
+      "outcome": "complete 131-byte relocation-adjusted match; 12 bindings verified; zero differing bytes"
+    }
+  ],
+  "status": "frozen-exact",
+  "fixture_execution": "deferred to coordinator locked Docker verification",
+  "timestamp_basis": "Exact packet-reading start was not captured; start is candidate.c CreationTimeUtc and finish is research-result.json LastWriteTimeUtc.",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 115,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_shutdown-8e427c407ae1/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_shutdown-9367ae645c94/research-result.json",
+    "result": "result.json",
+    "result_sha256": "818c0421d9ec0bb93781161cfa330ec4dfe164417ccb0a86bde572e44f1f7cf5"
+  }
+}

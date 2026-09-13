@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "case": "sound_play_index",
+  "started_utc": "2026-09-13T05:25:55.4741437Z",
+  "finished_utc": "2026-09-13T05:26:10.1599162Z",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural unsigned guard, local descriptor pointer advance and negative-mode branch reproduce the target.",
+      "candidate_sha256": "07f260ed11bcec076f864a394c8cdff40ac2f45e60d5f24d4322f1b280e1c978",
+      "report": "engine/build/campaign-001-sound_play_index-73db2744f285/research-result.json",
+      "outcome": "complete 94-byte relocation-adjusted match; five bindings; zero differences"
+    }
+  ],
+  "status": "frozen-exact",
+  "fixture_execution": "deferred to coordinator locked Docker verification",
+  "timestamp_basis": "Exact packet-reading start was not captured; start is candidate.c CreationTimeUtc and finish is research-result.json LastWriteTimeUtc.",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 28,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_play_index-04fa4b213657/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_play_index-30d7830a9ecc/research-result.json",
+    "result": "result.json",
+    "result_sha256": "9b545c6d748919cf80e65373f1f5ee5cc6ed1f7c6b6820ccd78778b4458f8921"
+  }
+}
