@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "campaign": "004",
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct bapmap_gatherCells at 0x0040D03E",
+  "started_at": "2026-09-13T03:12:35.6133188Z",
+  "deadline_at": "2026-09-13T03:27:35.6133188Z",
+  "finished_at": "2026-09-13T03:20:35.0054195Z",
+  "status": "capped-useful-partial",
+  "compiler_invocations": 10,
+  "experiments": [
+    {
+      "number": 1,
+      "source_sha256": "29e2a644e1b5125ac9dfa496032e5922127bcbc28a7f77275bd0be73fd2ea244",
+      "report": "engine/build/campaign-001-collect_nearby_surfaces-60f340e2e070/research-result.json",
+      "result": "583 bytes; external memset and nonmatching local layout"
+    },
+    {
+      "number": 2,
+      "source_sha256": "246f6d724c0bcc8004d802334e3dd80feeff77e77226852ba026bdfdee09321e",
+      "report": "engine/build/campaign-001-collect_nearby_surfaces-e0f72fa4d649/research-result.json",
+      "result": "582 bytes; memset intrinsic produced inline 255-byte clear"
+    },
+    {
+      "number": 3,
+      "source_sha256": "de093ec99915c76c295c4b2628d51cb4b195fba5ac313837533efd7b4a36cbfa",
+      "report": "engine/build/campaign-001-collect_nearby_surfaces-cb0e0bae3f56/research-result.json",
+      "result": "543 bytes; incorrect fixed-zero cache indexing hypothesis discarded"
+    },
+    {
+      "number": 4,
+      "source_sha256": "824f0f3fdc5fccf022bb902c30619b8f26770345814cac5a8bca46fe07b507c1",
+      "report": "engine/build/campaign-001-collect_nearby_surfaces-afe2e95453df/research-result.json",
+      "result": "582 bytes; restored indexed cache comparison, numCells spelling unchanged layout"
+    },
+    {
+      "number": 5,
+      "source_sha256": "1282adb46027320f280b94ffd0842b46fd9c0892c38ead3055547eb2138cf5d4",
+      "report": "engine/build/campaign-001-collect_nearby_surfaces-b0110a528851/research-result.json",
+      "result": "561 bytes; cellCount gives near-original frame order"
+    },
+    {
+      "number": 6,
+      "source_sha256": "d56c3c56887fe61fa79eb653091ea73b14071bff3985695a34a7a2bff9064e64",
+      "report": "engine/build/campaign-001-collect_nearby_surfaces-480226818bc9/research-result.json",
+      "result": "573 bytes; addedCount layout hypothesis regressed"
+    },
+    {
+      "number": 7,
+      "source_sha256": "852f447b41d781ab2335532f0b87eff37b440154624668faaf3a5762604f8f7e",
+      "report": "engine/build/campaign-001-collect_nearby_surfaces-95ec6753b71a/research-result.json",
+      "result": "561 bytes after material square-ABI correction; redundant positive-count guard remained"
+    },
+    {
+      "number": 8,
+      "source_sha256": "b7933930b37835e15b51959836d9a16f460fad70dae9410665821334745f27b9",
+      "report": "engine/build/campaign-001-collect_nearby_surfaces-25413612e15a/research-result.json",
+      "result": "560 bytes; while-form hypothesis retained unintended positive-count guard"
+    },
+    {
+      "number": 9,
+      "source_sha256": "734fa0f9b1ec29f64e095415a8ddfda2cf7d5ddfc853b36c42a2650102c2c474",
+      "report": "engine/build/campaign-001-collect_nearby_surfaces-fd037fdd0045/research-result.json",
+      "result": "best: exact 555-byte extent; first 13 operands exact, remaining 12 one byte early"
+    },
+    {
+      "number": 10,
+      "source_sha256": "734fa0f9b1ec29f64e095415a8ddfda2cf7d5ddfc853b36c42a2650102c2c474",
+      "report": "engine/build/campaign-001-collect_nearby_surfaces-3fa966a969f9/research-result.json",
+      "result": "Docker candidate compiled; fixture compile failed because stub retained pre-review square ABI; corrected afterward without recompiling"
+    }
+  ],
+  "review_corrections": [
+    "Square enumerator ABI corrected to cells, position, radius, capacity.",
+    "Redundant positive cell-count guard removed; loop condition handles zero and negative counts.",
+    "Fixture square stub corrected after capped compile failure."
+  ],
+  "validation": {
+    "target_size": 555,
+    "best_candidate_size": 555,
+    "verified_prefix_binding_count": 13,
+    "remaining_bindings_one_byte_early": 12,
+    "fixture_status": "prepared-but-unverified-after-final-ABI-fix",
+    "original_executed": false
+  },
+  "blocker": "Active-world reload uses five-byte EAX moffs form instead of original six-byte general-register form; compiler cap exhausted before fixture rerun.",
+  "parent_verification": {
+    "status": "completed",
+    "fixture_checks": 81,
+    "fixture_failures": 0,
+    "native_report": "engine/build/campaign-001-collect_nearby_surfaces-221a4b123224/research-result.json",
+    "docker_report": "engine/build/campaign-001-collect_nearby_surfaces-07c749e710fe/research-result.json",
+    "correction": "Historical attempt 9 and validation overstated shifted offsets: fourteen of 25 align (first thirteen plus last), ten have delta -1 and one delta -2. Historical worker text is retained as an audit trail; final result.json is authoritative."
+  }
+}

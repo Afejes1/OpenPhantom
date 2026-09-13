@@ -122,7 +122,8 @@ not successful zero-function runs. JSON reports stay in the build directory.
   original function's bytes. Linked placement remains unverified.
 - `relocation-adjusted-match`: other bytes are equal, and every adjusted DIR32
   operand matches its declared symbol/addend or defined constant. Explicit REL32
-  near-call bindings are also checked against their exact destination and symbol. Resolving
+  near-call bindings are also checked against their exact destination and symbol,
+  including a defined self-call only to the same function entry. Resolving
   those operands in a comparison buffer must produce the same SHA-256 as the
   entire reference span. Reports distinguish function bodies, complete section
   sizes, and adjusted-byte counts; no original file or object is rewritten.

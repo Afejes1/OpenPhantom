@@ -20,6 +20,8 @@ jobs:
           python-version: '3.13'
       - name: Test focused campaign runner boundaries
         run: python -m unittest discover -s engine/research/campaign-001 -p "test_*.py" -v
+      - name: Test focused relative-call comparison boundaries
+        run: python -m unittest discover -s engine/tests -p "test_relative_calls.py" -v
       - name: Validate registry, immutable evidence history, and progress report
         run: python engine/progress.py --check
       - name: Validate separate team manifest and work order

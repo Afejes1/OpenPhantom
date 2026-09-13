@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "has_surface_at_or_below",
+  "candidate": "candidate.c",
+  "symbol": "_op_has_surface_at_or_below",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

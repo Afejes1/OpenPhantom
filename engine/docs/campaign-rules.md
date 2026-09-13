@@ -31,6 +31,10 @@ team. Before source experiments, establish the full original interval, signature
 constants, external/global/call mappings and intended focused behavior cases.
 Missing inventory is an explicit preparation task, not permission to guess values.
 The coordinator independently verifies the inventory before relying on its claims.
+Packets spell out every callback's complete parameter order. Verify it against
+both caller stack setup and callee access before experiments; a fixture sharing
+an incorrect header cannot prove ABI compatibility. Do not rearrange parameters
+to improve compiler output. Resolve any ambiguity with the coordinator first.
 
 Use one Sol worker at medium reasoning. A worker may receive a batch of related
 prepared cases and process them sequentially; each function retains its own

@@ -1,0 +1,286 @@
+{
+  "schema": 1,
+  "campaign": "004",
+  "started_utc": "2026-09-13T02:55:18Z",
+  "final_verification_completed_utc": "2026-09-13T03:23:04Z",
+  "publication_deadline_utc": "2026-09-13T03:40:18Z",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_implementation_workers": 1,
+  "new_exact_functions": 0,
+  "new_exact_bytes": 0,
+  "new_near_matches": 0,
+  "new_body_exact_layout_pending": 0,
+  "new_research_candidates": 3,
+  "worker_compiler_invocations": 23,
+  "parent_final_verification_invocations": 6,
+  "fixture_checks": 151,
+  "fixture_failures": 0,
+  "affected_tooling_tests": 43,
+  "weekly_shared_account_usage_start_percent": 24,
+  "weekly_shared_account_usage_observed_percent": 26,
+  "usage_limitations": "Rounded shared account reading, not exact attribution or a controlled model comparison.",
+  "historical_accepted_functions": 14,
+  "historical_evidence_records": 19,
+  "full_regression_run": false,
+  "cases": [
+    {
+      "id": "queue_model_hierarchy",
+      "status": "research-candidate",
+      "result": "research/campaign-004-model-hierarchy/result.json",
+      "result_sha256": "d3649e7eeba99adb0244561f6eefa66adc0d5f1efac19018fc2b253c277bf06d",
+      "worker_log_sha256": "a34dd80aae8ff976cc7f09bf26b319e4576cffe0e8886fb3ed303104e39bc65d",
+      "worker_started_utc": "2026-09-13T02:58:01.6689239Z",
+      "worker_finished_utc": "2026-09-13T03:02:25.7654096Z",
+      "worker_compiler_invocations": 5,
+      "parent_final_verification_invocations": 2,
+      "fixture_checks": 17,
+      "different_percent": 5.555555555555555,
+      "native_elapsed_seconds": 1.406008,
+      "docker_elapsed_seconds": 6.027241,
+      "attempts": [
+        {
+          "number": 1,
+          "source_sha256": "bd417771ac9b04e7bc8e755e59652897a16b93be9d5ba3e792b77dc30549c018",
+          "report": "engine/build/campaign-001-queue_model_hierarchy-c755886b3f26/research-result.json",
+          "result": "144-byte section; later three bindings four bytes early because do-loop omitted the original unsigned precheck",
+          "private_report_sha256": "f2110336599ae3bc28b00027189db1612162c7f0005878e0453a4202762f459b",
+          "elapsed_seconds": 1.383715,
+          "command_seconds": 0.080013
+        },
+        {
+          "number": 2,
+          "source_sha256": "bd417771ac9b04e7bc8e755e59652897a16b93be9d5ba3e792b77dc30549c018",
+          "report": "engine/build/campaign-001-queue_model_hierarchy-4bf090c20591/research-result.json",
+          "result": "compile failed with treated warning after header became typed but candidate edit did not apply",
+          "private_report_sha256": "7bf70a79cef695cf86ce62e227b4a060061e466e3d1b03ed2012904de66a5ac8",
+          "elapsed_seconds": 0.699818,
+          "command_seconds": 0.027772
+        },
+        {
+          "number": 3,
+          "source_sha256": "6c4c6427137693644aff787dbe5650c36fb84c93c2d4a9f79b120594b823c538",
+          "report": "engine/build/campaign-001-queue_model_hierarchy-80f927e90f01/research-result.json",
+          "result": "144-byte section, 135-byte body, nine NOPs, all five offsets; verifier rejects defined-symbol self-call",
+          "private_report_sha256": "afb48d0571255a7e4cb06026abc44641fd46b13124d003c32419c1649d44b9ae",
+          "elapsed_seconds": 1.357476,
+          "command_seconds": 0.067878
+        },
+        {
+          "number": 4,
+          "source_sha256": "6c4c6427137693644aff787dbe5650c36fb84c93c2d4a9f79b120594b823c538",
+          "report": "engine/build/campaign-001-queue_model_hierarchy-139aef31abc4/research-result.json",
+          "result": "Docker listing empty; fixture not run",
+          "private_report_sha256": "87302b3ea61170eba1a1270468a1235def8af1b06b1c594e53a872996dacb52b",
+          "elapsed_seconds": 1.78344,
+          "command_seconds": 1.099742
+        },
+        {
+          "number": 5,
+          "source_sha256": "6c4c6427137693644aff787dbe5650c36fb84c93c2d4a9f79b120594b823c538",
+          "report": "engine/build/campaign-001-queue_model_hierarchy-6dd7f3741c6c/research-result.json",
+          "result": "native-listing fallback completed; fixture 9 checks, 0 failures",
+          "private_report_sha256": "2234d69c2599977158da6c7d13fb3b74863b9bbaa366a5a83e872625c812a172",
+          "elapsed_seconds": 5.456114,
+          "command_seconds": 3.663595
+        }
+      ]
+    },
+    {
+      "id": "has_surface_at_or_below",
+      "status": "research-candidate",
+      "result": "research/campaign-004-surface-below/result.json",
+      "result_sha256": "e444ffdf1d349f415962c71517e7f10e143726754738d88cdaa82133b496c4da",
+      "worker_log_sha256": "aeecef363ec48e33cacfe8527a315c6d3349e5e3c01998568060b40aecbdba2b",
+      "worker_started_utc": "2026-09-13T03:02:39.5934035Z",
+      "worker_finished_utc": "2026-09-13T03:09:39.0607329Z",
+      "worker_compiler_invocations": 8,
+      "parent_final_verification_invocations": 2,
+      "fixture_checks": 53,
+      "different_percent": null,
+      "native_elapsed_seconds": 1.39645,
+      "docker_elapsed_seconds": 5.600065,
+      "attempts": [
+        {
+          "number": 1,
+          "source_sha256": "6882aa22a6cde6f34be7f1add3669131b34334659b7fb886e62621b2c0125d26",
+          "report": "engine/build/campaign-001-has_surface_at_or_below-6845b43a15e1/research-result.json",
+          "result": "227 bytes; mask continue compiled two bytes shorter, moving final three operands two bytes early",
+          "private_report_sha256": "2950312470bfe9736d0328c0088e9780b78d43a0acad53b6ddfaa2dc1f8cf3e0",
+          "elapsed_seconds": 1.403543,
+          "command_seconds": 0.071629
+        },
+        {
+          "number": 2,
+          "source_sha256": "2e4107b29620bbe0c07ace32af9116f1c06f061310028599dec20139781b7105",
+          "report": "engine/build/campaign-001-has_surface_at_or_below-9da2e920c026/research-result.json",
+          "result": "227 bytes; conventional short local names changed layout but retained early operands",
+          "private_report_sha256": "e0877b96cc04bd966c2d3fdf907d6d2a7ea75b11d098b490871ee910203e27eb",
+          "elapsed_seconds": 1.395832,
+          "command_seconds": 0.063444
+        },
+        {
+          "number": 3,
+          "source_sha256": "23ae153b95ac1da89bd6e0104c2ce4dfdd0074873928ef2ffae0706026059582",
+          "report": "engine/build/campaign-001-has_surface_at_or_below-0d1b6ed3e17c/research-result.json",
+          "result": "nested mask gate restores seven operand offsets; defined return produces 229-byte extent",
+          "private_report_sha256": "1ae52309cdf0c3407ab9514e094349ac566b4d9c2de0c03e345c4746eee60cfc",
+          "elapsed_seconds": 1.391524,
+          "command_seconds": 0.066173
+        },
+        {
+          "number": 4,
+          "source_sha256": "cdf00166b2001e4d0795f7b3efcb5822aedbec7f8fa88f5c29e22dad1bdda3e9",
+          "report": "engine/build/campaign-001-has_surface_at_or_below-6f36811289fe/research-result.json",
+          "result": "one conventional long-name layout hypothesis; still 229 bytes and worse local placement",
+          "private_report_sha256": "a38de0d58b3820cb991ce4f8398b0d202214736c21af36fb99b18c2cf8049b8a",
+          "elapsed_seconds": 1.398517,
+          "command_seconds": 0.064705
+        },
+        {
+          "number": 5,
+          "source_sha256": "0a5b320e342d5a545e00aa8c2c338494c031e394d2bb9d604719193914714eaf",
+          "report": "engine/build/campaign-001-has_surface_at_or_below-0d8d7038a6ae/research-result.json",
+          "result": "final readable native candidate: 229 bytes, defined null return, seven operands aligned",
+          "private_report_sha256": "ca2007c20db379c5ddf7c044a0c99eafac4cd0c0b2c511d0ab1177bf71bda6dd",
+          "elapsed_seconds": 1.388741,
+          "command_seconds": 0.063672
+        },
+        {
+          "number": 6,
+          "source_sha256": "0a5b320e342d5a545e00aa8c2c338494c031e394d2bb9d604719193914714eaf",
+          "report": "engine/build/campaign-001-has_surface_at_or_below-1f3ba11a8da4/research-result.json",
+          "result": "locked-Docker fixture passed 38 checks with zero failures",
+          "private_report_sha256": "ae404571d4d85d2ddb019d60e8fef86c496d969d1596bd7f5e34eac7e10d043b",
+          "elapsed_seconds": 5.493402,
+          "command_seconds": 3.8061679999999996
+        },
+        {
+          "number": 7,
+          "source_sha256": "0a5b320e342d5a545e00aa8c2c338494c031e394d2bb9d604719193914714eaf",
+          "report": "engine/build/campaign-001-has_surface_at_or_below-c0e14532216d/research-result.json",
+          "result": "fresh native report after readability-only fixture formatting; candidate remains 229 bytes",
+          "private_report_sha256": "9e296a01b60277c13271a88e0bb1750ac015d12d23b99c732f11fc4b8f1d588c",
+          "elapsed_seconds": 1.409091,
+          "command_seconds": 0.057194
+        },
+        {
+          "number": 8,
+          "source_sha256": "0a5b320e342d5a545e00aa8c2c338494c031e394d2bb9d604719193914714eaf",
+          "report": "engine/build/campaign-001-has_surface_at_or_below-bddc9ef8074a/research-result.json",
+          "result": "fresh locked-Docker fixture passed 38 checks with zero failures",
+          "private_report_sha256": "c39fe873f75fb2200c4e1d259c0834d4067a8be078ec23e2ac6c77115984709f",
+          "elapsed_seconds": 5.493612,
+          "command_seconds": 3.859455
+        }
+      ]
+    },
+    {
+      "id": "collect_nearby_surfaces",
+      "status": "research-candidate",
+      "result": "research/campaign-004-nearby-surfaces/result.json",
+      "result_sha256": "d9529e75c0f67f5dcf769dbf807ba859c25c01622bb458f9fb0c56db3136d27f",
+      "worker_log_sha256": "d35cbb6c61dc73656368823d3443fedee8e4274ea9c5b4b8093729dd941fed09",
+      "worker_started_utc": "2026-09-13T03:12:35.6133188Z",
+      "worker_finished_utc": "2026-09-13T03:20:35.0054195Z",
+      "worker_compiler_invocations": 10,
+      "parent_final_verification_invocations": 2,
+      "fixture_checks": 81,
+      "different_percent": null,
+      "native_elapsed_seconds": 1.427917,
+      "docker_elapsed_seconds": 5.683807,
+      "attempts": [
+        {
+          "number": 1,
+          "source_sha256": "29e2a644e1b5125ac9dfa496032e5922127bcbc28a7f77275bd0be73fd2ea244",
+          "report": "engine/build/campaign-001-collect_nearby_surfaces-60f340e2e070/research-result.json",
+          "result": "583 bytes; external memset and nonmatching local layout",
+          "private_report_sha256": "5c74a2cd084369a36a48a2937b928be1202d677233b1ed6828f03bbc78e1a6d5",
+          "elapsed_seconds": 1.407365,
+          "command_seconds": 0.07123
+        },
+        {
+          "number": 2,
+          "source_sha256": "246f6d724c0bcc8004d802334e3dd80feeff77e77226852ba026bdfdee09321e",
+          "report": "engine/build/campaign-001-collect_nearby_surfaces-e0f72fa4d649/research-result.json",
+          "result": "582 bytes; memset intrinsic produced inline 255-byte clear",
+          "private_report_sha256": "f2a5f8c6ba1a3acb0a4471326cda31d4922ba8546f7b28e38d31b0988ee35739",
+          "elapsed_seconds": 1.406876,
+          "command_seconds": 0.065266
+        },
+        {
+          "number": 3,
+          "source_sha256": "de093ec99915c76c295c4b2628d51cb4b195fba5ac313837533efd7b4a36cbfa",
+          "report": "engine/build/campaign-001-collect_nearby_surfaces-cb0e0bae3f56/research-result.json",
+          "result": "543 bytes; incorrect fixed-zero cache indexing hypothesis discarded",
+          "private_report_sha256": "61f89cc77c8dddc1b8828511a5e51d7db98f3f7ce41637e2c60a6ac6b4380f64",
+          "elapsed_seconds": 1.398319,
+          "command_seconds": 0.065568
+        },
+        {
+          "number": 4,
+          "source_sha256": "824f0f3fdc5fccf022bb902c30619b8f26770345814cac5a8bca46fe07b507c1",
+          "report": "engine/build/campaign-001-collect_nearby_surfaces-afe2e95453df/research-result.json",
+          "result": "582 bytes; restored indexed cache comparison, numCells spelling unchanged layout",
+          "private_report_sha256": "475fa7e7983fe1a337042754f620a081ad7ef27bdea8f1f9156ff80cda5afe0d",
+          "elapsed_seconds": 1.387515,
+          "command_seconds": 0.065276
+        },
+        {
+          "number": 5,
+          "source_sha256": "1282adb46027320f280b94ffd0842b46fd9c0892c38ead3055547eb2138cf5d4",
+          "report": "engine/build/campaign-001-collect_nearby_surfaces-b0110a528851/research-result.json",
+          "result": "561 bytes; cellCount gives near-original frame order",
+          "private_report_sha256": "7844f448964c9db856f156772f33220f74395fc874fa07cb291cac40508aa592",
+          "elapsed_seconds": 1.384137,
+          "command_seconds": 0.06542
+        },
+        {
+          "number": 6,
+          "source_sha256": "d56c3c56887fe61fa79eb653091ea73b14071bff3985695a34a7a2bff9064e64",
+          "report": "engine/build/campaign-001-collect_nearby_surfaces-480226818bc9/research-result.json",
+          "result": "573 bytes; addedCount layout hypothesis regressed",
+          "private_report_sha256": "8ed0fb2aa41e2cbde3c9090bb30b851adda1eb4d57d1ca086e82965a3e92f3ae",
+          "elapsed_seconds": 1.400972,
+          "command_seconds": 0.065486
+        },
+        {
+          "number": 7,
+          "source_sha256": "852f447b41d781ab2335532f0b87eff37b440154624668faaf3a5762604f8f7e",
+          "report": "engine/build/campaign-001-collect_nearby_surfaces-95ec6753b71a/research-result.json",
+          "result": "561 bytes after material square-ABI correction; redundant positive-count guard remained",
+          "private_report_sha256": "7e34be2e322c6b8419344cf2409cd05ee222d039107079e95bc02f02108063f4",
+          "elapsed_seconds": 1.405767,
+          "command_seconds": 0.070029
+        },
+        {
+          "number": 8,
+          "source_sha256": "b7933930b37835e15b51959836d9a16f460fad70dae9410665821334745f27b9",
+          "report": "engine/build/campaign-001-collect_nearby_surfaces-25413612e15a/research-result.json",
+          "result": "560 bytes; while-form hypothesis retained unintended positive-count guard",
+          "private_report_sha256": "0a444fcef289daf34e751b5546984af7036ab327e071f4f256782c392286fff3",
+          "elapsed_seconds": 1.410884,
+          "command_seconds": 0.068603
+        },
+        {
+          "number": 9,
+          "source_sha256": "734fa0f9b1ec29f64e095415a8ddfda2cf7d5ddfc853b36c42a2650102c2c474",
+          "report": "engine/build/campaign-001-collect_nearby_surfaces-fd037fdd0045/research-result.json",
+          "result": "best: exact 555-byte extent; first 13 operands exact, remaining 12 one byte early",
+          "private_report_sha256": "d6d80165802afc70db528ee89938898950c3a65588b43e1ed409834511a4b5b9",
+          "elapsed_seconds": 1.402889,
+          "command_seconds": 0.070039
+        },
+        {
+          "number": 10,
+          "source_sha256": "734fa0f9b1ec29f64e095415a8ddfda2cf7d5ddfc853b36c42a2650102c2c474",
+          "report": "engine/build/campaign-001-collect_nearby_surfaces-3fa966a969f9/research-result.json",
+          "result": "Docker candidate compiled; fixture compile failed because stub retained pre-review square ABI; corrected afterward without recompiling",
+          "private_report_sha256": "9ff083435c3a600b6290dda40477ad6124e6caa4e782af7db8cba7456c8e28f2",
+          "elapsed_seconds": 2.646569,
+          "command_seconds": 1.948181
+        }
+      ]
+    }
+  ]
+}

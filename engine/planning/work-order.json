@@ -66,6 +66,18 @@
     {
       "address": "0x00408913",
       "source": "research/campaign-003-diagnostic-segment/README.md"
+    },
+    {
+      "address": "0x004100A0",
+      "source": "research/campaign-004-model-hierarchy/README.md"
+    },
+    {
+      "address": "0x0040C9F8",
+      "source": "research/campaign-004-surface-below/README.md"
+    },
+    {
+      "address": "0x0040D03E",
+      "source": "research/campaign-004-nearby-surfaces/README.md"
     }
   ]
 }

@@ -1,0 +1,168 @@
+{
+  "id": "collect_nearby_surfaces",
+  "address": 4247614,
+  "size": 555,
+  "body_size": 555,
+  "source": "src/collect_nearby_surfaces.c",
+  "symbol": "_op_collect_nearby_surfaces",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 32,
+      "address": 4882660,
+      "kind": "dir32",
+      "float32": 2.0
+    },
+    {
+      "offset": 49,
+      "address": 4891224,
+      "kind": "dir32",
+      "symbol": "_op_query_assert_file"
+    },
+    {
+      "offset": 54,
+      "address": 4891320,
+      "kind": "dir32",
+      "symbol": "_op_query_radius_assert"
+    },
+    {
+      "offset": 59,
+      "address": 8816192,
+      "kind": "dir32",
+      "symbol": "_op_query_services"
+    },
+    {
+      "offset": 74,
+      "address": 4882656,
+      "kind": "dir32",
+      "float32": 0.5
+    },
+    {
+      "offset": 101,
+      "address": 4246931,
+      "kind": "rel32-call",
+      "symbol": "_op_query_small_cells"
+    },
+    {
+      "offset": 131,
+      "address": 4247417,
+      "kind": "rel32-call",
+      "symbol": "_op_query_square_cells"
+    },
+    {
+      "offset": 143,
+      "address": 9044512,
+      "kind": "dir32",
+      "symbol": "_op_query_cached_generation"
+    },
+    {
+      "offset": 149,
+      "address": 4950112,
+      "kind": "dir32",
+      "symbol": "_op_query_generation"
+    },
+    {
+      "offset": 160,
+      "address": 9044520,
+      "kind": "dir32",
+      "symbol": "_op_query_cached_cell_count"
+    },
+    {
+      "offset": 214,
+      "address": 9044524,
+      "kind": "dir32",
+      "symbol": "_op_query_cached_cells"
+    },
+    {
+      "offset": 247,
+      "address": 9044524,
+      "kind": "dir32",
+      "symbol": "_op_query_cached_cells",
+      "addend": 4
+    },
+    {
+      "offset": 268,
+      "address": 9173664,
+      "kind": "dir32",
+      "symbol": "_op_query_visited"
+    },
+    {
+      "offset": 364,
+      "address": 9044064,
+      "kind": "dir32",
+      "symbol": "_op_query_active_world"
+    },
+    {
+      "offset": 370,
+      "address": 4248528,
+      "kind": "rel32-call",
+      "symbol": "_op_query_append_cell"
+    },
+    {
+      "offset": 407,
+      "address": 9044524,
+      "kind": "dir32",
+      "symbol": "_op_query_cached_cells"
+    },
+    {
+      "offset": 438,
+      "address": 9044524,
+      "kind": "dir32",
+      "symbol": "_op_query_cached_cells",
+      "addend": 4
+    },
+    {
+      "offset": 456,
+      "address": 9044524,
+      "kind": "dir32",
+      "symbol": "_op_query_cached_cells",
+      "addend": 8
+    },
+    {
+      "offset": 498,
+      "address": 4891224,
+      "kind": "dir32",
+      "symbol": "_op_query_assert_file"
+    },
+    {
+      "offset": 503,
+      "address": 4891296,
+      "kind": "dir32",
+      "symbol": "_op_query_capacity_assert"
+    },
+    {
+      "offset": 509,
+      "address": 8816192,
+      "kind": "dir32",
+      "symbol": "_op_query_services"
+    },
+    {
+      "offset": 527,
+      "address": 9044516,
+      "kind": "dir32",
+      "symbol": "_op_query_polygon_count"
+    },
+    {
+      "offset": 536,
+      "address": 9044520,
+      "kind": "dir32",
+      "symbol": "_op_query_cached_cell_count"
+    },
+    {
+      "offset": 541,
+      "address": 4950112,
+      "kind": "dir32",
+      "symbol": "_op_query_generation"
+    },
+    {
+      "offset": 546,
+      "address": 9044512,
+      "kind": "dir32",
+      "symbol": "_op_query_cached_generation"
+    }
+  ]
+}

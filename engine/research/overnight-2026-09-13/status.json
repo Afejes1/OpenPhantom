@@ -27,12 +27,24 @@
       "commit": "061272e2fb36ae32584febefa3ccae106e820e9e",
       "ci": "passed",
       "new_functions": 0
+    },
+    {
+      "phase": "campaign-004",
+      "commit": "containing commit",
+      "ci": "pending after push",
+      "new_exact_functions": 0,
+      "new_research_candidates": 3,
+      "focused_checks": 151,
+      "affected_tooling_tests": 43,
+      "result": "research/campaign-004/results.md"
     }
   ],
-  "current_work": "Read-only worker triage completed; nine candidate intervals recorded in triage.json. Worker idle; implementation has not started.",
-  "resume": "Independently inspect the first pair in triage.json, prioritizing 0x004100A0; prepare strict full-span target packets and campaign 004, then assign implementation to the idle Sol worker. Resolve 0x0040C9F8 aliases before selecting its target.",
+  "current_work": "Campaign 004 implementation and verification complete; checkpoint publication.",
+  "resume": "Start Campaign 005 from next-shortlist.json: prepare small related music helpers; retain one Sol/medium worker. Campaign 004 assignments are frozen and must not be dispatched again.",
   "interruptions": [],
   "original_game_executed": false,
   "full_regression_run": false,
-  "final_report": null
+  "final_report": null,
+  "new_research_candidates": 3,
+  "weekly_account_usage_observed_percent": 26
 }

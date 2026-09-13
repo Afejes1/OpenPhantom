@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "campaign": "004",
+  "id": "has_surface_at_or_below",
+  "status": "research-candidate",
+  "comparison": {
+    "id": "has_surface_at_or_below",
+    "address": 4246008,
+    "size": 227,
+    "candidate_size": 229,
+    "body_size": 227,
+    "status": "mismatch",
+    "literal_function_match": false,
+    "layout_verified": false,
+    "adjusted_bytes": 0,
+    "object_sha256": "43c70792dd12b442c057d4aaab1e008fc0cb5eeb495b85246bab8e061c2acd7b",
+    "reason": "complete function extent differs"
+  },
+  "different_percent": null,
+  "source_snapshot": {
+    "research/campaign-004-surface-below/candidate.c": "405f54112957f237b4d3057ca7666806fd132c03e691b69a606d2bdc5f1df6ea",
+    "research/campaign-004-surface-below/api.h": "0fe2189b6f5d11f3b1bb86fb0eecda8516552b906c8e67d1649e99b3ae7e7e1d",
+    "research/campaign-004-surface-below/behavior.c": "d8bbd7b3e51f83e8b46fc2c326a19ce44ccbf36f7c8dce80dad9d0ecf4541a07",
+    "research/campaign-004-surface-below/case.json": "4fcc202b30b897169bbdd98e72040b49ac956ec0019532c7db75eeafa5fbfb3a",
+    "research/campaign-001/verify.py": "78bcf92d994fdab04d1a983838fe9f492162d2626b35390259d9976b92cbbe78",
+    "target.json": "b8398f0a1f85e40e34af828082a8587587b7c4f88a9ecea96b21b2706a33b996",
+    "research/campaign-004-surface-below/target.json": "eb8aaef24a5d429e7186e79c15a92afcebb4cd9d86da01999de73fca0cd01cdf",
+    "research/surface-emission/probe.py": "cd4ef4126dacfc16197636a4b0c7007639efe1033e8e2b329e4939a6083c5f1b",
+    "research/surface-emission/native_listing_diagnostic.py": "3cad0339396c73301ef5861eed3c40f925482fd7c2e4ec45f801e9d0e5d34665",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "959d15268c4d927e57271424dbcb1c709cf89cbf3e48ff545e4e15c4d6425f27",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "reference": {
+    "sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
+    "size": 829952
+  },
+  "native_report": "engine/build/campaign-001-has_surface_at_or_below-d3fab8c852be/research-result.json",
+  "native_report_sha256": "0741e8c018755656f6751f3dfcd457935d386809d61a58f42ab0c36f7310eca0",
+  "docker_report": "engine/build/campaign-001-has_surface_at_or_below-2c6b54271354/research-result.json",
+  "docker_report_sha256": "de9ed4d4bb48b6cf3ba41874f15e3b78fb6187102926f2ae23b014f757c99869",
+  "artifact": {
+    "id": "has_surface_at_or_below",
+    "source": "candidate.c",
+    "symbol": "_op_has_surface_at_or_below",
+    "object": "candidate.obj",
+    "object_sha256": "43c70792dd12b442c057d4aaab1e008fc0cb5eeb495b85246bab8e061c2acd7b",
+    "function_section_bytes": 229,
+    "function_section_sha256": "a3103a1112ac0d47df5b925b7f17bc68ce9e644d8f12ded73077f875fba206e5",
+    "relocation_count": 7,
+    "assembly_listing": "candidate.cod",
+    "assembly_listing_sha256": "2128581dde5d8a8c69176b95ba4d63a63f2f92bb91f278025f91f73e561663cf",
+    "assembly_listing_has_terminators": false,
+    "function_inventory": "candidate.function.json",
+    "function_inventory_sha256": "29bcae66f0d1b95abff310fd826b50452f2ca66ba1d0c542e417b4303a1c86b7"
+  },
+  "fixture": {
+    "sha256": "76b6c254f879d2e5fe4d6f24d55f9b342bdebb4702360305cf0eb3ebd5377755",
+    "passed": true,
+    "stdout": "Surface below: 53 checks, 0 failures\n",
+    "checks": 53,
+    "failures": 0
+  },
+  "native_docker_function_and_relocations_equal": true,
+  "native_elapsed_seconds": 1.39645,
+  "docker_elapsed_seconds": 5.600065,
+  "independent_operand_inventory": {
+    "verified": true,
+    "count": 7,
+    "offsets": [
+      14,
+      20,
+      28,
+      33,
+      84,
+      90,
+      200
+    ],
+    "scope": "Original targets, candidate external symbols, kinds, zero addends and call opcodes checked independently; full-span comparison still fails before resolution because extents differ."
+  },
+  "accepted_history_record": false,
+  "original_game_executed": false,
+  "whole_executable_match": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "review": "research/campaign-004/review.json",
+  "limitations": [
+    "Complete candidate is 229 bytes versus original 227; no mismatch percentage is assigned.",
+    "Defined final return zero emits two additional bytes; no undefined fall-through or warning waiver introduced.",
+    "Vertex-height gating plus stubbed XY containment is not integrated collision or interpolated plane-height proof.",
+    "Fixture limits vertex_count to zero through four and uses valid pointers.",
+    "The fixture label qualifying callback order checks callback counts only; initial collect/reset/next order is explicitly checked, while geometry-before-containment ordering was statically reviewed."
+  ]
+}

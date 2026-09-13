@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "campaign": "004",
+  "status": "complete-research-only",
+  "started_utc": "2026-09-13T02:55:18Z",
+  "worker_stop_utc": "2026-09-13T03:30:18Z",
+  "stop_utc": "2026-09-13T03:40:18Z",
+  "baseline_commit": "0fde589c1cd98e9f12f6d261283d8b2b444fb59e",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "assignments": [
+    {
+      "id": "queue_model_hierarchy",
+      "address": "0x004100A0",
+      "case": "research/campaign-004-model-hierarchy",
+      "status": "research-candidate",
+      "result": "research/campaign-004-model-hierarchy/result.json"
+    },
+    {
+      "id": "has_surface_at_or_below",
+      "address": "0x0040C9F8",
+      "case": "research/campaign-004-surface-below",
+      "status": "research-candidate",
+      "result": "research/campaign-004-surface-below/result.json"
+    },
+    {
+      "id": "collect_nearby_surfaces",
+      "address": "0x0040D03E",
+      "case": "research/campaign-004-nearby-surfaces",
+      "status": "research-candidate",
+      "result": "research/campaign-004-nearby-surfaces/result.json"
+    }
+  ],
+  "implementation_finished_utc": "2026-09-13T03:20:35Z",
+  "final_verification_completed_utc": "2026-09-13T03:23:04Z"
+}

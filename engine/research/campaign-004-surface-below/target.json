@@ -1,0 +1,57 @@
+{
+  "id": "has_surface_at_or_below",
+  "address": 4246008,
+  "size": 227,
+  "body_size": 227,
+  "source": "src/has_surface_at_or_below.c",
+  "symbol": "_op_has_surface_at_or_below",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 14,
+      "address": 9044064,
+      "symbol": "_op_query_world",
+      "kind": "dir32"
+    },
+    {
+      "offset": 20,
+      "address": 4247614,
+      "symbol": "_op_collect_nearby_surfaces",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 28,
+      "address": 4249535,
+      "symbol": "_op_reset_surface_iterator",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 33,
+      "address": 4249565,
+      "symbol": "_op_next_surface",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 84,
+      "address": 9044064,
+      "symbol": "_op_query_world",
+      "kind": "dir32"
+    },
+    {
+      "offset": 90,
+      "address": 4297872,
+      "symbol": "_op_build_surface_geometry",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 200,
+      "address": 4639376,
+      "symbol": "_op_contains_surface_xy",
+      "kind": "rel32-call"
+    }
+  ]
+}

@@ -189,6 +189,13 @@ def compare_function(original, obj, spec):
                     symbol.kind == 0 and symbol.value == binding["target_offset"],
                     "internal relocation references the wrong local label")
             internal_bytes += 4
+        elif is_call and binding["symbol"] == spec["symbol"]:
+            # VC5 represents direct recursion with the defined function symbol.
+            # Only its exact entry point is supported; no arbitrary local calls.
+            require(binding["address"] == spec["address"] and
+                    symbol == function_symbol and symbol.section > 0 and
+                    symbol.value == 0 and symbol.storage == 2 and symbol.kind == 0x20,
+                    "recursive relocation does not reference this function entry")
         elif "symbol" in binding:
             require(symbol.name == binding["symbol"] and symbol.section == 0 and symbol.value == 0
                     and symbol.storage == 2, "relocation references the wrong external symbol")

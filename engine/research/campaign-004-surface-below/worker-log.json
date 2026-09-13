@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "campaign": "004",
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct bapmap_faceAtOrBelowXY at 0x0040C9F8",
+  "started_at": "2026-09-13T03:02:39.5934035Z",
+  "deadline_at": "2026-09-13T03:17:39.5934035Z",
+  "finished_at": "2026-09-13T03:09:39.0607329Z",
+  "status": "complete-defined-extent-mismatch",
+  "compiler_invocations": 8,
+  "experiments": [
+    {
+      "number": 1,
+      "source_sha256": "6882aa22a6cde6f34be7f1add3669131b34334659b7fb886e62621b2c0125d26",
+      "report": "engine/build/campaign-001-has_surface_at_or_below-6845b43a15e1/research-result.json",
+      "result": "227 bytes; mask continue compiled two bytes shorter, moving final three operands two bytes early"
+    },
+    {
+      "number": 2,
+      "source_sha256": "2e4107b29620bbe0c07ace32af9116f1c06f061310028599dec20139781b7105",
+      "report": "engine/build/campaign-001-has_surface_at_or_below-9da2e920c026/research-result.json",
+      "result": "227 bytes; conventional short local names changed layout but retained early operands"
+    },
+    {
+      "number": 3,
+      "source_sha256": "23ae153b95ac1da89bd6e0104c2ce4dfdd0074873928ef2ffae0706026059582",
+      "report": "engine/build/campaign-001-has_surface_at_or_below-0d1b6ed3e17c/research-result.json",
+      "result": "nested mask gate restores seven operand offsets; defined return produces 229-byte extent"
+    },
+    {
+      "number": 4,
+      "source_sha256": "cdf00166b2001e4d0795f7b3efcb5822aedbec7f8fa88f5c29e22dad1bdda3e9",
+      "report": "engine/build/campaign-001-has_surface_at_or_below-6f36811289fe/research-result.json",
+      "result": "one conventional long-name layout hypothesis; still 229 bytes and worse local placement"
+    },
+    {
+      "number": 5,
+      "source_sha256": "0a5b320e342d5a545e00aa8c2c338494c031e394d2bb9d604719193914714eaf",
+      "report": "engine/build/campaign-001-has_surface_at_or_below-0d8d7038a6ae/research-result.json",
+      "result": "final readable native candidate: 229 bytes, defined null return, seven operands aligned"
+    },
+    {
+      "number": 6,
+      "source_sha256": "0a5b320e342d5a545e00aa8c2c338494c031e394d2bb9d604719193914714eaf",
+      "report": "engine/build/campaign-001-has_surface_at_or_below-1f3ba11a8da4/research-result.json",
+      "result": "locked-Docker fixture passed 38 checks with zero failures"
+    },
+    {
+      "number": 7,
+      "source_sha256": "0a5b320e342d5a545e00aa8c2c338494c031e394d2bb9d604719193914714eaf",
+      "report": "engine/build/campaign-001-has_surface_at_or_below-c0e14532216d/research-result.json",
+      "result": "fresh native report after readability-only fixture formatting; candidate remains 229 bytes"
+    },
+    {
+      "number": 8,
+      "source_sha256": "0a5b320e342d5a545e00aa8c2c338494c031e394d2bb9d604719193914714eaf",
+      "report": "engine/build/campaign-001-has_surface_at_or_below-bddc9ef8074a/research-result.json",
+      "result": "fresh locked-Docker fixture passed 38 checks with zero failures"
+    }
+  ],
+  "validation": {
+    "target_size": 227,
+    "candidate_size": 229,
+    "verified_operand_offsets": [
+      14,
+      20,
+      28,
+      33,
+      84,
+      90,
+      200
+    ],
+    "fixture_checks": 38,
+    "fixture_failures": 0,
+    "original_executed": false
+  },
+  "blocker": "Defined return zero adds xor eax,eax; original null exit reuses EAX from op_next_surface."
+}

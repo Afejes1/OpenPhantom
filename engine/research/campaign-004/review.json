@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "campaign": "004",
+  "status": "complete-research-only",
+  "reviewer": "coordinator",
+  "worker_final_read_only_review": "comparison_inventory; no remaining material findings",
+  "source_review_scope": "All three complete original bodies, target extents, call/global contracts, natural C behavior and focused fixtures reviewed. Native/Docker code and fixups agree for each case.",
+  "issues": [
+    {
+      "id": "I01",
+      "finding": "Matcher could not verify direct recursive calls represented by a defined COFF symbol.",
+      "resolution": "Narrow exact-self-symbol path; unchanged complete span and operand requirements; six new failure/positive test methods; independent worker tooling review found no material issue.",
+      "status": "addressed"
+    },
+    {
+      "id": "I02",
+      "finding": "Square cell enumerator parameter order was wrong in candidate and shared fixture header.",
+      "resolution": "Caller push order and callee accesses independently confirm cells, position, radius, capacity. Candidate/header/stub corrected; parent final fixture verifies argument identity and passes 81 checks. Campaign rule now requires both caller and callee ABI evidence.",
+      "status": "addressed"
+    },
+    {
+      "id": "I03",
+      "finding": "Collector worker handoff overstated all twelve later operand offsets as one byte early.",
+      "resolution": "Independent parent COFF diagnostic: first thirteen and last align, ten are one byte early, one is two bytes early. Historical worker claim retained with correction; final receipt uses actual positions.",
+      "status": "addressed"
+    },
+    {
+      "id": "I04",
+      "finding": "Surface fixture label qualifying callback order checks callback counts only.",
+      "resolution": "Coverage limitation explicitly recorded; initial collect/reset/next order is tested and geometry-before-containment order was statically reviewed. No claim of complete dynamic callback-order coverage.",
+      "status": "documented-limitation"
+    }
+  ],
+  "coordinator_changes": {
+    "model_hierarchy": "FUNCTION annotation only in candidate; formatted and expanded fixture from 9 to 17 checks.",
+    "surface_below": "FUNCTION annotation only in candidate; expanded fixture from 38 to 53 checks.",
+    "nearby_surfaces": "Final worker candidate retained; corrected packet ABI description and strengthened fixture to 81 checks."
+  },
+  "tooling_tests": {
+    "test_relative_calls.py": 16,
+    "test_matching.py": 20,
+    "test_internal_labels.py": 7
+  },
+  "independent_tooling_review_material_findings": 0,
+  "fixture_checks": 151,
+  "fixture_failures": 0,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "full_regression_run": false,
+  "accepted_history_promotions": 0,
+  "limitations": [
+    "Passing authored fixtures cover selected behavior, not integrated game correctness.",
+    "Hierarchy remains above the 5% scheduling threshold; surface extent and collector operand locations prevent exact comparison.",
+    "All compiler attempts count toward existing caps; no automatic polishing or cap reset."
+  ]
+}

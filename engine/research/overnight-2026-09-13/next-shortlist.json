@@ -1,0 +1,295 @@
+{
+  "schema": 1,
+  "scope": "Read-only scheduling shortlist from Ghidra function addresses and team not-done manifest; intervals are not verified body extents.",
+  "recommendation": "Prepare cohesive small music or sound helpers before returning to large mesh/collision functions; exclude trivial no-op counts from throughput claims.",
+  "candidates": [
+    {
+      "address": "0x406eed",
+      "module": "bp/baplight.c",
+      "team_name": "baplight_enableLevelLight | baplight_disableLevelLight",
+      "address_interval_bytes": 83
+    },
+    {
+      "address": "0x40745c",
+      "module": "bp/baplight.c",
+      "team_name": "baplight_packColourInPlace",
+      "address_interval_bytes": 120
+    },
+    {
+      "address": "0x4074d4",
+      "module": "bp/baplight.c",
+      "team_name": "baplight_packColour",
+      "address_interval_bytes": 120
+    },
+    {
+      "address": "0x40754c",
+      "module": "bp/baplight.c",
+      "team_name": "baplight_offsetColour",
+      "address_interval_bytes": 122
+    },
+    {
+      "address": "0x41073f",
+      "module": "bp/bapmusic.c",
+      "team_name": "bapMusicGetVolume",
+      "address_interval_bytes": 11
+    },
+    {
+      "address": "0x410592",
+      "module": "bp/bapmusic.c",
+      "team_name": "bapMusicIsDetached",
+      "address_interval_bytes": 17
+    },
+    {
+      "address": "0x4107b5",
+      "module": "bp/bapmusic.c",
+      "team_name": "bapMusicGetState",
+      "address_interval_bytes": 26
+    },
+    {
+      "address": "0x4107cf",
+      "module": "bp/bapmusic.c",
+      "team_name": "bapMusicGetState",
+      "address_interval_bytes": 26
+    },
+    {
+      "address": "0x410787",
+      "module": "bp/bapmusic.c",
+      "team_name": "bapMusicRestore",
+      "address_interval_bytes": 46
+    },
+    {
+      "address": "0x410527",
+      "module": "bp/bapmusic.c",
+      "team_name": "bapMusicDisable",
+      "address_interval_bytes": 47
+    },
+    {
+      "address": "0x4104ec",
+      "module": "bp/bapmusic.c",
+      "team_name": "bapMusicPeriodic",
+      "address_interval_bytes": 59
+    },
+    {
+      "address": "0x410556",
+      "module": "bp/bapmusic.c",
+      "team_name": "bapMusicDisable | bapMusicEnable",
+      "address_interval_bytes": 60
+    },
+    {
+      "address": "0x4107e9",
+      "module": "bp/bapmusic.c",
+      "team_name": "bapMusicPause",
+      "address_interval_bytes": 60
+    },
+    {
+      "address": "0x41074a",
+      "module": "bp/bapmusic.c",
+      "team_name": "bapMusicSave",
+      "address_interval_bytes": 61
+    },
+    {
+      "address": "0x410825",
+      "module": "bp/bapmusic.c",
+      "team_name": "bapMusicResume",
+      "address_interval_bytes": 75
+    },
+    {
+      "address": "0x4105a3",
+      "module": "bp/bapmusic.c",
+      "team_name": "bapMusicSetState",
+      "address_interval_bytes": 107
+    },
+    {
+      "address": "0x4106cc",
+      "module": "bp/bapmusic.c",
+      "team_name": "bapMusicSetVolume",
+      "address_interval_bytes": 115
+    },
+    {
+      "address": "0x41046c",
+      "module": "bp/bapmusic.c",
+      "team_name": "bapMusicDetach",
+      "address_interval_bytes": 128
+    },
+    {
+      "address": "0x415d13",
+      "module": "bp/bapsound.c",
+      "team_name": "FUN_00415d13",
+      "address_interval_bytes": 10
+    },
+    {
+      "address": "0x41786c",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_getDriver",
+      "address_interval_bytes": 10
+    },
+    {
+      "address": "0x417368",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_stopChannel",
+      "address_interval_bytes": 17
+    },
+    {
+      "address": "0x417043",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_findRef",
+      "address_interval_bytes": 24
+    },
+    {
+      "address": "0x417459",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_getMasterVolume",
+      "address_interval_bytes": 30
+    },
+    {
+      "address": "0x41778c",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_deactivatePlace",
+      "address_interval_bytes": 34
+    },
+    {
+      "address": "0x4178d1",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_disable | bapsound_enable",
+      "address_interval_bytes": 41
+    },
+    {
+      "address": "0x417876",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_testCallFlags",
+      "address_interval_bytes": 45
+    },
+    {
+      "address": "0x4176e3",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_stopAll",
+      "address_interval_bytes": 46
+    },
+    {
+      "address": "0x4178a3",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_disable",
+      "address_interval_bytes": 46
+    },
+    {
+      "address": "0x4178fa",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_isMuted",
+      "address_interval_bytes": 54
+    },
+    {
+      "address": "0x416787",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_playName",
+      "address_interval_bytes": 60
+    },
+    {
+      "address": "0x417826",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_pinChannel",
+      "address_interval_bytes": 70
+    },
+    {
+      "address": "0x416634",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_resetPlaces",
+      "address_interval_bytes": 91
+    },
+    {
+      "address": "0x41612f",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_releaseSlotHandle",
+      "address_interval_bytes": 92
+    },
+    {
+      "address": "0x4167c3",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_playNameVol",
+      "address_interval_bytes": 92
+    },
+    {
+      "address": "0x417143",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_playCall",
+      "address_interval_bytes": 94
+    },
+    {
+      "address": "0x415d1d",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_periodic",
+      "address_interval_bytes": 109
+    },
+    {
+      "address": "0x41670f",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_getField | bapsound_setField",
+      "address_interval_bytes": 120
+    },
+    {
+      "address": "0x417477",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_pauseAll",
+      "address_interval_bytes": 120
+    },
+    {
+      "address": "0x4174ef",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_resumeAll",
+      "address_interval_bytes": 120
+    },
+    {
+      "address": "0x4177ae",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_setPlaceActive",
+      "address_interval_bytes": 120
+    },
+    {
+      "address": "0x417711",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_activatePlace",
+      "address_interval_bytes": 123
+    },
+    {
+      "address": "0x41668f",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_getField",
+      "address_interval_bytes": 128
+    },
+    {
+      "address": "0x415ab5",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_moduleShutdown",
+      "address_interval_bytes": 131
+    },
+    {
+      "address": "0x417659",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_startSample",
+      "address_interval_bytes": 138
+    },
+    {
+      "address": "0x41609e",
+      "module": "bp/bapsound.c",
+      "team_name": "bapsound_initChannels",
+      "address_interval_bytes": 145
+    },
+    {
+      "address": "0x419400",
+      "module": "bp/bapview.c",
+      "team_name": "bapvrt_forceRenderFlags",
+      "address_interval_bytes": 32
+    },
+    {
+      "address": "0x419420",
+      "module": "bp/bapview.c",
+      "team_name": "bapvrt_forceRenderFlags | bapvrt_clearForcedRenderFlags",
+      "address_interval_bytes": 32
+    },
+    {
+      "address": "0x419440",
+      "module": "bp/bapview.c",
+      "team_name": "bapvrt_clearTouchedRange",
+      "address_interval_bytes": 80
+    }
+  ]
+}

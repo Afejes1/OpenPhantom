@@ -171,3 +171,27 @@ The line advance at `0x004083D0` has a complete 209-byte raw match. It always ad
 The polyline strip at `0x00408735` now has a complete 478-byte comparison with all seven operands verified. Eight bytes differ in register-setup instruction ordering before the first aggregate copy (1.674%); 35 focused checks pass. It remains a near match for later work. The original tests mapped depth, not camera depth; projection-callee evidence corrected the older Ghidra comment.
 
 The green diagnostic segment wrapper at `0x00408913` has a verified 76-byte body match after resolving its polyline call. One original INT3 alignment byte remains pending, so the full 77-byte target still fails. All 26 focused checks pass, including exact signed-zero/NaN bit copies and aliased endpoints. Body evidence remains separate from complete-function acceptance.
+
+## Campaign 004: hierarchy and collision-query continuation
+
+The first overnight batch preserves the model-hierarchy and surface-below query
+as research candidates. Hierarchy has a complete 144-byte span and all five
+operands verified, but eight register-selection bytes differ (5.556%). Its 17
+focused checks cover traversal order, root versus child amputation, hidden meshes,
+ABI offsets and callback changes. The surface query passes 53 focused checks but
+has a 229-byte defined implementation versus the 227-byte original, so no mismatch
+percentage is assigned. Static comparison with the adjacent reported-done above
+query resolves the selected function's alias. Neither result is accepted.
+
+Direct recursion now has a narrow verified COFF path: the declared call must
+resolve to the exact defined symbol and original entry of the function currently
+compared. Complete spans, all fixups and every other byte remain mandatory.
+Synthetic failure tests and an independent review found no material issues.
+See research/campaign-004 for final batch receipts and remaining work.
+
+The nearby collector at `0x0040D03E` now has a defined 555-byte C candidate and
+81 passing focused assertions. Its original span is also 555 bytes, but eleven
+of 25 operand positions differ. Fourteen align, ten are one byte early and one
+is two bytes early; no percentage is assigned. Independent caller/callee review
+corrected the square enumerator ABI before final verification. All three cases
+remain research candidates, with no new exact match or accepted-history entry.

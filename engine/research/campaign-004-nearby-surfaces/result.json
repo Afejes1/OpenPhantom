@@ -1,0 +1,211 @@
+{
+  "schema": 1,
+  "campaign": "004",
+  "id": "collect_nearby_surfaces",
+  "status": "research-candidate",
+  "comparison": {
+    "status": "unresolved",
+    "reason": "COFF relocation inventory differs from expected operands"
+  },
+  "target_size": 555,
+  "candidate_size": 555,
+  "different_percent": null,
+  "source_snapshot": {
+    "research/campaign-004-nearby-surfaces/candidate.c": "734fa0f9b1ec29f64e095415a8ddfda2cf7d5ddfc853b36c42a2650102c2c474",
+    "research/campaign-004-nearby-surfaces/api.h": "c112556248f23a176a807dea99a03af9f8fb5a06f79d9d3804a7a4744d1a2d54",
+    "research/campaign-004-nearby-surfaces/behavior.c": "0e04796f533f052224055f9979943c43e4ff687b7905b51dd3e4e150a167e522",
+    "research/campaign-004-nearby-surfaces/case.json": "4444a0196c8868f4f8186aa78fdefdb47b73923161738a6b85c9d9b3516d5efd",
+    "research/campaign-001/verify.py": "78bcf92d994fdab04d1a983838fe9f492162d2626b35390259d9976b92cbbe78",
+    "target.json": "b8398f0a1f85e40e34af828082a8587587b7c4f88a9ecea96b21b2706a33b996",
+    "research/campaign-004-nearby-surfaces/target.json": "2f07c3a163843e711b65cbe1fd3325acd4af94b8734328a29527242b7831216b",
+    "research/surface-emission/probe.py": "cd4ef4126dacfc16197636a4b0c7007639efe1033e8e2b329e4939a6083c5f1b",
+    "research/surface-emission/native_listing_diagnostic.py": "3cad0339396c73301ef5861eed3c40f925482fd7c2e4ec45f801e9d0e5d34665",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "959d15268c4d927e57271424dbcb1c709cf89cbf3e48ff545e4e15c4d6425f27",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "reference": {
+    "sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
+    "size": 829952
+  },
+  "native_report": "engine/build/campaign-001-collect_nearby_surfaces-221a4b123224/research-result.json",
+  "native_report_sha256": "39234728d52df921a524af6fe394bdc6ac617ef1e4b5a46552148f0f0551f385",
+  "docker_report": "engine/build/campaign-001-collect_nearby_surfaces-07c749e710fe/research-result.json",
+  "docker_report_sha256": "a4f9ca2d12ed373445ffd9ca3d372011477445828f84b2b2999524a04e87c129",
+  "artifact": {
+    "id": "collect_nearby_surfaces",
+    "source": "candidate.c",
+    "symbol": "_op_collect_nearby_surfaces",
+    "object": "candidate.obj",
+    "object_sha256": "fc99e37a8bf50f707d62319ea90812ccd0847cd968151ca08c7e3594f3327b32",
+    "function_section_bytes": 555,
+    "function_section_sha256": "6273a4bae666f6b9f92127859e31d1f74d215fe028a5d77843c370ba16a04855",
+    "relocation_count": 25,
+    "assembly_listing": "candidate.cod",
+    "assembly_listing_sha256": "e4750e6e3e437f6725e06b86240f2bdfca09e8667bbe1bb8f42fbf66f3d6197f",
+    "assembly_listing_has_terminators": false,
+    "function_inventory": "candidate.function.json",
+    "function_inventory_sha256": "6c6345d7bd013c8d2e8b990d5e1db7b9f58d4ffc4908a79ba46b58bf142ac783"
+  },
+  "fixture": {
+    "sha256": "f00a6b5ff2f6d03489636eca62f2d1b426bd52479e65d11f68c11b7fbfc334fd",
+    "passed": true,
+    "stdout": "Nearby surfaces: 81 checks, 0 failures\n",
+    "checks": 81,
+    "failures": 0
+  },
+  "native_docker_function_and_relocations_equal": true,
+  "native_elapsed_seconds": 1.427917,
+  "docker_elapsed_seconds": 5.683807,
+  "independent_operand_diagnostic": {
+    "original_inventory_verified": true,
+    "ordered_candidate_symbols_kinds_addends_constants_verified": true,
+    "count": 25,
+    "aligned_offsets": 14,
+    "shifted_offsets": 11,
+    "offsets": [
+      {
+        "target_offset": 32,
+        "candidate_offset": 32,
+        "delta": 0
+      },
+      {
+        "target_offset": 49,
+        "candidate_offset": 49,
+        "delta": 0
+      },
+      {
+        "target_offset": 54,
+        "candidate_offset": 54,
+        "delta": 0
+      },
+      {
+        "target_offset": 59,
+        "candidate_offset": 59,
+        "delta": 0
+      },
+      {
+        "target_offset": 74,
+        "candidate_offset": 74,
+        "delta": 0
+      },
+      {
+        "target_offset": 101,
+        "candidate_offset": 101,
+        "delta": 0
+      },
+      {
+        "target_offset": 131,
+        "candidate_offset": 131,
+        "delta": 0
+      },
+      {
+        "target_offset": 143,
+        "candidate_offset": 143,
+        "delta": 0
+      },
+      {
+        "target_offset": 149,
+        "candidate_offset": 149,
+        "delta": 0
+      },
+      {
+        "target_offset": 160,
+        "candidate_offset": 160,
+        "delta": 0
+      },
+      {
+        "target_offset": 214,
+        "candidate_offset": 214,
+        "delta": 0
+      },
+      {
+        "target_offset": 247,
+        "candidate_offset": 247,
+        "delta": 0
+      },
+      {
+        "target_offset": 268,
+        "candidate_offset": 268,
+        "delta": 0
+      },
+      {
+        "target_offset": 364,
+        "candidate_offset": 363,
+        "delta": -1
+      },
+      {
+        "target_offset": 370,
+        "candidate_offset": 369,
+        "delta": -1
+      },
+      {
+        "target_offset": 407,
+        "candidate_offset": 406,
+        "delta": -1
+      },
+      {
+        "target_offset": 438,
+        "candidate_offset": 437,
+        "delta": -1
+      },
+      {
+        "target_offset": 456,
+        "candidate_offset": 455,
+        "delta": -1
+      },
+      {
+        "target_offset": 498,
+        "candidate_offset": 497,
+        "delta": -1
+      },
+      {
+        "target_offset": 503,
+        "candidate_offset": 502,
+        "delta": -1
+      },
+      {
+        "target_offset": 509,
+        "candidate_offset": 508,
+        "delta": -1
+      },
+      {
+        "target_offset": 527,
+        "candidate_offset": 526,
+        "delta": -1
+      },
+      {
+        "target_offset": 536,
+        "candidate_offset": 534,
+        "delta": -2
+      },
+      {
+        "target_offset": 541,
+        "candidate_offset": 540,
+        "delta": -1
+      },
+      {
+        "target_offset": 546,
+        "candidate_offset": 546,
+        "delta": 0
+      }
+    ],
+    "scope": "Diagnostic only: matching ordered identities cannot substitute for exact operand locations; strict comparison remains unresolved."
+  },
+  "accepted_history_record": false,
+  "original_game_executed": false,
+  "whole_executable_match": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "review": "research/campaign-004/review.json",
+  "limitations": [
+    "Complete extents both 555 bytes, but eleven operand offsets differ; no mismatch percentage is assigned.",
+    "First thirteen operands align; ten later operands are one byte early, one is two bytes early, and the final operand aligns again.",
+    "Focused valid-pointer fixtures use authored enumerator/append callbacks; no integrated collision or game proof.",
+    "Original post-append assertion behavior is preserved, not a bounds-safety guarantee."
+  ]
+}

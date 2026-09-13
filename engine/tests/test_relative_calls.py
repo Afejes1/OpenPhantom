@@ -135,6 +135,76 @@ class RelativeCallTests(unittest.TestCase):
                     validate_event(bad)
 
 
+
+class RecursiveCallTests(unittest.TestCase):
+    def case(self, padding=b"\x90\x90"):
+        body = b"\xe8" + struct.pack("<I", 0xfffffffb) + b"\xc3" + padding
+        raw = pe(body)
+        definition = spec(len(body), [{"offset": 1, "address": 0x401000,
+                                      "symbol": "_candidate", "kind": "rel32-call"}])
+        definition["body_size"] = 6
+        obj = coff(b"\xe8\0\0\0\0\xc3" + padding, [(1, "_candidate", 20)])
+        return raw, obj, definition
+
+    def test_defined_self_call_resolves_and_preserves_full_span(self):
+        raw, obj, definition = self.case()
+        original = verify_reference(raw, target(raw, definition))
+        result = compare_function(original, COFF(obj), definition)
+        self.assertEqual(result["status"], "relocation-adjusted-match")
+        self.assertEqual((result["size"], result["body_size"]), (8, 6))
+        self.assertEqual((result["compared_bytes"], result["rel32_call_bytes"]), (4, 4))
+        self.assertEqual(result["different_bytes"], 0)
+        self.assertEqual(result["reference_span_sha256"], result["resolved_span_sha256"])
+        self.assertFalse(result["layout_verified"])
+
+    def test_same_symbol_cannot_redirect_to_interior_or_another_address(self):
+        raw, obj, definition = self.case()
+        for address in (0x401001, 0x401005, 0x401007):
+            changed = copy.deepcopy(definition)
+            changed["bindings"][0]["address"] = address
+            body = b"\xe8" + struct.pack("<I", (address - 0x401005) & 0xffffffff) + b"\xc3\x90\x90"
+            raw = pe(body)
+            original = verify_reference(raw, target(raw, changed))
+            with self.subTest(address=address), self.assertRaises(VerificationError):
+                compare_function(original, COFF(obj), changed)
+
+    def test_self_call_wrong_symbol_opcode_addend_kind_or_missing_fixup_fail(self):
+        raw, _, definition = self.case()
+        for code, relocs in [
+            (b"\xe8\0\0\0\0\xc3\x90\x90", [(1, "_other", 20)]),
+            (b"\xe9\0\0\0\0\xc3\x90\x90", [(1, "_candidate", 20)]),
+            (b"\xe8\1\0\0\0\xc3\x90\x90", [(1, "_candidate", 20)]),
+            (b"\xe8\0\0\0\0\xc3\x90\x90", [(1, "_candidate", 6)]),
+            (b"\xe8\0\0\0\0\xc3\x90\x90", []),
+        ]:
+            with self.subTest(code=code, relocs=relocs), self.assertRaises(VerificationError):
+                compare_function(PE(raw), COFF(coff(code, relocs)), definition)
+
+    def test_self_symbol_must_remain_defined_external_function_at_zero(self):
+        raw, obj, definition = self.case()
+        sym_at = struct.unpack_from("<I", obj, 8)[0]
+        for offset, fmt, value in [(8, "<I", 1), (12, "<h", 0),
+                                   (12, "<h", 2), (14, "<H", 0), (16, "<B", 3)]:
+            changed = bytearray(obj)
+            struct.pack_into(fmt, changed, sym_at + offset, value)
+            with self.subTest(offset=offset, value=value), self.assertRaises(VerificationError):
+                compare_function(PE(raw), COFF(bytes(changed)), definition)
+
+    def test_self_call_does_not_hide_instruction_padding_or_extent_changes(self):
+        raw, _, definition = self.case()
+        for code in (b"\xe8\0\0\0\0\xcc\x90\x90",
+                     b"\xe8\0\0\0\0\xc3\x90\xcc",
+                     b"\xe8\0\0\0\0\xc3"):
+            result = compare_function(PE(raw), COFF(coff(code, [(1, "_candidate", 20)])), definition)
+            self.assertEqual(result["status"], "mismatch")
+
+    def test_external_call_rule_does_not_accept_a_defined_self_symbol(self):
+        raw, obj, definition = self.case()
+        definition["bindings"][0]["symbol"] = "_helper"
+        with self.assertRaises(VerificationError):
+            compare_function(PE(raw), COFF(obj), definition)
+
+
 class DoubleConstantTests(unittest.TestCase):
     def case(self, original_value=255.0, candidate_value=255.0):
         definition = spec(7, [{"offset": 2, "address": 0x402000, "float64": 255.0}])

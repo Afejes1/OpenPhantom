@@ -1,0 +1,45 @@
+{
+  "id": "queue_model_hierarchy",
+  "address": 4260000,
+  "size": 144,
+  "body_size": 135,
+  "source": "src/queue_model_hierarchy.c",
+  "symbol": "_op_queue_model_hierarchy",
+  "language": "c",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 17,
+      "address": 6000232,
+      "symbol": "_op_hierarchy_thing",
+      "kind": "dir32"
+    },
+    {
+      "offset": 54,
+      "address": 5988320,
+      "symbol": "_op_hierarchy_geoset",
+      "kind": "dir32"
+    },
+    {
+      "offset": 70,
+      "address": 4256224,
+      "symbol": "_op_queue_mesh_faces",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 95,
+      "address": 6000232,
+      "symbol": "_op_hierarchy_thing",
+      "kind": "dir32"
+    },
+    {
+      "offset": 113,
+      "address": 4260000,
+      "symbol": "_op_queue_model_hierarchy",
+      "kind": "rel32-call"
+    }
+  ]
+}
