@@ -1,0 +1,40 @@
+{
+  "id": "projection_expire",
+  "address": 4311216,
+  "size": 96,
+  "body_size": 86,
+  "source": "src/projection_expire.c",
+  "symbol": "_op_projection_expire",
+  "language": "c",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 6010392,
+      "symbol": "_op_projections",
+      "kind": "dir32",
+      "addend": 52
+    },
+    {
+      "offset": 29,
+      "address": 4882856,
+      "symbol": "_op_projection_zero",
+      "kind": "dir32"
+    },
+    {
+      "offset": 42,
+      "address": 8816408,
+      "symbol": "_op_elapsed",
+      "kind": "dir32"
+    },
+    {
+      "offset": 72,
+      "address": 7076400,
+      "symbol": "_op_projection_dirty",
+      "kind": "dir32"
+    }
+  ]
+}

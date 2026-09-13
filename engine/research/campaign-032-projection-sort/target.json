@@ -1,0 +1,45 @@
+{
+  "id": "projection_sort",
+  "address": 4311408,
+  "size": 48,
+  "body_size": 45,
+  "source": "src/projection_sort.c",
+  "symbol": "_op_projection_sort",
+  "language": "c",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 1,
+      "address": 7076400,
+      "symbol": "_op_projection_dirty",
+      "kind": "dir32"
+    },
+    {
+      "offset": 10,
+      "address": 4311456,
+      "symbol": "_op_projection_compare",
+      "kind": "dir32"
+    },
+    {
+      "offset": 22,
+      "address": 6010392,
+      "symbol": "_op_projections",
+      "kind": "dir32"
+    },
+    {
+      "offset": 27,
+      "address": 4826720,
+      "symbol": "_op_projection_qsort",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 36,
+      "address": 7076400,
+      "symbol": "_op_projection_dirty",
+      "kind": "dir32"
+    }
+  ]
+}

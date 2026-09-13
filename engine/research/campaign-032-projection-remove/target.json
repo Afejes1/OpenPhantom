@@ -1,0 +1,27 @@
+{
+  "id": "projection_remove",
+  "address": 4311312,
+  "size": 64,
+  "body_size": 60,
+  "source": "src/projection_remove.c",
+  "symbol": "_op_projection_remove",
+  "language": "c",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 6010392,
+      "symbol": "_op_projections",
+      "kind": "dir32"
+    },
+    {
+      "offset": 43,
+      "address": 7076400,
+      "symbol": "_op_projection_dirty",
+      "kind": "dir32"
+    }
+  ]
+}

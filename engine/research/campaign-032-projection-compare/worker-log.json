@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "projection_compare",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full projected-overlay lifecycle contract",
+      "started_utc": "2026-09-13T21:21:44.212483+00:00",
+      "finished_utc": "2026-09-13T21:21:45.807926+00:00",
+      "returncode": 0,
+      "source_sha256": "4785d5abdb826a8d5ac528a86217bc6a3295935ed1d6786654f35f8cfd782040",
+      "report": "engine/build/campaign-001-projection_compare-47221ce4cb6c/research-result.json",
+      "report_sha256": "777223fe528e6181af0193430b8cba220c38bff4068fdee661743a9ad017380c",
+      "status": "raw-code-match",
+      "candidate_size": 64,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.37777,
+      "stderr": "",
+      "candidate_compiler_invocations": 1
+    }
+  ]
+}

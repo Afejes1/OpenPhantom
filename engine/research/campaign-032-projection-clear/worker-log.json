@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "projection_clear",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full projected-overlay lifecycle contract",
+      "started_utc": "2026-09-13T21:21:41.715570+00:00",
+      "finished_utc": "2026-09-13T21:21:43.319124+00:00",
+      "returncode": 0,
+      "source_sha256": "1035e2c57cfe2442b8063d5a5871945e743f383793b11d299be770ac756fe5dd",
+      "report": "engine/build/campaign-001-projection_clear-1461fcb8c5ab/research-result.json",
+      "report_sha256": "3b6900b91c41fc57e7b865ee5beaf101c5e7a071c85177dec9c01c934146472a",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 32,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.388551,
+      "stderr": "",
+      "candidate_compiler_invocations": 1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "projection_compare",
+  "address": 4311456,
+  "size": 64,
+  "body_size": 54,
+  "source": "src/projection_compare.c",
+  "symbol": "_op_projection_compare",
+  "language": "c",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": []
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "projection_remove",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full projected-overlay lifecycle contract",
+      "started_utc": "2026-09-13T21:21:40.103232+00:00",
+      "finished_utc": "2026-09-13T21:21:41.709318+00:00",
+      "returncode": 1,
+      "source_sha256": "9f94a12fd69894be0beb93519f2f9669333c8785811fe08e4bb629ac993c4b57",
+      "report": "engine/build/campaign-001-projection_remove-5195581335e8/research-result.json",
+      "report_sha256": "d4dc2f8dad1203c3625869eca1b3c6b969c3cc0e59ed85d095c121ed124afbf6",
+      "status": "unresolved",
+      "candidate_size": null,
+      "different_bytes": null,
+      "elapsed_seconds": 1.386404,
+      "stderr": "",
+      "candidate_compiler_invocations": 1
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full projected-overlay lifecycle contract",
+      "started_utc": "2026-09-13T21:23:08.367006+00:00",
+      "finished_utc": "2026-09-13T21:23:09.975456+00:00",
+      "returncode": 0,
+      "source_sha256": "48cae344475b361d69ecb7e8e0b3bfe3d95bab503c0e4a1f20ee5cb7d69acd76",
+      "report": "engine/build/campaign-001-projection_remove-237791b24447/research-result.json",
+      "report_sha256": "68d5219af226fe5246ac80e371f6ee1a1d38125a328e5bda46a53bde0fea2a77",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 64,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.390017,
+      "stderr": "",
+      "candidate_compiler_invocations": 1
+    }
+  ]
+}

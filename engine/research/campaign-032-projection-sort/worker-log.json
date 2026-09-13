@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "projection_sort",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full projected-overlay lifecycle contract",
+      "started_utc": "2026-09-13T21:21:43.324425+00:00",
+      "finished_utc": "2026-09-13T21:21:44.206257+00:00",
+      "returncode": 2,
+      "source_sha256": "8d18259bb2d25bb7bdb5896620b057d448eff1c14df50c161318c4818bb7756f",
+      "report": "engine/build/campaign-001-projection_sort-65e108231822/research-result.json",
+      "report_sha256": "03cebd249b00d18c7890bccefd1b2674ff23a6bf37aa61c6c49f5490aef7beb4",
+      "status": "not-attempted",
+      "candidate_size": null,
+      "different_bytes": null,
+      "elapsed_seconds": 0.665955,
+      "stderr": "FAILED: unsupported binding kind\n",
+      "candidate_compiler_invocations": 0
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full projected-overlay lifecycle contract",
+      "started_utc": "2026-09-13T21:23:09.981385+00:00",
+      "finished_utc": "2026-09-13T21:23:11.589952+00:00",
+      "returncode": 0,
+      "source_sha256": "8d18259bb2d25bb7bdb5896620b057d448eff1c14df50c161318c4818bb7756f",
+      "report": "engine/build/campaign-001-projection_sort-4dd269cca30a/research-result.json",
+      "report_sha256": "ea8e80a7f7afe91dd7814da30ee1a28f9290533f25fc98fb9fbc1d844a441157",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 48,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.389926,
+      "stderr": "",
+      "candidate_compiler_invocations": 1
+    }
+  ]
+}

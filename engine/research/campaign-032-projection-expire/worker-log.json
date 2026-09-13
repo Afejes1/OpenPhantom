@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "projection_expire",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full projected-overlay lifecycle contract",
+      "started_utc": "2026-09-13T21:21:38.442801+00:00",
+      "finished_utc": "2026-09-13T21:21:40.097309+00:00",
+      "returncode": 1,
+      "source_sha256": "10ea0d3e99fc9d96e172215ffa58b4f5251e3cc76582b27b84debbfd9e7017f0",
+      "report": "engine/build/campaign-001-projection_expire-184b37351694/research-result.json",
+      "report_sha256": "baba673a442df71f8f5c7981512182e759dd1ca8422fbb4b545d11891d4a5b28",
+      "status": "unresolved",
+      "candidate_size": null,
+      "different_bytes": null,
+      "elapsed_seconds": 1.435703,
+      "stderr": "",
+      "candidate_compiler_invocations": 1
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full projected-overlay lifecycle contract",
+      "started_utc": "2026-09-13T21:23:06.743672+00:00",
+      "finished_utc": "2026-09-13T21:23:08.361115+00:00",
+      "returncode": 0,
+      "source_sha256": "f223de0304c05ed435a5fcd789c1b3f03dfcb9655a48ff0505f8fad610808098",
+      "report": "engine/build/campaign-001-projection_expire-8f39b1a6a86b/research-result.json",
+      "report_sha256": "d3f3721e41ac4018f6c4850434f7b14db67848cc9ea3d03abc9d77eff7108fb6",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 96,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.398316,
+      "stderr": "",
+      "candidate_compiler_invocations": 1
+    }
+  ]
+}
