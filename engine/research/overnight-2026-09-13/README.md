@@ -1,5 +1,9 @@
 # Six-hour reconstruction campaign: 2026-09-13
 
+**Completed; heartbeat paused.** See the [morning report](results.md),
+[aggregate metrics](metrics.json) and [final status](status.json).
+The setup and operating instructions below are retained as campaign history.
+
 The contributor authorized six hours of continued reconstruction using the tested
 one-worker strategy. The fixed window is **02:48 to 08:48 UTC on 2026-09-13**
 (22:48 September 12 to 04:48 September 13, America/New_York).
