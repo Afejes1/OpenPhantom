@@ -22,13 +22,15 @@ static void lc_zap_shutdown_verify_state(void)
     lc_zap_shutdown_CHECK(
         memcmp(lc_zap_shutdown_owned, lc_zap_shutdown_expected_owned, sizeof(lc_zap_shutdown_owned)) == 0);
 }
-void lc_zap_shutdown_op_release_sprite(void **sprite)
+void lc_zap_shutdown_op_release_sprite(void *resource)
 {
+    void **sprite = &op_zap_sprite;
+    lc_zap_shutdown_CHECK(resource != 0 && resource == *sprite);
     lc_zap_shutdown_CHECK(lc_zap_shutdown_calls++ == 0);
     lc_zap_shutdown_CHECK(sprite == &op_zap_sprite);
     lc_zap_shutdown_verify_state();
     *sprite = lc_zap_shutdown_replacement;
-    lc_zap_shutdown_expected_sprite = lc_zap_shutdown_replacement;
+    lc_zap_shutdown_expected_sprite = 0;
     lc_zap_shutdown_owned[1][5] = 0x39;
     lc_zap_shutdown_expected_owned[1][5] = 0x39;
 }
@@ -45,7 +47,7 @@ int lc_zap_shutdown_main(void)
             lc_zap_shutdown_replacement = lc_zap_shutdown_r ? lc_zap_shutdown_owned[lc_zap_shutdown_r - 1] : 0;
             lc_zap_shutdown_calls = 0;
             lc_zap_shutdown_CHECK(op_zap_shutdown() == 1);
-            lc_zap_shutdown_CHECK(lc_zap_shutdown_calls == 1);
+            lc_zap_shutdown_CHECK(lc_zap_shutdown_calls == (cached != 0));
             lc_zap_shutdown_verify_state();
         }
     printf("zap shutdown: %d checks, %d failures\n", lc_zap_shutdown_checks, lc_zap_shutdown_failures);

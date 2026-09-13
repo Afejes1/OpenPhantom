@@ -30,7 +30,7 @@ static OP_DEFINITION ec_definition, ec_definition_before, ec_alternate, ec_alter
 static OP_ATTACHED_ACTOR ec_other_before;
 static OP_HALO_COLOR ec_colors_expected[3];
 static void *ec_stream_acquire(char *name);
-static void ec_stream_release(void **sprite);
+static void ec_stream_release(void *resource);
 static OP_ATTACHED_ACTOR ec_actor, ec_expected_actor, ec_other;
 static OP_HALO ec_expected_halos[32];
 static int ec_handles[8], ec_halo_count, ec_key, ec_lookup_calls, ec_resource_calls;
@@ -113,15 +113,15 @@ static void *effects_chain_acquire_sprite(char *name)
     EC_CHECK(ec_mode == EC_STREAM);
     return ec_stream_acquire(name);
 }
-static void effects_chain_release_sprite(void **sprite)
+static void effects_chain_release_sprite(void *resource)
 {
     if (ec_mode == EC_LOAD)
     {
-        lo_texture_release(sprite);
+        lo_texture_release(resource);
         return;
     }
     EC_CHECK(ec_mode == EC_STREAM);
-    ec_stream_release(sprite);
+    ec_stream_release(resource);
 }
 static void ec_halo_tests(void)
 {
@@ -219,13 +219,13 @@ static void ec_save_state(void)
     EC_CHECK(op_active_world == &ec_worlds[ec_mutation ? 1 : 0]);
     EC_CHECK(memcmp(ec_worlds, ec_worlds_before, sizeof(ec_worlds)) == 0);
 }
-static void ec_stream_release(void **sprite)
+static void ec_stream_release(void *resource)
 {
     int slot = (ec_allocations - 1) * 7;
     EC_CHECK(ec_stream_loading && ec_texture_stage++ == 0 && slot >= 0 && slot <= 14);
-    EC_CHECK(sprite == &op_shields[slot].sprite);
+    EC_CHECK(resource != 0 && resource == op_shields[slot].sprite);
     EC_CHECK(memcmp(op_shields, ec_loaded_shields, sizeof(op_shields)) == 0);
-    *sprite = 0;
+    op_shields[slot].sprite = 0;
     ec_loaded_shields[slot].sprite = 0;
     ++ec_texture_releases;
 }
@@ -233,7 +233,7 @@ static void *ec_stream_acquire(char *name)
 {
     int n = ec_allocations - 1, slot = n * 7;
     OP_SHIELD_SAVE *row = &ec_rows_expected[n];
-    EC_CHECK(ec_stream_loading && ec_texture_stage == 1);
+    EC_CHECK(ec_stream_loading && ec_texture_stage == 0 && ec_loaded_shields[slot].sprite == 0);
     EC_CHECK(ec_row_payload && name == ec_row_payload->name && strcmp(name, row->name) == 0);
     EC_CHECK(memcmp(op_shields, ec_loaded_shields, sizeof(op_shields)) == 0);
     ++ec_texture_acquires;
@@ -493,8 +493,8 @@ static void ec_stream_tests(void)
                     EC_CHECK(result == wanted);
                     ec_save_state();
                     EC_CHECK(ec_texture_stage == 0);
-                    EC_CHECK(ec_texture_releases == (fail == 0 || fail == 1 ? 0 : alloc_fail >= 0 ? alloc_fail : 3));
-                    EC_CHECK(ec_texture_acquires == ec_texture_releases);
+                    EC_CHECK(ec_texture_releases == 0);
+                    EC_CHECK(ec_texture_acquires == (fail == 0 || fail == 1 ? 0 : alloc_fail >= 0 ? alloc_fail : 3));
                     EC_CHECK(ec_cursor == (unsigned int)(fail == 0         ? 1
                                                          : fail == 1       ? 2
                                                          : alloc_fail >= 0 ? 3 + alloc_fail

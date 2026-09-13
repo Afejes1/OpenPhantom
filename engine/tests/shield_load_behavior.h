@@ -88,8 +88,10 @@ int lo_op_shield_allocate(void *actor)
         lo_finish_row();
     return lo_last_slot;
 }
-static void lo_texture_release(void **sprite)
+static void lo_texture_release(void *resource)
 {
+    void **sprite = &op_shields[lo_last_slot].sprite;
+    lo_CHECK(resource != 0 && resource == *sprite);
     lo_CHECK(lo_texture_stage++ == 0);
     lo_CHECK(sprite == &op_shields[lo_last_slot].sprite);
     lo_CHECK(memcmp(op_shields, lo_expected, sizeof(lo_expected)) == 0);
@@ -100,7 +102,7 @@ static void lo_texture_release(void **sprite)
 static void *lo_texture_acquire(char *name, void *handle)
 {
     int slot = lo_last_slot;
-    lo_CHECK(lo_texture_stage == 1);
+    lo_CHECK(lo_texture_stage == 0 && lo_expected[slot].sprite == 0);
     lo_CHECK(name == lo_payload->name && name[0] == 'u');
     lo_CHECK(memcmp(op_shields, lo_expected, sizeof(lo_expected)) == 0);
     ++lo_acquires;
@@ -161,8 +163,7 @@ int lo_main(void)
                             lo_CHECK(lo_row_reads == wanted_rows);
                             lo_CHECK(lo_allocations == wanted_rows);
                             lo_CHECK(lo_texture_calls == (lo_named ? successful : 0));
-                            lo_CHECK(lo_releases == lo_texture_calls && lo_acquires == lo_texture_calls &&
-                                     lo_texture_stage == 0);
+                            lo_CHECK(lo_releases == 0 && lo_acquires == lo_texture_calls && lo_texture_stage == 0);
                             lo_CHECK(memcmp(op_shields, lo_expected, sizeof(lo_expected)) == 0);
                         }
     printf("shield load: %d checks, %d failures\n", lo_checks, lo_failures);

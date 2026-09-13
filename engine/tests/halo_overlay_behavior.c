@@ -58,6 +58,7 @@ static OP_OVERLAY_SAVE hl_expected_block;
 static int hl_write_calls, hl_read_calls, hl_acquire_calls, hl_release_calls, hl_profile;
 static unsigned char hl_owned[4][16], hl_expected_owned[4][16];
 static void *hl_expected_handles[3];
+static int hl_release_slots[3], hl_release_total;
 static void **hl_handle(int index)
 {
     return index == 0 ? &op_halo_sprite_a : index == 1 ? &op_halo_sprite_b : &op_halo_sprite_c;
@@ -91,34 +92,37 @@ static void *halo_overlay_acquire_sprite(char *name)
     hl_expected_handles[n] = value;
     return value;
 }
-static void halo_overlay_release_sprite(void **sprite)
+static void halo_overlay_release_sprite(void *resource)
 {
     int n;
     HL_CHECK(halo_overlay_active);
     if (hl_mode == HL_SHUTDOWN)
     {
-        hl_halo_shutdown_op_release_sprite(sprite);
+        hl_halo_shutdown_op_release_sprite(resource);
         return;
     }
     if (hl_mode == HL_FREE_ALL)
     {
-        lc_halo_free_all_op_release_sprite(sprite);
+        lc_halo_free_all_op_release_sprite(resource);
         return;
     }
     if (hl_mode == HL_DETACH)
     {
-        hl_detach_halo_op_release_sprite(sprite);
+        hl_detach_halo_op_release_sprite(resource);
         return;
     }
     HL_CHECK(hl_mode == HL_CHAIN);
-    n = hl_release_calls++;
+    HL_CHECK(hl_release_calls < hl_release_total);
+    if (hl_release_calls >= hl_release_total)
+        return;
+    n = hl_release_slots[hl_release_calls++];
     HL_CHECK(n >= 0 && n < 3);
     if (n < 0 || n >= 3)
         return;
-    HL_CHECK(sprite == hl_handle(n));
+    HL_CHECK(resource != 0 && resource == *hl_handle(n));
     hl_handles_check();
-    *sprite = hl_owned[3];
-    hl_expected_handles[n] = hl_owned[3];
+    *hl_handle(n) = hl_owned[3];
+    hl_expected_handles[n] = 0;
 }
 void op_save_write(const void *memory, unsigned int bytes)
 {
@@ -196,8 +200,12 @@ static void hl_chain_tests(void)
         op_halo_startup();
         HL_CHECK(hl_acquire_calls == 3 && hl_release_calls == 0);
         hl_handles_check();
+        hl_release_total = 0;
+        for (i = 0; i < 3; ++i)
+            if (n == 8 || (n & (1 << i)))
+                hl_release_slots[hl_release_total++] = i;
         op_halo_shutdown();
-        HL_CHECK(hl_release_calls == 3 && hl_acquire_calls == 3);
+        HL_CHECK(hl_release_calls == hl_release_total && hl_acquire_calls == 3);
         hl_handles_check();
     }
     for (n = 0; n < 2; ++n)

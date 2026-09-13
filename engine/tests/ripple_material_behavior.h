@@ -18,7 +18,6 @@ static char lc_ripple_material_names[8][2][12], lc_ripple_material_expected_name
 static unsigned char lc_ripple_material_owned[10][16], lc_ripple_material_expected_owned[10][16];
 static void *lc_ripple_material_color_result, *lc_ripple_material_alpha_result, *lc_ripple_material_color_material,
     *lc_ripple_material_alpha_material, *lc_ripple_material_compose_result;
-static void **lc_ripple_material_first_local;
 static int lc_ripple_material_slot, lc_ripple_material_stage, lc_ripple_material_profile;
 static void lc_ripple_material_verify_state(void)
 {
@@ -72,26 +71,29 @@ void *lc_ripple_material_op_compose_materials(void *lc_ripple_material_color, vo
     lc_ripple_material_expected[lc_ripple_material_slot].material = lc_ripple_material_compose_result;
     return lc_ripple_material_compose_result;
 }
-void lc_ripple_material_op_release_sprite(void **sprite)
+static void lc_ripple_material_skip_null_releases(void)
 {
-    int lc_ripple_material_n = lc_ripple_material_stage++;
-    lc_ripple_material_CHECK(lc_ripple_material_n == 5 || lc_ripple_material_n == 6);
-    lc_ripple_material_CHECK(sprite != &op_ripple_materials[lc_ripple_material_slot].material);
-    lc_ripple_material_CHECK(
-        *sprite == (lc_ripple_material_n == 5 ? lc_ripple_material_color_result : lc_ripple_material_alpha_result));
+    if (lc_ripple_material_stage == 5 && !lc_ripple_material_color_result)
+        ++lc_ripple_material_stage;
+    if (lc_ripple_material_stage == 6 && !lc_ripple_material_alpha_result)
+        ++lc_ripple_material_stage;
+}
+void lc_ripple_material_op_release_sprite(void *resource)
+{
+    int n;
+    lc_ripple_material_skip_null_releases();
+    n = lc_ripple_material_stage++;
+    lc_ripple_material_CHECK(n == 5 || n == 6);
+    lc_ripple_material_CHECK(resource != 0 &&
+                             resource == (n == 5 ? lc_ripple_material_color_result : lc_ripple_material_alpha_result));
     lc_ripple_material_verify_state();
-    if (lc_ripple_material_n == 5)
-        lc_ripple_material_first_local = sprite;
-    else
-    {
-        lc_ripple_material_CHECK(sprite != lc_ripple_material_first_local);
-        lc_ripple_material_CHECK(*lc_ripple_material_first_local == lc_ripple_material_owned[6]);
-    }
-    *sprite = lc_ripple_material_owned[6];
-    op_ripple_materials[lc_ripple_material_slot].material = lc_ripple_material_owned[lc_ripple_material_n];
-    lc_ripple_material_expected[lc_ripple_material_slot].material = lc_ripple_material_owned[lc_ripple_material_n];
-    lc_ripple_material_owned[0][lc_ripple_material_n] = 0x49;
-    lc_ripple_material_expected_owned[0][lc_ripple_material_n] = 0x49;
+    if (n != 5 && n != 6)
+        return;
+    /* The backend cannot observe either private local pointer slot. */
+    op_ripple_materials[lc_ripple_material_slot].material = lc_ripple_material_owned[n];
+    lc_ripple_material_expected[lc_ripple_material_slot].material = lc_ripple_material_owned[n];
+    lc_ripple_material_owned[0][n] = 0x49;
+    lc_ripple_material_expected_owned[0][n] = 0x49;
 }
 static void lc_ripple_material_run_case(int lc_ripple_material_index, int cached, int mode)
 {
@@ -100,7 +102,6 @@ static void lc_ripple_material_run_case(int lc_ripple_material_index, int cached
     lc_ripple_material_slot = lc_ripple_material_index;
     lc_ripple_material_profile = mode;
     lc_ripple_material_stage = 0;
-    lc_ripple_material_first_local = 0;
     memset(lc_ripple_material_names, 0x65, sizeof(lc_ripple_material_names));
     memset(lc_ripple_material_owned, 0x56, sizeof(lc_ripple_material_owned));
     for (lc_ripple_material_i = 0; lc_ripple_material_i < 8; ++lc_ripple_material_i)
@@ -129,6 +130,7 @@ static void lc_ripple_material_run_case(int lc_ripple_material_index, int cached
     memcpy(lc_ripple_material_expected_owned, lc_ripple_material_owned, sizeof(lc_ripple_material_owned));
     lc_ripple_material_result = op_ripple_material(lc_ripple_material_slot);
     lc_ripple_material_CHECK(lc_ripple_material_result == lc_ripple_material_wanted);
+    lc_ripple_material_skip_null_releases();
     lc_ripple_material_CHECK(lc_ripple_material_stage == (cached ? 0 : 7));
     lc_ripple_material_verify_state();
 }

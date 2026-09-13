@@ -89,7 +89,7 @@ typedef char shield_name_offset[offsetof(OP_SHIELD, name) == 0x60 ? 1 : -1];
 extern int op_shield_count, op_shield_pass, op_shield_other_pass;
 void *op_allocate(unsigned int bytes);
 void op_release(void *memory);
-void op_release_sprite(void **sprite);
+int op_release_sprite(void **sprite);
 void *op_acquire_sprite(char *name);
 void op_shield_draw(int slot);
 void op_detach_halo(OP_ATTACHED_ACTOR *object);

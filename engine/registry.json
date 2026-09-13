@@ -2031,6 +2031,27 @@
         "Authored format only; 80-byte local buffer, bounded fixture names, ignored formatter return. Resource backend receives formatted buffer, not original base pointer."
       ],
       "exceptions": []
+    },
+    {
+      "id": "sprite_release",
+      "module": "sprite_resources",
+      "analysis_name": "release_sprite_resource",
+      "purpose": "Release the captured resource and clear its pointer slot",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/sprite-release-acceptance.md",
+        "research/campaign-029-sprite-release/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/sprite_release_behavior.h",
+        "tests/shield_lifecycle_behavior.c",
+        "tests/halo_overlay_behavior.c",
+        "tests/ripple_material_behavior.h"
+      ],
+      "quirks": [
+        "NULL slot or NULL handle returns0 without backend; nonnull resource release clears current slot after callback and returns1."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

@@ -20,4 +20,6 @@ extern char op_sprite_format[];
 int op_format_sprite_name(char *, char *, ...);
 void *op_acquire_resource(unsigned int, char *);
 void *op_acquire_sprite(char *);
+void op_release_resource(void *);
+int op_release_sprite(void **);
 #endif

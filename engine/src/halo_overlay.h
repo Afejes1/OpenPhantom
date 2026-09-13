@@ -30,7 +30,7 @@ extern int op_halo_count;
 void op_save_write(const void *memory, unsigned int bytes);
 int op_save_read(void *memory, unsigned int bytes);
 void *op_acquire_sprite(char *name);
-void op_release_sprite(void **sprite);
+int op_release_sprite(void **sprite);
 void op_halo_draw_actor(OP_ATTACHED_ACTOR *actor);
 void op_shield_draw_attached(int slot, float *transform);
 void op_letterbox_set_enabled(int enabled);

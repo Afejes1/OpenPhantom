@@ -1,5 +1,5 @@
 static int effects_chain_active;
-static void effects_chain_release_sprite(void **sprite);
+static void effects_chain_release_sprite(void *resource);
 static void *effects_chain_acquire_sprite(char *name);
 static void effects_chain_write(const void *memory, unsigned int bytes);
 static int effects_chain_read(void *memory, unsigned int bytes);
@@ -8,12 +8,12 @@ static int effects_chain_read(void *memory, unsigned int bytes);
 #include "../src/halo_overlay.h"
 #include "../src/zap_effects.h"
 static int zap_effects_active, ripple_effects_active;
-static void zap_effects_release_sprite(void **sprite);
+static void zap_effects_release_sprite(void *resource);
 static void *zap_effects_acquire_sprite(char *name);
-static void ripple_effects_release_sprite(void **sprite);
+static void ripple_effects_release_sprite(void *resource);
 static void *ripple_effects_acquire_sprite(char *name);
 static int halo_overlay_active;
-static void halo_overlay_release_sprite(void **sprite);
+static void halo_overlay_release_sprite(void *resource);
 static void *halo_overlay_acquire_sprite(char *name);
 #include "shield_calloc_behavior.h"
 #include "shield_draw_released_behavior.h"
@@ -22,6 +22,8 @@ static void *halo_overlay_acquire_sprite(char *name);
 #include "shield_set_texture_behavior.h"
 #include "shield_stop_behavior.h"
 #include "sprite_acquire_behavior.h"
+#include "sprite_release_behavior.h"
+static int sr_active;
 #include <limits.h>
 #include <stdio.h>
 #include <string.h>
@@ -159,16 +161,19 @@ static void sl_chain_release(void *memory)
     sl_predict_clear(index);
     ++sl_chain_field;
 }
-static void sl_chain_release_sprite(void **sprite)
+static void sl_chain_release_sprite(void *resource)
 {
+    void **sprite;
     if (!sl_prepare_record())
         return;
+    sprite = &op_shields[sl_chain_slot].sprite;
+    SL_CHECK(resource != 0 && resource == *sprite);
     SL_CHECK(sl_chain_field == 8);
     SL_CHECK(sprite == &op_shields[sl_chain_slot].sprite);
     sl_verify_state();
     ++sl_chain_sprites;
     *sprite = sl_owned[sl_chain_slot][9];
-    sl_expected[sl_chain_slot].sprite = sl_owned[sl_chain_slot][9];
+    sl_expected[sl_chain_slot].sprite = 0;
     op_shields[sl_chain_slot].attached = &sl_actor[1].value;
     sl_expected[sl_chain_slot].attached = 0;
     op_shields[sl_chain_slot].active = -7;
@@ -267,11 +272,12 @@ static void sl_chain_tests(void)
     sl_destroy_all(0, 1, 0);
     sl_destroy_all(0, 0, 1);
 }
-static void sl_object_release_halo(void **sprite)
+static void sl_object_release_halo(void *resource)
 {
+    void **sprite = &op_halos[0].sprite;
     int valid;
     OP_ATTACHED_ACTOR *object = &sl_actor[0].value;
-    SL_CHECK(sprite == &op_halos[0].sprite);
+    SL_CHECK(resource != 0 && resource == *sprite);
     SL_CHECK(op_halos[0].owner == 0 && op_halo_count == 1);
     SL_CHECK(memcmp(op_zaps, sl_before_zaps, sizeof(sl_before_zaps)) == 0);
     *sprite = 0;
@@ -385,35 +391,40 @@ static void shield_lifecycle_release(void *memory)
     else
         SL_CHECK(0);
 }
-void op_release_sprite(void **sprite)
+void op_release_resource(void *resource)
 {
+    if (sr_active)
+    {
+        sr_op_release_resource(resource);
+        return;
+    }
     if (effects_chain_active)
     {
-        effects_chain_release_sprite(sprite);
+        effects_chain_release_sprite(resource);
         return;
     }
     if (zap_effects_active)
     {
-        zap_effects_release_sprite(sprite);
+        zap_effects_release_sprite(resource);
         return;
     }
     if (ripple_effects_active)
     {
-        ripple_effects_release_sprite(sprite);
+        ripple_effects_release_sprite(resource);
         return;
     }
     if (halo_overlay_active)
     {
-        halo_overlay_release_sprite(sprite);
+        halo_overlay_release_sprite(resource);
         return;
     }
     SL_CHECK(shield_lifecycle_active);
     if (sl_mode == SL_TEXTURE)
-        sl_shield_set_texture_op_release_sprite(sprite);
+        sl_shield_set_texture_op_release_sprite(resource);
     else if (sl_mode == SL_CHAIN)
-        sl_chain_release_sprite(sprite);
+        sl_chain_release_sprite(resource);
     else if (sl_mode == SL_OBJECT)
-        sl_object_release_halo(sprite);
+        sl_object_release_halo(resource);
     else
         SL_CHECK(0);
 }
@@ -495,6 +506,9 @@ static int op_test_shield_lifecycle(void)
     int total;
     SL_CHECK(!shield_lifecycle_active && !world_chunks_active && !world_names_active);
     shield_lifecycle_active = 1;
+    sr_active = 1;
+    status += sr_main();
+    sr_active = 0;
     sa_active = 1;
     status += sa_main();
     sa_active = 0;
@@ -518,11 +532,13 @@ static int op_test_shield_lifecycle(void)
     SL_CHECK(world_readers_allocate_calls == previous_allocate);
     SL_CHECK(wc_backend_events == previous_chunks);
     SL_CHECK(sa_backend_stage == 0 && sa_connected_calls > 0);
-    total = sa_checks + sl_checks + sl_shield_free_checks + sl_shield_calloc_checks + sl_shield_stop_checks +
-            sl_shield_save_size_checks + sl_shield_set_texture_checks + sl_shield_draw_released_checks;
+    total = sr_checks + sa_checks + sl_checks + sl_shield_free_checks + sl_shield_calloc_checks +
+            sl_shield_stop_checks + sl_shield_save_size_checks + sl_shield_set_texture_checks +
+            sl_shield_draw_released_checks;
     printf("shield lifecycle total: %d checks, %d failures\n", total,
-           sa_failures + sl_failures + sl_shield_free_failures + sl_shield_calloc_failures + sl_shield_stop_failures +
-               sl_shield_save_size_failures + sl_shield_set_texture_failures + sl_shield_draw_released_failures);
+           sr_failures + sa_failures + sl_failures + sl_shield_free_failures + sl_shield_calloc_failures +
+               sl_shield_stop_failures + sl_shield_save_size_failures + sl_shield_set_texture_failures +
+               sl_shield_draw_released_failures);
     return status + (sl_failures != 0);
 }
 #undef SL_CHECK

@@ -46,17 +46,17 @@ static void *zap_effects_acquire_sprite(char *name)
     ZP_CHECK(name == op_zap_name && op_zap_sprite == 0);
     return zp_result ? zp_owned[0] : 0;
 }
-static void zap_effects_release_sprite(void **sprite)
+static void zap_effects_release_sprite(void *resource)
 {
     ZP_CHECK(zap_effects_active);
     if (zp_mode == ZP_STOP)
     {
-        lc_zap_shutdown_op_release_sprite(sprite);
+        lc_zap_shutdown_op_release_sprite(resource);
         return;
     }
     ZP_CHECK(zp_mode == ZP_CHAIN && zp_releases++ == 0);
-    ZP_CHECK(sprite == &op_zap_sprite && *sprite == (zp_result ? zp_owned[0] : 0));
-    *sprite = zp_owned[1];
+    ZP_CHECK(resource != 0 && resource == op_zap_sprite && resource == zp_owned[0]);
+    op_zap_sprite = zp_owned[1];
 }
 #include "zap_geometry_behavior.h"
 typedef struct ZP_ACTORS
@@ -77,7 +77,7 @@ static void zp_chain_tests(void)
         ZP_CHECK(op_zap_startup() == zp_result);
         ZP_CHECK(zp_acquires == 1);
         ZP_CHECK(op_zap_shutdown() == 1);
-        ZP_CHECK(zp_releases == 1 && op_zap_sprite == zp_owned[1]);
+        ZP_CHECK(zp_releases == zp_result && op_zap_sprite == 0);
     }
     memset(&zp_actors, 0x56, sizeof(zp_actors));
     zp_expected_actors = zp_actors;

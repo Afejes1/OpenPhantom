@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "acceptance-020",
+  "baseline_commit": "8925e66b670de7fc67db8f1bfa664a91188c15cf",
+  "functions": [
+    "sprite_release"
+  ],
+  "promotions": 1,
+  "registered_before": 110,
+  "registered_after": 111,
+  "full_span_bytes": 71,
+  "verified_operands": 1,
+  "status": "integration-pending",
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

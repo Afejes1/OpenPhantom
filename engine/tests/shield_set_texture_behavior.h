@@ -34,14 +34,16 @@ static void sl_shield_set_texture_verify_state(void)
     SL_SHIELD_SET_TEXTURE_CHECK(memcmp(sl_shield_set_texture_objects, sl_shield_set_texture_expected_objects,
                                        sizeof(sl_shield_set_texture_objects)) == 0);
 }
-static void sl_shield_set_texture_op_release_sprite(void **sprite)
+static void sl_shield_set_texture_op_release_sprite(void *resource)
 {
+    void **sprite = &op_shields[sl_shield_set_texture_selected].sprite;
+    SL_SHIELD_SET_TEXTURE_CHECK(resource != 0 && resource == *sprite);
     SL_SHIELD_SET_TEXTURE_CHECK(sl_shield_set_texture_events++ == 0);
     SL_SHIELD_SET_TEXTURE_CHECK(sprite == &op_shields[sl_shield_set_texture_selected].sprite);
     SL_SHIELD_SET_TEXTURE_CHECK(*sprite == sl_shield_set_texture_objects[0]);
     sl_shield_set_texture_verify_state();
     *sprite = sl_shield_set_texture_objects[1];
-    sl_shield_set_texture_expected[sl_shield_set_texture_selected].sprite = sl_shield_set_texture_objects[1];
+    sl_shield_set_texture_expected[sl_shield_set_texture_selected].sprite = 0;
     if (sl_shield_set_texture_mutate)
     {
         op_shields[sl_shield_set_texture_selected].active = 0;

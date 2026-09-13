@@ -19,10 +19,10 @@ static void *ripple_effects_acquire_sprite(char *name)
     RP_CHECK(ripple_effects_active);
     return lc_ripple_material_op_acquire_sprite(name);
 }
-static void ripple_effects_release_sprite(void **sprite)
+static void ripple_effects_release_sprite(void *resource)
 {
     RP_CHECK(ripple_effects_active);
-    lc_ripple_material_op_release_sprite(sprite);
+    lc_ripple_material_op_release_sprite(resource);
 }
 void *op_sprite_get_material(void *sprite)
 {
