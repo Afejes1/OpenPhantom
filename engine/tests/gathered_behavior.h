@@ -1,3 +1,5 @@
+static int fp_active;
+static int fp_draw_surface_buckets(void *, const void *, unsigned int);
 /* Interaction tests for the wrapper, not a reconstructed surface renderer. */
 unsigned int op_gathered_surface_count;
 void *op_gathered_world;
@@ -9,6 +11,8 @@ static int gathered_return;
 
 int op_draw_surface_buckets(void *world, const void *camera_data, unsigned int count)
 {
+    if (fp_active)
+        return fp_draw_surface_buckets(world, camera_data, count);
     ++gathered_calls;
     gathered_seen_world = world;
     gathered_seen_camera = camera_data;

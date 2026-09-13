@@ -121,6 +121,13 @@ unsigned int op_backend_render_flags(void);
 int op_backend_fog_capability(void);
 void op_set_frame_state(void);
 
+/* Preserve observed caller ABI, including currently unused surface arguments. */
+void op_prepare_world(op_world_fog *world);
+void op_traverse_world(op_world_fog *world);
+void op_prepare_world_surfaces(op_world_fog *world, void *camera_data, int zero);
+void op_prepare_graphics_submission(void);
+void op_frame_prepare(void);
+
 /* Partial surface and gathered-list layouts established at the call sites. */
 typedef struct op_draw_surface {
     unsigned char opaque_00[0x0e];

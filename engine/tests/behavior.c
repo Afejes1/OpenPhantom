@@ -115,6 +115,7 @@ static void clip_flag_tests(void)
 #include "queue_behavior.h"
 #include "gathered_behavior.h"
 #include "frame_state_behavior.h"
+#include "frame_prepare_behavior.h"
 #include "surface_entry_behavior.h"
 #include "scan_behavior.h"
 #include "bgl_state_behavior.c"
@@ -173,6 +174,7 @@ int main(void)
     queue_tests();
     gathered_tests();
     frame_state_tests();
+    failures += fp_main();
     surface_entry_tests();
     scan_tests();
     failures += op_test_bgl_state();
