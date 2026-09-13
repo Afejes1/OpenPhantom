@@ -17,8 +17,8 @@
   "weekly_account_usage_start_percent": 24,
   "historical_accepted_functions": 14,
   "historical_evidence_records": 19,
-  "new_exact_functions": 29,
-  "new_exact_bytes": 1732,
+  "new_exact_functions": 37,
+  "new_exact_bytes": 2632,
   "new_near_matches": 0,
   "new_body_exact_layout_pending": 0,
   "checkpoints": [
@@ -79,15 +79,28 @@
       "ci_run_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34739403557",
       "full_regression": "skipped by feature-branch workflow",
       "published_utc": "2026-09-13T05:06:11.580895+00:00"
+    },
+    {
+      "phase": "campaign-008",
+      "commit": "23f1de9fde3f0617fc929558be0e83615a7619ef",
+      "ci": "passed",
+      "new_exact_functions": 8,
+      "new_exact_bytes": 900,
+      "new_research_candidates": 0,
+      "focused_checks": 454,
+      "result": "research/campaign-008/results.md",
+      "ci_run_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34740736113",
+      "full_regression": "skipped by feature-branch workflow",
+      "published_utc": "2026-09-13T05:38:44.273134+00:00"
     }
   ],
-  "current_work": "Campaign008 verified: eight complete matches,900bytes,454focused checks; implementation publication and featureCI pending.",
-  "resume": "Finish Campaign008 publication then start009 with untouched sound lifecycle helpers. Fixed08:48UTC deadline and08:38 implementation stop unchanged.",
+  "current_work": "Campaign008 published and featureCI passed; eight full matches including48bytes of switch tables. Worktree ready for Campaign009.",
+  "resume": "Start Campaign009 with the same Sol/medium worker and unchanged per-function caps. Prepare untouched sound-initChannels0041609E,loadRef0041618B,freeExtraRefs00416589,startSample00417659,setMasterVolume00417379,playVoice004172B4 as practical; these are scheduling leads, not validated packets. No retry of capped older candidates. Stop new implementation08:38UTC and finalize/pause by08:48UTC.",
   "interruptions": [],
   "original_game_executed": false,
   "full_regression_run": false,
   "final_report": null,
   "new_research_candidates": 4,
   "weekly_account_usage_observed_percent": 30,
-  "last_campaign_finished_utc": "2026-09-13T05:06:11.580913+00:00"
+  "last_campaign_finished_utc": "2026-09-13T05:38:44.273134+00:00"
 }
