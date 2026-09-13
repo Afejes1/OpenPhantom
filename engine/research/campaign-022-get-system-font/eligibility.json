@@ -1,0 +1,7 @@
+{
+  "team_status": "not_done",
+  "team_name": "font3d_getSysFont",
+  "source_line": 1871,
+  "priority_eligible": true,
+  "reason": "Manifest verified before source authored; reviewer found no existing candidate duplicate."
+}

@@ -1,0 +1,20 @@
+{
+  "id": "shield_set_visibility_bypass",
+  "address": 4436057,
+  "size": 67,
+  "body_size": 67,
+  "source": "src/shield_set_visibility_bypass.c",
+  "symbol": "_op_shield_set_visibility_bypass",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 30,
+      "address": 7117360,
+      "symbol": "_op_shields"
+    }
+  ]
+}

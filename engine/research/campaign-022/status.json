@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "campaign-022",
+  "status": "verified-awaiting-publication",
+  "started_utc": "2026-09-13T15:34:39.821497+00:00",
+  "implementation_stop_utc": "2026-09-13T16:10:00Z",
+  "deadline_utc": "2026-09-13T16:20:00Z",
+  "worker": "parent",
+  "independent_reviewer": "comparison_inventory",
+  "max_attempts_per_case": 9,
+  "max_minutes_per_case": 5,
+  "new_warning_waivers": [],
+  "byte_exclusions": [],
+  "original_game_executed": false,
+  "completed_utc": "2026-09-13T15:55:25.802199+00:00",
+  "exact_functions": 6,
+  "exact_bytes": 319,
+  "overlap_exact_functions": 2,
+  "overlap_exact_bytes": 29,
+  "near_matches": 2,
+  "fixture_checks": 3952,
+  "accepted_promotions": 0
+}

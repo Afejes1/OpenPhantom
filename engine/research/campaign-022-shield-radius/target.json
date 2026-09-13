@@ -1,0 +1,30 @@
+{
+  "id": "shield_radius",
+  "address": 4435923,
+  "size": 67,
+  "body_size": 67,
+  "source": "src/shield_radius.c",
+  "symbol": "_op_shield_radius",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 18,
+      "address": 4883820,
+      "float32": 0.0
+    },
+    {
+      "offset": 34,
+      "address": 7117360,
+      "symbol": "_op_shields"
+    },
+    {
+      "offset": 51,
+      "address": 4883820,
+      "float32": 0.0
+    }
+  ]
+}

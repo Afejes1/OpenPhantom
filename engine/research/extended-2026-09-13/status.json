@@ -18,8 +18,8 @@
   "evidence_records_at_start": 21,
   "weekly_shared_usage_start_percent": 39,
   "promotions": 13,
-  "new_exact_functions": 25,
-  "new_exact_bytes": 3058,
+  "new_exact_functions": 31,
+  "new_exact_bytes": 3377,
   "checkpoints": [
     {
       "id": "acceptance-002",
@@ -151,16 +151,34 @@
       "new_exact_functions": 0,
       "registered_total": 34,
       "result": "../acceptance-006/result.json",
-      "full_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34765524052"
+      "full_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34765524052",
+      "evidence_commit": "b597c97b4970c6ccc940558ff62bb42a5dc81686",
+      "evidence_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34765929257",
+      "evidence_ci_conclusion": "success"
+    },
+    {
+      "id": "campaign-022",
+      "status": "verified",
+      "new_exact_functions": 6,
+      "new_exact_bytes": 319,
+      "team_done_overlap_exact_functions": 2,
+      "team_done_overlap_exact_bytes": 29,
+      "near_matches": 2,
+      "fixture_checks": 3952,
+      "promotions": 0,
+      "results": "../campaign-022/results.md",
+      "verified_utc": "2026-09-13T15:55:25.802199+00:00"
     }
   ],
-  "current_work": "Acceptance006 passed; preparing final bounded cell/emitter batch.",
+  "current_work": "Campaign022 verified; final publication and window audit.",
   "original_game_executed": false,
   "weekly_shared_usage_latest_percent": 43,
-  "last_checkpoint_utc": "2026-09-13T15:31:53.779318+00:00",
+  "last_checkpoint_utc": "2026-09-13T15:55:25.802199+00:00",
   "last_source_commit": "937ab726354d4b2e226b2b38e13a593671d5f811",
   "usage_observed_utc": "2026-09-13T13:59:42.009190+00:00",
   "usage_observation_scope": "Rounded account-wide weekly usage;39 at window start,43 now, not isolated campaign billing.",
-  "new_near_matches": 4,
-  "new_research_candidates": 1
+  "new_near_matches": 6,
+  "new_research_candidates": 1,
+  "team_done_overlap_exact_functions": 2,
+  "team_done_overlap_exact_bytes": 29
 }

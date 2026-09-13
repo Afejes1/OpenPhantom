@@ -1,0 +1,20 @@
+{
+  "id": "shield_set_colour",
+  "address": 4435687,
+  "size": 94,
+  "body_size": 94,
+  "source": "src/shield_set_colour.c",
+  "symbol": "_op_shield_set_colour",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 30,
+      "address": 7117360,
+      "symbol": "_op_shields"
+    }
+  ]
+}

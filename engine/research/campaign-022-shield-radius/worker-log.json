@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "case": "shield_radius",
+  "started_utc": "2026-09-13T15:47:08.303772+00:00",
+  "implementation_by": "parent",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed C from reviewed full static getter contract",
+      "started_utc": "2026-09-13T15:47:10.337489+00:00",
+      "finished_utc": "2026-09-13T15:47:11.969404+00:00",
+      "returncode": 0,
+      "source_sha256": "e39938982e17cdfa46a89c6d336a3fbce483af03debecbf1cb236d47838ea9da",
+      "report": "engine/build/campaign-001-shield_radius-838e8fffa77f/research-result.json",
+      "report_sha256": "a69b30fe1b946bafaffc7ba3dc77dd365ce01df570425e754b1c1d902ee618dd",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 67,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.407311,
+      "stderr": ""
+    }
+  ]
+}

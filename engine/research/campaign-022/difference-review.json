@@ -1,0 +1,35 @@
+[
+  {
+    "id": "cell_lod_runs",
+    "different_offsets": [
+      42,
+      148,
+      151,
+      176,
+      198,
+      216,
+      222,
+      229,
+      245
+    ],
+    "different_bytes": 9,
+    "different_percent": 3.488372093023256,
+    "classification": "Only one-byte EBP stack displacements differ; instruction boundaries and mnemonics unchanged. Unaccepted near-match.",
+    "selected_attempt": 1
+  },
+  {
+    "id": "cell_last_lod_flags",
+    "different_offsets": [
+      49,
+      135,
+      138,
+      162,
+      193,
+      199
+    ],
+    "different_bytes": 6,
+    "different_percent": 2.4096385542168677,
+    "classification": "Only one-byte EBP stack displacements differ; instruction boundaries and mnemonics unchanged. Unaccepted near-match.",
+    "selected_attempt": 9
+  }
+]

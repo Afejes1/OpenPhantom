@@ -1,0 +1,7 @@
+{
+  "team_status": "done",
+  "team_name": "emitter_endLevel",
+  "source_line": 199,
+  "priority_eligible": false,
+  "reason": "Team-done wrappers were compiled before eligibility review returned; retained transparently, excluded from priority score and promotions."
+}

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "case": "get_system_font",
+  "started_utc": "2026-09-13T15:51:49.949534+00:00",
+  "implementation_by": "parent",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed C from reviewed full static getter contract",
+      "started_utc": "2026-09-13T15:51:55.310642+00:00",
+      "finished_utc": "2026-09-13T15:51:56.926911+00:00",
+      "returncode": 0,
+      "source_sha256": "23869b10f1c0d557c4e18c11481cb5868b2179cfd661da5178109b4d67c5087f",
+      "report": "engine/build/campaign-001-get_system_font-6c58b5f948a6/research-result.json",
+      "report_sha256": "865749657c7bddd09ab482f210101ac2267666f29e975cc22aa5e52086dfdd17",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 10,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.400796,
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "get_system_font",
+  "address": 4634452,
+  "size": 10,
+  "body_size": 10,
+  "source": "src/get_system_font.c",
+  "symbol": "_op_get_system_font",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 4945900,
+      "symbol": "_op_system_font"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "team_status": "not_done",
+  "team_name": "bapmap_markLodRunTail",
+  "source_line": 1489,
+  "priority_eligible": true,
+  "reason": "Team not_done; no existing reconstruction at preparation."
+}

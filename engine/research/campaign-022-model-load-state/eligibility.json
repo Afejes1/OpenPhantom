@@ -1,0 +1,7 @@
+{
+  "team_status": "not_done",
+  "team_name": "sw3d_getLoadState",
+  "source_line": 1761,
+  "priority_eligible": true,
+  "reason": "Manifest verified before source authored; reviewer found no existing candidate duplicate."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "cell_last_lod_flags",
+  "address": 4322174,
+  "size": 249,
+  "body_size": 249,
+  "source": "src/cell_last_lod_flags.c",
+  "symbol": "_op_cell_last_lod_flags",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

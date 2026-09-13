@@ -1,0 +1,27 @@
+{
+  "id": "emitter_shutdown",
+  "address": 4324741,
+  "size": 17,
+  "body_size": 17,
+  "source": "src/emitter_shutdown.c",
+  "symbol": "_op_emitter_shutdown",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 4331404,
+      "kind": "rel32-call",
+      "symbol": "_op_clear_emitters"
+    },
+    {
+      "offset": 9,
+      "address": 4337037,
+      "kind": "rel32-call",
+      "symbol": "_op_release_templates"
+    }
+  ]
+}

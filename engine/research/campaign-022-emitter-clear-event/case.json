@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "emitter_clear_event",
+  "candidate": "candidate.c",
+  "symbol": "_op_emitter_clear_event",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

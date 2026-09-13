@@ -1,0 +1,7 @@
+{
+  "team_status": "not_done",
+  "team_name": "fxshield_getRadius",
+  "source_line": 1635,
+  "priority_eligible": true,
+  "reason": "Manifest verified before source authored; reviewer found no existing candidate duplicate."
+}

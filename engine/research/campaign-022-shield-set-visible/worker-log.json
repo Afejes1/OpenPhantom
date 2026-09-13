@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "case": "shield_set_visible",
+  "started_utc": "2026-09-13T15:51:49.949534+00:00",
+  "implementation_by": "parent",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed C from reviewed full static getter contract",
+      "started_utc": "2026-09-13T15:51:52.081452+00:00",
+      "finished_utc": "2026-09-13T15:51:53.701686+00:00",
+      "returncode": 0,
+      "source_sha256": "88eced6b37c8f5a22ceb050e8c330b28a9ccfa96e190988f5be9eb41a2e88e9c",
+      "report": "engine/build/campaign-001-shield_set_visible-fa3a1880d9a5/research-result.json",
+      "report_sha256": "7ab9f58a2d30ff5852be954a2ccdbedd59bba1e1b4045cae8c9a62be5b4cf35f",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 67,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.403653,
+      "stderr": ""
+    }
+  ]
+}

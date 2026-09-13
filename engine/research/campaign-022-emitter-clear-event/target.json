@@ -1,0 +1,21 @@
+{
+  "id": "emitter_clear_event",
+  "address": 4324888,
+  "size": 12,
+  "body_size": 12,
+  "source": "src/emitter_clear_event.c",
+  "symbol": "_op_emitter_clear_event",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 4331404,
+      "kind": "rel32-call",
+      "symbol": "_op_clear_emitters"
+    }
+  ]
+}

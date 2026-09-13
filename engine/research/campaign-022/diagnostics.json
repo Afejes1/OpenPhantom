@@ -1,0 +1,11 @@
+{
+  "fixture_compile_failures": [
+    {
+      "id": "cell_last_lod_flags",
+      "report": "engine/build/campaign-001-cell_last_lod_flags-0d1a6ff0d2cb/research-result.json",
+      "diagnostic": "C4244 two integer ternary results assigned to unsigned char under /W4 /WX",
+      "resolution": "Explicit unsigned-char casts for proven byte-range fixture values; no warning waiver or candidate change."
+    }
+  ],
+  "eligibility_correction": "Two emitter wrappers compiled before review established team-done status; retained as overlap evidence and excluded from priority results."
+}

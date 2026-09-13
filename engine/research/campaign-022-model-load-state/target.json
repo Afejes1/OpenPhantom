@@ -1,0 +1,14 @@
+{
+  "id": "model_load_state",
+  "address": 4572283,
+  "size": 14,
+  "body_size": 14,
+  "source": "src/model_load_state.c",
+  "symbol": "_op_model_load_state",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

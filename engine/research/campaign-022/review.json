@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "campaign": "022",
+  "reviewed_utc": "2026-09-13T15:55:25.802199+00:00",
+  "cases": [
+    {
+      "id": "cell_last_lod_flags",
+      "independent_reviewer": "comparison_inventory",
+      "model": "gpt-5.6-sol",
+      "source_api_fixture_review": "No material findings after full static contract and independent fixture review.",
+      "candidate_sha256": "75ed215937ec57a14f5b9df66a2694cc1169bd179764bea990ea12cc92a3b22f",
+      "api_sha256": "1fab69710e337d251ef882dff472b540afa0334c175bda4cb8361570403a0c69",
+      "fixture_sha256": "556c01436fcd855c000e46995a5b205e09f3f3a5fbaf0343faa30f1e0038d092",
+      "result_sha256": "1882f63f23085c271c635d2bb6ce7e3ee7521a6df8ac458f47a9d28299443e27"
+    },
+    {
+      "id": "cell_lod_runs",
+      "independent_reviewer": "comparison_inventory",
+      "model": "gpt-5.6-sol",
+      "source_api_fixture_review": "No material findings after full static contract and independent fixture review.",
+      "candidate_sha256": "58d24e1f6b6fd1a23d6acd8ee33eeb041d6002a4b4e8fe5643019fbbd2e825a1",
+      "api_sha256": "4cc3f14605dcce6c59e8ab2688abc524c5512bf76823abb28fbbd45e4d23e200",
+      "fixture_sha256": "0ae46e8e6e95137029dc7009890af2c18f4ef4d055a7a14b4e23b4bb549a48e2",
+      "result_sha256": "b827a5d00aa7db78b634dcb0d924956c8f466ed5965c44691b599ad7f734cc30"
+    },
+    {
+      "id": "emitter_clear_event",
+      "independent_reviewer": "comparison_inventory",
+      "model": "gpt-5.6-sol",
+      "source_api_fixture_review": "No material findings after full static contract and independent fixture review.",
+      "candidate_sha256": "fb40712d9af8b35033cec901e1b933fb6b2ac13d2a75f77d48bdb381550ac988",
+      "api_sha256": "0924c7af0901ea3cf202f1fb27aa2adb9ba7f6e486eca27af2ca586d569f2327",
+      "fixture_sha256": "30115cdabd76edf982841b10ff41145f43d3dc5bc0ad658314a1a641322e7751",
+      "result_sha256": "c49661a9948effd81e2f82eb317c735e3109e58d47b2830fdefb33ea8dbe4d86"
+    },
+    {
+      "id": "emitter_shutdown",
+      "independent_reviewer": "comparison_inventory",
+      "model": "gpt-5.6-sol",
+      "source_api_fixture_review": "No material findings after full static contract and independent fixture review.",
+      "candidate_sha256": "3d2632d53cec26ca91d207decc24beeb52f480110c49b0ebae91aefb5fa40397",
+      "api_sha256": "9c73489c3d0ce089d19e3c2e3023feb839c1139de1ed25a791919db0cfbcef98",
+      "fixture_sha256": "9b52b6b5b2f39c7ac763d511b6f9b8e12c064df21e2588dc47ae5e308bf73e5a",
+      "result_sha256": "2952580ba708520c387bcd1515c1f5e8336d066ca8e309a554402b36a755dfc7"
+    },
+    {
+      "id": "get_system_font",
+      "independent_reviewer": "comparison_inventory",
+      "model": "gpt-5.6-sol",
+      "source_api_fixture_review": "No material findings after full static contract and independent fixture review.",
+      "candidate_sha256": "23869b10f1c0d557c4e18c11481cb5868b2179cfd661da5178109b4d67c5087f",
+      "api_sha256": "1ffbac6dcde34a9a6305b16dc7806ef322d4a175795827a8068b3aa7803ed551",
+      "fixture_sha256": "6749ef72e15080f68b6471de4bfcfc3568bf40e0bbf37bea08cba53cd0d54d42",
+      "result_sha256": "2d0db9a265846165d975b2fc6108bdf4a351d03609e30594fbe840848ff0513c"
+    },
+    {
+      "id": "model_load_state",
+      "independent_reviewer": "comparison_inventory",
+      "model": "gpt-5.6-sol",
+      "source_api_fixture_review": "No material findings after full static contract and independent fixture review.",
+      "candidate_sha256": "bcd6798f7c71af8104522df5de9ed8bc56e76cb4639cc89399babc9f646c98d5",
+      "api_sha256": "4b5669abc174dc0b3b54b4caab424a6d2716b6aa39010c0b0e5d7f79f6241045",
+      "fixture_sha256": "31d37e9d80c750c6ba56d66f8d5a2e51a0ff2715349059fe737fe356fb1aeb6f",
+      "result_sha256": "de2a9123d8a00a59eae2bd1299d3248a71d948554b6433f721e558de7c91adc6"
+    },
+    {
+      "id": "shield_radius",
+      "independent_reviewer": "comparison_inventory",
+      "model": "gpt-5.6-sol",
+      "source_api_fixture_review": "No material findings after full static contract and independent fixture review.",
+      "candidate_sha256": "e39938982e17cdfa46a89c6d336a3fbce483af03debecbf1cb236d47838ea9da",
+      "api_sha256": "77e6c2313919520b84a3d53d47fe7d12a2b308161518ba24cf340024b4d03143",
+      "fixture_sha256": "440aa9218c16a47fe9dede27b4750cb12aed2fbf1632a9fc391b5aacab115ee0",
+      "result_sha256": "5b709d21a0194e32a00a3a9b016bdd98aa8399f92ad22dad2145367771f8fd97"
+    },
+    {
+      "id": "shield_set_colour",
+      "independent_reviewer": "comparison_inventory",
+      "model": "gpt-5.6-sol",
+      "source_api_fixture_review": "No material findings after full static contract and independent fixture review.",
+      "candidate_sha256": "737a479416ab8615c2c3d9e666ec1dc3a4d113bad23f3491cb714319e6196cf5",
+      "api_sha256": "2ef649f897893694a7953d5915d7d3f8da47917a28373538fa7629b57debe3ff",
+      "fixture_sha256": "53d9570f7629532a10afd17883ebeb1a85022ffcf389fae03a4dc222f64087f9",
+      "result_sha256": "f10e6ca0af58dd4a901ac63f56801c10d4bfbcedda67ca2369a227f0e9083381"
+    },
+    {
+      "id": "shield_set_visibility_bypass",
+      "independent_reviewer": "comparison_inventory",
+      "model": "gpt-5.6-sol",
+      "source_api_fixture_review": "No material findings after full static contract and independent fixture review.",
+      "candidate_sha256": "9202c19c39fb158b103d029858781a9a6198300d419db12d3fda9b81d395009a",
+      "api_sha256": "477506952d27b1230610e73147162aa4a2b97081d62988d7f84bd35670e44d25",
+      "fixture_sha256": "fbdb49b7db9b2c093fec0933f23ed52136dcbefbb9d59f7f627b9f233ddac922",
+      "result_sha256": "37714d5dbc91670bcf169e219baf8a412c5ba62fe66048958d08a9dc8fa1f02c"
+    },
+    {
+      "id": "shield_set_visible",
+      "independent_reviewer": "comparison_inventory",
+      "model": "gpt-5.6-sol",
+      "source_api_fixture_review": "No material findings after full static contract and independent fixture review.",
+      "candidate_sha256": "88eced6b37c8f5a22ceb050e8c330b28a9ccfa96e190988f5be9eb41a2e88e9c",
+      "api_sha256": "60e2c15372272d5a67d78fb342b6270002d1185195b8f4832c14ff4d02b1a3c0",
+      "fixture_sha256": "b525a83d2c34686dd35de6f05913e566a1cac672b3a5600abda832e3a929a084",
+      "result_sha256": "6e8456301a1c7ceea3800568701462affb588669679263c7149e45e515947bda"
+    }
+  ],
+  "near_difference_review": "difference-review.json",
+  "fixture_compile_diagnostic": "diagnostics.json",
+  "review_scope": "Read-only independent source/API/fixture review plus parent native/Docker equality and input-hash verification."
+}

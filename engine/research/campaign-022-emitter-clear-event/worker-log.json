@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "case": "emitter_clear_event",
+  "started_utc": "2026-09-13T15:34:39.821497+00:00",
+  "implementation_by": "parent",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed C from full static body and caller contract",
+      "started_utc": "2026-09-13T15:34:44.871967+00:00",
+      "finished_utc": "2026-09-13T15:34:46.493929+00:00",
+      "returncode": 0,
+      "source_sha256": "fb40712d9af8b35033cec901e1b933fb6b2ac13d2a75f77d48bdb381550ac988",
+      "report": "engine/build/campaign-001-emitter_clear_event-6a02ac03f612/research-result.json",
+      "report_sha256": "cc39f69364a232f809b49fe01c3fc280c862e394ca03ac603e0a7639aa680c96",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 12,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.39975,
+      "stderr": ""
+    }
+  ]
+}
