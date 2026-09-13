@@ -9,3 +9,5 @@ The shared fixture retains the authored calloc, free, stop, save-size, texture a
 Existing allocator/release callbacks route to the shield fixture only while its explicit scope is active. No original game code or game assets are executed. External heap, sprite, halo, zapline and renderer callbacks remain authored fixtures. Original string names are not included. The unchecked source name copy is retained for byte identity; fixtures use bounded owned strings.
 
 Admission requires a clean committed source build, all registered full-span comparisons, the isolated authored behavior fixture, tooling tests and the full supplemental CI checkpoint. Final executable placement, data and resources remain unverified. No new byte exclusions or warning waivers.
+
+The modern supplemental build uses an equivalent explicit NUL-copy loop for the texture name. VC5 11.00 retains the original strcpy intrinsic branch verbatim. No secure-CRT capacity is invented and no warning is suppressed.

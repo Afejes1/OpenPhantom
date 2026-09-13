@@ -25,5 +25,9 @@
   "byte_exclusions": [],
   "new_warning_waivers": [],
   "tooling_tests_passed": 100,
-  "focused_runner_tests_passed": 19
+  "focused_runner_tests_passed": 19,
+  "initial_build": "engine/build/20260913-135115-9b798072",
+  "initial_all_52_comparisons": "passed",
+  "initial_shared_fixture_checks": 17209,
+  "modern_compatibility_change": "Equivalent NUL copy outside VC5 11.00 branch; no warning waiver"
 }
