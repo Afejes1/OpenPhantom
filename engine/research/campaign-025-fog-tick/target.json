@@ -1,0 +1,127 @@
+{
+  "id": "fog_tick",
+  "address": 4427649,
+  "size": 162,
+  "body_size": 162,
+  "source": "src/fog_tick.c",
+  "symbol": "_op_fog_tick",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 8918512,
+      "symbol": "_op_fog_remaining",
+      "kind": "dir32"
+    },
+    {
+      "offset": 12,
+      "address": 4883692,
+      "float32": 0.0
+    },
+    {
+      "offset": 29,
+      "address": 8918512,
+      "symbol": "_op_fog_remaining",
+      "kind": "dir32"
+    },
+    {
+      "offset": 38,
+      "address": 8918512,
+      "symbol": "_op_fog_remaining",
+      "kind": "dir32"
+    },
+    {
+      "offset": 44,
+      "address": 4883692,
+      "float32": 0.0
+    },
+    {
+      "offset": 56,
+      "address": 8918520,
+      "symbol": "_op_fog_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 61,
+      "address": 8918524,
+      "symbol": "_op_fog_cached_start",
+      "kind": "dir32"
+    },
+    {
+      "offset": 67,
+      "address": 8918504,
+      "symbol": "_op_fog_restore_mode",
+      "kind": "dir32"
+    },
+    {
+      "offset": 75,
+      "address": 4427575,
+      "symbol": "_op_fog_restore",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 83,
+      "address": 8918520,
+      "symbol": "_op_fog_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 89,
+      "address": 8918524,
+      "symbol": "_op_fog_cached_start",
+      "kind": "dir32"
+    },
+    {
+      "offset": 95,
+      "address": 8918512,
+      "symbol": "_op_fog_remaining",
+      "kind": "dir32"
+    },
+    {
+      "offset": 101,
+      "address": 8918516,
+      "symbol": "_op_fog_duration",
+      "kind": "dir32"
+    },
+    {
+      "offset": 107,
+      "address": 8918520,
+      "symbol": "_op_fog_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 115,
+      "address": 4749840,
+      "symbol": "_op_get_render_flags",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 123,
+      "address": 4749856,
+      "symbol": "_op_set_render_flags",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 135,
+      "address": 4750048,
+      "symbol": "_op_renderer_fog_start",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 143,
+      "address": 4749840,
+      "symbol": "_op_get_render_flags",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 151,
+      "address": 4749856,
+      "symbol": "_op_set_render_flags",
+      "kind": "rel32-call"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "effects_object_destroyed",
+  "address": 4427493,
+  "size": 47,
+  "body_size": 47,
+  "source": "src/effects_object_destroyed.c",
+  "symbol": "_op_effects_object_destroyed",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 4432212,
+      "symbol": "_op_detach_halo",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 26,
+      "address": 4437478,
+      "symbol": "_op_shield_stop",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 38,
+      "address": 4445407,
+      "symbol": "_op_detach_zap",
+      "kind": "rel32-call"
+    }
+  ]
+}

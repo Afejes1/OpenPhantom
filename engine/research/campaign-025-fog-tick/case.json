@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "fog_tick",
+  "candidate": "candidate.c",
+  "symbol": "_op_fog_tick",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

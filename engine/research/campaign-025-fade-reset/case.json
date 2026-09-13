@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "fade_reset",
+  "candidate": "candidate.c",
+  "symbol": "_op_fade_reset",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c",
+    "tint_stop.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [
+    "tint_stop.c"
+  ],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "fade_reset",
+  "address": 4429600,
+  "size": 40,
+  "body_size": 40,
+  "source": "src/fade_reset.c",
+  "symbol": "_op_fade_reset",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 4428794,
+      "symbol": "_op_tint_stop",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 10,
+      "address": 8918496,
+      "symbol": "_op_letterbox_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 20,
+      "address": 8918488,
+      "symbol": "_op_letterbox_previous",
+      "kind": "dir32"
+    },
+    {
+      "offset": 30,
+      "address": 8918492,
+      "symbol": "_op_letterbox_step",
+      "kind": "dir32"
+    }
+  ]
+}

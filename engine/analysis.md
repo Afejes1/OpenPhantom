@@ -353,3 +353,7 @@ The chunk-header/skip integration raises registered acceptance to 43 functions w
 ## Campaign024
 
 Seven exact fog/fade/shield helpers add416 bytes and the whole focused batch passes1,357 checks. The offset setter remains an83-versus80-byte research candidate with unresolved return intent. Existing Ghidra context is preserved; original execution remains prohibited. See [Campaign024](research/campaign-024/results.md).
+
+## Campaign025 effects lifecycle
+
+Six additional team-not_done functions match 871 full function bytes under the locked VC5 toolchain, with all relocation operands resolved and 7,829 authored checks passing. Shield destruction preserves ordered callbacks and subsequent clears. Timed fog and tint retain observed x87 and callback ordering. Fog RGB arguments are full integers followed by masks; the stale Ghidra byte-parameter signature was corrected. Fade-reset lifecycle provenance remains unresolved. See research/campaign-025/results.md. This is function-level evidence, not final executable identity.

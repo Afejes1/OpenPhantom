@@ -222,3 +222,20 @@ Address | Original Name | New Name | Confidence | Purpose | Evidence
 0x004393FA | clear_fullscreen_color_fade | unchanged | HIGH | Clear active tint state | Full56-byte match; inactive no-op and retained unrelated state.
 0x0043B67B | render_detached_linked_sphere_effects | unchanged | HIGH | Traverse active stopping shields | Full134-byte match; live32-slot state and callback counter reload.
 0x0043AF45 | FUN_0043af45 | unchanged | MEDIUM source prototype | Copy three shield offset words | Original80 bytes, candidate83; observed EAX result, zero callers; return intent unresolved and research-only.
+
+## Campaign025 ABI correction
+
+Address | Original Name | New Name | Confidence | Purpose | Evidence
+---|---|---|---|---|---
+0x0043906E | start_timed_fog_transition (RGB byte parameters) | same name; RGB integer parameters | HIGH ABI | Preserve full-word colors followed by explicit masks | Three dword argument loads and AND255, complete193-byte VC5 match with int RGB inputs; byte prototype was stale. Ghidra signature corrected and verified; caller re-decompiled and project saved.
+
+## Campaign025 complete function evidence
+
+Address | Original Name | New Name | Confidence | Purpose | Evidence
+---|---|---|---|---|---
+0x00438EE5 | release_bap_object_linked_effects | unchanged | HIGH | Detach halo, stop live shield slot, detach zapline | Complete 47-byte VC5 match; 165 focused checks; native/Docker code and fixups agree.
+0x00439720 | FUN_00439720 | unchanged | MEDIUM lifecycle provenance | Clear fade and three letterbox state fields | Complete 40-byte VC5 match; 18 focused checks; native/Docker code and fixups agree.
+0x0043906E | start_timed_fog_transition | unchanged | HIGH | Initialize timed fog transition | Complete 193-byte VC5 match; 577 focused checks; native/Docker code and fixups agree.
+0x00438F81 | advance_timed_fog_transition | unchanged | HIGH | Interpolate fog and perform terminal restoration | Complete 162-byte VC5 match; 732 focused checks; native/Docker code and fixups agree.
+0x0043B09C | release_linked_sphere_effect | unchanged | HIGH | Release one shield record and decrement live count | Complete 333-byte VC5 match; 5976 focused checks; native/Docker code and fixups agree.
+0x00439370 | start_fullscreen_color_fade | unchanged | HIGH | Publish fullscreen tint state around clock callback | Complete 96-byte VC5 match; 361 focused checks; native/Docker code and fixups agree.

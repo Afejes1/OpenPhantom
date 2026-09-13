@@ -1,0 +1,87 @@
+{
+  "id": "shield_destroy",
+  "address": 4436124,
+  "size": 333,
+  "body_size": 333,
+  "source": "src/shield_destroy.c",
+  "symbol": "_op_shield_destroy",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 33,
+      "address": 7117360,
+      "symbol": "_op_shields",
+      "kind": "dir32"
+    },
+    {
+      "offset": 63,
+      "address": 4436457,
+      "symbol": "_op_shield_free",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 98,
+      "address": 4436457,
+      "symbol": "_op_shield_free",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 133,
+      "address": 4436457,
+      "symbol": "_op_shield_free",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 158,
+      "address": 4436457,
+      "symbol": "_op_shield_free",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 183,
+      "address": 4436457,
+      "symbol": "_op_shield_free",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 208,
+      "address": 4436457,
+      "symbol": "_op_shield_free",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 233,
+      "address": 4436457,
+      "symbol": "_op_shield_free",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 258,
+      "address": 4436457,
+      "symbol": "_op_shield_free",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 283,
+      "address": 4363764,
+      "symbol": "_op_release_sprite",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 311,
+      "address": 7123120,
+      "symbol": "_op_shield_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 320,
+      "address": 7123120,
+      "symbol": "_op_shield_count",
+      "kind": "dir32"
+    }
+  ]
+}

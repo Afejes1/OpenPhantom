@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "fog_start",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T17:32:21.425084+00:00",
+      "finished_utc": "2026-09-13T17:32:23.028768+00:00",
+      "returncode": 0,
+      "source_sha256": "6d232686c708d6738b7cd77d7843704865c41d218678eb95a0c3e57fba77c793",
+      "report": "engine/build/campaign-001-fog_start-f7747fbae9a4/research-result.json",
+      "report_sha256": "0eb42c4944201cf68af5947aa02e9d907ca9334d0fd37f456e613716ffc306df",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 193,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.385112,
+      "stderr": ""
+    }
+  ]
+}

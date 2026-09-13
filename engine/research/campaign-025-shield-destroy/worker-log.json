@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "shield_destroy",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T17:28:21.382458+00:00",
+      "finished_utc": "2026-09-13T17:28:23.003428+00:00",
+      "returncode": 0,
+      "source_sha256": "3feb801fd3a699725988e294e2e8f2531a2a09354738143e523a361895e88a0e",
+      "report": "engine/build/campaign-001-shield_destroy-6ffe818d1393/research-result.json",
+      "report_sha256": "6f39d37e0e4ad9fabbc20513b875afcdaad446849032ab50748df8ceb5d146f2",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 333,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.403826,
+      "stderr": ""
+    }
+  ]
+}

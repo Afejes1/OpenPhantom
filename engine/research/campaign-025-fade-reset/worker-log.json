@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "fade_reset",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T17:28:23.009243+00:00",
+      "finished_utc": "2026-09-13T17:28:24.594567+00:00",
+      "returncode": 0,
+      "source_sha256": "f50d55445c65220731d7c34f57cd26a43fb24572099ab5453cd1770695289932",
+      "report": "engine/build/campaign-001-fade_reset-dd0056017864/research-result.json",
+      "report_sha256": "995baf2e8d4d77030abdc78f9893f4c7267e119db4d9898d12cf46a96f29c33e",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 40,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.366593,
+      "stderr": ""
+    }
+  ]
+}

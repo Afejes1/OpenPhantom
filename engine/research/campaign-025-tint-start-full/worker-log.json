@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "tint_start_full",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T17:28:19.725338+00:00",
+      "finished_utc": "2026-09-13T17:28:21.375935+00:00",
+      "returncode": 0,
+      "source_sha256": "6f6bee474ac26d3e443ac647b7b1d7e9a259860324080b62c0317647b43e617e",
+      "report": "engine/build/campaign-001-tint_start_full-1b6f392296bd/research-result.json",
+      "report_sha256": "2ed6f677c3c8fde43e12e838708956e526c18f9650ade8a4438da3732a72efd6",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 96,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.420466,
+      "stderr": ""
+    }
+  ]
+}

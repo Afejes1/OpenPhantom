@@ -1,0 +1,81 @@
+{
+  "id": "tint_start_full",
+  "address": 4428656,
+  "size": 96,
+  "body_size": 96,
+  "source": "src/tint_start_full.c",
+  "symbol": "_op_tint_start_full",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7097976,
+      "symbol": "_op_tint_active",
+      "kind": "dir32"
+    },
+    {
+      "offset": 15,
+      "address": 7097980,
+      "symbol": "_op_tint_completed",
+      "kind": "dir32"
+    },
+    {
+      "offset": 27,
+      "address": 7097912,
+      "symbol": "_op_tint_mode",
+      "kind": "dir32"
+    },
+    {
+      "offset": 32,
+      "address": 4676397,
+      "symbol": "_op_clock_seconds",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 38,
+      "address": 7097936,
+      "symbol": "_op_tint_start",
+      "kind": "dir32"
+    },
+    {
+      "offset": 47,
+      "address": 7097940,
+      "symbol": "_op_tint_duration",
+      "kind": "dir32"
+    },
+    {
+      "offset": 56,
+      "address": 7097932,
+      "symbol": "_op_tint_hold",
+      "kind": "dir32"
+    },
+    {
+      "offset": 64,
+      "address": 7097928,
+      "symbol": "_op_tint_red",
+      "kind": "dir32"
+    },
+    {
+      "offset": 73,
+      "address": 7097924,
+      "symbol": "_op_tint_green",
+      "kind": "dir32"
+    },
+    {
+      "offset": 82,
+      "address": 7097920,
+      "symbol": "_op_tint_blue",
+      "kind": "dir32"
+    },
+    {
+      "offset": 90,
+      "address": 7097916,
+      "symbol": "_op_tint_alpha",
+      "kind": "dir32"
+    }
+  ]
+}

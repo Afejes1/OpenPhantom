@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-13T17:42:03.680814+00:00",
+  "conclusion": "no-material-defect",
+  "parent_final_snapshot_verified": true,
+  "functions": [
+    {
+      "id": "effects_object_destroyed",
+      "team_status": "not_done",
+      "evidence_category": "exact-function-match",
+      "address": 4427493,
+      "full_span_bytes": 47,
+      "candidate_bytes": 47,
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "checks": 165,
+      "implementation_compiles": 1,
+      "result": "research/campaign-025-effects-object-destroyed/result.json"
+    },
+    {
+      "id": "fade_reset",
+      "team_status": "not_done",
+      "evidence_category": "exact-function-match",
+      "address": 4429600,
+      "full_span_bytes": 40,
+      "candidate_bytes": 40,
+      "verified_operands": 4,
+      "different_bytes": 0,
+      "checks": 18,
+      "implementation_compiles": 1,
+      "result": "research/campaign-025-fade-reset/result.json"
+    },
+    {
+      "id": "fog_start",
+      "team_status": "not_done",
+      "evidence_category": "exact-function-match",
+      "address": 4427886,
+      "full_span_bytes": 193,
+      "candidate_bytes": 193,
+      "verified_operands": 15,
+      "different_bytes": 0,
+      "checks": 577,
+      "implementation_compiles": 1,
+      "result": "research/campaign-025-fog-start/result.json"
+    },
+    {
+      "id": "fog_tick",
+      "team_status": "not_done",
+      "evidence_category": "exact-function-match",
+      "address": 4427649,
+      "full_span_bytes": 162,
+      "candidate_bytes": 162,
+      "verified_operands": 19,
+      "different_bytes": 0,
+      "checks": 732,
+      "implementation_compiles": 1,
+      "result": "research/campaign-025-fog-tick/result.json"
+    },
+    {
+      "id": "shield_destroy",
+      "team_status": "not_done",
+      "evidence_category": "exact-function-match",
+      "address": 4436124,
+      "full_span_bytes": 333,
+      "candidate_bytes": 333,
+      "verified_operands": 12,
+      "different_bytes": 0,
+      "checks": 5976,
+      "implementation_compiles": 1,
+      "result": "research/campaign-025-shield-destroy/result.json"
+    },
+    {
+      "id": "tint_start_full",
+      "team_status": "not_done",
+      "evidence_category": "exact-function-match",
+      "address": 4428656,
+      "full_span_bytes": 96,
+      "candidate_bytes": 96,
+      "verified_operands": 11,
+      "different_bytes": 0,
+      "checks": 361,
+      "implementation_compiles": 1,
+      "result": "research/campaign-025-tint-start-full/result.json"
+    }
+  ],
+  "notes": [
+    "Tint clock ST(0) producer source precision unresolved; caller binary32 rounding verified with exact dyadic ties.",
+    "Destructor post-callback clears, future-buffer retarget, NULL profiles and live count decrement verified.",
+    "Fog masks full-word RGB; late world retarget and x87 state restoration verified.",
+    "Fog continuation uses literal dyadic oracles; arithmetic-NaN checked by class, not payload.",
+    "Fade reset uses actual reconstructed tint-stop; no direct callers and lifecycle provenance remains unresolved.",
+    "Object teardown checks live object+0x100 slot reload and ignored stop result."
+  ],
+  "original_game_executed": false
+}
