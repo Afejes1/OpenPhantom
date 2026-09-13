@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **21** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **948**.
+Our last recorded matches cover **24** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **945**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -36,11 +36,11 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x0041CD80 | bapworld_readChunkTag | not_done | Queued; no local match recorded |
 | 0x0041CDF0 | bapworld_skipChunk | not_done | Research candidate (not registered): [research](../research/campaign-017-world-skip-chunk/README.md) |
 | 0x0041CE4D | bapworld_allocFromHeader | not_done | Queued; no local match recorded |
-| 0x0041D302 | bapworld_loadPool | not_done | Research candidate (not registered): [research](../research/campaign-017-world-read-emitters/README.md) |
-| 0x0041D360 | bapworld_loadPool | not_done | Research candidate (not registered): [research](../research/campaign-017-world-read-sprite-refs/README.md) |
+| 0x0041D302 | bapworld_loadPool | not_done | Recorded match: [world_read_emitters](../src/world_read_emitters.c) |
+| 0x0041D360 | bapworld_loadPool | not_done | Recorded match: [world_read_sprite_refs](../src/world_read_sprite_refs.c) |
 | 0x0041D3CC | bapworld_loadPool | not_done | Queued; no local match recorded |
 | 0x0041D4AB | bapworld_loadPool | not_done | Queued; no local match recorded |
-| 0x0041D5A3 | bapworld_loadPals | not_done | Research candidate (not registered): [research](../research/campaign-017-world-read-palettes/README.md) |
+| 0x0041D5A3 | bapworld_loadPals | not_done | Recorded match: [world_read_palettes](../src/world_read_palettes.c) |
 | 0x0041D5FD | bapworld_loadDlg | not_done | Queued; no local match recorded |
 | 0x0041D696 | bapworld_loadGmap | not_done | Queued; no local match recorded |
 | 0x0041D8EE | bapworld_loadGvrt | not_done | Queued; no local match recorded |
@@ -73,7 +73,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 
 | Reported file | Team not done | Local recorded matches within that list | Remaining |
 |---|---|---|---|
-| bp/bapworld.c | 39 | 0 | 39 |
+| bp/bapworld.c | 39 | 3 | 36 |
 | bp/bapsound.c | 44 | 0 | 44 |
 | bp/bapmusic.c | 17 | 0 | 17 |
 | bp/bapdraw.c | 18 | 7 | 11 |

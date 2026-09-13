@@ -16,3 +16,5 @@ with pre-call expected state, plus exact callback counts, unchanged stream check
 and the palette high-bit boundary. All three now observe signed INT_MIN while
 preserving the original0x80000000 argument word. No candidate, target or matcher
 was changed during fixture review. Compilation and acceptance remain pending.
+
+Acceptance completed: final shared fixture passed189 checks with0 failures in locked Docker. All26 registered functions passed unchanged byte comparison. See result.json for exact source revision and immutable evidence.

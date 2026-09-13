@@ -17,7 +17,7 @@
   "accepted_functions_at_start": 21,
   "evidence_records_at_start": 21,
   "weekly_shared_usage_start_percent": 39,
-  "promotions": 2,
+  "promotions": 5,
   "new_exact_functions": 6,
   "new_exact_bytes": 517,
   "checkpoints": [
@@ -46,11 +46,22 @@
       "focused_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34757543252",
       "focused_ci_conclusion": "success",
       "publication_utc": "2026-09-13T12:38:23.127340+00:00"
+    },
+    {
+      "id": "acceptance-003",
+      "status": "passed",
+      "completed_utc": "2026-09-13T12:59:03.645248+00:00",
+      "source_commit": "5e54b23df927bcc2746ec985b64a96ab9494417d",
+      "promotions": 3,
+      "new_exact_functions": 0,
+      "registered_total": 26,
+      "result": "../acceptance-003/result.json",
+      "full_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34758436828"
     }
   ],
-  "current_work": "Acceptance003: three readers and shared fixture reviewed; clean 26-function VC5 acceptance build pending; promotions remain two for this window.",
+  "current_work": "Acceptance003 passed:26 accepted functions,23 immutable records. Next prepared batch:Campaign018 six world cleanup/wrapper functions.",
   "original_game_executed": false,
   "weekly_shared_usage_latest_percent": 40,
-  "last_checkpoint_utc": "2026-09-13T12:38:23.127340+00:00",
-  "last_source_commit": "9ef616508ba406c3e697f546d6092cec12ce4bd0"
+  "last_checkpoint_utc": "2026-09-13T12:59:03.645248+00:00",
+  "last_source_commit": "5e54b23df927bcc2746ec985b64a96ab9494417d"
 }
