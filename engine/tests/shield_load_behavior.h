@@ -115,7 +115,7 @@ static void *lo_texture_acquire(char *name, void *handle)
     lo_CHECK(memcmp(op_shields, lo_expected, sizeof(lo_expected)) == 0);
     /* Predict only the stores that follow this final callback. */
     lo_expected[slot].sprite = handle;
-    strcpy(lo_expected[slot].name, name);
+    memcpy(lo_expected[slot].name, name, strlen(name) + 1);
     lo_finish_row();
     lo_texture_stage = 0;
     return handle;

@@ -135,12 +135,12 @@ static void ec_halo_tests(void)
                     {
                         memset(&ec_actor, 0, sizeof(ec_actor));
                         memset(&ec_definition, 0, sizeof(ec_definition));
-                        strcpy(ec_definition.name, match);
+                        memcpy(ec_definition.name, match, strlen(match) + 1);
                         ec_actor.definition = &ec_definition;
                         ec_actor.flags = 0x80000001;
                         ec_expected_actor = ec_actor;
                         memset(&ec_alternate, 0x41, sizeof(ec_alternate));
-                        strcpy(ec_alternate.name, "alternate-unit");
+                        memcpy(ec_alternate.name, "alternate-unit", strlen("alternate-unit") + 1);
                         ec_definition_before = ec_definition;
                         ec_alternate_before = ec_alternate;
                         ec_other_before = ec_other;
@@ -239,7 +239,7 @@ static void *ec_stream_acquire(char *name)
     ++ec_texture_acquires;
     ec_texture_stage = 0;
     ec_loaded_shields[slot].sprite = &ec_handles[7];
-    strcpy(ec_loaded_shields[slot].name, name);
+    memcpy(ec_loaded_shields[slot].name, name, strlen(name) + 1);
     ec_loaded_shields[slot].radius = row->radius;
     ec_loaded_shields[slot].red = 0x23;
     ec_loaded_shields[slot].green = 0x45;
@@ -428,7 +428,7 @@ static void ec_stream_tests(void)
                 op_shields[slot].green = 0x45;
                 op_shields[slot].blue = (unsigned char)(0x67 + i);
                 op_shields[slot].alpha = 0x81;
-                strcpy(op_shields[slot].name, "unit-serialized");
+                memcpy(op_shields[slot].name, "unit-serialized", strlen("unit-serialized") + 1);
                 if (!op_shields[slot].no_save)
                 {
                     OP_SHIELD_SAVE *row = &ec_rows_expected[row_index++];
@@ -437,7 +437,7 @@ static void ec_stream_tests(void)
                     row->visible = -10 + i;
                     memcpy(&row->elapsed, &elapsed_bits, 4);
                     memcpy(&row->radius, &radius_bits, 4);
-                    strcpy(row->name, "unit-serialized");
+                    memcpy(row->name, "unit-serialized", strlen("unit-serialized") + 1);
                     row->color = 0x81234567u + (unsigned int)i;
                 }
             }
