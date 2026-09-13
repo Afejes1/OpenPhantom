@@ -250,3 +250,17 @@ Metadata naming/comments are saved; previously inferred ECX/this parameters may
 remain in decompiler output because of the known calling-convention bridge limit.
 Worker timestamp audit distinguishes observed file/report times from unmeasured
 task duration. Original game static only; full regression deferred.
+
+## Campaign 009: initialization, resources and voice
+
+Six team-not-done C functions reproduce 1,025 complete bytes after 48 verified
+address fixups; 583 authored checks pass. The source records VC5 memset/strcpy
+intrinsic directives. The master-volume clamp preserves unordered NaN-to-zero;
+cleanup captures next before free and preserves callback-visible live state.
+Five fixtures were strengthened before final verification; one strict VC5 fixture
+compile failure was corrected without a waiver and retained in the experiment
+ledger. Five final Docker runs used the verified listing fallback; one emitted
+its own valid listing. Four names and six comments are saved in Ghidra, with
+existing inferred convention limitations documented. See
+[results](research/campaign-009/results.md) and [review](research/campaign-009/review.json).
+No byte exclusions or accepted-history promotion; original game static only.

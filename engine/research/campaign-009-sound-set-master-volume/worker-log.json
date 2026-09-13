@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "case": "sound_set_master_volume",
+  "started_utc": "2026-09-13T05:52:50.6075237Z",
+  "finished_utc": "2026-09-13T05:53:55.8089741Z",
+  "timestamp_basis": "Exact packet-reading start was not captured; start is candidate.c CreationTimeUtc and finish is final research-result.json LastWriteTimeUtc.",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural packet-order arithmetic with a finite-equivalent less-than nested clamp.",
+      "candidate_sha256": "a235558eec7b1082665e8d747ddab572872e51c11486fa3578feace1bf0740c6",
+      "report": "engine/build/campaign-001-sound_set_master_volume-62468302b42f/research-result.json",
+      "outcome": "224 bytes and 12 relocations, but upper constant operand offset differs"
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Greater-or-equal/lower-or-equal grouping reproduces the observed x87 branches, including unordered input.",
+      "candidate_sha256": "14357f38ed730c776d0962c80d8b9732c472848100f3756b7ffa4fe147553dff",
+      "report": "engine/build/campaign-001-sound_set_master_volume-33256a141e6c/research-result.json",
+      "outcome": "complete 224-byte relocation-adjusted match; 12 bindings; zero differences"
+    }
+  ],
+  "status": "frozen-exact",
+  "fixture_execution": "deferred to coordinator locked Docker verification",
+  "parent_contract_clarification": "Initial grouping was finite-equivalent only; final inclusive grouping also maps NaN to zero. Target and attempt records are unchanged.",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 56,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_set_master_volume-90f9cdd176c3/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_set_master_volume-dca98f42c6f5/research-result.json",
+    "result": "result.json",
+    "result_sha256": "411d748acfc2169837c26ed49dca9882a44532202d9ffc1ec0ca25f24ba1d686"
+  }
+}

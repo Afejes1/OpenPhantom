@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "campaign": "009",
+  "reviews": {
+    "sound_init_channels": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 145,
+      "source_review": "Reviewed full128-byte clearing between handle release and allocation, driver reload, null allocation forwarded, callback write timing and final flag/slot stores. Fixture independently compares entire zero and finalrecords for all12 slots with bounds guards. Explicit zero initializer fixes VC5 fixture C4132 without a waiver; source intrinsic matches observed inlineclear.",
+      "fixture_checks": 315,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_start_sample": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 138,
+      "source_review": "Reviewed unsigned bound, fixed2D/3D branch, loopcountzero beforestart, handle reload afterloopcallback and playingflag OR afterstart. Fixture tests noncanonical type, callbacktype/handle/flag mutations and unchanged neighbors with guardedindices.",
+      "fixture_checks": 26,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_load_ref": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 167,
+      "source_review": "Reviewed null/alreadyloaded guards, intrinsic stacknamecopy, BSND acquisition ABI, returnedpointer store and live signedcounter transition. Parent added ABI assertions and proof that record name mutation cannot alter the independent copied name.",
+      "fixture_checks": 52,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_set_master_volume": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 224,
+      "source_review": "Reviewed integer normalization, x87 stored intermediates and inclusive clamp grouping, exacttype1 gate, postcallback gain/driver reloads and raw finalvalue forwarding. Expanded fixture independently checks gain bits for signed boundaries, finite clamp outputs,qNaN-to-zero, skippedtypes, unchangedrecords and livecallbackmutation.",
+      "fixture_checks": 56,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_free_extra_refs": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 171,
+      "source_review": "Reviewed live resource/registry/counter reloads, clear-before-removal and nextcapture-beforefree with finalglobalheadclear. Corrected fixture covers empty/one/three nodes and callback-creatednext; oldnode is poisoned after ownedpointer guard to detect postfree reads. Source retains observed cursor/alias cleanup and localnull store.",
+      "fixture_checks": 75,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_play_voice": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 180,
+      "source_review": "Reviewed actual3-argument sourceABI from dialoguecaller, signedhandle release gate, positionalfield constants/order, inputlock branches, mode timing and final five-argument descriptorcall. Expanded fixture observes priorhandle and mode beforecallback mutations; source has noinitgate or postplayrestoration.",
+      "fixture_checks": 59,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    }
+  },
+  "issues": [
+    {
+      "kind": "fixture-only",
+      "cases": [
+        "sound_init_channels",
+        "sound_load_ref"
+      ],
+      "status": "corrected-before-final-verification",
+      "detail": "Initializer tests strengthened to compare all128zero/finalbytes; explicit zero initializer fixes strict VC5 diagnostic. Load fixture adds ABI checks and tests stackcopy independence afterrecordname mutation. Candidate source unchanged by parent review."
+    }
+  ],
+  "full_regression_run": false,
+  "parent_failed_attempts": [
+    {
+      "id": "sound_init_channels",
+      "native_report": "engine/build/campaign-001-sound_init_channels-25ab7eee0c71/research-result.json",
+      "native_report_sha256": "7703d30913f513853bf44d0de1e43017c534a58c9207bb2fc96b3332f5e0983f",
+      "docker_report": "engine/build/campaign-001-sound_init_channels-5878b85ed0c1/research-result.json",
+      "docker_report_sha256": "fb6cc32e381ab0b9e80c07017b379a17b915ebb882842e5f2fd869dca2b8f92f",
+      "candidate_compiles": 2,
+      "fixture_compile_attempts": 1,
+      "fixture_executions": 0,
+      "reason": "VC5 C4132/C2220: uninitialized static const zero oracle. Explicit aggregate initializer fixes fixture without a warning waiver; candidate bytes already matched.",
+      "resolution": "Corrected fixture and fresh native/Docker pair passed315checks"
+    }
+  ],
+  "source_compiler_directives": {
+    "sound_init_channels": [
+      "#pragma intrinsic(memset)"
+    ],
+    "sound_load_ref": [
+      "#pragma intrinsic(strcpy)"
+    ]
+  },
+  "open_fixture_review": [
+    {
+      "id": "sound_free_extra_refs",
+      "finding": "One-node fixture incorrectly expanded to three nodes; require selected-count bound and live-resource/next evidence.",
+      "status": "resolved-before-final-verification",
+      "resolution": "Reviewed live resource/registry/counter reloads, clear-before-removal and nextcapture-beforefree with finalglobalheadclear. Corrected fixture covers empty/one/three nodes and callback-creatednext; oldnode is poisoned after ownedpointer guard to detect postfree reads. Source retains observed cursor/alias cleanup and localnull store."
+    },
+    {
+      "id": "sound_set_master_volume",
+      "finding": "Initial draft did not assert actual initial gain and lacked clamp/type-domain coverage; require independent explicit oracles and callback mutation case.",
+      "status": "resolved-before-final-verification",
+      "resolution": "Reviewed integer normalization, x87 stored intermediates and inclusive clamp grouping, exacttype1 gate, postcallback gain/driver reloads and raw finalvalue forwarding. Expanded fixture independently checks gain bits for signed boundaries, finite clamp outputs,qNaN-to-zero, skippedtypes, unchangedrecords and livecallbackmutation."
+    },
+    {
+      "id": "sound_play_voice",
+      "finding": "Require actual mode-at-callback and prior-handle assertions to cover setup and release ordering.",
+      "status": "resolved-before-final-verification",
+      "resolution": "Reviewed actual3-argument sourceABI from dialoguecaller, signedhandle release gate, positionalfield constants/order, inputlock branches, mode timing and final five-argument descriptorcall. Expanded fixture observes priorhandle and mode beforecallback mutations; source has noinitgate or postplayrestoration."
+    }
+  ],
+  "final_worker_readonly_review": "All six final receipts reviewed; no material candidate, ABI, fixture or receipt issue. Resolved finding statuses corrected before publication.",
+  "contract_clarifications": [
+    {
+      "id": "sound_set_master_volume",
+      "detail": "Initial finite-only clamp description refined to inclusive comparisons to preserve original NaN-to-zero behavior. Target bytes and bindings unchanged."
+    }
+  ],
+  "ghidra_metadata": {
+    "generated_names_updated": 4,
+    "existing_names_preserved": 2,
+    "comments_updated": 6,
+    "saved": true,
+    "callers_redecompiled": [
+      "0x004159F0",
+      "0x00415C40",
+      "0x0043125A",
+      "0x00441FA4"
+    ],
+    "calling_convention_limit": "Existing inferred thiscall/ECX metadata can still disagree with independently established stack ABI. No executable bytes changed."
+  }
+}

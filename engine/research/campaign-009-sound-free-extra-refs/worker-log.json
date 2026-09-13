@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "case": "sound_free_extra_refs",
+  "started_utc": "2026-09-13T05:50:24.5760710Z",
+  "finished_utc": "2026-09-13T05:55:16.5737405Z",
+  "timestamp_basis": "Exact packet-reading start was not captured; start is candidate.c CreationTimeUtc and finish is final research-result.json LastWriteTimeUtc.",
+  "compiler_invocations": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural current-node then old-node declarations.",
+      "candidate_sha256": "35acaca143524dee43697c8ad0d6328d8c8742731c0e9623b12f36a525d45d37",
+      "report": "engine/build/campaign-001-sound_free_extra_refs-aa989db88fc5/research-result.json",
+      "outcome": "171-byte extent and all bindings; 12 differing stack-offset bytes"
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Reverse declaration order may reverse VC5 local slots.",
+      "candidate_sha256": "d217df5ae52eb97ccbea30fbbc9688882095a3ed604efe475b87af2f82e4329a",
+      "report": "engine/build/campaign-001-sound_free_extra_refs-2f1133155b74/research-result.json",
+      "outcome": "no measurable improvement; same 12 differences"
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Conventional current and old identifiers may affect debug local allocation.",
+      "candidate_sha256": "5107b7b2a1b5afc81ad4850681b16bf8742491621eee157eb2e277609596460d",
+      "report": "engine/build/campaign-001-sound_free_extra_refs-e81c8365bfae/research-result.json",
+      "outcome": "no measurable improvement; same 12 differences"
+    },
+    {
+      "attempt": 4,
+      "hypothesis": "Observed old-node cursor idiom assigns the traversing and freed-node locals to the original slots.",
+      "candidate_sha256": "5a2928ae78e9c25c5d45f70e7fcd872e806faa81625380cbce8f34f128b07ec6",
+      "report": "engine/build/campaign-001-sound_free_extra_refs-9a59836ceaf6/research-result.json",
+      "outcome": "complete 171-byte relocation-adjusted match; 11 bindings; zero differences"
+    }
+  ],
+  "status": "frozen-exact",
+  "fixture_execution": "deferred to coordinator locked Docker verification",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 75,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_free_extra_refs-768c5f6ade56/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_free_extra_refs-0cb764f17b9f/research-result.json",
+    "result": "result.json",
+    "result_sha256": "af8b487a7e7f2c87c0b2493bf32aba9011b50d7e6b9d7e5eb83c98db328819ab"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "sound_free_extra_refs",
+  "address": 4285833,
+  "size": 171,
+  "body_size": 171,
+  "source": "src/sound_free_extra_refs.c",
+  "symbol": "_op_sound_free_extra_refs",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 7,
+      "address": 6010048,
+      "kind": "dir32",
+      "symbol": "_op_sound_extra_head"
+    },
+    {
+      "offset": 34,
+      "address": 4662004,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_mark_resource"
+    },
+    {
+      "offset": 49,
+      "address": 4661791,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_release_resource"
+    },
+    {
+      "offset": 75,
+      "address": 6010032,
+      "kind": "dir32",
+      "symbol": "_op_sound_registry"
+    },
+    {
+      "offset": 81,
+      "address": 4799695,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_remove_name"
+    },
+    {
+      "offset": 90,
+      "address": 6010016,
+      "kind": "dir32",
+      "symbol": "_op_sound_ref_count"
+    },
+    {
+      "offset": 99,
+      "address": 6010016,
+      "kind": "dir32",
+      "symbol": "_op_sound_ref_count"
+    },
+    {
+      "offset": 123,
+      "address": 4805714,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_free_node"
+    },
+    {
+      "offset": 139,
+      "address": 6010052,
+      "kind": "dir32",
+      "symbol": "_op_sound_extra_count"
+    },
+    {
+      "offset": 148,
+      "address": 6010052,
+      "kind": "dir32",
+      "symbol": "_op_sound_extra_count"
+    },
+    {
+      "offset": 159,
+      "address": 6010048,
+      "kind": "dir32",
+      "symbol": "_op_sound_extra_head"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "sound_load_ref",
+  "address": 4284811,
+  "size": 167,
+  "body_size": 167,
+  "source": "src/sound_load_ref.c",
+  "symbol": "_op_sound_load_ref",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "address": 4661312,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_acquire_resource",
+      "offset": 96
+    },
+    {
+      "address": 6010020,
+      "kind": "dir32",
+      "symbol": "_op_sound_load_failures",
+      "offset": 120
+    },
+    {
+      "address": 6010020,
+      "kind": "dir32",
+      "symbol": "_op_sound_load_failures",
+      "offset": 129
+    },
+    {
+      "address": 6010020,
+      "kind": "dir32",
+      "symbol": "_op_sound_load_failures",
+      "offset": 135
+    },
+    {
+      "address": 6010020,
+      "kind": "dir32",
+      "symbol": "_op_sound_load_failures",
+      "offset": 144
+    }
+  ]
+}

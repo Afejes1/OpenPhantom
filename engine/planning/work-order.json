@@ -232,6 +232,30 @@
     {
       "address": "0x00415D8A",
       "source": "research/campaign-008-sound-poll-channel/README.md"
+    },
+    {
+      "address": "0x0041609E",
+      "source": "research/campaign-009-sound-init-channels/README.md"
+    },
+    {
+      "address": "0x00417659",
+      "source": "research/campaign-009-sound-start-sample/README.md"
+    },
+    {
+      "address": "0x0041618B",
+      "source": "research/campaign-009-sound-load-ref/README.md"
+    },
+    {
+      "address": "0x00416589",
+      "source": "research/campaign-009-sound-free-extra-refs/README.md"
+    },
+    {
+      "address": "0x00417379",
+      "source": "research/campaign-009-sound-set-master-volume/README.md"
+    },
+    {
+      "address": "0x004172B4",
+      "source": "research/campaign-009-sound-play-voice/README.md"
     }
   ]
 }

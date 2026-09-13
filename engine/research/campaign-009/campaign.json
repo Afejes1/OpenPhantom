@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "campaign": "009",
+  "status": "complete-focused-checkpoint",
+  "started_utc": "2026-09-13T05:40:21Z",
+  "worker_stop_utc": "2026-09-13T06:15:21Z",
+  "stop_utc": "2026-09-13T06:25:21Z",
+  "baseline_commit": "98e4f375a3d30529878e528d2ae300352b2716d6",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "weekly_shared_account_first_observation": {
+    "used_percent": 30,
+    "note": "Rounded shared account reading after batch start; exact campaign cost unavailable."
+  },
+  "assignments": [
+    {
+      "id": "sound_init_channels",
+      "address": "0x0041609E",
+      "case": "research/campaign-009-sound-init-channels",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-009-sound-init-channels/result.json"
+    },
+    {
+      "id": "sound_start_sample",
+      "address": "0x00417659",
+      "case": "research/campaign-009-sound-start-sample",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-009-sound-start-sample/result.json"
+    },
+    {
+      "id": "sound_load_ref",
+      "address": "0x0041618B",
+      "case": "research/campaign-009-sound-load-ref",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-009-sound-load-ref/result.json"
+    },
+    {
+      "id": "sound_free_extra_refs",
+      "address": "0x00416589",
+      "case": "research/campaign-009-sound-free-extra-refs",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-009-sound-free-extra-refs/result.json"
+    },
+    {
+      "id": "sound_set_master_volume",
+      "address": "0x00417379",
+      "case": "research/campaign-009-sound-set-master-volume",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-009-sound-set-master-volume/result.json"
+    },
+    {
+      "id": "sound_play_voice",
+      "address": "0x004172B4",
+      "case": "research/campaign-009-sound-play-voice",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-009-sound-play-voice/result.json"
+    }
+  ],
+  "worker_handoff_completed_utc": "2026-09-13T06:01:05Z",
+  "handoff_timestamp_basis": "Observed coordinator clock after all final receipts existed; upper bound, not a measured worker task duration.",
+  "final_verification_completed_utc": "2026-09-13T06:06:46.157640+00:00"
+}

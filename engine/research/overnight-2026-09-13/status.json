@@ -94,13 +94,13 @@
       "published_utc": "2026-09-13T05:38:44.273134+00:00"
     }
   ],
-  "current_work": "Campaign008 published and featureCI passed; eight full matches including48bytes of switch tables. Worktree ready for Campaign009.",
-  "resume": "Start Campaign009 with the same Sol/medium worker and unchanged per-function caps. Prepare untouched sound-initChannels0041609E,loadRef0041618B,freeExtraRefs00416589,startSample00417659,setMasterVolume00417379,playVoice004172B4 as practical; these are scheduling leads, not validated packets. No retry of capped older candidates. Stop new implementation08:38UTC and finalize/pause by08:48UTC.",
+  "current_work": "Campaign 009 finalized: six complete matches, 1,025 bytes and 583 focused checks; publication and feature CI in progress.",
+  "resume": "Publish campaign 009 by 06:25:21 UTC, then continue one Sol/medium worker on untouched sound lifecycle helpers. Fixed overnight stop 08:48 UTC; stop new implementation 08:38 UTC.",
   "interruptions": [],
   "original_game_executed": false,
   "full_regression_run": false,
   "final_report": null,
   "new_research_candidates": 4,
-  "weekly_account_usage_observed_percent": 30,
+  "weekly_account_usage_observed_percent": 31,
   "last_campaign_finished_utc": "2026-09-13T05:38:44.273134+00:00"
 }

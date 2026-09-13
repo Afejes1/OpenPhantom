@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "case": "sound_load_ref",
+  "started_utc": "2026-09-13T05:46:46.3849113Z",
+  "finished_utc": "2026-09-13T05:47:29.9906478Z",
+  "timestamp_basis": "Exact packet-reading start was not captured; start is candidate.c CreationTimeUtc and finish is final research-result.json LastWriteTimeUtc.",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural strcpy call and packet-order resource logic.",
+      "candidate_sha256": "69c6c5404c6cdb3ac7d2b42eda559824cef748328f553212b7dc5aed27b4f099",
+      "report": "engine/build/campaign-001-sound_load_ref-1f1a58e676fe/research-result.json",
+      "outcome": "137-byte extent mismatch"
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "VC5 source-level strcpy intrinsic reproduces the observed inline copy.",
+      "candidate_sha256": "3c64ed18c8841c5671df64e762a53ee69bd59d5e7737d947e5b56e4077324ae6",
+      "report": "engine/build/campaign-001-sound_load_ref-73dcf2272745/research-result.json",
+      "outcome": "complete 167-byte relocation-adjusted match; five bindings; zero differences"
+    }
+  ],
+  "status": "frozen-exact",
+  "fixture_execution": "deferred to coordinator locked Docker verification",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 52,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_load_ref-27d33773623d/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_load_ref-9765fbff11c0/research-result.json",
+    "result": "result.json",
+    "result_sha256": "037eb5aeea85e30c633fbc0b1c3fd9be220931a54c2fc98d6532ea29515c503c"
+  }
+}

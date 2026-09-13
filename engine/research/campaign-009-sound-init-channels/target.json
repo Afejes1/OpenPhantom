@@ -1,0 +1,51 @@
+{
+  "id": "sound_init_channels",
+  "address": 4284574,
+  "size": 145,
+  "body_size": 145,
+  "source": "src/sound_init_channels.c",
+  "symbol": "_op_sound_init_channels",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "address": 4289895,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_release_slot",
+      "offset": 36
+    },
+    {
+      "address": 6008480,
+      "kind": "dir32",
+      "symbol": "_op_sound_channels",
+      "offset": 51
+    },
+    {
+      "address": 4284719,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_release_handle",
+      "offset": 63
+    },
+    {
+      "address": 6008472,
+      "kind": "dir32",
+      "symbol": "_op_sound_driver",
+      "offset": 84
+    },
+    {
+      "address": 9180976,
+      "kind": "dir32",
+      "symbol": "_op_sound_allocate_sample",
+      "offset": 91
+    },
+    {
+      "address": 9181056,
+      "kind": "dir32",
+      "symbol": "_op_sound_init_sample",
+      "offset": 108
+    }
+  ]
+}

@@ -38,11 +38,11 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x00415D1D | bapsound_periodic | not_done | Research candidate (not registered): [research](../research/campaign-008-sound-periodic/README.md) |
 | 0x00415D8A | bapsound_pollChannel | not_done | Research candidate (not registered): [research](../research/campaign-008-sound-poll-channel/README.md) |
 | 0x00415E30 | bapsound_updateChannel | not_done | Queued; no local match recorded |
-| 0x0041609E | bapsound_initChannels | not_done | Queued; no local match recorded |
+| 0x0041609E | bapsound_initChannels | not_done | Research candidate (not registered): [research](../research/campaign-009-sound-init-channels/README.md) |
 | 0x0041612F | bapsound_releaseSlotHandle | not_done | Research candidate (not registered): [research](../research/campaign-007-sound-release-handle/README.md) |
-| 0x0041618B | bapsound_loadRef | not_done | Queued; no local match recorded |
+| 0x0041618B | bapsound_loadRef | not_done | Research candidate (not registered): [research](../research/campaign-009-sound-load-ref/README.md) |
 | 0x00416232 | bapsound_updatePlaces | not_done | Queued; no local match recorded |
-| 0x00416589 | bapsound_freeExtraRefs | not_done | Queued; no local match recorded |
+| 0x00416589 | bapsound_freeExtraRefs | not_done | Research candidate (not registered): [research](../research/campaign-009-sound-free-extra-refs/README.md) |
 | 0x00416634 | bapsound_resetPlaces | not_done | Research candidate (not registered): [research](../research/campaign-007-sound-reset-places/README.md) |
 | 0x0041668F | bapsound_getField | not_done | Research candidate (not registered): [research](../research/campaign-008-sound-get-field/README.md) |
 | 0x0041670F | bapsound_getField &#124; bapsound_setField | not_done | Research candidate (not registered): [research](../research/campaign-008-sound-set-field/README.md) |
@@ -54,14 +54,14 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x0041705B | bapsound_addExtraRef | not_done | Queued; no local match recorded |
 | 0x00417143 | bapsound_playCall | not_done | Research candidate (not registered): [research](../research/campaign-008-sound-play-index/README.md) |
 | 0x004171A1 | bapsound_playByName | not_done | Queued; no local match recorded |
-| 0x004172B4 | bapsound_playVoice | not_done | Queued; no local match recorded |
+| 0x004172B4 | bapsound_playVoice | not_done | Research candidate (not registered): [research](../research/campaign-009-sound-play-voice/README.md) |
 | 0x00417368 | bapsound_stopChannel | not_done | Research candidate (not registered): [research](../research/campaign-006-sound-stop-channel/README.md) |
-| 0x00417379 | bapsound_setMasterVolume | not_done | Queued; no local match recorded |
+| 0x00417379 | bapsound_setMasterVolume | not_done | Research candidate (not registered): [research](../research/campaign-009-sound-set-master-volume/README.md) |
 | 0x00417459 | bapsound_getMasterVolume | not_done | Research candidate (not registered): [research](../research/campaign-007-sound-get-master-volume/README.md) |
 | 0x00417477 | bapsound_pauseAll | not_done | Research candidate (not registered): [research](../research/campaign-007-sound-pause-all/README.md) |
 | 0x004174EF | bapsound_resumeAll | not_done | Research candidate (not registered): [research](../research/campaign-007-sound-resume-all/README.md) |
 | 0x00417567 | bapsound_freeChannel | not_done | Queued; no local match recorded |
-| 0x00417659 | bapsound_startSample | not_done | Queued; no local match recorded |
+| 0x00417659 | bapsound_startSample | not_done | Research candidate (not registered): [research](../research/campaign-009-sound-start-sample/README.md) |
 | 0x004176E3 | bapsound_stopAll | not_done | Research candidate (not registered): [research](../research/campaign-006-sound-stop-all/README.md) |
 | 0x00417711 | bapsound_activatePlace | not_done | Research candidate (not registered): [research](../research/campaign-007-sound-activate-place/README.md) |
 | 0x0041778C | bapsound_deactivatePlace | not_done | Research candidate (not registered): [research](../research/campaign-006-sound-deactivate-place/README.md) |
