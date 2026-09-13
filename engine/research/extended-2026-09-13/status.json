@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "extended-2026-09-13",
-  "status": "active",
+  "status": "completed",
   "window_start_utc": "2026-09-13T11:54:31Z",
   "stop_new_implementation_utc": "2026-09-13T16:14:31Z",
   "hard_stop_utc": "2026-09-13T16:24:31Z",
@@ -183,10 +183,13 @@
       "result": "../acceptance-007/result.json",
       "full_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34767687762",
       "full_ci_conclusion": "success",
-      "evidence_records_after": 28
+      "evidence_records_after": 28,
+      "evidence_commit": "948df33f5c361f088640eca9d893903b1fdcea07",
+      "evidence_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34767914991",
+      "evidence_ci_conclusion": "success"
     }
   ],
-  "current_work": "Implementation complete; all40 functions accepted; final evidence publication and automation closure.",
+  "current_work": "Complete. No implementation worker active. See next-work.md for a newly authorized future window.",
   "original_game_executed": false,
   "weekly_shared_usage_latest_percent": 47,
   "last_checkpoint_utc": "2026-09-13T16:13:02.377086+00:00",
@@ -200,5 +203,13 @@
   "registered_accepted_functions": 40,
   "evidence_records": 28,
   "focused_fixture_checks": 7513,
-  "exact_eligible_awaiting_shared_integration": 14
+  "exact_eligible_awaiting_shared_integration": 14,
+  "completed_utc": "2026-09-13T16:16:17.064411+00:00",
+  "heartbeat_status": "PAUSED",
+  "heartbeat_paused_utc": "2026-09-13T16:15:28Z",
+  "closure_reason": "All final planned work is verified and published; fewer than ten minutes remain, so close without starting another case.",
+  "elapsed_seconds_at_close": 15706,
+  "final_evidence_commit": "948df33f5c361f088640eca9d893903b1fdcea07",
+  "final_evidence_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34767914991",
+  "final_evidence_ci_conclusion": "success"
 }

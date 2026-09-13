@@ -1,6 +1,6 @@
 # Four-and-a-half-hour campaign results
 
-The fixed authorization window was2026-09-13 11:54:31-16:24:31 UTC. Implementation is finished and final publication is in progress within that window.
+The fixed authorization window was2026-09-13 11:54:31-16:24:31 UTC. The completed campaign closed within that window; the heartbeat was paused at16:15:28 UTC. No implementation worker remains active.
 
 - **31 new exact functions from the team's not-done list, 3377 complete bytes.**
 - **19 unique promotions**, increasing the shared accepted baseline from21 to40 functions.

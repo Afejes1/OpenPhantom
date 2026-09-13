@@ -8,4 +8,4 @@ Prepare one shared fixture that calls the actual reconstructed helpers, observes
 
 Other exact queues include cleanup helpers from017/018, world allocate/destroy from020, and grid/cell helpers from021. Pointer-table620 capacity remains unresolved; do not promote a four-slot fixture view as the actual full table. Cell wrapper integration depends on preserved near-match distinctions and the parked content-flags padding case. Do not reset exhausted source timeboxes.
 
-Keep zero differing bytes for exact acceptance. Use one writer plus independent review, manifest eligibility before implementation, and preserve all failed attempts. The user must authorize a new execution window; the current4.5-hour heartbeat is being closed, not extended.
+Keep zero differing bytes for exact acceptance. Use one writer plus independent review, manifest eligibility before implementation, and preserve all failed attempts. The user must authorize a new execution window; the current4.5-hour heartbeat is paused.
