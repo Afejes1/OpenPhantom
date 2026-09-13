@@ -1,0 +1,30 @@
+{
+  "started_at": "2026-09-13T04:47:50.3752082Z",
+  "worker": "comparison_inventory",
+  "schema": 1,
+  "compiler_invocations": 1,
+  "campaign": "007",
+  "experiments": [
+    {
+      "report": "engine/build/campaign-001-sound_resume_all-15985542a96b/research-result.json",
+      "source_sha256": "041e0fc3ae37ae2f437599e32fba93f585d528f910b660e67a416ca3854028af",
+      "result": "120-byte exact adjusted match; three bindings; zero differences.",
+      "hypothesis": "Natural local-pointer loop with pre-callback flag clear reproduces resume-all.",
+      "number": 1
+    }
+  ],
+  "finished_at": "2026-09-13T04:48:36.2457842Z",
+  "assignment": "sound_resume_all 0x004174EF",
+  "status": "frozen-exact-worker-native",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 13,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-sound_resume_all-0ee6eb1ebaf1/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_resume_all-cb9d4c3176d5/research-result.json",
+    "result": "result.json",
+    "result_sha256": "b7c0203fd75281d7c288ce877ae67cfdeff90358e957049c3574f03e6c8cef31"
+  }
+}

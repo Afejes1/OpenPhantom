@@ -1,0 +1,21 @@
+{
+  "id": "sound_pin_channel",
+  "address": 4290598,
+  "size": 70,
+  "body_size": 70,
+  "source": "src/sound_pin_channel.c",
+  "symbol": "_op_sound_pin_channel",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 6008480,
+      "kind": "dir32",
+      "symbol": "_op_sound_channels"
+    }
+  ]
+}

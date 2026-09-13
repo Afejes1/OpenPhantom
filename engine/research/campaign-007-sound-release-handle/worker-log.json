@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "started_at": "2026-09-13T04:42:54.0949896Z",
+  "assignment": "sound_release_handle 0x0041612F",
+  "campaign": "007",
+  "finished_at": "2026-09-13T04:43:21.1254065Z",
+  "compiler_invocations": 1,
+  "worker": "comparison_inventory",
+  "experiments": [
+    {
+      "report": "engine/build/campaign-001-sound_release_handle-b30d8ae5de02/research-result.json",
+      "number": 1,
+      "hypothesis": "Repeated indexed field access around the selected callback reproduces release.",
+      "result": "92-byte exact adjusted match; seven bindings; zero differences.",
+      "source_sha256": "a937703c71e6183d4a341744cf5669eb53e9d629b40739b196d6923b9d73fa41"
+    }
+  ],
+  "status": "frozen-exact-worker-native",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 25,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-sound_release_handle-0e208ee22a44/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_release_handle-8569476348ec/research-result.json",
+    "result": "result.json",
+    "result_sha256": "555d477a533bfa02939e3cdfab6e80e3aadd514bc66ea852e3a6b1317ce2985a"
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "schema": 1,
+  "campaign": "007",
+  "started_utc": "2026-09-13T04:32:17Z",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_implementation_workers": 1,
+  "implementation_finished_utc": "2026-09-13T04:53:43.9092029Z",
+  "final_verification_completed_utc": "2026-09-13T04:55:58.524896+00:00",
+  "publication_deadline_utc": "2026-09-13T05:17:17Z",
+  "exact_functions": 9,
+  "raw_unadjusted_matches": 0,
+  "relocation_adjusted_matches": 9,
+  "exact_full_span_bytes": 716,
+  "verified_address_operands": 35,
+  "exact_verified_address_operands": 34,
+  "near_matches": 0,
+  "body_exact_layout_pending": 0,
+  "research_candidates": 1,
+  "fixture_checks": 164,
+  "fixture_failures": 0,
+  "worker_candidate_compiler_invocations": 15,
+  "parent_final_candidate_compiles": 20,
+  "parent_authored_fixture_compiles": 10,
+  "first_worker_compile_matches": 6,
+  "accepted_history_promotions": 0,
+  "historical_accepted_functions": 14,
+  "historical_evidence_records": 19,
+  "weekly_shared_account_first_observation": {
+    "used_percent": 28,
+    "observed_utc": "2026-09-13T04:37:56Z",
+    "note": "First reading for this batch, about six minutes after start; rounded account-wide usage, not exact campaign cost."
+  },
+  "shared_tooling_changed": false,
+  "full_regression_run": false,
+  "original_game_executed": false,
+  "cases": [
+    {
+      "id": "sound_tick",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-007-sound-tick",
+      "exact": true,
+      "result_sha256": "85259c7b9a31fda2140806c4c8255d684dc9780cb939882865aa43c2bd6c37e0",
+      "worker_log_sha256": "c4530fae5f8befb4edb25883903901ece98ddcaf7178fae13d9d03e39c208783",
+      "target_size": 10,
+      "candidate_size": 10,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "fixture_checks": 7,
+      "worker_started_utc": "2026-09-13T04:35:14.7645384Z",
+      "worker_finished_utc": "2026-09-13T04:36:05.1335116Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.351428,
+      "docker_elapsed_seconds": 5.748048,
+      "attempts": [
+        {
+          "hypothesis": "A direct no-argument call reproduces the wrapper.",
+          "source_sha256": "c8c537ec3a681d6842bae6df19dd1664727473702986221329351f3f6e19fcd4",
+          "report": "engine/build/campaign-001-sound_tick-f8350fc997f2/research-result.json",
+          "number": 1,
+          "result": "Complete 10-byte relocation-adjusted match; call binding verified; zero differences.",
+          "report_sha256": "70a0fe34d053de46fd8e4249a52a5e0ee0c627fdb65b7a785314af6834267c97",
+          "elapsed_seconds": 1.371659
+        }
+      ]
+    },
+    {
+      "id": "sound_get_driver",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-007-sound-get-driver",
+      "exact": true,
+      "result_sha256": "51d348faddf8279299762c6fc635f19701e9f2b1481089504626194c19f0d524",
+      "worker_log_sha256": "7492f97fee85bb2135aca7bed936a8ae46e220caaf3c56009490996da33ee08d",
+      "target_size": 10,
+      "candidate_size": 10,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "fixture_checks": 5,
+      "worker_started_utc": "2026-09-13T04:36:49.9833253Z",
+      "worker_finished_utc": "2026-09-13T04:37:17.9308116Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.374289,
+      "docker_elapsed_seconds": 5.305748,
+      "attempts": [
+        {
+          "number": 1,
+          "source_sha256": "3665fb2960bbe7a9a2f13c3dffe188163461218518e663bb2039dc0166549fce",
+          "report": "engine/build/campaign-001-sound_get_driver-e1e511af1517/research-result.json",
+          "result": "Complete 10-byte relocation-adjusted match; global binding verified; zero differences.",
+          "hypothesis": "Direct current-global pointer return reproduces getter.",
+          "report_sha256": "19bb633da35e2c6c0e75602895b1071254ec9191ef18423e9426bb21010b8ec0",
+          "elapsed_seconds": 1.357316
+        }
+      ]
+    },
+    {
+      "id": "sound_get_master_volume",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-007-sound-get-master-volume",
+      "exact": true,
+      "result_sha256": "6b81a9e0916a7b717a98d82c97c444a63ebda14b560b4e52f6fd3c330afa7b24",
+      "worker_log_sha256": "9cd2a2ee9b60a2dfd72283713319c039c77e8562334dfedd2432a6a5e84049e8",
+      "target_size": 30,
+      "candidate_size": 30,
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "fixture_checks": 19,
+      "worker_started_utc": "2026-09-13T04:37:48.0812641Z",
+      "worker_finished_utc": "2026-09-13T04:38:15.8864238Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.378471,
+      "docker_elapsed_seconds": 5.736565,
+      "attempts": [
+        {
+          "report": "engine/build/campaign-001-sound_get_master_volume-e7cab0e270dd/research-result.json",
+          "number": 1,
+          "source_sha256": "0c27e3810252e5c12e6ef8b8b51bfdba327fae9ecaab90bf43634778554b52cc",
+          "hypothesis": "Initialized guard then direct query-slot return reproduces getter.",
+          "result": "Complete 30-byte relocation-adjusted match; all three bindings verified; zero differences.",
+          "report_sha256": "fc34fffb8ccab577d4683d1bb3c1e0349a25bd05bdf2deebcd2a7b1c7d6bbb95",
+          "elapsed_seconds": 1.364511
+        }
+      ]
+    },
+    {
+      "id": "sound_pin_channel",
+      "status": "research-candidate",
+      "case": "research/campaign-007-sound-pin-channel",
+      "exact": false,
+      "result_sha256": "ec6b357f4c0b2cb795c51973d7f812184952242d3b39af9a9594d531aa1bafba",
+      "worker_log_sha256": "0df6ae294639e335dfbf5e182f4d0626a2c2861dae28d39c191b3a6781f84459",
+      "target_size": 70,
+      "candidate_size": 70,
+      "verified_operands": 1,
+      "different_bytes": 13,
+      "different_percent": 18.571428571428573,
+      "fixture_checks": 9,
+      "worker_started_utc": "2026-09-13T04:39:02.5689261Z",
+      "worker_finished_utc": "2026-09-13T04:42:13.7950254Z",
+      "worker_candidate_compiler_invocations": 3,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.444822,
+      "docker_elapsed_seconds": 5.749423,
+      "attempts": [
+        {
+          "number": 1,
+          "hypothesis": "Natural local pointer, flag OR and aggregate assignment reproduce pinning.",
+          "report": "engine/build/campaign-001-sound_pin_channel-40cf7d6aa80e/research-result.json",
+          "source_sha256": "40ca29a37d7626d7ec8901797d317fd1172a8dacb3e7a9eeefc3cd44613ebf93",
+          "result": "70-byte extent and binding align; 13 bytes differ from aggregate-copy register ordering starting at offset 43.",
+          "report_sha256": "f03a96cbe97188c40dfd7f810f7159ebb4bec2f09aeb48093cabb0feed945b4c",
+          "elapsed_seconds": 1.440247
+        },
+        {
+          "number": 2,
+          "hypothesis": "Natural memcpy may select the original destination-first copy sequence.",
+          "report": "engine/build/campaign-001-sound_pin_channel-826b12a69176/research-result.json",
+          "source_sha256": "065b8ea14c2095f9ecc8592de12bcfe0ad908662ae5f7c1688b582e23443c24b",
+          "result": "66-byte extent mismatch due external memcpy call; worse.",
+          "report_sha256": "c4c81423f63d1c68a496ca318b025d97377c4a5e43403b91f60d108cee345736",
+          "elapsed_seconds": 1.420466
+        },
+        {
+          "number": 3,
+          "hypothesis": "Removing the source-pointer const qualifier may affect VC5 aggregate lowering.",
+          "report": "engine/build/campaign-001-sound_pin_channel-bae1fe82cf45/research-result.json",
+          "source_sha256": "5f39ecf98354b5598a863792acd54bdd05ee7d3c3ef82f0895e82ec4c9bdca2f",
+          "result": "Same 70-byte, 13-byte mismatch; no improvement.",
+          "report_sha256": "d56158a1d51db89d82d1ab4f918c2d319c6d151eeae9339fb3d99f43d481bc9b",
+          "elapsed_seconds": 1.470344
+        }
+      ]
+    },
+    {
+      "id": "sound_release_handle",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-007-sound-release-handle",
+      "exact": true,
+      "result_sha256": "555d477a533bfa02939e3cdfab6e80e3aadd514bc66ea852e3a6b1317ce2985a",
+      "worker_log_sha256": "b840885f876997eca98332a6ad3365fc38a6ac9d4b2aa0c9cc3f61ac9f36de27",
+      "target_size": 92,
+      "candidate_size": 92,
+      "verified_operands": 7,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "fixture_checks": 25,
+      "worker_started_utc": "2026-09-13T04:42:54.0949896Z",
+      "worker_finished_utc": "2026-09-13T04:43:21.1254065Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.443954,
+      "docker_elapsed_seconds": 5.863193,
+      "attempts": [
+        {
+          "report": "engine/build/campaign-001-sound_release_handle-b30d8ae5de02/research-result.json",
+          "number": 1,
+          "hypothesis": "Repeated indexed field access around the selected callback reproduces release.",
+          "result": "92-byte exact adjusted match; seven bindings; zero differences.",
+          "source_sha256": "a937703c71e6183d4a341744cf5669eb53e9d629b40739b196d6923b9d73fa41",
+          "report_sha256": "e5e6a4a96e6eb8ed8763b674b625c0c3cb7531c6c6d47585d0ff201632dd7dc3",
+          "elapsed_seconds": 1.409386
+        }
+      ]
+    },
+    {
+      "id": "sound_reset_places",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-007-sound-reset-places",
+      "exact": true,
+      "result_sha256": "3738442d68e9be1e0ce5603623aa8396c15cbc9ba2f73aaa6593893869386024",
+      "worker_log_sha256": "71b04b2dea583875b7f8e720d0c5694152de8150d6500d313c557c51f807add8",
+      "target_size": 91,
+      "candidate_size": 91,
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "fixture_checks": 10,
+      "worker_started_utc": "2026-09-13T04:44:06.3917295Z",
+      "worker_finished_utc": "2026-09-13T04:45:29.4014065Z",
+      "worker_candidate_compiler_invocations": 2,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.431204,
+      "docker_elapsed_seconds": 5.832029,
+      "attempts": [
+        {
+          "result": "93-byte candidate versus 91-byte target.",
+          "hypothesis": "Early null return then fixed-pointer loop.",
+          "report": "engine/build/campaign-001-sound_reset_places-0df65dbefb30/research-result.json",
+          "source_sha256": "ee18dd81b002538ec3ed925bae9f11e8f711ae1dbdfcfc9e34839c20d655d0f3",
+          "number": 1,
+          "report_sha256": "57a62f2b2b9dd0baf86b05b5da4b432657b886e7a3a0d495a84cdd942a366571",
+          "elapsed_seconds": 1.524806
+        },
+        {
+          "result": "91-byte exact adjusted match; three bindings; zero differences.",
+          "hypothesis": "Natural enclosing nonnull block reproduces original short conditional branch.",
+          "report": "engine/build/campaign-001-sound_reset_places-9cc989b035ff/research-result.json",
+          "source_sha256": "504971d2ebbff04e6475ea9b75245ea1630addfb015178f634cc5066b895be17",
+          "number": 2,
+          "report_sha256": "7bc749320cafb8f50fa17cb3df9bb289daabd3d2187bcb31d2724ab58e7801ba",
+          "elapsed_seconds": 1.399495
+        }
+      ]
+    },
+    {
+      "id": "sound_pause_all",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-007-sound-pause-all",
+      "exact": true,
+      "result_sha256": "0abb63e36b9a657035055b154df88d018f7335a6435113907089d9dcecd91f88",
+      "worker_log_sha256": "bfe66db08616c653e41de941a7bea812a7d398316509863310f05f140bf57583",
+      "target_size": 120,
+      "candidate_size": 120,
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "fixture_checks": 29,
+      "worker_started_utc": "2026-09-13T04:46:31.8566668Z",
+      "worker_finished_utc": "2026-09-13T04:47:10.4285482Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.375924,
+      "docker_elapsed_seconds": 14.882686,
+      "attempts": [
+        {
+          "source_sha256": "04b29e266fe750e7bec4ec3c9334367e8a7a7bd25b7ccd6226cbd4c59677fa3c",
+          "number": 1,
+          "result": "120-byte exact adjusted match; three bindings; zero differences.",
+          "report": "engine/build/campaign-001-sound_pause_all-e6319d7cb5db/research-result.json",
+          "hypothesis": "Natural local-pointer loop with pre-callback flag OR reproduces pause-all.",
+          "report_sha256": "69ce151f5d6b711bf47cfc2a45276a1904b70dd1b083d5d737584762bdb814d1",
+          "elapsed_seconds": 1.411812
+        }
+      ]
+    },
+    {
+      "id": "sound_resume_all",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-007-sound-resume-all",
+      "exact": true,
+      "result_sha256": "b7c0203fd75281d7c288ce877ae67cfdeff90358e957049c3574f03e6c8cef31",
+      "worker_log_sha256": "825dca431b1ded52332571b88ab76598661461fef0f928049c0a3aeb98573e32",
+      "target_size": 120,
+      "candidate_size": 120,
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "fixture_checks": 13,
+      "worker_started_utc": "2026-09-13T04:47:50.3752082Z",
+      "worker_finished_utc": "2026-09-13T04:48:36.2457842Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.383807,
+      "docker_elapsed_seconds": 5.35391,
+      "attempts": [
+        {
+          "report": "engine/build/campaign-001-sound_resume_all-15985542a96b/research-result.json",
+          "source_sha256": "041e0fc3ae37ae2f437599e32fba93f585d528f910b660e67a416ca3854028af",
+          "result": "120-byte exact adjusted match; three bindings; zero differences.",
+          "hypothesis": "Natural local-pointer loop with pre-callback flag clear reproduces resume-all.",
+          "number": 1,
+          "report_sha256": "6fbd0e4132d8e7f6a349b9ef93638f48f5cec83660bbc6f2bb897a0a5c2ae6df",
+          "elapsed_seconds": 1.38541
+        }
+      ]
+    },
+    {
+      "id": "sound_control_place",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-007-sound-control-place",
+      "exact": true,
+      "result_sha256": "5442907af1b45bae3b4e9083c9e020deb9c0a9f323af3225d91d6a469bd57596",
+      "worker_log_sha256": "bc5aafdd329e42f7ae01232af8d7bed7a5241813540f691b6d620c3e593c804c",
+      "target_size": 120,
+      "candidate_size": 120,
+      "verified_operands": 7,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "fixture_checks": 15,
+      "worker_started_utc": "2026-09-13T04:49:34.6437227Z",
+      "worker_finished_utc": "2026-09-13T04:51:01.0263395Z",
+      "worker_candidate_compiler_invocations": 2,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.422255,
+      "docker_elapsed_seconds": 5.214837,
+      "attempts": [
+        {
+          "hypothesis": "Sequential early guards followed by callback selection.",
+          "report": "engine/build/campaign-001-sound_control_place-ebb763ce9d93/research-result.json",
+          "source_sha256": "9267a924e21222f79e0a2f919f703f628e9def33c5812a0f15fedbfd11ee4ecc",
+          "result": "126-byte extent versus 120 target.",
+          "number": 1,
+          "report_sha256": "3b3e294b32b4e48fdde4a7007ae63d6529566985d612ad57d23baddab1973643",
+          "elapsed_seconds": 1.416925
+        },
+        {
+          "hypothesis": "Combined valid-record guard reproduces direct exit branches.",
+          "report": "engine/build/campaign-001-sound_control_place-cb6dfd60d10b/research-result.json",
+          "source_sha256": "4e2a55ece4dd74d92651cb8f02e35c5fad33d11bdff525c61b00768e925b9f2a",
+          "result": "120-byte exact adjusted match; seven bindings; zero differences.",
+          "number": 2,
+          "report_sha256": "8225c62e4274382097ed87115a82e56d8f7656efaa189065c59d4f82d1f0e040",
+          "elapsed_seconds": 1.448426
+        }
+      ]
+    },
+    {
+      "id": "sound_activate_place",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-007-sound-activate-place",
+      "exact": true,
+      "result_sha256": "fba81392f65ba0c4b738f74b6c9fe10a1f4853dcd345f150a6b08fe506f1cd3a",
+      "worker_log_sha256": "e49285e309e04480703017b9c9d9f775ebc7a698bc5597ed8c78fce2a90b3d4c",
+      "target_size": 123,
+      "candidate_size": 123,
+      "verified_operands": 6,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "fixture_checks": 32,
+      "worker_started_utc": "2026-09-13T04:52:05.4608397Z",
+      "worker_finished_utc": "2026-09-13T04:53:43.9092029Z",
+      "worker_candidate_compiler_invocations": 2,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.389638,
+      "docker_elapsed_seconds": 5.488596,
+      "attempts": [
+        {
+          "result": "121-byte candidate versus123 target.",
+          "report": "engine/build/campaign-001-sound_activate_place-fc9fff9ff2fe/research-result.json",
+          "hypothesis": "Initial early exit followed by enclosing eligible-placement block.",
+          "number": 1,
+          "source_sha256": "e331b1c99fd3856c9520e45c10589a373c881e017cbcccfbb3130cd11d08ece3",
+          "report_sha256": "3abde5a45cb46aef395301f4bcdb6fb324e35ad37261795dbfbc8fd5ce938212",
+          "elapsed_seconds": 4.746726
+        },
+        {
+          "result": "123-byte exact adjusted match; six bindings including float constants; zero differences.",
+          "report": "engine/build/campaign-001-sound_activate_place-6cb11097f953/research-result.json",
+          "hypothesis": "Natural compound rejection guard reproduces shared skip control flow.",
+          "number": 2,
+          "source_sha256": "140a94e773f29e8a806786c21116343bdd0d8a3a0625679a0367beb1558dbc45",
+          "report_sha256": "e1c763c1557f208e6735708595c45674ce28046b790acad309bd0f99529c4f20",
+          "elapsed_seconds": 1.414958
+        }
+      ]
+    }
+  ],
+  "weekly_shared_account_final_observation": {
+    "used_percent": 29,
+    "observed_utc": "2026-09-13T04:55:58Z",
+    "note": "Rounded account-wide reading; not exact campaign attribution."
+  }
+}

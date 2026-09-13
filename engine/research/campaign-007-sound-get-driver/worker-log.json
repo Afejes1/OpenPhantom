@@ -1,0 +1,30 @@
+{
+  "started_at": "2026-09-13T04:36:49.9833253Z",
+  "compiler_invocations": 1,
+  "campaign": "007",
+  "status": "frozen-exact-worker-native",
+  "assignment": "sound_get_driver 0x0041786C",
+  "experiments": [
+    {
+      "number": 1,
+      "source_sha256": "3665fb2960bbe7a9a2f13c3dffe188163461218518e663bb2039dc0166549fce",
+      "report": "engine/build/campaign-001-sound_get_driver-e1e511af1517/research-result.json",
+      "result": "Complete 10-byte relocation-adjusted match; global binding verified; zero differences.",
+      "hypothesis": "Direct current-global pointer return reproduces getter."
+    }
+  ],
+  "finished_at": "2026-09-13T04:37:17.9308116Z",
+  "schema": 1,
+  "worker": "comparison_inventory",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 5,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-sound_get_driver-4ec4f46d4f8a/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_get_driver-f5a0f33284a9/research-result.json",
+    "result": "result.json",
+    "result_sha256": "51d348faddf8279299762c6fc635f19701e9f2b1481089504626194c19f0d524"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "sound_pause_all",
+  "address": 4289655,
+  "size": 120,
+  "body_size": 120,
+  "source": "src/sound_pause_all.c",
+  "symbol": "_op_sound_pause_all",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 38,
+      "address": 6008480,
+      "kind": "dir32",
+      "symbol": "_op_sound_channels"
+    },
+    {
+      "offset": 95,
+      "address": 9181008,
+      "kind": "dir32",
+      "symbol": "_op_sound_pause_2d"
+    },
+    {
+      "offset": 110,
+      "address": 9181012,
+      "kind": "dir32",
+      "symbol": "_op_sound_pause_3d"
+    }
+  ]
+}

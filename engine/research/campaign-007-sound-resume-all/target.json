@@ -1,0 +1,33 @@
+{
+  "id": "sound_resume_all",
+  "address": 4289775,
+  "size": 120,
+  "body_size": 120,
+  "source": "src/sound_resume_all.c",
+  "symbol": "_op_sound_resume_all",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 38,
+      "address": 6008480,
+      "kind": "dir32",
+      "symbol": "_op_sound_channels"
+    },
+    {
+      "offset": 95,
+      "address": 9181000,
+      "kind": "dir32",
+      "symbol": "_op_sound_resume_2d"
+    },
+    {
+      "offset": 110,
+      "address": 9181004,
+      "kind": "dir32",
+      "symbol": "_op_sound_resume_3d"
+    }
+  ]
+}

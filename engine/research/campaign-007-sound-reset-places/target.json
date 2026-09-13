@@ -1,0 +1,33 @@
+{
+  "id": "sound_reset_places",
+  "address": 4286004,
+  "size": 91,
+  "body_size": 91,
+  "source": "src/sound_reset_places.c",
+  "symbol": "_op_sound_reset_places",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 9044064,
+      "kind": "dir32",
+      "symbol": "_op_sound_world"
+    },
+    {
+      "offset": 16,
+      "address": 9044064,
+      "kind": "dir32",
+      "symbol": "_op_sound_world"
+    },
+    {
+      "offset": 48,
+      "address": 9044064,
+      "kind": "dir32",
+      "symbol": "_op_sound_world"
+    }
+  ]
+}

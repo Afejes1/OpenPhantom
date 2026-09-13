@@ -1,0 +1,37 @@
+{
+  "status": "frozen-exact-worker-native",
+  "started_at": "2026-09-13T04:49:34.6437227Z",
+  "experiments": [
+    {
+      "hypothesis": "Sequential early guards followed by callback selection.",
+      "report": "engine/build/campaign-001-sound_control_place-ebb763ce9d93/research-result.json",
+      "source_sha256": "9267a924e21222f79e0a2f919f703f628e9def33c5812a0f15fedbfd11ee4ecc",
+      "result": "126-byte extent versus 120 target.",
+      "number": 1
+    },
+    {
+      "hypothesis": "Combined valid-record guard reproduces direct exit branches.",
+      "report": "engine/build/campaign-001-sound_control_place-cb6dfd60d10b/research-result.json",
+      "source_sha256": "4e2a55ece4dd74d92651cb8f02e35c5fad33d11bdff525c61b00768e925b9f2a",
+      "result": "120-byte exact adjusted match; seven bindings; zero differences.",
+      "number": 2
+    }
+  ],
+  "finished_at": "2026-09-13T04:51:01.0263395Z",
+  "schema": 1,
+  "compiler_invocations": 2,
+  "assignment": "sound_control_place 0x004177AE",
+  "campaign": "007",
+  "worker": "comparison_inventory",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 15,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-sound_control_place-c524d15c395d/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_control_place-6ca9bfea3f21/research-result.json",
+    "result": "result.json",
+    "result_sha256": "5442907af1b45bae3b4e9083c9e020deb9c0a9f323af3225d91d6a469bd57596"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "campaign": "007",
+  "started_at": "2026-09-13T04:44:06.3917295Z",
+  "schema": 1,
+  "finished_at": "2026-09-13T04:45:29.4014065Z",
+  "assignment": "sound_reset_places 0x00416634",
+  "compiler_invocations": 2,
+  "status": "frozen-exact-worker-native",
+  "experiments": [
+    {
+      "result": "93-byte candidate versus 91-byte target.",
+      "hypothesis": "Early null return then fixed-pointer loop.",
+      "report": "engine/build/campaign-001-sound_reset_places-0df65dbefb30/research-result.json",
+      "source_sha256": "ee18dd81b002538ec3ed925bae9f11e8f711ae1dbdfcfc9e34839c20d655d0f3",
+      "number": 1
+    },
+    {
+      "result": "91-byte exact adjusted match; three bindings; zero differences.",
+      "hypothesis": "Natural enclosing nonnull block reproduces original short conditional branch.",
+      "report": "engine/build/campaign-001-sound_reset_places-9cc989b035ff/research-result.json",
+      "source_sha256": "504971d2ebbff04e6475ea9b75245ea1630addfb015178f634cc5066b895be17",
+      "number": 2
+    }
+  ],
+  "worker": "comparison_inventory",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 10,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_reset_places-443d06c82bf0/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_reset_places-1b868f4583e7/research-result.json",
+    "result": "result.json",
+    "result_sha256": "3738442d68e9be1e0ce5603623aa8396c15cbc9ba2f73aaa6593893869386024"
+  }
+}

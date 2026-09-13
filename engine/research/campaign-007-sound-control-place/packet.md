@@ -1,0 +1,8 @@
+# Prepared target: sound_control_place
+
+Team-not-done bp/bapsound.c. Full interval0x004177AE..0x00417826: 120 body/full bytes, no alignment. Full original body/instructions and boundary reviewed. All PE relocations, call destinations and float constants independently verified. Pinned VC5 C /Od /MT; immutable target.
+
+void op_sound_control_place(int index,int enabled); void op_sound_activate_place(op_sound_placement *placement); void op_sound_deactivate_place(op_sound_placement *placement);
+World partial count signedint+0xCBC, placement pointer+0xCC0; placement stride60. Initial initialized==0 exits independently. Then require world, table, index>=0 and index<count. Compute local record pointer only after all guards. Nonzero enabled calls activation(pointer); zero calls deactivation(pointer). Calls are cdecl ONE stack argument: body pushes pointer and pops4; older activation thiscall decompiler is not authoritative. Full activation/deactivation bodies and sole AI-linked caller control_enemy_linked_sound_placement reviewed; wrapper itself permits index0 unlike AI link. Fixture each guard, negative/zero/count boundaries, non-one initialized/enabled, correct stride and pointer, exactly one callback, callback mutation retention. No large/invalid in-bounds allocation assumptions.
+
+Worker owns candidate.c/api.h/behavior.c/README.md/worker-log.json only; readable multiline fixtures. Same15min/10candidate compile/five nonimprovement cap, freeze/handoff immediately. No shared tools/target/Ghidra/Git changes; native compile only, authored fixtures only in locked Docker. No original execution, exclusions, raw instructions or warnings. Worker stop05:07:17 UTC; publication05:17:17 UTC. Parent independently reviews and verifies final pairs.

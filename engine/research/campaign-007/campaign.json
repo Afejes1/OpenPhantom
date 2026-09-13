@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "campaign": "007",
+  "status": "complete-focused-checkpoint",
+  "started_utc": "2026-09-13T04:32:17Z",
+  "worker_stop_utc": "2026-09-13T05:07:17Z",
+  "stop_utc": "2026-09-13T05:17:17Z",
+  "baseline_commit": "14713f4c1e627f029c746d02079fb8074fc74183",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "assignments": [
+    {
+      "id": "sound_tick",
+      "address": "0x00415D13",
+      "case": "research/campaign-007-sound-tick",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-007-sound-tick/result.json"
+    },
+    {
+      "id": "sound_get_driver",
+      "address": "0x0041786C",
+      "case": "research/campaign-007-sound-get-driver",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-007-sound-get-driver/result.json"
+    },
+    {
+      "id": "sound_get_master_volume",
+      "address": "0x00417459",
+      "case": "research/campaign-007-sound-get-master-volume",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-007-sound-get-master-volume/result.json"
+    },
+    {
+      "id": "sound_pin_channel",
+      "address": "0x00417826",
+      "case": "research/campaign-007-sound-pin-channel",
+      "status": "research-candidate",
+      "result": "research/campaign-007-sound-pin-channel/result.json"
+    },
+    {
+      "id": "sound_release_handle",
+      "address": "0x0041612F",
+      "case": "research/campaign-007-sound-release-handle",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-007-sound-release-handle/result.json"
+    },
+    {
+      "id": "sound_reset_places",
+      "address": "0x00416634",
+      "case": "research/campaign-007-sound-reset-places",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-007-sound-reset-places/result.json"
+    },
+    {
+      "id": "sound_pause_all",
+      "address": "0x00417477",
+      "case": "research/campaign-007-sound-pause-all",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-007-sound-pause-all/result.json"
+    },
+    {
+      "id": "sound_resume_all",
+      "address": "0x004174EF",
+      "case": "research/campaign-007-sound-resume-all",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-007-sound-resume-all/result.json"
+    },
+    {
+      "id": "sound_control_place",
+      "address": "0x004177AE",
+      "case": "research/campaign-007-sound-control-place",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-007-sound-control-place/result.json"
+    },
+    {
+      "id": "sound_activate_place",
+      "address": "0x00417711",
+      "case": "research/campaign-007-sound-activate-place",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-007-sound-activate-place/result.json"
+    }
+  ],
+  "weekly_shared_account_first_observation": {
+    "used_percent": 28,
+    "observed_utc": "2026-09-13T04:37:56Z",
+    "note": "First reading for this batch, about six minutes after start; rounded account-wide usage, not exact campaign cost."
+  },
+  "final_verification_completed_utc": "2026-09-13T04:55:58.524896+00:00",
+  "ghidra_names_comments_saved": true,
+  "ghidra_signature_update_pending": [
+    "sound_activate_place"
+  ]
+}

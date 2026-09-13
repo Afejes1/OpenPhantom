@@ -160,6 +160,46 @@
     {
       "address": "0x004176E3",
       "source": "research/campaign-006-sound-stop-all/README.md"
+    },
+    {
+      "address": "0x00415D13",
+      "source": "research/campaign-007-sound-tick/README.md"
+    },
+    {
+      "address": "0x0041786C",
+      "source": "research/campaign-007-sound-get-driver/README.md"
+    },
+    {
+      "address": "0x00417459",
+      "source": "research/campaign-007-sound-get-master-volume/README.md"
+    },
+    {
+      "address": "0x00417826",
+      "source": "research/campaign-007-sound-pin-channel/README.md"
+    },
+    {
+      "address": "0x0041612F",
+      "source": "research/campaign-007-sound-release-handle/README.md"
+    },
+    {
+      "address": "0x00416634",
+      "source": "research/campaign-007-sound-reset-places/README.md"
+    },
+    {
+      "address": "0x00417477",
+      "source": "research/campaign-007-sound-pause-all/README.md"
+    },
+    {
+      "address": "0x004174EF",
+      "source": "research/campaign-007-sound-resume-all/README.md"
+    },
+    {
+      "address": "0x004177AE",
+      "source": "research/campaign-007-sound-control-place/README.md"
+    },
+    {
+      "address": "0x00417711",
+      "source": "research/campaign-007-sound-activate-place/README.md"
     }
   ]
 }

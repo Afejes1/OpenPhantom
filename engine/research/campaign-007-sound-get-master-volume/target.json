@@ -1,0 +1,33 @@
+{
+  "id": "sound_get_master_volume",
+  "address": 4289625,
+  "size": 30,
+  "body_size": 30,
+  "source": "src/sound_get_master_volume.c",
+  "symbol": "_op_sound_get_master_volume",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 6010040,
+      "kind": "dir32",
+      "symbol": "_op_sound_initialized"
+    },
+    {
+      "offset": 17,
+      "address": 6008472,
+      "kind": "dir32",
+      "symbol": "_op_sound_driver"
+    },
+    {
+      "offset": 24,
+      "address": 9181016,
+      "kind": "dir32",
+      "symbol": "_op_sound_query_volume"
+    }
+  ]
+}

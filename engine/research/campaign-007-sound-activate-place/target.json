@@ -1,0 +1,51 @@
+{
+  "id": "sound_activate_place",
+  "address": 4290321,
+  "size": 123,
+  "body_size": 123,
+  "source": "src/sound_activate_place.c",
+  "symbol": "_op_sound_activate_place",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 6010040,
+      "kind": "dir32",
+      "symbol": "_op_sound_initialized"
+    },
+    {
+      "offset": 32,
+      "address": 9044064,
+      "kind": "dir32",
+      "symbol": "_op_sound_world"
+    },
+    {
+      "offset": 55,
+      "address": 9044064,
+      "kind": "dir32",
+      "symbol": "_op_sound_world"
+    },
+    {
+      "offset": 73,
+      "address": 4882780,
+      "kind": "dir32",
+      "float32": 0.0
+    },
+    {
+      "offset": 85,
+      "address": 4826496,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_random"
+    },
+    {
+      "offset": 97,
+      "address": 4882784,
+      "kind": "dir32",
+      "float32": 3.051850947599719e-05
+    }
+  ]
+}

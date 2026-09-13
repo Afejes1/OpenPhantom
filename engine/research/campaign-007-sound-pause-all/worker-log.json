@@ -1,0 +1,30 @@
+{
+  "campaign": "007",
+  "worker": "comparison_inventory",
+  "assignment": "sound_pause_all 0x00417477",
+  "schema": 1,
+  "finished_at": "2026-09-13T04:47:10.4285482Z",
+  "status": "frozen-exact-worker-native",
+  "compiler_invocations": 1,
+  "started_at": "2026-09-13T04:46:31.8566668Z",
+  "experiments": [
+    {
+      "source_sha256": "04b29e266fe750e7bec4ec3c9334367e8a7a7bd25b7ccd6226cbd4c59677fa3c",
+      "number": 1,
+      "result": "120-byte exact adjusted match; three bindings; zero differences.",
+      "report": "engine/build/campaign-001-sound_pause_all-e6319d7cb5db/research-result.json",
+      "hypothesis": "Natural local-pointer loop with pre-callback flag OR reproduces pause-all."
+    }
+  ],
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 29,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_pause_all-a82b2461b603/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_pause_all-f7792e553bd6/research-result.json",
+    "result": "result.json",
+    "result_sha256": "0abb63e36b9a657035055b154df88d018f7335a6435113907089d9dcecd91f88"
+  }
+}

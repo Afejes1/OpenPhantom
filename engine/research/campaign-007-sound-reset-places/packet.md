@@ -1,0 +1,8 @@
+# Prepared target: sound_reset_places
+
+Team-not-done bp/bapsound.c. Complete interval0x00416634..0x0041668F: 91 body/full bytes, no alignment. Complete body/instructions, next boundary, callers and import/global context reviewed. All PE operands independently verified. Pinned VC5 C /Od /MT; immutable target.
+
+void op_sound_reset_places(void); extern op_sound_world_state *op_sound_world;
+World partial: signed count at0xCBC, placement pointer at0xCC0. Placement stride60: float deadline+0x28, int active+0x30,int initial_active+0x34. If world null return. Set local pointer to table, then signed int loop i=0;i<world->count;++i: pointer->active=pointer->initial_active; pointer->deadline=0 (integer zero bits). IMPORTANT authentic behavior: pointer NEVER advances! Every positive iteration writes first placement only. Count reloaded each iteration; no callbacks. Do not repair missing pointer increment. Sole dispatcher004158F0 event0x12 invokes it. Fixture null world; zero/negative count safely allow null table; count1/multiple verify first only, subsequent records untouched, source-active retained, all other bytes unchanged. Positive count requires valid first record; no invalid-pointer scenarios. Finite small counts avoid signed overflow.
+
+Worker owns candidate.c/api.h/behavior.c/README.md/worker-log.json only; readable multiline fixtures. No target/shared-tool/metadata/Git changes. Same15min/10candidate-compile/five nonimprovements cap. Freeze/handoff each case promptly. Native compile only; authored fixtures only in locked Docker. Original never executed. No exclusions, fabricated frames, raw instructions or waivers. Worker stop05:07:17 UTC; publication05:17:17 UTC. Parent reviews and verifies final pairs.

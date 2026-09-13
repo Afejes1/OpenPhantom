@@ -1,0 +1,10 @@
+# Prepared target: sound_release_handle
+
+Team-not-done bp/bapsound.c. Complete interval0x0041612F..0x0041618B: 92 body/full bytes, no alignment. Complete body/instructions, next boundary, callers and import/global context reviewed. All PE operands independently verified. Pinned VC5 C /Od /MT; immutable target.
+
+Channel array op_sound_channels[12] at5BAEA0, each128 bytes. Partial struct fields: void *sample at0, void *sample3d at4, int is3d at8, int active at0xC, unsigned flags at0x10, opaque bytes until vec3 position at0x54 (three floats), then tail through0x80. Define only needed views with padding. Assert exact offsets/stride in fixtures. No actual handle execution.
+
+void op_sound_release_handle(int index); typedef void (__stdcall *op_sound_release_fn)(void *handle); extern op_sound_release_fn op_sound_release_2d, op_sound_release_3d;
+If channels[index].is3d!=0, call actual IAT8C1728 AIL_release_3D_sample_handle@4 with sample3d, then clear sample3d. Else call IAT8C1724 AIL_release_sample_handle@4 with sample then clear sample. No local pointer in observed body: indexed field accesses repeatedly recompute index. No null/index/init guard. Both callers(initChannels0041609E,shutdown00415AB5) loop0..11. Callback observes original selected handle; its mutation to selected handle is overridden by final0, other fields and unselected handle changes retained, branch not re-gated if callback flips is3d. Test endpoints, null handles, arbitrary nonzero type, branch/argument/order and whole-record preservation with authored callbacks.
+
+Worker owns candidate.c/api.h/behavior.c/README.md/worker-log.json only; readable multiline fixtures. No target/shared-tool/metadata/Git changes. Same15min/10candidate-compile/five nonimprovements cap. Freeze/handoff each case promptly. Native compile only; authored fixtures only in locked Docker. Original never executed. No exclusions, fabricated frames, raw instructions or waivers. Worker stop05:07:17 UTC; publication05:17:17 UTC. Parent reviews and verifies final pairs.

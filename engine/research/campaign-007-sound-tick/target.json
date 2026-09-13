@@ -1,0 +1,21 @@
+{
+  "id": "sound_tick",
+  "address": 4283667,
+  "size": 10,
+  "body_size": 10,
+  "source": "src/sound_tick.c",
+  "symbol": "_op_sound_tick",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 4283677,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_periodic"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "status": "frozen-exact-worker-native",
+  "experiments": [
+    {
+      "hypothesis": "A direct no-argument call reproduces the wrapper.",
+      "source_sha256": "c8c537ec3a681d6842bae6df19dd1664727473702986221329351f3f6e19fcd4",
+      "report": "engine/build/campaign-001-sound_tick-f8350fc997f2/research-result.json",
+      "number": 1,
+      "result": "Complete 10-byte relocation-adjusted match; call binding verified; zero differences."
+    }
+  ],
+  "campaign": "007",
+  "started_at": "2026-09-13T04:35:14.7645384Z",
+  "assignment": "sound_tick 0x00415D13",
+  "finished_at": "2026-09-13T04:36:05.1335116Z",
+  "worker": "comparison_inventory",
+  "schema": 1,
+  "compiler_invocations": 1,
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 7,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-sound_tick-81342fe1f006/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_tick-0841338ea207/research-result.json",
+    "result": "result.json",
+    "result_sha256": "85259c7b9a31fda2140806c4c8255d684dc9780cb939882865aa43c2bd6c37e0"
+  }
+}

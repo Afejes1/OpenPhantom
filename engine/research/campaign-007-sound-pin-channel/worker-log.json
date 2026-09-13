@@ -1,0 +1,54 @@
+{
+  "started_at": "2026-09-13T04:39:02.5689261Z",
+  "schema": 1,
+  "status": "frozen-research-candidate",
+  "finished_at": "2026-09-13T04:42:13.7950254Z",
+  "experiments": [
+    {
+      "number": 1,
+      "hypothesis": "Natural local pointer, flag OR and aggregate assignment reproduce pinning.",
+      "report": "engine/build/campaign-001-sound_pin_channel-40cf7d6aa80e/research-result.json",
+      "source_sha256": "40ca29a37d7626d7ec8901797d317fd1172a8dacb3e7a9eeefc3cd44613ebf93",
+      "result": "70-byte extent and binding align; 13 bytes differ from aggregate-copy register ordering starting at offset 43."
+    },
+    {
+      "number": 2,
+      "hypothesis": "Natural memcpy may select the original destination-first copy sequence.",
+      "report": "engine/build/campaign-001-sound_pin_channel-826b12a69176/research-result.json",
+      "source_sha256": "065b8ea14c2095f9ecc8592de12bcfe0ad908662ae5f7c1688b582e23443c24b",
+      "result": "66-byte extent mismatch due external memcpy call; worse."
+    },
+    {
+      "number": 3,
+      "hypothesis": "Removing the source-pointer const qualifier may affect VC5 aggregate lowering.",
+      "report": "engine/build/campaign-001-sound_pin_channel-bae1fe82cf45/research-result.json",
+      "source_sha256": "5f39ecf98354b5598a863792acd54bdd05ee7d3c3ef82f0895e82ec4c9bdca2f",
+      "result": "Same 70-byte, 13-byte mismatch; no improvement."
+    }
+  ],
+  "compiler_invocations": 3,
+  "worker": "comparison_inventory",
+  "blocker": "VC5 emits source-first registers for the natural aggregate assignment; original emits destination-first registers.",
+  "assignment": "sound_pin_channel 0x00417826",
+  "campaign": "007",
+  "validation": {
+    "fixture_status": "authored; coordinator Docker pending",
+    "different_bytes": 13,
+    "candidate_size": 70,
+    "original_executed": false,
+    "different_percent": 18.571,
+    "binding_count": 1,
+    "target_size": 70
+  },
+  "parent_verification": {
+    "status": "research-candidate",
+    "fixture_checks": 9,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-sound_pin_channel-dea0e5fa7585/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_pin_channel-52a34051d32c/research-result.json",
+    "result": "result.json",
+    "result_sha256": "ec6b357f4c0b2cb795c51973d7f812184952242d3b39af9a9594d531aa1bafba"
+  }
+}

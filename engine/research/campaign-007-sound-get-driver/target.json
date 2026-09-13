@@ -1,0 +1,21 @@
+{
+  "id": "sound_get_driver",
+  "address": 4290668,
+  "size": 10,
+  "body_size": 10,
+  "source": "src/sound_get_driver.c",
+  "symbol": "_op_sound_get_driver",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 6008472,
+      "kind": "dir32",
+      "symbol": "_op_sound_driver"
+    }
+  ]
+}

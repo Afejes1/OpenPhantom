@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "campaign": "007",
+  "reviews": {
+    "sound_tick": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 10,
+      "source_review": "Reviewed no-argument periodic forwarding, ignored return and exactly one callback. Fixture repeated calls use bounded arithmetic and preserve authored callback state.",
+      "fixture_checks": 7,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_get_driver": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 10,
+      "source_review": "Reviewed unconditional current driver pointer return and initializer/Bink consumer evidence. Fixture uses null and live owned object identities without dereferencing handles.",
+      "fixture_checks": 5,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_get_master_volume": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 30,
+      "source_review": "Reviewed initialized zero gate, any-nonzero query, exact stdcall driver argument including null, unchanged int return and retained callback global mutations. Boundary integers are returned without arithmetic.",
+      "fixture_checks": 19,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_pin_channel": {
+      "status": "research-candidate",
+      "complete_span": 70,
+      "source_review": "Reviewed active guard, 128-byte channel stride and field offsets, preserved flags, aggregate coordinate bit copies and self alias. Original and candidate have the same complete70-byte extent and verified base binding; thirteen bytes differ in copy register setup. Defined fixture uses only valid indices and owned source objects.",
+      "fixture_checks": 9,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_release_handle": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 92,
+      "source_review": "Reviewed indexed 128-byte records, type-selected stdcall IAT callbacks, base-plus-four/eight addends, selected handle clear after callback and retained unselected/type changes. Fixture pointers and neighbor snapshots stay within owned12-slot storage.",
+      "fixture_checks": 25,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_reset_places": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 91,
+      "source_review": "Reviewed null world, signed count loop, fixed first-record pointer, active-from-initial and positive-zero deadline store. Corrected fixture-only NaN-sensitive float equality to explicit zero-bit comparison and independent expected fields before execution. Candidate unchanged.",
+      "fixture_checks": 10,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_pause_all": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 120,
+      "source_review": "Reviewed12-slot iteration, active-mask gate, pause marker before callback, zero versus nonzero 3D choice, exact handles and later-slot callback mutations. Fixed test-only guard placement and added repeated-pause coverage before execution; candidate unchanged.",
+      "fixture_checks": 29,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_resume_all": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 120,
+      "source_review": "Reviewed12-slot loop, pause-bit gate, mask clear before callback, type branch and exact handles. Fixture has a real bound guard before indexing, observes callback-enabled later slots, preserves other flags and confirms the next invocation skips cleared markers.",
+      "fixture_checks": 13,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_control_place": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 120,
+      "source_review": "Reviewed initialization, world, table and signed index guards;60-byte stride; one cdecl pointer argument; enabled-zero versus nonzero dispatch. Fixture checks null guards, negative/index-count boundaries, both callbacks and retained authored record mutations.",
+      "fixture_checks": 15,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_activate_place": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 123,
+      "source_review": "Reviewed independent initial and compound guards, active/time stores before random call, noarg random ABI, verified float reciprocal, equal/unordered span skip and late reloads. Replaced mirrored test formula with independently derived expected float bits before execution; candidate unchanged.",
+      "fixture_checks": 32,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    }
+  },
+  "issues": [
+    {
+      "id": "reset-fixture-positive-zero-bits",
+      "severity": "fixture-only",
+      "resolved": true,
+      "before_execution": true,
+      "candidate_changed": false,
+      "description": "Fixture starts deadline as quiet NaN; pinned VC5 equality can classify unordered as equal, so float equality to zero was insufficient. Replaced it with integer bit comparison and independent expected first-record fields before final verification."
+    },
+    {
+      "id": "pause-fixture-callback-bounds-and-repeat",
+      "severity": "fixture-only",
+      "resolved": true,
+      "before_execution": true,
+      "candidate_changed": false,
+      "description": "Moved actual bound guard before expected-array access; check alone did not prevent overread. Added specified repeated invocation coverage to verify active slots still receive pause callbacks when pause markers are already set."
+    },
+    {
+      "id": "activation-independent-numeric-oracle",
+      "severity": "fixture-only",
+      "resolved": true,
+      "before_execution": true,
+      "candidate_changed": false,
+      "description": "Replaced fixture arithmetic mirroring the candidate with explicit expected binary32 values independently derived through exact rational arithmetic for the three chosen cases. Bit-sensitive gates and callback late-reload checks retained."
+    }
+  ],
+  "full_regression_run": false,
+  "worker_read_only_review": {
+    "completed": true,
+    "cases": 10,
+    "receipts": 10,
+    "material_findings": 0,
+    "fixture_corrections_confirmed": true,
+    "documentation_note": "Worker saw an older pending-verification sentence; final regenerated case documentation was checked and supersedes it."
+  },
+  "metadata_limitations": [
+    "Driver getter pointer-return prototype applied and verified. Activation still has Ghidra auto-this parameter because the MCP setter rejects an explicit cdecl signature; full assembly and caller stack establish the one-pointer cdecl source contract. This does not alter source/byte evidence."
+  ]
+}

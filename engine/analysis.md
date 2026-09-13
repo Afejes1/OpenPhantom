@@ -225,3 +225,16 @@ stop-all releases twelve slots. These complete matches remain separate from
 accepted history and final executable layout. One fixture snapshot overread was
 corrected before execution; no candidate correction was needed. See
 [the campaign results](research/campaign-006/results.md).
+
+## Campaign 007: channels and placement lifecycle
+
+Nine additional C functions match716 complete bytes after34 verified address
+operands, and the70-byte position-copy candidate remains research with13 differing
+register-setup bytes. All164 focused checks pass across the ten cases. Release,
+pause and resume preserve callback-visible state timing. The placement-reset loop
+intentionally never advances its first-record pointer. Activation retains the
+pinned x87 equal/unordered behavior and late reloads after random generation.
+Three fixture-only review corrections preceded execution; no candidate semantic
+correction was needed. A Ghidra auto-this convention correction remains pending
+for activation despite independently established one-stack-argument source ABI.
+See [campaign results](research/campaign-007/results.md).

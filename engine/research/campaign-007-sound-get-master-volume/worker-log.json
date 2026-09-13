@@ -1,0 +1,30 @@
+{
+  "compiler_invocations": 1,
+  "experiments": [
+    {
+      "report": "engine/build/campaign-001-sound_get_master_volume-e7cab0e270dd/research-result.json",
+      "number": 1,
+      "source_sha256": "0c27e3810252e5c12e6ef8b8b51bfdba327fae9ecaab90bf43634778554b52cc",
+      "hypothesis": "Initialized guard then direct query-slot return reproduces getter.",
+      "result": "Complete 30-byte relocation-adjusted match; all three bindings verified; zero differences."
+    }
+  ],
+  "started_at": "2026-09-13T04:37:48.0812641Z",
+  "schema": 1,
+  "campaign": "007",
+  "worker": "comparison_inventory",
+  "assignment": "sound_get_master_volume 0x00417459",
+  "status": "frozen-exact-worker-native",
+  "finished_at": "2026-09-13T04:38:15.8864238Z",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 19,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-sound_get_master_volume-ba2cdc01990b/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_get_master_volume-45d3c9915bec/research-result.json",
+    "result": "result.json",
+    "result_sha256": "6b81a9e0916a7b717a98d82c97c444a63ebda14b560b4e52f6fd3c330afa7b24"
+  }
+}

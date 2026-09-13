@@ -1,0 +1,37 @@
+{
+  "status": "frozen-exact-worker-native",
+  "experiments": [
+    {
+      "result": "121-byte candidate versus123 target.",
+      "report": "engine/build/campaign-001-sound_activate_place-fc9fff9ff2fe/research-result.json",
+      "hypothesis": "Initial early exit followed by enclosing eligible-placement block.",
+      "number": 1,
+      "source_sha256": "e331b1c99fd3856c9520e45c10589a373c881e017cbcccfbb3130cd11d08ece3"
+    },
+    {
+      "result": "123-byte exact adjusted match; six bindings including float constants; zero differences.",
+      "report": "engine/build/campaign-001-sound_activate_place-6cb11097f953/research-result.json",
+      "hypothesis": "Natural compound rejection guard reproduces shared skip control flow.",
+      "number": 2,
+      "source_sha256": "140a94e773f29e8a806786c21116343bdd0d8a3a0625679a0367beb1558dbc45"
+    }
+  ],
+  "assignment": "sound_activate_place 0x00417711",
+  "worker": "comparison_inventory",
+  "finished_at": "2026-09-13T04:53:43.9092029Z",
+  "compiler_invocations": 2,
+  "campaign": "007",
+  "schema": 1,
+  "started_at": "2026-09-13T04:52:05.4608397Z",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 32,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_activate_place-b66dfc8d6d45/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_activate_place-f7eac10b69d2/research-result.json",
+    "result": "result.json",
+    "result_sha256": "fba81392f65ba0c4b738f74b6c9fe10a1f4853dcd345f150a6b08fe506f1cd3a"
+  }
+}
