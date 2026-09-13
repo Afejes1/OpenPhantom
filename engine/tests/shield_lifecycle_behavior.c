@@ -1,5 +1,9 @@
 /* Authored owned-state fixtures. Actual reconstructed internal callees are linked. */
 #include "../src/focused_accessors.h"
+#include "../src/halo_overlay.h"
+static int halo_overlay_active;
+static void halo_overlay_release_sprite(void **sprite);
+static void *halo_overlay_acquire_sprite(char *name);
 #include "shield_calloc_behavior.h"
 #include "shield_draw_released_behavior.h"
 #include "shield_free_behavior.h"
@@ -250,9 +254,13 @@ static void sl_chain_tests(void)
     sl_destroy_all(0, 1, 0);
     sl_destroy_all(0, 0, 1);
 }
-void op_detach_halo(OP_ATTACHED_ACTOR *object)
+static void sl_object_release_halo(void **sprite)
 {
     int valid;
+    OP_ATTACHED_ACTOR *object = &sl_actor[0].value;
+    SL_CHECK(sprite == &op_halos[0].sprite);
+    SL_CHECK(op_halos[0].owner == 0 && op_halo_count == 1);
+    *sprite = 0;
     SL_CHECK(sl_mode == SL_OBJECT && sl_object_events++ == 0);
     SL_CHECK(object == &sl_actor[0].value);
     sl_verify_state();
@@ -321,8 +329,13 @@ static void sl_object_case(int slot, int active, int attached)
     SL_CHECK(op_shield_save_size() == (valid ? 56 : 4));
     sl_object_events = 0;
     sl_object_slot = slot;
+    memset(op_halos, 0, sizeof(op_halos));
+    op_halos[0].owner = &sl_actor[0].value;
+    op_halos[0].sprite = sl_owned[0][0];
+    op_halo_count = 1;
     op_effects_object_destroyed(&sl_actor[0].value);
     SL_CHECK(sl_object_events == 2);
+    SL_CHECK(op_halo_count == 0 && op_halos[0].owner == 0 && op_halos[0].sprite == 0);
     SL_CHECK(op_shield_save_size() == 4);
     sl_verify_state();
 }
@@ -354,16 +367,25 @@ static void shield_lifecycle_release(void *memory)
 }
 void op_release_sprite(void **sprite)
 {
+    if (halo_overlay_active)
+    {
+        halo_overlay_release_sprite(sprite);
+        return;
+    }
     SL_CHECK(shield_lifecycle_active);
     if (sl_mode == SL_TEXTURE)
         sl_shield_set_texture_op_release_sprite(sprite);
     else if (sl_mode == SL_CHAIN)
         sl_chain_release_sprite(sprite);
+    else if (sl_mode == SL_OBJECT)
+        sl_object_release_halo(sprite);
     else
         SL_CHECK(0);
 }
 void *op_acquire_sprite(char *name)
 {
+    if (halo_overlay_active)
+        return halo_overlay_acquire_sprite(name);
     SL_CHECK(shield_lifecycle_active && sl_mode == SL_TEXTURE);
     if (sl_mode != SL_TEXTURE)
         return 0;

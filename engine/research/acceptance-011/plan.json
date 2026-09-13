@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "acceptance-011",
+  "status": "integration",
+  "functions": [
+    "letterbox_set_enabled",
+    "overlay_save_state",
+    "overlay_read_state",
+    "halo_startup",
+    "halo_shutdown",
+    "effects_draw_object",
+    "detach_halo"
+  ],
+  "expected_registered_functions": 69,
+  "expected_new_bytes": 455,
+  "original_game_executed": false
+}

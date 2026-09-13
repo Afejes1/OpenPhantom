@@ -2540,6 +2540,368 @@
           "kind": "dir32"
         }
       ]
+    },
+    {
+      "id": "letterbox_set_enabled",
+      "address": 4429519,
+      "size": 81,
+      "body_size": 81,
+      "source": "src/letterbox_set_enabled.c",
+      "symbol": "_op_letterbox_set_enabled",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 11,
+          "address": 8918488,
+          "symbol": "_op_letterbox_previous",
+          "kind": "dir32"
+        },
+        {
+          "offset": 20,
+          "address": 8918496,
+          "symbol": "_op_letterbox_target",
+          "kind": "dir32"
+        },
+        {
+          "offset": 29,
+          "address": 8918492,
+          "symbol": "_op_letterbox_step",
+          "kind": "dir32"
+        },
+        {
+          "offset": 45,
+          "address": 8918488,
+          "symbol": "_op_letterbox_previous",
+          "kind": "dir32"
+        },
+        {
+          "offset": 54,
+          "address": 8918496,
+          "symbol": "_op_letterbox_target",
+          "kind": "dir32"
+        },
+        {
+          "offset": 63,
+          "address": 8918492,
+          "symbol": "_op_letterbox_step",
+          "kind": "dir32"
+        },
+        {
+          "offset": 75,
+          "address": 8918496,
+          "symbol": "_op_letterbox_target",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "overlay_save_state",
+      "address": 4429650,
+      "size": 66,
+      "body_size": 66,
+      "source": "src/overlay_save_state.c",
+      "symbol": "_op_overlay_save_state",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 7097988,
+          "symbol": "_op_letterbox_visible",
+          "kind": "dir32"
+        },
+        {
+          "offset": 9,
+          "address": 7097944,
+          "symbol": "_op_overlay_save",
+          "kind": "dir32",
+          "addend": 12
+        },
+        {
+          "offset": 15,
+          "address": 8918496,
+          "symbol": "_op_letterbox_target",
+          "kind": "dir32"
+        },
+        {
+          "offset": 21,
+          "address": 7097944,
+          "symbol": "_op_overlay_save",
+          "kind": "dir32",
+          "addend": 16
+        },
+        {
+          "offset": 27,
+          "address": 8918488,
+          "symbol": "_op_letterbox_previous",
+          "kind": "dir32"
+        },
+        {
+          "offset": 33,
+          "address": 7097944,
+          "symbol": "_op_overlay_save",
+          "kind": "dir32",
+          "addend": 20
+        },
+        {
+          "offset": 38,
+          "address": 8918492,
+          "symbol": "_op_letterbox_step",
+          "kind": "dir32"
+        },
+        {
+          "offset": 43,
+          "address": 7097944,
+          "symbol": "_op_overlay_save",
+          "kind": "dir32",
+          "addend": 24
+        },
+        {
+          "offset": 50,
+          "address": 7097944,
+          "symbol": "_op_overlay_save",
+          "kind": "dir32"
+        },
+        {
+          "offset": 55,
+          "address": 4529240,
+          "symbol": "_op_save_write",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "overlay_read_state",
+      "address": 4429716,
+      "size": 33,
+      "body_size": 33,
+      "source": "src/overlay_read_state.c",
+      "symbol": "_op_overlay_read_state",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 6,
+          "address": 7097944,
+          "symbol": "_op_overlay_save",
+          "kind": "dir32"
+        },
+        {
+          "offset": 11,
+          "address": 4529328,
+          "symbol": "_op_save_read",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "halo_startup",
+      "address": 4429808,
+      "size": 59,
+      "body_size": 59,
+      "source": "src/halo_startup.c",
+      "symbol": "_op_halo_startup",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 4907404,
+          "symbol": "_op_halo_name_a",
+          "kind": "dir32"
+        },
+        {
+          "offset": 9,
+          "address": 4363584,
+          "symbol": "_op_acquire_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 17,
+          "address": 7098888,
+          "symbol": "_op_halo_sprite_a",
+          "kind": "dir32"
+        },
+        {
+          "offset": 22,
+          "address": 4892012,
+          "symbol": "_op_halo_name_b",
+          "kind": "dir32"
+        },
+        {
+          "offset": 27,
+          "address": 4363584,
+          "symbol": "_op_acquire_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 35,
+          "address": 7098892,
+          "symbol": "_op_halo_sprite_b",
+          "kind": "dir32"
+        },
+        {
+          "offset": 40,
+          "address": 4892000,
+          "symbol": "_op_halo_name_c",
+          "kind": "dir32"
+        },
+        {
+          "offset": 45,
+          "address": 4363584,
+          "symbol": "_op_acquire_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 53,
+          "address": 7098896,
+          "symbol": "_op_halo_sprite_c",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "halo_shutdown",
+      "address": 4429867,
+      "size": 44,
+      "body_size": 44,
+      "source": "src/halo_shutdown.c",
+      "symbol": "_op_halo_shutdown",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 7098888,
+          "symbol": "_op_halo_sprite_a",
+          "kind": "dir32"
+        },
+        {
+          "offset": 9,
+          "address": 4363764,
+          "symbol": "_op_release_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 17,
+          "address": 7098892,
+          "symbol": "_op_halo_sprite_b",
+          "kind": "dir32"
+        },
+        {
+          "offset": 22,
+          "address": 4363764,
+          "symbol": "_op_release_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 30,
+          "address": 7098896,
+          "symbol": "_op_halo_sprite_c",
+          "kind": "dir32"
+        },
+        {
+          "offset": 35,
+          "address": 4363764,
+          "symbol": "_op_release_sprite",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "effects_draw_object",
+      "address": 4427384,
+      "size": 69,
+      "body_size": 69,
+      "source": "src/effects_draw_object.c",
+      "symbol": "_op_effects_draw_object",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 14,
+          "address": 4430420,
+          "symbol": "_op_halo_draw_actor",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 60,
+          "address": 4442351,
+          "symbol": "_op_shield_draw_attached",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "detach_halo",
+      "address": 4432212,
+      "size": 103,
+      "body_size": 103,
+      "source": "src/detach_halo.c",
+      "symbol": "_op_detach_halo",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 36,
+          "address": 7097992,
+          "symbol": "_op_halos",
+          "kind": "dir32"
+        },
+        {
+          "offset": 53,
+          "address": 7097992,
+          "symbol": "_op_halos",
+          "kind": "dir32"
+        },
+        {
+          "offset": 69,
+          "address": 7097992,
+          "symbol": "_op_halos",
+          "kind": "dir32",
+          "addend": 20
+        },
+        {
+          "offset": 75,
+          "address": 4363764,
+          "symbol": "_op_release_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 84,
+          "address": 7098900,
+          "symbol": "_op_halo_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 93,
+          "address": 7098900,
+          "symbol": "_op_halo_count",
+          "kind": "dir32"
+        }
+      ]
     }
   ]
 }

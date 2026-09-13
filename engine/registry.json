@@ -1152,6 +1152,139 @@
         "No direct callers; lifecycle provenance remains unresolved."
       ],
       "exceptions": []
+    },
+    {
+      "id": "letterbox_set_enabled",
+      "module": "halo_overlay",
+      "analysis_name": "set_cinematic_letterbox_enabled",
+      "purpose": "Set cinematic letterbox target and transition step",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/halo-overlay-acceptance.md",
+        "research/campaign-026-letterbox-set-enabled/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/halo_overlay_behavior.c"
+      ],
+      "quirks": [
+        "External resource, rendering and serializer callbacks are authored fixtures.",
+        "Full original extent and every operand binding are required; final executable placement remains pending."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "overlay_save_state",
+      "module": "halo_overlay",
+      "analysis_name": "save_special_effect_screen_overlay_state",
+      "purpose": "Snapshot and serialize the overlay block",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/halo-overlay-acceptance.md",
+        "research/campaign-026-overlay-save-state/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/halo_overlay_behavior.c"
+      ],
+      "quirks": [
+        "External resource, rendering and serializer callbacks are authored fixtures.",
+        "Full original extent and every operand binding are required; final executable placement remains pending."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "overlay_read_state",
+      "module": "halo_overlay",
+      "analysis_name": "read_saved_screen_overlay_block",
+      "purpose": "Read the staged overlay block and invert reader status",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/halo-overlay-acceptance.md",
+        "research/campaign-026-overlay-read-state/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/halo_overlay_behavior.c"
+      ],
+      "quirks": [
+        "External resource, rendering and serializer callbacks are authored fixtures.",
+        "Full original extent and every operand binding are required; final executable placement remains pending."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "halo_startup",
+      "module": "halo_overlay",
+      "analysis_name": "initialize_halo_sprite_resources",
+      "purpose": "Acquire three halo sprite resources",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/halo-overlay-acceptance.md",
+        "research/campaign-026-halo-startup/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/halo_overlay_behavior.c"
+      ],
+      "quirks": [
+        "External resource, rendering and serializer callbacks are authored fixtures.",
+        "Full original extent and every operand binding are required; final executable placement remains pending."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "halo_shutdown",
+      "module": "halo_overlay",
+      "analysis_name": "release_halo_sprite_resources",
+      "purpose": "Release three halo sprite resource handles",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/halo-overlay-acceptance.md",
+        "research/campaign-026-halo-shutdown/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/halo_overlay_behavior.c"
+      ],
+      "quirks": [
+        "External resource, rendering and serializer callbacks are authored fixtures.",
+        "Full original extent and every operand binding are required; final executable placement remains pending."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "effects_draw_object",
+      "module": "halo_overlay",
+      "analysis_name": "render_object_linked_sphere_effect",
+      "purpose": "Draw optional halo and attached shield from live actor state",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/halo-overlay-acceptance.md",
+        "research/campaign-026-effects-draw-object/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/halo_overlay_behavior.c"
+      ],
+      "quirks": [
+        "External resource, rendering and serializer callbacks are authored fixtures.",
+        "Full original extent and every operand binding are required; final executable placement remains pending."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "detach_halo",
+      "module": "halo_overlay",
+      "analysis_name": "detach_object_halo_resources",
+      "purpose": "Detach every halo belonging to one actor",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/halo-overlay-acceptance.md",
+        "research/campaign-026-detach-halo/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/halo_overlay_behavior.c"
+      ],
+      "quirks": [
+        "External resource, rendering and serializer callbacks are authored fixtures.",
+        "Full original extent and every operand binding are required; final executable placement remains pending."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

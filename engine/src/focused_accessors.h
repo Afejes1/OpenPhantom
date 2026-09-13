@@ -3,7 +3,8 @@
 #include <stddef.h>
 typedef struct OP_ATTACHED_ACTOR
 {
-    unsigned char before_slot[0x100];
+    unsigned int flags;
+    unsigned char before_slot[0xfc];
     int shield_slot;
 } OP_ATTACHED_ACTOR;
 
