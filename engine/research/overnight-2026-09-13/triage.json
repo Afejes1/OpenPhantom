@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "worker": "comparison_inventory",
+  "mode": "read-only",
+  "program": "TPM:/WMAIN.EXE",
+  "port": 8192,
+  "scope": "Worker-reported team-not-done shortlist; no candidate found in inspected research. Coordinator must independently validate before assignment.",
+  "candidates": [
+    {
+      "address": "0x004100A0",
+      "team_name": "rdThing_drawNode",
+      "module": "bp/bapmodel.c",
+      "address_interval_bytes": 144,
+      "next_function": "0x00410130",
+      "status": "needs-packet-preparation"
+    },
+    {
+      "address": "0x0040C9F8",
+      "team_name": "bapmap_faceAtOrAboveXY | bapmap_faceAtOrBelowXY",
+      "module": "bp/bapmap.c",
+      "address_interval_bytes": 227,
+      "next_function": "0x0040CADB",
+      "status": "needs-packet-preparation"
+    },
+    {
+      "address": "0x0040D03E",
+      "team_name": "bapmap_gatherCells",
+      "module": "bp/bapmap.c",
+      "address_interval_bytes": 555,
+      "next_function": "0x0040D269",
+      "status": "needs-packet-preparation"
+    },
+    {
+      "address": "0x0040FE70",
+      "team_name": "rdThing_Draw",
+      "module": "bp/bapmodel.c",
+      "address_interval_bytes": 560,
+      "next_function": "0x004100A0",
+      "status": "needs-packet-preparation"
+    },
+    {
+      "address": "0x0040E603",
+      "team_name": "bapmap_findGrabLedge",
+      "module": "bp/bapmap.c",
+      "address_interval_bytes": 573,
+      "next_function": "0x0040E840",
+      "status": "needs-packet-preparation"
+    },
+    {
+      "address": "0x0040C621",
+      "team_name": "bapmap_raycastNearest",
+      "module": "bp/bapmap.c",
+      "address_interval_bytes": 591,
+      "next_function": "0x0040C870",
+      "status": "needs-packet-preparation"
+    },
+    {
+      "address": "0x0040FC10",
+      "team_name": "rdMesh_lightFace",
+      "module": "bp/bapmodel.c",
+      "address_interval_bytes": 608,
+      "next_function": "0x0040FE70",
+      "status": "needs-packet-preparation"
+    },
+    {
+      "address": "0x00408B50",
+      "team_name": "bapmap_openMover",
+      "module": "bp/bapmap.c",
+      "address_interval_bytes": 677,
+      "next_function": "0x00408DF5",
+      "status": "needs-packet-preparation"
+    },
+    {
+      "address": "0x0040A865",
+      "team_name": "bapmap_resetMovers",
+      "module": "bp/bapmap.c",
+      "address_interval_bytes": 704,
+      "next_function": "0x0040AB25",
+      "status": "needs-packet-preparation"
+    }
+  ],
+  "limits": [
+    "Intervals between function addresses are not verified full body/padding extents.",
+    "ABI/types, all address operands, behavior branches and fixture seams remain to be prepared.",
+    "The alias relationship at 0x0040C9F8 needs resolution.",
+    "Existing exact and capped campaign002/003 functions excluded; no compiler experiments performed."
+  ]
+}
