@@ -368,5 +368,14 @@
     "preparation_corrections": 1,
     "worker_requested_final_sequence_variant": "Unsigned mode>0 directly matches original JBE evidence; third experiment remained inside original per-case window and improved9 to8 differences; no cap reset.",
     "remaining": "Full inter-function INT3 placement pending for3bodymatches;8byte sequence near candidate and61byte reference-axis research remain parked; randomXYZ x87 implementation deferred."
-  }
+  },
+  "publication_repairs": [
+    {
+      "initial_commit": "006c1f8afc02f42cd9b1aec6237b4ac0d391337c",
+      "ci_run_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34747775336",
+      "failure": "Generated team-work-order document was updated locally but omitted from initial staging, making CI report it stale.",
+      "repair": "Commit the generated document and record this publication issue; candidate source, fixtures, targets and final compiler receipts are unchanged.",
+      "new_compiler_invocations": 0
+    }
+  ]
 }

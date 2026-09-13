@@ -71,7 +71,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x00417876 | bapsound_testCallFlags | not_done | Research candidate (not registered): [research](../research/campaign-006-sound-test-flags/README.md) |
 | 0x004178A3 | bapsound_disable | not_done | Research candidate (not registered): [research](../research/campaign-006-sound-disable/README.md) |
 | 0x004178D1 | bapsound_disable &#124; bapsound_enable | not_done | Research candidate (not registered): [research](../research/campaign-006-sound-enable/README.md) |
-| 0x004178FA | bapsound_isMuted | not_done | Queued; no local match recorded |
+| 0x004178FA | bapsound_isMuted | not_done | Research candidate (not registered): [research](../research/campaign-013-sound-is-muted/README.md) |
 
 ## Remaining work by reported file
 
