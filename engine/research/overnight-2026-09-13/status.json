@@ -17,8 +17,8 @@
   "weekly_account_usage_start_percent": 24,
   "historical_accepted_functions": 14,
   "historical_evidence_records": 19,
-  "new_exact_functions": 46,
-  "new_exact_bytes": 4328,
+  "new_exact_functions": 56,
+  "new_exact_bytes": 4795,
   "new_near_matches": 2,
   "new_body_exact_layout_pending": 0,
   "checkpoints": [
@@ -119,15 +119,29 @@
       "ci_run_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34743873794",
       "full_regression": "skipped by feature-branch workflow",
       "published_utc": "2026-09-13T06:54:55.726936+00:00"
+    },
+    {
+      "phase": "campaign-011",
+      "commit": "af92ab61b937822c8f214538e6d95923cfe38f39",
+      "ci": "passed",
+      "new_exact_functions": 10,
+      "new_exact_bytes": 467,
+      "new_near_matches": 0,
+      "new_research_candidates": 1,
+      "focused_checks": 209,
+      "result": "research/campaign-011/results.md",
+      "ci_run_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34745149684",
+      "full_regression": "skipped by feature-branch workflow",
+      "published_utc": "2026-09-13T07:25:52.861968+00:00"
     }
   ],
-  "current_work": "Campaign011 independently verified10 exact functions (467 bytes) and1 research candidate;209 focused checks passed; publishing checkpoint.",
-  "resume": "Campaign011 worker stop07:31:19UTC; publicationdeadline07:41:19UTC. Preserve one worker and per-function caps.",
+  "current_work": "Campaign011 published:10 complete exact functions(467 bytes),1 research candidate;209 focused checks and featureCI pass.",
+  "resume": "Continue one Sol/medium worker on untouched BGL wrappers or other small team-not-done helpers. Exclude all pending/exact/parked addresses. Campaign011 color trio is preparation-only deferred for original assembly/rounding analysis; no compiler caps consumed. Preserve existing function caps and full extents. Set each turn<=45 minutes with10 minutes for publication. Stop new implementation08:38 UTC; final morning report and pause08:48 UTC.",
   "interruptions": [],
   "original_game_executed": false,
   "full_regression_run": false,
   "final_report": null,
-  "new_research_candidates": 5,
+  "new_research_candidates": 6,
   "weekly_account_usage_observed_percent": 34,
-  "last_campaign_finished_utc": "2026-09-13T06:54:55.726936+00:00"
+  "last_campaign_finished_utc": "2026-09-13T07:25:52.861968+00:00"
 }
