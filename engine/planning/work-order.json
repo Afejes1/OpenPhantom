@@ -1,6 +1,7 @@
 {
   "schema": 1,
   "module_order": [
+    "bp/bapsound.c",
     "bp/bapmusic.c",
     "bp/bapdraw.c",
     "bp/bapmodel.c",
@@ -119,6 +120,46 @@
     {
       "address": "0x004107E9",
       "source": "research/campaign-005-music-pause/README.md"
+    },
+    {
+      "address": "0x004105A3",
+      "source": "research/campaign-006-music-set-state/README.md"
+    },
+    {
+      "address": "0x004106CC",
+      "source": "research/campaign-006-music-set-volume/README.md"
+    },
+    {
+      "address": "0x0041046C",
+      "source": "research/campaign-006-music-detach/README.md"
+    },
+    {
+      "address": "0x00417368",
+      "source": "research/campaign-006-sound-stop-channel/README.md"
+    },
+    {
+      "address": "0x00417043",
+      "source": "research/campaign-006-sound-find-record/README.md"
+    },
+    {
+      "address": "0x0041778C",
+      "source": "research/campaign-006-sound-deactivate-place/README.md"
+    },
+    {
+      "address": "0x00417876",
+      "source": "research/campaign-006-sound-test-flags/README.md"
+    },
+    {
+      "address": "0x004178D1",
+      "source": "research/campaign-006-sound-enable/README.md"
+    },
+    {
+      "address": "0x004178A3",
+      "source": "research/campaign-006-sound-disable/README.md"
+    },
+    {
+      "address": "0x004176E3",
+      "source": "research/campaign-006-sound-stop-all/README.md"
     }
   ]
 }

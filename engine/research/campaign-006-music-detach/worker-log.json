@@ -1,0 +1,38 @@
+{
+  "finished_at": "2026-09-13T04:12:32.1321311Z",
+  "worker": "comparison_inventory",
+  "experiments": [
+    {
+      "number": 1,
+      "report": "engine/build/campaign-001-music_detach-ee694df4cbb3/research-result.json",
+      "result": "Complete 128-byte relocation-adjusted match; all fifteen bindings verified; zero differing bytes.",
+      "hypothesis": "Natural optional resume, sentinel reset and ordered live-depth shutdown sequence reproduce detach.",
+      "source_sha256": "73a457305d26ab6a99984a9aee4025495281be7cfa0680aa4c58aeb15205adf6"
+    }
+  ],
+  "compiler_invocations": 1,
+  "schema": 1,
+  "campaign": "006",
+  "status": "frozen-exact-worker-native",
+  "started_at": "2026-09-13T04:11:19.2573096Z",
+  "validation": {
+    "target_size": 128,
+    "candidate_size": 128,
+    "original_executed": false,
+    "binding_count": 15,
+    "fixture_status": "authored; coordinator final Docker pending",
+    "different_bytes": 0
+  },
+  "assignment": "Reconstruct music_detach at 0x0041046C",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 58,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-music_detach-ede1e7c0b1d4/research-result.json",
+    "docker_report": "engine/build/campaign-001-music_detach-3ddbfecc4ea4/research-result.json",
+    "result": "result.json",
+    "result_sha256": "a07dbb22e10b41fe4ea9f2b1d83ec49bb19047acccdb438ddb7302df7cf69e44"
+  }
+}

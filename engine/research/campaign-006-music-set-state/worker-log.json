@@ -1,0 +1,38 @@
+{
+  "finished_at": "2026-09-13T04:08:40.3384645Z",
+  "experiments": [
+    {
+      "hypothesis": "Natural early guards, pre-lock cache write, live global reload and one saved result reproduce the setter.",
+      "report": "engine/build/campaign-001-music_set_state-3169af2a68bf/research-result.json",
+      "source_sha256": "280fc7572648eea46340b6a5bb2c64c04cf7ad95522185bb19e1ed17e2fa0da6",
+      "result": "Complete 107-byte relocation-adjusted match; all eleven bindings verified; zero differing bytes.",
+      "number": 1
+    }
+  ],
+  "campaign": "006",
+  "compiler_invocations": 1,
+  "assignment": "Reconstruct music_set_state at 0x004105A3",
+  "validation": {
+    "target_size": 107,
+    "binding_count": 11,
+    "fixture_status": "authored; coordinator final Docker pending",
+    "original_executed": false,
+    "different_bytes": 0,
+    "candidate_size": 107
+  },
+  "worker": "comparison_inventory",
+  "started_at": "2026-09-13T04:07:34.0027105Z",
+  "status": "frozen-exact-worker-native",
+  "schema": 1,
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 45,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-music_set_state-bd8c3439e664/research-result.json",
+    "docker_report": "engine/build/campaign-001-music_set_state-294bd568d450/research-result.json",
+    "result": "result.json",
+    "result_sha256": "49e9fd6d785ff52376c2bbb593f85a98848937eb5ff86a5879a67c452a0cfefd"
+  }
+}

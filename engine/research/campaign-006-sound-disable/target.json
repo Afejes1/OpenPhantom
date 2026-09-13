@@ -1,0 +1,45 @@
+{
+  "id": "sound_disable",
+  "address": 4290723,
+  "size": 46,
+  "body_size": 46,
+  "source": "src/sound_disable.c",
+  "symbol": "_op_sound_disable",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 6010024,
+      "kind": "dir32",
+      "symbol": "_op_sound_disabled"
+    },
+    {
+      "offset": 17,
+      "address": 4894780,
+      "kind": "dir32",
+      "symbol": "_op_sound_disabled_key"
+    },
+    {
+      "offset": 22,
+      "address": 4606113,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_write_option"
+    },
+    {
+      "offset": 30,
+      "address": 4290275,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_stop_all"
+    },
+    {
+      "offset": 36,
+      "address": 6010024,
+      "kind": "dir32",
+      "symbol": "_op_sound_disabled"
+    }
+  ]
+}

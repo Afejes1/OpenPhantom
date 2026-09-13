@@ -1,0 +1,21 @@
+{
+  "id": "sound_deactivate_place",
+  "address": 4290444,
+  "size": 34,
+  "body_size": 34,
+  "source": "src/sound_deactivate_place.c",
+  "symbol": "_op_sound_deactivate_place",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 6010040,
+      "kind": "dir32",
+      "symbol": "_op_sound_initialized"
+    }
+  ]
+}

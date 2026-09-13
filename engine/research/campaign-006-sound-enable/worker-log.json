@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "compiler_invocations": 1,
+  "started_at": "2026-09-13T04:20:44.9397758Z",
+  "experiments": [
+    {
+      "number": 1,
+      "source_sha256": "026b57e514a4e2f88ab67693022709ffa217acbfa37cec3d8d11c60ca9198e2f",
+      "result": "41-byte exact adjusted match; four bindings; zero differences.",
+      "report": "engine/build/campaign-001-sound_enable-b0a34e3b0301/research-result.json",
+      "hypothesis": "Natural zero guard, callback, then final global clear reproduce helper."
+    }
+  ],
+  "campaign": "006",
+  "finished_at": "2026-09-13T04:21:12.4282762Z",
+  "assignment": "sound_enable 0x004178D1",
+  "status": "frozen-exact-worker-native",
+  "worker": "comparison_inventory",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 14,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-sound_enable-5e2713241eff/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_enable-d9f871c1312e/research-result.json",
+    "result": "result.json",
+    "result_sha256": "5b8eb3d89fc69117ce10ec89c23fd135d9dffd33da84be5cfff7167479bb75c5"
+  }
+}

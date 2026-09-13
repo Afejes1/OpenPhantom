@@ -1,0 +1,81 @@
+{
+  "id": "music_set_state",
+  "address": 4261283,
+  "size": 107,
+  "body_size": 107,
+  "source": "src/music_set_state.c",
+  "symbol": "_op_music_set_state",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 6007692,
+      "kind": "dir32",
+      "symbol": "_op_music_initialized"
+    },
+    {
+      "offset": 22,
+      "address": 4891676,
+      "kind": "dir32",
+      "symbol": "_op_music_state"
+    },
+    {
+      "offset": 37,
+      "address": 4891676,
+      "kind": "dir32",
+      "symbol": "_op_music_state"
+    },
+    {
+      "offset": 43,
+      "address": 9181044,
+      "kind": "dir32",
+      "symbol": "_op_music_lock"
+    },
+    {
+      "offset": 49,
+      "address": 6007696,
+      "kind": "dir32",
+      "symbol": "_op_music_lock_depth"
+    },
+    {
+      "offset": 58,
+      "address": 6007696,
+      "kind": "dir32",
+      "symbol": "_op_music_lock_depth"
+    },
+    {
+      "offset": 63,
+      "address": 4891676,
+      "kind": "dir32",
+      "symbol": "_op_music_state"
+    },
+    {
+      "offset": 69,
+      "address": 4825852,
+      "kind": "rel32-call",
+      "symbol": "_op_music_backend_set_state"
+    },
+    {
+      "offset": 81,
+      "address": 9180972,
+      "kind": "dir32",
+      "symbol": "_op_music_unlock"
+    },
+    {
+      "offset": 87,
+      "address": 6007696,
+      "kind": "dir32",
+      "symbol": "_op_music_lock_depth"
+    },
+    {
+      "offset": 96,
+      "address": 6007696,
+      "kind": "dir32",
+      "symbol": "_op_music_lock_depth"
+    }
+  ]
+}

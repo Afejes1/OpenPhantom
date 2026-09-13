@@ -1,0 +1,105 @@
+{
+  "id": "music_detach",
+  "address": 4260972,
+  "size": 128,
+  "body_size": 128,
+  "source": "src/music_detach.c",
+  "symbol": "_op_music_detach",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 6007692,
+      "kind": "dir32",
+      "symbol": "_op_music_initialized"
+    },
+    {
+      "offset": 16,
+      "address": 6007700,
+      "kind": "dir32",
+      "symbol": "_op_music_paused"
+    },
+    {
+      "offset": 24,
+      "address": 4261925,
+      "kind": "rel32-call",
+      "symbol": "_op_music_resume"
+    },
+    {
+      "offset": 34,
+      "address": 4261283,
+      "kind": "rel32-call",
+      "symbol": "_op_music_set_state"
+    },
+    {
+      "offset": 53,
+      "address": 4261390,
+      "kind": "rel32-call",
+      "symbol": "_op_music_set_sequence"
+    },
+    {
+      "offset": 62,
+      "address": 9181044,
+      "kind": "dir32",
+      "symbol": "_op_music_lock"
+    },
+    {
+      "offset": 67,
+      "address": 6007696,
+      "kind": "dir32",
+      "symbol": "_op_music_lock_depth"
+    },
+    {
+      "offset": 75,
+      "address": 6007696,
+      "kind": "dir32",
+      "symbol": "_op_music_lock_depth"
+    },
+    {
+      "offset": 80,
+      "address": 4825822,
+      "kind": "rel32-call",
+      "symbol": "_op_music_stop_all"
+    },
+    {
+      "offset": 85,
+      "address": 4825840,
+      "kind": "rel32-call",
+      "symbol": "_op_music_terminate_script"
+    },
+    {
+      "offset": 91,
+      "address": 9044460,
+      "kind": "dir32",
+      "symbol": "_op_music_shutdown"
+    },
+    {
+      "offset": 97,
+      "address": 9180972,
+      "kind": "dir32",
+      "symbol": "_op_music_unlock"
+    },
+    {
+      "offset": 103,
+      "address": 6007696,
+      "kind": "dir32",
+      "symbol": "_op_music_lock_depth"
+    },
+    {
+      "offset": 112,
+      "address": 6007696,
+      "kind": "dir32",
+      "symbol": "_op_music_lock_depth"
+    },
+    {
+      "offset": 118,
+      "address": 6007692,
+      "kind": "dir32",
+      "symbol": "_op_music_initialized"
+    }
+  ]
+}

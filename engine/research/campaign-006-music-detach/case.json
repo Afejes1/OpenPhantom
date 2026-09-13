@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "music_detach",
+  "candidate": "candidate.c",
+  "symbol": "_op_music_detach",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "sound_stop_channel",
+  "address": 4289384,
+  "size": 17,
+  "body_size": 17,
+  "source": "src/sound_stop_channel.c",
+  "symbol": "_op_sound_stop_channel",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 4289895,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_release_slot"
+    }
+  ]
+}

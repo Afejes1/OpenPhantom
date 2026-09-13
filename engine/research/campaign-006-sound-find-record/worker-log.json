@@ -1,0 +1,30 @@
+{
+  "compiler_invocations": 1,
+  "assignment": "sound_find_record 0x00417043",
+  "started_at": "2026-09-13T04:18:05.4796674Z",
+  "worker": "comparison_inventory",
+  "finished_at": "2026-09-13T04:18:32.7223384Z",
+  "experiments": [
+    {
+      "report": "engine/build/campaign-001-sound_find_record-47f1ab58ae96/research-result.json",
+      "source_sha256": "7fae008e25610957c7b84c99f7f3d6b334a425e2af5bca1caa313fdc120ed8dc",
+      "number": 1,
+      "hypothesis": "Direct live-registry lookup and return.",
+      "result": "24-byte exact adjusted match; two bindings; zero differences."
+    }
+  ],
+  "schema": 1,
+  "status": "frozen-exact-worker-native",
+  "campaign": "006",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 15,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-sound_find_record-0663deb8a162/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_find_record-0e808e5d9715/research-result.json",
+    "result": "result.json",
+    "result_sha256": "5ba06887a78d30124f5e279c0b784334893e82338b3c4ebd5e0afeed7400134e"
+  }
+}

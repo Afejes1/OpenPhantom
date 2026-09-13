@@ -1,0 +1,38 @@
+{
+  "validation": {
+    "different_bytes": 0,
+    "binding_count": 11,
+    "candidate_size": 115,
+    "original_executed": false,
+    "target_size": 115,
+    "fixture_status": "authored; coordinator final Docker pending"
+  },
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct music_set_volume at 0x004106CC",
+  "finished_at": "2026-09-13T04:11:06.8909094Z",
+  "experiments": [
+    {
+      "hypothesis": "Natural equality and initialized guards, explicit null local, live callbacks and final input cache reproduce VC5 output.",
+      "source_sha256": "5008001d488e7f6f2d905b5778c25f7fb57723794be8b9e086e91b71bfae1c08",
+      "number": 1,
+      "report": "engine/build/campaign-001-music_set_volume-a8307ee63d46/research-result.json",
+      "result": "Complete 115-byte relocation-adjusted match; all eleven bindings verified; zero differing bytes."
+    }
+  ],
+  "campaign": "006",
+  "compiler_invocations": 1,
+  "schema": 1,
+  "started_at": "2026-09-13T04:09:39.1061408Z",
+  "status": "frozen-exact-worker-native",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 42,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-music_set_volume-444c07770135/research-result.json",
+    "docker_report": "engine/build/campaign-001-music_set_volume-f185bcc26dbd/research-result.json",
+    "result": "result.json",
+    "result_sha256": "b8a20881f6b400b841cdccf0e49355032a1e78037c0aba77f9207ebb61032d28"
+  }
+}

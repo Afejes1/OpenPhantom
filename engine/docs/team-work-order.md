@@ -14,10 +14,11 @@ Address plus the pinned retail binary identifies a function. Reported names (inc
 
 ## Work order
 
-1. **bp/bapmusic.c**: current local focus.
-2. **bp/bapdraw.c**: queued after the active module.
-3. **bp/bapmodel.c**: queued after the active module.
-4. **bp/bapmap.c**: queued after the active module.
+1. **bp/bapsound.c**: current local focus.
+2. **bp/bapmusic.c**: queued after the active module.
+3. **bp/bapdraw.c**: queued after the active module.
+4. **bp/bapmodel.c**: queued after the active module.
+5. **bp/bapmap.c**: queued after the active module.
 
 Other reported-not-done modules follow; reported-done functions are deferred pending the team's code. Existing overlapping calibrations remain regression checks.
 
@@ -27,35 +28,62 @@ The manifest asks for file-level coordination. Relay the active file above to th
 
 | Original address | Team name | Team status | Local evidence |
 |---|---|---|---|
-| 0x00410130 | bapMusicModuleCommand | not_done | Queued; no local match recorded |
-| 0x00410331 | bapMusicAttach | not_done | Queued; no local match recorded |
-| 0x0041046C | bapMusicDetach | not_done | Queued; no local match recorded |
-| 0x004104EC | bapMusicPeriodic | not_done | Research candidate (not registered): [research](../research/campaign-005-music-periodic/README.md) |
-| 0x00410527 | bapMusicDisable | not_done | Research candidate (not registered): [research](../research/campaign-005-music-disable/README.md) |
-| 0x00410556 | bapMusicDisable &#124; bapMusicEnable | not_done | Research candidate (not registered): [research](../research/campaign-005-music-enable/README.md) |
-| 0x00410592 | bapMusicIsDetached | not_done | Research candidate (not registered): [research](../research/campaign-005-music-detached/README.md) |
-| 0x004105A3 | bapMusicSetState | not_done | Queued; no local match recorded |
-| 0x0041060E | bapMusicSetSequence | not_done | Queued; no local match recorded |
-| 0x004106CC | bapMusicSetVolume | not_done | Queued; no local match recorded |
-| 0x0041073F | bapMusicGetVolume | not_done | Research candidate (not registered): [research](../research/campaign-005-music-volume/README.md) |
-| 0x0041074A | bapMusicSave | not_done | Research candidate (not registered): [research](../research/campaign-005-music-save/README.md) |
-| 0x00410787 | bapMusicRestore | not_done | Research candidate (not registered): [research](../research/campaign-005-music-restore/README.md) |
-| 0x004107B5 | bapMusicGetState | not_done | Research candidate (not registered): [research](../research/campaign-005-music-state/README.md) |
-| 0x004107CF | bapMusicGetState | not_done | Research candidate (not registered): [research](../research/campaign-005-music-sequence/README.md) |
-| 0x004107E9 | bapMusicPause | not_done | Research candidate (not registered): [research](../research/campaign-005-music-pause/README.md) |
-| 0x00410825 | bapMusicResume | not_done | Queued; no local match recorded |
+| 0x004157D0 | bapsound_resourceHandler | not_done | Queued; no local match recorded |
+| 0x004158F0 | bapsound_moduleProc | not_done | Queued; no local match recorded |
+| 0x004159F0 | bapsound_moduleInit | not_done | Queued; no local match recorded |
+| 0x00415AB5 | bapsound_moduleShutdown | not_done | Queued; no local match recorded |
+| 0x00415B38 | bapsound_registerLevelSounds | not_done | Queued; no local match recorded |
+| 0x00415C40 | bapsound_removeLevelSounds | not_done | Queued; no local match recorded |
+| 0x00415D13 | FUN_00415d13 | not_done | Queued; no local match recorded |
+| 0x00415D1D | bapsound_periodic | not_done | Queued; no local match recorded |
+| 0x00415D8A | bapsound_pollChannel | not_done | Queued; no local match recorded |
+| 0x00415E30 | bapsound_updateChannel | not_done | Queued; no local match recorded |
+| 0x0041609E | bapsound_initChannels | not_done | Queued; no local match recorded |
+| 0x0041612F | bapsound_releaseSlotHandle | not_done | Queued; no local match recorded |
+| 0x0041618B | bapsound_loadRef | not_done | Queued; no local match recorded |
+| 0x00416232 | bapsound_updatePlaces | not_done | Queued; no local match recorded |
+| 0x00416589 | bapsound_freeExtraRefs | not_done | Queued; no local match recorded |
+| 0x00416634 | bapsound_resetPlaces | not_done | Queued; no local match recorded |
+| 0x0041668F | bapsound_getField | not_done | Queued; no local match recorded |
+| 0x0041670F | bapsound_getField &#124; bapsound_setField | not_done | Queued; no local match recorded |
+| 0x00416787 | bapsound_playName | not_done | Queued; no local match recorded |
+| 0x004167C3 | bapsound_playNameVol | not_done | Queued; no local match recorded |
+| 0x0041681F | bapsound_play | not_done | Queued; no local match recorded |
+| 0x004169BD | bapsound_startChannel | not_done | Queued; no local match recorded |
+| 0x00417043 | bapsound_findRef | not_done | Research candidate (not registered): [research](../research/campaign-006-sound-find-record/README.md) |
+| 0x0041705B | bapsound_addExtraRef | not_done | Queued; no local match recorded |
+| 0x00417143 | bapsound_playCall | not_done | Queued; no local match recorded |
+| 0x004171A1 | bapsound_playByName | not_done | Queued; no local match recorded |
+| 0x004172B4 | bapsound_playVoice | not_done | Queued; no local match recorded |
+| 0x00417368 | bapsound_stopChannel | not_done | Research candidate (not registered): [research](../research/campaign-006-sound-stop-channel/README.md) |
+| 0x00417379 | bapsound_setMasterVolume | not_done | Queued; no local match recorded |
+| 0x00417459 | bapsound_getMasterVolume | not_done | Queued; no local match recorded |
+| 0x00417477 | bapsound_pauseAll | not_done | Queued; no local match recorded |
+| 0x004174EF | bapsound_resumeAll | not_done | Queued; no local match recorded |
+| 0x00417567 | bapsound_freeChannel | not_done | Queued; no local match recorded |
+| 0x00417659 | bapsound_startSample | not_done | Queued; no local match recorded |
+| 0x004176E3 | bapsound_stopAll | not_done | Research candidate (not registered): [research](../research/campaign-006-sound-stop-all/README.md) |
+| 0x00417711 | bapsound_activatePlace | not_done | Queued; no local match recorded |
+| 0x0041778C | bapsound_deactivatePlace | not_done | Research candidate (not registered): [research](../research/campaign-006-sound-deactivate-place/README.md) |
+| 0x004177AE | bapsound_setPlaceActive | not_done | Queued; no local match recorded |
+| 0x00417826 | bapsound_pinChannel | not_done | Queued; no local match recorded |
+| 0x0041786C | bapsound_getDriver | not_done | Queued; no local match recorded |
+| 0x00417876 | bapsound_testCallFlags | not_done | Research candidate (not registered): [research](../research/campaign-006-sound-test-flags/README.md) |
+| 0x004178A3 | bapsound_disable | not_done | Research candidate (not registered): [research](../research/campaign-006-sound-disable/README.md) |
+| 0x004178D1 | bapsound_disable &#124; bapsound_enable | not_done | Research candidate (not registered): [research](../research/campaign-006-sound-enable/README.md) |
+| 0x004178FA | bapsound_isMuted | not_done | Queued; no local match recorded |
 
 ## Remaining work by reported file
 
 | Reported file | Team not done | Local recorded matches within that list | Remaining |
 |---|---|---|---|
+| bp/bapsound.c | 44 | 0 | 44 |
 | bp/bapmusic.c | 17 | 0 | 17 |
 | bp/bapdraw.c | 18 | 7 | 11 |
 | bp/bapmodel.c | 8 | 4 | 4 |
 | bp/bapmap.c | 14 | 1 | 13 |
 | bp/baplight.c | 6 | 0 | 6 |
 | bp/bapobj.c | 4 | 0 | 4 |
-| bp/bapsound.c | 44 | 0 | 44 |
 | bp/bapview.c | 6 | 0 | 6 |
 | bp/bapvrt.c | 19 | 0 | 19 |
 | bp/bapworld.c | 39 | 0 | 39 |

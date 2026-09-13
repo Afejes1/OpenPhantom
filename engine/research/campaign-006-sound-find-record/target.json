@@ -1,0 +1,27 @@
+{
+  "id": "sound_find_record",
+  "address": 4288579,
+  "size": 24,
+  "body_size": 24,
+  "source": "src/sound_find_record.c",
+  "symbol": "_op_sound_find_record",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 9,
+      "address": 6010032,
+      "kind": "dir32",
+      "symbol": "_op_sound_registry"
+    },
+    {
+      "offset": 15,
+      "address": 4799451,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_lookup"
+    }
+  ]
+}

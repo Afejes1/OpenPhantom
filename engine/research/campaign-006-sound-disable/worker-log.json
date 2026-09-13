@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "started_at": "2026-09-13T04:21:47.4844402Z",
+  "finished_at": "2026-09-13T04:22:28.9062546Z",
+  "experiments": [
+    {
+      "number": 1,
+      "report": "engine/build/campaign-001-sound_disable-498c2c977984/research-result.json",
+      "hypothesis": "Exact-one guard, ordered callbacks and final flag store reproduce helper.",
+      "source_sha256": "29223e0de548674ab23df7160787ad8695e3bff505544e7f3a3a6ba38d79fc0e",
+      "result": "46-byte exact adjusted match; five bindings; zero differences."
+    }
+  ],
+  "campaign": "006",
+  "assignment": "sound_disable 0x004178A3",
+  "compiler_invocations": 1,
+  "worker": "comparison_inventory",
+  "status": "frozen-exact-worker-native",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 23,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-sound_disable-b1c7c952e148/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_disable-e23d509de21b/research-result.json",
+    "result": "result.json",
+    "result_sha256": "939269c57ab91062d526ffa7dfc1e6e5a6bc38b6755b4dc119a4c34cec81af63"
+  }
+}

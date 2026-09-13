@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "campaign": "006",
+  "status": "complete-focused-matches",
+  "started_utc": "2026-09-13T04:05:17Z",
+  "worker_stop_utc": "2026-09-13T04:40:17Z",
+  "stop_utc": "2026-09-13T04:50:17Z",
+  "baseline_commit": "182a4c8777decf9ac06bf583a00ba49165ddfaad",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "assignments": [
+    {
+      "id": "music_set_state",
+      "address": "0x004105A3",
+      "case": "research/campaign-006-music-set-state",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-006-music-set-state/result.json"
+    },
+    {
+      "id": "music_set_volume",
+      "address": "0x004106CC",
+      "case": "research/campaign-006-music-set-volume",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-006-music-set-volume/result.json"
+    },
+    {
+      "id": "music_detach",
+      "address": "0x0041046C",
+      "case": "research/campaign-006-music-detach",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-006-music-detach/result.json"
+    },
+    {
+      "id": "sound_stop_channel",
+      "address": "0x00417368",
+      "case": "research/campaign-006-sound-stop-channel",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-006-sound-stop-channel/result.json"
+    },
+    {
+      "id": "sound_find_record",
+      "address": "0x00417043",
+      "case": "research/campaign-006-sound-find-record",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-006-sound-find-record/result.json"
+    },
+    {
+      "id": "sound_deactivate_place",
+      "address": "0x0041778C",
+      "case": "research/campaign-006-sound-deactivate-place",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-006-sound-deactivate-place/result.json"
+    },
+    {
+      "id": "sound_test_flags",
+      "address": "0x00417876",
+      "case": "research/campaign-006-sound-test-flags",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-006-sound-test-flags/result.json"
+    },
+    {
+      "id": "sound_enable",
+      "address": "0x004178D1",
+      "case": "research/campaign-006-sound-enable",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-006-sound-enable/result.json"
+    },
+    {
+      "id": "sound_disable",
+      "address": "0x004178A3",
+      "case": "research/campaign-006-sound-disable",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-006-sound-disable/result.json"
+    },
+    {
+      "id": "sound_stop_all",
+      "address": "0x004176E3",
+      "case": "research/campaign-006-sound-stop-all",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-006-sound-stop-all/result.json"
+    }
+  ],
+  "final_verification_completed_utc": "2026-09-13T04:24:09Z",
+  "ghidra_metadata_saved": true,
+  "caller_redecompilation": "Disable-music, dialogue stop, sound initialization and sound-disable callers refreshed after renames."
+}

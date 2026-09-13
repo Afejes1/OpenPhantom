@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "campaign": "006",
+  "reviews": {
+    "music_set_state": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 107,
+      "source_review": "Complete one-int cdecl ABI, both gates, pre-lock state write, post-lock state reload, live depth operations and preserved backend return independently reviewed. Fixture covers boundary IDs and callback-visible mutations without arithmetic overflow. Source and fixture retained.",
+      "fixture_checks": 45,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "music_set_volume": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 115,
+      "source_review": "Reviewed x87 equality/unordered gate, signed-zero cache preservation, initialized gate, original-input forwarding including null buffer, callback order, live depth and final cache store. Authored fixture uses bounded counters and bit copies; no source correction.",
+      "fixture_checks": 42,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "music_detach": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 128,
+      "source_review": "Reviewed optional resume, sentinel argument order and positive-zero float, ignored callback failures, lock depth mutations, shutdown slot calling convention and final initialized clear. All stub counters are bounded. No source correction.",
+      "fixture_checks": 58,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_stop_channel": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 17,
+      "source_review": "Reviewed direct argument forwarding and exactly one release callback. Boundary slot values exercise absence of a wrapper guard; authored stub never indexes an array. No source correction.",
+      "fixture_checks": 10,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_find_record": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 24,
+      "source_review": "Reviewed cdecl registry/name argument order, exact return identity, null forwarding, one callback and retained registry mutation. All fixture pointers reference live authored objects or null; no dereference or string read occurs.",
+      "fixture_checks": 15,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_deactivate_place": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 34,
+      "source_review": "Reviewed initialization and null guards, active word at offset0x30, total 60-byte placement stride, and preservation of all other record bytes including the sample-handle tail. Fixture uses valid owned records and no undefined arithmetic.",
+      "fixture_checks": 10,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_test_flags": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 45,
+      "source_review": "Reviewed world field0xCC8, 64-byte descriptor stride, flags0x18, bitwise result rather than bool, valid interior-base negative indexing and no candidate mutation. Corrected fixture-only snapshot overread before execution; candidate unchanged.",
+      "fixture_checks": 13,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_enable": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 41,
+      "source_review": "Reviewed disabled==0 guard, exact option key/value, ignored writer return, callback-visible old flag and unconditional final zero overriding callback changes. Authored callbacks do not write real configuration.",
+      "fixture_checks": 14,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_disable": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 46,
+      "source_review": "Reviewed exact-one skip, key/value arguments, writer then stop ordering, ignored result, callback-visible flag changes and final one overriding callbacks. Bounded authored stubs do not persist configuration or release resources.",
+      "fixture_checks": 23,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_stop_all": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 46,
+      "source_review": "Reviewed signed loop bounds0 through11, exactly twelve ascending release callbacks and no state gate. Authored capture array is guarded against excess callback writes and the sequence is checked on repeated calls.",
+      "fixture_checks": 28,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    }
+  },
+  "issues": [
+    {
+      "id": "sound-flags-fixture-snapshot-bounds",
+      "severity": "fixture-only",
+      "resolved": true,
+      "candidate_changed": false,
+      "before_execution": true,
+      "description": "Negative index used an interior descriptor base correctly, but fixture copied four records from that interior base. Snapshot now copies each complete owned array from its allocation base; candidate and target unchanged."
+    }
+  ],
+  "full_regression_run": false,
+  "worker_read_only_review": {
+    "completed": true,
+    "cases": 10,
+    "receipts": 10,
+    "material_findings": 0,
+    "fixture_fix_confirmed": true,
+    "notes": "All final source, ABI and fixture checks reviewed. Deactivate-place could additionally assert unchanged initialized on nonnull paths; exact bytes already show no global store. Several small fixtures are compressed; future fixtures should use normal multiline formatting. Neither note blocks this checkpoint."
+  }
+}

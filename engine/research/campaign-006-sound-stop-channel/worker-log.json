@@ -1,0 +1,30 @@
+{
+  "started_at": "2026-09-13T04:16:43.7112088Z",
+  "finished_at": "2026-09-13T04:17:29.0394311Z",
+  "schema": 1,
+  "compiler_invocations": 1,
+  "worker": "comparison_inventory",
+  "campaign": "006",
+  "assignment": "sound_stop_channel 0x00417368",
+  "status": "frozen-exact-worker-native",
+  "experiments": [
+    {
+      "result": "17-byte exact adjusted match; one call binding; zero differences.",
+      "report": "engine/build/campaign-001-sound_stop_channel-d58f36f8642e/research-result.json",
+      "hypothesis": "Direct unsigned argument forwarding reproduces wrapper.",
+      "number": 1,
+      "source_sha256": "9ef5c470cb4d89dbf6b52e29828b2e81b6b38267bb4c7b541087ada3f472a329"
+    }
+  ],
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 10,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-sound_stop_channel-71615788e333/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_stop_channel-dbd096e3ef8f/research-result.json",
+    "result": "result.json",
+    "result_sha256": "d53ace864821be0beed083fc132500c1dc9afd7da9c86439f75242687dfa52a0"
+  }
+}

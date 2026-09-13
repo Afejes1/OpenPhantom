@@ -1,0 +1,30 @@
+{
+  "experiments": [
+    {
+      "source_sha256": "fb8726088120a0b07b1b577d7e8ac36f5f3aa1234452378d24c10662c54306db",
+      "result": "34-byte exact adjusted match; one binding; zero differences.",
+      "number": 1,
+      "report": "engine/build/campaign-001-sound_deactivate_place-8e4ee2b8e1fe/research-result.json",
+      "hypothesis": "Two guards and one active-field store reproduce the helper."
+    }
+  ],
+  "campaign": "006",
+  "status": "frozen-exact-worker-native",
+  "started_at": "2026-09-13T04:19:00.2701565Z",
+  "assignment": "sound_deactivate_place 0x0041778C",
+  "finished_at": "2026-09-13T04:19:24.9803394Z",
+  "compiler_invocations": 1,
+  "worker": "comparison_inventory",
+  "schema": 1,
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 10,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-sound_deactivate_place-0265c5621fb3/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_deactivate_place-6ae65c286b57/research-result.json",
+    "result": "result.json",
+    "result_sha256": "f940ddbf72a9a18846bfeee42b7cb33256b542bcd8049c0cedd4ae399ff0b64e"
+  }
+}

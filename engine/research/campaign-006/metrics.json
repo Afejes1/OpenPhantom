@@ -1,0 +1,316 @@
+{
+  "schema": 1,
+  "campaign": "006",
+  "started_utc": "2026-09-13T04:05:17Z",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_implementation_workers": 1,
+  "implementation_finished_utc": "2026-09-13T04:23:15.8934497Z",
+  "final_verification_completed_utc": "2026-09-13T04:24:09Z",
+  "publication_deadline_utc": "2026-09-13T04:50:17Z",
+  "exact_functions": 10,
+  "raw_unadjusted_matches": 0,
+  "relocation_adjusted_matches": 10,
+  "exact_full_span_bytes": 603,
+  "verified_address_operands": 52,
+  "near_matches": 0,
+  "body_exact_layout_pending": 0,
+  "research_candidates": 0,
+  "fixture_checks": 258,
+  "fixture_failures": 0,
+  "worker_candidate_compiler_invocations": 10,
+  "parent_final_candidate_compiles": 20,
+  "parent_authored_fixture_compiles": 10,
+  "first_worker_compile_matches": 10,
+  "accepted_history_promotions": 0,
+  "historical_accepted_functions": 14,
+  "historical_evidence_records": 19,
+  "weekly_shared_account_usage_start_percent": 27,
+  "weekly_shared_account_usage_observed_percent": 27,
+  "usage_limitations": "Rounded account-wide meter, not exact campaign attribution or a controlled model benchmark.",
+  "shared_tooling_changed": false,
+  "full_regression_run": false,
+  "original_game_executed": false,
+  "cases": [
+    {
+      "id": "music_set_state",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-006-music-set-state",
+      "result_sha256": "49e9fd6d785ff52376c2bbb593f85a98848937eb5ff86a5879a67c452a0cfefd",
+      "worker_log_sha256": "ba871243b2a2c547aa7f3b7d77e4c71b896a33adb1618a792070179119a816c4",
+      "target_size": 107,
+      "verified_operands": 11,
+      "different_bytes": 0,
+      "fixture_checks": 45,
+      "worker_started_utc": "2026-09-13T04:07:34.0027105Z",
+      "worker_finished_utc": "2026-09-13T04:08:40.3384645Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.360386,
+      "docker_elapsed_seconds": 5.554111,
+      "attempts": [
+        {
+          "hypothesis": "Natural early guards, pre-lock cache write, live global reload and one saved result reproduce the setter.",
+          "report": "engine/build/campaign-001-music_set_state-3169af2a68bf/research-result.json",
+          "source_sha256": "280fc7572648eea46340b6a5bb2c64c04cf7ad95522185bb19e1ed17e2fa0da6",
+          "result": "Complete 107-byte relocation-adjusted match; all eleven bindings verified; zero differing bytes.",
+          "number": 1,
+          "report_sha256": "f934e9c48d7da0b2c48459c59f84cc7d4c1c6c130b54ed8455e86b6d31e484d8",
+          "elapsed_seconds": 1.384394
+        }
+      ]
+    },
+    {
+      "id": "music_set_volume",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-006-music-set-volume",
+      "result_sha256": "b8a20881f6b400b841cdccf0e49355032a1e78037c0aba77f9207ebb61032d28",
+      "worker_log_sha256": "631e5584c7d71d05c0c3fe057b58853b8b6b1c1357621470f1ee96e7c2364bac",
+      "target_size": 115,
+      "verified_operands": 11,
+      "different_bytes": 0,
+      "fixture_checks": 42,
+      "worker_started_utc": "2026-09-13T04:09:39.1061408Z",
+      "worker_finished_utc": "2026-09-13T04:11:06.8909094Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.433092,
+      "docker_elapsed_seconds": 5.745394,
+      "attempts": [
+        {
+          "hypothesis": "Natural equality and initialized guards, explicit null local, live callbacks and final input cache reproduce VC5 output.",
+          "source_sha256": "5008001d488e7f6f2d905b5778c25f7fb57723794be8b9e086e91b71bfae1c08",
+          "number": 1,
+          "report": "engine/build/campaign-001-music_set_volume-a8307ee63d46/research-result.json",
+          "result": "Complete 115-byte relocation-adjusted match; all eleven bindings verified; zero differing bytes.",
+          "report_sha256": "ebd7317ef3cf7439dd42a60625612e5c17dfdc271907bc350257169f556fb783",
+          "elapsed_seconds": 1.381923
+        }
+      ]
+    },
+    {
+      "id": "music_detach",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-006-music-detach",
+      "result_sha256": "a07dbb22e10b41fe4ea9f2b1d83ec49bb19047acccdb438ddb7302df7cf69e44",
+      "worker_log_sha256": "ec4be343fb3efa9f9679853209e94d87439fc49d40d5368910e65f62c386783f",
+      "target_size": 128,
+      "verified_operands": 15,
+      "different_bytes": 0,
+      "fixture_checks": 58,
+      "worker_started_utc": "2026-09-13T04:11:19.2573096Z",
+      "worker_finished_utc": "2026-09-13T04:12:32.1321311Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.39141,
+      "docker_elapsed_seconds": 5.318231,
+      "attempts": [
+        {
+          "number": 1,
+          "report": "engine/build/campaign-001-music_detach-ee694df4cbb3/research-result.json",
+          "result": "Complete 128-byte relocation-adjusted match; all fifteen bindings verified; zero differing bytes.",
+          "hypothesis": "Natural optional resume, sentinel reset and ordered live-depth shutdown sequence reproduce detach.",
+          "source_sha256": "73a457305d26ab6a99984a9aee4025495281be7cfa0680aa4c58aeb15205adf6",
+          "report_sha256": "bc4bae5c56f000c03706c26fd8fa6e14027ebfbdba052e4a90242b9e52dbb38c",
+          "elapsed_seconds": 1.408517
+        }
+      ]
+    },
+    {
+      "id": "sound_stop_channel",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-006-sound-stop-channel",
+      "result_sha256": "d53ace864821be0beed083fc132500c1dc9afd7da9c86439f75242687dfa52a0",
+      "worker_log_sha256": "1d4728d0489def9410ab28bb65ec36d2ce0d1ed3887e16464b0c8b74bfedf22b",
+      "target_size": 17,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "fixture_checks": 10,
+      "worker_started_utc": "2026-09-13T04:16:43.7112088Z",
+      "worker_finished_utc": "2026-09-13T04:17:29.0394311Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.403129,
+      "docker_elapsed_seconds": 5.407388,
+      "attempts": [
+        {
+          "result": "17-byte exact adjusted match; one call binding; zero differences.",
+          "report": "engine/build/campaign-001-sound_stop_channel-d58f36f8642e/research-result.json",
+          "hypothesis": "Direct unsigned argument forwarding reproduces wrapper.",
+          "number": 1,
+          "source_sha256": "9ef5c470cb4d89dbf6b52e29828b2e81b6b38267bb4c7b541087ada3f472a329",
+          "report_sha256": "4d5fc65e5a028189ab928c7b92df64f9a1d345372cd3ea10659a69c4e8d78fa4",
+          "elapsed_seconds": 1.399409
+        }
+      ]
+    },
+    {
+      "id": "sound_find_record",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-006-sound-find-record",
+      "result_sha256": "5ba06887a78d30124f5e279c0b784334893e82338b3c4ebd5e0afeed7400134e",
+      "worker_log_sha256": "2e7beed78184de8989aa7ed70e0d6fb419d6b9997499f2b55f30e8988ceca4b7",
+      "target_size": 24,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "fixture_checks": 15,
+      "worker_started_utc": "2026-09-13T04:18:05.4796674Z",
+      "worker_finished_utc": "2026-09-13T04:18:32.7223384Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.384296,
+      "docker_elapsed_seconds": 5.323777,
+      "attempts": [
+        {
+          "report": "engine/build/campaign-001-sound_find_record-47f1ab58ae96/research-result.json",
+          "source_sha256": "7fae008e25610957c7b84c99f7f3d6b334a425e2af5bca1caa313fdc120ed8dc",
+          "number": 1,
+          "hypothesis": "Direct live-registry lookup and return.",
+          "result": "24-byte exact adjusted match; two bindings; zero differences.",
+          "report_sha256": "225d6a2cf04e730fb5a6cc5e2e72e3a1d3b16324475f344b7e6d4edf9f527ff8",
+          "elapsed_seconds": 1.416881
+        }
+      ]
+    },
+    {
+      "id": "sound_deactivate_place",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-006-sound-deactivate-place",
+      "result_sha256": "f940ddbf72a9a18846bfeee42b7cb33256b542bcd8049c0cedd4ae399ff0b64e",
+      "worker_log_sha256": "e0aed14d1f896d4427f805de30cc97b9c08a2a1427e185576d3ad486bda1341c",
+      "target_size": 34,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "fixture_checks": 10,
+      "worker_started_utc": "2026-09-13T04:19:00.2701565Z",
+      "worker_finished_utc": "2026-09-13T04:19:24.9803394Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.369922,
+      "docker_elapsed_seconds": 5.550589,
+      "attempts": [
+        {
+          "source_sha256": "fb8726088120a0b07b1b577d7e8ac36f5f3aa1234452378d24c10662c54306db",
+          "result": "34-byte exact adjusted match; one binding; zero differences.",
+          "number": 1,
+          "report": "engine/build/campaign-001-sound_deactivate_place-8e4ee2b8e1fe/research-result.json",
+          "hypothesis": "Two guards and one active-field store reproduce the helper.",
+          "report_sha256": "63523b5e1d5164b1f27b6cd04aaea739eeac6b7712740ecc979aef3bedcd1777",
+          "elapsed_seconds": 1.404722
+        }
+      ]
+    },
+    {
+      "id": "sound_test_flags",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-006-sound-test-flags",
+      "result_sha256": "afe28e2ef3a63c38a62719b939ce235e6eb84632daf7b703a05b93b8d4e28f1d",
+      "worker_log_sha256": "47e0c798a43a1280be840375cf9b39709cd2024873a9ea2f51f098c3820e518e",
+      "target_size": 45,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "fixture_checks": 13,
+      "worker_started_utc": "2026-09-13T04:19:56.0497322Z",
+      "worker_finished_utc": "2026-09-13T04:20:20.6331916Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.376903,
+      "docker_elapsed_seconds": 5.496327,
+      "attempts": [
+        {
+          "source_sha256": "1b9ab75bef519defa3d71eedad4c85c91a038dc9266c0bb74e8d58d0d3657721",
+          "report": "engine/build/campaign-001-sound_test_flags-7921812a1ab9/research-result.json",
+          "hypothesis": "Natural local pointer assignment, indexed advance and bitwise mask reproduce helper.",
+          "number": 1,
+          "result": "45-byte exact adjusted match; one binding; zero differences.",
+          "report_sha256": "0420058b8982f6395f46459d26cf13ed8995876d83b966c8f2d05dd4f3819b42",
+          "elapsed_seconds": 1.394842
+        }
+      ]
+    },
+    {
+      "id": "sound_enable",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-006-sound-enable",
+      "result_sha256": "5b8eb3d89fc69117ce10ec89c23fd135d9dffd33da84be5cfff7167479bb75c5",
+      "worker_log_sha256": "7d99f50f378238412da44675d3d6bb6e0a9f621c3ff72fe5346fe979cf8e7430",
+      "target_size": 41,
+      "verified_operands": 4,
+      "different_bytes": 0,
+      "fixture_checks": 14,
+      "worker_started_utc": "2026-09-13T04:20:44.9397758Z",
+      "worker_finished_utc": "2026-09-13T04:21:12.4282762Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.399459,
+      "docker_elapsed_seconds": 5.345272,
+      "attempts": [
+        {
+          "number": 1,
+          "source_sha256": "026b57e514a4e2f88ab67693022709ffa217acbfa37cec3d8d11c60ca9198e2f",
+          "result": "41-byte exact adjusted match; four bindings; zero differences.",
+          "report": "engine/build/campaign-001-sound_enable-b0a34e3b0301/research-result.json",
+          "hypothesis": "Natural zero guard, callback, then final global clear reproduce helper.",
+          "report_sha256": "1f443387e04137d9e34162cfd334ef7c28fd6d05cedce6403fd92937233c474b",
+          "elapsed_seconds": 1.407892
+        }
+      ]
+    },
+    {
+      "id": "sound_disable",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-006-sound-disable",
+      "result_sha256": "939269c57ab91062d526ffa7dfc1e6e5a6bc38b6755b4dc119a4c34cec81af63",
+      "worker_log_sha256": "f4e9f824a1f4097eb397d4ff722fe8d026ad517761f6987f07bc17af647af38e",
+      "target_size": 46,
+      "verified_operands": 5,
+      "different_bytes": 0,
+      "fixture_checks": 23,
+      "worker_started_utc": "2026-09-13T04:21:47.4844402Z",
+      "worker_finished_utc": "2026-09-13T04:22:28.9062546Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.397444,
+      "docker_elapsed_seconds": 5.927577,
+      "attempts": [
+        {
+          "number": 1,
+          "report": "engine/build/campaign-001-sound_disable-498c2c977984/research-result.json",
+          "hypothesis": "Exact-one guard, ordered callbacks and final flag store reproduce helper.",
+          "source_sha256": "29223e0de548674ab23df7160787ad8695e3bff505544e7f3a3a6ba38d79fc0e",
+          "result": "46-byte exact adjusted match; five bindings; zero differences.",
+          "report_sha256": "766425532865aacb44880cc4be9850ae3779ae92d705f3cc1751f2826e18eee8",
+          "elapsed_seconds": 1.409031
+        }
+      ]
+    },
+    {
+      "id": "sound_stop_all",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-006-sound-stop-all",
+      "result_sha256": "47c7c2deb57ade82f0320d1157ceff480b0344d32c5232afc651225cd2364ceb",
+      "worker_log_sha256": "6cc6f1a6b307a8bf41509dc6311deceb33638de833dd2b2ff162de3bd00cc3c0",
+      "target_size": 46,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "fixture_checks": 28,
+      "worker_started_utc": "2026-09-13T04:22:50.5287294Z",
+      "worker_finished_utc": "2026-09-13T04:23:15.8934497Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.392947,
+      "docker_elapsed_seconds": 5.562034,
+      "attempts": [
+        {
+          "report": "engine/build/campaign-001-sound_stop_all-61b2b1b1e1ea/research-result.json",
+          "source_sha256": "d59f5aa5caf86d26f214776fc7bd7f3e7f52e434a6d067ec5d73ef200d62bf5b",
+          "hypothesis": "Natural signed loop from zero while below twelve reproduces wrapper.",
+          "result": "46-byte exact adjusted match; one call binding; zero differences.",
+          "number": 1,
+          "report_sha256": "78f13ecbc112e1e3f9f7b634b891be20144df1b806c6523692fd72418a39da7f",
+          "elapsed_seconds": 1.419419
+        }
+      ]
+    }
+  ]
+}

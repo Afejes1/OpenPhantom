@@ -1,0 +1,30 @@
+{
+  "experiments": [
+    {
+      "report": "engine/build/campaign-001-sound_stop_all-61b2b1b1e1ea/research-result.json",
+      "source_sha256": "d59f5aa5caf86d26f214776fc7bd7f3e7f52e434a6d067ec5d73ef200d62bf5b",
+      "hypothesis": "Natural signed loop from zero while below twelve reproduces wrapper.",
+      "result": "46-byte exact adjusted match; one call binding; zero differences.",
+      "number": 1
+    }
+  ],
+  "compiler_invocations": 1,
+  "status": "frozen-exact-worker-native",
+  "assignment": "sound_stop_all 0x004176E3",
+  "worker": "comparison_inventory",
+  "campaign": "006",
+  "finished_at": "2026-09-13T04:23:15.8934497Z",
+  "started_at": "2026-09-13T04:22:50.5287294Z",
+  "schema": 1,
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 28,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-sound_stop_all-4d951e4681b4/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_stop_all-6c1e27bbe87a/research-result.json",
+    "result": "result.json",
+    "result_sha256": "47c7c2deb57ade82f0320d1157ceff480b0344d32c5232afc651225cd2364ceb"
+  }
+}

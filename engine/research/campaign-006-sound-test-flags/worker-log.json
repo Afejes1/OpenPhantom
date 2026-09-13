@@ -1,0 +1,30 @@
+{
+  "assignment": "sound_test_flags 0x00417876",
+  "status": "frozen-exact-worker-native",
+  "experiments": [
+    {
+      "source_sha256": "1b9ab75bef519defa3d71eedad4c85c91a038dc9266c0bb74e8d58d0d3657721",
+      "report": "engine/build/campaign-001-sound_test_flags-7921812a1ab9/research-result.json",
+      "hypothesis": "Natural local pointer assignment, indexed advance and bitwise mask reproduce helper.",
+      "number": 1,
+      "result": "45-byte exact adjusted match; one binding; zero differences."
+    }
+  ],
+  "finished_at": "2026-09-13T04:20:20.6331916Z",
+  "started_at": "2026-09-13T04:19:56.0497322Z",
+  "campaign": "006",
+  "worker": "comparison_inventory",
+  "compiler_invocations": 1,
+  "schema": 1,
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 13,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_test_flags-fe2537ab69f7/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_test_flags-54a44a854697/research-result.json",
+    "result": "result.json",
+    "result_sha256": "afe28e2ef3a63c38a62719b939ce235e6eb84632daf7b703a05b93b8d4e28f1d"
+  }
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "music_set_state",
+    "address": "004105A3",
+    "original_name": "set_interactive_music_state",
+    "new_name": "set_interactive_music_state",
+    "confidence": "HIGH",
+    "purpose": "Cache a changed requested music state before locking, call the backend with current state and preserve its return",
+    "evidence": "Complete107-byte body, all eleven operands, eight callers and backend thunk; one stack argument despite older decompiler thiscall inference",
+    "full_span": 107,
+    "fixture_checks": 45
+  },
+  {
+    "id": "music_set_volume",
+    "address": "004106CC",
+    "original_name": "set_interactive_music_output_volume",
+    "new_name": "set_interactive_music_output_volume",
+    "confidence": "HIGH",
+    "purpose": "Apply changed music volume under lock and cache the original input only after unlocking",
+    "evidence": "Complete115-byte body and eleven operands; initialization/menu callers and buffer-volume callee; x87 equal or unordered path skips",
+    "full_span": 115,
+    "fixture_checks": 42
+  },
+  {
+    "id": "music_detach",
+    "address": "0041046C",
+    "original_name": "FUN_0041046c",
+    "new_name": "detach_interactive_music",
+    "confidence": "HIGH",
+    "purpose": "Resume paused music, reset requested IDs, stop and terminate backend under lock, then clear initialized",
+    "evidence": "Complete128-byte body, fifteen operands, disable/menu/dispatch callers; sentinel arguments1000/2000 and live callback depth/flag order",
+    "full_span": 128,
+    "fixture_checks": 58
+  },
+  {
+    "id": "sound_stop_channel",
+    "address": "00417368",
+    "original_name": "FUN_00417368",
+    "new_name": "stop_sound_channel",
+    "confidence": "HIGH",
+    "purpose": "Forward a sound slot to the release routine without an additional range guard",
+    "evidence": "Complete17-byte body and one call operand; dialogue callers00431234/00431250; release callee00417567 validates unsigned slot below12",
+    "full_span": 17,
+    "fixture_checks": 10
+  },
+  {
+    "id": "sound_find_record",
+    "address": "00417043",
+    "original_name": "find_registered_sound_record",
+    "new_name": "find_registered_sound_record",
+    "confidence": "HIGH",
+    "purpose": "Look up a name in the sound registry and preserve the returned record pointer",
+    "evidence": "Complete24-byte body and two operands; allocator004169BD and lookup00493BDB independently establish argument order and pointer return",
+    "full_span": 24,
+    "fixture_checks": 15
+  },
+  {
+    "id": "sound_deactivate_place",
+    "address": "0041778C",
+    "original_name": "stop_b3d_sound_placement",
+    "new_name": "stop_b3d_sound_placement",
+    "confidence": "HIGH",
+    "purpose": "Clear the active field of a nonnull placement when sound is initialized",
+    "evidence": "Complete34-byte body and initialized binding; caller004177AE uses60-byte records; only word+0x30 is cleared and sample handle+0x38 remains",
+    "full_span": 34,
+    "fixture_checks": 10
+  },
+  {
+    "id": "sound_test_flags",
+    "address": "00417876",
+    "original_name": "test_b3d_indexed_sound_flags",
+    "new_name": "test_b3d_indexed_sound_flags",
+    "confidence": "HIGH",
+    "purpose": "Return selected sound descriptor flags masked by the caller mask",
+    "evidence": "Complete45-byte body and world binding; world+0xCC8 table,64-byte descriptor and flags+0x18; AI caller00435022 tests mask0x10",
+    "full_span": 45,
+    "fixture_checks": 13
+  },
+  {
+    "id": "sound_enable",
+    "address": "004178D1",
+    "original_name": "FUN_004178d1",
+    "new_name": "enable_sound",
+    "confidence": "HIGH",
+    "purpose": "Write enabled option and clear disabled only after the callback",
+    "evidence": "Complete41-byte body and four operands; menu/initializer callers and configuration writer ABI; zero-only skip and ignored return",
+    "full_span": 41,
+    "fixture_checks": 14
+  },
+  {
+    "id": "sound_disable",
+    "address": "004178A3",
+    "original_name": "FUN_004178a3",
+    "new_name": "disable_sound",
+    "confidence": "HIGH",
+    "purpose": "Write disabled option, stop all slots and set disabled after callbacks",
+    "evidence": "Complete46-byte body and five operands; menu/initializer callers, configuration writer and stop-all callee; exactly-one skip",
+    "full_span": 46,
+    "fixture_checks": 23
+  },
+  {
+    "id": "sound_stop_all",
+    "address": "004176E3",
+    "original_name": "FUN_004176e3",
+    "new_name": "stop_all_sound_slots",
+    "confidence": "HIGH",
+    "purpose": "Release all twelve sound slots in ascending index order",
+    "evidence": "Complete46-byte body and one call operand; five callers and bounded release callee; signed loop indices0 through11",
+    "full_span": 46,
+    "fixture_checks": 28
+  }
+]

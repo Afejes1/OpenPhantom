@@ -213,3 +213,15 @@ playback state. Periodic service gates on initialized exactly equal to1, whereas
 pause is unconditional and writes its flag after unlocking. Fixtures exercise
 these callback-visible timing details with authored stubs; no original executable
 or imported backend was executed.
+
+## Campaign 006: music lifecycle and sound helpers
+
+Ten additional C functions match603 complete bytes after all52 address operands
+are verified, with258 focused assertions passing. State caching occurs before
+lock while volume caching and detach initialization clearing occur after unlock.
+The sound enable/disable guards distinguish zero from exactly one. Placement
+records use a60-byte stride, whereas indexed sound descriptors use64 bytes;
+stop-all releases twelve slots. These complete matches remain separate from
+accepted history and final executable layout. One fixture snapshot overread was
+corrected before execution; no candidate correction was needed. See
+[the campaign results](research/campaign-006/results.md).

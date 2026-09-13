@@ -1,0 +1,21 @@
+{
+  "id": "sound_test_flags",
+  "address": 4290678,
+  "size": 45,
+  "body_size": 45,
+  "source": "src/sound_test_flags.c",
+  "symbol": "_op_sound_test_flags",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 9044064,
+      "kind": "dir32",
+      "symbol": "_op_sound_world"
+    }
+  ]
+}

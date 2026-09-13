@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "sound_stop_all",
+  "candidate": "candidate.c",
+  "symbol": "_op_sound_stop_all",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}
