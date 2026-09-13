@@ -62,7 +62,7 @@ int sa_main(void)
             }
             memcpy(sa_before, sa_names, sizeof(sa_names));
             memcpy(sa_expected, "unit:", 5);
-            strcpy(sa_expected + 5, sa_names[sa_which]);
+            memcpy(sa_expected + 5, sa_names[sa_which], strlen(sa_names[sa_which]) + 1);
             sa_stage = 0;
             sa_buffer = 0;
             result = op_acquire_sprite(sa_names[sa_which]);
@@ -72,7 +72,7 @@ int sa_main(void)
                 sa_before[sa_which][0] = 'z';
             sa_CHECK(memcmp(sa_names, sa_before, sizeof(sa_names)) == 0);
         }
-    printf("sprite acquire: %d sa_checks, %d sa_failures\n", sa_checks, sa_failures);
+    printf("sprite acquire: %d checks, %d failures\n", sa_checks, sa_failures);
     return sa_failures != 0;
 }
 
