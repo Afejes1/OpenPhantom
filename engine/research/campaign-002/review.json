@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "campaign": "002",
+  "reviewed_utc": "2026-09-13T01:44:59Z",
+  "frame_inventory": {
+    "complete_original_span": 1456,
+    "body": 1449,
+    "alignment": 7,
+    "absolute_operands": 144,
+    "direct_call_operands": 9,
+    "independent_symbol_map_size": 35,
+    "independent_direct_call_offsets": [
+      185,
+      207,
+      429,
+      505,
+      601,
+      644,
+      717,
+      815,
+      1056
+    ],
+    "all_original_operand_values_and_constants_verified": true,
+    "candidate_operand_layout_verified": false,
+    "status": "reviewed-complete-original-inventory"
+  },
+  "issues": [
+    {
+      "id": "I01",
+      "finding": "Octant table relocation used biased pointer as array base",
+      "evidence": "0x4041EC uses 0x4AA090 followed by [EDX-0x10] at 0x4041F2; candidate row element zero is based at 0x4AA080",
+      "correction": "Use base 0x4AA080 plus addend 16 at binding offset 110",
+      "status": "addressed-and-independently-verified"
+    }
+  ],
+  "line_reset": {
+    "status": "reviewed-focused-exact",
+    "complete_span": 400,
+    "reviewed_call_operand": {
+      "offset": 15,
+      "target": "0x00495290",
+      "purpose": "tracked 80-byte allocation, not CRT malloc"
+    },
+    "source_review": "Compared field offsets, direction branches, tie behavior, error formulas and preservation against independent disassembly packet. No source correction required.",
+    "fixture_review": "Required four axis-aligned cases and whole-record failure immutability before final verification.",
+    "fixture_checks": 238,
+    "fixture_failures": 0,
+    "independent_native_docker_verification": true,
+    "source_choice": "Legitimate original VC5 intrinsic(abs) directive; no arbitrary stack construction or byte insertion.",
+    "result": "research/campaign-002-line-reset/result.json"
+  },
+  "segment_test": {
+    "status": "reviewed-focused-exact",
+    "complete_span": 237,
+    "relocations": 0,
+    "different_bytes": 0,
+    "source_review": "Reviewed eight arguments, both signed XOR rejection branches, ten meaningful scalar locals, no calls/globals/writes, and return behavior against independently prepared complete disassembly packet. No semantic source correction required.",
+    "fixture_review": "Ten explicit cases with reversal and swap checks plus 6561 coordinate tuples tested against an independent determinant formulation. Includes both rejection branches, disjoint collinear segments, distinct points and point-on/off-line cases.",
+    "fixture_checks": 6601,
+    "fixture_failures": 0,
+    "independent_native_docker_verification": true,
+    "result": "research/campaign-002-segment-test/result.json"
+  },
+  "metadata_notes": [
+    "Scan-line function renamed and commented, callers re-decompiled and program saved. Attempted void-pointer signature update was rejected by the bridge; existing recovered five-argument int-pointer signature remains."
+  ]
+}

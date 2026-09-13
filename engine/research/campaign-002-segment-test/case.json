@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "id": "frame_setup",
+  "id": "segments_intersect",
   "candidate": "candidate.c",
-  "symbol": "_op_frame_setup",
+  "symbol": "_op_segments_intersect",
   "inputs": [
     "candidate.c",
-    "frame.h",
+    "segment.h",
     "../../src/baseline.h",
     "behavior.c"
   ],
@@ -13,7 +13,7 @@
   "extra_fixture_sources": [],
   "target": "target.json",
   "flags": [
-    "/O2",
+    "/Od",
     "/MT"
   ]
 }

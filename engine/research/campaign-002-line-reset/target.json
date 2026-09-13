@@ -1,0 +1,21 @@
+{
+  "id": "reset_scan_line",
+  "address": 4228280,
+  "size": 400,
+  "body_size": 400,
+  "source": "src/reset_scan_line.c",
+  "symbol": "_op_reset_scan_line",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 15,
+      "address": 4805264,
+      "symbol": "_op_scan_allocate",
+      "kind": "rel32-call"
+    }
+  ]
+}

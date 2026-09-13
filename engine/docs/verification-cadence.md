@@ -43,3 +43,9 @@ relying on new results; request a manual workflow run when it is available.
 Recovery packaging and fresh-restore rebuilds belong at toolchain/recovery
 changes or substantial milestones, not every function. The latest receipt
 continues to certify only its named source checkpoint.
+
+## Bounded campaign assignments
+
+[Campaign rules](campaign-rules.md) define preparation, worker ownership, time
+caps, independent review and the 5% near-match scheduling category. That category
+does not change this document's exact acceptance or batch-checkpoint requirements.

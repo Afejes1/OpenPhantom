@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "campaign": "002",
+  "worker": "comparison_inventory",
+  "assignment": "Complete original frame-setup binding inventory",
+  "started_at": "2026-09-13T01:19:16.3845923Z",
+  "finished_at": "2026-09-13T01:27:00Z",
+  "deadline_at": "2026-09-13T01:37:00Z",
+  "commands": [
+    "Get-Date; git status; read engine/docs/campaign-rules.md and CONTRIBUTING.md",
+    "read campaign-001-frame-setup candidate.c, frame.h, target.json, README.md and pinned result metadata",
+    "GET http://127.0.0.1:8192/instances and /program",
+    "GET /functions/0x00404180, /decompile and /disassembly?offset=0&limit=1000",
+    "GET /memory for the full function span and every referenced float constant",
+    "GET function metadata for 0x0049A44C, 0x00494238, 0x004084B8 and 0x00403EF0",
+    "parse the pinned retail PE relocation table with engine/tools/formats.py",
+    "read the pinned native candidate.function.json COFF relocation inventory",
+    "generate frame-bindings.json from verified original operands and reviewed symbol mappings",
+    "run matching.validate_bindings and matching.verify_reference against the pinned retail executable",
+    "run matching.compare_function against the pinned native candidate object",
+    "apply coordinator correction at binding offset 110: _op_scan_octant_table base 0x004AA080 plus addend 16",
+    "rerun matching.validate_bindings and matching.verify_reference after the correction",
+    "check owned output files for LF-only line endings"
+  ],
+  "result": {
+    "status": "complete",
+    "original_span_bytes": 1456,
+    "original_body_bytes": 1449,
+    "original_padding_bytes": 7,
+    "bindings": 153,
+    "dir32_bindings": 144,
+    "named_global_operands": 128,
+    "float32_constant_operands": 16,
+    "rel32_call_bindings": 9,
+    "unresolved_bindings": 0,
+    "verify_reference": "pass",
+    "candidate_size": 1376,
+    "candidate_relocations": 135,
+    "strict_comparison_status": "mismatch",
+    "strict_comparison_reason": "complete function extent differs",
+    "candidate_source_changed": false,
+    "ghidra_metadata_changed": false,
+    "original_game_executed": false
+  },
+  "notes": [
+    "Coordinator review corrected offset 110 from biased address 0x004AA090 with no addend to array base 0x004AA080 with addend 16; the resolved operand value is unchanged.",
+    "The coordinator must independently review the address-to-symbol mapping before enabling the case target.",
+    "The extent mismatch prevents this preparation artifact from making a candidate relocation or byte-match claim."
+  ]
+}

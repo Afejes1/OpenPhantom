@@ -139,7 +139,27 @@ fills the offset table. Mover gathering at 0x00405CF0 expands seed and mover
 cells, applies opacity/bucket rules, then visits animation maps/direct movers.
 Two worker candidates received independent coordinator review and focused VC5
 Docker verification (6,548 and 36 assertions). Native/Docker output agrees at
-the documented artifact scope. Complete binding inventories remain pending;
-no new exact match or accepted record is claimed. See the
+the documented artifact scope. At that checkpoint, complete binding inventories
+remained pending and no new exact match or accepted record was claimed. See the
 [campaign results](research/campaign-001/results.md) for findings, timings and
 source hashes. Whole-code regression was deferred under the batch cadence.
+
+## Campaign 002 comparison readiness
+
+The frame-setup original inventory now accounts for all 144 absolute operands
+and nine direct calls. Independent review corrected a biased table pointer to
+base 0x004AA080 plus addend 16. The enabled strict comparison confirms an extent
+mismatch (1,376 candidate bytes versus 1,456 original bytes); it cannot yet score
+candidate operands or byte similarity. The focused fixture still passes 6,548
+assertions. See [frame evidence](research/campaign-002/frame-binding-evidence.md).
+
+The fork's [campaign rules](docs/campaign-rules.md) separate exact functions,
+body-only matches, measured near matches and research candidates. Historical
+objects revalidated for scheduling show six differing culler bytes (1.25%) and
+five static-collector bytes (0.558%); those remain research. The existing 816-byte
+legacy-cell match still awaits a shared acceptance checkpoint. These are not
+new matches produced by this campaign.
+
+The scan-line reset at `0x004084B8` now has a reviewed C reconstruction: all 400 bytes match after resolving its single tracked-allocator call. The record is 80 bytes; existing records retain the unused final word, and allocation failure returns null without writes. All 238 focused assertions pass in locked Docker. This is a focused exact result pending the existing batch acceptance checkpoint, with no whole-executable or overflow-input claim. See [the receipt](research/campaign-002-line-reset/result.json).
+
+The segment predicate at `0x00408648` rejects same-side endpoint pairs against each supporting line. It intentionally has no collinear bounding-box test: disjoint collinear segments and even distinct point segments return true. Readable VC5 C matches all 237 raw bytes without relocations, and 6,601 focused assertions pass against explicit cases and a bounded determinant oracle. See [the receipt](research/campaign-002-segment-test/result.json).

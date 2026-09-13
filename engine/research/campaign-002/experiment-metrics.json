@@ -1,0 +1,561 @@
+{
+  "schema": 1,
+  "campaign": "002",
+  "scope": "Worker compiler invocations joined to immutable private receipts; includes verification repeats. Parent final pairs are separate.",
+  "experiments": [
+    {
+      "assignment": "campaign-002-line-reset",
+      "worker_experiment": 1,
+      "runner": "native",
+      "hypothesis": "Direct readable packet-order C with two distance locals and ordinary abs will reproduce the unoptimized body.",
+      "candidate_sha256": "9bdfe60839cce33803340c123fb7470672922a95be112fec6a877e8d32ba267a",
+      "report": "engine/build/campaign-001-reset_scan_line-940ab1b57d7d/research-result.json",
+      "report_sha256": "9bba5e7d7f4e70bcc5d4314ddfec3f2f0610fd8da7dae4aeac2cdfb2b077fd01",
+      "elapsed_seconds": 1.440788,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.078691,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "reset_scan_line",
+        "address": 4228280,
+        "size": 400,
+        "candidate_size": 406,
+        "body_size": 400,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 0,
+        "object_sha256": "c55fae72d49f2d8288697f647387a9fa1b395811091e23faa73c8e42cba9486a",
+        "reason": "complete function extent differs"
+      }
+    },
+    {
+      "assignment": "campaign-002-line-reset",
+      "worker_experiment": 2,
+      "runner": "native",
+      "hypothesis": "VC5 intrinsic abs will emit the observed branchless CDQ/XOR/SUB magnitude sequence without raw bytes and remove the external abs calls.",
+      "candidate_sha256": "965f3bb41998a3136a24296453054b69412df16f962f2141dd1c0acd4ffe9398",
+      "report": "engine/build/campaign-001-reset_scan_line-61ddef7befbb/research-result.json",
+      "report_sha256": "6ea1bad1b4a52ae7d3e916a8afd55619e1da6c0ee0c7a88dd66bd7041bc28e1d",
+      "elapsed_seconds": 1.404864,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.064567,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "reset_scan_line",
+        "address": 4228280,
+        "size": 400,
+        "candidate_size": 400,
+        "body_size": 400,
+        "status": "relocation-adjusted-match",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 4,
+        "object_sha256": "62fbb00da081085a632ca312cc8c7a0ee2c010a75511653445273baeddc764e8",
+        "compared_bytes": 396,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 4,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 0,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": true,
+        "reference_span_sha256": "00dac2a5cb9bd3de2167c223c7971283f56a06e9957bf333859fed6fdf7989af",
+        "resolved_span_sha256": "00dac2a5cb9bd3de2167c223c7971283f56a06e9957bf333859fed6fdf7989af"
+      }
+    },
+    {
+      "assignment": "campaign-002-line-reset",
+      "worker_experiment": 3,
+      "runner": "docker",
+      "hypothesis": "The exact candidate preserves the packet semantics across the initial focused fixture.",
+      "candidate_sha256": "965f3bb41998a3136a24296453054b69412df16f962f2141dd1c0acd4ffe9398",
+      "report": "engine/build/campaign-001-reset_scan_line-2249de94031d/research-result.json",
+      "report_sha256": "8091ab3656f1906fa2e3bd0f5f8ac0a3f7bd4ee47b5f59c82359707a586784fb",
+      "elapsed_seconds": 5.63426,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 1.190548,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-compile",
+          "seconds": 1.169862,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-link",
+          "seconds": 0.925527,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-execute",
+          "seconds": 0.630547,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "reset_scan_line",
+        "address": 4228280,
+        "size": 400,
+        "candidate_size": 400,
+        "body_size": 400,
+        "status": "relocation-adjusted-match",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 4,
+        "object_sha256": "02797a2fea4cad1a3f7fd5453b4aab95f59e42e11b62d5acc4eb97767819660e",
+        "compared_bytes": 396,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 4,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 0,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": true,
+        "reference_span_sha256": "00dac2a5cb9bd3de2167c223c7971283f56a06e9957bf333859fed6fdf7989af",
+        "resolved_span_sha256": "00dac2a5cb9bd3de2167c223c7971283f56a06e9957bf333859fed6fdf7989af"
+      }
+    },
+    {
+      "assignment": "campaign-002-line-reset",
+      "worker_experiment": 4,
+      "runner": "native",
+      "hypothesis": "Reconfirm the frozen exact candidate after an attempted fixture-only edit failed before changing inputs.",
+      "candidate_sha256": "965f3bb41998a3136a24296453054b69412df16f962f2141dd1c0acd4ffe9398",
+      "report": "engine/build/campaign-001-reset_scan_line-ae9be3490d94/research-result.json",
+      "report_sha256": "d78ec6b4fe20a48c42514d8d685bbe3113e1d5c3eb9fb22e2c23f97c68594307",
+      "elapsed_seconds": 1.410613,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.059874,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "reset_scan_line",
+        "address": 4228280,
+        "size": 400,
+        "candidate_size": 400,
+        "body_size": 400,
+        "status": "relocation-adjusted-match",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 4,
+        "object_sha256": "c638bf80932871b0cd2d47adc325af233b1ccc00ff2c5ac5b565e9819d17e25f",
+        "compared_bytes": 396,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 4,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 0,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": true,
+        "reference_span_sha256": "00dac2a5cb9bd3de2167c223c7971283f56a06e9957bf333859fed6fdf7989af",
+        "resolved_span_sha256": "00dac2a5cb9bd3de2167c223c7971283f56a06e9957bf333859fed6fdf7989af"
+      }
+    },
+    {
+      "assignment": "campaign-002-line-reset",
+      "worker_experiment": 5,
+      "runner": "native",
+      "hypothesis": "Adding independent allocation-success checks for every initialized field changes only the fixture; candidate bytes should remain exact.",
+      "candidate_sha256": "965f3bb41998a3136a24296453054b69412df16f962f2141dd1c0acd4ffe9398",
+      "report": "engine/build/campaign-001-reset_scan_line-e03ba8efd20a/research-result.json",
+      "report_sha256": "db85825a5bbd8cc63242daa82eaf92b94f6dadaa447689b20d85a34b29cc77d1",
+      "elapsed_seconds": 1.425831,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.059467,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "reset_scan_line",
+        "address": 4228280,
+        "size": 400,
+        "candidate_size": 400,
+        "body_size": 400,
+        "status": "relocation-adjusted-match",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 4,
+        "object_sha256": "5e354a06580edee52b2748bcb33bc8828d0c2f7cefa9281734b9fc6e8a4bc508",
+        "compared_bytes": 396,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 4,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 0,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": true,
+        "reference_span_sha256": "00dac2a5cb9bd3de2167c223c7971283f56a06e9957bf333859fed6fdf7989af",
+        "resolved_span_sha256": "00dac2a5cb9bd3de2167c223c7971283f56a06e9957bf333859fed6fdf7989af"
+      }
+    },
+    {
+      "assignment": "campaign-002-line-reset",
+      "worker_experiment": 6,
+      "runner": "docker",
+      "hypothesis": "Final expanded fixture and native/Docker code-relocation cross-check will pass for the frozen source.",
+      "candidate_sha256": "965f3bb41998a3136a24296453054b69412df16f962f2141dd1c0acd4ffe9398",
+      "report": "engine/build/campaign-001-reset_scan_line-1df83db054ee/research-result.json",
+      "report_sha256": "fe502bb6c3fed8b34b0f3e62fa625b54b64fbcc4e2edda0097b2f8c599e83136",
+      "elapsed_seconds": 5.56553,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 1.142126,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-compile",
+          "seconds": 1.139996,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-link",
+          "seconds": 0.936711,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-execute",
+          "seconds": 0.627816,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "reset_scan_line",
+        "address": 4228280,
+        "size": 400,
+        "candidate_size": 400,
+        "body_size": 400,
+        "status": "relocation-adjusted-match",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 4,
+        "object_sha256": "014764e52bb68f36c9c3a932b8273fc10319716906513ee2c25951452ca7ee16",
+        "compared_bytes": 396,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 4,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 0,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": true,
+        "reference_span_sha256": "00dac2a5cb9bd3de2167c223c7971283f56a06e9957bf333859fed6fdf7989af",
+        "resolved_span_sha256": "00dac2a5cb9bd3de2167c223c7971283f56a06e9957bf333859fed6fdf7989af"
+      }
+    },
+    {
+      "assignment": "campaign-002-line-reset",
+      "worker_experiment": 7,
+      "runner": "docker",
+      "hypothesis": "Pure horizontal and vertical cases in both directions plus whole-record failure immutability should pass without changing the exact candidate.",
+      "candidate_sha256": "965f3bb41998a3136a24296453054b69412df16f962f2141dd1c0acd4ffe9398",
+      "report": "engine/build/campaign-001-reset_scan_line-812f75bd16d3/research-result.json",
+      "report_sha256": "6c6ebdf15c1501422bccb00499d753be3667f9ee6b08974a08882fbeb6e12fe6",
+      "elapsed_seconds": 15.621871,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 1.32708,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-compile",
+          "seconds": 1.524243,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-link",
+          "seconds": 0.940194,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-execute",
+          "seconds": 0.648506,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "reset_scan_line",
+        "address": 4228280,
+        "size": 400,
+        "candidate_size": 400,
+        "body_size": 400,
+        "status": "relocation-adjusted-match",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 4,
+        "object_sha256": "27b97331a2c2f6d0003a48abd0bd4b09f686bc09a398276d5905526d1d59f684",
+        "compared_bytes": 396,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 4,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 0,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": true,
+        "reference_span_sha256": "00dac2a5cb9bd3de2167c223c7971283f56a06e9957bf333859fed6fdf7989af",
+        "resolved_span_sha256": "00dac2a5cb9bd3de2167c223c7971283f56a06e9957bf333859fed6fdf7989af"
+      }
+    },
+    {
+      "assignment": "campaign-002-segment-test",
+      "worker_experiment": 1,
+      "runner": "native",
+      "hypothesis": "Ten descriptive scalar locals and packet formula order.",
+      "candidate_sha256": "a961c3e67754186e530d6c2ee0b9c2c8bd9d0b919a6982aa821ed153346dfcac",
+      "report": "engine/build/campaign-001-segments_intersect-b0917b4a1bfc/research-result.json",
+      "report_sha256": "e2b09323b35063efd57c17e69437234c536e7878a224f43a6dd2e9ddd90d400f",
+      "elapsed_seconds": 1.511961,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.104511,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "segments_intersect",
+        "address": 4228680,
+        "size": 237,
+        "candidate_size": 237,
+        "body_size": 237,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 0,
+        "object_sha256": "d3e644224b994a8c91de68a76dc2ae757acd231e5f766d6149bf55be2d9c5668",
+        "compared_bytes": 237,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 0,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 58,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": false,
+        "reference_span_sha256": "eb62401770dfcc181b13c288a710000a90ecbdde561bb1154211f18801a30cf9",
+        "resolved_span_sha256": "69cbf73f9ade6244809b7688f06f6878f14049a465c304b7eb782a18a9d95c4c",
+        "reason": "non-relocation bytes differ",
+        "first_difference_offset": 14
+      }
+    },
+    {
+      "assignment": "campaign-002-segment-test",
+      "worker_experiment": 2,
+      "runner": "native",
+      "hypothesis": "Evaluate A*x+B*y+C to reproduce the reviewed product/addition scheduling and reorder declarations for expected slots.",
+      "candidate_sha256": "fcbb9859b5a17a11374212d1a62c5c2b5a5024f2106dfb74d0a11d853e8eff91",
+      "report": "engine/build/campaign-001-segments_intersect-f4f3f79f2095/research-result.json",
+      "report_sha256": "29ed563329b2b45546f1ea27eb1ba43a23dfd4ca82676b4d851f7025525e7732",
+      "elapsed_seconds": 1.395071,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.060944,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "segments_intersect",
+        "address": 4228680,
+        "size": 237,
+        "candidate_size": 237,
+        "body_size": 237,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 0,
+        "object_sha256": "87d5c63b4a65b0bb87e36a837fc56d36ee93a9c7d917bfcf5dd234769d016469",
+        "compared_bytes": 237,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 0,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 21,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": false,
+        "reference_span_sha256": "eb62401770dfcc181b13c288a710000a90ecbdde561bb1154211f18801a30cf9",
+        "resolved_span_sha256": "7e80e0f63ff793cc34358c3e492110522753976de3959ebb0c1be9be0fb64f54",
+        "reason": "non-relocation bytes differ",
+        "first_difference_offset": 14
+      }
+    },
+    {
+      "assignment": "campaign-002-segment-test",
+      "worker_experiment": 3,
+      "runner": "native",
+      "hypothesis": "Reorder only the ten descriptive declarations to align VC5 stack slots.",
+      "candidate_sha256": "339f1498ca56926413b7994b559e126d707ec77a25047c4369f2237cdd2b818e",
+      "report": "engine/build/campaign-001-segments_intersect-0b65851ccbfa/research-result.json",
+      "report_sha256": "58221eed0f12f6bb2d485243125401f804438e22832ab7d0d007531ee87828cd",
+      "elapsed_seconds": 1.391197,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.063802,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "segments_intersect",
+        "address": 4228680,
+        "size": 237,
+        "candidate_size": 237,
+        "body_size": 237,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 0,
+        "object_sha256": "c9bd1a2c970b862f23418deb9f4c68e67df2180a241a709259fa6cedf4bef10b",
+        "compared_bytes": 237,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 0,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 21,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": false,
+        "reference_span_sha256": "eb62401770dfcc181b13c288a710000a90ecbdde561bb1154211f18801a30cf9",
+        "resolved_span_sha256": "7e80e0f63ff793cc34358c3e492110522753976de3959ebb0c1be9be0fb64f54",
+        "reason": "non-relocation bytes differ",
+        "first_difference_offset": 14
+      }
+    },
+    {
+      "assignment": "campaign-002-segment-test",
+      "worker_experiment": 4,
+      "runner": "native",
+      "hypothesis": "Use declaration initializers to alter meaningful local lifetimes without adding artificial storage.",
+      "candidate_sha256": "f8aa6535ae3df08fbfb9b3cd7fed0f81348374b41a246ff5ab974ab2e9c32cb7",
+      "report": "engine/build/campaign-001-segments_intersect-39e7925ba32e/research-result.json",
+      "report_sha256": "01413f76b2fe903c7d36ffc5b7a3be48f956572aee292ccc525d5ee1d346949d",
+      "elapsed_seconds": 1.383427,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.059794,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "segments_intersect",
+        "address": 4228680,
+        "size": 237,
+        "candidate_size": 237,
+        "body_size": 237,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 0,
+        "object_sha256": "2eb6f4738855da1a61ad2bd31a76c5876660cc0daf6355539770c0ee252516bf",
+        "compared_bytes": 237,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 0,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 24,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": false,
+        "reference_span_sha256": "eb62401770dfcc181b13c288a710000a90ecbdde561bb1154211f18801a30cf9",
+        "resolved_span_sha256": "21a2bdb86774ad6f6628c715ef1bab866841d22e48e14d53cb5f47979d9ee886",
+        "reason": "non-relocation bytes differ",
+        "first_difference_offset": 14
+      }
+    },
+    {
+      "assignment": "campaign-002-segment-test",
+      "worker_experiment": 5,
+      "runner": "native",
+      "hypothesis": "Use conventional a1/b1/c1, a2/b2/c2 and r1-r4 mathematical identifiers; VC5 debug local allocation may depend on identifier ordering.",
+      "candidate_sha256": "76e536a56b97d6a4d731551f972cef1c383de2e545f4800e83b4067aba8aa6e0",
+      "report": "engine/build/campaign-001-segments_intersect-f73fe6b74963/research-result.json",
+      "report_sha256": "0b6f115c756a97fc6495145e1f004d4d4ec5f571321eb9e36b89b3c8026ae14d",
+      "elapsed_seconds": 1.415632,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.062339,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "segments_intersect",
+        "address": 4228680,
+        "size": 237,
+        "candidate_size": 237,
+        "body_size": 237,
+        "status": "raw-code-match",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 0,
+        "object_sha256": "facc0e7a527ce76d79242d28cbdc669318852057b74118829e168f1a66e12c03",
+        "compared_bytes": 237,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 0,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 0,
+        "raw_bytes_equal": true,
+        "relocated_bytes_equal": true,
+        "reference_span_sha256": "eb62401770dfcc181b13c288a710000a90ecbdde561bb1154211f18801a30cf9",
+        "resolved_span_sha256": "eb62401770dfcc181b13c288a710000a90ecbdde561bb1154211f18801a30cf9"
+      }
+    },
+    {
+      "assignment": "campaign-002-segment-test",
+      "worker_experiment": 6,
+      "runner": "docker",
+      "hypothesis": "Final frozen source should retain the raw match and pass the explicit plus bounded determinant fixture.",
+      "candidate_sha256": "76e536a56b97d6a4d731551f972cef1c383de2e545f4800e83b4067aba8aa6e0",
+      "report": "engine/build/campaign-001-segments_intersect-b40a72e45af6/research-result.json",
+      "report_sha256": "9ada6953efed13884f627a051b96af00a559cd6e867ef750ec59c42d9b76cf32",
+      "elapsed_seconds": 5.674399,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 1.118137,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-compile",
+          "seconds": 1.117901,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-link",
+          "seconds": 0.900526,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-execute",
+          "seconds": 0.615302,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "segments_intersect",
+        "address": 4228680,
+        "size": 237,
+        "candidate_size": 237,
+        "body_size": 237,
+        "status": "raw-code-match",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 0,
+        "object_sha256": "fa8f4a8bba761121201602bdd5fa16f0772bc2003e8c13f76e66b4558afdaf08",
+        "compared_bytes": 237,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 0,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 0,
+        "raw_bytes_equal": true,
+        "relocated_bytes_equal": true,
+        "reference_span_sha256": "eb62401770dfcc181b13c288a710000a90ecbdde561bb1154211f18801a30cf9",
+        "resolved_span_sha256": "eb62401770dfcc181b13c288a710000a90ecbdde561bb1154211f18801a30cf9"
+      }
+    }
+  ]
+}

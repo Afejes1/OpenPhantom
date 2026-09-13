@@ -42,6 +42,14 @@
     {
       "address": "0x00405CF0",
       "source": "research/campaign-001-mover-gather/README.md"
+    },
+    {
+      "address": "0x004084B8",
+      "source": "research/campaign-002-line-reset/README.md"
+    },
+    {
+      "address": "0x00408648",
+      "source": "research/campaign-002-segment-test/README.md"
     }
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "id": "segments_intersect",
+  "address": 4228680,
+  "size": 237,
+  "body_size": 237,
+  "source": "src/segments_intersect.c",
+  "symbol": "_op_segments_intersect",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

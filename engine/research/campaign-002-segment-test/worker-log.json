@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "campaign": "002",
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct bapline_segmentsIntersect at 0x00408648",
+  "started_at": "2026-09-13T01:37:56.7075465Z",
+  "finished_at": "2026-09-13T01:42:49.0809317Z",
+  "deadline_at": "2026-09-13T01:50:00Z",
+  "status": "complete",
+  "candidate_compiler_invocations": 6,
+  "experiment_cap": 10,
+  "source_variants": 5,
+  "verification_repeats": 1,
+  "experiments": [
+    {
+      "number": 1,
+      "runner": "native",
+      "hypothesis": "Ten descriptive scalar locals and packet formula order.",
+      "candidate_sha256": "a961c3e67754186e530d6c2ee0b9c2c8bd9d0b919a6982aa821ed153346dfcac",
+      "compiled": true,
+      "candidate_bytes": 237,
+      "different_bytes": 58,
+      "result": "mismatch",
+      "report": "engine/build/campaign-001-segments_intersect-b0917b4a1bfc/research-result.json"
+    },
+    {
+      "number": 2,
+      "runner": "native",
+      "hypothesis": "Evaluate A*x+B*y+C to reproduce the reviewed product/addition scheduling and reorder declarations for expected slots.",
+      "candidate_sha256": "fcbb9859b5a17a11374212d1a62c5c2b5a5024f2106dfb74d0a11d853e8eff91",
+      "compiled": true,
+      "candidate_bytes": 237,
+      "different_bytes": 21,
+      "result": "mismatch",
+      "report": "engine/build/campaign-001-segments_intersect-f4f3f79f2095/research-result.json"
+    },
+    {
+      "number": 3,
+      "runner": "native",
+      "hypothesis": "Reorder only the ten descriptive declarations to align VC5 stack slots.",
+      "candidate_sha256": "339f1498ca56926413b7994b559e126d707ec77a25047c4369f2237cdd2b818e",
+      "compiled": true,
+      "candidate_bytes": 237,
+      "different_bytes": 21,
+      "result": "mismatch",
+      "report": "engine/build/campaign-001-segments_intersect-0b65851ccbfa/research-result.json",
+      "measurable_improvement": false
+    },
+    {
+      "number": 4,
+      "runner": "native",
+      "hypothesis": "Use declaration initializers to alter meaningful local lifetimes without adding artificial storage.",
+      "candidate_sha256": "f8aa6535ae3df08fbfb9b3cd7fed0f81348374b41a246ff5ab974ab2e9c32cb7",
+      "compiled": true,
+      "candidate_bytes": 237,
+      "different_bytes": 24,
+      "result": "mismatch",
+      "report": "engine/build/campaign-001-segments_intersect-39e7925ba32e/research-result.json"
+    },
+    {
+      "number": 5,
+      "runner": "native",
+      "hypothesis": "Use conventional a1/b1/c1, a2/b2/c2 and r1-r4 mathematical identifiers; VC5 debug local allocation may depend on identifier ordering.",
+      "candidate_sha256": "76e536a56b97d6a4d731551f972cef1c383de2e545f4800e83b4067aba8aa6e0",
+      "compiled": true,
+      "candidate_bytes": 237,
+      "different_bytes": 0,
+      "result": "raw-code-match",
+      "report": "engine/build/campaign-001-segments_intersect-f73fe6b74963/research-result.json"
+    },
+    {
+      "number": 6,
+      "runner": "docker",
+      "hypothesis": "Final frozen source should retain the raw match and pass the explicit plus bounded determinant fixture.",
+      "candidate_sha256": "76e536a56b97d6a4d731551f972cef1c383de2e545f4800e83b4067aba8aa6e0",
+      "compiled": true,
+      "candidate_bytes": 237,
+      "different_bytes": 0,
+      "result": "raw-code-match",
+      "report": "engine/build/campaign-001-segments_intersect-b40a72e45af6/research-result.json",
+      "fixture": "6601 checks, 0 failures"
+    }
+  ],
+  "final": {
+    "candidate_sha256": "76e536a56b97d6a4d731551f972cef1c383de2e545f4800e83b4067aba8aa6e0",
+    "segment_header_sha256": "aa1bdee1e9d6d86f1214df5741f83ace11515a9a7ac6db68d3ab004b4fcb37c4",
+    "behavior_sha256": "84a697ad37e44601b55ec9874dcbe807e749342a21a38c7e94221dac1ebd5442",
+    "span_bytes": 237,
+    "body_bytes": 237,
+    "relocations": 0,
+    "adjusted_bytes": 0,
+    "compared_bytes": 237,
+    "different_bytes": 0,
+    "status": "raw-code-match",
+    "fixture_checks": 6601,
+    "fixture_failures": 0,
+    "native_report": "engine/build/campaign-001-segments_intersect-f73fe6b74963/research-result.json",
+    "docker_report": "engine/build/campaign-001-segments_intersect-b40a72e45af6/research-result.json",
+    "warning_waivers": [],
+    "byte_exclusions": [],
+    "original_game_executed": false
+  },
+  "operational_notes": [
+    "Declaration order alone produced identical 21-byte mismatch code and was logged as no measurable improvement.",
+    "Repeated Windows apply_patch helper failure required narrow file-scoped Python writes for owned files; no target, case, shared source or metadata changed."
+  ]
+}

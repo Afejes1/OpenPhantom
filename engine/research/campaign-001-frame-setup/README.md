@@ -1,47 +1,43 @@
-# Legacy frame scan setup campaign
+# Legacy frame scan setup
 
 The team reports `bapdrawOld_frameSetup` in `bp/bapdraw.c` as not done. Static
 analysis identifies the retail function at `0x00404180`. Its body ends at the
-`RET` at `0x00404728` (1,449 bytes), followed by seven observed `NOP` alignment
-bytes before the next function at `0x00404730`. The pending target deliberately
-keeps the strict 1,456-byte span. It does not shrink the target or insert raw
-bytes.
+RET at `0x00404728` (1,449 bytes), followed by seven alignment bytes before
+`0x00404730`. The strict target retains all 1,456 bytes.
 
-`candidate.c` is an authored readable reconstruction. It copies the active
-camera transform and signed viewport bounds, expands an eight-value octant row
-into sixteen flags, derives two fixed-point direction integers, applies the
-pitch-dependent forward/backward scan limits, initializes and advances the
-scan line, fills 255 positive and 255 negative offsets around a zero center,
-and resets the frame scan sentinels. `frame.h` records only partial layouts.
+`candidate.c` is an authored reconstruction of camera-state copying, viewport
+bounds, octant flags, direction and scan limits, scan-line traversal, the 511
+coordinate offsets and reset sentinels. `frame.h` is a partial layout. The
+focused fixture uses authored trig/line/step stubs and independent state checks;
+it does not execute the original helpers or rendering backend.
 
-`behavior.c` is a synthetic fixture with independent constants. It checks the
-copy and signed conversions, octant expansion, fixed-point line endpoints,
-pitch normalization branches, limit clamping, callback arguments, all 511
-offset slots and final sentinel values. It executes no original game code or
-rendering backend.
+## Current comparison
 
-The binding inventory is intentionally empty and therefore pending. `case.json` leaves `target` null and retains `target.json` as `reference_layout`, so the strict matcher cannot consume an incomplete binding specification. The retail
-body references many globals, helper calls and floating constants; those
-bindings have not yet received an independent complete inventory review. The
-common runner should report strict comparison as not attempted rather than treating this
-file as an accepted target. No byte masks, exclusions, waivers, registry edits
-or accepted-history changes are present.
+Campaign 002 completed the original-side inventory: 144 absolute operands and
+nine direct calls, with all constants and symbolic base/addend mappings reviewed.
+The coordinator caught and corrected the octant table's biased pointer: its
+base is `0x004AA080`, with addend 16 for the original `0x004AA090` operand.
+[Inventory evidence](../campaign-002/frame-binding-evidence.md) records the
+mapping, and `target.json` is now enabled by `case.json`.
 
-From the engine directory, use the common campaign runner:
+The strict comparison reports **complete function extent differs**: the candidate
+emits 1,376 bytes and 135 COFF relocations, versus the original 1,456-byte target
+and 153 bound operands. It stops before comparing candidate operand locations.
+There is no justified byte-similarity percentage or exact-match claim.
 
-    python research/campaign-001/verify.py --case research/campaign-001-frame-setup --runner native
-    python research/campaign-001/verify.py --case research/campaign-001-frame-setup --runner docker --behavior
-    python research/campaign-001/verify.py --case research/campaign-001-frame-setup --runner docker --reference C:/Dev/Ghidra/projects/TPM/WMAIN.EXE
+The final native/Docker code and relocation inventories agree. The focused
+Docker fixture passes 6,548 assertions. [The current receipt](result.json)
+pins source, tools, target and private artifacts. The campaign-001 result at
+commit `3c8f6752ab810cfb6eacd6a5e5bce221c65437b1` remains historical evidence.
 
-Native mode compiles only. Fixture linking and execution are restricted to the
-locked Docker runner. The last command reads the original statically for reference-layout diagnostics;
-strict comparison remains not attempted until the complete binding inventory is reviewed.
+From the repository root:
 
-## Reviewed pilot checkpoint
+```text
+python engine/research/campaign-001/verify.py --case engine/research/campaign-001-frame-setup --runner native --reference C:/Dev/Ghidra/projects/TPM/WMAIN.EXE
+python engine/research/campaign-001/verify.py --case engine/research/campaign-001-frame-setup --runner docker --behavior --reference C:/Dev/Ghidra/projects/TPM/WMAIN.EXE --expect-report NATIVE_REPORT
+```
 
-The final coordinator fixture passes 6,548 assertions, including raw transform
-payload copies, callback-visible line steps, all offset slots, ratio branches
-and octant boundaries. Native and Docker emit identical function code and
-relocations: 1,376 bytes and 135 relocations. This is not an original-byte match.
-[The receipt](result.json) pins the final source and private report hashes.
-x87 intermediate precision and integrated behavior remain unverified.
+Both commands return 1 for the strict extent mismatch, even though compilation
+and the requested fixture succeed. Native mode compiles only. Execution remains
+inside locked Docker; original bytes are read statically. Original x87 precision
+boundaries, exact source layout and integrated renderer behavior remain open.
