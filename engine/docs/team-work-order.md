@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **19** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **950**.
+Our last recorded matches cover **21** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **948**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -90,7 +90,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | bp/bgl.c | 21 | 7 | 14 |
 | bp/bppartic.c | 5 | 0 | 5 |
 | bp/bpsprite.c | 1 | 0 | 1 |
-| bp/extended.c | 22 | 0 | 22 |
+| bp/extended.c | 22 | 2 | 20 |
 | bp/features.c | 1 | 0 | 1 |
 | bp/texture.c | 7 | 0 | 7 |
 | game/aiext.c | 30 | 0 | 30 |
