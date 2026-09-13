@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "case": "world_read_chunk_header",
+  "started_utc": "2026-09-13T14:16:33Z",
+  "finished_utc": "2026-09-13T14:18:44.9565682Z",
+  "timestamp_basis": "start follows prior handoff; exact per-case start not captured",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "natural struct with explicit break",
+      "source_sha256": "c244fa9a177ecfd5c50e1c33c5ca03ec144f5858dd7d3354f03098aba01af073",
+      "report": "engine/build/campaign-001-world_read_chunk_header-a6703f6e128e/research-result.json",
+      "report_sha256": "ca92ae364e7b01bda7f532fc27bf025c5e538794ad10cd658c2af3131e6a598a",
+      "status": "mismatch",
+      "candidate_size": 114,
+      "different_bytes": null,
+      "elapsed_seconds": 1.426097
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "chunk/i locals and compound while condition matching direct branch",
+      "source_sha256": "5562c631c14303b03402da9c7827345c8ad4b2d8c24bf597c6d4da16f301d3bd",
+      "report": "engine/build/campaign-001-world_read_chunk_header-1781eb9fdb86/research-result.json",
+      "report_sha256": "c16c8ef14ea0560feff89443d6152cf754c2048c3168147ca244fb053ac421ce",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 112,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.520694
+    }
+  ],
+  "candidate_sha256": "5562c631c14303b03402da9c7827345c8ad4b2d8c24bf597c6d4da16f301d3bd",
+  "api_sha256": "9446094ea4e9c4dabebe8fedc5d11eac1584755e463804aa22814ca7eaa06a67",
+  "fixture_sha256": "acab0d0b5ba1f107ca9d919ab1a8e0a903b8e9b7599ae2a70ad3d738a3904d47",
+  "original_executed": false,
+  "native_fixture_executed": false,
+  "parent_review": {
+    "review": "research/campaign-020/review.json",
+    "candidate_changed": false,
+    "final_candidate_sha256": "5562c631c14303b03402da9c7827345c8ad4b2d8c24bf597c6d4da16f301d3bd",
+    "final_fixture_sha256": "3a688ebbd5d11d8d473814d42d19b089d8dbeb31be24b724d929fad646603151",
+    "result_sha256": "ed4efafae5ced26e10511dc5016207562db83dc44d59e78de475876cdb4e3092",
+    "native_report": "engine/build/campaign-001-world_read_chunk_header-3ecde01dc5d8/research-result.json",
+    "docker_report": "engine/build/campaign-001-world_read_chunk_header-25fdcfe7c919/research-result.json",
+    "fixture_checks": 1527
+  }
+}

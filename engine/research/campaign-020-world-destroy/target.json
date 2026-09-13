@@ -1,0 +1,63 @@
+{
+  "id": "world_destroy",
+  "address": 4312192,
+  "size": 192,
+  "body_size": 192,
+  "source": "src/world_destroy.c",
+  "symbol": "_op_world_destroy",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 66,
+      "address": 4805714,
+      "kind": "rel32-call",
+      "symbol": "_op_release"
+    },
+    {
+      "offset": 91,
+      "address": 4320938,
+      "kind": "rel32-call",
+      "symbol": "_op_world_free_materials"
+    },
+    {
+      "offset": 103,
+      "address": 4321087,
+      "kind": "rel32-call",
+      "symbol": "_op_world_free_pointer_table_220"
+    },
+    {
+      "offset": 115,
+      "address": 4321205,
+      "kind": "rel32-call",
+      "symbol": "_op_world_free_pointer_table_620"
+    },
+    {
+      "offset": 127,
+      "address": 4321323,
+      "kind": "rel32-call",
+      "symbol": "_op_world_free_tail_blocks"
+    },
+    {
+      "offset": 139,
+      "address": 4318067,
+      "kind": "rel32-call",
+      "symbol": "_op_world_free_scripts"
+    },
+    {
+      "offset": 169,
+      "address": 4805714,
+      "kind": "rel32-call",
+      "symbol": "_op_release"
+    },
+    {
+      "offset": 181,
+      "address": 4805714,
+      "kind": "rel32-call",
+      "symbol": "_op_release"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "case": "world_set_ambient",
+  "started_utc": "2026-09-13T14:20:19Z",
+  "finished_utc": "2026-09-13T14:21:29.0990621Z",
+  "timestamp_basis": "start follows prior handoff; exact per-case start not captured",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "typed ambient field and natural double-literal clamps",
+      "source_sha256": "644aac9b915823df08b8696500557c52d893efcdeeb5027fd033d408c155af6c",
+      "report": "engine/build/campaign-001-world_set_ambient-335d49c897f2/research-result.json",
+      "report_sha256": "24c8073c1f9832171992490b5eca325935e3153b7bcb3ba871b893a7f1729742",
+      "status": "relocation-adjusted-match",
+      "different_bytes": 0,
+      "elapsed_seconds": 1.397662
+    }
+  ],
+  "candidate_sha256": "644aac9b915823df08b8696500557c52d893efcdeeb5027fd033d408c155af6c",
+  "api_sha256": "3779d4a4c0df199b9c0b2e6f261a9f8839046bae1aa6d3839a05211c346c565c",
+  "fixture_sha256": "2c0daac55ed2d13327411c22d6415cc57766cb7c7a4f73df5eb265e551642beb",
+  "original_executed": false,
+  "native_fixture_executed": false,
+  "parent_review": {
+    "review": "research/campaign-020/review.json",
+    "candidate_changed": false,
+    "final_candidate_sha256": "644aac9b915823df08b8696500557c52d893efcdeeb5027fd033d408c155af6c",
+    "final_fixture_sha256": "7f8226e91dba7a1a65cce9bf3bc8ae343d4728f11bedd422f988ab66ac8114e1",
+    "result_sha256": "b9f8d93928dead8d27921cbfb0f4b0687bfd528bd4b187992783459e38225af2",
+    "native_report": "engine/build/campaign-001-world_set_ambient-9052cb318a3a/research-result.json",
+    "docker_report": "engine/build/campaign-001-world_set_ambient-7a0d4c080a38/research-result.json",
+    "fixture_checks": 28
+  }
+}

@@ -333,3 +333,11 @@ world readers. All28 registered spans remain exact, and488 combined world-reader
 checks pass with immutable record24 and successful full CI. The original local
 payload-mismatch success return is preserved. See
 [acceptance004](research/acceptance-004/results.md).
+
+## Campaign020
+
+Six world lifecycle/control functions add856 exact focused bytes and2058 authored
+checks. Typed allocation fields preserve exact code; callback order and x87 edge
+fixtures have independent review. [Results](research/campaign-020/results.md)
+include the failed fixture compile and source-domain limits. Registered acceptance
+remains28 functions until the next canonical world-controls checkpoint.

@@ -1,0 +1,25 @@
+{
+  "id": "world_set_ambient",
+  "address": 4321548,
+  "size": 62,
+  "body_size": 62,
+  "source": "src/world_set_ambient.c",
+  "symbol": "_op_world_set_ambient",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 4882968,
+      "float64": 0.0
+    },
+    {
+      "offset": 33,
+      "address": 4882976,
+      "float64": 1.0
+    }
+  ]
+}

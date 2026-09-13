@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "campaign": "020",
+  "status": "review-complete",
+  "reviewed_utc": "2026-09-13T14:29:54.395186+00:00",
+  "reviewer": "parent",
+  "cases": {
+    "world_allocate": {
+      "status": "focused-relocation-adjusted-match",
+      "source_review": "Parent replaced byte-array casts with declared offset-checked int/float fields; control flow and all193 emitted bytes remain exact.",
+      "fixture_review": "43 checks cover failed allocation with whole guarded storage retained; timer observes complete zeroing; signed timer return boundaries; all later default fields overwrite callback writes; unrelated callback writes survive.",
+      "fixture_checks": 43,
+      "fixture_failures": 0,
+      "parent_candidate_changed": true,
+      "parent_fixture_changed": true,
+      "worker_candidate_sha256": "d0e1f57fbf3f7818e9455da5d293216c868f85341a240fc6787d2718eee86f5c",
+      "final_candidate_sha256": "0b5f024862ec37113272a24a013f7a28d99e43b22b6e38ef914667fa6e9edf47",
+      "final_api_sha256": "4ddc4f9799cf32cf1fc2846177d802ec6fc1d416bf5a205db9b3f892e8cdfe1b",
+      "final_fixture_sha256": "0b97c0a7394f864d7db51a11a7099e0650f21c280f49e21eea0857ea1eaa4033",
+      "result_sha256": "2697554f6ffa92de33631d0a0dbdab49320d2b50a23647e218de361d29806aac",
+      "independent_native_docker_verification": true
+    },
+    "world_destroy": {
+      "status": "focused-relocation-adjusted-match",
+      "source_review": "Candidate body unchanged. Parent added extent and field-offset assertions.",
+      "fixture_review": "246 checks cover all eight count/pointer branch combinations, NULL/unloaded retention, exact complete release/helper order, post-release actor clearing visible to helpers, callback load-state changes, live retained-pointer removal/insertion and the exact state visible at final world release. A stale fixture reference to the old bytes member was corrected during review before fixture compilation.",
+      "fixture_checks": 246,
+      "fixture_failures": 0,
+      "parent_candidate_changed": false,
+      "parent_fixture_changed": true,
+      "worker_candidate_sha256": "92cfb97e7b0f953cf9406a63142bc2b8313da42f27c043001dfa8d00b1c9d233",
+      "final_candidate_sha256": "92cfb97e7b0f953cf9406a63142bc2b8313da42f27c043001dfa8d00b1c9d233",
+      "final_api_sha256": "595dd4c098657effd66286b81f8a7b53e9811146b1849bf76c54442630020cff",
+      "final_fixture_sha256": "5f35b7f0592f43bd46678f5cd983108be71f0243ffa264b0c3b5166cd7bea018",
+      "result_sha256": "2fd513d1c95f34ec6cefa519f8dd61311f2bdb7863fc6c1172a4bd928fe8c695",
+      "independent_native_docker_verification": true
+    },
+    "world_read_chunk_header": {
+      "source_review": "Candidate unchanged; natural struct and index reproduce all112 bytes.",
+      "fixture_review": "All23 match positions, unknown index23, negative-success and zero-failure reads; full12-byte memcpy initialization avoids casting between distinct structs. Parent replaced memcmp with bounded strncmp, added shared-NUL tags, corrected a table-mutation case that previously reassigned the same pointer, and checked output/stream/table retention. Final1527 checks pass.",
+      "parent_candidate_changed": false,
+      "parent_fixture_changed": true,
+      "status": "focused-relocation-adjusted-match",
+      "fixture_checks": 1527,
+      "fixture_failures": 0,
+      "worker_candidate_sha256": "5562c631c14303b03402da9c7827345c8ad4b2d8c24bf597c6d4da16f301d3bd",
+      "final_candidate_sha256": "5562c631c14303b03402da9c7827345c8ad4b2d8c24bf597c6d4da16f301d3bd",
+      "final_api_sha256": "9446094ea4e9c4dabebe8fedc5d11eac1584755e463804aa22814ca7eaa06a67",
+      "final_fixture_sha256": "3a688ebbd5d11d8d473814d42d19b089d8dbeb31be24b724d929fad646603151",
+      "result_sha256": "ed4efafae5ced26e10511dc5016207562db83dc44d59e78de475876cdb4e3092",
+      "independent_native_docker_verification": true
+    },
+    "world_set_clock": {
+      "source_review": "Candidate unchanged; typed fields and offset assertions match all67 bytes.",
+      "fixture_review": "Parent corrected a mistyped expected delta for0.01f from0xBD75C28F to0xBE75C28F before fixture compilation; independent float-input subtraction confirms the expected word. Added negativezero and consecutive calls with literal expected values. Explicit masked,64-bit-precision,round-nearest x87 environment is restored.16 checks pass; nonfinite/out-of-range integer conversions remain outside fixture domain.",
+      "parent_candidate_changed": false,
+      "parent_fixture_changed": true,
+      "status": "focused-relocation-adjusted-match",
+      "fixture_checks": 16,
+      "fixture_failures": 0,
+      "worker_candidate_sha256": "c62c937be00a3cba96f972f43fe5a15218962253e3311ab201ea41447af23297",
+      "final_candidate_sha256": "c62c937be00a3cba96f972f43fe5a15218962253e3311ab201ea41447af23297",
+      "final_api_sha256": "87a67f945f2d1e6553e1c570925a2d8c9ffe7f00025d273d0def2aea569589d2",
+      "final_fixture_sha256": "e7091dc5ba897f1d783b0af5317c25d652e6c4ff929150bcf74cbca4705aecca",
+      "result_sha256": "2b79d92efdfd6dc79264a5435f712a0d5ad3f8234acd2bcfdfeedd9149a3a5ee",
+      "independent_native_docker_verification": true
+    },
+    "world_set_ambient": {
+      "source_review": "Candidate unchanged; typed ambient offset and both double bindings verified across62 bytes.",
+      "fixture_review": "Parent added extent/offset assertions, explicit saved/restored x87 environment, negative quietNaN, subnormal and adjacent-one boundaries.28 guarded checks pass. Nonfinite results are original-compiler evidence, not portable C or whole-game FPU-state claims.",
+      "parent_candidate_changed": false,
+      "parent_fixture_changed": true,
+      "status": "focused-relocation-adjusted-match",
+      "fixture_checks": 28,
+      "fixture_failures": 0,
+      "worker_candidate_sha256": "644aac9b915823df08b8696500557c52d893efcdeeb5027fd033d408c155af6c",
+      "final_candidate_sha256": "644aac9b915823df08b8696500557c52d893efcdeeb5027fd033d408c155af6c",
+      "final_api_sha256": "6f184e507673360931f8bba313085c537454fc8971b60d176d3111c505582401",
+      "final_fixture_sha256": "7f8226e91dba7a1a65cce9bf3bc8ae343d4728f11bedd422f988ab66ac8114e1",
+      "result_sha256": "b9f8d93928dead8d27921cbfb0f4b0687bfd528bd4b187992783459e38225af2",
+      "independent_native_docker_verification": true
+    },
+    "world_apply_fog": {
+      "source_review": "Candidate unchanged; full-word RGB/range/flags and narrow clear-color/pixel ABIs verified across230 bytes.",
+      "fixture_review": "Parent added layout assertions, bounded flag-result access, varied literal color/expected-component pairs, and mutations during the range callback as well as the first color callback.198 checks prove captured RGB, live range/enable, exact event order and fresh full-width render-flag reads.",
+      "parent_candidate_changed": false,
+      "parent_fixture_changed": true,
+      "status": "focused-relocation-adjusted-match",
+      "fixture_checks": 198,
+      "fixture_failures": 0,
+      "worker_candidate_sha256": "13f3f71c36d033b7cf8e947e5bf39a8d3ed6a7fa3331b3cae2066115b27a350a",
+      "final_candidate_sha256": "13f3f71c36d033b7cf8e947e5bf39a8d3ed6a7fa3331b3cae2066115b27a350a",
+      "final_api_sha256": "830310b0f77a010dcab249bc7af28a0a8af745041cd374aa4e71177f3959840d",
+      "final_fixture_sha256": "a2a518809bcdbeadbfe8facb6aceb290fecebbb89781208ba21191f68135aa29",
+      "result_sha256": "59345fd0646b6a9cb9a1a9894272e6416aa8b285b3946713fa3d0e9aa565c262",
+      "independent_native_docker_verification": true
+    }
+  },
+  "original_game_executed": false,
+  "accepted_promotions": 0,
+  "ghidra_comments_saved": true,
+  "issues": [
+    {
+      "scope": "parent chunk fixture compilation",
+      "issue": "VC5 rejected memcpy into an array of const-char pointers due nested qualification diagnosticsC4090/C4022. Replaced only that copy with explicit pointer assignments, preserved failed receipt, reran fresh successful native/Docker pair. No waiver or candidate change.",
+      "resolved": true,
+      "report": "engine/build/campaign-001-world_read_chunk_header-25555e01198a/research-result.json",
+      "report_sha256": "7c1f45a074fbd0644c8a189e31bc653d7b7fd26672e88686351899c5c8494e81"
+    },
+    {
+      "scope": "allocation Ghidra signature",
+      "issue": "Bridge rejected the pointer-return signature; name/comments and other two new signatures were saved. Source pointer ABI and full bytes are independently verified.",
+      "resolved": false
+    },
+    {
+      "scope": "floating point domain",
+      "issue": "Clock integer conversions are tested only for finite representable results. Original-compiler x87 edge tests use an explicit saved/restored environment; no whole-game or arbitrary-compiler FPU claim.",
+      "resolved": false
+    }
+  ]
+}

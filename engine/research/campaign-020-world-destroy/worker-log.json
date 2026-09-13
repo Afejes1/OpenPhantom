@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "case": "world_destroy",
+  "started_utc": "2026-09-13T14:13:18Z",
+  "finished_utc": "2026-09-13T14:16:32.7784286Z",
+  "timestamp_basis": "start follows prior frozen handoff; exact per-case start clock not captured",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "early unloaded return with opaque byte view",
+      "source_sha256": "434095a03db9ca4bf8d4e9266c5a780cf6e2668c1bc025810e1e68af0cc4afdb",
+      "report": "engine/build/campaign-001-world_destroy-5649bfe831be/research-result.json",
+      "report_sha256": "955cca29dd8e128d4307f055e072308e4532f42eb0cfadc77525519a52023329",
+      "status": "mismatch",
+      "candidate_size": 195,
+      "different_bytes": null,
+      "elapsed_seconds": 1.442504
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "typed fields and natural loaded cleanup block sharing final return",
+      "source_sha256": "92cfb97e7b0f953cf9406a63142bc2b8313da42f27c043001dfa8d00b1c9d233",
+      "report": "engine/build/campaign-001-world_destroy-a25479028f8a/research-result.json",
+      "report_sha256": "62fabc750b2715e5ee2decd3008b86abeaec6cea1e4f7166ef577a06a6005f59",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 192,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.388237
+    }
+  ],
+  "candidate_sha256": "92cfb97e7b0f953cf9406a63142bc2b8313da42f27c043001dfa8d00b1c9d233",
+  "api_sha256": "793bc7a306012f96cea50ae9c1272c733551a22f390b8ae6b0dd21a780e72e21",
+  "fixture_sha256": "7168c867ecdbb700e9306050a14b2d799c6802c5178d34c0956dcd74dbd723ed",
+  "original_executed": false,
+  "native_fixture_executed": false,
+  "parent_review": {
+    "review": "research/campaign-020/review.json",
+    "candidate_changed": false,
+    "final_candidate_sha256": "92cfb97e7b0f953cf9406a63142bc2b8313da42f27c043001dfa8d00b1c9d233",
+    "final_fixture_sha256": "5f35b7f0592f43bd46678f5cd983108be71f0243ffa264b0c3b5166cd7bea018",
+    "result_sha256": "2fd513d1c95f34ec6cefa519f8dd61311f2bdb7863fc6c1172a4bd928fe8c695",
+    "native_report": "engine/build/campaign-001-world_destroy-57deb05fe562/research-result.json",
+    "docker_report": "engine/build/campaign-001-world_destroy-4b13227b34e3/research-result.json",
+    "fixture_checks": 246
+  }
+}

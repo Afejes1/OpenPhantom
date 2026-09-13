@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "case": "world_apply_fog",
+  "started_utc": "2026-09-13T14:21:30Z",
+  "finished_utc": "2026-09-13T14:22:53.2528435Z",
+  "timestamp_basis": "start follows prior handoff; exact per-case start not captured",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "typed fog fields, captured byte locals, verified narrow/full callback signatures",
+      "source_sha256": "13f3f71c36d033b7cf8e947e5bf39a8d3ed6a7fa3331b3cae2066115b27a350a",
+      "report": "engine/build/campaign-001-world_apply_fog-3d5d844ef941/research-result.json",
+      "report_sha256": "5d49d6d349515e908256ee67a98b6b85aeb92064c2542b69113ae1e355823ccf",
+      "status": "relocation-adjusted-match",
+      "different_bytes": 0,
+      "elapsed_seconds": 1.44275
+    }
+  ],
+  "candidate_sha256": "13f3f71c36d033b7cf8e947e5bf39a8d3ed6a7fa3331b3cae2066115b27a350a",
+  "api_sha256": "b29b0d0e3975f1fea123300e7bfe839e1f051d9f21de24f7d46eb8cf25be1af6",
+  "fixture_sha256": "4d3df48aa9ed939631b06e95c419b45ad6e53f61a2d48169975782a6bc1c2816",
+  "original_executed": false,
+  "native_fixture_executed": false,
+  "parent_review": {
+    "review": "research/campaign-020/review.json",
+    "candidate_changed": false,
+    "final_candidate_sha256": "13f3f71c36d033b7cf8e947e5bf39a8d3ed6a7fa3331b3cae2066115b27a350a",
+    "final_fixture_sha256": "a2a518809bcdbeadbfe8facb6aceb290fecebbb89781208ba21191f68135aa29",
+    "result_sha256": "59345fd0646b6a9cb9a1a9894272e6416aa8b285b3946713fa3d0e9aa565c262",
+    "native_report": "engine/build/campaign-001-world_apply_fog-5bba9a24ba1c/research-result.json",
+    "docker_report": "engine/build/campaign-001-world_apply_fog-3e4597a962af/research-result.json",
+    "fixture_checks": 198
+  }
+}

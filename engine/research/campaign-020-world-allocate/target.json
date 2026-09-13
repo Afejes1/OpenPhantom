@@ -1,0 +1,27 @@
+{
+  "id": "world_allocate",
+  "address": 4311999,
+  "size": 193,
+  "body_size": 193,
+  "source": "src/world_allocate.c",
+  "symbol": "_op_world_allocate",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 4805264,
+      "kind": "rel32-call",
+      "symbol": "_op_allocate"
+    },
+    {
+      "offset": 48,
+      "address": 4676381,
+      "kind": "rel32-call",
+      "symbol": "_op_milliseconds"
+    }
+  ]
+}

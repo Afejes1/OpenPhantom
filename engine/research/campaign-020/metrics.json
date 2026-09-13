@@ -1,0 +1,383 @@
+{
+  "schema": 1,
+  "campaign": "020",
+  "started_utc": "2026-09-13T14:11:16.747751+00:00",
+  "preparation_started_utc": "2026-09-13T13:49:00Z",
+  "prepared_utc": "2026-09-13T13:55:54.776626+00:00",
+  "final_verification_completed_utc": "2026-09-13T14:25:57.915538+00:00",
+  "publication_deadline_utc": "2026-09-13T14:56:16.747751+00:00",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_implementation_workers": 1,
+  "exact_functions": 6,
+  "exact_full_span_bytes": 856,
+  "verified_address_operands": 27,
+  "raw_unadjusted_matches": 0,
+  "relocation_adjusted_matches": 6,
+  "near_matches": 0,
+  "research_candidates": 0,
+  "fixture_checks": 2058,
+  "fixture_failures": 0,
+  "worker_candidate_compiler_invocations": 8,
+  "first_worker_compile_matches": 4,
+  "parent_candidate_compiles": 14,
+  "parent_final_candidate_compiles": 12,
+  "parent_fixture_compile_attempts": 7,
+  "parent_successful_fixture_compiles": 6,
+  "failed_verification_pairs": 1,
+  "worker_candidate_compile_seconds": 11.392980999999999,
+  "parent_final_native_seconds": 8.409558,
+  "parent_final_docker_seconds": 33.38181,
+  "accepted_history_promotions": 0,
+  "historical_accepted_functions": 28,
+  "historical_evidence_records": 24,
+  "shared_tooling_changed": false,
+  "full_regression_run": false,
+  "original_game_executed": false,
+  "parent_source_corrections": [
+    "world_allocate"
+  ],
+  "parent_fixture_corrections": [
+    "world_allocate",
+    "world_destroy",
+    "world_read_chunk_header",
+    "world_set_clock",
+    "world_set_ambient",
+    "world_apply_fog"
+  ],
+  "cases": [
+    {
+      "id": "world_allocate",
+      "case": "research/campaign-020-world-allocate",
+      "status": "focused-relocation-adjusted-match",
+      "target_size": 193,
+      "candidate_size": 193,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "fixture_checks": 43,
+      "worker_candidate_compiler_invocations": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "hypothesis": "natural allocation, intrinsic full clear, observed field order",
+          "source_sha256": "d0e1f57fbf3f7818e9455da5d293216c868f85341a240fc6787d2718eee86f5c",
+          "report": "engine/build/campaign-001-world_allocate-c6d22b93921f/research-result.json",
+          "report_sha256": "52e46d0957fba1c85dc301154ab6f1d33f9aebf3d3f329cd2a999ad363e2dba9",
+          "status": "relocation-adjusted-match",
+          "different_bytes": 0,
+          "elapsed_seconds": 1.397376
+        }
+      ],
+      "worker_started_utc": "2026-09-13T14:11:16.747751Z",
+      "worker_finished_utc": "2026-09-13T14:13:17.5970749Z",
+      "result_sha256": "2697554f6ffa92de33631d0a0dbdab49320d2b50a23647e218de361d29806aac",
+      "worker_log_sha256": "0661eb7d73c346e1817a7861f8a13c61082d07868a7264e03850c6bb9dfb208c",
+      "parent_candidate_changed": true,
+      "native_elapsed_seconds": 1.37234,
+      "docker_elapsed_seconds": 5.589153
+    },
+    {
+      "id": "world_destroy",
+      "case": "research/campaign-020-world-destroy",
+      "status": "focused-relocation-adjusted-match",
+      "target_size": 192,
+      "candidate_size": 192,
+      "verified_operands": 8,
+      "different_bytes": 0,
+      "fixture_checks": 246,
+      "worker_candidate_compiler_invocations": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "hypothesis": "early unloaded return with opaque byte view",
+          "source_sha256": "434095a03db9ca4bf8d4e9266c5a780cf6e2668c1bc025810e1e68af0cc4afdb",
+          "report": "engine/build/campaign-001-world_destroy-5649bfe831be/research-result.json",
+          "report_sha256": "955cca29dd8e128d4307f055e072308e4532f42eb0cfadc77525519a52023329",
+          "status": "mismatch",
+          "candidate_size": 195,
+          "different_bytes": null,
+          "elapsed_seconds": 1.442504
+        },
+        {
+          "attempt": 2,
+          "hypothesis": "typed fields and natural loaded cleanup block sharing final return",
+          "source_sha256": "92cfb97e7b0f953cf9406a63142bc2b8313da42f27c043001dfa8d00b1c9d233",
+          "report": "engine/build/campaign-001-world_destroy-a25479028f8a/research-result.json",
+          "report_sha256": "62fabc750b2715e5ee2decd3008b86abeaec6cea1e4f7166ef577a06a6005f59",
+          "status": "relocation-adjusted-match",
+          "candidate_size": 192,
+          "different_bytes": 0,
+          "elapsed_seconds": 1.388237
+        }
+      ],
+      "worker_started_utc": "2026-09-13T14:13:18Z",
+      "worker_finished_utc": "2026-09-13T14:16:32.7784286Z",
+      "result_sha256": "2fd513d1c95f34ec6cefa519f8dd61311f2bdb7863fc6c1172a4bd928fe8c695",
+      "worker_log_sha256": "f8e07cf1ebabe129353d9c8d8720d75e0da97a08ddfdcf5126c4277c7ab9312a",
+      "parent_candidate_changed": false,
+      "native_elapsed_seconds": 1.427293,
+      "docker_elapsed_seconds": 5.693288
+    },
+    {
+      "id": "world_read_chunk_header",
+      "case": "research/campaign-020-world-read-chunk-header",
+      "status": "focused-relocation-adjusted-match",
+      "target_size": 112,
+      "candidate_size": 112,
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "fixture_checks": 1527,
+      "worker_candidate_compiler_invocations": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "hypothesis": "natural struct with explicit break",
+          "source_sha256": "c244fa9a177ecfd5c50e1c33c5ca03ec144f5858dd7d3354f03098aba01af073",
+          "report": "engine/build/campaign-001-world_read_chunk_header-a6703f6e128e/research-result.json",
+          "report_sha256": "ca92ae364e7b01bda7f532fc27bf025c5e538794ad10cd658c2af3131e6a598a",
+          "status": "mismatch",
+          "candidate_size": 114,
+          "different_bytes": null,
+          "elapsed_seconds": 1.426097
+        },
+        {
+          "attempt": 2,
+          "hypothesis": "chunk/i locals and compound while condition matching direct branch",
+          "source_sha256": "5562c631c14303b03402da9c7827345c8ad4b2d8c24bf597c6d4da16f301d3bd",
+          "report": "engine/build/campaign-001-world_read_chunk_header-1781eb9fdb86/research-result.json",
+          "report_sha256": "c16c8ef14ea0560feff89443d6152cf754c2048c3168147ca244fb053ac421ce",
+          "status": "relocation-adjusted-match",
+          "candidate_size": 112,
+          "different_bytes": 0,
+          "elapsed_seconds": 1.520694
+        }
+      ],
+      "worker_started_utc": "2026-09-13T14:16:33Z",
+      "worker_finished_utc": "2026-09-13T14:18:44.9565682Z",
+      "result_sha256": "ed4efafae5ced26e10511dc5016207562db83dc44d59e78de475876cdb4e3092",
+      "worker_log_sha256": "72d0ea8302440e7f7e16fa7e411c75cb48c23fa875f726a1683e082bbf07e69d",
+      "parent_candidate_changed": false,
+      "native_elapsed_seconds": 1.397739,
+      "docker_elapsed_seconds": 5.604012
+    },
+    {
+      "id": "world_set_clock",
+      "case": "research/campaign-020-world-set-clock",
+      "status": "focused-relocation-adjusted-match",
+      "target_size": 67,
+      "candidate_size": 67,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "fixture_checks": 16,
+      "worker_candidate_compiler_invocations": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "hypothesis": "typed clock fields and natural float multiply cast",
+          "source_sha256": "c62c937be00a3cba96f972f43fe5a15218962253e3311ab201ea41447af23297",
+          "report": "engine/build/campaign-001-world_set_clock-68cb4f704a97/research-result.json",
+          "report_sha256": "93cc11c485373d23f20c515716194433065cc1bb91e1798ef405a55c170763f6",
+          "status": "relocation-adjusted-match",
+          "different_bytes": 0,
+          "elapsed_seconds": 1.377661
+        }
+      ],
+      "worker_started_utc": "2026-09-13T14:18:45Z",
+      "worker_finished_utc": "2026-09-13T14:20:18.0328097Z",
+      "result_sha256": "2b79d92efdfd6dc79264a5435f712a0d5ad3f8234acd2bcfdfeedd9149a3a5ee",
+      "worker_log_sha256": "9cc216f141393fc5183d35d0bd5e4ab89a3b8cb3412e58cd70529762b2f8495b",
+      "parent_candidate_changed": false,
+      "native_elapsed_seconds": 1.400137,
+      "docker_elapsed_seconds": 5.493639
+    },
+    {
+      "id": "world_set_ambient",
+      "case": "research/campaign-020-world-set-ambient",
+      "status": "focused-relocation-adjusted-match",
+      "target_size": 62,
+      "candidate_size": 62,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "fixture_checks": 28,
+      "worker_candidate_compiler_invocations": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "hypothesis": "typed ambient field and natural double-literal clamps",
+          "source_sha256": "644aac9b915823df08b8696500557c52d893efcdeeb5027fd033d408c155af6c",
+          "report": "engine/build/campaign-001-world_set_ambient-335d49c897f2/research-result.json",
+          "report_sha256": "24c8073c1f9832171992490b5eca325935e3153b7bcb3ba871b893a7f1729742",
+          "status": "relocation-adjusted-match",
+          "different_bytes": 0,
+          "elapsed_seconds": 1.397662
+        }
+      ],
+      "worker_started_utc": "2026-09-13T14:20:19Z",
+      "worker_finished_utc": "2026-09-13T14:21:29.0990621Z",
+      "result_sha256": "b9f8d93928dead8d27921cbfb0f4b0687bfd528bd4b187992783459e38225af2",
+      "worker_log_sha256": "93624344c1861fdc3d6d89cee2fe38bb886b94f98080fc358956998e0b420cbd",
+      "parent_candidate_changed": false,
+      "native_elapsed_seconds": 1.399008,
+      "docker_elapsed_seconds": 5.50009
+    },
+    {
+      "id": "world_apply_fog",
+      "case": "research/campaign-020-world-apply-fog",
+      "status": "focused-relocation-adjusted-match",
+      "target_size": 230,
+      "candidate_size": 230,
+      "verified_operands": 10,
+      "different_bytes": 0,
+      "fixture_checks": 198,
+      "worker_candidate_compiler_invocations": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "hypothesis": "typed fog fields, captured byte locals, verified narrow/full callback signatures",
+          "source_sha256": "13f3f71c36d033b7cf8e947e5bf39a8d3ed6a7fa3331b3cae2066115b27a350a",
+          "report": "engine/build/campaign-001-world_apply_fog-3d5d844ef941/research-result.json",
+          "report_sha256": "5d49d6d349515e908256ee67a98b6b85aeb92064c2542b69113ae1e355823ccf",
+          "status": "relocation-adjusted-match",
+          "different_bytes": 0,
+          "elapsed_seconds": 1.44275
+        }
+      ],
+      "worker_started_utc": "2026-09-13T14:21:30Z",
+      "worker_finished_utc": "2026-09-13T14:22:53.2528435Z",
+      "result_sha256": "59345fd0646b6a9cb9a1a9894272e6416aa8b285b3946713fa3d0e9aa565c262",
+      "worker_log_sha256": "4d82661c1190879da7433bdfa10c15d9a575aaf1a8a66302390b5c9c67450df9",
+      "parent_candidate_changed": false,
+      "native_elapsed_seconds": 1.413041,
+      "docker_elapsed_seconds": 5.501628
+    }
+  ],
+  "all_parent_verification_attempts": [
+    {
+      "id": "world_allocate",
+      "started_utc": "2026-09-13T14:16:13.545720+00:00",
+      "finished_utc": "2026-09-13T14:16:15.131397+00:00",
+      "returncode": 0,
+      "report": "engine/build/campaign-001-world_allocate-22d6542cf1f2/research-result.json",
+      "report_sha256": "a38475d0c7662d2fbee9de5a4cbf468ee35aee1455fa925c44397f28ff65b433",
+      "stderr": ""
+    },
+    {
+      "id": "world_allocate",
+      "started_utc": "2026-09-13T14:16:15.139294+00:00",
+      "finished_utc": "2026-09-13T14:16:20.941736+00:00",
+      "returncode": 0,
+      "report": "engine/build/campaign-001-world_allocate-70c29ed580a6/research-result.json",
+      "report_sha256": "81be1ea05ee46c42f8161467507309c06ce365019d3ef8a6b59e3c4740177d39",
+      "stderr": ""
+    },
+    {
+      "id": "world_destroy",
+      "started_utc": "2026-09-13T14:18:19.589842+00:00",
+      "finished_utc": "2026-09-13T14:18:21.231626+00:00",
+      "returncode": 0,
+      "report": "engine/build/campaign-001-world_destroy-57deb05fe562/research-result.json",
+      "report_sha256": "2b061be9c2bb3550272675ba151d415aa911275cf870bba173ea9ccbf52c596f",
+      "stderr": ""
+    },
+    {
+      "id": "world_destroy",
+      "started_utc": "2026-09-13T14:18:21.239259+00:00",
+      "finished_utc": "2026-09-13T14:18:27.163500+00:00",
+      "returncode": 0,
+      "report": "engine/build/campaign-001-world_destroy-4b13227b34e3/research-result.json",
+      "report_sha256": "20cd7b3d9d47711acf69b37e87c74c66dfac9c9e7c185e2f7a7463643141daf7",
+      "stderr": ""
+    },
+    {
+      "id": "world_read_chunk_header",
+      "started_utc": "2026-09-13T14:20:48.640649+00:00",
+      "finished_utc": "2026-09-13T14:20:50.266968+00:00",
+      "returncode": 0,
+      "report": "engine/build/campaign-001-world_read_chunk_header-7f822d1c72c6/research-result.json",
+      "report_sha256": "c5a2602c0e556a62dfbdb1d0934d3f060419578383fe13d13f04577bd819d3b3",
+      "stderr": ""
+    },
+    {
+      "id": "world_read_chunk_header",
+      "started_utc": "2026-09-13T14:20:50.274860+00:00",
+      "finished_utc": "2026-09-13T14:20:53.269292+00:00",
+      "returncode": 2,
+      "report": "engine/build/campaign-001-world_read_chunk_header-25555e01198a/research-result.json",
+      "report_sha256": "7c1f45a074fbd0644c8a189e31bc653d7b7fd26672e88686351899c5c8494e81",
+      "stderr": "FAILED: command failed: fixture-compile\n"
+    },
+    {
+      "id": "world_read_chunk_header",
+      "started_utc": "2026-09-13T14:22:19.198037+00:00",
+      "finished_utc": "2026-09-13T14:22:20.806217+00:00",
+      "returncode": 0,
+      "report": "engine/build/campaign-001-world_read_chunk_header-3ecde01dc5d8/research-result.json",
+      "report_sha256": "1d4e6ea5344c1197b0cb5e9925a945cfccdad20026a0a5b05755b5de6bc423dd",
+      "stderr": ""
+    },
+    {
+      "id": "world_read_chunk_header",
+      "started_utc": "2026-09-13T14:22:20.815028+00:00",
+      "finished_utc": "2026-09-13T14:22:26.631444+00:00",
+      "returncode": 0,
+      "report": "engine/build/campaign-001-world_read_chunk_header-25fdcfe7c919/research-result.json",
+      "report_sha256": "c5a26ecb083e9a14bc997d6f6a093f611d520e64e47f81744e12dace79cf1356",
+      "stderr": ""
+    },
+    {
+      "id": "world_set_clock",
+      "started_utc": "2026-09-13T14:23:21.587364+00:00",
+      "finished_utc": "2026-09-13T14:23:23.198008+00:00",
+      "returncode": 0,
+      "report": "engine/build/campaign-001-world_set_clock-f4012ff5ee0c/research-result.json",
+      "report_sha256": "09b087197d7021f8e2429dcb997975a4ad093adbd64ce851ca5b2391b7437261",
+      "stderr": ""
+    },
+    {
+      "id": "world_set_clock",
+      "started_utc": "2026-09-13T14:23:23.204914+00:00",
+      "finished_utc": "2026-09-13T14:23:28.912453+00:00",
+      "returncode": 0,
+      "report": "engine/build/campaign-001-world_set_clock-926f112529ae/research-result.json",
+      "report_sha256": "8011c2a32073e3b25bb906afa26c55a00b72da1cc8496619a7bdb29cf1aae646",
+      "stderr": ""
+    },
+    {
+      "id": "world_set_ambient",
+      "started_utc": "2026-09-13T14:25:43.079088+00:00",
+      "finished_utc": "2026-09-13T14:25:44.691037+00:00",
+      "returncode": 0,
+      "report": "engine/build/campaign-001-world_set_ambient-9052cb318a3a/research-result.json",
+      "report_sha256": "ec21046ea3aa3e0a35c01100b76cbf9cbab082209406e8391633f7febd6a0d65",
+      "stderr": ""
+    },
+    {
+      "id": "world_set_ambient",
+      "started_utc": "2026-09-13T14:25:44.697939+00:00",
+      "finished_utc": "2026-09-13T14:25:50.409762+00:00",
+      "returncode": 0,
+      "report": "engine/build/campaign-001-world_set_ambient-7a0d4c080a38/research-result.json",
+      "report_sha256": "d75a082fe7ca1b039a6211f2d7f8f9d33092fb4161b81338448b0d0d6a733592",
+      "stderr": ""
+    },
+    {
+      "id": "world_apply_fog",
+      "started_utc": "2026-09-13T14:25:50.568415+00:00",
+      "finished_utc": "2026-09-13T14:25:52.197152+00:00",
+      "returncode": 0,
+      "report": "engine/build/campaign-001-world_apply_fog-5bba9a24ba1c/research-result.json",
+      "report_sha256": "1b3332046dd8ef487396d263ec7fc6c552525a99f67eadfd9d46d9882cd83194",
+      "stderr": ""
+    },
+    {
+      "id": "world_apply_fog",
+      "started_utc": "2026-09-13T14:25:52.204520+00:00",
+      "finished_utc": "2026-09-13T14:25:57.915538+00:00",
+      "returncode": 0,
+      "report": "engine/build/campaign-001-world_apply_fog-3e4597a962af/research-result.json",
+      "report_sha256": "db83162d92f38467b6fb43033abae8055bc788296145cf805933fa3168ff3423",
+      "stderr": ""
+    }
+  ],
+  "time_scope": "Elapsed runner operations, not model reasoning time or a controlled benchmark."
+}

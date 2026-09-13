@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "campaign": "020",
+  "status": "verification-complete-publication-pending",
+  "prepared_utc": "2026-09-13T13:55:54.776626+00:00",
+  "preparation_started_utc": "2026-09-13T13:49:00Z",
+  "preparation_cap_minutes": 15,
+  "started_utc": "2026-09-13T14:11:16.747751+00:00",
+  "worker_stop_utc": "2026-09-13T14:46:16.747751+00:00",
+  "stop_utc": "2026-09-13T14:56:16.747751+00:00",
+  "baseline_commit": "4ffe59e05a7ed193a7edaa066505a30447a6cf94",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "registered_functions_at_start": 28,
+  "assignments": [
+    {
+      "id": "world_allocate",
+      "address": "0x41cbbf",
+      "case": "research/campaign-020-world-allocate",
+      "status": "exact-function-match",
+      "team_reported_name": "bapworld_alloc",
+      "fixture_checks": 43
+    },
+    {
+      "id": "world_destroy",
+      "address": "0x41cc80",
+      "case": "research/campaign-020-world-destroy",
+      "status": "exact-function-match",
+      "team_reported_name": "bapworld_free",
+      "fixture_checks": 246
+    },
+    {
+      "id": "world_read_chunk_header",
+      "address": "0x41cd80",
+      "case": "research/campaign-020-world-read-chunk-header",
+      "status": "exact-function-match",
+      "team_reported_name": "bapworld_readChunkTag",
+      "fixture_checks": 1527
+    },
+    {
+      "id": "world_set_clock",
+      "address": "0x41f0c9",
+      "case": "research/campaign-020-world-set-clock",
+      "status": "exact-function-match",
+      "team_reported_name": "bapmap_setWorldClock",
+      "fixture_checks": 16
+    },
+    {
+      "id": "world_set_ambient",
+      "address": "0x41f10c",
+      "case": "research/campaign-020-world-set-ambient",
+      "status": "exact-function-match",
+      "team_reported_name": "baplight_setAmbient",
+      "fixture_checks": 28
+    },
+    {
+      "id": "world_apply_fog",
+      "address": "0x41f14a",
+      "case": "research/campaign-020-world-apply-fog",
+      "status": "exact-function-match",
+      "team_reported_name": "baplight_applyLevelFog",
+      "fixture_checks": 198
+    }
+  ],
+  "verified_utc": "2026-09-13T14:25:57.915538+00:00",
+  "exact_functions": 6,
+  "exact_bytes": 856,
+  "fixture_checks": 2058,
+  "accepted_promotions": 0,
+  "next_work": "Acceptance005 for exact clock,ambient,fog using canonical world view; full clean original-toolchain integration checkpoint."
+}

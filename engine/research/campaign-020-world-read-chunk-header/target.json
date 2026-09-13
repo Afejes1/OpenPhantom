@@ -1,0 +1,32 @@
+{
+  "id": "world_read_chunk_header",
+  "address": 4312448,
+  "size": 112,
+  "body_size": 112,
+  "source": "src/world_read_chunk_header.c",
+  "symbol": "_op_world_read_chunk_header",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 35,
+      "address": 4654982,
+      "kind": "rel32-call",
+      "symbol": "_op_stream_read"
+    },
+    {
+      "offset": 65,
+      "address": 4895040,
+      "symbol": "_op_chunk_tags"
+    },
+    {
+      "offset": 75,
+      "address": 4826656,
+      "kind": "rel32-call",
+      "symbol": "_op_compare_tag"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "world_apply_fog",
+  "address": 4321610,
+  "size": 230,
+  "body_size": 230,
+  "source": "src/world_apply_fog.c",
+  "symbol": "_op_world_apply_fog",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 95,
+      "address": 4749872,
+      "kind": "rel32-call",
+      "symbol": "_op_set_fog_rgb"
+    },
+    {
+      "offset": 123,
+      "address": 4750016,
+      "kind": "rel32-call",
+      "symbol": "_op_set_fog_range"
+    },
+    {
+      "offset": 147,
+      "address": 4749840,
+      "kind": "rel32-call",
+      "symbol": "_op_get_render_flags"
+    },
+    {
+      "offset": 155,
+      "address": 4749856,
+      "kind": "rel32-call",
+      "symbol": "_op_set_render_flags"
+    },
+    {
+      "offset": 175,
+      "address": 4750160,
+      "kind": "rel32-call",
+      "symbol": "_op_set_clear_rgb"
+    },
+    {
+      "offset": 183,
+      "address": 4749840,
+      "kind": "rel32-call",
+      "symbol": "_op_get_render_flags"
+    },
+    {
+      "offset": 191,
+      "address": 4749856,
+      "kind": "rel32-call",
+      "symbol": "_op_set_render_flags"
+    },
+    {
+      "offset": 203,
+      "address": 4750240,
+      "kind": "rel32-call",
+      "symbol": "_op_set_clear_pixel"
+    },
+    {
+      "offset": 211,
+      "address": 4749840,
+      "kind": "rel32-call",
+      "symbol": "_op_get_render_flags"
+    },
+    {
+      "offset": 219,
+      "address": 4749856,
+      "kind": "rel32-call",
+      "symbol": "_op_set_render_flags"
+    }
+  ]
+}

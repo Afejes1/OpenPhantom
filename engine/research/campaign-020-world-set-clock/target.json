@@ -1,0 +1,26 @@
+{
+  "id": "world_set_clock",
+  "address": 4321481,
+  "size": 67,
+  "body_size": 67,
+  "source": "src/world_set_clock.c",
+  "symbol": "_op_world_set_clock",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 26,
+      "address": 4882964,
+      "float32": 1000.0
+    },
+    {
+      "offset": 31,
+      "address": 4826188,
+      "kind": "rel32-call",
+      "symbol": "__ftol"
+    }
+  ]
+}

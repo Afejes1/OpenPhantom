@@ -1,0 +1,74 @@
+[
+  {
+    "id": "world_allocate",
+    "address": "0x0041CBBF",
+    "existing_name": "allocate_b3d_world",
+    "original_name": "FUN_0041cbbf",
+    "confidence": "HIGH",
+    "full_span": 193,
+    "status": "focused-relocation-adjusted-match",
+    "contract": "research/campaign-020-world-allocate/contract.md",
+    "caller_evidence": "World module event1 caller0041CA19 stores returned pointer as activeworld.",
+    "comment_saved": true
+  },
+  {
+    "id": "world_destroy",
+    "address": "0x0041CC80",
+    "existing_name": "destroy_b3d_world",
+    "original_name": "destroy_b3d_world",
+    "confidence": "HIGH",
+    "full_span": 192,
+    "status": "focused-relocation-adjusted-match",
+    "contract": "research/campaign-020-world-destroy/contract.md",
+    "caller_evidence": "Worldmoduleevent2 and load_b3d_world/load_level_world failure/replacement paths, four incomingcalls.",
+    "comment_saved": true
+  },
+  {
+    "id": "world_read_chunk_header",
+    "address": "0x0041CD80",
+    "existing_name": "read_b3d_chunk_header",
+    "original_name": "read_b3d_chunk_header",
+    "confidence": "HIGH",
+    "full_span": 112,
+    "status": "focused-relocation-adjusted-match",
+    "contract": "research/campaign-020-world-read-chunk-header/contract.md",
+    "caller_evidence": "Loadercalls0041EBF7/0041ED65 explicitly passstreamandunsignedpayloadoutput; returndispatches chunktag.",
+    "comment_saved": true
+  },
+  {
+    "id": "world_set_clock",
+    "address": "0x0041F0C9",
+    "existing_name": "set_b3d_world_clock",
+    "original_name": "set_b3d_world_clock",
+    "confidence": "HIGH",
+    "full_span": 67,
+    "status": "focused-relocation-adjusted-match",
+    "contract": "research/campaign-020-world-set-clock/contract.md",
+    "caller_evidence": "Fixedstepscheduler00475794/004757B4 passesworld,floatseconds; body/callerpreviousanalysisagrees.",
+    "comment_saved": true
+  },
+  {
+    "id": "world_set_ambient",
+    "address": "0x0041F10C",
+    "existing_name": "set_b3d_world_ambient",
+    "original_name": "FUN_0041f10c",
+    "confidence": "HIGH",
+    "full_span": 62,
+    "status": "focused-relocation-adjusted-match",
+    "contract": "research/campaign-020-world-set-ambient/contract.md",
+    "caller_evidence": "Solecall0043F88C passesactiveworld andits+60float; namingpurposeHIGH.",
+    "comment_saved": true
+  },
+  {
+    "id": "world_apply_fog",
+    "address": "0x0041F14A",
+    "existing_name": "apply_b3d_world_fog",
+    "original_name": "FUN_0041f14a",
+    "confidence": "HIGH",
+    "full_span": 230,
+    "status": "focused-relocation-adjusted-match",
+    "contract": "research/campaign-020-world-apply-fog/contract.md",
+    "caller_evidence": "Worldmoduleevent5 andrestore_b3d_world_fog_state00438F77 restorebit0thenapply; calleesreadexactwidths confirmedinstructions.",
+    "comment_saved": true
+  }
+]
