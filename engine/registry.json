@@ -1285,6 +1285,244 @@
         "Full original extent and every operand binding are required; final executable placement remains pending."
       ],
       "exceptions": []
+    },
+    {
+      "id": "detach_zap",
+      "module": "zap_effects",
+      "analysis_name": "detach_object_from_linked_zapline_effects",
+      "purpose": "Detach matching active zapline endpoints",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-lifecycle-acceptance.md",
+        "research/campaign-027-detach-zap/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/zap_effects_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every operand must match; external callbacks remain authored fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "zap_startup",
+      "module": "zap_effects",
+      "analysis_name": "initialize_zapline_sprite_resource",
+      "purpose": "Lazily acquire shared zapline sprite",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-lifecycle-acceptance.md",
+        "research/campaign-027-zap-startup/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/zap_effects_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every operand must match; external callbacks remain authored fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "zap_shutdown",
+      "module": "zap_effects",
+      "analysis_name": "shutdown_zapline_sprite_resource",
+      "purpose": "Release shared zapline sprite",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-lifecycle-acceptance.md",
+        "research/campaign-027-zap-shutdown/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/zap_effects_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every operand must match; external callbacks remain authored fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "zap_reset",
+      "module": "zap_effects",
+      "analysis_name": "clear_object_linked_zapline_effects",
+      "purpose": "Clear the full zapline record pool and count",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-lifecycle-acceptance.md",
+        "research/campaign-027-zap-reset/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/zap_effects_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every operand must match; external callbacks remain authored fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "zap_has_actor",
+      "module": "zap_effects",
+      "analysis_name": "has_tracked_object_linked_zapline_effect",
+      "purpose": "Query active mode-enabled zapline endpoints",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-lifecycle-acceptance.md",
+        "research/campaign-027-zap-has-actor/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/zap_effects_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every operand must match; external callbacks remain authored fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "halo_free_all",
+      "module": "halo_overlay",
+      "analysis_name": "FUN_0043a1bb",
+      "purpose": "Clear every owned halo and reset count",
+      "confidence": "MEDIUM",
+      "evidence": [
+        "docs/effects-lifecycle-acceptance.md",
+        "research/campaign-027-halo-free-all/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/halo_overlay_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every operand must match; external callbacks remain authored fixtures.",
+        "No direct callers; lifecycle provenance remains unresolved."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "effects_load",
+      "module": "effects_save",
+      "analysis_name": "load_special_effects_save_state",
+      "purpose": "Read effects state and dependent saved blocks",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-lifecycle-acceptance.md",
+        "research/campaign-028-effects-load/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/effects_save_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every operand must match; external callbacks remain authored fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "halo_draw_actor",
+      "module": "halo_overlay",
+      "analysis_name": "render_object_halo_effects",
+      "purpose": "Render every matching halo for an eligible actor",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-lifecycle-acceptance.md",
+        "research/campaign-028-halo-draw-actor/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/halo_overlay_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every operand must match; external callbacks remain authored fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ripple_material",
+      "module": "ripple_effects",
+      "analysis_name": "resolve_projected_surface_ripple_material",
+      "purpose": "Resolve and cache a composed ripple material",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-lifecycle-acceptance.md",
+        "research/campaign-028-ripple-material/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/ripple_effects_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every operand must match; external callbacks remain authored fixtures.",
+        "Unchecked appearance domain0..7; VC5 evaluates the opacity material argument before color."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "zap_draw_segment",
+      "module": "zap_effects",
+      "analysis_name": "render_object_linked_zapline_segment",
+      "purpose": "Generate and submit a caller-configured zapline segment",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-lifecycle-acceptance.md",
+        "research/campaign-028-zap-draw-segment/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/zap_effects_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every operand must match; external callbacks remain authored fixtures.",
+        "Operational depth domain is nonnegative; negative C shifts are outside the source contract."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "zap_draw_default",
+      "module": "zap_effects",
+      "analysis_name": "FUN_0043d5f5",
+      "purpose": "Generate and submit a fixed-style zapline segment",
+      "confidence": "MEDIUM",
+      "evidence": [
+        "docs/effects-lifecycle-acceptance.md",
+        "research/campaign-028-zap-draw-default/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/zap_effects_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every operand must match; external callbacks remain authored fixtures.",
+        "No direct callers; lifecycle provenance remains unresolved."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "effects_object_visibility",
+      "module": "halo_overlay",
+      "analysis_name": "set_model_ambient_boost_from_object_flags",
+      "purpose": "Publish the model ambient-boost latch",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-lifecycle-acceptance.md",
+        "research/campaign-028-effects-object-visibility/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/halo_overlay_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every operand must match; external callbacks remain authored fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "effects_object_created",
+      "module": "halo_overlay",
+      "analysis_name": "FUN_00438e67",
+      "purpose": "Forward object creation to halo attachment",
+      "confidence": "MEDIUM",
+      "evidence": [
+        "docs/effects-lifecycle-acceptance.md",
+        "research/campaign-028-effects-object-created/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/halo_overlay_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every operand must match; external callbacks remain authored fixtures."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

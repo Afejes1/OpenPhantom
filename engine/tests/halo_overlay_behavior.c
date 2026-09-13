@@ -1,10 +1,13 @@
 /* Authored shared state; exact reconstructed callees link directly. */
 #include "../src/effects_state.h"
+static int effects_save_active;
+static int effects_save_read(void *memory, unsigned int bytes);
 #include "../src/halo_overlay.h"
 #include <limits.h>
 #include <stdio.h>
 #include <string.h>
 int op_letterbox_visible;
+int op_model_ambient_boost;
 OP_OVERLAY_SAVE op_overlay_save;
 char op_halo_name_a[8] = "unit-a", op_halo_name_b[8] = "unit-b", op_halo_name_c[8] = "unit-c";
 void *op_halo_sprite_a, *op_halo_sprite_b, *op_halo_sprite_c;
@@ -12,6 +15,10 @@ OP_HALO op_halos[32];
 int op_halo_count;
 #include "detach_halo_behavior.h"
 #include "effects_draw_object_behavior.h"
+#include "effects_object_created_behavior.h"
+#include "effects_object_visibility_behavior.h"
+#include "halo_draw_actor_behavior.h"
+#include "halo_free_all_behavior.h"
 #include "halo_shutdown_behavior.h"
 #include "halo_startup_behavior.h"
 #include "letterbox_set_enabled_behavior.h"
@@ -36,7 +43,10 @@ enum
     HL_SAVE,
     HL_READ,
     HL_DRAW,
-    HL_CHAIN
+    HL_CHAIN,
+    HL_FREE_ALL,
+    HL_HALO_DIRECT,
+    HL_CREATE
 };
 typedef struct HL_BYTES
 {
@@ -91,6 +101,11 @@ static void halo_overlay_release_sprite(void **sprite)
         hl_halo_shutdown_op_release_sprite(sprite);
         return;
     }
+    if (hl_mode == HL_FREE_ALL)
+    {
+        lc_halo_free_all_op_release_sprite(sprite);
+        return;
+    }
     if (hl_mode == HL_DETACH)
     {
         hl_detach_halo_op_release_sprite(sprite);
@@ -127,6 +142,8 @@ void op_save_write(const void *memory, unsigned int bytes)
 }
 int op_save_read(void *memory, unsigned int bytes)
 {
+    if (effects_save_active)
+        return effects_save_read(memory, bytes);
     HL_CHECK(halo_overlay_active);
     if (hl_mode == HL_READ)
         return hl_overlay_read_state_op_save_read(memory, bytes);
@@ -137,11 +154,24 @@ int op_save_read(void *memory, unsigned int bytes)
         memcpy(memory, hl_saved.data, 28);
     return hl_profile ? INT_MIN : 0;
 }
-void op_halo_draw_actor(OP_ATTACHED_ACTOR *actor)
+void op_halo_draw_slot(OP_ATTACHED_ACTOR *actor, int slot)
 {
-    HL_CHECK(halo_overlay_active && hl_mode == HL_DRAW);
+    HL_CHECK(halo_overlay_active);
     if (hl_mode == HL_DRAW)
+    {
+        HL_CHECK(slot == 0);
         hl_effects_draw_object_op_halo_draw_actor(actor);
+    }
+    else if (hl_mode == HL_HALO_DIRECT)
+        lc_halo_draw_actor_op_halo_draw_slot(actor, slot);
+    else
+        HL_CHECK(0);
+}
+void op_halo_attach(OP_ATTACHED_ACTOR *actor)
+{
+    HL_CHECK(halo_overlay_active && hl_mode == HL_CREATE);
+    if (hl_mode == HL_CREATE)
+        lc_effects_object_created_op_halo_attach(actor);
 }
 void op_shield_draw_attached(int slot, float *transform)
 {
@@ -227,6 +257,13 @@ static int op_test_halo_overlay(void)
     status += hl_effects_draw_object_main();
     hl_mode = HL_DETACH;
     status += hl_detach_halo_main();
+    hl_mode = HL_FREE_ALL;
+    status += lc_halo_free_all_main();
+    hl_mode = HL_HALO_DIRECT;
+    status += lc_halo_draw_actor_main();
+    status += lc_effects_object_visibility_main();
+    hl_mode = HL_CREATE;
+    status += lc_effects_object_created_main();
     hl_mode = HL_CHAIN;
     hl_chain_tests();
     halo_overlay_active = 0;
@@ -234,7 +271,9 @@ static int op_test_halo_overlay(void)
     HL_CHECK(!shield_lifecycle_active && !effects_state_active);
     HL_CHECK(world_readers_allocate_calls == previous_allocate && wc_backend_events == previous_chunks);
     total = hl_checks + hl_letterbox_set_enabled_checks + hl_overlay_save_state_checks + hl_overlay_read_state_checks +
-            hl_halo_startup_checks + hl_halo_shutdown_checks + hl_effects_draw_object_checks + hl_detach_halo_checks;
+            hl_halo_startup_checks + hl_halo_shutdown_checks + hl_effects_draw_object_checks + hl_detach_halo_checks +
+            lc_halo_free_all_checks + lc_halo_draw_actor_checks + lc_effects_object_visibility_checks +
+            lc_effects_object_created_checks;
     printf("halo overlay total: %d checks, %d integration failures\n", total, hl_failures);
     return status + (hl_failures != 0);
 }

@@ -127,6 +127,9 @@ static void clip_flag_tests(void)
 #include "shield_lifecycle_behavior.c"
 #include "effects_state_behavior.c"
 #include "halo_overlay_behavior.c"
+#include "zap_effects_behavior.c"
+#include "ripple_effects_behavior.c"
+#include "effects_save_behavior.c"
 
 int main(void)
 {
@@ -177,6 +180,9 @@ int main(void)
     failures += op_test_shield_lifecycle();
     failures += op_test_effects_state();
     failures += op_test_halo_overlay();
+    failures += op_test_zap_effects();
+    failures += op_test_ripple_effects();
+    failures += op_test_effects_save();
     if (failures) return 1;
 #ifdef OP_VC5_BEHAVIOR
     puts("VC5 behavioral fixture passed, including x87 unordered fallback.");

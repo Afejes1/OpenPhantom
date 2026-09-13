@@ -1,6 +1,12 @@
 /* Authored owned-state fixtures. Actual reconstructed internal callees are linked. */
 #include "../src/focused_accessors.h"
 #include "../src/halo_overlay.h"
+#include "../src/zap_effects.h"
+static int zap_effects_active, ripple_effects_active;
+static void zap_effects_release_sprite(void **sprite);
+static void *zap_effects_acquire_sprite(char *name);
+static void ripple_effects_release_sprite(void **sprite);
+static void *ripple_effects_acquire_sprite(char *name);
 static int halo_overlay_active;
 static void halo_overlay_release_sprite(void **sprite);
 static void *halo_overlay_acquire_sprite(char *name);
@@ -49,6 +55,7 @@ static int sl_expected_count, sl_expected_pass, sl_expected_other;
 static int sl_chain_slot, sl_chain_field, sl_chain_in_record, sl_chain_all;
 static int sl_chain_dynamic, sl_chain_releases, sl_chain_sprites;
 static int sl_object_slot, sl_object_events;
+static OP_ZAP sl_before_zaps[64], sl_expected_zaps[64];
 
 static void sl_verify_state(void)
 {
@@ -260,6 +267,7 @@ static void sl_object_release_halo(void **sprite)
     OP_ATTACHED_ACTOR *object = &sl_actor[0].value;
     SL_CHECK(sprite == &op_halos[0].sprite);
     SL_CHECK(op_halos[0].owner == 0 && op_halo_count == 1);
+    SL_CHECK(memcmp(op_zaps, sl_before_zaps, sizeof(sl_before_zaps)) == 0);
     *sprite = 0;
     SL_CHECK(sl_mode == SL_OBJECT && sl_object_events++ == 0);
     SL_CHECK(object == &sl_actor[0].value);
@@ -276,14 +284,6 @@ static void sl_object_release_halo(void **sprite)
         if (sl_expected[sl_object_slot].attached == &sl_actor[1].value)
             sl_expected_actor[1].value.shield_slot = -1;
     }
-}
-void op_detach_zap(OP_ATTACHED_ACTOR *object)
-{
-    SL_CHECK(sl_mode == SL_OBJECT && sl_object_events++ == 1);
-    SL_CHECK(object == &sl_actor[0].value);
-    sl_verify_state();
-    object->shield_slot = 71;
-    sl_expected_actor[0].value.shield_slot = 71;
 }
 static void sl_object_case(int slot, int active, int attached)
 {
@@ -333,8 +333,22 @@ static void sl_object_case(int slot, int active, int attached)
     op_halos[0].owner = &sl_actor[0].value;
     op_halos[0].sprite = sl_owned[0][0];
     op_halo_count = 1;
+    memset(op_zaps, 0, sizeof(op_zaps));
+    op_zaps[0].active = op_zaps[0].mode = 1;
+    op_zaps[0].endpoints[0] = &sl_actor[0].value;
+    op_zaps[0].endpoints[1] = &sl_actor[1].value;
+    op_zaps[31].endpoints[0] = &sl_actor[0].value;
+    op_zaps[63].active = op_zaps[63].mode = 1;
+    op_zaps[63].endpoints[3] = &sl_actor[0].value;
+    memcpy(sl_before_zaps, op_zaps, sizeof(op_zaps));
+    memcpy(sl_expected_zaps, op_zaps, sizeof(op_zaps));
+    sl_expected_zaps[0].endpoints[0] = 0;
+    sl_expected_zaps[63].endpoints[3] = 0;
     op_effects_object_destroyed(&sl_actor[0].value);
-    SL_CHECK(sl_object_events == 2);
+    SL_CHECK(sl_object_events == 1);
+    SL_CHECK(memcmp(op_zaps, sl_expected_zaps, sizeof(op_zaps)) == 0);
+    SL_CHECK(op_zap_has_actor(&sl_actor[0].value) == 0);
+    SL_CHECK(op_zap_has_actor(&sl_actor[1].value) == 1);
     SL_CHECK(op_halo_count == 0 && op_halos[0].owner == 0 && op_halos[0].sprite == 0);
     SL_CHECK(op_shield_save_size() == 4);
     sl_verify_state();
@@ -367,6 +381,16 @@ static void shield_lifecycle_release(void *memory)
 }
 void op_release_sprite(void **sprite)
 {
+    if (zap_effects_active)
+    {
+        zap_effects_release_sprite(sprite);
+        return;
+    }
+    if (ripple_effects_active)
+    {
+        ripple_effects_release_sprite(sprite);
+        return;
+    }
     if (halo_overlay_active)
     {
         halo_overlay_release_sprite(sprite);
@@ -384,6 +408,10 @@ void op_release_sprite(void **sprite)
 }
 void *op_acquire_sprite(char *name)
 {
+    if (zap_effects_active)
+        return zap_effects_acquire_sprite(name);
+    if (ripple_effects_active)
+        return ripple_effects_acquire_sprite(name);
     if (halo_overlay_active)
         return halo_overlay_acquire_sprite(name);
     SL_CHECK(shield_lifecycle_active && sl_mode == SL_TEXTURE);

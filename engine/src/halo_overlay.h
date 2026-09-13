@@ -40,4 +40,10 @@ void op_halo_startup(void);
 void op_halo_shutdown(void);
 void op_effects_draw_object(OP_ATTACHED_ACTOR *actor, float *transform, int unused, int draw_halo);
 void op_detach_halo(OP_ATTACHED_ACTOR *actor);
+extern int op_model_ambient_boost;
+void op_halo_free_all(void);
+void op_halo_draw_slot(OP_ATTACHED_ACTOR *actor, int slot);
+void op_halo_attach(OP_ATTACHED_ACTOR *actor);
+void op_effects_object_visibility(OP_ATTACHED_ACTOR *actor);
+void op_effects_object_created(OP_ATTACHED_ACTOR *actor);
 #endif

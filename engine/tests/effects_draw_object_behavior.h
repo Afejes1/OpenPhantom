@@ -12,7 +12,7 @@ static void hl_effects_draw_object_check_at(int value, int hl_effects_draw_objec
         printf("failed at %d\n", hl_effects_draw_object_line);
     }
 }
-#define hl_effects_draw_object_CHECK(hl_effects_draw_object_x)                                  \
+#define hl_effects_draw_object_CHECK(hl_effects_draw_object_x)                                                         \
     hl_effects_draw_object_check_at(!!(hl_effects_draw_object_x), __LINE__)
 
 typedef struct hl_effects_draw_object_ACTOR
@@ -75,6 +75,10 @@ static void hl_effects_draw_object_run_case(unsigned int flags, int hl_effects_d
                                             int hl_effects_draw_object_null_transform)
 {
     int hl_effects_draw_object_should_draw;
+    /* Exercise the real halo callee; entry gate coverage lives in halo_draw_actor. */
+    flags |= 0x10U;
+    memset(op_halos, 0, sizeof(op_halos));
+    op_halos[0].owner = &hl_effects_draw_object_actor.value;
     memset(&hl_effects_draw_object_actor, 0x36, sizeof(hl_effects_draw_object_actor));
     memset(&hl_effects_draw_object_matrix, 0x57, sizeof(hl_effects_draw_object_matrix));
     memset(hl_effects_draw_object_other, 0x68, sizeof(hl_effects_draw_object_other));

@@ -2902,6 +2902,591 @@
           "kind": "dir32"
         }
       ]
+    },
+    {
+      "id": "detach_zap",
+      "address": 4445407,
+      "size": 116,
+      "body_size": 116,
+      "source": "src/detach_zap.c",
+      "symbol": "_op_detach_zap",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 38,
+          "address": 7123336,
+          "symbol": "_op_zaps",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "zap_startup",
+      "address": 4443376,
+      "size": 50,
+      "body_size": 50,
+      "source": "src/zap_startup.c",
+      "symbol": "_op_zap_startup",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7131016,
+          "symbol": "_op_zap_sprite",
+          "kind": "dir32"
+        },
+        {
+          "offset": 13,
+          "address": 4907640,
+          "symbol": "_op_zap_name",
+          "kind": "dir32"
+        },
+        {
+          "offset": 18,
+          "address": 4363584,
+          "symbol": "_op_acquire_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 26,
+          "address": 7131016,
+          "symbol": "_op_zap_sprite",
+          "kind": "dir32"
+        },
+        {
+          "offset": 32,
+          "address": 7131016,
+          "symbol": "_op_zap_sprite",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "zap_shutdown",
+      "address": 4443426,
+      "size": 23,
+      "body_size": 23,
+      "source": "src/zap_shutdown.c",
+      "symbol": "_op_zap_shutdown",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 7131016,
+          "symbol": "_op_zap_sprite",
+          "kind": "dir32"
+        },
+        {
+          "offset": 9,
+          "address": 4363764,
+          "symbol": "_op_release_sprite",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "zap_reset",
+      "address": 4445523,
+      "size": 31,
+      "body_size": 31,
+      "source": "src/zap_reset.c",
+      "symbol": "_op_zap_reset",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 12,
+          "address": 7123336,
+          "symbol": "_op_zaps",
+          "kind": "dir32"
+        },
+        {
+          "offset": 20,
+          "address": 7131020,
+          "symbol": "_op_zap_count",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "zap_has_actor",
+      "address": 4445554,
+      "size": 131,
+      "body_size": 131,
+      "source": "src/zap_has_actor.c",
+      "symbol": "_op_zap_has_actor",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 45,
+          "address": 7123336,
+          "symbol": "_op_zaps",
+          "kind": "dir32"
+        },
+        {
+          "offset": 60,
+          "address": 7123336,
+          "symbol": "_op_zaps",
+          "kind": "dir32",
+          "addend": 16
+        },
+        {
+          "offset": 105,
+          "address": 7123336,
+          "symbol": "_op_zaps",
+          "kind": "dir32",
+          "addend": 20
+        }
+      ]
+    },
+    {
+      "id": "halo_free_all",
+      "address": 4432315,
+      "size": 110,
+      "body_size": 110,
+      "source": "src/halo_free_all.c",
+      "symbol": "_op_halo_free_all",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 36,
+          "address": 7097992,
+          "symbol": "_op_halos",
+          "kind": "dir32"
+        },
+        {
+          "offset": 51,
+          "address": 7097992,
+          "symbol": "_op_halos",
+          "kind": "dir32"
+        },
+        {
+          "offset": 66,
+          "address": 7097992,
+          "symbol": "_op_halos",
+          "kind": "dir32",
+          "addend": 20
+        },
+        {
+          "offset": 72,
+          "address": 4363764,
+          "symbol": "_op_release_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 81,
+          "address": 7098900,
+          "symbol": "_op_halo_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 90,
+          "address": 7098900,
+          "symbol": "_op_halo_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 98,
+          "address": 7098900,
+          "symbol": "_op_halo_count",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "effects_load",
+      "address": 4428341,
+      "size": 152,
+      "body_size": 152,
+      "source": "src/effects_load.c",
+      "symbol": "_op_effects_load",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 25,
+          "address": 7097816,
+          "symbol": "_op_effects_save",
+          "kind": "dir32"
+        },
+        {
+          "offset": 30,
+          "address": 4529328,
+          "symbol": "_op_save_read",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 49,
+          "address": 7097816,
+          "symbol": "_op_effects_save",
+          "kind": "dir32",
+          "addend": 24
+        },
+        {
+          "offset": 54,
+          "address": 8918516,
+          "symbol": "_op_fog_duration",
+          "kind": "dir32"
+        },
+        {
+          "offset": 60,
+          "address": 7097816,
+          "symbol": "_op_effects_save",
+          "kind": "dir32",
+          "addend": 28
+        },
+        {
+          "offset": 66,
+          "address": 8918520,
+          "symbol": "_op_fog_target",
+          "kind": "dir32"
+        },
+        {
+          "offset": 72,
+          "address": 7097816,
+          "symbol": "_op_effects_save",
+          "kind": "dir32",
+          "addend": 32
+        },
+        {
+          "offset": 78,
+          "address": 8918524,
+          "symbol": "_op_fog_cached_start",
+          "kind": "dir32"
+        },
+        {
+          "offset": 83,
+          "address": 7097816,
+          "symbol": "_op_effects_save",
+          "kind": "dir32",
+          "addend": 36
+        },
+        {
+          "offset": 88,
+          "address": 8918512,
+          "symbol": "_op_fog_remaining",
+          "kind": "dir32"
+        },
+        {
+          "offset": 94,
+          "address": 7097816,
+          "symbol": "_op_effects_save",
+          "kind": "dir32",
+          "addend": 40
+        },
+        {
+          "offset": 100,
+          "address": 8918504,
+          "symbol": "_op_fog_restore_mode",
+          "kind": "dir32"
+        },
+        {
+          "offset": 106,
+          "address": 7097816,
+          "symbol": "_op_effects_save",
+          "kind": "dir32",
+          "addend": 44
+        },
+        {
+          "offset": 112,
+          "address": 8918508,
+          "symbol": "_op_fog_saved",
+          "kind": "dir32"
+        },
+        {
+          "offset": 117,
+          "address": 4442876,
+          "symbol": "_op_shield_load",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 133,
+          "address": 4429716,
+          "symbol": "_op_overlay_read_state",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "halo_draw_actor",
+      "address": 4430420,
+      "size": 98,
+      "body_size": 98,
+      "source": "src/halo_draw_actor.c",
+      "symbol": "_op_halo_draw_actor",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 58,
+          "address": 7097992,
+          "symbol": "_op_halos",
+          "kind": "dir32"
+        },
+        {
+          "offset": 79,
+          "address": 7097992,
+          "symbol": "_op_halos",
+          "kind": "dir32"
+        },
+        {
+          "offset": 85,
+          "address": 4430518,
+          "symbol": "_op_halo_draw_slot",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "ripple_material",
+      "address": 4434627,
+      "size": 163,
+      "body_size": 163,
+      "source": "src/ripple_material.c",
+      "symbol": "_op_ripple_material",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 14,
+          "address": 4907416,
+          "symbol": "_op_ripple_materials",
+          "kind": "dir32",
+          "addend": 8
+        },
+        {
+          "offset": 40,
+          "address": 4907416,
+          "symbol": "_op_ripple_materials",
+          "kind": "dir32"
+        },
+        {
+          "offset": 46,
+          "address": 4363584,
+          "symbol": "_op_acquire_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 64,
+          "address": 4907416,
+          "symbol": "_op_ripple_materials",
+          "kind": "dir32",
+          "addend": 4
+        },
+        {
+          "offset": 70,
+          "address": 4363584,
+          "symbol": "_op_acquire_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 85,
+          "address": 4364383,
+          "symbol": "_op_sprite_get_material",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 98,
+          "address": 4364383,
+          "symbol": "_op_sprite_get_material",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 107,
+          "address": 4702855,
+          "symbol": "_op_compose_materials",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 128,
+          "address": 4907416,
+          "symbol": "_op_ripple_materials",
+          "kind": "dir32",
+          "addend": 8
+        },
+        {
+          "offset": 137,
+          "address": 4363764,
+          "symbol": "_op_release_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 149,
+          "address": 4363764,
+          "symbol": "_op_release_sprite",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "zap_draw_segment",
+      "address": 4445768,
+      "size": 105,
+      "body_size": 105,
+      "source": "src/zap_draw_segment.c",
+      "symbol": "_op_zap_draw_segment",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 7,
+          "address": 7131016,
+          "symbol": "_op_zap_sprite",
+          "kind": "dir32"
+        },
+        {
+          "offset": 13,
+          "address": 4363677,
+          "symbol": "_op_resolve_zap_material",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 49,
+          "address": 4445873,
+          "symbol": "_op_generate_zap_points",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 89,
+          "address": 7123128,
+          "symbol": "_op_zap_points",
+          "kind": "dir32"
+        },
+        {
+          "offset": 94,
+          "address": 4228917,
+          "symbol": "_op_submit_zap_points",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "zap_draw_default",
+      "address": 4445685,
+      "size": 83,
+      "body_size": 83,
+      "source": "src/zap_draw_default.c",
+      "symbol": "_op_zap_draw_default",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 7,
+          "address": 7131016,
+          "symbol": "_op_zap_sprite",
+          "kind": "dir32"
+        },
+        {
+          "offset": 13,
+          "address": 4363677,
+          "symbol": "_op_resolve_zap_material",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 34,
+          "address": 4445873,
+          "symbol": "_op_generate_zap_points",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 67,
+          "address": 7123128,
+          "symbol": "_op_zap_points",
+          "kind": "dir32"
+        },
+        {
+          "offset": 72,
+          "address": 4228917,
+          "symbol": "_op_submit_zap_points",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "effects_object_visibility",
+      "address": 4427453,
+      "size": 40,
+      "body_size": 40,
+      "source": "src/effects_object_visibility.c",
+      "symbol": "_op_effects_object_visibility",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 9062504,
+          "symbol": "_op_model_ambient_boost",
+          "kind": "dir32"
+        },
+        {
+          "offset": 30,
+          "address": 9062504,
+          "symbol": "_op_model_ambient_boost",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "effects_object_created",
+      "address": 4427367,
+      "size": 17,
+      "body_size": 17,
+      "source": "src/effects_object_created.c",
+      "symbol": "_op_effects_object_created",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 8,
+          "address": 4430142,
+          "symbol": "_op_halo_attach",
+          "kind": "rel32-call"
+        }
+      ]
     }
   ]
 }
