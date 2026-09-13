@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **29** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **940**.
+Our last recorded matches cover **32** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **937**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -54,12 +54,12 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x0041E131 | bapworld_loadEnmy | not_done | Queued; no local match recorded |
 | 0x0041E24D | bapworld_loadAi | not_done | Queued; no local match recorded |
 | 0x0041E373 | bapworld_freeScripts | not_done | Research candidate (not registered): [research](../research/campaign-017-world-free-scripts/README.md) |
-| 0x0041E3BD | bapworld_loadAnam | not_done | Queued; no local match recorded |
+| 0x0041E3BD | bapworld_loadAnam | not_done | Recorded match: [world_read_animation_names](../src/world_read_animation_names.c) |
 | 0x0041E4BA | bapworld_loadViaSkip | not_done | Queued; no local match recorded |
 | 0x0041E4DA | bapmap_bindGeometry | not_done | Queued; no local match recorded |
 | 0x0041E7E4 | bapworld_loadChunk | not_done | Queued; no local match recorded |
-| 0x0041EABC | bapworld_mangleNames | not_done | Queued; no local match recorded |
-| 0x0041EB5A | bapworld_restartClock | not_done | Research candidate (not registered): [research](../research/campaign-017-world-restart-clock/README.md) |
+| 0x0041EABC | bapworld_mangleNames | not_done | Recorded match: [world_mangle_names](../src/world_mangle_names.c) |
+| 0x0041EB5A | bapworld_restartClock | not_done | Recorded match: [world_restart_clock](../src/world_restart_clock.c) |
 | 0x0041EB94 | bapworld_loadWithHeader &#124; bapworld_load | not_done | Queued; no local match recorded |
 | 0x0041EEAA | bapworld_freeMaterials | not_done | Queued; no local match recorded |
 | 0x0041EF3F | bapworld_freePtrArray0x220 | not_done | Queued; no local match recorded |
@@ -73,7 +73,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 
 | Reported file | Team not done | Local recorded matches within that list | Remaining |
 |---|---|---|---|
-| bp/bapworld.c | 39 | 8 | 31 |
+| bp/bapworld.c | 39 | 11 | 28 |
 | bp/bapsound.c | 44 | 0 | 44 |
 | bp/bapmusic.c | 17 | 0 | 17 |
 | bp/bapdraw.c | 18 | 7 | 11 |
