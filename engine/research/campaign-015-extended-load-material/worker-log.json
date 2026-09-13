@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "case": "extended_load_material",
+  "started_utc": "2026-09-13T11:35:01.1338979Z",
+  "finished_utc": "2026-09-13T11:35:24.6239200Z",
+  "timestamp_basis": "source creation, compiler report write, and observed completion clock",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural nested fallback C with direct assignments through out and the verified three-argument loader ABI.",
+      "source_sha256": "dde239274ea867f1a8f17303ac9ae6c223367b1d78d9372ae5b2259f7b8755e3",
+      "report": "engine/build/campaign-001-extended_load_material-fcc8747382ab/research-result.json",
+      "report_sha256": "17e50df727a96a6837125ec1ec55f1e1782d51d1a20f2da9612b33950813f6aa",
+      "report_written_utc": "2026-09-13T11:35:11.9472425Z",
+      "result": "Exact relocation-adjusted 80-byte match with all three bindings and zero nonbinding differences."
+    }
+  ],
+  "candidate_sha256": "dde239274ea867f1a8f17303ac9ae6c223367b1d78d9372ae5b2259f7b8755e3",
+  "api_sha256": "0974fa6d0a56d218311184811f60f83a2a52e5a7b5188c30e7bacae06bcb1324",
+  "fixture_sha256": "9b666a65a2cb3e284ef4f0e607271e80e0be9b13fc033752d42f1a1bc2ef29b6",
+  "status": "exact-native-parent-docker-pending",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 32,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-extended_load_material-7f601f37cb15/research-result.json",
+    "docker_report": "engine/build/campaign-001-extended_load_material-b271d17d1aa0/research-result.json",
+    "result": "result.json",
+    "result_sha256": "f97168b8e4a2bbe1c6779c370bea134452b876cc9601a9b301dcec589a571a29"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "extended_load_colormap",
+  "address": 4360260,
+  "size": 73,
+  "body_size": 73,
+  "source": "src/extended_load_colormap.c",
+  "symbol": "_op_extended_load_colormap",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 9,
+      "address": 4687671,
+      "kind": "rel32-call",
+      "symbol": "_op_rd_colormap_load"
+    },
+    {
+      "offset": 27,
+      "address": 7097576,
+      "kind": "dir32",
+      "symbol": "_op_extended_colormap_count"
+    },
+    {
+      "offset": 39,
+      "address": 7097576,
+      "kind": "dir32",
+      "symbol": "_op_extended_colormap_count"
+    },
+    {
+      "offset": 49,
+      "address": 9043552,
+      "kind": "dir32",
+      "symbol": "_op_extended_colormaps"
+    },
+    {
+      "offset": 54,
+      "address": 7097576,
+      "kind": "dir32",
+      "symbol": "_op_extended_colormap_count"
+    },
+    {
+      "offset": 62,
+      "address": 7097576,
+      "kind": "dir32",
+      "symbol": "_op_extended_colormap_count"
+    }
+  ]
+}

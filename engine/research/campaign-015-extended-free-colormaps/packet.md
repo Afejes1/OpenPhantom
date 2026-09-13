@@ -1,0 +1,5 @@
+# Prepared extended free colormaps
+
+cdecl void op_extended_free_colormaps(void). Local signed int index; for(index=0; index<live signed int op_extended_colormap_count; ++index) op_rd_colormap_free(op_extended_colormaps[index]); then count=0. Array slots are NOT cleared. Callee 004789D1 is cdecl void(void*) and frees entry/allocation; caller 0043EAE0 is shutdown_game_systems. Fixture negative/zero count, positive count and null slot forwarding, ordered arguments, callbacks reducing/increasing live count within owned array and replacing next slot, full retained array contents and count reset. No original frees executed.
+
+Full original body and interval verified through the next function entry; no alignment or table tail. Every listed operand independently validated against owned original PE and complete HIGHLOW relocation coverage before implementation. Team manifest: not_done, bp/extended.c. Use C89-era VC5 C, /Od /MT and existing runner. No masks, assembly, byte insertion, manufactured frames, warning waivers or target edits. Per function15minutes/10compiles, stop after five no-improvements or campaign worker deadline. Freeze near results rather than polish.

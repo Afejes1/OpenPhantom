@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "campaign": "015",
+  "worker": "comparison_inventory",
+  "assignment": "extended_reset_flashes 0x00427C90",
+  "status": "frozen-exact-worker-native",
+  "started_utc": "2026-09-13T11:23:40.503Z",
+  "finished_utc": "2026-09-13T11:25:07.9132285Z",
+  "compiler_invocations": 1,
+  "candidate_sha256": "738e267e7ca5f7d32055fa392ede2d1a47d7bec36428fe6a7745e85e73033f2e",
+  "api_sha256": "e9a44a342fffd2b415c95b84b7774cad9c5807945c6c811d3ad025e8f58b699d",
+  "fixture_sha256": "37f39cddc78caa314f3477cbf517cc60ecc70f77279c8cf073455c9070d37292",
+  "attempts": [
+    {
+      "number": 1,
+      "hypothesis": "Natural one-call wrapper.",
+      "source_sha256": "738e267e7ca5f7d32055fa392ede2d1a47d7bec36428fe6a7745e85e73033f2e",
+      "result": "Exact10-byte full match; one binding.",
+      "elapsed_seconds": 1.4337,
+      "report": "engine/build/campaign-001-extended_reset_flashes-8ad5a7b2740d/research-result.json",
+      "report_sha256": "99ee7e723e5496fc40894165b05385a116b3f3fdece0194194faa714f0d5f0b8"
+    }
+  ],
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 4,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-extended_reset_flashes-ff786a3b21f0/research-result.json",
+    "docker_report": "engine/build/campaign-001-extended_reset_flashes-a2bbbc13b879/research-result.json",
+    "result": "result.json",
+    "result_sha256": "30e680bd755d8f110b26187d73d1b38aecd491cb506b6c32590d232101a23a67"
+  }
+}

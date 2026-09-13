@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "campaign": "015",
+  "worker": "comparison_inventory",
+  "assignment": "extended_free_colormaps 0x0042888D",
+  "status": "frozen-exact-worker-native",
+  "started_utc": "2026-09-13T11:28:30Z",
+  "finished_utc": "2026-09-13T11:27:49.6803627Z",
+  "compiler_invocations": 1,
+  "candidate_sha256": "88921ee76c726abe7a78a63ef6d50134d4f0e50ddf75eea8c433df8c5472b261",
+  "api_sha256": "5b00843b4f6dfbfaf9e018a9a2819a32a12a59c527a338d84f886afc250cad40",
+  "fixture_sha256": "4cb048bdf3a78e2aeed623991e303c06217247923f3f9179f2ef2ad598e73ade",
+  "attempts": [
+    {
+      "number": 1,
+      "hypothesis": "Natural signed live-count for loop and final zero store.",
+      "source_sha256": "88921ee76c726abe7a78a63ef6d50134d4f0e50ddf75eea8c433df8c5472b261",
+      "result": "Exact68-byte full match; all4 bindings.",
+      "elapsed_seconds": 1.380566,
+      "report": "engine/build/campaign-001-extended_free_colormaps-d333b7c54b5d/research-result.json",
+      "report_sha256": "34306ad783c71701d73e8ada4ccc0ddfd8555aa916228f6da25b6500e44add05"
+    }
+  ],
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 16,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-extended_free_colormaps-afb76a695305/research-result.json",
+    "docker_report": "engine/build/campaign-001-extended_free_colormaps-aec158c9cd95/research-result.json",
+    "result": "result.json",
+    "result_sha256": "b9473d8e7d3b7328b279f54c899ade0d601e49065cb3818e0ccee03e26eee6b8"
+  }
+}

@@ -396,6 +396,30 @@
     {
       "address": "0x4158f0",
       "source": "research/campaign-014-sound-module-proc/README.md"
+    },
+    {
+      "address": "0x00427c90",
+      "source": "research/campaign-015-extended-reset-flashes/README.md"
+    },
+    {
+      "address": "0x00428844",
+      "source": "research/campaign-015-extended-load-colormap/README.md"
+    },
+    {
+      "address": "0x0042888d",
+      "source": "research/campaign-015-extended-free-colormaps/README.md"
+    },
+    {
+      "address": "0x00428db6",
+      "source": "research/campaign-015-extended-advance-cel/README.md"
+    },
+    {
+      "address": "0x00428dee",
+      "source": "research/campaign-015-extended-attach-colormap/README.md"
+    },
+    {
+      "address": "0x00428e63",
+      "source": "research/campaign-015-extended-load-material/README.md"
     }
   ]
 }

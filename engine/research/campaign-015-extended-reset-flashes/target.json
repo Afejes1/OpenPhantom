@@ -1,0 +1,21 @@
+{
+  "id": "extended_reset_flashes",
+  "address": 4357264,
+  "size": 10,
+  "body_size": 10,
+  "source": "src/extended_reset_flashes.c",
+  "symbol": "_op_extended_reset_flashes",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 4359420,
+      "kind": "rel32-call",
+      "symbol": "_op_extended_clear_flashes"
+    }
+  ]
+}

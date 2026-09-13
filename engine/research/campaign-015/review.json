@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "campaign": "015",
+  "reviews": {
+    "extended_reset_flashes": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 10,
+      "source_review": "Reviewed the complete10-byte forwarding wrapper and caller/callee role. Focused fixture checks exactly one call per invocation and retains callback state across repeated calls.",
+      "fixture_checks": 4,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "extended_load_colormap": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 73,
+      "source_review": "Reviewed cdecl single-name loader contract, signed live count and successful return when capacity is full. Parent corrected a fixture sentinel bug: expected writes now use the explicit supplied slot, not callback control input. Added callback transitions into and out of capacity and owned sentinel addresses; full128-slot oracle passes.",
+      "fixture_checks": 40,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "extended_free_colormaps": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 68,
+      "source_review": "Reviewed signed loop and live count/slot reloading against static calls and cleanup. Parent strengthened complete128-slot observations for callback contraction and expansion and replaced invented sentinel pointer values with owned addresses. Exact argument order, null forwarding, no slot clearing and final count reset pass.",
+      "fixture_checks": 16,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "extended_advance_cel": {
+      "status": "focused-raw-code-match",
+      "complete_span": 56,
+      "source_review": "Reviewed captured material, ignored context and signed comparison. Parent added defined signed extrema and both sides of negative-count comparison; replaced the fixture do-while-zero CHECK macro rejected by VC5 C4127 with a function, preserving strict warnings. Complete guarded face/material snapshots pass.",
+      "fixture_checks": 18,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "extended_attach_colormap": {
+      "status": "research-candidate",
+      "complete_span": 117,
+      "source_review": "Reviewed loader-before-dereference, unsigned live model loop, null-only assignment and retained assigned counter. Independent review required pre-call expected snapshots; worker corrected those before handoff. Parent added full pointer-list preservation and owned existing-colormap sentinel. Mixed and repeated materials, callback-expanded model and failed loader pass.",
+      "fixture_checks": 12,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "extended_load_material": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 80,
+      "source_review": "Reviewed both output assignments and all three returns against verified three-stack-argument loader ABI. Fixture tests ordered argument triples, initial/null output visibility between callbacks, callback writes overwritten by returns, and guarded final output. Parent uses the verified fallback name and owned sentinels. VC5 rejected memset of the const-char-pointer array; explicit typed initialization fixes the fixture without warning waivers.",
+      "fixture_checks": 32,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    }
+  },
+  "issues": [],
+  "full_regression_run": false,
+  "parent_source_corrections": [],
+  "parent_fixture_corrections": [
+    "extended_load_colormap",
+    "extended_free_colormaps",
+    "extended_advance_cel",
+    "extended_attach_colormap",
+    "extended_load_material"
+  ],
+  "fixture_defects_caught": [
+    "load-colormap expected slot incorrectly depended on callback sentinel",
+    "attachment expected snapshots were initially after the call; worker corrected after review",
+    "VC5 C4127 for fixture do-while-zero macro",
+    "VC5 C4090/C4022 for memset of const-char-pointer array"
+  ],
+  "failed_parent_verification_pairs": [
+    {
+      "id": "extended_advance_cel",
+      "native_report": "engine/build/campaign-001-extended_advance_cel-c2427d16c6f3/research-result.json",
+      "native_report_sha256": "7c355f8a2836bb8a7bf4e6f2f595e9bfecfb03459f7f28db1dd984d5e45f890a",
+      "docker_report": "engine/build/campaign-001-extended_advance_cel-006f1dc40abe/research-result.json",
+      "docker_report_sha256": "bd942c547f7ca70161366918c6c44a87a40f9a91aaf89a63695920138ed74812",
+      "error": "command failed: fixture-compile",
+      "original_game_executed": false,
+      "fixture_executed": false,
+      "extra_candidate_compiles": 2,
+      "failed_fixture_compiles": 1
+    },
+    {
+      "id": "extended_load_material",
+      "native_report": "engine/build/campaign-001-extended_load_material-3e8c0fec3189/research-result.json",
+      "native_report_sha256": "14edd7bf5537921885f570a5904b338ffeaae4432babcee3202e06b1b9175140",
+      "docker_report": "engine/build/campaign-001-extended_load_material-f41c6e06981f/research-result.json",
+      "docker_report_sha256": "ff9044d9a8c71e030e2674111eb3e584deb2b3b0fa1e6f5326d058f0f65c6f97",
+      "error": "command failed: fixture-compile",
+      "original_game_executed": false,
+      "fixture_executed": false,
+      "extra_candidate_compiles": 2,
+      "failed_fixture_compiles": 1
+    }
+  ]
+}

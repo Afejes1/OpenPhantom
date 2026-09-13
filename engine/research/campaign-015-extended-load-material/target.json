@@ -1,0 +1,33 @@
+{
+  "id": "extended_load_material",
+  "address": 4361827,
+  "size": 80,
+  "body_size": 80,
+  "source": "src/extended_load_material.c",
+  "symbol": "_op_extended_load_material",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 12,
+      "address": 4699373,
+      "kind": "rel32-call",
+      "symbol": "_op_load_mat_resource"
+    },
+    {
+      "offset": 37,
+      "address": 4899984,
+      "kind": "dir32",
+      "symbol": "_op_default_material_name"
+    },
+    {
+      "offset": 42,
+      "address": 4699373,
+      "kind": "rel32-call",
+      "symbol": "_op_load_mat_resource"
+    }
+  ]
+}

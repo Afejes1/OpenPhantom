@@ -1,0 +1,21 @@
+{
+  "id": "extended_attach_colormap",
+  "address": 4361710,
+  "size": 117,
+  "body_size": 117,
+  "source": "src/extended_attach_colormap.c",
+  "symbol": "_op_extended_attach_colormap",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 4360260,
+      "kind": "rel32-call",
+      "symbol": "_op_extended_load_colormap"
+    }
+  ]
+}

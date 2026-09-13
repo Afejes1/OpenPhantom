@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "case": "extended_attach_colormap",
+  "started_utc": "2026-09-13T11:31:26.6725234Z",
+  "finished_utc": "2026-09-13T11:33:46.3503763Z",
+  "timestamp_basis": "source creation, compiler report write, and observed completion clock",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural packet-order C with loaded pointer, signed assigned counter, unsigned index, and live model fields after the loader callback.",
+      "source_sha256": "c76735b44a676ca0e7256ec5fc9f7cb6fdb33bd54814d93016433a04d71aa274",
+      "report": "engine/build/campaign-001-extended_attach_colormap-d8afa871c9d1/research-result.json",
+      "report_sha256": "17fd57fb174daf7d982815e9df1f6b2224607e58dfdd254053f926cbc43b5d7c",
+      "report_written_utc": "2026-09-13T11:33:31.5405290Z",
+      "result": "Full 117-byte extent and verified call binding; six nonbinding bytes differ, first at offset 20."
+    }
+  ],
+  "candidate_sha256": "c76735b44a676ca0e7256ec5fc9f7cb6fdb33bd54814d93016433a04d71aa274",
+  "api_sha256": "7d9574a09da8340f66608b2d291b9114bc9a4c774aaddf9ecf1b77bbb7ded9de",
+  "fixture_sha256": "34d4770a44965a17c54784484b9af25300a9ceaddcc334122c17290073fae93b",
+  "status": "research-native-parent-docker-pending",
+  "limitations": "The natural source is parked without speculative local-layout or frame manipulation.",
+  "parent_verification": {
+    "status": "research-candidate",
+    "fixture_checks": 12,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-extended_attach_colormap-4640996326ca/research-result.json",
+    "docker_report": "engine/build/campaign-001-extended_attach_colormap-e8dab2e7a6ff/research-result.json",
+    "result": "result.json",
+    "result_sha256": "d3746df3a1e5f75d3b4bf3f6b1d177a24f8e4488d7bb5c74d368be193920c491"
+  }
+}

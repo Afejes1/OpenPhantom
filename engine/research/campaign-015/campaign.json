@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "campaign": "015",
+  "status": "complete-focused-checkpoint",
+  "started_utc": "2026-09-13T11:23:06.709642+00:00",
+  "worker_stop_utc": "2026-09-13T11:56:00Z",
+  "stop_utc": "2026-09-13T12:06:00Z",
+  "baseline_commit": "cedda15bf9f95a4f5b3f2b2f36c50b6f82d14b20",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "registered_functions_at_start": 21,
+  "assignments": [
+    {
+      "id": "extended_reset_flashes",
+      "address": "0x00427c90",
+      "case": "research/campaign-015-extended-reset-flashes",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-015-extended-reset-flashes/result.json"
+    },
+    {
+      "id": "extended_load_colormap",
+      "address": "0x00428844",
+      "case": "research/campaign-015-extended-load-colormap",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-015-extended-load-colormap/result.json"
+    },
+    {
+      "id": "extended_free_colormaps",
+      "address": "0x0042888d",
+      "case": "research/campaign-015-extended-free-colormaps",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-015-extended-free-colormaps/result.json"
+    },
+    {
+      "id": "extended_advance_cel",
+      "address": "0x00428db6",
+      "case": "research/campaign-015-extended-advance-cel",
+      "status": "focused-raw-code-match",
+      "result": "research/campaign-015-extended-advance-cel/result.json"
+    },
+    {
+      "id": "extended_attach_colormap",
+      "address": "0x00428dee",
+      "case": "research/campaign-015-extended-attach-colormap",
+      "status": "research-candidate",
+      "result": "research/campaign-015-extended-attach-colormap/result.json"
+    },
+    {
+      "id": "extended_load_material",
+      "address": "0x00428e63",
+      "case": "research/campaign-015-extended-load-material",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-015-extended-load-material/result.json"
+    }
+  ],
+  "worker_handoff_completed_utc": "2026-09-13T11:35:24.6239200Z",
+  "weekly_shared_account_first_observation": 37,
+  "final_verification_completed_utc": "2026-09-13T11:39:18.321441+00:00"
+}

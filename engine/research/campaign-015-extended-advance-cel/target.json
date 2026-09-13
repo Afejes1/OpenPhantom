@@ -1,0 +1,14 @@
+{
+  "id": "extended_advance_cel",
+  "address": 4361654,
+  "size": 56,
+  "body_size": 56,
+  "source": "src/extended_advance_cel.c",
+  "symbol": "_op_extended_advance_cel",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

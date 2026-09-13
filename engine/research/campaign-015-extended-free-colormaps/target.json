@@ -1,0 +1,39 @@
+{
+  "id": "extended_free_colormaps",
+  "address": 4360333,
+  "size": 68,
+  "body_size": 68,
+  "source": "src/extended_free_colormaps.c",
+  "symbol": "_op_extended_free_colormaps",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 27,
+      "address": 7097576,
+      "kind": "dir32",
+      "symbol": "_op_extended_colormap_count"
+    },
+    {
+      "offset": 39,
+      "address": 9043552,
+      "kind": "dir32",
+      "symbol": "_op_extended_colormaps"
+    },
+    {
+      "offset": 45,
+      "address": 4688337,
+      "kind": "rel32-call",
+      "symbol": "_op_rd_colormap_free"
+    },
+    {
+      "offset": 56,
+      "address": 7097576,
+      "kind": "dir32",
+      "symbol": "_op_extended_colormap_count"
+    }
+  ]
+}

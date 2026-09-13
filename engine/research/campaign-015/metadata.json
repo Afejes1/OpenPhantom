@@ -1,0 +1,74 @@
+[
+  {
+    "id": "extended_reset_flashes",
+    "address": "00427C90",
+    "original_name": "FUN_00427c90",
+    "new_name": "reset_extended_flashes",
+    "confidence": "HIGH",
+    "purpose": "forward the extended flash reset to the flash-table clearer",
+    "evidence": "World lifecycle caller0041CB16; verified callee004284FC clears44-byte flash records and resets count",
+    "full_span": 10,
+    "fixture_checks": 4,
+    "result_status": "focused-relocation-adjusted-match"
+  },
+  {
+    "id": "extended_load_colormap",
+    "address": "00428844",
+    "original_name": "FUN_00428844",
+    "new_name": "load_extended_colormap",
+    "confidence": "HIGH",
+    "purpose": "load and track a colormap while signed tracking capacity remains",
+    "evidence": "Attachment caller00428DF8; real single-stack-argument rdColormap_Load ABI; signed capacity128 and live count",
+    "full_span": 73,
+    "fixture_checks": 40,
+    "result_status": "focused-relocation-adjusted-match"
+  },
+  {
+    "id": "extended_free_colormaps",
+    "address": "0042888D",
+    "original_name": "FUN_0042888d",
+    "new_name": "free_extended_colormaps",
+    "confidence": "HIGH",
+    "purpose": "free each currently tracked colormap and reset the live count",
+    "evidence": "Shutdown caller0043EAE0; rdColormap_Free ABI; signed live loop and retained array slots",
+    "full_span": 68,
+    "fixture_checks": 16,
+    "result_status": "focused-relocation-adjusted-match"
+  },
+  {
+    "id": "extended_advance_cel",
+    "address": "00428DB6",
+    "original_name": "FUN_00428db6",
+    "new_name": "advance_face_material_cel",
+    "confidence": "HIGH",
+    "purpose": "advance and wrap a face material cel with signed comparisons",
+    "evidence": "Face callback registration00428913; partial face material0x20/cel0x24 and material count0x64; complete body",
+    "full_span": 56,
+    "fixture_checks": 18,
+    "result_status": "focused-raw-code-match"
+  },
+  {
+    "id": "extended_attach_colormap",
+    "address": "00428DEE",
+    "original_name": "FUN_00428dee",
+    "new_name": "attach_model_colormap",
+    "confidence": "HIGH",
+    "purpose": "attach a loaded colormap table to model materials missing one",
+    "evidence": "Model loader caller00428D95; verified loader00428844 and live unsigned model material loop; table offset0x30",
+    "full_span": 117,
+    "fixture_checks": 12,
+    "result_status": "research-candidate"
+  },
+  {
+    "id": "extended_load_material",
+    "address": "00428E63",
+    "original_name": "FUN_00428e63",
+    "new_name": "load_material_with_default",
+    "confidence": "HIGH",
+    "purpose": "load a material by name and fall back to the default material",
+    "evidence": "Complete three-return wrapper; real cdecl three-argument0047B4ED loader; original common name dflt.mat at004AC490; no direct caller XREF",
+    "full_span": 80,
+    "fixture_checks": 32,
+    "result_status": "focused-relocation-adjusted-match"
+  }
+]

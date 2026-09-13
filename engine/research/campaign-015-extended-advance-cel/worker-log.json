@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "case": "extended_advance_cel",
+  "started_utc": "2026-09-13T11:29:27.0125396Z",
+  "finished_utc": "2026-09-13T11:29:54.0800976Z",
+  "timestamp_basis": "source file creation, compiler report write, and observed completion clock",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural C with one captured material local, signed increment and comparison, and an explicit no-op use of the callback context.",
+      "source_sha256": "696908de892180c3a129893c86f2935684af85ec02593b3ebc4b8750d8ecec25",
+      "report": "engine/build/campaign-001-extended_advance_cel-0267276aeb4c/research-result.json",
+      "report_sha256": "0e25f0ffbf673ee661c8899935f43cf709fed0c4849404071f22d23ceca1ed7c",
+      "report_written_utc": "2026-09-13T11:29:41.7405746Z",
+      "result": "Exact 56-byte match; zero bindings and zero differing bytes."
+    }
+  ],
+  "candidate_sha256": "696908de892180c3a129893c86f2935684af85ec02593b3ebc4b8750d8ecec25",
+  "api_sha256": "1288d2933df59374ad7d8a2f100559bc305b14429c17cbaa573dbe637d76a0d0",
+  "fixture_sha256": "0fe10c483791232242a9a5e61f2c1c3ca818036323e82eeb51712fce00187a3c",
+  "status": "exact-native-parent-docker-pending",
+  "parent_verification": {
+    "status": "focused-raw-code-match",
+    "fixture_checks": 18,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-extended_advance_cel-afdfd69fea34/research-result.json",
+    "docker_report": "engine/build/campaign-001-extended_advance_cel-3dab25d5afc3/research-result.json",
+    "result": "result.json",
+    "result_sha256": "1842e72d63827d2ef60459084707f02fa45957763b5318006797ba5826c0bae4"
+  }
+}

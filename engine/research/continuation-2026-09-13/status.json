@@ -16,11 +16,12 @@
   "weekly_shared_usage_start_percent": 37,
   "automation": "No new automation; active-turn bounded work. Prior overnight heartbeat remains PAUSED.",
   "campaigns": [
-    "research/campaign-014/results.md"
+    "research/campaign-014/results.md",
+    "research/campaign-015/results.md"
   ],
-  "new_exact_functions": 1,
-  "new_exact_bytes": 256,
-  "current_work": "Campaign015: six prepared extended rendering/resource helpers; one worker processes sequentially.",
+  "new_exact_functions": 6,
+  "new_exact_bytes": 543,
+  "current_work": "Final campaign016: texture access and face callback selection; no later implementation campaign.",
   "original_game_executed": false,
   "full_regression_during_continuation": false
 }
