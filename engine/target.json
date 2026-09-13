@@ -4401,6 +4401,109 @@
         "/MT"
       ],
       "bindings": []
+    },
+    {
+      "id": "puppet_init",
+      "address": 4732528,
+      "size": 64,
+      "body_size": 64,
+      "source": "src/puppet_init.c",
+      "symbol": "_op_puppet_init",
+      "language": "c",
+      "flags": [
+        "/O2",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 35,
+          "address": 4732832,
+          "symbol": "_op_track_remove",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "track_remove",
+      "address": 4732832,
+      "size": 96,
+      "body_size": 84,
+      "source": "src/track_remove.c",
+      "symbol": "_op_track_remove",
+      "language": "c",
+      "flags": [
+        "/O2",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "track_play",
+      "address": 4733008,
+      "size": 48,
+      "body_size": 46,
+      "source": "src/track_play.c",
+      "symbol": "_op_track_play",
+      "language": "c",
+      "flags": [
+        "/O2",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "track_fade_in",
+      "address": 4733056,
+      "size": 96,
+      "body_size": 82,
+      "source": "src/track_fade_in.c",
+      "symbol": "_op_track_fade_in",
+      "language": "c",
+      "flags": [
+        "/O2",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 13,
+          "address": 4885560,
+          "kind": "dir32",
+          "float32": 0.0
+        },
+        {
+          "offset": 52,
+          "address": 4885564,
+          "symbol": "_op_track_one",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "track_fade_out",
+      "address": 4733152,
+      "size": 96,
+      "body_size": 83,
+      "source": "src/track_fade_out.c",
+      "symbol": "_op_track_fade_out",
+      "language": "c",
+      "flags": [
+        "/O2",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 34,
+          "address": 4885560,
+          "kind": "dir32",
+          "float32": 0.0
+        },
+        {
+          "offset": 53,
+          "address": 4885564,
+          "symbol": "_op_track_one",
+          "kind": "dir32"
+        }
+      ]
     }
   ]
 }

@@ -1849,6 +1849,96 @@
         "Exact complete span; callback effects and source signedness limits remain documented in focused contract."
       ],
       "exceptions": []
+    },
+    {
+      "id": "puppet_init",
+      "module": "puppet_tracks",
+      "analysis_name": "puppet_init",
+      "purpose": "puppet init",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/puppet-track-acceptance.md",
+        "research/campaign-034-puppet-init/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/puppet_tracks_behavior.c"
+      ],
+      "quirks": [
+        "Valid indices0..3 only; all unresolved fields opaque; callback returns ignored; finite fade fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "track_remove",
+      "module": "puppet_tracks",
+      "analysis_name": "track_remove",
+      "purpose": "track remove",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/puppet-track-acceptance.md",
+        "research/campaign-034-track-remove/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/puppet_tracks_behavior.c"
+      ],
+      "quirks": [
+        "Valid indices0..3 only; all unresolved fields opaque; callback returns ignored; finite fade fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "track_play",
+      "module": "puppet_tracks",
+      "analysis_name": "track_play",
+      "purpose": "track play",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/puppet-track-acceptance.md",
+        "research/campaign-034-track-play/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/puppet_tracks_behavior.c"
+      ],
+      "quirks": [
+        "Valid indices0..3 only; all unresolved fields opaque; callback returns ignored; finite fade fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "track_fade_in",
+      "module": "puppet_tracks",
+      "analysis_name": "track_fade_in",
+      "purpose": "track fade in",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/puppet-track-acceptance.md",
+        "research/campaign-034-track-fade-in/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/puppet_tracks_behavior.c"
+      ],
+      "quirks": [
+        "Valid indices0..3 only; all unresolved fields opaque; callback returns ignored; finite fade fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "track_fade_out",
+      "module": "puppet_tracks",
+      "analysis_name": "track_fade_out",
+      "purpose": "track fade out",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/puppet-track-acceptance.md",
+        "research/campaign-034-track-fade-out/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/puppet_tracks_behavior.c"
+      ],
+      "quirks": [
+        "Valid indices0..3 only; all unresolved fields opaque; callback returns ignored; finite fade fixtures."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

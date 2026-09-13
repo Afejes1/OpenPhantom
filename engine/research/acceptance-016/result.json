@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "acceptance-016",
+  "baseline_commit": "20f8b4d07f0847bb24a2e45f38dd699478e0aa10",
+  "functions": [
+    "puppet_init",
+    "track_remove",
+    "track_play",
+    "track_fade_in",
+    "track_fade_out"
+  ],
+  "promotions": 5,
+  "registered_before": 100,
+  "registered_after": 105,
+  "full_span_bytes": 400,
+  "verified_operands": 5,
+  "status": "integration-pending",
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}
