@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "acceptance-002",
+  "status": "integration-in-progress",
+  "started_utc": "2026-09-13T11:58:32.804931+00:00",
+  "deadline_utc": "2026-09-13T12:43:32.804931+00:00",
+  "registered_before": 21,
+  "registered_after_prepared": 23,
+  "new_promotions": 0,
+  "new_bytes": 141,
+  "source_preservation": [
+    {
+      "id": "extended_load_colormap",
+      "research_source": "research/campaign-015-extended-load-colormap/candidate.c",
+      "research_source_sha256": "1ca1c849c51df5b7d51b31898ee1ba27f6a54ff7f218ca2d0040c99c6bf00ba0",
+      "integrated_source": "src/extended_load_colormap.c",
+      "integrated_source_sha256": "acfd0550f21641e2145b868166298ffa2cea91bc609126e37f24136fb52f8716",
+      "full_bytes": 73,
+      "target_unchanged": true,
+      "only_change": "common-header include"
+    },
+    {
+      "id": "extended_free_colormaps",
+      "research_source": "research/campaign-015-extended-free-colormaps/candidate.c",
+      "research_source_sha256": "88921ee76c726abe7a78a63ef6d50134d4f0e50ddf75eea8c433df8c5472b261",
+      "integrated_source": "src/extended_free_colormaps.c",
+      "integrated_source_sha256": "72188c264a07960cda9d4ad71ac0603c75208856f23fa081beafdb9575e07d40",
+      "full_bytes": 68,
+      "target_unchanged": true,
+      "only_change": "common-header include"
+    }
+  ],
+  "original_game_executed": false,
+  "baseline_source_commit": "4bcb2b6c63007ccd89fa0a5793e36bd5b5c748ec",
+  "expected_reference_sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
+  "expected_toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333"
+}

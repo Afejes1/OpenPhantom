@@ -405,6 +405,46 @@
         "Canonical shared header; candidate body unchanged from frozen Campaign011 snapshot"
       ],
       "exceptions": []
+    },
+    {
+      "id": "extended_load_colormap",
+      "module": "extended_colormaps",
+      "analysis_name": "load_extended_colormap",
+      "purpose": "Load a colormap and track it while signed count remains below128",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/colormap-acceptance.md",
+        "research/campaign-015-extended-load-colormap/README.md"
+      ],
+      "behavior_tests": [
+        "tests/colormap_behavior.c"
+      ],
+      "quirks": [
+        "Signed shared count and live callback field reloads preserved",
+        "Array entries remain after free; capacity-full load still returns its resource",
+        "Common-header include is the only source text change from frozen Campaign015"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "extended_free_colormaps",
+      "module": "extended_colormaps",
+      "analysis_name": "free_extended_colormaps",
+      "purpose": "Free tracked colormaps using the live signed count and reset count without clearing slots",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/colormap-acceptance.md",
+        "research/campaign-015-extended-free-colormaps/README.md"
+      ],
+      "behavior_tests": [
+        "tests/colormap_behavior.c"
+      ],
+      "quirks": [
+        "Signed shared count and live callback field reloads preserved",
+        "Array entries remain after free; capacity-full load still returns its resource",
+        "Common-header include is the only source text change from frozen Campaign015"
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
