@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **38** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **931**.
+Our last recorded matches cover **41** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **928**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -33,8 +33,8 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x0041CBBF | bapworld_alloc | not_done | Queued; no local match recorded |
 | 0x0041CC80 | bapworld_free | not_done | Queued; no local match recorded |
 | 0x0041CD40 | bapworld_freeGraphics | not_done | Queued; no local match recorded |
-| 0x0041CD80 | bapworld_readChunkTag | not_done | Queued; no local match recorded |
-| 0x0041CDF0 | bapworld_skipChunk | not_done | Research candidate (not registered): [research](../research/campaign-017-world-skip-chunk/README.md) |
+| 0x0041CD80 | bapworld_readChunkTag | not_done | Recorded match: [world_read_chunk_header](../src/world_read_chunk_header.c) |
+| 0x0041CDF0 | bapworld_skipChunk | not_done | Recorded match: [world_skip_chunk](../src/world_skip_chunk.c) |
 | 0x0041CE4D | bapworld_allocFromHeader | not_done | Queued; no local match recorded |
 | 0x0041D302 | bapworld_loadPool | not_done | Recorded match: [world_read_emitters](../src/world_read_emitters.c) |
 | 0x0041D360 | bapworld_loadPool | not_done | Recorded match: [world_read_sprite_refs](../src/world_read_sprite_refs.c) |
@@ -55,7 +55,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x0041E24D | bapworld_loadAi | not_done | Queued; no local match recorded |
 | 0x0041E373 | bapworld_freeScripts | not_done | Research candidate (not registered): [research](../research/campaign-017-world-free-scripts/README.md) |
 | 0x0041E3BD | bapworld_loadAnam | not_done | Recorded match: [world_read_animation_names](../src/world_read_animation_names.c) |
-| 0x0041E4BA | bapworld_loadViaSkip | not_done | Queued; no local match recorded |
+| 0x0041E4BA | bapworld_loadViaSkip | not_done | Recorded match: [world_load_via_skip](../src/world_load_via_skip.c) |
 | 0x0041E4DA | bapmap_bindGeometry | not_done | Queued; no local match recorded |
 | 0x0041E7E4 | bapworld_loadChunk | not_done | Queued; no local match recorded |
 | 0x0041EABC | bapworld_mangleNames | not_done | Recorded match: [world_mangle_names](../src/world_mangle_names.c) |
@@ -73,7 +73,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 
 | Reported file | Team not done | Local recorded matches within that list | Remaining |
 |---|---|---|---|
-| bp/bapworld.c | 39 | 11 | 28 |
+| bp/bapworld.c | 39 | 14 | 25 |
 | bp/bapsound.c | 44 | 0 | 44 |
 | bp/bapmusic.c | 17 | 0 | 17 |
 | bp/bapdraw.c | 18 | 7 | 11 |
