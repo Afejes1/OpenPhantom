@@ -254,3 +254,14 @@ Address | Original Name | New Name | Confidence | Purpose | Evidence
 ---|---|---|---|---|---
 0x00439235 | FUN_00439235 | load_special_effects_save_state | HIGH | Read staged effects state and dependent save blocks | Event0x103 gate,96-byte reader, six fog stores, linked-sphere and overlay load calls;152-byte exact match and5436 authored checks.
 0x00439A54 | FUN_00439a54 | render_object_halo_effects | HIGH | Render every halo associated with an eligible actor | Accepted object draw caller, NULL/flag0x10 gate,32 records at stride28 and per-slot draw callback;98-byte exact match and651 checks.
+
+## Campaign029 semantic recovery
+
+Address | Original Name | New Name | Confidence | Purpose | Evidence
+---|---|---|---|---|---
+0x0043912F | FUN_0043912f | save_special_effects_state | HIGH | save special effects state | Complete static body, callers/callees, typed VC5 source and authored fixture; see campaign029 contracts.
+0x004392CD | FUN_004392cd | restore_special_effects_after_load | HIGH | restore special effects after load | Complete static body, callers/callees, typed VC5 source and authored fixture; see campaign029 contracts.
+0x00439857 | FUN_00439857 | register_object_halo | HIGH | register object halo | Complete static body, callers/callees, typed VC5 source and authored fixture; see campaign029 contracts.
+0x0043993E | FUN_0043993e | attach_object_halos | HIGH | attach object halos | Complete static body, callers/callees, typed VC5 source and authored fixture; see campaign029 contracts.
+0x0042959D | FUN_0042959d | resolve_sprite_material_frame | HIGH | resolve sprite material frame | Complete static body, callers/callees, typed VC5 source and authored fixture; see campaign029 contracts.
+0x0043CC28 | FUN_0043cc28 | relink_saved_shield_actors | HIGH | relink saved shield actors | Complete static body, callers/callees, typed VC5 source and authored fixture; see campaign029 contracts.

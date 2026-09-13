@@ -1,0 +1,3 @@
+# Campaign029: effects serialization and resource dependencies
+
+Nine untouched functions, 1687 full bytes. Parent implements and Sol independently reviews. Ten implementation attempts or fifteen minutes per case, stop after five consecutive non-improving attempts. Native VC5 comparisons first; locked Docker authored fixtures and identical function/fixup evidence before exact classification. Preserve every byte and full extent; no warning waivers, no original execution or original resource strings. Park alignment tails without adding artificial padding. Public artifacts contain authored source and digest-only evidence.

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "sprite_release",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:42:30.910811+00:00",
+      "finished_utc": "2026-09-13T19:42:32.495035+00:00",
+      "returncode": 0,
+      "source_sha256": "6e634725a19bcf1dcbd4322ae9231534721cfd5fd994c74567874e7ba4f618e9",
+      "report": "engine/build/campaign-001-sprite_release-1af1756c4814/research-result.json",
+      "report_sha256": "edd4015eecd53b7215ecf192addf045d5fffaf46905f8bc3d372057c4dbdaff7",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 71,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.362848,
+      "stderr": ""
+    }
+  ]
+}

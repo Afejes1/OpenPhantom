@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "shield_relink",
+  "compiler_invocations": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:42:34.091009+00:00",
+      "finished_utc": "2026-09-13T19:42:35.682243+00:00",
+      "returncode": 1,
+      "source_sha256": "afe7bc2370a24f2d31a70200febf84b0c9b276f898947b74b4526f92ae15cd6a",
+      "report": "engine/build/campaign-001-shield_relink-5087a0dd48f4/research-result.json",
+      "report_sha256": "0a24c666e0c054fc53fe661d7287e0c237ef46132fa7f881884cf420fcf16440",
+      "status": "mismatch",
+      "candidate_size": 197,
+      "different_bytes": null,
+      "elapsed_seconds": 1.371969,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:43:25.911371+00:00",
+      "finished_utc": "2026-09-13T19:43:27.478764+00:00",
+      "returncode": 1,
+      "source_sha256": "f95e19e28b2414dd2f623dfcb0ef65c26072854ab0c5cbfbb674497975b6e853",
+      "report": "engine/build/campaign-001-shield_relink-ba2577c852b4/research-result.json",
+      "report_sha256": "ad0fbda05224aa68a950ebbd94ee2ca315a063fdc240e7c2bacc96825aa6d7b8",
+      "status": "mismatch",
+      "candidate_size": 197,
+      "different_bytes": null,
+      "elapsed_seconds": 1.347218,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:49:15.179516+00:00",
+      "finished_utc": "2026-09-13T19:49:16.729216+00:00",
+      "returncode": 1,
+      "source_sha256": "3e4715c55331bf82ac013569e2a141966b5b58c408df3e7f0a310283a12a9169",
+      "report": "engine/build/campaign-001-shield_relink-a3b1c631847e/research-result.json",
+      "report_sha256": "45b9b28a06bdfad1e554a2ec445d67355627a135754dbdd7fcb13a944104bbb6",
+      "status": "mismatch",
+      "candidate_size": 197,
+      "different_bytes": null,
+      "elapsed_seconds": 1.33177,
+      "stderr": ""
+    }
+  ]
+}

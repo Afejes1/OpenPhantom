@@ -1,0 +1,51 @@
+{
+  "id": "halo_add",
+  "address": 4429911,
+  "size": 231,
+  "body_size": 231,
+  "source": "src/halo_add.c",
+  "symbol": "_op_halo_add",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 32,
+      "address": 4276291,
+      "symbol": "_op_find_node_ordinal",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 85,
+      "address": 7097992,
+      "symbol": "_op_halos",
+      "kind": "dir32"
+    },
+    {
+      "offset": 112,
+      "address": 7097992,
+      "symbol": "_op_halos",
+      "kind": "dir32"
+    },
+    {
+      "offset": 124,
+      "address": 4363584,
+      "symbol": "_op_acquire_sprite",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 202,
+      "address": 7098900,
+      "symbol": "_op_halo_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 210,
+      "address": 7098900,
+      "symbol": "_op_halo_count",
+      "kind": "dir32"
+    }
+  ]
+}

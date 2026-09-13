@@ -369,3 +369,7 @@ Six untouched functions match461 complete bytes with23,949 focused checks. The a
 ## Campaign028 load and render helpers
 
 Seven functions match658 complete bytes; all41,267 focused checks pass. The batch covers staged effects loading, object halo drawing, ripple material construction, two zapline wrappers and object lifecycle/ambient bridges. Ripple reset remains research due to its two-byte alignment tail. See [Campaign028](research/campaign-028/results.md). All13 exact C27/C28 candidates await the next combined acceptance checkpoint.
+
+## Campaign029 save and attachment dependencies
+
+Seven functions match1,324 complete bytes;50,485 focused checks cover all nine candidates. The save writer retains the authentic shield count/emission discrepancy and live callback behavior. Halo attachment uses authored external-name fixtures. Six identities and nine signatures were recovered from static call relationships and typed C. Restore/relink remain research due to full-span alignment tails. See [Campaign029](research/campaign-029/results.md).

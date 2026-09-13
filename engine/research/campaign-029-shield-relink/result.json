@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "campaign": "029",
+  "id": "shield_relink",
+  "status": "focused-mismatch",
+  "comparison": {
+    "id": "shield_relink",
+    "address": 4443176,
+    "size": 200,
+    "candidate_size": 197,
+    "body_size": 197,
+    "status": "mismatch",
+    "literal_function_match": false,
+    "layout_verified": false,
+    "adjusted_bytes": 0,
+    "object_sha256": "1cfacd6f0c936584d9d74c955afd6631004d146d6cba1fdc711ea65fdd2c1fc6",
+    "reason": "complete function extent differs"
+  },
+  "different_percent": null,
+  "source_snapshot": {
+    "research/campaign-029-shield-relink/candidate.c": "589e708efdfbe5916cc94d1a5812681c7e8b3206c4293ef6d3cf4e821b605f5b",
+    "research/campaign-029-shield-relink/api.h": "d756364ca45b1b16d2cdec46f34714ad59bec31d3119b5b2110756483c904ff8",
+    "research/campaign-029-shield-relink/behavior.c": "90d6c38ca783b043e708cfa029342bccec88eba41681b9d7f98fe1f1831eede9",
+    "research/campaign-029-shield-relink/case.json": "6d387102f945a59f77fbcb6bf91da62565be58e291db19464f1373ba5223f956",
+    "research/campaign-001/verify.py": "78bcf92d994fdab04d1a983838fe9f492162d2626b35390259d9976b92cbbe78",
+    "target.json": "a1e92cd19ba056463e4ccff78a011b671ed5c46db0c0445b2a8a3f4df08da245",
+    "research/campaign-029-shield-relink/target.json": "80e8cdd76eef6f010fff4d5fb99ce4bf79d1008c13a3216eafb78bb8a0d8b731",
+    "research/surface-emission/probe.py": "cd4ef4126dacfc16197636a4b0c7007639efe1033e8e2b329e4939a6083c5f1b",
+    "research/surface-emission/native_listing_diagnostic.py": "3cad0339396c73301ef5861eed3c40f925482fd7c2e4ec45f801e9d0e5d34665",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "959d15268c4d927e57271424dbcb1c709cf89cbf3e48ff545e4e15c4d6425f27",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "reference": {
+    "sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
+    "size": 829952
+  },
+  "native_report": "engine/build/campaign-001-shield_relink-286bb0f575b5/research-result.json",
+  "native_report_sha256": "f6802ddbbf83028166491b71f7b5423a7be6a0e71fd7c6e247dd5aaee886eea8",
+  "docker_report": "engine/build/campaign-001-shield_relink-aa38ffb6d6ef/research-result.json",
+  "docker_report_sha256": "c1ca567e0d344abf6ed6e9a20156878c3d06e9c29d897267f94c529899adeb33",
+  "artifact": {
+    "id": "shield_relink",
+    "source": "candidate.c",
+    "symbol": "_op_shield_relink",
+    "object": "candidate.obj",
+    "object_sha256": "1cfacd6f0c936584d9d74c955afd6631004d146d6cba1fdc711ea65fdd2c1fc6",
+    "function_section_bytes": 197,
+    "function_section_sha256": "40ce759e49e379d80bfe1f2762c357d0d6320062f3a36091826782e1cc5a52dc",
+    "relocation_count": 6,
+    "assembly_listing": "candidate.cod",
+    "assembly_listing_sha256": "967361167332d8b9f1f468c91dfb52cef4bcc64d62602a4312a0aa25ead9110e",
+    "assembly_listing_has_terminators": false,
+    "function_inventory": "candidate.function.json",
+    "function_inventory_sha256": "fd1e5db8a5fff848fd7da5712fc9dfa5177c693f83831bedbb3b227737d84f94"
+  },
+  "fixture": {
+    "sha256": "b6dc469deaed39df5453979a8f3194c3a71713127f4725a6613bbab09a165b58",
+    "passed": true,
+    "stdout": "shield relink: 20336 checks, 0 failures\n",
+    "checks": 20336,
+    "failures": 0
+  },
+  "native_docker_function_and_relocations_equal": true,
+  "native_elapsed_seconds": 1.384498,
+  "docker_elapsed_seconds": 5.762823,
+  "accepted_history_record": false,
+  "original_game_executed": false,
+  "whole_executable_match": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "review": "research/campaign-029/review.json",
+  "limitations": [
+    "Full function extent differs: candidate197 versus target200 bytes. Alignment tail unresolved; no complete-function match or percentage-based near-match claim. Authored fixtures pass, and native/Docker function code and fixups agree."
+  ],
+  "evidence_category": "research-candidate"
+}

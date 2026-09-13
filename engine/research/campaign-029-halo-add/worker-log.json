@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "halo_add",
+  "compiler_invocations": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:42:24.575817+00:00",
+      "finished_utc": "2026-09-13T19:42:26.159534+00:00",
+      "returncode": 1,
+      "source_sha256": "a9fc6a5467f40847b70a5953a9d45e7d764128fc8c4abbdec353b1c63b766aae",
+      "report": "engine/build/campaign-001-halo_add-973bac421be2/research-result.json",
+      "report_sha256": "2662c583a8d0c5e70f3d15b78615371d02df7841994edcbb2b27098fe8943ce6",
+      "status": "mismatch",
+      "candidate_size": 231,
+      "different_bytes": 16,
+      "elapsed_seconds": 1.365373,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:43:20.872047+00:00",
+      "finished_utc": "2026-09-13T19:43:21.791596+00:00",
+      "returncode": 2,
+      "source_sha256": "048ad9b02b6c23360b14106924c7c5965760efddb464ce99d2e7000347ea10ac",
+      "report": "engine/build/campaign-001-halo_add-dabcdfc94b6c/research-result.json",
+      "report_sha256": "c3f83055d11922942d09224a7f8f1897f997b62adec44905ef8eb83cd053bc90",
+      "status": "not-attempted",
+      "candidate_size": null,
+      "different_bytes": null,
+      "elapsed_seconds": 0.69771,
+      "stderr": "FAILED: command failed: candidate-compile\n"
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:44:54.877999+00:00",
+      "finished_utc": "2026-09-13T19:44:56.526253+00:00",
+      "returncode": 0,
+      "source_sha256": "dcf013d2e15fa9baa3efa978ab52734ee1c9fa10bd5236e0d8b406ad4d21735f",
+      "report": "engine/build/campaign-001-halo_add-acb16955d5fb/research-result.json",
+      "report_sha256": "31250a84c3cb317baefcd71edacfa20dc42c8a09dd7a3a2d37df6fa6a69e91de",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 231,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.407388,
+      "stderr": ""
+    }
+  ]
+}

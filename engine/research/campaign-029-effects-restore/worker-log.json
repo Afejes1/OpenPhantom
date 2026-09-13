@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "effects_restore",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:42:22.980129+00:00",
+      "finished_utc": "2026-09-13T19:42:24.570150+00:00",
+      "returncode": 1,
+      "source_sha256": "b34b86bad0f00325a3832057b0523637aefde2a29d705d040556b0d07c0c6746",
+      "report": "engine/build/campaign-001-effects_restore-9e5ebaddd05a/research-result.json",
+      "report_sha256": "befcb6b9df29ed95d2f15ef26f2016f89032a1f00ef6525fd3d7cc75a6783794",
+      "status": "mismatch",
+      "candidate_size": 157,
+      "different_bytes": null,
+      "elapsed_seconds": 1.371667,
+      "stderr": ""
+    }
+  ]
+}

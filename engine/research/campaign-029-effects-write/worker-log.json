@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "effects_write",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:42:21.353476+00:00",
+      "finished_utc": "2026-09-13T19:42:22.974169+00:00",
+      "returncode": 1,
+      "source_sha256": "18233d840ba146f0ea47b843c64ca7eaeeebfcdd66b9cbcbcafb793e7b4ea0bb",
+      "report": "engine/build/campaign-001-effects_write-af6eac321e44/research-result.json",
+      "report_sha256": "9c1918d525918a81b3382595acaf60b168e20105243cae2fdabbbc58ceb7981c",
+      "status": "mismatch",
+      "candidate_size": 263,
+      "different_bytes": null,
+      "elapsed_seconds": 1.403576,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:43:19.213920+00:00",
+      "finished_utc": "2026-09-13T19:43:20.870802+00:00",
+      "returncode": 0,
+      "source_sha256": "239d8bd8ab363068f54a0638d8508bed0f76246b1efcdd111747e13f552ea894",
+      "report": "engine/build/campaign-001-effects_write-4f776c949617/research-result.json",
+      "report_sha256": "1d462b1e272b973c2c845f32412344aef8b61b9093d2ab2e9f2f777d416a2563",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 262,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.421224,
+      "stderr": ""
+    }
+  ]
+}

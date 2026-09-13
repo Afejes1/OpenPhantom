@@ -1,0 +1,39 @@
+{
+  "id": "shield_write",
+  "address": 4442545,
+  "size": 331,
+  "body_size": 331,
+  "source": "src/shield_write.c",
+  "symbol": "_op_shield_write",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 50,
+      "address": 7117360,
+      "symbol": "_op_shields",
+      "kind": "dir32"
+    },
+    {
+      "offset": 98,
+      "address": 4529240,
+      "symbol": "_op_save_write",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 157,
+      "address": 7117360,
+      "symbol": "_op_shields",
+      "kind": "dir32"
+    },
+    {
+      "offset": 311,
+      "address": 4529240,
+      "symbol": "_op_save_write",
+      "kind": "rel32-call"
+    }
+  ]
+}

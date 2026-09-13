@@ -1,0 +1,51 @@
+{
+  "id": "shield_relink",
+  "address": 4443176,
+  "size": 200,
+  "body_size": 197,
+  "source": "src/shield_relink.c",
+  "symbol": "_op_shield_relink",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 7,
+      "address": 9044444,
+      "symbol": "_op_object_pool",
+      "kind": "dir32"
+    },
+    {
+      "offset": 13,
+      "address": 4647155,
+      "symbol": "_op_iterator_open",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 62,
+      "address": 7117360,
+      "symbol": "_op_shields",
+      "kind": "dir32"
+    },
+    {
+      "offset": 96,
+      "address": 4647580,
+      "symbol": "_op_iterator_reset",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 108,
+      "address": 4647615,
+      "symbol": "_op_iterator_next",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 186,
+      "address": 4647049,
+      "symbol": "_op_iterator_close",
+      "kind": "rel32-call"
+    }
+  ]
+}

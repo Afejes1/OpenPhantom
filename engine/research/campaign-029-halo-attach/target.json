@@ -1,0 +1,112 @@
+{
+  "id": "halo_attach",
+  "address": 4430142,
+  "size": 278,
+  "body_size": 278,
+  "source": "src/halo_attach.c",
+  "symbol": "_op_halo_attach",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 49,
+      "address": 4907208,
+      "symbol": "_op_halo_colors",
+      "kind": "dir32"
+    },
+    {
+      "offset": 62,
+      "address": 4907208,
+      "symbol": "_op_halo_colors",
+      "kind": "dir32"
+    },
+    {
+      "offset": 72,
+      "address": 4879696,
+      "symbol": "_op_compare_names",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 89,
+      "address": 4907208,
+      "symbol": "_op_halo_colors",
+      "kind": "dir32",
+      "addend": 4
+    },
+    {
+      "offset": 107,
+      "address": 4907404,
+      "symbol": "_op_halo_name_a",
+      "kind": "dir32"
+    },
+    {
+      "offset": 122,
+      "address": 4429911,
+      "symbol": "_op_halo_add",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 136,
+      "address": 4907404,
+      "symbol": "_op_halo_name_a",
+      "kind": "dir32"
+    },
+    {
+      "offset": 151,
+      "address": 4429911,
+      "symbol": "_op_halo_add",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 165,
+      "address": 4907404,
+      "symbol": "_op_halo_name_a",
+      "kind": "dir32"
+    },
+    {
+      "offset": 180,
+      "address": 4429911,
+      "symbol": "_op_halo_add",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 194,
+      "address": 4907404,
+      "symbol": "_op_halo_name_a",
+      "kind": "dir32"
+    },
+    {
+      "offset": 209,
+      "address": 4429911,
+      "symbol": "_op_halo_add",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 223,
+      "address": 4892012,
+      "symbol": "_op_halo_name_b",
+      "kind": "dir32"
+    },
+    {
+      "offset": 238,
+      "address": 4429911,
+      "symbol": "_op_halo_add",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 252,
+      "address": 4892000,
+      "symbol": "_op_halo_name_c",
+      "kind": "dir32"
+    },
+    {
+      "offset": 267,
+      "address": 4429911,
+      "symbol": "_op_halo_add",
+      "kind": "rel32-call"
+    }
+  ]
+}

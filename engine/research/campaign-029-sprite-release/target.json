@@ -1,0 +1,21 @@
+{
+  "id": "sprite_release",
+  "address": 4363764,
+  "size": 71,
+  "body_size": 71,
+  "source": "src/sprite_release.c",
+  "symbol": "_op_sprite_release",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 39,
+      "address": 4661791,
+      "symbol": "_op_release_resource",
+      "kind": "rel32-call"
+    }
+  ]
+}
