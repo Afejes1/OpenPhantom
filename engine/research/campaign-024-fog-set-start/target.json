@@ -1,0 +1,32 @@
+{
+  "id": "fog_set_start",
+  "address": 4427811,
+  "size": 42,
+  "body_size": 42,
+  "source": "src/fog_set_start.c",
+  "symbol": "_op_fog_set_start",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 4883692,
+      "float32": 0.0
+    },
+    {
+      "offset": 24,
+      "address": 4750048,
+      "symbol": "_op_renderer_fog_start",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 36,
+      "address": 8918524,
+      "symbol": "_op_fog_cached_start",
+      "kind": "dir32"
+    }
+  ]
+}

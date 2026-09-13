@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "shield_draw_released",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects control contract",
+      "started_utc": "2026-09-13T17:12:39.641230+00:00",
+      "finished_utc": "2026-09-13T17:12:41.239908+00:00",
+      "returncode": 0,
+      "source_sha256": "5cfd2596829cd421c7e239a3b7dc8784dd34dfb4c7d5592704626324dbd27707",
+      "report": "engine/build/campaign-001-shield_draw_released-09c919fe6cd0/research-result.json",
+      "report_sha256": "0520fe16c0ed3df4da166257be250b51ba7f9149b957b901aaf111c6dfdfb952",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 134,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.378395,
+      "stderr": ""
+    }
+  ]
+}

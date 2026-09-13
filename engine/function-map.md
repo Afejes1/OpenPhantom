@@ -209,3 +209,16 @@ Address | Original Name | New Name | Confidence | Purpose | Evidence
 0x0043AE53 | set_linked_sphere_effect_sprite | set_linked_sphere_effect_sprite | HIGH | Replace sprite handle and copied name | Full 148-byte body, resource release/acquire callbacks, live name copy, all-slot success/failure and callback-mutation fixture.
 
 Campaign023 corrects the provisional record+0 owner label: allocator stores integer one there; attached target is at +0x10. New research uses int active. Accepted older views will be reconciled at the next canonical shield integration, without changing prior evidence.
+
+## Campaign024 effects control
+
+Address | Original Name | New Name | Confidence | Purpose | Evidence
+---|---|---|---|---|---
+0x00438F14 | initialize_timed_fog_transition_state | unchanged | HIGH | Snapshot fog-enable state | Full35-byte match; exact remaining bits and low-bit mask.
+0x00438F37 | restore_b3d_world_fog_state | unchanged | HIGH | Restore fog state and apply it | Full74-byte match; all five world loads and callback state verified.
+0x00439023 | set_world_fog_start_distance | unchanged | HIGH | Gate and cache fog start | Full42-byte match; masked x87 edge cases and post-callback bit store.
+0x0043904D | set_world_fog_end_distance | unchanged | HIGH | Gate fog end renderer call | Full33-byte match; no cache store, x87 edge fixture.
+0x004393D0 | start_opaque_fullscreen_color_fade | unchanged | HIGH | Forward tint with opaque alpha | Full42-byte match; six-argument input and seven-argument callback.
+0x004393FA | clear_fullscreen_color_fade | unchanged | HIGH | Clear active tint state | Full56-byte match; inactive no-op and retained unrelated state.
+0x0043B67B | render_detached_linked_sphere_effects | unchanged | HIGH | Traverse active stopping shields | Full134-byte match; live32-slot state and callback counter reload.
+0x0043AF45 | FUN_0043af45 | unchanged | MEDIUM source prototype | Copy three shield offset words | Original80 bytes, candidate83; observed EAX result, zero callers; return intent unresolved and research-only.

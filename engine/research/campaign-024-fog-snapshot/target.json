@@ -1,0 +1,33 @@
+{
+  "id": "fog_snapshot",
+  "address": 4427540,
+  "size": 35,
+  "body_size": 35,
+  "source": "src/fog_snapshot.c",
+  "symbol": "_op_fog_snapshot",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 8918512,
+      "symbol": "_op_fog_remaining",
+      "kind": "dir32"
+    },
+    {
+      "offset": 14,
+      "address": 9044064,
+      "symbol": "_op_active_world",
+      "kind": "dir32"
+    },
+    {
+      "offset": 29,
+      "address": 8918508,
+      "symbol": "_op_fog_saved",
+      "kind": "dir32"
+    }
+  ]
+}

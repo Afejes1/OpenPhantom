@@ -349,3 +349,7 @@ Five functions match745 complete bytes; the material-run function remains9/248 d
 ## Acceptance008 and Campaign023
 
 The chunk-header/skip integration raises registered acceptance to 43 functions with immutable event 29 and successful full integration CI. The new shared fixture passes 7,066 checks. Campaign023 adds six exact shield lifecycle research functions, 486 complete bytes and 4,094 focused checks. The active word at record+0 is now distinguished from the attached actor pointer at+0x10; older accepted shield views will be reconciled at a canonical integration checkpoint. See [acceptance008](research/acceptance-008/results.md) and [Campaign023](research/campaign-023/results.md).
+
+## Campaign024
+
+Seven exact fog/fade/shield helpers add416 bytes and the whole focused batch passes1,357 checks. The offset setter remains an83-versus80-byte research candidate with unresolved return intent. Existing Ghidra context is preserved; original execution remains prohibited. See [Campaign024](research/campaign-024/results.md).

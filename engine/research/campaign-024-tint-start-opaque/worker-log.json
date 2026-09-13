@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "tint_start_opaque",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects control contract",
+      "started_utc": "2026-09-13T17:12:34.892104+00:00",
+      "finished_utc": "2026-09-13T17:12:36.479594+00:00",
+      "returncode": 0,
+      "source_sha256": "d0e051b12f443eeb476aad86bb74378aa12ce089874123a5e5c880339673dc7d",
+      "report": "engine/build/campaign-001-tint_start_opaque-8a6909f58e91/research-result.json",
+      "report_sha256": "27657a075eef93e44f96992a6d2ddccbd132336d8bb13a5e65c6908e39a8ff71",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 42,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.367978,
+      "stderr": ""
+    }
+  ]
+}

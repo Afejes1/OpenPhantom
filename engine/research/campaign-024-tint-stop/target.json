@@ -1,0 +1,45 @@
+{
+  "id": "tint_stop",
+  "address": 4428794,
+  "size": 56,
+  "body_size": 56,
+  "source": "src/tint_stop.c",
+  "symbol": "_op_tint_stop",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7097976,
+      "symbol": "_op_tint_active",
+      "kind": "dir32"
+    },
+    {
+      "offset": 16,
+      "address": 7097976,
+      "symbol": "_op_tint_active",
+      "kind": "dir32"
+    },
+    {
+      "offset": 26,
+      "address": 7097912,
+      "symbol": "_op_tint_mode",
+      "kind": "dir32"
+    },
+    {
+      "offset": 36,
+      "address": 7097936,
+      "symbol": "_op_tint_start",
+      "kind": "dir32"
+    },
+    {
+      "offset": 46,
+      "address": 7097940,
+      "symbol": "_op_tint_duration",
+      "kind": "dir32"
+    }
+  ]
+}

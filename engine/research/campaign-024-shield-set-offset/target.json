@@ -1,0 +1,21 @@
+{
+  "id": "shield_set_offset",
+  "address": 4435781,
+  "size": 80,
+  "body_size": 80,
+  "source": "src/shield_set_offset.c",
+  "symbol": "_op_shield_set_offset",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 30,
+      "address": 7117360,
+      "symbol": "_op_shields",
+      "kind": "dir32"
+    }
+  ]
+}

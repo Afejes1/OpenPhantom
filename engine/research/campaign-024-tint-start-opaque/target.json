@@ -1,0 +1,21 @@
+{
+  "id": "tint_start_opaque",
+  "address": 4428752,
+  "size": 42,
+  "body_size": 42,
+  "source": "src/tint_start_opaque.c",
+  "symbol": "_op_tint_start_opaque",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 33,
+      "address": 4428656,
+      "symbol": "_op_tint_start_full",
+      "kind": "rel32-call"
+    }
+  ]
+}

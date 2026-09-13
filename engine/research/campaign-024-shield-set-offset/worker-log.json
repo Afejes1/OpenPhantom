@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "shield_set_offset",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects control contract",
+      "started_utc": "2026-09-13T17:12:38.066307+00:00",
+      "finished_utc": "2026-09-13T17:12:39.635537+00:00",
+      "returncode": 1,
+      "source_sha256": "a3135236699eea1770dae0c0c5e89bebbbd5890c025c98c3b1f075bafbfa4852",
+      "report": "engine/build/campaign-001-shield_set_offset-9f611f8b91b8/research-result.json",
+      "report_sha256": "223c75cf97cdc9cc8468a381d899b136952be88b99888b66a3f035626fbf6acf",
+      "status": "mismatch",
+      "candidate_size": 83,
+      "different_bytes": null,
+      "elapsed_seconds": 1.353661,
+      "stderr": ""
+    }
+  ]
+}

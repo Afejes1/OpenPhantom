@@ -1,0 +1,12 @@
+{
+  "program": "TPM:/WMAIN.EXE",
+  "port": 8192,
+  "saved": true,
+  "renamed": [],
+  "existing_semantic_names_retained": 7,
+  "unknown_offset_name_retained": true,
+  "comments_updated": 8,
+  "existing_comment_context_preserved": true,
+  "prior_shield_fade_and_save_writer_context_retained": true,
+  "original_bytes_modified": false
+}

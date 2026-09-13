@@ -1,0 +1,57 @@
+{
+  "id": "shield_draw_released",
+  "address": 4437627,
+  "size": 134,
+  "body_size": 134,
+  "source": "src/shield_draw_released.c",
+  "symbol": "_op_shield_draw_released",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 7123120,
+      "symbol": "_op_shield_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 27,
+      "address": 7117360,
+      "symbol": "_op_shields",
+      "kind": "dir32"
+    },
+    {
+      "offset": 86,
+      "address": 4439966,
+      "symbol": "_op_shield_draw",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 95,
+      "address": 7117352,
+      "symbol": "_op_shield_pass",
+      "kind": "dir32"
+    },
+    {
+      "offset": 104,
+      "address": 7117352,
+      "symbol": "_op_shield_pass",
+      "kind": "dir32"
+    },
+    {
+      "offset": 112,
+      "address": 7117352,
+      "symbol": "_op_shield_pass",
+      "kind": "dir32"
+    },
+    {
+      "offset": 122,
+      "address": 7117348,
+      "symbol": "_op_shield_other_pass",
+      "kind": "dir32"
+    }
+  ]
+}

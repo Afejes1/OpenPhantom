@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "tint_start_opaque",
+  "candidate": "candidate.c",
+  "symbol": "_op_tint_start_opaque",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

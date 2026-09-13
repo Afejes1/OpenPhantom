@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "campaign": "024",
+  "id": "shield_set_offset",
+  "status": "focused-mismatch",
+  "comparison": {
+    "id": "shield_set_offset",
+    "address": 4435781,
+    "size": 80,
+    "candidate_size": 83,
+    "body_size": 80,
+    "status": "mismatch",
+    "literal_function_match": false,
+    "layout_verified": false,
+    "adjusted_bytes": 0,
+    "object_sha256": "1af6d731f7c61552e788e761851dfd5ca4b12097639154bf550da858be2d5c31",
+    "reason": "complete function extent differs"
+  },
+  "different_percent": null,
+  "source_snapshot": {
+    "research/campaign-024-shield-set-offset/candidate.c": "6e0aee7cf0d39feda1abdcc5418a7b245eea7417f6bdc30b2554914a33ff9162",
+    "research/campaign-024-shield-set-offset/api.h": "969144f69fe5dc6c8d55a1bad7da6d17be1ad4afd937afaf49e8f0b83282c9b3",
+    "research/campaign-024-shield-set-offset/behavior.c": "f414f54c0efd7cf0bb4949a39b3af616378b73a40dd72c0f9b21adc2cbe11970",
+    "research/campaign-024-shield-set-offset/case.json": "26126537a579a98aa48951cb01efe9c051c21742eda563b4cfd5a0d85a978325",
+    "research/campaign-001/verify.py": "78bcf92d994fdab04d1a983838fe9f492162d2626b35390259d9976b92cbbe78",
+    "target.json": "5ef284ac35061afe39502582b604d3e360bebf585ba11168a60b970381809cc9",
+    "research/campaign-024-shield-set-offset/target.json": "629b9e3709494b09321167db19bf96b536bf7c82ad7a75102ca662b246bcc6d8",
+    "research/surface-emission/probe.py": "cd4ef4126dacfc16197636a4b0c7007639efe1033e8e2b329e4939a6083c5f1b",
+    "research/surface-emission/native_listing_diagnostic.py": "3cad0339396c73301ef5861eed3c40f925482fd7c2e4ec45f801e9d0e5d34665",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "959d15268c4d927e57271424dbcb1c709cf89cbf3e48ff545e4e15c4d6425f27",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "reference": {
+    "sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
+    "size": 829952
+  },
+  "native_report": "engine/build/campaign-001-shield_set_offset-60cae25bddfc/research-result.json",
+  "native_report_sha256": "b46d55b1edce8f015644816d4ef42d98d3a6c710c59e3311eed6087f42f4df55",
+  "docker_report": "engine/build/campaign-001-shield_set_offset-a505221dfd8e/research-result.json",
+  "docker_report_sha256": "74fcd3847d57dd1f5fdb66e8bcc55d17a0c41de4f921921199627f419c57d4db",
+  "artifact": {
+    "id": "shield_set_offset",
+    "source": "candidate.c",
+    "symbol": "_op_shield_set_offset",
+    "object": "candidate.obj",
+    "object_sha256": "1af6d731f7c61552e788e761851dfd5ca4b12097639154bf550da858be2d5c31",
+    "function_section_bytes": 83,
+    "function_section_sha256": "88dd704b3845f1ecc643775167d23537b24f29769684d5486d1c884c87ca7eda",
+    "relocation_count": 1,
+    "assembly_listing": "candidate.native.cod",
+    "assembly_listing_sha256": "05044ebcc6cad020e17fe7eb6a5b078d84024f0a017700e24c501859acbb5726",
+    "assembly_listing_has_terminators": true,
+    "function_inventory": "candidate.function.json",
+    "function_inventory_sha256": "de23a9edc44f880fa3de4ce0a9faabeacab3059931082640209cd59a2afbe392",
+    "listing_fallback": {
+      "kind": "verified-native-peer-listing",
+      "original_docker_listing": "candidate.cod",
+      "original_docker_listing_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "native_peer_report_sha256": "b46d55b1edce8f015644816d4ef42d98d3a6c710c59e3311eed6087f42f4df55",
+      "native_peer_object_sha256": "1be650faafae98e5963bb7b69e8d13a60c948f8eaef73b59410253b5e374b1c9",
+      "native_peer_listing_sha256": "05044ebcc6cad020e17fe7eb6a5b078d84024f0a017700e24c501859acbb5726",
+      "function_and_relocations_equal_before_fixture": true
+    }
+  },
+  "fixture": {
+    "sha256": "b1dd15871eb78af145fb024d5e8b3aca37e7762bbb430676e45b364af89aac8c",
+    "passed": true,
+    "stdout": "shield offset: 396 checks, 0 failures\n",
+    "checks": 396,
+    "failures": 0
+  },
+  "native_docker_function_and_relocations_equal": true,
+  "native_elapsed_seconds": 1.424165,
+  "docker_elapsed_seconds": 5.766539,
+  "accepted_history_record": false,
+  "original_game_executed": false,
+  "whole_executable_match": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "review": "research/campaign-024/review.json",
+  "limitations": [
+    "Explicit-return candidate is83 bytes versus80. Original successful EAX may be incidental; zero direct callers leave source return intent unproved.",
+    "Research only; no valid full-span mismatch percentage and no acceptance eligibility. Fixture validates authored candidate effects, not executed original behavior."
+  ],
+  "evidence_category": "research-candidate"
+}

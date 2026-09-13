@@ -1,0 +1,26 @@
+{
+  "id": "fog_set_end",
+  "address": 4427853,
+  "size": 33,
+  "body_size": 33,
+  "source": "src/fog_set_end.c",
+  "symbol": "_op_fog_set_end",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 4883692,
+      "float32": 0.0
+    },
+    {
+      "offset": 24,
+      "address": 4750064,
+      "symbol": "_op_renderer_fog_end",
+      "kind": "rel32-call"
+    }
+  ]
+}

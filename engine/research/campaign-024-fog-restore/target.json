@@ -1,0 +1,57 @@
+{
+  "id": "fog_restore",
+  "address": 4427575,
+  "size": 74,
+  "body_size": 74,
+  "source": "src/fog_restore.c",
+  "symbol": "_op_fog_restore",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 9044064,
+      "symbol": "_op_active_world",
+      "kind": "dir32"
+    },
+    {
+      "offset": 19,
+      "address": 9044064,
+      "symbol": "_op_active_world",
+      "kind": "dir32"
+    },
+    {
+      "offset": 30,
+      "address": 9044064,
+      "symbol": "_op_active_world",
+      "kind": "dir32"
+    },
+    {
+      "offset": 42,
+      "address": 8918508,
+      "symbol": "_op_fog_saved",
+      "kind": "dir32"
+    },
+    {
+      "offset": 48,
+      "address": 9044064,
+      "symbol": "_op_active_world",
+      "kind": "dir32"
+    },
+    {
+      "offset": 59,
+      "address": 9044064,
+      "symbol": "_op_active_world",
+      "kind": "dir32"
+    },
+    {
+      "offset": 65,
+      "address": 4321610,
+      "symbol": "_op_world_apply_fog",
+      "kind": "rel32-call"
+    }
+  ]
+}
