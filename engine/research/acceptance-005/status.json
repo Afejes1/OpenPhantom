@@ -17,5 +17,15 @@
   "evidence_records_before": 24,
   "worker_role": "read-only independent reviewer after delegated writer approval block",
   "implementation_by": "parent under directly authorized scoped write",
-  "original_game_executed": false
+  "original_game_executed": false,
+  "pre_acceptance_builds": [
+    {
+      "build": "20260913-104705-67f1e71d",
+      "source_revision": "ba9bac0bf1f0f6517db50f77c33a1e1d965a02af",
+      "source_dirty": true,
+      "compilation_succeeded": true,
+      "fixture_executed": false,
+      "reason": "Generated engine/docs/progress.md was omitted from the staging list. Preserve this diagnostic build; require a fresh fully clean build for evidence."
+    }
+  ]
 }
