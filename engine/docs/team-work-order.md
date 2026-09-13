@@ -31,7 +31,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x00402021 | bapdraw_reservePoly | not_done | Recorded match: [peek_face_packet](../src/peek_face_packet.c) |
 | 0x00402046 | bapdraw_commitVerts | not_done | Research candidate (not registered): [research](../research/projected-vertex-fog/README.md) |
 | 0x00402130 | bapdraw_reserveVerts | not_done | Recorded match: [peek_projected_vertices](../src/peek_projected_vertices.c) |
-| 0x00402155 | bapdraw_flushQueue | not_done | Queued; no local match recorded |
+| 0x00402155 | bapdraw_flushQueue | not_done | Research candidate (not registered): [research](../research/queue-flush/README.md) |
 | 0x004025B0 | bapdraw_clipSlopePlane &#124; bapdraw_clipPoly &#124; bapdraw_clipDepthPlane &#124; bapdraw_clipSwap | not_done | Queued; no local match recorded |
 | 0x00403EF0 | bapdrawOld_stepScan | not_done | Recorded match: [step_scan](../src/step_scan.c) |
 | 0x00403FA0 | bapdrawOld_cullAgainstPlane | not_done | Research candidate (not registered): [research](../research/surface-emission/README.md) |

@@ -1,0 +1,141 @@
+{
+  "id": "flush_material_buckets",
+  "address": 4202837,
+  "size": 1115,
+  "body_size": 1112,
+  "source": "src/flush_material_buckets.c",
+  "symbol": "_op_flush_material_buckets",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 5855736,
+      "symbol": "_op_material_bucket_count"
+    },
+    {
+      "offset": 24,
+      "address": 5101284,
+      "symbol": "_op_frame_render_flags"
+    },
+    {
+      "offset": 30,
+      "address": 4751888,
+      "symbol": "_op_backend_set_flags",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 72,
+      "address": 5855736,
+      "symbol": "_op_material_bucket_count"
+    },
+    {
+      "offset": 92,
+      "address": 5854968,
+      "symbol": "_op_material_buckets"
+    },
+    {
+      "offset": 145,
+      "address": 4700605,
+      "symbol": "_op_prepare_material_texture",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 220,
+      "address": 4882456,
+      "float32": 1.0
+    },
+    {
+      "offset": 260,
+      "address": 4882456,
+      "float32": 1.0
+    },
+    {
+      "offset": 272,
+      "address": 4752656,
+      "symbol": "_op_backend_bind_texture",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 726,
+      "address": 5101264,
+      "symbol": "_op_vertex_fog_enabled"
+    },
+    {
+      "offset": 738,
+      "address": 4970176,
+      "symbol": "_op_projected_vertices"
+    },
+    {
+      "offset": 757,
+      "address": 5855744,
+      "symbol": "_op_projected_fog"
+    },
+    {
+      "offset": 906,
+      "address": 5101284,
+      "symbol": "_op_frame_render_flags"
+    },
+    {
+      "offset": 912,
+      "address": 5101256,
+      "symbol": "_op_frame_extra_render_flags"
+    },
+    {
+      "offset": 931,
+      "address": 4750416,
+      "symbol": "_op_backend_queue_vertices",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 957,
+      "address": 5101284,
+      "symbol": "_op_frame_render_flags"
+    },
+    {
+      "offset": 966,
+      "address": 4751888,
+      "symbol": "_op_backend_set_flags",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 976,
+      "address": 5101284,
+      "symbol": "_op_frame_render_flags"
+    },
+    {
+      "offset": 982,
+      "address": 4751888,
+      "symbol": "_op_backend_set_flags",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 1013,
+      "address": 4747872,
+      "symbol": "_op_backend_draw_vertices",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 1070,
+      "address": 5855736,
+      "symbol": "_op_material_bucket_count"
+    },
+    {
+      "offset": 1080,
+      "address": 5101248,
+      "symbol": "_op_last_material_bucket"
+    },
+    {
+      "offset": 1090,
+      "address": 5101280,
+      "symbol": "_op_face_packet_count"
+    },
+    {
+      "offset": 1100,
+      "address": 5101292,
+      "symbol": "_op_projected_vertex_count"
+    }
+  ]
+}

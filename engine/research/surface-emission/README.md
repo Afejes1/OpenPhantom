@@ -117,3 +117,7 @@ accepted registry pending the shared batch checkpoint. See
 The [focused exact-match receipt](../../docs/legacy-cell-match-20260912.json)
 records source hashes, the equal reference/resolved span hashes, and the current
 Docker/native and synthetic-fixture checks. No full regression was repeated.
+
+Adjacent module work now includes the [material queue flush](../queue-flush/README.md).
+Its 1,112-byte body matches; three trailing alignment bytes remain unverified.
+This does not alter the five candidates or their accepted status above.

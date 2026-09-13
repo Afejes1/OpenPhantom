@@ -121,3 +121,13 @@ C++ reconstruction matches the full 816-byte span with all 34 address operands
 verified and no byte exclusions. Its focused fixture passes 1,195 checks; the
 match awaits the shared batch acceptance checkpoint. See
 [legacy-cell evidence](docs/legacy-cell-evidence.md). No new function is accepted.
+
+## Material bucket flush
+
+The no-argument flush at 0x00402155 consumes the accepted material/packet queues,
+builds 32-byte vertices with normalized UVs and per-corner color/fog, then dispatches
+immediate or queued alpha draws before clearing queue state. Its authored VC5 C
+body matches all 1,112 bytes with 24 verified operands and passes 5,480 focused
+checks. The full 1,115-byte span remains unmatched because three trailing
+alignment bytes need verified layout reproduction. No accepted count changes.
+See [queue-flush evidence](docs/queue-flush-evidence.md).
