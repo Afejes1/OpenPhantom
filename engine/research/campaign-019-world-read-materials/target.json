@@ -1,0 +1,21 @@
+{
+  "id": "world_read_materials",
+  "address": 4315675,
+  "size": 149,
+  "body_size": 149,
+  "source": "src/world_read_materials.c",
+  "symbol": "_op_world_read_materials",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 99,
+      "address": 4654982,
+      "kind": "rel32-call",
+      "symbol": "_op_stream_read"
+    }
+  ]
+}

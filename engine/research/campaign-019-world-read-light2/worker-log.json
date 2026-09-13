@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "case": "world_read_light2",
+  "started_utc": "2026-09-13T13:34:00.1785317Z",
+  "finished_utc": "2026-09-13T13:35:17.3816572Z",
+  "timestamp_basis": "earliest compiler report write time used as conservative start evidence because exact case-start clock was not captured; final handoff clock",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "natural loop and meaningful locals i record size",
+      "source_sha256": "60480607ae2ff1cd52d1ac7ebaaae74b4d35d2dba5ed24726bcb77e8bd8d26d2",
+      "report": "engine/build/campaign-001-world_read_light2-3adccf0f6d26/research-result.json",
+      "report_sha256": "98b57ea925f936c51f13e1ea3a039622d482388555dcf6ab0260f5915265bb29",
+      "completed": true,
+      "candidate_size": 152,
+      "different_bytes": 6,
+      "status": "mismatch",
+      "elapsed_seconds": 1.367036,
+      "report_written_utc": "2026-09-13T13:34:00.1785317Z"
+    }
+  ],
+  "candidate_sha256": "60480607ae2ff1cd52d1ac7ebaaae74b4d35d2dba5ed24726bcb77e8bd8d26d2",
+  "api_sha256": "daeaacd566f36e7cf23b4e10b6ac6d9892b0bd2a8a8b59047099e1c55785fbc5",
+  "fixture_sha256": "ccdc301cf693fb1cbf7b7724a0f23fa6b96022207386e789fffd7ec4db3e191a",
+  "best_report": "engine/build/campaign-001-world_read_light2-3adccf0f6d26/research-result.json",
+  "original_executed": false,
+  "native_fixture_executed": false,
+  "notes": "Complete span and call binding; six nonbinding bytes remain with the natural meaningful-local source.",
+  "parent_review": {
+    "review": "research/campaign-019/review.json",
+    "candidate_body_unchanged": true,
+    "fixture_expanded": true,
+    "final_fixture_sha256": "ee194b1b519a196eed1c47b72b93299977ce119032880e72aa7ca5c71a4dfde4",
+    "result_sha256": "1d0abded6d8167489565b61f64eede4948b9542df9c57cf253c01260510c6a81",
+    "final_native_report": "engine/build/campaign-001-world_read_light2-cd89bec560f5/research-result.json",
+    "final_docker_report": "engine/build/campaign-001-world_read_light2-482ec4b05552/research-result.json",
+    "fixture_checks": 112
+  }
+}

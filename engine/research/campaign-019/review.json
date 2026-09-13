@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "campaign": "019",
+  "reviewer": "parent",
+  "reviewed_utc": "2026-09-13T13:49:01.701050+00:00",
+  "cases": {
+    "world_read_dialog": {
+      "status": "focused-mismatch",
+      "category": "research-candidate",
+      "complete_span": 153,
+      "byte_review": "All eight differences are the two swapped pointer/index local stack displacements.",
+      "fixture_review": "Bulk-read argument forwarding, no payload validation, pre-read count reset, post-callback pointer capture, signed live count, guarded typed link clears and callback failure retention.",
+      "fixture_checks": 67,
+      "fixture_failures": 0,
+      "candidate_body_unchanged": true,
+      "fixture_expanded": true,
+      "independent_native_docker_verification": true
+    },
+    "world_read_global_vertices": {
+      "status": "focused-relocation-adjusted-match",
+      "category": "exact-function-match",
+      "complete_span": 149,
+      "byte_review": "Complete original span matches after the independently verified stream-read binding.",
+      "fixture_review": "Guarded normal three-read path; first/middle failure with callback mutations; captured pre-loop pointer despite retargeting; live count expansion/contraction and size changes; mismatch/zero/high-bit/wrapped products; negative success; zero-sized positive-count reads; exact callback arguments and retained bytes.",
+      "fixture_checks": 112,
+      "fixture_failures": 0,
+      "candidate_body_unchanged": true,
+      "fixture_expanded": true,
+      "independent_native_docker_verification": true
+    },
+    "world_read_local_vertices": {
+      "status": "focused-relocation-adjusted-match",
+      "category": "exact-function-match",
+      "complete_span": 152,
+      "byte_review": "Complete original span matches after the independently verified stream-read binding.",
+      "fixture_review": "Guarded normal three-read path; first/middle failure with callback mutations; captured pre-loop pointer despite retargeting; live count expansion/contraction and size changes; mismatch/zero/high-bit/wrapped products; negative success; zero-sized positive-count reads; exact callback arguments and retained bytes.",
+      "fixture_checks": 112,
+      "fixture_failures": 0,
+      "candidate_body_unchanged": true,
+      "fixture_expanded": true,
+      "independent_native_docker_verification": true
+    },
+    "world_read_materials": {
+      "status": "focused-mismatch",
+      "category": "near-match",
+      "complete_span": 149,
+      "byte_review": "All six differences are the swapped size/index local stack displacements.",
+      "fixture_review": "Guarded normal three-read path; first/middle failure with callback mutations; captured pre-loop pointer despite retargeting; live count expansion/contraction and size changes; mismatch/zero/high-bit/wrapped products; negative success; zero-sized positive-count reads; exact callback arguments and retained bytes.",
+      "fixture_checks": 112,
+      "fixture_failures": 0,
+      "candidate_body_unchanged": true,
+      "fixture_expanded": true,
+      "independent_native_docker_verification": true
+    },
+    "world_read_light1": {
+      "status": "focused-mismatch",
+      "category": "near-match",
+      "complete_span": 152,
+      "byte_review": "All six differences are the swapped size/index local stack displacements.",
+      "fixture_review": "Guarded normal three-read path; first/middle failure with callback mutations; captured pre-loop pointer despite retargeting; live count expansion/contraction and size changes; mismatch/zero/high-bit/wrapped products; negative success; zero-sized positive-count reads; exact callback arguments and retained bytes.",
+      "fixture_checks": 112,
+      "fixture_failures": 0,
+      "candidate_body_unchanged": true,
+      "fixture_expanded": true,
+      "independent_native_docker_verification": true
+    },
+    "world_read_light2": {
+      "status": "focused-mismatch",
+      "category": "near-match",
+      "complete_span": 152,
+      "byte_review": "All six differences are the swapped size/index local stack displacements.",
+      "fixture_review": "Guarded normal three-read path; first/middle failure with callback mutations; captured pre-loop pointer despite retargeting; live count expansion/contraction and size changes; mismatch/zero/high-bit/wrapped products; negative success; zero-sized positive-count reads; exact callback arguments and retained bytes.",
+      "fixture_checks": 112,
+      "fixture_failures": 0,
+      "candidate_body_unchanged": true,
+      "fixture_expanded": true,
+      "independent_native_docker_verification": true
+    }
+  },
+  "issues": [
+    {
+      "scope": "parent fixture generation",
+      "issue": "Initial unbounded prefix substitution changed OP_RECORD/OP_STREAM identifiers in the global fixture. Docker fixture compilation failed; no fixture executed. Fixed token-boundary substitution, retained failed receipt, then fresh native/Docker pairs passed. Candidate bodies and matcher unchanged.",
+      "resolved": true,
+      "failed_report": "engine/build/campaign-001-world_read_global_vertices-61bc02dd3f8c/research-result.json",
+      "failed_report_sha256": "3d3ecf0879681c41256d42a3d8a220ea8d1392557050bf6b77bdb41fb904169a"
+    },
+    {
+      "scope": "helper creation",
+      "issue": "A nested Python string delimiter caused a syntax error before the first helper file was written. Corrected quoting before compilation.",
+      "resolved": true
+    },
+    {
+      "scope": "remaining byte differences",
+      "issue": "Three six-byte near matches and the eight-byte dialog research candidate remain unaccepted. Time caps were retained; no source changes solely to bypass the comparison.",
+      "resolved": false
+    },
+    {
+      "scope": "worker timing",
+      "issue": "Some case starts are conservative compiler-report timestamps rather than measured start clocks; worker logs disclose their basis.",
+      "resolved": false
+    },
+    {
+      "scope": "frozen candidate formatting",
+      "issue": "Five worker candidate files retain a trailing blank line. Publication preserves their verified input hashes. Git whitespace review ignores only blank-at-eof; compiler warnings and byte matching are unchanged.",
+      "resolved": false
+    }
+  ],
+  "full_regression_run": false,
+  "ghidra_comments_updated_and_saved": true
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "case": "world_read_dialog",
+  "started_utc": "2026-09-13T13:21:24.7787765Z",
+  "finished_utc": "2026-09-13T13:35:17.3816572Z",
+  "timestamp_basis": "assignment-start clock; report write times per attempt; final handoff clock",
+  "compiler_invocations": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "pointer increment in loop body",
+      "source_sha256": "158d38214a789d69b93e85f590d7fe905e5b75337497cf5fae9a271f87829b91",
+      "report": "engine/build/campaign-001-world_read_dialog-5f1e407fa589/research-result.json",
+      "report_sha256": "d479e4a70a33b88e0aece9e8e7c3ec342a62d983411d1055c303cb400a7e0d7e",
+      "completed": true,
+      "candidate_size": 153,
+      "different_bytes": 35,
+      "status": "mismatch",
+      "elapsed_seconds": 1.43363,
+      "report_written_utc": "2026-09-13T13:22:37.9603919Z"
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "dual for increment with current then index declarations",
+      "source_sha256": "d86980c132860c1b2f805c083e2d336fee711e563420fb52adeb07da63207716",
+      "report": "engine/build/campaign-001-world_read_dialog-6d5ed2184678/research-result.json",
+      "report_sha256": "f7adf6c5345f39bec89ded25a8d2c6597680d64704171258d815d209d9baf01c",
+      "completed": true,
+      "candidate_size": 153,
+      "different_bytes": 8,
+      "status": "mismatch",
+      "elapsed_seconds": 4.590413,
+      "report_written_utc": "2026-09-13T13:23:53.1863516Z"
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "dual for increment with index then current declarations",
+      "source_sha256": "93e44fe50fc05344dd4389f963bfb11adf0f19aa04f62d470fe9263158e48f8c",
+      "report": "engine/build/campaign-001-world_read_dialog-5699233f3067/research-result.json",
+      "report_sha256": "ca5dd7d5a4c920915f96e42abcaeff4303e2c712d523fa4c35d21612a6d02182",
+      "completed": true,
+      "candidate_size": 153,
+      "different_bytes": 8,
+      "status": "mismatch",
+      "elapsed_seconds": 1.36122,
+      "report_written_utc": "2026-09-13T13:25:13.5551910Z"
+    },
+    {
+      "attempt": 4,
+      "hypothesis": "whole-token pointer local rename to record",
+      "source_sha256": "6881f5cbe6e30d8d0bc39bec5650bfe4a7161c595e0e88f3a4fa56340a3b031c",
+      "report": "engine/build/campaign-001-world_read_dialog-2b16f777355b/research-result.json",
+      "report_sha256": "da73eba7b13ebccbc3b84d3376b981c3842d4d5875d7005825324ec8beca537b",
+      "completed": true,
+      "candidate_size": 153,
+      "different_bytes": 8,
+      "status": "mismatch",
+      "elapsed_seconds": 1.35687,
+      "report_written_utc": "2026-09-13T13:31:04.9419584Z"
+    }
+  ],
+  "candidate_sha256": "6881f5cbe6e30d8d0bc39bec5650bfe4a7161c595e0e88f3a4fa56340a3b031c",
+  "api_sha256": "ac85973e7eafb4c88011fa6c2a8430ba7352aa1e12146b9565510655042c42e9",
+  "fixture_sha256": "0b9ed4ed27a2220d63ea57b0fcd8df69e07647d1441ed4ed18ea5c69f7ab9275",
+  "best_report": "engine/build/campaign-001-world_read_dialog-2b16f777355b/research-result.json",
+  "original_executed": false,
+  "native_fixture_executed": false,
+  "notes": "Complete span and call binding; eight bytes remain at two real local stack displacements. Parked after one evidence-backed pointer-name attempt.",
+  "parent_review": {
+    "review": "research/campaign-019/review.json",
+    "candidate_body_unchanged": true,
+    "fixture_expanded": true,
+    "final_fixture_sha256": "da7ac142a9b3b01a3b24872ccb4afa64ee31640379a311a3c505357f3d324433",
+    "result_sha256": "0b93c660aef46dfe29f244e4aef9b8ff8a19b0b1dfd8e4316bbf6a032ea0581f",
+    "final_native_report": "engine/build/campaign-001-world_read_dialog-a18636fb4192/research-result.json",
+    "final_docker_report": "engine/build/campaign-001-world_read_dialog-57312be0d98b/research-result.json",
+    "fixture_checks": 67
+  }
+}

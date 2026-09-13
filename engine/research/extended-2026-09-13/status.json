@@ -18,8 +18,8 @@
   "evidence_records_at_start": 21,
   "weekly_shared_usage_start_percent": 39,
   "promotions": 5,
-  "new_exact_functions": 12,
-  "new_exact_bytes": 1156,
+  "new_exact_functions": 14,
+  "new_exact_bytes": 1457,
   "checkpoints": [
     {
       "id": "acceptance-002",
@@ -60,18 +60,38 @@
     },
     {
       "id": "campaign-018",
-      "status": "verified-awaiting-publication",
+      "status": "published",
       "new_exact_functions": 6,
       "new_exact_bytes": 639,
       "fixture_checks": 241,
       "promotions": 0,
       "results": "../campaign-018/results.md",
-      "verified_utc": "2026-09-13T13:16:44.195624+00:00"
+      "verified_utc": "2026-09-13T13:16:44.195624+00:00",
+      "source_commit": "3bb9c83c2bd3dc186f99a1a8f87a2e1fa34c0451",
+      "focused_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34759519545",
+      "focused_ci_conclusion": "success",
+      "publication_utc": "2026-09-13T13:22:03.808139+00:00"
+    },
+    {
+      "id": "campaign-019",
+      "status": "verification-complete-publication-pending",
+      "new_exact_functions": 2,
+      "new_exact_bytes": 301,
+      "near_matches": 3,
+      "research_candidates": 1,
+      "fixture_checks": 627,
+      "promotions": 0,
+      "results": "../campaign-019/results.md",
+      "verified_utc": "2026-09-13T13:40:56.369347+00:00"
     }
   ],
-  "current_work": "Campaign018 verified:6 new exact functions/639 bytes/241 checks. Publishing checkpoint; Campaign019 six-reader packet prepared.",
+  "current_work": "Campaign019 reviewed:2 exact/3 near/1 research,627 focused checks. Publish then acceptance004 for two exact vertex readers.",
   "original_game_executed": false,
-  "weekly_shared_usage_latest_percent": 40,
-  "last_checkpoint_utc": "2026-09-13T12:59:03.645248+00:00",
-  "last_source_commit": "5e54b23df927bcc2746ec985b64a96ab9494417d"
+  "weekly_shared_usage_latest_percent": 42,
+  "last_checkpoint_utc": "2026-09-13T13:49:01.701050+00:00",
+  "last_source_commit": "3bb9c83c2bd3dc186f99a1a8f87a2e1fa34c0451",
+  "usage_observed_utc": "2026-09-13T13:25:02.575556+00:00",
+  "usage_observation_scope": "Rounded account-wide weekly usage;39 at window start,42 now, not isolated campaign billing.",
+  "new_near_matches": 3,
+  "new_research_candidates": 1
 }

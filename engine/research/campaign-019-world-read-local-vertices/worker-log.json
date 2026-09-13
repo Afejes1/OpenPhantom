@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "case": "world_read_local_vertices",
+  "started_utc": "2026-09-13T13:32:05.4327738Z",
+  "finished_utc": "2026-09-13T13:35:17.3816572Z",
+  "timestamp_basis": "earliest compiler report write time used as conservative start evidence because exact case-start clock was not captured; final handoff clock",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "natural loop and meaningful locals size record i",
+      "source_sha256": "725c1cf23133ba5fd9cfbe3df90585fe28ff85fa9d94d7e54e2d4d3afa2dba7b",
+      "report": "engine/build/campaign-001-world_read_local_vertices-1079434c3e1c/research-result.json",
+      "report_sha256": "000c73aaa783910580d076e5e12b215e721f4616206adbbce45973e51c82c930",
+      "completed": true,
+      "candidate_size": 152,
+      "different_bytes": 0,
+      "status": "relocation-adjusted-match",
+      "elapsed_seconds": 1.440065,
+      "report_written_utc": "2026-09-13T13:32:05.4327738Z"
+    }
+  ],
+  "candidate_sha256": "725c1cf23133ba5fd9cfbe3df90585fe28ff85fa9d94d7e54e2d4d3afa2dba7b",
+  "api_sha256": "e174a53b233bb9485012ac085a79516d5658300c74c1a49ac8db58abe64de137",
+  "fixture_sha256": "2fe97f1c1622a15dbf2c8b32ea3488f8bd475b8c73ffd31f3365b55b28dec2a4",
+  "best_report": "engine/build/campaign-001-world_read_local_vertices-1079434c3e1c/research-result.json",
+  "original_executed": false,
+  "native_fixture_executed": false,
+  "notes": "Complete relocation-adjusted match; parent will execute the authored fixture in locked Docker.",
+  "parent_review": {
+    "review": "research/campaign-019/review.json",
+    "candidate_body_unchanged": true,
+    "fixture_expanded": true,
+    "final_fixture_sha256": "59902b9cbb3b65d48be1b7467d5cecf66586b81bdb55eb05dbf9779e3db687c2",
+    "result_sha256": "6d8acd92c3e2ad3cbe0dae33393f1bbca2d79bd0393aa23fbd545f6fa82dc00d",
+    "final_native_report": "engine/build/campaign-001-world_read_local_vertices-1f17d836d3ba/research-result.json",
+    "final_docker_report": "engine/build/campaign-001-world_read_local_vertices-aa5d092d667b/research-result.json",
+    "fixture_checks": 112
+  }
+}

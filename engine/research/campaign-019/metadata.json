@@ -1,0 +1,68 @@
+[
+  {
+    "id": "world_read_dialog",
+    "address": "0x0041D5FD",
+    "existing_name_retained": true,
+    "purpose_confidence": "HIGH",
+    "full_span": 153,
+    "byte_category": "research-candidate",
+    "comment_updated": true,
+    "evidence": "All eight differences are the two swapped pointer/index local stack displacements. Bulk-read argument forwarding, no payload validation, pre-read count reset, post-callback pointer capture, signed live count, guarded typed link clears and callback failure retention.",
+    "contract": "research/campaign-019-world-read-dialog/contract.md"
+  },
+  {
+    "id": "world_read_global_vertices",
+    "address": "0x0041D8EE",
+    "existing_name_retained": true,
+    "purpose_confidence": "HIGH",
+    "full_span": 149,
+    "byte_category": "exact-function-match",
+    "comment_updated": true,
+    "evidence": "Complete original span matches after the independently verified stream-read binding. Guarded normal three-read path; first/middle failure with callback mutations; captured pre-loop pointer despite retargeting; live count expansion/contraction and size changes; mismatch/zero/high-bit/wrapped products; negative success; zero-sized positive-count reads; exact callback arguments and retained bytes.",
+    "contract": "research/campaign-019-world-read-global-vertices/contract.md"
+  },
+  {
+    "id": "world_read_local_vertices",
+    "address": "0x0041D983",
+    "existing_name_retained": true,
+    "purpose_confidence": "HIGH",
+    "full_span": 152,
+    "byte_category": "exact-function-match",
+    "comment_updated": true,
+    "evidence": "Complete original span matches after the independently verified stream-read binding. Guarded normal three-read path; first/middle failure with callback mutations; captured pre-loop pointer despite retargeting; live count expansion/contraction and size changes; mismatch/zero/high-bit/wrapped products; negative success; zero-sized positive-count reads; exact callback arguments and retained bytes.",
+    "contract": "research/campaign-019-world-read-local-vertices/contract.md"
+  },
+  {
+    "id": "world_read_materials",
+    "address": "0x0041DA1B",
+    "existing_name_retained": true,
+    "purpose_confidence": "HIGH",
+    "full_span": 149,
+    "byte_category": "near-match",
+    "comment_updated": true,
+    "evidence": "All six differences are the swapped size/index local stack displacements. Guarded normal three-read path; first/middle failure with callback mutations; captured pre-loop pointer despite retargeting; live count expansion/contraction and size changes; mismatch/zero/high-bit/wrapped products; negative success; zero-sized positive-count reads; exact callback arguments and retained bytes.",
+    "contract": "research/campaign-019-world-read-materials/contract.md"
+  },
+  {
+    "id": "world_read_light1",
+    "address": "0x0041DBD1",
+    "existing_name_retained": true,
+    "purpose_confidence": "HIGH",
+    "full_span": 152,
+    "byte_category": "near-match",
+    "comment_updated": true,
+    "evidence": "All six differences are the swapped size/index local stack displacements. Guarded normal three-read path; first/middle failure with callback mutations; captured pre-loop pointer despite retargeting; live count expansion/contraction and size changes; mismatch/zero/high-bit/wrapped products; negative success; zero-sized positive-count reads; exact callback arguments and retained bytes.",
+    "contract": "research/campaign-019-world-read-light1/contract.md"
+  },
+  {
+    "id": "world_read_light2",
+    "address": "0x0041DC69",
+    "existing_name_retained": true,
+    "purpose_confidence": "HIGH",
+    "full_span": 152,
+    "byte_category": "near-match",
+    "comment_updated": true,
+    "evidence": "All six differences are the swapped size/index local stack displacements. Guarded normal three-read path; first/middle failure with callback mutations; captured pre-loop pointer despite retargeting; live count expansion/contraction and size changes; mismatch/zero/high-bit/wrapped products; negative success; zero-sized positive-count reads; exact callback arguments and retained bytes.",
+    "contract": "research/campaign-019-world-read-light2/contract.md"
+  }
+]

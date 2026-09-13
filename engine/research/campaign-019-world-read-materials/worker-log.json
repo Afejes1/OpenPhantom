@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "case": "world_read_materials",
+  "started_utc": "2026-09-13T13:32:18.0900270Z",
+  "finished_utc": "2026-09-13T13:35:17.3816572Z",
+  "timestamp_basis": "earliest compiler report write time used as conservative start evidence because exact case-start clock was not captured; final handoff clock",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "natural loop and meaningful locals i record size",
+      "source_sha256": "213668c15cd05f2668189a7add1907a9d0f0e2f2a180c16f528e4bc21f300e69",
+      "report": "engine/build/campaign-001-world_read_materials-8cadce8da446/research-result.json",
+      "report_sha256": "54516316ad3e36b9f89443a11000a18904661bda1715f233d33c714c6128b278",
+      "completed": true,
+      "candidate_size": 149,
+      "different_bytes": 6,
+      "status": "mismatch",
+      "elapsed_seconds": 1.370207,
+      "report_written_utc": "2026-09-13T13:32:18.0900270Z"
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "bounded alternate locals index record bytes",
+      "source_sha256": "c763c84548032f1460b93e06cb3127513ae83ea981fdb4aa4dbb19d1e89ef767",
+      "report": "engine/build/campaign-001-world_read_materials-34041bd1d71b/research-result.json",
+      "report_sha256": "d575e63f58f0fb0c1c2560821636c5d6502790ae8057f7df554f2bac9f4e7fad",
+      "completed": true,
+      "candidate_size": 149,
+      "different_bytes": 8,
+      "status": "mismatch",
+      "elapsed_seconds": 1.344679,
+      "report_written_utc": "2026-09-13T13:33:19.6363257Z"
+    }
+  ],
+  "candidate_sha256": "213668c15cd05f2668189a7add1907a9d0f0e2f2a180c16f528e4bc21f300e69",
+  "api_sha256": "14e9fc484faec7de0ff650307f93b705fb8567ab6cb36140c06028fedba8877f",
+  "fixture_sha256": "c12c1bb3094e1e2eca7821074e34fcf45fdb7d2c96548c3f28057d5ce9676b78",
+  "best_report": "engine/build/campaign-001-world_read_materials-8cadce8da446/research-result.json",
+  "original_executed": false,
+  "native_fixture_executed": false,
+  "notes": "Complete span and call binding. Best first natural local-name source retained at six differences; alternate worsened to eight.",
+  "parent_review": {
+    "review": "research/campaign-019/review.json",
+    "candidate_body_unchanged": true,
+    "fixture_expanded": true,
+    "final_fixture_sha256": "cdde5b6aa8e6c58f196728f1022c9c8fe306cd4ebfe068ba6d96119388dc574e",
+    "result_sha256": "80e2ba91fef7c4b8a38f1f47ecf21c1c95fd07c80eac886dcaa41b40e48aae09",
+    "final_native_report": "engine/build/campaign-001-world_read_materials-be6c18090dc0/research-result.json",
+    "final_docker_report": "engine/build/campaign-001-world_read_materials-451f5d645169/research-result.json",
+    "fixture_checks": 112
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "campaign": "019",
+  "status": "verification-complete-publication-pending",
+  "prepared_utc": "2026-09-13T13:04:15.951151+00:00",
+  "preparation_started_utc": "2026-09-13T13:02:00Z",
+  "preparation_cap_minutes": 15,
+  "started_utc": "2026-09-13T13:20:53.426597+00:00",
+  "worker_stop_utc": "2026-09-13T13:55:53.426597+00:00",
+  "stop_utc": "2026-09-13T14:05:53.426597+00:00",
+  "baseline_commit": "3bb9c83c2bd3dc186f99a1a8f87a2e1fa34c0451",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "registered_functions_at_start": 26,
+  "assignments": [
+    {
+      "id": "world_read_dialog",
+      "address": "0x41d5fd",
+      "case": "research/campaign-019-world-read-dialog",
+      "status": "research-candidate",
+      "team_reported_name": "bapworld_loadDlg",
+      "different_bytes": 8,
+      "fixture_checks": 67
+    },
+    {
+      "id": "world_read_global_vertices",
+      "address": "0x41d8ee",
+      "case": "research/campaign-019-world-read-global-vertices",
+      "status": "exact-function-match",
+      "team_reported_name": "bapworld_loadGvrt",
+      "different_bytes": 0,
+      "fixture_checks": 112
+    },
+    {
+      "id": "world_read_local_vertices",
+      "address": "0x41d983",
+      "case": "research/campaign-019-world-read-local-vertices",
+      "status": "exact-function-match",
+      "team_reported_name": "bapworld_loadLvrt",
+      "different_bytes": 0,
+      "fixture_checks": 112
+    },
+    {
+      "id": "world_read_materials",
+      "address": "0x41da1b",
+      "case": "research/campaign-019-world-read-materials",
+      "status": "near-match",
+      "team_reported_name": "bapworld_loadMat",
+      "different_bytes": 6,
+      "fixture_checks": 112
+    },
+    {
+      "id": "world_read_light1",
+      "address": "0x41dbd1",
+      "case": "research/campaign-019-world-read-light1",
+      "status": "near-match",
+      "team_reported_name": "bapworld_loadLights",
+      "different_bytes": 6,
+      "fixture_checks": 112
+    },
+    {
+      "id": "world_read_light2",
+      "address": "0x41dc69",
+      "case": "research/campaign-019-world-read-light2",
+      "status": "near-match",
+      "team_reported_name": "bapworld_loadLights",
+      "different_bytes": 6,
+      "fixture_checks": 112
+    }
+  ],
+  "verified_utc": "2026-09-13T13:40:56.369347+00:00",
+  "exact_functions": 2,
+  "near_matches": 3,
+  "research_candidates": 1,
+  "fixture_checks": 627,
+  "accepted_promotions": 0,
+  "next_work": "Acceptance004: integrate only exact global/local vertex readers; parked cases remain research."
+}

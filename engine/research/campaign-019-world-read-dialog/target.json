@@ -1,0 +1,21 @@
+{
+  "id": "world_read_dialog",
+  "address": 4314621,
+  "size": 153,
+  "body_size": 153,
+  "source": "src/world_read_dialog.c",
+  "symbol": "_op_world_read_dialog",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 46,
+      "address": 4654982,
+      "kind": "rel32-call",
+      "symbol": "_op_stream_read"
+    }
+  ]
+}

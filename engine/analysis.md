@@ -316,3 +316,12 @@ Their original bodies needed no corrections; callback oracles were strengthened.
 See [acceptance003](research/acceptance-003/results.md) and
 [Campaign018](research/campaign-018/results.md). Table620 capacity and final
 canonical cleanup storage remain explicit integration questions.
+
+## Campaign019
+
+Two exact vertex readers add301 focused bytes; three readers have six remaining
+stack-slot differences each, and dialog has eight (above5%). All627 focused
+checks pass. Existing names were retained and Ghidra comments saved.
+[Results](research/campaign-019/results.md) preserve categories, failed fixture
+compilation and every final source/toolchain receipt. Acceptance004 will cover
+only the two exact readers, with the original local mismatch-success behavior.

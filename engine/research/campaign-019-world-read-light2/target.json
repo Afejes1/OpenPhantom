@@ -1,0 +1,21 @@
+{
+  "id": "world_read_light2",
+  "address": 4316265,
+  "size": 152,
+  "body_size": 152,
+  "source": "src/world_read_light2.c",
+  "symbol": "_op_world_read_light2",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 99,
+      "address": 4654982,
+      "kind": "rel32-call",
+      "symbol": "_op_stream_read"
+    }
+  ]
+}

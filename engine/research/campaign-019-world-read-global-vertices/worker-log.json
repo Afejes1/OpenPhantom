@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "case": "world_read_global_vertices",
+  "started_utc": "2026-09-13T13:27:34.1624643Z",
+  "finished_utc": "2026-09-13T13:35:17.3816572Z",
+  "timestamp_basis": "earliest compiler report write time used as conservative start evidence because exact case-start clock was not captured; final handoff clock",
+  "compiler_invocations": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "dual for increment before condition",
+      "source_sha256": "55514e714dd3e9e1e44d97540fe0b9f55c4a195f0799a9ac1cce4f07657ee213",
+      "report": "engine/build/campaign-001-world_read_global_vertices-cee7ea10c6ce/research-result.json",
+      "report_sha256": "14cf8964f35527926d91e674cac591c9ffae1ca07b71512438a5dade58c25870",
+      "completed": true,
+      "candidate_size": null,
+      "different_bytes": null,
+      "status": "unresolved",
+      "elapsed_seconds": 1.37516,
+      "report_written_utc": "2026-09-13T13:27:34.1624643Z"
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "increment pointer after successful read",
+      "source_sha256": "90adeba67c414e63e874f9aca87e4b90b0f272593cce7faddd358743c102de75",
+      "report": "engine/build/campaign-001-world_read_global_vertices-aebfc0fc2f73/research-result.json",
+      "report_sha256": "541546e66d6ec8a0ce52ff428ccc774e957f914e89621acdbc31f3f45ff062ee",
+      "completed": true,
+      "candidate_size": 149,
+      "different_bytes": 10,
+      "status": "mismatch",
+      "elapsed_seconds": 1.362341,
+      "report_written_utc": "2026-09-13T13:29:00.5799127Z"
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "meaningful locals size record i",
+      "source_sha256": "68b2a18abf2420bbf5b490d3b7d69ba6fa87b2f09866dda44c19cf16bf64d9f1",
+      "report": "engine/build/campaign-001-world_read_global_vertices-c2fde7618cae/research-result.json",
+      "report_sha256": "52d000c1d55f7d1101f77c5d0c44ff71956443d3313e8d5d22b767e76841b6e8",
+      "completed": true,
+      "candidate_size": 149,
+      "different_bytes": 0,
+      "status": "relocation-adjusted-match",
+      "elapsed_seconds": 1.342391,
+      "report_written_utc": "2026-09-13T13:31:16.9513053Z"
+    }
+  ],
+  "candidate_sha256": "68b2a18abf2420bbf5b490d3b7d69ba6fa87b2f09866dda44c19cf16bf64d9f1",
+  "api_sha256": "d1e4233480e76dcdfcce59b1bf613f0039647ca90829be8559800b86e38399f7",
+  "fixture_sha256": "f33562f62e671a5edcaa18160253dfe426a93437ab410208435cf1d929641b55",
+  "best_report": "engine/build/campaign-001-world_read_global_vertices-c2fde7618cae/research-result.json",
+  "original_executed": false,
+  "native_fixture_executed": false,
+  "notes": "Complete relocation-adjusted match; parent will execute the authored fixture in locked Docker.",
+  "parent_review": {
+    "review": "research/campaign-019/review.json",
+    "candidate_body_unchanged": true,
+    "fixture_expanded": true,
+    "final_fixture_sha256": "9e6129ebad1d969a0a35cfaaf90fe75fe6aa849434f3bf4ff2c18dc556369f62",
+    "result_sha256": "9a51df839e4fdad3aa713c3954c40ae8697f5b8318441dbae5ad77739b179ade",
+    "final_native_report": "engine/build/campaign-001-world_read_global_vertices-6446b3c9d875/research-result.json",
+    "final_docker_report": "engine/build/campaign-001-world_read_global_vertices-f3f1ec6ca87a/research-result.json",
+    "fixture_checks": 112
+  }
+}

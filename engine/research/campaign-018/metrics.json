@@ -355,5 +355,9 @@
       "report_sha256": "a595cd57fbc0455e774d466bf5b4661ffb038bca01351fa8a9640b1216edc463",
       "stderr": ""
     }
-  ]
+  ],
+  "publication_source_commit": "3bb9c83c2bd3dc186f99a1a8f87a2e1fa34c0451",
+  "publication_confirmed_utc": "2026-09-13T13:22:03.808139+00:00",
+  "focused_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34759519545",
+  "focused_ci_conclusion": "success"
 }
