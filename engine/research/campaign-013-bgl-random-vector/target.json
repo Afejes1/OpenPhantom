@@ -1,0 +1,21 @@
+{
+  "id": "bgl_random_vector",
+  "address": 4324396,
+  "size": 36,
+  "body_size": 31,
+  "source": "src/bgl_random_vector.c",
+  "symbol": "_op_bgl_random_vector",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 22,
+      "address": 4324254,
+      "kind": "rel32-call",
+      "symbol": "_op_random_unit_xyz"
+    }
+  ]
+}

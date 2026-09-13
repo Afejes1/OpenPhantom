@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "campaign": "013",
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct bgl_random_vector at 0x0041FC2C",
+  "status": "frozen-layout-pending",
+  "started_utc": "2026-09-13T08:20:00Z",
+  "finished_utc": "2026-09-13T08:20:48.739Z",
+  "timestamp_basis": "Start approximate; finish observed UTC clock",
+  "compiler_invocations": 1,
+  "candidate_sha256": "c22d768b34145798368317174540af68241ef410d8ebb90b1fb40e54c2cb0ef0",
+  "api_sha256": "302d74fd5ebc92f0220b45a085105a5ce7e86f49b266d4f5cbe04af8166b31b4",
+  "fixture_sha256": "04f7b8330927cd9edba838a175143f668f23f10cf653a70c9f5c5b6b58626ee1",
+  "attempts": [
+    {
+      "number": 1,
+      "hypothesis": "Natural adjacent pointer forwarding reproduces the executable wrapper body; trailing INT3 alignment remains outside ordinary source.",
+      "source_sha256": "c22d768b34145798368317174540af68241ef410d8ebb90b1fb40e54c2cb0ef0",
+      "result": "Candidate compiled to31 bytes with one relocation; strict comparison stopped because complete target is36 bytes.",
+      "report": "engine/build/campaign-001-bgl_random_vector-ef3639d81600/research-result.json"
+    }
+  ],
+  "validation": {
+    "target_size": 36,
+    "target_body_size": 31,
+    "candidate_size": 31,
+    "binding_count": 1,
+    "strict_status": "complete function extent differs",
+    "fixture_status": "authored; coordinator final Docker pending",
+    "original_executed": false
+  },
+  "parent_verification": {
+    "status": "body-exact-layout-pending",
+    "fixture_checks": 6,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-bgl_random_vector-b723798b2c0c/research-result.json",
+    "docker_report": "engine/build/campaign-001-bgl_random_vector-43633af2e8e5/research-result.json",
+    "result": "result.json",
+    "result_sha256": "7c1b92a88f9c2a639812056139f0b555e02c81b4308a46b7c213331b4d878f70"
+  }
+}

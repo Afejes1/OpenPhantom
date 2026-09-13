@@ -287,3 +287,11 @@ copy/alias behavior, Ghidra metadata and remaining limitations.
 257 focused assertions pass. Original full spans are retained.
 See [results](research/campaign-012/results.md) for independent source review,
 copy and floating-point behavior, Ghidra metadata and remaining limits.
+
+## Campaign 013: body layout and final candidates
+
+Three verified bodies total130 bytes but retain35 unresolved original INT3 padding
+bytes in their full targets; no new full exact matches. Sequence is8/190bytes
+different, reference-axis61/245;526 focused checks and10 evidence checks pass.
+See [results](research/campaign-013/results.md) for unchanged full targets,
+independent body reproduction, callback/unsigned/floating behavior and limits.

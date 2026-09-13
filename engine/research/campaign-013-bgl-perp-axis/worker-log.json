@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "campaign": "013",
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct bgl_perp_axis at 0x0041FAA9",
+  "status": "frozen-research",
+  "started_utc": "2026-09-13T08:15:15Z",
+  "finished_utc": "2026-09-13T08:19:17.106Z",
+  "timestamp_basis": "Start approximate; finish observed UTC clock",
+  "compiler_invocations": 3,
+  "candidate_sha256": "0abd590f0308bf085530d593baae66155d48bb6a09627139e4a362e6b12febef",
+  "api_sha256": "505fe0b1b0b8b998891e5f7a3cc9bfcc21bc293dc5d55dc7784b648e4f6867f1",
+  "fixture_sha256": "c89c26f95cb323535436901e0b3598982ede4492349ec4c856a0d14738626995",
+  "attempts": [
+    {
+      "number": 1,
+      "hypothesis": "Natural repeated ternary absolute expressions and separate one-hot zero stores.",
+      "source_sha256": "007521ea3f40d255050b3be6702ab3263db96e76349e663c81e3e5fae3fbf11b",
+      "result": "Candidate255 versus target245; extent mismatch.",
+      "report": "engine/build/campaign-001-bgl_perp_axis-cae5465df7ce/research-result.json"
+    },
+    {
+      "number": 2,
+      "hypothesis": "Natural chained zero assignment may reproduce compact one-hot clearing.",
+      "source_sha256": "6dc185f2aa17925bdb4bf3cda2771d734fd6043e0d028aeb6c6c7805c9a3e9d0",
+      "result": "Candidate253 versus target245; extent mismatch.",
+      "report": "engine/build/campaign-001-bgl_perp_axis-be2c57193686/research-result.json"
+    },
+    {
+      "number": 3,
+      "hypothesis": "VC5 intrinsic memset for the 12-byte local axis may reproduce the observed compact zero stores.",
+      "source_sha256": "0abd590f0308bf085530d593baae66155d48bb6a09627139e4a362e6b12febef",
+      "result": "Complete245-byte comparison and all four bindings; 61 nonbinding bytes differ.",
+      "report": "engine/build/campaign-001-bgl_perp_axis-72a378bb019c/research-result.json"
+    }
+  ],
+  "validation": {
+    "target_size": 245,
+    "candidate_size": 245,
+    "binding_count": 4,
+    "different_bytes": 61,
+    "different_percent": 24.898,
+    "fixture_status": "authored; coordinator final Docker pending",
+    "original_executed": false
+  },
+  "parent_verification": {
+    "status": "research-candidate",
+    "fixture_checks": 211,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-bgl_perp_axis-f01844b977b3/research-result.json",
+    "docker_report": "engine/build/campaign-001-bgl_perp_axis-85620f640759/research-result.json",
+    "result": "result.json",
+    "result_sha256": "278e4a5c2d5bd86cf3b7c33c30589b435478ee9a1e1b9a78ca3c3ccf702e7b3a"
+  }
+}

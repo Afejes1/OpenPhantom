@@ -368,6 +368,26 @@
     {
       "address": "0x0041F9D6",
       "source": "research/campaign-012-bgl-transform-xyz/README.md"
+    },
+    {
+      "address": "0x00410825",
+      "source": "research/campaign-013-music-resume/README.md"
+    },
+    {
+      "address": "0x004178FA",
+      "source": "research/campaign-013-sound-is-muted/README.md"
+    },
+    {
+      "address": "0x0041060E",
+      "source": "research/campaign-013-music-set-sequence/README.md"
+    },
+    {
+      "address": "0x0041FAA9",
+      "source": "research/campaign-013-bgl-perp-axis/README.md"
+    },
+    {
+      "address": "0x0041FC2C",
+      "source": "research/campaign-013-bgl-random-vector/README.md"
     }
   ]
 }

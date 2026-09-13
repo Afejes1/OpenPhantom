@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "campaign": "013",
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct sound_is_muted at 0x004178FA",
+  "status": "frozen-layout-pending",
+  "started_utc": "2026-09-13T08:10:00Z",
+  "finished_utc": "2026-09-13T08:11:05.706Z",
+  "timestamp_basis": "Case start approximate; completion observed from UTC clock",
+  "compiler_invocations": 1,
+  "candidate_sha256": "f8e690e82a2ba2e427119dc45c248db59a772ab33338563ce360ab3ac776aec3",
+  "api_sha256": "c76a9613dbf1cb556f4f0e9df80a656710a8233c7cd8080b430961123baa5792",
+  "fixture_sha256": "8146428bccb5a2bf99f20ddc99882a89890f7d696f24646a5f86349ee5811239",
+  "attempts": [
+    {
+      "number": 1,
+      "hypothesis": "Two natural early returns preserve the exact-one disabled and zero initialized tests; trailing INT3 alignment remains outside ordinary source.",
+      "source_sha256": "f8e690e82a2ba2e427119dc45c248db59a772ab33338563ce360ab3ac776aec3",
+      "result": "Candidate compiled to 39 bytes with two relocations; strict comparison stopped because the immutable complete target is 54 bytes.",
+      "report": "engine/build/campaign-001-sound_is_muted-8b090c600fc3/research-result.json"
+    }
+  ],
+  "validation": {
+    "target_size": 54,
+    "target_body_size": 39,
+    "candidate_size": 39,
+    "binding_count": 2,
+    "strict_status": "complete function extent differs",
+    "fixture_status": "authored; coordinator final Docker pending",
+    "original_executed": false
+  },
+  "parent_verification": {
+    "status": "body-exact-layout-pending",
+    "fixture_checks": 96,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_is_muted-a94046e9e87e/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_is_muted-b6fb96dbb1bf/research-result.json",
+    "result": "result.json",
+    "result_sha256": "7c164f13e009b61b3a77f23b167f0d2f12558f488b4a90c2f9e22e905815958e"
+  }
+}

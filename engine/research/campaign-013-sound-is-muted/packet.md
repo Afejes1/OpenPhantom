@@ -1,0 +1,7 @@
+# Prepared target: sound_is_muted
+
+Team not done bp/bapsound.c; complete0x004178FA..0x00417930 span54 bytes, body39, 15 trailing INT3 bytes retained. All instructions, PE relocations and relative call boundaries independently verified before source. Original immutable hash remains pinned.
+
+int op_sound_is_muted(void). If op_sound_disabled==1 return1; otherwise if op_sound_initialized==0 return1; else return0. Exact-one disabled test, initialized zero test. No calls. Fixture explicit independent6x4 truth table disabled {1,0,-1,2,INT_MIN,INT_MAX}, initialized {0,1,-1,INT_MIN}; check exact return and both globals unchanged on repeatedcalls. No boolean coercion of disabled.
+
+Pinned VC5 C /Od /MT, no inline assembly/fakeframes/rawbytes/padding insertion/waivers/exclusions. Full target MUST remain unchanged even if natural object lacks original trailing padding: park and report body/layout separately, never count a shortened match as full exact. Worker owns candidate/api/behavior/README/worker-log only; parent handles fixedtargets/Git/sharedfiles/metadata. Eachcase15min/10compiles/five no-improvements; early park preferably after1-2 natural variants. Worker hardstop08:28UTC. All fixtures MUST print checks/failures and use full state and independent explicit oracles; memcpy for float bits, ordinary check function avoids VC5 C4127. Complete each fixture and notify per-case before moving next. Native compileonly, parent authoredfixture execution locked Docker.

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "campaign": "013",
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct music_set_sequence at 0x0041060E",
+  "status": "frozen-near-worker-native",
+  "started_utc": "2026-09-13T08:11:15Z",
+  "finished_utc": "2026-09-13T08:21:57.422Z",
+  "timestamp_basis": "Start approximate; finish observed UTC clock after final report",
+  "compiler_invocations": 3,
+  "candidate_sha256": "de822e8c2d4d86e2741d17ba94e2ed648fda29039ca4f59d0537c5bc435da270",
+  "api_sha256": "d6595c97fbe78932d05540dd0c6c9ad18de9935c9a65912465ce9cd9cb09fa01",
+  "fixture_sha256": "c4d617311dcf5d831615f8bb47bfa3f6748a2f839584384c6ec523dcd065b548",
+  "attempts": [
+    {
+      "number": 1,
+      "hypothesis": "Natural prepared control flow with count, result, and player declarations reproduces the original.",
+      "source_sha256": "7aee275a2e5fdf7e106f94569b5d9003b092d2dc26c25948bc3327b561145d80",
+      "result": "Complete 190-byte comparison with all 12 bindings adjusted; nine differing local-slot bytes, first at offset 44.",
+      "report": "engine/build/campaign-001-music_set_sequence-5ebe88f872f1/research-result.json"
+    },
+    {
+      "number": 2,
+      "hypothesis": "Conventional result, player, count declaration order may reproduce the observed player/count/result stack order.",
+      "source_sha256": "93d1b063a9ce9484542f5d9da6b7555451fbd8c18ebd4263300b6a338bfbccac",
+      "result": "No measurable improvement: complete 190-byte comparison, all 12 bindings, same nine differing bytes.",
+      "report": "engine/build/campaign-001-music_set_sequence-fcdb46591565/research-result.json"
+    },
+    {
+      "number": 3,
+      "hypothesis": "Use the source-level unsigned mode > 0 expression matching the original CMP/JBE gate.",
+      "source_sha256": "de822e8c2d4d86e2741d17ba94e2ed648fda29039ca4f59d0537c5bc435da270",
+      "result": "Improved complete190-byte comparison with all12 bindings from nine to eight differing nonbinding bytes; first difference moved to offset53.",
+      "report": "engine/build/campaign-001-music_set_sequence-e6036765d02b/research-result.json"
+    }
+  ],
+  "validation": {
+    "target_size": 190,
+    "candidate_size": 190,
+    "binding_count": 12,
+    "different_bytes": 8,
+    "different_percent": 4.2105,
+    "fixture_status": "authored; coordinator final Docker pending",
+    "original_executed": false
+  },
+  "parent_verification": {
+    "status": "research-candidate",
+    "fixture_checks": 168,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-music_set_sequence-e0216cb85896/research-result.json",
+    "docker_report": "engine/build/campaign-001-music_set_sequence-1773bcd609ef/research-result.json",
+    "result": "result.json",
+    "result_sha256": "ab974a1940fc586e9f31ed35bb8d9e977a5bd92525ec46465072a5dad777fd58"
+  }
+}

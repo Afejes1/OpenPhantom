@@ -1,0 +1,372 @@
+{
+  "schema": 1,
+  "campaign": "013",
+  "reviews": {
+    "music_resume": {
+      "status": "body-exact-layout-pending",
+      "complete_span": 75,
+      "source_review": "Reviewed real no-arg stdcall lock/unlock and cdecl resume thunk, live increment/decrement and final paused-clear timing. Three signed-depth fixture cases cover callback order, paused before/after each callback, live depth mutation and late unlock replacement; no source correction.",
+      "fixture_checks": 45,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true,
+      "body_diagnostic": {
+        "status": "body-exact-layout-pending",
+        "body_size": 60,
+        "full_size": 75,
+        "unresolved_trailing_bytes": 15,
+        "trailing_kind": "original INT3 inter-function padding",
+        "full_target_sha256": "79b9fab51bd0d1746d3517b943fa7b0e73364b61b361950c1eff539d22fa7057",
+        "native": {
+          "id": "music_resume",
+          "address": 4261925,
+          "size": 60,
+          "candidate_size": 60,
+          "body_size": 60,
+          "status": "relocation-adjusted-match",
+          "literal_function_match": false,
+          "layout_verified": false,
+          "adjusted_bytes": 32,
+          "object_sha256": "0be31a9bdd3f468ff23a9179de31dd0ee1fa6ea4645620d21dfda67d7f0ea2d5",
+          "compared_bytes": 28,
+          "dir32_bytes": 28,
+          "rel32_call_bytes": 4,
+          "internal_dir32_bytes": 0,
+          "different_bytes": 0,
+          "raw_bytes_equal": false,
+          "relocated_bytes_equal": true,
+          "reference_span_sha256": "442f3b3d61c868d34ef8e8c6944ab35efddc79d924f35525b893cd0bf47599eb",
+          "resolved_span_sha256": "442f3b3d61c868d34ef8e8c6944ab35efddc79d924f35525b893cd0bf47599eb"
+        },
+        "docker": {
+          "id": "music_resume",
+          "address": 4261925,
+          "size": 60,
+          "candidate_size": 60,
+          "body_size": 60,
+          "status": "relocation-adjusted-match",
+          "literal_function_match": false,
+          "layout_verified": false,
+          "adjusted_bytes": 32,
+          "object_sha256": "387c450c0e721b4c6576143188fbb4e5bc64af6e46c754fc957b74acbd3aea00",
+          "compared_bytes": 28,
+          "dir32_bytes": 28,
+          "rel32_call_bytes": 4,
+          "internal_dir32_bytes": 0,
+          "different_bytes": 0,
+          "raw_bytes_equal": false,
+          "relocated_bytes_equal": true,
+          "reference_span_sha256": "442f3b3d61c868d34ef8e8c6944ab35efddc79d924f35525b893cd0bf47599eb",
+          "resolved_span_sha256": "442f3b3d61c868d34ef8e8c6944ab35efddc79d924f35525b893cd0bf47599eb"
+        },
+        "full_function_exact": false,
+        "tool": "research/campaign-013/body_evidence.py",
+        "tool_sha256": "d3b36b09b2d1b1f40660d8858ee0fbd4716a5df82b30ffe39b1707cfeb4e4a92",
+        "method": "Both complete original spans and all operands are verified first; their extent mismatches remain. The existing strict comparer then checks the pre-recorded body extent against each preserved object. No target mutation, new compilation, inserted padding or byte exclusions."
+      }
+    },
+    "sound_is_muted": {
+      "status": "body-exact-layout-pending",
+      "complete_span": 54,
+      "source_review": "Reviewed exact disabled==1 test and initialized==0 fallback, no callbacks, exact0/1 return. Explicit6x4 table includes negative/extreme nonzero states, repeat calls and unchanged globals. Source independently agrees with complete instructions.",
+      "fixture_checks": 96,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true,
+      "body_diagnostic": {
+        "status": "body-exact-layout-pending",
+        "body_size": 39,
+        "full_size": 54,
+        "unresolved_trailing_bytes": 15,
+        "trailing_kind": "original INT3 inter-function padding",
+        "full_target_sha256": "88f81c6478fde13075d19105c8e09aeb4388e11c0945d3839860792a8b197494",
+        "native": {
+          "id": "sound_is_muted",
+          "address": 4290810,
+          "size": 39,
+          "candidate_size": 39,
+          "body_size": 39,
+          "status": "relocation-adjusted-match",
+          "literal_function_match": false,
+          "layout_verified": false,
+          "adjusted_bytes": 8,
+          "object_sha256": "4286db2786f725ab2b3c37b7f0beabbbdc9f1a949edea94190554538e32b5d31",
+          "compared_bytes": 31,
+          "dir32_bytes": 8,
+          "rel32_call_bytes": 0,
+          "internal_dir32_bytes": 0,
+          "different_bytes": 0,
+          "raw_bytes_equal": false,
+          "relocated_bytes_equal": true,
+          "reference_span_sha256": "534034ea611bb6a3ea8d54528617a665114939fb694c76832408e2f7b619b594",
+          "resolved_span_sha256": "534034ea611bb6a3ea8d54528617a665114939fb694c76832408e2f7b619b594"
+        },
+        "docker": {
+          "id": "sound_is_muted",
+          "address": 4290810,
+          "size": 39,
+          "candidate_size": 39,
+          "body_size": 39,
+          "status": "relocation-adjusted-match",
+          "literal_function_match": false,
+          "layout_verified": false,
+          "adjusted_bytes": 8,
+          "object_sha256": "f87cd15e027c4fe5d47765a9fbe50ee4b98c4b67bb7d819403bbfc28bdd6fd5e",
+          "compared_bytes": 31,
+          "dir32_bytes": 8,
+          "rel32_call_bytes": 0,
+          "internal_dir32_bytes": 0,
+          "different_bytes": 0,
+          "raw_bytes_equal": false,
+          "relocated_bytes_equal": true,
+          "reference_span_sha256": "534034ea611bb6a3ea8d54528617a665114939fb694c76832408e2f7b619b594",
+          "resolved_span_sha256": "534034ea611bb6a3ea8d54528617a665114939fb694c76832408e2f7b619b594"
+        },
+        "full_function_exact": false,
+        "tool": "research/campaign-013/body_evidence.py",
+        "tool_sha256": "d3b36b09b2d1b1f40660d8858ee0fbd4716a5df82b30ffe39b1707cfeb4e4a92",
+        "method": "Both complete original spans and all operands are verified first; their extent mismatches remain. The existing strict comparer then checks the pre-recorded body extent against each preserved object. No target mutation, new compilation, inserted padding or byte exclusions."
+      }
+    },
+    "bgl_perp_axis": {
+      "status": "research-candidate",
+      "complete_span": 245,
+      "source_review": "Reviewed repeated absolute expressions, minimum2/defaultindex0, finite strict ties and pinned x87 unordered comparison behavior. Original immediate decodes90.0f and full core callee ABIs use same local axis/matrix. Seven explicit finite/NaN tables check selection, callbackorder, complete local matrix, borrowed output, captured axis, alias and full owned state. Natural memset intrinsic is ordinary zero initialization, not inserted instructions.",
+      "fixture_checks": 211,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_random_vector": {
+      "status": "body-exact-layout-pending",
+      "complete_span": 36,
+      "source_review": "Reviewed full three-pointer downstream ABI against complete real callee and exact wrapper pointer arithmetic. Authored fixture uses owned float array, verifies exact X/Y/Z pointer identities, single callback and complete five-word output/neighbor bits.",
+      "fixture_checks": 6,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true,
+      "body_diagnostic": {
+        "status": "body-exact-layout-pending",
+        "body_size": 31,
+        "full_size": 36,
+        "unresolved_trailing_bytes": 5,
+        "trailing_kind": "original INT3 inter-function padding",
+        "full_target_sha256": "68eb81d87c7b9f6ef6add58f9d36feeec7e888adaab97d7fe155d74d0081d5f7",
+        "native": {
+          "id": "bgl_random_vector",
+          "address": 4324396,
+          "size": 31,
+          "candidate_size": 31,
+          "body_size": 31,
+          "status": "relocation-adjusted-match",
+          "literal_function_match": false,
+          "layout_verified": false,
+          "adjusted_bytes": 4,
+          "object_sha256": "a5461d7108dbbf52e6f49571b7d73055d9fab9c9a86881a56a8f1765293f7e9c",
+          "compared_bytes": 27,
+          "dir32_bytes": 0,
+          "rel32_call_bytes": 4,
+          "internal_dir32_bytes": 0,
+          "different_bytes": 0,
+          "raw_bytes_equal": false,
+          "relocated_bytes_equal": true,
+          "reference_span_sha256": "f22da5346561dda4261561933eedcffa00943a3c0530256559a4158e6ee4d232",
+          "resolved_span_sha256": "f22da5346561dda4261561933eedcffa00943a3c0530256559a4158e6ee4d232"
+        },
+        "docker": {
+          "id": "bgl_random_vector",
+          "address": 4324396,
+          "size": 31,
+          "candidate_size": 31,
+          "body_size": 31,
+          "status": "relocation-adjusted-match",
+          "literal_function_match": false,
+          "layout_verified": false,
+          "adjusted_bytes": 4,
+          "object_sha256": "ae763c30b72478531f0d3aaa1a0a994a9be2cc486d1c34d708e22077f738e06d",
+          "compared_bytes": 27,
+          "dir32_bytes": 0,
+          "rel32_call_bytes": 4,
+          "internal_dir32_bytes": 0,
+          "different_bytes": 0,
+          "raw_bytes_equal": false,
+          "relocated_bytes_equal": true,
+          "reference_span_sha256": "f22da5346561dda4261561933eedcffa00943a3c0530256559a4158e6ee4d232",
+          "resolved_span_sha256": "f22da5346561dda4261561933eedcffa00943a3c0530256559a4158e6ee4d232"
+        },
+        "full_function_exact": false,
+        "tool": "research/campaign-013/body_evidence.py",
+        "tool_sha256": "d3b36b09b2d1b1f40660d8858ee0fbd4716a5df82b30ffe39b1707cfeb4e4a92",
+        "method": "Both complete original spans and all operands are verified first; their extent mismatches remain. The existing strict comparer then checks the pre-recorded body extent against each preserved object. No target mutation, new compilation, inserted padding or byte exclusions."
+      }
+    },
+    "music_set_sequence": {
+      "status": "research-candidate",
+      "complete_span": 190,
+      "source_review": "Reviewed initialized and same-sequence guards before all callbacks; unsigned nonzero mode gate, count/threshold comparisons and complete player/radius ABI independently agree with original. Cache-before-lock, live depth/unlock replacement, return preservation, unsigned extremes, mode0/3, zero backend result and mutated preconditions are covered. Three natural variants retained, final unsigned gate improves9 to8 differences.",
+      "fixture_checks": 168,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    }
+  },
+  "issues": [
+    {
+      "type": "preparation_review",
+      "resolved": true,
+      "detail": "Worker read-only perp-axis triage called immediate0x42B40000 180 degrees; parent decoded and verified90.0 before source experiments. Target/fixture packet uses90.0. No incorrect candidate was compiled."
+    },
+    {
+      "type": "fixture_review",
+      "resolved": true,
+      "detail": "Parent added initial paused observation at lock entry, proving paused is not cleared before callbacks. Source unchanged."
+    },
+    {
+      "type": "fixture_review",
+      "resolved": true,
+      "detail": "Parent replaced computed mute boolean oracle with explicit independent6x4 expected table. No candidate change."
+    },
+    {
+      "type": "fixture_review",
+      "resolved": true,
+      "detail": "Parent added unsigned count/threshold extremes in both modes, mode3, ordinary backend-zero result, quietNaN radius forwarding, precondition mutations during player/count callbacks, mode0 full post-state and function-pointer preservation. Candidate source unchanged."
+    },
+    {
+      "type": "fixture_review",
+      "resolved": true,
+      "detail": "Parent added full input/output snapshots, exact output and independent local-axis pointer checks, axis stability after callback mutation, ABI sizes and two pinned-x87 quietNaN selection cases. The opaque matrix representation is48bytes and passed only by pointer; full affine math remains external. Candidate source unchanged."
+    },
+    {
+      "type": "fixture_review",
+      "resolved": true,
+      "detail": "Parent changed synthetic storage from unsigned-long array cast to float* into an actual float array initialized through memcpy. This makes vector pointer arithmetic follow its C object domain; complete bit/neighbor oracle retained. Candidate source unchanged."
+    }
+  ],
+  "parent_fixture_corrections": [
+    "music_resume",
+    "sound_is_muted",
+    "music_set_sequence",
+    "bgl_perp_axis",
+    "bgl_random_vector"
+  ],
+  "parent_source_corrections": [],
+  "team_readiness": [
+    {
+      "address": 4261925,
+      "reported_file": "bp/bapmusic.c",
+      "reported_name": "bapMusicResume",
+      "reported_status": "not_done",
+      "source_line": 1365
+    },
+    {
+      "address": 4290810,
+      "reported_file": "bp/bapsound.c",
+      "reported_name": "bapsound_isMuted",
+      "reported_status": "not_done",
+      "source_line": 1420
+    },
+    {
+      "address": 4261390,
+      "reported_file": "bp/bapmusic.c",
+      "reported_name": "bapMusicSetSequence",
+      "reported_status": "not_done",
+      "source_line": 1357
+    },
+    {
+      "address": 4324009,
+      "reported_file": "bp/bgl.c",
+      "reported_name": "bgl_perpAxis",
+      "reported_status": "not_done",
+      "source_line": 1511
+    },
+    {
+      "address": 4324396,
+      "reported_file": "bp/bgl.c",
+      "reported_name": "bgl_randomUnit",
+      "reported_status": "not_done",
+      "source_line": 1513
+    }
+  ],
+  "full_regression_run": false,
+  "preparation_only_deferred": [
+    {
+      "address": "0x0041FB9E",
+      "name": "sample_random_unit_vector",
+      "full_span": 142,
+      "reason": "x87 sqrt live-stack and precise finite rounding deserve separate bounded investigation; no compiler attempts."
+    }
+  ],
+  "listing_provenance": [
+    {
+      "id": "music_resume",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "sound_is_muted",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "music_set_sequence",
+      "fallback_used": false,
+      "docker_listing_has_terminators": false
+    },
+    {
+      "id": "bgl_perp_axis",
+      "fallback_used": false,
+      "docker_listing_has_terminators": false
+    },
+    {
+      "id": "bgl_random_vector",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    }
+  ],
+  "ghidra_metadata": {
+    "instance_port": 8192,
+    "program": "TPM/WMAIN.EXE",
+    "functions_renamed": 4,
+    "trustworthy_names_preserved": 1,
+    "plate_comments_updated": 5,
+    "prior_sequence_comment_preserved": true,
+    "project_saved": true,
+    "binary_bytes_changed": false,
+    "function_map_recorded_before_rename": true,
+    "caller_redecompilations": [
+      "detach_interactive_music",
+      "dispatch_interactive_music_subsystem_event",
+      "initialize_swift_menu_subsystem",
+      "FUN_004207f7",
+      "queue_linked_sphere_projectile_hit"
+    ]
+  },
+  "body_evidence_validation": {
+    "tool": "research/campaign-013/body_evidence.py",
+    "tool_sha256": "d3b36b09b2d1b1f40660d8858ee0fbd4716a5df82b30ffe39b1707cfeb4e4a92",
+    "test": "research/campaign-013/test_body_evidence.py",
+    "test_sha256": "cdd6e6efe07df0e79b463fb0fe49a4e828522115581c2d1414ba05e241bcb283",
+    "checks": 10,
+    "failures": 0,
+    "coverage": [
+      "two real paired-report positive cases",
+      "fresh paired reports",
+      "one-sided override rejected",
+      "changed target hash rejected",
+      "changed report hash rejected",
+      "failed fixture rejected",
+      "changed object hash rejected",
+      "changed body extent rejected",
+      "missing binding rejected"
+    ],
+    "read_only": true,
+    "shared_matcher_changed": false
+  },
+  "source_review_summary": {
+    "parent_candidate_source_corrections": 0,
+    "parent_fixture_strengthenings": 5,
+    "preparation_corrections": 1,
+    "worker_requested_final_sequence_variant": "Unsigned mode>0 directly matches original JBE evidence; third experiment remained inside original per-case window and improved9 to8 differences; no cap reset.",
+    "remaining": "Full inter-function INT3 placement pending for3bodymatches;8byte sequence near candidate and61byte reference-axis research remain parked; randomXYZ x87 implementation deferred."
+  }
+}

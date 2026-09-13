@@ -1,0 +1,62 @@
+[
+  {
+    "id": "music_resume",
+    "address": "00410825",
+    "original_name": "FUN_00410825",
+    "new_name": "resume_interactive_music",
+    "confidence": "HIGH",
+    "purpose": "resume interactive music",
+    "evidence": "Full body and boundary, real caller/callee ABI, all8 operands, full75-byte span including15 INT3 bytes independently checked against owned PE before implementation",
+    "full_span": 75,
+    "fixture_checks": 45,
+    "result_status": "body-exact-layout-pending"
+  },
+  {
+    "id": "sound_is_muted",
+    "address": "004178FA",
+    "original_name": "FUN_004178fa",
+    "new_name": "is_sound_muted",
+    "confidence": "HIGH",
+    "purpose": "is sound muted",
+    "evidence": "Full body and boundary, real caller/callee ABI, all2 operands, full54-byte span including15 INT3 bytes independently checked against owned PE before implementation",
+    "full_span": 54,
+    "fixture_checks": 96,
+    "result_status": "body-exact-layout-pending"
+  },
+  {
+    "id": "music_set_sequence",
+    "address": "0041060E",
+    "original_name": "request_interactive_music_sequence",
+    "new_name": "request_interactive_music_sequence",
+    "confidence": "HIGH",
+    "purpose": "request interactive music sequence",
+    "evidence": "Full body and boundary, real caller/callee ABI, all12 operands, full190-byte span including0 INT3 bytes independently checked against owned PE before implementation",
+    "full_span": 190,
+    "fixture_checks": 168,
+    "result_status": "research-candidate"
+  },
+  {
+    "id": "bgl_perp_axis",
+    "address": "0041FAA9",
+    "original_name": "FUN_0041faa9",
+    "new_name": "build_least_component_reference_axis",
+    "confidence": "HIGH",
+    "purpose": "build least component reference axis",
+    "evidence": "Full wrapper/corecallee and caller ABI; independently verified245-byte span with0 INT3 tail and4 operands; explicit immediate90.0 decode checked where applicable",
+    "full_span": 245,
+    "fixture_checks": 211,
+    "result_status": "research-candidate"
+  },
+  {
+    "id": "bgl_random_vector",
+    "address": "0041FC2C",
+    "original_name": "FUN_0041fc2c",
+    "new_name": "sample_random_unit_vector_components",
+    "confidence": "HIGH",
+    "purpose": "sample random unit vector components",
+    "evidence": "Full wrapper/corecallee and caller ABI; independently verified36-byte span with5 INT3 tail and1 operands; explicit immediate90.0 decode checked where applicable",
+    "full_span": 36,
+    "fixture_checks": 6,
+    "result_status": "body-exact-layout-pending"
+  }
+]

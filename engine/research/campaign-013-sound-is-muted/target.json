@@ -1,0 +1,27 @@
+{
+  "id": "sound_is_muted",
+  "address": 4290810,
+  "size": 54,
+  "body_size": 39,
+  "source": "src/sound_is_muted.c",
+  "symbol": "_op_sound_is_muted",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 6010024,
+      "kind": "dir32",
+      "symbol": "_op_sound_disabled"
+    },
+    {
+      "offset": 21,
+      "address": 6010040,
+      "kind": "dir32",
+      "symbol": "_op_sound_initialized"
+    }
+  ]
+}

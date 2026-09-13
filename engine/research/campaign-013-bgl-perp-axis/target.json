@@ -1,0 +1,39 @@
+{
+  "id": "bgl_perp_axis",
+  "address": 4324009,
+  "size": 245,
+  "body_size": 245,
+  "source": "src/bgl_perp_axis.c",
+  "symbol": "_op_bgl_perp_axis",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 59,
+      "address": 4882984,
+      "kind": "dir32",
+      "float32": 0.0
+    },
+    {
+      "offset": 128,
+      "address": 4882984,
+      "kind": "dir32",
+      "float32": 0.0
+    },
+    {
+      "offset": 214,
+      "address": 4706910,
+      "kind": "rel32-call",
+      "symbol": "_op_build_rotation"
+    },
+    {
+      "offset": 234,
+      "address": 4710873,
+      "kind": "rel32-call",
+      "symbol": "_op_rotate_basis"
+    }
+  ]
+}

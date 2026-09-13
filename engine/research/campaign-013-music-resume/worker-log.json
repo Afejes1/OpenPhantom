@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "campaign": "013",
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct music_resume at 0x00410825",
+  "status": "frozen-layout-pending",
+  "started_utc": "2026-09-13T08:07:16.813Z",
+  "finished_utc": "2026-09-13T08:08:57.139Z",
+  "timestamp_basis": "Observed UTC clock before packet inspection and after report read",
+  "compiler_invocations": 1,
+  "candidate_sha256": "9a0d8aac68e40613de52751650ba302dcba6264c62bfb29aa4a12d275479e269",
+  "api_sha256": "34e82ab0121137084c7c671fae669e28eeeb6c290e96f5cef75712eba7734013",
+  "fixture_sha256": "c3c3cbbe2eb36df4085f8714322b9de09ba205a8e3d07274b253742c7c58b36b",
+  "attempts": [
+    {
+      "number": 1,
+      "hypothesis": "Natural ordered calls and live global expressions reproduce the executable body; trailing INT3 alignment remains outside ordinary source.",
+      "source_sha256": "9a0d8aac68e40613de52751650ba302dcba6264c62bfb29aa4a12d275479e269",
+      "result": "Candidate compiled to 60 bytes with eight relocations; strict comparison stopped because the immutable complete target is 75 bytes.",
+      "report": "engine/build/campaign-001-music_resume-4e059cda180e/research-result.json"
+    }
+  ],
+  "validation": {
+    "target_size": 75,
+    "target_body_size": 60,
+    "candidate_size": 60,
+    "binding_count": 8,
+    "strict_status": "complete function extent differs",
+    "fixture_status": "authored; coordinator final Docker pending",
+    "original_executed": false
+  },
+  "parent_verification": {
+    "status": "body-exact-layout-pending",
+    "fixture_checks": 45,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-music_resume-1280288728c4/research-result.json",
+    "docker_report": "engine/build/campaign-001-music_resume-9f5332bb4692/research-result.json",
+    "result": "result.json",
+    "result_sha256": "629dfc9b422fa67efec94e39247c66268a1fdbe56aef8b8118f9164cab5a76d6"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "music_resume",
+  "address": 4261925,
+  "size": 75,
+  "body_size": 60,
+  "source": "src/music_resume.c",
+  "symbol": "_op_music_resume",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 9181044,
+      "kind": "dir32",
+      "symbol": "_op_music_lock"
+    },
+    {
+      "offset": 10,
+      "address": 6007696,
+      "kind": "dir32",
+      "symbol": "_op_music_lock_depth"
+    },
+    {
+      "offset": 18,
+      "address": 6007696,
+      "kind": "dir32",
+      "symbol": "_op_music_lock_depth"
+    },
+    {
+      "offset": 23,
+      "address": 4825876,
+      "kind": "rel32-call",
+      "symbol": "_op_backend_resume"
+    },
+    {
+      "offset": 29,
+      "address": 9180972,
+      "kind": "dir32",
+      "symbol": "_op_music_unlock"
+    },
+    {
+      "offset": 35,
+      "address": 6007696,
+      "kind": "dir32",
+      "symbol": "_op_music_lock_depth"
+    },
+    {
+      "offset": 44,
+      "address": 6007696,
+      "kind": "dir32",
+      "symbol": "_op_music_lock_depth"
+    },
+    {
+      "offset": 50,
+      "address": 6007700,
+      "kind": "dir32",
+      "symbol": "_op_music_paused"
+    }
+  ]
+}

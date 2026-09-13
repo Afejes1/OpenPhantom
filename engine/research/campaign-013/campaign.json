@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "campaign": "013",
+  "status": "complete-focused-checkpoint",
+  "started_utc": "2026-09-13T08:01:24Z",
+  "worker_stop_utc": "2026-09-13T08:28:00Z",
+  "stop_utc": "2026-09-13T08:38:00Z",
+  "baseline_commit": "714f9a0f46f3f0b13e158fc15b86ece570ffb700",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "weekly_shared_account_first_observation": {
+    "used_percent": 35,
+    "note": "Rounded shared account meter at preceding checkpoint."
+  },
+  "assignments": [
+    {
+      "id": "music_resume",
+      "address": "0x00410825",
+      "case": "research/campaign-013-music-resume",
+      "status": "body-exact-layout-pending",
+      "result": "research/campaign-013-music-resume/result.json"
+    },
+    {
+      "id": "sound_is_muted",
+      "address": "0x004178FA",
+      "case": "research/campaign-013-sound-is-muted",
+      "status": "body-exact-layout-pending",
+      "result": "research/campaign-013-sound-is-muted/result.json"
+    },
+    {
+      "id": "music_set_sequence",
+      "address": "0x0041060E",
+      "case": "research/campaign-013-music-set-sequence",
+      "status": "research-candidate",
+      "result": "research/campaign-013-music-set-sequence/result.json"
+    },
+    {
+      "id": "bgl_perp_axis",
+      "address": "0x0041FAA9",
+      "case": "research/campaign-013-bgl-perp-axis",
+      "status": "research-candidate",
+      "result": "research/campaign-013-bgl-perp-axis/result.json"
+    },
+    {
+      "id": "bgl_random_vector",
+      "address": "0x0041FC2C",
+      "case": "research/campaign-013-bgl-random-vector",
+      "status": "body-exact-layout-pending",
+      "result": "research/campaign-013-bgl-random-vector/result.json"
+    }
+  ],
+  "worker_handoff_completed_utc": "2026-09-13T08:23:21Z",
+  "worker_handoff_timestamp_basis": "Coordinator clock observation after all five frozen handoffs; upper bound. Per-case observed worker clocks and report write times remain separately recorded.",
+  "final_verification_completed_utc": "2026-09-13T08:24:11.832841+00:00"
+}
