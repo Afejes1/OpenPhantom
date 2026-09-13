@@ -1,0 +1,45 @@
+{
+  "id": "bgl_transform_point",
+  "address": 4323702,
+  "size": 96,
+  "body_size": 96,
+  "source": "src/bgl_transform_point.c",
+  "symbol": "_op_bgl_transform_point",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 7,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    },
+    {
+      "offset": 21,
+      "address": 4710873,
+      "kind": "rel32-call",
+      "symbol": "_op_rotate_basis"
+    },
+    {
+      "offset": 29,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    },
+    {
+      "offset": 44,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    },
+    {
+      "offset": 59,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    }
+  ]
+}

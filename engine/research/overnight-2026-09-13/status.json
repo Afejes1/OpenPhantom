@@ -135,8 +135,8 @@
       "published_utc": "2026-09-13T07:25:52.861968+00:00"
     }
   ],
-  "current_work": "Campaign011 published:10 complete exact functions(467 bytes),1 research candidate;209 focused checks and featureCI pass.",
-  "resume": "Continue one Sol/medium worker on untouched BGL wrappers or other small team-not-done helpers. Exclude all pending/exact/parked addresses. Campaign011 color trio is preparation-only deferred for original assembly/rounding analysis; no compiler caps consumed. Preserve existing function caps and full extents. Set each turn<=45 minutes with10 minutes for publication. Stop new implementation08:38 UTC; final morning report and pause08:48 UTC.",
+  "current_work": "Campaign012 independently verified:10 exact functions/520 bytes plus1 research;257 checks. Preparing commit/featureCI; published totals remain through011 until push confirmation.",
+  "resume": "Finish publishing campaign012 and update checkpoint totals, then use one worker on prepared music-resume/sound-muted or untouched helpers. Preserve all per-case caps. Final implementationstop08:38UTC, final report/pause08:48UTC.",
   "interruptions": [],
   "original_game_executed": false,
   "full_regression_run": false,

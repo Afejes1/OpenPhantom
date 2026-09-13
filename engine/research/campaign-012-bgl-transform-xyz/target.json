@@ -1,0 +1,21 @@
+{
+  "id": "bgl_transform_xyz",
+  "address": 4323798,
+  "size": 97,
+  "body_size": 97,
+  "source": "src/bgl_transform_xyz.c",
+  "symbol": "_op_bgl_transform_xyz",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 56,
+      "address": 4323702,
+      "kind": "rel32-call",
+      "symbol": "_op_bgl_transform_point"
+    }
+  ]
+}

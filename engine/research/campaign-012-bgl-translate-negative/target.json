@@ -1,0 +1,21 @@
+{
+  "id": "bgl_translate_negative",
+  "address": 4323423,
+  "size": 54,
+  "body_size": 54,
+  "source": "src/bgl_translate_negative.c",
+  "symbol": "_op_bgl_translate_negative",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 43,
+      "address": 4323339,
+      "kind": "rel32-call",
+      "symbol": "_op_bgl_translate_vector"
+    }
+  ]
+}

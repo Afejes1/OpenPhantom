@@ -1,0 +1,27 @@
+{
+  "id": "bgl_multiply",
+  "address": 4323576,
+  "size": 24,
+  "body_size": 24,
+  "source": "src/bgl_multiply.c",
+  "symbol": "_op_bgl_multiply",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 9,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    },
+    {
+      "offset": 15,
+      "address": 4709645,
+      "kind": "rel32-call",
+      "symbol": "_op_multiply"
+    }
+  ]
+}

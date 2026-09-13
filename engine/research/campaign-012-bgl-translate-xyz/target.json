@@ -1,0 +1,21 @@
+{
+  "id": "bgl_translate_xyz",
+  "address": 4323383,
+  "size": 40,
+  "body_size": 40,
+  "source": "src/bgl_translate_xyz.c",
+  "symbol": "_op_bgl_translate_xyz",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 29,
+      "address": 4323339,
+      "kind": "rel32-call",
+      "symbol": "_op_bgl_translate_vector"
+    }
+  ]
+}

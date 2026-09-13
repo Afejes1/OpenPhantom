@@ -1,0 +1,21 @@
+{
+  "id": "bgl_rotate_xyz",
+  "address": 4323295,
+  "size": 44,
+  "body_size": 44,
+  "source": "src/bgl_rotate_xyz.c",
+  "symbol": "_op_bgl_rotate_xyz",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 33,
+      "address": 4323228,
+      "kind": "rel32-call",
+      "symbol": "_op_bgl_rotate_axis"
+    }
+  ]
+}

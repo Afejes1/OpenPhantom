@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "case": "bgl_rotate_xyz",
+  "status": "frozen-exact-candidate",
+  "started_utc": "2026-09-13T07:40:06.677456Z",
+  "finished_utc": "2026-09-13T07:49:26.645592Z",
+  "timestamp_basis": "started_utc is the earliest owned-file filesystem timestamp; finished_utc is captured by the documentation script after final fixture/source evidence collection.",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural packet-order C.",
+      "source_sha256": "3d7e036cd27e7c15f0978c9ef5b5bd1b8f7e442ad838b9cb84580f70f38342ed",
+      "object_sha256": "2f635a9441966d1fbce05b04fb13e2ea932b1223b5c5072fdeeed49d32415284",
+      "report": "engine/build/campaign-001-bgl_rotate_xyz-65d113270f41/research-result.json",
+      "report_written_utc": "2026-09-13T07:44:27.010498Z",
+      "result": {
+        "id": "bgl_rotate_xyz",
+        "address": 4323295,
+        "size": 44,
+        "candidate_size": 44,
+        "body_size": 44,
+        "status": "relocation-adjusted-match",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 4,
+        "object_sha256": "2f635a9441966d1fbce05b04fb13e2ea932b1223b5c5072fdeeed49d32415284",
+        "compared_bytes": 40,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 4,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 0,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": true,
+        "reference_span_sha256": "d006843ef1f60fc6692846bbdf3a442aa1effb65438ccdf96bac2d1de43596f8",
+        "resolved_span_sha256": "d006843ef1f60fc6692846bbdf3a442aa1effb65438ccdf96bac2d1de43596f8"
+      }
+    }
+  ],
+  "candidate_sha256": "3d7e036cd27e7c15f0978c9ef5b5bd1b8f7e442ad838b9cb84580f70f38342ed",
+  "api_sha256": "32e86560b593a585263db0bb88a0561caa5674709c842ad9ce3587f9a9f8bcbf",
+  "fixture_sha256": "49c4e33d79fcf12309ea2b8082210fd1b8eb2aa0eb8ee3b2e859615b13edb570",
+  "fixture_execution": "not executed by worker; coordinator reviews and executes in locked Docker",
+  "original_game_executed": false,
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 29,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-bgl_rotate_xyz-1b7548f52bfe/research-result.json",
+    "docker_report": "engine/build/campaign-001-bgl_rotate_xyz-1445105c397b/research-result.json",
+    "result": "result.json",
+    "result_sha256": "ce55114ef0777fc9f85c8d5f504b8a81ec13a188f9f61d88eaf8a304d6e01516"
+  }
+}

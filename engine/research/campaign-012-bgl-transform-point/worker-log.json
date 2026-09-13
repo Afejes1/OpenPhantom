@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "case": "bgl_transform_point",
+  "status": "frozen-exact-candidate",
+  "started_utc": "2026-09-13T07:40:06.689455Z",
+  "finished_utc": "2026-09-13T07:49:26.645592Z",
+  "timestamp_basis": "started_utc is the earliest owned-file filesystem timestamp; finished_utc is captured by the documentation script after final fixture/source evidence collection.",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural packet-order C.",
+      "source_sha256": "3528af71f92034060024f1816b43fbbf266ccb1dcd849da65056d2bb0cfb8efa",
+      "object_sha256": "e29be0a18ef8a2a32dcd583939bdc326bd418927f7e33154f15dd7a2de2fde01",
+      "report": "engine/build/campaign-001-bgl_transform_point-60d6ac00fb8f/research-result.json",
+      "report_written_utc": "2026-09-13T07:45:16.384465Z",
+      "result": {
+        "id": "bgl_transform_point",
+        "address": 4323702,
+        "size": 96,
+        "candidate_size": 96,
+        "body_size": 96,
+        "status": "relocation-adjusted-match",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 20,
+        "object_sha256": "e29be0a18ef8a2a32dcd583939bdc326bd418927f7e33154f15dd7a2de2fde01",
+        "compared_bytes": 76,
+        "dir32_bytes": 16,
+        "rel32_call_bytes": 4,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 0,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": true,
+        "reference_span_sha256": "67548e2f1e2173486d75bde76e2c56700b0fe9d339a9a64c8c09e7f94b9845a1",
+        "resolved_span_sha256": "67548e2f1e2173486d75bde76e2c56700b0fe9d339a9a64c8c09e7f94b9845a1"
+      }
+    }
+  ],
+  "candidate_sha256": "3528af71f92034060024f1816b43fbbf266ccb1dcd849da65056d2bb0cfb8efa",
+  "api_sha256": "fbd286dea0a5c0877267f85fdc5cdaa0607f8ef12d281d8a6e1c5128bb18f9bc",
+  "fixture_sha256": "1762c275a6a9bb05d7a826fb74287c4c022f780c1c89162401cbffacc7111f1d",
+  "fixture_execution": "not executed by worker; coordinator reviews and executes in locked Docker",
+  "original_game_executed": false,
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 28,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-bgl_transform_point-3d069f7b3292/research-result.json",
+    "docker_report": "engine/build/campaign-001-bgl_transform_point-f2dad9921ec4/research-result.json",
+    "result": "result.json",
+    "result_sha256": "74e8e207c6ec5a1fe74c5e364fe73bc831f3c6e989168bd16feb3070a20ffe70"
+  }
+}

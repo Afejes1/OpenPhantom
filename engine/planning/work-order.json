@@ -324,6 +324,50 @@
     {
       "address": "0x0041FA68",
       "source": "research/campaign-011-bgl-get-translation-xyz/README.md"
+    },
+    {
+      "address": "0x0041F79C",
+      "source": "research/campaign-012-bgl-rotate-axis/README.md"
+    },
+    {
+      "address": "0x0041F7DF",
+      "source": "research/campaign-012-bgl-rotate-xyz/README.md"
+    },
+    {
+      "address": "0x0041F80B",
+      "source": "research/campaign-012-bgl-translate-vector/README.md"
+    },
+    {
+      "address": "0x0041F837",
+      "source": "research/campaign-012-bgl-translate-xyz/README.md"
+    },
+    {
+      "address": "0x0041F85F",
+      "source": "research/campaign-012-bgl-translate-negative/README.md"
+    },
+    {
+      "address": "0x0041F895",
+      "source": "research/campaign-012-bgl-scale-xyz/README.md"
+    },
+    {
+      "address": "0x0041F8D7",
+      "source": "research/campaign-012-bgl-scale-vector/README.md"
+    },
+    {
+      "address": "0x0041F8F8",
+      "source": "research/campaign-012-bgl-multiply/README.md"
+    },
+    {
+      "address": "0x0041F942",
+      "source": "research/campaign-012-bgl-rotate-point/README.md"
+    },
+    {
+      "address": "0x0041F976",
+      "source": "research/campaign-012-bgl-transform-point/README.md"
+    },
+    {
+      "address": "0x0041F9D6",
+      "source": "research/campaign-012-bgl-transform-xyz/README.md"
     }
   ]
 }

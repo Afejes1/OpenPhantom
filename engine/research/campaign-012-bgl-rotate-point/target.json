@@ -1,0 +1,27 @@
+{
+  "id": "bgl_rotate_point",
+  "address": 4323650,
+  "size": 52,
+  "body_size": 52,
+  "source": "src/bgl_rotate_point.c",
+  "symbol": "_op_bgl_rotate_point",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 7,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    },
+    {
+      "offset": 21,
+      "address": 4710873,
+      "kind": "rel32-call",
+      "symbol": "_op_rotate_basis"
+    }
+  ]
+}

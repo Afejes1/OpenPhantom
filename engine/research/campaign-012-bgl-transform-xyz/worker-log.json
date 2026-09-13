@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "case": "bgl_transform_xyz",
+  "status": "frozen-research-candidate",
+  "started_utc": "2026-09-13T07:40:06.690456Z",
+  "finished_utc": "2026-09-13T07:49:26.645592Z",
+  "timestamp_basis": "started_utc is the earliest owned-file filesystem timestamp; finished_utc is captured by the documentation script after final fixture/source evidence collection.",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural packet-order C.",
+      "source_sha256": "5da236cb3cbc6a235c205a827a3fb22afb2e8f54a5f89eb88674f72b218e26cf",
+      "object_sha256": "c9146143daed7e8bc6033981744b79a8d1c14307c459391b08b92622d5b649c6",
+      "report": "engine/build/campaign-001-bgl_transform_xyz-970913aa0d3c/research-result.json",
+      "report_written_utc": "2026-09-13T07:45:23.177426Z",
+      "result": {
+        "id": "bgl_transform_xyz",
+        "address": 4323798,
+        "size": 97,
+        "candidate_size": 97,
+        "body_size": 97,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 4,
+        "object_sha256": "c9146143daed7e8bc6033981744b79a8d1c14307c459391b08b92622d5b649c6",
+        "compared_bytes": 93,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 4,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 19,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": false,
+        "reference_span_sha256": "e4e9bb5d236f7268863bbb47e86509bd064792e46b4018d069dca7e713409863",
+        "resolved_span_sha256": "558bb0c83e6f1bc35f0d022f0f410671baabaff8220460bd0d06b8b97836afc5",
+        "reason": "non-relocation bytes differ",
+        "first_difference_offset": 26
+      }
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Explicit null-Z branch written in target branch order.",
+      "source_sha256": "6ea7dd396ae4b084e6c04ea74021d43efcf2b4616516ecea4963257aa0ca0a3d",
+      "object_sha256": "9323b42c010c04c56d926993650b573328d35fb1dfadba0f77750b7e1fdf20e4",
+      "report": "engine/build/campaign-001-bgl_transform_xyz-b55b0caceb34/research-result.json",
+      "report_written_utc": "2026-09-13T07:46:00.254695Z",
+      "result": {
+        "id": "bgl_transform_xyz",
+        "address": 4323798,
+        "size": 97,
+        "candidate_size": 91,
+        "body_size": 97,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 0,
+        "object_sha256": "9323b42c010c04c56d926993650b573328d35fb1dfadba0f77750b7e1fdf20e4",
+        "reason": "complete function extent differs"
+      }
+    }
+  ],
+  "candidate_sha256": "5da236cb3cbc6a235c205a827a3fb22afb2e8f54a5f89eb88674f72b218e26cf",
+  "api_sha256": "431c81627260afec08eed2d0d7f6b9ab8a5f1f3e008114c8a57aa372a28927b8",
+  "fixture_sha256": "84d8e62b2fe2b829542360366a3f9c962c9e9ba99f1a104841f906b5e0012ccf",
+  "fixture_execution": "not executed by worker; coordinator reviews and executes in locked Docker",
+  "original_game_executed": false,
+  "limitations": [
+    "Best natural source has complete 97-byte extent and all bindings but 19 nonbinding differences; the 91-byte second attempt was rejected and the first source restored."
+  ],
+  "parent_verification": {
+    "status": "research-candidate",
+    "fixture_checks": 37,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-bgl_transform_xyz-641fbf8e4400/research-result.json",
+    "docker_report": "engine/build/campaign-001-bgl_transform_xyz-a80ccae80d68/research-result.json",
+    "result": "result.json",
+    "result_sha256": "12a202be8523868b62034f19146779f2dc3cf95c4e3bc06e54e8a7d7c5a1304e"
+  }
+}

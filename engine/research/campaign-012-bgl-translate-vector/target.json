@@ -1,0 +1,33 @@
+{
+  "id": "bgl_translate_vector",
+  "address": 4323339,
+  "size": 44,
+  "body_size": 44,
+  "source": "src/bgl_translate_vector.c",
+  "symbol": "_op_bgl_translate_vector",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 15,
+      "address": 4706746,
+      "kind": "rel32-call",
+      "symbol": "_op_build_translation"
+    },
+    {
+      "offset": 27,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    },
+    {
+      "offset": 33,
+      "address": 4709645,
+      "kind": "rel32-call",
+      "symbol": "_op_multiply"
+    }
+  ]
+}

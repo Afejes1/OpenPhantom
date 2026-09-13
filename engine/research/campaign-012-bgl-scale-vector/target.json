@@ -1,0 +1,21 @@
+{
+  "id": "bgl_scale_vector",
+  "address": 4323543,
+  "size": 33,
+  "body_size": 33,
+  "source": "src/bgl_scale_vector.c",
+  "symbol": "_op_bgl_scale_vector",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 24,
+      "address": 4323477,
+      "kind": "rel32-call",
+      "symbol": "_op_bgl_scale_xyz"
+    }
+  ]
+}

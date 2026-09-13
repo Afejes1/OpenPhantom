@@ -1,0 +1,324 @@
+{
+  "schema": 1,
+  "campaign": "012",
+  "reviews": {
+    "bgl_rotate_axis": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 67,
+      "source_review": "Reviewed complete wrapper and both real callee ABIs. Natural C zero guard matches pinned x87 zero and unordered skip; local48-byte matrix and late current reload preserved. Fixture checks zero/negative-zero/quietNaN skip and signed finite/infinite pass-through, exact argument bits, full prepared matrix, callback order and full post-state.",
+      "fixture_checks": 73,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_rotate_xyz": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 44,
+      "source_review": "Reviewed four-float ABI and bit-preserving local vector capture before two-argument call. Independent four-row word oracle includes zeros, quietNaN payload, infinities, subnormal and callback-owned input mutations.",
+      "fixture_checks": 29,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_translate_vector": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 44,
+      "source_review": "Reviewed both real callee ABIs and exact borrowed input pointer. Complete synthetic48-byte matrix, builder/multiply order, current pointer replacement and all owned state checked.",
+      "fixture_checks": 15,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_translate_xyz": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 40,
+      "source_review": "Reviewed three-float ABI, complete local vector capture and no gates. Four explicit bit-pattern rows preserve signedzero, quietNaN, infinities/subnormal and caller storage mutations.",
+      "fixture_checks": 25,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_translate_negative": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 54,
+      "source_review": "Reviewed native unary floating negation and one-argument borrowed-to-local transition. Fixture uses memcpy bit oracles for signed finite values, both zeros and quietNaN sign; callback input changes leave captured local unchanged.",
+      "fixture_checks": 11,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_scale_xyz": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 66,
+      "source_review": "Reviewed ordinary standard memcpy intrinsic and correct diagonal indices0/4/8 in real48-byte matrix. Complete synthetic identity oracle, bit-preserving arguments, borrowed current, full callback matrix changes and identity preservation checked.",
+      "fixture_checks": 15,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_scale_vector": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 33,
+      "source_review": "Reviewed three-float cdecl forwarding with no arithmetic or gate. Bit oracles include zeros/quietNaN/signed finite values; callback input mutations preserve captured arguments and complete post-input storage.",
+      "fixture_checks": 9,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_multiply": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 24,
+      "source_review": "Reviewed complete two-pointer core ABI and no local copies. Fixture covers distinct and same valid owned matrix pointers, complete storage and callback current replacement.",
+      "fixture_checks": 9,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_rotate_point": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 52,
+      "source_review": "Reviewed core out/input/matrix argument order and separate local before full12-byte output copy. Explicit arbitrary floating representation outputs, callback input mutation, neighbors and full matrix storage verified.",
+      "fixture_checks": 6,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_transform_point": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 96,
+      "source_review": "Reviewed full core ABI, live current reloads after helper, three local additions before final point copy. Independent explicit11/22/33 oracle and full matrix/point storage cover distinct point and valid old/current-new translation aliases with callback mutation.",
+      "fixture_checks": 28,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_transform_xyz": {
+      "status": "research-candidate",
+      "complete_span": 97,
+      "source_review": "Reviewed complete three-pointer ABI, required X/Y and optional Z, positive-zero fallback and original X/Y/Z store order. Independent six-row full-storage oracle covers null Z, all alias, X/Y alias, X/Z alias and Y/Z alias, preserved neighbor and callback mutations. Natural conditional candidate remains research with19 differences over full97 bytes; shorter second variant rejected.",
+      "fixture_checks": 37,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    }
+  },
+  "issues": [
+    {
+      "type": "fixture_review",
+      "ids": [
+        "bgl_rotate_axis",
+        "bgl_rotate_xyz",
+        "bgl_translate_vector",
+        "bgl_translate_xyz"
+      ],
+      "resolved": true,
+      "detail": "Initial worker fixtures were smoke-only and lacked receipt check counts. Parent replaced them with complete storage, bit-preservation, pointer/order and callback mutation oracles using memcpy instead of float/integer pointer punning. Candidate source unchanged."
+    },
+    {
+      "type": "fixture_review",
+      "resolved": true,
+      "detail": "Parent strengthened scale and point full-storage oracles; transform-point covers distinct/old-current/new-current translation aliases and live callback changes; transform-XYZ uses explicit six-row complete output/null/alias table. Candidate sources unchanged."
+    }
+  ],
+  "full_regression_run": false,
+  "parent_fixture_corrections": [
+    "bgl_rotate_axis",
+    "bgl_rotate_xyz",
+    "bgl_translate_vector",
+    "bgl_translate_xyz",
+    "bgl_scale_xyz",
+    "bgl_scale_vector",
+    "bgl_rotate_point",
+    "bgl_transform_point",
+    "bgl_transform_xyz"
+  ],
+  "parent_source_corrections": [],
+  "team_readiness": [
+    {
+      "address": 4323228,
+      "reported_file": "bp/bgl.c",
+      "reported_name": "bgl_rotateAxis",
+      "reported_status": "not_done",
+      "source_line": 1496
+    },
+    {
+      "address": 4323295,
+      "reported_file": "bp/bgl.c",
+      "reported_name": "bgl_rotate",
+      "reported_status": "not_done",
+      "source_line": 1497
+    },
+    {
+      "address": 4323339,
+      "reported_file": "bp/bgl.c",
+      "reported_name": "bgl_translateV",
+      "reported_status": "not_done",
+      "source_line": 1498
+    },
+    {
+      "address": 4323383,
+      "reported_file": "bp/bgl.c",
+      "reported_name": "bgl_translate",
+      "reported_status": "not_done",
+      "source_line": 1499
+    },
+    {
+      "address": 4323423,
+      "reported_file": "bp/bgl.c",
+      "reported_name": "bgl_translateNegV",
+      "reported_status": "not_done",
+      "source_line": 1500
+    },
+    {
+      "address": 4323477,
+      "reported_file": "bp/bgl.c",
+      "reported_name": "bgl_scale",
+      "reported_status": "not_done",
+      "source_line": 1501
+    },
+    {
+      "address": 4323543,
+      "reported_file": "bp/bgl.c",
+      "reported_name": "bgl_scaleV",
+      "reported_status": "not_done",
+      "source_line": 1502
+    },
+    {
+      "address": 4323576,
+      "reported_file": "bp/bgl.c",
+      "reported_name": "bgl_multiply",
+      "reported_status": "not_done",
+      "source_line": 1503
+    },
+    {
+      "address": 4323650,
+      "reported_file": "bp/bgl.c",
+      "reported_name": "bgl_rotatePoint",
+      "reported_status": "not_done",
+      "source_line": 1506
+    },
+    {
+      "address": 4323702,
+      "reported_file": "bp/bgl.c",
+      "reported_name": "bgl_transformPoint",
+      "reported_status": "not_done",
+      "source_line": 1507
+    },
+    {
+      "address": 4323798,
+      "reported_file": "bp/bgl.c",
+      "reported_name": "bgl_transformXYZ",
+      "reported_status": "not_done",
+      "source_line": 1508
+    }
+  ],
+  "preparation_only_deferred": [
+    {
+      "address": "0x00410825",
+      "name": "bapMusicResume",
+      "full_span": 75,
+      "body_size": 60,
+      "reason": "Read-only inventory complete; deferred to next bounded queue, no compiler attempts."
+    },
+    {
+      "address": "0x004178FA",
+      "name": "bapsound_isMuted",
+      "full_span": 54,
+      "body_size": 39,
+      "reason": "Read-only inventory complete; deferred to next bounded queue, no compiler attempts."
+    }
+  ],
+  "extra_parent_verification_attempts": [
+    {
+      "id": "bgl_rotate_axis",
+      "candidate_compiles": 2,
+      "fixture_compiles": 1,
+      "fixture_executions": 0,
+      "native_report": "engine/build/campaign-001-bgl_rotate_axis-369e425884e4/research-result.json",
+      "native_report_sha256": "da3dea6c8a6f651c0a662650abc748951ae66da13ac4622eb9fd1f13685a3f5f",
+      "docker_report": "engine/build/campaign-001-bgl_rotate_axis-1897a41b2039/research-result.json",
+      "docker_report_sha256": "cf371408369ebe8d37fd5d78d9217eca52d9fd058ff8bfb8795d1f92785f2de1",
+      "reason": "Parent fixture do/while(0) check macro triggers VC5 C4127 under /WX; replaced by ordinary check function in four fixtures, no warning waiver and no candidate changes."
+    }
+  ],
+  "ghidra_metadata": {
+    "instance_port": 8192,
+    "program": "TPM/WMAIN.EXE",
+    "functions_renamed": 11,
+    "plate_comments_updated": 11,
+    "existing_comments": "All eleven plate comments were empty before updates.",
+    "project_saved": true,
+    "binary_bytes_changed": false,
+    "caller_redecompilations": [
+      "FUN_00456cbb",
+      "FUN_00439ab6",
+      "prepare_emitter_spawn",
+      "project_ripple_onto_b3d_surface"
+    ],
+    "function_map_recorded_before_rename": true
+  },
+  "source_review_summary": {
+    "candidate_source_corrections": 0,
+    "parent_fixture_strengthenings": 9,
+    "worker_fixture_strengthenings": 7,
+    "worker_fixture_strengthenings_note": "Seven remaining smoke drafts were strengthened by worker after coordinator feedback, before final review; five then received further parent coverage.",
+    "conclusion": "Keep one worker: source compilation is efficient but coordinator fixture review remains material. Require per-case complete fixtures and early handoff, not one end-of-queue source-only notification."
+  },
+  "listing_provenance": [
+    {
+      "id": "bgl_rotate_axis",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_rotate_xyz",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_translate_vector",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_translate_xyz",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_translate_negative",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_scale_xyz",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_scale_vector",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_multiply",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_rotate_point",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_transform_point",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_transform_xyz",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    }
+  ]
+}

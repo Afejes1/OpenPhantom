@@ -1,0 +1,39 @@
+{
+  "id": "bgl_rotate_axis",
+  "address": 4323228,
+  "size": 67,
+  "body_size": 67,
+  "source": "src/bgl_rotate_axis.c",
+  "symbol": "_op_bgl_rotate_axis",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 4882984,
+      "kind": "dir32",
+      "float32": 0.0
+    },
+    {
+      "offset": 37,
+      "address": 4706910,
+      "kind": "rel32-call",
+      "symbol": "_op_build_rotation"
+    },
+    {
+      "offset": 50,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    },
+    {
+      "offset": 56,
+      "address": 4709645,
+      "kind": "rel32-call",
+      "symbol": "_op_multiply"
+    }
+  ]
+}

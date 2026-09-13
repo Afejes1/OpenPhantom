@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "campaign": "012",
+  "status": "complete-focused-checkpoint",
+  "started_utc": "2026-09-13T07:27:19Z",
+  "worker_stop_utc": "2026-09-13T08:02:19Z",
+  "stop_utc": "2026-09-13T08:12:19Z",
+  "baseline_commit": "e1151d1e611c184f0d80521d601ec4d46b8a9486",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "weekly_shared_account_first_observation": {
+    "used_percent": 34,
+    "note": "Shared rounded account meter at preceding checkpoint."
+  },
+  "assignments": [
+    {
+      "id": "bgl_rotate_axis",
+      "address": "0x0041F79C",
+      "case": "research/campaign-012-bgl-rotate-axis",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-012-bgl-rotate-axis/result.json"
+    },
+    {
+      "id": "bgl_rotate_xyz",
+      "address": "0x0041F7DF",
+      "case": "research/campaign-012-bgl-rotate-xyz",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-012-bgl-rotate-xyz/result.json"
+    },
+    {
+      "id": "bgl_translate_vector",
+      "address": "0x0041F80B",
+      "case": "research/campaign-012-bgl-translate-vector",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-012-bgl-translate-vector/result.json"
+    },
+    {
+      "id": "bgl_translate_xyz",
+      "address": "0x0041F837",
+      "case": "research/campaign-012-bgl-translate-xyz",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-012-bgl-translate-xyz/result.json"
+    },
+    {
+      "id": "bgl_translate_negative",
+      "address": "0x0041F85F",
+      "case": "research/campaign-012-bgl-translate-negative",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-012-bgl-translate-negative/result.json"
+    },
+    {
+      "id": "bgl_scale_xyz",
+      "address": "0x0041F895",
+      "case": "research/campaign-012-bgl-scale-xyz",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-012-bgl-scale-xyz/result.json"
+    },
+    {
+      "id": "bgl_scale_vector",
+      "address": "0x0041F8D7",
+      "case": "research/campaign-012-bgl-scale-vector",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-012-bgl-scale-vector/result.json"
+    },
+    {
+      "id": "bgl_multiply",
+      "address": "0x0041F8F8",
+      "case": "research/campaign-012-bgl-multiply",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-012-bgl-multiply/result.json"
+    },
+    {
+      "id": "bgl_rotate_point",
+      "address": "0x0041F942",
+      "case": "research/campaign-012-bgl-rotate-point",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-012-bgl-rotate-point/result.json"
+    },
+    {
+      "id": "bgl_transform_point",
+      "address": "0x0041F976",
+      "case": "research/campaign-012-bgl-transform-point",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-012-bgl-transform-point/result.json"
+    },
+    {
+      "id": "bgl_transform_xyz",
+      "address": "0x0041F9D6",
+      "case": "research/campaign-012-bgl-transform-xyz",
+      "status": "research-candidate",
+      "result": "research/campaign-012-bgl-transform-xyz/result.json"
+    }
+  ],
+  "worker_handoff_completed_utc": "2026-09-13T07:50:00Z",
+  "worker_handoff_timestamp_basis": "Coordinator clock observation after completed logs and frozen sources; upper bound. Per-case report timestamps retained separately.",
+  "final_verification_completed_utc": "2026-09-13T07:53:28.607042+00:00"
+}

@@ -280,3 +280,10 @@ source ABI, callback state, listing provenance and unresolved layout differences
 209 focused assertions pass. Full rendering alignment is retained.
 See [results](research/campaign-011/results.md) for independent source review,
 copy/alias behavior, Ghidra metadata and remaining limitations.
+
+## Campaign 012: transform operation wrappers
+
+10 complete exact functions (520 bytes), 0 near and 1 research;
+257 focused assertions pass. Original full spans are retained.
+See [results](research/campaign-012/results.md) for independent source review,
+copy and floating-point behavior, Ghidra metadata and remaining limits.
