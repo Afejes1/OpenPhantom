@@ -6,7 +6,12 @@ int op_shield_load(void)
     OP_SHIELD *cursor;
     int header_count;
     int slot;
+#if defined(_MSC_VER) && _MSC_VER == 1100
     int count;
+#else
+    /* Supplemental compiler cannot prove the first iteration after the positive-count gate. */
+    int count = 0;
+#endif
     OP_SHIELD_SAVE payload;
     if (!op_save_read(&header_count, 4))
         return 1;
