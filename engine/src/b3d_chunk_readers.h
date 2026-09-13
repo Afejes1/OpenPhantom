@@ -24,7 +24,8 @@ typedef struct OP_B3D_HEADER
     unsigned int animation_name_payload_size;
     unsigned char before_sprites[0x220];
     unsigned int sprite_ref_count;
-    unsigned char before_emitters[0x14];
+    unsigned int skip_bytes;
+    unsigned char before_emitters[0x10];
     unsigned int emitter_count;
     unsigned int emitter_record_size;
     unsigned char before_payload[0x510];
@@ -138,6 +139,16 @@ typedef char
     op_b3d_world_animation_name_payload_size[offsetof(OP_B3D_WORLD, animation_name_payload_size) == 0x1ec ? 1 : -1];
 typedef char op_b3d_world_animation_names[offsetof(OP_B3D_WORLD, animation_names) == 0x1f0 ? 1 : -1];
 typedef char op_b3d_world_actor_resources[offsetof(OP_B3D_WORLD, actor_resources) == 0x1f4 ? 1 : -1];
+
+typedef char op_b3d_long_width[(sizeof(long) == 4) ? 1 : -1];
+typedef char op_b3d_header_skip[(offsetof(OP_B3D_HEADER, skip_bytes) == 0x2d4) ? 1 : -1];
+extern const char *op_chunk_tags[23];
+int op_compare_tag(const char *left, const char *right, unsigned int limit);
+int op_stream_seek(void *handle, long offset, int origin);
+void op_release(void *memory);
+int op_world_read_chunk_header(OP_B3D_STREAM *stream, unsigned int *payload_size);
+int op_world_skip_chunk(OP_B3D_STREAM *stream, unsigned int bytes);
+int op_world_load_via_skip(OP_B3D_STREAM *stream, void *unused_world, OP_B3D_HEADER *header);
 
 void *op_allocate(unsigned int bytes);
 /* Actual stream backend uses signed size/count arithmetic; four cdecl args. */

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "acceptance-008",
+  "status": "clean-build-pending",
+  "started_utc": "2026-09-13T16:38:37Z",
+  "implementation_stop_utc": "2026-09-13T17:13:37Z",
+  "deadline_utc": "2026-09-13T17:23:37Z",
+  "baseline_commit": "30ed72ec808dce511d85512bf3c0f5a7adcba3a4",
+  "functions": [
+    "world_read_chunk_header",
+    "world_skip_chunk",
+    "world_load_via_skip"
+  ],
+  "planned_promotions": 3,
+  "full_span_bytes": 237,
+  "verified_operands": 8,
+  "registered_before": 40,
+  "evidence_records_before": 28,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "new_warning_waivers": [],
+  "tooling_tests_passed": 100,
+  "focused_runner_tests_passed": 19
+}

@@ -1568,6 +1568,98 @@
           "symbol": "_op_shields"
         }
       ]
+    },
+    {
+      "id": "world_read_chunk_header",
+      "address": 4312448,
+      "size": 112,
+      "body_size": 112,
+      "source": "src/world_read_chunk_header.c",
+      "symbol": "_op_world_read_chunk_header",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 35,
+          "address": 4654982,
+          "kind": "rel32-call",
+          "symbol": "_op_stream_read"
+        },
+        {
+          "offset": 65,
+          "address": 4895040,
+          "symbol": "_op_chunk_tags"
+        },
+        {
+          "offset": 75,
+          "address": 4826656,
+          "kind": "rel32-call",
+          "symbol": "_op_compare_tag"
+        }
+      ]
+    },
+    {
+      "id": "world_skip_chunk",
+      "address": 4312560,
+      "size": 93,
+      "body_size": 93,
+      "source": "src/world_skip_chunk.c",
+      "symbol": "_op_world_skip_chunk",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 26,
+          "address": 4827744,
+          "kind": "rel32-call",
+          "symbol": "_op_stream_seek"
+        },
+        {
+          "offset": 40,
+          "address": 4805264,
+          "kind": "rel32-call",
+          "symbol": "_op_allocate"
+        },
+        {
+          "offset": 65,
+          "address": 4654982,
+          "kind": "rel32-call",
+          "symbol": "_op_stream_read"
+        },
+        {
+          "offset": 77,
+          "address": 4805714,
+          "kind": "rel32-call",
+          "symbol": "_op_release"
+        }
+      ]
+    },
+    {
+      "id": "world_load_via_skip",
+      "address": 4318394,
+      "size": 32,
+      "body_size": 32,
+      "source": "src/world_load_via_skip.c",
+      "symbol": "_op_world_load_via_skip",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 18,
+          "address": 4312560,
+          "kind": "rel32-call",
+          "symbol": "_op_world_skip_chunk"
+        }
+      ]
     }
   ]
 }

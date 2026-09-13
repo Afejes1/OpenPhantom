@@ -1,0 +1,23 @@
+{
+  "prior40_target_and_registry_entries_unchanged": true,
+  "sources": [
+    {
+      "id": "world_read_chunk_header",
+      "research_sha256": "5562c631c14303b03402da9c7827345c8ad4b2d8c24bf597c6d4da16f301d3bd",
+      "source_sha256": "2b31295932fe509354207be0d4e27f8ae90e3043836232e12c83ac46aff4c6e0",
+      "changes": "Canonical include/type names and formatting; skip additionally has explicit signed read-count cast"
+    },
+    {
+      "id": "world_skip_chunk",
+      "research_sha256": "e210805b9f8e43d41e57a33d5ea23f39e64aa20a15e95e3c851c0bd01ca90554",
+      "source_sha256": "2771ab029bfb3607a6055927a577c76b27a7dea1e74e783b78448489be3e4edb",
+      "changes": "Canonical include/type names and formatting; skip additionally has explicit signed read-count cast"
+    },
+    {
+      "id": "world_load_via_skip",
+      "research_sha256": "e74d2f67281eed9c365101738d6340b5e4debacc935a7088f2ae5f67b97df898",
+      "source_sha256": "9ada6ff746558131ce2df4d400af5573bac6b937179954720f0100281ef0e795",
+      "changes": "Canonical include/type names and formatting; skip additionally has explicit signed read-count cast"
+    }
+  ]
+}

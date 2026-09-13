@@ -121,6 +121,7 @@ static void clip_flag_tests(void)
 #include "world_readers_behavior.c"
 #include "world_controls_behavior.c"
 #include "world_names_behavior.c"
+#include "world_chunks_behavior.c"
 #include "focused_accessors_behavior.c"
 
 int main(void)
@@ -167,6 +168,7 @@ int main(void)
     failures += op_test_world_readers();
     failures += op_test_world_controls();
     failures += op_test_world_names();
+    failures += op_test_world_chunks();
     failures += op_test_focused_accessors();
     if (failures) return 1;
 #ifdef OP_VC5_BEHAVIOR

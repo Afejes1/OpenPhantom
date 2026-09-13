@@ -752,6 +752,63 @@
         "Stable source ID for visibility bypass also represents the no-save/transient flag"
       ],
       "exceptions": []
+    },
+    {
+      "id": "world_read_chunk_header",
+      "module": "b3d_chunk_stream",
+      "analysis_name": "read_b3d_chunk_header",
+      "purpose": "Read a twelve-byte chunk header and scan twenty-three live tag pointers",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/world-chunks-acceptance.md",
+        "research/campaign-020-world-read-chunk-header/README.md"
+      ],
+      "behavior_tests": [
+        "tests/world_chunks_behavior.c"
+      ],
+      "quirks": [
+        "A zero read returns minus one without a final payload store; any nonzero read scans bounded tags",
+        "The tag table remains live across compare callbacks; unknown tags return twenty-three"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "world_skip_chunk",
+      "module": "b3d_chunk_stream",
+      "analysis_name": "skip_b3d_chunk",
+      "purpose": "Seek or allocate, read and release a chunk payload",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/world-chunks-acceptance.md",
+        "research/campaign-017-world-skip-chunk/README.md"
+      ],
+      "behavior_tests": [
+        "tests/world_chunks_behavior.c"
+      ],
+      "quirks": [
+        "Actual cdecl ABI has two arguments; seek and backend failures are ignored",
+        "The explicit unsigned-to-signed read count cast preserves the original 32-bit word; the allocated local is retained through callbacks"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "world_load_via_skip",
+      "module": "b3d_chunk_stream",
+      "analysis_name": "load_b3d_chunk_via_skip",
+      "purpose": "Skip the header length at offset 0x2d4 and return success",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/world-chunks-acceptance.md",
+        "research/campaign-018-world-load-via-skip/README.md"
+      ],
+      "behavior_tests": [
+        "tests/world_chunks_behavior.c"
+      ],
+      "quirks": [
+        "The unused world pointer is not accessed; offset 0x800 is a distinct field",
+        "The integration fixture links the actual reconstructed skip helper"
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

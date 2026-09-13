@@ -4,6 +4,10 @@
 #include <stdio.h>
 #include <string.h>
 
+static int world_chunks_active;
+static void *world_chunks_allocate(unsigned int bytes);
+static int world_chunks_read(void *destination, int size, int count, OP_B3D_STREAM *stream);
+
 static int world_names_active;
 static void *world_names_allocate(unsigned int bytes);
 static int world_names_read(void *destination, int size, int count, OP_B3D_STREAM *stream);
@@ -140,6 +144,8 @@ static void world_readers_reset_callbacks(void)
 
 void *op_allocate(unsigned int bytes)
 {
+    if (world_chunks_active)
+        return world_chunks_allocate(bytes);
     if (world_names_active)
         return world_names_allocate(bytes);
     ++world_readers_allocate_calls;
@@ -167,6 +173,8 @@ int op_stream_read(void *destination, int element_size, int count, OP_B3D_STREAM
 {
     int call;
 
+    if (world_chunks_active)
+        return world_chunks_read(destination, element_size, count, stream);
     if (world_names_active)
         return world_names_read(destination, element_size, count, stream);
 
