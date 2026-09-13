@@ -11,3 +11,5 @@ Category: **exact-function-match**. The locked-Docker authored fixture passes
 Research evidence is separate from immutable acceptance. No original executable
 was run, and whole-executable placement remains pending. No excluded bytes or
 new warning waivers; all mismatches remain unaccepted.
+
+The canonical shared implementation subsequently passed [Acceptance004](../acceptance-004/results.md), recorded in immutable event24. The receipt here remains the original focused research snapshot.

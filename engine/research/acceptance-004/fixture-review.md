@@ -21,3 +21,5 @@ wrapped products, negative success, middle failure, live count/size changes and
 captured-pointer behavior are retained. Candidate bodies were not changed.
 
 Compilation, exact comparison and immutable acceptance remain pending.
+
+Acceptance complete: final fixture SHA256eb4e40c6a6fe2db59bf75be995f9bf01480e89771a3f1a1e70020b541d756a38 passed488 checks,0 failures. All28 registered spans match; see result.json and immutable event24.

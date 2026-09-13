@@ -325,3 +325,11 @@ checks pass. Existing names were retained and Ghidra comments saved.
 [Results](research/campaign-019/results.md) preserve categories, failed fixture
 compilation and every final source/toolchain receipt. Acceptance004 will cover
 only the two exact readers, with the original local mismatch-success behavior.
+
+## Acceptance004
+
+The exact global/local vertex readers now share canonical types with the accepted
+world readers. All28 registered spans remain exact, and488 combined world-reader
+checks pass with immutable record24 and successful full CI. The original local
+payload-mismatch success return is preserved. See
+[acceptance004](research/acceptance-004/results.md).

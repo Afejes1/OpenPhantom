@@ -17,7 +17,7 @@
   "accepted_functions_at_start": 21,
   "evidence_records_at_start": 21,
   "weekly_shared_usage_start_percent": 39,
-  "promotions": 5,
+  "promotions": 7,
   "new_exact_functions": 14,
   "new_exact_bytes": 1457,
   "checkpoints": [
@@ -86,13 +86,24 @@
       "source_commit": "40d7db760a3054977bfae6d83c925706fe4b3c85",
       "focused_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34760951329",
       "focused_ci_conclusion": "success"
+    },
+    {
+      "id": "acceptance-004",
+      "status": "passed",
+      "completed_utc": "2026-09-13T14:09:04.320154+00:00",
+      "source_commit": "340adfe0f0436734fd47c250a3b5b7993489ab07",
+      "promotions": 2,
+      "new_exact_functions": 0,
+      "registered_total": 28,
+      "result": "../acceptance-004/result.json",
+      "full_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34761658187"
     }
   ],
-  "current_work": "Acceptance004 integration in progress: two exact vertex readers. Campaign019 published with successful focused CI.",
+  "current_work": "Acceptance004 passed:28 accepted functions/24 immutable records. Campaign020 prepared for six world lifecycle/control functions.",
   "original_game_executed": false,
   "weekly_shared_usage_latest_percent": 43,
-  "last_checkpoint_utc": "2026-09-13T13:49:01.701050+00:00",
-  "last_source_commit": "40d7db760a3054977bfae6d83c925706fe4b3c85",
+  "last_checkpoint_utc": "2026-09-13T14:09:04.320154+00:00",
+  "last_source_commit": "340adfe0f0436734fd47c250a3b5b7993489ab07",
   "usage_observed_utc": "2026-09-13T13:59:42.009190+00:00",
   "usage_observation_scope": "Rounded account-wide weekly usage;39 at window start,43 now, not isolated campaign billing.",
   "new_near_matches": 3,

@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **24** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **945**.
+Our last recorded matches cover **26** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **943**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -43,8 +43,8 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x0041D5A3 | bapworld_loadPals | not_done | Recorded match: [world_read_palettes](../src/world_read_palettes.c) |
 | 0x0041D5FD | bapworld_loadDlg | not_done | Queued; no local match recorded |
 | 0x0041D696 | bapworld_loadGmap | not_done | Queued; no local match recorded |
-| 0x0041D8EE | bapworld_loadGvrt | not_done | Queued; no local match recorded |
-| 0x0041D983 | bapworld_loadLvrt | not_done | Queued; no local match recorded |
+| 0x0041D8EE | bapworld_loadGvrt | not_done | Recorded match: [world_read_global_vertices](../src/world_read_global_vertices.c) |
+| 0x0041D983 | bapworld_loadLvrt | not_done | Recorded match: [world_read_local_vertices](../src/world_read_local_vertices.c) |
 | 0x0041DA1B | bapworld_loadMat | not_done | Queued; no local match recorded |
 | 0x0041DAB0 | bapworld_loadTex | not_done | Queued; no local match recorded |
 | 0x0041DBD1 | bapworld_loadLights | not_done | Queued; no local match recorded |
@@ -73,7 +73,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 
 | Reported file | Team not done | Local recorded matches within that list | Remaining |
 |---|---|---|---|
-| bp/bapworld.c | 39 | 3 | 36 |
+| bp/bapworld.c | 39 | 5 | 34 |
 | bp/bapsound.c | 44 | 0 | 44 |
 | bp/bapmusic.c | 17 | 0 | 17 |
 | bp/bapdraw.c | 18 | 7 | 11 |
