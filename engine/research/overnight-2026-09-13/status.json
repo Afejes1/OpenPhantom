@@ -53,15 +53,28 @@
       "ci_run_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34736926013",
       "full_regression": "skipped by feature-branch workflow",
       "published_utc": "2026-09-13T04:02:07Z"
+    },
+    {
+      "phase": "campaign-006",
+      "commit": "b9933b4c0b8d0d454ba90a69e5b97bc06d3dc484",
+      "ci": "passed",
+      "new_exact_functions": 10,
+      "new_exact_bytes": 603,
+      "focused_checks": 258,
+      "new_research_candidates": 0,
+      "result": "research/campaign-006/results.md",
+      "ci_run_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34738009636",
+      "full_regression": "skipped by feature-branch workflow",
+      "published_utc": "2026-09-13T04:30:50.350645+00:00"
     }
   ],
-  "current_work": "Campaign006 complete: ten full-span matches,603 bytes,258 focused checks; preparing publication and feature CI.",
-  "resume": "Publish campaign006, then prepare Campaign007 from untouched team-not-done sound helpers. Preserve all earlier caps.",
+  "current_work": "Campaign006 published and CI passed: ten complete matches,603 bytes,258 focused checks. Campaign007 preparation is next.",
+  "resume": "Begin Campaign007 with the same Sol/medium worker. Prepare untouched team-not-done bp/bapsound.c helpers from engine/docs/team-work-order.md, starting with driver/volume queries and suitable lifecycle wrappers. Inspect complete spans including alignment. Ten assignments per batch when practical; caps unchanged. Do not repeat completed Campaign005/006 functions or exhausted earlier candidates.",
   "interruptions": [],
   "original_game_executed": false,
   "full_regression_run": false,
   "final_report": null,
   "new_research_candidates": 3,
   "weekly_account_usage_observed_percent": 27,
-  "last_campaign_finished_utc": "2026-09-13T04:03:17.506876+00:00"
+  "last_campaign_finished_utc": "2026-09-13T04:30:50.350661+00:00"
 }
