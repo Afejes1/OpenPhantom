@@ -1,0 +1,7 @@
+# Acceptance021 results
+
+Frame preparation is accepted: one previously exact function, 70 complete bytes and nine verified operands, bringing 111 to 112 registered functions. Build `20260913-192635-e58f915d` at `b4799bcc304e56e060cc5b8fc226883e63f76483` passes every full span and shared authored fixture on its first integrated build. [Event44](../../evidence/runs/000044-e0aaffd6bd87b253.json) records the source snapshot. [Full supplemental CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34789850941) passes on that exact source. Independent review found no material issue.
+
+The connected frame fixture exercises 240 cases and reports 12,781 checks. Three independent world loads, the late camera transform pointer, exact zero surface argument, live gathered count and real final submission are verified. Callback mutation can enable or suppress the final draw, change its inputs, and alter the last-result global; the actual submit still stores the backend return when drawing occurs. NULL worlds test forwarding through authored backends only, not validity for the original full rendering path.
+
+This completes integration of all seven previously exact queued functions, totaling 988 bytes across this continuation. These are promotions, not seven newly reconstructed functions. No byte exclusions, warning waivers or original game execution occurred. Whole-executable identity remains pending.
