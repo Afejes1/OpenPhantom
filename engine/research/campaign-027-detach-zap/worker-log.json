@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "detach_zap",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T18:53:15.216053+00:00",
+      "finished_utc": "2026-09-13T18:53:16.933354+00:00",
+      "returncode": 0,
+      "source_sha256": "ca2519003e2d2d416ed2d182c4cba005c3bcd036bba02a6a8a87f2a65344619e",
+      "report": "engine/build/campaign-001-detach_zap-8b893660ab5e/research-result.json",
+      "report_sha256": "aac1bdd4cb19aa3bc230f2fcabacaecc9e3e63220ee07bae1b72734dfb055fdd",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 116,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.498825,
+      "stderr": ""
+    }
+  ]
+}

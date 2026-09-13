@@ -1,0 +1,21 @@
+{
+  "id": "detach_zap",
+  "address": 4445407,
+  "size": 116,
+  "body_size": 116,
+  "source": "src/detach_zap.c",
+  "symbol": "_op_detach_zap",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 38,
+      "address": 7123336,
+      "symbol": "_op_zaps",
+      "kind": "dir32"
+    }
+  ]
+}

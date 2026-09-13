@@ -1,0 +1,27 @@
+{
+  "id": "zap_shutdown",
+  "address": 4443426,
+  "size": 23,
+  "body_size": 23,
+  "source": "src/zap_shutdown.c",
+  "symbol": "_op_zap_shutdown",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 7131016,
+      "symbol": "_op_zap_sprite",
+      "kind": "dir32"
+    },
+    {
+      "offset": 9,
+      "address": 4363764,
+      "symbol": "_op_release_sprite",
+      "kind": "rel32-call"
+    }
+  ]
+}

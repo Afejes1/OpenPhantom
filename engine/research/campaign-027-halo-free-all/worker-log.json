@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "halo_free_all",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T18:53:23.428062+00:00",
+      "finished_utc": "2026-09-13T18:53:25.068672+00:00",
+      "returncode": 0,
+      "source_sha256": "06bdf9339694afcfe96acac90cc63253c67657aad2cbf951a6d3c6cd32344d6b",
+      "report": "engine/build/campaign-001-halo_free_all-960efa08e041/research-result.json",
+      "report_sha256": "eb2a04d8f0f1cafd6a3442bf7da4f3b85411362a577f3606bbf9ff5f2dfe0d5d",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 110,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.418585,
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "zap_has_actor",
+  "candidate": "candidate.c",
+  "symbol": "_op_zap_has_actor",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

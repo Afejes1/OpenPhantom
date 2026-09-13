@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "campaign-027",
+  "completed_utc": "2026-09-13T18:58:06.689403+00:00",
+  "exact_functions": 6,
+  "exact_bytes": 461,
+  "research_candidates": 0,
+  "fixture_checks": 23949,
+  "functions": [
+    {
+      "id": "detach_zap",
+      "team_status": "not_done",
+      "evidence_category": "exact-function-match",
+      "address": 4445407,
+      "full_span_bytes": 116,
+      "candidate_bytes": 116,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 4614,
+      "implementation_compiles": 1,
+      "result": "research/campaign-027-detach-zap/result.json"
+    },
+    {
+      "id": "halo_free_all",
+      "team_status": "not_done",
+      "evidence_category": "exact-function-match",
+      "address": 4432315,
+      "full_span_bytes": 110,
+      "candidate_bytes": 110,
+      "verified_operands": 7,
+      "different_bytes": 0,
+      "checks": 648,
+      "implementation_compiles": 1,
+      "result": "research/campaign-027-halo-free-all/result.json"
+    },
+    {
+      "id": "zap_has_actor",
+      "team_status": "not_done",
+      "evidence_category": "exact-function-match",
+      "address": 4445554,
+      "full_span_bytes": 131,
+      "candidate_bytes": 131,
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "checks": 18435,
+      "implementation_compiles": 1,
+      "result": "research/campaign-027-zap-has-actor/result.json"
+    },
+    {
+      "id": "zap_reset",
+      "team_status": "not_done",
+      "evidence_category": "exact-function-match",
+      "address": 4445523,
+      "full_span_bytes": 31,
+      "candidate_bytes": 31,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 120,
+      "implementation_compiles": 1,
+      "result": "research/campaign-027-zap-reset/result.json"
+    },
+    {
+      "id": "zap_shutdown",
+      "team_status": "not_done",
+      "evidence_category": "exact-function-match",
+      "address": 4443426,
+      "full_span_bytes": 23,
+      "candidate_bytes": 23,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 72,
+      "implementation_compiles": 1,
+      "result": "research/campaign-027-zap-shutdown/result.json"
+    },
+    {
+      "id": "zap_startup",
+      "team_status": "not_done",
+      "evidence_category": "exact-function-match",
+      "address": 4443376,
+      "full_span_bytes": 50,
+      "candidate_bytes": 50,
+      "verified_operands": 5,
+      "different_bytes": 0,
+      "checks": 60,
+      "implementation_compiles": 1,
+      "result": "research/campaign-027-zap-startup/result.json"
+    }
+  ]
+}

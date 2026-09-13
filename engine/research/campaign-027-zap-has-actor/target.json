@@ -1,0 +1,35 @@
+{
+  "id": "zap_has_actor",
+  "address": 4445554,
+  "size": 131,
+  "body_size": 131,
+  "source": "src/zap_has_actor.c",
+  "symbol": "_op_zap_has_actor",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 45,
+      "address": 7123336,
+      "symbol": "_op_zaps",
+      "kind": "dir32"
+    },
+    {
+      "offset": 60,
+      "address": 7123336,
+      "symbol": "_op_zaps",
+      "kind": "dir32",
+      "addend": 16
+    },
+    {
+      "offset": 105,
+      "address": 7123336,
+      "symbol": "_op_zaps",
+      "kind": "dir32",
+      "addend": 20
+    }
+  ]
+}

@@ -361,3 +361,7 @@ Six additional team-not_done functions match 871 full function bytes under the l
 ## Campaign026 letterbox and halo lifecycle
 
 Seven untouched functions match 455 complete bytes; 9,954 focused checks cover all eight candidates. Halo resource setup, shutdown and per-object detach have evidence-backed identities. Serializer fixtures check the full 28-byte block and callback mutations; object rendering reloads flags and the signed shield slot after halo drawing. Overlay restore remains research because its eight-byte alignment tail is unresolved. See [Campaign026](research/campaign-026/results.md).
+
+## Campaign027 zapline and halo cleanup
+
+Six untouched functions match461 complete bytes with23,949 focused checks. The active/mode endpoint query and active endpoint detach share a64-record,120-byte pool; resource lifecycle and full reset contracts are independently reviewed. Halo free-all body behavior is verified while its caller provenance remains unresolved. See [Campaign027](research/campaign-027/results.md). Registered acceptance remains69 functions until the next combined checkpoint.

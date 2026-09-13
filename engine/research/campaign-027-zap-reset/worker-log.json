@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "zap_reset",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T18:53:20.195725+00:00",
+      "finished_utc": "2026-09-13T18:53:21.813471+00:00",
+      "returncode": 0,
+      "source_sha256": "19532efafeccc07e9f1825eff4455eea442f04284cc7f8da6f768b3d4a738b87",
+      "report": "engine/build/campaign-001-zap_reset-3a402d196ccc/research-result.json",
+      "report_sha256": "8e5990ad7207c07d35837a3f44bf8bc0bd6c9077d043f79da717491c546379de",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 31,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.401572,
+      "stderr": ""
+    }
+  ]
+}

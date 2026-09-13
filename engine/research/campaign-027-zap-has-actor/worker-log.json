@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "zap_has_actor",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T18:53:21.818648+00:00",
+      "finished_utc": "2026-09-13T18:53:23.422123+00:00",
+      "returncode": 0,
+      "source_sha256": "54a6d0961d2b4e8138566f4d179e62eaa3c0fcb737b4b83df124be22a025b8de",
+      "report": "engine/build/campaign-001-zap_has_actor-4b1e835e4a3a/research-result.json",
+      "report_sha256": "2c16470cf751e3dce6848391a559add0fcadf58cdde6c0d238c09be3ab2c9f9b",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 131,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.386159,
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "zap_shutdown",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T18:53:18.584275+00:00",
+      "finished_utc": "2026-09-13T18:53:20.190296+00:00",
+      "returncode": 0,
+      "source_sha256": "cfdd18caec3aee0dcfb39c9bfed8032842ce45236039690a703fc6d264cb21b6",
+      "report": "engine/build/campaign-001-zap_shutdown-89287b14b21f/research-result.json",
+      "report_sha256": "1f879a2c512046427d233eeef64ecebfd49005abbac42d223ebbcbaae00978f0",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 23,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.387575,
+      "stderr": ""
+    }
+  ]
+}

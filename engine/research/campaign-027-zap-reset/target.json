@@ -1,0 +1,27 @@
+{
+  "id": "zap_reset",
+  "address": 4445523,
+  "size": 31,
+  "body_size": 31,
+  "source": "src/zap_reset.c",
+  "symbol": "_op_zap_reset",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 12,
+      "address": 7123336,
+      "symbol": "_op_zaps",
+      "kind": "dir32"
+    },
+    {
+      "offset": 20,
+      "address": 7131020,
+      "symbol": "_op_zap_count",
+      "kind": "dir32"
+    }
+  ]
+}
