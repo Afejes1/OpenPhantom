@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "case": "bgl_get_matrix",
+  "status": "frozen-exact-candidate",
+  "started_utc": "2026-09-13T07:09:42.540864Z",
+  "finished_utc": "2026-09-13T07:12:59.951898Z",
+  "timestamp_basis": "started_utc is the earliest owned-file filesystem timestamp; finished_utc is captured by the documentation write script after final evidence collection.",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural structure assignment/copy.",
+      "source_sha256": "ce4482ab3c0024506dc79743deab2efd997d63c9e3c94e7d0480a0b8b99dcea0",
+      "object_sha256": "168fc2d91d3d239941b9d6bf8cbf106aa4da2d2a8267c41174284c11263b9020",
+      "report": "engine/build/campaign-001-bgl_get_matrix-e348209c06b9/research-result.json",
+      "report_written_utc": "2026-09-13T07:10:22.646881Z",
+      "result": {
+        "status": "unresolved",
+        "reason": "COFF relocation inventory differs from expected operands"
+      }
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Standard VC5 memcpy intrinsic matching observed REP MOVSD setup.",
+      "source_sha256": "eefbfc128b5d706135ae9df53ccd1e77015474458bc77cd348b5cc509fc75a35",
+      "object_sha256": "8b943d6eecae9df8a161275a06d6cf769a34baab6e7c590cfcd2e28f946dd6f5",
+      "report": "engine/build/campaign-001-bgl_get_matrix-dfce74a8a804/research-result.json",
+      "report_written_utc": "2026-09-13T07:11:49.369756Z",
+      "result": {
+        "id": "bgl_get_matrix",
+        "address": 4323625,
+        "size": 25,
+        "candidate_size": 25,
+        "body_size": 25,
+        "status": "relocation-adjusted-match",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 4,
+        "object_sha256": "8b943d6eecae9df8a161275a06d6cf769a34baab6e7c590cfcd2e28f946dd6f5",
+        "compared_bytes": 21,
+        "dir32_bytes": 4,
+        "rel32_call_bytes": 0,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 0,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": true,
+        "reference_span_sha256": "9e9f798785239753da84d9365319948e2c76322c41b042e3255d9b60dc573ca9",
+        "resolved_span_sha256": "9e9f798785239753da84d9365319948e2c76322c41b042e3255d9b60dc573ca9"
+      }
+    }
+  ],
+  "candidate_sha256": "eefbfc128b5d706135ae9df53ccd1e77015474458bc77cd348b5cc509fc75a35",
+  "api_sha256": "697612b5789efaacd2ae941468208699dac00022a4aee382585159212c54ef2f",
+  "fixture_sha256": "bb87efc206c01d017b865c261194e7609cbba062487ad82bf528076e6003c9a6",
+  "fixture_execution": "not executed by worker; coordinator reviews and executes in locked Docker",
+  "original_game_executed": false,
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 9,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-bgl_get_matrix-1aff1eaa98d9/research-result.json",
+    "docker_report": "engine/build/campaign-001-bgl_get_matrix-78fd5f307f0f/research-result.json",
+    "result": "result.json",
+    "result_sha256": "a2ea291785775407d657490b9acaf1223ed7859e192584132fda202d005fc0db"
+  }
+}

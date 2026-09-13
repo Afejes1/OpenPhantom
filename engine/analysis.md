@@ -273,3 +273,10 @@ comments were saved in Ghidra, preserving the existing channel-release name.
 Independent review corrected the register-level preload gate before final
 verification. See [complete results](research/campaign-010/results.md) for
 source ABI, callback state, listing provenance and unresolved layout differences.
+
+## Campaign 011: lighting and transform-state checkpoint
+
+10 complete exact functions (467 bytes), 0 near and 1 research;
+209 focused assertions pass. Full rendering alignment is retained.
+See [results](research/campaign-011/results.md) for independent source review,
+copy/alias behavior, Ghidra metadata and remaining limitations.

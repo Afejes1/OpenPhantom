@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "view_clear_visits",
+  "candidate": "candidate.c",
+  "symbol": "_op_view_clear_visits",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/O2",
+    "/MT"
+  ]
+}

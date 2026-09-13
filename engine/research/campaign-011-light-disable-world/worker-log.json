@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "case": "light_disable_world",
+  "status": "frozen-exact-candidate",
+  "started_utc": "2026-09-13T07:00:04.138725Z",
+  "finished_utc": "2026-09-13T07:01:17.944808Z",
+  "timestamp_basis": "started_utc and finished_utc are explicit UTC clock observations immediately before packet review and after evidence collection.",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural early-invalid guard, one local record pointer, and conditional direct deactivation call with no post-callback clear.",
+      "source_sha256": "8f71df8f939e7c1ac4c9e9f2668932970bee7389d7f3a26fae32939d7561a839",
+      "object_sha256": "7d0b122242dbc73755f0ef1dfab1265ad6abebd19cd9e1e77f5800309c8f4fd5",
+      "report": "engine/build/campaign-001-light_disable_world-72f44f0d4098/research-result.json",
+      "report_written_utc": "2026-09-13T07:01:04.449407Z",
+      "elapsed_seconds": 1.375915,
+      "result": "relocation-adjusted match: complete 83 bytes, one rel32 binding, zero differing nonbinding bytes."
+    }
+  ],
+  "api_sha256": "e8186cdba48c56bd0f45567b79326b3dd62f3d3b8322ed09118d055f6d3fddee",
+  "fixture_sha256": "01ec49decaf76044e5d4a39f0600e2d0c333d41dfab69ff06d71d06e31175fed",
+  "fixture_execution": "not executed by worker; coordinator performs final review and locked-Docker execution",
+  "original_game_executed": false,
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 49,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-light_disable_world-d7fd2c4acda8/research-result.json",
+    "docker_report": "engine/build/campaign-001-light_disable_world-aed73c09b998/research-result.json",
+    "result": "result.json",
+    "result_sha256": "a683e6654b28b180730c26a66680a00da7064951232adde6f1b7d5580443b4ab"
+  }
+}

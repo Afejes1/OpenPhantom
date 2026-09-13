@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "campaign": "011",
+  "status": "complete-focused-checkpoint",
+  "started_utc": "2026-09-13T06:56:19Z",
+  "worker_stop_utc": "2026-09-13T07:31:19Z",
+  "stop_utc": "2026-09-13T07:41:19Z",
+  "baseline_commit": "2228a44ba162d82b043e8f5cc226563e6133ec63",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "weekly_shared_account_first_observation": {
+    "used_percent": 33,
+    "note": "Shared meter reading immediately preceding batch; rounded, not cost."
+  },
+  "assignments": [
+    {
+      "id": "light_disable_world",
+      "address": "0x00406EED",
+      "case": "research/campaign-011-light-disable-world",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-011-light-disable-world/result.json"
+    },
+    {
+      "id": "view_force_flags",
+      "address": "0x00419400",
+      "case": "research/campaign-011-view-force-flags",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-011-view-force-flags/result.json"
+    },
+    {
+      "id": "view_clear_flags",
+      "address": "0x00419420",
+      "case": "research/campaign-011-view-clear-flags",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-011-view-clear-flags/result.json"
+    },
+    {
+      "id": "view_clear_visits",
+      "address": "0x00419440",
+      "case": "research/campaign-011-view-clear-visits",
+      "status": "research-candidate",
+      "result": "research/campaign-011-view-clear-visits/result.json"
+    },
+    {
+      "id": "bgl_identity",
+      "address": "0x0041F700",
+      "case": "research/campaign-011-bgl-identity",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-011-bgl-identity/result.json"
+    },
+    {
+      "id": "bgl_push",
+      "address": "0x0041F71B",
+      "case": "research/campaign-011-bgl-push",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-011-bgl-push/result.json"
+    },
+    {
+      "id": "bgl_pop",
+      "address": "0x0041F770",
+      "case": "research/campaign-011-bgl-pop",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-011-bgl-pop/result.json"
+    },
+    {
+      "id": "bgl_load_matrix",
+      "address": "0x0041F910",
+      "case": "research/campaign-011-bgl-load-matrix",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-011-bgl-load-matrix/result.json"
+    },
+    {
+      "id": "bgl_get_matrix",
+      "address": "0x0041F929",
+      "case": "research/campaign-011-bgl-get-matrix",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-011-bgl-get-matrix/result.json"
+    },
+    {
+      "id": "bgl_get_translation",
+      "address": "0x0041FA37",
+      "case": "research/campaign-011-bgl-get-translation",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-011-bgl-get-translation/result.json"
+    },
+    {
+      "id": "bgl_get_translation_xyz",
+      "address": "0x0041FA68",
+      "case": "research/campaign-011-bgl-get-translation-xyz",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-011-bgl-get-translation-xyz/result.json"
+    }
+  ],
+  "worker_handoff_completed_utc": "2026-09-13T07:13:53Z",
+  "worker_handoff_timestamp_basis": "Coordinator clock observation after all frozen source handoffs; upper bound. Per-case actual report timestamps retained separately.",
+  "final_verification_completed_utc": "2026-09-13T07:19:22.278124+00:00"
+}

@@ -1,0 +1,206 @@
+{
+  "schema": 1,
+  "campaign": "011",
+  "reviews": {
+    "light_disable_world": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 83,
+      "source_review": "Independent review confirms signed guards, exact callback ABI and no postcallback writes. Parent expanded full-world/full-record mutation oracle, including neighboring records.",
+      "fixture_checks": 49,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "view_force_flags": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 32,
+      "source_review": "Reviewed exact global OR and independent expected-mask table including high bit, zero, all bits and idempotence. Full native/Docker comparison includes all13 NOP alignment bytes.",
+      "fixture_checks": 12,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "view_clear_flags": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 32,
+      "source_review": "Reviewed exact global masked clear and independent expected-mask table including high bit, zero, all bits and idempotence. Full native/Docker comparison includes all11 NOP alignment bytes.",
+      "fixture_checks": 12,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "view_clear_visits": {
+      "status": "research-candidate",
+      "complete_span": 80,
+      "source_review": "Reviewed unsigned16 endpoints,32-bit remaining count, null/reverse guards and highest inclusive index. Parent strengthens full-world and full-array preservation oracles on all guarded paths. Best natural variant restored after recorded worse second variant.",
+      "fixture_checks": 23,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true,
+      "selected_worker_attempt": 1,
+      "selection_reason": "Second natural variant regressed from30 to39 differing bytes; first source restored and independently recompiled in final pair. No cap reset."
+    },
+    "bgl_identity": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 27,
+      "source_review": "Reviewed complete48-byte copy from address-bound external matrix and live destination pointer. Independent synthetic twelve-word fixture differs from identity values and checks full destination plus neighbors and pointer/depth.",
+      "fixture_checks": 5,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_push": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 85,
+      "source_review": "Reviewed signed upper guard, captured stack source, independent current increment and depth increment before copy. Parent fixture verifies full stack/alternate storage, owned destination, source independence and null cursor on guarded paths.",
+      "fixture_checks": 31,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_pop": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 44,
+      "source_review": "Reviewed signed lower guard, pointer decrement by48 and depth decrement without storage changes or upperbound. Fixture covers negative/zero guards and positive depths throughINTMAX with separately valid owned cursor.",
+      "fixture_checks": 15,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_load_matrix": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 25,
+      "source_review": "Reviewed complete representation copy and live current pointer. Parent fixture uses explicit twelve-word pattern, two destinations, full source/destination/neighbor state and copy independence; removes self-overlap test outside C memcpy contract.",
+      "fixture_checks": 9,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_get_matrix": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 25,
+      "source_review": "Reviewed complete copy from current representation. Parent fixture checks explicit bit pattern, two current sources, full source/output/neighbor preservation, pointer/depth and copy independence; removes memcpy self-overlap test.",
+      "fixture_checks": 9,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_get_translation": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 49,
+      "source_review": "Reviewed three ordered word copies from affine translation offsets24/28/2C. Parent fixture adds full source/state preservation, self translation and valid overlapping word output, with independent signed-zero/NaN payload oracles.",
+      "fixture_checks": 7,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "bgl_get_translation_xyz": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 65,
+      "source_review": "Reviewed independently nullable ordered outputs and live matrix-word reads. Parent fixture uses explicit eight-row immutable oracle, full matrix/neighbor/state checks, null current with allnull, aliased outputs and live alias-chain expectations.",
+      "fixture_checks": 37,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    }
+  },
+  "issues": [],
+  "full_regression_run": false,
+  "parent_fixture_corrections": [
+    "light_disable_world",
+    "view_clear_visits",
+    "bgl_identity",
+    "bgl_push",
+    "bgl_load_matrix",
+    "bgl_get_matrix",
+    "bgl_get_translation",
+    "bgl_get_translation_xyz"
+  ],
+  "parent_source_corrections": [],
+  "preparation_notes": [
+    "Initial padding expectation was corrected during preparation: view tails are NOPs, not INT3. Targets were written only after actual bytes and full intervals were verified.",
+    "Three color routines deferred without compiler experiments: current-rounding FISTP and register structure suggest original inline assembly; ordinary C cast would change behavior. This is an inference, not recovered original source."
+  ],
+  "instruction_crosscheck_count": 182,
+  "frozen_source_rule": "Every frozen source must match a recorded worker experiment; restoration of an earlier better source is allowed and independently recompiled. Last attempted source need not be selected.",
+  "source_and_fixture_audit": "All eleven final cases received independent coordinator source/fixture review and separate read-only worker source/receipt/hash audit; no unresolved material findings.",
+  "parent_failed_attempts": [],
+  "compiler_directives": {
+    "bgl_push": "Explicit standard VC5 memcpy intrinsic reproduces complete observed copy code. No raw instructions or fabricated frames.",
+    "bgl_load_matrix": "Explicit standard VC5 memcpy intrinsic reproduces complete observed copy code. No raw instructions or fabricated frames.",
+    "bgl_get_matrix": "Explicit standard VC5 memcpy intrinsic reproduces complete observed copy code. No raw instructions or fabricated frames."
+  },
+  "copy_contract_refinement": "Initial load/get packets proposed same-object copy tests while suggesting aggregate assignment. Frozen matching source uses memcpy intrinsic; parent replaced those tests with disjoint-copy cases and documented the C non-overlap domain. Original complete compiled spans remain exact; no portable C overlap behavior claimed.",
+  "metadata_update": {
+    "status": "saved",
+    "generated_names_changed": 9,
+    "trusted_names_preserved": 2,
+    "comments_updated": 11,
+    "program_saved": true,
+    "affected_callers_redecompiled": [
+      "0042E2F9",
+      "0042FC90",
+      "00407819",
+      "0043BF9E",
+      "00422130",
+      "00439AB6"
+    ]
+  },
+  "listing_provenance": [
+    {
+      "id": "light_disable_world",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "view_force_flags",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "view_clear_flags",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "view_clear_visits",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_identity",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_push",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_pop",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_load_matrix",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_get_matrix",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_get_translation",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    },
+    {
+      "id": "bgl_get_translation_xyz",
+      "fallback_used": true,
+      "docker_listing_has_terminators": true
+    }
+  ]
+}

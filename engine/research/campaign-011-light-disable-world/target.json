@@ -1,0 +1,21 @@
+{
+  "id": "light_disable_world",
+  "address": 4222701,
+  "size": 83,
+  "body_size": 83,
+  "source": "src/light_disable_world.c",
+  "symbol": "_op_light_disable_world",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 72,
+      "address": 4222784,
+      "kind": "rel32-call",
+      "symbol": "_op_light_deactivate_record"
+    }
+  ]
+}

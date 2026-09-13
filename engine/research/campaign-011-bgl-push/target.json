@@ -1,0 +1,63 @@
+{
+  "id": "bgl_push",
+  "address": 4323099,
+  "size": 85,
+  "body_size": 85,
+  "source": "src/bgl_push.c",
+  "symbol": "_op_bgl_push",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 7076412,
+      "kind": "dir32",
+      "symbol": "_op_bgl_depth"
+    },
+    {
+      "offset": 18,
+      "address": 7076412,
+      "kind": "dir32",
+      "symbol": "_op_bgl_depth"
+    },
+    {
+      "offset": 26,
+      "address": 4895456,
+      "kind": "dir32",
+      "symbol": "_op_bgl_stack"
+    },
+    {
+      "offset": 35,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    },
+    {
+      "offset": 44,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    },
+    {
+      "offset": 50,
+      "address": 7076412,
+      "kind": "dir32",
+      "symbol": "_op_bgl_depth"
+    },
+    {
+      "offset": 59,
+      "address": 7076412,
+      "kind": "dir32",
+      "symbol": "_op_bgl_depth"
+    },
+    {
+      "offset": 73,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "bgl_identity",
+  "address": 4323072,
+  "size": 27,
+  "body_size": 27,
+  "source": "src/bgl_identity.c",
+  "symbol": "_op_bgl_identity",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 4895408,
+      "kind": "dir32",
+      "symbol": "_op_bgl_identity_matrix"
+    },
+    {
+      "offset": 17,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    }
+  ]
+}

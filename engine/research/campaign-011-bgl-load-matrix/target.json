@@ -1,0 +1,21 @@
+{
+  "id": "bgl_load_matrix",
+  "address": 4323600,
+  "size": 25,
+  "body_size": 25,
+  "source": "src/bgl_load_matrix.c",
+  "symbol": "_op_bgl_load_matrix",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 15,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    }
+  ]
+}

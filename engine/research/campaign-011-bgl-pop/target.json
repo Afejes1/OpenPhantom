@@ -1,0 +1,45 @@
+{
+  "id": "bgl_pop",
+  "address": 4323184,
+  "size": 44,
+  "body_size": 44,
+  "source": "src/bgl_pop.c",
+  "symbol": "_op_bgl_pop",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7076412,
+      "kind": "dir32",
+      "symbol": "_op_bgl_depth"
+    },
+    {
+      "offset": 15,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    },
+    {
+      "offset": 23,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    },
+    {
+      "offset": 29,
+      "address": 7076412,
+      "kind": "dir32",
+      "symbol": "_op_bgl_depth"
+    },
+    {
+      "offset": 38,
+      "address": 7076412,
+      "kind": "dir32",
+      "symbol": "_op_bgl_depth"
+    }
+  ]
+}

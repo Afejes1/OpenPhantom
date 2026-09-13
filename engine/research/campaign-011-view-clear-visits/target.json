@@ -1,0 +1,14 @@
+{
+  "id": "view_clear_visits",
+  "address": 4297792,
+  "size": 80,
+  "body_size": 70,
+  "source": "src/view_clear_visits.c",
+  "symbol": "_op_view_clear_visits",
+  "language": "c",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "case": "view_clear_visits",
+  "status": "frozen-research-candidate",
+  "started_utc": "2026-09-13T07:05:18.943727Z",
+  "finished_utc": "2026-09-13T07:07:10.762215Z",
+  "timestamp_basis": "started_utc is the first owned-file filesystem timestamp; finished_utc is an explicit UTC clock observation after restoring the better source.",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural vertex pointer plus 32-bit inclusive remaining count.",
+      "source_sha256": "2bd2848b0343fa47a90276a70a9e5e684089743461b21f10afeccec0b176d3cd",
+      "object_sha256": "20be9a1f2d282f1243e936a288dcd011210b6f96ebdb405bbb9f752b1d97c817",
+      "report": "engine/build/campaign-001-view_clear_visits-c2b2fd782dfd/research-result.json",
+      "result": "Complete 80-byte extent/body70 plus alignment10, no bindings, 30 differing bytes."
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Visited-byte pointer plus 32-bit inclusive remaining count.",
+      "source_sha256": "0b35986ae99cab673641374816feee5136aba6bf31bb074d7e4b6b23d4d9ff30",
+      "object_sha256": "27db38ae85166d8b174c3f0e9d95670954129abed4deaf43fbefde5529026c85",
+      "report": "engine/build/campaign-001-view_clear_visits-a50eda24b3d0/research-result.json",
+      "result": "Regressed to 39 differing bytes; rejected and better source restored."
+    }
+  ],
+  "candidate_sha256": "2bd2848b0343fa47a90276a70a9e5e684089743461b21f10afeccec0b176d3cd",
+  "fixture_sha256": "53d086bf7f48bc17303eabd7e790f86b7fedaeed63b824144f97e567be04379e",
+  "fixture_execution": "coordinator-owned locked Docker",
+  "original_game_executed": false,
+  "parent_verification": {
+    "status": "research-candidate",
+    "fixture_checks": 23,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-view_clear_visits-6665d1cb6a92/research-result.json",
+    "docker_report": "engine/build/campaign-001-view_clear_visits-2188620a9bbd/research-result.json",
+    "result": "result.json",
+    "result_sha256": "bae14554c1976ec24a929a6a72ac9e4cafee1eb77dc5a891253b17ba539f4655"
+  }
+}

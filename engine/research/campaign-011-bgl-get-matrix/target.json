@@ -1,0 +1,21 @@
+{
+  "id": "bgl_get_matrix",
+  "address": 4323625,
+  "size": 25,
+  "body_size": 25,
+  "source": "src/bgl_get_matrix.c",
+  "symbol": "_op_bgl_get_matrix",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 12,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    }
+  ]
+}

@@ -280,6 +280,50 @@
     {
       "address": "0x004171A1",
       "source": "research/campaign-010-sound-play-by-name/README.md"
+    },
+    {
+      "address": "0x00406EED",
+      "source": "research/campaign-011-light-disable-world/README.md"
+    },
+    {
+      "address": "0x00419400",
+      "source": "research/campaign-011-view-force-flags/README.md"
+    },
+    {
+      "address": "0x00419420",
+      "source": "research/campaign-011-view-clear-flags/README.md"
+    },
+    {
+      "address": "0x00419440",
+      "source": "research/campaign-011-view-clear-visits/README.md"
+    },
+    {
+      "address": "0x0041F700",
+      "source": "research/campaign-011-bgl-identity/README.md"
+    },
+    {
+      "address": "0x0041F71B",
+      "source": "research/campaign-011-bgl-push/README.md"
+    },
+    {
+      "address": "0x0041F770",
+      "source": "research/campaign-011-bgl-pop/README.md"
+    },
+    {
+      "address": "0x0041F910",
+      "source": "research/campaign-011-bgl-load-matrix/README.md"
+    },
+    {
+      "address": "0x0041F929",
+      "source": "research/campaign-011-bgl-get-matrix/README.md"
+    },
+    {
+      "address": "0x0041FA37",
+      "source": "research/campaign-011-bgl-get-translation/README.md"
+    },
+    {
+      "address": "0x0041FA68",
+      "source": "research/campaign-011-bgl-get-translation-xyz/README.md"
     }
   ]
 }

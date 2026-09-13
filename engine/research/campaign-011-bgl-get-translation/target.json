@@ -1,0 +1,33 @@
+{
+  "id": "bgl_get_translation",
+  "address": 4323895,
+  "size": 49,
+  "body_size": 49,
+  "source": "src/bgl_get_translation.c",
+  "symbol": "_op_bgl_get_translation",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    },
+    {
+      "offset": 22,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    },
+    {
+      "offset": 37,
+      "address": 4898528,
+      "kind": "dir32",
+      "symbol": "_op_bgl_current"
+    }
+  ]
+}

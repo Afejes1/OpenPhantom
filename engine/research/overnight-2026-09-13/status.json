@@ -121,13 +121,13 @@
       "published_utc": "2026-09-13T06:54:55.726936+00:00"
     }
   ],
-  "current_work": "Campaign 010 published: 3 exact functions, 2 reviewed near matches, 1 research candidate; 436 focused checks and feature CI pass.",
-  "resume": "Continue one Sol/medium worker with untouched small sound helpers or adjacent modules, excluding every pending/exact/parked address. Do not reset attempt caps for campaign010 parked candidates. Next heartbeat must set its own <=45-minute turn and reserve10 minutes for publication. Stop new implementation08:38 UTC; final report and pause08:48 UTC.",
+  "current_work": "Campaign011 independently verified10 exact functions (467 bytes) and1 research candidate;209 focused checks passed; publishing checkpoint.",
+  "resume": "Campaign011 worker stop07:31:19UTC; publicationdeadline07:41:19UTC. Preserve one worker and per-function caps.",
   "interruptions": [],
   "original_game_executed": false,
   "full_regression_run": false,
   "final_report": null,
   "new_research_candidates": 5,
-  "weekly_account_usage_observed_percent": 33,
+  "weekly_account_usage_observed_percent": 34,
   "last_campaign_finished_utc": "2026-09-13T06:54:55.726936+00:00"
 }

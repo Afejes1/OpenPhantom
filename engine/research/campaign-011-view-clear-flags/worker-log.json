@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "case": "view_clear_flags",
+  "status": "frozen-exact-candidate",
+  "started_utc": "2026-09-13T07:04:24.406476Z",
+  "finished_utc": "2026-09-13T07:04:44.550388Z",
+  "timestamp_basis": "started_utc is the first owned-file filesystem timestamp; finished_utc is the native report filesystem timestamp.",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural optimized global AND with complemented mask.",
+      "source_sha256": "03306fd9583e231012e2f5d45159745280dac6b902c7294db92074e6ae26f1f6",
+      "object_sha256": "118579f849d370798d1c8d26db809057e4273ac8cb48cdaa0e577c49604935bb",
+      "report": "engine/build/campaign-001-view_clear_flags-375c761b5d83/research-result.json",
+      "result": "Complete 32-byte relocation-adjusted match, body 21 plus 11 alignment bytes, zero differences."
+    }
+  ],
+  "fixture_sha256": "184e3982e21912ee248677d2f88c021e2df67444f18d088e8a1647eac1272e72",
+  "fixture_execution": "coordinator-owned locked Docker",
+  "original_game_executed": false,
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 12,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-view_clear_flags-8c8ca989d9b3/research-result.json",
+    "docker_report": "engine/build/campaign-001-view_clear_flags-d14b20a90ef0/research-result.json",
+    "result": "result.json",
+    "result_sha256": "5a9a1b8b0186c3d91cdc4b412da5e31a699e29028faaf2baab1d2e7717bb4104"
+  }
+}

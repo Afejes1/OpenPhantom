@@ -1,0 +1,11 @@
+# Prepared target: light_disable_world
+
+Team not done, bp/baplight.c. Complete00406EED..00406F40 is83bytes; one verified relative-call binding at offset72. Pinned VC5 C /Od /MT.
+
+void op_light_disable_world(OP_LIGHT_WORLD *world, int index). World layout: opaque bytes0..1C3, signed count at1C4, opaque word1C8, OP_LIGHT_RECORD *records at1CC. Record stride128, opaque0..73, signed active word74, opaque78..7F. cdecl callback void op_light_deactivate_record(OP_LIGHT_WORLD *world,int bank,OP_LIGHT_RECORD *record). Full callee00406F40 accesses second stack argument as bank and third as record; first world argument unused by that callee but preserved in ABI. Caller control_enemy_linked_dynamic_light supplies world and signed index.
+
+Natural early invalid guard: if world is null OR index<0 OR index>=world->count, return. Compute local record=&world->records[index]. If record->active!=0 call deactivate(world,1,record). No records-null check after valid index, no unconditional active clear, no result. Callee may decline to clear on generation mismatch; wrapper must preserve this. No globals, imports or strings in wrapper.
+
+Fixture: null/-1/INTMIN/equalcount/abovecount, negative/zero counts, index0/last, active0/1/-1. Guard paths leave all world/record bytes unchanged; callback receives exact owned world and record and bank1. A callback may leave active unchanged, clear it, or change world/count/base/record fields; wrapper performs no postcallback access/stores. Use complete independently prepared record/world expected bytes and pointer guards. Do not create an invalid records pointer on an active path. Source/API offsets asserted at compile time where practical.
+
+Worker owns candidate.c, api.h, behavior.c, README.md, worker-log.json only. Targets/flags/ABI immutable; no shared files, metadata, Git, raw bytes, artificial frames, waivers or exclusions. Native compile only. Coordinator independently reviews and runs authored fixture only in locked Docker. Record all attempts including failures with actual timestamps, hypothesis, candidate hash, private report path and elapsed time; use started_utc/finished_utc, attempts array, compiler_invocations. Each case stops15min/10compiles/five nonimprovements; worker hard stop07:31:19UTC. Freeze and hand off immediately after useful result.

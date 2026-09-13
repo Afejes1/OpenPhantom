@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "case": "view_force_flags",
+  "status": "frozen-exact-candidate",
+  "started_utc": "2026-09-13T07:03:22.761973Z",
+  "finished_utc": "2026-09-13T07:04:05.082328Z",
+  "timestamp_basis": "started_utc is the explicit queue-start clock observation; finished_utc is the native report filesystem timestamp.",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural optimized global OR.",
+      "source_sha256": "a0a68171511357d95059ecc4877ee8325294d8fe923f555fb715e211f52b89fb",
+      "object_sha256": "5268997f690fc31b042effb8efc68194cfa57a88ffe247720feb450b56a10fd7",
+      "report": "engine/build/campaign-001-view_force_flags-7347b271d83c/research-result.json",
+      "result": "Complete 32-byte relocation-adjusted match, body 19 plus 13 alignment bytes, zero differences."
+    }
+  ],
+  "fixture_sha256": "00a36bc37e8727024d58000329f3696b32574464d3daa78a6eb273bfa2e0661c",
+  "fixture_execution": "coordinator-owned locked Docker",
+  "original_game_executed": false,
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 12,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-view_force_flags-809fc4c78fe7/research-result.json",
+    "docker_report": "engine/build/campaign-001-view_force_flags-0909717f4067/research-result.json",
+    "result": "result.json",
+    "result_sha256": "e0fe92e79e802789395521b5bac0b6333b604b4d06a55a8a74910089cd4df989"
+  }
+}

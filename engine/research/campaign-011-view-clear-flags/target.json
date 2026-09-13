@@ -1,0 +1,27 @@
+{
+  "id": "view_clear_flags",
+  "address": 4297760,
+  "size": 32,
+  "body_size": 21,
+  "source": "src/view_clear_flags.c",
+  "symbol": "_op_view_clear_flags",
+  "language": "c",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 6010260,
+      "kind": "dir32",
+      "symbol": "_op_view_forced_flags"
+    },
+    {
+      "offset": 16,
+      "address": 6010260,
+      "kind": "dir32",
+      "symbol": "_op_view_forced_flags"
+    }
+  ]
+}
