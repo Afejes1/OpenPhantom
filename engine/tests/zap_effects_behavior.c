@@ -7,10 +7,11 @@ OP_ZAP op_zaps[64];
 int op_zap_count;
 char op_zap_name[12] = "unit-zap";
 void *op_zap_sprite;
-float op_zap_points[51];
+/*17 proven points followed by two authored trailing guards.*/
+OP_VEC3 op_zap_points[19];
+const float op_zap_amplitude_scale = 0.4f;
+const float op_zap_half = 0.5f, op_random_scale = 3.0518509447574615e-5f, op_zap_decay = 0.6666666865348816f;
 #include "detach_zap_behavior.h"
-#include "zap_draw_default_behavior.h"
-#include "zap_draw_segment_behavior.h"
 #include "zap_has_actor_behavior.h"
 #include "zap_reset_behavior.h"
 #include "zap_shutdown_behavior.h"
@@ -57,36 +58,7 @@ static void zap_effects_release_sprite(void **sprite)
     ZP_CHECK(sprite == &op_zap_sprite && *sprite == (zp_result ? zp_owned[0] : 0));
     *sprite = zp_owned[1];
 }
-void *op_resolve_zap_material(void *sprite)
-{
-    ZP_CHECK(zap_effects_active);
-    if (zp_mode == ZP_SEGMENT)
-        return lc_zap_draw_segment_op_resolve_zap_material(sprite);
-    ZP_CHECK(zp_mode == ZP_DEFAULT);
-    return lc_zap_draw_default_op_resolve_zap_material(sprite);
-}
-void op_generate_zap_points(float *start, float *end, int depth)
-{
-    ZP_CHECK(zap_effects_active);
-    if (zp_mode == ZP_SEGMENT)
-        lc_zap_draw_segment_op_generate_zap_points(start, end, depth);
-    else
-    {
-        ZP_CHECK(zp_mode == ZP_DEFAULT);
-        lc_zap_draw_default_op_generate_zap_points(start, end, depth);
-    }
-}
-void op_submit_zap_points(float *points, int count, unsigned int color, void *material, float width)
-{
-    ZP_CHECK(zap_effects_active);
-    if (zp_mode == ZP_SEGMENT)
-        lc_zap_draw_segment_op_submit_zap_points(points, count, color, material, width);
-    else
-    {
-        ZP_CHECK(zp_mode == ZP_DEFAULT);
-        lc_zap_draw_default_op_submit_zap_points(points, count, color, material, width);
-    }
-}
+#include "zap_geometry_behavior.h"
 typedef struct ZP_ACTORS
 {
     unsigned int before;
@@ -147,17 +119,14 @@ static int op_test_zap_effects(void)
     status += lc_zap_startup_main();
     zp_mode = ZP_STOP;
     status += lc_zap_shutdown_main();
-    zp_mode = ZP_SEGMENT;
-    status += lc_zap_draw_segment_main();
-    zp_mode = ZP_DEFAULT;
-    status += lc_zap_draw_default_main();
+    status += zg_main();
     zp_mode = ZP_CHAIN;
     zp_chain_tests();
     zap_effects_active = 0;
     zp_mode = 0;
     ZP_CHECK(!halo_overlay_active && !shield_lifecycle_active && !ripple_effects_active);
     total = zp_checks + lc_detach_zap_checks + lc_zap_has_actor_checks + lc_zap_reset_checks + lc_zap_startup_checks +
-            lc_zap_shutdown_checks + lc_zap_draw_segment_checks + lc_zap_draw_default_checks;
+            lc_zap_shutdown_checks + zg_checks + zsub_checks;
     printf("zap lifecycle total: %d checks, %d integration failures\n", total, zp_failures);
     return status + (zp_failures != 0);
 }

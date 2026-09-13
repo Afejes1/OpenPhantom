@@ -1,6 +1,7 @@
 #ifndef OP_ZAP_EFFECTS_H
 #define OP_ZAP_EFFECTS_H
 #include "focused_accessors.h"
+#include "vec3.h"
 typedef struct OP_ZAP
 {
     int active;
@@ -17,15 +18,19 @@ extern int op_zap_count;
 extern char op_zap_name[];
 extern void *op_zap_sprite;
 /* Only the start address and the caller's maximum17 points are established here. */
-extern float op_zap_points[];
+extern OP_VEC3 op_zap_points[];
 void op_detach_zap(OP_ATTACHED_ACTOR *actor);
 int op_zap_startup(void);
 int op_zap_shutdown(void);
 void op_zap_reset(void);
 int op_zap_has_actor(OP_ATTACHED_ACTOR *actor);
 void *op_resolve_zap_material(void *sprite);
-void op_generate_zap_points(float *start, float *end, int depth);
-void op_submit_zap_points(float *points, int count, unsigned int color, void *material, float width);
-void op_zap_draw_segment(float *start, float *end, int depth, float width, unsigned int color);
-void op_zap_draw_default(float *start, float *end);
+void op_generate_zap_points(OP_VEC3 *start, OP_VEC3 *end, int depth);
+void op_submit_zap_points(OP_VEC3 *points, int count, unsigned int color, void *material, float width);
+void op_zap_draw_segment(OP_VEC3 *start, OP_VEC3 *end, int depth, float width, unsigned int color);
+void op_zap_draw_default(OP_VEC3 *start, OP_VEC3 *end);
+extern const float op_zap_half, op_random_scale, op_zap_decay, op_zap_amplitude_scale;
+int op_random(void);
+void op_subdivide_zap(int start, int end, int depth, float amplitude);
+void op_zap_draw_opaque(OP_VEC3 *start, OP_VEC3 *end, OP_VEC3 *snapshot, int depth, float width);
 #endif

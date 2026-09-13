@@ -21,7 +21,8 @@ add_executable(behavior_smoke behavior.c ../src/material_mode.c ../src/grid_cell
   ../src/halo_add.c ../src/halo_attach.c ../src/effects_write.c ../src/shield_write.c ../src/shield_load.c ../src/ripple_spawn.c
   ../src/projection_expire.c ../src/projection_remove.c ../src/projection_clear.c ../src/projection_sort.c ../src/projection_compare.c
   ../src/application_run.c ../src/graphics_close.c ../src/diagnostics_close.c ../src/simulation_set_halted.c ../src/halo_flicker.c ../src/projection_token.c ../src/overlay_size.c
-  ../src/puppet_init.c ../src/track_remove.c ../src/track_play.c ../src/track_fade_in.c ../src/track_fade_out.c)
+  ../src/puppet_init.c ../src/track_remove.c ../src/track_play.c ../src/track_fade_in.c ../src/track_fade_out.c
+  ../src/zap_build.c ../src/zap_subdivide.c ../src/zap_draw_opaque.c)
 
 target_compile_options(behavior_smoke PRIVATE /W4 /WX /Od /fp:precise)
 enable_testing()

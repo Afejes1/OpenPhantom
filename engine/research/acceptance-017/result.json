@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "acceptance-017",
+  "baseline_commit": "c24338a1443799dbf3c45e5e231192771205e13d",
+  "functions": [
+    "zap_build",
+    "zap_subdivide",
+    "zap_draw_opaque"
+  ],
+  "promotions": 3,
+  "registered_before": 105,
+  "registered_after": 108,
+  "full_span_bytes": 696,
+  "verified_operands": 38,
+  "status": "integration-pending",
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

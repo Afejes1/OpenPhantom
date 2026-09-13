@@ -1,10 +1,6 @@
 #ifndef OP_RIPPLE_SPAWN_H
 #define OP_RIPPLE_SPAWN_H
-#include <stddef.h>
-typedef struct OP_VEC3
-{
-    float x, y, z;
-} OP_VEC3;
+#include "vec3.h"
 typedef struct OP_RIPPLE
 {
     int active, moving, appearance;

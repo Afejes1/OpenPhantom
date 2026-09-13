@@ -1,6 +1,6 @@
 #include "zap_effects.h"
 // FUNCTION: WMAIN 0x0043d648
-void op_zap_draw_segment(float *start, float *end, int depth, float width, unsigned int color)
+void op_zap_draw_segment(OP_VEC3 *start, OP_VEC3 *end, int depth, float width, unsigned int color)
 {
     void *material;
     int num_points;

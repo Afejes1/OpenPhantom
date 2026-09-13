@@ -1939,6 +1939,60 @@
         "Valid indices0..3 only; all unresolved fields opaque; callback returns ignored; finite fade fixtures."
       ],
       "exceptions": []
+    },
+    {
+      "id": "zap_build",
+      "module": "zap_geometry",
+      "analysis_name": "zap_build",
+      "purpose": "zap build",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/zap-geometry-acceptance.md",
+        "research/campaign-030-zap-build/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/zap_geometry_behavior.h"
+      ],
+      "quirks": [
+        "Proven wrapper prefix17 vectors; depths0..4 and disjoint/exact snapshot alias only. Real build/subdivide and wrapper-specific live callback order."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "zap_subdivide",
+      "module": "zap_geometry",
+      "analysis_name": "zap_subdivide",
+      "purpose": "zap subdivide",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/zap-geometry-acceptance.md",
+        "research/campaign-031-zap-subdivide/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/zap_geometry_behavior.h"
+      ],
+      "quirks": [
+        "Proven wrapper prefix17 vectors; depths0..4 and disjoint/exact snapshot alias only. Real build/subdivide and wrapper-specific live callback order."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "zap_draw_opaque",
+      "module": "zap_geometry",
+      "analysis_name": "zap_draw_opaque",
+      "purpose": "zap draw opaque",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/zap-geometry-acceptance.md",
+        "research/campaign-030-zap-draw-opaque/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/zap_geometry_behavior.h"
+      ],
+      "quirks": [
+        "Proven wrapper prefix17 vectors; depths0..4 and disjoint/exact snapshot alias only. Real build/subdivide and wrapper-specific live callback order."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
