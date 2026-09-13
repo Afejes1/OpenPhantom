@@ -34,7 +34,6 @@ static unsigned int ef_controlfp(unsigned int value, unsigned int mask)
 #include "tint_start_full_behavior.h"
 #include "tint_stop_behavior.h"
 
-OP_B3D_WORLD *op_active_world;
 float op_fog_remaining, op_fog_target, op_fog_cached_start, op_fog_duration;
 int op_fog_restore_mode;
 unsigned int op_fog_saved;

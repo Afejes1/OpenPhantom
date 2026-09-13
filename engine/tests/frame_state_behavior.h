@@ -1,11 +1,11 @@
 /* Frame setup integration: matched projection plus explicit backend stubs. */
-op_world_fog *op_active_world;
+OP_B3D_WORLD *op_active_world;
 unsigned int op_frame_render_flags, op_frame_extra_render_flags;
 int op_frame_option_89fde4, op_frame_option_89fdec, op_frame_option_59da00;
 int op_frame_mode, op_vertex_fog_enabled;
 float op_fog_start, op_fog_end, op_fog_range;
 float op_fog_start_reciprocal, op_fog_end_reciprocal;
-static op_world_fog frame_world;
+static OP_B3D_WORLD frame_world;
 static op_camera_state frame_camera;
 static op_viewport frame_viewport;
 static op_frustum frame_frustum;
@@ -82,9 +82,9 @@ static void frame_state_tests(void)
     int modes[6] = {-1, 0, 1, 2, 3, 4};
     unsigned int mode_bits[6] = {0, 0, 0x1000, 0x1800, 0x800, 0};
     int capabilities[3] = {1, 0x100, -1};
-    CHECK(offsetof(op_world_fog, flags) == 0x210);
-    CHECK(offsetof(op_world_fog, fog_start) == 0x218);
-    CHECK(offsetof(op_world_fog, fog_end) == 0x21c);
+    CHECK(offsetof(OP_B3D_WORLD, flags) == 0x210);
+    CHECK(offsetof(OP_B3D_WORLD, fog_start) == 0x218);
+    CHECK(offsetof(OP_B3D_WORLD, fog_end) == 0x21c);
     projection_control(_MCW_EM | _PC_53 | _RC_NEAR, _MCW_EM | _MCW_PC | _MCW_RC);
     for (mode = 0; mode < 6; ++mode) {
         for (option = 0; option < 2; ++option) {

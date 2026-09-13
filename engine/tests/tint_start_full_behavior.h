@@ -148,7 +148,8 @@ static int ef_tint_start_full_main(void)
                 ef_tint_start_full_expected.red.value = ef_tint_start_full_parameters.r;
                 ef_tint_start_full_expected.green.value = ef_tint_start_full_parameters.g;
                 ef_tint_start_full_expected.blue.value = ef_tint_start_full_parameters.b;
-                ef_tint_start_full_expected.alpha.value = opaque ? 255 : ef_tint_start_full_parameters.a;
+                ef_tint_start_full_expected.alpha.value =
+                    (unsigned char)(opaque ? 255 : ef_tint_start_full_parameters.a);
                 EF_TINT_START_FULL_CHECK(ef_tint_start_full_calls == 1);
                 ef_tint_start_full_verify_state();
                 op_letterbox_target = -1;

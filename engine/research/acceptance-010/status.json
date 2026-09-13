@@ -26,5 +26,13 @@
   "byte_exclusions": [],
   "new_warning_waivers": [],
   "tooling_tests_passed": 100,
-  "focused_runner_tests_passed": 19
+  "focused_runner_tests_passed": 19,
+  "failed_compilations": 1,
+  "failed_builds": [
+    {
+      "build": "engine/build/20260913-140629-94d76fb7",
+      "diagnostic": "Conflicting legacy active-world type and fixture alpha narrowing; canonical type unified and expected byte cast explicit.",
+      "log_sha256": "8cabaef0e9c9401ecc3bc35a75d22d3e64b4d49d3f144588db828f9718633fc0"
+    }
+  ]
 }

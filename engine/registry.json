@@ -975,7 +975,7 @@
     {
       "id": "fog_snapshot",
       "module": "effects_state",
-      "analysis_name": "save_b3d_world_fog_state",
+      "analysis_name": "initialize_timed_fog_transition_state",
       "purpose": "Save the active world fog bit and cancel the transition",
       "confidence": "HIGH",
       "evidence": [
