@@ -373,3 +373,7 @@ Seven functions match658 complete bytes; all41,267 focused checks pass. The batc
 ## Campaign029 save and attachment dependencies
 
 Seven functions match1,324 complete bytes;50,485 focused checks cover all nine candidates. The save writer retains the authentic shield count/emission discrepancy and live callback behavior. Halo attachment uses authored external-name fixtures. Six identities and nine signatures were recovered from static call relationships and typed C. Restore/relink remain research due to full-span alignment tails. See [Campaign029](research/campaign-029/results.md).
+
+## Six-hour window ending 2026-09-13 22:34 UTC
+
+Campaigns023-034 produced69 new exact functions covering6,996 complete bytes. Acceptance008-016 and the final replay raise the shared baseline from40 to105 functions, with38 immutable records. All105 full spans and shared authored fixtures pass at39af9501bbaf0c05728dbead492509a5109a78b8. Seven exact functions await canonical integration; one near match and six other candidates remain research. The matcher, zero-difference threshold and public-content boundary are unchanged. Whole-executable identity remains pending. See [window results](research/extended-2026-09-13-1634/results.md) for the audit and next-work queue.

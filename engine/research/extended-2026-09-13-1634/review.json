@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-13T22:14:03.998711+00:00",
+  "conclusion": "no-material-findings",
+  "verified": [
+    "69 exact functions and 6996 bytes across campaigns023-034",
+    "One near match and six different-extent research candidates",
+    "All76 entries marked team not_done; no team-done overlap",
+    "Seven queued exact functions totaling988 bytes",
+    "Baseline-to-source changes confined to engine source/text paths",
+    "Acceptance016 explicitly limits runtime evidence to authored callbacks and finite fade inputs"
+  ],
+  "publication_followup": "Acceptance016 was integration-pending during review; coordinator subsequently ran the clean full replay and recorded successful event38 before updating it.",
+  "content_audit_scope": "Changed path and file-type boundaries plus the reviewed campaign code; not a new exhaustive semantic review of every inserted line.",
+  "queue_recommendation": "Integrate zap3 first, then sprite3 after resolving shared symbol/type collisions, then frame_prepare.",
+  "final_publication_review": "approved: arithmetic, event38, attempt totals, queue, relative links and evidence limits are coherent",
+  "final_publication_review_utc": "2026-09-13T22:20:37.337897+00:00"
+}

@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **98** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **871**.
+Our last recorded matches cover **103** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **866**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -111,7 +111,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | rdroid/rdmatrix.c | 9 | 0 | 9 |
 | rdroid/rdmodel3.c | 3 | 0 | 3 |
 | rdroid/rdpolyl.c | 4 | 0 | 4 |
-| rdroid/rdpuppet.c | 20 | 0 | 20 |
+| rdroid/rdpuppet.c | 20 | 5 | 15 |
 | rdroid/rdsprite.c | 5 | 0 | 5 |
 | std/std3d.c | 11 | 0 | 11 |
 | std/stdconf.c | 16 | 0 | 16 |
