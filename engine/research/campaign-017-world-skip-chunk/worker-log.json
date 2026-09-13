@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "case": "world_skip_chunk",
+  "started_utc": "2026-09-13T12:17:08.0116724Z",
+  "finished_utc": "2026-09-13T12:17:35.9083377Z",
+  "timestamp_basis": "source creation, report write, observed finish",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural mode branch with one buffer local and exact callback order.",
+      "source_sha256": "e210805b9f8e43d41e57a33d5ea23f39e64aa20a15e95e3c851c0bd01ca90554",
+      "report": "engine/build/campaign-001-world_skip_chunk-5a0a5d3f4bab/research-result.json",
+      "report_sha256": "7f55b372d1b73685ac1466755f2b4fcd3f41f9eabfd0ec9bb1ee8c42dd1953e5",
+      "report_written_utc": "2026-09-13T12:17:23.9290892Z",
+      "result": "Exact relocation-adjusted 93-byte match, all four bindings."
+    }
+  ],
+  "candidate_sha256": "e210805b9f8e43d41e57a33d5ea23f39e64aa20a15e95e3c851c0bd01ca90554",
+  "api_sha256": "345ce8d871ba30895b3eda288ba88f1f50661697715ba11624f7e2f87a1e9132",
+  "fixture_sha256": "00682aabaa389d4b9dd7a7107249c3c8572088ce6d0205d7613362a1135432fe",
+  "status": "exact-native-parent-docker-pending",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 55,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-world_skip_chunk-a3579a6695b6/research-result.json",
+    "docker_report": "engine/build/campaign-001-world_skip_chunk-45e8d5a54b61/research-result.json",
+    "result": "result.json",
+    "result_sha256": "1f721116d52c933aacd4b110f37a410dc83a5d7afae7297320b61136c4295d14"
+  }
+}

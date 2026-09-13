@@ -1,0 +1,21 @@
+{
+  "id": "world_read_palettes",
+  "address": 4314531,
+  "size": 90,
+  "body_size": 90,
+  "source": "src/world_read_palettes.c",
+  "symbol": "_op_world_read_palettes",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 79,
+      "address": 4654982,
+      "kind": "rel32-call",
+      "symbol": "_op_stream_read"
+    }
+  ]
+}

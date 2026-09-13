@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "campaign": "017",
+  "status": "complete-focused-checkpoint",
+  "prepared_utc": "2026-09-13T12:15:37.454120+00:00",
+  "preparation_started_utc": "2026-09-13T12:02:00Z",
+  "preparation_cap_minutes": 15,
+  "started_utc": "2026-09-13T12:15:37.454120+00:00",
+  "worker_stop_utc": "2026-09-13T12:50:37.454120+00:00",
+  "stop_utc": "2026-09-13T13:00:37.454120+00:00",
+  "baseline_commit": "c1146a9",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "registered_functions_at_start": 23,
+  "assignments": [
+    {
+      "id": "world_skip_chunk",
+      "address": "0x41cdf0",
+      "case": "research/campaign-017-world-skip-chunk",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-017-world-skip-chunk/result.json",
+      "team_reported_name": "bapworld_skipChunk"
+    },
+    {
+      "id": "world_read_emitters",
+      "address": "0x41d302",
+      "case": "research/campaign-017-world-read-emitters",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-017-world-read-emitters/result.json",
+      "team_reported_name": "bapworld_loadPool"
+    },
+    {
+      "id": "world_read_sprite_refs",
+      "address": "0x41d360",
+      "case": "research/campaign-017-world-read-sprite-refs",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-017-world-read-sprite-refs/result.json",
+      "team_reported_name": "bapworld_loadPool"
+    },
+    {
+      "id": "world_read_palettes",
+      "address": "0x41d5a3",
+      "case": "research/campaign-017-world-read-palettes",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-017-world-read-palettes/result.json",
+      "team_reported_name": "bapworld_loadPals"
+    },
+    {
+      "id": "world_free_scripts",
+      "address": "0x41e373",
+      "case": "research/campaign-017-world-free-scripts",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-017-world-free-scripts/result.json",
+      "team_reported_name": "bapworld_freeScripts"
+    },
+    {
+      "id": "world_restart_clock",
+      "address": "0x41eb5a",
+      "case": "research/campaign-017-world-restart-clock",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-017-world-restart-clock/result.json",
+      "team_reported_name": "bapworld_restartClock"
+    }
+  ],
+  "worker_handoff_completed_utc": "2026-09-13T12:26:01.2546Z",
+  "final_verification_completed_utc": "2026-09-13T12:27:20.152234+00:00"
+}

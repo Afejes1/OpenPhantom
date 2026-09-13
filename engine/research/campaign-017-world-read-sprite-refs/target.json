@@ -1,0 +1,27 @@
+{
+  "id": "world_read_sprite_refs",
+  "address": 4313952,
+  "size": 108,
+  "body_size": 108,
+  "source": "src/world_read_sprite_refs.c",
+  "symbol": "_op_world_read_sprite_refs",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 42,
+      "address": 4805264,
+      "kind": "rel32-call",
+      "symbol": "_op_allocate"
+    },
+    {
+      "offset": 97,
+      "address": 4654982,
+      "kind": "rel32-call",
+      "symbol": "_op_stream_read"
+    }
+  ]
+}

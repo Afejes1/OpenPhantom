@@ -1,0 +1,21 @@
+{
+  "id": "world_free_scripts",
+  "address": 4318067,
+  "size": 74,
+  "body_size": 74,
+  "source": "src/world_free_scripts.c",
+  "symbol": "_op_world_free_scripts",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 61,
+      "address": 4365783,
+      "kind": "rel32-call",
+      "symbol": "_op_free_script_data"
+    }
+  ]
+}

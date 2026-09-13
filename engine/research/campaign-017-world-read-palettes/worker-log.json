@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "case": "world_read_palettes",
+  "started_utc": "2026-09-13T12:22:12.5315539Z",
+  "finished_utc": "2026-09-13T12:22:42.7511241Z",
+  "timestamp_basis": "source creation, report write, observed finish",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural wrapped byte product, mismatch guard, two live count stores, and read callback.",
+      "source_sha256": "f0ac9a0557159c851793a3062d516139ef229b8484bc23d8b5834c302d5ceb67",
+      "report": "engine/build/campaign-001-world_read_palettes-9b8d369fee58/research-result.json",
+      "report_sha256": "bac9972479310f26c15fdb53127daa31676e7afff5c09d503cb52d445e5bacb8",
+      "report_written_utc": "2026-09-13T12:22:30.3055341Z",
+      "result": "Exact relocation-adjusted 90-byte match, call verified."
+    }
+  ],
+  "candidate_sha256": "f0ac9a0557159c851793a3062d516139ef229b8484bc23d8b5834c302d5ceb67",
+  "api_sha256": "e0fb08c2f73c8a99d87366bb0a4dd2a22a4189762db6147f538e8b414ce8123d",
+  "fixture_sha256": "d751b4bf02a5c3f7028e1d232dfd477542c307c35b39b6bfd340c4397454c16e",
+  "status": "exact-native-parent-docker-pending",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 39,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-world_read_palettes-2a9604ac0126/research-result.json",
+    "docker_report": "engine/build/campaign-001-world_read_palettes-6011efc7f29b/research-result.json",
+    "result": "result.json",
+    "result_sha256": "b3d698ae79aa1149bd1d5bd82cb94af60c693f77074f09639ffbd6c02490f781"
+  }
+}

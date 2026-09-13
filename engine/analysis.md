@@ -295,3 +295,14 @@ bytes in their full targets; no new full exact matches. Sequence is8/190bytes
 different, reference-axis61/245;526 focused checks and10 evidence checks pass.
 See [results](research/campaign-013/results.md) for unchanged full targets,
 independent body reproduction, callback/unsigned/floating behavior and limits.
+
+## Acceptance002 and Campaign017
+
+The shared colormap load/free integration raised accepted registered functions to23
+through immutable record22, after the full original-toolchain build and321 shared
+checks. Full CI passed. Campaign017 then reconstructed six unfinished world
+reader/cleanup functions,517 full bytes and281 focused checks, with no source
+rewrites. See [acceptance](research/acceptance-002/results.md) and
+[campaign results](research/campaign-017/results.md). World/header integration and
+signed stream callback types remain pending; the bridge's stale chunk-skip
+thiscall metadata is explicitly documented and is not the source ABI oracle.

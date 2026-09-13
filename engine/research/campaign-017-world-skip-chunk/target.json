@@ -1,0 +1,39 @@
+{
+  "id": "world_skip_chunk",
+  "address": 4312560,
+  "size": 93,
+  "body_size": 93,
+  "source": "src/world_skip_chunk.c",
+  "symbol": "_op_world_skip_chunk",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 26,
+      "address": 4827744,
+      "kind": "rel32-call",
+      "symbol": "_op_stream_seek"
+    },
+    {
+      "offset": 40,
+      "address": 4805264,
+      "kind": "rel32-call",
+      "symbol": "_op_allocate"
+    },
+    {
+      "offset": 65,
+      "address": 4654982,
+      "kind": "rel32-call",
+      "symbol": "_op_stream_read"
+    },
+    {
+      "offset": 77,
+      "address": 4805714,
+      "kind": "rel32-call",
+      "symbol": "_op_release"
+    }
+  ]
+}

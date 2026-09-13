@@ -1,0 +1,74 @@
+[
+  {
+    "id": "world_skip_chunk",
+    "address": "0041CDF0",
+    "original_name": "FUN_0041cdf0",
+    "new_name": "skip_b3d_stream_bytes",
+    "confidence": "HIGH",
+    "purpose": "skip a chunk using file seek or allocated read-discard storage",
+    "evidence": "Six callers in chunk dispatch and animation readers; stream mode4; real fseek/allocate/read/free ABIs; return1 ignores callback failures",
+    "full_span": 93,
+    "fixture_checks": 55,
+    "result_status": "focused-relocation-adjusted-match"
+  },
+  {
+    "id": "world_read_emitters",
+    "address": "0041D302",
+    "original_name": "read_b3d_emitter_placements_chunk",
+    "new_name": "read_b3d_emitter_placements_chunk",
+    "confidence": "HIGH",
+    "purpose": "validate and read emitter placement records",
+    "evidence": "Dispatcher0041EA22; header2E8/2EC/800; worldCCC/CD0; wrapped payload product and one four-argument read",
+    "full_span": 94,
+    "fixture_checks": 35,
+    "result_status": "focused-relocation-adjusted-match"
+  },
+  {
+    "id": "world_read_sprite_refs",
+    "address": "0041D360",
+    "original_name": "read_b3d_sprite_references_chunk",
+    "new_name": "read_b3d_sprite_references_chunk",
+    "confidence": "HIGH",
+    "purpose": "allocate and read sprite reference records",
+    "evidence": "Dispatcher0041EA09; record size60; header2D0/800; worldCB4/CB8; live header count after allocator and captured read size",
+    "full_span": 108,
+    "fixture_checks": 75,
+    "result_status": "focused-relocation-adjusted-match"
+  },
+  {
+    "id": "world_read_palettes",
+    "address": "0041D5A3",
+    "original_name": "read_b3d_palettes_chunk",
+    "new_name": "read_b3d_palettes_chunk",
+    "confidence": "HIGH",
+    "purpose": "validate and read palette records",
+    "evidence": "Dispatcher0041E835; record size768; header20/800; world64/68/6C; count/capacity set before read",
+    "full_span": 90,
+    "fixture_checks": 39,
+    "result_status": "focused-relocation-adjusted-match"
+  },
+  {
+    "id": "world_free_scripts",
+    "address": "0041E373",
+    "original_name": "FUN_0041e373",
+    "new_name": "free_b3d_world_script_data",
+    "confidence": "HIGH",
+    "purpose": "free script data through the live world script array",
+    "evidence": "World destructor0041CD0A; signed count1F8 and pointer array200; real single-argument callee429DD7 frees field4; callback-live bounds",
+    "full_span": 74,
+    "fixture_checks": 55,
+    "result_status": "focused-relocation-adjusted-match"
+  },
+  {
+    "id": "world_restart_clock",
+    "address": "0041EB5A",
+    "original_name": "FUN_0041eb5a",
+    "new_name": "restart_b3d_world_clock",
+    "confidence": "HIGH",
+    "purpose": "restart world timestamps and invoke the existing world hook",
+    "evidence": "Level loader0043F89A; null guard; timer475B1D; world50/58/5C; clock hook41EABC one cdecl argument",
+    "full_span": 58,
+    "fixture_checks": 22,
+    "result_status": "focused-relocation-adjusted-match"
+  }
+]

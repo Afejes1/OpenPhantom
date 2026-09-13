@@ -85,6 +85,11 @@ from expected result indexes. When callbacks can mutate shared fields, assert th
 state visible inside the callback as well as final state. Review these oracles
 before relying on a passing fixture or reporting its assertion count.
 
+Declare pointer arrays separately so every declarator carries its own asterisk.
+Use readable multi-line fixture code to make ownership and expected mutations
+reviewable. Verify Ghidra calling-convention metadata by re-decompiling after a
+signature change; a successful bridge response alone does not establish the ABI.
+
 Use ordinary check functions in VC5 fixtures; do-while(0) assertion macros can
 trigger C4127 under the existing /W4 /WX policy. Prefer typed initialization for
 arrays of const pointers and owned sentinel addresses. Fix fixture compatibility

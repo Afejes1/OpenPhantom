@@ -1,0 +1,21 @@
+{
+  "id": "world_read_emitters",
+  "address": 4313858,
+  "size": 94,
+  "body_size": 94,
+  "source": "src/world_read_emitters.c",
+  "symbol": "_op_world_read_emitters",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 83,
+      "address": 4654982,
+      "kind": "rel32-call",
+      "symbol": "_op_stream_read"
+    }
+  ]
+}

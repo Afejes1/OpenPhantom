@@ -18,8 +18,8 @@
   "evidence_records_at_start": 21,
   "weekly_shared_usage_start_percent": 39,
   "promotions": 2,
-  "new_exact_functions": 0,
-  "new_exact_bytes": 0,
+  "new_exact_functions": 6,
+  "new_exact_bytes": 517,
   "checkpoints": [
     {
       "id": "acceptance-002",
@@ -31,8 +31,19 @@
       "registered_total": 23,
       "result": "../acceptance-002/result.json",
       "full_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34756468991"
+    },
+    {
+      "id": "campaign-017",
+      "status": "verified-publication-pending",
+      "new_exact_functions": 6,
+      "new_exact_bytes": 517,
+      "fixture_checks": 281,
+      "promotions": 0,
+      "results": "../campaign-017/results.md",
+      "verified_utc": "2026-09-13T12:27:20.152234+00:00"
     }
   ],
-  "current_work": "Campaign017: six prepared world reader/cleanup cases; one Sol medium worker implementing sequentially.",
-  "original_game_executed": false
+  "current_work": "Campaign017 verified and publishing. Next: prepare a small coherent world-reader integration slice or next unfinished family within the fixed window; see next-work.md.",
+  "original_game_executed": false,
+  "weekly_shared_usage_latest_percent": 40
 }

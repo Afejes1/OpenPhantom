@@ -432,6 +432,30 @@
     {
       "address": "0x004288d1",
       "source": "research/campaign-016-extended-pick-face-update/README.md"
+    },
+    {
+      "address": "0x41cdf0",
+      "source": "research/campaign-017-world-skip-chunk/README.md"
+    },
+    {
+      "address": "0x41d302",
+      "source": "research/campaign-017-world-read-emitters/README.md"
+    },
+    {
+      "address": "0x41d360",
+      "source": "research/campaign-017-world-read-sprite-refs/README.md"
+    },
+    {
+      "address": "0x41d5a3",
+      "source": "research/campaign-017-world-read-palettes/README.md"
+    },
+    {
+      "address": "0x41e373",
+      "source": "research/campaign-017-world-free-scripts/README.md"
+    },
+    {
+      "address": "0x41eb5a",
+      "source": "research/campaign-017-world-restart-clock/README.md"
     }
   ]
 }

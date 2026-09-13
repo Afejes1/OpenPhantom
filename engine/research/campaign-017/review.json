@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "campaign": "017",
+  "reviews": {
+    "world_skip_chunk": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 93,
+      "source_review": "Reviewed the two stack arguments and real seek/read/allocate/free callees. Original calls read(buffer,1,bytes,stream), always returns1 and preserves the allocated local through callbacks. Parent replaced integer pointer casts with owned byte addresses and added allocator-visible stream checks, release-time state and a normal positive-size case.",
+      "fixture_checks": 55,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "world_read_emitters": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 94,
+      "source_review": "Reviewed header count/disk size wrapped multiplication and mismatch exit, pre-read world count store and exact four callback arguments. Parent added aggregate stream/header/world guards and explicit expected sizes including a wrapped nonzero product.",
+      "fixture_checks": 35,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "world_read_sprite_refs": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 108,
+      "source_review": "Reviewed fixed60-byte record product, allocation before live header-count reload, captured read byte count and no allocation-failure guard. Parent added aggregate guards, pre-allocation visible state, nonzero wrap, NULL allocation at nonzero size and separate allocator/read mutation cases.",
+      "fixture_checks": 75,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "world_read_palettes": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 90,
+      "source_review": "Reviewed fixed768-byte record product, mismatch exit and count/capacity stores before read. Parent added aggregate guards and explicit nonzero wrapped product; callback-visible fields, negative/zero returns and retained mutations pass.",
+      "fixture_checks": 39,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "world_free_scripts": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 74,
+      "source_review": "Reviewed signed live count at1F8, script pointer array200, current-pointer local and real one-argument data-free callee; read_b3d_ai_chunk independently identifies these records as AI programs. Parent added world guards and callback-visible count/array checks. The worker fixture accidentally declared two arrays of structs instead of pointers; VC5 rejected it. Explicit pointer declarations fixed the fixture without candidate changes or warning waivers.",
+      "fixture_checks": 55,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "world_restart_clock": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 58,
+      "source_review": "Reviewed null guard, clock result store50, live copy58, zero5C then one-argument world hook. Parent added world guards; clock-time changes, pre-hook state, hook mutations and zero/high-bit/max tick words pass.",
+      "fixture_checks": 22,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    }
+  },
+  "issues": [
+    {
+      "scope": "parent private orchestration",
+      "issue": "Initial invocation passed case.json instead of its directory. Runner rejected before any compiler invocation; corrected wrapper argument.",
+      "compiler_invocations": 0
+    },
+    {
+      "scope": "world_free_scripts fixture",
+      "issue": "Two pointer-array declarators omitted their asterisks; VC5 fixture compilation failed before execution. Corrected explicit pointer declarations, preserved failed pair and verified fresh final pair.",
+      "source_correction": false
+    },
+    {
+      "scope": "Ghidra signature metadata",
+      "issue": "Plain signature update retained stale __thiscall for skip_b3d_stream_bytes; explicit __cdecl parser request failed. Saved comment warns of spurious this parameter. Actual two-stack-argument ABI independently verified by instructions, callers and exact source.",
+      "resolved": false
+    }
+  ],
+  "full_regression_run": false,
+  "parent_source_corrections": [],
+  "parent_fixture_corrections": [
+    "world_skip_chunk",
+    "world_read_emitters",
+    "world_read_sprite_refs",
+    "world_read_palettes",
+    "world_free_scripts",
+    "world_restart_clock"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "case": "world_read_sprite_refs",
+  "started_utc": "2026-09-13T12:20:29.4375555Z",
+  "finished_utc": "2026-09-13T12:20:59.5153091Z",
+  "timestamp_basis": "source creation, report write, observed finish",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural captured wrapped byte count, allocation assignment, live header count, and live world pointer read.",
+      "source_sha256": "36db97f31cbd3aa2f4a54683c76e30cec7930d30e5c9d95f9019d2ce2d0149d6",
+      "report": "engine/build/campaign-001-world_read_sprite_refs-6175eda34be3/research-result.json",
+      "report_sha256": "f3f5a74b7393f888f7f02095e4b0b9458f1c22f9525978bb1d6208817438c029",
+      "report_written_utc": "2026-09-13T12:20:45.8157260Z",
+      "result": "Exact relocation-adjusted 108-byte match, both calls verified."
+    }
+  ],
+  "candidate_sha256": "36db97f31cbd3aa2f4a54683c76e30cec7930d30e5c9d95f9019d2ce2d0149d6",
+  "api_sha256": "5988da3aeb45571199c418b396de3cb6ff04f0873e0f31596c4eadc387b5ec55",
+  "fixture_sha256": "468812262f8592d98b34ddde35c356a253da83f01c8d0d30760e0452d6e81332",
+  "status": "exact-native-parent-docker-pending",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 75,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-world_read_sprite_refs-27f47bfa615d/research-result.json",
+    "docker_report": "engine/build/campaign-001-world_read_sprite_refs-214483d0448c/research-result.json",
+    "result": "result.json",
+    "result_sha256": "40c922749f81697740738bb4f4201c2612cbb9935ffe11c3fb340dc745324eb2"
+  }
+}
