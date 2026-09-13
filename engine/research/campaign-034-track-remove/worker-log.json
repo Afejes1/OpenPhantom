@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "track_remove",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full animation-track lifecycle contract",
+      "started_utc": "2026-09-13T21:51:44.586593+00:00",
+      "finished_utc": "2026-09-13T21:51:46.212632+00:00",
+      "returncode": 0,
+      "source_sha256": "a3dacb38b38462e5014bb4c83abdac9953633212f8581b8897a9121766d89a8a",
+      "report": "engine/build/campaign-001-track_remove-b06ef650f8ea/research-result.json",
+      "report_sha256": "ca4969f20c6d27ed9f4bc9e639649a835987edc8827a42c72baf71148f17b42a",
+      "status": "raw-code-match",
+      "candidate_size": 96,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.404712,
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "track_play",
+  "address": 4733008,
+  "size": 48,
+  "body_size": 46,
+  "source": "src/track_play.c",
+  "symbol": "_op_track_play",
+  "language": "c",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": []
+}

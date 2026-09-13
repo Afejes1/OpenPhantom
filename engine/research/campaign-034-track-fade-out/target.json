@@ -1,0 +1,27 @@
+{
+  "id": "track_fade_out",
+  "address": 4733152,
+  "size": 96,
+  "body_size": 83,
+  "source": "src/track_fade_out.c",
+  "symbol": "_op_track_fade_out",
+  "language": "c",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 34,
+      "address": 4885560,
+      "kind": "dir32",
+      "float32": 0.0
+    },
+    {
+      "offset": 53,
+      "address": 4885564,
+      "symbol": "_op_track_one",
+      "kind": "dir32"
+    }
+  ]
+}

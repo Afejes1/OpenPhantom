@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "puppet_init",
+  "compiler_invocations": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full animation-track lifecycle contract",
+      "started_utc": "2026-09-13T21:51:42.921621+00:00",
+      "finished_utc": "2026-09-13T21:51:44.581206+00:00",
+      "returncode": 1,
+      "source_sha256": "038666083a6a46dbdc9403d5a5f79fd4a90559c16411ccfd798285a720c90c67",
+      "report": "engine/build/campaign-001-puppet_init-2db57b6a2ea9/research-result.json",
+      "report_sha256": "9b8f918ef1c6490595ad9f7790cd5a3282e802566469ffb263760bf311920527",
+      "status": "mismatch",
+      "candidate_size": 64,
+      "different_bytes": 15,
+      "elapsed_seconds": 1.439002,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full animation-track lifecycle contract",
+      "started_utc": "2026-09-13T21:52:47.419965+00:00",
+      "finished_utc": "2026-09-13T21:52:49.049682+00:00",
+      "returncode": 1,
+      "source_sha256": "837e187a2baa1a43ddec7385fa91368dd7d38e00a55f64c38cb306a52c312764",
+      "report": "engine/build/campaign-001-puppet_init-37de56f799c6/research-result.json",
+      "report_sha256": "660007b9a581436af16a3e4dc62d231d3378be17ca24de6b9f6865bfb5262ebf",
+      "status": "mismatch",
+      "candidate_size": 64,
+      "different_bytes": 12,
+      "elapsed_seconds": 1.411301,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Typed C from reviewed full animation-track lifecycle contract",
+      "started_utc": "2026-09-13T21:53:41.760176+00:00",
+      "finished_utc": "2026-09-13T21:53:43.341157+00:00",
+      "returncode": 0,
+      "source_sha256": "0e612a9b8d238433578d6faf7708398e6fd5352c231184041c2aea3d8e697beb",
+      "report": "engine/build/campaign-001-puppet_init-1f4d09e10408/research-result.json",
+      "report_sha256": "f76d8e27af3c168862382cd89c52ffddc2f63972b0484047eea188c11b40e618",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 64,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.362065,
+      "stderr": ""
+    }
+  ]
+}

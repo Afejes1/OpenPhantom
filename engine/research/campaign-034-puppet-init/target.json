@@ -1,0 +1,21 @@
+{
+  "id": "puppet_init",
+  "address": 4732528,
+  "size": 64,
+  "body_size": 64,
+  "source": "src/puppet_init.c",
+  "symbol": "_op_puppet_init",
+  "language": "c",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 35,
+      "address": 4732832,
+      "symbol": "_op_remove_track",
+      "kind": "rel32-call"
+    }
+  ]
+}

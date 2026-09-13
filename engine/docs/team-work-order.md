@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **91** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **878**.
+Our last recorded matches cover **98** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **871**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -82,7 +82,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | bp/baplight.c | 6 | 0 | 6 |
 | bp/bapobj.c | 4 | 0 | 4 |
 | bp/bapview.c | 6 | 0 | 6 |
-| bp/bapvrt.c | 19 | 5 | 14 |
+| bp/bapvrt.c | 19 | 6 | 13 |
 | bp/bgl.c | 21 | 7 | 14 |
 | bp/bppartic.c | 5 | 0 | 5 |
 | bp/bpsprite.c | 1 | 0 | 1 |
@@ -91,11 +91,11 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | bp/texture.c | 7 | 0 | 7 |
 | game/aiext.c | 30 | 0 | 30 |
 | game/enemy.c | 9 | 0 | 9 |
-| game/fxfade.c | 34 | 26 | 8 |
+| game/fxfade.c | 34 | 28 | 6 |
 | game/fxprint.c | 6 | 2 | 4 |
 | game/fxshield.c | 24 | 14 | 10 |
 | game/fxzappo.c | 14 | 7 | 7 |
-| game/main.c | 26 | 0 | 26 |
+| game/main.c | 26 | 4 | 22 |
 | game/menu.c | 10 | 0 | 10 |
 | game/player.c | 13 | 0 | 13 |
 | game/save.c | 22 | 0 | 22 |

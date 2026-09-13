@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "track_fade_in",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full animation-track lifecycle contract",
+      "started_utc": "2026-09-13T21:51:47.832756+00:00",
+      "finished_utc": "2026-09-13T21:51:49.440721+00:00",
+      "returncode": 1,
+      "source_sha256": "9cbe66a026353334e64993674f3b03bf34bb47d5434bbc21b1cf50912f7e55f1",
+      "report": "engine/build/campaign-001-track_fade_in-9fe2e524675b/research-result.json",
+      "report_sha256": "a48a4a465220fe2079b9a675ff895744c2ef52f4c822e497ceb7343215e5bf2c",
+      "status": "unresolved",
+      "candidate_size": null,
+      "different_bytes": null,
+      "elapsed_seconds": 1.391743,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full animation-track lifecycle contract",
+      "started_utc": "2026-09-13T21:52:49.056504+00:00",
+      "finished_utc": "2026-09-13T21:52:50.648826+00:00",
+      "returncode": 0,
+      "source_sha256": "2be61e7c42f2af2ee607ebf5f4b347ba3d99ad82134c664be9dc026a973793f3",
+      "report": "engine/build/campaign-001-track_fade_in-5a7c1cdba644/research-result.json",
+      "report_sha256": "6991082697a537b0938b9195d3d595119b56e5343c035f3bc28d26e9a7c41303",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 96,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.376313,
+      "stderr": ""
+    }
+  ]
+}

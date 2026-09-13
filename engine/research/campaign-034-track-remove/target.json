@@ -1,0 +1,14 @@
+{
+  "id": "track_remove",
+  "address": 4732832,
+  "size": 96,
+  "body_size": 84,
+  "source": "src/track_remove.c",
+  "symbol": "_op_track_remove",
+  "language": "c",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": []
+}

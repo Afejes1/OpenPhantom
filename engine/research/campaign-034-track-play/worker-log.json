@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "track_play",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full animation-track lifecycle contract",
+      "started_utc": "2026-09-13T21:51:46.218814+00:00",
+      "finished_utc": "2026-09-13T21:51:47.827775+00:00",
+      "returncode": 0,
+      "source_sha256": "54458c2eb36817ff971542b508debe024840ad8f82484a07373f4c9f8f2fadc4",
+      "report": "engine/build/campaign-001-track_play-cb22454c82ae/research-result.json",
+      "report_sha256": "3678834d840a3b4a4cf99c5774c8a4071b20c8bd7bbb6dadbe0d5f29dde3c162",
+      "status": "raw-code-match",
+      "candidate_size": 48,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.391247,
+      "stderr": ""
+    }
+  ]
+}
