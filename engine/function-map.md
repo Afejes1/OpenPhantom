@@ -196,3 +196,16 @@ Address | Original Name | New Name | Confidence | Purpose | Evidence
 0x0041F2CE | FUN_0041f2ce | precompute_b3d_cell_runs | HIGH | bapmap_precomputeCell | Grid loop0041F2B9 one-arg call; all five full decompilations and caller stack cleanup checked.
 0x0041F315 | FUN_0041f315 | compute_b3d_cell_lod_mask | HIGH | bapmap_cellLodMask | Cell wrapper0041F2E7 one-arg call; full body confirms unsigned word sentinel and unsigned byte masks.
 0x0041F477 | FUN_0041f477 | compute_b3d_cell_material_runs | HIGH | bapmap_buildHeightRuns | Cell wrapper0041F2F3 one-arg call; complete248-byte disassembly checked; flags and run cap independently identified.
+
+## Campaign023 shield lifecycle
+
+Address | Original Name | New Name | Confidence | Purpose | Evidence
+---|---|---|---|---|---
+0x0043AE1B | FUN_0043ae1b | allocate_zeroed_linked_sphere_memory | HIGH | Allocate and zero shield-owned storage | Full 56-byte body, allocator call, nine call sites in allocation/mesh construction, bounded zero-range fixtures and exact VC5 code.
+0x0043B1E9 | FUN_0043b1e9 | free_linked_sphere_memory | HIGH | Null-guarded release of shield-owned storage | Full 23-byte body, release call, eight fields released by the single-slot destructor, exact pointer-forwarding fixture and VC5 code.
+0x0043B64D | FUN_0043b64d | destroy_all_linked_sphere_effects | HIGH | Destroy all 32 shield slots | Full 46-byte signed loop, one per-slot destructor call, reset/subsystem callers, exact 32-callback order fixture and VC5 code.
+0x0043B5E6 | stop_linked_sphere_effect | stop_linked_sphere_effect | HIGH | Begin stop/fade and detach actor slot | Full 103-byte body, existing callers, +8/+14/+10/+100 stores and full guarded-table/actor fixture.
+0x0043C943 | get_linked_sphere_save_size | get_linked_sphere_save_size | HIGH | Count serializable shield bytes | Full 110-byte body, save parent, active/stopping/no-save predicates, independent 4+52*n oracle and exact VC5 stack layout.
+0x0043AE53 | set_linked_sphere_effect_sprite | set_linked_sphere_effect_sprite | HIGH | Replace sprite handle and copied name | Full 148-byte body, resource release/acquire callbacks, live name copy, all-slot success/failure and callback-mutation fixture.
+
+Campaign023 corrects the provisional record+0 owner label: allocator stores integer one there; attached target is at +0x10. New research uses int active. Accepted older views will be reconciled at the next canonical shield integration, without changing prior evidence.

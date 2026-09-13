@@ -1,0 +1,26 @@
+{
+  "program": "TPM:/WMAIN.EXE",
+  "port": 8192,
+  "saved": true,
+  "renamed": [
+    {
+      "address": "0x0043AE1B",
+      "name": "allocate_zeroed_linked_sphere_memory"
+    },
+    {
+      "address": "0x0043B1E9",
+      "name": "free_linked_sphere_memory"
+    },
+    {
+      "address": "0x0043B64D",
+      "name": "destroy_all_linked_sphere_effects"
+    }
+  ],
+  "comments_updated": 6,
+  "affected_callers_redecompiled": [
+    "allocate_linked_sphere_effect",
+    "release_linked_sphere_effect",
+    "FUN_0043b200"
+  ],
+  "original_bytes_modified": false
+}

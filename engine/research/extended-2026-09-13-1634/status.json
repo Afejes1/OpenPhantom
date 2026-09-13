@@ -18,8 +18,8 @@
   "reviewer_model": "gpt-5.6-sol",
   "reviewer_reasoning": "medium",
   "max_concurrent_implementation_workers": 1,
-  "new_exact_functions": 0,
-  "new_exact_bytes": 0,
+  "new_exact_functions": 6,
+  "new_exact_bytes": 486,
   "promotions": 3,
   "new_near_matches": 0,
   "new_research_candidates": 0,
@@ -33,8 +33,15 @@
       "source_commit": "d0e874375664db668c283c0cf017a267dfec61b3",
       "result": "research/acceptance-008/result.json",
       "full_ci": "success"
+    },
+    {
+      "id": "campaign-023",
+      "new_exact_functions": 6,
+      "new_exact_bytes": 486,
+      "focused_checks": 4094,
+      "result": "research/campaign-023/results.json"
     }
   ],
-  "current_work": "Campaign023: six untouched team-not_done shield lifecycle helpers.",
+  "current_work": "Prepare Campaign024 fog/fade and shield helpers; no full regression for research commits.",
   "original_game_executed": false
 }

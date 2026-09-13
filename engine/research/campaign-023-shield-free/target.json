@@ -1,0 +1,21 @@
+{
+  "id": "shield_free",
+  "address": 4436457,
+  "size": 23,
+  "body_size": 23,
+  "source": "src/shield_free.c",
+  "symbol": "_op_shield_free",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 14,
+      "address": 4805714,
+      "symbol": "_op_release",
+      "kind": "rel32-call"
+    }
+  ]
+}

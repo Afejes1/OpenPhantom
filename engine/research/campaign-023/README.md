@@ -1,0 +1,5 @@
+# Campaign023: shield lifecycle
+
+Six untouched team-not_done functions are selected from the shield subsystem: free, destroy all, stop/fade, save size, allocation and texture replacement. Parent implements; Sol independently reviews. Each function has a 15-minute/10-compilation cap, and five consecutive non-improving attempts stop tuning. The campaign reserves its last ten minutes for independent review and publication. Existing frozen near cases are not reopened.
+
+Acceptance requires the full declared function span with zero differing bytes and every address binding verified. Near matches at or below five percent remain separately labeled research and cannot enter accepted history. Use the pinned original VC5 toolchain, native compilation followed by verified Docker code/fixup equality and an isolated authored fixture. Preserve failed attempts. No matcher changes, excluded bytes, warning waivers, game execution or public original artifacts. Integration acceptance and final executable placement remain separate gates.

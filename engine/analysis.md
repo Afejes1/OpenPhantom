@@ -345,3 +345,7 @@ remains28 functions until the next canonical world-controls checkpoint.
 ## Campaign021
 
 Five functions match745 complete bytes; the material-run function remains9/248 differing bytes, unaccepted. All354 focused checks pass. Static analysis identified temporary-only actor-name normalization and grid/cell preprocessing. See research/campaign-021/results.md. Shared acceptance remains31 functions/25 records.
+
+## Acceptance008 and Campaign023
+
+The chunk-header/skip integration raises registered acceptance to 43 functions with immutable event 29 and successful full integration CI. The new shared fixture passes 7,066 checks. Campaign023 adds six exact shield lifecycle research functions, 486 complete bytes and 4,094 focused checks. The active word at record+0 is now distinguished from the attached actor pointer at+0x10; older accepted shield views will be reconciled at a canonical integration checkpoint. See [acceptance008](research/acceptance-008/results.md) and [Campaign023](research/campaign-023/results.md).

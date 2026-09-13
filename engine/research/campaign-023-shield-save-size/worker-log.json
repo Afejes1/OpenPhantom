@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "shield_save_size",
+  "compiler_invocations": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full shield lifecycle contract",
+      "started_utc": "2026-09-13T16:56:55.175632+00:00",
+      "finished_utc": "2026-09-13T16:56:56.752233+00:00",
+      "returncode": 1,
+      "source_sha256": "efefdd5f87432a829654e2450f0a22e5d955e99186a388abf90e3c5b30c15711",
+      "report": "engine/build/campaign-001-shield_save_size-f167090e3f5b/research-result.json",
+      "report_sha256": "803c978561c43351ca146f168bac19b40f20c60e30d3bfc8e2fc8a2cc5d6ec16",
+      "status": "mismatch",
+      "candidate_size": 110,
+      "different_bytes": 10,
+      "elapsed_seconds": 1.35498,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Declare pointer, index, size in observed stack-slot order; all ten prior differences were local offsets",
+      "started_utc": "2026-09-13T16:57:41.367799+00:00",
+      "finished_utc": "2026-09-13T16:57:42.936263+00:00",
+      "returncode": 1,
+      "source_sha256": "8c63cd3e92b7d668890f00df40209c6f3a7fb3d8eddc3345f8fa043a290febcc",
+      "report": "engine/build/campaign-001-shield_save_size-68e171b6cf17/research-result.json",
+      "report_sha256": "c82056758936caa8bd2bb3072d22c055814a758a84e0acbedc4e1a430f727471",
+      "status": "mismatch",
+      "candidate_size": 110,
+      "different_bytes": 10,
+      "elapsed_seconds": 1.349738,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Use descriptive entry/slot/total_bytes identifiers to test VC5 symbol-dependent stack allocation",
+      "started_utc": "2026-09-13T16:58:41.240998+00:00",
+      "finished_utc": "2026-09-13T16:58:42.812643+00:00",
+      "returncode": 1,
+      "source_sha256": "5cb5e01e1255173d88b4270849d2faa4d4bc0257fb37042dfd434ec8aade8116",
+      "report": "engine/build/campaign-001-shield_save_size-17554378a93d/research-result.json",
+      "report_sha256": "8ad38b01ad7469f08704f03cc0782da4829c4c4e4b27a9e6357083ecad485f30",
+      "status": "mismatch",
+      "candidate_size": 110,
+      "different_bytes": 9,
+      "elapsed_seconds": 1.35421,
+      "stderr": ""
+    },
+    {
+      "attempt": 4,
+      "hypothesis": "Retain correct total_bytes slot and test conventional current/i identifiers for the remaining pointer/index slots",
+      "started_utc": "2026-09-13T16:59:07.079357+00:00",
+      "finished_utc": "2026-09-13T16:59:08.651177+00:00",
+      "returncode": 0,
+      "source_sha256": "ace2381d0651187758042d4acea055c6122b840ff2d9137f8bc7ed5faf37b673",
+      "report": "engine/build/campaign-001-shield_save_size-5253c350257c/research-result.json",
+      "report_sha256": "2be88547f0e08a5c8bca9589d6fd22444b53b5884656289f294efcd94c0f06a6",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 110,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.354228,
+      "stderr": ""
+    }
+  ]
+}

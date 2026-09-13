@@ -1,0 +1,21 @@
+{
+  "id": "shield_stop",
+  "address": 4437478,
+  "size": 103,
+  "body_size": 103,
+  "source": "src/shield_stop.c",
+  "symbol": "_op_shield_stop",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 30,
+      "address": 7117360,
+      "symbol": "_op_shields",
+      "kind": "dir32"
+    }
+  ]
+}

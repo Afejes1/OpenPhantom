@@ -1,0 +1,21 @@
+{
+  "id": "shield_destroy_all",
+  "address": 4437581,
+  "size": 46,
+  "body_size": 46,
+  "source": "src/shield_destroy_all.c",
+  "symbol": "_op_shield_destroy_all",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 33,
+      "address": 4436124,
+      "symbol": "_op_shield_destroy",
+      "kind": "rel32-call"
+    }
+  ]
+}

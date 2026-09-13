@@ -1,0 +1,33 @@
+{
+  "id": "shield_set_texture",
+  "address": 4435539,
+  "size": 148,
+  "body_size": 148,
+  "source": "src/shield_set_texture.c",
+  "symbol": "_op_shield_set_texture",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 32,
+      "address": 7117360,
+      "symbol": "_op_shields",
+      "kind": "dir32"
+    },
+    {
+      "offset": 59,
+      "address": 4363764,
+      "symbol": "_op_release_sprite",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 71,
+      "address": 4363584,
+      "symbol": "_op_acquire_sprite",
+      "kind": "rel32-call"
+    }
+  ]
+}

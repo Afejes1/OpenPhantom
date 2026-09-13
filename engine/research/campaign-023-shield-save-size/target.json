@@ -1,0 +1,21 @@
+{
+  "id": "shield_save_size",
+  "address": 4442435,
+  "size": 110,
+  "body_size": 110,
+  "source": "src/shield_save_size.c",
+  "symbol": "_op_shield_save_size",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 57,
+      "address": 7117360,
+      "symbol": "_op_shields",
+      "kind": "dir32"
+    }
+  ]
+}

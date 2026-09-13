@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-13T17:05:55.679470+00:00",
+  "conclusion": "no-material-defect",
+  "full_body_abi_binding_fixture_review": true,
+  "active_word_clarification_independently_confirmed": true,
+  "parent_final_snapshot_verified": true,
+  "functions": [
+    {
+      "id": "shield_calloc",
+      "team_status": "not_done",
+      "address": 4435483,
+      "full_span_bytes": 56,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 128,
+      "implementation_compiles": 1,
+      "result": "research/campaign-023-shield-calloc/result.json"
+    },
+    {
+      "id": "shield_destroy_all",
+      "team_status": "not_done",
+      "address": 4437581,
+      "full_span_bytes": 46,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 197,
+      "implementation_compiles": 1,
+      "result": "research/campaign-023-shield-destroy-all/result.json"
+    },
+    {
+      "id": "shield_free",
+      "team_status": "not_done",
+      "address": 4436457,
+      "full_span_bytes": 23,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 12,
+      "implementation_compiles": 1,
+      "result": "research/campaign-023-shield-free/result.json"
+    },
+    {
+      "id": "shield_save_size",
+      "team_status": "not_done",
+      "address": 4442435,
+      "full_span_bytes": 110,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 489,
+      "implementation_compiles": 4,
+      "result": "research/campaign-023-shield-save-size/result.json"
+    },
+    {
+      "id": "shield_set_texture",
+      "team_status": "not_done",
+      "address": 4435539,
+      "full_span_bytes": 148,
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "checks": 2740,
+      "implementation_compiles": 1,
+      "result": "research/campaign-023-shield-set-texture/result.json"
+    },
+    {
+      "id": "shield_stop",
+      "team_status": "not_done",
+      "address": 4437478,
+      "full_span_bytes": 103,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 528,
+      "implementation_compiles": 1,
+      "result": "research/campaign-023-shield-stop/result.json"
+    }
+  ],
+  "original_game_executed": false,
+  "notes": [
+    "Record+0 is integer active; attached target is+10. New research and fixtures corrected before final native/Docker proof. Earlier accepted views remain for the next canonical integration.",
+    "Name field covers remaining record extent, not a recovered maximum string-capacity guarantee.",
+    "First final proof with provisional owner-pointer view is retained privately; repeat proof uses corrected active word and meaningful signed active values."
+  ]
+}

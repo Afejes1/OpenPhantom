@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "shield_stop",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full shield lifecycle contract",
+      "started_utc": "2026-09-13T16:56:53.591650+00:00",
+      "finished_utc": "2026-09-13T16:56:55.168502+00:00",
+      "returncode": 0,
+      "source_sha256": "48b537c38edc708ed5995ea7954cfd250d7b58b9c41cdc9581f9b68324ad99e2",
+      "report": "engine/build/campaign-001-shield_stop-a725477de86a/research-result.json",
+      "report_sha256": "5bdcb7867074db8881acddc60ed705d77aee879aca8b0dd19ef48318d9737bda",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 103,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.356692,
+      "stderr": ""
+    }
+  ]
+}

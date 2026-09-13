@@ -1,0 +1,21 @@
+{
+  "id": "shield_calloc",
+  "address": 4435483,
+  "size": 56,
+  "body_size": 56,
+  "source": "src/shield_calloc.c",
+  "symbol": "_op_shield_calloc",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 10,
+      "address": 4805264,
+      "symbol": "_op_allocate",
+      "kind": "rel32-call"
+    }
+  ]
+}

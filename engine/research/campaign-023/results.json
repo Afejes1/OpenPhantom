@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "campaign-023",
+  "completed_utc": "2026-09-13T17:05:55.679470+00:00",
+  "exact_functions": 6,
+  "exact_bytes": 486,
+  "fixture_checks": 4094,
+  "functions": [
+    {
+      "id": "shield_calloc",
+      "team_status": "not_done",
+      "address": 4435483,
+      "full_span_bytes": 56,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 128,
+      "implementation_compiles": 1,
+      "result": "research/campaign-023-shield-calloc/result.json"
+    },
+    {
+      "id": "shield_destroy_all",
+      "team_status": "not_done",
+      "address": 4437581,
+      "full_span_bytes": 46,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 197,
+      "implementation_compiles": 1,
+      "result": "research/campaign-023-shield-destroy-all/result.json"
+    },
+    {
+      "id": "shield_free",
+      "team_status": "not_done",
+      "address": 4436457,
+      "full_span_bytes": 23,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 12,
+      "implementation_compiles": 1,
+      "result": "research/campaign-023-shield-free/result.json"
+    },
+    {
+      "id": "shield_save_size",
+      "team_status": "not_done",
+      "address": 4442435,
+      "full_span_bytes": 110,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 489,
+      "implementation_compiles": 4,
+      "result": "research/campaign-023-shield-save-size/result.json"
+    },
+    {
+      "id": "shield_set_texture",
+      "team_status": "not_done",
+      "address": 4435539,
+      "full_span_bytes": 148,
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "checks": 2740,
+      "implementation_compiles": 1,
+      "result": "research/campaign-023-shield-set-texture/result.json"
+    },
+    {
+      "id": "shield_stop",
+      "team_status": "not_done",
+      "address": 4437478,
+      "full_span_bytes": 103,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 528,
+      "implementation_compiles": 1,
+      "result": "research/campaign-023-shield-stop/result.json"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "shield_free",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full shield lifecycle contract",
+      "started_utc": "2026-09-13T16:56:50.382523+00:00",
+      "finished_utc": "2026-09-13T16:56:51.985382+00:00",
+      "returncode": 0,
+      "source_sha256": "25588900a3adb7764644362aaa026e11677ff4552c4d082d6fa7e1ef78c43c59",
+      "report": "engine/build/campaign-001-shield_free-6fe36abb506e/research-result.json",
+      "report_sha256": "6328eaa71b934724c4ef0046a3c91a38d1c4a1183df8eef17d098fc3a1095915",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 23,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.385069,
+      "stderr": ""
+    }
+  ]
+}
