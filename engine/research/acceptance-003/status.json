@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "acceptance-003",
+  "status": "source-reviewed-awaiting-clean-build",
+  "started_utc": "2026-09-13T12:39:29+00:00",
+  "preparation_deadline_utc": "2026-09-13T12:54:29+00:00",
+  "implementation_stop_utc": "2026-09-13T13:14:29+00:00",
+  "deadline_utc": "2026-09-13T13:24:29+00:00",
+  "baseline_commit": "29b5a47faaf9766d72eceedd7ef4b19b756d73e2",
+  "registered_before": 23,
+  "registered_after_prepared": 26,
+  "new_promotions": 0,
+  "new_bytes": 292,
+  "verified_call_bindings": 4,
+  "source_preservation": [
+    {
+      "id": "world_read_emitters",
+      "research_source": "engine/research/campaign-017-world-read-emitters/candidate.c",
+      "research_source_sha256": "eddd37b3448704eaf049090187e57242d9c2c956908ac6556a79bb9a3f81563d",
+      "integrated_source": "engine/src/world_read_emitters.c",
+      "integrated_source_sha256": "43aa88072a1fb27ec16e7158455a8ae6fcfc4ffd0a101b6516d106c4ee9a4b4a",
+      "changes": [
+        "canonical partial type names/header",
+        "distinct header count field names where necessary",
+        "explicit int conversion at signed stream size boundary"
+      ],
+      "target_unchanged": true
+    },
+    {
+      "id": "world_read_sprite_refs",
+      "research_source": "engine/research/campaign-017-world-read-sprite-refs/candidate.c",
+      "research_source_sha256": "36db97f31cbd3aa2f4a54683c76e30cec7930d30e5c9d95f9019d2ce2d0149d6",
+      "integrated_source": "engine/src/world_read_sprite_refs.c",
+      "integrated_source_sha256": "25cdd921cea02710727574482d7b3c85b30e69116a43d617ee04b3a5577a6374",
+      "changes": [
+        "canonical partial type names/header",
+        "distinct header count field names where necessary",
+        "explicit int conversion at signed stream size boundary"
+      ],
+      "target_unchanged": true
+    },
+    {
+      "id": "world_read_palettes",
+      "research_source": "engine/research/campaign-017-world-read-palettes/candidate.c",
+      "research_source_sha256": "f0ac9a0557159c851793a3062d516139ef229b8484bc23d8b5834c302d5ceb67",
+      "integrated_source": "engine/src/world_read_palettes.c",
+      "integrated_source_sha256": "2a920a0bce3c2fdd7ba7735f7cef8cad018aff3932e0013cee58dda5fc40999f",
+      "changes": [
+        "canonical partial type names/header",
+        "distinct header count field names where necessary",
+        "explicit int conversion at signed stream size boundary"
+      ],
+      "target_unchanged": true
+    }
+  ],
+  "original_game_executed": false,
+  "preparation_completed_utc": "2026-09-13T12:43:25.454839+00:00",
+  "abi_reconciliation": "Stream destination,size,count,stream positions8,C,10,14 and signed CDQ/IDIV denominator verified directly. Canonical int size/count; unsigned payload products explicitly cast to int at call; VC5 word behavior requires fresh byte and fixture proof.",
+  "existing_23_targets_unchanged": true,
+  "fixture_sha256": "5f2f59807d5084c4e48728557821075b9eb7c4507b8049e296d5bf9c4492bc90",
+  "tooling_tests_passed": 100
+}

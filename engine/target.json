@@ -1139,6 +1139,75 @@
           "symbol": "_op_extended_colormap_count"
         }
       ]
+    },
+    {
+      "id": "world_read_emitters",
+      "address": 4313858,
+      "size": 94,
+      "body_size": 94,
+      "source": "src/world_read_emitters.c",
+      "symbol": "_op_world_read_emitters",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 83,
+          "address": 4654982,
+          "kind": "rel32-call",
+          "symbol": "_op_stream_read"
+        }
+      ]
+    },
+    {
+      "id": "world_read_sprite_refs",
+      "address": 4313952,
+      "size": 108,
+      "body_size": 108,
+      "source": "src/world_read_sprite_refs.c",
+      "symbol": "_op_world_read_sprite_refs",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 42,
+          "address": 4805264,
+          "kind": "rel32-call",
+          "symbol": "_op_allocate"
+        },
+        {
+          "offset": 97,
+          "address": 4654982,
+          "kind": "rel32-call",
+          "symbol": "_op_stream_read"
+        }
+      ]
+    },
+    {
+      "id": "world_read_palettes",
+      "address": 4314531,
+      "size": 90,
+      "body_size": 90,
+      "source": "src/world_read_palettes.c",
+      "symbol": "_op_world_read_palettes",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 79,
+          "address": 4654982,
+          "kind": "rel32-call",
+          "symbol": "_op_stream_read"
+        }
+      ]
     }
   ]
 }

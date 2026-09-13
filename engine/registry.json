@@ -445,6 +445,63 @@
         "Common-header include is the only source text change from frozen Campaign015"
       ],
       "exceptions": []
+    },
+    {
+      "id": "world_read_emitters",
+      "module": "b3d_chunk_readers",
+      "analysis_name": "read_b3d_emitter_placements_chunk",
+      "purpose": "Validate emitter payload size and read records into the world emitter storage",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/world-readers-acceptance.md",
+        "research/campaign-017-world-read-emitters/README.md"
+      ],
+      "behavior_tests": [
+        "tests/world_readers_behavior.c"
+      ],
+      "quirks": [
+        "Unsigned payload products preserve32-bit wrapping; explicit signed stream-size boundary preserves original argument words",
+        "Shared offset-checked world/header views; callback mutations are observed in original order"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "world_read_sprite_refs",
+      "module": "b3d_chunk_readers",
+      "analysis_name": "read_b3d_sprite_references_chunk",
+      "purpose": "Allocate sprite reference storage and read the payload using the live post-allocation count",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/world-readers-acceptance.md",
+        "research/campaign-017-world-read-sprite-refs/README.md"
+      ],
+      "behavior_tests": [
+        "tests/world_readers_behavior.c"
+      ],
+      "quirks": [
+        "Unsigned payload products preserve32-bit wrapping; explicit signed stream-size boundary preserves original argument words",
+        "Shared offset-checked world/header views; callback mutations are observed in original order"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "world_read_palettes",
+      "module": "b3d_chunk_readers",
+      "analysis_name": "read_b3d_palettes_chunk",
+      "purpose": "Validate palette payload size and update palette count/capacity before reading",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/world-readers-acceptance.md",
+        "research/campaign-017-world-read-palettes/README.md"
+      ],
+      "behavior_tests": [
+        "tests/world_readers_behavior.c"
+      ],
+      "quirks": [
+        "Unsigned payload products preserve32-bit wrapping; explicit signed stream-size boundary preserves original argument words",
+        "Shared offset-checked world/header views; callback mutations are observed in original order"
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
