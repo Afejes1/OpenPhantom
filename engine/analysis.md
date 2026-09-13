@@ -357,3 +357,7 @@ Seven exact fog/fade/shield helpers add416 bytes and the whole focused batch pas
 ## Campaign025 effects lifecycle
 
 Six additional team-not_done functions match 871 full function bytes under the locked VC5 toolchain, with all relocation operands resolved and 7,829 authored checks passing. Shield destruction preserves ordered callbacks and subsequent clears. Timed fog and tint retain observed x87 and callback ordering. Fog RGB arguments are full integers followed by masks; the stale Ghidra byte-parameter signature was corrected. Fade-reset lifecycle provenance remains unresolved. See research/campaign-025/results.md. This is function-level evidence, not final executable identity.
+
+## Campaign026 letterbox and halo lifecycle
+
+Seven untouched functions match 455 complete bytes; 9,954 focused checks cover all eight candidates. Halo resource setup, shutdown and per-object detach have evidence-backed identities. Serializer fixtures check the full 28-byte block and callback mutations; object rendering reloads flags and the signed shield slot after halo drawing. Overlay restore remains research because its eight-byte alignment tail is unresolved. See [Campaign026](research/campaign-026/results.md).

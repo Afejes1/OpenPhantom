@@ -239,3 +239,11 @@ Address | Original Name | New Name | Confidence | Purpose | Evidence
 0x00438F81 | advance_timed_fog_transition | unchanged | HIGH | Interpolate fog and perform terminal restoration | Complete 162-byte VC5 match; 732 focused checks; native/Docker code and fixups agree.
 0x0043B09C | release_linked_sphere_effect | unchanged | HIGH | Release one shield record and decrement live count | Complete 333-byte VC5 match; 5976 focused checks; native/Docker code and fixups agree.
 0x00439370 | start_fullscreen_color_fade | unchanged | HIGH | Publish fullscreen tint state around clock callback | Complete 96-byte VC5 match; 361 focused checks; native/Docker code and fixups agree.
+
+## Campaign026 halo lifecycle identification
+
+Address | Original Name | New Name | Confidence | Purpose | Evidence
+---|---|---|---|---|---
+0x004397F0 | FUN_004397f0 | initialize_halo_sprite_resources | HIGH | Initialize three halo sprite handles | Dispatcher startup case3; three resource calls and distinct global stores; 59-byte exact match, NULL/alias callback fixtures.
+0x0043982B | FUN_0043982b | release_halo_sprite_resources | HIGH | Release three halo sprite handles | Dispatcher shutdown case4; address-of-handle callbacks in order; 44-byte exact match.
+0x0043A154 | FUN_0043a154 | detach_object_halo_resources | HIGH | Detach and release every halo owned by an actor | Object teardown and fragmentation callers; 32 records at stride28, clear owner before release, decrement live count; 103-byte exact match.

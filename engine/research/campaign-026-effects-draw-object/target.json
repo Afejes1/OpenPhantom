@@ -1,0 +1,27 @@
+{
+  "id": "effects_draw_object",
+  "address": 4427384,
+  "size": 69,
+  "body_size": 69,
+  "source": "src/effects_draw_object.c",
+  "symbol": "_op_effects_draw_object",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 14,
+      "address": 4430420,
+      "symbol": "_op_halo_draw_actor",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 60,
+      "address": 4442351,
+      "symbol": "_op_shield_draw_attached",
+      "kind": "rel32-call"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "halo_startup",
+  "address": 4429808,
+  "size": 59,
+  "body_size": 59,
+  "source": "src/halo_startup.c",
+  "symbol": "_op_halo_startup",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 4907404,
+      "symbol": "_op_halo_name_a",
+      "kind": "dir32"
+    },
+    {
+      "offset": 9,
+      "address": 4363584,
+      "symbol": "_op_acquire_sprite",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 17,
+      "address": 7098888,
+      "symbol": "_op_halo_sprite_a",
+      "kind": "dir32"
+    },
+    {
+      "offset": 22,
+      "address": 4892012,
+      "symbol": "_op_halo_name_b",
+      "kind": "dir32"
+    },
+    {
+      "offset": 27,
+      "address": 4363584,
+      "symbol": "_op_acquire_sprite",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 35,
+      "address": 7098892,
+      "symbol": "_op_halo_sprite_b",
+      "kind": "dir32"
+    },
+    {
+      "offset": 40,
+      "address": 4892000,
+      "symbol": "_op_halo_name_c",
+      "kind": "dir32"
+    },
+    {
+      "offset": 45,
+      "address": 4363584,
+      "symbol": "_op_acquire_sprite",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 53,
+      "address": 7098896,
+      "symbol": "_op_halo_sprite_c",
+      "kind": "dir32"
+    }
+  ]
+}

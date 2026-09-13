@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "detach_halo",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T18:22:12.357853+00:00",
+      "finished_utc": "2026-09-13T18:22:13.975338+00:00",
+      "returncode": 0,
+      "source_sha256": "815081efcb52664afd6a50fb25ffd718a8c29ebaaa663850bdbc6f338182d2eb",
+      "report": "engine/build/campaign-001-detach_halo-600d0918c3fd/research-result.json",
+      "report_sha256": "e186229a6d90bd7eb579807366388c815dbdc39a3a29b94bf58a4ac023b6386b",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 103,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.39885,
+      "stderr": ""
+    }
+  ]
+}

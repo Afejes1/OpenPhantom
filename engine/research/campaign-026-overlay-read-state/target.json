@@ -1,0 +1,27 @@
+{
+  "id": "overlay_read_state",
+  "address": 4429716,
+  "size": 33,
+  "body_size": 33,
+  "source": "src/overlay_read_state.c",
+  "symbol": "_op_overlay_read_state",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 7097944,
+      "symbol": "_op_overlay_save",
+      "kind": "dir32"
+    },
+    {
+      "offset": 11,
+      "address": 4529328,
+      "symbol": "_op_save_read",
+      "kind": "rel32-call"
+    }
+  ]
+}

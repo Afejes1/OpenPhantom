@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "overlay_restore_state",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T18:22:06.466496+00:00",
+      "finished_utc": "2026-09-13T18:22:08.090377+00:00",
+      "returncode": 1,
+      "source_sha256": "afcf68eb59ac10230248b96166f098334bf9f9aa8857ab7360570d50882ec38e",
+      "report": "engine/build/campaign-001-overlay_restore_state-7b451b3880db/research-result.json",
+      "report_sha256": "d5fd30989331686cc642b8c185352b35cb6ef800ec8766c05de8b386d07fea49",
+      "status": "mismatch",
+      "candidate_size": 51,
+      "different_bytes": null,
+      "elapsed_seconds": 1.402566,
+      "stderr": ""
+    }
+  ]
+}

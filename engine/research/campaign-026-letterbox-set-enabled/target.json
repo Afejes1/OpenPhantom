@@ -1,0 +1,57 @@
+{
+  "id": "letterbox_set_enabled",
+  "address": 4429519,
+  "size": 81,
+  "body_size": 81,
+  "source": "src/letterbox_set_enabled.c",
+  "symbol": "_op_letterbox_set_enabled",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 8918488,
+      "symbol": "_op_letterbox_previous",
+      "kind": "dir32"
+    },
+    {
+      "offset": 20,
+      "address": 8918496,
+      "symbol": "_op_letterbox_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 29,
+      "address": 8918492,
+      "symbol": "_op_letterbox_step",
+      "kind": "dir32"
+    },
+    {
+      "offset": 45,
+      "address": 8918488,
+      "symbol": "_op_letterbox_previous",
+      "kind": "dir32"
+    },
+    {
+      "offset": 54,
+      "address": 8918496,
+      "symbol": "_op_letterbox_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 63,
+      "address": 8918492,
+      "symbol": "_op_letterbox_step",
+      "kind": "dir32"
+    },
+    {
+      "offset": 75,
+      "address": 8918496,
+      "symbol": "_op_letterbox_target",
+      "kind": "dir32"
+    }
+  ]
+}

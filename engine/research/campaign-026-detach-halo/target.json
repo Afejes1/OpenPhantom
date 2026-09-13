@@ -1,0 +1,52 @@
+{
+  "id": "detach_halo",
+  "address": 4432212,
+  "size": 103,
+  "body_size": 103,
+  "source": "src/detach_halo.c",
+  "symbol": "_op_detach_halo",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 36,
+      "address": 7097992,
+      "symbol": "_op_halos",
+      "kind": "dir32"
+    },
+    {
+      "offset": 53,
+      "address": 7097992,
+      "symbol": "_op_halos",
+      "kind": "dir32"
+    },
+    {
+      "offset": 69,
+      "address": 7097992,
+      "symbol": "_op_halos",
+      "kind": "dir32",
+      "addend": 20
+    },
+    {
+      "offset": 75,
+      "address": 4363764,
+      "symbol": "_op_release_sprite",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 84,
+      "address": 7098900,
+      "symbol": "_op_halo_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 93,
+      "address": 7098900,
+      "symbol": "_op_halo_count",
+      "kind": "dir32"
+    }
+  ]
+}

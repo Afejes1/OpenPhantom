@@ -1,0 +1,67 @@
+{
+  "id": "overlay_restore_state",
+  "address": 4429749,
+  "size": 59,
+  "body_size": 51,
+  "source": "src/overlay_restore_state.c",
+  "symbol": "_op_overlay_restore_state",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 7097944,
+      "symbol": "_op_overlay_save",
+      "kind": "dir32",
+      "addend": 12
+    },
+    {
+      "offset": 9,
+      "address": 7097988,
+      "symbol": "_op_letterbox_visible",
+      "kind": "dir32"
+    },
+    {
+      "offset": 15,
+      "address": 7097944,
+      "symbol": "_op_overlay_save",
+      "kind": "dir32",
+      "addend": 16
+    },
+    {
+      "offset": 21,
+      "address": 8918496,
+      "symbol": "_op_letterbox_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 27,
+      "address": 7097944,
+      "symbol": "_op_overlay_save",
+      "kind": "dir32",
+      "addend": 20
+    },
+    {
+      "offset": 33,
+      "address": 8918488,
+      "symbol": "_op_letterbox_previous",
+      "kind": "dir32"
+    },
+    {
+      "offset": 38,
+      "address": 7097944,
+      "symbol": "_op_overlay_save",
+      "kind": "dir32",
+      "addend": 24
+    },
+    {
+      "offset": 43,
+      "address": 8918492,
+      "symbol": "_op_letterbox_step",
+      "kind": "dir32"
+    }
+  ]
+}

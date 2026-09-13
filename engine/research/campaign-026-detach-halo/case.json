@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "detach_halo",
+  "candidate": "candidate.c",
+  "symbol": "_op_detach_halo",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

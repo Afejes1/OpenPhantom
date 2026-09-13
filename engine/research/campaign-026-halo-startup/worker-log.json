@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "halo_startup",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T18:22:08.095826+00:00",
+      "finished_utc": "2026-09-13T18:22:09.742096+00:00",
+      "returncode": 0,
+      "source_sha256": "269f17b8cbd040edca3f0ec3bd72f18b8af64173a1a354288af39d7ad9fcefbe",
+      "report": "engine/build/campaign-001-halo_startup-4fe11b1391f9/research-result.json",
+      "report_sha256": "2bb8fffa1bf4635700deb75484f00b723c3199aaa6738ea069f200f081e9de18",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 59,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.424188,
+      "stderr": ""
+    }
+  ]
+}
