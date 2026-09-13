@@ -4931,6 +4931,132 @@
           "kind": "rel32-call"
         }
       ]
+    },
+    {
+      "id": "list_add_after",
+      "address": 4800160,
+      "size": 57,
+      "body_size": 57,
+      "source": "src/list_add_after.c",
+      "symbol": "_op_list_add_after",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "list_insert_before",
+      "address": 4800217,
+      "size": 56,
+      "body_size": 56,
+      "source": "src/list_insert_before.c",
+      "symbol": "_op_list_insert_before",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "list_append",
+      "address": 4800273,
+      "size": 61,
+      "body_size": 61,
+      "source": "src/list_append.c",
+      "symbol": "_op_list_append",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "list_unlink",
+      "address": 4800334,
+      "size": 68,
+      "body_size": 68,
+      "source": "src/list_unlink.c",
+      "symbol": "_op_list_unlink",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "list_cut_before",
+      "address": 4800402,
+      "size": 34,
+      "body_size": 34,
+      "source": "src/list_cut_before.c",
+      "symbol": "_op_list_cut_before",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "list_init",
+      "address": 4800436,
+      "size": 24,
+      "body_size": 24,
+      "source": "src/list_init.c",
+      "symbol": "_op_list_init",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "list_count",
+      "address": 4800460,
+      "size": 44,
+      "body_size": 44,
+      "source": "src/list_count.c",
+      "symbol": "_op_list_count",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "list_advance",
+      "address": 4800504,
+      "size": 40,
+      "body_size": 40,
+      "source": "src/list_advance.c",
+      "symbol": "_op_list_advance",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "list_last",
+      "address": 4800544,
+      "size": 38,
+      "body_size": 38,
+      "source": "src/list_last.c",
+      "symbol": "_op_list_last",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
     }
   ]
 }

@@ -2071,6 +2071,177 @@
         "Three live world reloads and camera+8; retains all three surface preparation ABI arguments; final submission uses actual canonical helper."
       ],
       "exceptions": []
+    },
+    {
+      "id": "list_add_after",
+      "module": "linked_list",
+      "analysis_name": "list_add_after",
+      "purpose": "list add after",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/linked-list-acceptance.md",
+        "research/campaign-035-list-add-after/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/list_add_after_behavior.h",
+        "tests/linked_list_behavior.c"
+      ],
+      "quirks": [
+        "NonNULL mutators, distinct detached insertion nodes, finite acyclic traversal; raw complete spans with no address operands."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "list_insert_before",
+      "module": "linked_list",
+      "analysis_name": "list_insert_before",
+      "purpose": "list insert before",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/linked-list-acceptance.md",
+        "research/campaign-035-list-insert-before/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/list_insert_before_behavior.h",
+        "tests/linked_list_behavior.c"
+      ],
+      "quirks": [
+        "NonNULL mutators, distinct detached insertion nodes, finite acyclic traversal; raw complete spans with no address operands."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "list_append",
+      "module": "linked_list",
+      "analysis_name": "list_append",
+      "purpose": "list append",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/linked-list-acceptance.md",
+        "research/campaign-035-list-append/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/list_append_behavior.h",
+        "tests/linked_list_behavior.c"
+      ],
+      "quirks": [
+        "NonNULL mutators, distinct detached insertion nodes, finite acyclic traversal; raw complete spans with no address operands."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "list_unlink",
+      "module": "linked_list",
+      "analysis_name": "list_unlink",
+      "purpose": "list unlink",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/linked-list-acceptance.md",
+        "research/campaign-035-list-unlink/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/list_unlink_behavior.h",
+        "tests/linked_list_behavior.c"
+      ],
+      "quirks": [
+        "NonNULL mutators, distinct detached insertion nodes, finite acyclic traversal; raw complete spans with no address operands."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "list_cut_before",
+      "module": "linked_list",
+      "analysis_name": "list_cut_before",
+      "purpose": "list cut before",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/linked-list-acceptance.md",
+        "research/campaign-035-list-cut-before/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/list_cut_before_behavior.h",
+        "tests/linked_list_behavior.c"
+      ],
+      "quirks": [
+        "NonNULL mutators, distinct detached insertion nodes, finite acyclic traversal; raw complete spans with no address operands."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "list_init",
+      "module": "linked_list",
+      "analysis_name": "list_init",
+      "purpose": "list init",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/linked-list-acceptance.md",
+        "research/campaign-035-list-init/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/list_init_behavior.h",
+        "tests/linked_list_behavior.c"
+      ],
+      "quirks": [
+        "NonNULL mutators, distinct detached insertion nodes, finite acyclic traversal; raw complete spans with no address operands."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "list_count",
+      "module": "linked_list",
+      "analysis_name": "list_count",
+      "purpose": "list count",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/linked-list-acceptance.md",
+        "research/campaign-035-list-count/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/list_count_behavior.h",
+        "tests/linked_list_behavior.c"
+      ],
+      "quirks": [
+        "NonNULL mutators, distinct detached insertion nodes, finite acyclic traversal; raw complete spans with no address operands."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "list_advance",
+      "module": "linked_list",
+      "analysis_name": "list_advance",
+      "purpose": "list advance",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/linked-list-acceptance.md",
+        "research/campaign-035-list-advance/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/list_advance_behavior.h",
+        "tests/linked_list_behavior.c"
+      ],
+      "quirks": [
+        "NonNULL mutators, distinct detached insertion nodes, finite acyclic traversal; raw complete spans with no address operands."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "list_last",
+      "module": "linked_list",
+      "analysis_name": "list_last",
+      "purpose": "list last",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/linked-list-acceptance.md",
+        "research/campaign-035-list-last/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/list_last_behavior.h",
+        "tests/linked_list_behavior.c"
+      ],
+      "quirks": [
+        "NonNULL mutators, distinct detached insertion nodes, finite acyclic traversal; raw complete spans with no address operands."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

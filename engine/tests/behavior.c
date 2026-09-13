@@ -136,6 +136,7 @@ static void clip_flag_tests(void)
 #include "projected_overlay_behavior.c"
 #include "application_helpers_behavior.c"
 #include "puppet_tracks_behavior.c"
+#include "linked_list_behavior.c"
 
 int main(void)
 {
@@ -195,6 +196,7 @@ int main(void)
     failures += op_test_projected_overlay();
     failures += op_test_application_helpers();
     failures += op_test_puppet_tracks();
+    failures += op_test_linked_list();
     if (failures) return 1;
 #ifdef OP_VC5_BEHAVIOR
     puts("VC5 behavioral fixture passed, including x87 unordered fallback.");
