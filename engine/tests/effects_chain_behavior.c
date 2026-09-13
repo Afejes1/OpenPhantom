@@ -194,7 +194,7 @@ static int ec_saved_slots[3] = {0, 10, 31};
 static OP_SHIELD ec_original_shields[32], ec_loaded_shields[32];
 static OP_SHIELD_SAVE ec_rows_expected[3];
 static OP_EFFECTS_SAVE ec_save_expected;
-static OP_OVERLAY_SAVE ec_overlay_expected;
+static OP_OVERLAY_SAVE ec_overlay_expected, ec_overlay_before;
 static OP_B3D_WORLD ec_worlds[2];
 static int ec_mutation, ec_texture_stage, ec_texture_releases, ec_texture_acquires;
 static OP_SHIELD_SAVE *ec_row_payload;
@@ -483,6 +483,7 @@ static void ec_stream_tests(void)
                     memset(op_shields, 0, sizeof(op_shields));
                     memcpy(ec_loaded_shields, op_shields, sizeof(op_shields));
                     memset(&op_overlay_save, 0x77, 28);
+                    ec_overlay_before=op_overlay_save;
                     op_fog_duration = 777;
                     op_fog_target = -22;
                     op_fog_cached_start = -33;
@@ -507,8 +508,7 @@ static void ec_stream_tests(void)
                     EC_CHECK(ec_allocations == (fail == 0 || fail == 1 ? 0 : alloc_fail >= 0 ? alloc_fail + 1 : 3));
                     EC_CHECK(memcmp(op_shields, ec_loaded_shields, sizeof(op_shields)) == 0);
                     EC_CHECK(op_fog_duration == (fail == 0 ? 777.0f : 2.0f));
-                    if (fail != 0 && fail != 1 && alloc_fail < 0)
-                        EC_CHECK(memcmp(&op_overlay_save, &ec_overlay_expected, 28) == 0);
+                    EC_CHECK(memcmp(&op_overlay_save, fail != 0 && fail != 1 && alloc_fail < 0 ? &ec_overlay_expected : &ec_overlay_before, 28) == 0);
                     EC_CHECK(memcmp(&ec_stream, &ec_expected_stream, sizeof(ec_stream)) == 0);
                 }
         }
