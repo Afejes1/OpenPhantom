@@ -43,22 +43,25 @@
     },
     {
       "phase": "campaign-005",
-      "commit": "containing commit",
-      "ci": "pending after push",
+      "commit": "6c590098699cbbccaab33dd77c5b806b8ac143c5",
+      "ci": "passed",
       "new_exact_functions": 10,
       "new_exact_bytes": 413,
       "focused_checks": 205,
       "new_research_candidates": 0,
-      "result": "research/campaign-005/results.md"
+      "result": "research/campaign-005/results.md",
+      "ci_run_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34736926013",
+      "full_regression": "skipped by feature-branch workflow",
+      "published_utc": "2026-09-13T04:02:07Z"
     }
   ],
-  "current_work": "Campaign 005 complete: ten focused relocation-adjusted matches, 413 bytes, 205 checks; publishing checkpoint.",
-  "resume": "Start Campaign 006 after confirming checkpoint publication: prepare remaining small music state/volume/detach helpers, then related sound helpers from next-shortlist.json. All ten Campaign005 cases are complete and must not be dispatched again. One existing Sol/medium worker is idle; retain per-function caps and fixed 08:48 UTC deadline.",
+  "current_work": "Campaign 005 published and lightweight CI passed. Ten focused function matches, 413 bytes; existing worker is idle.",
+  "resume": "Start Campaign 006: prepare remaining music helpers 0x004105A3 (set state), 0x004106CC (volume), 0x0041046C (detach), then small related bapsound helpers from next-shortlist.json. Exact spans and operand inventories must be prepared before experiments. If selecting 0x00410825 resume, retain its trailing alignment. All ten Campaign005 cases are complete and must not be dispatched again. Reuse one Sol/medium worker; per-function caps remain unchanged. Fixed deadline08:48 UTC, stop new implementation08:38.",
   "interruptions": [],
   "original_game_executed": false,
   "full_regression_run": false,
   "final_report": null,
   "new_research_candidates": 3,
   "weekly_account_usage_observed_percent": 27,
-  "last_campaign_finished_utc": "2026-09-13T03:35:28.151688+00:00"
+  "last_campaign_finished_utc": "2026-09-13T04:03:17.506876+00:00"
 }
