@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "case": "texture_get_material",
+  "started_utc": "2026-09-13T11:39:06.9909548Z",
+  "finished_utc": "2026-09-13T11:39:47.0928769Z",
+  "timestamp_basis": "source creation, compiler report write, and observed completion clock",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed local assigned before the original-argument null check, followed by the material-field return.",
+      "source_sha256": "d0b665dffb27c95deeb7c152218c7a8a0e539ebc9ed80746b178a19cc59273d3",
+      "report": "engine/build/campaign-001-texture_get_material-dadf251291ca/research-result.json",
+      "report_sha256": "8ded9e1e5b70a60184c25d3ff6bb87c3474f22cd0a67d8dade10d8d9bad54368",
+      "report_written_utc": "2026-09-13T11:39:34.5093289Z",
+      "result": "Exact raw 33-byte match with zero differences."
+    }
+  ],
+  "candidate_sha256": "d0b665dffb27c95deeb7c152218c7a8a0e539ebc9ed80746b178a19cc59273d3",
+  "api_sha256": "0f791bce2a3af7f90e57e14fc9044c27c5404804dff249f77f1ed682af4ee237",
+  "fixture_sha256": "c4b05357aba5772d5012979ec2b135c140c2e3a638be06658de7a57451e58075",
+  "status": "exact-native-parent-docker-pending",
+  "parent_verification": {
+    "status": "focused-raw-code-match",
+    "fixture_checks": 7,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-texture_get_material-d00beb613087/research-result.json",
+    "docker_report": "engine/build/campaign-001-texture_get_material-4ce25a535eaa/research-result.json",
+    "result": "result.json",
+    "result_sha256": "4ece25113a5e3989a71890a7c0f87d322972bad44dc6b0dd21ede2751705b3ec"
+  }
+}

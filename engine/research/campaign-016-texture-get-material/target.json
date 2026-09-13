@@ -1,0 +1,14 @@
+{
+  "id": "texture_get_material",
+  "address": 4364383,
+  "size": 33,
+  "body_size": 33,
+  "source": "src/texture_get_material.c",
+  "symbol": "_op_texture_get_material",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "case": "extended_pick_face_update",
+  "started_utc": "2026-09-13T11:41:35.6795265Z",
+  "finished_utc": "2026-09-13T11:42:42.3173088Z",
+  "timestamp_basis": "source creation, compiler report write, and observed completion clock",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural independent trail and animation branches, C89 unspecified-arguments callback slot, unsigned count/modulo, and live material reload after RNG.",
+      "source_sha256": "aa2739a851331583b45868b2f99136916377e3097d243cca15510e29043b17ef",
+      "report": "engine/build/campaign-001-extended_pick_face_update-483a9730344b/research-result.json",
+      "report_sha256": "bef90a5ac19237e64b3db3f0cb9149e98e07839776794fcb40bde984dbfec0be",
+      "report_written_utc": "2026-09-13T11:42:27.1031518Z",
+      "result": "Exact relocation-adjusted 97-byte match with all four bindings and zero nonbinding differences."
+    }
+  ],
+  "candidate_sha256": "aa2739a851331583b45868b2f99136916377e3097d243cca15510e29043b17ef",
+  "api_sha256": "69a3ace0103031c831b7320c778bdeb92bf651c7cb205ab1e735abff93520888",
+  "fixture_sha256": "d8ae8c02e18aa0eb77b3bccfce8f158499251ae35f02b4020f414da0a86dc6fe",
+  "status": "exact-native-parent-docker-pending",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 48,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-extended_pick_face_update-35954917792b/research-result.json",
+    "docker_report": "engine/build/campaign-001-extended_pick_face_update-054c6aa29b41/research-result.json",
+    "result": "result.json",
+    "result_sha256": "ad0bbb00d56ffb68ff488d381cd80b355a21a56dbf7f88f71a28dccd46f2b4bf"
+  }
+}

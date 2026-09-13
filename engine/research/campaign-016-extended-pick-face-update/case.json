@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "extended_pick_face_update",
+  "candidate": "candidate.c",
+  "symbol": "_op_extended_pick_face_update",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

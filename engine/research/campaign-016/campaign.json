@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "campaign": "016",
+  "status": "complete-focused-checkpoint",
+  "started_utc": "2026-09-13T11:36:24.217131+00:00",
+  "worker_stop_utc": "2026-09-13T11:56:00Z",
+  "stop_utc": "2026-09-13T12:06:00Z",
+  "baseline_commit": "0cabe0d8e5edae62b18889c9257dae91ee957bd9",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "registered_functions_at_start": 21,
+  "assignments": [
+    {
+      "id": "texture_set_owned",
+      "address": "0x00429580",
+      "case": "research/campaign-016-texture-set-owned",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-016-texture-set-owned/result.json"
+    },
+    {
+      "id": "texture_get_material",
+      "address": "0x0042985f",
+      "case": "research/campaign-016-texture-get-material",
+      "status": "focused-raw-code-match",
+      "result": "research/campaign-016-texture-get-material/result.json"
+    },
+    {
+      "id": "extended_pick_face_update",
+      "address": "0x004288d1",
+      "case": "research/campaign-016-extended-pick-face-update",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-016-extended-pick-face-update/result.json"
+    }
+  ],
+  "worker_handoff_completed_utc": "2026-09-13T11:42:42.3173088Z",
+  "weekly_shared_account_first_observation": 37,
+  "final_verification_completed_utc": "2026-09-13T11:44:58.869196+00:00"
+}

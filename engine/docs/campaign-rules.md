@@ -78,6 +78,17 @@ listing source. This changes no byte-comparison requirement.
 Execute authored synthetic fixtures only in the existing locked Docker
 runner; never execute the original game. Reuse existing runners and matchers.
 Check material branches/state transitions, not just a large assertion count.
+Capture expected object/array snapshots before calling the candidate, then apply
+only explicitly expected writes and callback effects. Do not copy actual output
+into the expected result after the call. Keep fixture control sentinels separate
+from expected result indexes. When callbacks can mutate shared fields, assert the
+state visible inside the callback as well as final state. Review these oracles
+before relying on a passing fixture or reporting its assertion count.
+
+Use ordinary check functions in VC5 fixtures; do-while(0) assertion macros can
+trigger C4127 under the existing /W4 /WX policy. Prefer typed initialization for
+arrays of const pointers and owned sentinel addresses. Fix fixture compatibility
+errors directly and preserve failed receipts; do not add warning waivers.
 For a changed final candidate, use independent review, a focused Docker fixture
 and code/relocation cross-check as appropriate; verify source hashes against
 staged Git blobs before publishing. Keep private artifacts with their hashes.

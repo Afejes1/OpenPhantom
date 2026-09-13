@@ -420,6 +420,18 @@
     {
       "address": "0x00428e63",
       "source": "research/campaign-015-extended-load-material/README.md"
+    },
+    {
+      "address": "0x00429580",
+      "source": "research/campaign-016-texture-set-owned/README.md"
+    },
+    {
+      "address": "0x0042985f",
+      "source": "research/campaign-016-texture-get-material/README.md"
+    },
+    {
+      "address": "0x004288d1",
+      "source": "research/campaign-016-extended-pick-face-update/README.md"
     }
   ]
 }

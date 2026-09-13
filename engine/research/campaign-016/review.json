@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "campaign": "016",
+  "reviews": {
+    "texture_set_owned": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 29,
+      "source_review": "Reviewed null suppression and two-stack-argument cdecl resource flag helper. Fixture forwards every signed flag value unchanged, preserves full resource storage, observes exactly one callback and retains callback mutations. Parent uses both valid old-flag return values0/1.",
+      "fixture_checks": 27,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "texture_get_material": {
+      "status": "focused-raw-code-match",
+      "complete_span": 33,
+      "source_review": "Reviewed original argument null guard, captured local sprite and exact material field0x84 with trusted existing callers and type. Fixture compares the full guarded sprite and checks null, owned independent pointer and interior alias values.",
+      "fixture_checks": 7,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "extended_pick_face_update": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 97,
+      "source_review": "Reviewed x87 threshold/unordered behavior, independent branch precedence, unsigned cel count and post-RNG material/count reload, typed callback targets and original random15 contract. Parent added callback-time trail-state and old-cel observations, count0, positive zero, NaN with animation, and original-material preservation in replacement case. Full pre-call expected states and guarded face pass.",
+      "fixture_checks": 48,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    }
+  },
+  "issues": [],
+  "full_regression_run": false,
+  "parent_source_corrections": [],
+  "parent_fixture_corrections": [
+    "texture_set_owned",
+    "texture_get_material",
+    "extended_pick_face_update"
+  ],
+  "fixture_review_note": "Minor fixture strengthening only; no material worker oracle defect or final fixture compile failure in this campaign."
+}

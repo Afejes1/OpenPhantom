@@ -1,0 +1,5 @@
+# Prepared texture get material
+
+cdecl void *op_texture_get_material(void *resource). One local OP_TEXTURE_SPRITE *sprite=resource is assigned before checking the original argument forNULL; returnNULL if resourceNULL, else sprite->material at0x84. Partial sprite unsigned char opaque[0x84];void *material. Existing trusted Ghidra name get_sprite_material stays unchanged. Callers load_font_slot0046B08A, ripple resolver0043AB17/24, decal projector00457915/43 consume material pointer; typed existing BAP_SPRITE confirms offset. Fullspan0042985F..00429880 is33bytes. Fixture compile-time offset, null input, null/non-null field, alias/interior owned pointer, complete guarded sprite unchanged. No allocation or real data.
+
+Full body and next entry independently verified in Ghidra; no tail. All operands and complete PE HIGHLOW coverage independently verified before experiments. Team manifest reports not_done. Existing C/VC5/strict matching campaign rules apply unchanged. Freeze near rather than polish;15minute/10workercompile cap and hard worker stop11:56 UTC2026-09-13. Parent final verification/publication by12:06 UTC. No original execution or public original content.

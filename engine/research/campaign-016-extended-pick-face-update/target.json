@@ -1,0 +1,39 @@
+{
+  "id": "extended_pick_face_update",
+  "address": 4360401,
+  "size": 97,
+  "body_size": 97,
+  "source": "src/extended_pick_face_update.c",
+  "symbol": "_op_extended_pick_face_update",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 4883124,
+      "kind": "dir32",
+      "float32": 1.0
+    },
+    {
+      "offset": 28,
+      "address": 4386973,
+      "kind": "dir32",
+      "symbol": "_op_capture_model_face_trail"
+    },
+    {
+      "offset": 69,
+      "address": 4361654,
+      "kind": "dir32",
+      "symbol": "_op_extended_advance_cel"
+    },
+    {
+      "offset": 74,
+      "address": 4826496,
+      "kind": "rel32-call",
+      "symbol": "_op_random15"
+    }
+  ]
+}

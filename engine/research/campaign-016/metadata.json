@@ -1,0 +1,38 @@
+[
+  {
+    "id": "texture_set_owned",
+    "address": "00429580",
+    "original_name": "FUN_00429580",
+    "new_name": "set_texture_resource_owned",
+    "confidence": "HIGH",
+    "purpose": "forward ownership state to a nonnull texture resource",
+    "evidence": "Null-guard wrapper; real two-stack-argument resource flag callee004722F4 returns previous bit0; original29-byte interval",
+    "full_span": 29,
+    "fixture_checks": 27,
+    "result_status": "focused-relocation-adjusted-match"
+  },
+  {
+    "id": "texture_get_material",
+    "address": "0042985F",
+    "original_name": "get_sprite_material",
+    "new_name": "get_sprite_material",
+    "confidence": "HIGH",
+    "purpose": "return the material field of a nonnull sprite resource",
+    "evidence": "Trusted existing name/type retained; field0x84; callers in font loading, ripple resolution and decal projection;33-byte interval",
+    "full_span": 33,
+    "fixture_checks": 7,
+    "result_status": "focused-raw-code-match"
+  },
+  {
+    "id": "extended_pick_face_update",
+    "address": "004288D1",
+    "original_name": "FUN_004288d1",
+    "new_name": "select_model_face_update",
+    "confidence": "HIGH",
+    "purpose": "select trail or animation callback and initialize the material cel",
+    "evidence": "Mesh-face preparation caller004289F1; verified callback targets/ABIs and random15 callee; x87 threshold1.0 and unsigned live modulo;97-byte interval",
+    "full_span": 97,
+    "fixture_checks": 48,
+    "result_status": "focused-relocation-adjusted-match"
+  }
+]

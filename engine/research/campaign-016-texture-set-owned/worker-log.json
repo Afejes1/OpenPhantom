@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "case": "texture_set_owned",
+  "started_utc": "2026-09-13T11:37:37.2574615Z",
+  "finished_utc": "2026-09-13T11:38:03.5755037Z",
+  "timestamp_basis": "source creation, compiler report write, and observed completion clock",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural early-null-return wrapper forwarding the exact two cdecl arguments and ignoring the result.",
+      "source_sha256": "94d01ea06e84a86ae89c85f3f6481f615227605e822130909885f838e6829ec4",
+      "report": "engine/build/campaign-001-texture_set_owned-597a8a13506c/research-result.json",
+      "report_sha256": "3809e5cb8eaabaea7fc4c873b63e4e65821e19b1e544b1d65360f5289140b026",
+      "report_written_utc": "2026-09-13T11:37:51.7834764Z",
+      "result": "Exact relocation-adjusted 29-byte match with the call binding and zero differences."
+    }
+  ],
+  "candidate_sha256": "94d01ea06e84a86ae89c85f3f6481f615227605e822130909885f838e6829ec4",
+  "api_sha256": "391e0ccdbedc486321310ee86c47b5c9a12014f73017f76224641fd5f92b2fcd",
+  "fixture_sha256": "049a52441d0551599c5d40608e1ac18fadb768de22a9a7f0e77c540d279730aa",
+  "status": "exact-native-parent-docker-pending",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 27,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-texture_set_owned-372d9dd4b9a9/research-result.json",
+    "docker_report": "engine/build/campaign-001-texture_set_owned-858f3f02b721/research-result.json",
+    "result": "result.json",
+    "result_sha256": "d2f213d80bc45cbf5b3b469e03429956403b64264d07f74e78f13ab0a17e96ae"
+  }
+}

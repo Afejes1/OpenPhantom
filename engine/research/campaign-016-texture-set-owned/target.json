@@ -1,0 +1,21 @@
+{
+  "id": "texture_set_owned",
+  "address": 4363648,
+  "size": 29,
+  "body_size": 29,
+  "source": "src/texture_set_owned.c",
+  "symbol": "_op_texture_set_owned",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 20,
+      "address": 4662004,
+      "kind": "rel32-call",
+      "symbol": "_op_set_resource_owned"
+    }
+  ]
+}

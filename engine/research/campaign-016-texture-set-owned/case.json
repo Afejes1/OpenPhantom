@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "texture_set_owned",
+  "candidate": "candidate.c",
+  "symbol": "_op_texture_set_owned",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

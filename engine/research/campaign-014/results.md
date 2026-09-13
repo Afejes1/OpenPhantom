@@ -26,10 +26,12 @@ builds/executions produced these results. Every source snapshot and receipt is
 checked against staged Git blobs before publication. See [metrics](metrics.json),
 [review](review.json) and the per-case experiment logs for reproducible provenance.
 
-Ghidra function names and evidence comments were updated and saved. Exact callable
-prototypes remain documented in the packets; the MCP signature parser rejected the
-explicit-cdecl signature requests, so no successful database signature change is
-claimed. The registration caller was re-decompiled after the metadata changes.
+Ghidra function names and evidence comments were updated and saved. Initial
+explicit-cdecl signature requests were rejected by the MCP parser. A later plain-C
+signature update succeeded and was read back: int dispatch_sound_resource_event(
+RESOURCE_EVENT *event) and int dispatch_sound_subsystem_event(int event). Their
+cdecl ABI remains independently established by stack/callee analysis. The database
+was saved and the registration caller re-decompiled after metadata changes.
 
 Accepted history remains21functions/21records. This checkpoint adds focused
 research evidence, with shared ABI integration still pending. Full regression was
