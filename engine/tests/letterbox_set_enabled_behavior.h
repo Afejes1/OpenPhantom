@@ -12,7 +12,7 @@ static void hl_letterbox_set_enabled_check_at(int value, int hl_letterbox_set_en
         printf("failed at %d\n", hl_letterbox_set_enabled_line);
     }
 }
-#hl_letterbox_set_enabled_define hl_letterbox_set_enabled_CHECK(hl_letterbox_set_enabled_x)                            \
+#define hl_letterbox_set_enabled_CHECK(hl_letterbox_set_enabled_x)                            \
     hl_letterbox_set_enabled_check_at(!!(hl_letterbox_set_enabled_x), __LINE__)
 
 typedef struct hl_letterbox_set_enabled_INPUT

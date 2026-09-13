@@ -12,7 +12,7 @@ static void hl_halo_startup_check_at(int value, int hl_halo_startup_line)
         printf("failed at %d\n", hl_halo_startup_line);
     }
 }
-#hl_halo_startup_define hl_halo_startup_CHECK(hl_halo_startup_x)                                                       \
+#define hl_halo_startup_CHECK(hl_halo_startup_x)                                                       \
     hl_halo_startup_check_at(!!(hl_halo_startup_x), __LINE__)
 
 static void *hl_halo_startup_expected[3];

@@ -12,7 +12,7 @@ static void hl_halo_shutdown_check_at(int value, int hl_halo_shutdown_line)
         printf("failed at %d\n", hl_halo_shutdown_line);
     }
 }
-#hl_halo_shutdown_define hl_halo_shutdown_CHECK(hl_halo_shutdown_x)                                                    \
+#define hl_halo_shutdown_CHECK(hl_halo_shutdown_x)                                                    \
     hl_halo_shutdown_check_at(!!(hl_halo_shutdown_x), __LINE__)
 
 static void *hl_halo_shutdown_expected[3];

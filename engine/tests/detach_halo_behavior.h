@@ -12,7 +12,7 @@ static void hl_detach_halo_check_at(int value, int hl_detach_halo_line)
         printf("failed at %d\n", hl_detach_halo_line);
     }
 }
-#hl_detach_halo_define hl_detach_halo_CHECK(hl_detach_halo_x) hl_detach_halo_check_at(!!(hl_detach_halo_x), __LINE__)
+#define hl_detach_halo_CHECK(hl_detach_halo_x) hl_detach_halo_check_at(!!(hl_detach_halo_x), __LINE__)
 
 typedef struct hl_detach_halo_ACTOR
 {

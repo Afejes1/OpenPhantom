@@ -12,7 +12,7 @@ static void hl_overlay_save_state_check_at(int value, int hl_overlay_save_state_
         printf("failed at %d\n", hl_overlay_save_state_line);
     }
 }
-#hl_overlay_save_state_define hl_overlay_save_state_CHECK(hl_overlay_save_state_x)                                     \
+#define hl_overlay_save_state_CHECK(hl_overlay_save_state_x)                                     \
     hl_overlay_save_state_check_at(!!(hl_overlay_save_state_x), __LINE__)
 
 static OP_OVERLAY_SAVE hl_overlay_save_state_expected;

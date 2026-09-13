@@ -12,7 +12,7 @@ static void hl_effects_draw_object_check_at(int value, int hl_effects_draw_objec
         printf("failed at %d\n", hl_effects_draw_object_line);
     }
 }
-#hl_effects_draw_object_define hl_effects_draw_object_CHECK(hl_effects_draw_object_x)                                  \
+#define hl_effects_draw_object_CHECK(hl_effects_draw_object_x)                                  \
     hl_effects_draw_object_check_at(!!(hl_effects_draw_object_x), __LINE__)
 
 typedef struct hl_effects_draw_object_ACTOR
