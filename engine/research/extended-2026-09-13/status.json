@@ -103,20 +103,23 @@
     },
     {
       "id": "campaign-020",
-      "status": "verification-complete-publication-pending",
+      "status": "published",
       "new_exact_functions": 6,
       "new_exact_bytes": 856,
       "fixture_checks": 2058,
       "promotions": 0,
       "results": "../campaign-020/results.md",
-      "verified_utc": "2026-09-13T14:25:57.915538+00:00"
+      "verified_utc": "2026-09-13T14:25:57.915538+00:00",
+      "source_commit": "6ab267f96ac819fa94961d9b289eaa5835a20a08",
+      "focused_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34763059233",
+      "focused_ci_conclusion": "success"
     }
   ],
-  "current_work": "Campaign020 independently verified:6 exact,856 bytes,2058 focused checks. Publish then acceptance005 for world controls.",
+  "current_work": "Acceptance005 shared controls integrated; independent review and clean original-toolchain build/test/compare/record pending. Campaign021 static six-function packet prepared.",
   "original_game_executed": false,
   "weekly_shared_usage_latest_percent": 43,
-  "last_checkpoint_utc": "2026-09-13T14:29:54.395186+00:00",
-  "last_source_commit": "4ffe59e05a7ed193a7edaa066505a30447a6cf94",
+  "last_checkpoint_utc": "2026-09-13T14:46:26.621707+00:00",
+  "last_source_commit": "6ab267f96ac819fa94961d9b289eaa5835a20a08",
   "usage_observed_utc": "2026-09-13T13:59:42.009190+00:00",
   "usage_observation_scope": "Rounded account-wide weekly usage;39 at window start,43 now, not isolated campaign billing.",
   "new_near_matches": 3,

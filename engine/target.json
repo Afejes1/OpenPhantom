@@ -1250,6 +1250,132 @@
           "symbol": "_op_stream_read"
         }
       ]
+    },
+    {
+      "id": "world_set_clock",
+      "address": 4321481,
+      "size": 67,
+      "body_size": 67,
+      "source": "src/world_set_clock.c",
+      "symbol": "_op_world_set_clock",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 26,
+          "address": 4882964,
+          "float32": 1000.0
+        },
+        {
+          "offset": 31,
+          "address": 4826188,
+          "kind": "rel32-call",
+          "symbol": "__ftol"
+        }
+      ]
+    },
+    {
+      "id": "world_set_ambient",
+      "address": 4321548,
+      "size": 62,
+      "body_size": 62,
+      "source": "src/world_set_ambient.c",
+      "symbol": "_op_world_set_ambient",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 8,
+          "address": 4882968,
+          "float64": 0.0
+        },
+        {
+          "offset": 33,
+          "address": 4882976,
+          "float64": 1.0
+        }
+      ]
+    },
+    {
+      "id": "world_apply_fog",
+      "address": 4321610,
+      "size": 230,
+      "body_size": 230,
+      "source": "src/world_apply_fog.c",
+      "symbol": "_op_world_apply_fog",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 95,
+          "address": 4749872,
+          "kind": "rel32-call",
+          "symbol": "_op_set_fog_rgb"
+        },
+        {
+          "offset": 123,
+          "address": 4750016,
+          "kind": "rel32-call",
+          "symbol": "_op_set_fog_range"
+        },
+        {
+          "offset": 147,
+          "address": 4749840,
+          "kind": "rel32-call",
+          "symbol": "_op_get_render_flags"
+        },
+        {
+          "offset": 155,
+          "address": 4749856,
+          "kind": "rel32-call",
+          "symbol": "_op_set_render_flags"
+        },
+        {
+          "offset": 175,
+          "address": 4750160,
+          "kind": "rel32-call",
+          "symbol": "_op_set_clear_rgb"
+        },
+        {
+          "offset": 183,
+          "address": 4749840,
+          "kind": "rel32-call",
+          "symbol": "_op_get_render_flags"
+        },
+        {
+          "offset": 191,
+          "address": 4749856,
+          "kind": "rel32-call",
+          "symbol": "_op_set_render_flags"
+        },
+        {
+          "offset": 203,
+          "address": 4750240,
+          "kind": "rel32-call",
+          "symbol": "_op_set_clear_pixel"
+        },
+        {
+          "offset": 211,
+          "address": 4749840,
+          "kind": "rel32-call",
+          "symbol": "_op_get_render_flags"
+        },
+        {
+          "offset": 219,
+          "address": 4749856,
+          "kind": "rel32-call",
+          "symbol": "_op_set_render_flags"
+        }
+      ]
     }
   ]
 }

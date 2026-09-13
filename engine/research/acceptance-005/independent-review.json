@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "reviewed_utc": "2026-09-13T14:47:02.112775+00:00",
+  "reviewer": "comparison_inventory",
+  "mode": "read-only",
+  "conclusion": "no-material-correctness-issues",
+  "findings": [],
+  "verified": [
+    "all prior28 target and registry entries unchanged",
+    "three source bodies identical under include/type substitutions",
+    "canonical fields and CD4 extent retained",
+    "callback widths and linkage verified",
+    "guarded shared sequence and mutation timing covered",
+    "C89 fixture shape and VC5-only FPU edge guards correct"
+  ],
+  "writes": false,
+  "compiles": false
+}

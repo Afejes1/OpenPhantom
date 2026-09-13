@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "acceptance-005",
+  "status": "integration-review",
+  "started_utc": "2026-09-13T14:34:50Z",
+  "deadline_utc": "2026-09-13T15:20:00Z",
+  "baseline_commit": "6ab267f96ac819fa94961d9b289eaa5835a20a08",
+  "functions": [
+    "world_set_clock",
+    "world_set_ambient",
+    "world_apply_fog"
+  ],
+  "full_span_bytes": 359,
+  "verified_operands": 14,
+  "registered_before": 28,
+  "registered_after": 31,
+  "evidence_records_before": 24,
+  "worker_role": "read-only independent reviewer after delegated writer approval block",
+  "implementation_by": "parent under directly authorized scoped write",
+  "original_game_executed": false
+}

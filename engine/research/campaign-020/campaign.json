@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "campaign": "020",
-  "status": "verification-complete-publication-pending",
+  "status": "published",
   "prepared_utc": "2026-09-13T13:55:54.776626+00:00",
   "preparation_started_utc": "2026-09-13T13:49:00Z",
   "preparation_cap_minutes": 15,
@@ -69,5 +69,8 @@
   "exact_bytes": 856,
   "fixture_checks": 2058,
   "accepted_promotions": 0,
-  "next_work": "Acceptance005 for exact clock,ambient,fog using canonical world view; full clean original-toolchain integration checkpoint."
+  "next_work": "Acceptance005 for exact clock,ambient,fog using canonical world view; full clean original-toolchain integration checkpoint.",
+  "source_commit": "6ab267f96ac819fa94961d9b289eaa5835a20a08",
+  "focused_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34763059233",
+  "focused_ci_conclusion": "success"
 }

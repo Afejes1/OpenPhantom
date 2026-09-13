@@ -540,6 +540,63 @@
         "World record pointer is captured before the loop; header count and record size remain live across callbacks"
       ],
       "exceptions": []
+    },
+    {
+      "id": "world_set_clock",
+      "module": "b3d_world_controls",
+      "analysis_name": "set_b3d_world_clock",
+      "purpose": "Update world clock ticks, previous ticks and elapsed seconds",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/world-controls-acceptance.md",
+        "research/campaign-020-world-set-clock/README.md"
+      ],
+      "behavior_tests": [
+        "tests/world_controls_behavior.c"
+      ],
+      "quirks": [
+        "Clock integer conversion fixture domain is finite and representable; original x87 0.01f produces9 ticks",
+        "Input seconds bits are retained; old ticks and seconds are read before their replacement"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "world_set_ambient",
+      "module": "b3d_world_controls",
+      "analysis_name": "set_b3d_world_ambient",
+      "purpose": "Clamp the world ambient-light level using original x87 comparison behavior",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/world-controls-acceptance.md",
+        "research/campaign-020-world-set-ambient/README.md"
+      ],
+      "behavior_tests": [
+        "tests/world_controls_behavior.c"
+      ],
+      "quirks": [
+        "Masked x87 unordered comparison clamps quiet NaN to positive zero; negative zero is retained",
+        "Compiler-specific edge fixture uses an explicit saved/restored floating-point environment"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "world_apply_fog",
+      "module": "b3d_world_controls",
+      "analysis_name": "apply_b3d_world_fog",
+      "purpose": "Apply captured fog color, live fog range and live render-flag updates",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/world-controls-acceptance.md",
+        "research/campaign-020-world-apply-fog/README.md"
+      ],
+      "behavior_tests": [
+        "tests/world_controls_behavior.c"
+      ],
+      "quirks": [
+        "RGB bytes are captured before callbacks while range and enabled flag stay live",
+        "Fog RGB uses full unsigned words; clear RGB and pixel callbacks use byte and short parameters"
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
