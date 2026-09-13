@@ -6,7 +6,7 @@ float op_shield_radius(int slot)
     if (slot < 0 || slot >= 32)
         return 0.0f;
     shield = &op_shields[slot];
-    if (shield->owner == 0)
+    if (shield->active == 0)
         return 0.0f;
     return shield->radius;
 }

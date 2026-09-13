@@ -4,6 +4,10 @@
 #include <stdio.h>
 #include <string.h>
 
+static int shield_lifecycle_active;
+static void *shield_lifecycle_allocate(unsigned int bytes);
+static void shield_lifecycle_release(void *memory);
+
 static int world_chunks_active;
 static void *world_chunks_allocate(unsigned int bytes);
 static int world_chunks_read(void *destination, int size, int count, OP_B3D_STREAM *stream);
@@ -144,6 +148,8 @@ static void world_readers_reset_callbacks(void)
 
 void *op_allocate(unsigned int bytes)
 {
+    if (shield_lifecycle_active)
+        return shield_lifecycle_allocate(bytes);
     if (world_chunks_active)
         return world_chunks_allocate(bytes);
     if (world_names_active)

@@ -80,7 +80,6 @@ static int get_system_font_main(void)
 }
 
 static OP_SHIELD shield_radius_expected[32];
-static unsigned char shield_radius_owners[32];
 static int shield_radius_checks, shield_radius_failures;
 static void shield_radius_check(int ok)
 {
@@ -121,7 +120,7 @@ static int shield_radius_main(void)
     memset(op_shields, 0x6d, sizeof(op_shields));
     for (i = 0; i < 32; ++i)
     {
-        op_shields[i].owner = 0;
+        op_shields[i].active = 0;
         shield_radius_set_radius(i, 0x7fc12345U);
     }
     shield_radius_verify(-1, 0);
@@ -132,14 +131,14 @@ static int shield_radius_main(void)
         shield_radius_verify(i, 0);
     for (i = 0; i < 32; ++i)
     {
-        op_shields[i].owner = &shield_radius_owners[i];
+        op_shields[i].active = (i % 2 ? INT_MIN : 1);
         for (j = 0; j < 7; ++j)
         {
             shield_radius_set_radius(i, radii[j]);
             shield_radius_verify(i, radii[j]);
             shield_radius_verify(i, radii[j]);
         }
-        op_shields[i].owner = 0;
+        op_shields[i].active = 0;
         shield_radius_verify(i, 0);
     }
 #ifdef OP_VC5_BEHAVIOR
@@ -155,7 +154,6 @@ static int shield_radius_main(void)
 }
 
 static OP_SHIELD shield_set_colour_expected[32];
-static unsigned char shield_set_colour_owners[32];
 static int shield_set_colour_checks, shield_set_colour_failures;
 static void shield_set_colour_check(int ok)
 {
@@ -168,7 +166,7 @@ static void shield_set_colour_seed(void)
     int i;
     memset(op_shields, 0x6d, sizeof(op_shields));
     for (i = 0; i < 32; ++i)
-        op_shields[i].owner = &shield_set_colour_owners[i];
+        op_shields[i].active = (i % 2 ? INT_MIN : 1);
 }
 static void shield_set_colour_verify(int slot, int accepted, unsigned char r, unsigned char g, unsigned char b,
                                      unsigned char a)
@@ -198,9 +196,9 @@ static int shield_set_colour_main(void)
     for (i = 0; i < 32; ++i)
     {
         shield_set_colour_seed();
-        op_shields[i].owner = 0;
+        op_shields[i].active = 0;
         shield_set_colour_verify(i, 0, 255, 255, 255, 255);
-        op_shields[i].owner = &shield_set_colour_owners[i];
+        op_shields[i].active = (i % 2 ? INT_MIN : 1);
         for (j = 0; j < 8; ++j)
         {
             shield_set_colour_verify(i, 1, values[j], values[(j + 1) % 8], values[(j + 2) % 8], values[(j + 3) % 8]);
@@ -212,7 +210,6 @@ static int shield_set_colour_main(void)
 }
 
 static OP_SHIELD shield_set_visible_expected[32];
-static unsigned char shield_set_visible_owners[32];
 static int shield_set_visible_checks, shield_set_visible_failures;
 static void shield_set_visible_check(int ok)
 {
@@ -225,7 +222,7 @@ static void shield_set_visible_seed(void)
     int i;
     memset(op_shields, 0x6d, sizeof(op_shields));
     for (i = 0; i < 32; ++i)
-        op_shields[i].owner = &shield_set_visible_owners[i];
+        op_shields[i].active = (i % 2 ? INT_MIN : 1);
 }
 static void shield_set_visible_verify(int slot, int accepted, int value)
 {
@@ -247,9 +244,9 @@ static int shield_set_visible_main(void)
     for (i = 0; i < 32; ++i)
     {
         shield_set_visible_seed();
-        op_shields[i].owner = 0;
+        op_shields[i].active = 0;
         shield_set_visible_verify(i, 0, INT_MIN);
-        op_shields[i].owner = &shield_set_visible_owners[i];
+        op_shields[i].active = (i % 2 ? INT_MIN : 1);
         for (j = 0; j < 6; ++j)
         {
             shield_set_visible_verify(i, 1, values[j]);
@@ -261,7 +258,6 @@ static int shield_set_visible_main(void)
 }
 
 static OP_SHIELD shield_set_visibility_bypass_expected[32];
-static unsigned char shield_set_visibility_bypass_owners[32];
 static int shield_set_visibility_bypass_checks, shield_set_visibility_bypass_failures;
 static void shield_set_visibility_bypass_check(int ok)
 {
@@ -274,7 +270,7 @@ static void shield_set_visibility_bypass_seed(void)
     int i;
     memset(op_shields, 0x6d, sizeof(op_shields));
     for (i = 0; i < 32; ++i)
-        op_shields[i].owner = &shield_set_visibility_bypass_owners[i];
+        op_shields[i].active = (i % 2 ? INT_MIN : 1);
 }
 static void shield_set_visibility_bypass_verify(int slot, int accepted, int value)
 {
@@ -297,9 +293,9 @@ static int shield_set_visibility_bypass_main(void)
     for (i = 0; i < 32; ++i)
     {
         shield_set_visibility_bypass_seed();
-        op_shields[i].owner = 0;
+        op_shields[i].active = 0;
         shield_set_visibility_bypass_verify(i, 0, INT_MIN);
-        op_shields[i].owner = &shield_set_visibility_bypass_owners[i];
+        op_shields[i].active = (i % 2 ? INT_MIN : 1);
         for (j = 0; j < 6; ++j)
         {
             shield_set_visibility_bypass_verify(i, 1, values[j]);
@@ -313,7 +309,6 @@ static int shield_set_visibility_bypass_main(void)
 
 static int accessor_sequence_checks, accessor_sequence_failures;
 static OP_SHIELD accessor_sequence_expected[32];
-static unsigned char accessor_sequence_owners[32];
 static void accessor_sequence_check(int ok)
 {
     ++accessor_sequence_checks;
@@ -328,7 +323,7 @@ static void accessor_sequence(void)
     memset(op_shields, 0x6d, sizeof(op_shields));
     for (i = 0; i < 32; ++i)
     {
-        op_shields[i].owner = &accessor_sequence_owners[i];
+        op_shields[i].active = (i % 2 ? INT_MIN : 1);
         op_shields[i].radius = 1.25f;
     }
     memcpy(accessor_sequence_expected, op_shields, sizeof(op_shields));

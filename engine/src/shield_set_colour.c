@@ -6,7 +6,7 @@ int op_shield_set_colour(int slot, unsigned char red, unsigned char green, unsig
     if (slot < 0 || slot >= 32)
         return 0;
     shield = &op_shields[slot];
-    if (shield->owner == 0)
+    if (shield->active == 0)
         return 0;
     shield->red = red;
     shield->green = green;

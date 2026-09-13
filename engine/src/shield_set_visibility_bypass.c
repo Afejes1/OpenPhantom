@@ -8,8 +8,8 @@ int op_shield_set_visibility_bypass(int slot, int value)
     if (slot < 0 || slot >= 32)
         return 0;
     shield = &op_shields[slot];
-    if (shield->owner == 0)
+    if (shield->active == 0)
         return 0;
-    shield->visibility_bypass = value;
+    shield->no_save = value;
     return 1;
 }

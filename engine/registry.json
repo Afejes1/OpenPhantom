@@ -809,6 +809,168 @@
         "The integration fixture links the actual reconstructed skip helper"
       ],
       "exceptions": []
+    },
+    {
+      "id": "shield_free",
+      "module": "shield_lifecycle",
+      "analysis_name": "free_linked_sphere_memory",
+      "purpose": "Release a non-NULL shield heap buffer",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/shield-lifecycle-acceptance.md",
+        "research/campaign-023-shield-free/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/shield_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Shared canonical record uses integer active at offset0 and attached actor at offset0x10; internal reconstructed callees are linked directly."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "shield_destroy_all",
+      "module": "shield_lifecycle",
+      "analysis_name": "destroy_all_linked_sphere_effects",
+      "purpose": "Visit all 32 shield slots and destroy active records",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/shield-lifecycle-acceptance.md",
+        "research/campaign-023-shield-destroy-all/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/shield_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Shared canonical record uses integer active at offset0 and attached actor at offset0x10; internal reconstructed callees are linked directly."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "shield_stop",
+      "module": "shield_lifecycle",
+      "analysis_name": "stop_linked_sphere_effect",
+      "purpose": "Mark an active shield stopping and detach its actor slot",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/shield-lifecycle-acceptance.md",
+        "research/campaign-023-shield-stop/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/shield_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Shared canonical record uses integer active at offset0 and attached actor at offset0x10; internal reconstructed callees are linked directly."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "shield_save_size",
+      "module": "shield_lifecycle",
+      "analysis_name": "get_linked_sphere_save_size",
+      "purpose": "Count saveable shield records and return four plus fifty-two bytes per record",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/shield-lifecycle-acceptance.md",
+        "research/campaign-023-shield-save-size/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/shield_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Shared canonical record uses integer active at offset0 and attached actor at offset0x10; internal reconstructed callees are linked directly."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "shield_calloc",
+      "module": "shield_lifecycle",
+      "analysis_name": "allocate_zeroed_linked_sphere_memory",
+      "purpose": "Allocate and zero a shield buffer when allocation succeeds",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/shield-lifecycle-acceptance.md",
+        "research/campaign-023-shield-calloc/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/shield_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Shared canonical record uses integer active at offset0 and attached actor at offset0x10; internal reconstructed callees are linked directly."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "shield_set_texture",
+      "module": "shield_lifecycle",
+      "analysis_name": "set_linked_sphere_effect_sprite",
+      "purpose": "Release and replace a shield sprite then copy the live authored name",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/shield-lifecycle-acceptance.md",
+        "research/campaign-023-shield-set-texture/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/shield_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Shared canonical record uses integer active at offset0 and attached actor at offset0x10; internal reconstructed callees are linked directly."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "shield_draw_released",
+      "module": "shield_lifecycle",
+      "analysis_name": "render_detached_linked_sphere_effects",
+      "purpose": "Render active stopping shields using live traversal state",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/shield-lifecycle-acceptance.md",
+        "research/campaign-024-shield-draw-released/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/shield_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Shared canonical record uses integer active at offset0 and attached actor at offset0x10; internal reconstructed callees are linked directly."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "shield_destroy",
+      "module": "shield_lifecycle",
+      "analysis_name": "release_linked_sphere_effect",
+      "purpose": "Release eight buffers and sprite then clear active ownership and decrement count",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/shield-lifecycle-acceptance.md",
+        "research/campaign-025-shield-destroy/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/shield_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Shared canonical record uses integer active at offset0 and attached actor at offset0x10; internal reconstructed callees are linked directly."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "effects_object_destroyed",
+      "module": "shield_lifecycle",
+      "analysis_name": "release_bap_object_linked_effects",
+      "purpose": "Detach halo, stop the live actor shield slot, and detach zapline endpoints",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/shield-lifecycle-acceptance.md",
+        "research/campaign-025-effects-object-destroyed/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/shield_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Shared canonical record uses integer active at offset0 and attached actor at offset0x10; internal reconstructed callees are linked directly."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

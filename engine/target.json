@@ -1660,6 +1660,321 @@
           "symbol": "_op_world_skip_chunk"
         }
       ]
+    },
+    {
+      "id": "shield_free",
+      "address": 4436457,
+      "size": 23,
+      "body_size": 23,
+      "source": "src/shield_free.c",
+      "symbol": "_op_shield_free",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 14,
+          "address": 4805714,
+          "symbol": "_op_release",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "shield_destroy_all",
+      "address": 4437581,
+      "size": 46,
+      "body_size": 46,
+      "source": "src/shield_destroy_all.c",
+      "symbol": "_op_shield_destroy_all",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 33,
+          "address": 4436124,
+          "symbol": "_op_shield_destroy",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "shield_stop",
+      "address": 4437478,
+      "size": 103,
+      "body_size": 103,
+      "source": "src/shield_stop.c",
+      "symbol": "_op_shield_stop",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 30,
+          "address": 7117360,
+          "symbol": "_op_shields",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "shield_save_size",
+      "address": 4442435,
+      "size": 110,
+      "body_size": 110,
+      "source": "src/shield_save_size.c",
+      "symbol": "_op_shield_save_size",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 57,
+          "address": 7117360,
+          "symbol": "_op_shields",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "shield_calloc",
+      "address": 4435483,
+      "size": 56,
+      "body_size": 56,
+      "source": "src/shield_calloc.c",
+      "symbol": "_op_shield_calloc",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 10,
+          "address": 4805264,
+          "symbol": "_op_allocate",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "shield_set_texture",
+      "address": 4435539,
+      "size": 148,
+      "body_size": 148,
+      "source": "src/shield_set_texture.c",
+      "symbol": "_op_shield_set_texture",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 32,
+          "address": 7117360,
+          "symbol": "_op_shields",
+          "kind": "dir32"
+        },
+        {
+          "offset": 59,
+          "address": 4363764,
+          "symbol": "_op_release_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 71,
+          "address": 4363584,
+          "symbol": "_op_acquire_sprite",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "shield_draw_released",
+      "address": 4437627,
+      "size": 134,
+      "body_size": 134,
+      "source": "src/shield_draw_released.c",
+      "symbol": "_op_shield_draw_released",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 8,
+          "address": 7123120,
+          "symbol": "_op_shield_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 27,
+          "address": 7117360,
+          "symbol": "_op_shields",
+          "kind": "dir32"
+        },
+        {
+          "offset": 86,
+          "address": 4439966,
+          "symbol": "_op_shield_draw",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 95,
+          "address": 7117352,
+          "symbol": "_op_shield_pass",
+          "kind": "dir32"
+        },
+        {
+          "offset": 104,
+          "address": 7117352,
+          "symbol": "_op_shield_pass",
+          "kind": "dir32"
+        },
+        {
+          "offset": 112,
+          "address": 7117352,
+          "symbol": "_op_shield_pass",
+          "kind": "dir32"
+        },
+        {
+          "offset": 122,
+          "address": 7117348,
+          "symbol": "_op_shield_other_pass",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "shield_destroy",
+      "address": 4436124,
+      "size": 333,
+      "body_size": 333,
+      "source": "src/shield_destroy.c",
+      "symbol": "_op_shield_destroy",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 33,
+          "address": 7117360,
+          "symbol": "_op_shields",
+          "kind": "dir32"
+        },
+        {
+          "offset": 63,
+          "address": 4436457,
+          "symbol": "_op_shield_free",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 98,
+          "address": 4436457,
+          "symbol": "_op_shield_free",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 133,
+          "address": 4436457,
+          "symbol": "_op_shield_free",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 158,
+          "address": 4436457,
+          "symbol": "_op_shield_free",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 183,
+          "address": 4436457,
+          "symbol": "_op_shield_free",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 208,
+          "address": 4436457,
+          "symbol": "_op_shield_free",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 233,
+          "address": 4436457,
+          "symbol": "_op_shield_free",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 258,
+          "address": 4436457,
+          "symbol": "_op_shield_free",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 283,
+          "address": 4363764,
+          "symbol": "_op_release_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 311,
+          "address": 7123120,
+          "symbol": "_op_shield_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 320,
+          "address": 7123120,
+          "symbol": "_op_shield_count",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "effects_object_destroyed",
+      "address": 4427493,
+      "size": 47,
+      "body_size": 47,
+      "source": "src/effects_object_destroyed.c",
+      "symbol": "_op_effects_object_destroyed",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 8,
+          "address": 4432212,
+          "symbol": "_op_detach_halo",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 26,
+          "address": 4437478,
+          "symbol": "_op_shield_stop",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 38,
+          "address": 4445407,
+          "symbol": "_op_detach_zap",
+          "kind": "rel32-call"
+        }
+      ]
     }
   ]
 }

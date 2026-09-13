@@ -180,6 +180,11 @@ int op_stream_seek(void *handle, long offset, int origin)
 }
 void op_release(void *memory)
 {
+    if (shield_lifecycle_active)
+    {
+        shield_lifecycle_release(memory);
+        return;
+    }
     WC_CHECK(world_chunks_active && wc_stage == 1);
     WC_CHECK(wc_backend_events++ == 2);
     wc_check_state();
