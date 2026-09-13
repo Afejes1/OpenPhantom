@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "diagnostics_close",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full application and frame lifecycle contract",
+      "started_utc": "2026-09-13T21:38:39.059476+00:00",
+      "finished_utc": "2026-09-13T21:38:40.687965+00:00",
+      "returncode": 0,
+      "source_sha256": "89394d16272a1553a1a4ae20b0005991d620b545d88a3327314c371896ff8e85",
+      "report": "engine/build/campaign-001-diagnostics_close-281d1744dc46/research-result.json",
+      "report_sha256": "bec80b06499ff50d26be83cba419d5569f943ab5389adc8edece0c5ce8c38db4",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 28,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.40915,
+      "stderr": ""
+    }
+  ]
+}

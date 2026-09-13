@@ -1,0 +1,51 @@
+{
+  "id": "application_run",
+  "address": 4449760,
+  "size": 51,
+  "body_size": 51,
+  "source": "src/application_run.c",
+  "symbol": "_op_application_run",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 4449811,
+      "symbol": "_op_initialize_systems",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 13,
+      "address": 4450996,
+      "symbol": "_op_shutdown_systems",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 23,
+      "address": 7131148,
+      "symbol": "_op_application_mode",
+      "kind": "dir32"
+    },
+    {
+      "offset": 31,
+      "address": 4451114,
+      "symbol": "_op_run_campaign",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 38,
+      "address": 4452206,
+      "symbol": "_op_run_other_branch",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 43,
+      "address": 4450996,
+      "symbol": "_op_shutdown_systems",
+      "kind": "rel32-call"
+    }
+  ]
+}

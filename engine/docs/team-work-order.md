@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **86** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **883**.
+Our last recorded matches cover **91** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **878**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -82,7 +82,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | bp/baplight.c | 6 | 0 | 6 |
 | bp/bapobj.c | 4 | 0 | 4 |
 | bp/bapview.c | 6 | 0 | 6 |
-| bp/bapvrt.c | 19 | 0 | 19 |
+| bp/bapvrt.c | 19 | 5 | 14 |
 | bp/bgl.c | 21 | 7 | 14 |
 | bp/bppartic.c | 5 | 0 | 5 |
 | bp/bpsprite.c | 1 | 0 | 1 |

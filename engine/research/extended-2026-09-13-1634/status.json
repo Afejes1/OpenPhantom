@@ -18,9 +18,9 @@
   "reviewer_model": "gpt-5.6-sol",
   "reviewer_reasoning": "medium",
   "max_concurrent_implementation_workers": 1,
-  "new_exact_functions": 59,
-  "new_exact_bytes": 6409,
-  "promotions": 48,
+  "new_exact_functions": 64,
+  "new_exact_bytes": 6596,
+  "promotions": 53,
   "new_near_matches": 1,
   "new_research_candidates": 6,
   "team_done_overlap_exact_functions": 0,
@@ -156,9 +156,25 @@
       "new_exact_bytes": 304,
       "focused_checks": 8906553,
       "result": "research/campaign-032/results.json"
+    },
+    {
+      "id": "acceptance-014",
+      "promotions": 5,
+      "registered_after": 93,
+      "event": 36,
+      "source_commit": "d1280b540160b93d615c9dcf798aaa1821626436",
+      "result": "research/acceptance-014/result.json",
+      "full_ci": "success"
+    },
+    {
+      "id": "campaign-033",
+      "new_exact_functions": 5,
+      "new_exact_bytes": 187,
+      "focused_checks": 6143,
+      "result": "research/campaign-033/results.json"
     }
   ],
-  "current_work": "Acceptance014: integrate the five projected-overlay functions and exercise their real connected lifecycle.",
+  "current_work": "Acceptance015: seven small exact lifecycle and generation helpers with real token and overlay-size calls.",
   "original_game_executed": false,
   "weekly_shared_usage_latest_percent": 54,
   "usage_checked_utc": "2026-09-13T18:58:30Z",

@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "diagnostics_close",
+  "candidate": "candidate.c",
+  "symbol": "_op_diagnostics_close",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

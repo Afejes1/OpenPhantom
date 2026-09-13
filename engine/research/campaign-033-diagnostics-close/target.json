@@ -1,0 +1,33 @@
+{
+  "id": "diagnostics_close",
+  "address": 4452305,
+  "size": 28,
+  "body_size": 28,
+  "source": "src/diagnostics_close.c",
+  "symbol": "_op_diagnostics_close",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7131120,
+      "symbol": "_op_diagnostics_enabled",
+      "kind": "dir32"
+    },
+    {
+      "offset": 13,
+      "address": 7131064,
+      "symbol": "_op_diagnostic_stream",
+      "kind": "dir32"
+    },
+    {
+      "offset": 19,
+      "address": 4827904,
+      "symbol": "_op_close_diagnostic_stream",
+      "kind": "rel32-call"
+    }
+  ]
+}

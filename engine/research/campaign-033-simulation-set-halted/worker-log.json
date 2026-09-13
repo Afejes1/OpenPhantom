@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "simulation_set_halted",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full application and frame lifecycle contract",
+      "started_utc": "2026-09-13T21:38:40.692808+00:00",
+      "finished_utc": "2026-09-13T21:38:42.302083+00:00",
+      "returncode": 0,
+      "source_sha256": "cd6233ba1eb9105238d12783de05bd881b6792131c9f284e6ba16c6c79a51afa",
+      "report": "engine/build/campaign-001-simulation_set_halted-2a9d05d68dda/research-result.json",
+      "report_sha256": "dd60381910922a03c117aef37fe3481c5e6edf6e0c2480ed66f0e3505f4468c0",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 13,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.39237,
+      "stderr": ""
+    }
+  ]
+}

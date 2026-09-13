@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "graphics_close",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full application and frame lifecycle contract",
+      "started_utc": "2026-09-13T21:38:37.435590+00:00",
+      "finished_utc": "2026-09-13T21:38:39.054239+00:00",
+      "returncode": 0,
+      "source_sha256": "40e960622f59013b3e5ade419f605be4db7622a5726472d09b0c47efd423e21b",
+      "report": "engine/build/campaign-001-graphics_close-8484a2b028d5/research-result.json",
+      "report_sha256": "cdcc8a4577d1ea415f0df460988bd863460ae176e3cf774c861dfe9505abee80",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 25,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.402553,
+      "stderr": ""
+    }
+  ]
+}

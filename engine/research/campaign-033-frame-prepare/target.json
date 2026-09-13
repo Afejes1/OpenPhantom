@@ -1,0 +1,69 @@
+{
+  "id": "frame_prepare",
+  "address": 4453754,
+  "size": 70,
+  "body_size": 70,
+  "source": "src/frame_prepare.c",
+  "symbol": "_op_frame_prepare",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 9044064,
+      "symbol": "_op_active_world",
+      "kind": "dir32"
+    },
+    {
+      "offset": 10,
+      "address": 4298752,
+      "symbol": "_op_prepare_world",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 19,
+      "address": 9044064,
+      "symbol": "_op_active_world",
+      "kind": "dir32"
+    },
+    {
+      "offset": 25,
+      "address": 4212528,
+      "symbol": "_op_traverse_world",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 36,
+      "address": 7308260,
+      "symbol": "_op_camera_packet",
+      "kind": "dir32"
+    },
+    {
+      "offset": 45,
+      "address": 9044064,
+      "symbol": "_op_active_world",
+      "kind": "dir32"
+    },
+    {
+      "offset": 51,
+      "address": 4299184,
+      "symbol": "_op_prepare_world_surfaces",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 59,
+      "address": 4737266,
+      "symbol": "_op_prepare_graphics_submission",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 64,
+      "address": 4220976,
+      "symbol": "_op_submit_world_surfaces",
+      "kind": "rel32-call"
+    }
+  ]
+}

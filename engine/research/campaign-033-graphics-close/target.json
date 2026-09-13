@@ -1,0 +1,39 @@
+{
+  "id": "graphics_close",
+  "address": 4453824,
+  "size": 25,
+  "body_size": 25,
+  "source": "src/graphics_close.c",
+  "symbol": "_op_graphics_close",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 4736929,
+      "symbol": "_op_clear_graphics_state_a",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 9,
+      "address": 4736748,
+      "symbol": "_op_clear_graphics_state_b",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 14,
+      "address": 4637928,
+      "symbol": "_op_close_graphics_device",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 19,
+      "address": 4638034,
+      "symbol": "_op_shutdown_graphics",
+      "kind": "rel32-call"
+    }
+  ]
+}
