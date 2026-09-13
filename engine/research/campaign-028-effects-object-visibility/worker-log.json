@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "effects_object_visibility",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:02:03.823208+00:00",
+      "finished_utc": "2026-09-13T19:02:05.398886+00:00",
+      "returncode": 0,
+      "source_sha256": "d0786e7303f8275aff7b4a2b5fc84aa719041693992f5968e1eef748d35ae141",
+      "report": "engine/build/campaign-001-effects_object_visibility-bf53bcbd7742/research-result.json",
+      "report_sha256": "bcd24555e2f4dbf4b55cf653f11ffdee22bc57209cbe35e76da6f0761421e13f",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 40,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.357181,
+      "stderr": ""
+    }
+  ]
+}

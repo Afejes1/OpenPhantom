@@ -1,0 +1,45 @@
+{
+  "id": "zap_draw_default",
+  "address": 4445685,
+  "size": 83,
+  "body_size": 83,
+  "source": "src/zap_draw_default.c",
+  "symbol": "_op_zap_draw_default",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 7,
+      "address": 7131016,
+      "symbol": "_op_zap_sprite",
+      "kind": "dir32"
+    },
+    {
+      "offset": 13,
+      "address": 4363677,
+      "symbol": "_op_resolve_zap_material",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 34,
+      "address": 4445873,
+      "symbol": "_op_generate_zap_points",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 67,
+      "address": 7123128,
+      "symbol": "_op_zap_points",
+      "kind": "dir32"
+    },
+    {
+      "offset": 72,
+      "address": 4228917,
+      "symbol": "_op_submit_zap_points",
+      "kind": "rel32-call"
+    }
+  ]
+}

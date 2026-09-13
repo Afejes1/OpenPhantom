@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "zap_draw_segment",
+  "compiler_invocations": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:02:00.610480+00:00",
+      "finished_utc": "2026-09-13T19:02:02.219801+00:00",
+      "returncode": 1,
+      "source_sha256": "cbd4aef30c89914afdc9ca707aa71447cde8555573d6e17e1e927e7a37902538",
+      "report": "engine/build/campaign-001-zap_draw_segment-35f4df4df903/research-result.json",
+      "report_sha256": "c54dcf7c77a63e39b5a4d0774ccc18d38ec00516f85d59f403281be56d876c0a",
+      "status": "mismatch",
+      "candidate_size": 105,
+      "different_bytes": 4,
+      "elapsed_seconds": 1.381903,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:03:18.646614+00:00",
+      "finished_utc": "2026-09-13T19:03:20.206401+00:00",
+      "returncode": 1,
+      "source_sha256": "1af0d3282a19347ffdaf45f230531770ed6bf6b43a9134fd104327eff7ad658b",
+      "report": "engine/build/campaign-001-zap_draw_segment-69bcf8779d92/research-result.json",
+      "report_sha256": "7efe15818df0fe1bcb7d0eca53541fc053290970182858af46a10b83b15f9364",
+      "status": "mismatch",
+      "candidate_size": 105,
+      "different_bytes": 4,
+      "elapsed_seconds": 1.337707,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:03:59.381196+00:00",
+      "finished_utc": "2026-09-13T19:04:00.950373+00:00",
+      "returncode": 0,
+      "source_sha256": "08339c4b2af53eac4a741f8e2ab896e219129922058517f974ed5f92154a80f1",
+      "report": "engine/build/campaign-001-zap_draw_segment-27a57a07fe29/research-result.json",
+      "report_sha256": "436fdc8d69556c35cbb0d4f323a919b5149814a83b4c26e32c686245d62f435e",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 105,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.350821,
+      "stderr": ""
+    }
+  ]
+}

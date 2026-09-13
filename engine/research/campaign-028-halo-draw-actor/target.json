@@ -1,0 +1,33 @@
+{
+  "id": "halo_draw_actor",
+  "address": 4430420,
+  "size": 98,
+  "body_size": 98,
+  "source": "src/halo_draw_actor.c",
+  "symbol": "_op_halo_draw_actor",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 58,
+      "address": 7097992,
+      "symbol": "_op_halos",
+      "kind": "dir32"
+    },
+    {
+      "offset": 79,
+      "address": 7097992,
+      "symbol": "_op_halos",
+      "kind": "dir32"
+    },
+    {
+      "offset": 85,
+      "address": 4430518,
+      "symbol": "_op_halo_draw_slot",
+      "kind": "rel32-call"
+    }
+  ]
+}

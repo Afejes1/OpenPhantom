@@ -1,0 +1,84 @@
+{
+  "id": "ripple_material",
+  "address": 4434627,
+  "size": 163,
+  "body_size": 163,
+  "source": "src/ripple_material.c",
+  "symbol": "_op_ripple_material",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 14,
+      "address": 4907416,
+      "symbol": "_op_ripple_materials",
+      "kind": "dir32",
+      "addend": 8
+    },
+    {
+      "offset": 40,
+      "address": 4907416,
+      "symbol": "_op_ripple_materials",
+      "kind": "dir32"
+    },
+    {
+      "offset": 46,
+      "address": 4363584,
+      "symbol": "_op_acquire_sprite",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 64,
+      "address": 4907416,
+      "symbol": "_op_ripple_materials",
+      "kind": "dir32",
+      "addend": 4
+    },
+    {
+      "offset": 70,
+      "address": 4363584,
+      "symbol": "_op_acquire_sprite",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 85,
+      "address": 4364383,
+      "symbol": "_op_sprite_get_material",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 98,
+      "address": 4364383,
+      "symbol": "_op_sprite_get_material",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 107,
+      "address": 4702855,
+      "symbol": "_op_compose_materials",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 128,
+      "address": 4907416,
+      "symbol": "_op_ripple_materials",
+      "kind": "dir32",
+      "addend": 8
+    },
+    {
+      "offset": 137,
+      "address": 4363764,
+      "symbol": "_op_release_sprite",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 149,
+      "address": 4363764,
+      "symbol": "_op_release_sprite",
+      "kind": "rel32-call"
+    }
+  ]
+}

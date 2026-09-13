@@ -1,0 +1,27 @@
+{
+  "id": "effects_object_visibility",
+  "address": 4427453,
+  "size": 40,
+  "body_size": 40,
+  "source": "src/effects_object_visibility.c",
+  "symbol": "_op_effects_object_visibility",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 9062504,
+      "symbol": "_op_model_ambient_boost",
+      "kind": "dir32"
+    },
+    {
+      "offset": 30,
+      "address": 9062504,
+      "symbol": "_op_model_ambient_boost",
+      "kind": "dir32"
+    }
+  ]
+}

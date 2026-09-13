@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "campaign": "028",
+  "id": "ripple_reset",
+  "status": "focused-mismatch",
+  "comparison": {
+    "id": "ripple_reset",
+    "address": 4434790,
+    "size": 138,
+    "candidate_size": 136,
+    "body_size": 136,
+    "status": "mismatch",
+    "literal_function_match": false,
+    "layout_verified": false,
+    "adjusted_bytes": 0,
+    "object_sha256": "e9ef49ba86d177503442468579d3f4be095e97379bf7d132c31acffee7cd5550",
+    "reason": "complete function extent differs"
+  },
+  "different_percent": null,
+  "source_snapshot": {
+    "research/campaign-028-ripple-reset/candidate.c": "10a69977120f38bb45fbdc8c7457a852733cc7808ac5d65f7651b9aa87d6133e",
+    "research/campaign-028-ripple-reset/api.h": "aa2f7ba0a3de62d7849d1c44cebc287cd3c7a31949013283fb876b7b2e6af811",
+    "research/campaign-028-ripple-reset/behavior.c": "ef42dfbb72219fc25f62f5ccac1a23ebf7bced02de42f9ef7a6bb032a77b4839",
+    "research/campaign-028-ripple-reset/case.json": "176aed89c3b8a7fb47ea11949e941d4fe43eceb26b65d6cfb0a294a9cd81ee8d",
+    "research/campaign-001/verify.py": "78bcf92d994fdab04d1a983838fe9f492162d2626b35390259d9976b92cbbe78",
+    "target.json": "c2df3bb74347bdd3d3f15f034aa7596332c9b183a77607a44f3d46df1ba48228",
+    "research/campaign-028-ripple-reset/target.json": "c91032d3d8b1cb7cf5986097545ec091be7a2306cc0cf2e5ecd40cbfef865a3b",
+    "research/surface-emission/probe.py": "cd4ef4126dacfc16197636a4b0c7007639efe1033e8e2b329e4939a6083c5f1b",
+    "research/surface-emission/native_listing_diagnostic.py": "3cad0339396c73301ef5861eed3c40f925482fd7c2e4ec45f801e9d0e5d34665",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "959d15268c4d927e57271424dbcb1c709cf89cbf3e48ff545e4e15c4d6425f27",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "reference": {
+    "sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
+    "size": 829952
+  },
+  "native_report": "engine/build/campaign-001-ripple_reset-c8ca1f9ba3cd/research-result.json",
+  "native_report_sha256": "a5a68d03d360e1cc4ac2594755825d6f8f53c60bb1976ec08cbdbad8c0c1fe6a",
+  "docker_report": "engine/build/campaign-001-ripple_reset-f11fbed941dc/research-result.json",
+  "docker_report_sha256": "40ed978e3aa57175a1a54575f0eaeb7847220f97c26e2bda15d94eb03929fc75",
+  "artifact": {
+    "id": "ripple_reset",
+    "source": "candidate.c",
+    "symbol": "_op_ripple_reset",
+    "object": "candidate.obj",
+    "object_sha256": "e9ef49ba86d177503442468579d3f4be095e97379bf7d132c31acffee7cd5550",
+    "function_section_bytes": 136,
+    "function_section_sha256": "67fff7872ef7c6eda53d9732c9994fd5254741e4e32ca5eb560834c7133a96c6",
+    "relocation_count": 6,
+    "assembly_listing": "candidate.native.cod",
+    "assembly_listing_sha256": "d248b6a84018425274c9acf02535e553ed6475cc3ed59afae1c7798d0607b02c",
+    "assembly_listing_has_terminators": true,
+    "function_inventory": "candidate.function.json",
+    "function_inventory_sha256": "d336706ca98d617ceff3269aeda67156994876c18312f0379bfd99f933fb43c1",
+    "listing_fallback": {
+      "kind": "verified-native-peer-listing",
+      "original_docker_listing": "candidate.cod",
+      "original_docker_listing_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "native_peer_report_sha256": "a5a68d03d360e1cc4ac2594755825d6f8f53c60bb1976ec08cbdbad8c0c1fe6a",
+      "native_peer_object_sha256": "ccf7d07f73a6958975cc04de66ea1f7e343a63226c900c7a93d8591ebb97ef7f",
+      "native_peer_listing_sha256": "d248b6a84018425274c9acf02535e553ed6475cc3ed59afae1c7798d0607b02c",
+      "function_and_relocations_equal_before_fixture": true
+    }
+  },
+  "fixture": {
+    "sha256": "e2b468b09c17354ca6033b914434ee3c5aa0685844071c38baafff76a7ae95c6",
+    "passed": true,
+    "stdout": "ripple reset body: 8989 checks, 0 failures\n",
+    "checks": 8989,
+    "failures": 0
+  },
+  "native_docker_function_and_relocations_equal": true,
+  "native_elapsed_seconds": 1.377154,
+  "docker_elapsed_seconds": 5.541632,
+  "accepted_history_record": false,
+  "original_game_executed": false,
+  "whole_executable_match": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "review": "research/campaign-028/review.json",
+  "limitations": [
+    "The compiler emits136 bytes while the complete original span is138 including a two-byte alignment tail. No padding or exclusions. The8989 authored checks validate candidate body behavior only; final extent and linked placement remain unresolved."
+  ],
+  "evidence_category": "research-candidate"
+}

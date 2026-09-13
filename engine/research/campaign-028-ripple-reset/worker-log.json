@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "ripple_reset",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:01:58.999089+00:00",
+      "finished_utc": "2026-09-13T19:02:00.604715+00:00",
+      "returncode": 1,
+      "source_sha256": "10a69977120f38bb45fbdc8c7457a852733cc7808ac5d65f7651b9aa87d6133e",
+      "report": "engine/build/campaign-001-ripple_reset-8bc53c5e4fc8/research-result.json",
+      "report_sha256": "c3b113d06d4b32fd5aedfe792a8d3f26f3776faedf5fb48202617e0c03793f41",
+      "status": "mismatch",
+      "candidate_size": 136,
+      "different_bytes": null,
+      "elapsed_seconds": 1.38513,
+      "stderr": ""
+    }
+  ]
+}

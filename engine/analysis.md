@@ -365,3 +365,7 @@ Seven untouched functions match 455 complete bytes; 9,954 focused checks cover a
 ## Campaign027 zapline and halo cleanup
 
 Six untouched functions match461 complete bytes with23,949 focused checks. The active/mode endpoint query and active endpoint detach share a64-record,120-byte pool; resource lifecycle and full reset contracts are independently reviewed. Halo free-all body behavior is verified while its caller provenance remains unresolved. See [Campaign027](research/campaign-027/results.md). Registered acceptance remains69 functions until the next combined checkpoint.
+
+## Campaign028 load and render helpers
+
+Seven functions match658 complete bytes; all41,267 focused checks pass. The batch covers staged effects loading, object halo drawing, ripple material construction, two zapline wrappers and object lifecycle/ambient bridges. Ripple reset remains research due to its two-byte alignment tail. See [Campaign028](research/campaign-028/results.md). All13 exact C27/C28 candidates await the next combined acceptance checkpoint.

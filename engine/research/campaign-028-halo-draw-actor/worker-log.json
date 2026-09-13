@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "halo_draw_actor",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:01:56.498694+00:00",
+      "finished_utc": "2026-09-13T19:01:57.385165+00:00",
+      "returncode": 2,
+      "source_sha256": "0a2f6eb1f36d5730a243ca475013af755cf9014e7c4611eeb6ed322523abb6df",
+      "report": "engine/build/campaign-001-halo_draw_actor-6cba0720a2c1/research-result.json",
+      "report_sha256": "8ad909e9e27f2050b0bca395f76991aeba6ae0a62a0ed815f15c9bbf9ddea842",
+      "status": "not-attempted",
+      "candidate_size": null,
+      "different_bytes": null,
+      "elapsed_seconds": 0.668777,
+      "stderr": "FAILED: original relocation target differs\n"
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:03:15.478559+00:00",
+      "finished_utc": "2026-09-13T19:03:17.050987+00:00",
+      "returncode": 0,
+      "source_sha256": "0a2f6eb1f36d5730a243ca475013af755cf9014e7c4611eeb6ed322523abb6df",
+      "report": "engine/build/campaign-001-halo_draw_actor-a3082220b97d/research-result.json",
+      "report_sha256": "030f4fff6f91543a0d3785ce801174a8ab94cd28be88ef21777caf1b5ec5b6d7",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 98,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.356649,
+      "stderr": ""
+    }
+  ]
+}

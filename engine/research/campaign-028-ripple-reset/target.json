@@ -1,0 +1,54 @@
+{
+  "id": "ripple_reset",
+  "address": 4434790,
+  "size": 138,
+  "body_size": 136,
+  "source": "src/ripple_reset.c",
+  "symbol": "_op_ripple_reset",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 4311376,
+      "symbol": "_op_clear_projected_overlays",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 44,
+      "address": 7098904,
+      "symbol": "_op_ripples",
+      "kind": "dir32"
+    },
+    {
+      "offset": 86,
+      "address": 4907416,
+      "symbol": "_op_ripple_materials",
+      "kind": "dir32",
+      "addend": 8
+    },
+    {
+      "offset": 101,
+      "address": 4907416,
+      "symbol": "_op_ripple_materials",
+      "kind": "dir32",
+      "addend": 8
+    },
+    {
+      "offset": 107,
+      "address": 4699484,
+      "symbol": "_op_destroy_material",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 122,
+      "address": 4907416,
+      "symbol": "_op_ripple_materials",
+      "kind": "dir32",
+      "addend": 8
+    }
+  ]
+}

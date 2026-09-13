@@ -247,3 +247,10 @@ Address | Original Name | New Name | Confidence | Purpose | Evidence
 0x004397F0 | FUN_004397f0 | initialize_halo_sprite_resources | HIGH | Initialize three halo sprite handles | Dispatcher startup case3; three resource calls and distinct global stores; 59-byte exact match, NULL/alias callback fixtures.
 0x0043982B | FUN_0043982b | release_halo_sprite_resources | HIGH | Release three halo sprite handles | Dispatcher shutdown case4; address-of-handle callbacks in order; 44-byte exact match.
 0x0043A154 | FUN_0043a154 | detach_object_halo_resources | HIGH | Detach and release every halo owned by an actor | Object teardown and fragmentation callers; 32 records at stride28, clear owner before release, decrement live count; 103-byte exact match.
+
+## Campaign028 effects identities
+
+Address | Original Name | New Name | Confidence | Purpose | Evidence
+---|---|---|---|---|---
+0x00439235 | FUN_00439235 | load_special_effects_save_state | HIGH | Read staged effects state and dependent save blocks | Event0x103 gate,96-byte reader, six fog stores, linked-sphere and overlay load calls;152-byte exact match and5436 authored checks.
+0x00439A54 | FUN_00439a54 | render_object_halo_effects | HIGH | Render every halo associated with an eligible actor | Accepted object draw caller, NULL/flag0x10 gate,32 records at stride28 and per-slot draw callback;98-byte exact match and651 checks.

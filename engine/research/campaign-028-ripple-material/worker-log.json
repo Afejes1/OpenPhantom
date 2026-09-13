@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ripple_material",
+  "compiler_invocations": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:01:57.391021+00:00",
+      "finished_utc": "2026-09-13T19:01:58.993531+00:00",
+      "returncode": 1,
+      "source_sha256": "0137e01df19f497c529f13d54d8dae0635bc36239bc4be3d3c9e4adf03d7b18e",
+      "report": "engine/build/campaign-001-ripple_material-ecacfe29fb03/research-result.json",
+      "report_sha256": "d75089277ea39712af5379fb5204280804121d2d2e2e681f24d64a998569813f",
+      "status": "mismatch",
+      "candidate_size": 163,
+      "different_bytes": 6,
+      "elapsed_seconds": 1.379304,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:03:17.056382+00:00",
+      "finished_utc": "2026-09-13T19:03:18.640324+00:00",
+      "returncode": 1,
+      "source_sha256": "2c05e1b7d2acc48371ce0cb42a6c9e8b29c8e6623404dfd2e7d343bed57d5d2b",
+      "report": "engine/build/campaign-001-ripple_material-872fada6c678/research-result.json",
+      "report_sha256": "bcfe1bd001542be9867b7bc6dc8d490efed5da2c237efb3e1374386a4835165b",
+      "status": "mismatch",
+      "candidate_size": 163,
+      "different_bytes": 12,
+      "elapsed_seconds": 1.366623,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:03:57.793360+00:00",
+      "finished_utc": "2026-09-13T19:03:59.379961+00:00",
+      "returncode": 1,
+      "source_sha256": "2977d7efc936f8ff39d70ebf9aa6ac92e29710eb6e162f18c80e00b4a60ec31a",
+      "report": "engine/build/campaign-001-ripple_material-be29a5ed7ab9/research-result.json",
+      "report_sha256": "bb65c1526cd2069e557bb8ddc28337c39b575db40646247ca2f1cbc11efa5c5a",
+      "status": "mismatch",
+      "candidate_size": 163,
+      "different_bytes": 12,
+      "elapsed_seconds": 1.369885,
+      "stderr": ""
+    },
+    {
+      "attempt": 4,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:04:24.772675+00:00",
+      "finished_utc": "2026-09-13T19:04:26.363845+00:00",
+      "returncode": 0,
+      "source_sha256": "ba48fac2dd1c807173c388ef325ba452ab0c951767cbc8ec84dd6aba5af9056e",
+      "report": "engine/build/campaign-001-ripple_material-c5a5a7c07977/research-result.json",
+      "report_sha256": "16221342169874d5fc0b35fec498c5b86dc0210ce525b511b6a048edd2262eed",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 163,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.373585,
+      "stderr": ""
+    }
+  ]
+}

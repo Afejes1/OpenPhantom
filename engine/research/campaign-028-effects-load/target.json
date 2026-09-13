@@ -1,0 +1,117 @@
+{
+  "id": "effects_load",
+  "address": 4428341,
+  "size": 152,
+  "body_size": 152,
+  "source": "src/effects_load.c",
+  "symbol": "_op_effects_load",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 25,
+      "address": 7097816,
+      "symbol": "_op_effects_save",
+      "kind": "dir32"
+    },
+    {
+      "offset": 30,
+      "address": 4529328,
+      "symbol": "_op_save_read",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 49,
+      "address": 7097816,
+      "symbol": "_op_effects_save",
+      "kind": "dir32",
+      "addend": 24
+    },
+    {
+      "offset": 54,
+      "address": 8918516,
+      "symbol": "_op_fog_duration",
+      "kind": "dir32"
+    },
+    {
+      "offset": 60,
+      "address": 7097816,
+      "symbol": "_op_effects_save",
+      "kind": "dir32",
+      "addend": 28
+    },
+    {
+      "offset": 66,
+      "address": 8918520,
+      "symbol": "_op_fog_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 72,
+      "address": 7097816,
+      "symbol": "_op_effects_save",
+      "kind": "dir32",
+      "addend": 32
+    },
+    {
+      "offset": 78,
+      "address": 8918524,
+      "symbol": "_op_fog_cached_start",
+      "kind": "dir32"
+    },
+    {
+      "offset": 83,
+      "address": 7097816,
+      "symbol": "_op_effects_save",
+      "kind": "dir32",
+      "addend": 36
+    },
+    {
+      "offset": 88,
+      "address": 8918512,
+      "symbol": "_op_fog_remaining",
+      "kind": "dir32"
+    },
+    {
+      "offset": 94,
+      "address": 7097816,
+      "symbol": "_op_effects_save",
+      "kind": "dir32",
+      "addend": 40
+    },
+    {
+      "offset": 100,
+      "address": 8918504,
+      "symbol": "_op_fog_restore_mode",
+      "kind": "dir32"
+    },
+    {
+      "offset": 106,
+      "address": 7097816,
+      "symbol": "_op_effects_save",
+      "kind": "dir32",
+      "addend": 44
+    },
+    {
+      "offset": 112,
+      "address": 8918508,
+      "symbol": "_op_fog_saved",
+      "kind": "dir32"
+    },
+    {
+      "offset": 117,
+      "address": 4442876,
+      "symbol": "_op_shield_load",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 133,
+      "address": 4429716,
+      "symbol": "_op_overlay_read_state",
+      "kind": "rel32-call"
+    }
+  ]
+}

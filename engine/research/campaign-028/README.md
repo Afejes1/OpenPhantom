@@ -1,0 +1,3 @@
+# Campaign028: effects load and rendering helpers
+
+Eight untouched functions,796 full bytes. Complete the neighboring load, halo draw and ripple material paths and add zapline draw wrappers. Parent implements; Sol reviews independently. Use fifteen-minute/ten-implementation-compile caps with five consecutive non-improving attempts as a stop. Preserve full extents; the ripple reset has a two-byte alignment tail and remains research if unmatched. Require owned-state fixtures, native/Docker code and fixup equality, no original execution, no original resource strings, no byte exclusions or warning waivers.

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "effects_object_created",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T19:02:05.404893+00:00",
+      "finished_utc": "2026-09-13T19:02:06.988151+00:00",
+      "returncode": 0,
+      "source_sha256": "4a65b8b487a3f7987420de6f8c457cf36f488ae4ce8e768e3b2e85b63a7c507a",
+      "report": "engine/build/campaign-001-effects_object_created-f211d3fcd002/research-result.json",
+      "report_sha256": "de98e6764fd5f0a1997c9cb2f698debc827dc556460ee0be3dc94ce2ca222b4a",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 17,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.359483,
+      "stderr": ""
+    }
+  ]
+}
