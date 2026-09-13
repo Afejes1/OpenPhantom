@@ -1,0 +1,7 @@
+# Acceptance020 results
+
+Sprite release is accepted: one previously exact function, 71 complete bytes and one verified operand, bringing 110 to 111 registered functions. Build `20260913-191836-5fa667f0` at `341693209b8b436eb5c188fb2d786dae59a59b56` passes every full span and the shared authored fixture on the first integrated build. [Event43](../../evidence/runs/000043-c58b2f58f5e59c5d.json) records the source snapshot. [Full supplemental CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34789464486) passes on that exact source. Independent review found no material issue.
+
+The canonical helper now connects shield, halo, ripple and zap lifecycles through one resource-manager fixture boundary. Direct release reports 302 checks; halo shutdown 572, detach 600 and free-all 600. These counts include repeated state assertions. Some older fixture totals decrease because NULL releases no longer invoke a fabricated callback and private local pointer slots are no longer claimed visible to the resource backend. Explicit visit schedules, null-skip counts, post-callback current-handle clearing, future-slot changes and captured-resource order remain asserted.
+
+No byte exclusions, warning waivers or artificial padding were added. The original game was not executed. All acceptance remains complete-function evidence with verified relocation operands; whole-executable identity is still pending.

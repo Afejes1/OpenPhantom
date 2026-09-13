@@ -23,5 +23,7 @@
   "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34788745431",
   "supplemental_ci_conclusion": "success",
   "supplemental_ci_source": "9c00ee10544dacf6b3cd52e48a43b982478df011",
-  "independent_review": "comparison_inventory: fixture CRT-copy warning corrected; no other material findings"
+  "independent_review": "comparison_inventory: fixture CRT-copy warning corrected; no other material findings",
+  "publication_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34789246118",
+  "publication_ci_conclusion": "success"
 }
