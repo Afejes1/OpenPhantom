@@ -2,6 +2,7 @@
 #define OP_ZAP_EFFECTS_H
 #include "focused_accessors.h"
 #include "vec3.h"
+#include "sprite_resources.h"
 typedef struct OP_ZAP
 {
     int active;
@@ -24,7 +25,6 @@ int op_zap_startup(void);
 int op_zap_shutdown(void);
 void op_zap_reset(void);
 int op_zap_has_actor(OP_ATTACHED_ACTOR *actor);
-void *op_resolve_zap_material(void *sprite);
 void op_generate_zap_points(OP_VEC3 *start, OP_VEC3 *end, int depth);
 void op_submit_zap_points(OP_VEC3 *points, int count, unsigned int color, void *material, float width);
 void op_zap_draw_segment(OP_VEC3 *start, OP_VEC3 *end, int depth, float width, unsigned int color);

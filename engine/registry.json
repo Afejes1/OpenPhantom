@@ -1993,6 +1993,25 @@
         "Proven wrapper prefix17 vectors; depths0..4 and disjoint/exact snapshot alias only. Real build/subdivide and wrapper-specific live callback order."
       ],
       "exceptions": []
+    },
+    {
+      "id": "sprite_frame",
+      "module": "sprite_resources",
+      "analysis_name": "resolve_sprite_material_frame",
+      "purpose": "Resolve captured sprite material frame",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/sprite-frame-acceptance.md",
+        "research/campaign-029-sprite-frame/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/sprite_frame_behavior.h",
+        "tests/zap_geometry_behavior.h"
+      ],
+      "quirks": [
+        "Outer NULL returnsNULL without backend; valid inner material/frame required; return captured frame+44 despite callback retargeting."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

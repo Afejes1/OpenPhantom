@@ -126,7 +126,7 @@ static int op_test_zap_effects(void)
     zp_mode = 0;
     ZP_CHECK(!halo_overlay_active && !shield_lifecycle_active && !ripple_effects_active);
     total = zp_checks + lc_detach_zap_checks + lc_zap_has_actor_checks + lc_zap_reset_checks + lc_zap_startup_checks +
-            lc_zap_shutdown_checks + zg_checks + zsub_checks;
+            lc_zap_shutdown_checks + zg_checks + zsub_checks + sf_checks;
     printf("zap lifecycle total: %d checks, %d integration failures\n", total, zp_failures);
     return status + (zp_failures != 0);
 }

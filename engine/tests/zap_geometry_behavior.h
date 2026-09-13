@@ -3,7 +3,8 @@
  */
 #include <math.h>
 #include "zap_subdivide_behavior.h"
-static int zg_checks, zg_failures, zg_sub_test;
+#include "sprite_frame_behavior.h"
+static int zg_checks, zg_failures, zg_sub_test, zg_sf_test, zg_prepare_calls, zg_null_path;
 static int zg_kind, zg_depth, zg_alias, zg_out_alias, zg_mutation, zg_null_material;
 static int zg_stage, zg_calls, zg_last, zg_wanted_calls, zg_saved_count;
 static unsigned int zg_width_bits, zg_color;
@@ -13,6 +14,29 @@ static OP_VEC3 zg_expected[19], zg_final[19], zg_storage[21], zg_expected_storag
 static unsigned char zg_middle[19][3];
 static unsigned char zg_owned[4][16], zg_expected_owned[4][16];
 static OP_ZAP zg_expected_zaps[64];
+typedef struct ZG_SPRITE
+{
+    unsigned int before;
+    OP_SPRITE value;
+    unsigned int after;
+} ZG_SPRITE;
+typedef struct ZG_MATERIAL
+{
+    unsigned int before;
+    OP_MATERIAL value;
+    unsigned int after;
+} ZG_MATERIAL;
+typedef struct ZG_FRAME
+{
+    unsigned int before;
+    unsigned char value[64];
+    unsigned int after;
+} ZG_FRAME;
+static ZG_SPRITE zg_sprites[4], zg_expected_sprites[4];
+static ZG_MATERIAL zg_materials[4], zg_expected_materials[4];
+static ZG_FRAME zg_frames[4], zg_expected_frames[4];
+static int zg_captured_frame;
+
 typedef struct ZG_INPUTS
 {
     unsigned int before;
@@ -74,6 +98,9 @@ static void zg_verify(void)
     int i, j;
     float actual, wanted;
     ZG_CHECK(op_zap_sprite == zg_expected_sprite);
+    ZG_CHECK(memcmp(zg_sprites, zg_expected_sprites, sizeof(zg_sprites)) == 0);
+    ZG_CHECK(memcmp(zg_materials, zg_expected_materials, sizeof(zg_materials)) == 0);
+    ZG_CHECK(memcmp(zg_frames, zg_expected_frames, sizeof(zg_frames)) == 0);
     ZG_CHECK(op_zap_count == zg_saved_count);
     ZG_CHECK(memcmp(op_zaps, zg_expected_zaps, sizeof(op_zaps)) == 0);
     ZG_CHECK(memcmp(&zg_inputs, &zg_expected_inputs, sizeof(zg_inputs)) == 0);
@@ -135,19 +162,24 @@ int op_random(void)
         return 0;
     zg_verify();
     if (zg_mutation && n == 0)
-        op_zap_sprite = zg_expected_sprite = zg_owned[2];
+        op_zap_sprite = zg_expected_sprite = &zg_sprites[2].value;
     slot = zg_preorder[zg_depth][n / 3];
     axis = n % 3;
     zg_set(&zg_expected[slot], axis, zg_get(&zg_final[slot], axis));
     zg_middle[slot][axis] = 1;
     return 0;
 }
-void *op_resolve_zap_material(void *sprite)
+int op_prepare_material_frame(OP_MATERIAL *material, unsigned char *frame, int mode)
 {
     int i;
+    if (zg_sf_test)
+        return sf_op_prepare_material_frame(material, frame, mode);
+    ZG_CHECK(!zg_null_path && zg_prepare_calls++ == 0);
+    ZG_CHECK(zg_expected_sprite == &zg_sprites[zg_captured_frame].value);
+    ZG_CHECK(material == &zg_materials[zg_captured_frame].value);
+    ZG_CHECK(frame == zg_frames[zg_captured_frame].value && mode == 0);
     ZG_CHECK(zap_effects_active);
     ZG_CHECK(zg_stage == 0);
-    ZG_CHECK(sprite == zg_expected_sprite);
     if (zg_kind == 2)
     {
         ZG_CHECK(zg_calls == zg_wanted_calls);
@@ -182,17 +214,31 @@ void *op_resolve_zap_material(void *sprite)
     }
     if (zg_mutation)
     {
-        op_zap_sprite = zg_expected_sprite = zg_owned[3];
+        op_zap_sprite = zg_expected_sprite = &zg_sprites[3].value;
         zg_owned[1][3] = zg_expected_owned[1][3] = 0x29;
+        zg_sprites[zg_captured_frame].value.material = zg_expected_sprites[zg_captured_frame].value.material =
+            &zg_materials[3].value;
+        zg_materials[zg_captured_frame].value.frame = zg_expected_materials[zg_captured_frame].value.frame =
+            zg_frames[3].value;
+        zg_frames[zg_captured_frame].value[44] ^= 0x5a;
+        zg_expected_frames[zg_captured_frame].value[44] ^= 0x5a;
     }
     if (zg_kind < 2)
         zg_begin();
-    return zg_material;
+    return zg_null_material ? 0 : 1;
 }
 void op_submit_zap_points(OP_VEC3 *points, int count, unsigned int color, void *material, float width)
 {
     unsigned int bits;
+    int i;
     ZG_CHECK(zap_effects_active);
+    if (zg_null_path && zg_kind == 2 && zg_stage == 0)
+    {
+        if (!zg_out_alias)
+            for (i = 0; i <= zg_last; i++)
+                zg_expected_storage[i + 2] = zg_expected[i];
+        zg_stage = 1;
+    }
     ZG_CHECK(zg_stage == 1);
     ZG_CHECK(zg_calls == zg_wanted_calls);
     ZG_CHECK(points == (zg_kind == 2 ? zg_destination : op_zap_points));
@@ -243,15 +289,30 @@ static void zg_run(int requested_depth)
     memcpy(zg_expected_owned, zg_owned, sizeof(zg_owned));
     memcpy(zg_expected_zaps, op_zaps, sizeof(op_zaps));
     zg_saved_count = op_zap_count;
-    op_zap_sprite = zg_expected_sprite = zg_null_material ? 0 : zg_owned[0];
-    zg_material = zg_null_material ? 0 : zg_owned[1];
+    memset(zg_sprites, 0x39, sizeof(zg_sprites));
+    memset(zg_materials, 0x48, sizeof(zg_materials));
+    memset(zg_frames, 0x57, sizeof(zg_frames));
+    for (i = 0; i < 4; i++)
+    {
+        zg_sprites[i].value.material = &zg_materials[i].value;
+        zg_materials[i].value.frame = zg_frames[i].value;
+    }
+    memcpy(zg_expected_sprites, zg_sprites, sizeof(zg_sprites));
+    memcpy(zg_expected_materials, zg_materials, sizeof(zg_materials));
+    memcpy(zg_expected_frames, zg_frames, sizeof(zg_frames));
+    op_zap_sprite = zg_expected_sprite = zg_null_path ? 0 : &zg_sprites[0].value;
+    zg_captured_frame = (zg_kind == 2 && zg_mutation && zg_wanted_calls) ? 2 : 0;
+    zg_material = zg_null_material || zg_null_path ? 0 : zg_frames[zg_captured_frame].value + 44;
+    zg_prepare_calls = 0;
     zg_start = zg_alias == 3 ? &op_zap_points[zg_last] : &zg_inputs.value[0];
     zg_end = zg_alias == 2 ? &op_zap_points[0] : zg_alias == 1 ? &zg_inputs.value[0] : &zg_inputs.value[1];
     zg_destination = zg_out_alias ? op_zap_points : zg_storage + 2;
     zg_calls = zg_stage = 0;
     memcpy(&width, &zg_width_bits, 4);
-    if (zg_kind >= 2)
+    if (zg_kind >= 2 || zg_null_path)
         zg_begin();
+    if (zg_null_path && zg_kind < 2)
+        zg_stage = 1;
     if (zg_kind == 0)
         op_zap_draw_segment(zg_start, zg_end, requested_depth, width, zg_color);
     else if (zg_kind == 1)
@@ -262,6 +323,7 @@ static void zg_run(int requested_depth)
         op_generate_zap_points(zg_start, zg_end, requested_depth);
     ZG_CHECK(zg_calls == zg_wanted_calls);
     ZG_CHECK(zg_stage == (zg_kind == 3 ? 0 : 2));
+    ZG_CHECK(zg_prepare_calls == (zg_kind == 3 || zg_null_path ? 0 : 1));
     zg_verify();
 }
 static int zg_main(void)
@@ -270,8 +332,12 @@ static int zg_main(void)
     static const unsigned int widths[4] = {0, 0x80000000U, 0x3fc00000U, 0x7fc00013U};
     static const unsigned int colors[4] = {0, 0xffffffffU, 0x12345678U, 0xb4c800ffU};
     int d, w, status;
+    zg_sf_test = 1;
+    status = sf_main();
+    zg_sf_test = 0;
+    zg_null_path = 0;
     zg_sub_test = 1;
-    status = zsub_main();
+    status += zsub_main();
     zg_sub_test = 0;
     for (zg_kind = 0; zg_kind < 4; zg_kind++)
         for (d = 0; d < (zg_kind == 0 ? 7 : zg_kind == 1 ? 1 : 5); d++)
@@ -285,6 +351,16 @@ static int zg_main(void)
                                 zg_color = zg_kind == 1 ? 0xb4c800ffU : zg_kind == 2 ? 0xfff0dcffU : colors[w];
                                 zg_run(depths[d]);
                             }
+    zg_null_path = 1;
+    zg_alias = zg_out_alias = zg_mutation = zg_null_material = 0;
+    for (zg_kind = 0; zg_kind < 3; zg_kind++)
+        for (d = 0; d < 2; d++)
+        {
+            zg_width_bits = zg_kind == 1 ? 0x40800000U : 0x3fc00000U;
+            zg_color = zg_kind == 1 ? 0xb4c800ffU : zg_kind == 2 ? 0xfff0dcffU : 0x12345678U;
+            zg_run(d ? 4 : 0);
+        }
+    zg_null_path = 0;
     printf("zap connected geometry: %d checks, %d failures\n", zg_checks, zg_failures);
     return status + (zg_failures != 0);
 }

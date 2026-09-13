@@ -4787,6 +4787,27 @@
           "kind": "rel32-call"
         }
       ]
+    },
+    {
+      "id": "sprite_frame",
+      "address": 4363677,
+      "size": 87,
+      "body_size": 87,
+      "source": "src/sprite_frame.c",
+      "symbol": "_op_resolve_zap_material",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 57,
+          "address": 4700605,
+          "symbol": "_op_prepare_material_frame",
+          "kind": "rel32-call"
+        }
+      ]
     }
   ]
 }
