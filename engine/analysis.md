@@ -306,3 +306,13 @@ rewrites. See [acceptance](research/acceptance-002/results.md) and
 [campaign results](research/campaign-017/results.md). World/header integration and
 signed stream callback types remain pending; the bridge's stale chunk-skip
 thiscall metadata is explicitly documented and is not the source ABI oracle.
+
+## Acceptance003 and Campaign018
+
+Three canonical world readers raised registered acceptance to26 functions through
+immutable event23, with189 shared checks and full tooling CI. Campaign018 adds
+six exact cleanup/wrapper functions,639 complete bytes and241 focused checks.
+Their original bodies needed no corrections; callback oracles were strengthened.
+See [acceptance003](research/acceptance-003/results.md) and
+[Campaign018](research/campaign-018/results.md). Table620 capacity and final
+canonical cleanup storage remain explicit integration questions.

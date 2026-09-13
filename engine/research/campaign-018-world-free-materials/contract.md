@@ -1,0 +1,7 @@
+# world_free_materials
+
+cdecl void op_world_free_materials(OP_WORLD *world). NULL or first-word load_state0 returns unchanged. Signed int texture_count at0xBC. Primary inline void* material handles begin0xC4; secondary at0x144 (32 pointer slots between their starts). One signed index local. Loop index<live texture_count: op_destroy_material(primary[index]); primary[index]=NULL; op_destroy_material(LIVE secondary[index]); secondary[index]=NULL. Finally texture_count=0, including negative initial count on loaded world. Real destroy_owned_mat_resource0040EA9B is cdecl void(void*) and has NULL guard. No target null filtering, so callbacks see NULL slots too. Partial view can declare32 slots per handle array from neighboring offsets; this slice does not establish complete world capacity validation. Fixtures only in-range indices: NULL/unloaded/negative/zero/multiple, order, live count changes, first callback mutates secondary/current primary, second callback sees primary cleared and can repopulate it, final exact full pre-call guarded expected storage. Return/callback order must not be batched or cached. Destructor and graphics cleanup callers verified. Full149 bytes to next function.
+
+Team report: bapworld_freeMaterials; reported not_done.
+
+Original interval and all call operands were independently checked in Ghidra and read-only PE evidence before assignment. No original bytes or decompiler output are included.

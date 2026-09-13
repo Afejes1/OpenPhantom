@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "campaign": "018",
+  "reviews": {
+    "world_free_graphics": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 64,
+      "source_review": "Exact first worker source retained. Parent reformatted compressed fixture, added exact callback pointer identity and full pre-call callback snapshots, and documented partial prefix. Gate is tested once even when callbacks clear load_state.",
+      "fixture_checks": 35,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "fixture_correction": true,
+      "independent_native_docker_verification": true
+    },
+    "world_load_via_skip": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 32,
+      "source_review": "Exact source retained; second argument unused, header offset2D4 verified against decoy800. Parent added normal37-byte forwarding and callback-visible stream/header snapshots. Zero/highbit/max sizes and ignored negative/zero/positive results covered.",
+      "fixture_checks": 36,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "fixture_correction": true,
+      "independent_native_docker_verification": true
+    },
+    "world_free_materials": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 149,
+      "source_review": "Exact source retained. Signed live count, primary clear before secondary reload, secondary clear after callback verified. Parent added actual NULL-slot forwarding (missing from worker fixture despite handoff wording), INT_MIN bound, one-time load_state gate mutation and expanded callback state checks. Partial32-slot view explicitly documented.",
+      "fixture_checks": 45,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "fixture_correction": true,
+      "independent_native_docker_verification": true
+    },
+    "world_free_pointer_table_220": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 118,
+      "source_review": "Natural live signed loop and post-callback current-slot clearing retained. Parent rewrote compressed fixture for readability, added zero/INT_MIN, prior-clear visibility, ordinary contiguous and NULL-hole cases, and shrink-to-zero plus current-slot replacement. Source unchanged.",
+      "fixture_checks": 44,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "fixture_correction": true,
+      "independent_native_docker_verification": true
+    },
+    "world_free_pointer_table_620": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 118,
+      "source_review": "Natural live signed loop, NULL filtering and post-callback clear retained. Readable worker fixture covers zero/INT_MIN, NULL holes, expansion, shrink-to-zero/current replacement and prior-clear visibility. Parent documented four-slot research view in header; complete original capacity remains an integration question.",
+      "fixture_checks": 21,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "fixture_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "world_free_tail_blocks": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 158,
+      "source_review": "Original count-gated first release, unconditional count reset, live subsequent pointer checks and post-callback clears retained. Parent added all eight branch combinations and corrected unused CBC/CC4 count names to the sound record groups; no candidate body change. NULL forwarding is only observed synthetic argument behavior; real allocator requires valid allocation pointer.",
+      "fixture_checks": 60,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "fixture_correction": true,
+      "independent_native_docker_verification": true
+    }
+  },
+  "issues": [
+    {
+      "scope": "Ghidra calling convention",
+      "issue": "All six new signatures re-decompile with verified cdecl argument lists. The previously known skip helper still displays a spurious thiscall argument inside wrapper decompilation; saved comments distinguish that from actual two-stack-argument source ABI.",
+      "resolved": false
+    },
+    {
+      "scope": "table620 C view",
+      "issue": "Only count/entry offsets established; four-element array is explicitly a research fixture view. Larger original storage/capacity must be reconciled before integrated C-domain claims. Complete118-byte original function span still matches with verified call relocation.",
+      "resolved": false
+    },
+    {
+      "scope": "worker handoff summary",
+      "issue": "Worker final text said12 call bindings; prepared targets and independent final comparisons contain11. Metrics derive from verified target/report inventories.",
+      "resolved": true
+    }
+  ],
+  "full_regression_run": false
+}

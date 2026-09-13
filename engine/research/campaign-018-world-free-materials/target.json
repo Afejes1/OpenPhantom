@@ -1,0 +1,27 @@
+{
+  "id": "world_free_materials",
+  "address": 4320938,
+  "size": 149,
+  "body_size": 149,
+  "source": "src/world_free_materials.c",
+  "symbol": "_op_world_free_materials",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 67,
+      "address": 4254363,
+      "kind": "rel32-call",
+      "symbol": "_op_destroy_material"
+    },
+    {
+      "offset": 106,
+      "address": 4254363,
+      "kind": "rel32-call",
+      "symbol": "_op_destroy_material"
+    }
+  ]
+}

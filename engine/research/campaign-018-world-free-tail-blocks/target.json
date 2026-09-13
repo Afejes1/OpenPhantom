@@ -1,0 +1,33 @@
+{
+  "id": "world_free_tail_blocks",
+  "address": 4321323,
+  "size": 158,
+  "body_size": 158,
+  "source": "src/world_free_tail_blocks.c",
+  "symbol": "_op_world_free_tail_blocks",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 37,
+      "address": 4805714,
+      "kind": "rel32-call",
+      "symbol": "_op_release"
+    },
+    {
+      "offset": 93,
+      "address": 4805714,
+      "kind": "rel32-call",
+      "symbol": "_op_release"
+    },
+    {
+      "offset": 136,
+      "address": 4805714,
+      "kind": "rel32-call",
+      "symbol": "_op_release"
+    }
+  ]
+}

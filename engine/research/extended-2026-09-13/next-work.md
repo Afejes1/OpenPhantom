@@ -1,38 +1,32 @@
 # Next work within the fixed window
 
-Acceptance002 is complete and published: sourcec1146a9, evidence5463086,
-23 registered functions,22 immutable records. Do not repeat it. Campaign017
-has six reviewed exact world helpers. Follow status.json for publication state.
+Acceptance003 is complete:26 registered exact functions and23 immutable records,
+with189 new shared-world fixture checks. Source5e54b23, acceptance7cb9c97.
+No repeat acceptance build is needed. Campaign018 is the active six-function
+world cleanup/wrapper batch; use its campaign.json and per-case worker/results
+receipts to resume actual remaining review and publication.
 
-Prefer a bounded acceptance003 slice for the three world chunk readers: emitters,
-sprite references and palettes. First reconcile a single offset-checked header
-and world view. The research OP_HEADER count field names refer to different
-original offsets; give canonical fields distinct semantic names. Type/name edits
-must preserve each function's verified bytes after recompilation. Keep their
-frozen research sources and old evidence unchanged. The common stream callback
-uses32-bit word parameters in research, while actual00470786 uses signed division
-in its compressed branch. Resolve that signature and boundary conversion
-explicitly from caller/callee evidence before integrating. Fixtures at zero/huge
-sizes only test forwarding; never execute the original backend.
+A private prepared Campaign019 packet exists at engine/private/campaign019-prepared.json.
+It contains six untouched team-not_done readers: dialog, global/local vertices,
+materials and two light arrays,907 full bytes and6 calls. All intervals, terminal
+returns, next entries, PE relocation coverage, dispatcher callers and stream ABI
+were independently checked. Start only after018 publication. Local vertices return1
+on payload mismatch, unlike sibling readers; do not normalize this behavior.
+Dialog captures its world pointer AFTER the read callback and clears16-byte record
+links; other readers capture it BEFORE their loops. Contracts specify signed live
+loop bounds, unsigned wrapped products and callback mutation fixture cases.
 
-Use one authored combined fixture linking all three actual readers, shared owned
-header/world storage and explicit allocator/read callbacks. Test sequential state,
-mismatch retention, callback-time fields, wrapped payload sizes and live allocator
-mutation. Clean committed source plus the unchanged registered VC5 build/test/
-record route and deliberate integration CI are required before promotion. Never
-point the acceptance registry at untracked research paths or copy fixture mains.
-If preparation exceeds15 minutes, preserve its exact question and switch to a new
-prepared team-not_done family; do not consume the whole window on type cleanup.
+Use one Sol medium worker and independent review. Keep the15-minute individual
+and45-minute campaign caps. Do not revisit parked cases by resetting their clocks.
+Keep full regression for batch integration; normal new research uses focused
+native/Docker proof and fixture plus lightweight publication checks.
 
-Otherwise prepare up to six fresh related team-not_done functions, favoring world
-loading/cleanup now that these offsets are established. Use one Sol medium worker
-and independent review,15-minute individual/45-minute campaign caps, zero full-span
-differences and ordinary focused verification. Do not polish previously parked
-near cases or reset their caps. A stale Ghidra thiscall inference persists on
-skip_b3d_stream_bytes; the verified source is cdecl with two stack arguments.
-The metadata limitation is documented and should not propagate into new headers.
+After a further source batch, consider one bounded cleanup acceptance integration
+with shared partial world layout and actual inter-function cleanup calls. Start
+with a15-minute type/ABI preparation cap; preserve accepted sources and field
+semantics. Do not expand unverified array capacity claims merely to merge types.
 
 Window remains11:54:31-16:24:31 UTC on2026-09-13. Stop new implementation16:14:31;
 publish/close and pause the existing heartbeat by16:24:31. The broad goal stays
-paused. Preserve the user's licensed tools, original assets and all private
-artifacts outside Git; publish only reviewed sources, fixtures and evidence.
+paused. Preserve original assets, compiler binaries and private artifacts outside
+Git. The original executable must never run.

@@ -1,0 +1,21 @@
+{
+  "id": "world_free_pointer_table_220",
+  "address": 4321087,
+  "size": 118,
+  "body_size": 118,
+  "source": "src/world_free_pointer_table_220.c",
+  "symbol": "_op_world_free_pointer_table_220",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 75,
+      "address": 4805714,
+      "kind": "rel32-call",
+      "symbol": "_op_release"
+    }
+  ]
+}

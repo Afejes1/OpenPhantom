@@ -1,0 +1,33 @@
+{
+  "id": "world_free_graphics",
+  "address": 4312384,
+  "size": 64,
+  "body_size": 64,
+  "source": "src/world_free_graphics.c",
+  "symbol": "_op_world_free_graphics",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 29,
+      "address": 4320938,
+      "kind": "rel32-call",
+      "symbol": "_op_world_free_materials"
+    },
+    {
+      "offset": 41,
+      "address": 4321087,
+      "kind": "rel32-call",
+      "symbol": "_op_world_free_pointer_table_220"
+    },
+    {
+      "offset": 53,
+      "address": 4321205,
+      "kind": "rel32-call",
+      "symbol": "_op_world_free_pointer_table_620"
+    }
+  ]
+}

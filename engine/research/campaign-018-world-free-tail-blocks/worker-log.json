@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "case": "world_free_tail_blocks",
+  "started_utc": "2026-09-13T13:13:37.4527279Z",
+  "finished_utc": "2026-09-13T13:15:02.6708539Z",
+  "timestamp_basis": "source creation, report write, observed finish after fixture review",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural null guard, count-gated sprite release/clear, unconditional count clear, then live optional placement and descriptor releases.",
+      "source_sha256": "31cdc42c5153a7187ba969b3d4bda4794e8410fe683068980250ef445f8aeecf",
+      "report": "engine/build/campaign-001-world_free_tail_blocks-8043ee420b47/research-result.json",
+      "report_sha256": "f89484e0e4661af51dc1a5fa8eaa0854f3da82274308ef79cbe2417b0d3c7bf5",
+      "report_written_utc": "2026-09-13T13:14:04.2450184Z",
+      "result": "Exact158 bytes, all3 calls verified.",
+      "elapsed_seconds": 1.507255
+    }
+  ],
+  "candidate_sha256": "31cdc42c5153a7187ba969b3d4bda4794e8410fe683068980250ef445f8aeecf",
+  "api_sha256": "d18a9f7bea9fa187ba955c82b098e04610fb5369a6f0cb4a283a80c94e656f29",
+  "fixture_sha256": "ef10fb7d197c43928b1aba49afb775c751b764d914c01c38d91bb6c62499171a",
+  "status": "exact-native-parent-docker-pending",
+  "note": "NULL forwarding is synthetic argument evidence only; real release requires an allocator pointer.",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 60,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-world_free_tail_blocks-32fea1313512/research-result.json",
+    "docker_report": "engine/build/campaign-001-world_free_tail_blocks-9d75bb5ed54f/research-result.json",
+    "result": "result.json",
+    "result_sha256": "9d73e1312cd0f1981071279f998bb1595a37c262263ab42f82f3bb1654de6cdc"
+  }
+}

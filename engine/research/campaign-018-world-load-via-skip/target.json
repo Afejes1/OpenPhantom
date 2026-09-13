@@ -1,0 +1,21 @@
+{
+  "id": "world_load_via_skip",
+  "address": 4318394,
+  "size": 32,
+  "body_size": 32,
+  "source": "src/world_load_via_skip.c",
+  "symbol": "_op_world_load_via_skip",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 18,
+      "address": 4312560,
+      "kind": "rel32-call",
+      "symbol": "_op_world_skip_chunk"
+    }
+  ]
+}

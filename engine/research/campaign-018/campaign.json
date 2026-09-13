@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "campaign": "018",
+  "status": "complete-focused-checkpoint",
+  "prepared_utc": "2026-09-13T12:48:40.881352+00:00",
+  "preparation_started_utc": "2026-09-13T12:43:25Z",
+  "preparation_cap_minutes": 15,
+  "started_utc": "2026-09-13T12:59:45.121997+00:00",
+  "worker_stop_utc": "2026-09-13T13:34:45.121997+00:00",
+  "stop_utc": "2026-09-13T13:44:45.121997+00:00",
+  "baseline_commit": "7cb9c979a807dd039a6b5d8fafb60e27307b6c99",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "registered_functions_at_start": 26,
+  "assignments": [
+    {
+      "id": "world_free_graphics",
+      "address": "0x41cd40",
+      "case": "research/campaign-018-world-free-graphics",
+      "status": "focused-relocation-adjusted-match",
+      "team_reported_name": "bapworld_freeGraphics",
+      "result": "research/campaign-018-world-free-graphics/result.json"
+    },
+    {
+      "id": "world_load_via_skip",
+      "address": "0x41e4ba",
+      "case": "research/campaign-018-world-load-via-skip",
+      "status": "focused-relocation-adjusted-match",
+      "team_reported_name": "bapworld_loadViaSkip",
+      "result": "research/campaign-018-world-load-via-skip/result.json"
+    },
+    {
+      "id": "world_free_materials",
+      "address": "0x41eeaa",
+      "case": "research/campaign-018-world-free-materials",
+      "status": "focused-relocation-adjusted-match",
+      "team_reported_name": "bapworld_freeMaterials",
+      "result": "research/campaign-018-world-free-materials/result.json"
+    },
+    {
+      "id": "world_free_pointer_table_220",
+      "address": "0x41ef3f",
+      "case": "research/campaign-018-world-free-pointer-table-220",
+      "status": "focused-relocation-adjusted-match",
+      "team_reported_name": "bapworld_freePtrArray0x220",
+      "result": "research/campaign-018-world-free-pointer-table-220/result.json"
+    },
+    {
+      "id": "world_free_pointer_table_620",
+      "address": "0x41efb5",
+      "case": "research/campaign-018-world-free-pointer-table-620",
+      "status": "focused-relocation-adjusted-match",
+      "team_reported_name": "bapworld_freePtrArray0x220 | bapworld_freePtrArray0x620",
+      "result": "research/campaign-018-world-free-pointer-table-620/result.json"
+    },
+    {
+      "id": "world_free_tail_blocks",
+      "address": "0x41f02b",
+      "case": "research/campaign-018-world-free-tail-blocks",
+      "status": "focused-relocation-adjusted-match",
+      "team_reported_name": "bapworld_freeTailBlocks",
+      "result": "research/campaign-018-world-free-tail-blocks/result.json"
+    }
+  ],
+  "worker_handoff_completed_utc": "2026-09-13T13:15:02.6708539Z",
+  "final_verification_completed_utc": "2026-09-13T13:16:44.195624+00:00"
+}

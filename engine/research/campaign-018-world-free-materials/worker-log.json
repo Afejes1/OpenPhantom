@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "case": "world_free_materials",
+  "started_utc": "2026-09-13T13:05:45.5119636Z",
+  "finished_utc": "2026-09-13T13:06:22.3446283Z",
+  "timestamp_basis": "source creation, report write, observed finish",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural signed live loop, primary destroy-clear then live secondary destroy-clear, final count zero.",
+      "source_sha256": "a33fb555de2b778598744dee15af5e6761367c05c9f8c513cacbaf13c60b2068",
+      "report": "engine/build/campaign-001-world_free_materials-120caff33c83/research-result.json",
+      "report_sha256": "7ef8d740eab56e63f7fc6c3548273c30a91e024058381790de3f7d2eaec934ff",
+      "report_written_utc": "2026-09-13T13:06:02.1787111Z",
+      "result": "Exact149 bytes, both calls verified.",
+      "elapsed_seconds": 1.415258
+    }
+  ],
+  "candidate_sha256": "a33fb555de2b778598744dee15af5e6761367c05c9f8c513cacbaf13c60b2068",
+  "api_sha256": "4046203b6c776c3c2796277d2360d91f7fda1e6a55915e89dc4f052e4d7bd7bc",
+  "fixture_sha256": "7c8ba918483d23a2f0e3369b8c0ea6a7b53341ee247ac440438723b2696c53b3",
+  "status": "exact-native-parent-docker-pending",
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 45,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-world_free_materials-041692ce0711/research-result.json",
+    "docker_report": "engine/build/campaign-001-world_free_materials-db1787136354/research-result.json",
+    "result": "result.json",
+    "result_sha256": "0d63a41bc1483a7bf1184146728f923bc659c404eb47f5eb65c39028f40948f9"
+  }
+}
