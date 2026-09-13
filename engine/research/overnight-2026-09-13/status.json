@@ -66,15 +66,28 @@
       "ci_run_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34738009636",
       "full_regression": "skipped by feature-branch workflow",
       "published_utc": "2026-09-13T04:30:50.350645+00:00"
+    },
+    {
+      "phase": "campaign-007",
+      "commit": "bc5832a4f5b5367ff7695e96574b0bac9d8a22d8",
+      "ci": "passed",
+      "new_exact_functions": 9,
+      "new_exact_bytes": 716,
+      "new_research_candidates": 1,
+      "focused_checks": 164,
+      "result": "research/campaign-007/results.md",
+      "ci_run_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34739403557",
+      "full_regression": "skipped by feature-branch workflow",
+      "published_utc": "2026-09-13T05:06:11.580895+00:00"
     }
   ],
-  "current_work": "Campaign007 verified: nine complete matches,716 bytes; one70-byte research candidate with13 differences;164 focused checks. Publication next.",
-  "resume": "Publish Campaign007 then begin Campaign008 with untouched team-not-done sound fields or lifecycle functions, preserving earlier caps. Activation Ghidra convention correction remains documented metadata-only work.",
+  "current_work": "Campaign007 published and CI passed: nine complete matches,716 bytes; pin-channel research13/70 differences;164 focused checks.",
+  "resume": "Begin Campaign008 with existing idle Sol/medium worker. Prioritize untouched team-not-done bp/bapsound.c fields(get/set) and channel lifecycle/init/shutdown or periodic helpers after full caller/callee ABI preparation. Ten sequential cases when practical; same per-case and overall caps. Preserve unattempted alignment on muted/music-resume wrappers. Do not repeat Campaign005-007 or parked pin-channel experiments. Activation Ghidra convention remains documented metadata-only limitation; do not retry the same rejected signature syntax or delay source work for it.",
   "interruptions": [],
   "original_game_executed": false,
   "full_regression_run": false,
   "final_report": null,
   "new_research_candidates": 4,
   "weekly_account_usage_observed_percent": 29,
-  "last_campaign_finished_utc": "2026-09-13T04:30:50.350661+00:00"
+  "last_campaign_finished_utc": "2026-09-13T05:06:11.580913+00:00"
 }
