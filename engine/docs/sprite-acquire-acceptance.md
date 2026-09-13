@@ -1,0 +1,7 @@
+# Sprite acquisition acceptance
+
+The canonical `op_acquire_sprite` at 0x00429540 links into shield texture/load, halo startup/add, ripple material and zap startup callers. Frozen campaign029 source remains unchanged. Its 64-byte function and all three operands must pass the original-toolchain full-span comparison.
+
+The authored formatter uses `unit:%s`, never an original resource string. It observes the original base pointer and fills the function's 80-byte local buffer. The resource backend verifies tag 0x53505254, the actual formatted-buffer identity and independently prepared content while the buffer is live, then invokes the existing caller-specific state oracle with the separately captured base pointer. That pointer is test context, not an argument claimed to reach the resource backend. No stack buffer is dereferenced after return.
+
+The direct fixture covers empty, ordinary and 73- and 74-character names, formatter mutation of the base name, ignored negative formatting return, and resource success/failure. Caller fixtures preserve their live-name and global mutation checks. Names beyond the authored bounded domain are not exercised; this does not claim safe handling of arbitrary long input. The formatter and resource manager remain authored external boundaries. Release integration remains queued. No byte exclusions or warning waivers are allowed, and whole-executable placement remains pending.

@@ -21,6 +21,7 @@ static void *halo_overlay_acquire_sprite(char *name);
 #include "shield_save_size_behavior.h"
 #include "shield_set_texture_behavior.h"
 #include "shield_stop_behavior.h"
+#include "sprite_acquire_behavior.h"
 #include <limits.h>
 #include <stdio.h>
 #include <string.h>
@@ -416,7 +417,7 @@ void op_release_sprite(void **sprite)
     else
         SL_CHECK(0);
 }
-void *op_acquire_sprite(char *name)
+static void *sl_acquire_base(char *name)
 {
     if (effects_chain_active)
         return effects_chain_acquire_sprite(name);
@@ -430,6 +431,55 @@ void *op_acquire_sprite(char *name)
     if (sl_mode != SL_TEXTURE)
         return 0;
     return sl_shield_set_texture_op_acquire_sprite(name);
+}
+/* Only the formatter observes the original base-name pointer. The resource
+   backend checks the authored formatted stack buffer while it remains live. */
+char op_sprite_format[] = "unit:%s";
+static int sa_active, sa_backend_stage, sa_connected_calls;
+static char *sa_original_name, *sa_formatted_buffer;
+static char sa_formatted_expected[80];
+int op_format_sprite_name(char *dest, char *format, ...)
+{
+    va_list args;
+    char *base;
+    unsigned int length;
+    va_start(args, format);
+    base = va_arg(args, char *);
+    va_end(args);
+    if (sa_active)
+        return sa_op_format_sprite_name(dest, format, base);
+    SL_CHECK(sa_backend_stage == 0);
+    SL_CHECK(format == op_sprite_format && base != 0 && dest != base);
+    if (!base)
+        return -1;
+    for (length = 0; length < 75 && base[length]; ++length)
+        ;
+    SL_CHECK(length < 75);
+    if (length >= 75)
+        return -1;
+    sa_original_name = base;
+    sa_formatted_buffer = dest;
+    memcpy(sa_formatted_expected, "unit:", 5);
+    memcpy(sa_formatted_expected + 5, base, length + 1);
+    memcpy(dest, "unit:", 5);
+    memcpy(dest + 5, base, length + 1);
+    sa_backend_stage = 1;
+    return length + 5;
+}
+void *op_acquire_resource(unsigned int type, char *name)
+{
+    void *result;
+    if (sa_active)
+        return sa_op_acquire_resource(type, name);
+    SL_CHECK(sa_backend_stage == 1);
+    SL_CHECK(type == 0x53505254U);
+    SL_CHECK(name == sa_formatted_buffer && name != sa_original_name);
+    SL_CHECK(strcmp(name, sa_formatted_expected) == 0);
+    ++sa_connected_calls;
+    result = sl_acquire_base(sa_original_name);
+    sa_backend_stage = 0;
+    sa_original_name = sa_formatted_buffer = 0;
+    return result;
 }
 void op_shield_draw(int slot)
 {
@@ -445,6 +495,9 @@ static int op_test_shield_lifecycle(void)
     int total;
     SL_CHECK(!shield_lifecycle_active && !world_chunks_active && !world_names_active);
     shield_lifecycle_active = 1;
+    sa_active = 1;
+    status += sa_main();
+    sa_active = 0;
     sl_mode = SL_FREE;
     status += sl_shield_free_main();
     sl_mode = SL_CALLOC;
@@ -464,10 +517,11 @@ static int op_test_shield_lifecycle(void)
     SL_CHECK(!world_chunks_active && !world_names_active);
     SL_CHECK(world_readers_allocate_calls == previous_allocate);
     SL_CHECK(wc_backend_events == previous_chunks);
-    total = sl_checks + sl_shield_free_checks + sl_shield_calloc_checks + sl_shield_stop_checks +
+    SL_CHECK(sa_backend_stage == 0 && sa_connected_calls > 0);
+    total = sa_checks + sl_checks + sl_shield_free_checks + sl_shield_calloc_checks + sl_shield_stop_checks +
             sl_shield_save_size_checks + sl_shield_set_texture_checks + sl_shield_draw_released_checks;
     printf("shield lifecycle total: %d checks, %d failures\n", total,
-           sl_failures + sl_shield_free_failures + sl_shield_calloc_failures + sl_shield_stop_failures +
+           sa_failures + sl_failures + sl_shield_free_failures + sl_shield_calloc_failures + sl_shield_stop_failures +
                sl_shield_save_size_failures + sl_shield_set_texture_failures + sl_shield_draw_released_failures);
     return status + (sl_failures != 0);
 }

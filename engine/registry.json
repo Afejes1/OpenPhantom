@@ -2012,6 +2012,25 @@
         "Outer NULL returnsNULL without backend; valid inner material/frame required; return captured frame+44 despite callback retargeting."
       ],
       "exceptions": []
+    },
+    {
+      "id": "sprite_acquire",
+      "module": "sprite_resources",
+      "analysis_name": "acquire_sprite_resource",
+      "purpose": "Format a sprite name and acquire the tagged resource",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/sprite-acquire-acceptance.md",
+        "research/campaign-029-sprite-acquire/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/sprite_acquire_behavior.h",
+        "tests/shield_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Authored format only; 80-byte local buffer, bounded fixture names, ignored formatter return. Resource backend receives formatted buffer, not original base pointer."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
