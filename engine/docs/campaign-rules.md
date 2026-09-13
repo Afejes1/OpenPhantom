@@ -87,4 +87,8 @@ Evaluate completed comparisons and exact matches separately, total elapsed time,
 review minutes, material corrections, experiments and approximate account usage.
 Different workloads are not a controlled model benchmark. Consider two simultaneous
 implementation workers after at least two consecutive handoffs need no substantial
-semantic rewrite and review is keeping pace. No automatic subsequent campaign.
+semantic rewrite and review is keeping pace. No automatic subsequent campaign
+unless the contributor explicitly authorizes a bounded continuation window.
+Such a window must record a fixed deadline, stop new implementation early enough
+for publication, and preserve every per-function cap and evidence requirement.
+See the [six-hour authorization](../research/overnight-2026-09-13/README.md).
