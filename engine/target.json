@@ -4165,6 +4165,242 @@
         "/MT"
       ],
       "bindings": []
+    },
+    {
+      "id": "application_run",
+      "address": 4449760,
+      "size": 51,
+      "body_size": 51,
+      "source": "src/application_run.c",
+      "symbol": "_op_application_run",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 4449811,
+          "symbol": "_op_initialize_systems",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 13,
+          "address": 4450996,
+          "symbol": "_op_shutdown_systems",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 23,
+          "address": 7131148,
+          "symbol": "_op_application_mode",
+          "kind": "dir32"
+        },
+        {
+          "offset": 31,
+          "address": 4451114,
+          "symbol": "_op_run_campaign",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 38,
+          "address": 4452206,
+          "symbol": "_op_run_other_branch",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 43,
+          "address": 4450996,
+          "symbol": "_op_shutdown_systems",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "graphics_close",
+      "address": 4453824,
+      "size": 25,
+      "body_size": 25,
+      "source": "src/graphics_close.c",
+      "symbol": "_op_graphics_close",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 4736929,
+          "symbol": "_op_clear_graphics_state_a",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 9,
+          "address": 4736748,
+          "symbol": "_op_clear_graphics_state_b",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 14,
+          "address": 4637928,
+          "symbol": "_op_close_graphics_device",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 19,
+          "address": 4638034,
+          "symbol": "_op_shutdown_graphics",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "diagnostics_close",
+      "address": 4452305,
+      "size": 28,
+      "body_size": 28,
+      "source": "src/diagnostics_close.c",
+      "symbol": "_op_diagnostics_close",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7131120,
+          "symbol": "_op_diagnostics_enabled",
+          "kind": "dir32"
+        },
+        {
+          "offset": 13,
+          "address": 7131064,
+          "symbol": "_op_diagnostic_stream",
+          "kind": "dir32"
+        },
+        {
+          "offset": 19,
+          "address": 4827904,
+          "symbol": "_op_close_diagnostic_stream",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "simulation_set_halted",
+      "address": 4455080,
+      "size": 13,
+      "body_size": 13,
+      "source": "src/simulation_set_halted.c",
+      "symbol": "_op_simulation_set_halted",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 7,
+          "address": 7131096,
+          "symbol": "_op_simulation_halted",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "halo_flicker",
+      "address": 4432150,
+      "size": 62,
+      "body_size": 62,
+      "source": "src/halo_flicker.c",
+      "symbol": "_op_halo_flicker",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 6,
+          "address": 8918500,
+          "symbol": "_op_effect_seconds",
+          "kind": "dir32"
+        },
+        {
+          "offset": 12,
+          "address": 4883772,
+          "symbol": "_op_flicker_frequency",
+          "kind": "dir32"
+        },
+        {
+          "offset": 24,
+          "address": 4801138,
+          "symbol": "_op_sine_degrees",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 33,
+          "address": 4883764,
+          "symbol": "_op_flicker_one",
+          "kind": "dir32"
+        },
+        {
+          "offset": 42,
+          "address": 4883776,
+          "symbol": "_op_flicker_quarter",
+          "kind": "dir32"
+        },
+        {
+          "offset": 51,
+          "address": 4883744,
+          "symbol": "_op_flicker_half",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "projection_token",
+      "address": 4310192,
+      "size": 16,
+      "body_size": 12,
+      "source": "src/projection_token.c",
+      "symbol": "_op_allocate_projection_token",
+      "language": "c",
+      "flags": [
+        "/O2",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 1,
+          "address": 7076408,
+          "symbol": "_op_projection_counter",
+          "kind": "dir32"
+        },
+        {
+          "offset": 7,
+          "address": 7076408,
+          "symbol": "_op_projection_counter",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "overlay_size",
+      "address": 4429640,
+      "size": 10,
+      "body_size": 10,
+      "source": "src/overlay_size.c",
+      "symbol": "_op_overlay_save_size",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
     }
   ]
 }

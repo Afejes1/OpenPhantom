@@ -1721,6 +1721,134 @@
         "Full span includes compiler alignment. Surface and sequence are unsigned32 address words. External qsort uses the authored fixture runtime."
       ],
       "exceptions": []
+    },
+    {
+      "id": "application_run",
+      "module": "application_helpers",
+      "analysis_name": "application_run",
+      "purpose": "application run",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/application-helper-acceptance.md",
+        "research/campaign-033-application-run/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/application_helpers_behavior.c"
+      ],
+      "quirks": [
+        "Exact complete span; callback effects and source signedness limits remain documented in focused contract."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "graphics_close",
+      "module": "application_helpers",
+      "analysis_name": "graphics_close",
+      "purpose": "graphics close",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/application-helper-acceptance.md",
+        "research/campaign-033-graphics-close/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/application_helpers_behavior.c"
+      ],
+      "quirks": [
+        "Exact complete span; callback effects and source signedness limits remain documented in focused contract."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "diagnostics_close",
+      "module": "application_helpers",
+      "analysis_name": "diagnostics_close",
+      "purpose": "diagnostics close",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/application-helper-acceptance.md",
+        "research/campaign-033-diagnostics-close/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/application_helpers_behavior.c"
+      ],
+      "quirks": [
+        "Exact complete span; callback effects and source signedness limits remain documented in focused contract."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "simulation_set_halted",
+      "module": "application_helpers",
+      "analysis_name": "simulation_set_halted",
+      "purpose": "simulation set halted",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/application-helper-acceptance.md",
+        "research/campaign-033-simulation-set-halted/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/application_helpers_behavior.c"
+      ],
+      "quirks": [
+        "Exact complete span; callback effects and source signedness limits remain documented in focused contract."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "halo_flicker",
+      "module": "application_helpers",
+      "analysis_name": "halo_flicker",
+      "purpose": "halo flicker",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/application-helper-acceptance.md",
+        "research/campaign-031-halo-flicker/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/application_helpers_behavior.c"
+      ],
+      "quirks": [
+        "Exact complete span; callback effects and source signedness limits remain documented in focused contract."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "projection_token",
+      "module": "application_helpers",
+      "analysis_name": "projection_token",
+      "purpose": "projection token",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/application-helper-acceptance.md",
+        "research/campaign-031-projection-token/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/application_helpers_behavior.c",
+        "tests/ripple_spawn_behavior.h"
+      ],
+      "quirks": [
+        "Exact complete span; callback effects and source signedness limits remain documented in focused contract."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "overlay_size",
+      "module": "application_helpers",
+      "analysis_name": "overlay_size",
+      "purpose": "overlay size",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/application-helper-acceptance.md",
+        "research/campaign-031-overlay-size/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/application_helpers_behavior.c",
+        "tests/effects_chain_behavior.c"
+      ],
+      "quirks": [
+        "Exact complete span; callback effects and source signedness limits remain documented in focused contract."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

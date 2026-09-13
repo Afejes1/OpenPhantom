@@ -267,18 +267,12 @@ void op_get_fog_range(float *start, float *end)
     *start = -12.5f;
     *end = 900.25f;
 }
-int op_overlay_save_size(void)
-{
-    EC_CHECK(ec_mode == EC_STREAM && ec_stage++ == 2);
-    EC_CHECK(op_effects_save.shield_size == 4 + 52 * ec_rows);
-    if (ec_mutation)
-        op_effects_save.shield_size = -99;
-    return 28;
-}
 void op_save_header(int context, int bytes, int kind)
 {
-    EC_CHECK(ec_mode == EC_STREAM && ec_stage++ == 3);
+    EC_CHECK(ec_mode == EC_STREAM && ec_stage++ == 2);
     EC_CHECK(context == -73 && bytes == 128 + 52 * ec_rows && kind == 0x103);
+    EC_CHECK(op_effects_save.shield_size == 4 + 52 * ec_rows);
+    EC_CHECK(op_effects_save.overlay_size == 28);
     if (ec_mutation)
         op_effects_save.overlay_size = 700;
 }
@@ -290,7 +284,7 @@ static void effects_chain_write(const void *memory, unsigned int bytes)
         sw_op_save_write((void *)memory, bytes);
         return;
     }
-    EC_CHECK(ec_mode == EC_STREAM && !ec_stream_loading && ec_stage >= 4);
+    EC_CHECK(ec_mode == EC_STREAM && !ec_stream_loading && ec_stage >= 3);
     if (ec_events == 0)
     {
         EC_CHECK(bytes == 96 && memory == &op_effects_save);
@@ -413,7 +407,7 @@ static void ec_stream_tests(void)
             ec_save_expected.blue = INT_MIN;
             ec_save_expected.start = -12.5f;
             ec_save_expected.end = 900.25f;
-            ec_save_expected.shield_size = mutation ? -99 : 4 + 52 * ec_rows;
+            ec_save_expected.shield_size = 4 + 52 * ec_rows;
             ec_save_expected.overlay_size = mutation ? 700 : 28;
             row_index = 0;
             for (i = 0; i < 3; i++)
@@ -483,7 +477,7 @@ static void ec_stream_tests(void)
                     memset(op_shields, 0, sizeof(op_shields));
                     memcpy(ec_loaded_shields, op_shields, sizeof(op_shields));
                     memset(&op_overlay_save, 0x77, 28);
-                    ec_overlay_before=op_overlay_save;
+                    ec_overlay_before = op_overlay_save;
                     op_fog_duration = 777;
                     op_fog_target = -22;
                     op_fog_cached_start = -33;
@@ -508,7 +502,10 @@ static void ec_stream_tests(void)
                     EC_CHECK(ec_allocations == (fail == 0 || fail == 1 ? 0 : alloc_fail >= 0 ? alloc_fail + 1 : 3));
                     EC_CHECK(memcmp(op_shields, ec_loaded_shields, sizeof(op_shields)) == 0);
                     EC_CHECK(op_fog_duration == (fail == 0 ? 777.0f : 2.0f));
-                    EC_CHECK(memcmp(&op_overlay_save, fail != 0 && fail != 1 && alloc_fail < 0 ? &ec_overlay_expected : &ec_overlay_before, 28) == 0);
+                    EC_CHECK(
+                        memcmp(&op_overlay_save,
+                               fail != 0 && fail != 1 && alloc_fail < 0 ? &ec_overlay_expected : &ec_overlay_before,
+                               28) == 0);
                     EC_CHECK(memcmp(&ec_stream, &ec_expected_stream, sizeof(ec_stream)) == 0);
                 }
         }

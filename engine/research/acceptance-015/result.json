@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "acceptance-015",
+  "baseline_commit": "3f9690ccfd59441687983a27ca5c2c291197752d",
+  "functions": [
+    "application_run",
+    "graphics_close",
+    "diagnostics_close",
+    "simulation_set_halted",
+    "halo_flicker",
+    "projection_token",
+    "overlay_size"
+  ],
+  "promotions": 7,
+  "registered_before": 93,
+  "registered_after": 100,
+  "full_span_bytes": 205,
+  "verified_operands": 22,
+  "status": "integration-pending",
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

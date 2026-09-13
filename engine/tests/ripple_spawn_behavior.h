@@ -19,35 +19,18 @@ float op_effect_seconds;
 const float op_float_zero = 0;
 static OP_RIPPLE rs_expected[256];
 static OP_VEC3 rs_inputs[2], rs_before_inputs[2];
-static int rs_selected, rs_mutation, rs_calls, rs_token;
-int op_allocate_projection_token(void)
-{
-    rs_CHECK(rs_calls++ == 0);
-    rs_CHECK(rs_selected < 256);
-    rs_CHECK(memcmp(op_ripples, rs_expected, sizeof(rs_expected)) == 0);
-    rs_CHECK(memcmp(rs_inputs, rs_before_inputs, sizeof(rs_inputs)) == 0);
-    if (rs_mutation)
-    {
-        op_ripples[rs_selected].active = rs_expected[rs_selected].active = 0;
-        op_ripples[rs_selected].token = rs_expected[rs_selected].token = -77;
-        op_ripples[rs_selected].required_type = rs_expected[rs_selected].required_type = -99;
-        op_ripples[(rs_selected + 1) % 256].state = rs_expected[(rs_selected + 1) % 256].state = 123;
-        op_effect_seconds = 999;
-        op_ripples_enabled = 0;
-        op_projection_enabled = 0;
-    }
-    return rs_token;
-}
+static int rs_selected, rs_token;
 int rs_main(void)
 {
-    int i, enabled, velocity_present, r, profile, result;
+    int i, enabled, velocity_present, r, profile, result, seed;
+    unsigned int expected_counter, counter_before;
     float radial[3] = {0, -0.0f, 2.5f};
-    int tokens[3] = {0, -1, 12345};
+    unsigned int seeds[6] = {0, 0x7FFFFFFEU, 0x7FFFFFFFU, 0xFFFFFFFEU, 0xFFFFFFFFU, 12344};
     for (rs_selected = 0; rs_selected <= 256; rs_selected++)
         for (enabled = 0; enabled < 3; enabled++)
             for (velocity_present = 0; velocity_present < 2; velocity_present++)
                 for (r = 0; r < 3; r++)
-                    for (rs_mutation = 0; rs_mutation < 2; rs_mutation++)
+                    for (seed = 0; seed < 6; seed++)
                     {
                         memset(op_ripples, 0, sizeof(op_ripples));
                         for (i = 0; i < 256; i++)
@@ -70,9 +53,13 @@ int rs_main(void)
                         op_ripples_enabled = enabled == 0 ? 0 : -1;
                         op_projection_enabled = enabled == 1 ? 0 : 1;
                         op_effect_seconds = 123.25f;
-                        profile = (rs_selected + r) % 3;
-                        rs_token = tokens[profile];
-                        rs_calls = 0;
+                        profile = (rs_selected + r) % 6;
+                        counter_before = seeds[(profile + seed) % 6];
+                        op_projection_counter = counter_before;
+                        expected_counter = counter_before;
+                        if (enabled == 2 && rs_selected < 256)
+                            expected_counter++;
+                        rs_token = (int)expected_counter;
                         if (enabled == 2 && rs_selected < 256)
                         {
                             rs_expected[rs_selected].active = 1;
@@ -103,21 +90,18 @@ int rs_main(void)
                             rs_expected[rs_selected].token = rs_token;
                             rs_expected[rs_selected].required_type = INT_MAX;
                             rs_CHECK(result == rs_token);
-                            rs_CHECK(rs_calls == 1);
+                            rs_CHECK(op_projection_counter == expected_counter);
                         }
                         else
                         {
                             rs_CHECK(result == 0);
-                            rs_CHECK(rs_calls == 0);
+                            rs_CHECK(op_projection_counter == counter_before);
                         }
                         rs_CHECK(memcmp(op_ripples, rs_expected, sizeof(rs_expected)) == 0);
                         rs_CHECK(memcmp(rs_inputs, rs_before_inputs, sizeof(rs_inputs)) == 0);
-                        rs_CHECK(op_ripples_enabled ==
-                                 ((enabled == 2 && rs_selected < 256 && rs_mutation) ? 0 : (enabled == 0 ? 0 : -1)));
-                        rs_CHECK(op_projection_enabled ==
-                                 ((enabled == 2 && rs_selected < 256 && rs_mutation) ? 0 : (enabled == 1 ? 0 : 1)));
-                        rs_CHECK(op_effect_seconds ==
-                                 (enabled == 2 && rs_selected < 256 && rs_mutation ? 999.0f : 123.25f));
+                        rs_CHECK(op_ripples_enabled == (enabled == 0 ? 0 : -1));
+                        rs_CHECK(op_projection_enabled == (enabled == 1 ? 0 : 1));
+                        rs_CHECK(op_effect_seconds == 123.25f);
                     }
     printf("ripple spawn: %d checks, %d failures\n", rs_checks, rs_failures);
     return rs_failures != 0;

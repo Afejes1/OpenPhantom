@@ -20,7 +20,8 @@ extern OP_RIPPLE op_ripples[256];
 extern int op_ripples_enabled, op_projection_enabled;
 extern float op_effect_seconds;
 extern const float op_float_zero;
-int op_allocate_projection_token(void);
+unsigned int op_allocate_projection_token(void);
+extern unsigned int op_projection_counter;
 int op_ripple_spawn(int, OP_VEC3 *, OP_VEC3 *, float, float, float, float, float, int);
 typedef char ripple_offsets[(offsetof(OP_RIPPLE, position) == 12 && offsetof(OP_RIPPLE, velocity) == 24 &&
                              offsetof(OP_RIPPLE, yaw) == 36 && offsetof(OP_RIPPLE, time) == 56 &&
