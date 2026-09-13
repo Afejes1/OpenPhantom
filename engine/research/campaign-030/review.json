@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-13T20:32:53.940028+00:00",
+  "conclusion": "no-material-defect",
+  "parent_final_snapshot_verified": true,
+  "functions": [
+    {
+      "id": "shield_load",
+      "address": 4442876,
+      "full_span_bytes": 300,
+      "candidate_bytes": 300,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 5,
+      "checks": 15528,
+      "implementation_attempts": 1,
+      "implementation_compiles": 1,
+      "result": "research/campaign-030-shield-load/result.json"
+    },
+    {
+      "id": "zap_build",
+      "address": 4445873,
+      "full_span_bytes": 211,
+      "candidate_bytes": 211,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 9,
+      "checks": 1500,
+      "implementation_attempts": 3,
+      "implementation_compiles": 3,
+      "result": "research/campaign-030-zap-build/result.json"
+    },
+    {
+      "id": "zap_draw_opaque",
+      "address": 4446410,
+      "full_span_bytes": 159,
+      "candidate_bytes": 159,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 5,
+      "checks": 2520,
+      "implementation_attempts": 1,
+      "implementation_compiles": 1,
+      "result": "research/campaign-030-zap-draw-opaque/result.json"
+    },
+    {
+      "id": "ripple_spawn",
+      "address": 4432624,
+      "full_span_bytes": 350,
+      "candidate_bytes": 350,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 7,
+      "checks": 77052,
+      "implementation_attempts": 2,
+      "implementation_compiles": 2,
+      "result": "research/campaign-030-ripple-spawn/result.json"
+    },
+    {
+      "id": "shield_hit",
+      "address": 4438271,
+      "full_span_bytes": 299,
+      "candidate_bytes": 302,
+      "evidence_category": "research-candidate",
+      "team_status": "not_done",
+      "verified_operands": 7,
+      "checks": 10600,
+      "implementation_attempts": 2,
+      "implementation_compiles": 2,
+      "result": "research/campaign-030-shield-hit/result.json"
+    }
+  ],
+  "review_fixes": [
+    "Literal depth/count/phase oracles independent of candidate expressions",
+    "Full ripple gate and clock preservation assertions after token callbacks"
+  ],
+  "limitations": [
+    "Shield-hit fixtures verify the defined candidate contract, not the unresolved original source-level success return."
+  ]
+}

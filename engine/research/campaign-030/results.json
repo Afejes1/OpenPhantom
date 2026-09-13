@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "campaign-030",
+  "completed_utc": "2026-09-13T20:32:53.940028+00:00",
+  "exact_functions": 4,
+  "exact_bytes": 1020,
+  "research_candidates": 1,
+  "fixture_checks": 107200,
+  "functions": [
+    {
+      "id": "shield_load",
+      "address": 4442876,
+      "full_span_bytes": 300,
+      "candidate_bytes": 300,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 5,
+      "checks": 15528,
+      "implementation_attempts": 1,
+      "implementation_compiles": 1,
+      "result": "research/campaign-030-shield-load/result.json"
+    },
+    {
+      "id": "zap_build",
+      "address": 4445873,
+      "full_span_bytes": 211,
+      "candidate_bytes": 211,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 9,
+      "checks": 1500,
+      "implementation_attempts": 3,
+      "implementation_compiles": 3,
+      "result": "research/campaign-030-zap-build/result.json"
+    },
+    {
+      "id": "zap_draw_opaque",
+      "address": 4446410,
+      "full_span_bytes": 159,
+      "candidate_bytes": 159,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 5,
+      "checks": 2520,
+      "implementation_attempts": 1,
+      "implementation_compiles": 1,
+      "result": "research/campaign-030-zap-draw-opaque/result.json"
+    },
+    {
+      "id": "ripple_spawn",
+      "address": 4432624,
+      "full_span_bytes": 350,
+      "candidate_bytes": 350,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 7,
+      "checks": 77052,
+      "implementation_attempts": 2,
+      "implementation_compiles": 2,
+      "result": "research/campaign-030-ripple-spawn/result.json"
+    },
+    {
+      "id": "shield_hit",
+      "address": 4438271,
+      "full_span_bytes": 299,
+      "candidate_bytes": 302,
+      "evidence_category": "research-candidate",
+      "team_status": "not_done",
+      "verified_operands": 7,
+      "checks": 10600,
+      "implementation_attempts": 2,
+      "implementation_compiles": 2,
+      "result": "research/campaign-030-shield-hit/result.json"
+    }
+  ],
+  "implementation_attempts": 9,
+  "compiler_diagnostics": {
+    "authored_local_order_compiles": 1,
+    "successful": 1,
+    "failed": 0
+  },
+  "original_game_executed": false,
+  "whole_executable_match": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "acceptance_pending": true
+}

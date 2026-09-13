@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "ripple_spawn",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T20:15:08.960929+00:00",
+      "finished_utc": "2026-09-13T20:15:10.536684+00:00",
+      "returncode": 1,
+      "source_sha256": "8f2c4440dfbea8adb8a29eec2f80996bf415e3705d45343e4a4677b16e62d163",
+      "report": "engine/build/campaign-001-ripple_spawn-e78ecb96e719/research-result.json",
+      "report_sha256": "22adcbfbc0f87ba11a82d61f9d1b23ff97a248bfe61ed2a0be71d0b14ccfeff0",
+      "status": "mismatch",
+      "candidate_size": 349,
+      "different_bytes": null,
+      "elapsed_seconds": 1.356099,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T20:16:57.722136+00:00",
+      "finished_utc": "2026-09-13T20:16:59.276859+00:00",
+      "returncode": 0,
+      "source_sha256": "dde8f8de865ed7ccb16049d659a73b2b1a893cdba86dae36802c5d21b7bf9df3",
+      "report": "engine/build/campaign-001-ripple_spawn-3cba9fb15389/research-result.json",
+      "report_sha256": "aa8460cd09cc5011ce2ba5b45a5806046ddc5801a6b030ea7f29ae3fb47a013b",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 350,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.338754,
+      "stderr": ""
+    }
+  ]
+}

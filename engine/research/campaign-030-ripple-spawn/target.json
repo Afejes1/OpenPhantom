@@ -1,0 +1,57 @@
+{
+  "id": "ripple_spawn",
+  "address": 4432624,
+  "size": 350,
+  "body_size": 350,
+  "source": "src/ripple_spawn.c",
+  "symbol": "_op_ripple_spawn",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 9043464,
+      "symbol": "_op_ripples_enabled",
+      "kind": "dir32"
+    },
+    {
+      "offset": 24,
+      "address": 9043456,
+      "symbol": "_op_projection_enabled",
+      "kind": "dir32"
+    },
+    {
+      "offset": 73,
+      "address": 7098904,
+      "symbol": "_op_ripples",
+      "kind": "dir32"
+    },
+    {
+      "offset": 108,
+      "address": 7098904,
+      "symbol": "_op_ripples",
+      "kind": "dir32"
+    },
+    {
+      "offset": 259,
+      "address": 4883780,
+      "symbol": "_op_float_zero",
+      "kind": "dir32"
+    },
+    {
+      "offset": 303,
+      "address": 8918500,
+      "symbol": "_op_effect_seconds",
+      "kind": "dir32"
+    },
+    {
+      "offset": 321,
+      "address": 4310192,
+      "symbol": "_op_allocate_projection_token",
+      "kind": "rel32-call"
+    }
+  ]
+}

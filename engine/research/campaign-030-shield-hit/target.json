@@ -1,0 +1,57 @@
+{
+  "id": "shield_hit",
+  "address": 4438271,
+  "size": 299,
+  "body_size": 299,
+  "source": "src/shield_hit.c",
+  "symbol": "_op_shield_hit",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 16,
+      "address": 7117360,
+      "symbol": "_op_shields",
+      "kind": "dir32"
+    },
+    {
+      "offset": 176,
+      "address": 4743891,
+      "symbol": "_op_normalize_vector",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 200,
+      "address": 4324009,
+      "symbol": "_op_reference_axis",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 208,
+      "address": 4323072,
+      "symbol": "_op_identity_transform",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 217,
+      "address": 4883840,
+      "symbol": "_op_degrees_per_turn",
+      "kind": "dir32"
+    },
+    {
+      "offset": 233,
+      "address": 4323228,
+      "symbol": "_op_rotate_transform",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 248,
+      "address": 4323702,
+      "symbol": "_op_transform_point",
+      "kind": "rel32-call"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "zap_build",
+  "compiler_invocations": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T20:15:05.783274+00:00",
+      "finished_utc": "2026-09-13T20:15:07.374590+00:00",
+      "returncode": 1,
+      "source_sha256": "8db34d61b26288932a0e233957d41c94316511629a1be61aab317f78256c1816",
+      "report": "engine/build/campaign-001-zap_build-ce6bbb0610f6/research-result.json",
+      "report_sha256": "09cd5c56c77ef9f360c7df62dde1ebcb598df7bc652c68048b587c807cd4effb",
+      "status": "mismatch",
+      "candidate_size": 214,
+      "different_bytes": null,
+      "elapsed_seconds": 1.365271,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T20:16:56.135926+00:00",
+      "finished_utc": "2026-09-13T20:16:57.720916+00:00",
+      "returncode": 1,
+      "source_sha256": "de1047fdf2bc550e42980f8f4837d86a48dbdd39a057874de4690e90d89ddd26",
+      "report": "engine/build/campaign-001-zap_build-a4f9caccfcbf/research-result.json",
+      "report_sha256": "1c426c8b3739ce9177e74c8834e24a58a575d68226b1b05f3ad31d9ddf967989",
+      "status": "mismatch",
+      "candidate_size": 211,
+      "different_bytes": 9,
+      "elapsed_seconds": 1.367194,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T20:18:10.982724+00:00",
+      "finished_utc": "2026-09-13T20:18:12.562076+00:00",
+      "returncode": 0,
+      "source_sha256": "b5e65fdca5096a08bccbd58dfb8d3a5a62c2e955a3e0377fa89410b637a4bbda",
+      "report": "engine/build/campaign-001-zap_build-ac7b7942a183/research-result.json",
+      "report_sha256": "2d5a442d397916fc7543e5e46ef278e22b41822a2d97b1f226205753f6990974",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 211,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.361028,
+      "stderr": ""
+    }
+  ]
+}

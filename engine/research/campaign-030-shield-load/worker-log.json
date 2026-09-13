@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "shield_load",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T20:15:04.120309+00:00",
+      "finished_utc": "2026-09-13T20:15:05.777584+00:00",
+      "returncode": 0,
+      "source_sha256": "a30d6cdd659fcb05ef325f755b6c1789d196ce6db840a8d9ecb70cc1c0a82fa8",
+      "report": "engine/build/campaign-001-shield_load-7022d4fcd739/research-result.json",
+      "report_sha256": "da7cf85693ab434712ad90ce12c28b979618fe6310e96ddfc31368d3ef060a54",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 300,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.434522,
+      "stderr": ""
+    }
+  ]
+}

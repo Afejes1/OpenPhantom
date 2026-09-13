@@ -1,0 +1,45 @@
+{
+  "id": "shield_load",
+  "address": 4442876,
+  "size": 300,
+  "body_size": 300,
+  "source": "src/shield_load.c",
+  "symbol": "_op_shield_load",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 13,
+      "address": 4529328,
+      "symbol": "_op_save_read",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 84,
+      "address": 4529328,
+      "symbol": "_op_save_read",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 94,
+      "address": 4434928,
+      "symbol": "_op_shield_allocate",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 126,
+      "address": 7117360,
+      "symbol": "_op_shields",
+      "kind": "dir32"
+    },
+    {
+      "offset": 190,
+      "address": 4435539,
+      "symbol": "_op_shield_set_texture",
+      "kind": "rel32-call"
+    }
+  ]
+}

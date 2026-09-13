@@ -1,0 +1,73 @@
+{
+  "id": "zap_build",
+  "address": 4445873,
+  "size": 211,
+  "body_size": 211,
+  "source": "src/zap_build.c",
+  "symbol": "_op_zap_build",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 13,
+      "address": 7123128,
+      "symbol": "_op_zap_points",
+      "kind": "dir32"
+    },
+    {
+      "offset": 24,
+      "address": 7123128,
+      "symbol": "_op_zap_points",
+      "kind": "dir32",
+      "addend": 4
+    },
+    {
+      "offset": 36,
+      "address": 7123128,
+      "symbol": "_op_zap_points",
+      "kind": "dir32",
+      "addend": 8
+    },
+    {
+      "offset": 66,
+      "address": 7123128,
+      "symbol": "_op_zap_points",
+      "kind": "dir32"
+    },
+    {
+      "offset": 84,
+      "address": 7123128,
+      "symbol": "_op_zap_points",
+      "kind": "dir32",
+      "addend": 4
+    },
+    {
+      "offset": 102,
+      "address": 7123128,
+      "symbol": "_op_zap_points",
+      "kind": "dir32",
+      "addend": 8
+    },
+    {
+      "offset": 169,
+      "address": 4826000,
+      "symbol": "__CIsqrt",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 178,
+      "address": 4883920,
+      "symbol": "_op_zap_amplitude_scale",
+      "kind": "dir32"
+    },
+    {
+      "offset": 200,
+      "address": 4446084,
+      "symbol": "_op_subdivide_zap",
+      "kind": "rel32-call"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "shield_hit",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T20:15:10.541861+00:00",
+      "finished_utc": "2026-09-13T20:15:12.111522+00:00",
+      "returncode": 1,
+      "source_sha256": "4bc3d1b0d479b75a701fbaeff307b623cd8f07778c35f521e39bb2571a60d50d",
+      "report": "engine/build/campaign-001-shield_hit-8db254a34d88/research-result.json",
+      "report_sha256": "cdf2080102cb3908fdd17e5d8e8c969ab950661439c35344f0f6cdbffb70c126",
+      "status": "mismatch",
+      "candidate_size": 302,
+      "different_bytes": null,
+      "elapsed_seconds": 1.350678,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T20:16:59.278019+00:00",
+      "finished_utc": "2026-09-13T20:17:00.850007+00:00",
+      "returncode": 1,
+      "source_sha256": "e0a02f6a83ce7bfa57505702a0b418ccf1ff85d419af85b9628a145c7f6132af",
+      "report": "engine/build/campaign-001-shield_hit-836e5fc668eb/research-result.json",
+      "report_sha256": "ee6ed3e5d75a9bc388a88171359a8c2917b2a641f7143bceeda10e9784bf5062",
+      "status": "mismatch",
+      "candidate_size": 302,
+      "different_bytes": null,
+      "elapsed_seconds": 1.353525,
+      "stderr": ""
+    }
+  ]
+}
