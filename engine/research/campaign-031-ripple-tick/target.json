@@ -1,0 +1,87 @@
+{
+  "id": "ripple_tick",
+  "address": 4432974,
+  "size": 433,
+  "body_size": 433,
+  "source": "src/ripple_tick.c",
+  "symbol": "_op_ripple_tick",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 16,
+      "address": 7098904,
+      "symbol": "_op_ripples",
+      "kind": "dir32"
+    },
+    {
+      "offset": 68,
+      "address": 8918500,
+      "symbol": "_op_effect_seconds",
+      "kind": "dir32"
+    },
+    {
+      "offset": 80,
+      "address": 4883780,
+      "symbol": "_op_float_zero",
+      "kind": "dir32"
+    },
+    {
+      "offset": 106,
+      "address": 4883780,
+      "symbol": "_op_float_zero",
+      "kind": "dir32"
+    },
+    {
+      "offset": 208,
+      "address": 4311312,
+      "symbol": "_op_remove_projection_group",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 223,
+      "address": 4883780,
+      "symbol": "_op_float_zero",
+      "kind": "dir32"
+    },
+    {
+      "offset": 254,
+      "address": 4883784,
+      "symbol": "_op_float_one",
+      "kind": "dir32"
+    },
+    {
+      "offset": 263,
+      "address": 4883780,
+      "symbol": "_op_float_zero",
+      "kind": "dir32"
+    },
+    {
+      "offset": 288,
+      "address": 4883784,
+      "symbol": "_op_float_one",
+      "kind": "dir32"
+    },
+    {
+      "offset": 356,
+      "address": 4433407,
+      "symbol": "_op_render_ripple",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 368,
+      "address": 8918500,
+      "symbol": "_op_effect_seconds",
+      "kind": "dir32"
+    },
+    {
+      "offset": 399,
+      "address": 4883780,
+      "symbol": "_op_float_zero",
+      "kind": "dir32"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "overlay_size",
+  "candidate": "candidate.c",
+  "symbol": "_op_overlay_size",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

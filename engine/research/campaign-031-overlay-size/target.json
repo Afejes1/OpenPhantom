@@ -1,0 +1,14 @@
+{
+  "id": "overlay_size",
+  "address": 4429640,
+  "size": 10,
+  "body_size": 10,
+  "source": "src/overlay_size.c",
+  "symbol": "_op_overlay_size",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

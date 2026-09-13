@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "overlay_size",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T20:56:46.488943+00:00",
+      "finished_utc": "2026-09-13T20:56:48.144373+00:00",
+      "returncode": 0,
+      "source_sha256": "5b66b06b8a7e84a8ca14dc153ab2e4e693f2309355ff83990c1fe7522c1ae661",
+      "report": "engine/build/campaign-001-overlay_size-8bc9d7e41fb1/research-result.json",
+      "report_sha256": "47db9c1e0cff6a292c95f8314fb9d572ff0e60740be9c6fe482d46564d0e5f29",
+      "status": "raw-code-match",
+      "candidate_size": 10,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.436726,
+      "stderr": ""
+    }
+  ]
+}

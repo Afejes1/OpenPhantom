@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "acceptance-013",
+  "baseline_commit": "71850b3afade63a17de698ee771b36a278572259",
+  "functions": [
+    "halo_add",
+    "halo_attach",
+    "effects_write",
+    "shield_write",
+    "shield_load",
+    "ripple_spawn"
+  ],
+  "promotions": 6,
+  "registered_before": 82,
+  "registered_after": 88,
+  "full_span_bytes": 1752,
+  "verified_operands": 71,
+  "status": "final-source-replay-pending",
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "accepted_event": "engine/evidence/runs/000034-5ff1b45c9c39ab92.json",
+  "original_vc5_source": "03dd32262781fea1d76a489a43434b1806cc3ac4",
+  "supplemental_ci_source": "cfd4350811fad04ea7a2f3cb2c65d82f4e77d59c",
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34782873274",
+  "supplemental_ci_conclusion": "success"
+}

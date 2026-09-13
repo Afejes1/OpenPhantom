@@ -1,0 +1,51 @@
+{
+  "id": "halo_flicker",
+  "address": 4432150,
+  "size": 62,
+  "body_size": 62,
+  "source": "src/halo_flicker.c",
+  "symbol": "_op_halo_flicker",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 8918500,
+      "symbol": "_op_effect_seconds",
+      "kind": "dir32"
+    },
+    {
+      "offset": 12,
+      "address": 4883772,
+      "symbol": "_op_flicker_frequency",
+      "kind": "dir32"
+    },
+    {
+      "offset": 24,
+      "address": 4801138,
+      "symbol": "_op_sine_degrees",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 33,
+      "address": 4883764,
+      "symbol": "_op_flicker_one",
+      "kind": "dir32"
+    },
+    {
+      "offset": 42,
+      "address": 4883776,
+      "symbol": "_op_flicker_quarter",
+      "kind": "dir32"
+    },
+    {
+      "offset": 51,
+      "address": 4883744,
+      "symbol": "_op_flicker_half",
+      "kind": "dir32"
+    }
+  ]
+}

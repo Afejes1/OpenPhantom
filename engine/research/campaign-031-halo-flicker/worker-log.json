@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "halo_flicker",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T20:56:49.776056+00:00",
+      "finished_utc": "2026-09-13T20:56:51.409043+00:00",
+      "returncode": 1,
+      "source_sha256": "17639915209f9d4dd56bcb46df07fe4d93d901b9a18f4dab761b0bd20f396ed7",
+      "report": "engine/build/campaign-001-halo_flicker-4cd6146c4a16/research-result.json",
+      "report_sha256": "c937f734face77b51e2c67ae797b2c97e5ea4dfb7e0b0618cc3c39689fb47c95",
+      "status": "mismatch",
+      "candidate_size": 56,
+      "different_bytes": null,
+      "elapsed_seconds": 1.415474,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T20:59:34.339099+00:00",
+      "finished_utc": "2026-09-13T20:59:35.974952+00:00",
+      "returncode": 0,
+      "source_sha256": "668b21495e96e12f67eab4413b66e4edadb6ab879842eab9c014d1648f69235d",
+      "report": "engine/build/campaign-001-halo_flicker-591280a65b4d/research-result.json",
+      "report_sha256": "b482ee28592ca4e28967a8780785c3eb14ee7f4da29075b6364004ada1d17c8c",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 62,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.417558,
+      "stderr": ""
+    }
+  ]
+}

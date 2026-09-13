@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "ripple_tick",
+  "compiler_invocations": 5,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T20:56:51.414531+00:00",
+      "finished_utc": "2026-09-13T20:56:53.035900+00:00",
+      "returncode": 1,
+      "source_sha256": "de1fb46bffc7b2fcb651eb959d161ebfb69035ac36b8a56ca3efabcabf156822",
+      "report": "engine/build/campaign-001-ripple_tick-210f8b640cdf/research-result.json",
+      "report_sha256": "eeff91ba12daada0c666ed50b59e08c2c49e1ae6f9fe2f86452de97e8a56a5ba",
+      "status": "mismatch",
+      "candidate_size": 428,
+      "different_bytes": null,
+      "elapsed_seconds": 1.403331,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T20:59:35.980906+00:00",
+      "finished_utc": "2026-09-13T20:59:37.586471+00:00",
+      "returncode": 1,
+      "source_sha256": "b2a25cfd2d2911364a4e00901605ff03d98b8a9cb7c2e069ca505d4beff6544d",
+      "report": "engine/build/campaign-001-ripple_tick-8a9e4a880da6/research-result.json",
+      "report_sha256": "af56b342a7dc253e4575318050427e3bb74a156272ad36b521a41238b74e7fea",
+      "status": "mismatch",
+      "candidate_size": 433,
+      "different_bytes": 4,
+      "elapsed_seconds": 1.38551,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T21:01:06.839378+00:00",
+      "finished_utc": "2026-09-13T21:01:07.783497+00:00",
+      "returncode": 2,
+      "source_sha256": "f6e0fc0c3652f89d5fd2583a9141abc82d8eec96d760fd3339914bd5c012a339",
+      "report": "engine/build/campaign-001-ripple_tick-06fa440c1d51/research-result.json",
+      "report_sha256": "c6ff9339132076af9eb4724a0e1e6ffcfe3908e8435959fab26f395fc434c0d4",
+      "status": "not-attempted",
+      "candidate_size": null,
+      "different_bytes": null,
+      "elapsed_seconds": 0.726909,
+      "stderr": "FAILED: command failed: candidate-compile\n"
+    },
+    {
+      "attempt": 4,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T21:01:29.813933+00:00",
+      "finished_utc": "2026-09-13T21:01:31.411945+00:00",
+      "returncode": 1,
+      "source_sha256": "de7404fbeccae39fbebb00f70629659cab5ccb54c11b8460a134b0f62f9d7fb0",
+      "report": "engine/build/campaign-001-ripple_tick-01bfbdfc63bd/research-result.json",
+      "report_sha256": "8b53bff96fa8c7894e502c1aeb8d3e7d6b5d169db7d36e1dedcafccaf400a746",
+      "status": "mismatch",
+      "candidate_size": 435,
+      "different_bytes": null,
+      "elapsed_seconds": 1.379526,
+      "stderr": ""
+    },
+    {
+      "attempt": 5,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T21:02:20.489387+00:00",
+      "finished_utc": "2026-09-13T21:02:22.102407+00:00",
+      "returncode": 1,
+      "source_sha256": "28ccc3013c54f66f97586f91876bd0964cda6d648122dec4f5a1c3357fc23c9f",
+      "report": "engine/build/campaign-001-ripple_tick-dc8b7bb036e4/research-result.json",
+      "report_sha256": "7a09456504c041e158ed3537ae593eb64a59cbba5383eef8497203f03a03700c",
+      "status": "mismatch",
+      "candidate_size": 433,
+      "different_bytes": 4,
+      "elapsed_seconds": 1.395249,
+      "stderr": ""
+    }
+  ]
+}

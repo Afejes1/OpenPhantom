@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "halo_flicker",
+  "candidate": "candidate.c",
+  "symbol": "_op_halo_flicker",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

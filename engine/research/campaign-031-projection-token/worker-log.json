@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "projection_token",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T20:56:48.149411+00:00",
+      "finished_utc": "2026-09-13T20:56:49.770558+00:00",
+      "returncode": 0,
+      "source_sha256": "aad9def3be903d39cf29623dd01328edeff42948f754c67d9b5e04266b0b7563",
+      "report": "engine/build/campaign-001-projection_token-066fa94db026/research-result.json",
+      "report_sha256": "c30dd3d2607afbdec6369f98849a5ccb410296dee7d90a51e7cafe1ddf0358dd",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 16,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.403295,
+      "stderr": ""
+    }
+  ]
+}

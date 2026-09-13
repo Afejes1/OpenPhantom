@@ -1,0 +1,27 @@
+{
+  "id": "projection_token",
+  "address": 4310192,
+  "size": 16,
+  "body_size": 12,
+  "source": "src/projection_token.c",
+  "symbol": "_op_projection_token",
+  "language": "c",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 1,
+      "address": 7076408,
+      "symbol": "_op_projection_counter",
+      "kind": "dir32"
+    },
+    {
+      "offset": 7,
+      "address": 7076408,
+      "symbol": "_op_projection_counter",
+      "kind": "dir32"
+    }
+  ]
+}

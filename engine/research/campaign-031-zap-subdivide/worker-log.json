@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "zap_subdivide",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full effects lifecycle contract",
+      "started_utc": "2026-09-13T20:56:53.041043+00:00",
+      "finished_utc": "2026-09-13T20:56:54.688121+00:00",
+      "returncode": 0,
+      "source_sha256": "4db70c8242fc9f20cbb44e756462c32b7c70dee66570902cf76aef98244ceef3",
+      "report": "engine/build/campaign-001-zap_subdivide-7856f9971f09/research-result.json",
+      "report_sha256": "c0a2edfefbafd1409a73b01e84be8e3a66601c51acb1256d7e64de0937f9d1ec",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 326,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.427987,
+      "stderr": ""
+    }
+  ]
+}
