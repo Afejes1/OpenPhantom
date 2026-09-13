@@ -12,7 +12,10 @@ must agree with the published case evidence. Fixture checks must retain their
 recorded count and pass in locked Docker. No original code executes. Near and
 body-only cases are not promoted by this checkpoint.
 
-Run from the repository root with owned private inputs:
+For the frozen66-case rebuild, check out source commit
+`58a1ec4` before running from the repository root with owned private inputs.
+Later target/registry expansion intentionally changes the source fingerprint and
+requires a separately reviewed manifest; it cannot silently reuse this checkpoint.
 
 ```text
 python engine/research/acceptance-001/rebuild.py --reference OWNED_WMAIN.EXE

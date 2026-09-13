@@ -272,6 +272,139 @@
         "All three trailing NOP bytes are compared; no byte exclusions"
       ],
       "exceptions": []
+    },
+    {
+      "id": "bgl_identity",
+      "module": "bgl_matrix_state",
+      "analysis_name": "bgl_identity",
+      "purpose": "Copy the complete 48-byte identity-template object to the live current matrix",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/bgl-state-acceptance.md",
+        "research/campaign-011-bgl-identity/README.md"
+      ],
+      "behavior_tests": [
+        "tests/bgl_state_behavior.c"
+      ],
+      "quirks": [
+        "C representation uses12 raw32-bit words for exact48-byte copy and alias behavior",
+        "Canonical shared header; candidate body unchanged from frozen Campaign011 snapshot"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "bgl_push",
+      "module": "bgl_matrix_state",
+      "analysis_name": "bgl_push",
+      "purpose": "Capture old-depth stack matrix, advance current and depth below signed limit63, then copy48 bytes",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/bgl-state-acceptance.md",
+        "research/campaign-011-bgl-push/README.md"
+      ],
+      "behavior_tests": [
+        "tests/bgl_state_behavior.c"
+      ],
+      "quirks": [
+        "C representation uses12 raw32-bit words for exact48-byte copy and alias behavior",
+        "Canonical shared header; candidate body unchanged from frozen Campaign011 snapshot"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "bgl_pop",
+      "module": "bgl_matrix_state",
+      "analysis_name": "bgl_pop",
+      "purpose": "Decrement current matrix and depth only while signed depth is positive",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/bgl-state-acceptance.md",
+        "research/campaign-011-bgl-pop/README.md"
+      ],
+      "behavior_tests": [
+        "tests/bgl_state_behavior.c"
+      ],
+      "quirks": [
+        "C representation uses12 raw32-bit words for exact48-byte copy and alias behavior",
+        "Canonical shared header; candidate body unchanged from frozen Campaign011 snapshot"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "bgl_load_matrix",
+      "module": "bgl_matrix_state",
+      "analysis_name": "bgl_load_matrix",
+      "purpose": "Copy48 bytes from explicit source to the live current matrix",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/bgl-state-acceptance.md",
+        "research/campaign-011-bgl-load-matrix/README.md"
+      ],
+      "behavior_tests": [
+        "tests/bgl_state_behavior.c"
+      ],
+      "quirks": [
+        "C representation uses12 raw32-bit words for exact48-byte copy and alias behavior",
+        "Canonical shared header; candidate body unchanged from frozen Campaign011 snapshot"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "bgl_get_matrix",
+      "module": "bgl_matrix_state",
+      "analysis_name": "bgl_get_matrix",
+      "purpose": "Copy48 bytes from the live current matrix to explicit destination",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/bgl-state-acceptance.md",
+        "research/campaign-011-bgl-get-matrix/README.md"
+      ],
+      "behavior_tests": [
+        "tests/bgl_state_behavior.c"
+      ],
+      "quirks": [
+        "C representation uses12 raw32-bit words for exact48-byte copy and alias behavior",
+        "Canonical shared header; candidate body unchanged from frozen Campaign011 snapshot"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "bgl_get_translation",
+      "module": "bgl_matrix_state",
+      "analysis_name": "bgl_get_translation",
+      "purpose": "Copy matrix words9 through11 with live source loads in statement order",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/bgl-state-acceptance.md",
+        "research/campaign-011-bgl-get-translation/README.md"
+      ],
+      "behavior_tests": [
+        "tests/bgl_state_behavior.c"
+      ],
+      "quirks": [
+        "C representation uses12 raw32-bit words for exact48-byte copy and alias behavior",
+        "Canonical shared header; candidate body unchanged from frozen Campaign011 snapshot"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "bgl_get_translation_xyz",
+      "module": "bgl_matrix_state",
+      "analysis_name": "bgl_get_translation_xyz",
+      "purpose": "Copy each translation word to its optional destination with live alias order",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/bgl-state-acceptance.md",
+        "research/campaign-011-bgl-get-translation-xyz/README.md"
+      ],
+      "behavior_tests": [
+        "tests/bgl_state_behavior.c"
+      ],
+      "quirks": [
+        "C representation uses12 raw32-bit words for exact48-byte copy and alias behavior",
+        "Canonical shared header; candidate body unchanged from frozen Campaign011 snapshot"
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
