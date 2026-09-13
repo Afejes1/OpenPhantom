@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **60** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **909**.
+Our last recorded matches cover **67** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **902**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -91,7 +91,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | bp/texture.c | 7 | 0 | 7 |
 | game/aiext.c | 30 | 0 | 30 |
 | game/enemy.c | 9 | 0 | 9 |
-| game/fxfade.c | 34 | 11 | 23 |
+| game/fxfade.c | 34 | 18 | 16 |
 | game/fxprint.c | 6 | 0 | 6 |
 | game/fxshield.c | 24 | 12 | 12 |
 | game/fxzappo.c | 14 | 0 | 14 |

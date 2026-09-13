@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "conclusion": "no-material-defect",
+  "source_snapshot_verified_against_commit": true,
+  "functions": [
+    "letterbox_set_enabled",
+    "overlay_save_state",
+    "overlay_read_state",
+    "halo_startup",
+    "halo_shutdown",
+    "effects_draw_object",
+    "detach_halo"
+  ],
+  "notes": [
+    "Canonical statements match frozen research with only header/type substitutions.",
+    "Shared global ownership and scoped resource routing verified.",
+    "Actual object teardown clears halo owner before callback, decrements live count, then stops the callback-selected shield slot.",
+    "Serializer chain restores the staged block without publishing live words.",
+    "All focused failure statuses propagate through the shared fixture."
+  ],
+  "original_game_executed": false
+}

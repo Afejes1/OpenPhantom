@@ -20,7 +20,7 @@
   "max_concurrent_implementation_workers": 1,
   "new_exact_functions": 26,
   "new_exact_bytes": 2228,
-  "promotions": 22,
+  "promotions": 29,
   "new_near_matches": 0,
   "new_research_candidates": 2,
   "team_done_overlap_exact_functions": 0,
@@ -81,9 +81,18 @@
       "research_candidates": 1,
       "focused_checks": 9954,
       "result": "research/campaign-026/results.json"
+    },
+    {
+      "id": "acceptance-011",
+      "promotions": 7,
+      "registered_after": 69,
+      "event": 32,
+      "source_commit": "3458cc1f00d8271ffeb8e4b66e2ffe25fb039844",
+      "result": "research/acceptance-011/result.json",
+      "full_ci": "success"
     }
   ],
-  "current_work": "Acceptance011: integrate seven exact letterbox and halo lifecycle functions with shared call-chain fixtures.",
+  "current_work": "Campaign027: zapline resource lifecycle, endpoint detach/query, pool reset and halo free-all.",
   "original_game_executed": false,
   "weekly_shared_usage_latest_percent": 50,
   "usage_checked_utc": "2026-09-13T18:11:30Z"
