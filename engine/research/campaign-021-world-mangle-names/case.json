@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "world_mangle_names",
+  "candidate": "candidate.c",
+  "symbol": "_op_world_mangle_names",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

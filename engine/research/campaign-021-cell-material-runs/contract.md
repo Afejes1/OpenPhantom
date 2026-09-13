@@ -1,0 +1,5 @@
+# Static contract
+
+cdecl void op_cell_material_runs(OP_CELL*). NoNULLguard. Cell unsignedcount+0,records+10 stride40h. Record unsignedshort material_index+0; unsignedbyte material_group+1C,runlength+1D; unsignedshort flags+2C. For signedi<count: run=0,capture record. If material_index==65535 continue withoutstore; if flags&0x80 continue withoutstore. For signedj=i+1;j<count;j++: capture next; if next.material_index==65535 break; if same material_group OR next.flags&0x80 then ++run ELSEbreak; if run>=254break. Write current runlength=(unsignedchar)run afterinnerloop. Skipped/ineligible records retain oldrunbytes, eligible terminalrecordgets0. Typedrecord declarations with offsets, countmax255. Fixtures allbranches, sentinel positions, flagged currentretention, flaggednextcounts despite mismatchedgroup, samegroup/unflaggedcounts, differentgroupunflaggedstops, 255-record bound producing254 first run, unsignedgroup values128/255, repeatedcalls; independentexpected vectors forsmallcases and boundary oracle, wholecell/records/guards. No callbacks.
+
+Cell wrapper0041F2F3 one-arg call; complete248-byte disassembly checked; flags and run cap independently identified.

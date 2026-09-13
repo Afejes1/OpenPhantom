@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "campaign": "021",
+  "functions": [
+    {
+      "address": "0x41e3bd",
+      "old_name": "read_b3d_animation_names_chunk",
+      "new_name": "read_b3d_animation_names_chunk",
+      "renamed": false,
+      "confidence": "HIGH",
+      "evidence": "Chunk dispatcher case0x10 call0041E9A0 passes stream/world/header; full body and allocator/stream callees checked."
+    },
+    {
+      "address": "0x41eabc",
+      "old_name": "FUN_0041eabc",
+      "new_name": "normalize_b3d_actor_names_in_temporary_buffer",
+      "renamed": true,
+      "confidence": "HIGH",
+      "evidence": "Restart clock0041EB8A one-arg call; full body shows fixed32 copy and local-only changes, no callees."
+    },
+    {
+      "address": "0x41f230",
+      "old_name": "FUN_0041f230",
+      "new_name": "precompute_b3d_grid_cells",
+      "renamed": true,
+      "confidence": "HIGH",
+      "evidence": "World event5 dispatcher0041CB27 calls after fog/render cleanup; helper0041F2CE confirmed five sequential cell preprocessors."
+    },
+    {
+      "address": "0x41f2ce",
+      "old_name": "FUN_0041f2ce",
+      "new_name": "precompute_b3d_cell_runs",
+      "renamed": true,
+      "confidence": "HIGH",
+      "evidence": "Grid loop0041F2B9 one-arg call; all five full decompilations and caller stack cleanup checked."
+    },
+    {
+      "address": "0x41f315",
+      "old_name": "FUN_0041f315",
+      "new_name": "compute_b3d_cell_lod_mask",
+      "renamed": true,
+      "confidence": "HIGH",
+      "evidence": "Cell wrapper0041F2E7 one-arg call; full body confirms unsigned word sentinel and unsigned byte masks."
+    },
+    {
+      "address": "0x41f477",
+      "old_name": "FUN_0041f477",
+      "new_name": "compute_b3d_cell_material_runs",
+      "renamed": true,
+      "confidence": "HIGH",
+      "evidence": "Cell wrapper0041F2F3 one-arg call; complete248-byte disassembly checked; flags and run cap independently identified."
+    }
+  ],
+  "saved": true,
+  "signature_updates": [
+    {
+      "address": "0041EABC",
+      "status": "bridge-parser-rejected; inferred signature retained"
+    },
+    {
+      "address": "0041F230",
+      "status": "bridge-parser-rejected; inferred signature retained"
+    }
+  ],
+  "callers_redecompiled": [
+    "0041F2CE",
+    "0041EB5A"
+  ]
+}

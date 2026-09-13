@@ -1,0 +1,27 @@
+{
+  "id": "world_read_animation_names",
+  "address": 4318141,
+  "size": 253,
+  "body_size": 253,
+  "source": "src/world_read_animation_names.c",
+  "symbol": "_op_world_read_animation_names",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 39,
+      "address": 4654982,
+      "kind": "rel32-call",
+      "symbol": "_op_stream_read"
+    },
+    {
+      "offset": 228,
+      "address": 4805264,
+      "kind": "rel32-call",
+      "symbol": "_op_allocate"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "world_precompute_grid",
+  "address": 4321840,
+  "size": 158,
+  "body_size": 158,
+  "source": "src/world_precompute_grid.c",
+  "symbol": "_op_world_precompute_grid",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 138,
+      "address": 4321998,
+      "kind": "rel32-call",
+      "symbol": "_op_cell_precompute"
+    }
+  ]
+}

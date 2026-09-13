@@ -1,0 +1,5 @@
+# Static contract
+
+cdecl void op_world_mangle_names(OP_WORLD*). NULL returns. Signed i loop against world count+1E8. World actors pointer+1F4 indexes pointers to records with char name[32] at+8. Copy exactly32 bytes into local char name[32] using standard intrinsic memcpy; terminate local[31]=0. Signed j loop0..31: replace local '.' with '_'; then if local byte0 break. Crucially, there is NO writeback, callback, return value or other external mutation. Preserve this seemingly dead temporary processing; do not invent persistence or optimize it away deliberately. Source no manual assembly/volatile/stack shaping. Typed actor/name/world fields and asserted offsets. Fixtures NULL, counts0/negative/high-bit, one/multiple owned records, full32-byte names without NUL, early/lateNUL, dot atfirst/middle/last, high-bit chars. All world/table/actors/guards remain unchanged. Fixture cannot observe local transformation; complete-byte comparison supplies that evidence. Do not claim behavior fixture alone proves temporary string work.
+
+Restart clock0041EB8A one-arg call; full body shows fixed32 copy and local-only changes, no callees.

@@ -185,3 +185,14 @@ remaining questions. Other existing Ghidra names are preserved.
 | 0x0041F0C9 | set_b3d_world_clock | set_b3d_world_clock | HIGH purpose; focused exact match | world set clock | 67 complete bytes; research/campaign-020/metadata.json and per-case result/contract |
 | 0x0041F10C | FUN_0041f10c | set_b3d_world_ambient | HIGH purpose; focused exact match | world set ambient | 62 complete bytes; research/campaign-020/metadata.json and per-case result/contract |
 | 0x0041F14A | FUN_0041f14a | apply_b3d_world_fog | HIGH purpose; focused exact match | world apply fog | 230 complete bytes; research/campaign-020/metadata.json and per-case result/contract |
+
+## Campaign021 static identification
+
+Address | Original Name | New Name | Confidence | Purpose | Evidence
+---|---|---|---|---|---
+0x0041E3BD | read_b3d_animation_names_chunk | read_b3d_animation_names_chunk | HIGH | bapworld_loadAnam | Chunk dispatcher case0x10 call0041E9A0 passes stream/world/header; full body and allocator/stream callees checked.
+0x0041EABC | FUN_0041eabc | normalize_b3d_actor_names_in_temporary_buffer | HIGH | bapworld_mangleNames | Restart clock0041EB8A one-arg call; full body shows fixed32 copy and local-only changes, no callees.
+0x0041F230 | FUN_0041f230 | precompute_b3d_grid_cells | HIGH | bapmap_precomputeGridRuns | World event5 dispatcher0041CB27 calls after fog/render cleanup; helper0041F2CE confirmed five sequential cell preprocessors.
+0x0041F2CE | FUN_0041f2ce | precompute_b3d_cell_runs | HIGH | bapmap_precomputeCell | Grid loop0041F2B9 one-arg call; all five full decompilations and caller stack cleanup checked.
+0x0041F315 | FUN_0041f315 | compute_b3d_cell_lod_mask | HIGH | bapmap_cellLodMask | Cell wrapper0041F2E7 one-arg call; full body confirms unsigned word sentinel and unsigned byte masks.
+0x0041F477 | FUN_0041f477 | compute_b3d_cell_material_runs | HIGH | bapmap_buildHeightRuns | Cell wrapper0041F2F3 one-arg call; complete248-byte disassembly checked; flags and run cap independently identified.

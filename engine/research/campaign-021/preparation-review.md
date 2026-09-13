@@ -1,0 +1,5 @@
+# Independent packet review
+
+Sol read-only review confirmed all six full spans and call bindings. Clarifications applied: ANAM uses a four-byte signed-length/name-pointer union; pointer arithmetic fixtures stay within owned buffers and retarget only during the read callback. Grid count0 skips while1..255 enter; mutation fixtures keep all resulting indices valid and the table is null-checked only once. Cell wrapper forwards the same parameter five times. The name-normalization helper modifies only a temporary local buffer; byte comparison supplies evidence that behavior-only tests cannot observe. Its fixed copy uses the standard VC5 memcpy intrinsic. Current sentinel/flagged material-run records retain their prior run byte; the first of255 compatible records receives254.
+
+Two sound pool readers are parked because their success paths expose incidental EAX; no missing-return diagnostic waiver was introduced. Content-flags function includes seven CC alignment bytes and remains deferred rather than shrinking its target.

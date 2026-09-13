@@ -1,0 +1,5 @@
+# Static contract
+
+cdecl int op_world_precompute_grid(OP_WORLD*). No worldNULL guard. Signed width+70,height+74; OP_CELL** table+90. TableNULL=>0. Nested signed row0..height-1 and column0..width-1, both bounds LIVE each iteration. Cell = table[column + row*width] using live table and width. If cellNULL or unsigned byte count+0 <=0, continue; otherwise call void op_cell_precompute(OP_CELL*). Return1 including empty/negative dimensions. Callback can alter future table,width,height/cell counts; load these live while preserve currently capturedcell. Fixture ownedboundedtables width/height2x2 or3x2, nulltable, zero/negative dimensions, NULL/zero/high-bit cell counts, exact row-major callbackpointerlist; callback swaps futuretable, changesdimensions and futurecount safely, fullworld/table/streamlesscell guards. No overflow/out-of-range index execution. Beware instruction grouping: original loads table[column] address then adds row*width, both expression groupings semanticallyequivalent but compiler choices matter.
+
+World event5 dispatcher0041CB27 calls after fog/render cleanup; helper0041F2CE confirmed five sequential cell preprocessors.

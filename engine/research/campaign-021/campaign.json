@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "campaign": "021",
+  "status": "verification-complete-publication-pending",
+  "started_utc": "2026-09-13T14:53:29.345797+00:00",
+  "worker_stop_utc": "2026-09-13T15:28:29.345797+00:00",
+  "stop_utc": "2026-09-13T15:38:29.345797+00:00",
+  "baseline_commit": "3bea7e6fa34aec3869d82fa9ee004fba69f8b779",
+  "implementation_by": "parent",
+  "reviewer": "comparison_inventory",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviewer_reasoning": "medium",
+  "max_concurrent_implementation_workers": 1,
+  "registered_functions_at_start": 31,
+  "assignments": [
+    {
+      "id": "world_read_animation_names",
+      "address": "0x41e3bd",
+      "case": "research/campaign-021-world-read-animation-names",
+      "team_reported_name": "bapworld_loadAnam"
+    },
+    {
+      "id": "world_mangle_names",
+      "address": "0x41eabc",
+      "case": "research/campaign-021-world-mangle-names",
+      "team_reported_name": "bapworld_mangleNames"
+    },
+    {
+      "id": "world_precompute_grid",
+      "address": "0x41f230",
+      "case": "research/campaign-021-world-precompute-grid",
+      "team_reported_name": "bapmap_precomputeGridRuns"
+    },
+    {
+      "id": "cell_precompute",
+      "address": "0x41f2ce",
+      "case": "research/campaign-021-cell-precompute",
+      "team_reported_name": "bapmap_precomputeCell"
+    },
+    {
+      "id": "cell_lod_mask",
+      "address": "0x41f315",
+      "case": "research/campaign-021-cell-lod-mask",
+      "team_reported_name": "bapmap_cellLodMask"
+    },
+    {
+      "id": "cell_material_runs",
+      "address": "0x41f477",
+      "case": "research/campaign-021-cell-material-runs",
+      "team_reported_name": "bapmap_buildHeightRuns"
+    }
+  ],
+  "preparation_started_utc": "2026-09-13T14:35:00Z",
+  "prepared_utc": "2026-09-13T14:40:37.439742+00:00",
+  "role_change_reason": "Delegated writer could not carry trusted direct-user source authorization; parent scoped edits approved. Sol used for independent read-only review.",
+  "parked_during_preparation": [
+    {
+      "address": "0041D3CC",
+      "reason": "Success paths expose incidental EAX with no final source return; explicit valid C return may differ. Requires separate documented compiler-diagnostic/source-domain investigation; no waivers added."
+    },
+    {
+      "address": "0041D4AB",
+      "reason": "Same missing-success-return concern as descriptor pool reader; caller consumes EAX."
+    },
+    {
+      "address": "0041F671",
+      "reason": "136 body bytes plus seven CC padding bytes; defer layout work rather than omit padding."
+    }
+  ],
+  "verified_utc": "2026-09-13T15:14:20.812788+00:00",
+  "exact_functions": 5,
+  "exact_bytes": 745,
+  "fixture_checks": 354,
+  "accepted_promotions": 0
+}

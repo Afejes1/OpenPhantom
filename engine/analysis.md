@@ -341,3 +341,7 @@ checks. Typed allocation fields preserve exact code; callback order and x87 edge
 fixtures have independent review. [Results](research/campaign-020/results.md)
 include the failed fixture compile and source-domain limits. Registered acceptance
 remains28 functions until the next canonical world-controls checkpoint.
+
+## Campaign021
+
+Five functions match745 complete bytes; the material-run function remains9/248 differing bytes, unaccepted. All354 focused checks pass. Static analysis identified temporary-only actor-name normalization and grid/cell preprocessing. See research/campaign-021/results.md. Shared acceptance remains31 functions/25 records.

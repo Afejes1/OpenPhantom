@@ -1,0 +1,14 @@
+{
+  "id": "cell_material_runs",
+  "address": 4322423,
+  "size": 248,
+  "body_size": 248,
+  "source": "src/cell_material_runs.c",
+  "symbol": "_op_cell_material_runs",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

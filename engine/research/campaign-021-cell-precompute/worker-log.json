@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "case": "cell_precompute",
+  "started_utc": "2026-09-13T14:53:29.345797+00:00",
+  "implementation_by": "parent",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed source from independently reviewed full static contract",
+      "started_utc": "2026-09-13T14:54:03.366428+00:00",
+      "finished_utc": "2026-09-13T14:54:04.982392+00:00",
+      "returncode": 0,
+      "source_sha256": "cda83070e97f3656571acedabfb60fcc077d76ef873ce39cb50548bd13944857",
+      "report": "engine/build/campaign-001-cell_precompute-ea46a299dff0/research-result.json",
+      "report_sha256": "bb1954ddd1b5eaf166cbec95ea6e816de4bc7f1057dbce013838f55eda12e6b6",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 71,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.397392,
+      "stderr": ""
+    }
+  ],
+  "finished_utc": "2026-09-13T15:14:20.812788+00:00",
+  "selected_implementation_attempt": 1,
+  "final_candidate_sha256": "a39e73525ecd86668d2f5b565c49ecd7c18882e53cb8b9c6952cbaea539bb3e0",
+  "final_api_sha256": "51702a20b1a4e90eeb30c0372964fa59af06c7cfea1745c5209878ac303cedc0",
+  "final_fixture_sha256": "9520846360087e59365ed643d9bfea5c40349df7d0f50d2aab04781fbec9f44c",
+  "parent_final_verification": "engine/build/campaign-001-cell_precompute-a1e9148db977/research-result.json",
+  "docker_final_verification": "engine/build/campaign-001-cell_precompute-e1a77a213626/research-result.json",
+  "original_game_executed": false,
+  "source_freeze_note": "Formatted after implementation; final independent native/Docker pair captures current files."
+}

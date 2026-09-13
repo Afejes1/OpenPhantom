@@ -1,0 +1,25 @@
+#include "api.h"
+// FUNCTION: WMAIN 0x0041eabc
+#include <string.h>
+#pragma intrinsic(memcpy)
+void op_world_mangle_names(OP_WORLD *world)
+{
+    char name_buffer[32];
+    int i, j;
+    OP_ACTOR *actor;
+    if (world == 0)
+        return;
+    for (i = 0; i < world->count; ++i)
+    {
+        actor = world->actors[i];
+        memcpy(name_buffer, actor->name, sizeof(name_buffer));
+        name_buffer[31] = 0;
+        for (j = 0; j < 32; ++j)
+        {
+            if (name_buffer[j] == '.')
+                name_buffer[j] = '_';
+            if (name_buffer[j] == 0)
+                break;
+        }
+    }
+}

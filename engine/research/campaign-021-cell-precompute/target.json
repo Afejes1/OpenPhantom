@@ -1,0 +1,45 @@
+{
+  "id": "cell_precompute",
+  "address": 4321998,
+  "size": 71,
+  "body_size": 71,
+  "source": "src/cell_precompute.c",
+  "symbol": "_op_cell_precompute",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 14,
+      "address": 4322929,
+      "kind": "rel32-call",
+      "symbol": "_op_cell_content_flags"
+    },
+    {
+      "offset": 26,
+      "address": 4322069,
+      "kind": "rel32-call",
+      "symbol": "_op_cell_lod_mask"
+    },
+    {
+      "offset": 38,
+      "address": 4322423,
+      "kind": "rel32-call",
+      "symbol": "_op_cell_material_runs"
+    },
+    {
+      "offset": 50,
+      "address": 4322671,
+      "kind": "rel32-call",
+      "symbol": "_op_cell_lod_runs"
+    },
+    {
+      "offset": 62,
+      "address": 4322174,
+      "kind": "rel32-call",
+      "symbol": "_op_cell_last_lod_flags"
+    }
+  ]
+}

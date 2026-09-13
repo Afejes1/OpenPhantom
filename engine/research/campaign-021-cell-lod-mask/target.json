@@ -1,0 +1,14 @@
+{
+  "id": "cell_lod_mask",
+  "address": 4322069,
+  "size": 105,
+  "body_size": 105,
+  "source": "src/cell_lod_mask.c",
+  "symbol": "_op_cell_lod_mask",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

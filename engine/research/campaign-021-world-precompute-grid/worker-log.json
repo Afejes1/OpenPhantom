@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "case": "world_precompute_grid",
+  "started_utc": "2026-09-13T14:53:29.345797+00:00",
+  "implementation_by": "parent",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed source from independently reviewed full static contract",
+      "started_utc": "2026-09-13T14:54:06.617324+00:00",
+      "finished_utc": "2026-09-13T14:54:08.213992+00:00",
+      "returncode": 1,
+      "source_sha256": "26d2a4a0a41045868f6b50360bf1ec29db4621c3a2d8a69c1231ad18dbe6ceea",
+      "report": "engine/build/campaign-001-world_precompute_grid-825438a36051/research-result.json",
+      "report_sha256": "5917209383bff2cd77d02a311e3660d9a13803a38d4700ea730e3260fd3a0740",
+      "status": "mismatch",
+      "candidate_size": 158,
+      "different_bytes": 10,
+      "elapsed_seconds": 1.376814,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Meaningful local identifier variant after listing isolated stack-slot differences",
+      "started_utc": "2026-09-13T14:55:22.954636+00:00",
+      "finished_utc": "2026-09-13T14:55:24.508206+00:00",
+      "returncode": 0,
+      "source_sha256": "e6eef55e519ba380e0c6725483aa50c3819a664201c5cdb066725f749ca48511",
+      "report": "engine/build/campaign-001-world_precompute_grid-665bdb08bce3/research-result.json",
+      "report_sha256": "986e1e5a25def6d76e6d18d156cc001ba3246b3a491eb999750cae21d2f00dc9",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 158,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.336037,
+      "stderr": ""
+    }
+  ],
+  "finished_utc": "2026-09-13T15:14:20.812788+00:00",
+  "selected_implementation_attempt": 2,
+  "final_candidate_sha256": "5bbc9e712772e431784ad15dfdf12726ef75599c61d28483fe7575161f6a1c43",
+  "final_api_sha256": "bd5d7b060d2550117fbf2bc5bccc68e915a422f9d63ee18a142defa834b46033",
+  "final_fixture_sha256": "cf129fbd277439b3bce7ddd21579e426e3cfd429083c6c7f9fecdefd490e7e33",
+  "parent_final_verification": "engine/build/campaign-001-world_precompute_grid-d3fd8d204695/research-result.json",
+  "docker_final_verification": "engine/build/campaign-001-world_precompute_grid-e660a59d0877/research-result.json",
+  "original_game_executed": false,
+  "source_freeze_note": "Formatted after implementation; final independent native/Docker pair captures current files."
+}

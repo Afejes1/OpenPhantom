@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "case": "world_read_animation_names",
+  "started_utc": "2026-09-13T14:53:29.345797+00:00",
+  "implementation_by": "parent",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed source from independently reviewed full static contract",
+      "started_utc": "2026-09-13T14:54:08.225221+00:00",
+      "finished_utc": "2026-09-13T14:54:09.844127+00:00",
+      "returncode": 0,
+      "source_sha256": "0ba04f51e69d3e5a5c64915148d094c88854a38b8f8c4637d493a1ddfa695b30",
+      "report": "engine/build/campaign-001-world_read_animation_names-34c506e69d97/research-result.json",
+      "report_sha256": "867736fc28a7dbd03d38e16fffe73fdd82bbfccbd29b2ca70cced84fba97c512",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 253,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.399913,
+      "stderr": ""
+    }
+  ],
+  "finished_utc": "2026-09-13T15:14:20.812788+00:00",
+  "selected_implementation_attempt": 1,
+  "final_candidate_sha256": "3e458bdecba9b078752f84f1e3273da085e5f802437a70a74a244a43a74fe6e6",
+  "final_api_sha256": "370b71176a6dcc4d37f839ce72a053c91bca2ab34e1ca2ac918ef91a7dec3ff3",
+  "final_fixture_sha256": "fd287da4d9774d70fa5f280fc87482f1b80d3cad49c94e7f29ae72465c7234a4",
+  "parent_final_verification": "engine/build/campaign-001-world_read_animation_names-89c912d5d813/research-result.json",
+  "docker_final_verification": "engine/build/campaign-001-world_read_animation_names-a4da22d84238/research-result.json",
+  "original_game_executed": false,
+  "source_freeze_note": "Formatted after implementation; final independent native/Docker pair captures current files."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "world_mangle_names",
+  "address": 4319932,
+  "size": 158,
+  "body_size": 158,
+  "source": "src/world_mangle_names.c",
+  "symbol": "_op_world_mangle_names",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}
