@@ -1,0 +1,45 @@
+{
+  "id": "sound_free_channel",
+  "address": 4289895,
+  "size": 242,
+  "body_size": 242,
+  "source": "src/sound_free_channel.c",
+  "symbol": "_op_sound_free_channel",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 22,
+      "address": 6008480,
+      "kind": "dir32",
+      "symbol": "_op_sound_channels"
+    },
+    {
+      "offset": 63,
+      "address": 9180992,
+      "kind": "dir32",
+      "symbol": "_op_sound_end3d"
+    },
+    {
+      "offset": 77,
+      "address": 9180996,
+      "kind": "dir32",
+      "symbol": "_op_sound_end2d"
+    },
+    {
+      "offset": 150,
+      "address": 4662004,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_mark_resource"
+    },
+    {
+      "offset": 168,
+      "address": 4661791,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_release_resource"
+    }
+  ]
+}

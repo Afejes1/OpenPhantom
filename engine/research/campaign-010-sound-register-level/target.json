@@ -1,0 +1,123 @@
+{
+  "id": "sound_register_level",
+  "address": 4283192,
+  "size": 264,
+  "body_size": 264,
+  "source": "src/sound_register_level.c",
+  "symbol": "_op_sound_register_level",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 6010040,
+      "kind": "dir32",
+      "symbol": "_op_sound_initialized"
+    },
+    {
+      "offset": 27,
+      "address": 6010020,
+      "kind": "dir32",
+      "symbol": "_op_sound_load_failures"
+    },
+    {
+      "offset": 36,
+      "address": 4284574,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_init_channels"
+    },
+    {
+      "offset": 47,
+      "address": 4280477,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_bind_listener"
+    },
+    {
+      "offset": 56,
+      "address": 4892948,
+      "kind": "dir32",
+      "symbol": "_op_sound_category"
+    },
+    {
+      "offset": 66,
+      "address": 9044064,
+      "kind": "dir32",
+      "symbol": "_op_sound_world"
+    },
+    {
+      "offset": 78,
+      "address": 9044064,
+      "kind": "dir32",
+      "symbol": "_op_sound_world"
+    },
+    {
+      "offset": 110,
+      "address": 9044064,
+      "kind": "dir32",
+      "symbol": "_op_sound_world"
+    },
+    {
+      "offset": 138,
+      "address": 6010032,
+      "kind": "dir32",
+      "symbol": "_op_sound_registry"
+    },
+    {
+      "offset": 144,
+      "address": 4799212,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_insert_name"
+    },
+    {
+      "offset": 153,
+      "address": 6010016,
+      "kind": "dir32",
+      "symbol": "_op_sound_ref_count"
+    },
+    {
+      "offset": 162,
+      "address": 6010016,
+      "kind": "dir32",
+      "symbol": "_op_sound_ref_count"
+    },
+    {
+      "offset": 186,
+      "address": 4284811,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_load_ref"
+    },
+    {
+      "offset": 206,
+      "address": 6010032,
+      "kind": "dir32",
+      "symbol": "_op_sound_registry"
+    },
+    {
+      "offset": 212,
+      "address": 4799695,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_remove_name"
+    },
+    {
+      "offset": 221,
+      "address": 6010016,
+      "kind": "dir32",
+      "symbol": "_op_sound_ref_count"
+    },
+    {
+      "offset": 230,
+      "address": 6010016,
+      "kind": "dir32",
+      "symbol": "_op_sound_ref_count"
+    },
+    {
+      "offset": 250,
+      "address": 6010044,
+      "kind": "dir32",
+      "symbol": "_op_sound_level_registered"
+    }
+  ]
+}

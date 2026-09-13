@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "case": "sound_remove_level",
+  "started_utc": "2026-09-13T06:19:41.2452278Z",
+  "finished_utc": "2026-09-13T06:21:40.8622073Z",
+  "timestamp_basis": "Start is the captured case clock; finish is final worker research-result.json LastWriteTimeUtc.",
+  "compiler_invocations": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural record pointer then integer index declarations.",
+      "candidate_sha256": "e78cbfe131d47bc336c61b0c7f7bc9bc15134949ec52e1c470abbd649c26f694",
+      "report": "engine/build/campaign-001-sound_remove_level-88c365def159/research-result.json",
+      "outcome": "complete 211-byte span and 14 bindings; 12 differing local-offset bytes"
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Conventional cursor/index identifiers may reproduce original VC5 local allocation.",
+      "candidate_sha256": "a9fbf66cf4c36bd6d372bded3fb9d5aaf34e2b35dc9617df9a2c4c05c46b1752",
+      "report": "engine/build/campaign-001-sound_remove_level-ef1e01a3d07e/research-result.json",
+      "outcome": "no measurable improvement; same 12 differences"
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Reversed declaration order may reverse differently typed local slots.",
+      "candidate_sha256": "071d604ccf2c841f4ccc7a137e837616358cf5fe5c396f365cee9982be007ab8",
+      "report": "engine/build/campaign-001-sound_remove_level-92de595e1876/research-result.json",
+      "outcome": "no measurable improvement; same 12 differences"
+    }
+  ],
+  "status": "frozen-research-candidate",
+  "different_bytes": 12,
+  "complete_span": 211,
+  "fixture_execution": "deferred to coordinator locked Docker verification",
+  "parent_verification": {
+    "status": "research-candidate",
+    "fixture_checks": 57,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_remove_level-b1c3e92f74f3/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_remove_level-f0f2a2592d75/research-result.json",
+    "result": "result.json",
+    "result_sha256": "ca6bf4b16ee7103f56c05fbd9ed4c34f3ebcd15e1992bbe6763edb6bc8f54cc2"
+  }
+}

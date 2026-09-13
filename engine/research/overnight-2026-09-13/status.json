@@ -107,13 +107,13 @@
       "published_utc": "2026-09-13T06:12:37.953129+00:00"
     }
   ],
-  "current_work": "Campaign 009 published and feature CI passed: six complete relocation-adjusted matches, 1,025 bytes and 583 focused checks. Four metadata renames and six comments saved. One failed fixture compile retained and corrected without a waiver.",
-  "resume": "Next heartbeat: campaign 010, same single Sol/medium worker. Prepare untouched sound lifecycle cases from full static evidence before dispatch; leads include moduleInit 0x004159F0, removeLevelSounds 0x00415C40, registerLevelSounds 0x00415B38 and addExtraRef 0x0041705B. These leads are not prepared targets. Check all prior assignments to avoid overlap. Preserve per-function caps and original VC5 flags. Each turn at most 45 minutes including 10 minutes for publication. Stop new implementation 08:38 UTC; final report and pause by 08:48 UTC.",
+  "current_work": "Campaign 010 verified: 3 exact (671 bytes), 2 near, 1 research; publishing focused evidence.",
+  "resume": "Campaign 010 worker stop 06:49:21 UTC, publication deadline 06:59:21 UTC. Preserve one-worker ownership and all function caps.",
   "interruptions": [],
   "original_game_executed": false,
   "full_regression_run": false,
   "final_report": null,
   "new_research_candidates": 4,
-  "weekly_account_usage_observed_percent": 31,
+  "weekly_account_usage_observed_percent": 33,
   "last_campaign_finished_utc": "2026-09-13T06:12:37.953129+00:00"
 }

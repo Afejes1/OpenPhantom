@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "case": "sound_play_by_name",
+  "status": "frozen-research-candidate",
+  "started_utc": "2026-09-13T06:40:35.219222Z",
+  "finished_utc": "2026-09-13T06:42:17.254555Z",
+  "timestamp_basis": "started_utc and finished_utc are explicit UTC clock observations at packet read and evidence collection.",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural packet-order implementation with aggregate descriptor declared before scalar result.",
+      "source_sha256": "1f56780b1f885c7b03c3cbd358283613fc729a5324363ffd961d7fa669c53364",
+      "object_sha256": "c9e188f9161ab1c8e613c28904a8c997b96d80ebefea7629ffcf3851d97c3713",
+      "report": "engine/build/campaign-001-sound_play_by_name-ed3a3ff1fba4/research-result.json",
+      "report_written_utc": "2026-09-13T06:41:36.496480Z",
+      "result": "complete 275-byte extent and all 17 bindings; 13 nonbinding bytes differ, first at offset 37."
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Conventional scalar result declaration before aggregate descriptor.",
+      "source_sha256": "93a0222c97fe87c5b653a4b7340b034ae9235780c94ec1fee60b2bf1e31a05da",
+      "object_sha256": "4ccbc9f1a3d452becb5f5fa048203f3dfbff680bbb0dd3561e7b143dbbd9543c",
+      "report": "engine/build/campaign-001-sound_play_by_name-d2955c93686b/research-result.json",
+      "report_written_utc": "2026-09-13T06:42:05.549281Z",
+      "result": "same complete 275-byte extent, all 17 bindings, and 13 nonbinding differences; no measurable improvement."
+    }
+  ],
+  "candidate_sha256": "93a0222c97fe87c5b653a4b7340b034ae9235780c94ec1fee60b2bf1e31a05da",
+  "fixture_sha256": "f7be6021bd0bd19a8afbb77119c62aeaee5788d14b80b098917d0870d2d5712a",
+  "fixture_execution": "not executed by worker; coordinator will strengthen and run it in locked Docker",
+  "original_game_executed": false,
+  "limitations": [
+    "13 nonbinding byte differences remain despite complete extent and binding coverage.",
+    "Worker fixture awaits coordinator-owned bit-level and copy-independence strengthening before final execution."
+  ],
+  "parent_verification": {
+    "status": "research-candidate",
+    "fixture_checks": 58,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_play_by_name-58ed1af0ead7/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_play_by_name-3c33ecffbc51/research-result.json",
+    "result": "result.json",
+    "result_sha256": "a7c82a490e9873423e05499eb67836e8fef9e0cb7f9eb86ad0442c4157b05238"
+  }
+}

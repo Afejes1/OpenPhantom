@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "case": "sound_register_level",
+  "started_utc": "2026-09-13T06:23:06.3635184Z",
+  "finished_utc": "2026-09-13T06:24:49.6453832Z",
+  "timestamp_basis": "Exact packet-reading start was not captured; start is candidate.c CreationTimeUtc and finish is corrected-source research-result.json LastWriteTimeUtc.",
+  "compiler_invocations": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural packet-order source with record pointer then loop index.",
+      "candidate_sha256": "67210a55b276ec3b6143725804f144004e44dc18d5b9a52e5f719baec8526c72",
+      "report": "engine/build/campaign-001-sound_register_level-4c55df5f425f/research-result.json",
+      "outcome": "materially invalid inverted preload gate; 13 differences; superseded"
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Reverse declaration order may correct local stack slots.",
+      "candidate_sha256": "7c66a65aab2a99e91540fba7c16a54093ccbfc3f16e1d7495ddd165c07aa6e45",
+      "report": "engine/build/campaign-001-sound_register_level-f5a1ce0fa1d5/research-result.json",
+      "outcome": "no layout improvement and retained invalid inverted gate; superseded"
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Correct original clear-bit preload condition while retaining natural locals.",
+      "candidate_sha256": "d7c9a3694e66b74664916bf43e7c774c49ba5a52fd0351a9ff3a31a4b6d44bc2",
+      "report": "engine/build/campaign-001-sound_register_level-99e7cc7960da/research-result.json",
+      "outcome": "semantically corrected complete 264-byte span and 18 bindings; 12 differing local-offset bytes"
+    }
+  ],
+  "status": "frozen-research-candidate",
+  "different_bytes": 12,
+  "complete_span": 264,
+  "fixture_execution": "deferred to coordinator locked Docker verification",
+  "parent_verification": {
+    "status": "research-candidate",
+    "fixture_checks": 39,
+    "fixture_failures": 0,
+    "source_correction": true,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_register_level-8dab1371cf6f/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_register_level-1e9a2991cf7c/research-result.json",
+    "result": "result.json",
+    "result_sha256": "1683da38011891d4d4291ec9a7bdd3abd009918735ac240940b173901d8b210b"
+  }
+}

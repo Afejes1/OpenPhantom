@@ -1,0 +1,123 @@
+{
+  "id": "sound_module_init",
+  "address": 4282864,
+  "size": 197,
+  "body_size": 197,
+  "source": "src/sound_module_init.c",
+  "symbol": "_op_sound_module_init",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 6010040,
+      "kind": "dir32",
+      "symbol": "_op_sound_initialized"
+    },
+    {
+      "offset": 40,
+      "address": 9181076,
+      "kind": "dir32",
+      "symbol": "_op_sound_quick_startup"
+    },
+    {
+      "offset": 50,
+      "address": 9181080,
+      "kind": "dir32",
+      "symbol": "_op_sound_preference"
+    },
+    {
+      "offset": 59,
+      "address": 6008472,
+      "kind": "dir32",
+      "symbol": "_op_sound_driver"
+    },
+    {
+      "offset": 65,
+      "address": 9181052,
+      "kind": "dir32",
+      "symbol": "_op_sound_quick_handles"
+    },
+    {
+      "offset": 75,
+      "address": 4798706,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_create_registry"
+    },
+    {
+      "offset": 83,
+      "address": 6010032,
+      "kind": "dir32",
+      "symbol": "_op_sound_registry"
+    },
+    {
+      "offset": 89,
+      "address": 6010032,
+      "kind": "dir32",
+      "symbol": "_op_sound_registry"
+    },
+    {
+      "offset": 104,
+      "address": 4281651,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_init3d"
+    },
+    {
+      "offset": 109,
+      "address": 4284574,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_init_channels"
+    },
+    {
+      "offset": 120,
+      "address": 4894796,
+      "kind": "dir32",
+      "symbol": "_op_sound_volume_key"
+    },
+    {
+      "offset": 125,
+      "address": 4606376,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_read_option"
+    },
+    {
+      "offset": 137,
+      "address": 4289401,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_set_master_volume"
+    },
+    {
+      "offset": 151,
+      "address": 4894780,
+      "kind": "dir32",
+      "symbol": "_op_sound_disabled_key"
+    },
+    {
+      "offset": 156,
+      "address": 4606376,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_read_option"
+    },
+    {
+      "offset": 170,
+      "address": 4290723,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_disable"
+    },
+    {
+      "offset": 177,
+      "address": 4290769,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_enable"
+    },
+    {
+      "offset": 183,
+      "address": 6010040,
+      "kind": "dir32",
+      "symbol": "_op_sound_initialized"
+    }
+  ]
+}

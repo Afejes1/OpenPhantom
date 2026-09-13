@@ -264,3 +264,12 @@ its own valid listing. Four names and six comments are saved in Ghidra, with
 existing inferred convention limitations documented. See
 [results](research/campaign-009/results.md) and [review](research/campaign-009/review.json).
 No byte exclusions or accepted-history promotion; original game static only.
+
+## Campaign 010: sound lifecycle checkpoint
+
+Three full function matches (671 bytes), two reviewed near matches and one
+research candidate; all 436 focused checks pass. Five generated names and six
+comments were saved in Ghidra, preserving the existing channel-release name.
+Independent review corrected the register-level preload gate before final
+verification. See [complete results](research/campaign-010/results.md) for
+source ABI, callback state, listing provenance and unresolved layout differences.

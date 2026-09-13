@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "case": "sound_free_channel",
+  "status": "frozen-exact-candidate",
+  "started_utc": "2026-09-13T06:36:25.940459Z",
+  "finished_utc": "2026-09-13T06:39:33.521142Z",
+  "timestamp_basis": "started_utc is an explicit UTC clock observation immediately before reading the packet; finished_utc is the final worker fixture filesystem write time.",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural packet-order source with the type-zero 2D branch written first.",
+      "source_sha256": "5ed861466f57a13326ec87214ce8a5a267a0f16e063a28025ac361f3e37df822",
+      "object_sha256": "84f906fac32246439794923cc0ae46411df1cc5627fb459a558dd7e1a2ec1b45",
+      "report": "engine/build/campaign-001-sound_free_channel-71257428fd3c/research-result.json",
+      "report_written_utc": "2026-09-13T06:38:06.757256Z",
+      "result": "unresolved: function was 242 bytes with five relocations, but the function-pointer relocation symbols/offsets differed from the immutable target."
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Write the equivalent ordinary branch with nonzero type and the 3D call first, matching the verified callback ordering.",
+      "source_sha256": "3ecd191de418aad8d2742a635e8fa616c110b3128798fe17e1411f361105911f",
+      "object_sha256": "64517a7ea713d179ab58429426cc3d4a9a8543b1e1856afb1c1d005a50ad08d5",
+      "report": "engine/build/campaign-001-sound_free_channel-a3391b58fb31/research-result.json",
+      "report_written_utc": "2026-09-13T06:38:52.739760Z",
+      "result": "relocation-adjusted match: 242 bytes, five bindings, zero differing nonbinding bytes."
+    }
+  ],
+  "fixture_sha256": "1c735563a07a39aeee4c1b436ca3085a9fe34ce75219c7e70f5677814a55eb10",
+  "fixture_execution": "not executed by worker; coordinator performs final review and locked-Docker execution",
+  "original_game_executed": false,
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 37,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_free_channel-7d619730fb6a/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_free_channel-47ea9ddd47be/research-result.json",
+    "result": "result.json",
+    "result_sha256": "d4addd8469dfbd866b7b0b5ec33d30bdba4e3f59d6c0738a35841c2649cc8f5c"
+  }
+}

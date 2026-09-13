@@ -1,0 +1,117 @@
+{
+  "id": "sound_play_by_name",
+  "address": 4288929,
+  "size": 275,
+  "body_size": 275,
+  "source": "src/sound_play_by_name.c",
+  "symbol": "_op_sound_play_by_name",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 10,
+      "address": 6010040,
+      "kind": "dir32",
+      "symbol": "_op_sound_initialized"
+    },
+    {
+      "offset": 31,
+      "address": 4892952,
+      "kind": "dir32",
+      "symbol": "_op_sound_default_descriptor"
+    },
+    {
+      "offset": 101,
+      "address": 4893016,
+      "kind": "dir32",
+      "symbol": "_op_sound_field0"
+    },
+    {
+      "offset": 110,
+      "address": 6010028,
+      "kind": "dir32",
+      "symbol": "_op_sound_field1"
+    },
+    {
+      "offset": 118,
+      "address": 4893020,
+      "kind": "dir32",
+      "symbol": "_op_sound_field2"
+    },
+    {
+      "offset": 127,
+      "address": 4893024,
+      "kind": "dir32",
+      "symbol": "_op_sound_field3"
+    },
+    {
+      "offset": 136,
+      "address": 4893028,
+      "kind": "dir32",
+      "symbol": "_op_sound_field4"
+    },
+    {
+      "offset": 144,
+      "address": 4893032,
+      "kind": "dir32",
+      "symbol": "_op_sound_field5"
+    },
+    {
+      "offset": 153,
+      "address": 4892948,
+      "kind": "dir32",
+      "symbol": "_op_sound_category"
+    },
+    {
+      "offset": 162,
+      "address": 4892948,
+      "kind": "dir32",
+      "symbol": "_op_sound_category"
+    },
+    {
+      "offset": 183,
+      "address": 4286495,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_start_descriptor"
+    },
+    {
+      "offset": 208,
+      "address": 4893016,
+      "kind": "dir32",
+      "symbol": "_op_sound_field0"
+    },
+    {
+      "offset": 218,
+      "address": 6010028,
+      "kind": "dir32",
+      "symbol": "_op_sound_field1"
+    },
+    {
+      "offset": 228,
+      "address": 4893020,
+      "kind": "dir32",
+      "symbol": "_op_sound_field2"
+    },
+    {
+      "offset": 238,
+      "address": 4893024,
+      "kind": "dir32",
+      "symbol": "_op_sound_field3"
+    },
+    {
+      "offset": 248,
+      "address": 4893028,
+      "kind": "dir32",
+      "symbol": "_op_sound_field4"
+    },
+    {
+      "offset": 258,
+      "address": 4893032,
+      "kind": "dir32",
+      "symbol": "_op_sound_field5"
+    }
+  ]
+}

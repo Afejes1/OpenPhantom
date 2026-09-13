@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "case": "sound_add_extra_ref",
+  "status": "frozen-exact-candidate",
+  "started_utc": "2026-09-13T06:24:17.913700Z",
+  "finished_utc": "2026-09-13T06:35:43.936885Z",
+  "timestamp_basis": "started_utc is the first preserved comparison-report filesystem write time for this case; finished_utc is the final fixture source filesystem write time. The exact task receipt time was not recorded.",
+  "compiler_invocations": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Null-head early return with ordinary while traversal.",
+      "source_sha256": "7a09f197f2cf149230bfa05609be7736e7cf5ec5b84f3afc594d8043dc765b8d",
+      "report": "engine/build/campaign-001-sound_add_extra_ref-497eda0eaf46/research-result.json",
+      "report_written_utc": "2026-09-13T06:24:17.913700Z",
+      "result": "mismatch: candidate 230 bytes versus complete 232-byte target."
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Unified return with ordinary while traversal.",
+      "source_sha256": "372136d118deb4f4f277d766837587d0bebbbdcfaba0b08b1bcde7e3785b7c6f",
+      "report": "engine/build/campaign-001-sound_add_extra_ref-b25eb19a1be1/research-result.json",
+      "report_written_utc": "2026-09-13T06:24:35.403466Z",
+      "result": "mismatch: candidate 227 bytes versus complete 232-byte target."
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Preserve null-head early return and express the observed empty traversal as a natural for loop.",
+      "source_sha256": "9e42c1db3c79d7f3517b4029d07891673746bf0b5c30edaeba7b1c70e4742aca",
+      "object_sha256": "06b01a6c9f79ad0d2ce0671e86849a1425378fff6c5c46eb52a73670fa17e77f",
+      "report": "engine/build/campaign-001-sound_add_extra_ref-6185291b2a84/research-result.json",
+      "report_written_utc": "2026-09-13T06:32:14.750360Z",
+      "result": "relocation-adjusted match: 232 bytes, 11 relocations/bindings, zero differing nonbinding bytes."
+    }
+  ],
+  "fixture_sha256": "36e65a4dc94a17b76f46933326888b0af95f0e38b8294648c5bd488febef6a7b",
+  "fixture_execution": "not executed by worker; coordinator performs locked-Docker execution",
+  "original_game_executed": false,
+  "notes": [
+    "Candidate uses the standard strcpy intrinsic directive to reproduce the observed VC5 inline copy.",
+    "Allocation failure and invalid active-path name inputs are outside the original valid contract and are not executed."
+  ],
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 214,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_add_extra_ref-7dd7cb9806fe/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_add_extra_ref-b22baf92e9ce/research-result.json",
+    "result": "result.json",
+    "result_sha256": "49e97b8899a31aa1d7e3139a6e744f76b9c87d558f046700ab5c851a68f4c7f6"
+  }
+}

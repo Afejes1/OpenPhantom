@@ -1,0 +1,99 @@
+{
+  "id": "sound_remove_level",
+  "address": 4283456,
+  "size": 211,
+  "body_size": 211,
+  "source": "src/sound_remove_level.c",
+  "symbol": "_op_sound_remove_level",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 6010040,
+      "kind": "dir32",
+      "symbol": "_op_sound_initialized"
+    },
+    {
+      "offset": 17,
+      "address": 9044064,
+      "kind": "dir32",
+      "symbol": "_op_sound_world"
+    },
+    {
+      "offset": 35,
+      "address": 4289775,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_resume"
+    },
+    {
+      "offset": 40,
+      "address": 4290275,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_stop_all"
+    },
+    {
+      "offset": 45,
+      "address": 4285833,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_free_extra"
+    },
+    {
+      "offset": 50,
+      "address": 9044064,
+      "kind": "dir32",
+      "symbol": "_op_sound_world"
+    },
+    {
+      "offset": 82,
+      "address": 9044064,
+      "kind": "dir32",
+      "symbol": "_op_sound_world"
+    },
+    {
+      "offset": 107,
+      "address": 4662004,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_mark_resource"
+    },
+    {
+      "offset": 122,
+      "address": 4661791,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_release_resource"
+    },
+    {
+      "offset": 148,
+      "address": 6010032,
+      "kind": "dir32",
+      "symbol": "_op_sound_registry"
+    },
+    {
+      "offset": 154,
+      "address": 4799695,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_remove_name"
+    },
+    {
+      "offset": 162,
+      "address": 6010016,
+      "kind": "dir32",
+      "symbol": "_op_sound_ref_count"
+    },
+    {
+      "offset": 170,
+      "address": 6010016,
+      "kind": "dir32",
+      "symbol": "_op_sound_ref_count"
+    },
+    {
+      "offset": 197,
+      "address": 6010044,
+      "kind": "dir32",
+      "symbol": "_op_sound_level_registered"
+    }
+  ]
+}

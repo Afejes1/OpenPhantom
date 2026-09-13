@@ -1,0 +1,74 @@
+[
+  {
+    "id": "sound_remove_level",
+    "address": "00415C40",
+    "original_name": "FUN_00415c40",
+    "new_name": "remove_level_sound_references",
+    "confidence": "HIGH",
+    "purpose": "remove level sound references",
+    "evidence": "Full body/assembly, next function boundary, module/descriptor caller and complete callback ABIs; 14 operands independently checked against PE relocation inventory",
+    "full_span": 211,
+    "fixture_checks": 57,
+    "result_status": "research-candidate"
+  },
+  {
+    "id": "sound_module_init",
+    "address": "004159F0",
+    "original_name": "FUN_004159f0",
+    "new_name": "initialize_sound_system",
+    "confidence": "HIGH",
+    "purpose": "initialize sound system",
+    "evidence": "Full body/assembly, next function boundary, module/descriptor caller and complete callback ABIs; 18 operands independently checked against PE relocation inventory",
+    "full_span": 197,
+    "fixture_checks": 31,
+    "result_status": "focused-relocation-adjusted-match"
+  },
+  {
+    "id": "sound_register_level",
+    "address": "00415B38",
+    "original_name": "FUN_00415b38",
+    "new_name": "register_level_sound_references",
+    "confidence": "HIGH",
+    "purpose": "register level sound references",
+    "evidence": "Full body/assembly, next function boundary, module/descriptor caller and complete callback ABIs; 18 operands independently checked against PE relocation inventory",
+    "full_span": 264,
+    "fixture_checks": 39,
+    "result_status": "research-candidate"
+  },
+  {
+    "id": "sound_add_extra_ref",
+    "address": "0041705B",
+    "original_name": "FUN_0041705b",
+    "new_name": "add_extra_sound_reference",
+    "confidence": "HIGH",
+    "purpose": "add extra sound reference",
+    "evidence": "Full body/assembly, next function boundary, module/descriptor caller and complete callback ABIs; 11 operands independently checked against PE relocation inventory",
+    "full_span": 232,
+    "fixture_checks": 214,
+    "result_status": "focused-relocation-adjusted-match"
+  },
+  {
+    "id": "sound_free_channel",
+    "address": "00417567",
+    "original_name": "stop_and_release_sound_slot",
+    "new_name": "stop_and_release_sound_slot",
+    "confidence": "HIGH",
+    "purpose": "stop and release sound slot",
+    "evidence": "Complete 242-byte body/assembly, verified next boundary, full called ABI and related reconstructed callers; 5 independently verified operands",
+    "full_span": 242,
+    "fixture_checks": 37,
+    "result_status": "focused-relocation-adjusted-match"
+  },
+  {
+    "id": "sound_play_by_name",
+    "address": "004171A1",
+    "original_name": "FUN_004171a1",
+    "new_name": "play_sound_by_name",
+    "confidence": "HIGH",
+    "purpose": "play sound by name",
+    "evidence": "Complete 275-byte body/assembly, verified next boundary, full called ABI and related reconstructed callers; 17 independently verified operands",
+    "full_span": 275,
+    "fixture_checks": 58,
+    "result_status": "research-candidate"
+  }
+]

@@ -1,0 +1,179 @@
+{
+  "schema": 1,
+  "campaign": "010",
+  "reviews": {
+    "sound_module_init": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 197,
+      "source_review": "Reviewed exact initialized==1 guard, ignored startup results, registry assignment and partial failure, two distinct integer option outputs and final initialized write. Independent fixture asserts full callback sequence and observes/mutates initialization immediately before its final store.",
+      "fixture_checks": 31,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_remove_level": {
+      "status": "research-candidate",
+      "complete_span": 211,
+      "source_review": "Reviewed full signed traversal, captured record cursor and live world/count reads, callback order, resource reload/clear timing and ignored dispatcher argument. Corrected fixture separates one-record and expanding-world cases and independently checks entire record bytes. Candidate retains twelve local-stack-offset differences after three recorded natural variants.",
+      "fixture_checks": 57,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_register_level": {
+      "status": "research-candidate",
+      "complete_span": 264,
+      "source_review": "Parent corrected the inverted preload gate; final source loads only when bit 0x2000 is clear. Independent fixture uses owned-record indices and explicit callback order for skipped, failed and successful preload; tests count expansion via a different world while the original record cursor remains captured, signed empty counts and complete record bytes. Final source retains twelve local-stack-offset differences.",
+      "fixture_checks": 39,
+      "fixture_failures": 0,
+      "source_correction": true,
+      "independent_native_docker_verification": true
+    },
+    "sound_add_extra_ref": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 232,
+      "source_review": "Reviewed exact allocation/zero/copy/insertion/counter/append order, original missing allocation guard and natural early-return/for traversal. Parent fixture review adds owned pointer guards, bounded name comparison and independent source-name mutation, truly empty and callback-replaced heads, full node bytes and live counter/registry updates. Explicit char conversion fixes strict fixture compiler diagnostic without a waiver.",
+      "fixture_checks": 214,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_free_channel": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 242,
+      "source_review": "Reviewed unsigned slot bound, fixed backend branch, live caller-handle invalidation and record/resource reloads after end/mark/release callbacks. Corrected event oracle distinguishes mutually exclusive end callbacks. Parent added typed full-channel/full-record expected states and the unmarked null-resource release path; unrelated fields and neighbor channels are preserved.",
+      "fixture_checks": 37,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_play_by_name": {
+      "status": "research-candidate",
+      "complete_span": 275,
+      "source_review": "Reviewed all64 descriptor bytes, bounded name copy, field override and exact postcallback reset constants, original flags controlling reset, category default and retained return. Independent fixture uses explicit signed-zero/quiet-NaN bit patterns, full descriptor oracle, template/name mutation and category-at-callback assertions; all five globals are checked in both reset branches.",
+      "fixture_checks": 58,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    }
+  },
+  "issues": [],
+  "full_regression_run": false,
+  "parent_fixture_corrections": [
+    "sound_remove_level",
+    "sound_module_init",
+    "sound_register_level",
+    "sound_add_extra_ref",
+    "sound_free_channel",
+    "sound_play_by_name"
+  ],
+  "open_fixture_review": [
+    {
+      "id": "sound_remove_level",
+      "status": "resolved-before-final-verification",
+      "finding": "One-node case unintentionally expanded to three nodes; require separate expansion case, exact record callback order, full record preservation and valid live world/count switch.",
+      "resolution": "Reviewed full signed traversal, captured record cursor and live world/count reads, callback order, resource reload/clear timing and ignored dispatcher argument. Corrected fixture separates one-record and expanding-world cases and independently checks entire record bytes. Candidate retains twelve local-stack-offset differences after three recorded natural variants."
+    },
+    {
+      "id": "sound_module_init",
+      "status": "resolved-before-final-verification",
+      "finding": "Success event count was eleven instead of ten; require independent full sequence, intermediate initialized-state checks, distinct option outputs and partial-failure side effects.",
+      "resolution": "Reviewed exact initialized==1 guard, ignored startup results, registry assignment and partial failure, two distinct integer option outputs and final initialized write. Independent fixture asserts full callback sequence and observes/mutates initialization immediately before its final store."
+    },
+    {
+      "id": "sound_register_level",
+      "status": "resolved-before-final-verification",
+      "kind": "source-and-fixture",
+      "finding": "Draft inverted the preload flag gate and fixture shared the inversion; preload must run only when bit 0x2000 is clear. Fixture record index advanced only on removal and failed to model success/skip paths independently.",
+      "resolution": "Parent corrected the inverted preload gate; final source loads only when bit 0x2000 is clear. Independent fixture uses owned-record indices and explicit callback order for skipped, failed and successful preload; tests count expansion via a different world while the original record cursor remains captured, signed empty counts and complete record bytes. Final source retains twelve local-stack-offset differences."
+    },
+    {
+      "id": "sound_add_extra_ref",
+      "status": "resolved-before-final-verification",
+      "kind": "fixture",
+      "finding": "Require equality-based owned-pointer guards before dereference, name tail/copy independence, and insertion callback head/node mutations.",
+      "resolution": "Reviewed exact allocation/zero/copy/insertion/counter/append order, original missing allocation guard and natural early-return/for traversal. Parent fixture review adds owned pointer guards, bounded name comparison and independent source-name mutation, truly empty and callback-replaced heads, full node bytes and live counter/registry updates. Explicit char conversion fixes strict fixture compiler diagnostic without a waiver."
+    },
+    {
+      "id": "sound_free_channel",
+      "status": "resolved-before-final-verification",
+      "kind": "fixture",
+      "finding": "Active2D callback sequence must be end2D/mark/release (three events), not both mutually exclusive end callbacks. Require typed full-record oracles and unmarked/null-resource release path.",
+      "resolution": "Reviewed unsigned slot bound, fixed backend branch, live caller-handle invalidation and record/resource reloads after end/mark/release callbacks. Corrected event oracle distinguishes mutually exclusive end callbacks. Parent added typed full-channel/full-record expected states and the unmarked null-resource release path; unrelated fields and neighbor channels are preserved."
+    }
+  ],
+  "parent_source_corrections": [
+    "sound_register_level"
+  ],
+  "independent_mismatch_audit": {
+    "cases": [
+      "sound_remove_level",
+      "sound_register_level"
+    ],
+    "finding": "Parent independently resolved every verified COFF fixup and confirmed all twelve residual byte differences in each case are the EBP local displacement values -4 and -8 exchanging places. No other instruction or constant bytes differ. This does not promote either candidate to exact."
+  },
+  "parent_failed_attempts": [
+    {
+      "id": "sound_add_extra_ref",
+      "native_report": "engine/build/campaign-001-sound_add_extra_ref-94179860d62d/research-result.json",
+      "native_report_sha256": "4e26ede008d29a59ecb6873bcd3a2203c39f6691aa8ba234d7c0538c265d56a5",
+      "docker_report": "engine/build/campaign-001-sound_add_extra_ref-f8cc92f52d10/research-result.json",
+      "docker_report_sha256": "5b8fbd1cbdd75a7d54d42d3efcb20aff4ff7369dbc8f5ff0eea54f11a8c2f749",
+      "candidate_compiles": 2,
+      "fixture_compile_attempts": 1,
+      "fixture_executions": 0,
+      "reason": "VC5 C4244/C2220: fixture ternary character literals have int type in C; explicit bounded char conversion resolves diagnostic without a waiver.",
+      "peer_identification": "Unique native report with identical complete source snapshot and toolchain lock; failed Docker fixture compilation precedes peer hash recording.",
+      "resolution": "Corrected fixture and fresh final native/Docker pair passed214 checks."
+    }
+  ],
+  "compiler_directives": {
+    "sound_add_extra_ref": "Explicit VC5 intrinsic strcpy; normal C source, no raw-byte emission.",
+    "sound_play_by_name": "Explicit VC5 intrinsic strcpy; normal C source, no raw-byte emission."
+  },
+  "source_and_fixture_audit": "Independent coordinator review and separate read-only worker source/receipt audit completed for all six final cases; no unresolved material findings.",
+  "metadata_update": {
+    "generated_names_changed": 5,
+    "trusted_names_preserved": 1,
+    "comments_updated": 6,
+    "program_saved": true,
+    "affected_callers_redecompiled": [
+      "004158F0",
+      "0041681F",
+      "0041609E",
+      "004172B4"
+    ]
+  },
+  "listing_provenance": [
+    {
+      "id": "sound_remove_level",
+      "fallback_used": false,
+      "docker_listing_has_terminators": false
+    },
+    {
+      "id": "sound_module_init",
+      "fallback_used": false,
+      "docker_listing_has_terminators": false
+    },
+    {
+      "id": "sound_register_level",
+      "fallback_used": false,
+      "docker_listing_has_terminators": false
+    },
+    {
+      "id": "sound_add_extra_ref",
+      "fallback_used": false,
+      "docker_listing_has_terminators": false
+    },
+    {
+      "id": "sound_free_channel",
+      "fallback_used": false,
+      "docker_listing_has_terminators": false
+    },
+    {
+      "id": "sound_play_by_name",
+      "fallback_used": false,
+      "docker_listing_has_terminators": false
+    }
+  ]
+}

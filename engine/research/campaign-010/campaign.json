@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "campaign": "010",
+  "status": "complete-focused-checkpoint",
+  "started_utc": "2026-09-13T06:14:21Z",
+  "worker_stop_utc": "2026-09-13T06:49:21Z",
+  "stop_utc": "2026-09-13T06:59:21Z",
+  "baseline_commit": "1abca9082ab33957c2e1cf9e44deee6f4ce8e53b",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "weekly_shared_account_first_observation": {
+    "used_percent": 31,
+    "note": "Rounded shared account reading near batch start."
+  },
+  "assignments": [
+    {
+      "id": "sound_remove_level",
+      "address": "0x00415C40",
+      "case": "research/campaign-010-sound-remove-level",
+      "status": "research-candidate",
+      "result": "research/campaign-010-sound-remove-level/result.json"
+    },
+    {
+      "id": "sound_module_init",
+      "address": "0x004159F0",
+      "case": "research/campaign-010-sound-module-init",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-010-sound-module-init/result.json"
+    },
+    {
+      "id": "sound_register_level",
+      "address": "0x00415B38",
+      "case": "research/campaign-010-sound-register-level",
+      "status": "research-candidate",
+      "result": "research/campaign-010-sound-register-level/result.json"
+    },
+    {
+      "id": "sound_add_extra_ref",
+      "address": "0x0041705B",
+      "case": "research/campaign-010-sound-add-extra-ref",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-010-sound-add-extra-ref/result.json"
+    },
+    {
+      "id": "sound_free_channel",
+      "address": "0x00417567",
+      "case": "research/campaign-010-sound-free-channel",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-010-sound-free-channel/result.json"
+    },
+    {
+      "id": "sound_play_by_name",
+      "address": "0x004171A1",
+      "case": "research/campaign-010-sound-play-by-name",
+      "status": "research-candidate",
+      "result": "research/campaign-010-sound-play-by-name/result.json"
+    }
+  ],
+  "worker_handoff_completed_utc": "2026-09-13T06:49:43Z",
+  "worker_handoff_timestamp_basis": "Coordinator clock observation after final frozen source verification; upper bound, not last compiler time.",
+  "final_verification_completed_utc": "2026-09-13T06:50:15.779201+00:00"
+}
