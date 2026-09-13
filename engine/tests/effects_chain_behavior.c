@@ -26,7 +26,11 @@ enum
     EC_STREAM
 };
 OP_HALO_COLOR op_halo_colors[3];
-static OP_DEFINITION ec_definition;
+static OP_DEFINITION ec_definition, ec_definition_before, ec_alternate, ec_alternate_before;
+static OP_ATTACHED_ACTOR ec_other_before;
+static OP_HALO_COLOR ec_colors_expected[3];
+static void *ec_stream_acquire(char *name);
+static void ec_stream_release(void **sprite);
 static OP_ATTACHED_ACTOR ec_actor, ec_expected_actor, ec_other;
 static OP_HALO ec_expected_halos[32];
 static int ec_handles[8], ec_halo_count, ec_key, ec_lookup_calls, ec_resource_calls;
@@ -37,6 +41,10 @@ static void ec_halo_state(void)
     EC_CHECK(memcmp(op_halos, ec_expected_halos, sizeof(op_halos)) == 0);
     EC_CHECK(memcmp(&ec_actor, &ec_expected_actor, sizeof(ec_actor)) == 0);
     EC_CHECK(op_halo_count == ec_halo_count);
+    EC_CHECK(memcmp(&ec_definition, &ec_definition_before, sizeof(ec_definition)) == 0);
+    EC_CHECK(memcmp(&ec_alternate, &ec_alternate_before, sizeof(ec_alternate)) == 0);
+    EC_CHECK(memcmp(&ec_other, &ec_other_before, sizeof(ec_other)) == 0);
+    EC_CHECK(memcmp(op_halo_colors, ec_colors_expected, sizeof(op_halo_colors)) == 0);
 }
 int op_find_node_ordinal(OP_ATTACHED_ACTOR *actor, unsigned int key)
 {
@@ -45,6 +53,11 @@ int op_find_node_ordinal(OP_ATTACHED_ACTOR *actor, unsigned int key)
     EC_CHECK(effects_chain_active && ec_mode == EC_HALO);
     EC_CHECK(actor == &ec_actor && key == (unsigned int)(9 + ec_lookup_calls));
     ec_halo_state();
+    if (ec_color_profile == 2 && ec_lookup_calls == 0)
+    {
+        /* Selection is complete: later table mutation must not replace captured color. */
+        op_halo_colors[1].color = ec_colors_expected[1].color = 0x11223344;
+    }
     ec_key = (int)key;
     ++ec_lookup_calls;
     return ec_key == ec_missing ? 0 : ec_key + 100;
@@ -53,6 +66,13 @@ int op_compare_names(char *a, char *b)
 {
     EC_CHECK(effects_chain_active && ec_mode == EC_HALO);
     EC_CHECK(a == ec_definition.name && b == op_halo_colors[ec_compare_calls].name);
+    ec_halo_state();
+    if (ec_color_profile == 2 && ec_compare_calls == 0)
+    {
+        /* The second comparison must retain the original name pointer. */
+        ec_actor.definition = ec_expected_actor.definition = &ec_alternate;
+        ec_actor.flags = ec_expected_actor.flags = 0x80000003;
+    }
     ++ec_compare_calls;
     return strcmp(a, b);
 }
@@ -63,12 +83,7 @@ static void *effects_chain_acquire_sprite(char *name)
     if (ec_mode == EC_ADD)
         return ha_op_acquire_sprite(name);
     if (ec_mode == EC_LOAD)
-    {
-        EC_CHECK(name == lo_payload->name);
-        lo_expected[lo_last_slot].sprite = &ec_handles[0];
-        strcpy(lo_expected[lo_last_slot].name, name);
-        return &ec_handles[0];
-    }
+        return lo_texture_acquire(name, &ec_handles[0]);
     if (ec_mode == EC_HALO)
     {
         EC_CHECK(name == (ec_key < 13 ? op_halo_name_a : ec_key == 13 ? op_halo_name_b : op_halo_name_c));
@@ -96,19 +111,17 @@ static void *effects_chain_acquire_sprite(char *name)
         return value;
     }
     EC_CHECK(ec_mode == EC_STREAM);
-    return &ec_handles[7];
+    return ec_stream_acquire(name);
 }
 static void effects_chain_release_sprite(void **sprite)
 {
     if (ec_mode == EC_LOAD)
     {
-        EC_CHECK(sprite == &op_shields[lo_last_slot].sprite);
-        lo_op_shield_set_texture(lo_last_slot, lo_payload->name);
-        *sprite = 0;
+        lo_texture_release(sprite);
         return;
     }
     EC_CHECK(ec_mode == EC_STREAM);
-    *sprite = 0;
+    ec_stream_release(sprite);
 }
 static void ec_halo_tests(void)
 {
@@ -126,6 +139,11 @@ static void ec_halo_tests(void)
                         ec_actor.definition = &ec_definition;
                         ec_actor.flags = 0x80000001;
                         ec_expected_actor = ec_actor;
+                        memset(&ec_alternate, 0x41, sizeof(ec_alternate));
+                        strcpy(ec_alternate.name, "alternate-unit");
+                        ec_definition_before = ec_definition;
+                        ec_alternate_before = ec_alternate;
+                        ec_other_before = ec_other;
                         for (i = 0; i < 32; i++)
                         {
                             memset(&op_halos[i], 0x57, sizeof(OP_HALO));
@@ -139,6 +157,7 @@ static void ec_halo_tests(void)
                         op_halo_colors[1].name = profile == 2 ? match : 0;
                         op_halo_colors[1].color = 0x89abcdef;
                         op_halo_colors[2].name = 0;
+                        memcpy(ec_colors_expected, op_halo_colors, sizeof(op_halo_colors));
                         ec_color = profile == 2 ? 0x89abcdef : 0xffffff;
                         ec_color_profile = profile;
                         ec_missing = missing;
@@ -177,7 +196,57 @@ static OP_SHIELD_SAVE ec_rows_expected[3];
 static OP_EFFECTS_SAVE ec_save_expected;
 static OP_OVERLAY_SAVE ec_overlay_expected;
 static OP_B3D_WORLD ec_worlds[2];
-static int ec_mutation;
+static int ec_mutation, ec_texture_stage, ec_texture_releases, ec_texture_acquires;
+static OP_SHIELD_SAVE *ec_row_payload;
+static OP_B3D_WORLD ec_worlds_before[2];
+static OP_EFFECTS_SAVE ec_live_save_expected;
+static unsigned int ec_fog_expected[6];
+static void ec_fog_capture(unsigned int *words)
+{
+    memcpy(words, &op_fog_duration, 4);
+    memcpy(words + 1, &op_fog_target, 4);
+    memcpy(words + 2, &op_fog_cached_start, 4);
+    memcpy(words + 3, &op_fog_remaining, 4);
+    memcpy(words + 4, &op_fog_restore_mode, 4);
+    words[5] = op_fog_saved;
+}
+static void ec_save_state(void)
+{
+    unsigned int words[6];
+    ec_fog_capture(words);
+    EC_CHECK(memcmp(words, ec_fog_expected, sizeof(words)) == 0);
+    EC_CHECK(memcmp(&op_effects_save, &ec_live_save_expected, 96) == 0);
+    EC_CHECK(op_active_world == &ec_worlds[ec_mutation ? 1 : 0]);
+    EC_CHECK(memcmp(ec_worlds, ec_worlds_before, sizeof(ec_worlds)) == 0);
+}
+static void ec_stream_release(void **sprite)
+{
+    int slot = (ec_allocations - 1) * 7;
+    EC_CHECK(ec_stream_loading && ec_texture_stage++ == 0 && slot >= 0 && slot <= 14);
+    EC_CHECK(sprite == &op_shields[slot].sprite);
+    EC_CHECK(memcmp(op_shields, ec_loaded_shields, sizeof(op_shields)) == 0);
+    *sprite = 0;
+    ec_loaded_shields[slot].sprite = 0;
+    ++ec_texture_releases;
+}
+static void *ec_stream_acquire(char *name)
+{
+    int n = ec_allocations - 1, slot = n * 7;
+    OP_SHIELD_SAVE *row = &ec_rows_expected[n];
+    EC_CHECK(ec_stream_loading && ec_texture_stage == 1);
+    EC_CHECK(ec_row_payload && name == ec_row_payload->name && strcmp(name, row->name) == 0);
+    EC_CHECK(memcmp(op_shields, ec_loaded_shields, sizeof(op_shields)) == 0);
+    ++ec_texture_acquires;
+    ec_texture_stage = 0;
+    ec_loaded_shields[slot].sprite = &ec_handles[7];
+    strcpy(ec_loaded_shields[slot].name, name);
+    ec_loaded_shields[slot].radius = row->radius;
+    ec_loaded_shields[slot].red = 0x23;
+    ec_loaded_shields[slot].green = 0x45;
+    ec_loaded_shields[slot].blue = (unsigned char)(0x67 + n);
+    ec_loaded_shields[slot].alpha = 0x81;
+    return &ec_handles[7];
+}
 void op_get_fog_rgb(int *red, int *green, int *blue)
 {
     EC_CHECK(ec_mode == EC_STREAM && ec_stage++ == 0);
@@ -274,7 +343,11 @@ static int effects_chain_read(void *memory, unsigned int bytes)
         memset(memory, 0, bytes);
         return 0;
     }
+    EC_CHECK(ec_texture_stage == 0);
+    EC_CHECK(memcmp(op_shields, ec_loaded_shields, sizeof(op_shields)) == 0);
     memcpy(memory, ec_stream.bytes + ec_offsets[event], bytes);
+    if (bytes == 52)
+        ec_row_payload = (OP_SHIELD_SAVE *)memory;
     EC_CHECK(memcmp(&ec_stream, &ec_expected_stream, sizeof(ec_stream)) == 0);
     return (int)event == ec_read_fail ? 0 : 1;
 }
@@ -285,6 +358,7 @@ int op_shield_allocate(void *actor)
     if (ec_mode == EC_LOAD)
         return lo_op_shield_allocate(actor);
     EC_CHECK(effects_chain_active && ec_mode == EC_STREAM && ec_stream_loading && actor == 0);
+    EC_CHECK(ec_texture_stage == 0 && memcmp(op_shields, ec_loaded_shields, sizeof(op_shields)) == 0);
     n = ec_allocations++;
     if (n == ec_allocate_fail)
         return -7;
@@ -299,13 +373,6 @@ int op_shield_allocate(void *actor)
     ec_loaded_shields[slot].visible = row->visible;
     ec_loaded_shields[slot].no_save = 0;
     ec_loaded_shields[slot].elapsed = row->elapsed;
-    ec_loaded_shields[slot].radius = row->radius;
-    ec_loaded_shields[slot].red = 0x23;
-    ec_loaded_shields[slot].green = 0x45;
-    ec_loaded_shields[slot].blue = (unsigned char)(0x67 + n);
-    ec_loaded_shields[slot].alpha = 0x81;
-    ec_loaded_shields[slot].sprite = &ec_handles[7];
-    strcpy(ec_loaded_shields[slot].name, row->name);
     return slot;
 }
 static void ec_stream_tests(void)
@@ -327,6 +394,7 @@ static void ec_stream_tests(void)
             memset(&ec_worlds, 0, sizeof(ec_worlds));
             ec_worlds[0].flags = 0x80000001;
             op_active_world = &ec_worlds[0];
+            memcpy(ec_worlds_before, ec_worlds, sizeof(ec_worlds));
             op_fog_duration = 2;
             op_fog_target = 4;
             op_fog_cached_start = 8;
@@ -387,6 +455,15 @@ static void ec_stream_tests(void)
             ec_overlay_expected.previous = -7;
             ec_overlay_expected.step = 23;
             EC_CHECK(op_effects_write(-73) == 0);
+            ec_live_save_expected = ec_save_expected;
+            if (mutation)
+                ec_live_save_expected.tail[23] = 0x7e;
+            {
+                float duration = mutation ? 999.0f : 2.0f;
+                memcpy(ec_fog_expected, &duration, 4);
+            }
+            memcpy(ec_fog_expected + 1, &ec_save_expected.target, 20);
+            ec_save_state();
             EC_CHECK(ec_events == (unsigned int)(ec_rows + 3));
             EC_CHECK(ec_used == (unsigned int)(128 + 52 * ec_rows));
             EC_CHECK(memcmp(op_shields, ec_original_shields, sizeof(op_shields)) == 0);
@@ -397,6 +474,8 @@ static void ec_stream_tests(void)
                 for (alloc_fail = -1; alloc_fail < 3; alloc_fail++)
                 {
                     ec_cursor = 0;
+                    ec_texture_stage = ec_texture_releases = ec_texture_acquires = 0;
+                    ec_row_payload = 0;
                     ec_allocations = 0;
                     ec_read_fail = fail;
                     ec_allocate_fail = alloc_fail;
@@ -405,9 +484,22 @@ static void ec_stream_tests(void)
                     memcpy(ec_loaded_shields, op_shields, sizeof(op_shields));
                     memset(&op_overlay_save, 0x77, 28);
                     op_fog_duration = 777;
+                    op_fog_target = -22;
+                    op_fog_cached_start = -33;
+                    op_fog_remaining = -44;
+                    op_fog_restore_mode = 55;
+                    op_fog_saved = 0x87654321;
+                    ec_fog_capture(ec_fog_expected);
+                    ec_live_save_expected = ec_save_expected;
+                    if (fail != 0)
+                        memcpy(ec_fog_expected, &ec_save_expected.duration, 24);
                     result = op_effects_load(0x103);
                     wanted = (fail == 0 || fail == 1 || alloc_fail >= 0 || fail == 5);
                     EC_CHECK(result == wanted);
+                    ec_save_state();
+                    EC_CHECK(ec_texture_stage == 0);
+                    EC_CHECK(ec_texture_releases == (fail == 0 || fail == 1 ? 0 : alloc_fail >= 0 ? alloc_fail : 3));
+                    EC_CHECK(ec_texture_acquires == ec_texture_releases);
                     EC_CHECK(ec_cursor == (unsigned int)(fail == 0         ? 1
                                                          : fail == 1       ? 2
                                                          : alloc_fail >= 0 ? 3 + alloc_fail
