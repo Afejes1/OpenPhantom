@@ -1,5 +1,8 @@
 # Acceptance checkpoint 001
 
+**Passed with staged integration.** Read the [results](results.md) and
+[machine-readable outcome](result.json).
+
 The contributor authorized batch acceptance testing of the September 13 overnight
 results before another one-hour reconstruction window. This checkpoint preserves
 three distinct requirements: complete synthetic/supplemental regression, the full

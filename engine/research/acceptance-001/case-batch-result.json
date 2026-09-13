@@ -1,0 +1,1274 @@
+{
+  "schema": 1,
+  "kind": "focused-case-batch-reverification",
+  "completed": true,
+  "started_utc": "2026-09-13T10:51:59.084752+00:00",
+  "manifest_sha256": "e0b2ef964c3ebf7ef41390ca5f781d377f25fe1132aaa3f94276008121e5d51b",
+  "runner_sha256": "6bb2d2838b29f4a9ccb8a6ac10a84413717b6fed208e84f14b9a09feebfe8458",
+  "source_revision": "58a1ec475e75e50618c5c7c38d91612fd9861627",
+  "whole_executable_match": false,
+  "registered_history_promotions": 0,
+  "cases": [
+    {
+      "id": "music_get_volume",
+      "case": "research/campaign-005-music-volume",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-music_get_volume-ef4682beb614/research-result.json",
+          "sha256": "54416d6c68eea07d9dc896c9bc2dec9d145bf14e056c2c25e999b5c35d01da81",
+          "elapsed_seconds": 1.402969
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-music_get_volume-de380c617420/research-result.json",
+          "sha256": "50d7a3b6c65dc4e47adcc2bf5ab1f4e05981eb752d881aaac5d2f82302f442b4",
+          "elapsed_seconds": 5.565049
+        }
+      },
+      "passed": true,
+      "size": 11,
+      "fixture_checks": 18
+    },
+    {
+      "id": "music_is_detached",
+      "case": "research/campaign-005-music-detached",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-music_is_detached-9bf29c9cb586/research-result.json",
+          "sha256": "b2d251d2e3cc7c267f0d98e77817768e3cf24e7125cec4519debe71cb176b383",
+          "elapsed_seconds": 1.36977
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-music_is_detached-24462f090e75/research-result.json",
+          "sha256": "794c45ccf52c1f3f379ec08aae90c696fbe8b9821b567f901e3919d20559b4f5",
+          "elapsed_seconds": 5.208182
+        }
+      },
+      "passed": true,
+      "size": 17,
+      "fixture_checks": 12
+    },
+    {
+      "id": "music_get_state",
+      "case": "research/campaign-005-music-state",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-music_get_state-4d9515e7e2cb/research-result.json",
+          "sha256": "a50b0651b6d62423a27972144f35be99a6a58c7713b0c40297797838f70f2e1b",
+          "elapsed_seconds": 1.369776
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-music_get_state-d97785b95695/research-result.json",
+          "sha256": "f25e850a43f35dca4580b670838f682287d7ace9231a1aedb7187c542241112f",
+          "elapsed_seconds": 5.279348
+        }
+      },
+      "passed": true,
+      "size": 26,
+      "fixture_checks": 8
+    },
+    {
+      "id": "music_get_sequence",
+      "case": "research/campaign-005-music-sequence",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-music_get_sequence-452b7c83d1c5/research-result.json",
+          "sha256": "92dba79513310c7b6943755a2bf974fd18d1ba78817b6da6ff698c925cb0d7e6",
+          "elapsed_seconds": 1.407285
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-music_get_sequence-c0c5d5342e93/research-result.json",
+          "sha256": "43135ed2a97c4d83b4e31995d0eeca011860bdf2be146d93ad67028f1d814a4b",
+          "elapsed_seconds": 5.273727
+        }
+      },
+      "passed": true,
+      "size": 26,
+      "fixture_checks": 8
+    },
+    {
+      "id": "music_disable",
+      "case": "research/campaign-005-music-disable",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-music_disable-14a5c3ab6f43/research-result.json",
+          "sha256": "0ffd56a081d1fa85ef8476e05e9c15ecf9923968541ecabb4566cadfe5355088",
+          "elapsed_seconds": 1.38215
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-music_disable-29cbdbe50089/research-result.json",
+          "sha256": "a5965ca2d68179b776aed36f3064f21a47889b80f7cf7cf10c19b25e3d828d27",
+          "elapsed_seconds": 5.284633
+        }
+      },
+      "passed": true,
+      "size": 47,
+      "fixture_checks": 18
+    },
+    {
+      "id": "music_enable",
+      "case": "research/campaign-005-music-enable",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-music_enable-e60c896585bd/research-result.json",
+          "sha256": "c9343e341f1386539b219bbd22a8c73f833d9e40f1be92743c64e3d9765e71f0",
+          "elapsed_seconds": 1.395073
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-music_enable-86df0b12fd41/research-result.json",
+          "sha256": "ada9bc6463470c5d620d5d7cc3b3dd108f790dc78b096d77947e5f208608829e",
+          "elapsed_seconds": 5.202716
+        }
+      },
+      "passed": true,
+      "size": 60,
+      "fixture_checks": 30
+    },
+    {
+      "id": "music_save_cached_ids",
+      "case": "research/campaign-005-music-save",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-music_save_cached_ids-fbfc768ec7a1/research-result.json",
+          "sha256": "eee3897e7e81d687df08bf077713a6584054c5a4ed5f7bf3b7d52561d70368d6",
+          "elapsed_seconds": 1.379058
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-music_save_cached_ids-88df2c5c0872/research-result.json",
+          "sha256": "a139a04578a4c884cf9323f3c3d5c8a5cf895f330bcb7768fad2707e4c1628e7",
+          "elapsed_seconds": 5.296861
+        }
+      },
+      "passed": true,
+      "size": 61,
+      "fixture_checks": 21
+    },
+    {
+      "id": "music_restore_cached_ids",
+      "case": "research/campaign-005-music-restore",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-music_restore_cached_ids-ae964e522612/research-result.json",
+          "sha256": "b14158d4018cb93e0f7183f9821b708516b26a73929b273ef40ea0be19237beb",
+          "elapsed_seconds": 1.401213
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-music_restore_cached_ids-605e7758567c/research-result.json",
+          "sha256": "f0ba5587b10eacfa430f6ed761a2f5a8c28e82d8cfbcf4c42b609bd1441d7bc5",
+          "elapsed_seconds": 5.199098
+        }
+      },
+      "passed": true,
+      "size": 46,
+      "fixture_checks": 33
+    },
+    {
+      "id": "music_periodic",
+      "case": "research/campaign-005-music-periodic",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-music_periodic-619f2a5d4cc1/research-result.json",
+          "sha256": "fdcfc33bac0cdbcf6463ca3c766136fd5118edd41ed3ad07f7b65f40bc55679c",
+          "elapsed_seconds": 1.39638
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-music_periodic-ddf8ccc6eb83/research-result.json",
+          "sha256": "141d8a610f29fc020adfd8e6ffee8da0581e5e2242925918d9840dfb895245be",
+          "elapsed_seconds": 5.693105
+        }
+      },
+      "passed": true,
+      "size": 59,
+      "fixture_checks": 21
+    },
+    {
+      "id": "music_pause",
+      "case": "research/campaign-005-music-pause",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-music_pause-5ec9a09a0c59/research-result.json",
+          "sha256": "802e5be0ded3cd3eeea45daf992ed94616b19b8fd2b02fb9873482f3b459e7e2",
+          "elapsed_seconds": 1.42889
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-music_pause-91db39f76f57/research-result.json",
+          "sha256": "29bd2f4492b5c89e4aa4ed3771f2f5880d068bfd084ddf2fe336ef4f271f34ba",
+          "elapsed_seconds": 5.630706
+        }
+      },
+      "passed": true,
+      "size": 60,
+      "fixture_checks": 36
+    },
+    {
+      "id": "music_set_state",
+      "case": "research/campaign-006-music-set-state",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-music_set_state-46c762b842a9/research-result.json",
+          "sha256": "2cb1de8ab312a6c2084e5ba2f3223699fc7fb09e6ffc81239a773b60bf8cae1c",
+          "elapsed_seconds": 1.403758
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-music_set_state-adf3daa7a0e1/research-result.json",
+          "sha256": "7fa790a5212e5ab8659d71749a032ff77c10872654c1747557f0b21c873b8d1b",
+          "elapsed_seconds": 5.252189
+        }
+      },
+      "passed": true,
+      "size": 107,
+      "fixture_checks": 45
+    },
+    {
+      "id": "music_set_volume",
+      "case": "research/campaign-006-music-set-volume",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-music_set_volume-391f544a5f0e/research-result.json",
+          "sha256": "9e060305508cf203ede79560fceaa52c0a49ba7865eddd01a7237070f99de6b4",
+          "elapsed_seconds": 1.407268
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-music_set_volume-d3539dcf10ad/research-result.json",
+          "sha256": "d6227d1262646ab2726642f5c25c36afdf039eb899082603fe456812ef751ea6",
+          "elapsed_seconds": 5.178216
+        }
+      },
+      "passed": true,
+      "size": 115,
+      "fixture_checks": 42
+    },
+    {
+      "id": "music_detach",
+      "case": "research/campaign-006-music-detach",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-music_detach-d94954f45777/research-result.json",
+          "sha256": "a6264c3c65439d444e0bc75b2733f676b457badcdbeaf9a0a5cdcb92ceb6381f",
+          "elapsed_seconds": 1.413119
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-music_detach-fce090bf69c1/research-result.json",
+          "sha256": "5ae696fe4cc93daa41807ada38b26f39779096cb7f52f79152f9b1e74d359c1c",
+          "elapsed_seconds": 5.397607
+        }
+      },
+      "passed": true,
+      "size": 128,
+      "fixture_checks": 58
+    },
+    {
+      "id": "sound_stop_channel",
+      "case": "research/campaign-006-sound-stop-channel",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_stop_channel-9b45ad247f4e/research-result.json",
+          "sha256": "ce6adcd1730ae26cbba2d1f3beeb4b467c8a14fff7ea7f661afbf1e82dd9d2d7",
+          "elapsed_seconds": 1.443087
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_stop_channel-bf28f05425b4/research-result.json",
+          "sha256": "8bcebc7b755199aca22e3ff98db466fff95a648bc312539c480f16ea12e78b4a",
+          "elapsed_seconds": 5.217085
+        }
+      },
+      "passed": true,
+      "size": 17,
+      "fixture_checks": 10
+    },
+    {
+      "id": "sound_find_record",
+      "case": "research/campaign-006-sound-find-record",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_find_record-73a40b5a14b6/research-result.json",
+          "sha256": "bec9c7566569ecc61e0e07c3b3a22c2d8b163bb1fac4114bf221ce8183d82a45",
+          "elapsed_seconds": 1.460965
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_find_record-62a00c44f9d5/research-result.json",
+          "sha256": "0ecc2461d34b51b855d8643fbd35940a434d95b7ae1d11689269c904c175bc8b",
+          "elapsed_seconds": 5.248006
+        }
+      },
+      "passed": true,
+      "size": 24,
+      "fixture_checks": 15
+    },
+    {
+      "id": "sound_deactivate_place",
+      "case": "research/campaign-006-sound-deactivate-place",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_deactivate_place-f1687b71639e/research-result.json",
+          "sha256": "78d821308de76ce8005ac040eed9fed35281cb65b0adf1a4e3b3d62994c19ca0",
+          "elapsed_seconds": 1.398165
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_deactivate_place-358208312035/research-result.json",
+          "sha256": "c0fec06ae9c9898a3283b81a28de46a1dc7a6a51d5da5cc175a62fe112ff310f",
+          "elapsed_seconds": 10.323548
+        }
+      },
+      "passed": true,
+      "size": 34,
+      "fixture_checks": 10
+    },
+    {
+      "id": "sound_test_flags",
+      "case": "research/campaign-006-sound-test-flags",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_test_flags-06af3ed6eb20/research-result.json",
+          "sha256": "591026d4591842c2cd8c585d78f7fa31e0411f546ff3bdbf1eab55c6ff64df85",
+          "elapsed_seconds": 1.425731
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_test_flags-fa0469a2070f/research-result.json",
+          "sha256": "5a4d4698a1db97e2f7675f578d96b943d6240158d099e5b4c215413fba68ec17",
+          "elapsed_seconds": 5.376383
+        }
+      },
+      "passed": true,
+      "size": 45,
+      "fixture_checks": 13
+    },
+    {
+      "id": "sound_enable",
+      "case": "research/campaign-006-sound-enable",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_enable-7199d742d76c/research-result.json",
+          "sha256": "8ab957dac623b7b1c4e2a5589f15124236254d479f1f4259bdd338611e2b90ac",
+          "elapsed_seconds": 1.380083
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_enable-80c58f2a1f95/research-result.json",
+          "sha256": "99ed59aef0f51a7096ee6aaa406e647f49fa9cef3d579b1b91ef3923b9489ba2",
+          "elapsed_seconds": 5.295113
+        }
+      },
+      "passed": true,
+      "size": 41,
+      "fixture_checks": 14
+    },
+    {
+      "id": "sound_disable",
+      "case": "research/campaign-006-sound-disable",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_disable-1047fc011d06/research-result.json",
+          "sha256": "2cf3809ddb59904b05802ed311d050929dc2efed3c0743c4e04598268df12afe",
+          "elapsed_seconds": 1.38813
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_disable-1c583f441cf5/research-result.json",
+          "sha256": "778776c985124ccd09e863dc7d18629ee8de36d239a50030fdc991f5bf38930f",
+          "elapsed_seconds": 5.569121
+        }
+      },
+      "passed": true,
+      "size": 46,
+      "fixture_checks": 23
+    },
+    {
+      "id": "sound_stop_all",
+      "case": "research/campaign-006-sound-stop-all",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_stop_all-0cbd42b4e83c/research-result.json",
+          "sha256": "0020237b4d2995ffd88847fe6738e0f2039699a2761d724602e92cca828fa889",
+          "elapsed_seconds": 1.379128
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_stop_all-2e62666a5a58/research-result.json",
+          "sha256": "7cf0cb58f54976d36272f8b365873e59416e7a12ae79a3ef8c9e4ebcf2ecaf2f",
+          "elapsed_seconds": 5.179771
+        }
+      },
+      "passed": true,
+      "size": 46,
+      "fixture_checks": 28
+    },
+    {
+      "id": "sound_tick",
+      "case": "research/campaign-007-sound-tick",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_tick-2d1ac14e8aa1/research-result.json",
+          "sha256": "eeb60ca3517b80803c872bbd52b5fa3a4b09cc490afa1b313613f0511d6cfa38",
+          "elapsed_seconds": 1.399658
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_tick-554e6a12ff64/research-result.json",
+          "sha256": "4f47fe217efa0b8b89fd1d062025e4f0b06e30ed131b3d519277ed3a9085156e",
+          "elapsed_seconds": 5.187879
+        }
+      },
+      "passed": true,
+      "size": 10,
+      "fixture_checks": 7
+    },
+    {
+      "id": "sound_get_driver",
+      "case": "research/campaign-007-sound-get-driver",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_get_driver-1c7a54757de6/research-result.json",
+          "sha256": "b5aacf9fe5199dc64331fedbf931fc1d5bd76d02d47da0518a584d8a998d53b0",
+          "elapsed_seconds": 1.427044
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_get_driver-5d3defaac9d8/research-result.json",
+          "sha256": "7646cf8a1e9818e0a9abf042e895f0ecf84f09fcdfb90d266e724b2c9434bca6",
+          "elapsed_seconds": 5.512717
+        }
+      },
+      "passed": true,
+      "size": 10,
+      "fixture_checks": 5
+    },
+    {
+      "id": "sound_get_master_volume",
+      "case": "research/campaign-007-sound-get-master-volume",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_get_master_volume-48ca3c53e813/research-result.json",
+          "sha256": "9e09425736258ec382e739bb444946e9bd03e7ee78d71684f0d5a2f4fa611933",
+          "elapsed_seconds": 1.377416
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_get_master_volume-93c43bc25700/research-result.json",
+          "sha256": "deb282265465f35524a03478c73c76e24e883f2ca159b3fd3c04da37829f9e83",
+          "elapsed_seconds": 5.248598
+        }
+      },
+      "passed": true,
+      "size": 30,
+      "fixture_checks": 19
+    },
+    {
+      "id": "sound_release_handle",
+      "case": "research/campaign-007-sound-release-handle",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_release_handle-573fd583c7ca/research-result.json",
+          "sha256": "02f14a51846ee7c0f467dce7ce7cfc8fdab00fa7bb21788578d6494398b0e278",
+          "elapsed_seconds": 1.40143
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_release_handle-9daeeba4fd34/research-result.json",
+          "sha256": "73aaacc3ad830ac363fce43c759f8e83588f33fd6646405fc1ccd3b1fc44a43b",
+          "elapsed_seconds": 5.355114
+        }
+      },
+      "passed": true,
+      "size": 92,
+      "fixture_checks": 25
+    },
+    {
+      "id": "sound_reset_places",
+      "case": "research/campaign-007-sound-reset-places",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_reset_places-77f9affd84ba/research-result.json",
+          "sha256": "7e0cde2ad544e17185f998ed79a3d535cc09efdc6da4c538895fa59ecd990703",
+          "elapsed_seconds": 1.4034
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_reset_places-1bd746c7320f/research-result.json",
+          "sha256": "77e86624a375a3e70cbfc2a281439bb5d091f025942a38d58cd4aa6abd1414c3",
+          "elapsed_seconds": 5.271798
+        }
+      },
+      "passed": true,
+      "size": 91,
+      "fixture_checks": 10
+    },
+    {
+      "id": "sound_pause_all",
+      "case": "research/campaign-007-sound-pause-all",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_pause_all-083c6f577591/research-result.json",
+          "sha256": "380ae8b0c36c1c21f5a67e0eb865f1542fe55e2557b878ecd4d303632640a769",
+          "elapsed_seconds": 1.378871
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_pause_all-bd44a6a5766e/research-result.json",
+          "sha256": "739ae8e34175fc2682833f1e5c9446967ae055ceb932b34f2f9190fc3b346e40",
+          "elapsed_seconds": 5.332872
+        }
+      },
+      "passed": true,
+      "size": 120,
+      "fixture_checks": 29
+    },
+    {
+      "id": "sound_resume_all",
+      "case": "research/campaign-007-sound-resume-all",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_resume_all-ae1564e63e78/research-result.json",
+          "sha256": "639829366440de024f52dbc22c39f0032c14a183569f64aa13f9a8c2881a41b2",
+          "elapsed_seconds": 1.396842
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_resume_all-4695a0d3c923/research-result.json",
+          "sha256": "bbf0776c6bcba854f45f7c103f5b0247a3b56b29e34640d1d3b1f692388ae275",
+          "elapsed_seconds": 5.416792
+        }
+      },
+      "passed": true,
+      "size": 120,
+      "fixture_checks": 13
+    },
+    {
+      "id": "sound_control_place",
+      "case": "research/campaign-007-sound-control-place",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_control_place-50dfb18f63b1/research-result.json",
+          "sha256": "2513be17136b5bc95901c1d797997ce542bb421d31e11ec90a85794ab70ee240",
+          "elapsed_seconds": 1.401625
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_control_place-718c381e1d75/research-result.json",
+          "sha256": "135d83c750c3e77d2e345055a1e1246990777165eef1266aeecb7cdc5abae706",
+          "elapsed_seconds": 5.329271
+        }
+      },
+      "passed": true,
+      "size": 120,
+      "fixture_checks": 15
+    },
+    {
+      "id": "sound_activate_place",
+      "case": "research/campaign-007-sound-activate-place",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_activate_place-42061e122805/research-result.json",
+          "sha256": "ada40543a52bbe0acea65b1a9bfbf5c4cf11290b8ce71d43e484a98654b1163d",
+          "elapsed_seconds": 1.400859
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_activate_place-4fae28fc164a/research-result.json",
+          "sha256": "b7769a2e62cd7f09b9c5baa8fd21fadae612b1950e8b30b87ce0427d70067336",
+          "elapsed_seconds": 5.352326
+        }
+      },
+      "passed": true,
+      "size": 123,
+      "fixture_checks": 32
+    },
+    {
+      "id": "sound_get_field",
+      "case": "research/campaign-008-sound-get-field",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_get_field-236ea563d0d7/research-result.json",
+          "sha256": "87f6724d32a68bff0a8199193cb893efb716da1607376cbbd6134776a02a00df",
+          "elapsed_seconds": 1.381154
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_get_field-88c9f3544554/research-result.json",
+          "sha256": "dc0654dcdb22811b8edc4724d8c199194f89a6612c1f30b5b7eed611b4187590",
+          "elapsed_seconds": 5.269981
+        }
+      },
+      "passed": true,
+      "size": 128,
+      "fixture_checks": 17
+    },
+    {
+      "id": "sound_set_field",
+      "case": "research/campaign-008-sound-set-field",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_set_field-3517ab8fbb04/research-result.json",
+          "sha256": "06f6c90ed750ffaaf90451c8eead14a2608a49e4b05443db1a5be981e2869860",
+          "elapsed_seconds": 1.378577
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_set_field-0d0b9e5170aa/research-result.json",
+          "sha256": "1f4b09f249631c086963930d5a0ecbcad59f3f73b65914943285d86b818f8065",
+          "elapsed_seconds": 5.201206
+        }
+      },
+      "passed": true,
+      "size": 120,
+      "fixture_checks": 44
+    },
+    {
+      "id": "sound_shutdown",
+      "case": "research/campaign-008-sound-shutdown",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_shutdown-b032b7742094/research-result.json",
+          "sha256": "814a8e1701d090fa447b763524a47f35cce03d7126d4d85f81a9c7bf63f06c32",
+          "elapsed_seconds": 1.422799
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_shutdown-82c5f82406e3/research-result.json",
+          "sha256": "f503aa0c5348ff9a38fbf6b17a04b8521626553149527f02492311e032765ad6",
+          "elapsed_seconds": 5.292081
+        }
+      },
+      "passed": true,
+      "size": 131,
+      "fixture_checks": 115
+    },
+    {
+      "id": "sound_play_name",
+      "case": "research/campaign-008-sound-play-name",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_play_name-31bf7d96a510/research-result.json",
+          "sha256": "a5556c0c7eff397ed74d517298939ccfd1e41a3c2bafef4c8eac0786fafdf2f6",
+          "elapsed_seconds": 1.371728
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_play_name-e8f687e1cb5b/research-result.json",
+          "sha256": "67c4bfb66d418e9c1ca55dba224180a81b615d08ffbae8eaed8d37f5c7e49e86",
+          "elapsed_seconds": 5.281308
+        }
+      },
+      "passed": true,
+      "size": 60,
+      "fixture_checks": 20
+    },
+    {
+      "id": "sound_play_name_volume",
+      "case": "research/campaign-008-sound-play-name-volume",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_play_name_volume-00a787f8a8ad/research-result.json",
+          "sha256": "be099e4c39e7303b87d268647e1f287c1cfe02e5fe012d852049499f1347ee9e",
+          "elapsed_seconds": 1.394014
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_play_name_volume-2d942551e001/research-result.json",
+          "sha256": "fe2796ca04599c3ee883a2ca4e2dfb5f75e185e3d7a2e83ac244f86b66888bf2",
+          "elapsed_seconds": 5.270991
+        }
+      },
+      "passed": true,
+      "size": 92,
+      "fixture_checks": 38
+    },
+    {
+      "id": "sound_periodic",
+      "case": "research/campaign-008-sound-periodic",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_periodic-31f953518750/research-result.json",
+          "sha256": "213f4cfdbceb73c188c9d9933303100035d07064d8824c1b1ba5ba1d1694b030",
+          "elapsed_seconds": 1.419694
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_periodic-82f518866775/research-result.json",
+          "sha256": "5872858614c21051c5a6af922c58500dd5c2b493ba2004b0f23fb40182a58af4",
+          "elapsed_seconds": 5.152057
+        }
+      },
+      "passed": true,
+      "size": 109,
+      "fixture_checks": 144
+    },
+    {
+      "id": "sound_play_index",
+      "case": "research/campaign-008-sound-play-index",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_play_index-470a17da999b/research-result.json",
+          "sha256": "74ae1c864151f2479c64919a1982af7f00308df32afab672c5c509fc8507e85c",
+          "elapsed_seconds": 1.400471
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_play_index-225e37dbed1c/research-result.json",
+          "sha256": "d5a281e1af056927d26c1c68cd3b10f607774a0fd5e63c5dfaeaa4d2417dfb74",
+          "elapsed_seconds": 5.361744
+        }
+      },
+      "passed": true,
+      "size": 94,
+      "fixture_checks": 28
+    },
+    {
+      "id": "sound_poll_channel",
+      "case": "research/campaign-008-sound-poll-channel",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_poll_channel-ffa133ed6f3b/research-result.json",
+          "sha256": "ffe2355df68f85d29f280351d0c7a1de26d436897c40e0560cca141372026768",
+          "elapsed_seconds": 1.405638
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_poll_channel-14c1351b0923/research-result.json",
+          "sha256": "2ce5da5401bc31791a54e5728d5ffff9e3a5d001e13bcc568d61a756ccc98e1e",
+          "elapsed_seconds": 5.226271
+        }
+      },
+      "passed": true,
+      "size": 166,
+      "fixture_checks": 48
+    },
+    {
+      "id": "sound_init_channels",
+      "case": "research/campaign-009-sound-init-channels",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_init_channels-6d2e8d07e418/research-result.json",
+          "sha256": "32a37bef74aece5bb73f3c5b7d1a78bfadb6e00215d1992017db50cc2b2028c7",
+          "elapsed_seconds": 1.41539
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_init_channels-561b1279bd6c/research-result.json",
+          "sha256": "c35b4bf89983bdb3e11308177b10ec65c21d02b868823326ac6686ea31aa053f",
+          "elapsed_seconds": 5.218167
+        }
+      },
+      "passed": true,
+      "size": 145,
+      "fixture_checks": 315
+    },
+    {
+      "id": "sound_start_sample",
+      "case": "research/campaign-009-sound-start-sample",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_start_sample-081a55719527/research-result.json",
+          "sha256": "631e28b9f3f3abd8aa2ccfda9bd3f65a0713e7c683823d2ae3ae4628e70b1d4e",
+          "elapsed_seconds": 1.402264
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_start_sample-90e020bb3abf/research-result.json",
+          "sha256": "884096e431d3e5fce960c07f634f502d73b88937b064a3d9b64e7783c684d371",
+          "elapsed_seconds": 5.166813
+        }
+      },
+      "passed": true,
+      "size": 138,
+      "fixture_checks": 26
+    },
+    {
+      "id": "sound_load_ref",
+      "case": "research/campaign-009-sound-load-ref",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_load_ref-f813a36e27a9/research-result.json",
+          "sha256": "f762896a30e737661fc49a107957e8a61fb9e1858ac37d044e6188693822ed45",
+          "elapsed_seconds": 1.398991
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_load_ref-6d760fb36cc2/research-result.json",
+          "sha256": "4595ec086e6be16b9f8cb36f166fce33a83585bfeb7a99e0e0bc17e4b7fdd56e",
+          "elapsed_seconds": 5.344091
+        }
+      },
+      "passed": true,
+      "size": 167,
+      "fixture_checks": 52
+    },
+    {
+      "id": "sound_free_extra_refs",
+      "case": "research/campaign-009-sound-free-extra-refs",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_free_extra_refs-39765eed5d9d/research-result.json",
+          "sha256": "964c05506d485d363ed3f5f7de1fb183447b968a57263b420e408ef3a530b7b3",
+          "elapsed_seconds": 1.389671
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_free_extra_refs-63a073271d76/research-result.json",
+          "sha256": "db775c2293bb5d9a05d95aa5feb7d3b414dcb67e22fd8c5c50374e042c86618c",
+          "elapsed_seconds": 5.21778
+        }
+      },
+      "passed": true,
+      "size": 171,
+      "fixture_checks": 75
+    },
+    {
+      "id": "sound_set_master_volume",
+      "case": "research/campaign-009-sound-set-master-volume",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_set_master_volume-9a5fba29b597/research-result.json",
+          "sha256": "c101e4518fd41b76b3cd456e4b7513330d3d1b3d2846892a0d4eaaca97fb197f",
+          "elapsed_seconds": 1.42661
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_set_master_volume-45c7a622f4ed/research-result.json",
+          "sha256": "d1e7ea8b7acf9f58b124fbbd780b47a7ee61fb0ccc2c3a27a7ba5cc657466b7d",
+          "elapsed_seconds": 5.366203
+        }
+      },
+      "passed": true,
+      "size": 224,
+      "fixture_checks": 56
+    },
+    {
+      "id": "sound_play_voice",
+      "case": "research/campaign-009-sound-play-voice",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_play_voice-4cb0de36b85a/research-result.json",
+          "sha256": "4bd3dda05c6c6c45c66c1200020d17235e032430d7accf76e7288dc4ca2cd42a",
+          "elapsed_seconds": 1.423855
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_play_voice-f62bd03aaf51/research-result.json",
+          "sha256": "cc0bb5cd4d696e1e2a4a675e994cc9bf7da01a6d8e77835ff52c9a550aa084a3",
+          "elapsed_seconds": 5.270625
+        }
+      },
+      "passed": true,
+      "size": 180,
+      "fixture_checks": 59
+    },
+    {
+      "id": "sound_module_init",
+      "case": "research/campaign-010-sound-module-init",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_module_init-63c247add7fe/research-result.json",
+          "sha256": "01a754323463c2d472cd07a9ca9716678411f8531a7ad826d85a7a9969aaff1a",
+          "elapsed_seconds": 1.415581
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_module_init-a6b6db788a21/research-result.json",
+          "sha256": "c03ae0e98c4fad977f694268c720b9f9ed77cfe128f25429c0b78ef603c3bfd5",
+          "elapsed_seconds": 5.126882
+        }
+      },
+      "passed": true,
+      "size": 197,
+      "fixture_checks": 31
+    },
+    {
+      "id": "sound_add_extra_ref",
+      "case": "research/campaign-010-sound-add-extra-ref",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_add_extra_ref-d28e97569f3b/research-result.json",
+          "sha256": "062ddc1677aa5d15d588d3e0f9910f0d211878194b87ef2f324abf5fe248006b",
+          "elapsed_seconds": 1.393845
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_add_extra_ref-5886d15611bd/research-result.json",
+          "sha256": "f3a0e91d232fd8f490114549902a8abce6235cedf7b8f05fa5fac7e4c39609d1",
+          "elapsed_seconds": 5.26732
+        }
+      },
+      "passed": true,
+      "size": 232,
+      "fixture_checks": 214
+    },
+    {
+      "id": "sound_free_channel",
+      "case": "research/campaign-010-sound-free-channel",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-sound_free_channel-53aaa36e49b8/research-result.json",
+          "sha256": "fc0c0da66d393d40f6db15571a51db293f1482f91460127f603102cc61dfbbc0",
+          "elapsed_seconds": 1.395627
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-sound_free_channel-abf1ce154cd9/research-result.json",
+          "sha256": "2bde9c30904445eadcf49cfa5995ee46d5464b9cc1add9af6132604722beceb7",
+          "elapsed_seconds": 5.27008
+        }
+      },
+      "passed": true,
+      "size": 242,
+      "fixture_checks": 37
+    },
+    {
+      "id": "light_disable_world",
+      "case": "research/campaign-011-light-disable-world",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-light_disable_world-5f660313fe0f/research-result.json",
+          "sha256": "e26bdb6749d66646e89303648905b65352b6ca7730bd31e0619f75f1840a3df3",
+          "elapsed_seconds": 1.381499
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-light_disable_world-b24e74c9b2d3/research-result.json",
+          "sha256": "398152ecfbc7045cd24c3917910a8169d464a76370f42591f7cc0cd8df70142c",
+          "elapsed_seconds": 5.205381
+        }
+      },
+      "passed": true,
+      "size": 83,
+      "fixture_checks": 49
+    },
+    {
+      "id": "view_force_flags",
+      "case": "research/campaign-011-view-force-flags",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-view_force_flags-023211ba987a/research-result.json",
+          "sha256": "996b1b19089eaa9abfaf377eaa846e78c17142ded880056cfecebb47b5e64652",
+          "elapsed_seconds": 1.397549
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-view_force_flags-3fdf27ad5df2/research-result.json",
+          "sha256": "955d56f38b57a946d92dc636d0249ae707b0441b8a23421cf14c38627054494c",
+          "elapsed_seconds": 5.243113
+        }
+      },
+      "passed": true,
+      "size": 32,
+      "fixture_checks": 12
+    },
+    {
+      "id": "view_clear_flags",
+      "case": "research/campaign-011-view-clear-flags",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-view_clear_flags-cda6d2b34b5f/research-result.json",
+          "sha256": "04c20236cd58ba16a2ef9dea25425dc97ebe102dc687789fe1e3d20fee4da2c2",
+          "elapsed_seconds": 1.374927
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-view_clear_flags-7c72ef2442c1/research-result.json",
+          "sha256": "ec79819dd63ecaf81491fd07c6c3bca7540fdc9879bc7f626c4ea39e3926028a",
+          "elapsed_seconds": 5.309993
+        }
+      },
+      "passed": true,
+      "size": 32,
+      "fixture_checks": 12
+    },
+    {
+      "id": "bgl_identity",
+      "case": "research/campaign-011-bgl-identity",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_identity-193026b6d119/research-result.json",
+          "sha256": "825eaaf6858aa4c37bae2b863652580867ea2cec30108993a38c016c35f6db90",
+          "elapsed_seconds": 1.377849
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_identity-8ebb6bc2003b/research-result.json",
+          "sha256": "208eff336f1b6e3ee066fadab5ff5118f4836e95621da92b4078d26824beb3bc",
+          "elapsed_seconds": 5.296007
+        }
+      },
+      "passed": true,
+      "size": 27,
+      "fixture_checks": 5
+    },
+    {
+      "id": "bgl_push",
+      "case": "research/campaign-011-bgl-push",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_push-4387da0db197/research-result.json",
+          "sha256": "7a8a03f8512bdf98159bff47102aacce39766c82a438aa0add6482a1f7c931a6",
+          "elapsed_seconds": 1.389875
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_push-9a25dc0c294c/research-result.json",
+          "sha256": "043bf5037fc370d6e69833e78ae78f6041cdffe4063a1e5e82322454f068cb49",
+          "elapsed_seconds": 5.32918
+        }
+      },
+      "passed": true,
+      "size": 85,
+      "fixture_checks": 31
+    },
+    {
+      "id": "bgl_pop",
+      "case": "research/campaign-011-bgl-pop",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_pop-dc89ab0b5079/research-result.json",
+          "sha256": "f92e2676753bfb7dc559b60cd50ee33c6d1b1bd90bae60b3671d6e5884bdd3d8",
+          "elapsed_seconds": 1.378882
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_pop-bf74991754c9/research-result.json",
+          "sha256": "527741a8510d5d6e4c550d23b6f12d1b7ff203f0938b8312c14529f571ffd248",
+          "elapsed_seconds": 5.268052
+        }
+      },
+      "passed": true,
+      "size": 44,
+      "fixture_checks": 15
+    },
+    {
+      "id": "bgl_load_matrix",
+      "case": "research/campaign-011-bgl-load-matrix",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_load_matrix-83f209f400bc/research-result.json",
+          "sha256": "759b2cebbde10252b7e59ce099ad480918e3046a7da100bc7e1a7874f0fada7c",
+          "elapsed_seconds": 1.375089
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_load_matrix-13879040640d/research-result.json",
+          "sha256": "9c06172aa9b4f13230e4b25c6d7ba2aad53d8c5e1076fe4e49878490fe20205a",
+          "elapsed_seconds": 5.479455
+        }
+      },
+      "passed": true,
+      "size": 25,
+      "fixture_checks": 9
+    },
+    {
+      "id": "bgl_get_matrix",
+      "case": "research/campaign-011-bgl-get-matrix",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_get_matrix-f426cb05e125/research-result.json",
+          "sha256": "38ef24bd7914240286b627a03763e98be07c1e227085ed1184bc99e1c21505c6",
+          "elapsed_seconds": 1.425626
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_get_matrix-e08b3052cab3/research-result.json",
+          "sha256": "7f081c4e218b9d6c56e16bce68a724f986213f21f3305c2ef33ce588f973b3f3",
+          "elapsed_seconds": 5.544612
+        }
+      },
+      "passed": true,
+      "size": 25,
+      "fixture_checks": 9
+    },
+    {
+      "id": "bgl_get_translation",
+      "case": "research/campaign-011-bgl-get-translation",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_get_translation-ba54b0a5e6ec/research-result.json",
+          "sha256": "417ad0acf4ee1b93fb63bdc06f3a44b0970984ac0e9daa74a510f4de5066f9ca",
+          "elapsed_seconds": 1.390973
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_get_translation-76df87bec741/research-result.json",
+          "sha256": "2dabb1c9581a5824b0aca10255c11a2156652f48e304af718ce84a0241757438",
+          "elapsed_seconds": 5.326854
+        }
+      },
+      "passed": true,
+      "size": 49,
+      "fixture_checks": 7
+    },
+    {
+      "id": "bgl_get_translation_xyz",
+      "case": "research/campaign-011-bgl-get-translation-xyz",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_get_translation_xyz-34c737704657/research-result.json",
+          "sha256": "06fc784bcc808032d25d2c6ed112bea97fac8697eac993f9b5f995759d7792f2",
+          "elapsed_seconds": 1.402184
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_get_translation_xyz-9df20baa2ac4/research-result.json",
+          "sha256": "beeea7f9c158147f297d79b835f37820a6e172b3eff95adeec2ebf87213d2237",
+          "elapsed_seconds": 5.139903
+        }
+      },
+      "passed": true,
+      "size": 65,
+      "fixture_checks": 37
+    },
+    {
+      "id": "bgl_rotate_axis",
+      "case": "research/campaign-012-bgl-rotate-axis",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_rotate_axis-aa26fea06098/research-result.json",
+          "sha256": "df6ee7f61ec0ec3757abea81850a316dc4e9078be85275662dc3f70c480565f8",
+          "elapsed_seconds": 1.394467
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_rotate_axis-dcf789da604c/research-result.json",
+          "sha256": "88808e5da28451fce6ae7d1f0bcb94cca8b07f5042f87eb878be25a9e1e61a1e",
+          "elapsed_seconds": 5.279123
+        }
+      },
+      "passed": true,
+      "size": 67,
+      "fixture_checks": 73
+    },
+    {
+      "id": "bgl_rotate_xyz",
+      "case": "research/campaign-012-bgl-rotate-xyz",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_rotate_xyz-e62c73fc5c1f/research-result.json",
+          "sha256": "22944bc65a70cbd5c3133b836173acdef510a0c32e512de8b21198b444db0c93",
+          "elapsed_seconds": 1.395698
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_rotate_xyz-1d0fb56d11de/research-result.json",
+          "sha256": "e4365998bffee0523015d7a3c50e4c5fa8d892300f8d92c0f4e543cb6bcdd9c4",
+          "elapsed_seconds": 5.225546
+        }
+      },
+      "passed": true,
+      "size": 44,
+      "fixture_checks": 29
+    },
+    {
+      "id": "bgl_translate_vector",
+      "case": "research/campaign-012-bgl-translate-vector",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_translate_vector-ce6eb761497b/research-result.json",
+          "sha256": "fedd7baf96c6cced267b2d23a207e52aa0e810e71bcebcccde42d21362da1419",
+          "elapsed_seconds": 1.39609
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_translate_vector-0c6acad0867a/research-result.json",
+          "sha256": "aca0ab483f4892930c0edd11b5f701540ea56274892a279ee28bc272bc8a97d9",
+          "elapsed_seconds": 5.854866
+        }
+      },
+      "passed": true,
+      "size": 44,
+      "fixture_checks": 15
+    },
+    {
+      "id": "bgl_translate_xyz",
+      "case": "research/campaign-012-bgl-translate-xyz",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_translate_xyz-6c1ccb0274e2/research-result.json",
+          "sha256": "82ccfee95c7363b5f70f40a07bff02a7c6e68ed4fc8c0b2c1bf9a2915b223b2d",
+          "elapsed_seconds": 1.372458
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_translate_xyz-7f45a9450533/research-result.json",
+          "sha256": "833b1c7539602106e9095ffada37119a7cb3c23c1b4a62a84a3772bd267a738b",
+          "elapsed_seconds": 5.311242
+        }
+      },
+      "passed": true,
+      "size": 40,
+      "fixture_checks": 25
+    },
+    {
+      "id": "bgl_translate_negative",
+      "case": "research/campaign-012-bgl-translate-negative",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_translate_negative-a77e54c17f1c/research-result.json",
+          "sha256": "2e2b05e309cd20e4f11310f14c7c636d95e96ea0f4d6909925f2a330b002e901",
+          "elapsed_seconds": 1.378206
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_translate_negative-417777714024/research-result.json",
+          "sha256": "5c0acf1072439afe0d0dfae6babcd0109598df5b97140b742741f245b7ef3a97",
+          "elapsed_seconds": 5.28184
+        }
+      },
+      "passed": true,
+      "size": 54,
+      "fixture_checks": 11
+    },
+    {
+      "id": "bgl_scale_xyz",
+      "case": "research/campaign-012-bgl-scale-xyz",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_scale_xyz-caf168a9981a/research-result.json",
+          "sha256": "a34a31f93b9f96acc7618edea1db94073501c389c69f4b86e536dccec21c2fed",
+          "elapsed_seconds": 1.401231
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_scale_xyz-9e97099aea9e/research-result.json",
+          "sha256": "6b4d0a911575302c186235788764da34b24c424666bdf96974a32e7ff8a2eba6",
+          "elapsed_seconds": 5.234598
+        }
+      },
+      "passed": true,
+      "size": 66,
+      "fixture_checks": 15
+    },
+    {
+      "id": "bgl_scale_vector",
+      "case": "research/campaign-012-bgl-scale-vector",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_scale_vector-c42370c3efd2/research-result.json",
+          "sha256": "92e7e6098f1444ed7295df6239d1c5ceeea8d731fa11b7c38c499d08ceee4149",
+          "elapsed_seconds": 1.400374
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_scale_vector-af776599252a/research-result.json",
+          "sha256": "bb8c633e205820caaac284a99fd75a7b4be4a82cc5a5111ccd6f942c7fe76d69",
+          "elapsed_seconds": 5.472256
+        }
+      },
+      "passed": true,
+      "size": 33,
+      "fixture_checks": 9
+    },
+    {
+      "id": "bgl_multiply",
+      "case": "research/campaign-012-bgl-multiply",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_multiply-f178f323fb5c/research-result.json",
+          "sha256": "db9df7cf8994ba09799dc072db9b5bb02b593e3346ecb7a5be10882553e0dfda",
+          "elapsed_seconds": 1.374146
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_multiply-736dbda0c0ec/research-result.json",
+          "sha256": "5599ebb26a5dc937a0814f7bf9800dc56b802d1849d4f82cf032af3cde57a5c2",
+          "elapsed_seconds": 5.57278
+        }
+      },
+      "passed": true,
+      "size": 24,
+      "fixture_checks": 9
+    },
+    {
+      "id": "bgl_rotate_point",
+      "case": "research/campaign-012-bgl-rotate-point",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_rotate_point-56c861ff7fad/research-result.json",
+          "sha256": "6cf7e3864fa9739ef8654298e3bde1e2b66f254fb1fb70391244f64a2f1a83d6",
+          "elapsed_seconds": 1.38484
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_rotate_point-666ca2d6088f/research-result.json",
+          "sha256": "f0d7d282b506dea50728387e21ce9e675bb563746074126f4534ae5d73092ecf",
+          "elapsed_seconds": 5.506468
+        }
+      },
+      "passed": true,
+      "size": 52,
+      "fixture_checks": 6
+    },
+    {
+      "id": "bgl_transform_point",
+      "case": "research/campaign-012-bgl-transform-point",
+      "reports": {
+        "native": {
+          "path": "engine/build/campaign-001-bgl_transform_point-9fb8a9841614/research-result.json",
+          "sha256": "481e2060a47c54d1d85bc714ac69212285af9c67b7ce2304ba4eaf07aad095fa",
+          "elapsed_seconds": 1.390811
+        },
+        "docker": {
+          "path": "engine/build/campaign-001-bgl_transform_point-d480bd13d2a8/research-result.json",
+          "sha256": "f0f783a1543f44e45d3622615bc03802ad7e348ec46612f8c30e56aa5355b50b",
+          "elapsed_seconds": 5.2394
+        }
+      },
+      "passed": true,
+      "size": 96,
+      "fixture_checks": 28
+    }
+  ],
+  "exact_functions": 66,
+  "exact_bytes": 5315,
+  "fixture_checks": 2343,
+  "finished_utc": "2026-09-13T10:59:56.921407+00:00",
+  "private_batch_report_sha256": "594acc89ed0cf5cba5de137f5c9831da543af46126fd7da7820c722af6c2d103",
+  "private_batch_report": "engine/build/acceptance-001-2752ee70f28a/batch-result.json",
+  "scope": "Fresh focused acceptance tests; retained research snapshots, separate from the registered integrated build."
+}
