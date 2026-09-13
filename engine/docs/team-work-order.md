@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **103** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **866**.
+Our last recorded matches cover **106** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **863**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -94,7 +94,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | game/fxfade.c | 34 | 28 | 6 |
 | game/fxprint.c | 6 | 2 | 4 |
 | game/fxshield.c | 24 | 14 | 10 |
-| game/fxzappo.c | 14 | 7 | 7 |
+| game/fxzappo.c | 14 | 10 | 4 |
 | game/main.c | 26 | 4 | 22 |
 | game/menu.c | 10 | 0 | 10 |
 | game/player.c | 13 | 0 | 13 |
