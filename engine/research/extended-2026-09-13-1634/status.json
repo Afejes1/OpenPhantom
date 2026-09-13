@@ -138,7 +138,9 @@
       "event": 34,
       "source_commit": "03dd32262781fea1d76a489a43434b1806cc3ac4",
       "result": "research/acceptance-013/result.json",
-      "full_ci": "supplemental-fixes-passed-final-vc5-replay-pending"
+      "full_ci": "success",
+      "replay_event": 35,
+      "replay_source": "0c6278c5bee0944ca7409526b8d5c0f4680f7f94"
     },
     {
       "id": "campaign-031",
@@ -149,7 +151,7 @@
       "result": "research/campaign-031/results.json"
     }
   ],
-  "current_work": "Replay final supplemental-compatible Acceptance013 source, then complete the projected-overlay lifecycle cohort.",
+  "current_work": "Campaign032 projected-overlay lifecycle focused reconstruction and independent review.",
   "original_game_executed": false,
   "weekly_shared_usage_latest_percent": 54,
   "usage_checked_utc": "2026-09-13T18:58:30Z",

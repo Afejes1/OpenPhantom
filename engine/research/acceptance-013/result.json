@@ -15,7 +15,7 @@
   "registered_after": 88,
   "full_span_bytes": 1752,
   "verified_operands": 71,
-  "status": "final-source-replay-pending",
+  "status": "accepted",
   "original_game_executed": false,
   "byte_exclusions": [],
   "warning_waivers": [],
@@ -23,5 +23,10 @@
   "original_vc5_source": "03dd32262781fea1d76a489a43434b1806cc3ac4",
   "supplemental_ci_source": "cfd4350811fad04ea7a2f3cb2c65d82f4e77d59c",
   "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34782873274",
-  "supplemental_ci_conclusion": "success"
+  "supplemental_ci_conclusion": "success",
+  "final_replay_event": "engine/evidence/runs/000035-e3583c6196b1487e.json",
+  "final_source": "0c6278c5bee0944ca7409526b8d5c0f4680f7f94",
+  "final_build": "20260913-171152-8a741ca1",
+  "source_snapshot_inputs": 173,
+  "supplemental_source_identical": true
 }
