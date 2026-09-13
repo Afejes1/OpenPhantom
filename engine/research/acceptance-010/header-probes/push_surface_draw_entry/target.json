@@ -1,0 +1,46 @@
+{
+  "id": "push_surface_draw_entry",
+  "address": 4217328,
+  "size": 96,
+  "body_size": 94,
+  "source": "src/push_surface_draw_entry.cpp",
+  "symbol": "_op_push_surface_draw_entry",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 31,
+      "address": 5889928,
+      "symbol": "_op_special_surface_bucket"
+    },
+    {
+      "offset": 56,
+      "address": 5889724,
+      "symbol": "_op_gathered_surface_count"
+    },
+    {
+      "offset": 63,
+      "address": 9160832,
+      "symbol": "_op_surface_buckets"
+    },
+    {
+      "offset": 75,
+      "address": 9062528,
+      "symbol": "_op_surface_draw_entries"
+    },
+    {
+      "offset": 81,
+      "address": 9062528,
+      "symbol": "_op_surface_draw_entries",
+      "addend": 4
+    },
+    {
+      "offset": 88,
+      "address": 9160832,
+      "symbol": "_op_surface_buckets"
+    }
+  ],
+  "language": "c++"
+}

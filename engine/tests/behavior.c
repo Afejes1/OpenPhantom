@@ -2,6 +2,7 @@
  * the unordered x87 contract is asserted only in the original-toolchain build.
  */
 #include "../src/baseline.h"
+#include "../src/b3d_chunk_readers.h"
 #include <float.h>
 #include <stddef.h>
 #include <stdio.h>

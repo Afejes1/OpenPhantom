@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "push_surface_draw_entry",
+  "candidate": "candidate.cpp",
+  "symbol": "_op_push_surface_draw_entry",
+  "inputs": [
+    "candidate.cpp",
+    "../../../../src/baseline.h",
+    "../../../../src/b3d_chunk_readers.h"
+  ],
+  "fixture": null,
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/O2",
+    "/MT"
+  ]
+}

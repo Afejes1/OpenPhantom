@@ -34,5 +34,19 @@
       "diagnostic": "Conflicting legacy active-world type and fixture alpha narrowing; canonical type unified and expected byte cast explicit.",
       "log_sha256": "8cabaef0e9c9401ecc3bc35a75d22d3e64b4d49d3f144588db828f9718633fc0"
     }
-  ]
+  ],
+  "failed_comparisons": [
+    {
+      "build": "engine/build/20260913-141010-13993542",
+      "functions": [
+        "face_clip_flags",
+        "push_surface_draw_entry",
+        "step_scan"
+      ],
+      "reason": "Broad header inclusion changed VC5 codegen; narrowed to forward alias and localized complete definition.",
+      "fixture_checks": 3647,
+      "fixture_failures": 0
+    }
+  ],
+  "header_probes": "research/acceptance-010/header-probes/result.json"
 }

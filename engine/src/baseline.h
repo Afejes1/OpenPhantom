@@ -5,8 +5,6 @@
 extern "C" {
 #endif
 
-#include "b3d_chunk_readers.h"
-
 /* Partial layouts only. Names describe observed accesses, not original symbols. */
 typedef struct op_viewport {
     unsigned char opaque_00[8];
@@ -109,8 +107,9 @@ extern int op_last_submitted_surface_count;
 int op_draw_surface_buckets(void *world, const void *camera_data, unsigned int count);
 void op_submit_gathered_surfaces(void);
 
-/* Frame setup shares the canonical B3D world and verified fog offsets. */
-extern OP_B3D_WORLD *op_active_world;
+/* Compatibility name for the single canonical world type; complete only where needed. */
+typedef struct OP_B3D_WORLD op_world_fog;
+extern op_world_fog *op_active_world;
 extern unsigned int op_frame_render_flags;
 extern int op_frame_option_89fde4, op_frame_option_89fdec, op_frame_option_59da00;
 extern int op_frame_mode, op_vertex_fog_enabled;

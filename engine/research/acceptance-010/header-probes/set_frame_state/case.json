@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "set_frame_state",
+  "candidate": "candidate.c",
+  "symbol": "_op_set_frame_state",
+  "inputs": [
+    "candidate.c",
+    "../../../../src/baseline.h",
+    "../../../../src/b3d_chunk_readers.h"
+  ],
+  "fixture": null,
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

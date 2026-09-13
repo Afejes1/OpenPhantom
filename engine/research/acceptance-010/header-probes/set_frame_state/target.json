@@ -1,0 +1,232 @@
+{
+  "id": "set_frame_state",
+  "address": 4201776,
+  "size": 392,
+  "source": "src/set_frame_state.c",
+  "symbol": "_op_set_frame_state",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 5101280,
+      "symbol": "_op_face_packet_count"
+    },
+    {
+      "offset": 16,
+      "address": 5101292,
+      "symbol": "_op_projected_vertex_count"
+    },
+    {
+      "offset": 25,
+      "address": 4255552,
+      "symbol": "_op_update_projection",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 30,
+      "address": 4750368,
+      "symbol": "_op_backend_begin_frame",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 36,
+      "address": 5101284,
+      "symbol": "_op_frame_render_flags"
+    },
+    {
+      "offset": 46,
+      "address": 9043428,
+      "symbol": "_op_frame_option_89fde4"
+    },
+    {
+      "offset": 54,
+      "address": 5101284,
+      "symbol": "_op_frame_render_flags"
+    },
+    {
+      "offset": 62,
+      "address": 5101284,
+      "symbol": "_op_frame_render_flags"
+    },
+    {
+      "offset": 67,
+      "address": 4749840,
+      "symbol": "_op_backend_render_flags",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 75,
+      "address": 5101284,
+      "symbol": "_op_frame_render_flags"
+    },
+    {
+      "offset": 81,
+      "address": 8816268,
+      "symbol": "_op_frame_mode"
+    },
+    {
+      "offset": 110,
+      "address": 5101284,
+      "symbol": "_op_frame_render_flags"
+    },
+    {
+      "offset": 119,
+      "address": 5101284,
+      "symbol": "_op_frame_render_flags"
+    },
+    {
+      "offset": 126,
+      "address": 5101284,
+      "symbol": "_op_frame_render_flags"
+    },
+    {
+      "offset": 134,
+      "address": 5101284,
+      "symbol": "_op_frame_render_flags"
+    },
+    {
+      "offset": 142,
+      "address": 5101284,
+      "symbol": "_op_frame_render_flags"
+    },
+    {
+      "offset": 151,
+      "address": 5101284,
+      "symbol": "_op_frame_render_flags"
+    },
+    {
+      "offset": 157,
+      "address": 5101256,
+      "symbol": "_op_frame_extra_render_flags"
+    },
+    {
+      "offset": 167,
+      "address": 9043436,
+      "symbol": "_op_frame_option_89fdec"
+    },
+    {
+      "offset": 176,
+      "address": 5888512,
+      "symbol": "_op_frame_option_59da00"
+    },
+    {
+      "offset": 188,
+      "address": 5888512,
+      "symbol": "_op_frame_option_59da00"
+    },
+    {
+      "offset": 198,
+      "address": 5101264,
+      "symbol": "_op_vertex_fog_enabled"
+    },
+    {
+      "offset": 208,
+      "address": 9044064,
+      "symbol": "_op_active_world"
+    },
+    {
+      "offset": 221,
+      "address": 9044064,
+      "symbol": "_op_active_world"
+    },
+    {
+      "offset": 244,
+      "address": 5101284,
+      "symbol": "_op_frame_render_flags"
+    },
+    {
+      "offset": 253,
+      "address": 5101284,
+      "symbol": "_op_frame_render_flags"
+    },
+    {
+      "offset": 258,
+      "address": 4750128,
+      "symbol": "_op_backend_fog_capability",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 268,
+      "address": 5101264,
+      "symbol": "_op_vertex_fog_enabled"
+    },
+    {
+      "offset": 278,
+      "address": 9044064,
+      "symbol": "_op_active_world"
+    },
+    {
+      "offset": 289,
+      "address": 5101276,
+      "symbol": "_op_fog_start"
+    },
+    {
+      "offset": 295,
+      "address": 9044064,
+      "symbol": "_op_active_world"
+    },
+    {
+      "offset": 307,
+      "address": 5101268,
+      "symbol": "_op_fog_end"
+    },
+    {
+      "offset": 313,
+      "address": 4882456,
+      "float32": 1.0
+    },
+    {
+      "offset": 319,
+      "address": 5101276,
+      "symbol": "_op_fog_start"
+    },
+    {
+      "offset": 325,
+      "address": 5101260,
+      "symbol": "_op_fog_start_reciprocal"
+    },
+    {
+      "offset": 331,
+      "address": 4882456,
+      "float32": 1.0
+    },
+    {
+      "offset": 337,
+      "address": 5101268,
+      "symbol": "_op_fog_end"
+    },
+    {
+      "offset": 343,
+      "address": 5101252,
+      "symbol": "_op_fog_end_reciprocal"
+    },
+    {
+      "offset": 349,
+      "address": 5101268,
+      "symbol": "_op_fog_end"
+    },
+    {
+      "offset": 355,
+      "address": 5101276,
+      "symbol": "_op_fog_start"
+    },
+    {
+      "offset": 361,
+      "address": 5101272,
+      "symbol": "_op_fog_range"
+    },
+    {
+      "offset": 367,
+      "address": 4882460,
+      "float32": 0.0
+    },
+    {
+      "offset": 380,
+      "address": 5101264,
+      "symbol": "_op_vertex_fog_enabled"
+    }
+  ]
+}

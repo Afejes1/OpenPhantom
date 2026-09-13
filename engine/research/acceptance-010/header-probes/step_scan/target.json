@@ -1,0 +1,82 @@
+{
+  "id": "step_scan",
+  "address": 4210416,
+  "size": 176,
+  "source": "src/step_scan.c",
+  "symbol": "_op_step_scan",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 17,
+      "address": 9169388,
+      "symbol": "_op_scan_step_x"
+    },
+    {
+      "offset": 25,
+      "address": 9169388,
+      "symbol": "_op_scan_step_x",
+      "addend": 4
+    },
+    {
+      "offset": 37,
+      "address": 9169388,
+      "symbol": "_op_scan_step_x",
+      "addend": 8
+    },
+    {
+      "offset": 55,
+      "address": 9169388,
+      "symbol": "_op_scan_step_x"
+    },
+    {
+      "offset": 71,
+      "address": 9169388,
+      "symbol": "_op_scan_step_x",
+      "addend": 4
+    },
+    {
+      "offset": 80,
+      "address": 9169388,
+      "symbol": "_op_scan_step_x",
+      "addend": 8
+    },
+    {
+      "offset": 100,
+      "address": 9169400,
+      "symbol": "_op_scan_step_y"
+    },
+    {
+      "offset": 108,
+      "address": 9169400,
+      "symbol": "_op_scan_step_y",
+      "addend": 4
+    },
+    {
+      "offset": 120,
+      "address": 9169400,
+      "symbol": "_op_scan_step_y",
+      "addend": 8
+    },
+    {
+      "offset": 140,
+      "address": 9169400,
+      "symbol": "_op_scan_step_y"
+    },
+    {
+      "offset": 156,
+      "address": 9169400,
+      "symbol": "_op_scan_step_y",
+      "addend": 4
+    },
+    {
+      "offset": 165,
+      "address": 9169400,
+      "symbol": "_op_scan_step_y",
+      "addend": 8
+    }
+  ],
+  "body_size": 173
+}

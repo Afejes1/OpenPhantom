@@ -1,0 +1,13 @@
+{
+  "id": "face_clip_flags",
+  "address": 4256112,
+  "size": 64,
+  "body_size": 58,
+  "source": "src/face_clip_flags.c",
+  "symbol": "_op_face_clip_flags",
+  "flags": [
+    "/O2",
+    "/MT"
+  ],
+  "bindings": []
+}
