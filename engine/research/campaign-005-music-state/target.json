@@ -1,0 +1,27 @@
+{
+  "id": "music_get_state",
+  "address": 4261813,
+  "size": 26,
+  "body_size": 26,
+  "source": "src/music_get_state.c",
+  "symbol": "_op_music_get_state",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 6007692,
+      "kind": "dir32",
+      "symbol": "_op_music_initialized"
+    },
+    {
+      "offset": 20,
+      "address": 4891676,
+      "kind": "dir32",
+      "symbol": "_op_music_state"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "music_get_state",
+  "candidate": "candidate.c",
+  "symbol": "_op_music_get_state",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

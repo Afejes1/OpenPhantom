@@ -1,0 +1,36 @@
+{
+  "worker": "comparison_inventory",
+  "status": "frozen-exact-worker-native",
+  "schema": 1,
+  "experiments": [
+    {
+      "source_sha256": "67b31f6c343184b7ba13fb027b9a04abd7f2b6c2e43945a3a55a7514e9dc79df",
+      "hypothesis": "Natural ordered calls with global expressions at each call site preserve the required reload timing.",
+      "result": "Complete 60-byte relocation-adjusted match; all seven bindings verified; zero differing bytes.",
+      "report": "engine/build/campaign-001-music_enable-4d4d76c2075d/research-result.json",
+      "number": 1
+    }
+  ],
+  "finished_at": "2026-09-13T03:47:46.8987829Z",
+  "validation": {
+    "binding_count": 7,
+    "target_size": 60,
+    "different_bytes": 0,
+    "original_executed": false,
+    "fixture_status": "authored; coordinator final Docker pending",
+    "candidate_size": 60
+  },
+  "campaign": "005",
+  "compiler_invocations": 1,
+  "started_at": "2026-09-13T03:46:48.3451695Z",
+  "assignment": "Reconstruct music_enable at 0x00410556",
+  "parent_verification": {
+    "status": "complete",
+    "result": "result.json",
+    "fixture_checks": 30,
+    "fixture_failures": 0,
+    "native_report": "engine/build/campaign-001-music_enable-87a96f7801dc/research-result.json",
+    "docker_report": "engine/build/campaign-001-music_enable-2bdd8c56baca/research-result.json",
+    "source_candidate_unchanged": true
+  }
+}

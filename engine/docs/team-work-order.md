@@ -14,9 +14,10 @@ Address plus the pinned retail binary identifies a function. Reported names (inc
 
 ## Work order
 
-1. **bp/bapdraw.c**: current local focus.
-2. **bp/bapmodel.c**: queued after the active module.
-3. **bp/bapmap.c**: queued after the active module.
+1. **bp/bapmusic.c**: current local focus.
+2. **bp/bapdraw.c**: queued after the active module.
+3. **bp/bapmodel.c**: queued after the active module.
+4. **bp/bapmap.c**: queued after the active module.
 
 Other reported-not-done modules follow; reported-done functions are deferred pending the team's code. Existing overlapping calibrations remain regression checks.
 
@@ -26,34 +27,33 @@ The manifest asks for file-level coordination. Relay the active file above to th
 
 | Original address | Team name | Team status | Local evidence |
 |---|---|---|---|
-| 0x00401D30 | bapdraw_setFrameState | not_done | Recorded match: [set_frame_state](../src/set_frame_state.c) |
-| 0x00401EB8 | bapdraw_queuePoly | not_done | Recorded match: [queue_face_packet](../src/queue_face_packet.c) |
-| 0x00402021 | bapdraw_reservePoly | not_done | Recorded match: [peek_face_packet](../src/peek_face_packet.c) |
-| 0x00402046 | bapdraw_commitVerts | not_done | Research candidate (not registered): [research](../research/projected-vertex-fog/README.md) |
-| 0x00402130 | bapdraw_reserveVerts | not_done | Recorded match: [peek_projected_vertices](../src/peek_projected_vertices.c) |
-| 0x00402155 | bapdraw_flushQueue | not_done | Research candidate (not registered): [research](../research/queue-flush/README.md) |
-| 0x004025B0 | bapdraw_clipSlopePlane &#124; bapdraw_clipPoly &#124; bapdraw_clipDepthPlane &#124; bapdraw_clipSwap | not_done | Queued; no local match recorded |
-| 0x00403EF0 | bapdrawOld_stepScan | not_done | Recorded match: [step_scan](../src/step_scan.c) |
-| 0x00403FA0 | bapdrawOld_cullAgainstPlane | not_done | Research candidate (not registered): [research](../research/surface-emission/README.md) |
-| 0x00404180 | bapdrawOld_frameSetup | not_done | Research candidate (not registered): [research](../research/campaign-001-frame-setup/README.md) |
-| 0x00404730 | bapdraw_drawWorld | not_done | Queued; no local match recorded |
-| 0x004056C0 | bapdrawOld_gatherCell | not_done | Research candidate (not registered): [research](../research/surface-emission/README.md) |
-| 0x004059F0 | bapdrawOld_pushDrawEntry | not_done | Recorded match: [push_surface_draw_entry](../src/push_surface_draw_entry.cpp) |
-| 0x00405A50 | bapdrawOld_emitFace | not_done | Research candidate (not registered): [research](../research/surface-emission/README.md) |
-| 0x00405CF0 | bapdraw_gatherCellMovers | not_done | Research candidate (not registered): [research](../research/campaign-001-mover-gather/README.md) |
-| 0x00406300 | bapdraw_emitFace | not_done | Research candidate (not registered): [research](../research/surface-emission/README.md) |
-| 0x004064B0 | bapdraw_gatherCell | not_done | Research candidate (not registered): [research](../research/surface-emission/README.md) |
-| 0x00406830 | bapdraw_submitGathered | not_done | Recorded match: [submit_gathered_surfaces](../src/submit_gathered_surfaces.c) |
+| 0x00410130 | bapMusicModuleCommand | not_done | Queued; no local match recorded |
+| 0x00410331 | bapMusicAttach | not_done | Queued; no local match recorded |
+| 0x0041046C | bapMusicDetach | not_done | Queued; no local match recorded |
+| 0x004104EC | bapMusicPeriodic | not_done | Research candidate (not registered): [research](../research/campaign-005-music-periodic/README.md) |
+| 0x00410527 | bapMusicDisable | not_done | Research candidate (not registered): [research](../research/campaign-005-music-disable/README.md) |
+| 0x00410556 | bapMusicDisable &#124; bapMusicEnable | not_done | Research candidate (not registered): [research](../research/campaign-005-music-enable/README.md) |
+| 0x00410592 | bapMusicIsDetached | not_done | Research candidate (not registered): [research](../research/campaign-005-music-detached/README.md) |
+| 0x004105A3 | bapMusicSetState | not_done | Queued; no local match recorded |
+| 0x0041060E | bapMusicSetSequence | not_done | Queued; no local match recorded |
+| 0x004106CC | bapMusicSetVolume | not_done | Queued; no local match recorded |
+| 0x0041073F | bapMusicGetVolume | not_done | Research candidate (not registered): [research](../research/campaign-005-music-volume/README.md) |
+| 0x0041074A | bapMusicSave | not_done | Research candidate (not registered): [research](../research/campaign-005-music-save/README.md) |
+| 0x00410787 | bapMusicRestore | not_done | Research candidate (not registered): [research](../research/campaign-005-music-restore/README.md) |
+| 0x004107B5 | bapMusicGetState | not_done | Research candidate (not registered): [research](../research/campaign-005-music-state/README.md) |
+| 0x004107CF | bapMusicGetState | not_done | Research candidate (not registered): [research](../research/campaign-005-music-sequence/README.md) |
+| 0x004107E9 | bapMusicPause | not_done | Research candidate (not registered): [research](../research/campaign-005-music-pause/README.md) |
+| 0x00410825 | bapMusicResume | not_done | Queued; no local match recorded |
 
 ## Remaining work by reported file
 
 | Reported file | Team not done | Local recorded matches within that list | Remaining |
 |---|---|---|---|
+| bp/bapmusic.c | 17 | 0 | 17 |
 | bp/bapdraw.c | 18 | 7 | 11 |
 | bp/bapmodel.c | 8 | 4 | 4 |
 | bp/bapmap.c | 14 | 1 | 13 |
 | bp/baplight.c | 6 | 0 | 6 |
-| bp/bapmusic.c | 17 | 0 | 17 |
 | bp/bapobj.c | 4 | 0 | 4 |
 | bp/bapsound.c | 44 | 0 | 44 |
 | bp/bapview.c | 6 | 0 | 6 |

@@ -1,0 +1,36 @@
+{
+  "experiments": [
+    {
+      "number": 1,
+      "result": "Complete 47-byte relocation-adjusted match; all seven bindings verified; zero differing bytes.",
+      "hypothesis": "Natural call-copy-copy-call statement order reproduces the callback wrapper and reload timing.",
+      "report": "engine/build/campaign-001-music_disable-cb2b6be00740/research-result.json",
+      "source_sha256": "62031a6fc811ca0e340ac7d42d0cb710c178916eba93af4a8b34dde4826ea91a"
+    }
+  ],
+  "schema": 1,
+  "worker": "comparison_inventory",
+  "validation": {
+    "fixture_status": "authored; coordinator final Docker pending",
+    "binding_count": 7,
+    "original_executed": false,
+    "different_bytes": 0,
+    "candidate_size": 47,
+    "target_size": 47
+  },
+  "compiler_invocations": 1,
+  "status": "frozen-exact-worker-native",
+  "assignment": "Reconstruct music_disable at 0x00410527",
+  "started_at": "2026-09-13T03:45:33.5292274Z",
+  "campaign": "005",
+  "finished_at": "2026-09-13T03:46:26.1566343Z",
+  "parent_verification": {
+    "status": "complete",
+    "result": "result.json",
+    "fixture_checks": 18,
+    "fixture_failures": 0,
+    "native_report": "engine/build/campaign-001-music_disable-d04e98f0f64c/research-result.json",
+    "docker_report": "engine/build/campaign-001-music_disable-e84dd2b37f23/research-result.json",
+    "source_candidate_unchanged": true
+  }
+}

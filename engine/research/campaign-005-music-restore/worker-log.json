@@ -1,0 +1,36 @@
+{
+  "experiments": [
+    {
+      "result": "Complete 46-byte relocation-adjusted match; both bindings verified; zero differing bytes.",
+      "hypothesis": "Two explicit guards reproduce version rejection and inverse read-result normalization.",
+      "number": 1,
+      "source_sha256": "98c2459ed9ae205e6a2644129f8eb5556c3318f514676db21ce05609cefecd69",
+      "report": "engine/build/campaign-001-music_restore_cached_ids-e1015760b5e0/research-result.json"
+    }
+  ],
+  "validation": {
+    "fixture_status": "authored; coordinator final Docker pending",
+    "original_executed": false,
+    "binding_count": 2,
+    "different_bytes": 0,
+    "candidate_size": 46,
+    "target_size": 46
+  },
+  "compiler_invocations": 1,
+  "started_at": "2026-09-13T03:50:06.5926333Z",
+  "assignment": "Reconstruct music_restore_cached_ids at 0x00410787",
+  "worker": "comparison_inventory",
+  "finished_at": "2026-09-13T03:51:17.2196895Z",
+  "campaign": "005",
+  "status": "frozen-exact-worker-native",
+  "schema": 1,
+  "parent_verification": {
+    "status": "complete",
+    "result": "result.json",
+    "fixture_checks": 33,
+    "fixture_failures": 0,
+    "native_report": "engine/build/campaign-001-music_restore_cached_ids-7f1cc7c7090f/research-result.json",
+    "docker_report": "engine/build/campaign-001-music_restore_cached_ids-57d474db8935/research-result.json",
+    "source_candidate_unchanged": true
+  }
+}

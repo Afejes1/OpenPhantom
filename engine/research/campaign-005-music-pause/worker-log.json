@@ -1,0 +1,36 @@
+{
+  "experiments": [
+    {
+      "source_sha256": "0ab3a092f07deac3233cce385c3af5413df8e9bb67cce58f8c3dc2952d7844b1",
+      "result": "Complete 60-byte relocation-adjusted match; all eight bindings verified; zero differing bytes.",
+      "number": 1,
+      "hypothesis": "Natural unconditional callback and live global depth sequence reproduces pause.",
+      "report": "engine/build/campaign-001-music_pause-915898b1b202/research-result.json"
+    }
+  ],
+  "finished_at": "2026-09-13T03:54:10.7098536Z",
+  "schema": 1,
+  "assignment": "Reconstruct music_pause at 0x004107E9",
+  "started_at": "2026-09-13T03:52:50.0020458Z",
+  "worker": "comparison_inventory",
+  "status": "frozen-exact-worker-native",
+  "campaign": "005",
+  "validation": {
+    "fixture_status": "authored; coordinator final Docker pending",
+    "candidate_size": 60,
+    "binding_count": 8,
+    "different_bytes": 0,
+    "target_size": 60,
+    "original_executed": false
+  },
+  "compiler_invocations": 1,
+  "parent_verification": {
+    "status": "complete",
+    "result": "result.json",
+    "fixture_checks": 36,
+    "fixture_failures": 0,
+    "native_report": "engine/build/campaign-001-music_pause-76568ad55b1a/research-result.json",
+    "docker_report": "engine/build/campaign-001-music_pause-8b0ed05ab518/research-result.json",
+    "source_candidate_unchanged": true
+  }
+}

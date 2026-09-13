@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct music_get_sequence at 0x004107CF",
+  "status": "frozen-exact-worker-native",
+  "finished_at": "2026-09-13T03:45:04.9295902Z",
+  "validation": {
+    "target_size": 26,
+    "candidate_size": 26,
+    "binding_offsets": [
+      5,
+      20
+    ],
+    "different_bytes": 0,
+    "fixture_status": "authored; coordinator final Docker pending",
+    "original_executed": false
+  },
+  "experiments": [
+    {
+      "source_sha256": "7ebade67b033f314b08d9ea7f9511865a2f3bb07ece5e803ca0432afcab0ac7b",
+      "result": "Complete 26-byte relocation-adjusted match; both DIR32 operands verified; zero differing bytes.",
+      "report": "engine/build/campaign-001-music_get_sequence-08e0b6e57882/research-result.json",
+      "number": 1,
+      "hypothesis": "A zero guard followed by direct sequence return reproduces the sentinel getter."
+    }
+  ],
+  "compiler_invocations": 1,
+  "started_at": "2026-09-13T03:44:18.7258675Z",
+  "campaign": "005",
+  "parent_verification": {
+    "status": "complete",
+    "result": "result.json",
+    "fixture_checks": 8,
+    "fixture_failures": 0,
+    "native_report": "engine/build/campaign-001-music_get_sequence-635ea80a931f/research-result.json",
+    "docker_report": "engine/build/campaign-001-music_get_sequence-ee9a05e5fbcd/research-result.json",
+    "source_candidate_unchanged": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "music_is_detached",
+  "address": 4261266,
+  "size": 17,
+  "body_size": 17,
+  "source": "src/music_is_detached.c",
+  "symbol": "_op_music_is_detached",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 7,
+      "address": 6007692,
+      "kind": "dir32",
+      "symbol": "_op_music_initialized"
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "schema": 1,
+  "campaign": "005",
+  "started_utc": "2026-09-13T03:37:17Z",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_implementation_workers": 1,
+  "implementation_finished_utc": "2026-09-13T03:54:10.7098536Z",
+  "final_verification_completed_utc": "2026-09-13T03:55:51Z",
+  "publication_deadline_utc": "2026-09-13T04:22:17Z",
+  "exact_functions": 10,
+  "raw_unadjusted_matches": 0,
+  "relocation_adjusted_matches": 10,
+  "exact_full_span_bytes": 413,
+  "verified_address_operands": 44,
+  "near_matches": 0,
+  "body_exact_layout_pending": 0,
+  "research_candidates": 0,
+  "fixture_checks": 205,
+  "fixture_failures": 0,
+  "worker_candidate_compiler_invocations": 11,
+  "parent_final_candidate_compiles": 20,
+  "parent_authored_fixture_compiles": 10,
+  "first_worker_compile_matches": 9,
+  "accepted_history_promotions": 0,
+  "historical_accepted_functions": 14,
+  "historical_evidence_records": 19,
+  "weekly_shared_account_usage_start_percent": 26,
+  "weekly_shared_account_usage_observed_percent": 27,
+  "usage_limitations": "Rounded account-wide meter, not exact campaign attribution or a controlled model benchmark.",
+  "shared_tooling_changed": false,
+  "full_regression_run": false,
+  "original_game_executed": false,
+  "cases": [
+    {
+      "id": "music_get_volume",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-005-music-volume",
+      "result_sha256": "99890f57af0eaeee662450cb0a572ba3578c2627ddc4e9fb87f97cd3d7f7f772",
+      "worker_log_sha256": "1728f6542862108d8d6dcc9d7d1ee3f4898682af452f911c43cb492653bb0869",
+      "target_size": 11,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "fixture_checks": 18,
+      "worker_started_utc": "2026-09-13T03:40:04.5763372Z",
+      "worker_finished_utc": "2026-09-13T03:41:08.5985102Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.339824,
+      "docker_elapsed_seconds": 5.51902,
+      "attempts": [
+        {
+          "number": 1,
+          "hypothesis": "A direct return of the float global reproduces the x87 load and return.",
+          "source_sha256": "c531cbfced0df100f12fc39064bb09797144eacf3972897be0d53a7566871e91",
+          "report": "engine/build/campaign-001-music_get_volume-41207a6a11a7/research-result.json",
+          "result": "Complete 11-byte relocation-adjusted match; one DIR32 operand verified; zero differing bytes.",
+          "report_sha256": "a6d6195956ceb567210c27f8cf5298fd89bbb231f19fbf154044754653e49653",
+          "elapsed_seconds": 1.459456,
+          "command_seconds": 0.067447
+        }
+      ]
+    },
+    {
+      "id": "music_is_detached",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-005-music-detached",
+      "result_sha256": "866a2ab78e151e7c723cf2ad9a8d3d658e4dacaa641545046af6e9a402276588",
+      "worker_log_sha256": "dbde1616037db247144bd6815fcaa413d9d90b774bcc2ccf05a615c77a029984",
+      "target_size": 17,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "fixture_checks": 12,
+      "worker_started_utc": "2026-09-13T03:42:04.4252568Z",
+      "worker_finished_utc": "2026-09-13T03:42:49.1586263Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.397338,
+      "docker_elapsed_seconds": 5.548568,
+      "attempts": [
+        {
+          "number": 1,
+          "source_sha256": "0567cdd2d8cfc7643c97109afa98b39b21dff2d4528105af10db4a0dfe72fc60",
+          "result": "Complete 17-byte relocation-adjusted match; one DIR32 operand verified; zero differing bytes.",
+          "report": "engine/build/campaign-001-music_is_detached-3788cddbbf71/research-result.json",
+          "hypothesis": "A direct equality-to-zero expression produces the normalized detached flag.",
+          "report_sha256": "9a3d016cd530b9d750225d45146b79592ebbb6811fdf97c0c6c1174cf8570cfa",
+          "elapsed_seconds": 1.37771,
+          "command_seconds": 0.068502
+        }
+      ]
+    },
+    {
+      "id": "music_get_state",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-005-music-state",
+      "result_sha256": "be3fbe83515f2c8a75a561a87ea03399596b7a56d8cf5521a1cd423ba88d322a",
+      "worker_log_sha256": "f8028115941af06451c2318b73feedc32a5f8fcfb2da91d7153ae6b0cd7100a7",
+      "target_size": 26,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "fixture_checks": 8,
+      "worker_started_utc": "2026-09-13T03:43:00.2211209Z",
+      "worker_finished_utc": "2026-09-13T03:44:07.2815581Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.382082,
+      "docker_elapsed_seconds": 5.309067,
+      "attempts": [
+        {
+          "source_sha256": "6d6b74647f5594033b84bec10c49eb148caea6653b46d5d92e6ca7e8946fbdf9",
+          "number": 1,
+          "result": "Complete 26-byte relocation-adjusted match; both DIR32 operands verified; zero differing bytes.",
+          "hypothesis": "A zero guard followed by direct state return reproduces the sentinel getter.",
+          "report": "engine/build/campaign-001-music_get_state-85550ef03bc8/research-result.json",
+          "report_sha256": "b2c7a1e99039f56344487ded360359b03fb85e952530efac227db5f80541a06a",
+          "elapsed_seconds": 1.408416,
+          "command_seconds": 0.069414
+        }
+      ]
+    },
+    {
+      "id": "music_get_sequence",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-005-music-sequence",
+      "result_sha256": "20fd2b994423be108a813490154fb87d2fc3dd7f05c475c50c41c9810dccf9f4",
+      "worker_log_sha256": "27f6c2158e5f9b74f8cd9252b12c55391f55f33aeab7aaafb400c9e487d370d9",
+      "target_size": 26,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "fixture_checks": 8,
+      "worker_started_utc": "2026-09-13T03:44:18.7258675Z",
+      "worker_finished_utc": "2026-09-13T03:45:04.9295902Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.405156,
+      "docker_elapsed_seconds": 5.522056,
+      "attempts": [
+        {
+          "source_sha256": "7ebade67b033f314b08d9ea7f9511865a2f3bb07ece5e803ca0432afcab0ac7b",
+          "result": "Complete 26-byte relocation-adjusted match; both DIR32 operands verified; zero differing bytes.",
+          "report": "engine/build/campaign-001-music_get_sequence-08e0b6e57882/research-result.json",
+          "number": 1,
+          "hypothesis": "A zero guard followed by direct sequence return reproduces the sentinel getter.",
+          "report_sha256": "5227bab59eabf37ae4d0a5e02cfd7349f3be25810206ea62e37a3167148195a5",
+          "elapsed_seconds": 1.47859,
+          "command_seconds": 0.067547
+        }
+      ]
+    },
+    {
+      "id": "music_disable",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-005-music-disable",
+      "result_sha256": "83921d3194dc12f9530a8f73f0f90df9da9d51e783eceb1946105d1b59aec079",
+      "worker_log_sha256": "5ff57c481474feed6a86c125a0550a606fc0d2ea5878ff3e62ce477859896485",
+      "target_size": 47,
+      "verified_operands": 7,
+      "different_bytes": 0,
+      "fixture_checks": 18,
+      "worker_started_utc": "2026-09-13T03:45:33.5292274Z",
+      "worker_finished_utc": "2026-09-13T03:46:26.1566343Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.397861,
+      "docker_elapsed_seconds": 5.616,
+      "attempts": [
+        {
+          "number": 1,
+          "result": "Complete 47-byte relocation-adjusted match; all seven bindings verified; zero differing bytes.",
+          "hypothesis": "Natural call-copy-copy-call statement order reproduces the callback wrapper and reload timing.",
+          "report": "engine/build/campaign-001-music_disable-cb2b6be00740/research-result.json",
+          "source_sha256": "62031a6fc811ca0e340ac7d42d0cb710c178916eba93af4a8b34dde4826ea91a",
+          "report_sha256": "814b07c093177b8e5f5f70570fdf27b5fd76749697f8d31b9e0cb3181e4fefa1",
+          "elapsed_seconds": 1.420116,
+          "command_seconds": 0.070662
+        }
+      ]
+    },
+    {
+      "id": "music_enable",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-005-music-enable",
+      "result_sha256": "083d0ef42177c4b403768de89d71429dc534ee03eebb7086d8a7c14f94a55f87",
+      "worker_log_sha256": "6c43850aeaec2657514ffed67e20199c3d30b8f4dbb6c8a8425330b877194838",
+      "target_size": 60,
+      "verified_operands": 7,
+      "different_bytes": 0,
+      "fixture_checks": 30,
+      "worker_started_utc": "2026-09-13T03:46:48.3451695Z",
+      "worker_finished_utc": "2026-09-13T03:47:46.8987829Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.40985,
+      "docker_elapsed_seconds": 5.440135,
+      "attempts": [
+        {
+          "source_sha256": "67b31f6c343184b7ba13fb027b9a04abd7f2b6c2e43945a3a55a7514e9dc79df",
+          "hypothesis": "Natural ordered calls with global expressions at each call site preserve the required reload timing.",
+          "result": "Complete 60-byte relocation-adjusted match; all seven bindings verified; zero differing bytes.",
+          "report": "engine/build/campaign-001-music_enable-4d4d76c2075d/research-result.json",
+          "number": 1,
+          "report_sha256": "f8b5e21b32799bee4de7aca36a4a15d0c27ad5126ab11da1fd35ca49fdf41358",
+          "elapsed_seconds": 1.419355,
+          "command_seconds": 0.0703
+        }
+      ]
+    },
+    {
+      "id": "music_save_cached_ids",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-005-music-save",
+      "result_sha256": "5d42b8c1ca7673202a0d1df8f8af7e87e80d3772204941ed971ba98ff90dfa08",
+      "worker_log_sha256": "96e87829fbc4c25757de7e61ecdc1ea97e1a12b898c25e47467d85409f261574",
+      "target_size": 61,
+      "verified_operands": 6,
+      "different_bytes": 0,
+      "fixture_checks": 21,
+      "worker_started_utc": "2026-09-13T03:47:59.0834588Z",
+      "worker_finished_utc": "2026-09-13T03:49:41.7993380Z",
+      "worker_candidate_compiler_invocations": 2,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.381176,
+      "docker_elapsed_seconds": 5.659683,
+      "attempts": [
+        {
+          "report": "engine/build/campaign-001-music_save_cached_ids-d7dd23f1a6fb/research-result.json",
+          "result": "54-byte candidate versus 61-byte target; complete extent mismatch.",
+          "number": 1,
+          "source_sha256": "d67997826979514a5afaa42c062e4548eb04d0341c75b3e36338e7b91167307c",
+          "hypothesis": "Direct not-equal normalization may reproduce the callback wrapper.",
+          "report_sha256": "5ca2b979f60782fbc64c44d4c2b01165cadc3f728770ab27da3c0ea41ec17a95",
+          "elapsed_seconds": 1.399439,
+          "command_seconds": 0.071663
+        },
+        {
+          "report": "engine/build/campaign-001-music_save_cached_ids-569cb51bfa2c/research-result.json",
+          "result": "Complete 61-byte relocation-adjusted match; all six bindings including cache addend 4 verified; zero differing bytes.",
+          "number": 2,
+          "source_sha256": "0d8b4dbb9a136a37558cb20529e9d195e007d02d411400503b68b6750c88a320",
+          "hypothesis": "Explicit conditional returns reproduce the observed branch-based normalization.",
+          "report_sha256": "0789a41335fc80034339a9b1f17802e76d2b2dea863c8f7ce6a0ac837ca89c20",
+          "elapsed_seconds": 1.385946,
+          "command_seconds": 0.066768
+        }
+      ]
+    },
+    {
+      "id": "music_restore_cached_ids",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-005-music-restore",
+      "result_sha256": "e7b78dd17fbcb88f56f52f8c100fee561ca63188cad1c063c4a3cfe657ea0084",
+      "worker_log_sha256": "cea1478c98f454ce64af077062e469d7db9f54b92d9290c01599c2316a7a5d74",
+      "target_size": 46,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "fixture_checks": 33,
+      "worker_started_utc": "2026-09-13T03:50:06.5926333Z",
+      "worker_finished_utc": "2026-09-13T03:51:17.2196895Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.408643,
+      "docker_elapsed_seconds": 5.773846,
+      "attempts": [
+        {
+          "result": "Complete 46-byte relocation-adjusted match; both bindings verified; zero differing bytes.",
+          "hypothesis": "Two explicit guards reproduce version rejection and inverse read-result normalization.",
+          "number": 1,
+          "source_sha256": "98c2459ed9ae205e6a2644129f8eb5556c3318f514676db21ce05609cefecd69",
+          "report": "engine/build/campaign-001-music_restore_cached_ids-e1015760b5e0/research-result.json",
+          "report_sha256": "a154a931ebdc6f1ca61f3c5ef6997aafd8afcaf9c0c0e02c9a0864b04e03cf16",
+          "elapsed_seconds": 1.455819,
+          "command_seconds": 0.071694
+        }
+      ]
+    },
+    {
+      "id": "music_periodic",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-005-music-periodic",
+      "result_sha256": "575d602f0f728f579cd8412dfb0ab0ed71d07dfb7939e51f4c2ab7696923ae1b",
+      "worker_log_sha256": "ffd0c3381e451f595edd9200c4bb6eff0cc83e48ba948abdc7b137e57f45f67a",
+      "target_size": 59,
+      "verified_operands": 8,
+      "different_bytes": 0,
+      "fixture_checks": 21,
+      "worker_started_utc": "2026-09-13T03:51:41.4726556Z",
+      "worker_finished_utc": "2026-09-13T03:52:38.1730579Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.404169,
+      "docker_elapsed_seconds": 6.239566,
+      "attempts": [
+        {
+          "source_sha256": "8eda15fc49360903e914056be5a566cf833af9ebdea41634ddb1d4a032f8e88b",
+          "number": 1,
+          "report": "engine/build/campaign-001-music_periodic-481f1c381cfd/research-result.json",
+          "result": "Complete 59-byte relocation-adjusted match; all eight bindings verified; zero differing bytes.",
+          "hypothesis": "Natural exact-one gate and live global increment/decrement sequence reproduce the wrapper.",
+          "report_sha256": "48cc56c26bc5e38c81a98baec4f5ca0c20bd5a8025df9188b80e7f3a73043f33",
+          "elapsed_seconds": 1.438631,
+          "command_seconds": 0.072262
+        }
+      ]
+    },
+    {
+      "id": "music_pause",
+      "status": "focused-relocation-adjusted-match",
+      "case": "research/campaign-005-music-pause",
+      "result_sha256": "b6a259d64de8fb170fab34a345149e120f3dc53c1cad429c6f140c63faf381a9",
+      "worker_log_sha256": "4c19c3fece8f1d0ce8e005ca4449a66bcab7921cc1e84a4660693a58cde64d24",
+      "target_size": 60,
+      "verified_operands": 8,
+      "different_bytes": 0,
+      "fixture_checks": 36,
+      "worker_started_utc": "2026-09-13T03:52:50.0020458Z",
+      "worker_finished_utc": "2026-09-13T03:54:10.7098536Z",
+      "worker_candidate_compiler_invocations": 1,
+      "parent_final_candidate_compiles": 2,
+      "native_elapsed_seconds": 1.371417,
+      "docker_elapsed_seconds": 5.562911,
+      "attempts": [
+        {
+          "source_sha256": "0ab3a092f07deac3233cce385c3af5413df8e9bb67cce58f8c3dc2952d7844b1",
+          "result": "Complete 60-byte relocation-adjusted match; all eight bindings verified; zero differing bytes.",
+          "number": 1,
+          "hypothesis": "Natural unconditional callback and live global depth sequence reproduces pause.",
+          "report": "engine/build/campaign-001-music_pause-915898b1b202/research-result.json",
+          "report_sha256": "9fa579614136eda8cf118b1a83dedf23d88402c6f8b3ff3d3a082117d83bd5f9",
+          "elapsed_seconds": 1.42674,
+          "command_seconds": 0.074302
+        }
+      ]
+    }
+  ]
+}

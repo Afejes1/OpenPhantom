@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "campaign": "005",
+  "reviews": {
+    "music_get_volume": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 11,
+      "source_review": "Direct float return reviewed against complete body and menu/setter evidence. Candidate unchanged; parent fixture uses memcpy input setup, adds subnormal/largest finite/quiet NaN and checks unchanged global after every call.",
+      "fixture_checks": 18,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "music_is_detached": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 17,
+      "source_review": "Normalized zero test and complete 17-byte extent independently reviewed. Parent checks zero, one, negative, other nonzero and both int boundaries with unchanged-state assertions.",
+      "fixture_checks": 12,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "music_get_state": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 26,
+      "source_review": "Both branches, 1000 sentinel, exact requested-state global identity, complete span and unchanged globals independently reviewed. Worker candidate and fixture retained.",
+      "fixture_checks": 8,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "music_get_sequence": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 26,
+      "source_review": "Both branches, 2000 sentinel, exact requested-sequence global identity, complete span and unchanged globals independently reviewed. Worker source/fixture retained.",
+      "fixture_checks": 8,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "music_disable": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 47,
+      "source_review": "Writer/copy/copy/detach order, exact callback ABI and operands, post-writer reloads and ignored writer return independently reviewed. Fixture proves boundary IDs, callback order, copies visible at detach and retained callback mutations. Source and fixture retained.",
+      "fixture_checks": 18,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "music_enable": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 60,
+      "source_review": "All callback caller/callee ABIs, call order, ignored failures and live saved-ID reloads independently reviewed. Candidate unchanged. Parent removes fixture signed-overflow setup and adds positive-zero radius bits and final callback mutation retention.",
+      "fixture_checks": 30,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "music_save_cached_ids": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 61,
+      "source_review": "Complete body, both cache stores including +4 addend, frame ABI (tag,data,size,16-bit version) and normalized nonzero return independently reviewed. Callback fixture checks pre-call copied values, boundaries, negative/positive returns and retained mutations. Source/fixture unchanged.",
+      "fixture_checks": 21,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "music_restore_cached_ids": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 46,
+      "source_review": "Version must equal2; pointer/size callback ABI, preserved returned EAX and zero/nonzero result inversion independently reviewed. Parent adds unsupported adjacent versions1/3. Existing fixture verifies rejection without mutation and callback mutations retained even on failure. Candidate unchanged.",
+      "fixture_checks": 33,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "music_periodic": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 59,
+      "source_review": "Exact-one initialized gate, actual IAT slots, direct service thunk, callback order and counter reloads independently reviewed. Parent adds initialized mutation inside lock and gated-state preservation. No source correction.",
+      "fixture_checks": 21,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "music_pause": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 60,
+      "source_review": "Unconditional callback sequence, no initialized/already-paused guard, counter reload timing and final paused=1 store independently reviewed. Fixture checks callback-time counter/flag values, repeated initial flags and safe positive/negative callback mutations. Source and fixture retained.",
+      "fixture_checks": 36,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    }
+  },
+  "issues": [
+    {
+      "id": "I01",
+      "function": "music_enable",
+      "finding": "Worker fixture generated test values with signed overflow for negative callback results.",
+      "resolution": "Parent replaced arithmetic with explicit independent saved IDs before final verification; added exact positive-zero radius bits and retained final callback mutation checks. Candidate unchanged.",
+      "status": "addressed"
+    }
+  ],
+  "full_regression_run": false,
+  "status": "complete",
+  "remaining_material_findings": 0,
+  "independent_worker_review": {
+    "reviewer": "comparison_inventory",
+    "model": "gpt-5.6-sol",
+    "scope": "Read-only source and fixture audit across all ten; nine completed receipts existed at audit time. Final pause receipt was subsequently independently generated and checked by the coordinator.",
+    "findings": "No material remaining source, ABI, fixture or comparison-claim errors.",
+    "confirmed": [
+      "Enable fixture boundary setup now avoids signed overflow.",
+      "Volume setup uses memcpy and verifies unchanged global bits; signaling NaNs explicitly excluded.",
+      "Detached integer boundaries and adjacent rejected restore versions covered.",
+      "Callbacks preserve live-global timing, ignored return values and safe chosen arithmetic."
+    ]
+  },
+  "accepted_history_promotions": 0,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

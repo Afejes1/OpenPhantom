@@ -1,0 +1,27 @@
+{
+  "id": "music_restore_cached_ids",
+  "address": 4261767,
+  "size": 46,
+  "body_size": 46,
+  "source": "src/music_restore_cached_ids.c",
+  "symbol": "_op_music_restore_cached_ids",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 19,
+      "address": 6007680,
+      "kind": "dir32",
+      "symbol": "_op_music_cached_ids"
+    },
+    {
+      "offset": 24,
+      "address": 4529328,
+      "kind": "rel32-call",
+      "symbol": "_op_music_read_bytes"
+    }
+  ]
+}

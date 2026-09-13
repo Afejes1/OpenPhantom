@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "campaign": "005",
+  "status": "complete-focused-matches",
+  "started_utc": "2026-09-13T03:37:17Z",
+  "worker_stop_utc": "2026-09-13T04:12:17Z",
+  "stop_utc": "2026-09-13T04:22:17Z",
+  "baseline_commit": "18f34fdac44d6d7e4555e1103cefeccc441287fe",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "assignments": [
+    {
+      "id": "music_get_volume",
+      "address": "0x0041073F",
+      "case": "research/campaign-005-music-volume",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-005-music-volume/result.json"
+    },
+    {
+      "id": "music_is_detached",
+      "address": "0x00410592",
+      "case": "research/campaign-005-music-detached",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-005-music-detached/result.json"
+    },
+    {
+      "id": "music_get_state",
+      "address": "0x004107B5",
+      "case": "research/campaign-005-music-state",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-005-music-state/result.json"
+    },
+    {
+      "id": "music_get_sequence",
+      "address": "0x004107CF",
+      "case": "research/campaign-005-music-sequence",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-005-music-sequence/result.json"
+    },
+    {
+      "id": "music_disable",
+      "address": "0x00410527",
+      "case": "research/campaign-005-music-disable",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-005-music-disable/result.json"
+    },
+    {
+      "id": "music_enable",
+      "address": "0x00410556",
+      "case": "research/campaign-005-music-enable",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-005-music-enable/result.json"
+    },
+    {
+      "id": "music_save_cached_ids",
+      "address": "0x0041074A",
+      "case": "research/campaign-005-music-save",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-005-music-save/result.json"
+    },
+    {
+      "id": "music_restore_cached_ids",
+      "address": "0x00410787",
+      "case": "research/campaign-005-music-restore",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-005-music-restore/result.json"
+    },
+    {
+      "id": "music_periodic",
+      "address": "0x004104EC",
+      "case": "research/campaign-005-music-periodic",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-005-music-periodic/result.json"
+    },
+    {
+      "id": "music_pause",
+      "address": "0x004107E9",
+      "case": "research/campaign-005-music-pause",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-005-music-pause/result.json"
+    }
+  ],
+  "implementation_finished_utc": "2026-09-13T03:54:10.7098536Z",
+  "final_verification_completed_utc": "2026-09-13T03:55:51Z",
+  "publication_started_utc": "2026-09-13T04:00:13.666643+00:00"
+}

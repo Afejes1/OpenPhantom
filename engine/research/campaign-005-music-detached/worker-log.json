@@ -1,0 +1,38 @@
+{
+  "status": "frozen-exact-worker-native",
+  "validation": {
+    "fixture_status": "authored; coordinator final Docker pending",
+    "different_bytes": 0,
+    "binding_offsets": [
+      7
+    ],
+    "candidate_size": 17,
+    "target_size": 17,
+    "original_executed": false
+  },
+  "experiments": [
+    {
+      "number": 1,
+      "source_sha256": "0567cdd2d8cfc7643c97109afa98b39b21dff2d4528105af10db4a0dfe72fc60",
+      "result": "Complete 17-byte relocation-adjusted match; one DIR32 operand verified; zero differing bytes.",
+      "report": "engine/build/campaign-001-music_is_detached-3788cddbbf71/research-result.json",
+      "hypothesis": "A direct equality-to-zero expression produces the normalized detached flag."
+    }
+  ],
+  "started_at": "2026-09-13T03:42:04.4252568Z",
+  "compiler_invocations": 1,
+  "schema": 1,
+  "campaign": "005",
+  "worker": "comparison_inventory",
+  "finished_at": "2026-09-13T03:42:49.1586263Z",
+  "assignment": "Reconstruct music_is_detached at 0x00410592",
+  "parent_verification": {
+    "status": "complete",
+    "result": "result.json",
+    "fixture_checks": 12,
+    "fixture_failures": 0,
+    "native_report": "engine/build/campaign-001-music_is_detached-d06a0a1bc4b8/research-result.json",
+    "docker_report": "engine/build/campaign-001-music_is_detached-ce65eea2468b/research-result.json",
+    "source_candidate_unchanged": true
+  }
+}

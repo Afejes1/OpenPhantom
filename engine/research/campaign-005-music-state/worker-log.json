@@ -1,0 +1,39 @@
+{
+  "worker": "comparison_inventory",
+  "experiments": [
+    {
+      "source_sha256": "6d6b74647f5594033b84bec10c49eb148caea6653b46d5d92e6ca7e8946fbdf9",
+      "number": 1,
+      "result": "Complete 26-byte relocation-adjusted match; both DIR32 operands verified; zero differing bytes.",
+      "hypothesis": "A zero guard followed by direct state return reproduces the sentinel getter.",
+      "report": "engine/build/campaign-001-music_get_state-85550ef03bc8/research-result.json"
+    }
+  ],
+  "assignment": "Reconstruct music_get_state at 0x004107B5",
+  "schema": 1,
+  "campaign": "005",
+  "validation": {
+    "target_size": 26,
+    "fixture_status": "authored; coordinator final Docker pending",
+    "binding_offsets": [
+      5,
+      20
+    ],
+    "candidate_size": 26,
+    "original_executed": false,
+    "different_bytes": 0
+  },
+  "compiler_invocations": 1,
+  "started_at": "2026-09-13T03:43:00.2211209Z",
+  "status": "frozen-exact-worker-native",
+  "finished_at": "2026-09-13T03:44:07.2815581Z",
+  "parent_verification": {
+    "status": "complete",
+    "result": "result.json",
+    "fixture_checks": 8,
+    "fixture_failures": 0,
+    "native_report": "engine/build/campaign-001-music_get_state-6a85e5cf81d1/research-result.json",
+    "docker_report": "engine/build/campaign-001-music_get_state-7d71e5362b02/research-result.json",
+    "source_candidate_unchanged": true
+  }
+}

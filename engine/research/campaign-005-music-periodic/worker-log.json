@@ -1,0 +1,36 @@
+{
+  "campaign": "005",
+  "started_at": "2026-09-13T03:51:41.4726556Z",
+  "compiler_invocations": 1,
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct music_periodic at 0x004104EC",
+  "status": "frozen-exact-worker-native",
+  "experiments": [
+    {
+      "source_sha256": "8eda15fc49360903e914056be5a566cf833af9ebdea41634ddb1d4a032f8e88b",
+      "number": 1,
+      "report": "engine/build/campaign-001-music_periodic-481f1c381cfd/research-result.json",
+      "result": "Complete 59-byte relocation-adjusted match; all eight bindings verified; zero differing bytes.",
+      "hypothesis": "Natural exact-one gate and live global increment/decrement sequence reproduce the wrapper."
+    }
+  ],
+  "schema": 1,
+  "finished_at": "2026-09-13T03:52:38.1730579Z",
+  "validation": {
+    "binding_count": 8,
+    "candidate_size": 59,
+    "original_executed": false,
+    "target_size": 59,
+    "fixture_status": "authored; coordinator final Docker pending",
+    "different_bytes": 0
+  },
+  "parent_verification": {
+    "status": "complete",
+    "result": "result.json",
+    "fixture_checks": 21,
+    "fixture_failures": 0,
+    "native_report": "engine/build/campaign-001-music_periodic-8a99b9ead386/research-result.json",
+    "docker_report": "engine/build/campaign-001-music_periodic-f59b49e371bb/research-result.json",
+    "source_candidate_unchanged": true
+  }
+}

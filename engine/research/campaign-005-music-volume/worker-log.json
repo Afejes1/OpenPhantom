@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "campaign": "005",
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct music_get_volume at 0x0041073F",
+  "started_at": "2026-09-13T03:40:04.5763372Z",
+  "finished_at": "2026-09-13T03:41:08.5985102Z",
+  "status": "frozen-exact-worker-native",
+  "compiler_invocations": 1,
+  "experiments": [
+    {
+      "number": 1,
+      "hypothesis": "A direct return of the float global reproduces the x87 load and return.",
+      "source_sha256": "c531cbfced0df100f12fc39064bb09797144eacf3972897be0d53a7566871e91",
+      "report": "engine/build/campaign-001-music_get_volume-41207a6a11a7/research-result.json",
+      "result": "Complete 11-byte relocation-adjusted match; one DIR32 operand verified; zero differing bytes."
+    }
+  ],
+  "validation": {
+    "target_size": 11,
+    "candidate_size": 11,
+    "binding_offsets": [
+      5
+    ],
+    "different_bytes": 0,
+    "fixture_status": "authored; coordinator final Docker pending",
+    "original_executed": false
+  },
+  "parent_verification": {
+    "status": "complete",
+    "result": "result.json",
+    "fixture_checks": 18,
+    "fixture_failures": 0,
+    "native_report": "engine/build/campaign-001-music_get_volume-7c14da768c87/research-result.json",
+    "docker_report": "engine/build/campaign-001-music_get_volume-1f718a052f66/research-result.json",
+    "source_candidate_unchanged": true
+  }
+}

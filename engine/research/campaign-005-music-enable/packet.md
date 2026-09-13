@@ -1,0 +1,10 @@
+# Prepared music callback helper: music_enable
+
+Team-not-done bp/bapmusic.c at 0x00410556. Full body and interval to next entry 0x00410592: 60 bytes, no alignment gap. Coordinator reviewed every instruction, decompiled behavior, callers and callees. Complete PE DIR32 inventory, all direct-call targets and original identity independently verified before source experiments. Original VC5 C /Od /MT; no target changes.
+
+Observed cdecl interface and callback contracts:
+`void op_music_enable(void); extern const char op_music_disabled_key[]; int op_music_write_option(const char *key, int value); int op_music_initialize(void); extern int op_music_resume_state, op_music_resume_sequence; int op_music_set_state(int state); int op_music_set_sequence(int sequence, unsigned mode, unsigned threshold, float radius);`
+
+Call option writer(key,0), initialize(), set_state(current resume state), set_sequence(current resume sequence,0,0,0.0f), in that exact order. Return values never short-circuit subsequent calls. Reload resume state after initialize, and resume sequence after state callback; do not snapshot both early. Test all callback identities/order/arguments, failed init/config/state returns and mutation of saved IDs by earlier callbacks. Ghidra mislabeled state setter thiscall, but complete caller push and callee[EBP+8] prove one cdecl int. Sequence callee reads four stack arguments [8,C,10,14], unsigned mode/count threshold and radius passed to distance helper. All mode/threshold/radius values here zero. Menu caller0x4422F5 uses this for enabled toggle.
+
+Read campaign rules. Worker owns only candidate.c, api.h, behavior.c, README.md and worker-log.json here. Retain conventional readable C; no raw instructions, artificial frames, warning waivers, exclusions, or original execution. Fixture contains authored data and stubs only. Native compile only; execute authored fixture in locked Docker. Per function 15min/10invocations/five successive nonimprovements; exact candidate freezes immediately. Handoff reports every experiment, hashes, failures and unresolved limits. Coordinator handles fresh final verification, metadata and Git.

@@ -195,3 +195,21 @@ of 25 operand positions differ. Fourteen align, ten are one byte early and one
 is two bytes early; no percentage is assigned. Independent caller/callee review
 corrected the square enumerator ABI before final verification. All three cases
 remain research candidates, with no new exact match or accepted-history entry.
+
+## Campaign 005: small music helpers
+
+Ten independently authored VC5 C helpers now match all 413 bytes of their complete
+original intervals after verifying every address operand. There are no alignment
+exclusions. All 205 focused assertions pass, with native/Docker function bytes and
+fixups agreeing for every case. These are function-level research matches awaiting
+the accepted-history batch checkpoint; final linked executable identity is not
+established. See [the campaign results](research/campaign-005/results.md).
+
+The getters distinguish requested state (sentinel1000) from requested sequence
+(sentinel2000), resolving a duplicated team alias. Disable copies requested IDs
+after writing the option; enable reloads cached IDs after earlier callbacks and
+ignores callback failures. Save/read handle only the paired cached IDs, not full
+playback state. Periodic service gates on initialized exactly equal to1, whereas
+pause is unconditional and writes its flag after unlocking. Fixtures exercise
+these callback-visible timing details with authored stubs; no original executable
+or imported backend was executed.

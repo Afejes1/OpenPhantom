@@ -1,0 +1,21 @@
+{
+  "id": "music_get_volume",
+  "address": 4261695,
+  "size": 11,
+  "body_size": 11,
+  "source": "src/music_get_volume.c",
+  "symbol": "_op_music_get_volume",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 4891672,
+      "kind": "dir32",
+      "symbol": "_op_music_volume"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "status": "frozen-exact-worker-native",
+  "experiments": [
+    {
+      "report": "engine/build/campaign-001-music_save_cached_ids-d7dd23f1a6fb/research-result.json",
+      "result": "54-byte candidate versus 61-byte target; complete extent mismatch.",
+      "number": 1,
+      "source_sha256": "d67997826979514a5afaa42c062e4548eb04d0341c75b3e36338e7b91167307c",
+      "hypothesis": "Direct not-equal normalization may reproduce the callback wrapper."
+    },
+    {
+      "report": "engine/build/campaign-001-music_save_cached_ids-569cb51bfa2c/research-result.json",
+      "result": "Complete 61-byte relocation-adjusted match; all six bindings including cache addend 4 verified; zero differing bytes.",
+      "number": 2,
+      "source_sha256": "0d8b4dbb9a136a37558cb20529e9d195e007d02d411400503b68b6750c88a320",
+      "hypothesis": "Explicit conditional returns reproduce the observed branch-based normalization."
+    }
+  ],
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct music_save_cached_ids at 0x0041074A",
+  "started_at": "2026-09-13T03:47:59.0834588Z",
+  "compiler_invocations": 2,
+  "schema": 1,
+  "validation": {
+    "fixture_status": "authored; coordinator final Docker pending",
+    "different_bytes": 0,
+    "target_size": 61,
+    "candidate_size": 61,
+    "binding_count": 6,
+    "original_executed": false
+  },
+  "campaign": "005",
+  "finished_at": "2026-09-13T03:49:41.7993380Z",
+  "parent_verification": {
+    "status": "complete",
+    "result": "result.json",
+    "fixture_checks": 21,
+    "fixture_failures": 0,
+    "native_report": "engine/build/campaign-001-music_save_cached_ids-767fce4ea371/research-result.json",
+    "docker_report": "engine/build/campaign-001-music_save_cached_ids-c472f5e4f8b7/research-result.json",
+    "source_candidate_unchanged": true
+  }
+}

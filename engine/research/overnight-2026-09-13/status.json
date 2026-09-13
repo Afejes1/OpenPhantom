@@ -17,8 +17,8 @@
   "weekly_account_usage_start_percent": 24,
   "historical_accepted_functions": 14,
   "historical_evidence_records": 19,
-  "new_exact_functions": 0,
-  "new_exact_bytes": 0,
+  "new_exact_functions": 10,
+  "new_exact_bytes": 413,
   "new_near_matches": 0,
   "new_body_exact_layout_pending": 0,
   "checkpoints": [
@@ -40,15 +40,25 @@
       "ci_run_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34735785699",
       "full_regression": "skipped by feature-branch workflow",
       "published_utc": "2026-09-13T03:33:32Z"
+    },
+    {
+      "phase": "campaign-005",
+      "commit": "containing commit",
+      "ci": "pending after push",
+      "new_exact_functions": 10,
+      "new_exact_bytes": 413,
+      "focused_checks": 205,
+      "new_research_candidates": 0,
+      "result": "research/campaign-005/results.md"
     }
   ],
-  "current_work": "Campaign 004 published and lightweight CI passed. No active implementation; existing worker is idle.",
-  "resume": "Start Campaign 005 from next-shortlist.json: prepare small related bp/bapmusic.c helpers (begin 0x0041073F, 0x00410592, 0x004107B5, 0x004107CF; aliases and full extents need static verification). Retain one Sol/medium worker, prioritizing meaningful state/callback helpers alongside getters. Campaign 004 assignments are frozen and must not be dispatched again. Fixed deadline remains 08:48 UTC.",
+  "current_work": "Campaign 005 complete: ten focused relocation-adjusted matches, 413 bytes, 205 checks; publishing checkpoint.",
+  "resume": "Start Campaign 006 after confirming checkpoint publication: prepare remaining small music state/volume/detach helpers, then related sound helpers from next-shortlist.json. All ten Campaign005 cases are complete and must not be dispatched again. One existing Sol/medium worker is idle; retain per-function caps and fixed 08:48 UTC deadline.",
   "interruptions": [],
   "original_game_executed": false,
   "full_regression_run": false,
   "final_report": null,
   "new_research_candidates": 3,
-  "weekly_account_usage_observed_percent": 26,
+  "weekly_account_usage_observed_percent": 27,
   "last_campaign_finished_utc": "2026-09-13T03:35:28.151688+00:00"
 }

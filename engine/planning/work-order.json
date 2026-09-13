@@ -1,6 +1,7 @@
 {
   "schema": 1,
   "module_order": [
+    "bp/bapmusic.c",
     "bp/bapdraw.c",
     "bp/bapmodel.c",
     "bp/bapmap.c"
@@ -78,6 +79,46 @@
     {
       "address": "0x0040D03E",
       "source": "research/campaign-004-nearby-surfaces/README.md"
+    },
+    {
+      "address": "0x0041073F",
+      "source": "research/campaign-005-music-volume/README.md"
+    },
+    {
+      "address": "0x00410592",
+      "source": "research/campaign-005-music-detached/README.md"
+    },
+    {
+      "address": "0x004107B5",
+      "source": "research/campaign-005-music-state/README.md"
+    },
+    {
+      "address": "0x004107CF",
+      "source": "research/campaign-005-music-sequence/README.md"
+    },
+    {
+      "address": "0x00410527",
+      "source": "research/campaign-005-music-disable/README.md"
+    },
+    {
+      "address": "0x00410556",
+      "source": "research/campaign-005-music-enable/README.md"
+    },
+    {
+      "address": "0x0041074A",
+      "source": "research/campaign-005-music-save/README.md"
+    },
+    {
+      "address": "0x00410787",
+      "source": "research/campaign-005-music-restore/README.md"
+    },
+    {
+      "address": "0x004104EC",
+      "source": "research/campaign-005-music-periodic/README.md"
+    },
+    {
+      "address": "0x004107E9",
+      "source": "research/campaign-005-music-pause/README.md"
     }
   ]
 }

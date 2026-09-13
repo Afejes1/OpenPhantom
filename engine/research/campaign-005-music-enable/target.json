@@ -1,0 +1,57 @@
+{
+  "id": "music_enable",
+  "address": 4261206,
+  "size": 60,
+  "body_size": 60,
+  "source": "src/music_enable.c",
+  "symbol": "_op_music_enable",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 4891692,
+      "kind": "dir32",
+      "symbol": "_op_music_disabled_key"
+    },
+    {
+      "offset": 11,
+      "address": 4606113,
+      "kind": "rel32-call",
+      "symbol": "_op_music_write_option"
+    },
+    {
+      "offset": 19,
+      "address": 4260657,
+      "kind": "rel32-call",
+      "symbol": "_op_music_initialize"
+    },
+    {
+      "offset": 24,
+      "address": 4891684,
+      "kind": "dir32",
+      "symbol": "_op_music_resume_state"
+    },
+    {
+      "offset": 30,
+      "address": 4261283,
+      "kind": "rel32-call",
+      "symbol": "_op_music_set_state"
+    },
+    {
+      "offset": 45,
+      "address": 4891688,
+      "kind": "dir32",
+      "symbol": "_op_music_resume_sequence"
+    },
+    {
+      "offset": 51,
+      "address": 4261390,
+      "kind": "rel32-call",
+      "symbol": "_op_music_set_sequence"
+    }
+  ]
+}
