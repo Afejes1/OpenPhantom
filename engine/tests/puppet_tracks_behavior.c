@@ -36,6 +36,8 @@ static void pt_track_callback(void *userdata, unsigned int index, int event)
 {
     unsigned int j;
     PT_CHECK(index < 4 && index >= (unsigned int)pt_next);
+    if (index >= 4 || index < (unsigned int)pt_next)
+        return;
     PT_CHECK(event == 0);
     for (j = (unsigned int)pt_next; j <= index; j++)
     {
