@@ -1,0 +1,26 @@
+[
+  {
+    "id": "sound_resource_handler",
+    "address": "004157D0",
+    "original_name": "FUN_004157d0",
+    "new_name": "dispatch_sound_resource_event",
+    "confidence": "HIGH",
+    "purpose": "dispatch sound resource load, free and size events",
+    "evidence": "Registered sound resource callback at0043E8CB; three event branches, verified two-argument file open ABI and real allocation/registration callees; full288-byte span and all10 operands checked",
+    "full_span": 288,
+    "fixture_checks": 108,
+    "result_status": "research-candidate"
+  },
+  {
+    "id": "sound_module_proc",
+    "address": "004158F0",
+    "original_name": "FUN_004158f0",
+    "new_name": "dispatch_sound_subsystem_event",
+    "confidence": "HIGH",
+    "purpose": "dispatch sound subsystem lifecycle events",
+    "evidence": "Bapsound callback registration at0043E6E6, nine verified callback ABIs, event13 quality-update fallthrough, full256-byte span including both switch tables and all24 operands checked",
+    "full_span": 256,
+    "fixture_checks": 121,
+    "result_status": "focused-relocation-adjusted-match"
+  }
+]

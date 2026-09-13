@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "campaign": "014",
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct sound_module_proc at 0x004158F0",
+  "status": "frozen-exact-worker-native",
+  "started_utc": "2026-09-13T11:14:30Z",
+  "finished_utc": "2026-09-13T11:16:21.284Z",
+  "timestamp_basis": "Start approximate; finish observed UTC clock after native report",
+  "compiler_invocations": 1,
+  "candidate_sha256": "4615b60ee385b5faa617debe30560262f8675b516d7213993d5b60ae3bfa6294",
+  "api_sha256": "57401a4f29f7822d7c0433dd272afc8d03f559ae9cf194a35c2f94409a10eca2",
+  "fixture_sha256": "e770245d3dcf3ddd6afe6235e6ff89212c60829e035dc7f66fd104f76ff3d8a4",
+  "attempts": [
+    {
+      "number": 1,
+      "hypothesis": "Natural switch in observed source order, including case13 fallthrough, reproduces body and both compiler tables.",
+      "source_sha256": "4615b60ee385b5faa617debe30560262f8675b516d7213993d5b60ae3bfa6294",
+      "result": "Complete256-byte relocation-adjusted match; all24 bindings including13 internal table targets verified; zero differing bytes.",
+      "elapsed_seconds": 1.400302,
+      "report": "engine/build/campaign-001-sound_module_proc-5a57071813c8/research-result.json",
+      "report_sha256": "a8dd0ccfe5e1bdfb533c8456c7626f43d87f0a6af88f18aab81cc6de724885a6"
+    }
+  ],
+  "validation": {
+    "target_size": 256,
+    "body_size": 187,
+    "candidate_size": 256,
+    "binding_count": 24,
+    "different_bytes": 0,
+    "fixture_status": "authored; coordinator final Docker pending",
+    "original_executed": false
+  },
+  "parent_verification": {
+    "status": "focused-relocation-adjusted-match",
+    "fixture_checks": 121,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": false,
+    "native_report": "engine/build/campaign-001-sound_module_proc-13262eca0648/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_module_proc-efca10a108d2/research-result.json",
+    "result": "result.json",
+    "result_sha256": "531360030d2f17db283061504497db57b7c5f490837357026f1e10146208412d"
+  }
+}

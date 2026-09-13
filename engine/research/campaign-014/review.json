@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "campaign": "014",
+  "reviews": {
+    "sound_resource_handler": {
+      "status": "research-candidate",
+      "complete_span": 288,
+      "source_review": "Reviewed all three event branches against static control flow and verified file API ABI. Parent strengthened close-time name and type reloads, null forwarding, and unsigned size boundary fixtures. Nine remaining differences are local frame displacements; no known semantic defect.",
+      "fixture_checks": 108,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    },
+    "sound_module_proc": {
+      "status": "focused-relocation-adjusted-match",
+      "complete_span": 256,
+      "source_review": "Reviewed event mapping, callback ABI, default status, case 13 to 14 fallthrough, and both original switch tables. Fixture independently enumerates every event 0 through 26 and signed out-of-range values, observes callback-time quality, callback return propagation, and retained callback mutations.",
+      "fixture_checks": 121,
+      "fixture_failures": 0,
+      "source_correction": false,
+      "independent_native_docker_verification": true
+    }
+  },
+  "issues": [],
+  "full_regression_run": false,
+  "parent_fixture_corrections": [
+    "sound_resource_handler"
+  ],
+  "parent_source_corrections": [],
+  "fixture_review_note": "Parent extended resource fixture with close-time mutation, null free/size forwarding, success size extrema and callback global preservation; no candidate-source changes."
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "campaign": "014",
+  "status": "complete-focused-checkpoint",
+  "started_utc": "2026-09-13T11:06:00Z",
+  "worker_stop_utc": "2026-09-13T11:41:00Z",
+  "stop_utc": "2026-09-13T11:51:00Z",
+  "baseline_commit": "cedda15bf9f95a4f5b3f2b2f36c50b6f82d14b20",
+  "worker": "comparison_inventory",
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "registered_functions_at_start": 21,
+  "assignments": [
+    {
+      "id": "sound_resource_handler",
+      "address": "0x4157d0",
+      "case": "research/campaign-014-sound-resource-handler",
+      "status": "research-candidate",
+      "result": "research/campaign-014-sound-resource-handler/result.json"
+    },
+    {
+      "id": "sound_module_proc",
+      "address": "0x4158f0",
+      "case": "research/campaign-014-sound-module-proc",
+      "status": "focused-relocation-adjusted-match",
+      "result": "research/campaign-014-sound-module-proc/result.json"
+    }
+  ],
+  "worker_handoff_completed_utc": "2026-09-13T11:16:21.284Z",
+  "weekly_shared_account_first_observation": 37,
+  "final_verification_completed_utc": "2026-09-13T11:24:35.819089+00:00"
+}

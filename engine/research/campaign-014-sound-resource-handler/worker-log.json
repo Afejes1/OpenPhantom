@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "campaign": "014",
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct sound_resource_handler at 0x004157D0",
+  "status": "frozen-near-worker-native",
+  "started_utc": "2026-09-13T11:08:50.823Z",
+  "finished_utc": "2026-09-13T11:14:16.737Z",
+  "timestamp_basis": "Observed UTC clocks before packet inspection and after fixture correction",
+  "compiler_invocations": 3,
+  "candidate_sha256": "ae75a2b90934670f517b955ecc8b5e29dca147b0cedfde38ae7eefeb6213b223",
+  "api_sha256": "1c92185251e8efbd78bafce524a77f4920a17549be0a715d85db5d5865260881",
+  "fixture_sha256": "37a1fb1bf1f942485190259174752cf7843a346f3e39965f03243ed45c603dbd",
+  "attempts": [
+    {
+      "number": 1,
+      "hypothesis": "Initialize every local at function entry in a direct natural switch.",
+      "source_sha256": "05c140c29e2768ec6bbbeddd519296ce3e224ce7dfb1b73e8e7c6bf2693d53da",
+      "result": "Complete288-byte comparison, all10 bindings, 59 differing bytes.",
+      "elapsed_seconds": 1.388438,
+      "report": "engine/build/campaign-001-sound_resource_handler-83c3ee491d39/research-result.json",
+      "report_sha256": "987540e23f5639908a80c1b59be5c4a480f2246d5d4345ed3137c540f3b0de7a"
+    },
+    {
+      "number": 2,
+      "hypothesis": "Move size, buffer, and handle initialization into operation one in the observed order.",
+      "source_sha256": "3a5af4482de639af2f6f8d3095933718d359a444c67e30002311b3c65098878d",
+      "result": "Improved to9 differing bytes; complete288 bytes and all10 bindings.",
+      "elapsed_seconds": 1.381801,
+      "report": "engine/build/campaign-001-sound_resource_handler-1c46eea3f1a9/research-result.json",
+      "report_sha256": "d173763a03967280f725981ff30e0a0f6bc89d629c9827ea23e44d759e49dae2"
+    },
+    {
+      "number": 3,
+      "hypothesis": "Use conventional file_size/file_buffer local names to test the remaining VC5 slot assignment while preserving public members.",
+      "source_sha256": "ae75a2b90934670f517b955ecc8b5e29dca147b0cedfde38ae7eefeb6213b223",
+      "result": "No improvement from local naming; complete288 bytes, all10 bindings, same9 differences.",
+      "elapsed_seconds": 1.364467,
+      "report": "engine/build/campaign-001-sound_resource_handler-11573fcfe205/research-result.json",
+      "report_sha256": "2415b739c160c49bd2decee1d33074ee7f6d06e8a4199f4988b54c438e0eb8ac"
+    }
+  ],
+  "validation": {
+    "target_size": 288,
+    "candidate_size": 288,
+    "binding_count": 10,
+    "different_bytes": 9,
+    "different_percent": 3.125,
+    "fixture_status": "authored; coordinator final Docker pending",
+    "original_executed": false,
+    "blocker": "Remaining differences are local size/buffer stack-slot displacements; no semantic mismatch identified."
+  },
+  "parent_verification": {
+    "status": "research-candidate",
+    "fixture_checks": 108,
+    "fixture_failures": 0,
+    "source_correction": false,
+    "fixture_correction": true,
+    "native_report": "engine/build/campaign-001-sound_resource_handler-5c9f27c2a8b3/research-result.json",
+    "docker_report": "engine/build/campaign-001-sound_resource_handler-e477f0d1d56b/research-result.json",
+    "result": "result.json",
+    "result_sha256": "f863496a8bf3ff786ca58392efa90ab1b66eadefd2c7c5400596c3cca3082151"
+  }
+}

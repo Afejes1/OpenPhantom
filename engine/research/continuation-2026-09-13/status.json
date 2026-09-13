@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "continuation-2026-09-13",
+  "status": "active",
+  "start_utc": "2026-09-13T11:06:00Z",
+  "stop_new_implementation_utc": "2026-09-13T11:56:00Z",
+  "hard_stop_utc": "2026-09-13T12:06:00Z",
+  "baseline_commit": "cedda15bf9f95a4f5b3f2b2f36c50b6f82d14b20",
+  "acceptance": "research/acceptance-001/results.md",
+  "registered_functions_at_start": 21,
+  "evidence_records_at_start": 21,
+  "worker": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "concurrent_workers": 1,
+  "weekly_shared_usage_start_percent": 37,
+  "automation": "No new automation; active-turn bounded work. Prior overnight heartbeat remains PAUSED.",
+  "campaigns": [
+    "research/campaign-014/results.md"
+  ],
+  "new_exact_functions": 1,
+  "new_exact_bytes": 256,
+  "current_work": "Campaign015: six prepared extended rendering/resource helpers; one worker processes sequentially.",
+  "original_game_executed": false,
+  "full_regression_during_continuation": false
+}

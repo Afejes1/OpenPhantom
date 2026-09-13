@@ -1,0 +1,159 @@
+{
+  "id": "sound_module_proc",
+  "address": 4282608,
+  "size": 256,
+  "body_size": 187,
+  "source": "src/sound_module_proc.c",
+  "symbol": "_op_sound_module_proc",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 45,
+      "address": 4282839,
+      "kind": "dir32-internal",
+      "target_offset": 231
+    },
+    {
+      "offset": 52,
+      "address": 4282795,
+      "kind": "dir32-internal",
+      "target_offset": 187
+    },
+    {
+      "offset": 57,
+      "address": 4282864,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_module_init"
+    },
+    {
+      "offset": 67,
+      "address": 4283061,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_shutdown"
+    },
+    {
+      "offset": 77,
+      "address": 4283192,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_register_level"
+    },
+    {
+      "offset": 89,
+      "address": 4283456,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_remove_level"
+    },
+    {
+      "offset": 102,
+      "address": 4286004,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_reset_places"
+    },
+    {
+      "offset": 116,
+      "address": 4290275,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_stop_all"
+    },
+    {
+      "offset": 131,
+      "address": 4900152,
+      "kind": "dir32",
+      "symbol": "_op_sound_performance_level"
+    },
+    {
+      "offset": 140,
+      "address": 4892944,
+      "kind": "dir32",
+      "symbol": "_op_sound_quality_level"
+    },
+    {
+      "offset": 145,
+      "address": 4283677,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_periodic"
+    },
+    {
+      "offset": 155,
+      "address": 4289655,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_pause_all"
+    },
+    {
+      "offset": 169,
+      "address": 4289775,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_resume_all"
+    },
+    {
+      "offset": 187,
+      "address": 4282664,
+      "kind": "dir32-internal",
+      "target_offset": 56
+    },
+    {
+      "offset": 191,
+      "address": 4282674,
+      "kind": "dir32-internal",
+      "target_offset": 66
+    },
+    {
+      "offset": 195,
+      "address": 4282694,
+      "kind": "dir32-internal",
+      "target_offset": 86
+    },
+    {
+      "offset": 199,
+      "address": 4282762,
+      "kind": "dir32-internal",
+      "target_offset": 154
+    },
+    {
+      "offset": 203,
+      "address": 4282776,
+      "kind": "dir32-internal",
+      "target_offset": 168
+    },
+    {
+      "offset": 207,
+      "address": 4282737,
+      "kind": "dir32-internal",
+      "target_offset": 129
+    },
+    {
+      "offset": 211,
+      "address": 4282752,
+      "kind": "dir32-internal",
+      "target_offset": 144
+    },
+    {
+      "offset": 215,
+      "address": 4282709,
+      "kind": "dir32-internal",
+      "target_offset": 101
+    },
+    {
+      "offset": 219,
+      "address": 4282723,
+      "kind": "dir32-internal",
+      "target_offset": 115
+    },
+    {
+      "offset": 223,
+      "address": 4282684,
+      "kind": "dir32-internal",
+      "target_offset": 76
+    },
+    {
+      "offset": 227,
+      "address": 4282788,
+      "kind": "dir32-internal",
+      "target_offset": 180
+    }
+  ]
+}

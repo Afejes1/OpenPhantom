@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "sound_resource_handler",
+  "candidate": "candidate.c",
+  "symbol": "_op_sound_resource_handler",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

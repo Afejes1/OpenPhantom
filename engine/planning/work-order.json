@@ -388,6 +388,14 @@
     {
       "address": "0x0041FC2C",
       "source": "research/campaign-013-bgl-random-vector/README.md"
+    },
+    {
+      "address": "0x4157d0",
+      "source": "research/campaign-014-sound-resource-handler/README.md"
+    },
+    {
+      "address": "0x4158f0",
+      "source": "research/campaign-014-sound-module-proc/README.md"
     }
   ]
 }

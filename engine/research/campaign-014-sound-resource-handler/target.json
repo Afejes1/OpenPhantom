@@ -1,0 +1,75 @@
+{
+  "id": "sound_resource_handler",
+  "address": 4282320,
+  "size": 288,
+  "body_size": 288,
+  "source": "src/sound_resource_handler.c",
+  "symbol": "_op_sound_resource_handler",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 74,
+      "address": 4890672,
+      "kind": "dir32",
+      "symbol": "_op_sound_read_mode"
+    },
+    {
+      "offset": 87,
+      "address": 8816192,
+      "kind": "dir32",
+      "symbol": "_op_sound_file_api"
+    },
+    {
+      "offset": 109,
+      "address": 8816192,
+      "kind": "dir32",
+      "symbol": "_op_sound_file_api"
+    },
+    {
+      "offset": 133,
+      "address": 7131056,
+      "kind": "dir32",
+      "symbol": "_op_sound_allocation_tag"
+    },
+    {
+      "offset": 139,
+      "address": 4806811,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_allocate"
+    },
+    {
+      "offset": 163,
+      "address": 8816192,
+      "kind": "dir32",
+      "symbol": "_op_sound_file_api"
+    },
+    {
+      "offset": 178,
+      "address": 8816192,
+      "kind": "dir32",
+      "symbol": "_op_sound_file_api"
+    },
+    {
+      "offset": 213,
+      "address": 4659385,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_register_loaded"
+    },
+    {
+      "offset": 237,
+      "address": 4806879,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_free_resource"
+    },
+    {
+      "offset": 261,
+      "address": 4806862,
+      "kind": "rel32-call",
+      "symbol": "_op_sound_resource_size"
+    }
+  ]
+}

@@ -28,8 +28,8 @@ The manifest asks for file-level coordination. Relay the active file above to th
 
 | Original address | Team name | Team status | Local evidence |
 |---|---|---|---|
-| 0x004157D0 | bapsound_resourceHandler | not_done | Queued; no local match recorded |
-| 0x004158F0 | bapsound_moduleProc | not_done | Queued; no local match recorded |
+| 0x004157D0 | bapsound_resourceHandler | not_done | Research candidate (not registered): [research](../research/campaign-014-sound-resource-handler/README.md) |
+| 0x004158F0 | bapsound_moduleProc | not_done | Research candidate (not registered): [research](../research/campaign-014-sound-module-proc/README.md) |
 | 0x004159F0 | bapsound_moduleInit | not_done | Research candidate (not registered): [research](../research/campaign-010-sound-module-init/README.md) |
 | 0x00415AB5 | bapsound_moduleShutdown | not_done | Research candidate (not registered): [research](../research/campaign-008-sound-shutdown/README.md) |
 | 0x00415B38 | bapsound_registerLevelSounds | not_done | Research candidate (not registered): [research](../research/campaign-010-sound-register-level/README.md) |
