@@ -14,6 +14,7 @@ from fixtures import coff
 
 class CampaignBoundaryTests(unittest.TestCase):
     def setUp(self):
+        (verify.ROOT / "build").mkdir(exist_ok=True)
         self.temp = tempfile.TemporaryDirectory(prefix="campaign-boundary-", dir=verify.ROOT / "build")
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name).resolve()

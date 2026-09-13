@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "step_scan_line",
+  "candidate": "candidate.c",
+  "symbol": "_op_step_scan_line",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "../campaign-002-line-reset/line.h",
+    "../../src/baseline.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

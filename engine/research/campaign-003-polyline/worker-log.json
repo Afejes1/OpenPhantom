@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "campaign": "003",
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct submit_screen_space_polyline_strip at 0x00408735",
+  "started_at": "2026-09-13T02:18:34.8177199Z",
+  "deadline_at": "2026-09-13T02:33:34.8177199Z",
+  "finished_at": "2026-09-13T02:30:00.5160543Z",
+  "status": "complete-near-match",
+  "compiler_invocations": 10,
+  "experiments": [
+    {"number":1,"hypothesis":"Packet-order C with output, projected, packet, and i locals","source_sha256":"bb0270afd7d3cdf032e34e2fcf4295de8e0125b55090983f97ae6c4ed173aa2b","report":"engine/build/campaign-001-submit_polyline-abbb4f1bd71b/research-result.json","result":"478-byte section; camera and transform relocations six bytes late"},
+    {"number":2,"hypothesis":"Expanded local names","source_sha256":"c2591d5dc5d9c530931fcf1adeca466ee483689c0e8d540dd0f52c6128f50692","report":"engine/build/campaign-001-submit_polyline-f468541b9249/research-result.json","result":"compile failed after overbroad replacement touched public tokens"},
+    {"number":3,"hypothesis":"Correct public tokens with expanded locals","source_sha256":"b28850e68f189ab9d4e600f59c7bad768f39c764dc873fea0427e0eb3f10faa6","report":"engine/build/campaign-001-submit_polyline-de3aeee8e474/research-result.json","result":"535-byte section"},
+    {"number":4,"hypothesis":"Whole-token quad, projected, packet, and i locals","source_sha256":"ec9afcbf568d770d3dce2b378f5350cb333a69e709ffdcc6cbf76c62664fbb3e","report":"engine/build/campaign-001-submit_polyline-9fa7b62d1626/research-result.json","result":"535-byte section"},
+    {"number":5,"hypothesis":"Conventional verts, pv, face, and segment locals","source_sha256":"ff53790ffc6ea87e9a0ad07a3e5ad0b2ecfca9aed10320cc73784446ed0b3600","report":"engine/build/campaign-001-submit_polyline-a1f539012a28/research-result.json","result":"505-byte section"},
+    {"number":6,"hypothesis":"Projected-vertices aggregate with projected, face, and segment locals","source_sha256":"790f96c8bff90210d17efde67f6f19525f14ab898b58ce26926c6ccec62b4035","report":"engine/build/campaign-001-submit_polyline-14a20f44b665/research-result.json","result":"478 bytes; 21 non-relocation bytes differ"},
+    {"number":7,"hypothesis":"Packet pointer name reproduces reviewed local ordering","source_sha256":"0336255a11c4470b9bb40c0a3e53f23eab9ae92b72d5e5192fc81c05b1419d05","report":"engine/build/campaign-001-submit_polyline-18e737b3ac3a/research-result.json","result":"best: 478 bytes, exact local layout and seven operands; eight bytes differ from offset 364"},
+    {"number":8,"hypothesis":"Standard memcpy form for first aggregate copy","source_sha256":"a92ffe8c6d0958eea7282e08f9ce60d865721cbef06952aa195cdbefe3c207c7","report":"engine/build/campaign-001-submit_polyline-ea221626f7ca/research-result.json","result":"compile failed because file edit inserted literal newline escape text; discarded"},
+    {"number":9,"hypothesis":"Fresh native verification of frozen best source","source_sha256":"0336255a11c4470b9bb40c0a3e53f23eab9ae92b72d5e5192fc81c05b1419d05","report":"engine/build/campaign-001-submit_polyline-63bab7a4fb51/research-result.json","result":"478 bytes, seven operands, 450 compared bytes, eight differences"},
+    {"number":10,"hypothesis":"Locked-Docker verification and authored fixture","source_sha256":"0336255a11c4470b9bb40c0a3e53f23eab9ae92b72d5e5192fc81c05b1419d05","report":"engine/build/campaign-001-submit_polyline-5b09738ce9d9/research-result.json","result":"same near-match; fixture passed 35 checks with zero failures"}
+  ],
+  "validation":{"candidate_size":478,"target_size":478,"verified_operands":7,"adjusted_bytes":28,"compared_bytes":450,"different_bytes":8,"first_difference_offset":364,"fixture_checks":35,"fixture_failures":0,"original_executed":false},
+  "blocker":"Readable structure assignment orders LEA ESI and MOV ECX oppositely for the first aggregate copy; no artificial temporary was introduced."
+}

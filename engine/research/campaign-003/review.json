@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "campaign": "003",
+  "reviews": {
+    "step_scan_line": {
+      "complete_span": 209,
+      "status": "focused-raw-match",
+      "source_review": "Branch order, all seven mutated fields, unchanged state and strict updated index > count return reviewed against full original body. No source correction.",
+      "fixture_checks": 27,
+      "fixture_failures": 0,
+      "change": "Added updated index strictly below count to distinguish > from !=."
+    },
+    "free_scan_line": {
+      "complete_span": 23,
+      "status": "focused-relocation-adjusted-match",
+      "source_review": "Null guard and exact tracked-deallocator identity at call offset 14 independently reviewed. No source correction.",
+      "fixture_checks": 9,
+      "fixture_failures": 0,
+      "change": "Explicit native listing fallback; original Docker empty artifact retained, full native/Docker function/fixup equality required before execution."
+    },
+    "submit_polyline": {
+      "status": "near-match-finish-later",
+      "complete_span": 478,
+      "different_bytes": 8,
+      "different_percent": 1.6736401673640167,
+      "verified_operands": 7,
+      "different_offsets": [
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371
+      ],
+      "source_review": "Reviewed callback order, both null gates, original mapped-depth behavior, all vertex fields, aggregate copies and loop against complete original body. No semantic source correction required.",
+      "fixture_checks": 35,
+      "fixture_failures": 0,
+      "independent_native_docker_verification": true,
+      "next_question": "Can a normal aggregate-copy expression reproduce the first LEA/MOV setup order under original VC5 without artificial storage? Worker experiment 8 never compiled due an edit error."
+    },
+    "draw_diagnostic_segment": {
+      "status": "body-exact-layout-pending",
+      "full_span": 77,
+      "body_span": 76,
+      "body_different_bytes": 0,
+      "alignment_bytes_pending": 1,
+      "source_review": "Verified natural two-point aggregate, exact bit-preserving copies and all callback arguments against complete original body. No semantic source correction; fixture formatting and source annotation only.",
+      "fixture_checks": 26,
+      "fixture_failures": 0,
+      "body_diagnostic": "Existing queue-flush pattern; target.json and full mismatch result unchanged."
+    }
+  },
+  "issues": [
+    {
+      "id": "I01",
+      "finding": "Line-step fixture did not exercise updated index strictly below count",
+      "resolution": "Added one six-assertion case before parent verification",
+      "status": "addressed"
+    },
+    {
+      "id": "I02",
+      "finding": "Tiny Docker free-wrapper build emitted an empty listing while producing the object",
+      "resolution": "Explicit guarded native peer listing fallback; default still fails; 19 runner and 11 artifact tests pass",
+      "status": "addressed",
+      "cause": "Underlying wibo/compiler listing flush cause not proven; no claim of compiler-code failure."
+    },
+    {
+      "id": "I03",
+      "finding": "Two polyline source-edit errors consumed compiler attempts: overbroad local renaming and literal newline escape text",
+      "resolution": "Public tokens restored, malformed variant discarded, final source independently reviewed, all ten attempts retained",
+      "status": "addressed",
+      "lesson": "Token-aware local edits and inspect source before compile; no cap extension."
+    }
+  ],
+  "full_regression_run": false,
+  "preparation_corrections": [
+    {
+      "function": "0x00408735",
+      "finding": "Existing Ghidra comment described the fourth projected component as camera depth",
+      "evidence": "Projection callee writes reciprocal depth at +8 and mapped depth at +12; polyline tests +12",
+      "resolution": "Corrected semantic comment; packet and existing baseline type use mapped_depth",
+      "confidence": "HIGH"
+    }
+  ],
+  "independent_runner_review": {
+    "reviewer": "comparison_inventory",
+    "model": "gpt-5.6-sol",
+    "scope": "Read-only review of coordinator fallback and focused tests after all implementation handoffs",
+    "material_findings": 0,
+    "confirmed": [
+      "Opt-in Docker mode with identical-source/toolchain native peer",
+      "Full function bytes and relocations compared before fixture execution",
+      "Complete native listing and retained empty Docker listing with hashes",
+      "Final artifact/source/peer/lock checks and unchanged default rejection"
+    ],
+    "test_limits": [
+      "No isolated end-to-end mocked fixture-order test",
+      "No dedicated post-selection peer-report/copied-listing mutation tests; existing final integrity checks cover these paths"
+    ],
+    "actual_integration": "Two real locked-Docker fixtures exercised the fallback successfully; no original-game execution."
+  }
+}

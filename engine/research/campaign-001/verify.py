@@ -67,6 +67,12 @@ def capture_artifact(source, spec, obj, listing):
 
 def verify_artifacts(out, artifacts):
     for artifact in artifacts:
+        fallback = artifact.get("listing_fallback")
+        if fallback is not None:
+            original_listing = out / fallback["original_docker_listing"]
+            require(original_listing.stat().st_size == 0 and
+                    digest(original_listing.read_bytes()) == fallback["original_docker_listing_sha256"],
+                    "original empty Docker listing changed")
         if artifact.get("inventory_scope") != "translation-unit":
             verify_function_artifacts(out, [artifact])
             continue
@@ -80,6 +86,46 @@ def comparable_artifact(out, artifact):
     if artifact.get("inventory_scope") == "translation-unit":
         return unit_inventory(data, artifact["symbol"])
     return comparable_inventory(data, artifact["symbol"])
+
+
+
+def select_listing(listing, obj, symbol, runner, allow_fallback, peer, peer_path):
+    """Use a complete native listing only after identical-source peer validation.
+
+    main validates the peer source snapshot and toolchain lock before calling.
+    Byte/fixup equality is independently checked here before fixture execution.
+    The original empty Docker artifact stays intact and explicitly identified.
+    """
+    if listing.read_bytes().strip():
+        return listing, None
+    require(allow_fallback and runner == "docker", "compiler assembly listing is empty")
+    require(listing.stat().st_size == 0, "listing fallback requires a zero-byte Docker artifact")
+    require(peer is not None and peer_path is not None and peer.get("runner") == "native"
+            and peer.get("completed") is True, "complete native peer required for listing fallback")
+    require(len(peer["artifacts"]) == 1, "single-function native peer required")
+    expected = peer["artifacts"][0]
+    require(expected.get("inventory_scope") is None and expected["symbol"] == symbol,
+            "single-function native peer required")
+    for key in ("object", "assembly_listing", "function_inventory"):
+        require(Path(expected[key]).name == expected[key], "invalid native peer artifact path")
+    verify_artifacts(peer_path.parent, [expected])
+    native_obj = peer_path.parent / expected["object"]
+    require(comparable_inventory(obj.read_bytes(), symbol) ==
+            comparable_inventory(native_obj.read_bytes(), symbol),
+            "native/Docker code or relocations differ before listing fallback")
+    native_listing = (peer_path.parent / expected["assembly_listing"]).read_bytes()
+    require(listing_terminators(native_listing, symbol), "native peer listing is incomplete")
+    copied = listing.with_name(listing.stem + ".native.cod")
+    copied.write_bytes(native_listing)
+    return copied, {
+        "kind": "verified-native-peer-listing",
+        "original_docker_listing": listing.name,
+        "original_docker_listing_sha256": digest(listing.read_bytes()),
+        "native_peer_report_sha256": digest(peer_path.read_bytes()),
+        "native_peer_object_sha256": digest(native_obj.read_bytes()),
+        "native_peer_listing_sha256": digest(native_listing),
+        "function_and_relocations_equal_before_fixture": True,
+    }
 
 
 def read_case(folder):
@@ -132,7 +178,12 @@ def main():
     parser.add_argument("--behavior", action="store_true")
     parser.add_argument("--reference", type=Path)
     parser.add_argument("--expect-report", type=Path)
+    parser.add_argument("--native-listing-fallback", action="store_true",
+                        help="Use a verified native peer listing if the Docker listing is empty")
     args = parser.parse_args()
+    require(not args.native_listing_fallback or
+            (args.runner == "docker" and args.expect_report is not None),
+            "listing fallback requires Docker and --expect-report")
     started = time.perf_counter()
     case, inputs, case_path, target_path = read_case(args.case)
     validate_mode(args.runner, args.behavior, case.get("fixture"))
@@ -214,7 +265,13 @@ def main():
         obj = out / "candidate.obj"
         invoke([active["compiler"], *COMMON_FLAGS, *case["flags"], "/FAcs",
                 "/Fd" + str(out / "probe.pdb"), "/Fo" + str(obj), str(out / case["candidate"])], "candidate-compile")
-        artifact = capture_artifact(case["candidate"], spec, obj, out / (Path(case["candidate"]).stem + ".cod"))
+        listing = out / (Path(case["candidate"]).stem + ".cod")
+        listing, fallback = select_listing(listing, obj, spec["symbol"], args.runner,
+                                           args.native_listing_fallback, peer, peer_path)
+        artifact = capture_artifact(case["candidate"], spec, obj, listing)
+        if fallback is not None:
+            artifact["listing_fallback"] = fallback
+            report["artifact_notices"].append("Empty Docker listing retained; complete native peer listing copied after identical function/fixup verification")
         report["artifacts"].append(artifact)
         if not artifact["assembly_listing_has_terminators"]:
             report["artifact_notices"].append("Listing lacks terminators; complete COFF inventory retained and checked")
@@ -250,6 +307,7 @@ def main():
             report[key] = True
             report["peer_report_sha256"] = digest(peer_bytes)
             require(peer_path.read_bytes() == peer_bytes, "peer report changed")
+            verify_artifacts(peer_path.parent, peer["artifacts"])
         verify_artifacts(out, report["artifacts"])
         require(snapshot() == source_snapshot, "source changed during verification")
         check_lock(config, lock)

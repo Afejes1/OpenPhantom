@@ -1,0 +1,670 @@
+{
+  "schema": 1,
+  "campaign": "003",
+  "scope": "Worker attempts joined to original private receipts, including failed compiles and listing failures. Parent final pairs are separate.",
+  "worker_compiles": 18,
+  "worker_unique_source_variants": {
+    "step_scan_line": 1,
+    "free_scan_line": 1,
+    "submit_polyline": 8,
+    "draw_diagnostic_segment": 1
+  },
+  "attempts": [
+    {
+      "id": "step_scan_line",
+      "worker_attempt": 1,
+      "hypothesis": "Simple readable packet-order C with the nonnegative branch first will reproduce the no-local frame.",
+      "candidate_sha256": "160fe22070c97bea391ff54d26c771c50f74fb1d96919f870400fb7baf671fae",
+      "report": "engine/build/campaign-001-step_scan_line-f37bdc83893a/research-result.json",
+      "report_sha256": "6095d90a360bc20266418afc152b656a7ba837bbc40f3cbc4d9699ebc4ed0e34",
+      "runner": "native",
+      "completed": true,
+      "elapsed_seconds": 1.38742,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.070977,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "step_scan_line",
+        "address": 4228048,
+        "size": 209,
+        "candidate_size": 209,
+        "body_size": 209,
+        "status": "raw-code-match",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 0,
+        "object_sha256": "c150e5837d20e6724245c2bb6e57af64301e2e9053f059518d3aaa0fa0001fbd",
+        "compared_bytes": 209,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 0,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 0,
+        "raw_bytes_equal": true,
+        "relocated_bytes_equal": true,
+        "reference_span_sha256": "0a60448ff1da6123690d6930ed405a0d8eaffe16656239b8af38944f9decc9bd",
+        "resolved_span_sha256": "0a60448ff1da6123690d6930ed405a0d8eaffe16656239b8af38944f9decc9bd"
+      },
+      "fixture": null,
+      "error": null
+    },
+    {
+      "id": "step_scan_line",
+      "worker_attempt": 2,
+      "hypothesis": "Frozen exact source should retain raw equality and pass the focused update/return fixture.",
+      "candidate_sha256": "160fe22070c97bea391ff54d26c771c50f74fb1d96919f870400fb7baf671fae",
+      "report": "engine/build/campaign-001-step_scan_line-3e3f04a16da7/research-result.json",
+      "report_sha256": "f9fe0721d87274378426c27fa489f2164a953d793b3467e4b53f339d942cce6c",
+      "runner": "docker",
+      "completed": true,
+      "elapsed_seconds": 5.808177,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 1.270509,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-compile",
+          "seconds": 1.128554,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-link",
+          "seconds": 0.830866,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-execute",
+          "seconds": 0.580324,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "step_scan_line",
+        "address": 4228048,
+        "size": 209,
+        "candidate_size": 209,
+        "body_size": 209,
+        "status": "raw-code-match",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 0,
+        "object_sha256": "b02f9e725145778c3399f35bb49fd256ff13e2785d533e13fcb7409713c1bde1",
+        "compared_bytes": 209,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 0,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 0,
+        "raw_bytes_equal": true,
+        "relocated_bytes_equal": true,
+        "reference_span_sha256": "0a60448ff1da6123690d6930ed405a0d8eaffe16656239b8af38944f9decc9bd",
+        "resolved_span_sha256": "0a60448ff1da6123690d6930ed405a0d8eaffe16656239b8af38944f9decc9bd"
+      },
+      "fixture": {
+        "sha256": "da0da0aa664698406404795789abf4ef29c447a0d16a5b4de829d6300e212a31",
+        "passed": true,
+        "stdout": "Line step: 21 checks, 0 failures\n"
+      },
+      "error": null
+    },
+    {
+      "id": "free_scan_line",
+      "worker_attempt": 1,
+      "hypothesis": "Simple readable null-guarded tracked-release call will reproduce the wrapper.",
+      "candidate_sha256": "ddf9b52c92aa29167ebb7c19230f4fca09447c4812b8efde0b7bbeb9e904ea6a",
+      "report": "engine/build/campaign-001-free_scan_line-76b5ae780ecc/research-result.json",
+      "report_sha256": "b048ad54f6873b3d151654c0df4142897be70672ab69abdf66622a5f57f6bdd5",
+      "runner": "native",
+      "completed": true,
+      "elapsed_seconds": 1.415385,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.069142,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "free_scan_line",
+        "address": 4228257,
+        "size": 23,
+        "candidate_size": 23,
+        "body_size": 23,
+        "status": "relocation-adjusted-match",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 4,
+        "object_sha256": "978b3a69805ede32e1222170ba45c44fff2e6be43da5b02dab51b4e0978dc71f",
+        "compared_bytes": 19,
+        "dir32_bytes": 0,
+        "rel32_call_bytes": 4,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 0,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": true,
+        "reference_span_sha256": "6c0e9663ed88e2dfbbb6c9bea4129298dc2760102ad470c4b3f99c2b6e3579c9",
+        "resolved_span_sha256": "6c0e9663ed88e2dfbbb6c9bea4129298dc2760102ad470c4b3f99c2b6e3579c9"
+      },
+      "fixture": null,
+      "error": null
+    },
+    {
+      "id": "free_scan_line",
+      "worker_attempt": 2,
+      "hypothesis": "Frozen exact source should retain the match and pass the focused no-write release fixture.",
+      "candidate_sha256": "ddf9b52c92aa29167ebb7c19230f4fca09447c4812b8efde0b7bbeb9e904ea6a",
+      "report": "engine/build/campaign-001-free_scan_line-9f270d91a77a/research-result.json",
+      "report_sha256": "3e2e6ea4d39c992bb843dbd061a29361068d6dce806c89e7e6eebaf703eb4732",
+      "runner": "docker",
+      "completed": false,
+      "elapsed_seconds": 1.820336,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 1.110994,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "status": "not-attempted"
+      },
+      "fixture": null,
+      "error": "compiler assembly listing is empty"
+    },
+    {
+      "id": "free_scan_line",
+      "worker_attempt": 3,
+      "hypothesis": "Retry unchanged frozen inputs once because the first Docker failure was an empty listing artifact, not a source or object mismatch.",
+      "candidate_sha256": "ddf9b52c92aa29167ebb7c19230f4fca09447c4812b8efde0b7bbeb9e904ea6a",
+      "report": "engine/build/campaign-001-free_scan_line-117201760a00/research-result.json",
+      "report_sha256": "b7ec12e8d8e8268cfc926acbf0b4d382ef7dcb433bae1cf7c54ea534e37d261b",
+      "runner": "docker",
+      "completed": false,
+      "elapsed_seconds": 2.218762,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 1.522404,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "status": "not-attempted"
+      },
+      "fixture": null,
+      "error": "compiler assembly listing is empty"
+    },
+    {
+      "id": "submit_polyline",
+      "worker_attempt": 1,
+      "hypothesis": "Packet-order C with output, projected, packet, and i locals",
+      "candidate_sha256": "bb0270afd7d3cdf032e34e2fcf4295de8e0125b55090983f97ae6c4ed173aa2b",
+      "report": "engine/build/campaign-001-submit_polyline-abbb4f1bd71b/research-result.json",
+      "report_sha256": "b301853abf35c4a58fbd9797000ae14829af9806e4f6df8a3cb9eb2cbbd39add",
+      "runner": "native",
+      "completed": true,
+      "elapsed_seconds": 1.421273,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.070169,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "status": "unresolved",
+        "reason": "COFF relocation inventory differs from expected operands"
+      },
+      "fixture": null,
+      "error": null
+    },
+    {
+      "id": "submit_polyline",
+      "worker_attempt": 2,
+      "hypothesis": "Expanded local names",
+      "candidate_sha256": "c2591d5dc5d9c530931fcf1adeca466ee483689c0e8d540dd0f52c6128f50692",
+      "report": "engine/build/campaign-001-submit_polyline-f468541b9249/research-result.json",
+      "report_sha256": "3d25133c2a81d9b09f7122164b2ce5bf56f60763d675c164dd2f70cb06067677",
+      "runner": "native",
+      "completed": false,
+      "elapsed_seconds": 0.735912,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.023947,
+          "returncode": 2
+        }
+      ],
+      "comparison": {
+        "status": "not-attempted"
+      },
+      "fixture": null,
+      "error": "command failed: candidate-compile"
+    },
+    {
+      "id": "submit_polyline",
+      "worker_attempt": 3,
+      "hypothesis": "Correct public tokens with expanded locals",
+      "candidate_sha256": "b28850e68f189ab9d4e600f59c7bad768f39c764dc873fea0427e0eb3f10faa6",
+      "report": "engine/build/campaign-001-submit_polyline-de3aeee8e474/research-result.json",
+      "report_sha256": "594c6444856f9edc11eee601621c7c47d2c3581f064c82aa490715479eeabb43",
+      "runner": "native",
+      "completed": true,
+      "elapsed_seconds": 1.405956,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.058469,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "submit_polyline",
+        "address": 4228917,
+        "size": 478,
+        "candidate_size": 535,
+        "body_size": 478,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 0,
+        "object_sha256": "cc960fb4c09427e99ae51b85c42588af6f66ae46444b0f6a6278bee68a6f68ce",
+        "reason": "complete function extent differs"
+      },
+      "fixture": null,
+      "error": null
+    },
+    {
+      "id": "submit_polyline",
+      "worker_attempt": 4,
+      "hypothesis": "Whole-token quad, projected, packet, and i locals",
+      "candidate_sha256": "ec9afcbf568d770d3dce2b378f5350cb333a69e709ffdcc6cbf76c62664fbb3e",
+      "report": "engine/build/campaign-001-submit_polyline-9fa7b62d1626/research-result.json",
+      "report_sha256": "89aed0fa4f4f6eb9a70182fc2f78fdf39e102f86dd98bc159c607e7d10439320",
+      "runner": "native",
+      "completed": true,
+      "elapsed_seconds": 1.407602,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.064325,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "submit_polyline",
+        "address": 4228917,
+        "size": 478,
+        "candidate_size": 535,
+        "body_size": 478,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 0,
+        "object_sha256": "6fb899d6a89de88e02de3a6b91ed2af4783d6f2454c2cd211072b8eb51be008a",
+        "reason": "complete function extent differs"
+      },
+      "fixture": null,
+      "error": null
+    },
+    {
+      "id": "submit_polyline",
+      "worker_attempt": 5,
+      "hypothesis": "Conventional verts, pv, face, and segment locals",
+      "candidate_sha256": "ff53790ffc6ea87e9a0ad07a3e5ad0b2ecfca9aed10320cc73784446ed0b3600",
+      "report": "engine/build/campaign-001-submit_polyline-a1f539012a28/research-result.json",
+      "report_sha256": "5b0533330e082a71d24dd658f5f07b0e7e5f8fdee2119a4c2c356b6af97dde76",
+      "runner": "native",
+      "completed": true,
+      "elapsed_seconds": 1.401535,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.064144,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "submit_polyline",
+        "address": 4228917,
+        "size": 478,
+        "candidate_size": 505,
+        "body_size": 478,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 0,
+        "object_sha256": "74f3f13aecd7a403fb1e7eed0f0d0e8ea4e84f5bb781599e3e78df09744dd592",
+        "reason": "complete function extent differs"
+      },
+      "fixture": null,
+      "error": null
+    },
+    {
+      "id": "submit_polyline",
+      "worker_attempt": 6,
+      "hypothesis": "Projected-vertices aggregate with projected, face, and segment locals",
+      "candidate_sha256": "790f96c8bff90210d17efde67f6f19525f14ab898b58ce26926c6ccec62b4035",
+      "report": "engine/build/campaign-001-submit_polyline-14a20f44b665/research-result.json",
+      "report_sha256": "42577a15cee87a2f591ba159b808b4914ea46f46907524f891b75df1efd5bb54",
+      "runner": "native",
+      "completed": true,
+      "elapsed_seconds": 1.352857,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.063302,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "submit_polyline",
+        "address": 4228917,
+        "size": 478,
+        "candidate_size": 478,
+        "body_size": 478,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 28,
+        "object_sha256": "ed856a07792f86bfa0142c1ae45974fbce8b5eeee3e53e86d900f38f3628f483",
+        "compared_bytes": 450,
+        "dir32_bytes": 12,
+        "rel32_call_bytes": 16,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 21,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": false,
+        "reference_span_sha256": "495a3e1f6c8bd9a7ace8e35e7b1d691209b2d075514ebc27181b8d57ee4902c9",
+        "resolved_span_sha256": "11fc2fc2d74e53e8b20de616946e29bf7b855bd242bfda84a53ef1cf9c7e6432",
+        "reason": "non-relocation bytes differ",
+        "first_difference_offset": 25
+      },
+      "fixture": null,
+      "error": null
+    },
+    {
+      "id": "submit_polyline",
+      "worker_attempt": 7,
+      "hypothesis": "Packet pointer name reproduces reviewed local ordering",
+      "candidate_sha256": "0336255a11c4470b9bb40c0a3e53f23eab9ae92b72d5e5192fc81c05b1419d05",
+      "report": "engine/build/campaign-001-submit_polyline-18e737b3ac3a/research-result.json",
+      "report_sha256": "27260701d045f0ad78947f61264199a284410027e48479581a7900cc019160d0",
+      "runner": "native",
+      "completed": true,
+      "elapsed_seconds": 1.369826,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.064802,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "submit_polyline",
+        "address": 4228917,
+        "size": 478,
+        "candidate_size": 478,
+        "body_size": 478,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 28,
+        "object_sha256": "0468a0d6a6fb0a8c6d5bc3909bce5903653cdcd29b36a613b18bed15ec1cc70b",
+        "compared_bytes": 450,
+        "dir32_bytes": 12,
+        "rel32_call_bytes": 16,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 8,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": false,
+        "reference_span_sha256": "495a3e1f6c8bd9a7ace8e35e7b1d691209b2d075514ebc27181b8d57ee4902c9",
+        "resolved_span_sha256": "f59e3723740b82ffeae378d501d27619c1089d6ef1d61282ed881b09b4e3aa63",
+        "reason": "non-relocation bytes differ",
+        "first_difference_offset": 364
+      },
+      "fixture": null,
+      "error": null
+    },
+    {
+      "id": "submit_polyline",
+      "worker_attempt": 8,
+      "hypothesis": "Standard memcpy form for first aggregate copy",
+      "candidate_sha256": "a92ffe8c6d0958eea7282e08f9ce60d865721cbef06952aa195cdbefe3c207c7",
+      "report": "engine/build/campaign-001-submit_polyline-ea221626f7ca/research-result.json",
+      "report_sha256": "44a2f26fd99e0c60c0c010e223384b54d130b089529de6bd591ba7c2a939da2a",
+      "runner": "native",
+      "completed": false,
+      "elapsed_seconds": 0.703001,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.028665,
+          "returncode": 2
+        }
+      ],
+      "comparison": {
+        "status": "not-attempted"
+      },
+      "fixture": null,
+      "error": "command failed: candidate-compile"
+    },
+    {
+      "id": "submit_polyline",
+      "worker_attempt": 9,
+      "hypothesis": "Fresh native verification of frozen best source",
+      "candidate_sha256": "0336255a11c4470b9bb40c0a3e53f23eab9ae92b72d5e5192fc81c05b1419d05",
+      "report": "engine/build/campaign-001-submit_polyline-63bab7a4fb51/research-result.json",
+      "report_sha256": "07e4c2a5f5c78e66dc4ff028fb4f017a62575fe9cf9cbfd0f9a95314c61a3395",
+      "runner": "native",
+      "completed": true,
+      "elapsed_seconds": 1.369238,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.058002,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "submit_polyline",
+        "address": 4228917,
+        "size": 478,
+        "candidate_size": 478,
+        "body_size": 478,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 28,
+        "object_sha256": "f7201040bba015fec880786f772a1c20933b322dcdc29198f77c9dd9fcb7e380",
+        "compared_bytes": 450,
+        "dir32_bytes": 12,
+        "rel32_call_bytes": 16,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 8,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": false,
+        "reference_span_sha256": "495a3e1f6c8bd9a7ace8e35e7b1d691209b2d075514ebc27181b8d57ee4902c9",
+        "resolved_span_sha256": "f59e3723740b82ffeae378d501d27619c1089d6ef1d61282ed881b09b4e3aa63",
+        "reason": "non-relocation bytes differ",
+        "first_difference_offset": 364
+      },
+      "fixture": null,
+      "error": null
+    },
+    {
+      "id": "submit_polyline",
+      "worker_attempt": 10,
+      "hypothesis": "Locked-Docker verification and authored fixture",
+      "candidate_sha256": "0336255a11c4470b9bb40c0a3e53f23eab9ae92b72d5e5192fc81c05b1419d05",
+      "report": "engine/build/campaign-001-submit_polyline-5b09738ce9d9/research-result.json",
+      "report_sha256": "353fd276d92f89263d03cb49c452258c1e24070c0c27f261333f31664477d60c",
+      "runner": "docker",
+      "completed": true,
+      "elapsed_seconds": 6.214429,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 1.291267,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-compile",
+          "seconds": 1.155352,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-link",
+          "seconds": 0.964437,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-execute",
+          "seconds": 0.617967,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "submit_polyline",
+        "address": 4228917,
+        "size": 478,
+        "candidate_size": 478,
+        "body_size": 478,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 28,
+        "object_sha256": "a4509e281b045f791fdfbf2f406aeafe557f3d4ac579df2c4ce758f30e0643f0",
+        "compared_bytes": 450,
+        "dir32_bytes": 12,
+        "rel32_call_bytes": 16,
+        "internal_dir32_bytes": 0,
+        "different_bytes": 8,
+        "raw_bytes_equal": false,
+        "relocated_bytes_equal": false,
+        "reference_span_sha256": "495a3e1f6c8bd9a7ace8e35e7b1d691209b2d075514ebc27181b8d57ee4902c9",
+        "resolved_span_sha256": "f59e3723740b82ffeae378d501d27619c1089d6ef1d61282ed881b09b4e3aa63",
+        "reason": "non-relocation bytes differ",
+        "first_difference_offset": 364
+      },
+      "fixture": {
+        "sha256": "b98885fefaa314badb6074280f3958c873efdd0f75fd50e214299915e804d50d",
+        "passed": true,
+        "stdout": "Polyline: 35 checks, 0 failures\n"
+      },
+      "error": null
+    },
+    {
+      "id": "draw_diagnostic_segment",
+      "worker_attempt": 1,
+      "hypothesis": "Ordinary two-element point aggregate and reviewed callback order",
+      "candidate_sha256": "8ee32be53ea24824da3cce725b29fe72184296761cae90b6b50603c6ca96036e",
+      "report": "engine/build/campaign-001-draw_diagnostic_segment-8a175f6912a0/research-result.json",
+      "report_sha256": "b276869ab515b9c946cca32c19eb331919d0f325f854e8473896b0c556058bc7",
+      "runner": "native",
+      "completed": true,
+      "elapsed_seconds": 1.428019,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 0.074465,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "draw_diagnostic_segment",
+        "address": 4229395,
+        "size": 77,
+        "candidate_size": 76,
+        "body_size": 76,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 0,
+        "object_sha256": "264365c6b95278736739070221d23209dbf529de19b3ce8ed662505bc02f0d1d",
+        "reason": "complete function extent differs"
+      },
+      "fixture": null,
+      "error": null
+    },
+    {
+      "id": "draw_diagnostic_segment",
+      "worker_attempt": 2,
+      "hypothesis": "Final locked-Docker fixture with fresh native peer",
+      "candidate_sha256": "8ee32be53ea24824da3cce725b29fe72184296761cae90b6b50603c6ca96036e",
+      "report": "engine/build/campaign-001-draw_diagnostic_segment-a4df3359562f/research-result.json",
+      "report_sha256": "b7de2b85063c384ee1ecfc9bf7946a7d601974dfeae714d5136d8ab0eb72bd5a",
+      "runner": "docker",
+      "completed": false,
+      "elapsed_seconds": 1.817933,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 1.11146,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "status": "not-attempted"
+      },
+      "fixture": null,
+      "error": "compiler assembly listing is empty"
+    },
+    {
+      "id": "draw_diagnostic_segment",
+      "worker_attempt": 3,
+      "hypothesis": "Retry the same frozen source with authorized native-listing fallback",
+      "candidate_sha256": "8ee32be53ea24824da3cce725b29fe72184296761cae90b6b50603c6ca96036e",
+      "report": "engine/build/campaign-001-draw_diagnostic_segment-0576f046c45f/research-result.json",
+      "report_sha256": "b942f9e42deba6d764d3a0043a848407cb74d5827ea9fa3b0574593f565b3f6f",
+      "runner": "docker",
+      "completed": true,
+      "elapsed_seconds": 5.468977,
+      "phases": [
+        {
+          "phase": "candidate-compile",
+          "seconds": 1.108245,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-compile",
+          "seconds": 1.064767,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-link",
+          "seconds": 1.010549,
+          "returncode": 0
+        },
+        {
+          "phase": "fixture-execute",
+          "seconds": 0.607689,
+          "returncode": 0
+        }
+      ],
+      "comparison": {
+        "id": "draw_diagnostic_segment",
+        "address": 4229395,
+        "size": 77,
+        "candidate_size": 76,
+        "body_size": 76,
+        "status": "mismatch",
+        "literal_function_match": false,
+        "layout_verified": false,
+        "adjusted_bytes": 0,
+        "object_sha256": "8bbbecc5b6d479afdcefcc7cb3241e59f991798b7470d2a31c47129b5bc7a057",
+        "reason": "complete function extent differs"
+      },
+      "fixture": {
+        "sha256": "4cdbe4acbcf245892de84772287334acbdce2c856631dd7bb856d5232cbf5918",
+        "passed": true,
+        "stdout": "Diagnostic segment: 26 checks, 0 failures\n"
+      },
+      "error": null
+    }
+  ]
+}

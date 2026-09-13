@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "campaign": "003",
+  "status": "verification-complete",
+  "started_utc": "2026-09-13T02:06:18Z",
+  "stop_utc": "2026-09-13T02:51:18Z",
+  "worker_stop_utc": "2026-09-13T02:41:18Z",
+  "baseline_commit": "fed5267e1802a84e4d7e3ca86ca79ecef568fc61",
+  "weekly_account_usage_start_percent": 23,
+  "historical_accepted_functions": 14,
+  "historical_evidence_records": 19,
+  "previous_focused_exact_functions": 2,
+  "worker_model": "gpt-5.6-sol",
+  "worker_reasoning": "medium",
+  "max_concurrent_workers": 1,
+  "batching": "One worker may handle a queue of separate prepared cases; per-function caps and independent review stay unchanged.",
+  "assignments": [
+    {
+      "id": "step_scan_line",
+      "address": "0x4083d0",
+      "case": "engine/research/campaign-003-line-step",
+      "status": "focused-exact-awaiting-batch-acceptance",
+      "team_status": "not_done",
+      "worker": "comparison_inventory",
+      "owned_files": [
+        "candidate.c",
+        "api.h",
+        "behavior.c",
+        "README.md",
+        "worker-log.json"
+      ],
+      "worker_compiles": 2,
+      "worker_source_variants": 1,
+      "coordinator_verification_compiles": 2
+    },
+    {
+      "id": "free_scan_line",
+      "address": "0x4084a1",
+      "case": "engine/research/campaign-003-line-free",
+      "status": "focused-exact-awaiting-batch-acceptance",
+      "team_status": "not_done",
+      "worker": "comparison_inventory",
+      "owned_files": [
+        "candidate.c",
+        "api.h",
+        "behavior.c",
+        "README.md",
+        "worker-log.json"
+      ],
+      "worker_compiles": 3,
+      "worker_source_variants": 1,
+      "coordinator_verification_compiles": 2
+    },
+    {
+      "id": "submit_polyline",
+      "address": "0x00408735",
+      "case": "engine/research/campaign-003-polyline",
+      "status": "near-match-finish-later",
+      "team_status": "not_done",
+      "worker": "comparison_inventory",
+      "owned_files": [
+        "candidate.c",
+        "api.h",
+        "behavior.c",
+        "README.md",
+        "worker-log.json"
+      ],
+      "worker_compiles": 10,
+      "worker_source_variants": 8,
+      "coordinator_verification_compiles": 2
+    },
+    {
+      "id": "draw_diagnostic_segment",
+      "address": "0x00408913",
+      "case": "engine/research/campaign-003-diagnostic-segment",
+      "status": "body-exact-layout-pending",
+      "team_status": "not_done",
+      "worker": "comparison_inventory",
+      "max_worker_compiles": 5,
+      "absolute_deadline_utc": "2026-09-13T02:38:00Z",
+      "owned_files": [
+        "candidate.c",
+        "api.h",
+        "behavior.c",
+        "README.md",
+        "worker-log.json"
+      ],
+      "worker_compiles": 3,
+      "worker_source_variants": 1,
+      "coordinator_verification_compiles": 2
+    }
+  ],
+  "no_automatic_next_campaign": true,
+  "verification_finished_utc": "2026-09-13T02:36:05Z",
+  "weekly_account_after_verification_percent": 24,
+  "results": "results.json",
+  "publication": "Published with the commit containing this manifest; use that commit for CI status.",
+  "final_read_only_review": {
+    "worker": "comparison_inventory",
+    "scope": "Coordinator listing fallback and tests",
+    "material_findings": 0
+  }
+}

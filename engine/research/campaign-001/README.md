@@ -64,3 +64,21 @@ A case may retain a complete address/body/padding description as
 `reference_layout` while leaving `target` null. This records the hash of the
 full original span without feeding an incomplete binding inventory to the
 strict matcher. Both pilot cases currently use this mode.
+
+## Empty Docker assembly listing
+
+`--native-listing-fallback` is an explicit option for a zero-byte Docker listing.
+It requires `--expect-report` from a completed native compile of identical
+source and locked tools. Before executing a fixture, the runner validates the
+native artifacts, requires complete listing terminators, and compares complete
+COFF function bytes and relocations. It preserves the empty Docker listing and
+records a separately named copy of the native listing with its provenance.
+Default behavior still rejects an empty listing; byte matching is unchanged.
+Run focused boundary tests from the repository root:
+
+```powershell
+python -m unittest discover -s engine/research/campaign-001 -p "test_*.py" -v
+```
+
+These small synthetic runner tests also run in feature-push CI. The full
+regression and supplemental behavior job retains its existing batch cadence.

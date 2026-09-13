@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "campaign": "003",
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct bapline_step at 0x004083D0",
+  "started_at": "2026-09-13T02:09:44.6172405Z",
+  "finished_at": "2026-09-13T02:11:05.4677407Z",
+  "deadline_at": "2026-09-13T02:24:44.6172405Z",
+  "status": "complete",
+  "candidate_compiler_invocations": 2,
+  "experiment_cap": 10,
+  "source_variants": 1,
+  "verification_repeats": 1,
+  "experiments": [
+    {
+      "number": 1,
+      "runner": "native",
+      "hypothesis": "Simple readable packet-order C with the nonnegative branch first will reproduce the no-local frame.",
+      "candidate_sha256": "160fe22070c97bea391ff54d26c771c50f74fb1d96919f870400fb7baf671fae",
+      "compiled": true,
+      "candidate_bytes": 209,
+      "result": "raw-code-match",
+      "different_bytes": 0,
+      "report": "engine/build/campaign-001-step_scan_line-f37bdc83893a/research-result.json"
+    },
+    {
+      "number": 2,
+      "runner": "docker",
+      "hypothesis": "Frozen exact source should retain raw equality and pass the focused update/return fixture.",
+      "candidate_sha256": "160fe22070c97bea391ff54d26c771c50f74fb1d96919f870400fb7baf671fae",
+      "compiled": true,
+      "candidate_bytes": 209,
+      "result": "raw-code-match",
+      "different_bytes": 0,
+      "fixture": "21 checks, 0 failures",
+      "report": "engine/build/campaign-001-step_scan_line-3e3f04a16da7/research-result.json"
+    }
+  ],
+  "final": {
+    "candidate_sha256": "160fe22070c97bea391ff54d26c771c50f74fb1d96919f870400fb7baf671fae",
+    "api_header_sha256": "e80f28700c8cbbe5f3dcde784357f2c91c0f39f4023ce15f4939ac88be1ceec9",
+    "behavior_sha256": "da6fb6dc432eefdffc6bd6831b7de33ef3a82c892471abea66338bcd41e094ca",
+    "span_bytes": 209,
+    "body_bytes": 209,
+    "relocations": 0,
+    "adjusted_bytes": 0,
+    "compared_bytes": 209,
+    "different_bytes": 0,
+    "status": "raw-code-match",
+    "fixture_checks": 21,
+    "fixture_failures": 0,
+    "native_report": "engine/build/campaign-001-step_scan_line-f37bdc83893a/research-result.json",
+    "docker_report": "engine/build/campaign-001-step_scan_line-3e3f04a16da7/research-result.json",
+    "warning_waivers": [],
+    "byte_exclusions": [],
+    "original_game_executed": false
+  }
+}

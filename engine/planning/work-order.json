@@ -50,6 +50,22 @@
     {
       "address": "0x00408648",
       "source": "research/campaign-002-segment-test/README.md"
+    },
+    {
+      "address": "0x004083D0",
+      "source": "research/campaign-003-line-step/README.md"
+    },
+    {
+      "address": "0x004084A1",
+      "source": "research/campaign-003-line-free/README.md"
+    },
+    {
+      "address": "0x00408735",
+      "source": "research/campaign-003-polyline/README.md"
+    },
+    {
+      "address": "0x00408913",
+      "source": "research/campaign-003-diagnostic-segment/README.md"
     }
   ]
 }

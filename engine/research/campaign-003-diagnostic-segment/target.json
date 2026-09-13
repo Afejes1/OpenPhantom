@@ -1,0 +1,21 @@
+{
+  "id": "draw_diagnostic_segment",
+  "address": 4229395,
+  "size": 77,
+  "body_size": 76,
+  "source": "src/draw_diagnostic_segment.c",
+  "symbol": "_op_draw_diagnostic_segment",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 65,
+      "address": 4228917,
+      "symbol": "_op_submit_polyline",
+      "kind": "rel32-call"
+    }
+  ]
+}

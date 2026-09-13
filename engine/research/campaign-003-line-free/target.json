@@ -1,0 +1,21 @@
+{
+  "id": "free_scan_line",
+  "address": 4228257,
+  "size": 23,
+  "body_size": 23,
+  "source": "src/free_scan_line.c",
+  "symbol": "_op_free_scan_line",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 14,
+      "address": 4805714,
+      "symbol": "_op_scan_release",
+      "kind": "rel32-call"
+    }
+  ]
+}

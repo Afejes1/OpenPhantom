@@ -32,12 +32,18 @@ constants, external/global/call mappings and intended focused behavior cases.
 Missing inventory is an explicit preparation task, not permission to guess values.
 The coordinator independently verifies the inventory before relying on its claims.
 
-Use one Sol worker at medium reasoning for one bounded assignment at a time.
+Use one Sol worker at medium reasoning. A worker may receive a batch of related
+prepared cases and process them sequentially; each function retains its own
+cap, separate receipt and freeze/handoff. Increasing the queue does not increase
+concurrent workers or permit shared-file edits.
 The coordinator reviews ambiguous analysis, behavior and receipts independently.
 Escalate reasoning only for a specific unresolved issue. Workers own named files;
 only the coordinator edits shared verification/tracking files, Ghidra metadata,
 accepted history or Git. The worker cannot change acceptance rules or targets to
 fit generated output. Handoffs include failures, uncertainty and all experiments.
+Use token-aware local renames; unrestricted text replacements can corrupt
+public type and function names. Inspect generated source before spending a
+compiler attempt, including checks for unintended literal newline escapes.
 
 ## Time and stopping rules
 
@@ -61,7 +67,11 @@ operands, fabricated stack frames, new warning waivers or byte exclusions.
 ## Verification and evaluation
 
 Use pinned VC5 frontend/options. Native original-toolchain operation is compile
-only. Execute authored synthetic fixtures only in the existing locked Docker
+only. A zero-byte Docker assembly listing may use the explicit, tested native
+peer listing fallback after identical source/toolchain provenance and complete
+function/fixup agreement; retain the empty Docker artifact and identify the
+listing source. This changes no byte-comparison requirement.
+Execute authored synthetic fixtures only in the existing locked Docker
 runner; never execute the original game. Reuse existing runners and matchers.
 Check material branches/state transitions, not just a large assertion count.
 For a changed final candidate, use independent review, a focused Docker fixture

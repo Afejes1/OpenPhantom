@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "draw_diagnostic_segment",
+  "candidate": "candidate.c",
+  "symbol": "_op_draw_diagnostic_segment",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "../../src/baseline.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

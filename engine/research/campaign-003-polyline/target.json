@@ -1,0 +1,57 @@
+{
+  "id": "submit_polyline",
+  "address": 4228917,
+  "size": 478,
+  "body_size": 478,
+  "source": "src/submit_polyline.c",
+  "symbol": "_op_submit_polyline",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 16,
+      "address": 4202800,
+      "symbol": "_op_peek_projected_vertices",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 27,
+      "address": 4202529,
+      "symbol": "_op_peek_face_packet",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 53,
+      "address": 7308260,
+      "symbol": "_op_camera",
+      "kind": "dir32"
+    },
+    {
+      "offset": 78,
+      "address": 4255696,
+      "symbol": "_op_transform_project",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 198,
+      "address": 4882588,
+      "float32": 0.0,
+      "kind": "dir32"
+    },
+    {
+      "offset": 321,
+      "address": 4882588,
+      "float32": 0.0,
+      "kind": "dir32"
+    },
+    {
+      "offset": 460,
+      "address": 4750416,
+      "symbol": "_op_submit_polyline_quad",
+      "kind": "rel32-call"
+    }
+  ]
+}

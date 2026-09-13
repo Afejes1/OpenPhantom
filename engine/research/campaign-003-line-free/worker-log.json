@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "campaign": "003",
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct bapline_free at 0x004084A1",
+  "started_at": "2026-09-13T02:11:10Z",
+  "finished_at": "2026-09-13T02:13:36.4462933Z",
+  "deadline_at": "2026-09-13T02:26:10Z",
+  "status": "candidate-complete-fixture-blocked",
+  "candidate_compiler_invocations": 3,
+  "experiment_cap": 10,
+  "source_variants": 1,
+  "verification_repeats": 2,
+  "experiments": [
+    {
+      "number": 1,
+      "runner": "native",
+      "hypothesis": "Simple readable null-guarded tracked-release call will reproduce the wrapper.",
+      "candidate_sha256": "ddf9b52c92aa29167ebb7c19230f4fca09447c4812b8efde0b7bbeb9e904ea6a",
+      "compiled": true,
+      "candidate_bytes": 23,
+      "result": "relocation-adjusted-match",
+      "different_bytes": 0,
+      "report": "engine/build/campaign-001-free_scan_line-76b5ae780ecc/research-result.json"
+    },
+    {
+      "number": 2,
+      "runner": "docker",
+      "hypothesis": "Frozen exact source should retain the match and pass the focused no-write release fixture.",
+      "candidate_sha256": "ddf9b52c92aa29167ebb7c19230f4fca09447c4812b8efde0b7bbeb9e904ea6a",
+      "compiled": true,
+      "result": "verification-failed",
+      "reason": "compiler assembly listing is empty",
+      "fixture_executed": false,
+      "report": "engine/build/campaign-001-free_scan_line-9f270d91a77a/research-result.json"
+    },
+    {
+      "number": 3,
+      "runner": "docker",
+      "hypothesis": "Retry unchanged frozen inputs once because the first Docker failure was an empty listing artifact, not a source or object mismatch.",
+      "candidate_sha256": "ddf9b52c92aa29167ebb7c19230f4fca09447c4812b8efde0b7bbeb9e904ea6a",
+      "compiled": true,
+      "result": "verification-failed",
+      "reason": "compiler assembly listing is empty",
+      "fixture_executed": false,
+      "report": "engine/build/campaign-001-free_scan_line-117201760a00/research-result.json"
+    }
+  ],
+  "final": {
+    "candidate_sha256": "ddf9b52c92aa29167ebb7c19230f4fca09447c4812b8efde0b7bbeb9e904ea6a",
+    "api_header_sha256": "9b922b1407ca930ec9d6e6686dfa54abbe0f9f77e9ecb7415c52228a73e0b236",
+    "behavior_sha256": "5f63731d1b47dc9f5fba365b8a5a3ea2a8c6e46a176778f1b2b5742776adf847",
+    "span_bytes": 23,
+    "body_bytes": 23,
+    "bindings": 1,
+    "adjusted_bytes": 4,
+    "compared_bytes": 19,
+    "different_bytes": 0,
+    "status": "relocation-adjusted-match",
+    "native_report": "engine/build/campaign-001-free_scan_line-76b5ae780ecc/research-result.json",
+    "docker_fixture_status": "blocked-before-fixture",
+    "docker_failure_reports": [
+      "engine/build/campaign-001-free_scan_line-9f270d91a77a/research-result.json",
+      "engine/build/campaign-001-free_scan_line-117201760a00/research-result.json"
+    ],
+    "warning_waivers": [],
+    "byte_exclusions": [],
+    "original_game_executed": false
+  },
+  "blocker": "Both locked-Docker attempts emitted an exact candidate object but a zero-byte candidate.cod; the unchanged runner rejected the empty listing before fixture compilation. Native candidate.cod is 1,252 bytes. Source was not distorted and no additional retry was attempted."
+}

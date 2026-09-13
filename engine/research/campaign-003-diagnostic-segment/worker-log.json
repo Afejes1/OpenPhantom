@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "campaign": "003",
+  "worker": "comparison_inventory",
+  "assignment": "Reconstruct bapline_drawSegment at 0x00408913",
+  "started_at": "2026-09-13T02:30:16.8802700Z",
+  "deadline_at": "2026-09-13T02:38:00Z",
+  "finished_at": "2026-09-13T02:33:22.3769193Z",
+  "status": "complete-expected-extent-mismatch",
+  "compiler_invocations": 3,
+  "preparation_notices": ["Initial file-write command used Resolve-Path on files not yet created, so no sources were written and the runner stopped before invoking a compiler."],
+  "experiments": [
+    {"number":1,"hypothesis":"Ordinary two-element point aggregate and reviewed callback order","report":"engine/build/campaign-001-draw_diagnostic_segment-8a175f6912a0/research-result.json","result":"complete 76-byte body against fixed 77-byte body-plus-alignment target"},
+    {"number":2,"hypothesis":"Final locked-Docker fixture with fresh native peer","report":"engine/build/campaign-001-draw_diagnostic_segment-a4df3359562f/research-result.json","result":"incomplete because Docker compiler assembly listing was empty; fixture did not run"},
+    {"number":3,"hypothesis":"Retry the same frozen source with authorized native-listing fallback","report":"engine/build/campaign-001-draw_diagnostic_segment-0576f046c45f/research-result.json","result":"76-byte expected extent mismatch; fixture passed 26 checks with zero failures"}
+  ],
+  "validation":{"target_size":77,"target_body_size":76,"candidate_size":76,"verified_call_binding_count":1,"fixture_checks":26,"fixture_failures":0,"original_executed":false},
+  "blocker":"The target includes the one-byte INT3 alignment gap after the complete 76-byte body; source fabrication is prohibited."
+}

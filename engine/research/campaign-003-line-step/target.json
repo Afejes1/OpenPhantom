@@ -1,0 +1,14 @@
+{
+  "id": "step_scan_line",
+  "address": 4228048,
+  "size": 209,
+  "body_size": 209,
+  "source": "src/step_scan_line.c",
+  "symbol": "_op_step_scan_line",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}
