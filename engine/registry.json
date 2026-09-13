@@ -654,6 +654,104 @@
         "The linked helper is the reconstructed name routine, not a fixture stub"
       ],
       "exceptions": []
+    },
+    {
+      "id": "model_load_state",
+      "module": "focused_accessors",
+      "analysis_name": "get_sw3d_model_load_state",
+      "purpose": "Read the model load-state word unchanged",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/focused-accessors-acceptance.md",
+        "research/campaign-022-model-load-state/README.md"
+      ],
+      "behavior_tests": [
+        "tests/focused_accessors_behavior.c"
+      ],
+      "quirks": [],
+      "exceptions": []
+    },
+    {
+      "id": "get_system_font",
+      "module": "focused_accessors",
+      "analysis_name": "get_current_system_font",
+      "purpose": "Read the current system-font pointer unchanged",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/focused-accessors-acceptance.md",
+        "research/campaign-022-get-system-font/README.md"
+      ],
+      "behavior_tests": [
+        "tests/focused_accessors_behavior.c"
+      ],
+      "quirks": [],
+      "exceptions": []
+    },
+    {
+      "id": "shield_radius",
+      "module": "focused_accessors",
+      "analysis_name": "get_shield_slot_radius",
+      "purpose": "Read active shield radius with signed slot bounds",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/focused-accessors-acceptance.md",
+        "research/campaign-022-shield-radius/README.md"
+      ],
+      "behavior_tests": [
+        "tests/focused_accessors_behavior.c"
+      ],
+      "quirks": [],
+      "exceptions": []
+    },
+    {
+      "id": "shield_set_colour",
+      "module": "focused_accessors",
+      "analysis_name": "set_linked_sphere_effect_color",
+      "purpose": "Set shield RGBA bytes",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/focused-accessors-acceptance.md",
+        "research/campaign-022-shield-set-colour/README.md"
+      ],
+      "behavior_tests": [
+        "tests/focused_accessors_behavior.c"
+      ],
+      "quirks": [],
+      "exceptions": []
+    },
+    {
+      "id": "shield_set_visible",
+      "module": "focused_accessors",
+      "analysis_name": "set_linked_sphere_effect_enabled",
+      "purpose": "Set the full shield visibility word",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/focused-accessors-acceptance.md",
+        "research/campaign-022-shield-set-visible/README.md"
+      ],
+      "behavior_tests": [
+        "tests/focused_accessors_behavior.c"
+      ],
+      "quirks": [],
+      "exceptions": []
+    },
+    {
+      "id": "shield_set_visibility_bypass",
+      "module": "focused_accessors",
+      "analysis_name": "set_linked_sphere_visibility_bypass",
+      "purpose": "Set the transient/no-save word that also bypasses volume classification",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/focused-accessors-acceptance.md",
+        "research/campaign-022-shield-set-visibility-bypass/README.md"
+      ],
+      "behavior_tests": [
+        "tests/focused_accessors_behavior.c"
+      ],
+      "quirks": [
+        "Stable source ID for visibility bypass also represents the no-save/transient flag"
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

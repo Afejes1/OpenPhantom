@@ -1,0 +1,5 @@
+# Focused accessor acceptance
+
+Acceptance007 integrates six exact Campaign022 cases (319 bytes, seven verified operands): model load state, system font, shield radius, color, visibility and no-save/visibility bypass. Canonical header preserves all observed offsets and sizes. Production bodies change only their include. The model view covers observed offsetD0, not the unknown complete object extent. The shield table is32 records of0xB4.
+
+The six focused fixtures retain their test bodies with unique static identifier prefixes and one shared shield table. An additional32-slot sequence invokes actual color, visibility and no-save setters then the actual radius getter, checking a complete independent table snapshot after every call. Existing34 target/registry entries and earlier fixtures are preserved. No game execution, byte exclusions, warning waivers or final-linked-placement claim. Final status is recorded in research/acceptance-007/result.json only after clean build/test/compare/record.

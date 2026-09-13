@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "campaign-022",
-  "status": "verified-awaiting-publication",
+  "status": "published",
   "started_utc": "2026-09-13T15:34:39.821497+00:00",
   "implementation_stop_utc": "2026-09-13T16:10:00Z",
   "deadline_utc": "2026-09-13T16:20:00Z",
@@ -19,5 +19,6 @@
   "overlap_exact_bytes": 29,
   "near_matches": 2,
   "fixture_checks": 3952,
-  "accepted_promotions": 0
+  "accepted_promotions": 0,
+  "source_commit": "f2b027e44fe6cdbb1323ba8f236de41628c44b14"
 }

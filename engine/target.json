@@ -1444,6 +1444,130 @@
           "symbol": "_op_world_mangle_names"
         }
       ]
+    },
+    {
+      "id": "model_load_state",
+      "address": 4572283,
+      "size": 14,
+      "body_size": 14,
+      "source": "src/model_load_state.c",
+      "symbol": "_op_model_load_state",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "get_system_font",
+      "address": 4634452,
+      "size": 10,
+      "body_size": 10,
+      "source": "src/get_system_font.c",
+      "symbol": "_op_get_system_font",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 4945900,
+          "symbol": "_op_system_font"
+        }
+      ]
+    },
+    {
+      "id": "shield_radius",
+      "address": 4435923,
+      "size": 67,
+      "body_size": 67,
+      "source": "src/shield_radius.c",
+      "symbol": "_op_shield_radius",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 18,
+          "address": 4883820,
+          "float32": 0.0
+        },
+        {
+          "offset": 34,
+          "address": 7117360,
+          "symbol": "_op_shields"
+        },
+        {
+          "offset": 51,
+          "address": 4883820,
+          "float32": 0.0
+        }
+      ]
+    },
+    {
+      "id": "shield_set_colour",
+      "address": 4435687,
+      "size": 94,
+      "body_size": 94,
+      "source": "src/shield_set_colour.c",
+      "symbol": "_op_shield_set_colour",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 30,
+          "address": 7117360,
+          "symbol": "_op_shields"
+        }
+      ]
+    },
+    {
+      "id": "shield_set_visible",
+      "address": 4435990,
+      "size": 67,
+      "body_size": 67,
+      "source": "src/shield_set_visible.c",
+      "symbol": "_op_shield_set_visible",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 30,
+          "address": 7117360,
+          "symbol": "_op_shields"
+        }
+      ]
+    },
+    {
+      "id": "shield_set_visibility_bypass",
+      "address": 4436057,
+      "size": 67,
+      "body_size": 67,
+      "source": "src/shield_set_visibility_bypass.c",
+      "symbol": "_op_shield_set_visibility_bypass",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 30,
+          "address": 7117360,
+          "symbol": "_op_shields"
+        }
+      ]
     }
   ]
 }

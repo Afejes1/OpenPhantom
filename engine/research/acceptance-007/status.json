@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "acceptance-007",
+  "status": "independent-review",
+  "started_utc": "2026-09-13T15:59:23.129346+00:00",
+  "implementation_stop_utc": "2026-09-13T16:10:00Z",
+  "deadline_utc": "2026-09-13T16:20:00Z",
+  "baseline_commit": "f2b027e44fe6cdbb1323ba8f236de41628c44b14",
+  "functions": [
+    "model_load_state",
+    "get_system_font",
+    "shield_radius",
+    "shield_set_colour",
+    "shield_set_visible",
+    "shield_set_visibility_bypass"
+  ],
+  "planned_promotions": 6,
+  "full_span_bytes": 319,
+  "verified_operands": 7,
+  "registered_before": 34,
+  "evidence_records_before": 26,
+  "original_game_executed": false,
+  "tooling_tests_passed": 100,
+  "focused_runner_tests_passed": 19,
+  "initial_discovery_diagnostic": "An over-specific test_tools.py pattern found zero tests; then actual engine/tests discovery ran100, and campaign-001 discovery ran19, both passed."
+}

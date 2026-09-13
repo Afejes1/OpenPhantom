@@ -1,0 +1,41 @@
+{
+  "prior34_target_and_registry_entries_unchanged": true,
+  "sources": [
+    {
+      "id": "model_load_state",
+      "research_sha256": "bcd6798f7c71af8104522df5de9ed8bc56e76cb4639cc89399babc9f646c98d5",
+      "source_sha256": "be64a1324c0bf9370f784d1fe2896cad1ba6266bc42dcf4618d58c2d57deda27",
+      "changes": "Canonical include and whitespace only"
+    },
+    {
+      "id": "get_system_font",
+      "research_sha256": "23869b10f1c0d557c4e18c11481cb5868b2179cfd661da5178109b4d67c5087f",
+      "source_sha256": "cd160e2dbde31cc2b6db0c847647e317fe67f5264faf54a9f7f9720ff7cb53a3",
+      "changes": "Canonical include and whitespace only"
+    },
+    {
+      "id": "shield_radius",
+      "research_sha256": "e39938982e17cdfa46a89c6d336a3fbce483af03debecbf1cb236d47838ea9da",
+      "source_sha256": "438d8426d3795e25a7062870dd6c878ce310922efcf7e0d6b320208012452e20",
+      "changes": "Canonical include and whitespace only"
+    },
+    {
+      "id": "shield_set_colour",
+      "research_sha256": "737a479416ab8615c2c3d9e666ec1dc3a4d113bad23f3491cb714319e6196cf5",
+      "source_sha256": "5c155ff782db10b06f20e698ac14d05c3f9b69619b55c9f00e1be060ab3a3858",
+      "changes": "Canonical include and whitespace only"
+    },
+    {
+      "id": "shield_set_visible",
+      "research_sha256": "88eced6b37c8f5a22ceb050e8c330b28a9ccfa96e190988f5be9eb41a2e88e9c",
+      "source_sha256": "256a754f4fde2e8db7777c12ef58e77e2dc790a72d9a06234f2396c10776be16",
+      "changes": "Canonical include and whitespace only"
+    },
+    {
+      "id": "shield_set_visibility_bypass",
+      "research_sha256": "9202c19c39fb158b103d029858781a9a6198300d419db12d3fda9b81d395009a",
+      "source_sha256": "53e1a6e2549f1b1cd520f235524155138c3680d90d8d5304927dd8577b307e4c",
+      "changes": "Canonical include and whitespace only"
+    }
+  ]
+}

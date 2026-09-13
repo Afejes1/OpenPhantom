@@ -158,7 +158,7 @@
     },
     {
       "id": "campaign-022",
-      "status": "verified",
+      "status": "published",
       "new_exact_functions": 6,
       "new_exact_bytes": 319,
       "team_done_overlap_exact_functions": 2,
@@ -167,10 +167,11 @@
       "fixture_checks": 3952,
       "promotions": 0,
       "results": "../campaign-022/results.md",
-      "verified_utc": "2026-09-13T15:55:25.802199+00:00"
+      "verified_utc": "2026-09-13T15:55:25.802199+00:00",
+      "source_commit": "f2b027e44fe6cdbb1323ba8f236de41628c44b14"
     }
   ],
-  "current_work": "Campaign022 verified; final publication and window audit.",
+  "current_work": "Acceptance007 six exact getters/setters passed review; clean source build pending.",
   "original_game_executed": false,
   "weekly_shared_usage_latest_percent": 43,
   "last_checkpoint_utc": "2026-09-13T15:55:25.802199+00:00",
