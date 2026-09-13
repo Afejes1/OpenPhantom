@@ -65,5 +65,9 @@
     }
   ],
   "worker_handoff_completed_utc": "2026-09-13T12:26:01.2546Z",
-  "final_verification_completed_utc": "2026-09-13T12:27:20.152234+00:00"
+  "final_verification_completed_utc": "2026-09-13T12:27:20.152234+00:00",
+  "publication_source_commit": "9ef616508ba406c3e697f546d6092cec12ce4bd0",
+  "publication_confirmed_utc": "2026-09-13T12:38:23.127340+00:00",
+  "focused_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34757543252",
+  "focused_ci_conclusion": "success"
 }

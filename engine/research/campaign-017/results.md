@@ -60,3 +60,6 @@ acceptance checkpoint already passed full CI. This push uses the existing focuse
 runner, tracking and annotation checks. Shared weekly usage read40% near completion
 versus39% at the start of the4.5-hour window; this is rounded account-wide usage,
 not an isolated cost measurement.
+
+Published source checkpoint:9ef616508ba406c3e697f546d6092cec12ce4bd0.
+[Focused CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34757543252) passed.

@@ -401,5 +401,9 @@
   ],
   "worker_candidate_compile_seconds": 8.502402,
   "final_pair_elapsed_seconds": 42.701383,
-  "timestamp_note": "Worker per-case start/end stamps describe source creation through candidate report/handoff, not a complete model reasoning interval; use campaign wall time for throughput."
+  "timestamp_note": "Worker per-case start/end stamps describe source creation through candidate report/handoff, not a complete model reasoning interval; use campaign wall time for throughput.",
+  "publication_source_commit": "9ef616508ba406c3e697f546d6092cec12ce4bd0",
+  "publication_confirmed_utc": "2026-09-13T12:38:23.127340+00:00",
+  "focused_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34757543252",
+  "focused_ci_conclusion": "success"
 }

@@ -1,6 +1,7 @@
 {
   "schema": 1,
   "module_order": [
+    "bp/bapworld.c",
     "bp/bapsound.c",
     "bp/bapmusic.c",
     "bp/bapdraw.c",
