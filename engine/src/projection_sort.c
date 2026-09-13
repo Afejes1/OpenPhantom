@@ -1,6 +1,6 @@
 #include "projected_overlay.h"
 #include <string.h>
-// FUNCTION: WMAIN 0x0041C970
+// FUNCTION: WMAIN 0x0041c970
 void op_projection_sort(void)
 {
     if (op_projection_dirty)

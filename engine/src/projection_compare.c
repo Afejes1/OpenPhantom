@@ -1,6 +1,6 @@
 #include "projected_overlay.h"
 #include <string.h>
-// FUNCTION: WMAIN 0x0041C9A0
+// FUNCTION: WMAIN 0x0041c9a0
 int op_projection_compare(const void *left, const void *right)
 {
     const OP_PROJECTION *a = (const OP_PROJECTION *)left;

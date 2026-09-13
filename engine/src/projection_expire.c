@@ -1,6 +1,6 @@
 #include "projected_overlay.h"
 #include <string.h>
-// FUNCTION: WMAIN 0x0041C8B0
+// FUNCTION: WMAIN 0x0041c8b0
 void op_projection_expire(void)
 {
     OP_PROJECTION *p = op_projections;

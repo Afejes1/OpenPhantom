@@ -1,6 +1,6 @@
 #include "projected_overlay.h"
 #include <string.h>
-// FUNCTION: WMAIN 0x0041C950
+// FUNCTION: WMAIN 0x0041c950
 void op_projection_clear(void)
 {
     memset(op_projections, 0, sizeof(op_projections));

@@ -1,6 +1,6 @@
 #include "projected_overlay.h"
 #include <string.h>
-// FUNCTION: WMAIN 0x0041C910
+// FUNCTION: WMAIN 0x0041c910
 void op_projection_remove(int token)
 {
     OP_PROJECTION *p = op_projections;
