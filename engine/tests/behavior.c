@@ -130,6 +130,8 @@ static void clip_flag_tests(void)
 #include "zap_effects_behavior.c"
 #include "ripple_effects_behavior.c"
 #include "effects_save_behavior.c"
+#include "effects_chain_behavior.c"
+#include "ripple_spawn_behavior.h"
 
 int main(void)
 {
@@ -183,6 +185,8 @@ int main(void)
     failures += op_test_zap_effects();
     failures += op_test_ripple_effects();
     failures += op_test_effects_save();
+    failures += op_test_effects_chain();
+    failures += rs_main();
     if (failures) return 1;
 #ifdef OP_VC5_BEHAVIOR
     puts("VC5 behavioral fixture passed, including x87 unordered fallback.");

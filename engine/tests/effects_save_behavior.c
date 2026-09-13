@@ -26,6 +26,12 @@ static int effects_save_read(void *memory, unsigned int bytes)
         ES_CHECK(bytes == 96);
         return lc_effects_load_op_save_read(memory, bytes);
     }
+    if (bytes == 4 && memory != &op_overlay_save)
+    {
+        int wanted = lc_effects_load_op_shield_load();
+        *(int *)memory = 0;
+        return wanted == 0 ? 1 : 0;
+    }
     ES_CHECK(memory == &op_overlay_save && bytes == 28);
     ES_CHECK(memcmp(&op_overlay_save, &es_expected_overlay, 28) == 0);
     status = lc_effects_load_op_overlay_read_state();
@@ -37,11 +43,6 @@ static int effects_save_read(void *memory, unsigned int bytes)
     ++es_overlay_reads;
     /* Actual overlay_read inverts the serializer result. */
     return status == 0 ? 1 : 0;
-}
-int op_shield_load(void)
-{
-    ES_CHECK(effects_save_active);
-    return lc_effects_load_op_shield_load();
 }
 static int op_test_effects_save(void)
 {

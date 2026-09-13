@@ -1,10 +1,18 @@
 #ifndef OP_FOCUSED_ACCESSORS_H
 #define OP_FOCUSED_ACCESSORS_H
 #include <stddef.h>
+/* Partial definition view; name storage length is not recovered. */
+typedef struct OP_DEFINITION
+{
+    unsigned char prefix[8];
+    char name[32];
+} OP_DEFINITION;
 typedef struct OP_ATTACHED_ACTOR
 {
     unsigned int flags;
-    unsigned char before_slot[0xfc];
+    unsigned char before_definition[16];
+    OP_DEFINITION *definition;
+    unsigned char before_slot[232];
     int shield_slot;
 } OP_ATTACHED_ACTOR;
 
@@ -27,7 +35,8 @@ typedef struct OP_SHIELD
     float offset_x, offset_y, offset_z;
     void *sprite;
     /* Extent view to the next record, not a recovered string capacity. */
-    char name[0x54];
+    char name[80];
+    int saved_actor;
 } OP_SHIELD;
 extern OP_SHIELD op_shields[32];
 typedef char shield_stride[sizeof(OP_SHIELD) == 0xb4 ? 1 : -1];
@@ -94,4 +103,7 @@ int op_shield_save_size(void);
 int op_shield_set_texture(int slot, char *name);
 void op_shield_draw_released(void);
 void op_effects_object_destroyed(OP_ATTACHED_ACTOR *object);
+typedef char actor_definition_offset[offsetof(OP_ATTACHED_ACTOR, definition) == 20 ? 1 : -1];
+typedef char shield_saved_actor_offset[offsetof(OP_SHIELD, saved_actor) == 176 ? 1 : -1];
+typedef char definition_name_offset[offsetof(OP_DEFINITION, name) == 8 ? 1 : -1];
 #endif

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "acceptance-013",
+  "baseline_commit": "71850b3afade63a17de698ee771b36a278572259",
+  "functions": [
+    "halo_add",
+    "halo_attach",
+    "effects_write",
+    "shield_write",
+    "shield_load",
+    "ripple_spawn"
+  ],
+  "promotions": 6,
+  "registered_before": 82,
+  "registered_after": 88,
+  "full_span_bytes": 1752,
+  "verified_operands": 71,
+  "status": "pending-full-verification",
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

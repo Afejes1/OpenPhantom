@@ -9,9 +9,9 @@ typedef struct OP_OVERLAY_SAVE
 typedef struct OP_HALO
 {
     OP_ATTACHED_ACTOR *owner;
-    unsigned char before_sprite[16];
+    int node, field8, fieldc, mode;
     void *sprite;
-    unsigned char tail[4];
+    unsigned int color;
 } OP_HALO;
 typedef char op_save_size[sizeof(OP_OVERLAY_SAVE) == 28 ? 1 : -1];
 typedef char op_save_visible[offsetof(OP_OVERLAY_SAVE, visible) == 12 ? 1 : -1];
@@ -46,4 +46,19 @@ void op_halo_draw_slot(OP_ATTACHED_ACTOR *actor, int slot);
 void op_halo_attach(OP_ATTACHED_ACTOR *actor);
 void op_effects_object_visibility(OP_ATTACHED_ACTOR *actor);
 void op_effects_object_created(OP_ATTACHED_ACTOR *actor);
+typedef struct OP_HALO_COLOR
+{
+    char *name;
+    unsigned int color;
+} OP_HALO_COLOR;
+extern OP_HALO_COLOR op_halo_colors[];
+int op_find_node_ordinal(OP_ATTACHED_ACTOR *, unsigned int);
+int op_compare_names(char *, char *);
+void op_halo_add(OP_ATTACHED_ACTOR *, unsigned int, int, int, char *, unsigned int, int);
+typedef char
+    halo_offsets[(offsetof(OP_HALO, node) == 4 && offsetof(OP_HALO, field8) == 8 && offsetof(OP_HALO, fieldc) == 12 &&
+                  offsetof(OP_HALO, mode) == 16 && offsetof(OP_HALO, sprite) == 20 && offsetof(OP_HALO, color) == 24 &&
+                  sizeof(OP_HALO_COLOR) == 8)
+                     ? 1
+                     : -1];
 #endif

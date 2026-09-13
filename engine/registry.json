@@ -1523,6 +1523,114 @@
         "Original complete span and every operand must match; external callbacks remain authored fixtures."
       ],
       "exceptions": []
+    },
+    {
+      "id": "halo_add",
+      "module": "halo_overlay",
+      "analysis_name": "halo_add",
+      "purpose": "Halo add",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-save-halo-acceptance.md",
+        "research/campaign-029-halo-add/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/effects_chain_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every address operand must match. External backends remain authored fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "halo_attach",
+      "module": "halo_overlay",
+      "analysis_name": "halo_attach",
+      "purpose": "Halo attach",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-save-halo-acceptance.md",
+        "research/campaign-029-halo-attach/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/effects_chain_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every address operand must match. External backends remain authored fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "effects_write",
+      "module": "effects_save",
+      "analysis_name": "effects_write",
+      "purpose": "Effects write",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-save-halo-acceptance.md",
+        "research/campaign-029-effects-write/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/effects_chain_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every address operand must match. External backends remain authored fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "shield_write",
+      "module": "effects_save",
+      "analysis_name": "shield_write",
+      "purpose": "Shield write",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-save-halo-acceptance.md",
+        "research/campaign-029-shield-write/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/effects_chain_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every address operand must match. External backends remain authored fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "shield_load",
+      "module": "effects_save",
+      "analysis_name": "shield_load",
+      "purpose": "Shield load",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-save-halo-acceptance.md",
+        "research/campaign-030-shield-load/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/effects_chain_behavior.c"
+      ],
+      "quirks": [
+        "Original complete span and every address operand must match. External backends remain authored fixtures."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ripple_spawn",
+      "module": "ripple_spawn",
+      "analysis_name": "ripple_spawn",
+      "purpose": "Ripple spawn",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-save-halo-acceptance.md",
+        "research/campaign-030-ripple-spawn/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/ripple_spawn_behavior.h"
+      ],
+      "quirks": [
+        "Original complete span and every address operand must match. External backends remain authored fixtures."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

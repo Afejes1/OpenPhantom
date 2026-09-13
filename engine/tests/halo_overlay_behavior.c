@@ -15,7 +15,6 @@ OP_HALO op_halos[32];
 int op_halo_count;
 #include "detach_halo_behavior.h"
 #include "effects_draw_object_behavior.h"
-#include "effects_object_created_behavior.h"
 #include "effects_object_visibility_behavior.h"
 #include "halo_draw_actor_behavior.h"
 #include "halo_free_all_behavior.h"
@@ -123,6 +122,11 @@ static void halo_overlay_release_sprite(void **sprite)
 }
 void op_save_write(const void *memory, unsigned int bytes)
 {
+    if (effects_chain_active)
+    {
+        effects_chain_write(memory, bytes);
+        return;
+    }
     HL_CHECK(halo_overlay_active);
     if (hl_mode == HL_SAVE)
     {
@@ -142,6 +146,8 @@ void op_save_write(const void *memory, unsigned int bytes)
 }
 int op_save_read(void *memory, unsigned int bytes)
 {
+    if (effects_chain_active)
+        return effects_chain_read(memory, bytes);
     if (effects_save_active)
         return effects_save_read(memory, bytes);
     HL_CHECK(halo_overlay_active);
@@ -166,12 +172,6 @@ void op_halo_draw_slot(OP_ATTACHED_ACTOR *actor, int slot)
         lc_halo_draw_actor_op_halo_draw_slot(actor, slot);
     else
         HL_CHECK(0);
-}
-void op_halo_attach(OP_ATTACHED_ACTOR *actor)
-{
-    HL_CHECK(halo_overlay_active && hl_mode == HL_CREATE);
-    if (hl_mode == HL_CREATE)
-        lc_effects_object_created_op_halo_attach(actor);
 }
 void op_shield_draw_attached(int slot, float *transform)
 {
@@ -262,8 +262,6 @@ static int op_test_halo_overlay(void)
     hl_mode = HL_HALO_DIRECT;
     status += lc_halo_draw_actor_main();
     status += lc_effects_object_visibility_main();
-    hl_mode = HL_CREATE;
-    status += lc_effects_object_created_main();
     hl_mode = HL_CHAIN;
     hl_chain_tests();
     halo_overlay_active = 0;
@@ -272,8 +270,7 @@ static int op_test_halo_overlay(void)
     HL_CHECK(world_readers_allocate_calls == previous_allocate && wc_backend_events == previous_chunks);
     total = hl_checks + hl_letterbox_set_enabled_checks + hl_overlay_save_state_checks + hl_overlay_read_state_checks +
             hl_halo_startup_checks + hl_halo_shutdown_checks + hl_effects_draw_object_checks + hl_detach_halo_checks +
-            lc_halo_free_all_checks + lc_halo_draw_actor_checks + lc_effects_object_visibility_checks +
-            lc_effects_object_created_checks;
+            lc_halo_free_all_checks + lc_halo_draw_actor_checks + lc_effects_object_visibility_checks;
     printf("halo overlay total: %d checks, %d integration failures\n", total, hl_failures);
     return status + (hl_failures != 0);
 }

@@ -1,0 +1,15 @@
+# Save, halo and ripple acceptance
+
+Acceptance013 connects six exact Campaign029/030 functions to the82-function shared baseline: halo_add, halo_attach, effects_write, shield_write, shield_load and ripple_spawn. Resource acquisition/release and the sprite-frame/zap cluster remain queued together because their shared boundary fixtures require real sprite/material/frame storage. No duplicate implementation aliases are introduced.
+
+Object creation now calls real halo attachment and up to six real halo insertions. The old three-case object-created callback test is replaced by an owned actor/definition chain across free capacities0..7, missing nodes, acquisition failures, empty/default/matched color tables and direct/bridge entry. Full32 records, actor and count are checked. The frozen Campaign028 test remains historical evidence for NULL forwarding at its former boundary; NULL is outside the real attachment precondition. Original resource strings remain private; fixtures use authored names.
+
+The existing staged effects-load oracle is retained at the real shield loader's count-read boundary. Desired failures become a failed count read; success becomes an empty count. A separate full loader fixture retains all prior count/read/allocation cases and now reaches the actual texture setter, with release/acquire callbacks, live payload mutation, copied names and whole shield-pool checks.
+
+Effects-write calls actual shield-save-size, shield-write and overlay-save. A guarded owned stream checks96-byte state,4-byte count,52-byte rows and28-byte overlay order and payloads. Renderer and overlay-size callbacks test captured world/fog fields and local size arithmetic despite later mutations. Round trips use actual effects-load, shield-load, texture setter and overlay-read. Header/read/allocation failure gates and ignored row-read status are covered. The original shield count includes no_save rows that are omitted from payload output; this disagreement is asserted and excluded from successful round-trip claims.
+
+Ripple spawn retains its independent77,052-check owned-state fixture: all257 first-free/full outcomes, gates, optional velocity, finite radial values, token failures and callback mutations. Numeric domains and x87 precision limits are unchanged from the focused contract.
+
+New field offsets and record extents are asserted. Definition/name arrays are bounded views for authored fixtures, not recovered production capacities. Original code/assets/toolchain binaries are never published or executed. Admission requires a clean source commit, all88 full-span comparisons with every operand validated, isolated shared behavior,100 tooling tests,19 runner tests and supplemental full CI. No warning waivers, byte exclusions or whole-executable identity claim.
+
+Two fixture-only diagnostic passes preceded the first full build. The first exposed an enum/type name collision and include sorting in the aggregate fixture; the second passed after the original dependency order was restored. Formatting must preserve aggregate include order.

@@ -1,3 +1,8 @@
+static int effects_chain_active;
+static void effects_chain_release_sprite(void **sprite);
+static void *effects_chain_acquire_sprite(char *name);
+static void effects_chain_write(const void *memory, unsigned int bytes);
+static int effects_chain_read(void *memory, unsigned int bytes);
 /* Authored owned-state fixtures. Actual reconstructed internal callees are linked. */
 #include "../src/focused_accessors.h"
 #include "../src/halo_overlay.h"
@@ -381,6 +386,11 @@ static void shield_lifecycle_release(void *memory)
 }
 void op_release_sprite(void **sprite)
 {
+    if (effects_chain_active)
+    {
+        effects_chain_release_sprite(sprite);
+        return;
+    }
     if (zap_effects_active)
     {
         zap_effects_release_sprite(sprite);
@@ -408,6 +418,8 @@ void op_release_sprite(void **sprite)
 }
 void *op_acquire_sprite(char *name)
 {
+    if (effects_chain_active)
+        return effects_chain_acquire_sprite(name);
     if (zap_effects_active)
         return zap_effects_acquire_sprite(name);
     if (ripple_effects_active)
