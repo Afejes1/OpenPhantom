@@ -18,7 +18,8 @@ add_executable(behavior_smoke behavior.c ../src/material_mode.c ../src/grid_cell
   ../src/fog_snapshot.c ../src/fog_restore.c ../src/fog_set_start.c ../src/fog_set_end.c ../src/tint_start_opaque.c ../src/tint_stop.c ../src/fog_start.c ../src/fog_tick.c ../src/tint_start_full.c ../src/fade_reset.c
   ../src/letterbox_set_enabled.c ../src/overlay_save_state.c ../src/overlay_read_state.c ../src/halo_startup.c ../src/halo_shutdown.c ../src/effects_draw_object.c ../src/detach_halo.c
   ../src/detach_zap.c ../src/zap_startup.c ../src/zap_shutdown.c ../src/zap_reset.c ../src/zap_has_actor.c ../src/halo_free_all.c ../src/effects_load.c ../src/halo_draw_actor.c ../src/ripple_material.c ../src/zap_draw_segment.c ../src/zap_draw_default.c ../src/effects_object_visibility.c ../src/effects_object_created.c
-  ../src/halo_add.c ../src/halo_attach.c ../src/effects_write.c ../src/shield_write.c ../src/shield_load.c ../src/ripple_spawn.c)
+  ../src/halo_add.c ../src/halo_attach.c ../src/effects_write.c ../src/shield_write.c ../src/shield_load.c ../src/ripple_spawn.c
+  ../src/projection_expire.c ../src/projection_remove.c ../src/projection_clear.c ../src/projection_sort.c ../src/projection_compare.c)
 
 target_compile_options(behavior_smoke PRIVATE /W4 /WX /Od /fp:precise)
 enable_testing()

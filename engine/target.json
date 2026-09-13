@@ -4018,6 +4018,153 @@
           "kind": "rel32-call"
         }
       ]
+    },
+    {
+      "id": "projection_expire",
+      "address": 4311216,
+      "size": 96,
+      "body_size": 86,
+      "source": "src/projection_expire.c",
+      "symbol": "_op_projection_expire",
+      "language": "c",
+      "flags": [
+        "/O2",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 6010392,
+          "symbol": "_op_projections",
+          "kind": "dir32",
+          "addend": 52
+        },
+        {
+          "offset": 29,
+          "address": 4882856,
+          "symbol": "_op_projection_zero",
+          "kind": "dir32"
+        },
+        {
+          "offset": 42,
+          "address": 8816408,
+          "symbol": "_op_elapsed",
+          "kind": "dir32"
+        },
+        {
+          "offset": 72,
+          "address": 7076400,
+          "symbol": "_op_projection_dirty",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "projection_remove",
+      "address": 4311312,
+      "size": 64,
+      "body_size": 60,
+      "source": "src/projection_remove.c",
+      "symbol": "_op_projection_remove",
+      "language": "c",
+      "flags": [
+        "/O2",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 8,
+          "address": 6010392,
+          "symbol": "_op_projections",
+          "kind": "dir32"
+        },
+        {
+          "offset": 43,
+          "address": 7076400,
+          "symbol": "_op_projection_dirty",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "projection_clear",
+      "address": 4311376,
+      "size": 32,
+      "body_size": 17,
+      "source": "src/projection_clear.c",
+      "symbol": "_op_projection_clear",
+      "language": "c",
+      "flags": [
+        "/O2",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 9,
+          "address": 6010392,
+          "symbol": "_op_projections",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "projection_sort",
+      "address": 4311408,
+      "size": 48,
+      "body_size": 45,
+      "source": "src/projection_sort.c",
+      "symbol": "_op_projection_sort",
+      "language": "c",
+      "flags": [
+        "/O2",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 1,
+          "address": 7076400,
+          "symbol": "_op_projection_dirty",
+          "kind": "dir32"
+        },
+        {
+          "offset": 10,
+          "address": 4311456,
+          "symbol": "_op_projection_compare",
+          "kind": "dir32"
+        },
+        {
+          "offset": 22,
+          "address": 6010392,
+          "symbol": "_op_projections",
+          "kind": "dir32"
+        },
+        {
+          "offset": 27,
+          "address": 4826720,
+          "symbol": "_op_projection_qsort",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 36,
+          "address": 7076400,
+          "symbol": "_op_projection_dirty",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "projection_compare",
+      "address": 4311456,
+      "size": 64,
+      "body_size": 54,
+      "source": "src/projection_compare.c",
+      "symbol": "_op_projection_compare",
+      "language": "c",
+      "flags": [
+        "/O2",
+        "/MT"
+      ],
+      "bindings": []
     }
   ]
 }

@@ -1631,6 +1631,96 @@
         "Original complete span and every address operand must match. External backends remain authored fixtures."
       ],
       "exceptions": []
+    },
+    {
+      "id": "projection_expire",
+      "module": "projected_overlay",
+      "analysis_name": "projection_expire",
+      "purpose": "projection expire",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/projected-overlay-acceptance.md",
+        "research/campaign-032-projection-expire/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/projected_overlay_behavior.c"
+      ],
+      "quirks": [
+        "Full span includes compiler alignment. Surface and sequence are unsigned32 address words. External qsort uses the authored fixture runtime."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "projection_remove",
+      "module": "projected_overlay",
+      "analysis_name": "projection_remove",
+      "purpose": "projection remove",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/projected-overlay-acceptance.md",
+        "research/campaign-032-projection-remove/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/projected_overlay_behavior.c"
+      ],
+      "quirks": [
+        "Full span includes compiler alignment. Surface and sequence are unsigned32 address words. External qsort uses the authored fixture runtime."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "projection_clear",
+      "module": "projected_overlay",
+      "analysis_name": "projection_clear",
+      "purpose": "projection clear",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/projected-overlay-acceptance.md",
+        "research/campaign-032-projection-clear/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/projected_overlay_behavior.c"
+      ],
+      "quirks": [
+        "Full span includes compiler alignment. Surface and sequence are unsigned32 address words. External qsort uses the authored fixture runtime."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "projection_sort",
+      "module": "projected_overlay",
+      "analysis_name": "projection_sort",
+      "purpose": "projection sort",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/projected-overlay-acceptance.md",
+        "research/campaign-032-projection-sort/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/projected_overlay_behavior.c"
+      ],
+      "quirks": [
+        "Full span includes compiler alignment. Surface and sequence are unsigned32 address words. External qsort uses the authored fixture runtime."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "projection_compare",
+      "module": "projected_overlay",
+      "analysis_name": "projection_compare",
+      "purpose": "projection compare",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/projected-overlay-acceptance.md",
+        "research/campaign-032-projection-compare/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/projected_overlay_behavior.c"
+      ],
+      "quirks": [
+        "Full span includes compiler alignment. Surface and sequence are unsigned32 address words. External qsort uses the authored fixture runtime."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
