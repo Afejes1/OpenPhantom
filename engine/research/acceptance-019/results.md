@@ -1,0 +1,7 @@
+# Acceptance019 results
+
+Sprite acquisition is accepted: one previously exact function, 64 complete bytes and three verified operands, bringing 109 to 110 registered functions. The clean original-toolchain build `20260913-191146-593dd6d2` at `8ba9ca165115536abbcc20414e8862dbfa14fa0b` passes all 110 full spans and shared authored fixtures. [Event42](../../evidence/runs/000042-9505c6fa3f386f0e.json) records the final source snapshot. [Supplemental CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34788745431) passes on the same implementation inputs before the evidence-only commit.
+
+The real acquisition wrapper now links into shields, halos, ripples and zaps. A direct 240-check fixture covers the 80-byte formatted-buffer limit, including 74-character authored names, negative formatter return, base-name mutation, and resource success/failure. The shared backend checks formatting and tag before existing caller mutation oracles run.
+
+Review replaced a fixture `strcpy` with bounded `memcpy` for strict modern diagnostics. The initial native fixture result remains immutable as event41. An intervening complete build could not be recorded because that initial event was uncommitted; the final build follows its commit. CI on the evidence-only intermediate commit stopped at a stale generated report; reports are regenerated for publication. These retries add no function promotions. No original game execution, byte exclusions or warning waivers occurred; whole-executable identity remains pending.

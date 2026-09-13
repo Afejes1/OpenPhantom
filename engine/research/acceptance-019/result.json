@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "acceptance-019",
-  "baseline_commit": "6402b5c",
+  "baseline_commit": "6402b5c2ff38b719df4c30ad9a804f0d39f18c34",
   "functions": [
     "sprite_acquire"
   ],
@@ -10,8 +10,18 @@
   "registered_after": 110,
   "full_span_bytes": 64,
   "verified_operands": 3,
-  "status": "integration-pending",
+  "status": "accepted",
   "original_game_executed": false,
   "byte_exclusions": [],
-  "warning_waivers": []
+  "warning_waivers": [],
+  "accepted_event": "engine/evidence/runs/000042-9505c6fa3f386f0e.json",
+  "initial_event": "engine/evidence/runs/000041-d0ccd074bcbad32c.json",
+  "source_commit": "8ba9ca165115536abbcc20414e8862dbfa14fa0b",
+  "build_id": "20260913-191146-593dd6d2",
+  "source_snapshot_inputs": 223,
+  "direct_acquire_checks": 240,
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34788745431",
+  "supplemental_ci_conclusion": "success",
+  "supplemental_ci_source": "9c00ee10544dacf6b3cd52e48a43b982478df011",
+  "independent_review": "comparison_inventory: fixture CRT-copy warning corrected; no other material findings"
 }
