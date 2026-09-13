@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **26** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **943**.
+Our last recorded matches cover **29** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **940**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -65,15 +65,15 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | 0x0041EF3F | bapworld_freePtrArray0x220 | not_done | Queued; no local match recorded |
 | 0x0041EFB5 | bapworld_freePtrArray0x220 &#124; bapworld_freePtrArray0x620 | not_done | Queued; no local match recorded |
 | 0x0041F02B | bapworld_freeTailBlocks | not_done | Queued; no local match recorded |
-| 0x0041F0C9 | bapmap_setWorldClock | not_done | Queued; no local match recorded |
-| 0x0041F10C | baplight_setAmbient | not_done | Queued; no local match recorded |
-| 0x0041F14A | baplight_applyLevelFog | not_done | Queued; no local match recorded |
+| 0x0041F0C9 | bapmap_setWorldClock | not_done | Recorded match: [world_set_clock](../src/world_set_clock.c) |
+| 0x0041F10C | baplight_setAmbient | not_done | Recorded match: [world_set_ambient](../src/world_set_ambient.c) |
+| 0x0041F14A | baplight_applyLevelFog | not_done | Recorded match: [world_apply_fog](../src/world_apply_fog.c) |
 
 ## Remaining work by reported file
 
 | Reported file | Team not done | Local recorded matches within that list | Remaining |
 |---|---|---|---|
-| bp/bapworld.c | 39 | 5 | 34 |
+| bp/bapworld.c | 39 | 8 | 31 |
 | bp/bapsound.c | 44 | 0 | 44 |
 | bp/bapmusic.c | 17 | 0 | 17 |
 | bp/bapdraw.c | 18 | 7 | 11 |

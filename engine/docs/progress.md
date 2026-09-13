@@ -8,44 +8,44 @@ Whole executable: **incomplete**. Original linked placement: **unverified**.
 
 | Module | Function / source | Original address | VC5 frontend | Last verified result | Bytes / address bytes |
 |---|---|---|---|---|---|
-| material | [material_mode](../src/material_mode.c) | 0x0040E840 | c | raw-code-match (historical; current source unverified) | 41 / 0 |
-| spatial_grid | [grid_cell](../src/grid_cell.c) | 0x00406E22 | c | relocation-adjusted-match (historical; current source unverified) | 24 / 4 |
-| map_geometry | [plane_coordinate](../src/plane_coordinate.c) | 0x0040DCEE | c | relocation-adjusted-match (historical; current source unverified) | 384 / 8 |
-| view_projection | [update_projection](../src/update_projection.c) | 0x0040EF40 | c | relocation-adjusted-match (historical; current source unverified) | 144 / 48 |
-| view_projection | [face_clip_flags](../src/face_clip_flags.c) | 0x0040F170 | c | raw-code-match (historical; current source unverified) | 64 / 0 |
-| view_projection | [transform_project](../src/transform_project.c) | 0x0040EFD0 | c | relocation-adjusted-match (historical; current source unverified) | 416 / 44 |
-| mesh_submission | [set_mesh_render_thing](../src/set_mesh_render_thing.c) | 0x0040F1B0 | c | relocation-adjusted-match (historical; current source unverified) | 48 / 16 |
-| render_queue | [peek_projected_vertices](../src/peek_projected_vertices.c) | 0x00402130 | c | relocation-adjusted-match (historical; current source unverified) | 37 / 12 |
-| render_queue | [peek_face_packet](../src/peek_face_packet.c) | 0x00402021 | c | relocation-adjusted-match (historical; current source unverified) | 37 / 12 |
-| render_queue | [queue_face_packet](../src/queue_face_packet.c) | 0x00401EB8 | c | relocation-adjusted-match (historical; current source unverified) | 361 / 68 |
-| render_queue | [submit_gathered_surfaces](../src/submit_gathered_surfaces.c) | 0x00406830 | c | relocation-adjusted-match (historical; current source unverified) | 48 / 20 |
-| render_queue | [set_frame_state](../src/set_frame_state.c) | 0x00401D30 | c | relocation-adjusted-match (historical; current source unverified) | 392 / 172 |
-| render_queue | [push_surface_draw_entry](../src/push_surface_draw_entry.cpp) | 0x004059F0 | c++ | relocation-adjusted-match (historical; current source unverified) | 96 / 24 |
-| legacy_scan | [step_scan](../src/step_scan.c) | 0x00403EF0 | c | relocation-adjusted-match (historical; current source unverified) | 176 / 48 |
-| bgl_matrix_state | [bgl_identity](../src/bgl_identity.c) | 0x0041F700 | c | relocation-adjusted-match (historical; current source unverified) | 27 / 8 |
-| bgl_matrix_state | [bgl_push](../src/bgl_push.c) | 0x0041F71B | c | relocation-adjusted-match (historical; current source unverified) | 85 / 32 |
-| bgl_matrix_state | [bgl_pop](../src/bgl_pop.c) | 0x0041F770 | c | relocation-adjusted-match (historical; current source unverified) | 44 / 20 |
-| bgl_matrix_state | [bgl_load_matrix](../src/bgl_load_matrix.c) | 0x0041F910 | c | relocation-adjusted-match (historical; current source unverified) | 25 / 4 |
-| bgl_matrix_state | [bgl_get_matrix](../src/bgl_get_matrix.c) | 0x0041F929 | c | relocation-adjusted-match (historical; current source unverified) | 25 / 4 |
-| bgl_matrix_state | [bgl_get_translation](../src/bgl_get_translation.c) | 0x0041FA37 | c | relocation-adjusted-match (historical; current source unverified) | 49 / 12 |
-| bgl_matrix_state | [bgl_get_translation_xyz](../src/bgl_get_translation_xyz.c) | 0x0041FA68 | c | relocation-adjusted-match (historical; current source unverified) | 65 / 12 |
-| extended_colormaps | [extended_load_colormap](../src/extended_load_colormap.c) | 0x00428844 | c | relocation-adjusted-match (historical; current source unverified) | 73 / 24 |
-| extended_colormaps | [extended_free_colormaps](../src/extended_free_colormaps.c) | 0x0042888D | c | relocation-adjusted-match (historical; current source unverified) | 68 / 16 |
-| b3d_chunk_readers | [world_read_emitters](../src/world_read_emitters.c) | 0x0041D302 | c | relocation-adjusted-match (historical; current source unverified) | 94 / 4 |
-| b3d_chunk_readers | [world_read_sprite_refs](../src/world_read_sprite_refs.c) | 0x0041D360 | c | relocation-adjusted-match (historical; current source unverified) | 108 / 8 |
-| b3d_chunk_readers | [world_read_palettes](../src/world_read_palettes.c) | 0x0041D5A3 | c | relocation-adjusted-match (historical; current source unverified) | 90 / 4 |
-| b3d_chunk_readers | [world_read_global_vertices](../src/world_read_global_vertices.c) | 0x0041D8EE | c | relocation-adjusted-match (historical; current source unverified) | 149 / 4 |
-| b3d_chunk_readers | [world_read_local_vertices](../src/world_read_local_vertices.c) | 0x0041D983 | c | relocation-adjusted-match (historical; current source unverified) | 152 / 4 |
-| b3d_world_controls | [world_set_clock](../src/world_set_clock.c) | 0x0041F0C9 | c | unverified | 67 / 8 |
-| b3d_world_controls | [world_set_ambient](../src/world_set_ambient.c) | 0x0041F10C | c | unverified | 62 / 8 |
-| b3d_world_controls | [world_apply_fog](../src/world_apply_fog.c) | 0x0041F14A | c | unverified | 230 / 40 |
+| material | [material_mode](../src/material_mode.c) | 0x0040E840 | c | raw-code-match | 41 / 0 |
+| spatial_grid | [grid_cell](../src/grid_cell.c) | 0x00406E22 | c | relocation-adjusted-match | 24 / 4 |
+| map_geometry | [plane_coordinate](../src/plane_coordinate.c) | 0x0040DCEE | c | relocation-adjusted-match | 384 / 8 |
+| view_projection | [update_projection](../src/update_projection.c) | 0x0040EF40 | c | relocation-adjusted-match | 144 / 48 |
+| view_projection | [face_clip_flags](../src/face_clip_flags.c) | 0x0040F170 | c | raw-code-match | 64 / 0 |
+| view_projection | [transform_project](../src/transform_project.c) | 0x0040EFD0 | c | relocation-adjusted-match | 416 / 44 |
+| mesh_submission | [set_mesh_render_thing](../src/set_mesh_render_thing.c) | 0x0040F1B0 | c | relocation-adjusted-match | 48 / 16 |
+| render_queue | [peek_projected_vertices](../src/peek_projected_vertices.c) | 0x00402130 | c | relocation-adjusted-match | 37 / 12 |
+| render_queue | [peek_face_packet](../src/peek_face_packet.c) | 0x00402021 | c | relocation-adjusted-match | 37 / 12 |
+| render_queue | [queue_face_packet](../src/queue_face_packet.c) | 0x00401EB8 | c | relocation-adjusted-match | 361 / 68 |
+| render_queue | [submit_gathered_surfaces](../src/submit_gathered_surfaces.c) | 0x00406830 | c | relocation-adjusted-match | 48 / 20 |
+| render_queue | [set_frame_state](../src/set_frame_state.c) | 0x00401D30 | c | relocation-adjusted-match | 392 / 172 |
+| render_queue | [push_surface_draw_entry](../src/push_surface_draw_entry.cpp) | 0x004059F0 | c++ | relocation-adjusted-match | 96 / 24 |
+| legacy_scan | [step_scan](../src/step_scan.c) | 0x00403EF0 | c | relocation-adjusted-match | 176 / 48 |
+| bgl_matrix_state | [bgl_identity](../src/bgl_identity.c) | 0x0041F700 | c | relocation-adjusted-match | 27 / 8 |
+| bgl_matrix_state | [bgl_push](../src/bgl_push.c) | 0x0041F71B | c | relocation-adjusted-match | 85 / 32 |
+| bgl_matrix_state | [bgl_pop](../src/bgl_pop.c) | 0x0041F770 | c | relocation-adjusted-match | 44 / 20 |
+| bgl_matrix_state | [bgl_load_matrix](../src/bgl_load_matrix.c) | 0x0041F910 | c | relocation-adjusted-match | 25 / 4 |
+| bgl_matrix_state | [bgl_get_matrix](../src/bgl_get_matrix.c) | 0x0041F929 | c | relocation-adjusted-match | 25 / 4 |
+| bgl_matrix_state | [bgl_get_translation](../src/bgl_get_translation.c) | 0x0041FA37 | c | relocation-adjusted-match | 49 / 12 |
+| bgl_matrix_state | [bgl_get_translation_xyz](../src/bgl_get_translation_xyz.c) | 0x0041FA68 | c | relocation-adjusted-match | 65 / 12 |
+| extended_colormaps | [extended_load_colormap](../src/extended_load_colormap.c) | 0x00428844 | c | relocation-adjusted-match | 73 / 24 |
+| extended_colormaps | [extended_free_colormaps](../src/extended_free_colormaps.c) | 0x0042888D | c | relocation-adjusted-match | 68 / 16 |
+| b3d_chunk_readers | [world_read_emitters](../src/world_read_emitters.c) | 0x0041D302 | c | relocation-adjusted-match | 94 / 4 |
+| b3d_chunk_readers | [world_read_sprite_refs](../src/world_read_sprite_refs.c) | 0x0041D360 | c | relocation-adjusted-match | 108 / 8 |
+| b3d_chunk_readers | [world_read_palettes](../src/world_read_palettes.c) | 0x0041D5A3 | c | relocation-adjusted-match | 90 / 4 |
+| b3d_chunk_readers | [world_read_global_vertices](../src/world_read_global_vertices.c) | 0x0041D8EE | c | relocation-adjusted-match | 149 / 4 |
+| b3d_chunk_readers | [world_read_local_vertices](../src/world_read_local_vertices.c) | 0x0041D983 | c | relocation-adjusted-match | 152 / 4 |
+| b3d_world_controls | [world_set_clock](../src/world_set_clock.c) | 0x0041F0C9 | c | relocation-adjusted-match | 67 / 8 |
+| b3d_world_controls | [world_set_ambient](../src/world_set_ambient.c) | 0x0041F10C | c | relocation-adjusted-match | 62 / 8 |
+| b3d_world_controls | [world_apply_fog](../src/world_apply_fog.c) | 0x0041F14A | c | relocation-adjusted-match | 230 / 40 |
 
-Registered functions: **31**. Last recorded matches with unchanged definitions: **28**.
-Current source fingerprint agrees with the latest run: **no**.
+Registered functions: **31**. Last recorded matches with unchanged definitions: **31**.
+Current source fingerprint agrees with the latest run: **yes**.
 This count is not whole-program coverage and does not certify the modern TPM reconstruction.
 
-Latest build: '20260913-100608-1febdcd5', source commit '340adfe0f0436734fd47c250a3b5b7993489ab07'.
-History contains 24 verified build records.
+Latest build: '20260913-104819-91db1416', source commit '8c0d4b045863490af55b4a4fbef0fc06a01fa26c'.
+History contains 25 verified build records.
 
 ## Workarounds and exceptions
 

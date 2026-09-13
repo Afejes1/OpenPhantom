@@ -17,7 +17,7 @@
   "accepted_functions_at_start": 21,
   "evidence_records_at_start": 21,
   "weekly_shared_usage_start_percent": 39,
-  "promotions": 7,
+  "promotions": 10,
   "new_exact_functions": 20,
   "new_exact_bytes": 2313,
   "checkpoints": [
@@ -113,13 +113,24 @@
       "source_commit": "6ab267f96ac819fa94961d9b289eaa5835a20a08",
       "focused_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34763059233",
       "focused_ci_conclusion": "success"
+    },
+    {
+      "id": "acceptance-005",
+      "status": "passed",
+      "completed_utc": "2026-09-13T14:51:14.835478+00:00",
+      "source_commit": "8c0d4b045863490af55b4a4fbef0fc06a01fa26c",
+      "promotions": 3,
+      "new_exact_functions": 0,
+      "registered_total": 31,
+      "result": "../acceptance-005/result.json",
+      "full_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34763743517"
     }
   ],
-  "current_work": "Acceptance005 shared controls integrated; independent review and clean original-toolchain build/test/compare/record pending. Campaign021 static six-function packet prepared.",
+  "current_work": "Acceptance005 passed31 registered functions and25 records. Begin prepared Campaign021: six name/grid/cell functions, one implementation writer and independent Sol review.",
   "original_game_executed": false,
   "weekly_shared_usage_latest_percent": 43,
-  "last_checkpoint_utc": "2026-09-13T14:46:26.621707+00:00",
-  "last_source_commit": "6ab267f96ac819fa94961d9b289eaa5835a20a08",
+  "last_checkpoint_utc": "2026-09-13T14:51:14.835478+00:00",
+  "last_source_commit": "8c0d4b045863490af55b4a4fbef0fc06a01fa26c",
   "usage_observed_utc": "2026-09-13T13:59:42.009190+00:00",
   "usage_observation_scope": "Rounded account-wide weekly usage;39 at window start,43 now, not isolated campaign billing.",
   "new_near_matches": 3,
