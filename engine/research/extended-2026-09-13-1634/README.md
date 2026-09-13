@@ -1,0 +1,17 @@
+# Authorized six-hour continuation
+
+The user authorized a fresh six-hour run beginning2026-09-13 16:34:23UTC and ending22:34:23UTC (6:34p.m. Eastern). Stop new implementation at22:24:23UTC and use the last ten minutes for verification, publication and closure. Never extend the deadline. Prior windows are completed historical work; their budgets are not resumed.
+
+Start from40 accepted functions and28 immutable records at9e6996579558e28c154058223565e265116a3ca1. First integrate the existing exact stream/header/skip packet as acceptance008. Then alternate cohesive new not-done function batches and deliberate shared acceptance checkpoints. See status.json for actual progress; never repeat a completed assignment from stale prompts.
+
+Use one parent implementation writer and Sol medium as independent read-only reviewer. The user explicitly authorized necessary commands, Python scripts, isolated authored fixture execution, agents, commits and pushes to the fork. Previous delegated writer approvals did not inherit direct authorization reliably; avoid repeated delegated write requests. Only the parent edits shared files, Git and Ghidra metadata.
+
+Follow ../../docs/campaign-rules.md and root CONTRIBUTING.md. Full original spans, all verified operands and zero differences remain exact acceptance requirements. Near-match at most5percent is scheduling only. Preserve frozen attempts and existing exhausted caps. Use pinned VC5 compiler/options and existing unchanged matcher/runner. Original game execution and byte patching are prohibited; only authored synthetic fixtures execute in locked Docker. Keep original content, compiler binaries, decompiler output and private build artifacts outside Git.
+
+Each campaign has45minutes including final10minutes for review/publication. Preparation and each source task have15minute caps; at most10 implementation compiler attempts and stop after5 consecutive no-improvement attempts. Prefer a useful new function to polishing a parked case. Count final independent native/Docker verification separately and retain failures. Use token-aware changes, inspect C89 source before compilation, and preserve string literals when prefixing fixture identifiers. For shared fixtures, anticipate modern /W4 /WX compatibility: use platform-appropriate control APIs and unique local counters, without warning waivers.
+
+First acceptance008 slice: read_chunk_header112bytes, skip_chunk93bytes and load_via_skip32bytes. Reconfirm real two-stack-argument cdecl skip ABI and header offset2D4. Preserve zero/nonzero read behavior, ignored seek/read/skip errors, live table and callback mutations, and owned storage. Use authored eight-byte tags. Do not execute original callbacks or infer table capacity from synthetic views.
+
+Run focused checks for research pushes; run full registered VC5 and modern supplemental regression at deliberate integration checkpoints. Verify every final input hash against staged Git blobs. Record new exact cases separately from unique promotions and immutable build-event counts. Keep paused broad goal unchanged; no upstream/develop merge, messages to others, purchases or reset-credit consumption.
+
+At completion or the hard stop, pause existing heartbeatopenphantom-six-hour-campaign, publish verified results and leave an explicit handoff. Missing prerequisites require an honest preserved checkpoint; no fabricated unattended progress.
