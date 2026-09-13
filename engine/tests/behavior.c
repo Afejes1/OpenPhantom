@@ -124,6 +124,7 @@ static void clip_flag_tests(void)
 #include "world_chunks_behavior.c"
 #include "focused_accessors_behavior.c"
 #include "shield_lifecycle_behavior.c"
+#include "effects_state_behavior.c"
 
 int main(void)
 {
@@ -172,6 +173,7 @@ int main(void)
     failures += op_test_world_chunks();
     failures += op_test_focused_accessors();
     failures += op_test_shield_lifecycle();
+    failures += op_test_effects_state();
     if (failures) return 1;
 #ifdef OP_VC5_BEHAVIOR
     puts("VC5 behavioral fixture passed, including x87 unordered fallback.");

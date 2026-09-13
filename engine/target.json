@@ -1975,6 +1975,571 @@
           "kind": "rel32-call"
         }
       ]
+    },
+    {
+      "id": "fog_snapshot",
+      "address": 4427540,
+      "size": 35,
+      "body_size": 35,
+      "source": "src/fog_snapshot.c",
+      "symbol": "_op_fog_snapshot",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 8918512,
+          "symbol": "_op_fog_remaining",
+          "kind": "dir32"
+        },
+        {
+          "offset": 14,
+          "address": 9044064,
+          "symbol": "_op_active_world",
+          "kind": "dir32"
+        },
+        {
+          "offset": 29,
+          "address": 8918508,
+          "symbol": "_op_fog_saved",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "fog_restore",
+      "address": 4427575,
+      "size": 74,
+      "body_size": 74,
+      "source": "src/fog_restore.c",
+      "symbol": "_op_fog_restore",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 9044064,
+          "symbol": "_op_active_world",
+          "kind": "dir32"
+        },
+        {
+          "offset": 19,
+          "address": 9044064,
+          "symbol": "_op_active_world",
+          "kind": "dir32"
+        },
+        {
+          "offset": 30,
+          "address": 9044064,
+          "symbol": "_op_active_world",
+          "kind": "dir32"
+        },
+        {
+          "offset": 42,
+          "address": 8918508,
+          "symbol": "_op_fog_saved",
+          "kind": "dir32"
+        },
+        {
+          "offset": 48,
+          "address": 9044064,
+          "symbol": "_op_active_world",
+          "kind": "dir32"
+        },
+        {
+          "offset": 59,
+          "address": 9044064,
+          "symbol": "_op_active_world",
+          "kind": "dir32"
+        },
+        {
+          "offset": 65,
+          "address": 4321610,
+          "symbol": "_op_world_apply_fog",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "fog_set_start",
+      "address": 4427811,
+      "size": 42,
+      "body_size": 42,
+      "source": "src/fog_set_start.c",
+      "symbol": "_op_fog_set_start",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 8,
+          "address": 4883692,
+          "float32": 0.0
+        },
+        {
+          "offset": 24,
+          "address": 4750048,
+          "symbol": "_op_renderer_fog_start",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 36,
+          "address": 8918524,
+          "symbol": "_op_fog_cached_start",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "fog_set_end",
+      "address": 4427853,
+      "size": 33,
+      "body_size": 33,
+      "source": "src/fog_set_end.c",
+      "symbol": "_op_fog_set_end",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 8,
+          "address": 4883692,
+          "float32": 0.0
+        },
+        {
+          "offset": 24,
+          "address": 4750064,
+          "symbol": "_op_renderer_fog_end",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "tint_start_opaque",
+      "address": 4428752,
+      "size": 42,
+      "body_size": 42,
+      "source": "src/tint_start_opaque.c",
+      "symbol": "_op_tint_start_opaque",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 33,
+          "address": 4428656,
+          "symbol": "_op_tint_start_full",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "tint_stop",
+      "address": 4428794,
+      "size": 56,
+      "body_size": 56,
+      "source": "src/tint_stop.c",
+      "symbol": "_op_tint_stop",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7097976,
+          "symbol": "_op_tint_active",
+          "kind": "dir32"
+        },
+        {
+          "offset": 16,
+          "address": 7097976,
+          "symbol": "_op_tint_active",
+          "kind": "dir32"
+        },
+        {
+          "offset": 26,
+          "address": 7097912,
+          "symbol": "_op_tint_mode",
+          "kind": "dir32"
+        },
+        {
+          "offset": 36,
+          "address": 7097936,
+          "symbol": "_op_tint_start",
+          "kind": "dir32"
+        },
+        {
+          "offset": 46,
+          "address": 7097940,
+          "symbol": "_op_tint_duration",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "fog_start",
+      "address": 4427886,
+      "size": 193,
+      "body_size": 193,
+      "source": "src/fog_start.c",
+      "symbol": "_op_start_timed_fog_transition",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 19,
+          "address": 4883692,
+          "float32": 0.0
+        },
+        {
+          "offset": 39,
+          "address": 8918504,
+          "symbol": "_op_fog_restore_mode",
+          "kind": "dir32"
+        },
+        {
+          "offset": 45,
+          "address": 8918504,
+          "symbol": "_op_fog_restore_mode",
+          "kind": "dir32"
+        },
+        {
+          "offset": 53,
+          "address": 4749840,
+          "symbol": "_op_get_render_flags",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 61,
+          "address": 4749856,
+          "symbol": "_op_set_render_flags",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 98,
+          "address": 4749872,
+          "symbol": "_op_set_fog_rgb",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 112,
+          "address": 4750160,
+          "symbol": "_op_set_clear_rgb",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 120,
+          "address": 4749840,
+          "symbol": "_op_get_render_flags",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 128,
+          "address": 4749856,
+          "symbol": "_op_set_render_flags",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 137,
+          "address": 9044064,
+          "symbol": "_op_active_world",
+          "kind": "dir32"
+        },
+        {
+          "offset": 151,
+          "address": 9044064,
+          "symbol": "_op_active_world",
+          "kind": "dir32"
+        },
+        {
+          "offset": 166,
+          "address": 8918520,
+          "symbol": "_op_fog_target",
+          "kind": "dir32"
+        },
+        {
+          "offset": 175,
+          "address": 8918516,
+          "symbol": "_op_fog_duration",
+          "kind": "dir32"
+        },
+        {
+          "offset": 181,
+          "address": 8918516,
+          "symbol": "_op_fog_duration",
+          "kind": "dir32"
+        },
+        {
+          "offset": 187,
+          "address": 8918512,
+          "symbol": "_op_fog_remaining",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "fog_tick",
+      "address": 4427649,
+      "size": 162,
+      "body_size": 162,
+      "source": "src/fog_tick.c",
+      "symbol": "_op_fog_tick",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 6,
+          "address": 8918512,
+          "symbol": "_op_fog_remaining",
+          "kind": "dir32"
+        },
+        {
+          "offset": 12,
+          "address": 4883692,
+          "float32": 0.0
+        },
+        {
+          "offset": 29,
+          "address": 8918512,
+          "symbol": "_op_fog_remaining",
+          "kind": "dir32"
+        },
+        {
+          "offset": 38,
+          "address": 8918512,
+          "symbol": "_op_fog_remaining",
+          "kind": "dir32"
+        },
+        {
+          "offset": 44,
+          "address": 4883692,
+          "float32": 0.0
+        },
+        {
+          "offset": 56,
+          "address": 8918520,
+          "symbol": "_op_fog_target",
+          "kind": "dir32"
+        },
+        {
+          "offset": 61,
+          "address": 8918524,
+          "symbol": "_op_fog_cached_start",
+          "kind": "dir32"
+        },
+        {
+          "offset": 67,
+          "address": 8918504,
+          "symbol": "_op_fog_restore_mode",
+          "kind": "dir32"
+        },
+        {
+          "offset": 75,
+          "address": 4427575,
+          "symbol": "_op_fog_restore",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 83,
+          "address": 8918520,
+          "symbol": "_op_fog_target",
+          "kind": "dir32"
+        },
+        {
+          "offset": 89,
+          "address": 8918524,
+          "symbol": "_op_fog_cached_start",
+          "kind": "dir32"
+        },
+        {
+          "offset": 95,
+          "address": 8918512,
+          "symbol": "_op_fog_remaining",
+          "kind": "dir32"
+        },
+        {
+          "offset": 101,
+          "address": 8918516,
+          "symbol": "_op_fog_duration",
+          "kind": "dir32"
+        },
+        {
+          "offset": 107,
+          "address": 8918520,
+          "symbol": "_op_fog_target",
+          "kind": "dir32"
+        },
+        {
+          "offset": 115,
+          "address": 4749840,
+          "symbol": "_op_get_render_flags",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 123,
+          "address": 4749856,
+          "symbol": "_op_set_render_flags",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 135,
+          "address": 4750048,
+          "symbol": "_op_renderer_fog_start",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 143,
+          "address": 4749840,
+          "symbol": "_op_get_render_flags",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 151,
+          "address": 4749856,
+          "symbol": "_op_set_render_flags",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "tint_start_full",
+      "address": 4428656,
+      "size": 96,
+      "body_size": 96,
+      "source": "src/tint_start_full.c",
+      "symbol": "_op_tint_start_full",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7097976,
+          "symbol": "_op_tint_active",
+          "kind": "dir32"
+        },
+        {
+          "offset": 15,
+          "address": 7097980,
+          "symbol": "_op_tint_completed",
+          "kind": "dir32"
+        },
+        {
+          "offset": 27,
+          "address": 7097912,
+          "symbol": "_op_tint_mode",
+          "kind": "dir32"
+        },
+        {
+          "offset": 32,
+          "address": 4676397,
+          "symbol": "_op_clock_seconds",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 38,
+          "address": 7097936,
+          "symbol": "_op_tint_start",
+          "kind": "dir32"
+        },
+        {
+          "offset": 47,
+          "address": 7097940,
+          "symbol": "_op_tint_duration",
+          "kind": "dir32"
+        },
+        {
+          "offset": 56,
+          "address": 7097932,
+          "symbol": "_op_tint_hold",
+          "kind": "dir32"
+        },
+        {
+          "offset": 64,
+          "address": 7097928,
+          "symbol": "_op_tint_red",
+          "kind": "dir32"
+        },
+        {
+          "offset": 73,
+          "address": 7097924,
+          "symbol": "_op_tint_green",
+          "kind": "dir32"
+        },
+        {
+          "offset": 82,
+          "address": 7097920,
+          "symbol": "_op_tint_blue",
+          "kind": "dir32"
+        },
+        {
+          "offset": 90,
+          "address": 7097916,
+          "symbol": "_op_tint_alpha",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "fade_reset",
+      "address": 4429600,
+      "size": 40,
+      "body_size": 40,
+      "source": "src/fade_reset.c",
+      "symbol": "_op_fade_reset",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 4428794,
+          "symbol": "_op_tint_stop",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 10,
+          "address": 8918496,
+          "symbol": "_op_letterbox_target",
+          "kind": "dir32"
+        },
+        {
+          "offset": 20,
+          "address": 8918488,
+          "symbol": "_op_letterbox_previous",
+          "kind": "dir32"
+        },
+        {
+          "offset": 30,
+          "address": 8918492,
+          "symbol": "_op_letterbox_step",
+          "kind": "dir32"
+        }
+      ]
     }
   ]
 }

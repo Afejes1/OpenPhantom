@@ -3,6 +3,14 @@
 #include <float.h>
 #include <string.h>
 
+static int effects_state_active;
+static unsigned int effects_get_render_flags(void);
+static void effects_set_render_flags(unsigned int flags);
+static void effects_set_fog_rgb(unsigned int r, unsigned int g, unsigned int b);
+static void effects_set_fog_range(float start, float end);
+static void effects_set_clear_rgb(unsigned char r, unsigned char g, unsigned char b);
+static void effects_set_clear_pixel(unsigned short pixel);
+
 typedef struct world_controls_clock_GUARDED
 {
     unsigned int before;
@@ -204,6 +212,11 @@ static void world_controls_fog_log_event(int id, unsigned int a, unsigned int b,
 }
 void op_set_fog_rgb(unsigned int r, unsigned int g, unsigned int b)
 {
+    if (effects_state_active)
+    {
+        effects_set_fog_rgb(r, g, b);
+        return;
+    }
     world_controls_sequence_observe();
     world_controls_fog_log_event(1, r, g, b);
     if (world_controls_fog_mode == 1)
@@ -217,6 +230,11 @@ void op_set_fog_rgb(unsigned int r, unsigned int g, unsigned int b)
 void op_set_fog_range(float start, float end)
 {
     unsigned int a, b;
+    if (effects_state_active)
+    {
+        effects_set_fog_range(start, end);
+        return;
+    }
     world_controls_sequence_observe();
     memcpy(&a, &start, 4);
     memcpy(&b, &end, 4);
@@ -232,6 +250,8 @@ void op_set_fog_range(float start, float end)
 unsigned int op_get_render_flags(void)
 {
     unsigned int value;
+    if (effects_state_active)
+        return effects_get_render_flags();
     world_controls_sequence_observe();
     world_controls_fog_check(world_controls_fog_get_count >= 0 && world_controls_fog_get_count < 3);
     if (world_controls_fog_get_count < 0 || world_controls_fog_get_count >= 3)
@@ -242,16 +262,31 @@ unsigned int op_get_render_flags(void)
 }
 void op_set_render_flags(unsigned int flags)
 {
+    if (effects_state_active)
+    {
+        effects_set_render_flags(flags);
+        return;
+    }
     world_controls_sequence_observe();
     world_controls_fog_log_event(4, flags, 0, 0);
 }
 void op_set_clear_rgb(unsigned char r, unsigned char g, unsigned char b)
 {
+    if (effects_state_active)
+    {
+        effects_set_clear_rgb(r, g, b);
+        return;
+    }
     world_controls_sequence_observe();
     world_controls_fog_log_event(5, r, g, b);
 }
 void op_set_clear_pixel(unsigned short pixel)
 {
+    if (effects_state_active)
+    {
+        effects_set_clear_pixel(pixel);
+        return;
+    }
     world_controls_sequence_observe();
     world_controls_fog_log_event(6, pixel, 0, 0);
 }

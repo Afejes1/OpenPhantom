@@ -971,6 +971,187 @@
         "Shared canonical record uses integer active at offset0 and attached actor at offset0x10; internal reconstructed callees are linked directly."
       ],
       "exceptions": []
+    },
+    {
+      "id": "fog_snapshot",
+      "module": "effects_state",
+      "analysis_name": "save_b3d_world_fog_state",
+      "purpose": "Save the active world fog bit and cancel the transition",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-state-acceptance.md",
+        "research/campaign-024-fog-snapshot/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/effects_state_behavior.c"
+      ],
+      "quirks": [
+        "Original-toolchain floating behavior is tested separately from supplemental modern behavior."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "fog_restore",
+      "module": "effects_state",
+      "analysis_name": "restore_b3d_world_fog_state",
+      "purpose": "Restore saved fog flags and apply the actual world fog helper",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-state-acceptance.md",
+        "research/campaign-024-fog-restore/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/effects_state_behavior.c"
+      ],
+      "quirks": [
+        "Original-toolchain floating behavior is tested separately from supplemental modern behavior."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "fog_set_start",
+      "module": "effects_state",
+      "analysis_name": "set_world_fog_start_distance",
+      "purpose": "Forward nonnegative fog start and retain the input after callback",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-state-acceptance.md",
+        "research/campaign-024-fog-set-start/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/effects_state_behavior.c"
+      ],
+      "quirks": [
+        "Original-toolchain floating behavior is tested separately from supplemental modern behavior."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "fog_set_end",
+      "module": "effects_state",
+      "analysis_name": "set_world_fog_end_distance",
+      "purpose": "Forward nonnegative fog end",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-state-acceptance.md",
+        "research/campaign-024-fog-set-end/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/effects_state_behavior.c"
+      ],
+      "quirks": [
+        "Original-toolchain floating behavior is tested separately from supplemental modern behavior."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "tint_start_opaque",
+      "module": "effects_state",
+      "analysis_name": "start_opaque_fullscreen_color_fade",
+      "purpose": "Start a fullscreen fade with alpha255 through the actual initializer",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-state-acceptance.md",
+        "research/campaign-024-tint-start-opaque/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/effects_state_behavior.c"
+      ],
+      "quirks": [
+        "Original-toolchain floating behavior is tested separately from supplemental modern behavior."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "tint_stop",
+      "module": "effects_state",
+      "analysis_name": "clear_fullscreen_color_fade",
+      "purpose": "Clear active tint mode and timing while retaining other state",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-state-acceptance.md",
+        "research/campaign-024-tint-stop/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/effects_state_behavior.c"
+      ],
+      "quirks": [
+        "Original-toolchain floating behavior is tested separately from supplemental modern behavior."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "fog_start",
+      "module": "effects_state",
+      "analysis_name": "start_timed_fog_transition",
+      "purpose": "Initialize timed fog using full-word RGB masks and late world access",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-state-acceptance.md",
+        "research/campaign-025-fog-start/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/effects_state_behavior.c"
+      ],
+      "quirks": [
+        "Original-toolchain floating behavior is tested separately from supplemental modern behavior."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "fog_tick",
+      "module": "effects_state",
+      "analysis_name": "advance_timed_fog_transition",
+      "purpose": "Advance fog interpolation and restore world fog on completion",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-state-acceptance.md",
+        "research/campaign-025-fog-tick/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/effects_state_behavior.c"
+      ],
+      "quirks": [
+        "Original-toolchain floating behavior is tested separately from supplemental modern behavior."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "tint_start_full",
+      "module": "effects_state",
+      "analysis_name": "start_fullscreen_color_fade",
+      "purpose": "Publish fullscreen tint around an ST0 clock callback",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/effects-state-acceptance.md",
+        "research/campaign-025-tint-start-full/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/effects_state_behavior.c"
+      ],
+      "quirks": [
+        "Original-toolchain floating behavior is tested separately from supplemental modern behavior."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "fade_reset",
+      "module": "effects_state",
+      "analysis_name": "FUN_00439720",
+      "purpose": "Clear fullscreen tint and three letterbox state words",
+      "confidence": "MEDIUM",
+      "evidence": [
+        "docs/effects-state-acceptance.md",
+        "research/campaign-025-fade-reset/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/effects_state_behavior.c"
+      ],
+      "quirks": [
+        "Original-toolchain floating behavior is tested separately from supplemental modern behavior.",
+        "No direct callers; lifecycle provenance remains unresolved."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "acceptance-010",
+  "status": "verification",
+  "started_utc": "2026-09-13T17:59:22.152972+00:00",
+  "implementation_stop_utc": "2026-09-13T18:49:22.152972+00:00",
+  "deadline_utc": "2026-09-13T19:04:22.152972+00:00",
+  "baseline_commit": "5b533842238b07fa30472203f4e8dfdb546b4777",
+  "functions": [
+    "fog_snapshot",
+    "fog_restore",
+    "fog_set_start",
+    "fog_set_end",
+    "tint_start_opaque",
+    "tint_stop",
+    "fog_start",
+    "fog_tick",
+    "tint_start_full",
+    "fade_reset"
+  ],
+  "planned_promotions": 10,
+  "full_span_bytes": 773,
+  "registered_before": 52,
+  "evidence_records_before": 30,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "new_warning_waivers": [],
+  "tooling_tests_passed": 100,
+  "focused_runner_tests_passed": 19
+}

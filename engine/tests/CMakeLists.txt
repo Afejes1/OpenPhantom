@@ -14,7 +14,8 @@ add_executable(behavior_smoke behavior.c ../src/material_mode.c ../src/grid_cell
   ../src/world_read_animation_names.c ../src/world_mangle_names.c ../src/world_restart_clock.c
   ../src/world_read_chunk_header.c ../src/world_skip_chunk.c ../src/world_load_via_skip.c
   ../src/model_load_state.c ../src/get_system_font.c ../src/shield_radius.c ../src/shield_set_colour.c ../src/shield_set_visible.c ../src/shield_set_visibility_bypass.c
-  ../src/shield_free.c ../src/shield_destroy_all.c ../src/shield_stop.c ../src/shield_save_size.c ../src/shield_calloc.c ../src/shield_set_texture.c ../src/shield_draw_released.c ../src/shield_destroy.c ../src/effects_object_destroyed.c)
+  ../src/shield_free.c ../src/shield_destroy_all.c ../src/shield_stop.c ../src/shield_save_size.c ../src/shield_calloc.c ../src/shield_set_texture.c ../src/shield_draw_released.c ../src/shield_destroy.c ../src/effects_object_destroyed.c
+  ../src/fog_snapshot.c ../src/fog_restore.c ../src/fog_set_start.c ../src/fog_set_end.c ../src/tint_start_opaque.c ../src/tint_stop.c ../src/fog_start.c ../src/fog_tick.c ../src/tint_start_full.c ../src/fade_reset.c)
 
 target_compile_options(behavior_smoke PRIVATE /W4 /WX /Od /fp:precise)
 enable_testing()
