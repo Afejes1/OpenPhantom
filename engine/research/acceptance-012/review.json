@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "conclusion": "no-material-defect",
+  "reviewed_source_commit": "7047248402ec2760716275af5c8bf05988a0ada0",
+  "source_snapshot_verified_against_commit": true,
+  "functions": [
+    "detach_zap",
+    "zap_startup",
+    "zap_shutdown",
+    "zap_reset",
+    "zap_has_actor",
+    "halo_free_all",
+    "effects_load",
+    "halo_draw_actor",
+    "ripple_material",
+    "zap_draw_segment",
+    "zap_draw_default",
+    "effects_object_visibility",
+    "effects_object_created"
+  ],
+  "notes": [
+    "13 canonical functions preserve frozen source statements and observed ABI.",
+    "Actual halo-stop-zap teardown preserves inactive endpoints and verifies full pools.",
+    "Prior432 draw cases retain bit0 and signed-slot outcomes while actual halo entry is enabled; new direct tests cover NULL/missing-bit/dynamic behavior.",
+    "Actual overlay helper performs36 reachable28-byte reads;96-byte saved effects and28-byte overlay blocks route separately.",
+    "Scoped resource callbacks and material return capture are correct.",
+    "Fixture-only endpoint-name collision corrected before full build; no candidate changes."
+  ],
+  "original_game_executed": false
+}

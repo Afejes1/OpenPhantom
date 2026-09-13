@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "acceptance-012",
+  "status": "passed",
+  "completed_utc": "2026-09-13T19:30:17.860580+00:00",
+  "baseline_commit": "96d4de323744d5e86dc46d2dc4cb9943265336ec",
+  "functions": [
+    "detach_zap",
+    "zap_startup",
+    "zap_shutdown",
+    "zap_reset",
+    "zap_has_actor",
+    "halo_free_all",
+    "effects_load",
+    "halo_draw_actor",
+    "ripple_material",
+    "zap_draw_segment",
+    "zap_draw_default",
+    "effects_object_visibility",
+    "effects_object_created"
+  ],
+  "new_promotions": 13,
+  "full_span_bytes": 1119,
+  "registered_before": 69,
+  "registered_after": 82,
+  "evidence_records_before": 32,
+  "evidence_records_after": 33,
+  "verified_operands": 63,
+  "source_commit": "7047248402ec2760716275af5c8bf05988a0ada0",
+  "build": "engine/build/20260913-152401-33d3b7bb",
+  "build_file_sha256": "9d25011885069960d22f403f9f69fa214e5157a6f2ad87d7036e203a56b5cfc8",
+  "build_canonical_sha256": "e31bba87d09937692d78b8acdff6b11082443677c59f76000ded42a4f393d339",
+  "comparison_file_sha256": "d0e777ec4c20d742f3889846183338412902f54bc5d7ca88d9ff13a77625b628",
+  "behavior_file_sha256": "aea800ed24a94dfb0f0460b91d28d772c7763fedf68b2a1e090c081d79cd9a94",
+  "accepted_event": "engine/evidence/runs/000033-55ac18bb0d997bea.json",
+  "accepted_event_sha256": "3466589006a8ca13622c12d000eef2037af4b7e93381b52a9787e4b9722e3ebc",
+  "source_snapshot_entries": 161,
+  "shared_effects_fixture_checks": {
+    "halo_overlay": 13401,
+    "zap_lifecycle": 44310,
+    "ripple_material": 7618,
+    "effects_save": 5980
+  },
+  "shared_effects_fixture_checks_total": 71309,
+  "shared_fixture_failures": 0,
+  "prior_shield_lifecycle_checks": 17209,
+  "prior_fixture_suites_passed": true,
+  "tooling_tests_passed": 100,
+  "focused_runner_tests_passed": 19,
+  "full_regression_run": true,
+  "failed_full_builds": 0,
+  "fixture_compile_diagnostics": [
+    {
+      "path": "engine/build/acceptance012-fixture-compile-0e947d549e",
+      "returncode": 2,
+      "reason": "Two fixture endpoint buffers retained colliding names; distinct fixture-local names corrected."
+    },
+    {
+      "path": "engine/build/acceptance012-fixture-compile-de44a20e94",
+      "returncode": 0
+    }
+  ],
+  "full_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34777736975",
+  "full_ci_conclusion": "success",
+  "source_push_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34777736991",
+  "source_push_ci_conclusion": "success",
+  "shared_global_address_conflicts": 0,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "new_warning_waivers": [],
+  "whole_executable_match": false,
+  "linked_placement_verified": false
+}
