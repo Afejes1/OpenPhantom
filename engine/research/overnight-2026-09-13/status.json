@@ -30,21 +30,25 @@
     },
     {
       "phase": "campaign-004",
-      "commit": "containing commit",
-      "ci": "pending after push",
+      "commit": "fdccae8de475e5fb94cf490a004a4a3f954bc73e",
+      "ci": "passed",
       "new_exact_functions": 0,
       "new_research_candidates": 3,
       "focused_checks": 151,
       "affected_tooling_tests": 43,
-      "result": "research/campaign-004/results.md"
+      "result": "research/campaign-004/results.md",
+      "ci_run_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34735785699",
+      "full_regression": "skipped by feature-branch workflow",
+      "published_utc": "2026-09-13T03:33:32Z"
     }
   ],
-  "current_work": "Campaign 004 implementation and verification complete; checkpoint publication.",
-  "resume": "Start Campaign 005 from next-shortlist.json: prepare small related music helpers; retain one Sol/medium worker. Campaign 004 assignments are frozen and must not be dispatched again.",
+  "current_work": "Campaign 004 published and lightweight CI passed. No active implementation; existing worker is idle.",
+  "resume": "Start Campaign 005 from next-shortlist.json: prepare small related bp/bapmusic.c helpers (begin 0x0041073F, 0x00410592, 0x004107B5, 0x004107CF; aliases and full extents need static verification). Retain one Sol/medium worker, prioritizing meaningful state/callback helpers alongside getters. Campaign 004 assignments are frozen and must not be dispatched again. Fixed deadline remains 08:48 UTC.",
   "interruptions": [],
   "original_game_executed": false,
   "full_regression_run": false,
   "final_report": null,
   "new_research_candidates": 3,
-  "weekly_account_usage_observed_percent": 26
+  "weekly_account_usage_observed_percent": 26,
+  "last_campaign_finished_utc": "2026-09-13T03:35:28.151688+00:00"
 }
