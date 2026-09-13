@@ -42,19 +42,19 @@ Whole executable: **incomplete**. Original linked placement: **unverified**.
 | b3d_world_names | [world_read_animation_names](../src/world_read_animation_names.c) | 0x0041E3BD | c | relocation-adjusted-match (historical; current source unverified) | 253 / 8 |
 | b3d_world_names | [world_mangle_names](../src/world_mangle_names.c) | 0x0041EABC | c | raw-code-match (historical; current source unverified) | 158 / 0 |
 | b3d_world_names | [world_restart_clock](../src/world_restart_clock.c) | 0x0041EB5A | c | relocation-adjusted-match (historical; current source unverified) | 58 / 8 |
-| focused_accessors | [model_load_state](../src/model_load_state.c) | 0x0045C47B | c | unverified | 14 / 0 |
-| focused_accessors | [get_system_font](../src/get_system_font.c) | 0x0046B754 | c | unverified | 10 / 4 |
-| focused_accessors | [shield_radius](../src/shield_radius.c) | 0x0043AFD3 | c | unverified | 67 / 12 |
-| focused_accessors | [shield_set_colour](../src/shield_set_colour.c) | 0x0043AEE7 | c | unverified | 94 / 4 |
-| focused_accessors | [shield_set_visible](../src/shield_set_visible.c) | 0x0043B016 | c | unverified | 67 / 4 |
-| focused_accessors | [shield_set_visibility_bypass](../src/shield_set_visibility_bypass.c) | 0x0043B059 | c | unverified | 67 / 4 |
+| focused_accessors | [model_load_state](../src/model_load_state.c) | 0x0045C47B | c | raw-code-match (historical; current source unverified) | 14 / 0 |
+| focused_accessors | [get_system_font](../src/get_system_font.c) | 0x0046B754 | c | relocation-adjusted-match (historical; current source unverified) | 10 / 4 |
+| focused_accessors | [shield_radius](../src/shield_radius.c) | 0x0043AFD3 | c | relocation-adjusted-match (historical; current source unverified) | 67 / 12 |
+| focused_accessors | [shield_set_colour](../src/shield_set_colour.c) | 0x0043AEE7 | c | relocation-adjusted-match (historical; current source unverified) | 94 / 4 |
+| focused_accessors | [shield_set_visible](../src/shield_set_visible.c) | 0x0043B016 | c | relocation-adjusted-match (historical; current source unverified) | 67 / 4 |
+| focused_accessors | [shield_set_visibility_bypass](../src/shield_set_visibility_bypass.c) | 0x0043B059 | c | relocation-adjusted-match (historical; current source unverified) | 67 / 4 |
 
-Registered functions: **40**. Last recorded matches with unchanged definitions: **34**.
+Registered functions: **40**. Last recorded matches with unchanged definitions: **40**.
 Current source fingerprint agrees with the latest run: **no**.
 This count is not whole-program coverage and does not certify the modern TPM reconstruction.
 
-Latest build: '20260913-112412-e727a743', source commit '937ab726354d4b2e226b2b38e13a593671d5f811'.
-History contains 26 verified build records.
+Latest build: '20260913-120241-a5eb3262', source commit '51139ac160df702cae6fd9593a6c2ddf6e1b6e7a'.
+History contains 27 verified build records.
 
 ## Workarounds and exceptions
 

@@ -38,8 +38,7 @@ static int model_load_state_main(void)
         model_load_state_check(
             memcmp(&model_load_state_state, &model_load_state_expected, sizeof(model_load_state_state)) == 0);
     }
-    printf("model load model_load_state_state: %d checks, %d failures\n",
-           model_load_state_checks, model_load_state_failures);
+    printf("model load state: %d checks, %d failures\n", model_load_state_checks, model_load_state_failures);
     return model_load_state_failures != 0;
 }
 
@@ -76,8 +75,7 @@ static int get_system_font_main(void)
         get_system_font_check(
             memcmp(get_system_font_objects, get_system_font_expected, sizeof(get_system_font_objects)) == 0);
     }
-    printf("system font getter: %d checks, %d failures\n", get_system_font_checks,
-           get_system_font_failures);
+    printf("system font getter: %d checks, %d failures\n", get_system_font_checks, get_system_font_failures);
     return get_system_font_failures != 0;
 }
 
@@ -110,8 +108,16 @@ static int shield_radius_main(void)
     unsigned int saved;
     static const unsigned int radii[] = {0U,          0x80000000U, 0x3f800000U, 0xc0200000U,
                                          0x7f7fffffU, 0x00800000U, 0x7fc12345U};
+#ifdef OP_VC5_BEHAVIOR
     saved = _controlfp(0, 0);
     _controlfp(_MCW_EM | _PC_64 | _RC_NEAR, _MCW_EM | _MCW_PC | _MCW_RC);
+#else
+    {
+        unsigned int current;
+        shield_radius_check(_controlfp_s(&saved, 0, 0) == 0);
+        shield_radius_check(_controlfp_s(&current, _MCW_EM | _PC_64 | _RC_NEAR, _MCW_EM | _MCW_PC | _MCW_RC) == 0);
+    }
+#endif
     memset(op_shields, 0x6d, sizeof(op_shields));
     for (i = 0; i < 32; ++i)
     {
@@ -136,9 +142,15 @@ static int shield_radius_main(void)
         op_shields[i].owner = 0;
         shield_radius_verify(i, 0);
     }
+#ifdef OP_VC5_BEHAVIOR
     _controlfp(saved, _MCW_EM | _MCW_PC | _MCW_RC);
-    printf("shield radius: %d checks, %d failures\n", shield_radius_checks,
-           shield_radius_failures);
+#else
+    {
+        unsigned int current;
+        shield_radius_check(_controlfp_s(&current, saved, _MCW_EM | _MCW_PC | _MCW_RC) == 0);
+    }
+#endif
+    printf("shield radius: %d checks, %d failures\n", shield_radius_checks, shield_radius_failures);
     return shield_radius_failures != 0;
 }
 
@@ -195,8 +207,7 @@ static int shield_set_colour_main(void)
             shield_set_colour_verify(i, 1, values[j], values[(j + 1) % 8], values[(j + 2) % 8], values[(j + 3) % 8]);
         }
     }
-    printf("shield colour: %d checks, %d failures\n", shield_set_colour_checks,
-           shield_set_colour_failures);
+    printf("shield colour: %d checks, %d failures\n", shield_set_colour_checks, shield_set_colour_failures);
     return shield_set_colour_failures != 0;
 }
 
@@ -245,8 +256,7 @@ static int shield_set_visible_main(void)
             shield_set_visible_verify(i, 1, values[j]);
         }
     }
-    printf("shield word setter: %d checks, %d failures\n",
-           shield_set_visible_checks, shield_set_visible_failures);
+    printf("shield word setter: %d checks, %d failures\n", shield_set_visible_checks, shield_set_visible_failures);
     return shield_set_visible_failures != 0;
 }
 
@@ -296,8 +306,8 @@ static int shield_set_visibility_bypass_main(void)
             shield_set_visibility_bypass_verify(i, 1, values[j]);
         }
     }
-    printf("shield word setter: %d checks, %d failures\n",
-           shield_set_visibility_bypass_checks, shield_set_visibility_bypass_failures);
+    printf("shield word setter: %d checks, %d failures\n", shield_set_visibility_bypass_checks,
+           shield_set_visibility_bypass_failures);
     return shield_set_visibility_bypass_failures != 0;
 }
 
@@ -349,24 +359,24 @@ static void accessor_sequence(void)
 }
 static int op_test_focused_accessors(void)
 {
-    int failures, checks;
-    failures = 0;
+    int accessor_failures, checks;
+    accessor_failures = 0;
     checks = 0;
-    failures += model_load_state_main();
+    accessor_failures += model_load_state_main();
     checks += model_load_state_checks;
-    failures += get_system_font_main();
+    accessor_failures += get_system_font_main();
     checks += get_system_font_checks;
-    failures += shield_radius_main();
+    accessor_failures += shield_radius_main();
     checks += shield_radius_checks;
-    failures += shield_set_colour_main();
+    accessor_failures += shield_set_colour_main();
     checks += shield_set_colour_checks;
-    failures += shield_set_visible_main();
+    accessor_failures += shield_set_visible_main();
     checks += shield_set_visible_checks;
-    failures += shield_set_visibility_bypass_main();
+    accessor_failures += shield_set_visibility_bypass_main();
     checks += shield_set_visibility_bypass_checks;
     accessor_sequence();
-    failures += accessor_sequence_failures;
+    accessor_failures += accessor_sequence_failures;
     checks += accessor_sequence_checks;
-    printf("focused accessors integrated: %d checks, %d failures\n", checks, failures);
-    return failures;
+    printf("focused accessors integrated: %d checks, %d failures\n", checks, accessor_failures);
+    return accessor_failures;
 }

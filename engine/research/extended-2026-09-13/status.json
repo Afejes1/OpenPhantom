@@ -17,7 +17,7 @@
   "accepted_functions_at_start": 21,
   "evidence_records_at_start": 21,
   "weekly_shared_usage_start_percent": 39,
-  "promotions": 13,
+  "promotions": 19,
   "new_exact_functions": 31,
   "new_exact_bytes": 3377,
   "checkpoints": [
@@ -168,18 +168,33 @@
       "promotions": 0,
       "results": "../campaign-022/results.md",
       "verified_utc": "2026-09-13T15:55:25.802199+00:00",
-      "source_commit": "f2b027e44fe6cdbb1323ba8f236de41628c44b14"
+      "source_commit": "f2b027e44fe6cdbb1323ba8f236de41628c44b14",
+      "focused_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34767096904",
+      "focused_ci_conclusion": "success"
+    },
+    {
+      "id": "acceptance-007",
+      "status": "local-passed-full-ci-pending",
+      "completed_utc": "2026-09-13T16:04:59.254016+00:00",
+      "source_commit": "51139ac160df702cae6fd9593a6c2ddf6e1b6e7a",
+      "promotions": 6,
+      "new_exact_functions": 0,
+      "registered_total": 40,
+      "result": "../acceptance-007/result.json",
+      "full_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34767387232"
     }
   ],
-  "current_work": "Acceptance007 six exact getters/setters passed review; clean source build pending.",
+  "current_work": "Final acceptance007 local verification passed40 functions; full CI and closing report pending.",
   "original_game_executed": false,
-  "weekly_shared_usage_latest_percent": 43,
-  "last_checkpoint_utc": "2026-09-13T15:55:25.802199+00:00",
-  "last_source_commit": "937ab726354d4b2e226b2b38e13a593671d5f811",
-  "usage_observed_utc": "2026-09-13T13:59:42.009190+00:00",
-  "usage_observation_scope": "Rounded account-wide weekly usage;39 at window start,43 now, not isolated campaign billing.",
+  "weekly_shared_usage_latest_percent": 47,
+  "last_checkpoint_utc": "2026-09-13T16:04:59.254016+00:00",
+  "last_source_commit": "51139ac160df702cae6fd9593a6c2ddf6e1b6e7a",
+  "usage_observed_utc": "2026-09-13T16:04:59.254016+00:00",
+  "usage_observation_scope": "Rounded account-wide weekly usage:39 at start and47 near final acceptance, not isolated campaign billing.",
   "new_near_matches": 6,
   "new_research_candidates": 1,
   "team_done_overlap_exact_functions": 2,
-  "team_done_overlap_exact_bytes": 29
+  "team_done_overlap_exact_bytes": 29,
+  "registered_accepted_functions": 40,
+  "evidence_records": 27
 }

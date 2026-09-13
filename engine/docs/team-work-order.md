@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **32** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **937**.
+Our last recorded matches cover **38** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **931**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -93,7 +93,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | game/enemy.c | 9 | 0 | 9 |
 | game/fxfade.c | 34 | 0 | 34 |
 | game/fxprint.c | 6 | 0 | 6 |
-| game/fxshield.c | 24 | 0 | 24 |
+| game/fxshield.c | 24 | 4 | 20 |
 | game/fxzappo.c | 14 | 0 | 14 |
 | game/main.c | 26 | 0 | 26 |
 | game/menu.c | 10 | 0 | 10 |
@@ -127,7 +127,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | std/stdwin95.c | 14 | 0 | 14 |
 | std/wkernel.c | 14 | 0 | 14 |
 | swift/stdbmp.c | 1 | 0 | 1 |
-| swift/sw3d.c | 10 | 0 | 10 |
+| swift/sw3d.c | 10 | 1 | 9 |
 | swift/swchkbox.c | 2 | 0 | 2 |
 | swift/swedit.c | 2 | 0 | 2 |
 | swift/swlistbx.c | 7 | 0 | 7 |
@@ -137,7 +137,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | util/control.c | 3 | 0 | 3 |
 | util/debug.c | 16 | 0 | 16 |
 | util/fileutil.c | 5 | 0 | 5 |
-| util/font3d.c | 21 | 0 | 21 |
+| util/font3d.c | 21 | 1 | 20 |
 | util/inter.c | 14 | 0 | 14 |
 | util/module.c | 20 | 0 | 20 |
 | util/pzip.c | 30 | 0 | 30 |

@@ -1,0 +1,5 @@
+# Acceptance007 fixture review
+
+Six original focused fixtures retain their bodies with static identifier prefixes. One shared32-slot shield table replaces repeated global definitions. Checks total3856 individually plus256 in an added actual color/visibility/no-save/radius sequence. Every sequence step compares the full table against independently specified expected writes. Model and font fixtures retain owned pointer/guarded storage. The radius fixture masks and restores x87 control for finite, signedzero and quietNaN cases. Modern supplemental compilation uses _controlfp_s and checks its three return codes; VC5 retains _controlfp. The accumulator uses a unique name to avoid hiding the parent counter. The first VC5-only passing run and failed modern CI are retained.
+
+All prior34 target/registry entries are unchanged; prior source/test bodies remain unchanged except the explicit new include/invocation and CMake source additions. Sol read-only independent review found no material issue. A clean committed source build passed4112 combined checks and all40 original-span comparisons. No test or byte exclusions or warning waivers.
