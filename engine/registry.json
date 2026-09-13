@@ -597,6 +597,63 @@
         "Fog RGB uses full unsigned words; clear RGB and pixel callbacks use byte and short parameters"
       ],
       "exceptions": []
+    },
+    {
+      "id": "world_read_animation_names",
+      "module": "b3d_world_names",
+      "analysis_name": "read_b3d_animation_names_chunk",
+      "purpose": "Read and relocate animation-name lengths into pointers before allocating an actor pointer table",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/world-names-acceptance.md",
+        "research/campaign-021-world-read-animation-names/README.md"
+      ],
+      "behavior_tests": [
+        "tests/world_names_behavior.c"
+      ],
+      "quirks": [
+        "Captured original cursor and live retargeted table remain distinct across the read callback",
+        "Allocation failure still returns success after count and size publication"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "world_mangle_names",
+      "module": "b3d_world_names",
+      "analysis_name": "normalize_b3d_actor_names_in_temporary_buffer",
+      "purpose": "Normalize each actor name only in a temporary local buffer, preserving the original lack of writeback",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/world-names-acceptance.md",
+        "research/campaign-021-world-mangle-names/README.md"
+      ],
+      "behavior_tests": [
+        "tests/world_names_behavior.c"
+      ],
+      "quirks": [
+        "Signed count interpretation is explicit on the shared unsigned count word",
+        "Temporary normalization has no external writeback; full byte equality proves the local work"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "world_restart_clock",
+      "module": "b3d_world_names",
+      "analysis_name": "restart_b3d_world_clock",
+      "purpose": "Reset world clock ticks and call the actual temporary-name routine",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/world-names-acceptance.md",
+        "research/campaign-017-world-restart-clock/README.md"
+      ],
+      "behavior_tests": [
+        "tests/world_names_behavior.c"
+      ],
+      "quirks": [
+        "Canonical signed tick fields preserve the original return-word bits; delta zero uses the shared float field",
+        "The linked helper is the reconstructed name routine, not a fixture stub"
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

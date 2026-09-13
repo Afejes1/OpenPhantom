@@ -41,7 +41,8 @@ typedef struct OP_B3D_LOCAL_VERTEX_RECORD
     unsigned int words[7];
 } OP_B3D_LOCAL_VERTEX_RECORD;
 
-typedef union OP_B3D_NAME_ENTRY {
+typedef union OP_B3D_NAME_ENTRY
+{
     int length;
     char *name;
 } OP_B3D_NAME_ENTRY;
@@ -131,11 +132,9 @@ typedef char op_b3d_name_entry_width[sizeof(OP_B3D_NAME_ENTRY) == 4 ? 1 : -1];
 typedef char op_b3d_actor_name[offsetof(OP_B3D_ACTOR, name) == 8 ? 1 : -1];
 typedef char op_b3d_actor_view[sizeof(OP_B3D_ACTOR) == 40 ? 1 : -1];
 typedef char op_b3d_header_animation_name_count[offsetof(OP_B3D_HEADER, animation_name_count) == 0xa8 ? 1 : -1];
-typedef char
-    op_b3d_header_animation_name_payload_size[offsetof(OP_B3D_HEADER, animation_name_payload_size) == 0xac ? 1 : -1];
+typedef char op_b3d_header_animation_name_payload_size[offsetof(OP_B3D_HEADER, animation_name_payload_size) == 0xac ? 1 : -1];
 typedef char op_b3d_world_animation_name_count[offsetof(OP_B3D_WORLD, animation_name_count) == 0x1e8 ? 1 : -1];
-typedef char
-    op_b3d_world_animation_name_payload_size[offsetof(OP_B3D_WORLD, animation_name_payload_size) == 0x1ec ? 1 : -1];
+typedef char op_b3d_world_animation_name_payload_size[offsetof(OP_B3D_WORLD, animation_name_payload_size) == 0x1ec ? 1 : -1];
 typedef char op_b3d_world_animation_names[offsetof(OP_B3D_WORLD, animation_names) == 0x1f0 ? 1 : -1];
 typedef char op_b3d_world_actor_resources[offsetof(OP_B3D_WORLD, actor_resources) == 0x1f4 ? 1 : -1];
 

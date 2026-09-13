@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "acceptance-006",
+  "status": "clean-source-build-pending",
+  "started_utc": "2026-09-13T15:15:14Z",
+  "implementation_stop_utc": "2026-09-13T15:40:14Z",
+  "deadline_utc": "2026-09-13T15:50:14Z",
+  "baseline_commit": "880cec9aee1a838fd1ed48b72f736e4f8f7bd349",
+  "functions": [
+    "world_read_animation_names",
+    "world_mangle_names",
+    "world_restart_clock"
+  ],
+  "planned_promotions": 3,
+  "planned_bytes": 469,
+  "verified_operands": 4,
+  "registered_before": 31,
+  "registered_after_prepared": 34,
+  "evidence_records_before": 25,
+  "implementation_by": "parent",
+  "independent_reviewer": "comparison_inventory",
+  "original_game_executed": false,
+  "probe_compilations": 1,
+  "probe_compilation_failures": 0,
+  "probe_preflight_rejections": 1,
+  "tooling_initial_result": "99 engine tests passed; one registry test correctly failed until its referenced acceptance documentation was created. Rerun required.",
+  "focused_runner_tests_passed": 19,
+  "tooling_tests_passed": 100
+}

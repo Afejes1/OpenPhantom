@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "campaign": "021",
-  "status": "verification-complete-publication-pending",
+  "status": "published",
   "started_utc": "2026-09-13T14:53:29.345797+00:00",
   "worker_stop_utc": "2026-09-13T15:28:29.345797+00:00",
   "stop_utc": "2026-09-13T15:38:29.345797+00:00",
@@ -71,5 +71,8 @@
   "exact_functions": 5,
   "exact_bytes": 745,
   "fixture_checks": 354,
-  "accepted_promotions": 0
+  "accepted_promotions": 0,
+  "source_commit": "880cec9aee1a838fd1ed48b72f736e4f8f7bd349",
+  "focused_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34765025203",
+  "focused_ci_conclusion": "success"
 }

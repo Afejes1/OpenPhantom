@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-13T15:23:27.699515+00:00",
+  "conclusion": "no-material-defect",
+  "prior_31_entries_unchanged": true,
+  "prior_fixture_bodies_unchanged": true,
+  "callback_changes": "Explicit active-route branches only; restored inactive after suite",
+  "checked": [
+    "canonical offsets/extents",
+    "signed count loop",
+    "typed length/name union and actor pointers",
+    "primary cursor versus live table",
+    "allocation and read stage snapshots",
+    "INTMIN size forwarding without I/O",
+    "actual read/restart/name chain and timer mutation order",
+    "bounded C89/W4 fixture shape"
+  ],
+  "proof_limit": "Behavior proves no external writeback; exact code bytes prove local name work."
+}

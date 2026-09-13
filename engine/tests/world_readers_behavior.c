@@ -4,6 +4,10 @@
 #include <stdio.h>
 #include <string.h>
 
+static int world_names_active;
+static void *world_names_allocate(unsigned int bytes);
+static int world_names_read(void *destination, int size, int count, OP_B3D_STREAM *stream);
+
 static int world_readers_checks;
 static int world_readers_failures;
 static int world_readers_events[8];
@@ -136,6 +140,8 @@ static void world_readers_reset_callbacks(void)
 
 void *op_allocate(unsigned int bytes)
 {
+    if (world_names_active)
+        return world_names_allocate(bytes);
     ++world_readers_allocate_calls;
     world_readers_allocate_bytes = bytes;
     world_readers_event(1);
@@ -160,6 +166,9 @@ void *op_allocate(unsigned int bytes)
 int op_stream_read(void *destination, int element_size, int count, OP_B3D_STREAM *stream)
 {
     int call;
+
+    if (world_names_active)
+        return world_names_read(destination, element_size, count, stream);
 
     call = world_readers_read_calls;
     if (call >= 0 && call < 8)

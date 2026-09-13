@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "kind": "compile-only-canonical-field-mapping",
+  "status": "relocation-adjusted-match",
+  "comparison": {
+    "id": "world_restart_clock",
+    "address": 4320090,
+    "size": 58,
+    "candidate_size": 58,
+    "body_size": 58,
+    "status": "relocation-adjusted-match",
+    "literal_function_match": false,
+    "layout_verified": false,
+    "adjusted_bytes": 8,
+    "object_sha256": "2884fa61f50b5ac56987df487c7a49a3f055851bf5906a91d0a3f6ee72994334",
+    "compared_bytes": 50,
+    "dir32_bytes": 0,
+    "rel32_call_bytes": 8,
+    "internal_dir32_bytes": 0,
+    "different_bytes": 0,
+    "raw_bytes_equal": false,
+    "relocated_bytes_equal": true,
+    "reference_span_sha256": "5f7369f14d05d11c3bca40f9383cbf721515c90e16d81360f8cf511de4f52c24",
+    "resolved_span_sha256": "5f7369f14d05d11c3bca40f9383cbf721515c90e16d81360f8cf511de4f52c24"
+  },
+  "source_snapshot": {
+    "research/acceptance-006/restart-mapping/candidate.c": "d72320df16839e700a7856ae9c1e4847750bd8c62c2d5bae73a206a41fe86d98",
+    "research/acceptance-006/restart-mapping/api.h": "c0c427acf736e377daa8ef8f26d6d4fa55a64d9565002bfa8e4f8aab10c1989e",
+    "research/acceptance-006/restart-mapping/behavior.c": "d9c125efa0d8aac558d76747cc3aa3cc6e49ff3593dd476569db87b3adf32d43",
+    "research/acceptance-006/restart-mapping/case.json": "40a6fdca29cff7a6aee129c67a0ce8b1f4c3e87f930c43f7dcc51701d4c5fbb7",
+    "research/campaign-001/verify.py": "78bcf92d994fdab04d1a983838fe9f492162d2626b35390259d9976b92cbbe78",
+    "target.json": "3e742ceabc23e6fad6fc7eca79ce84357efd22147799c73fefa3273b5560d7d7",
+    "research/acceptance-006/restart-mapping/target.json": "78a0a58637b4fa4c2aec9ebd1559e30b26931e56b336fefeefbcf21d8536f224",
+    "research/surface-emission/probe.py": "cd4ef4126dacfc16197636a4b0c7007639efe1033e8e2b329e4939a6083c5f1b",
+    "research/surface-emission/native_listing_diagnostic.py": "3cad0339396c73301ef5861eed3c40f925482fd7c2e4ec45f801e9d0e5d34665",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "959d15268c4d927e57271424dbcb1c709cf89cbf3e48ff545e4e15c4d6425f27",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "native_report": "engine/build/campaign-001-world_restart_clock-563cc49dd61a/research-result.json",
+  "native_report_sha256": "d713a6b477b0548141a22268c4cdec10409d5efb1e26fade77ffe7210d475fa1",
+  "fixture_executed": false,
+  "accepted": false,
+  "original_game_executed": false,
+  "limitations": [
+    "Historical pre-registration mapping probe; final shared clean build supersedes it for acceptance."
+  ],
+  "preflight_attempts": [
+    {
+      "path": "engine/private/acceptance006-restart-probe",
+      "status": "rejected-before-compile",
+      "reason": "Runner requires cases within research; moved authored packet to required research directory without changing policy."
+    }
+  ]
+}

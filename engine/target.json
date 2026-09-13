@@ -1376,6 +1376,74 @@
           "symbol": "_op_set_render_flags"
         }
       ]
+    },
+    {
+      "id": "world_read_animation_names",
+      "address": 4318141,
+      "size": 253,
+      "body_size": 253,
+      "source": "src/world_read_animation_names.c",
+      "symbol": "_op_world_read_animation_names",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 39,
+          "address": 4654982,
+          "kind": "rel32-call",
+          "symbol": "_op_stream_read"
+        },
+        {
+          "offset": 228,
+          "address": 4805264,
+          "kind": "rel32-call",
+          "symbol": "_op_allocate"
+        }
+      ]
+    },
+    {
+      "id": "world_mangle_names",
+      "address": 4319932,
+      "size": 158,
+      "body_size": 158,
+      "source": "src/world_mangle_names.c",
+      "symbol": "_op_world_mangle_names",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "world_restart_clock",
+      "address": 4320090,
+      "size": 58,
+      "body_size": 58,
+      "source": "src/world_restart_clock.c",
+      "symbol": "_op_world_restart_clock",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 12,
+          "address": 4676381,
+          "kind": "rel32-call",
+          "symbol": "_op_milliseconds"
+        },
+        {
+          "offset": 49,
+          "address": 4319932,
+          "kind": "rel32-call",
+          "symbol": "_op_world_mangle_names"
+        }
+      ]
     }
   ]
 }
