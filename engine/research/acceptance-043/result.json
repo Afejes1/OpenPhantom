@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "acceptance-043",
+  "baseline_commit": "6b7caad983b319e3048a9471e2a521bd5160b6f2",
+  "functions": [
+    "fast_length2_half",
+    "fast_length2_quarter",
+    "fast_length2_three_eighths",
+    "fast_length2_best",
+    "audio_com_initialize",
+    "audio_com_uninitialize",
+    "audio_set_cooperative",
+    "audio_set_frequency",
+    "audio3d_set_distance_bounds",
+    "audio_commit_listener",
+    "audio3d_set_mode",
+    "audio_stop",
+    "audio_release_buffer",
+    "audio3d_release"
+  ],
+  "promotions": 14,
+  "registered_before": 238,
+  "registered_after": 252,
+  "full_span_bytes": 1062,
+  "verified_operands": 24,
+  "status": "integration-pending",
+  "team_not_done": 14,
+  "team_reported_done": 0,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "independent_review": "comparison_inventory approved canonical bodies and connected fixtures; parent verified exact238-entry target and registry prefixes",
+  "prebuild_fixture_compile": {
+    "receipt": "engine/private/a043-targeted-compile.json",
+    "sha256": "398add0794691e31068f07498c4b3cf455d44d196a20ee1262f237a8e36e4511",
+    "returncode": 0
+  }
+}

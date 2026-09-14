@@ -131,6 +131,8 @@ static void clip_flag_tests(void)
 #include "window_state_behavior.c"
 #include "platform_behavior.c"
 #include "trig_behavior.c"
+#include "length_behavior.c"
+#include "audio_behavior.c"
 #include "directory_behavior.c"
 #include "palette_resources_behavior.c"
 #include "matrix_helpers_behavior.c"
@@ -290,6 +292,22 @@ int main(void)
     failures += op_test_platform_heap_connected();
     failures += op_test_platform_timer_connected();
     failures += op_test_math_connected();
+    failures += op_test_fast_length2_half();
+    failures += op_test_fast_length2_quarter();
+    failures += op_test_fast_length2_three_eighths();
+    failures += op_test_fast_length2_best();
+    failures += op_test_audio_com_initialize();
+    failures += op_test_audio_com_uninitialize();
+    failures += op_test_audio_set_cooperative();
+    failures += op_test_audio_set_frequency();
+    failures += op_test_audio3d_set_distance_bounds();
+    failures += op_test_audio_commit_listener();
+    failures += op_test_audio3d_set_mode();
+    failures += op_test_audio_stop();
+    failures += op_test_audio_release_buffer();
+    failures += op_test_audio3d_release();
+    failures += op_test_length_connected();
+    failures += op_test_audio_connected();
     failures += op_test_normal_from_points();
     failures += op_test_palette_lifecycle();
     failures += op_test_palette_name_get();

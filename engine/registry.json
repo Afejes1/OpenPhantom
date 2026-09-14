@@ -4419,6 +4419,272 @@
         "Connected tests invoke canonical functions; historical callback probes remain test-local."
       ],
       "exceptions": []
+    },
+    {
+      "id": "fast_length2_half",
+      "module": "stdmath",
+      "analysis_name": "fast_length2_half",
+      "purpose": "Cdecl float(float,float) conditional absolute-value and magnitude estimator. Conditional abs preserves negative zero; both equal-value ternaries select the second argument. Half and quarter divide the smaller magnitude before adding the larger; three-eighths multiplies it by0.375. Best compares0.875*largest+smallest/2 to largest and recomputes the expression on the selected branch, with a binary32 merge temporary. Exact observed constants and operand placements are mandatory.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/length-audio-acceptance.md",
+        "research/campaign-061-fast-length2-half/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/length_behavior.c"
+      ],
+      "quirks": [
+        "Reviewed finite numeric and owned synthetic callback domains remain bounded.",
+        "Connected tests invoke actual canonical functions without reseeding between sequence steps."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "fast_length2_quarter",
+      "module": "stdmath",
+      "analysis_name": "fast_length2_quarter",
+      "purpose": "Cdecl float(float,float) conditional absolute-value and magnitude estimator. Conditional abs preserves negative zero; both equal-value ternaries select the second argument. Half and quarter divide the smaller magnitude before adding the larger; three-eighths multiplies it by0.375. Best compares0.875*largest+smallest/2 to largest and recomputes the expression on the selected branch, with a binary32 merge temporary. Exact observed constants and operand placements are mandatory.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/length-audio-acceptance.md",
+        "research/campaign-061-fast-length2-quarter/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/length_behavior.c"
+      ],
+      "quirks": [
+        "Reviewed finite numeric and owned synthetic callback domains remain bounded.",
+        "Connected tests invoke actual canonical functions without reseeding between sequence steps."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "fast_length2_three_eighths",
+      "module": "stdmath",
+      "analysis_name": "fast_length2_three_eighths",
+      "purpose": "Cdecl float(float,float) conditional absolute-value and magnitude estimator. Conditional abs preserves negative zero; both equal-value ternaries select the second argument. Half and quarter divide the smaller magnitude before adding the larger; three-eighths multiplies it by0.375. Best compares0.875*largest+smallest/2 to largest and recomputes the expression on the selected branch, with a binary32 merge temporary. Exact observed constants and operand placements are mandatory.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/length-audio-acceptance.md",
+        "research/campaign-061-fast-length2-three-eighths/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/length_behavior.c"
+      ],
+      "quirks": [
+        "Reviewed finite numeric and owned synthetic callback domains remain bounded.",
+        "Connected tests invoke actual canonical functions without reseeding between sequence steps."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "fast_length2_best",
+      "module": "stdmath",
+      "analysis_name": "fast_length2_best",
+      "purpose": "Cdecl float(float,float) conditional absolute-value and magnitude estimator. Conditional abs preserves negative zero; both equal-value ternaries select the second argument. Half and quarter divide the smaller magnitude before adding the larger; three-eighths multiplies it by0.375. Best compares0.875*largest+smallest/2 to largest and recomputes the expression on the selected branch, with a binary32 merge temporary. Exact observed constants and operand placements are mandatory.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/length-audio-acceptance.md",
+        "research/campaign-061-fast-length2-best/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/length_behavior.c"
+      ],
+      "quirks": [
+        "Reviewed finite numeric and owned synthetic callback domains remain bounded.",
+        "Connected tests invoke actual canonical functions without reseeding between sequence steps."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio_com_initialize",
+      "module": "stdsound",
+      "analysis_name": "audio_com_initialize",
+      "purpose": "Independently recovered cdecl wrapper over offset-asserted stdcall COM-shaped callbacks. Device slot0x18 receives window word and priority2. Buffer frequency uses0x44, Stop0x48 then current position0x34 withzero, Release0x08. Spatial max/min distance uses0x40 then0x44 (float max then min, deferred1); position/velocity0x4c/0x50 receive capturedxyz and1; mode0x48 receives unsigned mode and0; Release0x08. Listener commit uses0x44. The opaque32 availability gate is not assigned an unproved pointer/boolean meaning. The result local captures the actual HRESULT/ULONG, which void wrappers intentionally discard. CoInitialize passesNULL and returns HRESULT; CoUninitialize isvoid.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/length-audio-acceptance.md",
+        "research/campaign-062-audio-com-initialize/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_behavior.c"
+      ],
+      "quirks": [
+        "Reviewed finite numeric and owned synthetic callback domains remain bounded.",
+        "Connected tests invoke actual canonical functions without reseeding between sequence steps."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio_com_uninitialize",
+      "module": "stdsound",
+      "analysis_name": "audio_com_uninitialize",
+      "purpose": "Independently recovered cdecl wrapper over offset-asserted stdcall COM-shaped callbacks. Device slot0x18 receives window word and priority2. Buffer frequency uses0x44, Stop0x48 then current position0x34 withzero, Release0x08. Spatial max/min distance uses0x40 then0x44 (float max then min, deferred1); position/velocity0x4c/0x50 receive capturedxyz and1; mode0x48 receives unsigned mode and0; Release0x08. Listener commit uses0x44. The opaque32 availability gate is not assigned an unproved pointer/boolean meaning. The result local captures the actual HRESULT/ULONG, which void wrappers intentionally discard. CoInitialize passesNULL and returns HRESULT; CoUninitialize isvoid.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/length-audio-acceptance.md",
+        "research/campaign-062-audio-com-uninitialize/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_behavior.c"
+      ],
+      "quirks": [
+        "Reviewed finite numeric and owned synthetic callback domains remain bounded.",
+        "Connected tests invoke actual canonical functions without reseeding between sequence steps."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio_set_cooperative",
+      "module": "stdsound",
+      "analysis_name": "audio_set_cooperative",
+      "purpose": "Independently recovered cdecl wrapper over offset-asserted stdcall COM-shaped callbacks. Device slot0x18 receives window word and priority2. Buffer frequency uses0x44, Stop0x48 then current position0x34 withzero, Release0x08. Spatial max/min distance uses0x40 then0x44 (float max then min, deferred1); position/velocity0x4c/0x50 receive capturedxyz and1; mode0x48 receives unsigned mode and0; Release0x08. Listener commit uses0x44. The opaque32 availability gate is not assigned an unproved pointer/boolean meaning. The result local captures the actual HRESULT/ULONG, which void wrappers intentionally discard. CoInitialize passesNULL and returns HRESULT; CoUninitialize isvoid.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/length-audio-acceptance.md",
+        "research/campaign-062-audio-set-cooperative/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_behavior.c"
+      ],
+      "quirks": [
+        "Reviewed finite numeric and owned synthetic callback domains remain bounded.",
+        "Connected tests invoke actual canonical functions without reseeding between sequence steps."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio_set_frequency",
+      "module": "stdsound",
+      "analysis_name": "audio_set_frequency",
+      "purpose": "Independently recovered cdecl wrapper over offset-asserted stdcall COM-shaped callbacks. Device slot0x18 receives window word and priority2. Buffer frequency uses0x44, Stop0x48 then current position0x34 withzero, Release0x08. Spatial max/min distance uses0x40 then0x44 (float max then min, deferred1); position/velocity0x4c/0x50 receive capturedxyz and1; mode0x48 receives unsigned mode and0; Release0x08. Listener commit uses0x44. The opaque32 availability gate is not assigned an unproved pointer/boolean meaning. The result local captures the actual HRESULT/ULONG, which void wrappers intentionally discard. CoInitialize passesNULL and returns HRESULT; CoUninitialize isvoid.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/length-audio-acceptance.md",
+        "research/campaign-062-audio-set-frequency/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_behavior.c"
+      ],
+      "quirks": [
+        "Reviewed finite numeric and owned synthetic callback domains remain bounded.",
+        "Connected tests invoke actual canonical functions without reseeding between sequence steps."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio3d_set_distance_bounds",
+      "module": "stdsound",
+      "analysis_name": "audio3d_set_distance_bounds",
+      "purpose": "Independently recovered cdecl wrapper over offset-asserted stdcall COM-shaped callbacks. Device slot0x18 receives window word and priority2. Buffer frequency uses0x44, Stop0x48 then current position0x34 withzero, Release0x08. Spatial max/min distance uses0x40 then0x44 (float max then min, deferred1); position/velocity0x4c/0x50 receive capturedxyz and1; mode0x48 receives unsigned mode and0; Release0x08. Listener commit uses0x44. The opaque32 availability gate is not assigned an unproved pointer/boolean meaning. The result local captures the actual HRESULT/ULONG, which void wrappers intentionally discard. CoInitialize passesNULL and returns HRESULT; CoUninitialize isvoid.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/length-audio-acceptance.md",
+        "research/campaign-062-audio3d-set-distance-bounds/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_behavior.c"
+      ],
+      "quirks": [
+        "Reviewed finite numeric and owned synthetic callback domains remain bounded.",
+        "Connected tests invoke actual canonical functions without reseeding between sequence steps."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio_commit_listener",
+      "module": "stdsound",
+      "analysis_name": "audio_commit_listener",
+      "purpose": "Independently recovered cdecl wrapper over offset-asserted stdcall COM-shaped callbacks. Device slot0x18 receives window word and priority2. Buffer frequency uses0x44, Stop0x48 then current position0x34 withzero, Release0x08. Spatial max/min distance uses0x40 then0x44 (float max then min, deferred1); position/velocity0x4c/0x50 receive capturedxyz and1; mode0x48 receives unsigned mode and0; Release0x08. Listener commit uses0x44. The opaque32 availability gate is not assigned an unproved pointer/boolean meaning. The result local captures the actual HRESULT/ULONG, which void wrappers intentionally discard. CoInitialize passesNULL and returns HRESULT; CoUninitialize isvoid.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/length-audio-acceptance.md",
+        "research/campaign-062-audio-commit-listener/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_behavior.c"
+      ],
+      "quirks": [
+        "Reviewed finite numeric and owned synthetic callback domains remain bounded.",
+        "Connected tests invoke actual canonical functions without reseeding between sequence steps."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio3d_set_mode",
+      "module": "stdsound",
+      "analysis_name": "audio3d_set_mode",
+      "purpose": "Independently recovered cdecl wrapper over offset-asserted stdcall COM-shaped callbacks. Device slot0x18 receives window word and priority2. Buffer frequency uses0x44, Stop0x48 then current position0x34 withzero, Release0x08. Spatial max/min distance uses0x40 then0x44 (float max then min, deferred1); position/velocity0x4c/0x50 receive capturedxyz and1; mode0x48 receives unsigned mode and0; Release0x08. Listener commit uses0x44. The opaque32 availability gate is not assigned an unproved pointer/boolean meaning. The result local captures the actual HRESULT/ULONG, which void wrappers intentionally discard. CoInitialize passesNULL and returns HRESULT; CoUninitialize isvoid.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/length-audio-acceptance.md",
+        "research/campaign-062-audio3d-set-mode/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_behavior.c"
+      ],
+      "quirks": [
+        "Reviewed finite numeric and owned synthetic callback domains remain bounded.",
+        "Connected tests invoke actual canonical functions without reseeding between sequence steps."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio_stop",
+      "module": "stdsound",
+      "analysis_name": "audio_stop",
+      "purpose": "Independently recovered cdecl wrapper over offset-asserted stdcall COM-shaped callbacks. Device slot0x18 receives window word and priority2. Buffer frequency uses0x44, Stop0x48 then current position0x34 withzero, Release0x08. Spatial max/min distance uses0x40 then0x44 (float max then min, deferred1); position/velocity0x4c/0x50 receive capturedxyz and1; mode0x48 receives unsigned mode and0; Release0x08. Listener commit uses0x44. The opaque32 availability gate is not assigned an unproved pointer/boolean meaning. The result local captures the actual HRESULT/ULONG, which void wrappers intentionally discard. CoInitialize passesNULL and returns HRESULT; CoUninitialize isvoid.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/length-audio-acceptance.md",
+        "research/campaign-062-audio-stop/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_behavior.c"
+      ],
+      "quirks": [
+        "Reviewed finite numeric and owned synthetic callback domains remain bounded.",
+        "Connected tests invoke actual canonical functions without reseeding between sequence steps."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio_release_buffer",
+      "module": "stdsound",
+      "analysis_name": "audio_release_buffer",
+      "purpose": "Independently recovered cdecl wrapper over offset-asserted stdcall COM-shaped callbacks. Device slot0x18 receives window word and priority2. Buffer frequency uses0x44, Stop0x48 then current position0x34 withzero, Release0x08. Spatial max/min distance uses0x40 then0x44 (float max then min, deferred1); position/velocity0x4c/0x50 receive capturedxyz and1; mode0x48 receives unsigned mode and0; Release0x08. Listener commit uses0x44. The opaque32 availability gate is not assigned an unproved pointer/boolean meaning. The result local captures the actual HRESULT/ULONG, which void wrappers intentionally discard. CoInitialize passesNULL and returns HRESULT; CoUninitialize isvoid.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/length-audio-acceptance.md",
+        "research/campaign-062-audio-release-buffer/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_behavior.c"
+      ],
+      "quirks": [
+        "Reviewed finite numeric and owned synthetic callback domains remain bounded.",
+        "Connected tests invoke actual canonical functions without reseeding between sequence steps."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio3d_release",
+      "module": "stdsound",
+      "analysis_name": "audio3d_release",
+      "purpose": "Independently recovered cdecl wrapper over offset-asserted stdcall COM-shaped callbacks. Device slot0x18 receives window word and priority2. Buffer frequency uses0x44, Stop0x48 then current position0x34 withzero, Release0x08. Spatial max/min distance uses0x40 then0x44 (float max then min, deferred1); position/velocity0x4c/0x50 receive capturedxyz and1; mode0x48 receives unsigned mode and0; Release0x08. Listener commit uses0x44. The opaque32 availability gate is not assigned an unproved pointer/boolean meaning. The result local captures the actual HRESULT/ULONG, which void wrappers intentionally discard. CoInitialize passesNULL and returns HRESULT; CoUninitialize isvoid.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/length-audio-acceptance.md",
+        "research/campaign-062-audio3d-release/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_behavior.c"
+      ],
+      "quirks": [
+        "Reviewed finite numeric and owned synthetic callback domains remain bounded.",
+        "Connected tests invoke actual canonical functions without reseeding between sequence steps."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

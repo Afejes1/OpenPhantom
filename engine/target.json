@@ -8713,6 +8713,342 @@
           "float64": 57.296326654336454
         }
       ]
+    },
+    {
+      "id": "fast_length2_half",
+      "address": 4803110,
+      "size": 164,
+      "body_size": 164,
+      "source": "src/fast_length2_half.c",
+      "symbol": "_op_fast_length2_half",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 11,
+          "address": 4886144,
+          "float32": 0.0
+        },
+        {
+          "offset": 49,
+          "address": 4886144,
+          "float32": 0.0
+        },
+        {
+          "offset": 153,
+          "address": 4886212,
+          "float32": 2.0
+        }
+      ]
+    },
+    {
+      "id": "fast_length2_quarter",
+      "address": 4803274,
+      "size": 164,
+      "body_size": 164,
+      "source": "src/fast_length2_quarter.c",
+      "symbol": "_op_fast_length2_quarter",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 11,
+          "address": 4886144,
+          "float32": 0.0
+        },
+        {
+          "offset": 49,
+          "address": 4886144,
+          "float32": 0.0
+        },
+        {
+          "offset": 153,
+          "address": 4886216,
+          "float32": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fast_length2_three_eighths",
+      "address": 4803438,
+      "size": 164,
+      "body_size": 164,
+      "source": "src/fast_length2_three_eighths.c",
+      "symbol": "_op_fast_length2_three_eighths",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 11,
+          "address": 4886144,
+          "float32": 0.0
+        },
+        {
+          "offset": 49,
+          "address": 4886144,
+          "float32": 0.0
+        },
+        {
+          "offset": 153,
+          "address": 4886220,
+          "float32": 0.375
+        }
+      ]
+    },
+    {
+      "id": "fast_length2_best",
+      "address": 4803602,
+      "size": 216,
+      "body_size": 216,
+      "source": "src/fast_length2_best.c",
+      "symbol": "_op_fast_length2_best",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 11,
+          "address": 4886144,
+          "float32": 0.0
+        },
+        {
+          "offset": 49,
+          "address": 4886144,
+          "float32": 0.0
+        },
+        {
+          "offset": 153,
+          "address": 4886224,
+          "float32": 0.875
+        },
+        {
+          "offset": 162,
+          "address": 4886212,
+          "float32": 2.0
+        },
+        {
+          "offset": 191,
+          "address": 4886224,
+          "float32": 0.875
+        },
+        {
+          "offset": 200,
+          "address": 4886212,
+          "float32": 2.0
+        }
+      ]
+    },
+    {
+      "id": "audio_com_initialize",
+      "address": 4810528,
+      "size": 22,
+      "body_size": 22,
+      "source": "src/audio_com_initialize.c",
+      "symbol": "_op_audio_com_initialize",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 8,
+          "address": 9181132,
+          "symbol": "_op_audio_co_initialize",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "audio_com_uninitialize",
+      "address": 4810550,
+      "size": 11,
+      "body_size": 11,
+      "source": "src/audio_com_uninitialize.c",
+      "symbol": "_op_audio_com_uninitialize",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 9181128,
+          "symbol": "_op_audio_co_uninitialize",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "audio_set_cooperative",
+      "address": 4811202,
+      "size": 29,
+      "body_size": 29,
+      "source": "src/audio_set_cooperative.c",
+      "symbol": "_op_audio_set_cooperative",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "audio_set_frequency",
+      "address": 4812085,
+      "size": 38,
+      "body_size": 38,
+      "source": "src/audio_set_frequency.c",
+      "symbol": "_op_audio_set_frequency",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 6,
+          "address": 8790132,
+          "symbol": "_op_audio_gate_word",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "audio3d_set_distance_bounds",
+      "address": 4812123,
+      "size": 50,
+      "body_size": 50,
+      "source": "src/audio3d_set_distance_bounds.c",
+      "symbol": "_op_audio3d_set_distance_bounds",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "audio_commit_listener",
+      "address": 4812416,
+      "size": 37,
+      "body_size": 37,
+      "source": "src/audio_commit_listener.c",
+      "symbol": "_op_audio_commit_listener",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 6,
+          "address": 8790152,
+          "symbol": "_op_audio_listener",
+          "kind": "dir32"
+        },
+        {
+          "offset": 14,
+          "address": 8790152,
+          "symbol": "_op_audio_listener",
+          "kind": "dir32"
+        },
+        {
+          "offset": 21,
+          "address": 8790152,
+          "symbol": "_op_audio_listener",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "audio3d_set_mode",
+      "address": 4812453,
+      "size": 29,
+      "body_size": 29,
+      "source": "src/audio3d_set_mode.c",
+      "symbol": "_op_audio3d_set_mode",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "audio_stop",
+      "address": 4812482,
+      "size": 62,
+      "body_size": 62,
+      "source": "src/audio_stop.c",
+      "symbol": "_op_audio_stop",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 18,
+          "address": 8790132,
+          "symbol": "_op_audio_gate_word",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "audio_release_buffer",
+      "address": 4812579,
+      "size": 42,
+      "body_size": 42,
+      "source": "src/audio_release_buffer.c",
+      "symbol": "_op_audio_release_buffer",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 14,
+          "address": 8790132,
+          "symbol": "_op_audio_gate_word",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "audio3d_release",
+      "address": 4812621,
+      "size": 34,
+      "body_size": 34,
+      "source": "src/audio3d_release.c",
+      "symbol": "_op_audio3d_release",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 6,
+          "address": 8790132,
+          "symbol": "_op_audio_gate_word",
+          "kind": "dir32"
+        }
+      ]
     }
   ]
 }
