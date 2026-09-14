@@ -4,15 +4,15 @@
     "manifest_functions": 2241,
     "team_reported_done": 1298,
     "team_reported_not_done": 943,
-    "local_accepted": 339,
-    "local_within_team_not_done": 331,
+    "local_accepted": 343,
+    "local_within_team_not_done": 335,
     "local_overlapping_team_done": 8,
-    "remaining_if_team_claims_are_correct": 612,
-    "combined_covered_if_team_claims_are_correct": 1629
+    "remaining_if_team_claims_are_correct": 608,
+    "combined_covered_if_team_claims_are_correct": 1633
   },
   "local_match_categories": {
-    "raw-code-match": 38,
-    "relocation-adjusted-match": 301
+    "raw-code-match": 39,
+    "relocation-adjusted-match": 304
   },
   "team_source_independently_verified": false,
   "whole_executable_match": false,
@@ -11232,22 +11232,22 @@
       "team_reported_file": null,
       "team_reported_name": "skills_showLevel",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "skills_show_level",
+      "local_source": "src/skills_show_level.c",
+      "local_match_status": "raw-code-match",
+      "remaining": false
     },
     {
       "address": "0x00457FC5",
       "team_reported_file": null,
       "team_reported_name": "skills_tick",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "skills_tick",
+      "local_source": "src/skills_tick.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x0045804F",
@@ -16743,22 +16743,22 @@
       "team_reported_file": "util/taskman.c",
       "team_reported_name": "taskman_moduleProc",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "task_module_proc",
+      "local_source": "src/task_module_proc.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x0047563D",
       "team_reported_file": "util/taskman.c",
       "team_reported_name": "task_register",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "task_register",
+      "local_source": "src/task_register.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x004756FC",
@@ -24674,10 +24674,10 @@
     "manifest": "engine/planning/team-manifest-20260912-1849.json",
     "manifest_sha256": "3c26a8b5f62424864513ffb20dfb644fa582d19600cd2f98bbfd7eca71dfee1f",
     "contributor_attachment_sha256": "0b6de70dfa6b872725cbb8cc4fd14fc71316a2ec28ef9e1dec5762577046592b",
-    "accepted_event": "engine/evidence/runs/000083-7bd583582e27b2c5.json",
-    "accepted_event_sha256": "ac710f87d9c6e7ce069a62d1b04643b966a44fd95c7cfdc33189e9d3ed05a592",
-    "source_commit": "9423db2917b860d6ec21267d1bdc44dd9c8caa1b",
-    "build_id": "20260914-162433-8d53825d",
+    "accepted_event": "engine/evidence/runs/000084-77257316ddb71be1.json",
+    "accepted_event_sha256": "109478310c0d4048f37e68c15e1ff45562498330dce5f8b11c19942c89bbf0b9",
+    "source_commit": "fc3279222807aa234bcdfb579a8d92a1c01fd58b",
+    "build_id": "20260914-164647-581606a7",
     "generator_sha256": "9eeb04c352a48d09f795f4101f5b169dabdc41af21cdb9cc4e2b2956d942845a"
   }
 }

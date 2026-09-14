@@ -14,7 +14,7 @@
   "full_span_bytes": 459,
   "verified_operands": 36,
   "raw_functions": 1,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 4,
   "team_reported_done": 0,
   "manifest": "planning/team-manifest-20260912-1849.json",
@@ -22,5 +22,14 @@
   "actual_callee_coverage": "Skills tick retains actual accepted easier; all task functions have no external callees.",
   "original_game_executed": false,
   "byte_exclusions": [],
-  "warning_waivers": []
+  "warning_waivers": [],
+  "accepted_event": "engine/evidence/runs/000084-77257316ddb71be1.json",
+  "source_commit": "fc3279222807aa234bcdfb579a8d92a1c01fd58b",
+  "build_id": "20260914-164647-581606a7",
+  "source_snapshot_inputs": 571,
+  "every_source_input_matches_committed_git_blob": true,
+  "shared_matrix_checks": 511048,
+  "independent_review": "Both focused cohorts and final shared integration independently approved; all prior339 entries unchanged, include-only candidate bodies, preserved layouts and full matrices.",
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34894957760",
+  "supplemental_ci_conclusion": "success"
 }

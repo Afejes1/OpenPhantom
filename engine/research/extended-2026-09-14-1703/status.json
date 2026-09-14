@@ -7,19 +7,17 @@
   "baseline_accepted": 290,
   "baseline_event": 75,
   "baseline_commit": "f7fdc3a3db572de9a7b0676703eae05608086d54",
-  "accepted_new": 49,
-  "accepted_current": 339,
-  "remaining_current": 612,
-  "local_team_not_done_current": 331,
-  "evidence_event_current": 83,
+  "accepted_new": 53,
+  "accepted_current": 343,
+  "remaining_current": 608,
+  "local_team_not_done_current": 335,
+  "evidence_event_current": 84,
   "pending_exact": [
-    "skills_tick",
-    "skills_show_level",
-    "task_module_proc",
-    "task_register"
+    "task_run",
+    "task_alloc_state"
   ],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A061 integrating skills tick/no-op and two task-registry functions.",
+  "current_work": "A061 accepted four skills/task functions; C090 callback dispatch and task-state allocation are exact in focused verification.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": "acceptance-061"
+  "acceptance_pending": null
 }
