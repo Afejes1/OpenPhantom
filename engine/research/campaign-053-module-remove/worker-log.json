@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "module_remove",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural module list operations and signed one-bit status fields from complete static contracts",
+      "started_utc": "2026-09-14T06:18:29.630723+00:00",
+      "finished_utc": "2026-09-14T06:18:31.261508+00:00",
+      "returncode": 0,
+      "source_sha256": "6f4f96d1f07f154d5f80ffda636d207b938e2da6736610f3aae44569f28e4700",
+      "report": "engine/build/campaign-001-module_remove-38721da68689/research-result.json",
+      "report_sha256": "d69a1bdadf0dee88e081ba2ac5396ba233bb939c934ae3ee1821107df174570d",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 149,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.41317,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T06:27:29.527141+00:00"
+}

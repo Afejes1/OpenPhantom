@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "module_find_by_id",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural module list operations and signed one-bit status fields from complete static contracts",
+      "started_utc": "2026-09-14T06:18:28.020101+00:00",
+      "finished_utc": "2026-09-14T06:18:29.625214+00:00",
+      "returncode": 0,
+      "source_sha256": "8eb18991f1f4295f8675be0d135e1cdcafad16ef826b634d74b87b2247324499",
+      "report": "engine/build/campaign-001-module_find_by_id-422685412f0d/research-result.json",
+      "report_sha256": "1272bbb26bc79be83ba0afa49b34fc7637274316e10065c40d3eb6fde8a8e573",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 52,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.385908,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T06:27:29.527141+00:00"
+}

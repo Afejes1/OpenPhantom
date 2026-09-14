@@ -1,0 +1,51 @@
+{
+  "id": "module_remove",
+  "address": 4650333,
+  "size": 149,
+  "body_size": 149,
+  "source": "src/module_remove.c",
+  "symbol": "_op_module_remove",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 18,
+      "address": 4650281,
+      "symbol": "_op_module_find_by_id",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 83,
+      "address": 7169220,
+      "symbol": "_op_module_head",
+      "kind": "dir32"
+    },
+    {
+      "offset": 96,
+      "address": 7169220,
+      "symbol": "_op_module_head",
+      "kind": "dir32"
+    },
+    {
+      "offset": 105,
+      "address": 7169224,
+      "symbol": "_op_module_tail",
+      "kind": "dir32"
+    },
+    {
+      "offset": 119,
+      "address": 7169224,
+      "symbol": "_op_module_tail",
+      "kind": "dir32"
+    },
+    {
+      "offset": 128,
+      "address": 4805714,
+      "symbol": "_op_release",
+      "kind": "rel32-call"
+    }
+  ]
+}

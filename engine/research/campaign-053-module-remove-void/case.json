@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "module_remove_void",
+  "candidate": "candidate.c",
+  "symbol": "_op_module_remove_void",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

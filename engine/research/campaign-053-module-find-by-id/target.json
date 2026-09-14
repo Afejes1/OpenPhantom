@@ -1,0 +1,21 @@
+{
+  "id": "module_find_by_id",
+  "address": 4650281,
+  "size": 52,
+  "body_size": 52,
+  "source": "src/module_find_by_id.c",
+  "symbol": "_op_module_find_by_id",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7169220,
+      "symbol": "_op_module_head",
+      "kind": "dir32"
+    }
+  ]
+}

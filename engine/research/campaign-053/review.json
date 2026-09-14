@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T06:27:29.527141+00:00",
+  "conclusion": "approved-six-exact",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "module_find_by_id",
+      "address": 4650281,
+      "full_span_bytes": 52,
+      "body_bytes": 52,
+      "candidate_size": 52,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 1080,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-053-module-find-by-id/result.json"
+    },
+    {
+      "id": "module_find_by_name",
+      "address": 4650482,
+      "full_span_bytes": 71,
+      "body_bytes": 71,
+      "candidate_size": 71,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 82072,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-053-module-find-by-name/result.json"
+    },
+    {
+      "id": "module_get_flags",
+      "address": 4648608,
+      "full_span_bytes": 152,
+      "body_bytes": 152,
+      "candidate_size": 152,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 257040,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-053-module-get-flags/result.json"
+    },
+    {
+      "id": "module_initialize_once",
+      "address": 4647904,
+      "full_span_bytes": 44,
+      "body_bytes": 44,
+      "candidate_size": 44,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 2160,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-053-module-initialize-once/result.json"
+    },
+    {
+      "id": "module_remove",
+      "address": 4650333,
+      "full_span_bytes": 149,
+      "body_bytes": 149,
+      "candidate_size": 149,
+      "verified_operands": 6,
+      "different_bytes": 0,
+      "checks": 6340,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-053-module-remove/result.json"
+    },
+    {
+      "id": "module_remove_void",
+      "address": 4648591,
+      "full_span_bytes": 17,
+      "body_bytes": 17,
+      "candidate_size": 17,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 25920,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-053-module-remove-void/result.json"
+    }
+  ],
+  "observations": [
+    "All84 current snapshot inputs and12 final reports rehashed by parent and independent reviewer with zero mismatches.",
+    "All six full spans matched first compile;485bytes and13 verified operands.",
+    "Node36-byte layout independently checked against the original constructor allocation and field accesses.",
+    "Signed one-bit status fields preserve the original extraction; requested flag4 reads raw status bit3.",
+    "Fixtures cover duplicate-ID first match, empty lists, signed IDs, removal endpoint updates before release, live name-comparator mutations and early termination."
+  ],
+  "limitations": [
+    "Isolated removal finder does not retarget global head/tail; integration will use the actual side-effect-free lookup.",
+    "No original function or actual heap free executes; whole-executable identity remains pending."
+  ]
+}

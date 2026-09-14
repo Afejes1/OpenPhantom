@@ -1,0 +1,5 @@
+# module_find_by_name
+
+Walk from initial head along live next pointers. Compare(input,node.name,length) using existing strncmp helper address49a620; first zero returns the CURRENT node id, so callback ID mutation is visible. Nonzero callback can retarget next; global head replacement does not restart this walk. Exhaustion returns0, indistinguishable from id0. Authored names fit16bytes; length0 matches head. Tests use real host-library strncmp only on owned strings and bounded lengths0/1/3/5/15/16, with complete graph/input snapshots.
+
+The36-byte node extent and16-byte name are independently observed in register_subsystem_callback allocation/copy: next0,previous4,id8,status12,opaque callback word16,name20. Callback signature is not inferred here. Bit meanings beyond observed flag mapping remain unnamed. All graph storage, strings, lookup/compare/free services are authored; no original code is executed. No byte exclusions or warning waivers. Shared acceptance and whole-executable identity remain separate.

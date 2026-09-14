@@ -1,0 +1,27 @@
+{
+  "id": "module_find_by_name",
+  "address": 4650482,
+  "size": 71,
+  "body_size": 71,
+  "source": "src/module_find_by_name.c",
+  "symbol": "_op_module_find_by_name",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7169220,
+      "symbol": "_op_module_head",
+      "kind": "dir32"
+    },
+    {
+      "offset": 44,
+      "address": 4826656,
+      "symbol": "_op_compare_tag",
+      "kind": "rel32-call"
+    }
+  ]
+}

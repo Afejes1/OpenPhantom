@@ -1,0 +1,21 @@
+{
+  "id": "module_get_flags",
+  "address": 4648608,
+  "size": 152,
+  "body_size": 152,
+  "source": "src/module_get_flags.c",
+  "symbol": "_op_module_get_flags",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 18,
+      "address": 4650281,
+      "symbol": "_op_module_find_by_id",
+      "kind": "rel32-call"
+    }
+  ]
+}

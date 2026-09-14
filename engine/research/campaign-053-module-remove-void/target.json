@@ -1,0 +1,21 @@
+{
+  "id": "module_remove_void",
+  "address": 4648591,
+  "size": 17,
+  "body_size": 17,
+  "source": "src/module_remove_void.c",
+  "symbol": "_op_module_remove_void",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 4650333,
+      "symbol": "_op_module_remove",
+      "kind": "rel32-call"
+    }
+  ]
+}

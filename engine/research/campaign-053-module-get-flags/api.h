@@ -1,0 +1,38 @@
+#ifndef OP_CAMPAIGN053_API_H
+#define OP_CAMPAIGN053_API_H
+#include <stddef.h>
+typedef union OP_MODULE_STATUS {
+    unsigned int raw;
+    struct
+    {
+        signed int bit0 : 1;
+        signed int bit1 : 1;
+        signed int bit2 : 1;
+        signed int bit3 : 1;
+        signed int remaining : 28;
+    } bits;
+} OP_MODULE_STATUS;
+typedef struct OP_MODULE
+{
+    struct OP_MODULE *next, *previous;
+    int id;
+    OP_MODULE_STATUS status;
+    unsigned int callback_word;
+    char name[16];
+} OP_MODULE;
+typedef char module_layout[(sizeof(OP_MODULE_STATUS) == 4 && sizeof(OP_MODULE) == 36 && offsetof(OP_MODULE, id) == 8 &&
+                            offsetof(OP_MODULE, status) == 12 && offsetof(OP_MODULE, callback_word) == 16 &&
+                            offsetof(OP_MODULE, name) == 20)
+                               ? 1
+                               : -1];
+extern OP_MODULE *op_module_head, *op_module_tail;
+extern int op_module_initialized;
+int op_module_initialize_once(void);
+void op_module_remove_void(int);
+unsigned int op_module_get_flags(int, unsigned int);
+OP_MODULE *op_module_find_by_id(int);
+int op_module_remove(int);
+int op_module_find_by_name(const char *, unsigned int);
+int op_compare_tag(const char *, const char *, unsigned int);
+void op_release(void *);
+#endif

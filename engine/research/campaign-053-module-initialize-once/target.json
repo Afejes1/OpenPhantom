@@ -1,0 +1,27 @@
+{
+  "id": "module_initialize_once",
+  "address": 4647904,
+  "size": 44,
+  "body_size": 44,
+  "source": "src/module_initialize_once.c",
+  "symbol": "_op_module_initialize_once",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 13,
+      "address": 7169228,
+      "symbol": "_op_module_initialized",
+      "kind": "dir32"
+    },
+    {
+      "offset": 22,
+      "address": 7169228,
+      "symbol": "_op_module_initialized",
+      "kind": "dir32"
+    }
+  ]
+}

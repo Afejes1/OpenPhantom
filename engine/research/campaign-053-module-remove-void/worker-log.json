@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "module_remove_void",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural module list operations and signed one-bit status fields from complete static contracts",
+      "started_utc": "2026-09-14T06:18:24.771061+00:00",
+      "finished_utc": "2026-09-14T06:18:26.397189+00:00",
+      "returncode": 0,
+      "source_sha256": "5a9358d560bed7a18315cd748dfc1d9c2784495035a5e0ac899ac6d4ead3152b",
+      "report": "engine/build/campaign-001-module_remove_void-4c0dc7052ec1/research-result.json",
+      "report_sha256": "005732994e9d8be563e5a68f258a17bd58f437d4d91d1584346cecef34b0f42e",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 17,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.405628,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T06:27:29.527141+00:00"
+}
