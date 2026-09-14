@@ -119,6 +119,7 @@ static void clip_flag_tests(void)
 #include "surface_entry_behavior.h"
 #include "scan_behavior.h"
 #include "bgl_state_behavior.c"
+#include "canvas_face_behavior.c"
 #include "colormap_lifecycle_behavior.c"
 #include "light_behavior.c"
 #include "colormap_state_behavior.c"
@@ -215,6 +216,8 @@ int main(void)
     failures += op_test_colormap_state();
     failures += op_test_colormap_lifecycle();
     failures += op_test_light();
+    failures += op_test_canvas();
+    failures += op_test_face_constructor();
     if (failures) return 1;
 #ifdef OP_VC5_BEHAVIOR
     puts("VC5 behavioral fixture passed, including x87 unordered fallback.");

@@ -2995,6 +2995,76 @@
       ],
       "quirks": [],
       "exceptions": []
+    },
+    {
+      "id": "canvas_new",
+      "module": "canvas",
+      "analysis_name": "canvas_new",
+      "purpose": "Cdecl constructor with eight arguments, confirmed by two callers pushing32 bytes. Allocate40, return NULL on failure; otherwise pass all eight arguments in original order to init with captured pointer, ignore init result and return captured pointer.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/canvas-face-acceptance.md",
+        "research/campaign-043-canvas-new/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/canvas_face_behavior.c"
+      ],
+      "quirks": [
+        "Canvas inner cleanup remains an authored observation backend; its full original tail is unresolved."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "canvas_init",
+      "module": "canvas",
+      "analysis_name": "canvas_init",
+      "purpose": "Initialize40-byte canvas. Store flags/raster/two opaque words. Bit0 chooses supplied signed rectangle; otherwise use origin0 and signed raster dimensions minus1. Centers use inclusive signed spans divided by immutable float2, added to signed origins. Return1. Domain excludes signed overflow; raster may be NULL only for supplied rectangle. Literal center-bit fixtures include negative/reversed/zero/odd/even spans.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/canvas-face-acceptance.md",
+        "research/campaign-043-canvas-init/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/canvas_face_behavior.c"
+      ],
+      "quirks": [
+        "Canvas inner cleanup remains an authored observation backend; its full original tail is unresolved."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "canvas_free",
+      "module": "canvas",
+      "analysis_name": "canvas_free",
+      "purpose": "NULL no-op; otherwise invoke inner cleanup then release the same captured pointer. Inner body is empty but has an unmatching4-byte tail; focused observer tests wrapper ordering without claiming exact inner coverage.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/canvas-face-acceptance.md",
+        "research/campaign-043-canvas-free/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/canvas_face_behavior.c"
+      ],
+      "quirks": [
+        "Canvas inner cleanup remains an authored observation backend; its full original tail is unresolved."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "face_new",
+      "module": "face",
+      "analysis_name": "face_new",
+      "purpose": "Cdecl zero-argument face constructor. Allocate76; NULL returnsNULL. Otherwise initialize captured root through already accepted face-init function, ignore its return value, return same root. Stack evidence rejects phantom fastcall parameters.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/canvas-face-acceptance.md",
+        "research/campaign-043-face-new/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/canvas_face_behavior.c"
+      ],
+      "quirks": [],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

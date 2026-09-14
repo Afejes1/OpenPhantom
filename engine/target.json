@@ -6443,6 +6443,114 @@
         "/MT"
       ],
       "bindings": []
+    },
+    {
+      "id": "canvas_new",
+      "address": 4679888,
+      "size": 78,
+      "body_size": 78,
+      "source": "src/canvas_new.c",
+      "symbol": "_op_canvas_new",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 7,
+          "address": 4805264,
+          "symbol": "_op_allocate",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 64,
+          "address": 4679966,
+          "symbol": "_op_canvas_init",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "canvas_init",
+      "address": 4679966,
+      "size": 230,
+      "body_size": 230,
+      "source": "src/canvas_init.c",
+      "symbol": "_op_canvas_init",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 168,
+          "address": 4885388,
+          "symbol": "_op_canvas_two",
+          "kind": "dir32"
+        },
+        {
+          "offset": 209,
+          "address": 4885388,
+          "symbol": "_op_canvas_two",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "canvas_free",
+      "address": 4680196,
+      "size": 35,
+      "body_size": 35,
+      "source": "src/canvas_free.c",
+      "symbol": "_op_canvas_free",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 14,
+          "address": 4680231,
+          "symbol": "_op_canvas_free_inner",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 26,
+          "address": 4805714,
+          "symbol": "_op_release",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "face_new",
+      "address": 4689888,
+      "size": 46,
+      "body_size": 46,
+      "source": "src/face_new.c",
+      "symbol": "_op_face_new",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 7,
+          "address": 4805264,
+          "symbol": "_op_allocate",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 32,
+          "address": 4689934,
+          "symbol": "_op_face_init",
+          "kind": "rel32-call"
+        }
+      ]
     }
   ]
 }

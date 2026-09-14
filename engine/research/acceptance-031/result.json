@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "acceptance-031",
+  "baseline_commit": "e2e4eed386cecbfe49775d61980cf4def2c0dd78",
+  "functions": [
+    "canvas_new",
+    "canvas_init",
+    "canvas_free",
+    "face_new"
+  ],
+  "promotions": 4,
+  "registered_before": 162,
+  "registered_after": 166,
+  "full_span_bytes": 389,
+  "verified_operands": 8,
+  "status": "integration-pending",
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "prebuild_fixture_corrections": [
+    {
+      "kind": "namespace-collision",
+      "description": "Targeted original-compiler builds found fc_ names and FC_CHECK already used by the font fixture. The new face constructor observer uses fctor_/FCTOR_ instead. No function candidate changed.",
+      "failed_compile_receipts": [
+        {
+          "path": "engine/private/a031-targeted-compile-initial.json",
+          "sha256": "82925cfd00bf67dd0f2140e99bff116e2e77930b26506ffda7a9a999ff1d523c"
+        },
+        {
+          "path": "engine/private/a031-targeted-compile-second.json",
+          "sha256": "20bfa2152d87ab18a887a52dbee2ffa7a34f42f15fe6fa7593f286a1e8696ef7"
+        }
+      ]
+    }
+  ]
+}

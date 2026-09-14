@@ -33,6 +33,7 @@ extern OP_KEYFRAME_UNLOAD_HOOK op_keyframe_unload_hook;
 extern char op_default_resource_name[];
 void op_release(void *);
 char *op_copy_keyframe_name(char *, const char *, unsigned int);
+OP_RD_FACE *op_face_new(void);
 int op_face_init(OP_RD_FACE *);
 void op_face_free(OP_RD_FACE *);
 void op_face_free_arrays(OP_RD_FACE *);

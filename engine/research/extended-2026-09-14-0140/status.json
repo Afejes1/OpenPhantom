@@ -84,7 +84,7 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Acceptance031: canvas constructor/initializer/free and face constructor integration; canvas inner tail remains research.",
+  "current_work": "Acceptance031 applied: canvas state/allocation and face constructor connected; pending independent review and clean checkpoint.",
   "original_game_executed": false,
   "accepted_functions_current": 162,
   "evidence_records_current": 53,
