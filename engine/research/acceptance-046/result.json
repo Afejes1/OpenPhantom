@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "acceptance-046",
+  "baseline_commit": "f7bc193f8965e6c56ee8b7ce02bd3efb4e03ae73",
+  "functions": [
+    "debug_toggle_visible",
+    "debug_next_page",
+    "debug_toggle_size"
+  ],
+  "promotions": 3,
+  "registered_before": 264,
+  "registered_after": 267,
+  "full_span_bytes": 203,
+  "verified_operands": 19,
+  "status": "integration-pending",
+  "team_not_done": 3,
+  "team_reported_done": 0,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "prebuild_fixture_compile": {
+    "receipt": "engine/private/a046-targeted-compile.json",
+    "sha256": "6f0fb1fe9cacc65ccea0e851bb1d931b0504188de4c84c6eed1f42a12f3d869d",
+    "returncode": 0
+  },
+  "independent_review": "comparison_inventory approved three include-only source substitutions, authored reset/resize dispatch and connected live-state oracles; parent proved exact 264-entry target and registry prefixes"
+}

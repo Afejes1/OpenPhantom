@@ -4925,6 +4925,66 @@
         "Only owned synthetic records execute; release observers retain backing for verification."
       ],
       "exceptions": []
+    },
+    {
+      "id": "debug_toggle_visible",
+      "module": "stddebug",
+      "analysis_name": "debug_toggle_visible",
+      "purpose": "Cdecl unsigned modulo increment of visible word, then observed signed comparison>1. Taken branch calls reset(1) and forces visible0 after callback. Fixtures cover signed boundaries, wrap and callback mutation; no signed-overflow C expression is introduced.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/debug-acceptance.md",
+        "research/campaign-065-debug-toggle-visible/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/debug_behavior.c"
+      ],
+      "quirks": [
+        "Reset and resize remain authored callback dependencies.",
+        "Unsigned state increments preserve observed modulo arithmetic and signed conditions.",
+        "Connected tests carry callback mutation without reseeding."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "debug_next_page",
+      "module": "stddebug",
+      "analysis_name": "debug_next_page",
+      "purpose": "Cdecl sets visible1,pulse0, increments unsigned page modulo32. Exactly4 calls reset(1) and subsequently forces visible0. Finally rereads live page and clears it only when signed>4. Fixtures distinguish pre-call equality from post-callback live signed comparison, including high-bit words.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/debug-acceptance.md",
+        "research/campaign-065-debug-next-page/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/debug_behavior.c"
+      ],
+      "quirks": [
+        "Reset and resize remain authored callback dependencies.",
+        "Unsigned state increments preserve observed modulo arithmetic and signed conditions.",
+        "Connected tests carry callback mutation without reseeding."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "debug_toggle_size",
+      "module": "stddebug",
+      "analysis_name": "debug_toggle_size",
+      "purpose": "Cdecl captured selector==1 chooses resize(0,2048,2048), otherwise resize(0,200,48). After callback rereads live selector and stores full-word boolean selector==0. Synthetic integer callback result is ignored; no actual window operation.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/debug-acceptance.md",
+        "research/campaign-065-debug-toggle-size/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/debug_behavior.c"
+      ],
+      "quirks": [
+        "Reset and resize remain authored callback dependencies.",
+        "Unsigned state increments preserve observed modulo arithmetic and signed conditions.",
+        "Connected tests carry callback mutation without reseeding."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

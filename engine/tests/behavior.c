@@ -135,6 +135,7 @@ static void clip_flag_tests(void)
 #include "audio_behavior.c"
 #include "kernel_behavior.c"
 #include "video_behavior.c"
+#include "debug_behavior.c"
 #include "directory_behavior.c"
 #include "palette_resources_behavior.c"
 #include "matrix_helpers_behavior.c"
@@ -325,6 +326,11 @@ int main(void)
     video_route=3; failures += op_test_video_set_volume();
     video_route=0;
     failures += op_test_video_connected();
+    debug_route=1; failures += op_test_debug_toggle_visible();
+    debug_route=2; failures += op_test_debug_next_page();
+    debug_route=3; failures += op_test_debug_toggle_size();
+    debug_route=0;
+    failures += op_test_debug_connected();
     failures += op_test_normal_from_points();
     failures += op_test_palette_lifecycle();
     failures += op_test_palette_name_get();

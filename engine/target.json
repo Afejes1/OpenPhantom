@@ -9533,6 +9533,165 @@
           "kind": "dir32"
         }
       ]
+    },
+    {
+      "id": "debug_toggle_visible",
+      "address": 4630544,
+      "size": 47,
+      "body_size": 47,
+      "source": "src/debug_toggle_visible.c",
+      "symbol": "_op_debug_toggle_visible",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 7167332,
+          "symbol": "_op_debug_visible",
+          "kind": "dir32"
+        },
+        {
+          "offset": 12,
+          "address": 7167332,
+          "symbol": "_op_debug_visible",
+          "kind": "dir32"
+        },
+        {
+          "offset": 18,
+          "address": 7167332,
+          "symbol": "_op_debug_visible",
+          "kind": "dir32"
+        },
+        {
+          "offset": 28,
+          "address": 4631406,
+          "symbol": "_op_debug_reset",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 37,
+          "address": 7167332,
+          "symbol": "_op_debug_visible",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "debug_next_page",
+      "address": 4630591,
+      "size": 86,
+      "body_size": 86,
+      "source": "src/debug_next_page.c",
+      "symbol": "_op_debug_next_page",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7167332,
+          "symbol": "_op_debug_visible",
+          "kind": "dir32"
+        },
+        {
+          "offset": 15,
+          "address": 7167340,
+          "symbol": "_op_debug_pulse",
+          "kind": "dir32"
+        },
+        {
+          "offset": 24,
+          "address": 8823884,
+          "symbol": "_op_debug_page",
+          "kind": "dir32"
+        },
+        {
+          "offset": 32,
+          "address": 8823884,
+          "symbol": "_op_debug_page",
+          "kind": "dir32"
+        },
+        {
+          "offset": 38,
+          "address": 8823884,
+          "symbol": "_op_debug_page",
+          "kind": "dir32"
+        },
+        {
+          "offset": 48,
+          "address": 4631406,
+          "symbol": "_op_debug_reset",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 57,
+          "address": 7167332,
+          "symbol": "_op_debug_visible",
+          "kind": "dir32"
+        },
+        {
+          "offset": 67,
+          "address": 8823884,
+          "symbol": "_op_debug_page",
+          "kind": "dir32"
+        },
+        {
+          "offset": 76,
+          "address": 8823884,
+          "symbol": "_op_debug_page",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "debug_toggle_size",
+      "address": 4631651,
+      "size": 70,
+      "body_size": 70,
+      "source": "src/debug_toggle_size.c",
+      "symbol": "_op_debug_toggle_size",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7167344,
+          "symbol": "_op_debug_size",
+          "kind": "dir32"
+        },
+        {
+          "offset": 25,
+          "address": 4820102,
+          "symbol": "_op_debug_resize",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 44,
+          "address": 4820102,
+          "symbol": "_op_debug_resize",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 55,
+          "address": 7167344,
+          "symbol": "_op_debug_size",
+          "kind": "dir32"
+        },
+        {
+          "offset": 64,
+          "address": 7167344,
+          "symbol": "_op_debug_size",
+          "kind": "dir32"
+        }
+      ]
     }
   ]
 }
