@@ -155,6 +155,7 @@ static void clip_flag_tests(void)
 #include "skills_io_behavior.c"
 #include "skills_tick_behavior.c"
 #include "task_registry_behavior.c"
+#include "task_dispatch_behavior.c"
 #include "kernel_behavior.c"
 #include "video_behavior.c"
 #include "debug_behavior.c"
@@ -414,6 +415,9 @@ int main(void)
     failures += op_test_skills_show_level();
     failures += op_test_task_module_proc();
     failures += op_test_task_register();
+    failures += op_test_task_run();
+    failures += op_test_task_alloc_state();
+
 
 
 

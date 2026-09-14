@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "status": "integration-review",
+  "started_utc": "2026-09-14T20:49:11.093398+00:00",
+  "deadline_utc": "2026-09-14T21:29:11.093398+00:00",
+  "functions": [
+    "task_run",
+    "task_alloc_state"
+  ],
+  "acceptance": "research/acceptance-062/result.json"
+}

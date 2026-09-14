@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "task_alloc_state",
+  "started_utc": "2026-09-14T20:49:11.093398+00:00",
+  "implementation_cutoff_utc": "2026-09-14T21:04:11.093398+00:00",
+  "deadline_utc": "2026-09-14T21:29:11.093398+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial complete callback dispatch and aligned task-state allocation",
+      "started_utc": "2026-09-14T20:49:13.133227+00:00",
+      "finished_utc": "2026-09-14T20:49:14.860332+00:00",
+      "returncode": 0,
+      "source_sha256": "aa0d532803dd2229a093c33d4fcb4e465fee35ea64c146f8af80cf75e4456126",
+      "report": "engine/build/campaign-001-task_alloc_state-96e6f7f6333d/research-result.json",
+      "report_sha256": "9724de9eff0e458ebb7fb885619142eb7e604de6fa75df99fb7b57ed8527b4fb",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 99,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.484672,
+      "stderr": ""
+    }
+  ]
+}

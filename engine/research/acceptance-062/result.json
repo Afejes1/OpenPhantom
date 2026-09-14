@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "acceptance-062",
+  "baseline_commit": "bce8a1d91b2b792de17da584896ffe299f125fdd",
+  "functions": [
+    "task_run",
+    "task_alloc_state"
+  ],
+  "promotions": 2,
+  "registered_before": 343,
+  "registered_after": 345,
+  "full_span_bytes": 274,
+  "verified_operands": 13,
+  "raw_functions": 0,
+  "status": "integration-pending",
+  "team_not_done": 2,
+  "team_reported_done": 0,
+  "manifest": "planning/team-manifest-20260912-1849.json",
+  "retained_focused_checks": 112392,
+  "actual_callee_coverage": "Indirect authored event callbacks and an explicitly selected/restored external allocator observer; allocator495290 is not a registered reconstructed body.",
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

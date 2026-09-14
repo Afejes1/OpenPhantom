@@ -17,7 +17,7 @@
     "task_alloc_state"
   ],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A061 accepted four skills/task functions; C090 callback dispatch and task-state allocation are exact in focused verification.",
+  "current_work": "A062 integrating task dispatch and aligned task-state allocation.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": null
+  "acceptance_pending": "acceptance-062"
 }

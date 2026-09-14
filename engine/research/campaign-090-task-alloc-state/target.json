@@ -1,0 +1,33 @@
+{
+  "id": "task_alloc_state",
+  "address": 4676098,
+  "size": 99,
+  "body_size": 99,
+  "source": "src/task_alloc_state.c",
+  "symbol": "_op_task_alloc_state",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 31,
+      "address": 4805264,
+      "symbol": "_op_allocate",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 64,
+      "address": 8816420,
+      "symbol": "_op_task_current",
+      "kind": "dir32"
+    },
+    {
+      "offset": 76,
+      "address": 8816420,
+      "symbol": "_op_task_current",
+      "kind": "dir32"
+    }
+  ]
+}

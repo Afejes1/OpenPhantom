@@ -148,6 +148,7 @@ static void world_readers_reset_callbacks(void)
 
 void *op_allocate(unsigned int bytes)
 {
+    if(t901_active)return t901_allocate(bytes);
     if(s73o_active)return s73o_allocate(bytes);
     if(s73p_active)return s73p_allocate(bytes);
     if(s73c_active)return s73c_allocate(bytes);

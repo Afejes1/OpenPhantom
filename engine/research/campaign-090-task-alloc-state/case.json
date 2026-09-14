@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "task_alloc_state",
+  "candidate": "candidate.c",
+  "symbol": "_op_task_alloc_state",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

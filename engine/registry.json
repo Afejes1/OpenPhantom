@@ -6514,6 +6514,44 @@
         "Live callback state and unsigned count semantics preserved."
       ],
       "exceptions": []
+    },
+    {
+      "id": "task_run",
+      "module": "task-manager",
+      "analysis_name": "task_run",
+      "purpose": "Dispatch task event with live state and restore saved context.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/task-dispatch-acceptance.md",
+        "research/campaign-090-task-run/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/task_dispatch_behavior.c"
+      ],
+      "quirks": [
+        "Full32-bit bit1 masking and live post-callback current.",
+        "All focused matrices retained with full registry/pending/globals and bounded output aliases."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "task_alloc_state",
+      "module": "task-manager",
+      "analysis_name": "task_alloc_state",
+      "purpose": "Allocate and clear aligned task state, publishing it to the live task and caller output.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/task-dispatch-acceptance.md",
+        "research/campaign-090-task-alloc-state/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/task_dispatch_behavior.c"
+      ],
+      "quirks": [
+        "Unsigned rounding wraps topthree sizes tozero; allocator remains external.",
+        "All focused matrices retained with full registry/pending/globals and bounded output aliases."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
