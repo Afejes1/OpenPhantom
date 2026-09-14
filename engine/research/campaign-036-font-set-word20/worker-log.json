@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "font_set_word20",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full font state contract",
+      "started_utc": "2026-09-13T23:56:44.009551+00:00",
+      "finished_utc": "2026-09-13T23:56:45.599864+00:00",
+      "returncode": 0,
+      "source_sha256": "b287d260f3624ec2cdaf2efa8ff6089544e523a91cba915901a0dc64935e726f",
+      "report": "engine/build/campaign-001-font_set_word20-4fe4591fba78/research-result.json",
+      "report_sha256": "c68bf8d4c8aba55ca93915d7a18a1528772f342893c2e294982174e496c90957",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 27,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.368741,
+      "stderr": ""
+    }
+  ]
+}

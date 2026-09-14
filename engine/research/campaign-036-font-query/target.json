@@ -1,0 +1,33 @@
+{
+  "id": "font_query",
+  "address": 4634496,
+  "size": 48,
+  "body_size": 35,
+  "source": "src/font_query.c",
+  "symbol": "_op_font_query",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 17,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 26,
+      "address": 4692896,
+      "symbol": "_op_query_font_resource",
+      "kind": "rel32-call"
+    }
+  ]
+}

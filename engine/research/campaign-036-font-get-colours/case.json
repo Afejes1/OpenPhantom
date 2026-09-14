@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "font_get_colours",
+  "candidate": "candidate.c",
+  "symbol": "_op_font_get_colours",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

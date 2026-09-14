@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "font_set_word24",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full font state contract",
+      "started_utc": "2026-09-13T23:56:50.394574+00:00",
+      "finished_utc": "2026-09-13T23:56:51.968129+00:00",
+      "returncode": 0,
+      "source_sha256": "add4528123545691485d7d07f8e31333edd2ef3b898b3b8cec3f49ecddc43ca8",
+      "report": "engine/build/campaign-001-font_set_word24-40b46443b638/research-result.json",
+      "report_sha256": "080f6b81f5a50ca869760be362c0b69f780e194e36738f47a7f4da98b2f938a6",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 34,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.347142,
+      "stderr": ""
+    }
+  ]
+}

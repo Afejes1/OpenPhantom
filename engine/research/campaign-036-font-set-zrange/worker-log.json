@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "font_set_zrange",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full font state contract",
+      "started_utc": "2026-09-13T23:56:47.200875+00:00",
+      "finished_utc": "2026-09-13T23:56:48.780032+00:00",
+      "returncode": 0,
+      "source_sha256": "86a120e737bd932d241c3bd274834c565244fa239f90f70f3f82b5dcfa7422e3",
+      "report": "engine/build/campaign-001-font_set_zrange-8f23ad31dc04/research-result.json",
+      "report_sha256": "85a8b3d873a2decee18e7f68bf2cf242e99de8e6457a167b4ecdbe9ac4612b9d",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 49,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.360815,
+      "stderr": ""
+    }
+  ]
+}

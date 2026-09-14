@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "font_set_align",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full font state contract",
+      "started_utc": "2026-09-13T23:56:39.259216+00:00",
+      "finished_utc": "2026-09-13T23:56:40.834637+00:00",
+      "returncode": 0,
+      "source_sha256": "380397745f9b069eb9b61159788aa11df2bbcf95134ed18e3ffb754b0a41cf67",
+      "report": "engine/build/campaign-001-font_set_align-c52820ae9749/research-result.json",
+      "report_sha256": "03622b95476e7991af244e7670e6f7cd9eaaadc3b91f174675bc21f7c074225b",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 87,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.357435,
+      "stderr": ""
+    }
+  ]
+}

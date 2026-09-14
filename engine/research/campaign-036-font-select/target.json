@@ -1,0 +1,40 @@
+{
+  "id": "font_select",
+  "address": 4632891,
+  "size": 62,
+  "body_size": 62,
+  "source": "src/font_select.c",
+  "symbol": "_op_font_select",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 23,
+      "address": 7167360,
+      "symbol": "_op_font_pool",
+      "kind": "dir32",
+      "addend": 8
+    },
+    {
+      "offset": 32,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 50,
+      "address": 7167360,
+      "symbol": "_op_font_pool",
+      "kind": "dir32"
+    },
+    {
+      "offset": 56,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "font_select",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full font state contract",
+      "started_utc": "2026-09-13T23:56:32.879828+00:00",
+      "finished_utc": "2026-09-13T23:56:34.509927+00:00",
+      "returncode": 1,
+      "source_sha256": "932d6c8708d46650d191a7556cd010167f2b154699ee24f7b1625d9459470fe1",
+      "report": "engine/build/campaign-001-font_select-d7a74fb7740a/research-result.json",
+      "report_sha256": "65484cac28afe152908b2d500594d740e5dc5a565a6f861f25d9478884f35fe8",
+      "status": "unresolved",
+      "candidate_size": null,
+      "different_bytes": null,
+      "elapsed_seconds": 1.409654,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Typed C from reviewed full font state contract",
+      "started_utc": "2026-09-13T23:57:23.735596+00:00",
+      "finished_utc": "2026-09-13T23:57:25.305934+00:00",
+      "returncode": 0,
+      "source_sha256": "932d6c8708d46650d191a7556cd010167f2b154699ee24f7b1625d9459470fe1",
+      "report": "engine/build/campaign-001-font_select-d30db858a1ae/research-result.json",
+      "report_sha256": "05154bafd0db7ad9882a6f2c67a2c146fc0af37089b941333e3ffcab7b8f4388",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 62,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.350645,
+      "stderr": ""
+    }
+  ]
+}

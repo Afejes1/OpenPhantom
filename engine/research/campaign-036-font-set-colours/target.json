@@ -1,0 +1,45 @@
+{
+  "id": "font_set_colours",
+  "address": 4633014,
+  "size": 62,
+  "body_size": 62,
+  "source": "src/font_set_colours.c",
+  "symbol": "_op_font_set_colours",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 15,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 27,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 39,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 50,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "font_last_textbox",
+  "address": 4634423,
+  "size": 29,
+  "body_size": 29,
+  "source": "src/font_last_textbox.c",
+  "symbol": "_op_font_last_textbox",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 20,
+      "address": 4692800,
+      "symbol": "_op_get_last_textbox",
+      "kind": "rel32-call"
+    }
+  ]
+}

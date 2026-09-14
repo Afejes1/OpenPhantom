@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "font_set_glyph_scale",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full font state contract",
+      "started_utc": "2026-09-13T23:56:40.840380+00:00",
+      "finished_utc": "2026-09-13T23:56:42.418081+00:00",
+      "returncode": 0,
+      "source_sha256": "59739d9f493f4f2acb9f0d434970e532e836ef35a635ed7f7d50af6f1eb339ce",
+      "report": "engine/build/campaign-001-font_set_glyph_scale-5d19c695d4d3/research-result.json",
+      "report_sha256": "977193f87e0dd5f361d6949663c2dbcf013e8617332661ecd9d3021aabcd3ccc",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 39,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.360149,
+      "stderr": ""
+    }
+  ]
+}

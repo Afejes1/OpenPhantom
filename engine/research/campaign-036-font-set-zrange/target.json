@@ -1,0 +1,33 @@
+{
+  "id": "font_set_zrange",
+  "address": 4634210,
+  "size": 49,
+  "body_size": 49,
+  "source": "src/font_set_zrange.c",
+  "symbol": "_op_font_set_zrange",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 17,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 35,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "font_set_position_scale",
+  "address": 4633274,
+  "size": 39,
+  "body_size": 39,
+  "source": "src/font_set_position_scale.c",
+  "symbol": "_op_font_set_position_scale",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 15,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 27,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    }
+  ]
+}

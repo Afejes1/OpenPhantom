@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "font_query",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full font state contract",
+      "started_utc": "2026-09-13T23:56:51.974740+00:00",
+      "finished_utc": "2026-09-13T23:56:53.551010+00:00",
+      "returncode": 1,
+      "source_sha256": "ee51d8089251890671e1e0feb3012d55acd79995e3605d86bfd5e6f1a35618d8",
+      "report": "engine/build/campaign-001-font_query-37a6aec5efba/research-result.json",
+      "report_sha256": "16a2e19d9d5615553e5e0a7d81adbe0d850166a90a2ec178dcf9796beed64346",
+      "status": "mismatch",
+      "candidate_size": 35,
+      "different_bytes": null,
+      "elapsed_seconds": 1.354123,
+      "stderr": ""
+    }
+  ]
+}

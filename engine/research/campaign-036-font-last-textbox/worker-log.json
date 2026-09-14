@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "font_last_textbox",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full font state contract",
+      "started_utc": "2026-09-13T23:56:48.785083+00:00",
+      "finished_utc": "2026-09-13T23:56:50.389130+00:00",
+      "returncode": 0,
+      "source_sha256": "a9d1b2098ec262ff9ae1820dfe033d4dde4d1f256a833787fe3ea7f9bdd75046",
+      "report": "engine/build/campaign-001-font_last_textbox-b73488d9eed5/research-result.json",
+      "report_sha256": "edd8b7d92eefc4c8b3465b29e0aa2f76c2ae79cd3fda4886e8a189c8da05bcbb",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 29,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.384759,
+      "stderr": ""
+    }
+  ]
+}

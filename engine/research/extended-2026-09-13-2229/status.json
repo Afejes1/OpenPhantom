@@ -18,11 +18,11 @@
   "reviewer_model": "gpt-5.6-sol",
   "reviewer_reasoning": "medium",
   "max_concurrent_implementation_workers": 1,
-  "new_exact_functions": 9,
-  "new_exact_bytes": 422,
+  "new_exact_functions": 21,
+  "new_exact_bytes": 1097,
   "promotions": 16,
   "new_near_matches": 0,
-  "new_research_candidates": 1,
+  "new_research_candidates": 2,
   "checkpoints": [
     {
       "id": "acceptance-017",
@@ -84,9 +84,16 @@
       "source_commit": "4dfe139403dde000bcaa2986d64afb2fb636ed57",
       "result": "research/acceptance-022/result.json",
       "full_ci": "success"
+    },
+    {
+      "id": "campaign-036",
+      "new_exact": 12,
+      "new_exact_bytes": 675,
+      "research": 1,
+      "result": "research/campaign-036/results.md"
     }
   ],
-  "current_work": "Campaign036: untouched font-state helper reconstruction with explicit alias and callback contracts.",
+  "current_work": "Integrate twelve exact font-state helpers with actual canonical sprite resource callbacks.",
   "original_game_executed": false,
   "accepted_functions_current": 121,
   "evidence_records_current": 45

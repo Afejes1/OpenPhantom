@@ -1,0 +1,27 @@
+{
+  "id": "font_set_word24",
+  "address": 4634462,
+  "size": 34,
+  "body_size": 34,
+  "source": "src/font_set_word24.c",
+  "symbol": "_op_font_set_word24",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 17,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    }
+  ]
+}

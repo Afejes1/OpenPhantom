@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "font_set_colours",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full font state contract",
+      "started_utc": "2026-09-13T23:56:36.111576+00:00",
+      "finished_utc": "2026-09-13T23:56:37.684029+00:00",
+      "returncode": 0,
+      "source_sha256": "a091837fb8465b037a2a6771331b310747cda463d4a1e5d09f6501fd42306dd8",
+      "report": "engine/build/campaign-001-font_set_colours-6265ed872428/research-result.json",
+      "report_sha256": "5abc71057feca833fab15b72c25417b7edb4577e472abd86cbcf315eac2e3349",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 62,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.353553,
+      "stderr": ""
+    }
+  ]
+}

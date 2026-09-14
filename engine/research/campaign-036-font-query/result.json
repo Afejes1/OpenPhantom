@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "campaign": "036",
+  "id": "font_query",
+  "status": "focused-mismatch",
+  "comparison": {
+    "id": "font_query",
+    "address": 4634496,
+    "size": 48,
+    "candidate_size": 35,
+    "body_size": 35,
+    "status": "mismatch",
+    "literal_function_match": false,
+    "layout_verified": false,
+    "adjusted_bytes": 0,
+    "object_sha256": "e09321df8078cb2e9520afd89e27f84fc268d6cd2532d072d7f60093d12aeae1",
+    "reason": "complete function extent differs"
+  },
+  "different_percent": null,
+  "source_snapshot": {
+    "research/campaign-036-font-query/candidate.c": "ee51d8089251890671e1e0feb3012d55acd79995e3605d86bfd5e6f1a35618d8",
+    "research/campaign-036-font-query/api.h": "dee7efda570288f3cfefdb78f965a93bb6ce22c4b6c67b4d12e92c771417e751",
+    "research/campaign-036-font-query/behavior.c": "1a88db3d8dd1621e04e87dfaa9086ea930d23d5091d1ebecc4fb8c3181b34379",
+    "research/campaign-036-font-query/case.json": "75f49f55fb435597cf5c65bfe053730cf6a65266078e9b67347cb242ef430ab5",
+    "research/campaign-001/verify.py": "78bcf92d994fdab04d1a983838fe9f492162d2626b35390259d9976b92cbbe78",
+    "target.json": "7079d9e4137fc2eccf1a8d4bee5b48179553dd33ea7974787dd35ac294275dbe",
+    "research/campaign-036-font-query/target.json": "4266c42bd6140622c193ed858d5287c6d3eff47f6aec65a22995c4dd444bf308",
+    "research/surface-emission/probe.py": "cd4ef4126dacfc16197636a4b0c7007639efe1033e8e2b329e4939a6083c5f1b",
+    "research/surface-emission/native_listing_diagnostic.py": "3cad0339396c73301ef5861eed3c40f925482fd7c2e4ec45f801e9d0e5d34665",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "959d15268c4d927e57271424dbcb1c709cf89cbf3e48ff545e4e15c4d6425f27",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "reference": {
+    "sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
+    "size": 829952
+  },
+  "native_report": "engine/build/campaign-001-font_query-3a0c9c1471ba/research-result.json",
+  "native_report_sha256": "27f4dd165a14500e92e7f2988b0bd62d1d70aeac8b571781808843617887e750",
+  "docker_report": "engine/build/campaign-001-font_query-d30ee8676171/research-result.json",
+  "docker_report_sha256": "4c6d3ea20c72ff9d77fd8ea5bc32b2f4850d91f5d4ad831664be1337aa5c541f",
+  "artifact": {
+    "id": "font_query",
+    "source": "candidate.c",
+    "symbol": "_op_font_query",
+    "object": "candidate.obj",
+    "object_sha256": "e09321df8078cb2e9520afd89e27f84fc268d6cd2532d072d7f60093d12aeae1",
+    "function_section_bytes": 35,
+    "function_section_sha256": "ee2c320a756bbfb6b4a0a8d005560509e4a03cbf26e794beadb95472f92bb90f",
+    "relocation_count": 3,
+    "assembly_listing": "candidate.native.cod",
+    "assembly_listing_sha256": "27769ff222de63d7974424fb596585893f592e55dfffc00246d18819ada00d65",
+    "assembly_listing_has_terminators": true,
+    "function_inventory": "candidate.function.json",
+    "function_inventory_sha256": "a172314fea7b892bb3543843e2258a390bf6e1e3bd6ff95ab6e0390d617d02fe",
+    "listing_fallback": {
+      "kind": "verified-native-peer-listing",
+      "original_docker_listing": "candidate.cod",
+      "original_docker_listing_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "native_peer_report_sha256": "27f4dd165a14500e92e7f2988b0bd62d1d70aeac8b571781808843617887e750",
+      "native_peer_object_sha256": "769c009d3a74eb72a0a474c56f4ad30cf4147e2cd15f8ab0dca9ea2753bf4f44",
+      "native_peer_listing_sha256": "27769ff222de63d7974424fb596585893f592e55dfffc00246d18819ada00d65",
+      "function_and_relocations_equal_before_fixture": true
+    }
+  },
+  "fixture": {
+    "sha256": "41932ca068738ce650eef6d4f8085b868b85fb744d6c6b6a271b2702dd52922d",
+    "passed": true,
+    "stdout": "font_query: 672 checks, 0 failures\n",
+    "checks": 672,
+    "failures": 0
+  },
+  "native_docker_function_and_relocations_equal": true,
+  "native_elapsed_seconds": 1.37227,
+  "docker_elapsed_seconds": 5.434929,
+  "accepted_history_record": false,
+  "original_game_executed": false,
+  "whole_executable_match": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "review": "research/campaign-036/review.json",
+  "limitations": [
+    "Complete function evidence; external callbacks are authored fixtures. Shared types and final linked executable placement remain pending."
+  ],
+  "evidence_category": "research-candidate"
+}

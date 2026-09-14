@@ -1,0 +1,29 @@
+{
+  "scope": "diagnostic-body-only-not-full-span-acceptance",
+  "bytes": 35,
+  "full_target_bytes": 48,
+  "missing_alignment_bytes": 13,
+  "comparison": {
+    "id": "font_query",
+    "address": 4634496,
+    "size": 35,
+    "candidate_size": 35,
+    "body_size": 35,
+    "status": "relocation-adjusted-match",
+    "literal_function_match": false,
+    "layout_verified": false,
+    "adjusted_bytes": 12,
+    "object_sha256": "769c009d3a74eb72a0a474c56f4ad30cf4147e2cd15f8ab0dca9ea2753bf4f44",
+    "compared_bytes": 23,
+    "dir32_bytes": 8,
+    "rel32_call_bytes": 4,
+    "internal_dir32_bytes": 0,
+    "different_bytes": 0,
+    "raw_bytes_equal": false,
+    "relocated_bytes_equal": true,
+    "reference_span_sha256": "68177f88a37fae077abbeeebf97cd73461c18e5f987aa7002e8fdbde7cfaffb0",
+    "resolved_span_sha256": "68177f88a37fae077abbeeebf97cd73461c18e5f987aa7002e8fdbde7cfaffb0"
+  },
+  "source_result": "result.json",
+  "accepted": false
+}

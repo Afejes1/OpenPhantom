@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "font_set_position_scale",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full font state contract",
+      "started_utc": "2026-09-13T23:56:42.423015+00:00",
+      "finished_utc": "2026-09-13T23:56:44.003229+00:00",
+      "returncode": 0,
+      "source_sha256": "f3bc40a5f89ac2009348e01c508c5c0d74d3357a78375fd16b1491a9734e4fa5",
+      "report": "engine/build/campaign-001-font_set_position_scale-f7e5681ff550/research-result.json",
+      "report_sha256": "18605dbcc7438862aa0627692892e2e468ec01e2816a17ebefbecc6bdf117d3f",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 39,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.362117,
+      "stderr": ""
+    }
+  ]
+}
