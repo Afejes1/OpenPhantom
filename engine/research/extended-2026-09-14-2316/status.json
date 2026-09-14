@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "status": "active",
+  "started_utc": "2026-09-14T23:16:41Z",
+  "implementation_stop_utc": "2026-09-15T01:01:41Z",
+  "deadline_utc": "2026-09-15T01:16:41Z",
+  "baseline_accepted": 347,
+  "baseline_event": 86,
+  "baseline_commit": "facdb8f0d08c2e022eb46348b9b417961cef034e",
+  "accepted_new": 0,
+  "accepted_current": 347,
+  "remaining_current": 604,
+  "local_team_not_done_current": 339,
+  "evidence_event_current": 86,
+  "pending_exact": [
+    "advance_runtime_fixed_steps"
+  ],
+  "acceptance_pending": "acceptance-064",
+  "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
+  "current_work": "A064 shared float and scheduler signature integration.",
+  "heartbeat_status": "ACTIVE"
+}

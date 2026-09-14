@@ -183,6 +183,7 @@ int op_stream_seek(void *handle, long offset, int origin)
 }
 void op_release(void *memory)
 {
+    if(t930_active){t930_release(memory);return;}
     if(t920_active){t920_release(memory);return;}
     if(s73o_active){s73o_release(memory);return;}
     if(s73p_active){s73p_release(memory);return;}

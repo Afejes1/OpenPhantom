@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "advance_runtime_fixed_steps",
+  "candidate": "candidate.c",
+  "symbol": "_op_advance_runtime_fixed_steps",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c",
+    "oracle.h",
+    "task_manager.h",
+    "b3d_chunk_readers.h",
+    "module.h",
+    "world_set_clock_support.c",
+    "task_run_all_support.c",
+    "module_broadcast_event_support.c",
+    "module_find_by_id_support.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

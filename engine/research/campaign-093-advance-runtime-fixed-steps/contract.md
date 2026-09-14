@@ -1,0 +1,9 @@
+# Fixed-step timing routine
+
+Complete original interval 004756FC..0047582A: 302 bytes, 36 verified address operands, no tail. Uses the prepared static packet and caller-confirmed cdecl forwarded unsigned word. Target accumulation precedes saving the clamped delta. Both fixed rates, strict world-clock selection, scheduler before event14, live generation and simulation updates, interpolation alpha and saved-delta restoration follow the observed order.
+
+All 41 literal cases are precomputed independently of candidate execution: rational-grid iteration counts, float encodings immediately below/equal/above0.1, both rate choices including nonzero FFFFFFFF, zero through seven iterations, equal/already-ahead simulation, and an explicit two-iteration live callback plan. Four pattern seeds and four unused argument words repeat each case. The fixture links actual accepted world_set_clock, task_run_all, module_broadcast_event and module_find_by_id support bodies. Callback checks assert phase order, full world/task/module/pending snapshots, generation wrap, live target/step/world mutation, and final restoration. The scheduler ignores its argument; forwarding is proved by the strict call bytes, not claimed as behaviorally observable. No nonfinite, nonpositive mutated-step, invalid pointer, or unbounded sequence claim.
+
+The sole opaque event-payload read uses a legacy unsigned lvalue alias of the float global, confined to VC5/MSVC semantics; this is not portable strict-alias C. It transports bits, not a numeric float-to-unsigned conversion. The already accepted unsigned module-event ABI remains consistent. Shared float views and the scheduler's unused word must reprove all previous accepted bytes and preserve existing fixtures through union-based raw-bit transport. Historical evidence snapshots remain immutable.
+
+No original execution, padding, ignored bytes, warning waivers or cap reset.

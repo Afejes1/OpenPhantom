@@ -1,0 +1,1891 @@
+{
+  "schema": 1,
+  "method": "Literal rational-grid sequence tables; ordinary iteration counts use ceiling(delta/step), not candidate execution. Mutation sequence specified explicitly.",
+  "cases": [
+    {
+      "incoming": 0,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 0,
+      "mutation": 0,
+      "rows": [],
+      "saved": 0,
+      "target": 0,
+      "simulation": 0,
+      "alpha": 1065353216,
+      "generation": 4294967294,
+      "final_world": 0
+    },
+    {
+      "incoming": 1015021568,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 0,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1015021568,
+          "step": 1023410176,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967294
+        }
+      ],
+      "saved": 1015021568,
+      "target": 1015021568,
+      "simulation": 1023410176,
+      "alpha": 1056964608,
+      "generation": 4294967295,
+      "final_world": 0
+    },
+    {
+      "incoming": 1023410176,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 0,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1023410176,
+          "step": 1023410176,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967294
+        }
+      ],
+      "saved": 1023410176,
+      "target": 1023410176,
+      "simulation": 1023410176,
+      "alpha": 1065353216,
+      "generation": 4294967295,
+      "final_world": 0
+    },
+    {
+      "incoming": 1027604480,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 0,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1027604480,
+          "step": 1023410176,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1023410176,
+          "target": 1027604480,
+          "step": 1023410176,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967295
+        }
+      ],
+      "saved": 1027604480,
+      "target": 1027604480,
+      "simulation": 1031798784,
+      "alpha": 1056964608,
+      "generation": 0,
+      "final_world": 0
+    },
+    {
+      "incoming": 1031798784,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 0,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1031798784,
+          "step": 1023410176,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1023410176,
+          "target": 1031798784,
+          "step": 1023410176,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967295
+        }
+      ],
+      "saved": 1031798784,
+      "target": 1031798784,
+      "simulation": 1031798784,
+      "alpha": 1065353216,
+      "generation": 0,
+      "final_world": 0
+    },
+    {
+      "incoming": 1033895936,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 0,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1033895936,
+          "step": 1023410176,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1023410176,
+          "target": 1033895936,
+          "step": 1023410176,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1031798784,
+          "target": 1033895936,
+          "step": 1023410176,
+          "clock": 1033895936,
+          "ticks": 78,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 0
+        }
+      ],
+      "saved": 1033895936,
+      "target": 1033895936,
+      "simulation": 1035993088,
+      "alpha": 1056964608,
+      "generation": 1,
+      "final_world": 0
+    },
+    {
+      "incoming": 1035993088,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 0,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1035993088,
+          "step": 1023410176,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1023410176,
+          "target": 1035993088,
+          "step": 1023410176,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1031798784,
+          "target": 1035993088,
+          "step": 1023410176,
+          "clock": 1035993088,
+          "ticks": 93,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 0
+        }
+      ],
+      "saved": 1035993088,
+      "target": 1035993088,
+      "simulation": 1035993088,
+      "alpha": 1065353216,
+      "generation": 1,
+      "final_world": 0
+    },
+    {
+      "incoming": 1036831948,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 0,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1036831948,
+          "step": 1023410176,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1023410176,
+          "target": 1036831948,
+          "step": 1023410176,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1031798784,
+          "target": 1036831948,
+          "step": 1023410176,
+          "clock": 1035993088,
+          "ticks": 93,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 0
+        },
+        {
+          "sim": 1035993088,
+          "target": 1036831948,
+          "step": 1023410176,
+          "clock": 1036831948,
+          "ticks": 99,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 1
+        }
+      ],
+      "saved": 1036831948,
+      "target": 1036831948,
+      "simulation": 1040187392,
+      "alpha": 1045220544,
+      "generation": 2,
+      "final_world": 0
+    },
+    {
+      "incoming": 1036831949,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 0,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1036831949,
+          "step": 1023410176,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1023410176,
+          "target": 1036831949,
+          "step": 1023410176,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1031798784,
+          "target": 1036831949,
+          "step": 1023410176,
+          "clock": 1035993088,
+          "ticks": 93,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 0
+        },
+        {
+          "sim": 1035993088,
+          "target": 1036831949,
+          "step": 1023410176,
+          "clock": 1036831949,
+          "ticks": 100,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 1
+        }
+      ],
+      "saved": 1036831949,
+      "target": 1036831949,
+      "simulation": 1040187392,
+      "alpha": 1045220560,
+      "generation": 2,
+      "final_world": 0
+    },
+    {
+      "incoming": 1036831950,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 0,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1036831949,
+          "step": 1023410176,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1023410176,
+          "target": 1036831949,
+          "step": 1023410176,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1031798784,
+          "target": 1036831949,
+          "step": 1023410176,
+          "clock": 1035993088,
+          "ticks": 93,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 0
+        },
+        {
+          "sim": 1035993088,
+          "target": 1036831949,
+          "step": 1023410176,
+          "clock": 1036831949,
+          "ticks": 100,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 1
+        }
+      ],
+      "saved": 1036831949,
+      "target": 1036831949,
+      "simulation": 1040187392,
+      "alpha": 1045220560,
+      "generation": 2,
+      "final_world": 0
+    },
+    {
+      "incoming": 1040187392,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 0,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1036831949,
+          "step": 1023410176,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1023410176,
+          "target": 1036831949,
+          "step": 1023410176,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1031798784,
+          "target": 1036831949,
+          "step": 1023410176,
+          "clock": 1035993088,
+          "ticks": 93,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 0
+        },
+        {
+          "sim": 1035993088,
+          "target": 1036831949,
+          "step": 1023410176,
+          "clock": 1036831949,
+          "ticks": 100,
+          "world": 0,
+          "payload": 1023410176,
+          "generation": 1
+        }
+      ],
+      "saved": 1036831949,
+      "target": 1036831949,
+      "simulation": 1040187392,
+      "alpha": 1045220560,
+      "generation": 2,
+      "final_world": 0
+    },
+    {
+      "incoming": 3170893824,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 0,
+      "mutation": 0,
+      "rows": [],
+      "saved": 3170893824,
+      "target": 3170893824,
+      "simulation": 0,
+      "alpha": 0,
+      "generation": 4294967294,
+      "final_world": 0
+    },
+    {
+      "incoming": 0,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 1,
+      "mutation": 0,
+      "rows": [],
+      "saved": 0,
+      "target": 0,
+      "simulation": 0,
+      "alpha": 1065353216,
+      "generation": 4294967294,
+      "final_world": 0
+    },
+    {
+      "incoming": 1015021568,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 1,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1015021568,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        }
+      ],
+      "saved": 1015021568,
+      "target": 1015021568,
+      "simulation": 1015021568,
+      "alpha": 1065353216,
+      "generation": 4294967295,
+      "final_world": 0
+    },
+    {
+      "incoming": 1023410176,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 1,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1023410176,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1023410176,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        }
+      ],
+      "saved": 1023410176,
+      "target": 1023410176,
+      "simulation": 1023410176,
+      "alpha": 1065353216,
+      "generation": 0,
+      "final_world": 0
+    },
+    {
+      "incoming": 1027604480,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 1,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1027604480,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1027604480,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1023410176,
+          "target": 1027604480,
+          "step": 1015021568,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 0
+        }
+      ],
+      "saved": 1027604480,
+      "target": 1027604480,
+      "simulation": 1027604480,
+      "alpha": 1065353216,
+      "generation": 1,
+      "final_world": 0
+    },
+    {
+      "incoming": 1031798784,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 1,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1031798784,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1031798784,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1023410176,
+          "target": 1031798784,
+          "step": 1015021568,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 0
+        },
+        {
+          "sim": 1027604480,
+          "target": 1031798784,
+          "step": 1015021568,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 1
+        }
+      ],
+      "saved": 1031798784,
+      "target": 1031798784,
+      "simulation": 1031798784,
+      "alpha": 1065353216,
+      "generation": 2,
+      "final_world": 0
+    },
+    {
+      "incoming": 1033895936,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 1,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1033895936,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1033895936,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1023410176,
+          "target": 1033895936,
+          "step": 1015021568,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 0
+        },
+        {
+          "sim": 1027604480,
+          "target": 1033895936,
+          "step": 1015021568,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 1
+        },
+        {
+          "sim": 1031798784,
+          "target": 1033895936,
+          "step": 1015021568,
+          "clock": 1033895936,
+          "ticks": 78,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 2
+        }
+      ],
+      "saved": 1033895936,
+      "target": 1033895936,
+      "simulation": 1033895936,
+      "alpha": 1065353216,
+      "generation": 3,
+      "final_world": 0
+    },
+    {
+      "incoming": 1035993088,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 1,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1035993088,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1035993088,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1023410176,
+          "target": 1035993088,
+          "step": 1015021568,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 0
+        },
+        {
+          "sim": 1027604480,
+          "target": 1035993088,
+          "step": 1015021568,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 1
+        },
+        {
+          "sim": 1031798784,
+          "target": 1035993088,
+          "step": 1015021568,
+          "clock": 1033895936,
+          "ticks": 78,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 2
+        },
+        {
+          "sim": 1033895936,
+          "target": 1035993088,
+          "step": 1015021568,
+          "clock": 1035993088,
+          "ticks": 93,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 3
+        }
+      ],
+      "saved": 1035993088,
+      "target": 1035993088,
+      "simulation": 1035993088,
+      "alpha": 1065353216,
+      "generation": 4,
+      "final_world": 0
+    },
+    {
+      "incoming": 1036831948,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 1,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1036831948,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1036831948,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1023410176,
+          "target": 1036831948,
+          "step": 1015021568,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 0
+        },
+        {
+          "sim": 1027604480,
+          "target": 1036831948,
+          "step": 1015021568,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 1
+        },
+        {
+          "sim": 1031798784,
+          "target": 1036831948,
+          "step": 1015021568,
+          "clock": 1033895936,
+          "ticks": 78,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 2
+        },
+        {
+          "sim": 1033895936,
+          "target": 1036831948,
+          "step": 1015021568,
+          "clock": 1035993088,
+          "ticks": 93,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 3
+        },
+        {
+          "sim": 1035993088,
+          "target": 1036831948,
+          "step": 1015021568,
+          "clock": 1036831948,
+          "ticks": 99,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4
+        }
+      ],
+      "saved": 1036831948,
+      "target": 1036831948,
+      "simulation": 1038090240,
+      "alpha": 1053609152,
+      "generation": 5,
+      "final_world": 0
+    },
+    {
+      "incoming": 1036831949,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 1,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1023410176,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 0
+        },
+        {
+          "sim": 1027604480,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 1
+        },
+        {
+          "sim": 1031798784,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1033895936,
+          "ticks": 78,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 2
+        },
+        {
+          "sim": 1033895936,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1035993088,
+          "ticks": 93,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 3
+        },
+        {
+          "sim": 1035993088,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1036831949,
+          "ticks": 100,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4
+        }
+      ],
+      "saved": 1036831949,
+      "target": 1036831949,
+      "simulation": 1038090240,
+      "alpha": 1053609168,
+      "generation": 5,
+      "final_world": 0
+    },
+    {
+      "incoming": 1036831950,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 1,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1023410176,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 0
+        },
+        {
+          "sim": 1027604480,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 1
+        },
+        {
+          "sim": 1031798784,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1033895936,
+          "ticks": 78,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 2
+        },
+        {
+          "sim": 1033895936,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1035993088,
+          "ticks": 93,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 3
+        },
+        {
+          "sim": 1035993088,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1036831949,
+          "ticks": 100,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4
+        }
+      ],
+      "saved": 1036831949,
+      "target": 1036831949,
+      "simulation": 1038090240,
+      "alpha": 1053609168,
+      "generation": 5,
+      "final_world": 0
+    },
+    {
+      "incoming": 1040187392,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 1,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1023410176,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 0
+        },
+        {
+          "sim": 1027604480,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 1
+        },
+        {
+          "sim": 1031798784,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1033895936,
+          "ticks": 78,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 2
+        },
+        {
+          "sim": 1033895936,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1035993088,
+          "ticks": 93,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 3
+        },
+        {
+          "sim": 1035993088,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1036831949,
+          "ticks": 100,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4
+        }
+      ],
+      "saved": 1036831949,
+      "target": 1036831949,
+      "simulation": 1038090240,
+      "alpha": 1053609168,
+      "generation": 5,
+      "final_world": 0
+    },
+    {
+      "incoming": 3170893824,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 1,
+      "mutation": 0,
+      "rows": [],
+      "saved": 3170893824,
+      "target": 3170893824,
+      "simulation": 0,
+      "alpha": 3212836864,
+      "generation": 4294967294,
+      "final_world": 0
+    },
+    {
+      "incoming": 0,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 4294967295,
+      "mutation": 0,
+      "rows": [],
+      "saved": 0,
+      "target": 0,
+      "simulation": 0,
+      "alpha": 1065353216,
+      "generation": 4294967294,
+      "final_world": 0
+    },
+    {
+      "incoming": 1015021568,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 4294967295,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1015021568,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        }
+      ],
+      "saved": 1015021568,
+      "target": 1015021568,
+      "simulation": 1015021568,
+      "alpha": 1065353216,
+      "generation": 4294967295,
+      "final_world": 0
+    },
+    {
+      "incoming": 1023410176,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 4294967295,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1023410176,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1023410176,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        }
+      ],
+      "saved": 1023410176,
+      "target": 1023410176,
+      "simulation": 1023410176,
+      "alpha": 1065353216,
+      "generation": 0,
+      "final_world": 0
+    },
+    {
+      "incoming": 1027604480,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 4294967295,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1027604480,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1027604480,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1023410176,
+          "target": 1027604480,
+          "step": 1015021568,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 0
+        }
+      ],
+      "saved": 1027604480,
+      "target": 1027604480,
+      "simulation": 1027604480,
+      "alpha": 1065353216,
+      "generation": 1,
+      "final_world": 0
+    },
+    {
+      "incoming": 1031798784,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 4294967295,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1031798784,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1031798784,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1023410176,
+          "target": 1031798784,
+          "step": 1015021568,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 0
+        },
+        {
+          "sim": 1027604480,
+          "target": 1031798784,
+          "step": 1015021568,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 1
+        }
+      ],
+      "saved": 1031798784,
+      "target": 1031798784,
+      "simulation": 1031798784,
+      "alpha": 1065353216,
+      "generation": 2,
+      "final_world": 0
+    },
+    {
+      "incoming": 1033895936,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 4294967295,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1033895936,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1033895936,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1023410176,
+          "target": 1033895936,
+          "step": 1015021568,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 0
+        },
+        {
+          "sim": 1027604480,
+          "target": 1033895936,
+          "step": 1015021568,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 1
+        },
+        {
+          "sim": 1031798784,
+          "target": 1033895936,
+          "step": 1015021568,
+          "clock": 1033895936,
+          "ticks": 78,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 2
+        }
+      ],
+      "saved": 1033895936,
+      "target": 1033895936,
+      "simulation": 1033895936,
+      "alpha": 1065353216,
+      "generation": 3,
+      "final_world": 0
+    },
+    {
+      "incoming": 1035993088,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 4294967295,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1035993088,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1035993088,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1023410176,
+          "target": 1035993088,
+          "step": 1015021568,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 0
+        },
+        {
+          "sim": 1027604480,
+          "target": 1035993088,
+          "step": 1015021568,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 1
+        },
+        {
+          "sim": 1031798784,
+          "target": 1035993088,
+          "step": 1015021568,
+          "clock": 1033895936,
+          "ticks": 78,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 2
+        },
+        {
+          "sim": 1033895936,
+          "target": 1035993088,
+          "step": 1015021568,
+          "clock": 1035993088,
+          "ticks": 93,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 3
+        }
+      ],
+      "saved": 1035993088,
+      "target": 1035993088,
+      "simulation": 1035993088,
+      "alpha": 1065353216,
+      "generation": 4,
+      "final_world": 0
+    },
+    {
+      "incoming": 1036831948,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 4294967295,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1036831948,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1036831948,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1023410176,
+          "target": 1036831948,
+          "step": 1015021568,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 0
+        },
+        {
+          "sim": 1027604480,
+          "target": 1036831948,
+          "step": 1015021568,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 1
+        },
+        {
+          "sim": 1031798784,
+          "target": 1036831948,
+          "step": 1015021568,
+          "clock": 1033895936,
+          "ticks": 78,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 2
+        },
+        {
+          "sim": 1033895936,
+          "target": 1036831948,
+          "step": 1015021568,
+          "clock": 1035993088,
+          "ticks": 93,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 3
+        },
+        {
+          "sim": 1035993088,
+          "target": 1036831948,
+          "step": 1015021568,
+          "clock": 1036831948,
+          "ticks": 99,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4
+        }
+      ],
+      "saved": 1036831948,
+      "target": 1036831948,
+      "simulation": 1038090240,
+      "alpha": 1053609152,
+      "generation": 5,
+      "final_world": 0
+    },
+    {
+      "incoming": 1036831949,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 4294967295,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1023410176,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 0
+        },
+        {
+          "sim": 1027604480,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 1
+        },
+        {
+          "sim": 1031798784,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1033895936,
+          "ticks": 78,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 2
+        },
+        {
+          "sim": 1033895936,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1035993088,
+          "ticks": 93,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 3
+        },
+        {
+          "sim": 1035993088,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1036831949,
+          "ticks": 100,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4
+        }
+      ],
+      "saved": 1036831949,
+      "target": 1036831949,
+      "simulation": 1038090240,
+      "alpha": 1053609168,
+      "generation": 5,
+      "final_world": 0
+    },
+    {
+      "incoming": 1036831950,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 4294967295,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1023410176,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 0
+        },
+        {
+          "sim": 1027604480,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 1
+        },
+        {
+          "sim": 1031798784,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1033895936,
+          "ticks": 78,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 2
+        },
+        {
+          "sim": 1033895936,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1035993088,
+          "ticks": 93,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 3
+        },
+        {
+          "sim": 1035993088,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1036831949,
+          "ticks": 100,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4
+        }
+      ],
+      "saved": 1036831949,
+      "target": 1036831949,
+      "simulation": 1038090240,
+      "alpha": 1053609168,
+      "generation": 5,
+      "final_world": 0
+    },
+    {
+      "incoming": 1040187392,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 4294967295,
+      "mutation": 0,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1015021568,
+          "ticks": 15,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1015021568,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967295
+        },
+        {
+          "sim": 1023410176,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 0
+        },
+        {
+          "sim": 1027604480,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1031798784,
+          "ticks": 62,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 1
+        },
+        {
+          "sim": 1031798784,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1033895936,
+          "ticks": 78,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 2
+        },
+        {
+          "sim": 1033895936,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1035993088,
+          "ticks": 93,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 3
+        },
+        {
+          "sim": 1035993088,
+          "target": 1036831949,
+          "step": 1015021568,
+          "clock": 1036831949,
+          "ticks": 100,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4
+        }
+      ],
+      "saved": 1036831949,
+      "target": 1036831949,
+      "simulation": 1038090240,
+      "alpha": 1053609168,
+      "generation": 5,
+      "final_world": 0
+    },
+    {
+      "incoming": 3170893824,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 4294967295,
+      "mutation": 0,
+      "rows": [],
+      "saved": 3170893824,
+      "target": 3170893824,
+      "simulation": 0,
+      "alpha": 3212836864,
+      "generation": 4294967294,
+      "final_world": 0
+    },
+    {
+      "incoming": 1031798784,
+      "initial_target": 0,
+      "initial_sim": 1031798784,
+      "gate": 0,
+      "mutation": 0,
+      "rows": [],
+      "saved": 1031798784,
+      "target": 1031798784,
+      "simulation": 1031798784,
+      "alpha": 1065353216,
+      "generation": 4294967294,
+      "final_world": 0
+    },
+    {
+      "incoming": 1031798784,
+      "initial_target": 0,
+      "initial_sim": 1031798784,
+      "gate": 1,
+      "mutation": 0,
+      "rows": [],
+      "saved": 1031798784,
+      "target": 1031798784,
+      "simulation": 1031798784,
+      "alpha": 1065353216,
+      "generation": 4294967294,
+      "final_world": 0
+    },
+    {
+      "incoming": 1031798784,
+      "initial_target": 0,
+      "initial_sim": 1035993088,
+      "gate": 0,
+      "mutation": 0,
+      "rows": [],
+      "saved": 1031798784,
+      "target": 1031798784,
+      "simulation": 1035993088,
+      "alpha": 0,
+      "generation": 4294967294,
+      "final_world": 0
+    },
+    {
+      "incoming": 1031798784,
+      "initial_target": 0,
+      "initial_sim": 1035993088,
+      "gate": 1,
+      "mutation": 0,
+      "rows": [],
+      "saved": 1031798784,
+      "target": 1031798784,
+      "simulation": 1035993088,
+      "alpha": 3212836864,
+      "generation": 4294967294,
+      "final_world": 0
+    },
+    {
+      "incoming": 1031798784,
+      "initial_target": 0,
+      "initial_sim": 0,
+      "gate": 0,
+      "mutation": 1,
+      "rows": [
+        {
+          "sim": 0,
+          "target": 1031798784,
+          "step": 1023410176,
+          "clock": 1023410176,
+          "ticks": 31,
+          "world": 0,
+          "payload": 1015021568,
+          "generation": 4294967294
+        },
+        {
+          "sim": 1023410176,
+          "target": 1027604480,
+          "step": 1023410176,
+          "clock": 1027604480,
+          "ticks": 46,
+          "world": 1,
+          "payload": 1023410176,
+          "generation": 0
+        }
+      ],
+      "saved": 1031798784,
+      "target": 1027604480,
+      "simulation": 1031798784,
+      "alpha": 1056964608,
+      "generation": 1,
+      "final_world": 1
+    }
+  ]
+}

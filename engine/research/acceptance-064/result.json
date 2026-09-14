@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "acceptance-064",
+  "baseline_commit": "facdb8f0d08c2e022eb46348b9b417961cef034e",
+  "functions": [
+    "advance_runtime_fixed_steps"
+  ],
+  "promotions": 1,
+  "registered_before": 347,
+  "registered_after": 348,
+  "full_span_bytes": 302,
+  "verified_operands": 36,
+  "raw_functions": 0,
+  "status": "integration-pending",
+  "team_not_done": 1,
+  "team_reported_done": 0,
+  "manifest": "planning/team-manifest-20260912-1849.json",
+  "retained_focused_checks": 93808,
+  "prior_type_refinements": [
+    "Target, simulation and alpha use float storage; prior fixture seeds/comparisons preserve exact original integer words through memcpy.",
+    "Scheduler receives explicitly unused cdecl word; previous body must remain exact."
+  ],
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

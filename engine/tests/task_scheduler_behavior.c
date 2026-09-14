@@ -25,8 +25,8 @@ static void t920_verify(void)
     T920_CHECK(!memcmp(op_task_pending, t920_pending, sizeof(t920_pending)));
     T920_CHECK(op_task_count == t920_wanted_count);
     T920_CHECK(op_task_cursor == t920_wanted_cursor);
-    T920_CHECK(op_task_target == t920_wanted_target);
-    T920_CHECK(op_task_simulation == t920_wanted_simulation);
+    T920_CHECK(op_fixture_float_word(&op_task_target) == t920_wanted_target);
+    T920_CHECK(op_fixture_float_word(&op_task_simulation) == t920_wanted_simulation);
     T920_CHECK(op_task_sentinel == t920_wanted_sentinel);
     T920_CHECK(op_task_current == t920_wanted_current);
 }
@@ -43,8 +43,10 @@ static void t920_setup(int pattern)
         op_task_pending[i] = t920_pending[i] = (unsigned char)(i * 17 + pattern * 5 + 11);
     op_task_count = t920_wanted_count = 0xdeadbeefu;
     op_task_cursor = t920_wanted_cursor = 0xf1234567u;
-    op_task_target = t920_wanted_target = 0x98765432u;
-    op_task_simulation = t920_wanted_simulation = 0xc1234567u;
+    t920_wanted_target = 0x98765432u;
+    op_fixture_store_float_word(&op_task_target, t920_wanted_target);
+    t920_wanted_simulation = 0xc1234567u;
+    op_fixture_store_float_word(&op_task_simulation, t920_wanted_simulation);
     op_task_sentinel = t920_wanted_sentinel = -719;
     op_task_current = t920_wanted_current = &op_tasks[pattern % 64];
 }
@@ -154,7 +156,7 @@ static int op_test_task_run_all(void)
                                                         t920_expected[(t920_slot + 2) % 64].data = &t920_tokens[2];
                                                 }
                                             }
-                                            op_task_run_all();
+                                            op_task_run_all(0);
                                             if (enabled)
                                             {
                                                 if (t920_callback_result < 0)
@@ -191,7 +193,7 @@ static int op_test_task_run_all(void)
             op_task_count = t920_wanted_count = 1;
             op_task_cursor = t920_wanted_cursor = 64;
             t920_update_calls = t920_release_calls = 0;
-            op_task_run_all();
+            op_task_run_all(0);
             T920_CHECK(t920_update_calls == 0 && t920_release_calls == 0);
             t920_verify();
         }

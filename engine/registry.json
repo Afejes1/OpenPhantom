@@ -6590,6 +6590,27 @@
         "All focused matrices retained; no original execution or byte exceptions."
       ],
       "exceptions": []
+    },
+    {
+      "id": "advance_runtime_fixed_steps",
+      "module": "task-manager",
+      "analysis_name": "advance_runtime_fixed_steps",
+      "purpose": "Advance fixed simulation steps, world clocks and module callbacks, then compute interpolation alpha.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/fixed-step-acceptance.md",
+        "research/campaign-093-advance-runtime-fixed-steps/contract.md",
+        "research/campaign-093-advance-runtime-fixed-steps/inventory-correction.json"
+      ],
+      "behavior_tests": [
+        "tests/fixed_steps_behavior.c"
+      ],
+      "quirks": [
+        "Ceiling-style fixed steps; final world clock can use a partial interval while the event payload uses the live full step.",
+        "Callbacks can retarget world, target time and step before live reloads.",
+        "Legacy opaque payload uses VC5/MSVC raw-word alias semantics; whole-program layout remains pending."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

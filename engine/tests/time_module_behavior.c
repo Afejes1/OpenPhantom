@@ -1,5 +1,5 @@
 #include "../src/platform_helpers.h"
-int op_time_mode;
+float op_time_mode;
 float op_time_previous_seconds;
 const float op_time_thousand = 1000.0f;
 #include "../src/elapsed_time.h"
@@ -20,14 +20,15 @@ static void t910_check(int ok, int line)
 #define T910_CHECK(x) t910_check(!!(x), __LINE__)
 static unsigned int t910_expected_start, t910_expected_previous;
 static float t910_expected_start_seconds, t910_expected_previous_seconds, t910_first_seconds;
-static int t910_expected_mode, t910_calls, t910_mutate, t910_mode, t910_first, t910_delta, t910_api_result;
+static unsigned int t910_expected_mode;
+static int t910_calls, t910_mutate, t910_mode, t910_first, t910_delta, t910_api_result;
 static void t910_verify(void)
 {
     T910_CHECK(op_time_start_ticks == t910_expected_start);
     T910_CHECK(op_time_previous_ticks == t910_expected_previous);
     T910_CHECK(op_time_start_seconds == t910_expected_start_seconds);
     T910_CHECK(op_time_previous_seconds == t910_expected_previous_seconds);
-    T910_CHECK(op_time_mode == t910_expected_mode);
+    T910_CHECK(op_fixture_float_word(&op_time_mode) == t910_expected_mode);
     T910_CHECK(op_platform_highres == t910_mode);
     T910_CHECK(op_platform_millisecond_scale == 1.0);
     T910_CHECK(op_platform_second_scale == 0.5);
@@ -50,7 +51,8 @@ static int t910_draw(void)
         result = t910_first;
         if (t910_mutate)
         {
-            op_time_mode = t910_expected_mode = 17;
+            t910_expected_mode = (unsigned int)(17);
+            op_fixture_store_float_word(&op_time_mode, t910_expected_mode);
             op_time_start_ticks = t910_expected_start = 555;
             op_time_start_seconds = t910_expected_start_seconds = 29.0f;
             op_time_previous_ticks = t910_expected_previous = 321;
@@ -62,7 +64,8 @@ static int t910_draw(void)
         result = (t910_mutate ? 3000 : t910_first) + t910_delta;
         if (t910_mutate)
         {
-            op_time_mode = t910_expected_mode = -81;
+            t910_expected_mode = (unsigned int)(-81);
+            op_fixture_store_float_word(&op_time_mode, t910_expected_mode);
             op_time_start_ticks = t910_expected_start = 3000;
             op_time_start_seconds = t910_expected_start_seconds = -7.5f;
             op_time_previous_ticks = t910_expected_previous = 0xabcdef01u;
@@ -114,7 +117,8 @@ static int op_test_time_module_proc(void)
                                 t910_delta = deltas[d];
                                 t910_api_result = returns[r];
                                 t910_calls = 0;
-                                op_time_mode = t910_expected_mode = p + 11;
+                                t910_expected_mode = (unsigned int)(p + 11);
+                                op_fixture_store_float_word(&op_time_mode, t910_expected_mode);
                                 op_time_start_ticks = t910_expected_start = 0xf1234567u;
                                 op_time_previous_ticks = t910_expected_previous = 0xe2345678u;
                                 op_time_start_seconds = t910_expected_start_seconds = 13.25f;

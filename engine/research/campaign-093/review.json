@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "conclusion": "focused-approved",
+  "focused_review": "All22 source snapshot members and both selected reports rehashed. Exact302bytes/36operands;93808checks; native/Docker parity.41literal cases and connected actual callees, full snapshots, phase ordering, live mutations, and domain limitations approved. Eight preparation offsets corrected by original PE preflight before compiler execution.",
+  "integration_review": {
+    "conclusion": "approved",
+    "reviewed_utc": "2026-09-14T23:36:34.514641+00:00",
+    "findings": "Prior347 target/registry entries unchanged; canonical fixed-step candidate include-only equal; focused/shared oracle literals and order match; task-run signatures consistent; all previous raw patterns including0xFFFFFFAF preserved by memcpy; sole storage definitions and release route reviewed.",
+    "correction": "Parent added save/restore of the newly introduced rate_gate and generation globals, completing shared fixture state isolation. No candidate, target or oracle expectation changed.",
+    "acceptance_pending": "Full348 comparisons, all earlier matrix counts and supplemental CI must pass."
+  }
+}

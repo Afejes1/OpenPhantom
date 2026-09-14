@@ -1,0 +1,442 @@
+{
+  "schema": 1,
+  "reason": "Strict reference relocation preflight rejected the historical preparation offset arithmetic before any compiler command. Addresses, roles, extent and number of operands were correct; eight offsets required correction.",
+  "original_preparation": "research/fixed-step-preparation-001/packet.json",
+  "old_bindings": [
+    {
+      "offset": 6,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 12,
+      "address": 4885348,
+      "symbol": "_op_fixed_max_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 25,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 35,
+      "address": 8819348,
+      "symbol": "_op_task_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 41,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 47,
+      "address": 8819348,
+      "symbol": "_op_task_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 54,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 61,
+      "address": 8921748,
+      "symbol": "_op_fixed_rate_gate",
+      "kind": "dir32"
+    },
+    {
+      "offset": 72,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 84,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 96,
+      "address": 8816424,
+      "symbol": "_op_task_simulation",
+      "kind": "dir32"
+    },
+    {
+      "offset": 102,
+      "address": 8819348,
+      "symbol": "_op_task_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 119,
+      "address": 8816424,
+      "symbol": "_op_task_simulation",
+      "kind": "dir32"
+    },
+    {
+      "offset": 125,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 131,
+      "address": 8819348,
+      "symbol": "_op_task_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 140,
+      "address": 8819348,
+      "symbol": "_op_task_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 147,
+      "address": 9044064,
+      "symbol": "_op_active_world",
+      "kind": "dir32"
+    },
+    {
+      "offset": 153,
+      "address": 4321481,
+      "symbol": "_op_world_set_clock",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 164,
+      "address": 8816424,
+      "symbol": "_op_task_simulation",
+      "kind": "dir32"
+    },
+    {
+      "offset": 170,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 179,
+      "address": 9044064,
+      "symbol": "_op_active_world",
+      "kind": "dir32"
+    },
+    {
+      "offset": 185,
+      "address": 4321481,
+      "symbol": "_op_world_set_clock",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 197,
+      "address": 4675626,
+      "symbol": "_op_task_run_all",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 206,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 216,
+      "address": 4650153,
+      "symbol": "_op_module_broadcast_event",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 224,
+      "address": 4950112,
+      "symbol": "_op_fixed_generation",
+      "kind": "dir32"
+    },
+    {
+      "offset": 232,
+      "address": 4950112,
+      "symbol": "_op_fixed_generation",
+      "kind": "dir32"
+    },
+    {
+      "offset": 238,
+      "address": 8816424,
+      "symbol": "_op_task_simulation",
+      "kind": "dir32"
+    },
+    {
+      "offset": 244,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 250,
+      "address": 8816424,
+      "symbol": "_op_task_simulation",
+      "kind": "dir32"
+    },
+    {
+      "offset": 261,
+      "address": 8819348,
+      "symbol": "_op_task_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 267,
+      "address": 8816424,
+      "symbol": "_op_task_simulation",
+      "kind": "dir32"
+    },
+    {
+      "offset": 273,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 279,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 285,
+      "address": 8816412,
+      "symbol": "_op_time_mode",
+      "kind": "dir32"
+    },
+    {
+      "offset": 294,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    }
+  ],
+  "corrected_bindings": [
+    {
+      "offset": 6,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 12,
+      "address": 4885348,
+      "symbol": "_op_fixed_max_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 25,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 35,
+      "address": 8819348,
+      "symbol": "_op_task_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 41,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 47,
+      "address": 8819348,
+      "symbol": "_op_task_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 52,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 61,
+      "address": 8921748,
+      "symbol": "_op_fixed_rate_gate",
+      "kind": "dir32"
+    },
+    {
+      "offset": 70,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 82,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 92,
+      "address": 8816424,
+      "symbol": "_op_task_simulation",
+      "kind": "dir32"
+    },
+    {
+      "offset": 98,
+      "address": 8819348,
+      "symbol": "_op_task_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 115,
+      "address": 8816424,
+      "symbol": "_op_task_simulation",
+      "kind": "dir32"
+    },
+    {
+      "offset": 121,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 127,
+      "address": 8819348,
+      "symbol": "_op_task_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 140,
+      "address": 8819348,
+      "symbol": "_op_task_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 147,
+      "address": 9044064,
+      "symbol": "_op_active_world",
+      "kind": "dir32"
+    },
+    {
+      "offset": 153,
+      "address": 4321481,
+      "symbol": "_op_world_set_clock",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 164,
+      "address": 8816424,
+      "symbol": "_op_task_simulation",
+      "kind": "dir32"
+    },
+    {
+      "offset": 170,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 179,
+      "address": 9044064,
+      "symbol": "_op_active_world",
+      "kind": "dir32"
+    },
+    {
+      "offset": 185,
+      "address": 4321481,
+      "symbol": "_op_world_set_clock",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 197,
+      "address": 4675626,
+      "symbol": "_op_task_run_all",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 206,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 216,
+      "address": 4650153,
+      "symbol": "_op_module_broadcast_event",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 224,
+      "address": 4950112,
+      "symbol": "_op_fixed_generation",
+      "kind": "dir32"
+    },
+    {
+      "offset": 232,
+      "address": 4950112,
+      "symbol": "_op_fixed_generation",
+      "kind": "dir32"
+    },
+    {
+      "offset": 238,
+      "address": 8816424,
+      "symbol": "_op_task_simulation",
+      "kind": "dir32"
+    },
+    {
+      "offset": 244,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 250,
+      "address": 8816424,
+      "symbol": "_op_task_simulation",
+      "kind": "dir32"
+    },
+    {
+      "offset": 261,
+      "address": 8819348,
+      "symbol": "_op_task_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 267,
+      "address": 8816424,
+      "symbol": "_op_task_simulation",
+      "kind": "dir32"
+    },
+    {
+      "offset": 273,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 279,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 285,
+      "address": 8816412,
+      "symbol": "_op_time_mode",
+      "kind": "dir32"
+    },
+    {
+      "offset": 294,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    }
+  ],
+  "method": "All32absolute offsets derived from PE base-relocation positions; four call operand offsets from live disassembly instruction starts and signed target displacements. No reference or matcher change."
+}

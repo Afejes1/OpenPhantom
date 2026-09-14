@@ -1,3 +1,4 @@
+#include "float_word_transport.h"
 #include "../src/task_manager.h"
 static int tr_update0(void){return 0;}
 static int tr_update1(void){return 1;}
@@ -6,7 +7,8 @@ static int tr_update3(void){return 3;}
 static OP_TASK_UPDATE tr_updates[4]={tr_update0,tr_update1,tr_update2,tr_update3};
 OP_TASK_RECORD op_tasks[64];
 unsigned char op_task_pending[20];
-unsigned int op_task_count, op_task_cursor, op_task_target, op_task_simulation;
+unsigned int op_task_count, op_task_cursor;
+float op_task_target, op_task_simulation;
 int op_task_sentinel;
 OP_TASK_RECORD *op_task_current;
 #include "../src/task_manager.h"
@@ -34,8 +36,8 @@ static void t890_verify(void)
     T890_CHECK(!memcmp(op_task_pending, t890_pending, sizeof(t890_pending)));
     T890_CHECK(op_task_count == t890_wanted_count);
     T890_CHECK(op_task_cursor == t890_wanted_cursor);
-    T890_CHECK(op_task_target == t890_wanted_target);
-    T890_CHECK(op_task_simulation == t890_wanted_simulation);
+    T890_CHECK(op_fixture_float_word(&op_task_target) == t890_wanted_target);
+    T890_CHECK(op_fixture_float_word(&op_task_simulation) == t890_wanted_simulation);
     T890_CHECK(op_task_sentinel == t890_wanted_sentinel);
     T890_CHECK(op_task_current == t890_wanted_current);
 }
@@ -52,8 +54,10 @@ static void t890_setup(int pattern)
         op_task_pending[i] = t890_pending[i] = (unsigned char)(i * 17 + pattern * 5 + 11);
     op_task_count = t890_wanted_count = 0xdeadbeefu;
     op_task_cursor = t890_wanted_cursor = 0xf1234567u;
-    op_task_target = t890_wanted_target = 0x98765432u;
-    op_task_simulation = t890_wanted_simulation = 0xc1234567u;
+    t890_wanted_target = 0x98765432u;
+    op_fixture_store_float_word(&op_task_target, t890_wanted_target);
+    t890_wanted_simulation = 0xc1234567u;
+    op_fixture_store_float_word(&op_task_simulation, t890_wanted_simulation);
     op_task_sentinel = t890_wanted_sentinel = -719;
     op_task_current = t890_wanted_current = &op_tasks[pattern % 64];
 }
@@ -113,8 +117,8 @@ static void t891_verify(void)
     T891_CHECK(!memcmp(op_task_pending, t891_pending, sizeof(t891_pending)));
     T891_CHECK(op_task_count == t891_wanted_count);
     T891_CHECK(op_task_cursor == t891_wanted_cursor);
-    T891_CHECK(op_task_target == t891_wanted_target);
-    T891_CHECK(op_task_simulation == t891_wanted_simulation);
+    T891_CHECK(op_fixture_float_word(&op_task_target) == t891_wanted_target);
+    T891_CHECK(op_fixture_float_word(&op_task_simulation) == t891_wanted_simulation);
     T891_CHECK(op_task_sentinel == t891_wanted_sentinel);
     T891_CHECK(op_task_current == t891_wanted_current);
 }
@@ -131,8 +135,10 @@ static void t891_setup(int pattern)
         op_task_pending[i] = t891_pending[i] = (unsigned char)(i * 17 + pattern * 5 + 11);
     op_task_count = t891_wanted_count = 0xdeadbeefu;
     op_task_cursor = t891_wanted_cursor = 0xf1234567u;
-    op_task_target = t891_wanted_target = 0x98765432u;
-    op_task_simulation = t891_wanted_simulation = 0xc1234567u;
+    t891_wanted_target = 0x98765432u;
+    op_fixture_store_float_word(&op_task_target, t891_wanted_target);
+    t891_wanted_simulation = 0xc1234567u;
+    op_fixture_store_float_word(&op_task_simulation, t891_wanted_simulation);
     op_task_sentinel = t891_wanted_sentinel = -719;
     op_task_current = t891_wanted_current = &op_tasks[pattern % 64];
 }
