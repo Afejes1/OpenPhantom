@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "colormap_set_hardware",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full colormap state and release contract",
+      "started_utc": "2026-09-14T01:48:29.765033+00:00",
+      "finished_utc": "2026-09-14T01:48:31.482853+00:00",
+      "returncode": 0,
+      "source_sha256": "da0e3333318382504d02a7afacf05a1e85e7613a248b0aac1ef0ebaa8d21e9a7",
+      "report": "engine/build/campaign-001-colormap_set_hardware-7441857b3db3/research-result.json",
+      "report_sha256": "0ca8543e61071e592e1675337d1f9365e6b4a452b13f6c17cd32e6a166aabe97",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 53,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.483166,
+      "stderr": ""
+    }
+  ]
+}

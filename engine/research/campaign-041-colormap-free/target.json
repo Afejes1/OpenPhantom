@@ -1,0 +1,27 @@
+{
+  "id": "colormap_free",
+  "address": 4688337,
+  "size": 29,
+  "body_size": 29,
+  "source": "src/colormap_free.c",
+  "symbol": "_op_rd_colormap_free",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 4688366,
+      "symbol": "_op_colormap_free_entry",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 20,
+      "address": 4805714,
+      "symbol": "_op_release",
+      "kind": "rel32-call"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "colormap_set_hardware",
+  "address": 4687618,
+  "size": 53,
+  "body_size": 53,
+  "source": "src/colormap_set_hardware.c",
+  "symbol": "_op_colormap_set_hardware",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 7309460,
+      "symbol": "_op_colormap_hardware",
+      "kind": "dir32"
+    },
+    {
+      "offset": 18,
+      "address": 7309460,
+      "symbol": "_op_colormap_hardware",
+      "kind": "dir32"
+    },
+    {
+      "offset": 24,
+      "address": 8816280,
+      "symbol": "_op_palette_device_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 39,
+      "address": 4752816,
+      "symbol": "_op_install_palette",
+      "kind": "rel32-call"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "attempts": [
+    {
+      "id": "colormap_set_hardware",
+      "started_utc": "2026-09-14T01:49:42.999701+00:00",
+      "finished_utc": "2026-09-14T01:49:44.671377+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-colormap_set_hardware-9aaea4face10\\research-result.json",
+      "report_sha256": "8dfc6fa1177489ed6c9865fd0102e424e5ea20c2f181727d349fca26249a9965",
+      "stderr": ""
+    },
+    {
+      "id": "colormap_set_hardware",
+      "started_utc": "2026-09-14T01:49:44.679903+00:00",
+      "finished_utc": "2026-09-14T01:49:50.116913+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-colormap_set_hardware-67ea4a227bdc\\research-result.json",
+      "report_sha256": "92ba60bd848835fa5fadbcd6fec08526f514c8ddd5c8abb98126e6f37536c323",
+      "stderr": ""
+    },
+    {
+      "id": "colormap_set_current",
+      "started_utc": "2026-09-14T01:49:50.283870+00:00",
+      "finished_utc": "2026-09-14T01:49:51.890176+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-colormap_set_current-5095f8802b9f\\research-result.json",
+      "report_sha256": "93db87b5d84a8f9d0a86649666e6f945b17a7e8f2a9f8302657b5db4adf2d94a",
+      "stderr": ""
+    },
+    {
+      "id": "colormap_set_current",
+      "started_utc": "2026-09-14T01:49:51.898303+00:00",
+      "finished_utc": "2026-09-14T01:49:57.241601+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-colormap_set_current-80442f8fea3a\\research-result.json",
+      "report_sha256": "e5055ff89647446c78d2fa7614e58d771c3413f22013cc2b8c6229e186c32707",
+      "stderr": ""
+    },
+    {
+      "id": "colormap_free",
+      "started_utc": "2026-09-14T01:49:57.405201+00:00",
+      "finished_utc": "2026-09-14T01:49:59.052546+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-colormap_free-20e42e86504a\\research-result.json",
+      "report_sha256": "970fd77f67abacddb768874b9df3805928505b8ddb3338e08ce6bff61486d6ec",
+      "stderr": ""
+    },
+    {
+      "id": "colormap_free",
+      "started_utc": "2026-09-14T01:49:59.059820+00:00",
+      "finished_utc": "2026-09-14T01:50:04.860430+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-colormap_free-6365c21889f4\\research-result.json",
+      "report_sha256": "8d90c771d02998f05d6c6a4cc03cb38ba53e845c475c1825d5137ccd84f83ab7",
+      "stderr": ""
+    }
+  ]
+}

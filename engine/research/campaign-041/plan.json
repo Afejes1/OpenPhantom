@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "id": "campaign-041",
+  "started_utc": "2026-09-14T01:36:00Z",
+  "stop_implementation_utc": "2026-09-14T02:11:00Z",
+  "deadline_utc": "2026-09-14T02:21:00Z",
+  "baseline_commit": "6cc811760e7d01d59e465577c19b4c6039588297",
+  "functions": [
+    "colormap_set_hardware",
+    "colormap_set_current",
+    "colormap_free"
+  ],
+  "status": "complete",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T01:55:51.076567+00:00"
+}
