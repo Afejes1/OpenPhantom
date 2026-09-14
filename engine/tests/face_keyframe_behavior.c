@@ -360,10 +360,18 @@ static int kh_row, kh_stage, kh_mode;
 static char kh_expected_name[sizeof(op_default_resource_name)];
 char *op_copy_keyframe_name(char *out, const char *in, unsigned int count)
 {
+    unsigned int i;
+    int ended = 0;
     kh_CHECK(kh_stage == 0 && out == kh_entries[kh_row].value.name && in == op_default_resource_name && count == 31);
     kh_CHECK(memcmp(kh_entries, kh_want_entries, sizeof(kh_entries)) == 0);
-    strncpy(out, in, count);
-    strncpy(kh_want_entries[kh_row].value.name, in, count);
+    for (i = 0; i < count; ++i)
+    {
+        char value = ended ? 0 : in[i];
+        if (!value)
+            ended = 1;
+        out[i] = value;
+        kh_want_entries[kh_row].value.name[i] = value;
+    }
     if (kh_mode)
     {
         out[31] = 'X';
