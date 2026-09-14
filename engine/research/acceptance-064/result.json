@@ -11,7 +11,7 @@
   "full_span_bytes": 302,
   "verified_operands": 36,
   "raw_functions": 0,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 1,
   "team_reported_done": 0,
   "manifest": "planning/team-manifest-20260912-1849.json",
@@ -22,5 +22,23 @@
   ],
   "original_game_executed": false,
   "byte_exclusions": [],
-  "warning_waivers": []
+  "warning_waivers": [],
+  "accepted_event": "engine/evidence/runs/000087-03c028f16dc057d0.json",
+  "source_commit": "5839d02485eff5b59e89067874cdd4e8d14b2794",
+  "build_id": "20260914-193642-dff17c0a",
+  "source_snapshot_inputs": 583,
+  "every_source_input_matches_committed_git_blob": true,
+  "all_prior_347_specs_and_resolved_span_hashes_unchanged": true,
+  "prior_matrix_counts_retained": {
+    "advance_runtime_fixed_steps": 93808,
+    "time_module_proc": 104400,
+    "task_run_all": 1592448,
+    "task_module_proc": 1728,
+    "task_register": 93600,
+    "task_run": 74304,
+    "task_alloc_state": 38088
+  },
+  "shared_matrix_checks": 93808,
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34909718049",
+  "supplemental_ci_conclusion": "success"
 }

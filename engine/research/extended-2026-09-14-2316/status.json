@@ -7,16 +7,16 @@
   "baseline_accepted": 347,
   "baseline_event": 86,
   "baseline_commit": "facdb8f0d08c2e022eb46348b9b417961cef034e",
-  "accepted_new": 0,
-  "accepted_current": 347,
-  "remaining_current": 604,
-  "local_team_not_done_current": 339,
-  "evidence_event_current": 86,
+  "accepted_new": 1,
+  "accepted_current": 348,
+  "remaining_current": 603,
+  "local_team_not_done_current": 340,
+  "evidence_event_current": 87,
   "pending_exact": [
-    "advance_runtime_fixed_steps"
+    "pace_frame_clock"
   ],
-  "acceptance_pending": "acceptance-064",
+  "acceptance_pending": null,
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A064 shared float and scheduler signature integration.",
+  "current_work": "A064 accepted fixed-step routine and shared float recovery; C094 exact pacing candidate queued for integration.",
   "heartbeat_status": "ACTIVE"
 }

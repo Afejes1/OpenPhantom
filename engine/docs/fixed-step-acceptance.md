@@ -1,6 +1,6 @@
 # Fixed-step timing reconstruction
 
-A complete 302-byte function with 36 address operands uses the actual accepted world clock, scheduler and module event functions. Forty-one literal scenarios cover finite zero-to-seven-step timing, float encodings around0.1, both rates, generation wrap and a preplanned live callback sequence. Shared acceptance is pending.
+A complete 302-byte function with 36 address operands uses the actual accepted world clock, scheduler and module event functions. Forty-one literal scenarios cover finite zero-to-seven-step timing, float encodings around0.1, both rates, generation wrap and a preplanned live callback sequence. [Acceptance 064](../research/acceptance-064/results.md) records successful shared checkpoint event 87.
 
 Float recovery preserves one storage definition per original address. Prior raw-word fixture patterns are copied with memcpy without evaluating float values, preserving even NaN payloads. The scheduler takes an explicitly unused unsigned word to preserve observed caller cleanup. Whole-executable identity remains unfinished.
 
