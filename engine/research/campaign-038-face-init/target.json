@@ -1,0 +1,14 @@
+{
+  "id": "face_init",
+  "address": 4689934,
+  "size": 138,
+  "body_size": 138,
+  "source": "src/face_init.c",
+  "symbol": "_op_face_init",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

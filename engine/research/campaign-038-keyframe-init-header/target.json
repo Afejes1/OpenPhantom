@@ -1,0 +1,27 @@
+{
+  "id": "keyframe_init_header",
+  "address": 4692968,
+  "size": 45,
+  "body_size": 45,
+  "source": "src/keyframe_init_header.c",
+  "symbol": "_op_keyframe_init_header",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 19,
+      "address": 4947368,
+      "symbol": "_op_default_resource_name",
+      "kind": "dir32"
+    },
+    {
+      "offset": 28,
+      "address": 4828192,
+      "symbol": "_op_copy_keyframe_name",
+      "kind": "rel32-call"
+    }
+  ]
+}

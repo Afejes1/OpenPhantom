@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "face_init",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full face/keyframe contract",
+      "started_utc": "2026-09-14T00:56:37.092506+00:00",
+      "finished_utc": "2026-09-14T00:56:38.789713+00:00",
+      "returncode": 0,
+      "source_sha256": "348d8ed0ff8c2e46eaeb979bf1fc605fab07943435138b580b5c9fb582328839",
+      "report": "engine/build/campaign-001-face_init-16e4ef14e7dd/research-result.json",
+      "report_sha256": "bfe3ea6a6e19a6a6d0a9e462fc314763a62a0fd14af5177a51cc07d08bf86cc4",
+      "status": "raw-code-match",
+      "candidate_size": 138,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.46509,
+      "stderr": ""
+    }
+  ]
+}

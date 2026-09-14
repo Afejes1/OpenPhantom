@@ -1,0 +1,27 @@
+{
+  "id": "face_free_arrays",
+  "address": 4690107,
+  "size": 53,
+  "body_size": 53,
+  "source": "src/face_free_arrays.c",
+  "symbol": "_op_face_free_arrays",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 20,
+      "address": 4805714,
+      "symbol": "_op_release",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 44,
+      "address": 4805714,
+      "symbol": "_op_release",
+      "kind": "rel32-call"
+    }
+  ]
+}

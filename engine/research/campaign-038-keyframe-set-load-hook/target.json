@@ -1,0 +1,27 @@
+{
+  "id": "keyframe_set_load_hook",
+  "address": 4692912,
+  "size": 28,
+  "body_size": 28,
+  "source": "src/keyframe_set_load_hook.c",
+  "symbol": "_op_keyframe_set_load_hook",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7309504,
+      "symbol": "_op_keyframe_load_hook",
+      "kind": "dir32"
+    },
+    {
+      "offset": 17,
+      "address": 7309504,
+      "symbol": "_op_keyframe_load_hook",
+      "kind": "dir32"
+    }
+  ]
+}

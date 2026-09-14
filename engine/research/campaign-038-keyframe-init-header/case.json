@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "keyframe_init_header",
+  "candidate": "candidate.c",
+  "symbol": "_op_keyframe_init_header",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

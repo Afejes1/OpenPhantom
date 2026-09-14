@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T01:05:16.585774+00:00",
+  "conclusion": "no-material-findings-after-unused-fixture-correction",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "face_free",
+      "address": 4690072,
+      "full_span_bytes": 35,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 26,
+      "implementation_attempts": 1,
+      "result": "research/campaign-038-face-free/result.json"
+    },
+    {
+      "id": "face_free_arrays",
+      "address": 4690107,
+      "full_span_bytes": 53,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 480,
+      "implementation_attempts": 1,
+      "result": "research/campaign-038-face-free-arrays/result.json"
+    },
+    {
+      "id": "face_init",
+      "address": 4689934,
+      "full_span_bytes": 138,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 0,
+      "different_bytes": 0,
+      "checks": 24,
+      "implementation_attempts": 1,
+      "result": "research/campaign-038-face-init/result.json"
+    },
+    {
+      "id": "keyframe_init_header",
+      "address": 4692968,
+      "full_span_bytes": 45,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 600,
+      "implementation_attempts": 1,
+      "result": "research/campaign-038-keyframe-init-header/result.json"
+    },
+    {
+      "id": "keyframe_set_load_hook",
+      "address": 4692912,
+      "full_span_bytes": 28,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 108,
+      "implementation_attempts": 1,
+      "result": "research/campaign-038-keyframe-set-load-hook/result.json"
+    },
+    {
+      "id": "keyframe_set_unload_hook",
+      "address": 4692940,
+      "full_span_bytes": 28,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 108,
+      "implementation_attempts": 1,
+      "result": "research/campaign-038-keyframe-set-unload-hook/result.json"
+    }
+  ],
+  "corrections": [
+    "Strict fixture compilation caught unused opposite-hook callback; both hook fixtures now exercise both opposite callbacks while verifying independent global preservation.",
+    "Removed unused face-only scaffold from keyframe header fixture; no candidate code changed."
+  ],
+  "limitations": [
+    "Face initialization and array cleanup require nonnull storage.",
+    "Aliased release cases observe calls without deallocation and do not establish double-free safety.",
+    "Default resource name is authored; original data and whole executable placement remain pending."
+  ]
+}

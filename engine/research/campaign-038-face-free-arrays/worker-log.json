@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "face_free_arrays",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full face/keyframe contract",
+      "started_utc": "2026-09-14T00:56:40.456723+00:00",
+      "finished_utc": "2026-09-14T00:56:42.090511+00:00",
+      "returncode": 0,
+      "source_sha256": "df24cc24426764c6de8b0d5d92e6632865d806242750691fbd37fc77e7f8689b",
+      "report": "engine/build/campaign-001-face_free_arrays-6754d9f8ec21/research-result.json",
+      "report_sha256": "e5f64c855c7f8da31d1abd535c57ee5af40f758f3d3d6fab35ee23d47c0e8b0a",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 53,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.412266,
+      "stderr": ""
+    }
+  ]
+}

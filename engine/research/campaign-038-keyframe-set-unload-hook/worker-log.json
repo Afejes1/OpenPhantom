@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "keyframe_set_unload_hook",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full face/keyframe contract",
+      "started_utc": "2026-09-14T00:56:43.741303+00:00",
+      "finished_utc": "2026-09-14T00:56:45.383086+00:00",
+      "returncode": 0,
+      "source_sha256": "39518a59f98f70f2d5619d33509a9190758ce355a40c505daad57838e5ee8f16",
+      "report": "engine/build/campaign-001-keyframe_set_unload_hook-204b091b551e/research-result.json",
+      "report_sha256": "195244ed527826127ed0dc4ad68b8a49e38885e6eea811d735190402490d6e12",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 28,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.422021,
+      "stderr": ""
+    }
+  ]
+}

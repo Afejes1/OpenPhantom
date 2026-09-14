@@ -1,0 +1,27 @@
+{
+  "id": "face_free",
+  "address": 4690072,
+  "size": 35,
+  "body_size": 35,
+  "source": "src/face_free.c",
+  "symbol": "_op_face_free",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 14,
+      "address": 4690107,
+      "symbol": "_op_face_free_arrays",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 26,
+      "address": 4805714,
+      "symbol": "_op_release",
+      "kind": "rel32-call"
+    }
+  ]
+}
