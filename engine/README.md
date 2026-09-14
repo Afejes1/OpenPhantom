@@ -5,6 +5,14 @@ This fork contains a growing set of VC5-calibrated reconstructions. The
 locations, comparison categories, compiler waivers, and remaining work.
 It is not yet a playable reconstructed OpenPhantom engine.
 
+The [September 14 contributor reconciliation](research/extended-2026-09-14-1325/results.md)
+counts unique functions against the newer September 12 evening manifest and
+separates accepted work, pending exact matches, and research. Its linked
+[combined inventory](research/extended-2026-09-14-1325/manifest-comparison.json) and
+[reproducible comparison script](planning/compare_manifest.py) avoid counting
+tests or repeated verification runs as additional functions. Older dated reports
+retain their original manifest denominators.
+
 The required code generator is the original **Visual C++ 5.0 RTM** identified in
 [engine-identification.md](engine-identification.md#1a-resolved-the-toolchain-by-byte-for-byte-compilation).
 The verified profile uses Windows Docker Desktop with a pinned Linux/wibo

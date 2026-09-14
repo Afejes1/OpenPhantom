@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "status": "static-handoff-no-implementation",
+  "prepared_utc": "2026-09-14T14:02:13.916150+00:00",
+  "compiler_attempts": 0,
+  "original_game_executed": false,
+  "baseline_accepted": 273,
+  "baseline_event": 70,
+  "functions": [
+    {
+      "id": "save_lifecycle",
+      "address": "0x0046F3C3",
+      "team_reported_name": "module_broadcast",
+      "team_reported_status": "not_done",
+      "full_bytes": 230,
+      "body_bytes": 230,
+      "next_entry": "0x0046F4A9",
+      "alignment_tail_bytes": 0,
+      "abi": "cdecl int(int module_id, unsigned int event)",
+      "existing_symbol": "_op_save_lifecycle",
+      "bindings": [
+        {
+          "offset": 24,
+          "address": "0x0046F529",
+          "symbol": "_op_module_find_by_id",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 91,
+          "address": "0x006D64C4",
+          "symbol": "_op_module_head",
+          "kind": "dir32"
+        },
+        {
+          "offset": 158,
+          "address": "0x006D64C8",
+          "symbol": "_op_module_tail",
+          "kind": "dir32"
+        }
+      ],
+      "observed_call_sites": 24,
+      "semantics": [
+        "Nonzero ID uses accepted finder; missing returns1; found callback(event,0,0) returns signed result.",
+        "ID0 events4/6 cache head and traverse live next; all other events cache tail and traverse live previous.",
+        "No status filtering; each link is read after its callback; callback returns are ignored for broadcast, final0."
+      ],
+      "existing_integration": [
+        "save_load_slot_teardown already binds this original address as _op_save_lifecycle.",
+        "save_slots.h declares void(int,int), and save_slots_behavior.c supplies the current authored observer.",
+        "Keep the existing symbol and coherently refine the return to int; do not introduce a duplicate body or alias.",
+        "Preserve the old save-chain observation by installing a real module callback that checks its lifecycle stage and permitted save-path mutation before path/load stages."
+      ],
+      "source_shape_risk": "Observed32-byte local frame: result-4,module-8; event/result stores at-12/-16 targeted,-20/-24 forward,-28/-32 backward. The decompiler removes these dead stores. Determine their legitimate source or compiler origin; no fabricated stack frame, dummy byte padding or shortened target.",
+      "required_fixture": [
+        "Real finder, empty/rotated/duplicate/signed-ID lists and missing ID.",
+        "Events4/6 versus zero,ordinary,high-bit and all-bit events; exact callback(event,0,0) order.",
+        "Explicit live-link truncate/skip and global endpoint mutation, full guarded36-byte nodes.",
+        "Signed callback return extremes and targeted-versus-broadcast result rules.",
+        "Actual save teardown -> dispatcher -> module callback -> path construction -> load chain with pre-call expected state."
+      ],
+      "readiness": "ABI, extents and operands verified; source-shape investigation and source/fixture implementation remain."
+    }
+  ],
+  "first_action": "Batch-accept the reviewed193-byte module_start_all when grouping the next cohort; preserve C067 source/fixture/results. Keep shutdown research parked until its redundant result-copy origin is understood.",
+  "focused_carry_in": [
+    {
+      "id": "module_start_all",
+      "address": "0x0046EFFE",
+      "source": "research/campaign-067-module-start-all/candidate.c",
+      "result": "research/campaign-067-module-start-all/result.json",
+      "status": "exact-awaiting-batch-acceptance"
+    }
+  ],
+  "research_carry_in": [
+    {
+      "id": "module_send_shutdown",
+      "address": "0x0046EF38",
+      "source": "research/campaign-067-module-send-shutdown/candidate.c",
+      "result": "research/campaign-067-module-send-shutdown/result.json",
+      "status": "full198-candidate193-source-shape-pending",
+      "implementation_attempts_used": 1,
+      "original_implementation_started_utc": "2026-09-14T14:05:27.434981+00:00",
+      "do_not_reset_cap": true
+    }
+  ]
+}

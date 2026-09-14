@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "module_send_shutdown",
+  "candidate": "candidate.c",
+  "symbol": "_op_module_send_shutdown",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c",
+    "finder.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [
+    "finder.c"
+  ],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

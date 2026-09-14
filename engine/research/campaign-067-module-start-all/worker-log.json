@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "module_start_all",
+  "implementation_started_utc": "2026-09-14T14:05:27.434981+00:00",
+  "implementation_cutoff_utc": "2026-09-14T14:10:00Z",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural module dispatch with accepted finder and live callback traversal",
+      "started_utc": "2026-09-14T14:05:27.779788+00:00",
+      "finished_utc": "2026-09-14T14:05:29.445375+00:00",
+      "returncode": 0,
+      "source_sha256": "5ebc00aa41f124e89669b6282e1a85c6d05ef9d554a33e89b6d2767aa7187e56",
+      "report": "engine/build/campaign-001-module_start_all-0f9ff787e743/research-result.json",
+      "report_sha256": "136f62885613f01bcf57da0bd8f3b94691dfd59332328fec4649c72381d5b6e8",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 193,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.438218,
+      "stderr": ""
+    }
+  ]
+}

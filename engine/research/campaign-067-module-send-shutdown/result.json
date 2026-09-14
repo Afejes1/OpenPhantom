@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "campaign": "067",
+  "id": "module_send_shutdown",
+  "status": "focused-mismatch",
+  "comparison": {
+    "id": "module_send_shutdown",
+    "address": 4648760,
+    "size": 198,
+    "candidate_size": 193,
+    "body_size": 198,
+    "status": "mismatch",
+    "literal_function_match": false,
+    "layout_verified": false,
+    "adjusted_bytes": 0,
+    "object_sha256": "5361099b92b294c3ca90ae829653dac29de6eed3d5d341d7d6f695c0caf28519",
+    "reason": "complete function extent differs"
+  },
+  "different_percent": null,
+  "source_snapshot": {
+    "research/campaign-067-module-send-shutdown/candidate.c": "f4b13f081f71c33499d39971bc8c51f44e28b58672a2080bfbae4aa5ad1fd42c",
+    "research/campaign-067-module-send-shutdown/api.h": "4408f6730f3a4e026fac44d64c071b6fa101870af710be5e6c3420076ca8353d",
+    "research/campaign-067-module-send-shutdown/behavior.c": "859a6d741b4705899a05f38ba57d436382de97ff3c0523ef96143a6c28381483",
+    "research/campaign-067-module-send-shutdown/finder.c": "8eb18991f1f4295f8675be0d135e1cdcafad16ef826b634d74b87b2247324499",
+    "research/campaign-067-module-send-shutdown/case.json": "c487b98526eae06f5621d71d358fbb9d091b003e456dbf55dcb5d85fa78696d6",
+    "research/campaign-001/verify.py": "78bcf92d994fdab04d1a983838fe9f492162d2626b35390259d9976b92cbbe78",
+    "target.json": "d2bfe98f8a797bb497dcc5483ba417b2eb92d74e23f2fbeef4675e16de565ea1",
+    "research/campaign-067-module-send-shutdown/target.json": "a58e33a895892927cd6b88240821b83c4d5dc96e98b6ebd1ec43be25b8c77dee",
+    "research/surface-emission/probe.py": "cd4ef4126dacfc16197636a4b0c7007639efe1033e8e2b329e4939a6083c5f1b",
+    "research/surface-emission/native_listing_diagnostic.py": "3cad0339396c73301ef5861eed3c40f925482fd7c2e4ec45f801e9d0e5d34665",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "959d15268c4d927e57271424dbcb1c709cf89cbf3e48ff545e4e15c4d6425f27",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "reference": {
+    "sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
+    "size": 829952
+  },
+  "native_report": "engine/build/campaign-001-module_send_shutdown-db4714d9b6c4/research-result.json",
+  "native_report_sha256": "26a4cf91d7581e747e1749cd4ca23fb4f2acd97c2fdbdde5a2406862bde6d472",
+  "docker_report": "engine/build/campaign-001-module_send_shutdown-0bfbf85b67c3/research-result.json",
+  "docker_report_sha256": "4a0ab44e2c95f83afae97a552f8eaed21eef3d33e4a67569b3aecab9b8ac1c20",
+  "artifact": {
+    "id": "module_send_shutdown",
+    "source": "candidate.c",
+    "symbol": "_op_module_send_shutdown",
+    "object": "candidate.obj",
+    "object_sha256": "5361099b92b294c3ca90ae829653dac29de6eed3d5d341d7d6f695c0caf28519",
+    "function_section_bytes": 193,
+    "function_section_sha256": "f729ea4625b2d93e38aa195fc27b15a022532fd75ddf4a6fe8fe7ed0880e84cf",
+    "relocation_count": 2,
+    "assembly_listing": "candidate.cod",
+    "assembly_listing_sha256": "646da985bc77eaa9b38b70ea517056c79636153c92c979285fc80a79dcb0ddf9",
+    "assembly_listing_has_terminators": false,
+    "function_inventory": "candidate.function.json",
+    "function_inventory_sha256": "1a0512d885f52d501cf11465f25ab3ea0e95110efbc1247ccffb37f957622676"
+  },
+  "fixture": {
+    "sha256": "51e00ed5cd0692913ca0ad376f9216ce29d3a8378c0529dcbebe17cc4e00c64d",
+    "passed": true,
+    "stdout": "module_send_shutdown: 343200 checks, 0 failures\n",
+    "checks": 343200,
+    "failures": 0
+  },
+  "native_docker_function_and_relocations_equal": true,
+  "native_elapsed_seconds": 1.401084,
+  "docker_elapsed_seconds": 6.959266,
+  "accepted_history_record": false,
+  "original_game_executed": false,
+  "whole_executable_match": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "review": "research/campaign-067/review.json",
+  "limitations": [
+    "Complete function evidence; external callbacks are authored fixtures. Shared types and final linked executable placement remain pending."
+  ],
+  "evidence_category": "research-candidate"
+}

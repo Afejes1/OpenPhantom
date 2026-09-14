@@ -1,0 +1,27 @@
+{
+  "id": "module_send_shutdown",
+  "address": 4648760,
+  "size": 198,
+  "body_size": 198,
+  "source": "src/module_send_shutdown.c",
+  "symbol": "_op_module_send_shutdown",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 24,
+      "address": 4650281,
+      "symbol": "_op_module_find_by_id",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 99,
+      "address": 7169220,
+      "symbol": "_op_module_head",
+      "kind": "dir32"
+    }
+  ]
+}

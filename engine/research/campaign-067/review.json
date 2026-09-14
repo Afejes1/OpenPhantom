@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T14:09:20.476425+00:00",
+  "conclusion": "approved-one-exact-one-research",
+  "source_snapshots_verified": true,
+  "verified_snapshot_inputs": 30,
+  "verified_reports": 4,
+  "observations": [
+    "Start193/193exact with2operands; shutdown193/198research with no percentage.",
+    "Both343200-checkfixtures pass and native/Docker code/fixup parity holds.",
+    "All30snapshot entries and4final reports independently rehashed with zero mismatches.",
+    "Asymmetric defaults, real first-match finder, guarded live traversal and post-callback status updates remain correct.",
+    "No fabricated stack storage, byte exclusions, warning waivers or new accepted functions."
+  ]
+}

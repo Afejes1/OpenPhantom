@@ -1,6 +1,6 @@
 # Campaign 066 results
 
-Six exact module functions match 900 complete bytes after eleven verified address operands. All 1,613,760 authored fixture checks pass, including real accepted ID lookup. These checks are assertions across repeated bounded cases, not additional reconstructed functions or game-wide coverage. Shared acceptance remains pending.
+Six exact module functions match 900 complete bytes after eleven verified address operands. All 1,613,760 authored fixture checks pass, including real accepted ID lookup. These checks are assertions across repeated bounded cases, not additional reconstructed functions or game-wide coverage. [Shared acceptance047](../acceptance-047/results.md) records all six in event70.
 
 | Function | Full bytes | Verified operands | Fixture checks |
 | --- | ---: | ---: | ---: |

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "module_send_shutdown",
+  "implementation_started_utc": "2026-09-14T14:05:27.434981+00:00",
+  "implementation_cutoff_utc": "2026-09-14T14:10:00Z",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural module dispatch with accepted finder and live callback traversal",
+      "started_utc": "2026-09-14T14:05:29.451665+00:00",
+      "finished_utc": "2026-09-14T14:05:31.083806+00:00",
+      "returncode": 1,
+      "source_sha256": "f4b13f081f71c33499d39971bc8c51f44e28b58672a2080bfbae4aa5ad1fd42c",
+      "report": "engine/build/campaign-001-module_send_shutdown-1caa24ea424f/research-result.json",
+      "report_sha256": "cadb1fec3cf4ff0628e0adf41e93c1e9682b79d48ca91ad851833df0cf1ab8e0",
+      "status": "mismatch",
+      "candidate_size": 193,
+      "different_bytes": null,
+      "elapsed_seconds": 1.40239,
+      "stderr": ""
+    }
+  ]
+}

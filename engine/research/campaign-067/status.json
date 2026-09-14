@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "status": "reviewed-one-exact-one-research",
+  "preparation_started_utc": "2026-09-14T14:00:00Z",
+  "implementation_started_utc": "2026-09-14T14:05:27.434981+00:00",
+  "implementation_cutoff_utc": "2026-09-14T14:10:00Z",
+  "deadline_utc": "2026-09-14T14:20:00Z",
+  "functions": [
+    "module_start_all",
+    "module_send_shutdown"
+  ],
+  "shared_acceptance_this_window": false,
+  "implementation_stopped_utc": "2026-09-14T14:06:47.288407+00:00",
+  "exact_functions": 1,
+  "research_functions": 1,
+  "promotions": 0,
+  "review": "research/campaign-067/review.json",
+  "completed_utc": "2026-09-14T14:09:20.481713+00:00"
+}

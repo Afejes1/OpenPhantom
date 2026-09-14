@@ -27,3 +27,9 @@ toolchain provenance, native/Docker parity and the deliberate batch checkpoint.
 No shortened spans, ignored bytes, padding injection or warning waivers.
 Only the personal fork branch may be pushed. Pause the existing heartbeat at the
 deadline. Do not run the original game, merge upstream/develop, or purchase usage.
+
+C066 completed six promotions at event70. C067 then used the remaining pre14:10
+implementation time for focused-only work: one exact start helper awaits the next
+batch, and shutdown remains research with an unresolved full extent. There was
+one shared full regression checkpoint. See [results](results.md), the
+[per-function ledger](functions.json), and [next work](next-work.json).

@@ -13,15 +13,25 @@
   "baseline_local_team_not_done": 259,
   "baseline_remaining": 684,
   "campaigns": [
-    "066"
+    "066",
+    "067"
   ],
-  "accepted_new": 0,
-  "current_work": "Six exact module functions reviewed and integrated;273registered,69accepted-history events until shared checkpoint.",
-  "focused_exact_new": 6,
-  "focused_checks": 1613760,
+  "accepted_new": 6,
+  "current_work": "Six accepted at event70; one more focused exact and one research candidate reviewed separately. Final publication and fixed14:25stop.",
+  "focused_exact_new": 7,
+  "focused_checks": 2300160,
   "usage_observation": {
     "observed_utc": "2026-09-14T13:43:00Z",
     "shared_weekly_used_percent": 80,
     "shared_weekly_remaining_percent": 20
-  }
+  },
+  "accepted_current": 273,
+  "evidence_event_current": 70,
+  "remaining_current": 678,
+  "local_team_not_done_current": 265,
+  "source_commit": "4789186cfddc4781d88da548aa2807ea120171ec",
+  "acceptance": "research/acceptance-047/results.md",
+  "ghidra_metadata_saved_utc": "2026-09-14T13:54:57.143Z",
+  "focused_exact_pending_acceptance": 1,
+  "research_candidates_new": 1
 }

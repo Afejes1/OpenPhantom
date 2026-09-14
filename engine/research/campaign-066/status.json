@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "reviewed-exact-awaiting-shared-acceptance",
+  "status": "accepted",
   "preparation_started_utc": "2026-09-14T13:27:00Z",
   "implementation_started_utc": "2026-09-14T13:35:25.563340+00:00",
   "implementation_cutoff_utc": "2026-09-14T13:53:00Z",
@@ -22,5 +22,8 @@
   "operands": 11,
   "checks": 1613760,
   "implementation_compiles": 7,
-  "runner_invocations": 8
+  "runner_invocations": 8,
+  "accepted_event": "engine/evidence/runs/000070-5617c8a530e377e3.json",
+  "accepted_count": 6,
+  "completed_utc": "2026-09-14T14:00:23.847929+00:00"
 }

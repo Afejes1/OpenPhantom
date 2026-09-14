@@ -15,7 +15,7 @@
   "registered_after": 273,
   "full_span_bytes": 900,
   "verified_operands": 11,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 6,
   "team_reported_done": 0,
   "manifest": "planning/team-manifest-20260912-1849.json",
@@ -27,5 +27,15 @@
     "sha256": "801d6640894b7d88c52ddded69ad83ccb789cbfb6eb34866e082f92122fb684c",
     "returncode": 0
   },
-  "parent_prefix_check": "All prior267target and registry entries equal baseline9a9a138"
+  "parent_prefix_check": "All prior267target and registry entries equal baseline9a9a138",
+  "accepted_event": "engine/evidence/runs/000070-5617c8a530e377e3.json",
+  "source_commit": "4789186cfddc4781d88da548aa2807ea120171ec",
+  "build_id": "20260914-095145-92db9e9c",
+  "source_snapshot_inputs": 468,
+  "every_source_input_matches_committed_git_blob": true,
+  "retained_focused_checks": 1613760,
+  "real_finder_linked_for_all_six_fixtures": true,
+  "independent_review": "comparison_inventory approved all six include-only canonical bodies, exact prior267target/registry prefixes and six retained namespaced fixture matrices; parent independently confirmed prefixes.",
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34851910959",
+  "supplemental_ci_conclusion": "success"
 }
