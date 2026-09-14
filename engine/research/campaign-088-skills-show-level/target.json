@@ -1,0 +1,14 @@
+{
+  "id": "skills_show_level",
+  "address": 4554688,
+  "size": 5,
+  "body_size": 5,
+  "source": "src/skills_show_level.c",
+  "symbol": "_op_skills_show_level",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

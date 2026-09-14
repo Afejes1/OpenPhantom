@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "skills_show_level",
+  "candidate": "candidate.c",
+  "symbol": "_op_skills_show_level",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

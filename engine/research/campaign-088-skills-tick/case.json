@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "skills_tick",
+  "candidate": "candidate.c",
+  "symbol": "_op_skills_tick",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c",
+    "skills_easier_support.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

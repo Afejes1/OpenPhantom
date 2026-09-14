@@ -1,0 +1,57 @@
+{
+  "id": "task_module_proc",
+  "address": 4675008,
+  "size": 125,
+  "body_size": 125,
+  "source": "src/task_module_proc.c",
+  "symbol": "_op_task_module_proc",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 36,
+      "address": 8816416,
+      "symbol": "_op_task_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 46,
+      "address": 8819356,
+      "symbol": "_op_task_sentinel",
+      "kind": "dir32"
+    },
+    {
+      "offset": 56,
+      "address": 8819352,
+      "symbol": "_op_task_cursor",
+      "kind": "dir32"
+    },
+    {
+      "offset": 66,
+      "address": 8816420,
+      "symbol": "_op_task_current",
+      "kind": "dir32"
+    },
+    {
+      "offset": 82,
+      "address": 8816448,
+      "symbol": "_op_tasks",
+      "kind": "dir32"
+    },
+    {
+      "offset": 99,
+      "address": 8819348,
+      "symbol": "_op_task_target",
+      "kind": "dir32"
+    },
+    {
+      "offset": 109,
+      "address": 8816424,
+      "symbol": "_op_task_simulation",
+      "kind": "dir32"
+    }
+  ]
+}

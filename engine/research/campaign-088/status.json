@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "status": "integration-review",
+  "started_utc": "2026-09-14T20:38:14.697110+00:00",
+  "deadline_utc": "2026-09-14T21:18:14.697110+00:00",
+  "functions": [
+    "skills_tick",
+    "skills_show_level"
+  ],
+  "acceptance": "research/acceptance-061/result.json"
+}

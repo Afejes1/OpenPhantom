@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "skills_show_level",
+  "started_utc": "2026-09-14T20:38:14.697110+00:00",
+  "implementation_cutoff_utc": "2026-09-14T20:53:14.697110+00:00",
+  "deadline_utc": "2026-09-14T21:18:14.697110+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial complete skills tick and original empty show-level source",
+      "started_utc": "2026-09-14T20:38:16.617683+00:00",
+      "finished_utc": "2026-09-14T20:38:18.221642+00:00",
+      "returncode": 0,
+      "source_sha256": "34ab50ac5dceb8e7e777b4956481ffa22ff973ba31d9c6cb62c8ff127cdd53d8",
+      "report": "engine/build/campaign-001-skills_show_level-9b637e924ee9/research-result.json",
+      "report_sha256": "38a983a0f220815b299a009596477f4b34e459ce20b6352abb2377190d0f7a02",
+      "status": "raw-code-match",
+      "candidate_size": 5,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.38003,
+      "stderr": ""
+    }
+  ]
+}

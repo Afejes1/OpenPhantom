@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "task_module_proc",
+  "started_utc": "2026-09-14T20:40:50.499887+00:00",
+  "implementation_cutoff_utc": "2026-09-14T20:55:50.499887+00:00",
+  "deadline_utc": "2026-09-14T21:20:50.499887+00:00",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial complete task registry source",
+      "started_utc": "2026-09-14T20:40:50.783171+00:00",
+      "finished_utc": "2026-09-14T20:40:52.429705+00:00",
+      "returncode": 1,
+      "source_sha256": "40f2e4c4d14d0db71192f1f6374d5d97aa822dbbe8f29b02bea8fbaf162ab23a",
+      "report": "engine/build/campaign-001-task_module_proc-40a23926c383/research-result.json",
+      "report_sha256": "0f4dfdd4216c2b818a67963733aaafc1eea2363f3f6b11255ec192c0205683bb",
+      "status": "mismatch",
+      "candidate_size": 129,
+      "different_bytes": null,
+      "elapsed_seconds": 1.420992,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Enable explicit VC5 memset/memcpy intrinsics matching observed REP stores/copies",
+      "started_utc": "2026-09-14T20:41:32.419546+00:00",
+      "finished_utc": "2026-09-14T20:41:34.100449+00:00",
+      "returncode": 0,
+      "source_sha256": "34351744be88363704088d220981d3eb29f9b8a7502cef83507c8ef02de0f6cc",
+      "report": "engine/build/campaign-001-task_module_proc-2e2beeb00ee8/research-result.json",
+      "report_sha256": "93f572887504300c4e65e241d7024c5999ce93abf376ecb8bbad5ccbb8c65e65",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 125,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.455172,
+      "stderr": ""
+    }
+  ]
+}

@@ -6438,6 +6438,82 @@
         "Callback order, live state and full object/context snapshots are verified."
       ],
       "exceptions": []
+    },
+    {
+      "id": "skills_tick",
+      "module": "skills-state",
+      "analysis_name": "skills_tick",
+      "purpose": "Accumulate elapsed time, capture live level status and ease difficulty at progression thresholds.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/skills-task-acceptance.md",
+        "research/campaign-088-skills-tick/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/skills_tick_behavior.c"
+      ],
+      "quirks": [
+        "All focused matrices retained with complete object snapshots.",
+        "Live callback state and unsigned count semantics preserved."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "skills_show_level",
+      "module": "skills-state",
+      "analysis_name": "skills_show_level",
+      "purpose": "Preserve the original empty show-level function.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/skills-task-acceptance.md",
+        "research/campaign-088-skills-show-level/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/skills_tick_behavior.c"
+      ],
+      "quirks": [
+        "All focused matrices retained with complete object snapshots.",
+        "Original show-level body is a five-byte no-op."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "task_module_proc",
+      "module": "task-manager",
+      "analysis_name": "task_module_proc",
+      "purpose": "Initialize the task registry or clear selected frame state for module events.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/skills-task-acceptance.md",
+        "research/campaign-089-task-module-proc/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/task_registry_behavior.c"
+      ],
+      "quirks": [
+        "All focused matrices retained with complete object snapshots.",
+        "Live callback state and unsigned count semantics preserved."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "task_register",
+      "module": "task-manager",
+      "analysis_name": "task_register",
+      "purpose": "Register the first free update slot with pending context and return its exact record.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/skills-task-acceptance.md",
+        "research/campaign-089-task-register/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/task_registry_behavior.c"
+      ],
+      "quirks": [
+        "All focused matrices retained with complete object snapshots.",
+        "Live callback state and unsigned count semantics preserved."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

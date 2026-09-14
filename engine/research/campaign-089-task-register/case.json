@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "task_register",
+  "candidate": "candidate.c",
+  "symbol": "_op_task_register",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

@@ -12,9 +12,14 @@
   "remaining_current": 612,
   "local_team_not_done_current": 331,
   "evidence_event_current": 83,
-  "pending_exact": [],
+  "pending_exact": [
+    "skills_tick",
+    "skills_show_level",
+    "task_module_proc",
+    "task_register"
+  ],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A060 accepted six console/skills functions; preparing the next bounded skills and task-manager cohort.",
+  "current_work": "A061 integrating skills tick/no-op and two task-registry functions.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": null
+  "acceptance_pending": "acceptance-061"
 }

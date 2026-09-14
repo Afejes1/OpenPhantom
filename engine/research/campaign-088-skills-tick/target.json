@@ -1,0 +1,114 @@
+{
+  "id": "skills_tick",
+  "address": 4554693,
+  "size": 138,
+  "body_size": 138,
+  "source": "src/skills_tick.c",
+  "symbol": "_op_skills_tick",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 8859360,
+      "symbol": "_op_skills_state",
+      "kind": "dir32",
+      "addend": 204
+    },
+    {
+      "offset": 12,
+      "address": 8816404,
+      "symbol": "_op_skills_frame_delta",
+      "kind": "dir32"
+    },
+    {
+      "offset": 18,
+      "address": 8859360,
+      "symbol": "_op_skills_state",
+      "kind": "dir32",
+      "addend": 204
+    },
+    {
+      "offset": 23,
+      "address": 4488472,
+      "symbol": "_op_skills_get_player",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 34,
+      "address": 8917868,
+      "symbol": "_op_skills_level_status",
+      "kind": "dir32"
+    },
+    {
+      "offset": 54,
+      "address": 8859360,
+      "symbol": "_op_skills_state",
+      "kind": "dir32",
+      "addend": 208
+    },
+    {
+      "offset": 60,
+      "address": 8859336,
+      "symbol": "_op_skills_previous_index",
+      "kind": "dir32"
+    },
+    {
+      "offset": 69,
+      "address": 7142080,
+      "symbol": "_op_skills_active_index",
+      "kind": "dir32"
+    },
+    {
+      "offset": 77,
+      "address": 4554478,
+      "symbol": "_op_skills_easier",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 83,
+      "address": 7142080,
+      "symbol": "_op_skills_active_index",
+      "kind": "dir32"
+    },
+    {
+      "offset": 92,
+      "address": 7142080,
+      "symbol": "_op_skills_active_index",
+      "kind": "dir32"
+    },
+    {
+      "offset": 100,
+      "address": 8859336,
+      "symbol": "_op_skills_previous_index",
+      "kind": "dir32"
+    },
+    {
+      "offset": 109,
+      "address": 7142080,
+      "symbol": "_op_skills_active_index",
+      "kind": "dir32"
+    },
+    {
+      "offset": 117,
+      "address": 4554478,
+      "symbol": "_op_skills_easier",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 122,
+      "address": 7142080,
+      "symbol": "_op_skills_active_index",
+      "kind": "dir32"
+    },
+    {
+      "offset": 130,
+      "address": 7142080,
+      "symbol": "_op_skills_active_index",
+      "kind": "dir32"
+    }
+  ]
+}

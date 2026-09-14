@@ -153,6 +153,8 @@ static void clip_flag_tests(void)
 #include "audio_level_behavior.c"
 #include "console_text_behavior.c"
 #include "skills_io_behavior.c"
+#include "skills_tick_behavior.c"
+#include "task_registry_behavior.c"
 #include "kernel_behavior.c"
 #include "video_behavior.c"
 #include "debug_behavior.c"
@@ -408,6 +410,11 @@ int main(void)
     failures += op_test_console_box_clear_row();
     failures += op_test_skills_save();
     failures += op_test_skills_restore();
+    failures += op_test_skills_tick();
+    failures += op_test_skills_show_level();
+    failures += op_test_task_module_proc();
+    failures += op_test_task_register();
+
 
 
     failures += op_test_kernel_show();

@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T20:44:35.635883+00:00",
+  "conclusion": "focused-exact-approved",
+  "snapshot_members": 29,
+  "selected_reports": 4,
+  "checks": 415720,
+  "details": "Full138-byte tick and5-byte original no-op; all16operands verified; exactdyadic elapsed before playerquery; callbackmutations followed by livestatus/index checks; actual canonicaleasier support; full216-byte and globalpreservation.",
+  "integration_review": {
+    "conclusion": "approved",
+    "details": "Parent integration independently reviewed: prior339target/registry unchanged, fourinclude-only bodies, headeroffsets preserved, globals once, actualeasier, CMake/main once, all511048checks retained anddiffclean."
+  }
+}

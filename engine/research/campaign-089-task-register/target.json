@@ -1,0 +1,100 @@
+{
+  "id": "task_register",
+  "address": 4675133,
+  "size": 191,
+  "body_size": 191,
+  "source": "src/task_register.c",
+  "symbol": "_op_task_register",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 45,
+      "address": 8816448,
+      "symbol": "_op_tasks",
+      "kind": "dir32",
+      "addend": 20
+    },
+    {
+      "offset": 82,
+      "address": 8816448,
+      "symbol": "_op_tasks",
+      "kind": "dir32"
+    },
+    {
+      "offset": 99,
+      "address": 8816448,
+      "symbol": "_op_tasks",
+      "kind": "dir32",
+      "addend": 20
+    },
+    {
+      "offset": 111,
+      "address": 8816448,
+      "symbol": "_op_tasks",
+      "kind": "dir32"
+    },
+    {
+      "offset": 121,
+      "address": 8819328,
+      "symbol": "_op_task_pending",
+      "kind": "dir32"
+    },
+    {
+      "offset": 131,
+      "address": 8819328,
+      "symbol": "_op_task_pending",
+      "kind": "dir32",
+      "addend": 0
+    },
+    {
+      "offset": 137,
+      "address": 8819328,
+      "symbol": "_op_task_pending",
+      "kind": "dir32",
+      "addend": 4
+    },
+    {
+      "offset": 143,
+      "address": 8819328,
+      "symbol": "_op_task_pending",
+      "kind": "dir32",
+      "addend": 8
+    },
+    {
+      "offset": 149,
+      "address": 8819328,
+      "symbol": "_op_task_pending",
+      "kind": "dir32",
+      "addend": 12
+    },
+    {
+      "offset": 155,
+      "address": 8819328,
+      "symbol": "_op_task_pending",
+      "kind": "dir32",
+      "addend": 16
+    },
+    {
+      "offset": 161,
+      "address": 8816416,
+      "symbol": "_op_task_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 170,
+      "address": 8816416,
+      "symbol": "_op_task_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 181,
+      "address": 8816448,
+      "symbol": "_op_tasks",
+      "kind": "dir32"
+    }
+  ]
+}
