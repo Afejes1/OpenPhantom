@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "colormap_build_blend",
+  "compiler_invocations": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial scalar implementation; VC5 rejects implicit int-to-byte conversion under W4/WX",
+      "started_utc": "2026-09-14T03:17:35.106654+00:00",
+      "finished_utc": "2026-09-14T03:17:36.048132+00:00",
+      "returncode": 2,
+      "source_sha256": "ab2eeb492be4f8cf751ee74934eaa81add46ab6a3707e037bd9682a2ced89031",
+      "report": "engine/build/campaign-001-colormap_build_blend-bef41284c496/research-result.json",
+      "report_sha256": "99548726d56fead88591b8e820fdbc431aa0fc613b431529c585054811de1b44",
+      "status": "not-attempted",
+      "candidate_size": null,
+      "different_bytes": null,
+      "elapsed_seconds": 0.727818,
+      "stderr": "FAILED: command failed: candidate-compile\n"
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Explicit outer byte cast preserves low-byte-plus-one behavior; compiled extent remains short",
+      "started_utc": "2026-09-14T03:24:33.961856+00:00",
+      "finished_utc": "2026-09-14T03:24:35.531121+00:00",
+      "returncode": 1,
+      "source_sha256": "819a30bcd2f729b1d637345fcdb0378a61845ad84df8db0e62583e092bfd0687",
+      "report": "engine/build/campaign-001-colormap_build_blend-7baa237165cb/research-result.json",
+      "report_sha256": "3026ece28446d452a01f4e9a4ae8763a9e4a1c60030cdd3c1f6fe715643b05b5",
+      "status": "mismatch",
+      "candidate_size": 373,
+      "different_bytes": null,
+      "elapsed_seconds": 1.353275,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Row-pointer indexing reproduces original address arithmetic and full extent; local placement remains unresolved",
+      "started_utc": "2026-09-14T03:26:27.196105+00:00",
+      "finished_utc": "2026-09-14T03:26:28.775041+00:00",
+      "returncode": 1,
+      "source_sha256": "713589cb95e8c1dc2e06b6b195bb9baa1b4282ccbb8fffecb3bd6e683e696dca",
+      "report": "engine/build/campaign-001-colormap_build_blend-e5d6323fc46a/research-result.json",
+      "report_sha256": "a7aed00bb01a27139554d8f6d817bf6ede3839ccf7349fbd146a3c1f23cc2a2f",
+      "status": "mismatch",
+      "candidate_size": 375,
+      "different_bytes": 41,
+      "elapsed_seconds": 1.362112,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-research",
+  "stop_reason": "Preserve complete-span candidate and independent behavior evidence; avoid unbounded local-name tuning",
+  "frozen_utc": "2026-09-14T03:31:41.788542+00:00"
+}

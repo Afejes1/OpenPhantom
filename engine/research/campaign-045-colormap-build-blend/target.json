@@ -1,0 +1,39 @@
+{
+  "id": "colormap_build_blend",
+  "address": 4689169,
+  "size": 375,
+  "body_size": 375,
+  "source": "src/colormap_build_blend.c",
+  "symbol": "_op_colormap_build_blend",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 238,
+      "address": 4885396,
+      "symbol": "_op_colour_one",
+      "kind": "dir32"
+    },
+    {
+      "offset": 261,
+      "address": 4885396,
+      "symbol": "_op_colour_one",
+      "kind": "dir32"
+    },
+    {
+      "offset": 284,
+      "address": 4885396,
+      "symbol": "_op_colour_one",
+      "kind": "dir32"
+    },
+    {
+      "offset": 324,
+      "address": 4763062,
+      "symbol": "_op_palette_nearest",
+      "kind": "rel32-call"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "colormap_build_blend",
+  "candidate": "candidate.c",
+  "symbol": "_op_colormap_build_blend",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c",
+    "oracle.h"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

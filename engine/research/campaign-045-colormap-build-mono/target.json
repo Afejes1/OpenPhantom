@@ -1,0 +1,21 @@
+{
+  "id": "colormap_build_mono",
+  "address": 4688741,
+  "size": 428,
+  "body_size": 428,
+  "source": "src/colormap_build_mono.c",
+  "symbol": "_op_colormap_build_mono",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 380,
+      "address": 4763062,
+      "symbol": "_op_palette_nearest",
+      "kind": "rel32-call"
+    }
+  ]
+}

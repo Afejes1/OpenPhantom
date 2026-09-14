@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "campaign-045",
+  "started_utc": "2026-09-14T03:09:00Z",
+  "stop_implementation_utc": "2026-09-14T03:44:00Z",
+  "deadline_utc": "2026-09-14T03:54:00Z",
+  "baseline_commit": "764481d4a2262c40962b37aaefbc54f3ac83baf2",
+  "functions": [
+    "colormap_build_mono",
+    "colormap_build_blend"
+  ],
+  "prepared_following_functions": [
+    "colormap_load_entry",
+    "colormap_write"
+  ],
+  "status": "complete-research",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T03:31:41.788542+00:00"
+}

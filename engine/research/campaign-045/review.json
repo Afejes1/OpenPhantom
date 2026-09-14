@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T03:31:41.788542+00:00",
+  "conclusion": "approved-as-research-only",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "colormap_build_blend",
+      "address": 4689169,
+      "full_span_bytes": 375,
+      "candidate_size": 375,
+      "verified_operands": 4,
+      "different_bytes": 41,
+      "different_percent": 10.933333333333334,
+      "checks": 1966096,
+      "team_status": "not_done",
+      "result": "research/campaign-045-colormap-build-blend/result.json"
+    },
+    {
+      "id": "colormap_build_mono",
+      "address": 4688741,
+      "full_span_bytes": 428,
+      "candidate_size": 428,
+      "verified_operands": 1,
+      "different_bytes": 57,
+      "different_percent": 13.317757009345794,
+      "checks": 395149,
+      "team_status": "not_done",
+      "result": "research/campaign-045-colormap-build-mono/result.json"
+    }
+  ],
+  "observations": [
+    "Independent Ghidra review confirms complete spans, every operand, float-by-value nearest ABI, loop order and output extents.",
+    "Outer byte casts resolve C4244 without warning waivers. Row-pointer arithmetic restores full extent.",
+    "Finite literal oracles, guarded snapshots and callback-visible write order cover documented table-generation cases.",
+    "The standalone check_oracles.py reproduces all authored literal values without game content."
+  ],
+  "limitations": [
+    "Full-span byte mismatches remain above5percent; no exact or near-match claim."
+  ]
+}
