@@ -234,7 +234,7 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Acceptance038 planning: integrate six exact module helpers with actual ID lookup, flag lookup and removal chains.",
+  "current_work": "Acceptance038 integration applied: six exact module helpers and real lookup/flags/removal chains; review and clean checkpoint pending.",
   "original_game_executed": false,
   "accepted_functions_current": 197,
   "evidence_records_current": 60,

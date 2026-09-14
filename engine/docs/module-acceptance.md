@@ -1,0 +1,9 @@
+# Module acceptance
+
+Six exact functions add 485 complete bytes and 13 verified operands. The prior 197 target and registry entries remain unchanged; the focused candidate bodies change only their shared header include. The recovered 36-byte node and signed status-bit layout retain compile-time size and offset checks.
+
+The original ID lookup now executes inside both flag lookup and removal. The void removal wrapper executes the actual remover, which executes the actual finder. Bounded guarded lists cover all lengths zero through five, rotated ownership, signed IDs, duplicate IDs and missing entries. Full expected state is captured before candidate calls and predicted unlink writes are checked inside the shared release observer. Tests check first-duplicate selection and then independently locate any surviving duplicate after removal. Release-time mutations remain visible after return. No finder-time mutation is simulated because the actual finder has no external callback or writes.
+
+The focused initialization, direct ID lookup and name-lookup cases remain in the shared fixture with unique local namespaces. Name comparisons route through the existing comparator only while the module case is active, preserving existing B3D tests. Current identifier and next-link mutations, zero-length prefix matches, bounded names and exact first-match termination remain covered. Flag tests use varied per-node raw words and all low-five-bit requests plus high-bit and all-bit requests; requested bit2 reads raw status bit3.
+
+The release observer never frees memory. Only owned acyclic lists and bounded authored names are exercised; malformed pointers, cycles and arbitrary input lengths remain outside fixture claims. The callback word remains opaque. No byte exclusions or VC5 warning waivers are added. Whole-executable identity remains pending.

@@ -3640,6 +3640,120 @@
         "Real open/read/rewind/close lifecycle connected; allocation/formatter/CRT enumeration and handle/heap release remain authored observers."
       ],
       "exceptions": []
+    },
+    {
+      "id": "module_initialize_once",
+      "module": "module",
+      "analysis_name": "module_initialize_once",
+      "purpose": "Start result1. If initialized latch006d64cc is0, set it1 and return0; otherwise return1 without changing it. Manifest module_reset is retained as provenance but the observed operation is initialize/test-once, not reset.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-acceptance.md",
+        "research/campaign-053-module-initialize-once/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_behavior.c"
+      ],
+      "quirks": [
+        "Real ID lookup is linked into flags and removal; the void wrapper calls the actual remover.",
+        "Signed one-bit status fields are pinned to VC5 x86 layout; name comparison and release remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "module_remove_void",
+      "module": "module",
+      "analysis_name": "module_remove_void",
+      "purpose": "Call module_remove(id) and ignore its return. Signed IDs and observer results/mutations are preserved mechanically. No callers were found; this is a bounded wrapper reconstruction.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-acceptance.md",
+        "research/campaign-053-module-remove-void/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_behavior.c"
+      ],
+      "quirks": [
+        "Real ID lookup is linked into flags and removal; the void wrapper calls the actual remover.",
+        "Signed one-bit status fields are pinned to VC5 x86 layout; name comparison and release remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "module_get_flags",
+      "module": "module",
+      "analysis_name": "module_get_flags",
+      "purpose": "Find module by ID. Missing returns0. Requested bit1 exposes status bit0 asresultbit0; requested bit2 exposes statusbit1 asresultbit1; requestedbit4 exposes statusbit3 asresultbit2. Other requested bits are ignored. Signed one-bit fields plus &1 reproduce observed SHL/SAR extraction without hand-written negative shifts. A literal16-entry table independently defines expected mappings; shared acceptance connects the actual side-effect-free finder.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-acceptance.md",
+        "research/campaign-053-module-get-flags/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_behavior.c"
+      ],
+      "quirks": [
+        "Real ID lookup is linked into flags and removal; the void wrapper calls the actual remover.",
+        "Signed one-bit status fields are pinned to VC5 x86 layout; name comparison and release remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "module_find_by_id",
+      "module": "module",
+      "analysis_name": "module_find_by_id",
+      "purpose": "Starting at head006d64c4, follow next@0 and return the first module whose id@8 equals the signed input bit pattern, otherwise null. Guarded acyclic lists cover0..5nodes, rotations, duplicates, missing and signed boundary IDs; no cycle/capacity claim.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-acceptance.md",
+        "research/campaign-053-module-find-by-id/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_behavior.c"
+      ],
+      "quirks": [
+        "Real ID lookup is linked into flags and removal; the void wrapper calls the actual remover.",
+        "Signed one-bit status fields are pinned to VC5 x86 layout; name comparison and release remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "module_remove",
+      "module": "module",
+      "analysis_name": "module_remove",
+      "purpose": "Initialize result1; find first module byID. If present, patch previous->next and next->previous, update head/tail on identity, release the original module, then return0. Full expected graph is independently predicted from an owned ordered list before candidate writes. Release sees all unlink/global writes complete; its mutations persist. Only consistent owned doubly linked topologies are supplied; no actual heap free occurs.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-acceptance.md",
+        "research/campaign-053-module-remove/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_behavior.c"
+      ],
+      "quirks": [
+        "Real ID lookup is linked into flags and removal; the void wrapper calls the actual remover.",
+        "Signed one-bit status fields are pinned to VC5 x86 layout; name comparison and release remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "module_find_by_name",
+      "module": "module",
+      "analysis_name": "module_find_by_name",
+      "purpose": "Walk from initial head along live next pointers. Compare(input,node.name,length) using existing strncmp helper address49a620; first zero returns the CURRENT node id, so callback ID mutation is visible. Nonzero callback can retarget next; global head replacement does not restart this walk. Exhaustion returns0, indistinguishable from id0. Authored names fit16bytes; length0 matches head. Tests use real host-library strncmp only on owned strings and bounded lengths0/1/3/5/15/16, with complete graph/input snapshots.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-acceptance.md",
+        "research/campaign-053-module-find-by-name/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_behavior.c"
+      ],
+      "quirks": [
+        "Real ID lookup is linked into flags and removal; the void wrapper calls the actual remover.",
+        "Signed one-bit status fields are pinned to VC5 x86 layout; name comparison and release remain authored observers."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

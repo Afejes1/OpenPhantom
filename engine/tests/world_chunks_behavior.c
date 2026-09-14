@@ -151,7 +151,9 @@ static int world_chunks_read(void *destination, int size, int count, OP_B3D_STRE
 }
 int op_compare_tag(const char *left, const char *right, unsigned int limit)
 {
-    int call = wc_compares++;
+    int call;
+    if(mnm_active)return mnm_compare(left,right,limit);
+    call = wc_compares++;
     WC_CHECK(world_chunks_active && wc_stage == 0);
     wc_check_state();
     WC_CHECK(limit == 8 && left == (const char *)wc_local);
@@ -181,6 +183,7 @@ int op_stream_seek(void *handle, long offset, int origin)
 }
 void op_release(void *memory)
 {
+    if(mlc_active){mlc_release(memory);return;}
     if(dcy_active){dcy_release(memory);return;}
     if(dcl_active){dcl_release(memory);return;}
     if(sfl_active){sfl_release(memory);return;}

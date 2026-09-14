@@ -7584,6 +7584,174 @@
           "kind": "rel32-call"
         }
       ]
+    },
+    {
+      "id": "module_initialize_once",
+      "address": 4647904,
+      "size": 44,
+      "body_size": 44,
+      "source": "src/module_initialize_once.c",
+      "symbol": "_op_module_initialize_once",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 13,
+          "address": 7169228,
+          "symbol": "_op_module_initialized",
+          "kind": "dir32"
+        },
+        {
+          "offset": 22,
+          "address": 7169228,
+          "symbol": "_op_module_initialized",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "module_remove_void",
+      "address": 4648591,
+      "size": 17,
+      "body_size": 17,
+      "source": "src/module_remove_void.c",
+      "symbol": "_op_module_remove_void",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 8,
+          "address": 4650333,
+          "symbol": "_op_module_remove",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "module_get_flags",
+      "address": 4648608,
+      "size": 152,
+      "body_size": 152,
+      "source": "src/module_get_flags.c",
+      "symbol": "_op_module_get_flags",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 18,
+          "address": 4650281,
+          "symbol": "_op_module_find_by_id",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "module_find_by_id",
+      "address": 4650281,
+      "size": 52,
+      "body_size": 52,
+      "source": "src/module_find_by_id.c",
+      "symbol": "_op_module_find_by_id",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7169220,
+          "symbol": "_op_module_head",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "module_remove",
+      "address": 4650333,
+      "size": 149,
+      "body_size": 149,
+      "source": "src/module_remove.c",
+      "symbol": "_op_module_remove",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 18,
+          "address": 4650281,
+          "symbol": "_op_module_find_by_id",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 83,
+          "address": 7169220,
+          "symbol": "_op_module_head",
+          "kind": "dir32"
+        },
+        {
+          "offset": 96,
+          "address": 7169220,
+          "symbol": "_op_module_head",
+          "kind": "dir32"
+        },
+        {
+          "offset": 105,
+          "address": 7169224,
+          "symbol": "_op_module_tail",
+          "kind": "dir32"
+        },
+        {
+          "offset": 119,
+          "address": 7169224,
+          "symbol": "_op_module_tail",
+          "kind": "dir32"
+        },
+        {
+          "offset": 128,
+          "address": 4805714,
+          "symbol": "_op_release",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "module_find_by_name",
+      "address": 4650482,
+      "size": 71,
+      "body_size": 71,
+      "source": "src/module_find_by_name.c",
+      "symbol": "_op_module_find_by_name",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7169220,
+          "symbol": "_op_module_head",
+          "kind": "dir32"
+        },
+        {
+          "offset": 44,
+          "address": 4826656,
+          "symbol": "_op_compare_tag",
+          "kind": "rel32-call"
+        }
+      ]
     }
   ]
 }

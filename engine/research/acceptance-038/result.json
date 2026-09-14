@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "acceptance-038",
+  "baseline_commit": "8a93c2326a0279adaa15d60f396cb36bc3b8c070",
+  "functions": [
+    "module_initialize_once",
+    "module_remove_void",
+    "module_get_flags",
+    "module_find_by_id",
+    "module_remove",
+    "module_find_by_name"
+  ],
+  "promotions": 6,
+  "registered_before": 197,
+  "registered_after": 203,
+  "full_span_bytes": 485,
+  "verified_operands": 13,
+  "status": "integration-pending",
+  "team_not_done": 6,
+  "team_reported_done": 0,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "supplemental_compatibility": "Existing modern target-wide CRT deprecation suppression retained; original VC5 unchanged.",
+  "initial_fixture_compile": {
+    "returncode": 2,
+    "reason": "Shared fixture namespace mc_ collided with existing font measurement helpers; renamed only new module fixture symbols to mlc_.",
+    "receipt": "engine/private/a038-initial-namespace-collision.json",
+    "sha256": "a54be9e0b02c4aadc6c2c04cfa3cba2d4f01dd3f8dd51f4820879ff1af2927a1"
+  },
+  "prebuild_fixture_compile": {
+    "receipt": "engine/private/a038-targeted-compile.json",
+    "sha256": "5b2ac9ab29cb2924dd2154e67f6f51901c6e6ae5092f13548d156f391c3d7336",
+    "returncode": 0
+  },
+  "independent_review": "comparison_inventory: approved unchanged197-entry prefixes, include-only source parity, guarded real lookup/flags/removal chains and active-gated shared observers; registry description clarified to separate focused finder mutation from actual side-effect-free lookup."
+}
