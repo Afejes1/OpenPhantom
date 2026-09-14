@@ -1,0 +1,39 @@
+{
+  "id": "palette_resource_set_name",
+  "address": 4279917,
+  "size": 74,
+  "body_size": 74,
+  "source": "src/palette_resource_set_name.c",
+  "symbol": "_op_palette_resource_set_name",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 9,
+      "address": 6008048,
+      "symbol": "_op_palette_resource_name",
+      "kind": "dir32"
+    },
+    {
+      "offset": 43,
+      "address": 6008048,
+      "symbol": "_op_palette_resource_name",
+      "kind": "dir32"
+    },
+    {
+      "offset": 53,
+      "address": 4661312,
+      "symbol": "_op_acquire_resource",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 61,
+      "address": 6008308,
+      "symbol": "_op_palette_resource_current",
+      "kind": "dir32"
+    }
+  ]
+}

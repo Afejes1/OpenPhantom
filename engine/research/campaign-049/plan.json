@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "campaign-049",
+  "started_utc": "2026-09-14T04:43:00Z",
+  "stop_implementation_utc": "2026-09-14T05:18:00Z",
+  "deadline_utc": "2026-09-14T05:28:00Z",
+  "baseline_commit": "631a68ed78e254979180440e511d5bce6a27982f",
+  "functions": [
+    "palette_resource_load",
+    "palette_resource_free",
+    "palette_resource_install",
+    "palette_resource_get",
+    "palette_resource_set_name",
+    "palette_resource_release"
+  ],
+  "status": "prepared",
+  "original_game_executed": false
+}

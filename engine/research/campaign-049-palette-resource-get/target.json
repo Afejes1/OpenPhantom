@@ -1,0 +1,21 @@
+{
+  "id": "palette_resource_get",
+  "address": 4279907,
+  "size": 10,
+  "body_size": 10,
+  "source": "src/palette_resource_get.c",
+  "symbol": "_op_palette_resource_get",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 6008308,
+      "symbol": "_op_palette_resource_current",
+      "kind": "dir32"
+    }
+  ]
+}

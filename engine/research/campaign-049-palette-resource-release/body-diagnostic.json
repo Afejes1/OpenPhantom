@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "palette_resource_release",
+  "kind": "separate-body-diagnostic-not-acceptance",
+  "full_target_bytes": 41,
+  "body_bytes": 34,
+  "unrepresented_alignment_bytes": 7,
+  "body_equal_after_verified_relocations": true,
+  "reference_body_sha256": "9ee2930dde2c933862e9e5fb5d916b6da308b650ea1ab91808c4215480f28eb9",
+  "original_full_span_sha256": "221428ede6e0401c284287935fc168c8896ec0ac40204344ce5f791414017434",
+  "observations": [
+    {
+      "runner": "native",
+      "report": "engine/build/campaign-001-palette_resource_release-c2eb7dad1df7/research-result.json",
+      "report_sha256": "3e0f3283002e2073315a2c863972f1f98e0d253e4976e557b4faf7f065c711dd",
+      "function_inventory_sha256": "53cb72d36ce76c41f5b7eeda1ac61f010ff5d0ba47a31dc5c94cbb8594f83011",
+      "body_bytes": 34,
+      "address_operands": 3,
+      "resolved_body_sha256": "9ee2930dde2c933862e9e5fb5d916b6da308b650ea1ab91808c4215480f28eb9",
+      "body_equal": true
+    },
+    {
+      "runner": "docker",
+      "report": "engine/build/campaign-001-palette_resource_release-fd805726c250/research-result.json",
+      "report_sha256": "6c0bf7d9cad316a752d2baad703a91c52de6c0dc05d93755afa9031fa54e3efd",
+      "function_inventory_sha256": "a893cbf930317400e9ba5ce103d988ce9012fc6f822e28a03812bad6a49198bd",
+      "body_bytes": 34,
+      "address_operands": 3,
+      "resolved_body_sha256": "9ee2930dde2c933862e9e5fb5d916b6da308b650ea1ab91808c4215480f28eb9",
+      "body_equal": true
+    }
+  ],
+  "full_span_accepted": false,
+  "target_unchanged": true,
+  "byte_exclusions": [],
+  "different_percent": null
+}

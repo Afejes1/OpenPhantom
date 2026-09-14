@@ -1,0 +1,5 @@
+# palette_resource_load
+
+Allocate844 bytes via pool wrapper49589b(pool global006ccfb0,size), zero all844 bytes, then call colormap_load_entry(path,map). Return map when that callback returns nonzero, otherwise null; no wrapper cleanup is performed on callback zero. The allocation result is dereferenced without a null guard, so the fixture supplies only owned successful allocations. Pool argument and later global changes are observable even though the original pool wrapper currently forwards only size to the allocator. Reader returns0/1/-1/INT_MIN are varied through an authored observer. Actual accepted reader always returns1, so callback-zero coverage is a wrapper observation, not a connected actual-reader claim.
+
+All storage and strings are authored. Complete guarded map/name/global snapshots and callback order are checked. Original program execution, copied game data, byte exclusions and warning waivers are prohibited. Individual functions remain separate from shared acceptance and whole-executable identity.

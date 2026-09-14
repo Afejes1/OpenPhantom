@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "campaign": "049",
+  "id": "palette_resource_release",
+  "status": "focused-mismatch",
+  "comparison": {
+    "id": "palette_resource_release",
+    "address": 4279991,
+    "size": 41,
+    "candidate_size": 34,
+    "body_size": 34,
+    "status": "mismatch",
+    "literal_function_match": false,
+    "layout_verified": false,
+    "adjusted_bytes": 0,
+    "object_sha256": "395042cd3077279d3efc2ed0ceb73f10fed99c5c829db4b5f2289a65e17af41a",
+    "reason": "complete function extent differs"
+  },
+  "different_percent": null,
+  "source_snapshot": {
+    "research/campaign-049-palette-resource-release/candidate.c": "0946ccd9924062af810ea917d8c368c322eaf2aed488f36c2cc8b8b4ba4896c7",
+    "research/campaign-049-palette-resource-release/api.h": "f0873bab85d35a45783effee6eb8eadf8c615823f794808c3a474d970173303c",
+    "research/campaign-049-palette-resource-release/behavior.c": "5252f3b67e7dcc8874b3332fb94599276f48337143bf8e2b210236121b2498a1",
+    "research/campaign-049-palette-resource-release/case.json": "db3b1a4b4d7ef397f7602edaf0a86f7639d55b69026d895f96369c769fb5235f",
+    "research/campaign-001/verify.py": "78bcf92d994fdab04d1a983838fe9f492162d2626b35390259d9976b92cbbe78",
+    "target.json": "c656cdcfb7cba2bf43d172337b2accefef1c10c8fc86fd9587851c10c8851854",
+    "research/campaign-049-palette-resource-release/target.json": "5c93568df6f6849d14bbc88bf110ea06ea0e7f963b388e14d9acbb2325c29e32",
+    "research/surface-emission/probe.py": "cd4ef4126dacfc16197636a4b0c7007639efe1033e8e2b329e4939a6083c5f1b",
+    "research/surface-emission/native_listing_diagnostic.py": "3cad0339396c73301ef5861eed3c40f925482fd7c2e4ec45f801e9d0e5d34665",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "959d15268c4d927e57271424dbcb1c709cf89cbf3e48ff545e4e15c4d6425f27",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "reference": {
+    "sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
+    "size": 829952
+  },
+  "native_report": "engine/build/campaign-001-palette_resource_release-c2eb7dad1df7/research-result.json",
+  "native_report_sha256": "3e0f3283002e2073315a2c863972f1f98e0d253e4976e557b4faf7f065c711dd",
+  "docker_report": "engine/build/campaign-001-palette_resource_release-fd805726c250/research-result.json",
+  "docker_report_sha256": "6c0bf7d9cad316a752d2baad703a91c52de6c0dc05d93755afa9031fa54e3efd",
+  "artifact": {
+    "id": "palette_resource_release",
+    "source": "candidate.c",
+    "symbol": "_op_palette_resource_release",
+    "object": "candidate.obj",
+    "object_sha256": "395042cd3077279d3efc2ed0ceb73f10fed99c5c829db4b5f2289a65e17af41a",
+    "function_section_bytes": 34,
+    "function_section_sha256": "af9860c77a7e8a0b2966e24d3ccfa9381d9b2e9c24fcf21a29f0ab6f7fc2fb1e",
+    "relocation_count": 3,
+    "assembly_listing": "candidate.native.cod",
+    "assembly_listing_sha256": "27ecfe2e6c10ba4359052decefda029f32b9c97d050816e74e002d4f429b4967",
+    "assembly_listing_has_terminators": true,
+    "function_inventory": "candidate.function.json",
+    "function_inventory_sha256": "a893cbf930317400e9ba5ce103d988ce9012fc6f822e28a03812bad6a49198bd",
+    "listing_fallback": {
+      "kind": "verified-native-peer-listing",
+      "original_docker_listing": "candidate.cod",
+      "original_docker_listing_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "native_peer_report_sha256": "3e0f3283002e2073315a2c863972f1f98e0d253e4976e557b4faf7f065c711dd",
+      "native_peer_object_sha256": "a98d1f69f7a35551d90ddee4be3f6df25982194849429558250df7a21e7dc130",
+      "native_peer_listing_sha256": "27ecfe2e6c10ba4359052decefda029f32b9c97d050816e74e002d4f429b4967",
+      "function_and_relocations_equal_before_fixture": true
+    }
+  },
+  "fixture": {
+    "sha256": "636d40d11dd414129316bbdd24fc54f6821905fe00b21c3702906ad0ee16d511",
+    "passed": true,
+    "stdout": "palette_resource_release: 96 checks, 0 failures\n",
+    "checks": 96,
+    "failures": 0
+  },
+  "native_docker_function_and_relocations_equal": true,
+  "native_elapsed_seconds": 1.397771,
+  "docker_elapsed_seconds": 5.177733,
+  "accepted_history_record": false,
+  "original_game_executed": false,
+  "whole_executable_match": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "review": "research/campaign-049/review.json",
+  "limitations": [
+    "Research only:34-byte candidate versus41-byte full target; seven observed CC alignment bytes remain unrepresented.",
+    "Separate body-diagnostic.json verifies34 body bytes and all3relocations without changing the full target or accepting the function.",
+    "No percentage is inferred from differing extents. Null forwarding is exercised only through authored non-dereferencing release observers."
+  ],
+  "evidence_category": "research-candidate",
+  "body_diagnostic": "research/campaign-049-palette-resource-release/body-diagnostic.json"
+}

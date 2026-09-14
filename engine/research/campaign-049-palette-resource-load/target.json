@@ -1,0 +1,33 @@
+{
+  "id": "palette_resource_load",
+  "address": 4279759,
+  "size": 71,
+  "body_size": 71,
+  "source": "src/palette_resource_load.c",
+  "symbol": "_op_palette_resource_load",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 7131056,
+      "symbol": "_op_palette_pool",
+      "kind": "dir32"
+    },
+    {
+      "offset": 17,
+      "address": 4806811,
+      "symbol": "_op_pool_allocate",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 48,
+      "address": 4687756,
+      "symbol": "_op_colormap_load_entry",
+      "kind": "rel32-call"
+    }
+  ]
+}

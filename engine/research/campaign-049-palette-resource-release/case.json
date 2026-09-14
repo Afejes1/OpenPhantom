@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "palette_resource_release",
+  "candidate": "candidate.c",
+  "symbol": "_op_palette_resource_release",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "palette_resource_get",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed wrapper and intrinsic operations from complete static ABI and operand inventory",
+      "started_utc": "2026-09-14T04:50:43.061779+00:00",
+      "finished_utc": "2026-09-14T04:50:44.626953+00:00",
+      "returncode": 0,
+      "source_sha256": "b9c738a967adaa84f25c3b428561c4563ea6f2303a16eab13accfca6564fe57e",
+      "report": "engine/build/campaign-001-palette_resource_get-010fc51e56c6/research-result.json",
+      "report_sha256": "3775dd28579b0d9cc04a8636faa97b1f1c43f6dfcbb8efba7e3c3b5280a9c604",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 10,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.344932,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T04:58:18.029109+00:00"
+}

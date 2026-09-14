@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "palette_resource_set_name",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural scalar/vector expressions from complete static and floating-point contracts",
+      "started_utc": "2026-09-14T04:50:44.632686+00:00",
+      "finished_utc": "2026-09-14T04:50:46.214982+00:00",
+      "returncode": 0,
+      "source_sha256": "5c93ea0b655385d8f0a9dad5df1f1addda21da757353dfcac5bbc63deffd963a",
+      "report": "engine/build/campaign-001-palette_resource_set_name-34373ce944cc/research-result.json",
+      "report_sha256": "2bcc8b17c6e1ec8d7be2e580a96bc92d7828bf310782a660d0ce10710bd7cad5",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 74,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.362231,
+      "stderr": ""
+    }
+  ]
+}

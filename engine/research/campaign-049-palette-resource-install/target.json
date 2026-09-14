@@ -1,0 +1,39 @@
+{
+  "id": "palette_resource_install",
+  "address": 4279868,
+  "size": 39,
+  "body_size": 39,
+  "source": "src/palette_resource_install.c",
+  "symbol": "_op_palette_resource_install",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 6008308,
+      "symbol": "_op_palette_resource_current",
+      "kind": "dir32"
+    },
+    {
+      "offset": 10,
+      "address": 4687568,
+      "symbol": "_op_colormap_set_current",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 19,
+      "address": 6008308,
+      "symbol": "_op_palette_resource_current",
+      "kind": "dir32"
+    },
+    {
+      "offset": 25,
+      "address": 4700563,
+      "symbol": "_op_material_install_palette",
+      "kind": "rel32-call"
+    }
+  ]
+}

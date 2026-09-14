@@ -1,0 +1,27 @@
+{
+  "id": "palette_resource_free",
+  "address": 4279830,
+  "size": 38,
+  "body_size": 38,
+  "source": "src/palette_resource_free.c",
+  "symbol": "_op_palette_resource_free",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 15,
+      "address": 4688366,
+      "symbol": "_op_colormap_free_entry",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 27,
+      "address": 4806879,
+      "symbol": "_op_pool_release",
+      "kind": "rel32-call"
+    }
+  ]
+}
