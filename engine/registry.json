@@ -3754,6 +3754,120 @@
         "Signed one-bit status fields are pinned to VC5 x86 layout; name comparison and release remain authored observers."
       ],
       "exceptions": []
+    },
+    {
+      "id": "conf_open_read",
+      "module": "stdconf",
+      "analysis_name": "conf_open_read",
+      "purpose": "Forward path and the fixed read-mode pointer to conf_open and preserve its int return. Caller load_info_text_catalog tests EAX immediately after call0043e28e; generated void signature was misleading.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/conf-stream-acceptance.md",
+        "research/campaign-054-conf-open-read/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/conf_stream_behavior.c"
+      ],
+      "quirks": [
+        "Service callbacks and core open remain authored observers; no actual stream operation executes.",
+        "Closing writer disables subsequent byte/string writes; input handle state is checked through the actual getter."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "conf_close_write",
+      "module": "stdconf",
+      "analysis_name": "conf_close_write",
+      "purpose": "If output handle is nonzero, capture it and call service close at offset0x34; ignore result. Then clear output handle, copy127 bytes with strncpy semantics from the fixed closed-name pointer, and explicitly set output-name byte127 to zero. Close/copy callbacks can mutate globals, and the final store ordering is retained. Zero handle touches nothing.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/conf-stream-acceptance.md",
+        "research/campaign-054-conf-close-write/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/conf_stream_behavior.c"
+      ],
+      "quirks": [
+        "Service callbacks and core open remain authored observers; no actual stream operation executes.",
+        "Closing writer disables subsequent byte/string writes; input handle state is checked through the actual getter."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "conf_write_string",
+      "module": "stdconf",
+      "analysis_name": "conf_write_string",
+      "purpose": "Reject zero output handle or null text. Capture unsigned strlen once, call service write(handle,text,length) at offset0x40, and return1 iff exact returned byte count equals captured length. Empty strings with live handles still invoke write with zero length; callback mutation cannot change the captured expected count.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/conf-stream-acceptance.md",
+        "research/campaign-054-conf-write-string/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/conf_stream_behavior.c"
+      ],
+      "quirks": [
+        "Service callbacks and core open remain authored observers; no actual stream operation executes.",
+        "Closing writer disables subsequent byte/string writes; input handle state is checked through the actual getter."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "conf_write_bytes",
+      "module": "stdconf",
+      "analysis_name": "conf_write_bytes",
+      "purpose": "Reject zero output handle or null data. Call cdecl service write(handle,data,count) and compare its returned unsigned bit pattern with count; exact equality returns1. Original has two stack arguments and no ECX parameter despite generated thiscall metadata.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/conf-stream-acceptance.md",
+        "research/campaign-054-conf-write-bytes/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/conf_stream_behavior.c"
+      ],
+      "quirks": [
+        "Service callbacks and core open remain authored observers; no actual stream operation executes.",
+        "Closing writer disables subsequent byte/string writes; input handle state is checked through the actual getter."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "conf_read_bytes",
+      "module": "stdconf",
+      "analysis_name": "conf_read_bytes",
+      "purpose": "Reject zero input-active latch or zero input handle. Otherwise pass data (including null) and unsigned count to service read(handle,data,count) at offset0x38 and return1 only for exact count equality. No data-null check or backend safety claim is added.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/conf-stream-acceptance.md",
+        "research/campaign-054-conf-read-bytes/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/conf_stream_behavior.c"
+      ],
+      "quirks": [
+        "Service callbacks and core open remain authored observers; no actual stream operation executes.",
+        "Closing writer disables subsequent byte/string writes; input handle state is checked through the actual getter."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "conf_get_file",
+      "module": "stdconf",
+      "analysis_name": "conf_get_file",
+      "purpose": "Return the input handle bit pattern without consulting active latch or service table and without side effects.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/conf-stream-acceptance.md",
+        "research/campaign-054-conf-get-file/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/conf_stream_behavior.c"
+      ],
+      "quirks": [
+        "Service callbacks and core open remain authored observers; no actual stream operation executes.",
+        "Closing writer disables subsequent byte/string writes; input handle state is checked through the actual getter."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

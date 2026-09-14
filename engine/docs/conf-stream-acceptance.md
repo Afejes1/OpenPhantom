@@ -1,0 +1,9 @@
+# Configuration stream acceptance
+
+Six exact functions add 336 complete bytes and 21 verified operands. The prior 203 target and registry entries remain unchanged; focused source bodies change only their shared header include. The observed strlen intrinsic directive remains in the string writer. Service offsets and the partial68-byte view stay asserted, with no claimed full-table recovery.
+
+All six reviewed focused fixtures are retained under separate local namespaces and shared globals. The close copy observer routes through the existing single strncpy wrapper only while its case is active. Existing keyframe and colormap copy paths remain intact. The core configuration open and the service callbacks remain authored observers.
+
+Connected tests execute actual getter/read/byte-write/string-write/close functions, then check that the cleared output handle rejects both subsequent writes while the separate input handle remains readable through the actual getter. Full pre-call snapshots track both guarded service tables, all globals, name storage and payload. Callback mutations alter selected tables and handles before later calls; exact count comparisons use independently selected returns. The read observer invokes the actual getter. A payload change makes the following string write correctly use zero length. Close must clear the output handle before copy; only name byte127 is overwritten after that callback. All expected writes are predicted before candidate stores or from explicit authored callback effects.
+
+No actual stream operation or original content runs. Oversized counts and null read buffers are only safely forwarded to non-dereferencing authored observers in the focused fixtures. Name/mode tokens are authored substitutes; their original contents or mutability are not claimed. Whole-executable identity remains pending.

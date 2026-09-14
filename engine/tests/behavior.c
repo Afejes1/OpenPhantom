@@ -125,6 +125,7 @@ static void clip_flag_tests(void)
 #include "save_stream_behavior.c"
 #include "save_slots_behavior.c"
 #include "module_behavior.c"
+#include "conf_stream_behavior.c"
 #include "directory_behavior.c"
 #include "palette_resources_behavior.c"
 #include "matrix_helpers_behavior.c"
@@ -243,6 +244,13 @@ int main(void)
     failures += op_test_module_find_by_id();
     failures += op_test_module_find_by_name();
     failures += op_test_module_connected();
+    failures += op_test_conf_open_read();
+    failures += op_test_conf_close_write();
+    failures += op_test_conf_write_string();
+    failures += op_test_conf_write_bytes();
+    failures += op_test_conf_read_bytes();
+    failures += op_test_conf_get_file();
+    failures += op_test_conf_connected();
     failures += op_test_normal_from_points();
     failures += op_test_palette_lifecycle();
     failures += op_test_palette_name_get();

@@ -252,7 +252,7 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Acceptance039 planning: integrate six exact configuration stream helpers and shared service callback sequencing.",
+  "current_work": "Acceptance039 applied: six exact configuration helpers, retained focused fixtures and real read/write/close/getter sequence; review and clean checkpoint pending.",
   "original_game_executed": false,
   "accepted_functions_current": 203,
   "evidence_records_current": 61,

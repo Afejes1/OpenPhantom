@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "acceptance-039",
+  "baseline_commit": "8dca8fa88434a177ffb83a0a9a30dbd1b38bcfec",
+  "functions": [
+    "conf_open_read",
+    "conf_close_write",
+    "conf_write_string",
+    "conf_write_bytes",
+    "conf_read_bytes",
+    "conf_get_file"
+  ],
+  "promotions": 6,
+  "registered_before": 203,
+  "registered_after": 209,
+  "full_span_bytes": 336,
+  "verified_operands": 21,
+  "status": "integration-pending",
+  "team_not_done": 6,
+  "team_reported_done": 0,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "supplemental_compatibility": "Existing modern target-wide CRT deprecation suppression retained; original VC5 unchanged.",
+  "prebuild_fixture_compile": {
+    "receipt": "engine/private/a039-targeted-compile.json",
+    "sha256": "02b169813e009d7a4b939c0e0be183e57d8099ff0b3c0ec282d3ee6760770294",
+    "returncode": 0
+  },
+  "independent_review": "comparison_inventory approved unchanged203-entry target/registry prefixes, include-only candidate parity, scoped shared-copy routes and guarded actual read/write/close/getter sequence; no material blockers."
+}

@@ -362,6 +362,8 @@ char *op_copy_keyframe_name(char *out, const char *in, unsigned int count)
 {
     unsigned int i;
     int ended = 0;
+    if(cfcy_active)return cfcy_copy(out,in,count);
+    if(cfcw_active)return cfcw_copy(out,in,count);
     if(cmr_active)return cmr_copy(out,in,count);
     if(cmw_active)return cmw_copy(out,in,count);
     kh_CHECK(kh_stage == 0 && out == kh_entries[kh_row].value.name && in == op_default_resource_name && count == 31);
