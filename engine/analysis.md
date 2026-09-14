@@ -385,3 +385,7 @@ The ten-hour window beginning2026-09-14 01:40:41 UTC has added19 newly exact fun
 ## Colormap reader and geometry checkpoint
 
 Acceptance033 connects the real colormap reader and writer plus point-plane distance and vector angle, reaching176 accepted functions at event56. All176 complete spans and shared authored tests pass on clean original-toolchain source, with same-source supplemental CI. The current overnight window has23 newly exact functions (20 team-not_done,3 team-reported_done),2,199 complete bytes and26 promotions including3 carried-in cases. The real reader returns success after gray fallback even when file open fails; this behavior is now reflected in the connected lifecycle and extended-list fixtures. Authored static-pool tests do not establish real file/heap behavior or whole-executable identity. See [acceptance033](research/acceptance-033/results.md).
+
+## Palette resource and face-normal checkpoint
+
+Acceptance034 reaches182 accepted functions at event57 with six complete-span matches and real palette dependency-chain fixtures. All182 original-toolchain comparisons and shared authored tests pass; same-source supplemental CI passes with its historical-CRT compatibility setting documented. This overnight window has29 newly exact functions (26 team-not_done,3 team-reported_done),2,645 complete bytes and32 promotions including3 carried-in cases. The Euler transform and palette release alignment tail remain research. Whole-executable identity remains pending. See [acceptance034](research/acceptance-034/results.md).
