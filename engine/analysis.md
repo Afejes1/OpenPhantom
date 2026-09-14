@@ -437,3 +437,9 @@ Acceptance 045 reaches 264 accepted functions at event 68, with three promotions
 ## Final debug and provenance checkpoint
 
 Acceptance 046 reaches 267 accepted functions at event 69. Three new debug wrappers match 203 complete bytes and 19 operands. All 267 comparisons and shared tests pass, including 62,694 focused and 93312 connected debug checks; same-source supplemental CI succeeds. All 461 source inputs match their recorded Git blobs after correcting two historical local line-ending discrepancies. This ten-hour window has 114 newly exact functions across 8,494 bytes and 117 promotions including three carried in. See [acceptance 046](research/acceptance-046/results.md). Whole-executable identity remains pending.
+
+## Next-session save-header ABI note
+
+Static follow-up on451BC2 found that its name helper46F639 looks up a module ID, then strncpy-copies node+20 into the caller buffer. It takes three stack arguments; entry PUSH ECX is local allocation, and the caller cleans12 bytes. Ghidra previously displayed a misleading four-argument thiscall form. The bridge rejected an explicit cdecl prototype but accepted the corrected three-argument signature; re-decompilation now shows the right argument flow with an unresolved calling-convention warning. An evidence comment is saved, no function was renamed, and no candidate was compiled. Missing-module lookup leaves the name region untouched, while the header writer ignores the helper return; future fixture domains must account for that. See [next-work](research/extended-2026-09-14-0140/next-work.json).
+
+Re-decompiling the save-header caller still injects an extra receiver-like argument despite the corrected helper body. This metadata inconsistency remains unresolved and is explicit in next-work.json; the observed three-stack-argument contract is the authority. No source acceptance or test result depends on this preliminary metadata.

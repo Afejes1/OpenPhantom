@@ -50,10 +50,13 @@
       "observed": [
         "Constructs a 24-byte stack record with an eight-byte name region, size field, fixed version byte, 16-bit kind and zero fields.",
         "Writes one record to the active save stream; zero write result invokes a context/diagnostic/context sequence and returns failure.",
-        "Diagnostic text must remain an authored external label in fixtures."
+        "Diagnostic text must remain an authored external label in fixtures.",
+        "The name helper46F639 takes stack arguments module ID, destination and count; it looks up a module with46F529 and copies from node+20 with strncpy only when found.",
+        "A missing module returns failure without initializing destination; the header writer ignores that return, so fixture domains must address potentially uninitialized name bytes.",
+        "The entry PUSH ECX in the helper reserves a local; it does not consume an ECX receiver."
       ],
       "remaining": [
-        "Confirm copy-helper source/destination ABI and precise truncation/termination semantics.",
+        "Keep module-lookup identity and strncpy count/termination behavior explicit; constrain valid module lookup before claiming initialized full header bytes.",
         "Verify all nine observed address operands against disassembly before creating a target.",
         "Test full record bytes and callback-visible stack record lifetime, write success/failure and context ordering."
       ]
@@ -82,5 +85,19 @@
         "Preserve the full80-byte interval; do not pad source or claim a body-only acceptance."
       ]
     }
-  ]
+  ],
+  "ghidra_metadata_followup": {
+    "address": "0x0046F639",
+    "signature": "int FUN_0046f639(int module_id, char *destination, unsigned int count)",
+    "explicit_cdecl_signature_bridge_attempt": "rejected",
+    "plain_three_argument_signature": "applied",
+    "recompiled_helper": "correct three arguments with an unknown-calling-convention warning",
+    "instruction_level_convention": "cdecl: three stack arguments, caller cleanup12",
+    "convention_warning_remaining": true,
+    "comment_added": true,
+    "saved_utc": "2026-09-14T11:30:46.330Z",
+    "function_renamed": false,
+    "recompiled_caller": "Caller decompilation still injects a fourth receiver-like argument despite the corrected callee signature. The instruction-level three-stack-argument contract remains authoritative; do not use the unresolved call display as ABI evidence.",
+    "fully_resolved": false
+  }
 }

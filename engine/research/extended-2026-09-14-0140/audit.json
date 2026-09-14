@@ -28,7 +28,8 @@
   "limits": [
     "Function comparisons account for verified relocations; original linked placement and whole executable identity remain unverified.",
     "Authored fixture assertion counts are not a measure of whole-game behavior coverage.",
-    "Shared account usage is account-wide, not attributable exactly to this thread."
+    "Shared account usage is account-wide, not attributable exactly to this thread.",
+    "Original-toolchain execution used the existing locked local Docker environment; a fresh-machine recovery build was not performed in this window."
   ],
   "final_independent_review": "All totals,267 event functions and461 source inputs independently rechecked against working files and committed Git blobs. Historical events remain unchanged. Function index uses accepted_by_final_checkpoint to distinguish cumulative acceptance from final-batch promotions.",
   "original_reference_hash_unchanged": true,
