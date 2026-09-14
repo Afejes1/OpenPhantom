@@ -1,0 +1,27 @@
+{
+  "id": "console_box_destroy",
+  "address": 4769049,
+  "size": 32,
+  "body_size": 32,
+  "source": "src/console_box_destroy.c",
+  "symbol": "_op_console_box_destroy",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 4834096,
+      "symbol": "_op_platform_heap_free",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 23,
+      "address": 4834096,
+      "symbol": "_op_platform_heap_free",
+      "kind": "rel32-call"
+    }
+  ]
+}

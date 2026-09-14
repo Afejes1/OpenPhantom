@@ -1,5 +1,6 @@
 #include "../src/platform_helpers.h"
 static int ph_active;
+static void c840_heap_free(void *ptr);
 int op_platform_highres;
 double op_platform_millisecond_scale, op_platform_second_scale;
 unsigned int(__stdcall *op_platform_time_get_time)(void);
@@ -587,6 +588,7 @@ void *op_platform_heap_alloc(unsigned int size)
 }
 void op_platform_heap_free(void *ptr)
 {
+    if(ph_active==5) { c840_heap_free(ptr);return; }
     if (ph_active == 0)
     {
         phad_heap_free(ptr);

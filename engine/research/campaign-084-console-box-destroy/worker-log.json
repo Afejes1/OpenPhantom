@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "console_box_destroy",
+  "started_utc": "2026-09-14T19:38:03.922029+00:00",
+  "implementation_cutoff_utc": "2026-09-14T19:53:03.922029+00:00",
+  "deadline_utc": "2026-09-14T20:18:03.922029+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial recovered console lifecycle/cursor/fill state ordering",
+      "started_utc": "2026-09-14T19:38:25.592980+00:00",
+      "finished_utc": "2026-09-14T19:38:27.244460+00:00",
+      "returncode": 0,
+      "source_sha256": "5e2f8f77bdb84201c318968537b42eec460bacd50f5d257d84add7bbbb4f4c55",
+      "report": "engine/build/campaign-001-console_box_destroy-4a12c683fe4e/research-result.json",
+      "report_sha256": "40936dcfb12996456743779d4e15099d3be94b5d36770c9eb94695dd721f560c",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 32,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.428131,
+      "stderr": ""
+    }
+  ]
+}

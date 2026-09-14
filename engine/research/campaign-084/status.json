@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "status": "exact-integration-review",
+  "started_utc": "2026-09-14T19:38:03.922029+00:00",
+  "deadline_utc": "2026-09-14T20:18:03.922029+00:00",
+  "preparation_started_utc": "2026-09-14T19:31:00Z",
+  "functions": [
+    "console_box_destroy",
+    "console_show_cursor",
+    "console_clear",
+    "console_clear_row"
+  ],
+  "preflight_corrections": [
+    "Cursor depth operand at original0x48C5D9 has offset72, not73; strict original relocation inventory rejected the transcription before compilation.",
+    "Explicit ushort conversion for defaultAttr &0xf0 resolves VC5 C4244 under unchanged W4WX. Failed receipts retained."
+  ],
+  "acceptance": "research/acceptance-059/result.json",
+  "focused_checks": 183824,
+  "full_span_bytes_exact": 312,
+  "verified_operands_exact": 27,
+  "implementation_attempts": {
+    "console_box_destroy": 1,
+    "console_show_cursor": 2,
+    "console_clear": 6,
+    "console_clear_row": 6
+  },
+  "fixture_correction": "Outerushort cast for promotedternary under unchanged W4WX; native/Docker finalpairs rerun."
+}

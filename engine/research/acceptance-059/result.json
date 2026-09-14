@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "acceptance-059",
+  "baseline_commit": "cc9768cd9ae3a3ed376b70f5693206dcb8eae404",
+  "functions": [
+    "console_box_destroy",
+    "console_show_cursor",
+    "console_clear",
+    "console_clear_row",
+    "music_set_volume",
+    "audio_set_pan"
+  ],
+  "promotions": 6,
+  "registered_before": 327,
+  "registered_after": 333,
+  "full_span_bytes": 441,
+  "verified_operands": 36,
+  "raw_functions": 0,
+  "status": "integration-pending",
+  "team_not_done": 6,
+  "team_reported_done": 0,
+  "manifest": "planning/team-manifest-20260912-1849.json",
+  "retained_focused_checks": 239924,
+  "actual_callee_coverage": "Clear and clear-row matrices execute the canonical accepted setAttr source; no source probe or stub replaces it.",
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

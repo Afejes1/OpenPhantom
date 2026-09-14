@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "console_show_cursor",
+  "started_utc": "2026-09-14T19:38:03.922029+00:00",
+  "implementation_cutoff_utc": "2026-09-14T19:53:03.922029+00:00",
+  "deadline_utc": "2026-09-14T20:18:03.922029+00:00",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial recovered console lifecycle/cursor/fill state ordering",
+      "started_utc": "2026-09-14T19:38:27.404129+00:00",
+      "finished_utc": "2026-09-14T19:38:28.344934+00:00",
+      "returncode": 2,
+      "source_sha256": "8e6a2b44a2e4b7edb722ef44b80fb54bae10a60ff96c24d04d81a59c0ae1f8fc",
+      "report": "engine/build/campaign-001-console_show_cursor-29acc90ec80d/research-result.json",
+      "report_sha256": "5bc8f22d52d29db1b47eb379df5e8da55f1404e70d995490619e99361d8ba7a7",
+      "status": "not-attempted",
+      "candidate_size": null,
+      "different_bytes": null,
+      "elapsed_seconds": 0.713623,
+      "stderr": "FAILED: reference relocation inventory disagrees with console_show_cursor\n"
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Initial recovered console lifecycle/cursor/fill state ordering",
+      "started_utc": "2026-09-14T19:40:10.602931+00:00",
+      "finished_utc": "2026-09-14T19:40:12.249425+00:00",
+      "returncode": 0,
+      "source_sha256": "8e6a2b44a2e4b7edb722ef44b80fb54bae10a60ff96c24d04d81a59c0ae1f8fc",
+      "report": "engine/build/campaign-001-console_show_cursor-6a1c2b0ef5ee/research-result.json",
+      "report_sha256": "b41a565a7a0a721d60784146a0fbdf5cd9f85119d35c603dc177a1e81c598b13",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 122,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.422584,
+      "stderr": ""
+    }
+  ]
+}

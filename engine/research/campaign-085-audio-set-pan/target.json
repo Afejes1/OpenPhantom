@@ -1,0 +1,32 @@
+{
+  "id": "audio_set_pan",
+  "address": 4811887,
+  "size": 49,
+  "body_size": 49,
+  "source": "src/audio_set_pan.c",
+  "symbol": "_op_audio_set_pan",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 8790132,
+      "symbol": "_op_audio_gate_word",
+      "kind": "dir32"
+    },
+    {
+      "offset": 20,
+      "address": 4887664,
+      "float32": 2000.0
+    },
+    {
+      "offset": 25,
+      "address": 4826188,
+      "symbol": "__ftol",
+      "kind": "rel32-call"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "console_clear_row",
+  "address": 4769448,
+  "size": 71,
+  "body_size": 71,
+  "source": "src/console_clear_row.c",
+  "symbol": "_op_console_clear_row",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 10,
+      "address": 8784772,
+      "symbol": "_op_console_default_attr",
+      "kind": "dir32"
+    },
+    {
+      "offset": 21,
+      "address": 4769311,
+      "symbol": "_op_console_set_attr",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 56,
+      "address": 8809080,
+      "symbol": "_op_console_output",
+      "kind": "dir32"
+    },
+    {
+      "offset": 63,
+      "address": 9180572,
+      "symbol": "_op_console_fill_character",
+      "kind": "dir32"
+    }
+  ]
+}

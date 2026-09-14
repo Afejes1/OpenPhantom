@@ -11370,6 +11370,312 @@
           "kind": "dir32"
         }
       ]
+    },
+    {
+      "id": "console_box_destroy",
+      "address": 4769049,
+      "size": 32,
+      "body_size": 32,
+      "source": "src/console_box_destroy.c",
+      "symbol": "_op_console_box_destroy",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 11,
+          "address": 4834096,
+          "symbol": "_op_platform_heap_free",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 23,
+          "address": 4834096,
+          "symbol": "_op_platform_heap_free",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "console_show_cursor",
+      "address": 4769169,
+      "size": 122,
+      "body_size": 122,
+      "source": "src/console_show_cursor.c",
+      "symbol": "_op_console_show_cursor",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 11,
+          "address": 8784776,
+          "symbol": "_op_console_cursor_depth",
+          "kind": "dir32"
+        },
+        {
+          "offset": 19,
+          "address": 8784776,
+          "symbol": "_op_console_cursor_depth",
+          "kind": "dir32"
+        },
+        {
+          "offset": 27,
+          "address": 8784776,
+          "symbol": "_op_console_cursor_depth",
+          "kind": "dir32"
+        },
+        {
+          "offset": 33,
+          "address": 8784776,
+          "symbol": "_op_console_cursor_depth",
+          "kind": "dir32"
+        },
+        {
+          "offset": 42,
+          "address": 8784784,
+          "symbol": "_op_console_cursor_info",
+          "kind": "dir32",
+          "addend": 4
+        },
+        {
+          "offset": 51,
+          "address": 8784784,
+          "symbol": "_op_console_cursor_info",
+          "kind": "dir32"
+        },
+        {
+          "offset": 57,
+          "address": 8809080,
+          "symbol": "_op_console_output",
+          "kind": "dir32"
+        },
+        {
+          "offset": 64,
+          "address": 9180560,
+          "symbol": "_op_console_set_cursor_info",
+          "kind": "dir32"
+        },
+        {
+          "offset": 72,
+          "address": 8784776,
+          "symbol": "_op_console_cursor_depth",
+          "kind": "dir32"
+        },
+        {
+          "offset": 81,
+          "address": 8784784,
+          "symbol": "_op_console_cursor_info",
+          "kind": "dir32",
+          "addend": 4
+        },
+        {
+          "offset": 90,
+          "address": 8784784,
+          "symbol": "_op_console_cursor_info",
+          "kind": "dir32"
+        },
+        {
+          "offset": 96,
+          "address": 8809080,
+          "symbol": "_op_console_output",
+          "kind": "dir32"
+        },
+        {
+          "offset": 103,
+          "address": 9180560,
+          "symbol": "_op_console_set_cursor_info",
+          "kind": "dir32"
+        },
+        {
+          "offset": 108,
+          "address": 8784776,
+          "symbol": "_op_console_cursor_depth",
+          "kind": "dir32"
+        },
+        {
+          "offset": 116,
+          "address": 8784776,
+          "symbol": "_op_console_cursor_depth",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "console_clear",
+      "address": 4769361,
+      "size": 87,
+      "body_size": 87,
+      "source": "src/console_clear.c",
+      "symbol": "_op_console_clear",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 10,
+          "address": 8784772,
+          "symbol": "_op_console_default_attr",
+          "kind": "dir32"
+        },
+        {
+          "offset": 21,
+          "address": 4769311,
+          "symbol": "_op_console_set_attr",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 56,
+          "address": 8809080,
+          "symbol": "_op_console_output",
+          "kind": "dir32"
+        },
+        {
+          "offset": 63,
+          "address": 9180572,
+          "symbol": "_op_console_fill_character",
+          "kind": "dir32"
+        },
+        {
+          "offset": 70,
+          "address": 8784772,
+          "symbol": "_op_console_default_attr",
+          "kind": "dir32"
+        },
+        {
+          "offset": 76,
+          "address": 4769311,
+          "symbol": "_op_console_set_attr",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "console_clear_row",
+      "address": 4769448,
+      "size": 71,
+      "body_size": 71,
+      "source": "src/console_clear_row.c",
+      "symbol": "_op_console_clear_row",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 10,
+          "address": 8784772,
+          "symbol": "_op_console_default_attr",
+          "kind": "dir32"
+        },
+        {
+          "offset": 21,
+          "address": 4769311,
+          "symbol": "_op_console_set_attr",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 56,
+          "address": 8809080,
+          "symbol": "_op_console_output",
+          "kind": "dir32"
+        },
+        {
+          "offset": 63,
+          "address": 9180572,
+          "symbol": "_op_console_fill_character",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "music_set_volume",
+      "address": 4807791,
+      "size": 80,
+      "body_size": 80,
+      "source": "src/music_set_volume.c",
+      "symbol": "_op_music_set_volume",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 6,
+          "address": 8790116,
+          "symbol": "_op_music_gate",
+          "kind": "dir32"
+        },
+        {
+          "offset": 15,
+          "address": 4956984,
+          "symbol": "_op_music_aux_device",
+          "kind": "dir32"
+        },
+        {
+          "offset": 29,
+          "address": 4886240,
+          "float32": 65535.0
+        },
+        {
+          "offset": 34,
+          "address": 4826188,
+          "symbol": "__ftol",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 65,
+          "address": 4956984,
+          "symbol": "_op_music_aux_device",
+          "kind": "dir32"
+        },
+        {
+          "offset": 72,
+          "address": 9180852,
+          "symbol": "_op_music_aux_volume",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "audio_set_pan",
+      "address": 4811887,
+      "size": 49,
+      "body_size": 49,
+      "source": "src/audio_set_pan.c",
+      "symbol": "_op_audio_set_pan",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 6,
+          "address": 8790132,
+          "symbol": "_op_audio_gate_word",
+          "kind": "dir32"
+        },
+        {
+          "offset": 20,
+          "address": 4887664,
+          "float32": 2000.0
+        },
+        {
+          "offset": 25,
+          "address": 4826188,
+          "symbol": "__ftol",
+          "kind": "rel32-call"
+        }
+      ]
     }
   ]
 }

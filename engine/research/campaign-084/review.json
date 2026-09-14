@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T19:57:00.154793+00:00",
+  "conclusion": "four-exact-approved",
+  "final_receipt_review": "All58 source snapshot members and8 selected report hashes verified.312completebytes,27operands,183824checks. Natural used origin/written_count locals; actualsetAttr support include-only equal tocanonical. Failed preflight/source/fixture compilations retained.",
+  "integration_review": {
+    "conclusion": "approved",
+    "details": "Six include-only bodies; prior327 entries unchanged vscc9768c; all239924focused checks retained, unique globals/API pointers, actualsetAttr chains, selected/restored heapobserver mode5, pan slot40 with later offsets unchanged, FP state restored, main/CMake once."
+  }
+}

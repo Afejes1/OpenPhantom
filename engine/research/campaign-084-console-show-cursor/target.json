@@ -1,0 +1,107 @@
+{
+  "id": "console_show_cursor",
+  "address": 4769169,
+  "size": 122,
+  "body_size": 122,
+  "source": "src/console_show_cursor.c",
+  "symbol": "_op_console_show_cursor",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 8784776,
+      "symbol": "_op_console_cursor_depth",
+      "kind": "dir32"
+    },
+    {
+      "offset": 19,
+      "address": 8784776,
+      "symbol": "_op_console_cursor_depth",
+      "kind": "dir32"
+    },
+    {
+      "offset": 27,
+      "address": 8784776,
+      "symbol": "_op_console_cursor_depth",
+      "kind": "dir32"
+    },
+    {
+      "offset": 33,
+      "address": 8784776,
+      "symbol": "_op_console_cursor_depth",
+      "kind": "dir32"
+    },
+    {
+      "offset": 42,
+      "address": 8784784,
+      "symbol": "_op_console_cursor_info",
+      "kind": "dir32",
+      "addend": 4
+    },
+    {
+      "offset": 51,
+      "address": 8784784,
+      "symbol": "_op_console_cursor_info",
+      "kind": "dir32"
+    },
+    {
+      "offset": 57,
+      "address": 8809080,
+      "symbol": "_op_console_output",
+      "kind": "dir32"
+    },
+    {
+      "offset": 64,
+      "address": 9180560,
+      "symbol": "_op_console_set_cursor_info",
+      "kind": "dir32"
+    },
+    {
+      "offset": 72,
+      "address": 8784776,
+      "symbol": "_op_console_cursor_depth",
+      "kind": "dir32"
+    },
+    {
+      "offset": 81,
+      "address": 8784784,
+      "symbol": "_op_console_cursor_info",
+      "kind": "dir32",
+      "addend": 4
+    },
+    {
+      "offset": 90,
+      "address": 8784784,
+      "symbol": "_op_console_cursor_info",
+      "kind": "dir32"
+    },
+    {
+      "offset": 96,
+      "address": 8809080,
+      "symbol": "_op_console_output",
+      "kind": "dir32"
+    },
+    {
+      "offset": 103,
+      "address": 9180560,
+      "symbol": "_op_console_set_cursor_info",
+      "kind": "dir32"
+    },
+    {
+      "offset": 108,
+      "address": 8784776,
+      "symbol": "_op_console_cursor_depth",
+      "kind": "dir32"
+    },
+    {
+      "offset": 116,
+      "address": 8784776,
+      "symbol": "_op_console_cursor_depth",
+      "kind": "dir32"
+    }
+  ]
+}

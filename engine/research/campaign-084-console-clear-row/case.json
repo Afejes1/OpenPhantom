@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "console_clear_row",
+  "candidate": "candidate.c",
+  "symbol": "_op_console_clear_row",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c",
+    "set_attr_support.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

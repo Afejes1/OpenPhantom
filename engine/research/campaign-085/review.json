@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T19:59:18.946180+00:00",
+  "conclusion": "two-exact-approved",
+  "final_receipt_review": "28 frozen snapshot members and4 selected report hashes audited;129completebytes,9operands,56100checks. Signedconversion/fullrawOR and finite literal oracles reviewed. Pan finalretry passed; earlierMemoryError receipt remains incomplete. Globaltarget member reviewed against preintegration327 checkpoint; parent verifiedall snapshots beforeintegration.",
+  "integration_review": {
+    "conclusion": "approved",
+    "details": "Six include-only bodies; prior327 entries unchanged vscc9768c; all239924focused checks retained, unique globals/API pointers, actualsetAttr chains, selected/restored heapobserver mode5, pan slot40 with later offsets unchanged, FP state restored, main/CMake once."
+  }
+}

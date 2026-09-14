@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "status": "exact-integration-review",
+  "started_utc": "2026-09-14T19:49:29.725652+00:00",
+  "deadline_utc": "2026-09-14T20:29:29.725652+00:00",
+  "functions": [
+    "music_set_volume",
+    "audio_set_pan"
+  ],
+  "deferred": "music_track_seconds495D40 has143-byte body plus1tail byte before495DD0; no implementation attempt or shortened target",
+  "acceptance": "research/acceptance-059/result.json",
+  "focused_checks": 56100,
+  "full_span_bytes_exact": 129,
+  "verified_operands_exact": 9,
+  "implementation_attempts": {
+    "music_set_volume": 2,
+    "audio_set_pan": 1
+  },
+  "incomplete_final_attempt": "Pan firstDockerfixture andbytechecks passed, but finaltoolchainhash encountered hostMemoryError. Entire native/Docker pair retried unchanged; original incomplete report retained."
+}

@@ -1,0 +1,50 @@
+{
+  "id": "music_set_volume",
+  "address": 4807791,
+  "size": 80,
+  "body_size": 80,
+  "source": "src/music_set_volume.c",
+  "symbol": "_op_music_set_volume",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 8790116,
+      "symbol": "_op_music_gate",
+      "kind": "dir32"
+    },
+    {
+      "offset": 15,
+      "address": 4956984,
+      "symbol": "_op_music_aux_device",
+      "kind": "dir32"
+    },
+    {
+      "offset": 29,
+      "address": 4886240,
+      "float32": 65535.0
+    },
+    {
+      "offset": 34,
+      "address": 4826188,
+      "symbol": "__ftol",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 65,
+      "address": 4956984,
+      "symbol": "_op_music_aux_device",
+      "kind": "dir32"
+    },
+    {
+      "offset": 72,
+      "address": 9180852,
+      "symbol": "_op_music_aux_volume",
+      "kind": "dir32"
+    }
+  ]
+}

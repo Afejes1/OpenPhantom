@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "console_box_destroy",
+  "candidate": "candidate.c",
+  "symbol": "_op_console_box_destroy",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

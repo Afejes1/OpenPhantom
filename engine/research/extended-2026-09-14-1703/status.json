@@ -12,9 +12,16 @@
   "remaining_current": 624,
   "local_team_not_done_current": 319,
   "evidence_event_current": 81,
-  "pending_exact": [],
+  "pending_exact": [
+    "console_box_destroy",
+    "console_show_cursor",
+    "console_clear",
+    "console_clear_row",
+    "music_set_volume",
+    "audio_set_pan"
+  ],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A058 accepted eleven UI/console functions; next console control and independent subsystem inventory in preparation.",
+  "current_work": "A059 integrating four console controls and two audio level controls.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": null
+  "acceptance_pending": "acceptance-059"
 }

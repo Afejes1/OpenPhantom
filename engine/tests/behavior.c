@@ -149,6 +149,8 @@ static void clip_flag_tests(void)
 #include "ui_input_behavior.c"
 #include "ui_widget_behavior.c"
 #include "console_behavior.c"
+#include "console_control_behavior.c"
+#include "audio_level_behavior.c"
 #include "kernel_behavior.c"
 #include "video_behavior.c"
 #include "debug_behavior.c"
@@ -392,6 +394,13 @@ int main(void)
     failures += op_test_console_set_attr();
     failures += op_test_console_flush();
     failures += op_test_console_connected();
+    failures += op_test_console_box_destroy();
+    failures += op_test_console_show_cursor();
+    failures += op_test_console_clear();
+    failures += op_test_console_clear_row();
+    failures += op_test_music_set_volume();
+    failures += op_test_audio_set_pan();
+
     failures += op_test_kernel_show();
     failures += op_test_kernel_hide();
     failures += op_test_kernel_set_field();

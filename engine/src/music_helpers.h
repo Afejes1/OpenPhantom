@@ -13,4 +13,7 @@ extern unsigned int op_music_gate, op_music_device;
 extern unsigned int(__stdcall *op_music_command)(unsigned int, unsigned int, unsigned int, void *);
 void op_music_stop(void);
 int op_music_is_playing(void);
+extern int op_music_aux_device;
+extern unsigned int(__stdcall *op_music_aux_volume)(unsigned int, unsigned int);
+void op_music_set_volume(float);
 #endif

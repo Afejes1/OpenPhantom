@@ -6204,6 +6204,126 @@
         "External APIs are authored observers, not real console operations."
       ],
       "exceptions": []
+    },
+    {
+      "id": "console_box_destroy",
+      "module": "console-control",
+      "analysis_name": "console_box_destroy",
+      "purpose": "Release the owned console text buffer, then the box.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-audio-controls-acceptance.md",
+        "research/campaign-084-console-box-destroy/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/console_control_behavior.c"
+      ],
+      "quirks": [
+        "Callback mutations and call order are checked with independent captured state.",
+        "Complete spans and all original address operands remain required.",
+        "Clear fixtures retain the actual accepted setAttr callee."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "console_show_cursor",
+      "module": "console-control",
+      "analysis_name": "console_show_cursor",
+      "purpose": "Maintain nested cursor hide depth and invoke the cursor API at transitions.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-audio-controls-acceptance.md",
+        "research/campaign-084-console-show-cursor/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/console_control_behavior.c"
+      ],
+      "quirks": [
+        "Callback mutations and call order are checked with independent captured state.",
+        "Complete spans and all original address operands remain required.",
+        "Clear fixtures retain the actual accepted setAttr callee."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "console_clear",
+      "module": "console-control",
+      "analysis_name": "console_clear",
+      "purpose": "Clear the80x25 console and restore the live default attribute.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-audio-controls-acceptance.md",
+        "research/campaign-084-console-clear/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/console_control_behavior.c"
+      ],
+      "quirks": [
+        "Callback mutations and call order are checked with independent captured state.",
+        "Complete spans and all original address operands remain required.",
+        "Clear fixtures retain the actual accepted setAttr callee."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "console_clear_row",
+      "module": "console-control",
+      "analysis_name": "console_clear_row",
+      "purpose": "Clear80characters in a selected row without restoring the attribute.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-audio-controls-acceptance.md",
+        "research/campaign-084-console-clear-row/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/console_control_behavior.c"
+      ],
+      "quirks": [
+        "Callback mutations and call order are checked with independent captured state.",
+        "Complete spans and all original address operands remain required.",
+        "Clear fixtures retain the actual accepted setAttr callee."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "music_set_volume",
+      "module": "audio-level",
+      "analysis_name": "music_set_volume",
+      "purpose": "Convert the music volume to an original packed auxiliary volume word.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-audio-controls-acceptance.md",
+        "research/campaign-085-music-set-volume/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_level_behavior.c"
+      ],
+      "quirks": [
+        "Callback mutations and call order are checked with independent captured state.",
+        "Complete spans and all original address operands remain required.",
+        "Finite dyadic conversion domain; invalid and out-of-range floating conversions are not claimed."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio_set_pan",
+      "module": "audio-level",
+      "analysis_name": "audio_set_pan",
+      "purpose": "Convert gated audio pan and call buffer vtable slot40.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-audio-controls-acceptance.md",
+        "research/campaign-085-audio-set-pan/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_level_behavior.c"
+      ],
+      "quirks": [
+        "Callback mutations and call order are checked with independent captured state.",
+        "Complete spans and all original address operands remain required.",
+        "Finite dyadic conversion domain; invalid and out-of-range floating conversions are not claimed."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
