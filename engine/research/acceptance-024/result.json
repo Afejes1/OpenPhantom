@@ -14,8 +14,17 @@
   "semantic_type_corrections": [
     "get_system_font and global004b77ec: signed slot int, not pointer"
   ],
-  "status": "integration-pending",
+  "status": "accepted",
   "original_game_executed": false,
   "byte_exclusions": [],
-  "warning_waivers": []
+  "warning_waivers": [],
+  "accepted_event": "engine/evidence/runs/000047-2a6af467244b0f44.json",
+  "source_commit": "e722b7f6cb5fe27177f641a059c080dc8da8a625",
+  "build_id": "20260913-203416-f8bce1d8",
+  "source_snapshot_inputs": 276,
+  "connected_checks": 47702,
+  "signed_slot_checks": 28,
+  "independent_review": "comparison_inventory: no material findings",
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34793456788",
+  "supplemental_ci_conclusion": "success"
 }
