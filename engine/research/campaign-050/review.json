@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T05:26:32.112310+00:00",
+  "conclusion": "approved-six-exact",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "save_read",
+      "address": 4529328,
+      "full_span_bytes": 21,
+      "candidate_size": 21,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 4050,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-050-save-read/result.json"
+    },
+    {
+      "id": "save_read_raw",
+      "address": 4530096,
+      "full_span_bytes": 29,
+      "candidate_size": 29,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 4050,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-050-save-read-raw/result.json"
+    },
+    {
+      "id": "save_seek_restore",
+      "address": 4530125,
+      "full_span_bytes": 28,
+      "candidate_size": 28,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 20250,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-050-save-seek-restore/result.json"
+    },
+    {
+      "id": "save_write",
+      "address": 4529240,
+      "full_span_bytes": 21,
+      "candidate_size": 21,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 4050,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-050-save-write/result.json"
+    },
+    {
+      "id": "save_write_chunk",
+      "address": 4529261,
+      "full_span_bytes": 67,
+      "candidate_size": 67,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 549000,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-050-save-write-chunk/result.json"
+    },
+    {
+      "id": "save_write_raw",
+      "address": 4529998,
+      "full_span_bytes": 98,
+      "candidate_size": 98,
+      "verified_operands": 8,
+      "different_bytes": 0,
+      "checks": 5130,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-050-save-write-raw/result.json"
+    }
+  ],
+  "observations": [
+    "All84 snapshot inputs and12 final reports independently rehashed.",
+    "Complete spans264bytes and16individual address operands verified.",
+    "Header exact-equality gate, low16 kind and signed result words checked.",
+    "Raw error path verifies fixed108-byte context with8trailing guard bytes and ordered callback mutations.",
+    "Four first-compile matches; two match after observed early-return branch structure refinement.",
+    "Native/Docker function and relocation parity verified; native listing fallback is disclosed."
+  ],
+  "limitations": [
+    "Backend services and diagnostic context/UI implementation remain authored observers.",
+    "Counts through UINT_MAX are forwarding cases, not actual reads/writes of that extent."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "save_write_raw",
+  "address": 4529998,
+  "size": 98,
+  "body_size": 98,
+  "source": "src/save_write_raw.c",
+  "symbol": "_op_save_write_raw",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 8917348,
+      "symbol": "_op_save_output_stream",
+      "kind": "dir32"
+    },
+    {
+      "offset": 21,
+      "address": 4830624,
+      "symbol": "_op_stream_write",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 38,
+      "address": 8918272,
+      "symbol": "_op_save_error_context",
+      "kind": "dir32"
+    },
+    {
+      "offset": 43,
+      "address": 4663838,
+      "symbol": "_op_save_error_begin",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 56,
+      "address": 4937464,
+      "symbol": "_op_save_failure_text",
+      "kind": "dir32"
+    },
+    {
+      "offset": 67,
+      "address": 4584015,
+      "symbol": "_op_save_error_notify",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 75,
+      "address": 8918272,
+      "symbol": "_op_save_error_context",
+      "kind": "dir32"
+    },
+    {
+      "offset": 80,
+      "address": 4663972,
+      "symbol": "_op_save_error_end",
+      "kind": "rel32-call"
+    }
+  ]
+}

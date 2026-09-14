@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "save_write_raw",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural C forwarding and error paths from verified cdecl ABI, full spans and operands",
+      "started_utc": "2026-09-14T05:22:05.955500+00:00",
+      "finished_utc": "2026-09-14T05:22:07.568838+00:00",
+      "returncode": 1,
+      "source_sha256": "b74ab2a397ce1e7eb9e5f106176d6114b566bf5e87c80fcfcbefca7f10d53f60",
+      "report": "engine/build/campaign-001-save_write_raw-97cb9df8fc18/research-result.json",
+      "report_sha256": "056014ebb05424ffec693c2bd2e59a09ffdd3fdf6269ec548625bc47b8a07aa2",
+      "status": "mismatch",
+      "candidate_size": 94,
+      "different_bytes": null,
+      "elapsed_seconds": 1.392494,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Use observed early-return branch direction: chunk nonzero returns0; raw zero diagnostics return0 before captured nonzero return",
+      "started_utc": "2026-09-14T05:23:16.191867+00:00",
+      "finished_utc": "2026-09-14T05:23:17.837508+00:00",
+      "returncode": 0,
+      "source_sha256": "265dcddc27007c8ba597d2d8a394946ea9098e7bb4ca55df454ffaa4809598ee",
+      "report": "engine/build/campaign-001-save_write_raw-3ae1a53b20a5/research-result.json",
+      "report_sha256": "4c8ca55dbe1e24734e0eb8c51750363e2220a2834c86aae3e609170e03b25d5f",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 98,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.412494,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T05:26:32.112310+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "save_read_raw",
+  "address": 4530096,
+  "size": 29,
+  "body_size": 29,
+  "source": "src/save_read_raw.c",
+  "symbol": "_op_save_read_raw",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 8917344,
+      "symbol": "_op_save_input_stream",
+      "kind": "dir32"
+    },
+    {
+      "offset": 20,
+      "address": 4830960,
+      "symbol": "_op_stream_read",
+      "kind": "rel32-call"
+    }
+  ]
+}

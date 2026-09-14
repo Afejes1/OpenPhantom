@@ -1,0 +1,21 @@
+{
+  "id": "save_write",
+  "address": 4529240,
+  "size": 21,
+  "body_size": 21,
+  "source": "src/save_write.c",
+  "symbol": "_op_save_write",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 12,
+      "address": 4529998,
+      "symbol": "_op_save_write_raw",
+      "kind": "rel32-call"
+    }
+  ]
+}

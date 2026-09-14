@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "save_write",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural C forwarding and error paths from verified cdecl ABI, full spans and operands",
+      "started_utc": "2026-09-14T05:22:01.056220+00:00",
+      "finished_utc": "2026-09-14T05:22:02.690030+00:00",
+      "returncode": 0,
+      "source_sha256": "2b06a574596cf557c199eb9370f46e61cb269f882b1fe19d1acf60e0315b3c28",
+      "report": "engine/build/campaign-001-save_write-e6f19c37ece2/research-result.json",
+      "report_sha256": "68f858b519596284bd08c450dd61c30e1ac510b1add129f6f5de219ac75fdedb",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 21,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.414693,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T05:26:32.112310+00:00"
+}

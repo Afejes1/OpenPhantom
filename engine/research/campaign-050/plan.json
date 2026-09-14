@@ -1,0 +1,32 @@
+{
+  "id": "campaign-050",
+  "started_utc": "2026-09-14T05:04:00Z",
+  "prepared_utc": "2026-09-14T05:17:38.458825+00:00",
+  "stop_implementation_utc": "2026-09-14T05:39:00Z",
+  "deadline_utc": "2026-09-14T05:49:00Z",
+  "functions": [
+    "save_write",
+    "save_write_chunk",
+    "save_read",
+    "save_write_raw",
+    "save_read_raw",
+    "save_seek_restore"
+  ],
+  "span_bytes": 264,
+  "operands": 16,
+  "reviewer": "comparison_inventory: static contracts confirmed",
+  "constraints": [
+    "signed EAX preserved",
+    "header ==1 is the only early failure",
+    "ushort kind low16 only",
+    "zero raw write enters begin-notify-end",
+    "fixed108-byte context object",
+    "authored external text only",
+    "no actual stream or original game execution"
+  ],
+  "schema": 1,
+  "status": "complete",
+  "baseline_commit": "5e169cb90d889ff0c2ad3a1cf3cc1231ad1c3e59",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T05:26:32.112310+00:00"
+}

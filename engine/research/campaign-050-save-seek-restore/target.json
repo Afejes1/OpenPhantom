@@ -1,0 +1,27 @@
+{
+  "id": "save_seek_restore",
+  "address": 4530125,
+  "size": 28,
+  "body_size": 28,
+  "source": "src/save_seek_restore.c",
+  "symbol": "_op_save_seek_restore",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 13,
+      "address": 8917344,
+      "symbol": "_op_save_input_stream",
+      "kind": "dir32"
+    },
+    {
+      "offset": 19,
+      "address": 4827744,
+      "symbol": "_op_stream_seek",
+      "kind": "rel32-call"
+    }
+  ]
+}
