@@ -1,0 +1,111 @@
+{
+  "id": "colormap_load_entry",
+  "address": 4687756,
+  "size": 581,
+  "body_size": 581,
+  "source": "src/colormap_load_entry.c",
+  "symbol": "_op_colormap_load_entry",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 7,
+      "address": 4890672,
+      "symbol": "_op_colormap_read_mode",
+      "kind": "dir32"
+    },
+    {
+      "offset": 17,
+      "address": 8816192,
+      "symbol": "_op_colormap_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 48,
+      "address": 4746837,
+      "symbol": "_op_resource_basename",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 61,
+      "address": 4828192,
+      "symbol": "_op_copy_keyframe_name",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 87,
+      "address": 8816192,
+      "symbol": "_op_colormap_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 136,
+      "address": 4947324,
+      "symbol": "_op_colormap_marker",
+      "kind": "dir32"
+    },
+    {
+      "offset": 145,
+      "address": 4826656,
+      "symbol": "_op_compare_marker",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 179,
+      "address": 8816192,
+      "symbol": "_op_colormap_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 195,
+      "address": 4805264,
+      "symbol": "_op_allocate",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 327,
+      "address": 8816192,
+      "symbol": "_op_colormap_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 360,
+      "address": 4805264,
+      "symbol": "_op_allocate",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 492,
+      "address": 8816192,
+      "symbol": "_op_colormap_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 508,
+      "address": 8816192,
+      "symbol": "_op_colormap_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 532,
+      "address": 8816192,
+      "symbol": "_op_colormap_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 550,
+      "address": 8816192,
+      "symbol": "_op_colormap_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 565,
+      "address": 4689544,
+      "symbol": "_op_colormap_build_gray",
+      "kind": "rel32-call"
+    }
+  ]
+}

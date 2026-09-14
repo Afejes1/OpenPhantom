@@ -1,0 +1,9 @@
+# colormap_write
+
+Construct a complete64-byte header before opening: external4-byte marker, version30, four words copied frommap32..44, then40 zero bytes. Open0 returns0 without writes/close. Nonzero open writes header64,palette768,live light-table pointer16384, then live flags bit0 selects an optional65536-byte alpha write; close and return1. Ignore write/close return values. Reload the services global before each operation and read current map fields/pointers at the observed stages.
+
+Fixtures capture the expected header before open mutations; subsequent writes observe authored palette changes, light pointer changes after palette write, alpha pointer and flag changes after light write. Full map/data snapshots preserve unchanged words and callback effects. Distinct operation plans check zero/ordinary/high-bit handles and ignored0/1/all-bits-set write reports. No actual filesystem or original strings are used. Full original271-byte span and9 address operands.
+
+Team not_done is verified by numeric address. All buffers, paths, marker text and modes are authored. External mode/marker symbols bind to the observed original locations without reproducing original strings. The existing op_copy_keyframe_name name reuses the already accepted CRT entry identity at0049AC20; its fixture here observes this caller separately.
+
+Two alternating file-service tables prove global-pointer reload after open and every read/write/close. Nonzero ordinary/high-bit handles are valid; zero open is the failure condition. Callback return values include0,1,all-bits-set and negative close/fallback values; they do not affect the observed result except open. Complete guarded844-byte map snapshots and owned data pools cover specified writes and callback mutations. Native compilation only; authored behavior runs in the locked Docker container. Original executable execution, byte exclusions and warning waivers are prohibited.

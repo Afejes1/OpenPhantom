@@ -1,0 +1,69 @@
+{
+  "id": "colormap_write",
+  "address": 4688470,
+  "size": 271,
+  "body_size": 271,
+  "source": "src/colormap_write.c",
+  "symbol": "_op_colormap_write",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 10,
+      "address": 4947324,
+      "symbol": "_op_colormap_marker",
+      "kind": "dir32"
+    },
+    {
+      "offset": 19,
+      "address": 4828192,
+      "symbol": "_op_copy_keyframe_name",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 82,
+      "address": 4941304,
+      "symbol": "_op_colormap_write_mode",
+      "kind": "dir32"
+    },
+    {
+      "offset": 92,
+      "address": 8816192,
+      "symbol": "_op_colormap_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 128,
+      "address": 8816192,
+      "symbol": "_op_colormap_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 156,
+      "address": 8816192,
+      "symbol": "_op_colormap_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 187,
+      "address": 8816192,
+      "symbol": "_op_colormap_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 231,
+      "address": 8816192,
+      "symbol": "_op_colormap_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 247,
+      "address": 8816192,
+      "symbol": "_op_colormap_services",
+      "kind": "dir32"
+    }
+  ]
+}

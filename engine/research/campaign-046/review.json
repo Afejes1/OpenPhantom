@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T03:58:48.636377+00:00",
+  "conclusion": "approved",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "colormap_load_entry",
+      "address": 4687756,
+      "full_span_bytes": 581,
+      "verified_operands": 16,
+      "different_bytes": 0,
+      "checks": 11412,
+      "implementation_attempts": 5,
+      "team_status": "not_done",
+      "result": "research/campaign-046-colormap-load-entry/result.json"
+    },
+    {
+      "id": "colormap_write",
+      "address": 4688470,
+      "full_span_bytes": 271,
+      "verified_operands": 9,
+      "different_bytes": 0,
+      "checks": 4896,
+      "implementation_attempts": 5,
+      "team_status": "not_done",
+      "result": "research/campaign-046-colormap-write/result.json"
+    }
+  ],
+  "corrections": [
+    "Reviewer preparation advice incorrectly suggested reader name capture before open. Parent corrected it from observed order: open precedes basename/copy. Final fixture observes open mutation before basename handling; writer header capture still precedes open.",
+    "Independent fixture review required guarded local-header capture and exact pointer identity across read/compare or copy/write. Parent applied these guards before final verification."
+  ],
+  "observations": [
+    "Complete original spans and all25 operands independently reviewed.",
+    "Complete guarded map/data snapshots and operation plans cover branch-dependent partial writes and callback effects.",
+    "Two distinct alternating service tables expose caching across open/read/write/close.",
+    "Actual pointer residues0/1/255 verify aligned-table ownership and unchanged allocation padding.",
+    "Every14-member case snapshot and both private report hashes independently rehashed after fixture hardening."
+  ]
+}
