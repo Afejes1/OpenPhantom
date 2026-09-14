@@ -15,7 +15,7 @@
   "registered_after": 203,
   "full_span_bytes": 485,
   "verified_operands": 13,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 6,
   "team_reported_done": 0,
   "original_game_executed": false,
@@ -41,5 +41,17 @@
     "ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34813998361",
     "ci_conclusion": "failure",
     "reason": "Generated progress page was not regenerated after registry wording correction; no code-test failure reported."
-  }
+  },
+  "accepted_event": "engine/evidence/runs/000061-a7571f8d45b15b1b.json",
+  "source_commit": "51d95a36317964f1f02c8f8a95e43cc2494b0f28",
+  "build_id": "20260914-023939-e843f171",
+  "source_snapshot_inputs": 376,
+  "connected_module_checks": 560080,
+  "retained_focused_checks": {
+    "initialize_once": 2160,
+    "find_by_id": 1080,
+    "find_by_name": 82072
+  },
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34814571915",
+  "supplemental_ci_conclusion": "success"
 }

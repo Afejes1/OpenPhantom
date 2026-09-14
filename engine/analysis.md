@@ -401,3 +401,7 @@ Acceptance036 reaches193 accepted functions at event59. All193 comparisons and s
 ## Directory enumeration checkpoint
 
 Acceptance037 reaches 197 accepted functions at event60. All 197 comparisons and shared authored tests pass with same-source supplemental CI. Four exact directory helpers preserve prior 193 definitions and pass 77,430 focused checks plus 558 connected lifecycle checks. The overnight window now has 44 newly exact functions, 3,640 bytes and 47 accepted promotions including three carried in. One-shot enumeration remains layout research; the next module cohort has matched first compile and awaits focused verification. Whole-executable identity remains pending. See [acceptance037](research/acceptance-037/results.md).
+
+## Module lookup and removal checkpoint
+
+Acceptance038 reaches 203 accepted functions at event61. All 203 comparisons and shared authored tests pass with same-source supplemental CI. Six exact module helpers preserve prior 197 definitions and pass 560,080 connected checks plus 85,312 retained focused checks. The overnight window has 50 newly exact functions, 4,125 bytes and 53 accepted promotions including three carried in. Ghidra module comments and two configuration ABI corrections were saved. Configuration-stream reconstruction is next; whole-executable identity remains pending. See [acceptance038](research/acceptance-038/results.md).
