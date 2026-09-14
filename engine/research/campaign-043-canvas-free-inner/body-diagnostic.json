@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "canvas_free_inner",
+  "diagnostic_only": true,
+  "accepted": false,
+  "full_span_size": 9,
+  "body_size": 5,
+  "unresolved_tail_bytes": 4,
+  "comparison": {
+    "id": "canvas_free_inner",
+    "address": 4680231,
+    "size": 5,
+    "candidate_size": 5,
+    "body_size": 5,
+    "status": "raw-code-match",
+    "literal_function_match": false,
+    "layout_verified": false,
+    "adjusted_bytes": 0,
+    "object_sha256": "2d84a6211287fd404421e5c383fdaf5064cf59f1da4409fd6dcb13a0e4f26f02",
+    "compared_bytes": 5,
+    "dir32_bytes": 0,
+    "rel32_call_bytes": 0,
+    "internal_dir32_bytes": 0,
+    "different_bytes": 0,
+    "raw_bytes_equal": true,
+    "relocated_bytes_equal": true,
+    "reference_span_sha256": "7178bc05f1e5707e6c3dae3e068488f3df05d53b0e5eb728edd1abc56533f087",
+    "resolved_span_sha256": "7178bc05f1e5707e6c3dae3e068488f3df05d53b0e5eb728edd1abc56533f087"
+  },
+  "source_sha256": "2af7b20ba97c52b10550a0ee108c1eb883e7d50fbd9ad077aef8209c957fa42a",
+  "full_result": "result.json",
+  "note": "Body-only diagnostic does not change the immutable full9/body5 target and is not accepted function evidence."
+}

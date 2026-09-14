@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T02:40:03.084505+00:00",
+  "conclusion": "no-material-findings",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "canvas_free",
+      "address": 4680196,
+      "full_span_bytes": 35,
+      "body_bytes": 35,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 26,
+      "implementation_attempts": 1,
+      "result": "research/campaign-043-canvas-free/result.json"
+    },
+    {
+      "id": "canvas_free_inner",
+      "address": 4680231,
+      "full_span_bytes": 9,
+      "body_bytes": 5,
+      "evidence_category": "research-candidate",
+      "team_status": "not_done",
+      "verified_operands": 0,
+      "different_bytes": null,
+      "checks": 5,
+      "implementation_attempts": 1,
+      "result": "research/campaign-043-canvas-free-inner/result.json"
+    },
+    {
+      "id": "canvas_init",
+      "address": 4679966,
+      "full_span_bytes": 230,
+      "body_bytes": 230,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 756,
+      "implementation_attempts": 1,
+      "result": "research/campaign-043-canvas-init/result.json"
+    },
+    {
+      "id": "canvas_new",
+      "address": 4679888,
+      "full_span_bytes": 78,
+      "body_bytes": 78,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 1280,
+      "implementation_attempts": 1,
+      "result": "research/campaign-043-canvas-new/result.json"
+    },
+    {
+      "id": "face_new",
+      "address": 4689888,
+      "full_span_bytes": 46,
+      "body_bytes": 46,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 224,
+      "implementation_attempts": 1,
+      "result": "research/campaign-043-face-new/result.json"
+    }
+  ],
+  "corrections": [],
+  "limitations": [
+    "Canvas center arithmetic tests exclude signed overflow and use finite literal half-integer oracles.",
+    "The raster is only dereferenced in the no-explicit-rectangle mode, and the fixture supplies NULL only in explicit-rectangle mode.",
+    "Canvas constructor treats raster as an opaque forwarded pointer; the initializer fixture separately verifies guarded raster storage.",
+    "Canvas inner cleanup body5 matches only in a separate diagnostic; full9 remains research with4 unresolved tail bytes."
+  ]
+}

@@ -1,0 +1,7 @@
+# Acceptance030 results
+
+Six colormap/light functions are accepted, bringing the baseline156 to162. Their414 complete bytes match with9 verified operands, no exclusions and no warning waivers. Clean build20260913-222950-97a4d9ee at324ecf5f30343b92a8ef21d401ac72b462f26f62 passes all162 comparisons and shared authored behavior. [Event53](../../evidence/runs/000053-dadff2ba03b45cfd.json) preserves its source snapshot; [full CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34799753943) succeeds on the same source.
+
+Connected colormap lifecycle passes5744 checks, light lifecycle221, existing extended colormaps640, and state setters2414. Full guarded storage replaces opaque colormap handles, and actual load/contents/free implementations replace the former stand-ins. Reader failure releases a valid allocation through both contents and root cleanup. The original allocation-NULL cleanup path is retained statically and in prior non-dereferencing focused evidence; connected execution excludes that invalid-root path. Extended cleanup count contraction/expansion remains covered at root callback before the outer live bound reload.
+
+Actual light new/init/free/empty-inner implementations are connected, with literal initialization bits and preserved unspecified fields. Reviewer approved the final sources and scoped dispatch; one stale registry sentence was corrected before the clean build. Whole-executable identity remains pending.

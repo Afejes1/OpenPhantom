@@ -1,0 +1,27 @@
+{
+  "id": "face_new",
+  "address": 4689888,
+  "size": 46,
+  "body_size": 46,
+  "source": "src/face_new.c",
+  "symbol": "_op_face_new",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 7,
+      "address": 4805264,
+      "symbol": "_op_allocate",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 32,
+      "address": 4689934,
+      "symbol": "_op_face_init",
+      "kind": "rel32-call"
+    }
+  ]
+}

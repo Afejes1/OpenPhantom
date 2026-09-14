@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "campaign-043",
+  "started_utc": "2026-09-14T02:30:00Z",
+  "stop_implementation_utc": "2026-09-14T03:05:00Z",
+  "deadline_utc": "2026-09-14T03:15:00Z",
+  "baseline_commit": "324ecf5f30343b92a8ef21d401ac72b462f26f62",
+  "functions": [
+    "canvas_new",
+    "canvas_init",
+    "canvas_free",
+    "canvas_free_inner",
+    "face_new"
+  ],
+  "status": "complete",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T02:40:03.084505+00:00"
+}

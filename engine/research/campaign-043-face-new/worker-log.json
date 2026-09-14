@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "face_new",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed canvas/face lifecycle and signed rectangle contracts",
+      "started_utc": "2026-09-14T02:33:50.053632+00:00",
+      "finished_utc": "2026-09-14T02:33:51.685074+00:00",
+      "returncode": 0,
+      "source_sha256": "ef9393f37e0a7e80a99926f5018b104157f4c9d398475ae3b437db1ff9c00900",
+      "report": "engine/build/campaign-001-face_new-dd29e9ec728c/research-result.json",
+      "report_sha256": "7e12ec58b918255160600b733dbeed71d4389375b4267d7708ca46b914e31f2a",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 46,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.413941,
+      "stderr": ""
+    }
+  ]
+}

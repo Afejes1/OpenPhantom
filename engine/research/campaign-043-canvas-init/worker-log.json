@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "canvas_init",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed canvas/face lifecycle and signed rectangle contracts",
+      "started_utc": "2026-09-14T02:33:45.171864+00:00",
+      "finished_utc": "2026-09-14T02:33:46.783436+00:00",
+      "returncode": 0,
+      "source_sha256": "947bfabb437d4319c132f507c5b64793d15c2ee4b868166b3189e626014fb1b2",
+      "report": "engine/build/campaign-001-canvas_init-b6ff6957ea66/research-result.json",
+      "report_sha256": "6ec7f6726a00869586aa0ab56b6745d2c08a35fd5b63ee0369a5ec60dd16ca1d",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 230,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.392873,
+      "stderr": ""
+    }
+  ]
+}

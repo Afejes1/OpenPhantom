@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "campaign": "043",
+  "id": "canvas_free_inner",
+  "status": "focused-mismatch",
+  "comparison": {
+    "id": "canvas_free_inner",
+    "address": 4680231,
+    "size": 9,
+    "candidate_size": 5,
+    "body_size": 5,
+    "status": "mismatch",
+    "literal_function_match": false,
+    "layout_verified": false,
+    "adjusted_bytes": 0,
+    "object_sha256": "2d84a6211287fd404421e5c383fdaf5064cf59f1da4409fd6dcb13a0e4f26f02",
+    "reason": "complete function extent differs"
+  },
+  "different_percent": null,
+  "source_snapshot": {
+    "research/campaign-043-canvas-free-inner/candidate.c": "2af7b20ba97c52b10550a0ee108c1eb883e7d50fbd9ad077aef8209c957fa42a",
+    "research/campaign-043-canvas-free-inner/api.h": "a2dd34b8cd6b804256a0f02bce78046d04d592f7fb0fb8f659c73c699893ee59",
+    "research/campaign-043-canvas-free-inner/behavior.c": "275b7382338c2d98d757f426c0c625ae922dc1f188b30e71567d99448453f77a",
+    "research/campaign-043-canvas-free-inner/case.json": "ea086277da43ced0fedbb311b66e711c32ae242006371cf09e8a20fa61a8fe9d",
+    "research/campaign-001/verify.py": "78bcf92d994fdab04d1a983838fe9f492162d2626b35390259d9976b92cbbe78",
+    "target.json": "1ceec1d04b67396434d35c02844a4488ce3532234d86b411fd6f2628e36287d0",
+    "research/campaign-043-canvas-free-inner/target.json": "1d9a4c398c8135491400b95a3d4c6e9c429a431bb76f56ed5ececf19a8fe357b",
+    "research/surface-emission/probe.py": "cd4ef4126dacfc16197636a4b0c7007639efe1033e8e2b329e4939a6083c5f1b",
+    "research/surface-emission/native_listing_diagnostic.py": "3cad0339396c73301ef5861eed3c40f925482fd7c2e4ec45f801e9d0e5d34665",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "959d15268c4d927e57271424dbcb1c709cf89cbf3e48ff545e4e15c4d6425f27",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "reference": {
+    "sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
+    "size": 829952
+  },
+  "native_report": "engine/build/campaign-001-canvas_free_inner-1feca843a2c8/research-result.json",
+  "native_report_sha256": "b6d0144bcb4e5509bfaeb01ce3465a6058b1691b64831fcd8c156daffc44c7c7",
+  "docker_report": "engine/build/campaign-001-canvas_free_inner-effd55dafddd/research-result.json",
+  "docker_report_sha256": "3ee68f17d514d460ffa1f3bc6b1ae9fcf65a1dc31c667589d6dd6e98bf839b96",
+  "artifact": {
+    "id": "canvas_free_inner",
+    "source": "candidate.c",
+    "symbol": "_op_canvas_free_inner",
+    "object": "candidate.obj",
+    "object_sha256": "2d84a6211287fd404421e5c383fdaf5064cf59f1da4409fd6dcb13a0e4f26f02",
+    "function_section_bytes": 5,
+    "function_section_sha256": "7178bc05f1e5707e6c3dae3e068488f3df05d53b0e5eb728edd1abc56533f087",
+    "relocation_count": 0,
+    "assembly_listing": "candidate.native.cod",
+    "assembly_listing_sha256": "7e071692c748e839f8b4e8405cc0da9d2a99e5330a157d28fbc72ccccfdce580",
+    "assembly_listing_has_terminators": true,
+    "function_inventory": "candidate.function.json",
+    "function_inventory_sha256": "da5785bc37de8d0d13f46324e39bad36aaf378fe941e29418dcea58092c8b513",
+    "listing_fallback": {
+      "kind": "verified-native-peer-listing",
+      "original_docker_listing": "candidate.cod",
+      "original_docker_listing_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "native_peer_report_sha256": "b6d0144bcb4e5509bfaeb01ce3465a6058b1691b64831fcd8c156daffc44c7c7",
+      "native_peer_object_sha256": "48d9e84b444cc322cdb2bd3fd543f0e7b6f4f60c234d604680d66228fccf3e4c",
+      "native_peer_listing_sha256": "7e071692c748e839f8b4e8405cc0da9d2a99e5330a157d28fbc72ccccfdce580",
+      "function_and_relocations_equal_before_fixture": true
+    }
+  },
+  "fixture": {
+    "sha256": "cc4313d072648bd991111014e1b451c543680e182dca5a58a48ebfb706772ee7",
+    "passed": true,
+    "stdout": "canvas_free_inner: 5 checks, 0 failures\n",
+    "checks": 5,
+    "failures": 0
+  },
+  "native_docker_function_and_relocations_equal": true,
+  "native_elapsed_seconds": 1.372673,
+  "docker_elapsed_seconds": 5.124464,
+  "accepted_history_record": false,
+  "original_game_executed": false,
+  "whole_executable_match": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "review": "research/campaign-043/review.json",
+  "limitations": [
+    "Complete function evidence; external callbacks are authored fixtures. Shared types and final linked executable placement remain pending."
+  ],
+  "evidence_category": "research-candidate"
+}

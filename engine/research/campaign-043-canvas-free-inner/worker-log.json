@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "canvas_free_inner",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed canvas/face lifecycle and signed rectangle contracts",
+      "started_utc": "2026-09-14T02:33:48.422603+00:00",
+      "finished_utc": "2026-09-14T02:33:50.048421+00:00",
+      "returncode": 1,
+      "source_sha256": "2af7b20ba97c52b10550a0ee108c1eb883e7d50fbd9ad077aef8209c957fa42a",
+      "report": "engine/build/campaign-001-canvas_free_inner-95b18574132f/research-result.json",
+      "report_sha256": "46726baa50c32e366759c483632b4463814bb0c6a23cea459438db398d61ae4e",
+      "status": "mismatch",
+      "candidate_size": 5,
+      "different_bytes": null,
+      "elapsed_seconds": 1.404048,
+      "stderr": ""
+    }
+  ]
+}

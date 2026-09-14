@@ -1,0 +1,14 @@
+{
+  "id": "canvas_free_inner",
+  "address": 4680231,
+  "size": 9,
+  "body_size": 5,
+  "source": "src/canvas_free_inner.c",
+  "symbol": "_op_canvas_free_inner",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

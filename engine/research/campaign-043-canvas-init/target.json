@@ -1,0 +1,27 @@
+{
+  "id": "canvas_init",
+  "address": 4679966,
+  "size": 230,
+  "body_size": 230,
+  "source": "src/canvas_init.c",
+  "symbol": "_op_canvas_init",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 168,
+      "address": 4885388,
+      "symbol": "_op_canvas_two",
+      "kind": "dir32"
+    },
+    {
+      "offset": 209,
+      "address": 4885388,
+      "symbol": "_op_canvas_two",
+      "kind": "dir32"
+    }
+  ]
+}

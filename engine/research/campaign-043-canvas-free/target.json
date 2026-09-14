@@ -1,0 +1,27 @@
+{
+  "id": "canvas_free",
+  "address": 4680196,
+  "size": 35,
+  "body_size": 35,
+  "source": "src/canvas_free.c",
+  "symbol": "_op_canvas_free",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 14,
+      "address": 4680231,
+      "symbol": "_op_canvas_free_inner",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 26,
+      "address": 4805714,
+      "symbol": "_op_release",
+      "kind": "rel32-call"
+    }
+  ]
+}
