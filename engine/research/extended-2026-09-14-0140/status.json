@@ -20,7 +20,7 @@
   "max_concurrent_implementation_workers": 1,
   "new_exact_functions": 40,
   "new_exact_bytes": 3133,
-  "promotions": 38,
+  "promotions": 43,
   "new_near_matches": 0,
   "new_research_candidates": 7,
   "checkpoints": [
@@ -188,6 +188,16 @@
       "team_not_done": 5,
       "research": 1,
       "result": "research/campaign-051/results.md"
+    },
+    {
+      "id": "acceptance-036",
+      "promotions": 5,
+      "carried_in": false,
+      "registered_after": 193,
+      "event": 59,
+      "source_commit": "917d8bad6f9478dacbcb675b455006e0582f8124",
+      "result": "research/acceptance-036/result.json",
+      "full_ci": "success"
     }
   ],
   "carried_in_exact_functions": [
@@ -198,10 +208,10 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Acceptance036 integration applied: five exact save-slot functions; real path/formatter wrapper chains and guarded99-row cleanup, pending review and clean checkpoint.",
+  "current_work": "Campaign052: four directory helpers exact507bytes; one-shot wrapper retains85-byte full target as layout research. Final focused verification and review in progress.",
   "original_game_executed": false,
-  "accepted_functions_current": 188,
-  "evidence_records_current": 58,
+  "accepted_functions_current": 193,
+  "evidence_records_current": 59,
   "weekly_shared_usage_latest_percent": 69,
   "carried_in_promotions": 3,
   "new_exact_team_not_done": 37,

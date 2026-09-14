@@ -393,3 +393,7 @@ Acceptance034 reaches182 accepted functions at event57 with six complete-span ma
 ## Save stream checkpoint
 
 Acceptance035 reaches188 accepted functions at event58. All188 original-toolchain comparisons and shared authored tests pass with same-source supplemental CI. Six new save functions connect actual effects/overlay read/write chains and pass640,808 stream checks, including2,485 legacy reads and684 writes. Existing182 definitions remain unchanged after accurate save ABI declarations and explicit distinct CRT reader/writer symbols. This overnight window has35 newly exact functions,2,909 bytes and38 accepted promotions including3 carried in. Save-slot functions are next; whole-executable identity remains pending. See [acceptance035](research/acceptance-035/results.md).
+
+## Save slot checkpoint
+
+Acceptance036 reaches193 accepted functions at event59. All193 comparisons and shared authored tests pass with same-source supplemental CI. Five exact save-slot helpers preserve prior188 definitions and pass17,850 connected path checks plus2,028 guarded label-cleanup checks. This overnight window has40 newly exact functions,3,133 bytes and43 accepted promotions including3 carried in. Manifest-name conflicts are documented by numeric address. Disk-space checking remains research; directory enumeration is next. Whole-executable identity remains pending. See [acceptance036](research/acceptance-036/results.md).
