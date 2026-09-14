@@ -1,0 +1,21 @@
+{
+  "id": "window_set_handle",
+  "address": 4819290,
+  "size": 13,
+  "body_size": 13,
+  "source": "src/window_set_handle.c",
+  "symbol": "_op_window_set_handle",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 7,
+      "address": 8790180,
+      "symbol": "_op_window_handle",
+      "kind": "dir32"
+    }
+  ]
+}

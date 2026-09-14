@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "campaign-058",
+  "started_utc": "2026-09-14T08:09:00Z",
+  "stop_implementation_utc": "2026-09-14T08:44:00Z",
+  "deadline_utc": "2026-09-14T08:54:00Z",
+  "functions": [
+    "window_set_handle",
+    "window_get_handle",
+    "window_set_instance",
+    "window_get_instance",
+    "window_set_rect",
+    "window_get_rect"
+  ],
+  "full_target_bytes": 99,
+  "address_operands": 9,
+  "status": "complete",
+  "prepared_utc": "2026-09-14T08:21:27.933362+00:00",
+  "independent_packet_review": "comparison_inventory confirmed caller semantics, fixed-width ABI, spans and bindings",
+  "baseline_commit": "1caae9e858761c656abf42deeb7d06815afd6503",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T08:27:37.652589+00:00"
+}

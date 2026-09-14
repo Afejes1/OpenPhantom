@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T08:27:37.652589+00:00",
+  "conclusion": "approved-six-exact",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "window_get_handle",
+      "address": 4819303,
+      "full_span_bytes": 10,
+      "candidate_size": 10,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 2160,
+      "team_status": "not_done",
+      "result": "research/campaign-058-window-get-handle/result.json"
+    },
+    {
+      "id": "window_get_instance",
+      "address": 4819326,
+      "full_span_bytes": 10,
+      "candidate_size": 10,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 2160,
+      "team_status": "not_done",
+      "result": "research/campaign-058-window-get-instance/result.json"
+    },
+    {
+      "id": "window_get_rect",
+      "address": 4819379,
+      "full_span_bytes": 10,
+      "candidate_size": 10,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 3024,
+      "team_status": "not_done",
+      "result": "research/campaign-058-window-get-rect/result.json"
+    },
+    {
+      "id": "window_set_handle",
+      "address": 4819290,
+      "full_span_bytes": 13,
+      "candidate_size": 13,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 5184,
+      "team_status": "not_done",
+      "result": "research/campaign-058-window-set-handle/result.json"
+    },
+    {
+      "id": "window_set_instance",
+      "address": 4819313,
+      "full_span_bytes": 13,
+      "candidate_size": 13,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 5184,
+      "team_status": "not_done",
+      "result": "research/campaign-058-window-set-instance/result.json"
+    },
+    {
+      "id": "window_set_rect",
+      "address": 4819336,
+      "full_span_bytes": 43,
+      "candidate_size": 43,
+      "verified_operands": 4,
+      "different_bytes": 0,
+      "checks": 1728,
+      "team_status": "not_done",
+      "result": "research/campaign-058-window-set-rect/result.json"
+    }
+  ],
+  "observations": [
+    "All84 current snapshot inputs and12 final report hashes independently verified.",
+    "All99 complete bytes and9 data operands match on first compile.",
+    "Fixed32-bit handles preserve full-word patterns; caller evidence establishes HWND/HINSTANCE interpretation.",
+    "Neutral four-word rectangle avoids unsupported signedness; tests cover self-alias/disjoint copy and live getter mutation.",
+    "All19440 checks pass, with native/Docker parity, no exclusions or warning waivers."
+  ]
+}

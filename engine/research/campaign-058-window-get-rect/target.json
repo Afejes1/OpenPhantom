@@ -1,0 +1,21 @@
+{
+  "id": "window_get_rect",
+  "address": 4819379,
+  "size": 10,
+  "body_size": 10,
+  "source": "src/window_get_rect.c",
+  "symbol": "_op_window_get_rect",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 8791568,
+      "symbol": "_op_window_rect",
+      "kind": "dir32"
+    }
+  ]
+}

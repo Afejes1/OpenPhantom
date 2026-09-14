@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "window_set_handle",
+  "candidate": "candidate.c",
+  "symbol": "_op_window_set_handle",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

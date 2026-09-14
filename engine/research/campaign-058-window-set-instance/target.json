@@ -1,0 +1,21 @@
+{
+  "id": "window_set_instance",
+  "address": 4819313,
+  "size": 13,
+  "body_size": 13,
+  "source": "src/window_set_instance.c",
+  "symbol": "_op_window_set_instance",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 7,
+      "address": 8790184,
+      "symbol": "_op_instance_handle",
+      "kind": "dir32"
+    }
+  ]
+}

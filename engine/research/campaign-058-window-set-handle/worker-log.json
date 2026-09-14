@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "window_set_handle",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural fixed-width handle and four-word window-state source",
+      "started_utc": "2026-09-14T08:21:28.132604+00:00",
+      "finished_utc": "2026-09-14T08:21:29.712328+00:00",
+      "returncode": 0,
+      "source_sha256": "901c4c23a54b226e196700042e5987de793494278420fe0330a9b251dd1b5279",
+      "report": "engine/build/campaign-001-window_set_handle-e09467f24027/research-result.json",
+      "report_sha256": "3005fa1f9fd08071b7afd044b93e05ceedf62a9c15227a4d1e7a953508902e72",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 13,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.359878,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T08:27:37.652589+00:00"
+}

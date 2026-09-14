@@ -18,8 +18,8 @@
   "reviewer_model": "gpt-5.6-sol",
   "reviewer_reasoning": "medium",
   "max_concurrent_implementation_workers": 1,
-  "new_exact_functions": 66,
-  "new_exact_bytes": 5883,
+  "new_exact_functions": 72,
+  "new_exact_bytes": 5982,
   "promotions": 66,
   "new_near_matches": 0,
   "new_research_candidates": 9,
@@ -286,6 +286,14 @@
       "team_not_done": 3,
       "research": 0,
       "result": "research/campaign-057/results.md"
+    },
+    {
+      "id": "campaign-058",
+      "new_exact": 6,
+      "new_exact_bytes": 99,
+      "team_not_done": 6,
+      "research": 0,
+      "result": "research/campaign-058/results.md"
     }
   ],
   "carried_in_exact_functions": [
@@ -296,13 +304,13 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Campaign058 preparing six untouched window-state helpers; combine them with three C057 lexical/sort exact matches for acceptance041.",
+  "current_work": "Acceptance041 combines three lexical/sort and six window-state matches:9promotions864bytes18operands.",
   "original_game_executed": false,
   "accepted_functions_current": 216,
   "evidence_records_current": 63,
   "weekly_shared_usage_latest_percent": 71,
   "carried_in_promotions": 3,
-  "new_exact_team_not_done": 63,
+  "new_exact_team_not_done": 69,
   "new_exact_team_reported_done": 3,
   "ghidra_metadata_saved_utc": "2026-09-14T06:42:05.867Z"
 }

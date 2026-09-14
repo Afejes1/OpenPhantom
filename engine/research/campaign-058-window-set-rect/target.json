@@ -1,0 +1,42 @@
+{
+  "id": "window_set_rect",
+  "address": 4819336,
+  "size": 43,
+  "body_size": 43,
+  "source": "src/window_set_rect.c",
+  "symbol": "_op_window_set_rect",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 10,
+      "address": 8791568,
+      "symbol": "_op_window_rect",
+      "kind": "dir32"
+    },
+    {
+      "offset": 19,
+      "address": 8791568,
+      "symbol": "_op_window_rect",
+      "kind": "dir32",
+      "addend": 4
+    },
+    {
+      "offset": 28,
+      "address": 8791568,
+      "symbol": "_op_window_rect",
+      "kind": "dir32",
+      "addend": 8
+    },
+    {
+      "offset": 37,
+      "address": 8791568,
+      "symbol": "_op_window_rect",
+      "kind": "dir32",
+      "addend": 12
+    }
+  ]
+}

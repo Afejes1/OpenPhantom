@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "window_get_rect",
+  "candidate": "candidate.c",
+  "symbol": "_op_window_get_rect",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "window_get_rect",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural fixed-width handle and four-word window-state source",
+      "started_utc": "2026-09-14T08:21:36.145699+00:00",
+      "finished_utc": "2026-09-14T08:21:37.722581+00:00",
+      "returncode": 0,
+      "source_sha256": "c92662bc3d6c4c588a6f2d7ba14fdf48136c336e121b793e55b13ba997c03e27",
+      "report": "engine/build/campaign-001-window_get_rect-809cb2701f9e/research-result.json",
+      "report_sha256": "c65b258341fd264e2648b05c63a6f24892a70224899b2d5bd28a0e82b62d2cd0",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 10,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.35724,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T08:27:37.652589+00:00"
+}
