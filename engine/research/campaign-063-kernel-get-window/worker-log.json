@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "kernel_get_window",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural fixed-width window and bounded table operations",
+      "started_utc": "2026-09-14T10:14:18.051729+00:00",
+      "finished_utc": "2026-09-14T10:14:19.671979+00:00",
+      "returncode": 0,
+      "source_sha256": "111995af489fe40831e206f49157aad4d657846883bda3565ca533db4ad90699",
+      "report": "engine/build/campaign-001-kernel_get_window-daa79c2bf4f4/research-result.json",
+      "report_sha256": "b18bdae78f988108349f94177a1ace5cc5f5cc87b88108928d75c378c56140b2",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 10,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.40193,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T10:20:39.887693+00:00",
+  "runner_invocations": 1,
+  "actual_implementation_compiler_invocations": 1,
+  "preflight_failures": 0
+}

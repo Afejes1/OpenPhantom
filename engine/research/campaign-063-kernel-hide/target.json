@@ -1,0 +1,27 @@
+{
+  "id": "kernel_hide",
+  "address": 4820286,
+  "size": 19,
+  "body_size": 19,
+  "source": "src/kernel_hide.c",
+  "symbol": "_op_kernel_hide",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 8790256,
+      "symbol": "_op_kernel_window",
+      "kind": "dir32"
+    },
+    {
+      "offset": 13,
+      "address": 9180780,
+      "symbol": "_op_kernel_show_window",
+      "kind": "dir32"
+    }
+  ]
+}

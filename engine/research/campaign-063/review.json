@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T10:20:39.887693+00:00",
+  "conclusion": "approved",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "kernel_add_dialog",
+      "address": 4820569,
+      "full_span_bytes": 53,
+      "verified_operands": 5,
+      "checks": 112640,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-063-kernel-add-dialog/result.json"
+    },
+    {
+      "id": "kernel_add_hook",
+      "address": 4820318,
+      "full_span_bytes": 96,
+      "verified_operands": 5,
+      "checks": 90112,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-063-kernel-add-hook/result.json"
+    },
+    {
+      "id": "kernel_get_window",
+      "address": 4821514,
+      "full_span_bytes": 10,
+      "verified_operands": 1,
+      "checks": 10752,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-063-kernel-get-window/result.json"
+    },
+    {
+      "id": "kernel_hide",
+      "address": 4820286,
+      "full_span_bytes": 19,
+      "verified_operands": 2,
+      "checks": 23552,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-063-kernel-hide/result.json"
+    },
+    {
+      "id": "kernel_remove_dialog",
+      "address": 4820622,
+      "full_span_bytes": 150,
+      "verified_operands": 9,
+      "checks": 203456,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-063-kernel-remove-dialog/result.json"
+    },
+    {
+      "id": "kernel_remove_hook",
+      "address": 4820447,
+      "full_span_bytes": 122,
+      "verified_operands": 6,
+      "checks": 95744,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-063-kernel-remove-hook/result.json"
+    },
+    {
+      "id": "kernel_set_callback",
+      "address": 4820414,
+      "full_span_bytes": 33,
+      "verified_operands": 2,
+      "checks": 5632,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-063-kernel-set-callback/result.json"
+    },
+    {
+      "id": "kernel_set_field",
+      "address": 4820305,
+      "full_span_bytes": 13,
+      "verified_operands": 1,
+      "checks": 5120,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-063-kernel-set-field/result.json"
+    },
+    {
+      "id": "kernel_show",
+      "address": 4820262,
+      "full_span_bytes": 24,
+      "verified_operands": 3,
+      "checks": 23552,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-063-kernel-show/result.json"
+    }
+  ],
+  "observations": [
+    "All126 snapshot inputs and18 selected report hashes independently checked.",
+    "Nine original-toolchain exact full extents520bytes34operands,570560checks.",
+    "Add-dialog initial preflight rejected offset28; original immediate starts498E76 relative498E59, hence29. Source unchanged;9 actual compiles plus1 preflight-only attempt.",
+    "Free-slot hook precondition, signed removal gate, unsigned dialog capacity, duplicate-first removal, stable filter oracle and ShowWindow mutation reviewed."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "kernel_remove_dialog",
+  "address": 4820622,
+  "size": 150,
+  "body_size": 150,
+  "source": "src/kernel_remove_dialog.c",
+  "symbol": "_op_kernel_remove_dialog",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 27,
+      "address": 8790500,
+      "symbol": "_op_kernel_dialog_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 42,
+      "address": 8790192,
+      "symbol": "_op_kernel_dialogs",
+      "kind": "dir32"
+    },
+    {
+      "offset": 57,
+      "address": 8790500,
+      "symbol": "_op_kernel_dialog_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 69,
+      "address": 8790500,
+      "symbol": "_op_kernel_dialog_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 90,
+      "address": 8790192,
+      "symbol": "_op_kernel_dialogs",
+      "kind": "dir32",
+      "addend": 4
+    },
+    {
+      "offset": 97,
+      "address": 8790192,
+      "symbol": "_op_kernel_dialogs",
+      "kind": "dir32"
+    },
+    {
+      "offset": 118,
+      "address": 8790192,
+      "symbol": "_op_kernel_dialogs",
+      "kind": "dir32"
+    },
+    {
+      "offset": 128,
+      "address": 8790500,
+      "symbol": "_op_kernel_dialog_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 137,
+      "address": 8790500,
+      "symbol": "_op_kernel_dialog_count",
+      "kind": "dir32"
+    }
+  ]
+}

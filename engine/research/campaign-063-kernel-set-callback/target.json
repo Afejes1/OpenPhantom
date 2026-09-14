@@ -1,0 +1,27 @@
+{
+  "id": "kernel_set_callback",
+  "address": 4820414,
+  "size": 33,
+  "body_size": 33,
+  "source": "src/kernel_set_callback.c",
+  "symbol": "_op_kernel_set_callback",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 7,
+      "address": 8790272,
+      "symbol": "_op_kernel_callback",
+      "kind": "dir32"
+    },
+    {
+      "offset": 22,
+      "address": 8790276,
+      "symbol": "_op_kernel_callback_enabled",
+      "kind": "dir32"
+    }
+  ]
+}

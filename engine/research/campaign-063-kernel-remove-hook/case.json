@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "kernel_remove_hook",
+  "candidate": "candidate.c",
+  "symbol": "_op_kernel_remove_hook",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "kernel_add_hook",
+  "address": 4820318,
+  "size": 96,
+  "body_size": 96,
+  "source": "src/kernel_add_hook.c",
+  "symbol": "_op_kernel_add_hook",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 34,
+      "address": 8790368,
+      "symbol": "_op_kernel_hooks",
+      "kind": "dir32",
+      "addend": 4
+    },
+    {
+      "offset": 54,
+      "address": 8790368,
+      "symbol": "_op_kernel_hooks",
+      "kind": "dir32"
+    },
+    {
+      "offset": 64,
+      "address": 8790368,
+      "symbol": "_op_kernel_hooks",
+      "kind": "dir32",
+      "addend": 4
+    },
+    {
+      "offset": 74,
+      "address": 8790504,
+      "symbol": "_op_kernel_hook_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 83,
+      "address": 8790504,
+      "symbol": "_op_kernel_hook_count",
+      "kind": "dir32"
+    }
+  ]
+}

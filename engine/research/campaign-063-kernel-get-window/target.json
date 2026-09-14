@@ -1,0 +1,21 @@
+{
+  "id": "kernel_get_window",
+  "address": 4821514,
+  "size": 10,
+  "body_size": 10,
+  "source": "src/kernel_get_window.c",
+  "symbol": "_op_kernel_get_window",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 8790256,
+      "symbol": "_op_kernel_window",
+      "kind": "dir32"
+    }
+  ]
+}

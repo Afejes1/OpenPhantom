@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "kernel_set_field",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural fixed-width window and bounded table operations",
+      "started_utc": "2026-09-14T10:14:14.810479+00:00",
+      "finished_utc": "2026-09-14T10:14:16.422258+00:00",
+      "returncode": 0,
+      "source_sha256": "76eb57ba574c7678a194bee9dd40cb122487c0b44acb0a84ca17c01054fa85ad",
+      "report": "engine/build/campaign-001-kernel_set_field-7a9f1b8c08c8/research-result.json",
+      "report_sha256": "576b8c826ba13833277c86f4fbaf917dae911c88affbe18c0bb7fb21a255e1d0",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 13,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.392426,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T10:20:39.887693+00:00",
+  "runner_invocations": 1,
+  "actual_implementation_compiler_invocations": 1,
+  "preflight_failures": 0
+}

@@ -1,0 +1,52 @@
+{
+  "id": "kernel_remove_hook",
+  "address": 4820447,
+  "size": 122,
+  "body_size": 122,
+  "source": "src/kernel_remove_hook.c",
+  "symbol": "_op_kernel_remove_hook",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 8790504,
+      "symbol": "_op_kernel_hook_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 47,
+      "address": 8790368,
+      "symbol": "_op_kernel_hooks",
+      "kind": "dir32"
+    },
+    {
+      "offset": 76,
+      "address": 8790368,
+      "symbol": "_op_kernel_hooks",
+      "kind": "dir32"
+    },
+    {
+      "offset": 90,
+      "address": 8790368,
+      "symbol": "_op_kernel_hooks",
+      "kind": "dir32",
+      "addend": 4
+    },
+    {
+      "offset": 100,
+      "address": 8790504,
+      "symbol": "_op_kernel_hook_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 109,
+      "address": 8790504,
+      "symbol": "_op_kernel_hook_count",
+      "kind": "dir32"
+    }
+  ]
+}

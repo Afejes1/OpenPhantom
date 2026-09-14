@@ -1,0 +1,45 @@
+{
+  "id": "kernel_add_dialog",
+  "address": 4820569,
+  "size": 53,
+  "body_size": 53,
+  "source": "src/kernel_add_dialog.c",
+  "symbol": "_op_kernel_add_dialog",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 8790500,
+      "symbol": "_op_kernel_dialog_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 13,
+      "address": 8790500,
+      "symbol": "_op_kernel_dialog_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 23,
+      "address": 8790192,
+      "symbol": "_op_kernel_dialogs",
+      "kind": "dir32"
+    },
+    {
+      "offset": 29,
+      "address": 8790500,
+      "symbol": "_op_kernel_dialog_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 38,
+      "address": 8790500,
+      "symbol": "_op_kernel_dialog_count",
+      "kind": "dir32"
+    }
+  ]
+}

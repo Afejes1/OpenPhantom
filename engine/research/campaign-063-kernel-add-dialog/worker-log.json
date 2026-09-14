@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "kernel_add_dialog",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural fixed-width window and bounded table operations",
+      "started_utc": "2026-09-14T10:14:22.963111+00:00",
+      "finished_utc": "2026-09-14T10:14:23.884878+00:00",
+      "returncode": 2,
+      "source_sha256": "a0ef32e51636ebb0c5b4e5f8cde397fefa4c50b2999e9dfc0960f1388cb46e11",
+      "report": "engine/build/campaign-001-kernel_add_dialog-bcd3f41e2220/research-result.json",
+      "report_sha256": "24e6f72b073a4a25d923a003081f4f98001d020fb0cd5cceddb445ffaec44a7b",
+      "status": "not-attempted",
+      "candidate_size": null,
+      "different_bytes": null,
+      "elapsed_seconds": 0.704161,
+      "stderr": "FAILED: reference relocation inventory disagrees with kernel_add_dialog\n"
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Natural fixed-width window and bounded table operations",
+      "started_utc": "2026-09-14T10:15:51.106564+00:00",
+      "finished_utc": "2026-09-14T10:15:52.726872+00:00",
+      "returncode": 0,
+      "source_sha256": "a0ef32e51636ebb0c5b4e5f8cde397fefa4c50b2999e9dfc0960f1388cb46e11",
+      "report": "engine/build/campaign-001-kernel_add_dialog-83a69359963b/research-result.json",
+      "report_sha256": "c6423ae768d62237dfec0e40261211ecb0013a27d5bea9a5f1114e06126b9b36",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 53,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.399714,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T10:20:39.887693+00:00",
+  "runner_invocations": 2,
+  "actual_implementation_compiler_invocations": 1,
+  "preflight_failures": 1
+}

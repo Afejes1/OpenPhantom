@@ -1,0 +1,33 @@
+{
+  "id": "kernel_show",
+  "address": 4820262,
+  "size": 24,
+  "body_size": 24,
+  "source": "src/kernel_show.c",
+  "symbol": "_op_kernel_show",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 8790264,
+      "symbol": "_op_kernel_show_command",
+      "kind": "dir32"
+    },
+    {
+      "offset": 11,
+      "address": 8790256,
+      "symbol": "_op_kernel_window",
+      "kind": "dir32"
+    },
+    {
+      "offset": 18,
+      "address": 9180780,
+      "symbol": "_op_kernel_show_window",
+      "kind": "dir32"
+    }
+  ]
+}
