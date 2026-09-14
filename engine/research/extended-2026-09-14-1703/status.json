@@ -7,21 +7,14 @@
   "baseline_accepted": 290,
   "baseline_event": 75,
   "baseline_commit": "f7fdc3a3db572de9a7b0676703eae05608086d54",
-  "accepted_new": 12,
-  "accepted_current": 302,
-  "remaining_current": 649,
-  "local_team_not_done_current": 294,
-  "evidence_event_current": 78,
-  "pending_exact": [
-    "audio_pause",
-    "audio_play",
-    "audio_unlock",
-    "music_stop",
-    "music_is_playing",
-    "audio_get_play_position"
-  ],
+  "accepted_new": 18,
+  "accepted_current": 308,
+  "remaining_current": 643,
+  "local_team_not_done_current": 300,
+  "evidence_event_current": 79,
+  "pending_exact": [],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A056 integrates six exact audio/music helpers from C078/C079, with85260 focused checks retained.",
+  "current_work": "A056 accepted six audio/music functions. Four timer wrappers and four UI input-state helpers are in bounded preparation.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": "acceptance-056"
+  "acceptance_pending": null
 }
