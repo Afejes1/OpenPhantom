@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "matrix_pre_translate",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed affine wrapper or component-addition source from reviewed ABI and exact span",
+      "started_utc": "2026-09-14T02:57:16.642171+00:00",
+      "finished_utc": "2026-09-14T02:57:18.254561+00:00",
+      "returncode": 0,
+      "source_sha256": "a15b1a0d82b908bd66c1c72d303a9a6f18607c3fe5606908f07d7dc2dc98787e",
+      "report": "engine/build/campaign-001-matrix_pre_translate-e931512c29e9/research-result.json",
+      "report_sha256": "f124d1871f46784490ae0ebc7347b6bd8adbb63dd779753f5b72d7b457535e14",
+      "status": "raw-code-match",
+      "candidate_size": 58,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.396089,
+      "stderr": ""
+    }
+  ]
+}

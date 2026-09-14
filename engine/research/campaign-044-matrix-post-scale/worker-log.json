@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "matrix_post_scale",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed affine wrapper or component-addition source from reviewed ABI and exact span",
+      "started_utc": "2026-09-14T02:57:18.260487+00:00",
+      "finished_utc": "2026-09-14T02:57:19.897766+00:00",
+      "returncode": 0,
+      "source_sha256": "cfbd9b2257a0ad08cf5f60976116e1b0627b5c360bd00c3a483f45636e3f962f",
+      "report": "engine/build/campaign-001-matrix_post_scale-c834628f1f5f/research-result.json",
+      "report_sha256": "ba6a7574df61fb52c7bd9db06181295d401fa7c03d5424e83b560c2afcc5a2f1",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 42,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.420702,
+      "stderr": ""
+    }
+  ]
+}

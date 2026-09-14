@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "matrix_post_translate",
+  "candidate": "candidate.c",
+  "symbol": "_op_matrix_post_translate",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

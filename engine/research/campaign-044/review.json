@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T03:08:51.350425+00:00",
+  "conclusion": "approved-with-priority-metadata-correction",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "matrix_post_rotate",
+      "address": 4710605,
+      "full_span_bytes": 42,
+      "team_status": "done",
+      "team_reported_name": "mat34_rotateByEulerPost",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 640,
+      "implementation_attempts": 1,
+      "result": "research/campaign-044-matrix-post-rotate/result.json"
+    },
+    {
+      "id": "matrix_post_scale",
+      "address": 4710789,
+      "full_span_bytes": 42,
+      "team_status": "not_done",
+      "team_reported_name": "mat34_rotateByEulerPost | mat34_scalePost",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 640,
+      "implementation_attempts": 1,
+      "result": "research/campaign-044-matrix-post-scale/result.json"
+    },
+    {
+      "id": "matrix_post_translate",
+      "address": 4710689,
+      "full_span_bytes": 42,
+      "team_status": "not_done",
+      "team_reported_name": "mat34_rotateByEulerPost | mat34_translatePost",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 640,
+      "implementation_attempts": 1,
+      "result": "research/campaign-044-matrix-post-translate/result.json"
+    },
+    {
+      "id": "matrix_pre_rotate",
+      "address": 4710647,
+      "full_span_bytes": 42,
+      "team_status": "not_done",
+      "team_reported_name": "mat34_rotateByEulerPost | mat34_rotateByEulerPre",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 640,
+      "implementation_attempts": 1,
+      "result": "research/campaign-044-matrix-pre-rotate/result.json"
+    },
+    {
+      "id": "matrix_pre_scale",
+      "address": 4710831,
+      "full_span_bytes": 42,
+      "team_status": "done",
+      "team_reported_name": "bapmap_applyScale",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 640,
+      "implementation_attempts": 1,
+      "result": "research/campaign-044-matrix-pre-scale/result.json"
+    },
+    {
+      "id": "matrix_pre_translate",
+      "address": 4710731,
+      "full_span_bytes": 58,
+      "team_status": "done",
+      "team_reported_name": "mat34_addTranslation",
+      "verified_operands": 0,
+      "different_bytes": 0,
+      "checks": 2305,
+      "implementation_attempts": 1,
+      "result": "research/campaign-044-matrix-pre-translate/result.json"
+    }
+  ],
+  "corrections": [
+    {
+      "kind": "priority-metadata",
+      "description": "The reviewer preparation packet incorrectly labeled all six addresses team-not_done. Parent numeric-address lookup found three reported_done:0047e0cd,0047e14b,0047e1af. Public contracts and metrics were corrected before first publication. These paired helpers retain useful exact evidence, but only three address the unfinished list. Earlier current-window campaign labels were checked and are correct."
+    }
+  ],
+  "limitations": [
+    "Wrapper fixtures observe builder/composer dispatch and full local payload; the external matrix algorithms are not verified.",
+    "Direct translation covers disjoint and exact translation alias; arbitrary partial overlap is outside the fixture domain.",
+    "Floating-point control is saved/restored; literal oracles include signed zeros, cancellation, ties, subnormals and infinity/overflow under masked PC53 round-nearest."
+  ]
+}

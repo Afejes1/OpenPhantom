@@ -1,0 +1,27 @@
+{
+  "id": "matrix_post_translate",
+  "address": 4710689,
+  "size": 42,
+  "body_size": 42,
+  "source": "src/matrix_post_translate.c",
+  "symbol": "_op_matrix_post_translate",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 15,
+      "address": 4706746,
+      "symbol": "_op_matrix_build_translation",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 31,
+      "address": 4709645,
+      "symbol": "_op_matrix_multiply_post",
+      "kind": "rel32-call"
+    }
+  ]
+}

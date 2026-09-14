@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "matrix_pre_rotate",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed affine wrapper or component-addition source from reviewed ABI and exact span",
+      "started_utc": "2026-09-14T02:57:13.369977+00:00",
+      "finished_utc": "2026-09-14T02:57:15.002337+00:00",
+      "returncode": 0,
+      "source_sha256": "eba55c2fbc02927224b57d2b7cd61224f5b3a066318bc02f76f6e7ee448a9c1b",
+      "report": "engine/build/campaign-001-matrix_pre_rotate-68cae8c61717/research-result.json",
+      "report_sha256": "f5c552843ba9b2d7afcec9ae13d740abd4c40fb5a4c8e94cc124651ea50b16ef",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 42,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.412295,
+      "stderr": ""
+    }
+  ]
+}

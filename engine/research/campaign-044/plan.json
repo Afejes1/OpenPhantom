@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "campaign-044",
+  "started_utc": "2026-09-14T02:52:00Z",
+  "stop_implementation_utc": "2026-09-14T03:27:00Z",
+  "deadline_utc": "2026-09-14T03:37:00Z",
+  "baseline_commit": "6ca2f1f0576bcf998402dcc733c636110e3c517b",
+  "functions": [
+    "matrix_post_rotate",
+    "matrix_pre_rotate",
+    "matrix_post_translate",
+    "matrix_pre_translate",
+    "matrix_post_scale",
+    "matrix_pre_scale"
+  ],
+  "status": "complete",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T03:08:51.350425+00:00",
+  "team_not_done_functions": 3,
+  "team_reported_done_functions": 3
+}

@@ -1,0 +1,14 @@
+{
+  "id": "matrix_pre_translate",
+  "address": 4710731,
+  "size": 58,
+  "body_size": 58,
+  "source": "src/matrix_pre_translate.c",
+  "symbol": "_op_matrix_pre_translate",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

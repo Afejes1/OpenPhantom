@@ -1,0 +1,5 @@
+# matrix_post_scale
+
+Cdecl void(matrix48*, vector12*). Allocate natural48-byte local; op_matrix_build_scale(local,vector), then op_matrix_multiply_post(original matrix,local). No source/destination argument reversal. Static caller/callee stack and memory evidence confirms the order. Focused callbacks fully initialize local before read, verify exact forwarded pointers and48-byte payload, mutate destination/input before composition, then retain composer effects. Builder/composer mathematics remain external authored observations. Input may be disjoint or exact destination-translation alias; local must be separate.
+
+Team not_done. Status is checked by numeric address in the supplied manifest. Parent independently confirmed every complete span, operand and ABI against static disassembly/callee access. Original VC5 /Od /MT; no exclusions or warning waivers. Fifteen-minute/ten-attempt per-function cap, five non-improving attempt stop. Native compilation only; authored fixtures execute in locked Docker. Original game never executed.

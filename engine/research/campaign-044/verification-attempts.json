@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "attempts": [
+    {
+      "id": "matrix_post_rotate",
+      "started_utc": "2026-09-14T02:58:39.633142+00:00",
+      "finished_utc": "2026-09-14T02:58:41.252534+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-matrix_post_rotate-3e65d1b3019d\\research-result.json",
+      "report_sha256": "b9eb447c362aa9a21e58da1275ad7b43acf54c54c0169aff804355b8724f5a8b",
+      "stderr": ""
+    },
+    {
+      "id": "matrix_post_rotate",
+      "started_utc": "2026-09-14T02:58:41.260766+00:00",
+      "finished_utc": "2026-09-14T02:58:46.698915+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-matrix_post_rotate-4b1974faf162\\research-result.json",
+      "report_sha256": "a4de3429d23ec1f0f751f8b40763c257dd7cd8adbb6557dbca424149b72234ab",
+      "stderr": ""
+    },
+    {
+      "id": "matrix_pre_rotate",
+      "started_utc": "2026-09-14T02:58:46.863276+00:00",
+      "finished_utc": "2026-09-14T02:58:48.453713+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-matrix_pre_rotate-b39c247d1bc0\\research-result.json",
+      "report_sha256": "7eb13e0c323df4a8d1784bde86b2d964aab611122cdbdeb7b520cdf679fa2a21",
+      "stderr": ""
+    },
+    {
+      "id": "matrix_pre_rotate",
+      "started_utc": "2026-09-14T02:58:48.461336+00:00",
+      "finished_utc": "2026-09-14T02:58:53.993918+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-matrix_pre_rotate-d188ac698803\\research-result.json",
+      "report_sha256": "50b9b9df0d1581d1b7685c6a9e5c9623f1ca57d2e9eacaaebb75d1135357efc9",
+      "stderr": ""
+    },
+    {
+      "id": "matrix_post_translate",
+      "started_utc": "2026-09-14T02:58:54.155428+00:00",
+      "finished_utc": "2026-09-14T02:58:55.774843+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-matrix_post_translate-55e90dde098d\\research-result.json",
+      "report_sha256": "ad538b47502b5bffdf3a29c7faa305c17b7430f5236f0f7700708a09ec9d68fe",
+      "stderr": ""
+    },
+    {
+      "id": "matrix_post_translate",
+      "started_utc": "2026-09-14T02:58:55.782716+00:00",
+      "finished_utc": "2026-09-14T02:59:01.652844+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-matrix_post_translate-0d5d726f9d93\\research-result.json",
+      "report_sha256": "8659ecc0a9007f5b5a1daba4e7ab8e39476db3b4fb94e2e39fb678e698f8a9ef",
+      "stderr": ""
+    },
+    {
+      "id": "matrix_pre_translate",
+      "started_utc": "2026-09-14T02:59:01.817910+00:00",
+      "finished_utc": "2026-09-14T02:59:03.441370+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-matrix_pre_translate-a0d3991f311a\\research-result.json",
+      "report_sha256": "3a3c6762474be2598524fc20908ebf9589b6653bb67e26f1fbaa52531912bd2f",
+      "stderr": ""
+    },
+    {
+      "id": "matrix_pre_translate",
+      "started_utc": "2026-09-14T02:59:03.449430+00:00",
+      "finished_utc": "2026-09-14T02:59:08.761874+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-matrix_pre_translate-437a826c3e0c\\research-result.json",
+      "report_sha256": "6dc4f07f17ff19d4bd4ca41bcfb731105d752fc80cb5ba7bfa5edff33beec592",
+      "stderr": ""
+    },
+    {
+      "id": "matrix_post_scale",
+      "started_utc": "2026-09-14T02:59:08.923149+00:00",
+      "finished_utc": "2026-09-14T02:59:10.523608+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-matrix_post_scale-8e55963c8245\\research-result.json",
+      "report_sha256": "5583a59141358a3db9f5859d65bfa1cb752c6ef329ee7b090567e1e8b8a861dc",
+      "stderr": ""
+    },
+    {
+      "id": "matrix_post_scale",
+      "started_utc": "2026-09-14T02:59:10.531909+00:00",
+      "finished_utc": "2026-09-14T02:59:16.053152+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-matrix_post_scale-e7f353c5c8cc\\research-result.json",
+      "report_sha256": "17ed28629daba0b9cf9a983fb5463f32547af191cf97cc5e276067cbce67129d",
+      "stderr": ""
+    },
+    {
+      "id": "matrix_pre_scale",
+      "started_utc": "2026-09-14T02:59:16.213648+00:00",
+      "finished_utc": "2026-09-14T02:59:17.823315+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-matrix_pre_scale-cf8f94b53005\\research-result.json",
+      "report_sha256": "5f4cd67652b9987fd88736f4ab382076f505f4d3c8f0ed15dd897aca3682587d",
+      "stderr": ""
+    },
+    {
+      "id": "matrix_pre_scale",
+      "started_utc": "2026-09-14T02:59:17.831127+00:00",
+      "finished_utc": "2026-09-14T02:59:23.124305+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-matrix_pre_scale-2d6df24a933f\\research-result.json",
+      "report_sha256": "24903be0b5ba1c971d57a223c7081e8df3a020fe699821e699af5b4fe69647b1",
+      "stderr": ""
+    }
+  ]
+}
