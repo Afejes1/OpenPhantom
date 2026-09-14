@@ -9392,6 +9392,147 @@
           "kind": "dir32"
         }
       ]
+    },
+    {
+      "id": "video_open",
+      "address": 4816791,
+      "size": 187,
+      "body_size": 187,
+      "source": "src/video_open.c",
+      "symbol": "_op_video_open",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 13,
+          "address": 8790176,
+          "symbol": "_op_video_sound_driver",
+          "kind": "dir32"
+        },
+        {
+          "offset": 21,
+          "address": 4290668,
+          "symbol": "_op_sound_get_driver",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 26,
+          "address": 8790176,
+          "symbol": "_op_video_sound_driver",
+          "kind": "dir32"
+        },
+        {
+          "offset": 32,
+          "address": 8790176,
+          "symbol": "_op_video_sound_driver",
+          "kind": "dir32"
+        },
+        {
+          "offset": 40,
+          "address": 8790176,
+          "symbol": "_op_video_sound_driver",
+          "kind": "dir32"
+        },
+        {
+          "offset": 47,
+          "address": 9180900,
+          "symbol": "_op_video_open_miles",
+          "kind": "dir32"
+        },
+        {
+          "offset": 54,
+          "address": 9180896,
+          "symbol": "_op_video_sound_system",
+          "kind": "dir32"
+        },
+        {
+          "offset": 61,
+          "address": 4805264,
+          "symbol": "_op_allocate",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 92,
+          "address": 9180880,
+          "symbol": "_op_video_bink_open",
+          "kind": "dir32"
+        },
+        {
+          "offset": 114,
+          "address": 4805714,
+          "symbol": "_op_release",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 130,
+          "address": 4816679,
+          "symbol": "_op_video_surface_type",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "video_close",
+      "address": 4816978,
+      "size": 96,
+      "body_size": 96,
+      "source": "src/video_close.c",
+      "symbol": "_op_video_close",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 43,
+          "address": 4805714,
+          "symbol": "_op_release",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 62,
+          "address": 9180888,
+          "symbol": "_op_video_bink_close",
+          "kind": "dir32"
+        },
+        {
+          "offset": 80,
+          "address": 4805714,
+          "symbol": "_op_release",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "video_set_volume",
+      "address": 4817309,
+      "size": 39,
+      "body_size": 39,
+      "source": "src/video_set_volume.c",
+      "symbol": "_op_video_set_volume",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 12,
+          "address": 8790176,
+          "symbol": "_op_video_sound_driver",
+          "kind": "dir32"
+        },
+        {
+          "offset": 31,
+          "address": 9180904,
+          "symbol": "_op_video_bink_volume",
+          "kind": "dir32"
+        }
+      ]
     }
   ]
 }

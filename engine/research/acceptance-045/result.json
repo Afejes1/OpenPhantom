@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "acceptance-045",
+  "baseline_commit": "64903a9d94c71973a5068cf8230aa4b60b186ebe",
+  "functions": [
+    "video_open",
+    "video_close",
+    "video_set_volume"
+  ],
+  "promotions": 3,
+  "registered_before": 261,
+  "registered_after": 264,
+  "full_span_bytes": 322,
+  "verified_operands": 16,
+  "status": "integration-pending",
+  "team_not_done": 3,
+  "team_reported_done": 0,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "independent_review": "comparison_inventory approved three include-only sources, scoped routes and callback-sensitive connected lifecycle fixtures; parent verified exact 261-entry target and registry prefixes",
+  "prebuild_fixture_compile": {
+    "receipt": "engine/private/a045-targeted-compile.json",
+    "sha256": "43b3088f2d560cbb4968943b029c5f040f7b188ba15f5573479a961112e778fd",
+    "returncode": 0
+  }
+}

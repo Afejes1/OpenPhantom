@@ -148,6 +148,7 @@ static void world_readers_reset_callbacks(void)
 
 void *op_allocate(unsigned int bytes)
 {
+    if(video_route)return video_allocate(bytes);
     if(ucy_active)return ucy_allocate(bytes);
     if(usd_active)return usd_allocate(bytes);
     if(dcy_active)return dcy_allocate(bytes);

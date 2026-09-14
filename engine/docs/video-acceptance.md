@@ -1,0 +1,7 @@
+# Video lifecycle acceptance
+
+Three exact open/close/volume wrappers add322 complete bytes and16 operands. All261 prior target/registry entries remain unchanged; canonical bodies change only the include. Surface classification and done-field functions remain research and are not promoted. The existing canonical allocation/release callbacks route to video observers only while a video test is active; the prior routes remain intact.
+
+Three retained focused fixtures keep their reviewed matrices under separate namespaces with shared bindings and per-seed import observers. Connected tests call actual open, volume and close wrappers on the same owned records without reseeding between calls. They cover driver setup and callback mutation, allocation failure, open failure/release, successful field publication, live volume gating, captured close handle, post-close clear and final release mutation. Failed opens are followed by a safe close(NULL). Backing is retained only for synthetic verification; no use-after-free claim is made about real release behavior.
+
+The surface helper, Bink imports, driver getter and allocation services remain authored callback dependencies. Their observed arguments, ordering, return transport and full state are verified; this checkpoint does not claim their implementations are accepted. No actual Bink, audio, DirectX, OS or game code executes. No byte exclusions or new warning waivers. Whole-executable identity remains pending.

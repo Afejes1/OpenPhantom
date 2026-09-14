@@ -4865,6 +4865,66 @@
         "Full array snapshots do not assert physical adjacency of separately linked globals."
       ],
       "exceptions": []
+    },
+    {
+      "id": "video_open",
+      "module": "stdvideo",
+      "analysis_name": "video_open",
+      "purpose": "Cdecl lazily fetches driver when globalNULL, stores returned pointer and conditionally calls BinkSetSoundSystem with live OpenMiles identity and driver. Allocates24 bytes, handles allocationNULL and BinkOpenNULL with captured-pointer release. Success writes returned surface flags, captured descriptor pointer, two opaque argument words and done0. Ordered callback expectations check full state at every boundary and predict candidate writes independently before the next observer. Local allocation pointer and original input pointers remain captured while callbacks mutate state.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/video-acceptance.md",
+        "research/campaign-064-video-open/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/video_behavior.c"
+      ],
+      "quirks": [
+        "Only exact open/close/volume wrappers are promoted.",
+        "Surface classification, Bink calls and driver lookup remain authored callback dependencies.",
+        "Only owned synthetic records execute; release observers retain backing for verification."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "video_close",
+      "module": "stdvideo",
+      "analysis_name": "video_close",
+      "purpose": "Cdecl NULL returns0. Copies pointer to a real local and repeats NULL guard as observed. Zero handle releases captured record and returns0; nonzero closes captured handle, explicitly clears handle, releases captured record and returns1. Callback mutation before zeroing and after release is preserved; no actual memory is freed by synthetic observers.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/video-acceptance.md",
+        "research/campaign-064-video-close/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/video_behavior.c"
+      ],
+      "quirks": [
+        "Only exact open/close/volume wrappers are promoted.",
+        "Surface classification, Bink calls and driver lookup remain authored callback dependencies.",
+        "Only owned synthetic records execute; release observers retain backing for verification."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "video_set_volume",
+      "module": "stdvideo",
+      "analysis_name": "video_set_volume",
+      "purpose": "Cdecl captures record pointer before global-driver gate. Zero driver skips without dereference; otherwise forwards captured record handle and full volume word to stdcall import. Callback mutation survives. NULL record only tested for gate0. Imported return is unobserved.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/video-acceptance.md",
+        "research/campaign-064-video-set-volume/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/video_behavior.c"
+      ],
+      "quirks": [
+        "Only exact open/close/volume wrappers are promoted.",
+        "Surface classification, Bink calls and driver lookup remain authored callback dependencies.",
+        "Only owned synthetic records execute; release observers retain backing for verification."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
