@@ -1,0 +1,231 @@
+{
+  "schema": 1,
+  "status": "preparation-only",
+  "prepared_utc": "2026-09-14T21:27:26.286135+00:00",
+  "address": 4675324,
+  "size": 302,
+  "body_size": 302,
+  "next_address": 4675626,
+  "source_attempts": 0,
+  "reference_sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
+  "dependencies": [
+    {
+      "id": "world_set_clock",
+      "address": 4321481,
+      "source": "src/world_set_clock.c",
+      "symbol": "_op_world_set_clock",
+      "size": 67
+    },
+    {
+      "id": "task_run_all",
+      "address": 4675626,
+      "source": "src/task_run_all.c",
+      "symbol": "_op_task_run_all",
+      "size": 297
+    },
+    {
+      "id": "module_broadcast_event",
+      "address": 4650153,
+      "source": "src/module_broadcast_event.c",
+      "symbol": "_op_module_broadcast_event",
+      "size": 128
+    }
+  ],
+  "operands": [
+    {
+      "offset": 6,
+      "address": 8816404,
+      "role": "frame_delta_float"
+    },
+    {
+      "offset": 12,
+      "address": 4885348,
+      "role": "maximum_delta_float_0_1"
+    },
+    {
+      "offset": 25,
+      "address": 8816404,
+      "role": "frame_delta_float"
+    },
+    {
+      "offset": 35,
+      "address": 8819348,
+      "role": "target_float"
+    },
+    {
+      "offset": 41,
+      "address": 8816404,
+      "role": "frame_delta_float"
+    },
+    {
+      "offset": 47,
+      "address": 8819348,
+      "role": "target_float"
+    },
+    {
+      "offset": 54,
+      "address": 8816404,
+      "role": "frame_delta_float"
+    },
+    {
+      "offset": 61,
+      "address": 8921748,
+      "role": "unresolved_rate_gate"
+    },
+    {
+      "offset": 72,
+      "address": 8816404,
+      "role": "frame_delta_float"
+    },
+    {
+      "offset": 84,
+      "address": 8816404,
+      "role": "frame_delta_float"
+    },
+    {
+      "offset": 96,
+      "address": 8816424,
+      "role": "simulation_float"
+    },
+    {
+      "offset": 102,
+      "address": 8819348,
+      "role": "target_float"
+    },
+    {
+      "offset": 119,
+      "address": 8816424,
+      "role": "simulation_float"
+    },
+    {
+      "offset": 125,
+      "address": 8816404,
+      "role": "frame_delta_float"
+    },
+    {
+      "offset": 131,
+      "address": 8819348,
+      "role": "target_float"
+    },
+    {
+      "offset": 140,
+      "address": 8819348,
+      "role": "target_float"
+    },
+    {
+      "offset": 147,
+      "address": 9044064,
+      "role": "active_world_pointer"
+    },
+    {
+      "offset": 153,
+      "address": 4321481,
+      "role": "world_clock_call"
+    },
+    {
+      "offset": 164,
+      "address": 8816424,
+      "role": "simulation_float"
+    },
+    {
+      "offset": 170,
+      "address": 8816404,
+      "role": "frame_delta_float"
+    },
+    {
+      "offset": 179,
+      "address": 9044064,
+      "role": "active_world_pointer"
+    },
+    {
+      "offset": 185,
+      "address": 4321481,
+      "role": "world_clock_call"
+    },
+    {
+      "offset": 197,
+      "address": 4675626,
+      "role": "task_scheduler_call"
+    },
+    {
+      "offset": 206,
+      "address": 8816404,
+      "role": "frame_delta_float"
+    },
+    {
+      "offset": 216,
+      "address": 4650153,
+      "role": "module_event_call"
+    },
+    {
+      "offset": 224,
+      "address": 4950112,
+      "role": "unresolved_generation_word"
+    },
+    {
+      "offset": 232,
+      "address": 4950112,
+      "role": "unresolved_generation_word"
+    },
+    {
+      "offset": 238,
+      "address": 8816424,
+      "role": "simulation_float"
+    },
+    {
+      "offset": 244,
+      "address": 8816404,
+      "role": "frame_delta_float"
+    },
+    {
+      "offset": 250,
+      "address": 8816424,
+      "role": "simulation_float"
+    },
+    {
+      "offset": 261,
+      "address": 8819348,
+      "role": "target_float"
+    },
+    {
+      "offset": 267,
+      "address": 8816424,
+      "role": "simulation_float"
+    },
+    {
+      "offset": 273,
+      "address": 8816404,
+      "role": "frame_delta_float"
+    },
+    {
+      "offset": 279,
+      "address": 8816404,
+      "role": "frame_delta_float"
+    },
+    {
+      "offset": 285,
+      "address": 8816412,
+      "role": "interpolation_alpha_float"
+    },
+    {
+      "offset": 294,
+      "address": 8816404,
+      "role": "frame_delta_float"
+    }
+  ],
+  "reviewer": "comparison_inventory",
+  "independently_checked_by_parent": true,
+  "required_type_refinements": [
+    "868714 existing frame_delta float; share declaration without duplicate storage",
+    "86871C raw op_time_mode word becomes float interpolation alpha",
+    "869294 raw op_task_target becomes float target accumulator",
+    "868728 raw op_task_simulation becomes float simulation accumulator",
+    "task_run_all accepts an explicitly unused forwarded cdecl word; reprove identical body and caller cleanup"
+  ],
+  "unresolved": [
+    "Semantic name of rate gate882294",
+    "Semantic name of incremented word4B8860",
+    "Design independent bounded sequential oracles for actual accepted callee chain"
+  ],
+  "original_game_executed": false
+}

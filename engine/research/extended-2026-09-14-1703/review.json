@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T21:37:14.537960+00:00",
+  "conclusion": "approved",
+  "accepted_new": 57,
+  "unique_new_addresses": 57,
+  "full_span_bytes": 3496,
+  "verified_operands": 211,
+  "focused_assertions": 3479936,
+  "new_match_categories": {
+    "raw-code-match": 7,
+    "relocation-adjusted-match": 50
+  },
+  "first_exact_attempt_distribution": {
+    "1": 46,
+    "2": 7,
+    "4": 1,
+    "6": 2,
+    "7": 1
+  },
+  "research_candidates_excluded": 5,
+  "manifest_not_done_new": 57,
+  "latest_manifest_local_not_done_accepted": 339,
+  "remaining_if_team_claims_are_correct": 604,
+  "accepted_total": 347,
+  "whole_executable_match": false,
+  "next_packet_source_attempts": 0,
+  "original_reference_rechecked_sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
+  "notes": [
+    "Results,CSV,manifestcounts and evidence wording independently reconciled.",
+    "All prior345specifications and resolved original-span hashes remain unchanged in event86.",
+    "Window eventcounter derives from eventfilename; corrected stale presentationcounter from preceding checkpoint."
+  ]
+}

@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **340** team-not-done entries and **5** team-done entries.
-Team-not-done entries without a local recorded match: **629**.
+Our last recorded matches cover **342** team-not-done entries and **5** team-done entries.
+Team-not-done entries without a local recorded match: **627**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -142,8 +142,8 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | util/module.c | 20 | 18 | 2 |
 | util/pzip.c | 30 | 14 | 16 |
 | util/res.c | 11 | 0 | 11 |
-| util/taskman.c | 7 | 4 | 3 |
-| File not known yet | 107 | 43 | 64 |
+| util/taskman.c | 7 | 5 | 2 |
+| File not known yet | 107 | 44 | 63 |
 
 ## Reconciliation when team source arrives
 

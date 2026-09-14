@@ -4,15 +4,15 @@
     "manifest_functions": 2241,
     "team_reported_done": 1298,
     "team_reported_not_done": 943,
-    "local_accepted": 345,
-    "local_within_team_not_done": 337,
+    "local_accepted": 347,
+    "local_within_team_not_done": 339,
     "local_overlapping_team_done": 8,
-    "remaining_if_team_claims_are_correct": 606,
-    "combined_covered_if_team_claims_are_correct": 1635
+    "remaining_if_team_claims_are_correct": 604,
+    "combined_covered_if_team_claims_are_correct": 1637
   },
   "local_match_categories": {
     "raw-code-match": 39,
-    "relocation-adjusted-match": 306
+    "relocation-adjusted-match": 308
   },
   "team_source_independently_verified": false,
   "whole_executable_match": false,
@@ -16776,11 +16776,11 @@
       "team_reported_file": "util/taskman.c",
       "team_reported_name": "task_runAll",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "task_run_all",
+      "local_source": "src/task_run_all.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00475953",
@@ -16820,11 +16820,11 @@
       "team_reported_file": null,
       "team_reported_name": "time_moduleProc",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "time_module_proc",
+      "local_source": "src/time_module_proc.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00475B1D",
@@ -24674,10 +24674,10 @@
     "manifest": "engine/planning/team-manifest-20260912-1849.json",
     "manifest_sha256": "3c26a8b5f62424864513ffb20dfb644fa582d19600cd2f98bbfd7eca71dfee1f",
     "contributor_attachment_sha256": "0b6de70dfa6b872725cbb8cc4fd14fc71316a2ec28ef9e1dec5762577046592b",
-    "accepted_event": "engine/evidence/runs/000085-c0eeceb25af9460e.json",
-    "accepted_event_sha256": "7a183cd9a8df1771cffe7e01046c5894e9aead1bc60ca7814dcb419f7a9c69db",
-    "source_commit": "9e2125904460a61bce6dbefb9ea44aac325ada0c",
-    "build_id": "20260914-170048-cd674871",
+    "accepted_event": "engine/evidence/runs/000086-9f7b907124b79ba9.json",
+    "accepted_event_sha256": "dc64896ecc078f9c53583cea22d0776776e91d55a92130e0e3dd3fb4d90ff91b",
+    "source_commit": "89da12ba4ee4e8e550227d877129d4e55e263e15",
+    "build_id": "20260914-172232-4e2d724a",
     "generator_sha256": "9eeb04c352a48d09f795f4101f5b169dabdc41af21cdb9cc4e2b2956d942845a"
   }
 }

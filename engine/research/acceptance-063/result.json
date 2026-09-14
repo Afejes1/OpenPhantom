@@ -12,7 +12,7 @@
   "full_span_bytes": 406,
   "verified_operands": 40,
   "raw_functions": 0,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 2,
   "team_reported_done": 0,
   "manifest": "planning/team-manifest-20260912-1849.json",
@@ -23,5 +23,21 @@
   ],
   "original_game_executed": false,
   "byte_exclusions": [],
-  "warning_waivers": []
+  "warning_waivers": [],
+  "accepted_event": "engine/evidence/runs/000086-9f7b907124b79ba9.json",
+  "source_commit": "89da12ba4ee4e8e550227d877129d4e55e263e15",
+  "build_id": "20260914-172232-4e2d724a",
+  "source_snapshot_inputs": 578,
+  "every_source_input_matches_committed_git_blob": true,
+  "shared_matrix_checks": 1696848,
+  "all_prior_345_specs_and_resolved_span_hashes_unchanged": true,
+  "prior_task_matrix_checks_retained": {
+    "task_module_proc": 1728,
+    "task_register": 93600,
+    "task_run": 74304,
+    "task_alloc_state": 38088
+  },
+  "independent_review": "Both focused cohorts and final integration approved, including rawword interpolation documentation. Full strict comparison now proves the signature-only task_register refinement leaves its accepted machine code unchanged.",
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34898442110",
+  "supplemental_ci_conclusion": "success"
 }

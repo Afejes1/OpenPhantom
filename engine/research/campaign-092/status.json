@@ -1,10 +1,12 @@
 {
   "schema": 1,
-  "status": "integration-review",
+  "status": "accepted",
   "started_utc": "2026-09-14T21:10:54.943685+00:00",
   "deadline_utc": "2026-09-14T21:50:54.943685+00:00",
   "functions": [
     "task_run_all"
   ],
-  "acceptance": "research/acceptance-063/result.json"
+  "acceptance": "research/acceptance-063/result.json",
+  "accepted_event": "engine/evidence/runs/000086-9f7b907124b79ba9.json",
+  "completed_utc": "2026-09-14T21:33:19.313750+00:00"
 }
