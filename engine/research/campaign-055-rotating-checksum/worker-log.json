@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "rotating_checksum",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed utility functions with explicit32-bit arithmetic and complete spans",
+      "started_utc": "2026-09-14T07:09:12.836895+00:00",
+      "finished_utc": "2026-09-14T07:09:14.455624+00:00",
+      "returncode": 1,
+      "source_sha256": "296fec0859671d73f37f3523a7f7009350c0247e97f6de8450ada5a4dd586c2b",
+      "report": "engine/build/campaign-001-rotating_checksum-29ef8b304f53/research-result.json",
+      "report_sha256": "0c35856cc67939b9e0ecd61a4aff3af4776fe1d80c7b117ae9d94bac17911d33",
+      "status": "mismatch",
+      "candidate_size": 75,
+      "different_bytes": null,
+      "elapsed_seconds": 1.399271,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-body-exact-layout-pending",
+  "frozen_utc": "2026-09-14T07:17:19.538271+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "rotating_checksum",
+  "address": 4815240,
+  "size": 88,
+  "body_size": 75,
+  "source": "src/rotating_checksum.c",
+  "symbol": "_op_rotating_checksum",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

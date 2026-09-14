@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "rotating_checksum",
+  "kind": "separate-body-diagnostic-not-acceptance",
+  "full_target_bytes": 88,
+  "body_bytes": 75,
+  "unrepresented_alignment_bytes": 13,
+  "body_equal": true,
+  "reference_body_sha256": "ab55d9f23d4969985ddb13f6a2ac7e20410462284795a60ca0c65415ffe4b417",
+  "original_full_span_sha256": "bad8e8db953ab6193e7dd6f760f42584109190e58ee0d2ff8bb7435ec4de0968",
+  "observations": [
+    {
+      "runner": "native",
+      "report": "engine/build/campaign-001-rotating_checksum-336b80af8162/research-result.json",
+      "report_sha256": "f76c815c3abb989d8d84b6c63b486312b2df1c0d66bcfb02e43ba0d2685df71f",
+      "function_inventory_sha256": "6c454f94d677126540568780452203e1496db5b29bfd41aaaa82096a4089b89f",
+      "body_bytes": 75,
+      "address_operands": 0,
+      "body_sha256": "ab55d9f23d4969985ddb13f6a2ac7e20410462284795a60ca0c65415ffe4b417",
+      "body_equal": true
+    },
+    {
+      "runner": "docker",
+      "report": "engine/build/campaign-001-rotating_checksum-cfd3d2830d93/research-result.json",
+      "report_sha256": "aa2451681dac0a4937ee254a084ef583d3092c785a37b960bad33c130429d18b",
+      "function_inventory_sha256": "ffdc83e2d42b022249184fc8bd42b9e66cdcaf1ac4f323f8d770376a48d64db5",
+      "body_bytes": 75,
+      "address_operands": 0,
+      "body_sha256": "ab55d9f23d4969985ddb13f6a2ac7e20410462284795a60ca0c65415ffe4b417",
+      "body_equal": true
+    }
+  ],
+  "full_span_accepted": false,
+  "target_unchanged": true,
+  "target_sha256": "360c3fe8d1c6e92316de7118415baad4e2d11c12300de2a8aea28f6697898225",
+  "byte_exclusions": [],
+  "different_percent": null
+}

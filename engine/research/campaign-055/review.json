@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T07:17:19.538271+00:00",
+  "conclusion": "approved-three-exact-one-layout-research",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "rect_overlap_inclusive",
+      "address": 4814833,
+      "full_span_bytes": 102,
+      "body_bytes": 102,
+      "candidate_size": 102,
+      "verified_operands": 0,
+      "different_bytes": 0,
+      "checks": 9600,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-055-rect-overlap-inclusive/result.json"
+    },
+    {
+      "id": "rect_overlap_strict",
+      "address": 4814935,
+      "full_span_bytes": 102,
+      "body_bytes": 102,
+      "candidate_size": 102,
+      "verified_operands": 0,
+      "different_bytes": 0,
+      "checks": 9600,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-055-rect-overlap-strict/result.json"
+    },
+    {
+      "id": "rect_union",
+      "address": 4815037,
+      "full_span_bytes": 203,
+      "body_bytes": 203,
+      "candidate_size": 203,
+      "verified_operands": 0,
+      "different_bytes": 0,
+      "checks": 4800,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-055-rect-union/result.json"
+    },
+    {
+      "id": "rotating_checksum",
+      "address": 4815240,
+      "full_span_bytes": 88,
+      "body_bytes": 75,
+      "candidate_size": 75,
+      "verified_operands": 0,
+      "different_bytes": null,
+      "checks": 79064,
+      "evidence_category": "research-candidate",
+      "team_status": "not_done",
+      "result": "research/campaign-055-rotating-checksum/result.json"
+    }
+  ],
+  "observations": [
+    "All56 current snapshot inputs and8 final reports independently rehashed with zero mismatches.",
+    "Three rectangle functions raw-match all407bytes on their first compile; no relocation adjustment or external operands.",
+    "Unsigned candidate arithmetic preserves32-bit wraps while comparisons remain signed. Widened modulo fixtures derive expectations independently.",
+    "Guarded disjoint/self-alias cases cover400 edge pairs and2000 deterministic full-word profiles; partial overlap is not claimed.",
+    "Checksum full88/candidate75,103064 total passing checks, no exclusions/waivers; separate body75 equality diagnostic verified by parent only."
+  ],
+  "limitations": [
+    "The reviewer could not open optional body-diagnostic.json after automatic approval review reported its execution model at capacity; main receipt audit completed.",
+    "Checksum remains unaccepted and no full-span mismatch percentage is reported."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "rect_overlap_inclusive",
+  "candidate": "candidate.c",
+  "symbol": "_op_rect_overlap_inclusive",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "rect_union",
+  "address": 4815037,
+  "size": 203,
+  "body_size": 203,
+  "source": "src/rect_union.c",
+  "symbol": "_op_rect_union",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

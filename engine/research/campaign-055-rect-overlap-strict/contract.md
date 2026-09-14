@@ -1,0 +1,5 @@
+# rect_overlap_strict
+
+Use the same ordered endpoint tests but reject equality as well as separation. Touching endpoints fail. No normalization of zero or negative extents. Signed comparisons occur after32-bit wrapped addition; no external operands.
+
+All four targets have no direct call XREFs, calls, external operands or referenced strings. Complete disassembly supplies the contract; numeric team-not_done entries supply priority only. Rectangle fixtures compute endpoints with widened arithmetic modulo2^32, then use signed comparisons and an independently derived union oracle. The original VC5 signed conversion of unsigned32 bit patterns is intentional and bounded to that implementation. Cases include all pairs of20 authored edge rectangles plus2000 deterministic full-word pairs, with same-object alias and full guard snapshots. Checksum fixtures use a widened numerical rotation oracle and split-stream property. No original function executes, no byte exclusions or warning waivers, and no whole-program behavioral claim.

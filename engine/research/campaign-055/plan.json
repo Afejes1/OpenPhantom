@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "campaign-055",
+  "started_utc": "2026-09-14T06:58:00Z",
+  "stop_implementation_utc": "2026-09-14T07:33:00Z",
+  "deadline_utc": "2026-09-14T07:43:00Z",
+  "functions": [
+    "rect_overlap_inclusive",
+    "rect_overlap_strict",
+    "rect_union",
+    "rotating_checksum"
+  ],
+  "full_target_bytes": 495,
+  "address_operands": 0,
+  "status": "complete",
+  "prepared_utc": "2026-09-14T07:03:05Z",
+  "independent_packet_review": "comparison_inventory approved full spans, ABIs, explicit wrap arithmetic and independent fixture oracles",
+  "baseline_commit": "df7855f627e2ee141fdc30e554c3ca5023533a67",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T07:17:19.538271+00:00"
+}

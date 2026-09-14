@@ -1,0 +1,14 @@
+{
+  "id": "rect_overlap_inclusive",
+  "address": 4814833,
+  "size": 102,
+  "body_size": 102,
+  "source": "src/rect_overlap_inclusive.c",
+  "symbol": "_op_rect_overlap_inclusive",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "rect_union",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed utility functions with explicit32-bit arithmetic and complete spans",
+      "started_utc": "2026-09-14T07:09:11.209476+00:00",
+      "finished_utc": "2026-09-14T07:09:12.830473+00:00",
+      "returncode": 0,
+      "source_sha256": "08e08c2f55dd866de6d3fceac29cfcbbaf4aa5fa7c35f1c094bed48846c107dd",
+      "report": "engine/build/campaign-001-rect_union-e873f335a188/research-result.json",
+      "report_sha256": "9fa27ce9730bc419422ad2ea5a8fe8b5a23792bec3e9f277aa4378a5f9fdbe52",
+      "status": "raw-code-match",
+      "candidate_size": 203,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.404232,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T07:17:19.538271+00:00"
+}

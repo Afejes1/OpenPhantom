@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "rect_overlap_strict",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed utility functions with explicit32-bit arithmetic and complete spans",
+      "started_utc": "2026-09-14T07:09:09.583516+00:00",
+      "finished_utc": "2026-09-14T07:09:11.203905+00:00",
+      "returncode": 0,
+      "source_sha256": "88ae602413ad35648b2e0501f313e0d9aadb4323c832b5d92c869e0dd6e21094",
+      "report": "engine/build/campaign-001-rect_overlap_strict-42e0c769d2ec/research-result.json",
+      "report_sha256": "9a510e857761b79530ccfe8526978611da99bc2f06d8a1822944ee1b5d9cb8a7",
+      "status": "raw-code-match",
+      "candidate_size": 102,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.400744,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T07:17:19.538271+00:00"
+}

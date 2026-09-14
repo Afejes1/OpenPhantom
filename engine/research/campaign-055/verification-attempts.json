@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "attempts": [
+    {
+      "id": "rect_overlap_inclusive",
+      "started_utc": "2026-09-14T07:09:56.821040+00:00",
+      "finished_utc": "2026-09-14T07:09:58.439362+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-rect_overlap_inclusive-6b2833e655ab\\research-result.json",
+      "report_sha256": "d2a0bead9f25326b897a113d1684984f56f1817be8f8b2d4d284757e25261d8f",
+      "stderr": ""
+    },
+    {
+      "id": "rect_overlap_inclusive",
+      "started_utc": "2026-09-14T07:09:58.446805+00:00",
+      "finished_utc": "2026-09-14T07:10:03.948666+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-rect_overlap_inclusive-e0ec35c5e152\\research-result.json",
+      "report_sha256": "636a940bbe91267de8c3746cdc868814239916e3bedc0eff37b8c7c457a07665",
+      "stderr": ""
+    },
+    {
+      "id": "rect_overlap_strict",
+      "started_utc": "2026-09-14T07:10:04.112934+00:00",
+      "finished_utc": "2026-09-14T07:10:05.697992+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-rect_overlap_strict-07b73b97dbc0\\research-result.json",
+      "report_sha256": "498a35b761d736199ed6eec3ae75e69b5fc327ea1284b7f393fc72eb7a7ee964",
+      "stderr": ""
+    },
+    {
+      "id": "rect_overlap_strict",
+      "started_utc": "2026-09-14T07:10:05.705220+00:00",
+      "finished_utc": "2026-09-14T07:10:11.171074+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-rect_overlap_strict-5b2e5ffdf432\\research-result.json",
+      "report_sha256": "fd281f98e1c344669e0fd587df384af4494e5e2c4de4d4f4c451ca855cc2bf9f",
+      "stderr": ""
+    },
+    {
+      "id": "rect_union",
+      "started_utc": "2026-09-14T07:10:11.334339+00:00",
+      "finished_utc": "2026-09-14T07:10:12.914295+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-rect_union-f2c556459086\\research-result.json",
+      "report_sha256": "59bbc15b739e46d259d08b483b0b52e8c35d5c645307e570dd0b24826786bc53",
+      "stderr": ""
+    },
+    {
+      "id": "rect_union",
+      "started_utc": "2026-09-14T07:10:12.921388+00:00",
+      "finished_utc": "2026-09-14T07:10:18.239503+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-rect_union-e9011597bde4\\research-result.json",
+      "report_sha256": "8fdc66d676bbf37454680813adb804f768c36e7ace20ec8b1bee06c0169eb9c8",
+      "stderr": ""
+    },
+    {
+      "id": "rotating_checksum",
+      "started_utc": "2026-09-14T07:10:18.401069+00:00",
+      "finished_utc": "2026-09-14T07:10:19.999160+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-rotating_checksum-336b80af8162\\research-result.json",
+      "report_sha256": "f76c815c3abb989d8d84b6c63b486312b2df1c0d66bcfb02e43ba0d2685df71f",
+      "stderr": ""
+    },
+    {
+      "id": "rotating_checksum",
+      "started_utc": "2026-09-14T07:10:20.006687+00:00",
+      "finished_utc": "2026-09-14T07:10:25.487242+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-rotating_checksum-cfd3d2830d93\\research-result.json",
+      "report_sha256": "aa2451681dac0a4937ee254a084ef583d3092c785a37b960bad33c130429d18b",
+      "stderr": ""
+    }
+  ]
+}
