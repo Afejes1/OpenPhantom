@@ -3473,6 +3473,101 @@
         "Actual wrappers and raw stream helpers are connected; file backend, header writer and diagnostic helpers remain authored observers."
       ],
       "exceptions": []
+    },
+    {
+      "id": "save_load_slot_teardown",
+      "module": "save",
+      "analysis_name": "save_load_slot_teardown",
+      "purpose": "Call lifecycle(0,6), then slot_path(slot), then return load_saved_game(path,0). Manifest save_writeSlot conflicts with observed load-after-teardown semantics; numeric address establishes eligibility. Complete callers, dependency and disassembly evidence support the contract.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/save-slots-acceptance.md",
+        "research/campaign-051-save-load-slot-teardown/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/save_slots_behavior.c"
+      ],
+      "quirks": [
+        "Actual slot-path formatter wrapper is connected; formatter, loader, delete, lifecycle and free backends remain authored observers.",
+        "Numeric team address is authoritative when manifest names conflict with observed behavior."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "save_load_slot",
+      "module": "save",
+      "analysis_name": "save_load_slot",
+      "purpose": "Call slot_path(slot), then load_saved_game(path,1); the returned value is unused in observed callers and this wrapper is modeled void. Manifest save_writeSlotNoBroadcast is retained only as team provenance, not behavioral proof.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/save-slots-acceptance.md",
+        "research/campaign-051-save-load-slot/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/save_slots_behavior.c"
+      ],
+      "quirks": [
+        "Actual slot-path formatter wrapper is connected; formatter, loader, delete, lifecycle and free backends remain authored observers.",
+        "Numeric team address is authoritative when manifest names conflict with observed behavior."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "save_delete_slot",
+      "module": "save",
+      "analysis_name": "save_delete_slot",
+      "purpose": "Call slot_path(slot), then delete_file(path). Return0 for backend0, else1. The actual backend wraps file deletion with0 success/-1 failure. Manifest save_slotExists conflicts with this delete-slot behavior; do not call it an existence test.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/save-slots-acceptance.md",
+        "research/campaign-051-save-delete-slot/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/save_slots_behavior.c"
+      ],
+      "quirks": [
+        "Actual slot-path formatter wrapper is connected; formatter, loader, delete, lifecycle and free backends remain authored observers.",
+        "Numeric team address is authoritative when manifest names conflict with observed behavior."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "save_free_slot_labels",
+      "module": "save",
+      "analysis_name": "save_free_slot_labels",
+      "purpose": "Visit exactly99 rows of stride8. For each live nonnull label atoffset4, release it, then clear that same field after the callback. Future slot mutations must affect later dispatch. Current-field replacement is overwritten with null; callbacks may insert earlier labels that are not revisited. Nonpointer words and surrounding guards remain unchanged. Null base is outside the domain; repeated handles are nonfreeing authored observers only.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/save-slots-acceptance.md",
+        "research/campaign-051-save-free-slot-labels/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/save_slots_behavior.c"
+      ],
+      "quirks": [
+        "Actual slot-path formatter wrapper is connected; formatter, loader, delete, lifecycle and free backends remain authored observers.",
+        "Numeric team address is authoritative when manifest names conflict with observed behavior."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "save_slot_path",
+      "module": "save",
+      "analysis_name": "save_slot_path",
+      "purpose": "Call the existing variadic formatter with fixed global path, external format symbol, external prefix symbol and signed slot. Return the same fixed path base regardless of formatter result. Authored external strings are checked by identity. The fixture has32 active bytes and8 trailing guards; this is a bounded fixture domain, not independent original-capacity proof.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/save-slots-acceptance.md",
+        "research/campaign-051-save-slot-path/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/save_slots_behavior.c"
+      ],
+      "quirks": [
+        "Actual slot-path formatter wrapper is connected; formatter, loader, delete, lifecycle and free backends remain authored observers.",
+        "Numeric team address is authoritative when manifest names conflict with observed behavior."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

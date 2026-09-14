@@ -7311,6 +7311,159 @@
           "kind": "rel32-call"
         }
       ]
+    },
+    {
+      "id": "save_load_slot_teardown",
+      "address": 4528438,
+      "size": 40,
+      "body_size": 40,
+      "source": "src/save_load_slot_teardown.c",
+      "symbol": "_op_save_load_slot_teardown",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 8,
+          "address": 4649923,
+          "symbol": "_op_save_lifecycle",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 22,
+          "address": 4530153,
+          "symbol": "_op_save_slot_path",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 31,
+          "address": 4527503,
+          "symbol": "_op_load_saved_game",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "save_load_slot",
+      "address": 4528478,
+      "size": 28,
+      "body_size": 28,
+      "source": "src/save_load_slot.c",
+      "symbol": "_op_save_load_slot",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 10,
+          "address": 4530153,
+          "symbol": "_op_save_slot_path",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 19,
+          "address": 4527503,
+          "symbol": "_op_load_saved_game",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "save_delete_slot",
+      "address": 4528544,
+      "size": 39,
+      "body_size": 39,
+      "source": "src/save_delete_slot.c",
+      "symbol": "_op_save_delete_slot",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 8,
+          "address": 4530153,
+          "symbol": "_op_save_slot_path",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 17,
+          "address": 4830576,
+          "symbol": "_op_delete_file",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "save_free_slot_labels",
+      "address": 4529918,
+      "size": 80,
+      "body_size": 80,
+      "source": "src/save_free_slot_labels.c",
+      "symbol": "_op_save_free_slot_labels",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 53,
+          "address": 4805714,
+          "symbol": "_op_release",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "save_slot_path",
+      "address": 4530153,
+      "size": 37,
+      "body_size": 37,
+      "source": "src/save_slot_path.c",
+      "symbol": "_op_save_slot_path",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 8,
+          "address": 4909380,
+          "symbol": "_op_save_path_prefix",
+          "kind": "dir32"
+        },
+        {
+          "offset": 13,
+          "address": 4937472,
+          "symbol": "_op_save_path_format",
+          "kind": "dir32"
+        },
+        {
+          "offset": 18,
+          "address": 8917312,
+          "symbol": "_op_save_path",
+          "kind": "dir32"
+        },
+        {
+          "offset": 23,
+          "address": 4826544,
+          "symbol": "_op_format_sprite_name",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 31,
+          "address": 8917312,
+          "symbol": "_op_save_path",
+          "kind": "dir32"
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "acceptance-036",
+  "baseline_commit": "c1590e43af9468cf907e964f149f366392918be7",
+  "functions": [
+    "save_load_slot_teardown",
+    "save_load_slot",
+    "save_delete_slot",
+    "save_free_slot_labels",
+    "save_slot_path"
+  ],
+  "promotions": 5,
+  "registered_before": 188,
+  "registered_after": 193,
+  "full_span_bytes": 224,
+  "verified_operands": 13,
+  "status": "integration-pending",
+  "team_not_done": 5,
+  "team_reported_done": 0,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "supplemental_compatibility": "Existing target-wide _CRT_SECURE_NO_WARNINGS applies only to modern supplemental build.",
+  "prebuild_fixture_compile": {
+    "receipt": "engine/private/a036-targeted-compile.json",
+    "sha256": "7547c37989e61f2497a66729d40523d92e76cf9bd1cf2f2636c25bf388bbe713",
+    "returncode": 0
+  },
+  "independent_review": "comparison_inventory: approved unchanged188-entry prefixes, include-only source parity, actual shared formatter path chains and guarded99-row cleanup"
+}

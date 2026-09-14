@@ -464,6 +464,7 @@ int op_format_sprite_name(char *dest, char *format, ...)
     va_list args;
     char *base;
     unsigned int length;
+    if(ssp_active){int slot;va_start(args,format);base=va_arg(args,char *);slot=va_arg(args,int);va_end(args);return ssp_format(dest,format,base,slot);}
     va_start(args, format);
     base = va_arg(args, char *);
     va_end(args);

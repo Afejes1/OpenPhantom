@@ -181,6 +181,7 @@ int op_stream_seek(void *handle, long offset, int origin)
 }
 void op_release(void *memory)
 {
+    if(sfl_active){sfl_release(memory);return;}
     if(pfc_active){pfc_raw_release(memory);return;}
     if(cmr_active){cmr_release(memory);return;}
     if (cv_active)
