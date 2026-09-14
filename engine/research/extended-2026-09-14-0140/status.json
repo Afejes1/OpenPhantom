@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "extended-2026-09-14-0140",
-  "status": "active",
+  "status": "completed",
   "window_start_utc": "2026-09-14T01:40:41Z",
   "stop_new_implementation_utc": "2026-09-14T11:30:41Z",
   "hard_stop_utc": "2026-09-14T11:40:41Z",
@@ -420,7 +420,7 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Final publication and fixed-window shutdown; all implementation and acceptance work complete.",
+  "current_work": "Complete. Resume only under a new user-authorized window; start from next-work.json and preserve all parked campaign caps.",
   "original_game_executed": false,
   "accepted_functions_current": 267,
   "evidence_records_current": 69,
@@ -431,5 +431,10 @@
   "ghidra_metadata_saved_utc": "2026-09-14T11:30:46.330Z",
   "weekly_shared_usage_observed_utc": "2026-09-14T11:26:42Z",
   "new_exact_promotions": 114,
-  "final_verification_complete": true
+  "final_verification_complete": true,
+  "completed_utc": "2026-09-14T11:36:16.820018+00:00",
+  "elapsed_wall_seconds": 35735,
+  "heartbeat_status": "PAUSED",
+  "ended_within_authorized_window": true,
+  "completion_reason": "Implementation, final acceptance, independent audit and handoff complete; final publication checks follow."
 }
