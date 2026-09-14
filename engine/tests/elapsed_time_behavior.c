@@ -250,10 +250,18 @@ static int op_test_signed_ms_to_seconds(void)
     static const int values[17] = {INT_MIN, -2147483647, -16777217, -16777216,  -1000001,  -1000,
                                    -999,    -1,          0,         1,          999,       1000,
                                    1000001, 16777216,    16777217,  2147483646, 2147483647};
+#ifdef OP_VC5_BEHAVIOR
     static const unsigned int expected[17] = {0xca03126fu, 0xca03126fu, 0xc6831270u, 0xc683126fu, 0xc47a0011u,
                                               0xbf800000u, 0xbf7fbe78u, 0xba83126fu, 0x00000000u, 0x3a83126fu,
                                               0x3f7fbe78u, 0x3f800000u, 0x447a0011u, 0x4683126fu, 0x46831270u,
                                               0x4a03126fu, 0x4a03126fu};
+#else
+    /* SSE rounds the integer to binary32 before multiplication; x87 FILD does not. */
+    static const unsigned int expected[17] = {0xca03126fu, 0xca03126fu, 0xc683126fu, 0xc683126fu, 0xc47a0011u,
+                                              0xbf800000u, 0xbf7fbe78u, 0xba83126fu, 0x00000000u, 0x3a83126fu,
+                                              0x3f7fbe78u, 0x3f800000u, 0x447a0011u, 0x4683126fu, 0x4683126fu,
+                                              0x4a03126fu, 0x4a03126fu};
+#endif
     unsigned int i, repeat, old_control;
     float result;
     old_control = _controlfp(0, 0);
@@ -272,7 +280,11 @@ static int op_test_signed_ms_to_seconds(void)
             T803_CHECK(op_time_start_seconds == -17.25f);
         }
     _controlfp(old_control, _MCW_PC | _MCW_RC);
+#ifdef OP_VC5_BEHAVIOR
     printf("signed_ms_to_seconds: %d checks, %d failures\n", t803_checks, t803_failures);
+#else
+    printf("signed_ms_to_seconds modern float: %d checks, %d failures\n", t803_checks, t803_failures);
+#endif
     return t803_failures != 0;
 }
 

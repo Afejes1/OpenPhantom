@@ -31,5 +31,14 @@
   ],
   "original_game_executed": false,
   "byte_exclusions": [],
-  "warning_waivers": []
+  "warning_waivers": [],
+  "initial_source_commit": "13c48f0d0b1838cd2b50b96cb26a3b112d41ca95",
+  "initial_supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34884415576",
+  "initial_supplemental_ci_conclusion": "failure",
+  "initial_ci_failure": "Two signed integer conversion boundary expectations differ for modern SSE versus original x87;16 failures over8 repeats each. Original VC5 expected table and function source unchanged.",
+  "modern_fixture_adjustment": "Separate explicit expected table for +/-16777217 and modern float label; no original byte exclusion or relaxed VC5 assertion.",
+  "initial_build_id": "20260914-150206-ebf67ea3",
+  "initial_original_toolchain_fixture_passed": true,
+  "initial_all316_comparisons_passed": true,
+  "modern_adjustment_independent_review": "comparison_inventory verified the two-row modern-only table correction and unchanged VC5 oracle/canonical source."
 }
