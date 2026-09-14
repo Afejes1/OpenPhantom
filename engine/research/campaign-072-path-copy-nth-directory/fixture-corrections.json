@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "utc": "2026-09-14T16:00:31.110055+00:00",
+  "reason": "Modern supplemental compiler rejects unreachable return after exit in the unexpected-uppercase observer.",
+  "correction": "Retain unconditional failed assertion and return value; any unexpected call still fails the fixture. Candidate source and byte comparison unchanged.",
+  "failed_ci": "https://github.com/Afejes1/OpenPhantom/actions/runs/34865592740",
+  "previous_focused_receipt": "result-before-modern-fixture-fix.json",
+  "waivers": []
+}

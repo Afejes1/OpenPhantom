@@ -12,14 +12,10 @@
     "path_copy_nth_directory",
     "path_copy_filename"
   ],
-  "priority": [
-    "module_open_all",
-    "module_close_all",
-    "module_install"
-  ],
+  "priority": [],
   "ownership": "Parent sole source/Git writer; existing independent reviewer reads only.",
-  "current_work": "A051 accepted; C072 three exact path routines ready for shared integration.",
-  "focused_new_exact": 3,
+  "current_work": "A052 corrected fixture passes focused validation; replacement shared build and CI pending. No new implementation planned.",
+  "focused_new_exact": 16,
   "acceptance_pending": "research/acceptance-052/result.json",
   "accepted_new": 14,
   "accepted_current": 287,

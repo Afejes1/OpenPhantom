@@ -58,7 +58,6 @@ char *p72o_copy(char *out, const char *in, unsigned int count)
 int p72o_upper(int value)
 {
     P72O_CHECK(0);
-    exit(2);
     return value;
 }
 static void p72o_run_case(const char *text, int length, int alignment, int tail_mode)
@@ -264,7 +263,6 @@ char *p72n_copy(char *out, const char *in, unsigned int count)
 int p72n_upper(int value)
 {
     P72N_CHECK(0);
-    exit(2);
     return value;
 }
 static void p72n_run_case(const char *text, int length, int alignment, int tail_mode)
@@ -470,7 +468,6 @@ char *p72f_copy(char *out, const char *in, unsigned int count)
 int p72f_upper(int value)
 {
     P72F_CHECK(0);
-    exit(2);
     return value;
 }
 static void p72f_run_case(const char *text, int length, int alignment, int tail_mode)

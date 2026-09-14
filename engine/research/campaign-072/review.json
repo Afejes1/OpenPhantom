@@ -29,5 +29,20 @@
       "Three retained matrices preserve separate active routing and restore inactive state.",
       "Shared declaration/main/CMake wiring approved and targeted original-VC5 compile passed."
     ]
+  },
+  "fixture_compatibility_correction": {
+    "utc": "2026-09-14T16:04:42.039916+00:00",
+    "failed_ci": "https://github.com/Afejes1/OpenPhantom/actions/runs/34865592740",
+    "correction": "Unexpected uppercase observers keep CHECK(0) and return, removing unreachable-after-exit code.",
+    "parent_rehashed_corrected_focused_snapshots": 45,
+    "focused_assertions_after_correction": 6111472,
+    "candidate_source_unchanged": true,
+    "warning_waivers": [],
+    "independent_review": {
+      "reviewer": "comparison_inventory",
+      "utc": "2026-09-14T16:06:29.304267+00:00",
+      "conclusion": "approved",
+      "evidence": "Six selected native/Docker hashes verified; unchanged candidate sources, exact code/relocation parity and6111472passing assertions. Removing exit after unconditional failed check does not weaken the unexpected-call oracle."
+    }
   }
 }

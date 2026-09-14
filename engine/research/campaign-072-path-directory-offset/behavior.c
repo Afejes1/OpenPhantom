@@ -56,7 +56,6 @@ char *op_copy_keyframe_name(char *out, const char *in, unsigned int count)
 int op_toupper(int value)
 {
     CHECK(0);
-    exit(2);
     return value;
 }
 static void run_case(const char *text, int length, int alignment, int tail_mode)

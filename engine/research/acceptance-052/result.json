@@ -20,5 +20,15 @@
   "retained_focused_checks": 6111472,
   "original_game_executed": false,
   "byte_exclusions": [],
-  "warning_waivers": []
+  "warning_waivers": [],
+  "superseded_validation": {
+    "source_commit": "40f187ed109957bec7a069bb6ef85a79d4314b1d",
+    "completed_vc5_build": "20260914-115800-b0d35c89",
+    "accepted": false,
+    "failed_supplemental_ci": "https://github.com/Afejes1/OpenPhantom/actions/runs/34865592740",
+    "reason": "Modern C4702 unreachable code in three synthetic unexpected-uppercase observers.",
+    "correction": "Keep unconditional failed assertion and return, remove unreachable return-after-exit shape; candidates and warning policy unchanged.",
+    "focused_pairs_repeated": 3,
+    "shared_build_repeated": true
+  }
 }

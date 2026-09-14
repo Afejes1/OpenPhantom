@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "program": "TPM/WMAIN.EXE",
+  "port": 8192,
+  "comments_saved_utc": "2026-09-14T15:57:14Z",
+  "changes": [
+    {
+      "address": "0046EC0C",
+      "acceptance_event": 72,
+      "kind": "plate-evidence-comment"
+    },
+    {
+      "address": "0046F3C3",
+      "acceptance_event": 72,
+      "kind": "plate-evidence-comment"
+    },
+    {
+      "address": "0046F82F",
+      "acceptance_event": 73,
+      "kind": "plate-evidence-comment"
+    },
+    {
+      "address": "0046FA53",
+      "acceptance_event": 73,
+      "kind": "plate-evidence-comment"
+    },
+    {
+      "address": "0046FAB6",
+      "acceptance_event": 73,
+      "kind": "plate-evidence-comment"
+    },
+    {
+      "address": "0046FB32",
+      "acceptance_event": 73,
+      "kind": "plate-evidence-comment"
+    },
+    {
+      "address": "0046F747",
+      "acceptance_event": 74,
+      "kind": "plate-evidence-comment"
+    },
+    {
+      "address": "0046F7AA",
+      "acceptance_event": 74,
+      "kind": "plate-evidence-comment"
+    },
+    {
+      "address": "0046F870",
+      "acceptance_event": 74,
+      "kind": "plate-evidence-comment"
+    },
+    {
+      "address": "0046F8E4",
+      "acceptance_event": 74,
+      "kind": "plate-evidence-comment"
+    }
+  ],
+  "correction": "Shutdown status eligibility is mask1, zero-based bit0; head/tail/open remain unchanged. Earlier ambiguous bit1/native-cleanup wording was replaced.",
+  "signature_recovery": {
+    "addresses": [
+      "0046F529",
+      "0046F639"
+    ],
+    "observed_contracts": [
+      "cdecl pointer(module_id)",
+      "cdecl int(module_id,destination,count)"
+    ],
+    "evidence": "Caller00451BD2 pushes count8, destination, module ID then cleans12; getName reads EBP+8/+12/+16. Lookup compares module ID from EBP+8.",
+    "attempted_metadata_result": "Ghydra functions_set_signature rejected both explicit __cdecl strings. Re-decompilation confirmed existing misleading thiscall display remains; no successful signature change claimed.",
+    "next_step": "Resolve signature parser/calling-convention metadata through supported metadata tooling before using decompiler-generated argument lists."
+  },
+  "original_executable_executed": false,
+  "executable_bytes_modified": false
+}
