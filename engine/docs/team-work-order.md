@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **167** team-not-done entries and **5** team-done entries.
-Team-not-done entries without a local recorded match: **802**.
+Our last recorded matches cover **171** team-not-done entries and **5** team-done entries.
+Team-not-done entries without a local recorded match: **798**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -102,7 +102,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | game/shot.c | 6 | 0 | 6 |
 | rdroid/rdcanvas.c | 4 | 3 | 1 |
 | rdroid/rdclip.c | 2 | 0 | 2 |
-| rdroid/rdcolor.c | 10 | 5 | 5 |
+| rdroid/rdcolor.c | 10 | 7 | 3 |
 | rdroid/rdface.c | 4 | 4 | 0 |
 | rdroid/rdfont.c | 2 | 0 | 2 |
 | rdroid/rdkeyf.c | 8 | 6 | 2 |
@@ -143,7 +143,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | util/pzip.c | 30 | 0 | 30 |
 | util/res.c | 11 | 0 | 11 |
 | util/taskman.c | 7 | 0 | 7 |
-| File not known yet | 107 | 0 | 107 |
+| File not known yet | 107 | 2 | 105 |
 
 ## Reconciliation when team source arrives
 
