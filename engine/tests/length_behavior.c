@@ -329,7 +329,7 @@ static int op_test_fast_length2_best(void)
 
 static int op_test_length_connected(void)
 {
-    int x, y, checks = 0, failures = 0;
+    int x, y, checks = 0, lcy_failures = 0;
     unsigned int control;
     float a, b, c, d, max;
     LH0_OWNED input, expected;
@@ -349,18 +349,18 @@ static int op_test_length_connected(void)
             max = (float)(lh0_magnitude(x) > lh0_magnitude(y) ? lh0_magnitude(x) : lh0_magnitude(y)) / 8.0f;
             ++checks;
             if (!(max <= a && a <= b && b <= c))
-                ++failures;
+                ++lcy_failures;
             ++checks;
             if (!(max <= d && d <= c))
-                ++failures;
+                ++lcy_failures;
             ++checks;
             if (memcmp(&input, &expected, sizeof(input)))
-                ++failures;
+                ++lcy_failures;
         }
     _controlfp(control, _MCW_EM | _MCW_PC | _MCW_RC);
     ++checks;
     if ((_controlfp(0, 0) & (_MCW_EM | _MCW_PC | _MCW_RC)) != (control & (_MCW_EM | _MCW_PC | _MCW_RC)))
-        ++failures;
-    printf("length connected: %d checks, %d failures\n", checks, failures);
-    return failures != 0;
+        ++lcy_failures;
+    printf("length connected: %d checks, %d failures\n", checks, lcy_failures);
+    return lcy_failures != 0;
 }

@@ -34,5 +34,12 @@
     "receipt": "engine/private/a043-targeted-compile.json",
     "sha256": "398add0794691e31068f07498c4b3cf455d44d196a20ee1262f237a8e36e4511",
     "returncode": 0
+  },
+  "superseded_integration_attempt": {
+    "source_commit": "f57ccf9c4c225be66fd20ac47e8b471b6e082302",
+    "supplemental_ci": "https://github.com/Afejes1/OpenPhantom/actions/runs/34830808719",
+    "issue": "Modern /W4 rejects fixture helper locals shadowing global word/failure counters. Only fixture local names changed; original canonical source and numeric/behavior oracles unchanged. No warning waiver.",
+    "build_id": "20260914-055819-c0ec2add",
+    "original_fixture": "passed"
   }
 }

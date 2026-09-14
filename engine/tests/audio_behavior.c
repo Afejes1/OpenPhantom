@@ -65,14 +65,14 @@ static void *au0_expected_this;
 static int au0_calls, au0_expected_count, au0_expected_codes[2], au0_mutate;
 static unsigned int au0_bits(float value)
 {
-    unsigned int au0_word;
-    memcpy(&au0_word, &value, 4);
-    return au0_word;
+    unsigned int au0_bits_word;
+    memcpy(&au0_bits_word, &value, 4);
+    return au0_bits_word;
 }
-static float au0_number(unsigned int au0_word)
+static float au0_number(unsigned int au0_number_word)
 {
     float value;
-    memcpy(&value, &au0_word, 4);
+    memcpy(&value, &au0_number_word, 4);
     return value;
 }
 static void au0_verify(void)
@@ -468,14 +468,14 @@ static void *au1_expected_this;
 static int au1_calls, au1_expected_count, au1_expected_codes[2], au1_mutate;
 static unsigned int au1_bits(float value)
 {
-    unsigned int au1_word;
-    memcpy(&au1_word, &value, 4);
-    return au1_word;
+    unsigned int au1_bits_word;
+    memcpy(&au1_bits_word, &value, 4);
+    return au1_bits_word;
 }
-static float au1_number(unsigned int au1_word)
+static float au1_number(unsigned int au1_number_word)
 {
     float value;
-    memcpy(&value, &au1_word, 4);
+    memcpy(&value, &au1_number_word, 4);
     return value;
 }
 static void au1_verify(void)
@@ -871,14 +871,14 @@ static void *au2_expected_this;
 static int au2_calls, au2_expected_count, au2_expected_codes[2], au2_mutate;
 static unsigned int au2_bits(float value)
 {
-    unsigned int au2_word;
-    memcpy(&au2_word, &value, 4);
-    return au2_word;
+    unsigned int au2_bits_word;
+    memcpy(&au2_bits_word, &value, 4);
+    return au2_bits_word;
 }
-static float au2_number(unsigned int au2_word)
+static float au2_number(unsigned int au2_number_word)
 {
     float value;
-    memcpy(&value, &au2_word, 4);
+    memcpy(&value, &au2_number_word, 4);
     return value;
 }
 static void au2_verify(void)
@@ -1274,14 +1274,14 @@ static void *au3_expected_this;
 static int au3_calls, au3_expected_count, au3_expected_codes[2], au3_mutate;
 static unsigned int au3_bits(float value)
 {
-    unsigned int au3_word;
-    memcpy(&au3_word, &value, 4);
-    return au3_word;
+    unsigned int au3_bits_word;
+    memcpy(&au3_bits_word, &value, 4);
+    return au3_bits_word;
 }
-static float au3_number(unsigned int au3_word)
+static float au3_number(unsigned int au3_number_word)
 {
     float value;
-    memcpy(&value, &au3_word, 4);
+    memcpy(&value, &au3_number_word, 4);
     return value;
 }
 static void au3_verify(void)
@@ -1679,14 +1679,14 @@ static void *au4_expected_this;
 static int au4_calls, au4_expected_count, au4_expected_codes[2], au4_mutate;
 static unsigned int au4_bits(float value)
 {
-    unsigned int au4_word;
-    memcpy(&au4_word, &value, 4);
-    return au4_word;
+    unsigned int au4_bits_word;
+    memcpy(&au4_bits_word, &value, 4);
+    return au4_bits_word;
 }
-static float au4_number(unsigned int au4_word)
+static float au4_number(unsigned int au4_number_word)
 {
     float value;
-    memcpy(&value, &au4_word, 4);
+    memcpy(&value, &au4_number_word, 4);
     return value;
 }
 static void au4_verify(void)
@@ -2083,14 +2083,14 @@ static void *au5_expected_this;
 static int au5_calls, au5_expected_count, au5_expected_codes[2], au5_mutate;
 static unsigned int au5_bits(float value)
 {
-    unsigned int au5_word;
-    memcpy(&au5_word, &value, 4);
-    return au5_word;
+    unsigned int au5_bits_word;
+    memcpy(&au5_bits_word, &value, 4);
+    return au5_bits_word;
 }
-static float au5_number(unsigned int au5_word)
+static float au5_number(unsigned int au5_number_word)
 {
     float value;
-    memcpy(&value, &au5_word, 4);
+    memcpy(&value, &au5_number_word, 4);
     return value;
 }
 static void au5_verify(void)
@@ -2486,14 +2486,14 @@ static void *au6_expected_this;
 static int au6_calls, au6_expected_count, au6_expected_codes[2], au6_mutate;
 static unsigned int au6_bits(float value)
 {
-    unsigned int au6_word;
-    memcpy(&au6_word, &value, 4);
-    return au6_word;
+    unsigned int au6_bits_word;
+    memcpy(&au6_bits_word, &value, 4);
+    return au6_bits_word;
 }
-static float au6_number(unsigned int au6_word)
+static float au6_number(unsigned int au6_number_word)
 {
     float value;
-    memcpy(&value, &au6_word, 4);
+    memcpy(&value, &au6_number_word, 4);
     return value;
 }
 static void au6_verify(void)
@@ -2889,14 +2889,14 @@ static void *au7_expected_this;
 static int au7_calls, au7_expected_count, au7_expected_codes[2], au7_mutate;
 static unsigned int au7_bits(float value)
 {
-    unsigned int au7_word;
-    memcpy(&au7_word, &value, 4);
-    return au7_word;
+    unsigned int au7_bits_word;
+    memcpy(&au7_bits_word, &value, 4);
+    return au7_bits_word;
 }
-static float au7_number(unsigned int au7_word)
+static float au7_number(unsigned int au7_number_word)
 {
     float value;
-    memcpy(&value, &au7_word, 4);
+    memcpy(&value, &au7_number_word, 4);
     return value;
 }
 static void au7_verify(void)
@@ -3293,14 +3293,14 @@ static void *au8_expected_this;
 static int au8_calls, au8_expected_count, au8_expected_codes[2], au8_mutate;
 static unsigned int au8_bits(float value)
 {
-    unsigned int au8_word;
-    memcpy(&au8_word, &value, 4);
-    return au8_word;
+    unsigned int au8_bits_word;
+    memcpy(&au8_bits_word, &value, 4);
+    return au8_bits_word;
 }
-static float au8_number(unsigned int au8_word)
+static float au8_number(unsigned int au8_number_word)
 {
     float value;
-    memcpy(&value, &au8_word, 4);
+    memcpy(&value, &au8_number_word, 4);
     return value;
 }
 static void au8_verify(void)
@@ -3696,14 +3696,14 @@ static void *au9_expected_this;
 static int au9_calls, au9_expected_count, au9_expected_codes[2], au9_mutate;
 static unsigned int au9_bits(float value)
 {
-    unsigned int au9_word;
-    memcpy(&au9_word, &value, 4);
-    return au9_word;
+    unsigned int au9_bits_word;
+    memcpy(&au9_bits_word, &value, 4);
+    return au9_bits_word;
 }
-static float au9_number(unsigned int au9_word)
+static float au9_number(unsigned int au9_number_word)
 {
     float value;
-    memcpy(&value, &au9_word, 4);
+    memcpy(&value, &au9_number_word, 4);
     return value;
 }
 static void au9_verify(void)
