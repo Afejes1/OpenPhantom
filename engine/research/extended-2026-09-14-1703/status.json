@@ -7,17 +7,16 @@
   "baseline_accepted": 290,
   "baseline_event": 75,
   "baseline_commit": "f7fdc3a3db572de9a7b0676703eae05608086d54",
-  "accepted_new": 53,
-  "accepted_current": 343,
-  "remaining_current": 608,
-  "local_team_not_done_current": 335,
+  "accepted_new": 55,
+  "accepted_current": 345,
+  "remaining_current": 606,
+  "local_team_not_done_current": 337,
   "evidence_event_current": 84,
   "pending_exact": [
-    "task_run",
-    "task_alloc_state"
+    "time_module_proc"
   ],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A062 integrating task dispatch and aligned task-state allocation.",
+  "current_work": "A062 accepted two task helpers; timer initializer is exact and scheduler type recovery is in progress.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": "acceptance-062"
+  "acceptance_pending": null
 }

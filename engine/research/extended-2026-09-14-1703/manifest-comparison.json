@@ -4,15 +4,15 @@
     "manifest_functions": 2241,
     "team_reported_done": 1298,
     "team_reported_not_done": 943,
-    "local_accepted": 343,
-    "local_within_team_not_done": 335,
+    "local_accepted": 345,
+    "local_within_team_not_done": 337,
     "local_overlapping_team_done": 8,
-    "remaining_if_team_claims_are_correct": 608,
-    "combined_covered_if_team_claims_are_correct": 1633
+    "remaining_if_team_claims_are_correct": 606,
+    "combined_covered_if_team_claims_are_correct": 1635
   },
   "local_match_categories": {
     "raw-code-match": 39,
-    "relocation-adjusted-match": 304
+    "relocation-adjusted-match": 306
   },
   "team_source_independently_verified": false,
   "whole_executable_match": false,
@@ -16787,22 +16787,22 @@
       "team_reported_file": "util/taskman.c",
       "team_reported_name": "task_run",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "task_run",
+      "local_source": "src/task_run.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00475A02",
       "team_reported_file": "util/taskman.c",
       "team_reported_name": "task_allocState",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "task_alloc_state",
+      "local_source": "src/task_alloc_state.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00475A65",
@@ -24674,10 +24674,10 @@
     "manifest": "engine/planning/team-manifest-20260912-1849.json",
     "manifest_sha256": "3c26a8b5f62424864513ffb20dfb644fa582d19600cd2f98bbfd7eca71dfee1f",
     "contributor_attachment_sha256": "0b6de70dfa6b872725cbb8cc4fd14fc71316a2ec28ef9e1dec5762577046592b",
-    "accepted_event": "engine/evidence/runs/000084-77257316ddb71be1.json",
-    "accepted_event_sha256": "109478310c0d4048f37e68c15e1ff45562498330dce5f8b11c19942c89bbf0b9",
-    "source_commit": "fc3279222807aa234bcdfb579a8d92a1c01fd58b",
-    "build_id": "20260914-164647-581606a7",
+    "accepted_event": "engine/evidence/runs/000085-c0eeceb25af9460e.json",
+    "accepted_event_sha256": "7a183cd9a8df1771cffe7e01046c5894e9aead1bc60ca7814dcb419f7a9c69db",
+    "source_commit": "9e2125904460a61bce6dbefb9ea44aac325ada0c",
+    "build_id": "20260914-170048-cd674871",
     "generator_sha256": "9eeb04c352a48d09f795f4101f5b169dabdc41af21cdb9cc4e2b2956d942845a"
   }
 }

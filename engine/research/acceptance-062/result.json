@@ -12,7 +12,7 @@
   "full_span_bytes": 274,
   "verified_operands": 13,
   "raw_functions": 0,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 2,
   "team_reported_done": 0,
   "manifest": "planning/team-manifest-20260912-1849.json",
@@ -20,5 +20,14 @@
   "actual_callee_coverage": "Indirect authored event callbacks and an explicitly selected/restored external allocator observer; allocator495290 is not a registered reconstructed body.",
   "original_game_executed": false,
   "byte_exclusions": [],
-  "warning_waivers": []
+  "warning_waivers": [],
+  "accepted_event": "engine/evidence/runs/000085-c0eeceb25af9460e.json",
+  "source_commit": "9e2125904460a61bce6dbefb9ea44aac325ada0c",
+  "build_id": "20260914-170048-cd674871",
+  "source_snapshot_inputs": 574,
+  "every_source_input_matches_committed_git_blob": true,
+  "shared_matrix_checks": 112392,
+  "independent_review": "Focused and shared integration independently approved; prior343 entries unchanged, include-only bodies, scoped allocator observer and all matrices retained.",
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34896311932",
+  "supplemental_ci_conclusion": "success"
 }
