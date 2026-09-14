@@ -4,15 +4,17 @@
 #include <string.h>
 typedef struct OP_CONF_SERVICES
 {
-    unsigned int unknown_00[13];
+    unsigned int unknown_00[12];
+    int(__cdecl *open)(const char *, const char *);
     int(__cdecl *close)(int);
     unsigned int(__cdecl *read)(int, void *, unsigned int);
     unsigned int unknown_3c;
     unsigned int(__cdecl *write)(int, const void *, unsigned int);
 } OP_CONF_SERVICES;
 typedef char
-    conf_service_offsets[(sizeof(OP_CONF_SERVICES) == 0x44 && offsetof(OP_CONF_SERVICES, close) == 0x34 &&
-                          offsetof(OP_CONF_SERVICES, read) == 0x38 && offsetof(OP_CONF_SERVICES, write) == 0x40)
+    conf_service_offsets[(sizeof(OP_CONF_SERVICES) == 0x44 && offsetof(OP_CONF_SERVICES, open) == 0x30 &&
+                          offsetof(OP_CONF_SERVICES, close) == 0x34 && offsetof(OP_CONF_SERVICES, read) == 0x38 &&
+                          offsetof(OP_CONF_SERVICES, write) == 0x40)
                              ? 1
                              : -1];
 extern OP_CONF_SERVICES *op_conf_services;

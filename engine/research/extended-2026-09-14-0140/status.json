@@ -278,7 +278,7 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Acceptance040: combine three raw-exact rectangles and four exact utility wrappers; seven pending promotions,657bytes6operands.",
+  "current_work": "Acceptance040 applied: seven utility functions, all focused fixtures and connected formatting/duplication/lowercase; independent review and clean checkpoint pending.",
   "original_game_executed": false,
   "accepted_functions_current": 209,
   "evidence_records_current": 62,

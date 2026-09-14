@@ -126,6 +126,7 @@ static void clip_flag_tests(void)
 #include "save_slots_behavior.c"
 #include "module_behavior.c"
 #include "conf_stream_behavior.c"
+#include "utilities_behavior.c"
 #include "directory_behavior.c"
 #include "palette_resources_behavior.c"
 #include "matrix_helpers_behavior.c"
@@ -251,6 +252,14 @@ int main(void)
     failures += op_test_conf_read_bytes();
     failures += op_test_conf_get_file();
     failures += op_test_conf_connected();
+    failures += op_test_rect_overlap_inclusive();
+    failures += op_test_rect_overlap_strict();
+    failures += op_test_rect_union();
+    failures += op_test_util_strdup();
+    failures += op_test_util_snprintf();
+    failures += op_test_util_strlwr();
+    failures += op_test_util_file_exists();
+    failures += op_test_utilities_connected();
     failures += op_test_normal_from_points();
     failures += op_test_palette_lifecycle();
     failures += op_test_palette_name_get();

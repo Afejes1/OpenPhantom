@@ -3868,6 +3868,139 @@
         "Closing writer disables subsequent byte/string writes; input handle state is checked through the actual getter."
       ],
       "exceptions": []
+    },
+    {
+      "id": "rect_overlap_inclusive",
+      "module": "stdutil",
+      "analysis_name": "rect_overlap_inclusive",
+      "purpose": "Use signed comparisons on wrapped32-bit x+width and y+height endpoints. Return0 on each strict separation; touching endpoints pass. No normalization for zero or negative extents. Pure read-only cdecl function with two pointers and no external operands.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/utilities-acceptance.md",
+        "research/campaign-055-rect-overlap-inclusive/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/utilities_behavior.c"
+      ],
+      "quirks": [
+        "Fixture domains and callback limitations are documented in the focused contracts.",
+        "Shared tests retain all seven focused fixtures and connect formatting, duplication and lowercase."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "rect_overlap_strict",
+      "module": "stdutil",
+      "analysis_name": "rect_overlap_strict",
+      "purpose": "Use the same ordered endpoint tests but reject equality as well as separation. Touching endpoints fail. No normalization of zero or negative extents. Signed comparisons occur after32-bit wrapped addition; no external operands.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/utilities-acceptance.md",
+        "research/campaign-055-rect-overlap-strict/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/utilities_behavior.c"
+      ],
+      "quirks": [
+        "Fixture domains and callback limitations are documented in the focused contracts.",
+        "Shared tests retain all seven focused fixtures and connect formatting, duplication and lowercase."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "rect_union",
+      "module": "stdutil",
+      "analysis_name": "rect_union",
+      "purpose": "In place, first lower x/y origins as needed and add each displacement to width/height; then extend each wrapped right/bottom edge when the other signed endpoint is greater. Lowering branches store width then x, height then y, followed by possible width and height extension stores. Same-object alias and disjoint guarded objects are tested. Explicit unsigned arithmetic preserves32-bit instruction wrapping without relying on signed C overflow.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/utilities-acceptance.md",
+        "research/campaign-055-rect-union/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/utilities_behavior.c"
+      ],
+      "quirks": [
+        "Fixture domains and callback limitations are documented in the focused contracts.",
+        "Shared tests retain all seven focused fixtures and connect formatting, duplication and lowercase."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "util_strdup",
+      "module": "stdutil",
+      "analysis_name": "util_strdup",
+      "purpose": "Cdecl pointer return. Intrinsic strlen determines allocation size including NUL before the allocator call. NULL allocation returns NULL. Success copies the same source pointer live after allocation. Authored allocator can replace or truncate owned input within its original length; returned destination has enough guarded storage. Tests cover lengths0,1,2,3,4,15,31,63, four source/destination alignments, allocation failure/two destinations, and three mutation modes. Expected copied bytes are predicted from authored post-callback source before candidate writes. No NULL or unterminated source, overlap, actual heap, or callback growth beyond allocation.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/utilities-acceptance.md",
+        "research/campaign-056-util-strdup/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/utilities_behavior.c"
+      ],
+      "quirks": [
+        "Fixture domains and callback limitations are documented in the focused contracts.",
+        "Shared tests retain all seven focused fixtures and connect formatting, duplication and lowercase."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "util_snprintf",
+      "module": "stdutil",
+      "analysis_name": "util_snprintf",
+      "purpose": "Void cdecl variadic wrapper forwards destination, unsigned size-1, format and va_list to backend; ignores result, writes destination[size-1]=0, clears local va_list. Fixture domain requires size>=1 and enough owned storage: no guard is invented for the original size-zero underwrite. Observer decodes signed int, pointer and promoted double arguments; checks callback identity/order and independent guard snapshots, writes bounded sentinels, and returns negative/zero/large results. Final terminator is predicted before return. This tests forwarding and termination, not CRT formatting semantics.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/utilities-acceptance.md",
+        "research/campaign-056-util-snprintf/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/utilities_behavior.c"
+      ],
+      "quirks": [
+        "Fixture domains and callback limitations are documented in the focused contracts.",
+        "Shared tests retain all seven focused fixtures and connect formatting, duplication and lowercase."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "util_strlwr",
+      "module": "stdutil",
+      "analysis_name": "util_strlwr",
+      "purpose": "Void cdecl. Reads each live signed char, stops on NUL, forwards signed value to callback, stores returned low byte at current location, advances and reads next live byte. All256 initial byte values, three lengths/four alignments, current-byte overwrite and future-byte early termination are covered by an authored observer. Negative inputs are sign-extension observations only, not claims about real CRT tolower domain. Full input snapshots plus independent cursor and final termination assertion catch missing/extra calls and writes. Return high bits are deliberately nonzero; a returned current NUL must not stop later iteration.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/utilities-acceptance.md",
+        "research/campaign-056-util-strlwr/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/utilities_behavior.c"
+      ],
+      "quirks": [
+        "Fixture domains and callback limitations are documented in the focused contracts.",
+        "Shared tests retain all seven focused fixtures and connect formatting, duplication and lowercase."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "util_file_exists",
+      "module": "stdutil",
+      "analysis_name": "util_file_exists",
+      "purpose": "Int cdecl single path parameter, confirmed by caller004974AC pushing path at0049760D. Current Ghidra thiscall inference is stale. Open via service+0x30 receives original path and fixed mode identity; captures handle. Zero returns0 without close. All nonzero signed handles close through reloaded global services+0x34, ignore close result, return1. Two guarded tables test callback retargeting with0,1,-1,INT_MIN,INT_MAX handles and varied ignored close returns. NULL path is observer-only forwarding; no real filesystem access. Recover open field from previously unknown service slot without changing sizeof0x44 or existing close/read/write offsets.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/utilities-acceptance.md",
+        "research/campaign-056-util-file-exists/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/utilities_behavior.c"
+      ],
+      "quirks": [
+        "Fixture domains and callback limitations are documented in the focused contracts.",
+        "Shared tests retain all seven focused fixtures and connect formatting, duplication and lowercase."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
