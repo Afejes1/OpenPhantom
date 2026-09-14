@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "status": "reviewed-exact-awaiting-shared-acceptance",
+  "preparation_started_utc": "2026-09-14T13:27:00Z",
+  "implementation_started_utc": "2026-09-14T13:35:25.563340+00:00",
+  "implementation_cutoff_utc": "2026-09-14T13:53:00Z",
+  "deadline_utc": "2026-09-14T14:12:00Z",
+  "functions": [
+    "module_send_restore",
+    "module_broadcast_save",
+    "module_broadcast_event",
+    "module_suspend_all",
+    "module_resume_all",
+    "module_stop_all"
+  ],
+  "reviewer": "comparison_inventory",
+  "lifecycle_implementation_started_utc": "2026-09-14T13:42:17.918967+00:00",
+  "stop_implementation_started_utc": "2026-09-14T13:45:25.855049+00:00",
+  "focused_completed_utc": "2026-09-14T13:48:13.743768+00:00",
+  "exact_functions": 6,
+  "full_span_bytes": 900,
+  "operands": 11,
+  "checks": 1613760,
+  "implementation_compiles": 7,
+  "runner_invocations": 8
+}

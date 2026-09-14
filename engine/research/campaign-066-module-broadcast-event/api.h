@@ -1,5 +1,5 @@
-#ifndef OP_MODULE_H
-#define OP_MODULE_H
+#ifndef OP_CAMPAIGN066_MODULE_H
+#define OP_CAMPAIGN066_MODULE_H
 #include <stddef.h>
 typedef union OP_MODULE_STATUS {
     unsigned int raw;
@@ -39,7 +39,4 @@ typedef int(__cdecl *OP_MODULE_CALLBACK)(unsigned int, unsigned int, unsigned in
 int op_module_send_restore(int, unsigned int);
 int op_module_broadcast_save(int);
 int op_module_broadcast_event(int, unsigned int, unsigned int);
-int op_module_suspend_all(int);
-int op_module_resume_all(int);
-int op_module_stop_all(int);
 #endif

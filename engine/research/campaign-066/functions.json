@@ -1,0 +1,62 @@
+[
+  {
+    "id": "module_send_restore",
+    "address": 4649469,
+    "full_bytes": 67,
+    "operands": 1,
+    "checks": 157920,
+    "implementation_compiles": 2,
+    "runner_invocations": 2,
+    "result": "research/campaign-066-module-send-restore/result.json"
+  },
+  {
+    "id": "module_broadcast_save",
+    "address": 4649344,
+    "full_bytes": 125,
+    "operands": 2,
+    "checks": 213120,
+    "implementation_compiles": 1,
+    "runner_invocations": 1,
+    "result": "research/campaign-066-module-broadcast-save/result.json"
+  },
+  {
+    "id": "module_broadcast_event",
+    "address": 4650153,
+    "full_bytes": 128,
+    "operands": 2,
+    "checks": 213120,
+    "implementation_compiles": 1,
+    "runner_invocations": 2,
+    "result": "research/campaign-066-module-broadcast-event/result.json"
+  },
+  {
+    "id": "module_suspend_all",
+    "address": 4649536,
+    "full_bytes": 193,
+    "operands": 2,
+    "checks": 343200,
+    "implementation_compiles": 1,
+    "runner_invocations": 1,
+    "result": "research/campaign-066-module-suspend-all/result.json"
+  },
+  {
+    "id": "module_resume_all",
+    "address": 4649729,
+    "full_bytes": 194,
+    "operands": 2,
+    "checks": 343200,
+    "implementation_compiles": 1,
+    "runner_invocations": 1,
+    "result": "research/campaign-066-module-resume-all/result.json"
+  },
+  {
+    "id": "module_stop_all",
+    "address": 4649151,
+    "full_bytes": 193,
+    "operands": 2,
+    "checks": 343200,
+    "implementation_compiles": 1,
+    "runner_invocations": 1,
+    "result": "research/campaign-066-module-stop-all/result.json"
+  }
+]

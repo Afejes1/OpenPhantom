@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "module_suspend_all",
+  "candidate": "candidate.c",
+  "symbol": "_op_module_suspend_all",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c",
+    "finder.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [
+    "finder.c"
+  ],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

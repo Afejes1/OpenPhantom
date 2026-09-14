@@ -1,0 +1,27 @@
+{
+  "id": "module_broadcast_save",
+  "address": 4649344,
+  "size": 125,
+  "body_size": 125,
+  "source": "src/module_broadcast_save.c",
+  "symbol": "_op_module_broadcast_save",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 24,
+      "address": 4650281,
+      "symbol": "_op_module_find_by_id",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 63,
+      "address": 7169220,
+      "symbol": "_op_module_head",
+      "kind": "dir32"
+    }
+  ]
+}

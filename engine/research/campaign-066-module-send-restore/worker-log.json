@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "module_send_restore",
+  "implementation_started_utc": "2026-09-14T13:35:25.563340+00:00",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural module dispatch with accepted finder and live callback traversal",
+      "started_utc": "2026-09-14T13:35:25.960572+00:00",
+      "finished_utc": "2026-09-14T13:35:31.944478+00:00",
+      "returncode": 0,
+      "source_sha256": "d903fc18efe35f89bb55b9ef4cbc95616e3bc427e7d2e6c55d2569eab01e2be4",
+      "report": "engine/build/campaign-001-module_send_restore-2d82314809ce/research-result.json",
+      "report_sha256": "94764c76488eb935df1bbab9b38d25594da8c6f5c214d2857eb8c6e145112d7f",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 67,
+      "different_bytes": 0,
+      "elapsed_seconds": 5.679536,
+      "stderr": "",
+      "compiler_invoked": true
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Natural module dispatch with accepted finder and live callback traversal",
+      "started_utc": "2026-09-14T13:36:57.913649+00:00",
+      "finished_utc": "2026-09-14T13:36:59.744622+00:00",
+      "returncode": 0,
+      "source_sha256": "ae7bc576c748b4f389ee1705a60fc99d0c3f4b9e20d0082c9e07883caab7e9ef",
+      "report": "engine/build/campaign-001-module_send_restore-9e2c298accb1/research-result.json",
+      "report_sha256": "e0b72e3c4634b68bd84a0189f06dbdeb053c5909e85c947e0bb180741c9c9332",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 67,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.567527,
+      "stderr": "",
+      "compiler_invoked": true
+    }
+  ],
+  "runner_invocations": 2
+}

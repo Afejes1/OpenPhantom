@@ -125,6 +125,7 @@ static void clip_flag_tests(void)
 #include "save_stream_behavior.c"
 #include "save_slots_behavior.c"
 #include "module_behavior.c"
+#include "module_dispatch_behavior.c"
 #include "conf_stream_behavior.c"
 #include "utilities_behavior.c"
 #include "lexical_behavior.c"
@@ -254,6 +255,12 @@ int main(void)
     failures += op_test_module_find_by_id();
     failures += op_test_module_find_by_name();
     failures += op_test_module_connected();
+    failures += op_test_module_send_restore();
+    failures += op_test_module_broadcast_save();
+    failures += op_test_module_broadcast_event();
+    failures += op_test_module_suspend_all();
+    failures += op_test_module_resume_all();
+    failures += op_test_module_stop_all();
     failures += op_test_conf_open_read();
     failures += op_test_conf_close_write();
     failures += op_test_conf_write_string();

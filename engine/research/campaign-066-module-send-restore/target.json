@@ -1,0 +1,21 @@
+{
+  "id": "module_send_restore",
+  "address": 4649469,
+  "size": 67,
+  "body_size": 67,
+  "source": "src/module_send_restore.c",
+  "symbol": "_op_module_send_restore",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 24,
+      "address": 4650281,
+      "symbol": "_op_module_find_by_id",
+      "kind": "rel32-call"
+    }
+  ]
+}

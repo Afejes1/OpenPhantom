@@ -4985,6 +4985,126 @@
         "Connected tests carry callback mutation without reseeding."
       ],
       "exceptions": []
+    },
+    {
+      "id": "module_send_restore",
+      "module": "module",
+      "analysis_name": "module_send_restore",
+      "purpose": "Dispatch module callbacks with exact argument transport, lookup and traversal behavior.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-dispatch-acceptance.md",
+        "research/campaign-066-module-send-restore/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_dispatch_behavior.c"
+      ],
+      "quirks": [
+        "Real accepted ID lookup is linked in both focused and shared fixtures.",
+        "Callback storage remains an opaque32-bit word converted to the recovered cdecl three-word callback type.",
+        "Broadcasts read current links after callbacks; targeted dispatch propagates the signed callback return."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "module_broadcast_save",
+      "module": "module",
+      "analysis_name": "module_broadcast_save",
+      "purpose": "Dispatch module callbacks with exact argument transport, lookup and traversal behavior.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-dispatch-acceptance.md",
+        "research/campaign-066-module-broadcast-save/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_dispatch_behavior.c"
+      ],
+      "quirks": [
+        "Real accepted ID lookup is linked in both focused and shared fixtures.",
+        "Callback storage remains an opaque32-bit word converted to the recovered cdecl three-word callback type.",
+        "Broadcasts read current links after callbacks; targeted dispatch propagates the signed callback return."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "module_broadcast_event",
+      "module": "module",
+      "analysis_name": "module_broadcast_event",
+      "purpose": "Dispatch module callbacks with exact argument transport, lookup and traversal behavior.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-dispatch-acceptance.md",
+        "research/campaign-066-module-broadcast-event/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_dispatch_behavior.c"
+      ],
+      "quirks": [
+        "Real accepted ID lookup is linked in both focused and shared fixtures.",
+        "Callback storage remains an opaque32-bit word converted to the recovered cdecl three-word callback type.",
+        "Broadcasts read current links after callbacks; targeted dispatch propagates the signed callback return."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "module_suspend_all",
+      "module": "module",
+      "analysis_name": "module_suspend_all",
+      "purpose": "Dispatch module callbacks with exact argument transport, lookup and traversal behavior.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-dispatch-acceptance.md",
+        "research/campaign-066-module-suspend-all/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_dispatch_behavior.c"
+      ],
+      "quirks": [
+        "Real accepted ID lookup is linked in both focused and shared fixtures.",
+        "Callback storage remains an opaque32-bit word converted to the recovered cdecl three-word callback type.",
+        "Broadcasts read current links after callbacks; targeted dispatch propagates the signed callback return."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "module_resume_all",
+      "module": "module",
+      "analysis_name": "module_resume_all",
+      "purpose": "Dispatch module callbacks with exact argument transport, lookup and traversal behavior.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-dispatch-acceptance.md",
+        "research/campaign-066-module-resume-all/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_dispatch_behavior.c"
+      ],
+      "quirks": [
+        "Real accepted ID lookup is linked in both focused and shared fixtures.",
+        "Callback storage remains an opaque32-bit word converted to the recovered cdecl three-word callback type.",
+        "Broadcasts read current links after callbacks; targeted dispatch propagates the signed callback return."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "module_stop_all",
+      "module": "module",
+      "analysis_name": "module_stop_all",
+      "purpose": "Dispatch module callbacks with exact argument transport, lookup and traversal behavior.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-dispatch-acceptance.md",
+        "research/campaign-066-module-stop-all/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_dispatch_behavior.c"
+      ],
+      "quirks": [
+        "Real accepted ID lookup is linked in both focused and shared fixtures.",
+        "Callback storage remains an opaque32-bit word converted to the recovered cdecl three-word callback type.",
+        "Broadcasts read current links after callbacks; targeted dispatch propagates the signed callback return."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

@@ -1,0 +1,27 @@
+{
+  "id": "module_resume_all",
+  "address": 4649729,
+  "size": 194,
+  "body_size": 194,
+  "source": "src/module_resume_all.c",
+  "symbol": "_op_module_resume_all",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 24,
+      "address": 4650281,
+      "symbol": "_op_module_find_by_id",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 99,
+      "address": 7169224,
+      "symbol": "_op_module_tail",
+      "kind": "dir32"
+    }
+  ]
+}

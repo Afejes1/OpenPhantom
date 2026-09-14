@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "module_broadcast_save",
+  "implementation_started_utc": "2026-09-14T13:35:25.563340+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural module dispatch with accepted finder and live callback traversal",
+      "started_utc": "2026-09-14T13:35:31.953032+00:00",
+      "finished_utc": "2026-09-14T13:35:33.650729+00:00",
+      "returncode": 0,
+      "source_sha256": "afcb016106e7d9da36d8b2ebc73a4c790cfba1883daa225f4e63d5b570dfa7e5",
+      "report": "engine/build/campaign-001-module_broadcast_save-c23e8cffb865/research-result.json",
+      "report_sha256": "35bba1095f1deef65b95369ac2f33075b235a878eaf58665bdc8bd2eb76b3b1b",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 125,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.463773,
+      "stderr": "",
+      "compiler_invoked": true
+    }
+  ],
+  "runner_invocations": 1
+}

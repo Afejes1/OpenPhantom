@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "status": "active",
+  "start_utc": "2026-09-14T13:25:00Z",
+  "stop_implementation_utc": "2026-09-14T14:10:00Z",
+  "deadline_utc": "2026-09-14T14:25:00Z",
+  "baseline_commit": "9a9a13888eb81c299d0b9eaa43f94fc7c1ab633b",
+  "baseline_accepted": 267,
+  "baseline_event": 69,
+  "latest_manifest": "planning/team-manifest-20260912-1849.json",
+  "team_done": 1298,
+  "team_not_done": 943,
+  "baseline_local_team_not_done": 259,
+  "baseline_remaining": 684,
+  "campaigns": [
+    "066"
+  ],
+  "accepted_new": 0,
+  "current_work": "Six exact module functions reviewed and integrated;273registered,69accepted-history events until shared checkpoint.",
+  "focused_exact_new": 6,
+  "focused_checks": 1613760,
+  "usage_observation": {
+    "observed_utc": "2026-09-14T13:43:00Z",
+    "shared_weekly_used_percent": 80,
+    "shared_weekly_remaining_percent": 20
+  }
+}

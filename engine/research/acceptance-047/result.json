@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "acceptance-047",
+  "baseline_commit": "9a9a13888eb81c299d0b9eaa43f94fc7c1ab633b",
+  "functions": [
+    "module_send_restore",
+    "module_broadcast_save",
+    "module_broadcast_event",
+    "module_suspend_all",
+    "module_resume_all",
+    "module_stop_all"
+  ],
+  "promotions": 6,
+  "registered_before": 267,
+  "registered_after": 273,
+  "full_span_bytes": 900,
+  "verified_operands": 11,
+  "status": "integration-pending",
+  "team_not_done": 6,
+  "team_reported_done": 0,
+  "manifest": "planning/team-manifest-20260912-1849.json",
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "prebuild_fixture_compile": {
+    "receipt": "engine/private/a047-targeted-compile.json",
+    "sha256": "801d6640894b7d88c52ddded69ad83ccb789cbfb6eb34866e082f92122fb684c",
+    "returncode": 0
+  },
+  "parent_prefix_check": "All prior267target and registry entries equal baseline9a9a138"
+}

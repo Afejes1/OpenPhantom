@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "module_broadcast_event",
+  "implementation_started_utc": "2026-09-14T13:35:25.563340+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural module dispatch with accepted finder and live callback traversal",
+      "started_utc": "2026-09-14T13:35:33.657707+00:00",
+      "finished_utc": "2026-09-14T13:35:34.604659+00:00",
+      "returncode": 2,
+      "source_sha256": "a3680966090d2795e0031fa87803cba9b52e038f34e3c2a277c6a81283724482",
+      "report": "engine/build/campaign-001-module_broadcast_event-204878ed3e4e/research-result.json",
+      "report_sha256": "793b1e3f5baefe30ace9f0b168d51393bc6ba9c09eefb5f228dfd6f52dbb9e15",
+      "status": "not-attempted",
+      "candidate_size": null,
+      "different_bytes": null,
+      "elapsed_seconds": 0.714216,
+      "stderr": "FAILED: reference relocation inventory disagrees with module_broadcast_event\n",
+      "compiler_invoked": false,
+      "preflight_failure": "Parent corrected verified operand start46F4EB minus function start46F4A9 =66; initial reviewer65 was wrong. Original receipt retained; no compile occurred."
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Natural module dispatch with accepted finder and live callback traversal",
+      "started_utc": "2026-09-14T13:36:59.753050+00:00",
+      "finished_utc": "2026-09-14T13:37:01.470858+00:00",
+      "returncode": 0,
+      "source_sha256": "a3680966090d2795e0031fa87803cba9b52e038f34e3c2a277c6a81283724482",
+      "report": "engine/build/campaign-001-module_broadcast_event-91633dfd8363/research-result.json",
+      "report_sha256": "446c7849f1f775ae4bbd5c4630d54212538408d6fb2ae45e7f72402d542a4a35",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 128,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.467448,
+      "stderr": "",
+      "compiler_invoked": true
+    }
+  ],
+  "runner_invocations": 2
+}
