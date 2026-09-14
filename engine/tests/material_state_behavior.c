@@ -115,6 +115,11 @@ void *op_current_palette;
 unsigned int op_current_palette_index;
 void op_install_palette(void *p)
 {
+    if (cs_active)
+    {
+        cs_install_palette(p);
+        return;
+    }
     mp_CHECK(mp_stage == 0 && p == mp_materials[mp_row].value.palette);
     mp_verify();
     mp_materials[mp_row].value.palette[0] = mp_expected[mp_row].value.palette[0] = 0xa5;

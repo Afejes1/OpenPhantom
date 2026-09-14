@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "acceptance-029",
+  "baseline_commit": "17c5a67d2cb897d1ddce14a3710c4ec7bec84d93",
+  "functions": [
+    "colormap_set_hardware",
+    "colormap_set_current",
+    "colormap_free"
+  ],
+  "promotions": 3,
+  "registered_before": 153,
+  "registered_after": 156,
+  "full_span_bytes": 132,
+  "verified_operands": 10,
+  "status": "integration-pending",
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

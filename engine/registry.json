@@ -2836,6 +2836,63 @@
         "Palette anchor denotes an embedded address; frame/cache share the existing pointer at176."
       ],
       "exceptions": []
+    },
+    {
+      "id": "colormap_set_hardware",
+      "module": "colormap_state",
+      "analysis_name": "colormap_set_hardware",
+      "purpose": "Return1. If secondary pointer changes, store it before signed device-count>0 optional palette install. Callback receives embedded input+48, can mutate globals/object, and mutations persist. NULL input is tested only where the positive-count changed-pointer branch cannot form NULL+48. Existing Ghidra SetIdentity and manifest setHardware names describe the same observed address.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/colormap-state-acceptance.md",
+        "research/campaign-041-colormap-set-hardware/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/colormap_state_behavior.c",
+        "tests/colormap_behavior.c"
+      ],
+      "quirks": [
+        "Original op_rd_colormap_free symbol is retained; actual current/hardware setters are connected."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "colormap_set_current",
+      "module": "colormap_state",
+      "analysis_name": "colormap_set_current",
+      "purpose": "Store current only if unequal; independently call hardware setter if live secondary pointerNULL, ignoring its result, return1. Callback observes prior current store and original argument; callback changes persist. NULL is a valid wrapper argument when authored backend does not dereference it.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/colormap-state-acceptance.md",
+        "research/campaign-041-colormap-set-current/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/colormap_state_behavior.c",
+        "tests/colormap_behavior.c"
+      ],
+      "quirks": [
+        "Original op_rd_colormap_free symbol is retained; actual current/hardware setters are connected."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "colormap_free",
+      "module": "colormap_state",
+      "analysis_name": "colormap_free",
+      "purpose": "Unconditionally call free-entry then release the same original pointer. No null guard. Fixture uses owned nonnull844-byte colormap allocations established by loader. Existing canonical external symbol op_rd_colormap_free is preserved for later integration with extended-colormap cleanup.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/colormap-state-acceptance.md",
+        "research/campaign-041-colormap-free/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/colormap_state_behavior.c",
+        "tests/colormap_behavior.c"
+      ],
+      "quirks": [
+        "Original op_rd_colormap_free symbol is retained; actual current/hardware setters are connected."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

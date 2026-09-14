@@ -180,6 +180,16 @@ int op_stream_seek(void *handle, long offset, int origin)
 }
 void op_release(void *memory)
 {
+    if (cg_active)
+    {
+        cg_release(memory);
+        return;
+    }
+    if (colormap_release_pending)
+    {
+        colormap_release_root(memory);
+        return;
+    }
     if (md_active)
     {
         md_release(memory);

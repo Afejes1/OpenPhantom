@@ -17,6 +17,8 @@ static int colormap_load_changes_count;
 static int colormap_load_changed_count;
 
 static int colormap_free_calls;
+static int colormap_release_pending, colormap_root_releases;
+static void *colormap_release_original;
 static void *colormap_free_arguments[140];
 static int colormap_free_visible_counts[140];
 static int colormap_free_contracts_on_first;
@@ -26,7 +28,8 @@ static const char colormap_expansion_name[] = "fixture-expanded-map";
 static void colormap_check(int expression)
 {
     ++colormap_checks;
-    if (!expression) {
+    if (!expression)
+    {
         ++colormap_failures;
     }
 }
@@ -35,7 +38,8 @@ static void colormap_fill_slots(void)
 {
     int index;
 
-    for (index = 0; index < 128; ++index) {
+    for (index = 0; index < 128; ++index)
+    {
         op_extended_colormaps[index] = &colormap_objects[index];
     }
 }
@@ -44,15 +48,19 @@ static void colormap_reset_callbacks(void)
 {
     int index;
 
+    colormap_check(!colormap_release_pending && colormap_root_releases == colormap_free_calls);
+    colormap_root_releases = 0;
     colormap_load_calls = 0;
-    for (index = 0; index < 16; ++index) {
+    for (index = 0; index < 16; ++index)
+    {
         colormap_load_names[index] = 0;
     }
     colormap_load_result = 0;
     colormap_load_changes_count = 0;
     colormap_load_changed_count = 0;
     colormap_free_calls = 0;
-    for (index = 0; index < 140; ++index) {
+    for (index = 0; index < 140; ++index)
+    {
         colormap_free_arguments[index] = 0;
         colormap_free_visible_counts[index] = 0;
     }
@@ -65,37 +73,56 @@ void *op_rd_colormap_load(const char *name)
     int call;
 
     call = colormap_load_calls;
-    if (call >= 0 && call < 16) {
+    if (call >= 0 && call < 16)
+    {
         colormap_load_names[call] = name;
     }
     ++colormap_load_calls;
-    if (colormap_load_changes_count) {
+    if (colormap_load_changes_count)
+    {
         op_extended_colormap_count = colormap_load_changed_count;
     }
     return colormap_load_result;
 }
 
-void op_rd_colormap_free(void *colormap)
+void op_colormap_free_entry(void *colormap)
 {
     int call;
+    if (cg_active)
+    {
+        cg_free_entry(colormap);
+        return;
+    }
+    colormap_check(!colormap_release_pending);
+    colormap_release_pending = 1;
+    colormap_release_original = colormap;
 
     call = colormap_free_calls;
-    if (call >= 0 && call < 140) {
+    if (call >= 0 && call < 140)
+    {
         colormap_free_arguments[call] = colormap;
         colormap_free_visible_counts[call] = op_extended_colormap_count;
     }
     ++colormap_free_calls;
 
-    if (call == 0 && colormap_free_contracts_on_first) {
+    if (call == 0 && colormap_free_contracts_on_first)
+    {
         op_extended_colormap_count = 1;
     }
-    if (call == 0 && colormap_free_expands_on_first) {
+    if (call == 0 && colormap_free_expands_on_first)
+    {
         colormap_load_result = &colormap_objects[135];
         colormap_load_changes_count = 0;
         op_extended_load_colormap(colormap_expansion_name);
     }
 }
 
+static void colormap_release_root(void *pointer)
+{
+    colormap_check(colormap_release_pending && pointer == colormap_release_original);
+    colormap_release_pending = 0;
+    ++colormap_root_releases;
+}
 static void colormap_test_repeated_load_and_free(void)
 {
     void *before[128];
@@ -193,7 +220,8 @@ static void colormap_test_last_slot_and_full_free(void)
     colormap_check(memcmp(op_extended_colormaps, expected, sizeof(expected)) == 0);
     op_extended_free_colormaps();
     colormap_check(colormap_free_calls == 128);
-    for (index = 0; index < 128; ++index) {
+    for (index = 0; index < 128; ++index)
+    {
         colormap_check(colormap_free_arguments[index] == expected[index]);
         colormap_check(colormap_free_visible_counts[index] == 128);
     }
@@ -313,7 +341,7 @@ int op_test_colormaps(void)
     colormap_test_loader_count_change();
     colormap_test_nonpositive_and_null_free();
     colormap_test_live_free_bounds();
-    printf("Colormap integration: %d checks, %d failures\n",
-           colormap_checks, colormap_failures);
+    colormap_check(!colormap_release_pending && colormap_root_releases == colormap_free_calls);
+    printf("Colormap integration: %d checks, %d failures\n", colormap_checks, colormap_failures);
     return colormap_failures;
 }
