@@ -1,0 +1,21 @@
+{
+  "id": "random_table_at",
+  "address": 4656773,
+  "size": 38,
+  "body_size": 38,
+  "source": "src/random_table_at.c",
+  "symbol": "_op_random_table_at",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 32,
+      "address": 8819392,
+      "symbol": "_op_random_table",
+      "kind": "dir32"
+    }
+  ]
+}

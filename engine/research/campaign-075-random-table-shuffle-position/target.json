@@ -1,0 +1,27 @@
+{
+  "id": "random_table_shuffle_position",
+  "address": 4656748,
+  "size": 25,
+  "body_size": 25,
+  "source": "src/random_table_shuffle_position.c",
+  "symbol": "_op_random_table_shuffle_position",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 4656368,
+      "symbol": "_op_gameplay_random",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 19,
+      "address": 7171296,
+      "symbol": "_op_random_table_index",
+      "kind": "dir32"
+    }
+  ]
+}

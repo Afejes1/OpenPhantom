@@ -12,9 +12,16 @@
   "remaining_current": 658,
   "local_team_not_done_current": 285,
   "evidence_event_current": 76,
-  "pending_exact": [],
+  "pending_exact": [
+    "random_table_next",
+    "random_table_shuffle_position",
+    "random_table_at",
+    "skills_new_game",
+    "skills_easier",
+    "skills_harder"
+  ],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A053 accepted; C075 table/resource helper implementation and review. C074 remains parked research.",
+  "current_work": "A054 groups three reviewed C075 table matches and three first-attempt C076 difficulty-state matches.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": null
+  "acceptance_pending": "research/acceptance-054/result.json"
 }

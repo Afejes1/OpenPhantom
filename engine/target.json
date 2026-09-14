@@ -10435,6 +10435,223 @@
           "kind": "rel32-call"
         }
       ]
+    },
+    {
+      "id": "random_table_next",
+      "address": 4656695,
+      "size": 53,
+      "body_size": 53,
+      "source": "src/random_table_next.c",
+      "symbol": "_op_random_table_next",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 7171296,
+          "symbol": "_op_random_table_index",
+          "kind": "dir32"
+        },
+        {
+          "offset": 12,
+          "address": 7171296,
+          "symbol": "_op_random_table_index",
+          "kind": "dir32"
+        },
+        {
+          "offset": 18,
+          "address": 7171296,
+          "symbol": "_op_random_table_index",
+          "kind": "dir32"
+        },
+        {
+          "offset": 30,
+          "address": 7171296,
+          "symbol": "_op_random_table_index",
+          "kind": "dir32"
+        },
+        {
+          "offset": 40,
+          "address": 7171296,
+          "symbol": "_op_random_table_index",
+          "kind": "dir32"
+        },
+        {
+          "offset": 47,
+          "address": 8819392,
+          "symbol": "_op_random_table",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "random_table_shuffle_position",
+      "address": 4656748,
+      "size": 25,
+      "body_size": 25,
+      "source": "src/random_table_shuffle_position.c",
+      "symbol": "_op_random_table_shuffle_position",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 4656368,
+          "symbol": "_op_gameplay_random",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 19,
+          "address": 7171296,
+          "symbol": "_op_random_table_index",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "random_table_at",
+      "address": 4656773,
+      "size": 38,
+      "body_size": 38,
+      "source": "src/random_table_at.c",
+      "symbol": "_op_random_table_at",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 32,
+          "address": 8819392,
+          "symbol": "_op_random_table",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "skills_new_game",
+      "address": 4554336,
+      "size": 51,
+      "body_size": 51,
+      "source": "src/skills_new_game.c",
+      "symbol": "_op_skills_new_game",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 12,
+          "address": 8859360,
+          "symbol": "_op_skills_state",
+          "kind": "dir32"
+        },
+        {
+          "offset": 20,
+          "address": 8859360,
+          "symbol": "_op_skills_state",
+          "kind": "dir32",
+          "addend": 192
+        },
+        {
+          "offset": 30,
+          "address": 7142080,
+          "symbol": "_op_skills_active_index",
+          "kind": "dir32"
+        },
+        {
+          "offset": 39,
+          "address": 7142080,
+          "symbol": "_op_skills_active_index",
+          "kind": "dir32"
+        },
+        {
+          "offset": 44,
+          "address": 8859336,
+          "symbol": "_op_skills_previous_index",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "skills_easier",
+      "address": 4554478,
+      "size": 27,
+      "body_size": 27,
+      "source": "src/skills_easier.c",
+      "symbol": "_op_skills_easier",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 8859360,
+          "symbol": "_op_skills_state",
+          "kind": "dir32",
+          "addend": 192
+        },
+        {
+          "offset": 13,
+          "address": 8859360,
+          "symbol": "_op_skills_state",
+          "kind": "dir32",
+          "addend": 192
+        },
+        {
+          "offset": 21,
+          "address": 8859360,
+          "symbol": "_op_skills_state",
+          "kind": "dir32",
+          "addend": 192
+        }
+      ]
+    },
+    {
+      "id": "skills_harder",
+      "address": 4554505,
+      "size": 27,
+      "body_size": 27,
+      "source": "src/skills_harder.c",
+      "symbol": "_op_skills_harder",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 8859360,
+          "symbol": "_op_skills_state",
+          "kind": "dir32",
+          "addend": 192
+        },
+        {
+          "offset": 13,
+          "address": 8859360,
+          "symbol": "_op_skills_state",
+          "kind": "dir32",
+          "addend": 192
+        },
+        {
+          "offset": 21,
+          "address": 8859360,
+          "symbol": "_op_skills_state",
+          "kind": "dir32",
+          "addend": 192
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "acceptance-054",
+  "baseline_commit": "7c587e4241b4b34868d800bc33bd6c3ff9e6e04e",
+  "functions": [
+    "random_table_next",
+    "random_table_shuffle_position",
+    "random_table_at",
+    "skills_new_game",
+    "skills_easier",
+    "skills_harder"
+  ],
+  "promotions": 6,
+  "registered_before": 293,
+  "registered_after": 299,
+  "full_span_bytes": 221,
+  "verified_operands": 20,
+  "raw_functions": 0,
+  "status": "integration-pending",
+  "team_not_done": 6,
+  "team_reported_done": 0,
+  "manifest": "planning/team-manifest-20260912-1849.json",
+  "retained_focused_checks": 340296,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "campaigns": [
+    "075",
+    "076"
+  ],
+  "integration_review": "comparison_inventory approved C075 and C076 exact bodies, full retained matrices, shared state/callback routing and unchanged prior293 entries."
+}

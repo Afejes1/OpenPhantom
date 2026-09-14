@@ -5501,6 +5501,129 @@
         "Close captures the file before release; it does not close that handle."
       ],
       "exceptions": []
+    },
+    {
+      "id": "random_table_next",
+      "module": "random-table",
+      "analysis_name": "random_table_next",
+      "purpose": "Advance the shared random table index with the original equality-only wrap and return the selected word.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/random-table-acceptance.md",
+        "research/campaign-075-random-table-next/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/random_table_behavior.c"
+      ],
+      "quirks": [
+        "Sequential lookup wraps only when the incremented index equals1117.",
+        "Indexed lookup reduces only indexes greater than1117; equal1117 reads the adjacent word.",
+        "Shuffle stores unsigned remainder and makes no API claim about the incidental quotient in EAX.",
+        "Synthetic table ownership does not establish original production capacity."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "random_table_shuffle_position",
+      "module": "random-table",
+      "analysis_name": "random_table_shuffle_position",
+      "purpose": "Select a random table position using unsigned remainder of a gameplay RNG draw.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/random-table-acceptance.md",
+        "research/campaign-075-random-table-shuffle-position/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/random_table_behavior.c"
+      ],
+      "quirks": [
+        "Sequential lookup wraps only when the incremented index equals1117.",
+        "Indexed lookup reduces only indexes greater than1117; equal1117 reads the adjacent word.",
+        "Shuffle stores unsigned remainder and makes no API claim about the incidental quotient in EAX.",
+        "Synthetic table ownership does not establish original production capacity."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "random_table_at",
+      "module": "random-table",
+      "analysis_name": "random_table_at",
+      "purpose": "Read a random table word with the original strictly-greater signed modulo boundary.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/random-table-acceptance.md",
+        "research/campaign-075-random-table-at/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/random_table_behavior.c"
+      ],
+      "quirks": [
+        "Sequential lookup wraps only when the incremented index equals1117.",
+        "Indexed lookup reduces only indexes greater than1117; equal1117 reads the adjacent word.",
+        "Shuffle stores unsigned remainder and makes no API claim about the incidental quotient in EAX.",
+        "Synthetic table ownership does not establish original production capacity."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "skills_new_game",
+      "module": "skills-state",
+      "analysis_name": "skills_new_game",
+      "purpose": "Clear the complete saved skills state and initialize difficulty and selection indexes.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/skills-state-acceptance.md",
+        "research/campaign-076-skills-new-game/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/skills_state_behavior.c"
+      ],
+      "quirks": [
+        "Difficulty shares the saved state object at offset0xc0; complete size is0xd8.",
+        "Malformed difficulty values are adjusted by the original signed predicate, without clamping.",
+        "No API result is claimed from incidental EAX values."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "skills_easier",
+      "module": "skills-state",
+      "analysis_name": "skills_easier",
+      "purpose": "Decrease signed difficulty by one when positive.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/skills-state-acceptance.md",
+        "research/campaign-076-skills-easier/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/skills_state_behavior.c"
+      ],
+      "quirks": [
+        "Difficulty shares the saved state object at offset0xc0; complete size is0xd8.",
+        "Malformed difficulty values are adjusted by the original signed predicate, without clamping.",
+        "No API result is claimed from incidental EAX values."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "skills_harder",
+      "module": "skills-state",
+      "analysis_name": "skills_harder",
+      "purpose": "Increase signed difficulty by one when below nine.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/skills-state-acceptance.md",
+        "research/campaign-076-skills-harder/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/skills_state_behavior.c"
+      ],
+      "quirks": [
+        "Difficulty shares the saved state object at offset0xc0; complete size is0xd8.",
+        "Malformed difficulty values are adjusted by the original signed predicate, without clamping.",
+        "No API result is claimed from incidental EAX values."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

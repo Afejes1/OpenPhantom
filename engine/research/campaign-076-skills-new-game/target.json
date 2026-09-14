@@ -1,0 +1,46 @@
+{
+  "id": "skills_new_game",
+  "address": 4554336,
+  "size": 51,
+  "body_size": 51,
+  "source": "src/skills_new_game.c",
+  "symbol": "_op_skills_new_game",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 12,
+      "address": 8859360,
+      "symbol": "_op_skills_state",
+      "kind": "dir32"
+    },
+    {
+      "offset": 20,
+      "address": 8859360,
+      "symbol": "_op_skills_state",
+      "kind": "dir32",
+      "addend": 192
+    },
+    {
+      "offset": 30,
+      "address": 7142080,
+      "symbol": "_op_skills_active_index",
+      "kind": "dir32"
+    },
+    {
+      "offset": 39,
+      "address": 7142080,
+      "symbol": "_op_skills_active_index",
+      "kind": "dir32"
+    },
+    {
+      "offset": 44,
+      "address": 8859336,
+      "symbol": "_op_skills_previous_index",
+      "kind": "dir32"
+    }
+  ]
+}

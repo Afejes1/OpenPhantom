@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "skills_easier",
+  "candidate": "candidate.c",
+  "symbol": "_op_skills_easier",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

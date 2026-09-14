@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "random_table_initialize",
+  "candidate": "candidate.c",
+  "symbol": "_op_random_table_initialize",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "status": "three-exact-integration-review-two-parked",
+  "started_utc": "2026-09-14T17:36:30.135977+00:00",
+  "deadline_utc": "2026-09-14T18:16:30.135977+00:00",
+  "functions": [
+    "random_table_initialize",
+    "random_table_next",
+    "random_table_shuffle_position",
+    "random_table_at",
+    "resource_backend_handle"
+  ],
+  "frozen_utc": "2026-09-14T17:49:24.576119+00:00",
+  "implementation_compiles": 15,
+  "exact_functions": [
+    "random_table_next",
+    "random_table_shuffle_position",
+    "random_table_at"
+  ],
+  "research_functions": [
+    "random_table_initialize",
+    "resource_backend_handle"
+  ],
+  "full_span_bytes_exact": 116,
+  "verified_operands_exact": 9,
+  "fixture_checks_exact": 215880,
+  "acceptance": "research/acceptance-054/result.json"
+}

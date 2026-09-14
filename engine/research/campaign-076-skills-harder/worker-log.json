@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "skills_harder",
+  "started_utc": "2026-09-14T17:52:25.801429+00:00",
+  "implementation_cutoff_utc": "2026-09-14T18:07:25.801429+00:00",
+  "deadline_utc": "2026-09-14T18:27:25.801429+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial recovered aliased skills state and signed boundary transitions",
+      "started_utc": "2026-09-14T17:52:49.685279+00:00",
+      "finished_utc": "2026-09-14T17:52:51.332534+00:00",
+      "returncode": 0,
+      "source_sha256": "73feb45a77912e5243e2321c96920c33a3f71e953d30bb08bb915367ec836731",
+      "report": "engine/build/campaign-001-skills_harder-32cd1e6110b8/research-result.json",
+      "report_sha256": "ac13a570222e16d4241c9b796539eadfc37f31edae0c34c6d9ea52f1084c28a6",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 27,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.41486,
+      "stderr": ""
+    }
+  ]
+}

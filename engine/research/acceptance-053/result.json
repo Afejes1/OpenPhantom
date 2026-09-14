@@ -34,6 +34,9 @@
   "publication_followup": {
     "failed_light_ci": "https://github.com/Afejes1/OpenPhantom/actions/runs/34876237901",
     "reason": "Generated team-work-order.md was regenerated locally but omitted from the evidence publication commit.",
-    "correction": "Commit the generated work-order document; accepted source, comparisons and fixture are unchanged."
+    "correction": "Commit the generated work-order document; accepted source, comparisons and fixture are unchanged.",
+    "corrected_commit": "7c587e4241b4b34868d800bc33bd6c3ff9e6e04e",
+    "corrected_light_ci": "https://github.com/Afejes1/OpenPhantom/actions/runs/34876708580",
+    "conclusion": "success"
   }
 }

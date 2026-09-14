@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "skills_harder",
+  "candidate": "candidate.c",
+  "symbol": "_op_skills_harder",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

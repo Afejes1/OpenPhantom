@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T17:53:31.717095+00:00",
+  "conclusion": "three-exact-approved-two-research",
+  "functions": [
+    "random_table_next",
+    "random_table_shuffle_position",
+    "random_table_at"
+  ],
+  "observations": [
+    "All70 source-snapshot hashes and ten selected report hashes independently verified before integration.",
+    "All five native/Docker pairs agree and all fixtures pass.",
+    "Three exact spans total116 bytes with nine operands and215880checks.",
+    "Initializer7/82 remains research; accessor30/31 receives no percentage or exact-body claim. Both preserve six-attempt stopping history and first selected sources.",
+    "Unsigned shuffle and equality1117 behavior preserved without inferred EAX return contract.",
+    "All relevant address-operand wording corrected; resource slot33 accurately described as owned trailing sentinel."
+  ],
+  "integration_review": {
+    "reviewer": "comparison_inventory",
+    "conclusion": "approved",
+    "utc": "2026-09-14T17:53:31.717095+00:00",
+    "observations": [
+      "Three canonical bodies are include-only identical.",
+      "Previous293 target/registry entries unchanged; appendthree to296.",
+      "One shared table/index definition; separate namespace and active flag for each retained matrix.",
+      "Active RNG/seed callbacks restore inactive state; failing default is retained.",
+      "Header, main and CMake approved; targetedVC5 shared harness compile passed."
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "random_table_next",
+  "address": 4656695,
+  "size": 53,
+  "body_size": 53,
+  "source": "src/random_table_next.c",
+  "symbol": "_op_random_table_next",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 7171296,
+      "symbol": "_op_random_table_index",
+      "kind": "dir32"
+    },
+    {
+      "offset": 12,
+      "address": 7171296,
+      "symbol": "_op_random_table_index",
+      "kind": "dir32"
+    },
+    {
+      "offset": 18,
+      "address": 7171296,
+      "symbol": "_op_random_table_index",
+      "kind": "dir32"
+    },
+    {
+      "offset": 30,
+      "address": 7171296,
+      "symbol": "_op_random_table_index",
+      "kind": "dir32"
+    },
+    {
+      "offset": 40,
+      "address": 7171296,
+      "symbol": "_op_random_table_index",
+      "kind": "dir32"
+    },
+    {
+      "offset": 47,
+      "address": 8819392,
+      "symbol": "_op_random_table",
+      "kind": "dir32"
+    }
+  ]
+}

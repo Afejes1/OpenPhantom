@@ -110,6 +110,8 @@ static void clip_flag_tests(void)
     CHECK(op_face_clip_flags(&face, codes) == 0);
 }
 
+#include "skills_state_behavior.c"
+#include "random_table_behavior.c"
 #include "stream_lifecycle_behavior.c"
 #include "projection_behavior.h"
 #include "mesh_behavior.h"
@@ -181,6 +183,12 @@ int main(void)
     op_viewport viewport;
     op_frustum frustum;
     op_camera_state camera;
+    failures += op_test_skills_new_game();
+    failures += op_test_skills_easier();
+    failures += op_test_skills_harder();
+    failures += op_test_random_table_next();
+    failures += op_test_random_table_shuffle_position();
+    failures += op_test_random_table_at();
     failures += op_test_stream_open();
     failures += op_test_pack_stream_open();
     failures += op_test_stream_close();

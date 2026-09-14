@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T17:55:43.884370+00:00",
+  "conclusion": "three-exact-approved",
+  "functions": [
+    "skills_new_game",
+    "skills_easier",
+    "skills_harder"
+  ],
+  "observations": [
+    "Full51/27/27 spans and11 operands verified in authoritative program.",
+    "Latest manifest marks allthree not_done.",
+    "One D8-byte typed object preserves difficulty+C0 alias; no separate overlapping globals.",
+    "All216 state bytes and both globals verified across8*12^3 inputstates per function.",
+    "Signed predicates preserve malformed input behavior and never overflow in the executed domain.",
+    "No return-register or invented callback claims."
+  ],
+  "integration_review": {
+    "reviewer": "comparison_inventory",
+    "conclusion": "approved",
+    "utc": "2026-09-14T17:58:33.189817+00:00",
+    "observations": [
+      "All selected report hashes and non-target source snapshot hashes independently verify.",
+      "Only target.json differs after adding C076; parent reconstructed and verified the exact captured296-entry target hash in memory.",
+      "Three canonical bodies differ only by include.",
+      "One shared state and two globals; full retained matrix checks, main and CMake approved.",
+      "Prior293 target/registry entries and C075 appended entries remain unchanged.",
+      "Grouped A054 totals6functions,221bytes,20operands,340296checks; targeted VC5 shared harness compile passed."
+    ],
+    "captured_target_sha256": "0a0dfdc11bcd8d35494f667221d127fa1eaa22c25c698f50cfe97ba3ad40feca"
+  }
+}

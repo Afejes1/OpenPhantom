@@ -1,0 +1,21 @@
+{
+  "id": "resource_backend_handle",
+  "address": 4665655,
+  "size": 31,
+  "body_size": 31,
+  "source": "src/resource_backend_handle.c",
+  "symbol": "_op_resource_backend_handle",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 15,
+      "address": 7167348,
+      "symbol": "_op_resource_slots",
+      "kind": "dir32"
+    }
+  ]
+}

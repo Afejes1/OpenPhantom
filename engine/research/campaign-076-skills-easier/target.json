@@ -1,0 +1,36 @@
+{
+  "id": "skills_easier",
+  "address": 4554478,
+  "size": 27,
+  "body_size": 27,
+  "source": "src/skills_easier.c",
+  "symbol": "_op_skills_easier",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 8859360,
+      "symbol": "_op_skills_state",
+      "kind": "dir32",
+      "addend": 192
+    },
+    {
+      "offset": 13,
+      "address": 8859360,
+      "symbol": "_op_skills_state",
+      "kind": "dir32",
+      "addend": 192
+    },
+    {
+      "offset": 21,
+      "address": 8859360,
+      "symbol": "_op_skills_state",
+      "kind": "dir32",
+      "addend": 192
+    }
+  ]
+}
