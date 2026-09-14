@@ -30,5 +30,10 @@
   "shared_routing_additional_checks": 0,
   "independent_review": "comparison_inventory approved three include-only bodies, unchanged prior290 entries, retained guarded matrices and isolated active callback routing; all final reports rehashed.",
   "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34875293866",
-  "supplemental_ci_conclusion": "success"
+  "supplemental_ci_conclusion": "success",
+  "publication_followup": {
+    "failed_light_ci": "https://github.com/Afejes1/OpenPhantom/actions/runs/34876237901",
+    "reason": "Generated team-work-order.md was regenerated locally but omitted from the evidence publication commit.",
+    "correction": "Commit the generated work-order document; accepted source, comparisons and fixture are unchanged."
+  }
 }
