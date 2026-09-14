@@ -1,5 +1,7 @@
 # Five-hour continuation results
 
+Completed within the five-hour budget at 21:42:18 UTC, after 4 hours, 39 minutes, 15 seconds. [Final publication CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34899827676) passed and the heartbeat is paused. The remaining time was reserved rather than opening another implementation and review cycle.
+
 **57 newly accepted functions: 290 to 347.** The latest contributor manifest has 943 unfinished entries; 339 now have local accepted evidence, leaving **604** if the team's 1,298 completion claims are correct. Eight local functions overlap their completed list. The immutable checkpoint is [event 86](../../evidence/runs/000086-9f7b907124b79ba9.json).
 
 The new functions cover 3,496 complete code bytes and 211 verified address operands. Seven match raw bytes directly; fifty match exactly after their declared COFF address relocations are resolved to the verified original addresses. No bytes are ignored. These are complete function-span results, not a claim that a final linked executable matches the entire 1999 PE.

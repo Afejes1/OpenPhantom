@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "verification-complete",
+  "status": "complete",
   "started_utc": "2026-09-14T17:03:03Z",
   "implementation_stop_utc": "2026-09-14T21:48:03Z",
   "deadline_utc": "2026-09-14T22:03:03Z",
@@ -14,7 +14,15 @@
   "evidence_event_current": 86,
   "pending_exact": [],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "Final publication audit and prepared fixed-step handoff; no further implementation in this window.",
-  "heartbeat_status": "ACTIVE",
-  "acceptance_pending": null
+  "current_work": "Closed after final publication CI passed. Next fixed-step routine is prepared only; no source attempts started.",
+  "heartbeat_status": "PAUSED",
+  "acceptance_pending": null,
+  "completed_utc": "2026-09-14T21:42:18Z",
+  "elapsed_seconds": 16755,
+  "close_reason": "Verified checkpoint and preparation handoff complete; remaining window is too short for another implementation and independent review cycle.",
+  "publication_ci": {
+    "commit": "811e690963f45c37ba607b67e9a9dfc8d8488307",
+    "run_id": 34899827676,
+    "conclusion": "success"
+  }
 }

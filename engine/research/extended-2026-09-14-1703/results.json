@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "verification-complete",
+  "status": "complete",
   "started_utc": "2026-09-14T17:03:03Z",
   "deadline_utc": "2026-09-14T22:03:03Z",
   "baseline_accepted": 290,
@@ -1064,5 +1064,14 @@
       "reference_span_sha256": "34f9ff7190014c0be57368a9d788894b5e30080f0f5e00f43dff6eed65b315bb",
       "resolved_span_sha256": "34f9ff7190014c0be57368a9d788894b5e30080f0f5e00f43dff6eed65b315bb"
     }
-  ]
+  ],
+  "completed_utc": "2026-09-14T21:42:18Z",
+  "elapsed_seconds": 16755,
+  "close_reason": "Verified checkpoint and preparation handoff complete; remaining window is too short for another implementation and independent review cycle.",
+  "heartbeat_status": "PAUSED",
+  "publication_ci": {
+    "commit": "811e690963f45c37ba607b67e9a9dfc8d8488307",
+    "run_id": 34899827676,
+    "conclusion": "success"
+  }
 }
