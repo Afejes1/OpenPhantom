@@ -7,18 +7,14 @@
   "baseline_accepted": 290,
   "baseline_event": 75,
   "baseline_commit": "f7fdc3a3db572de9a7b0676703eae05608086d54",
-  "accepted_new": 0,
-  "accepted_current": 290,
-  "remaining_current": 661,
-  "local_team_not_done_current": 282,
-  "evidence_event_current": 75,
-  "pending_exact": [
-    "stream_open",
-    "pack_stream_open",
-    "stream_close"
-  ],
+  "accepted_new": 3,
+  "accepted_current": 293,
+  "remaining_current": 658,
+  "local_team_not_done_current": 285,
+  "evidence_event_current": 76,
+  "pending_exact": [],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A053 independent integration review and shared build; C074 two near matches parked at stopping cap.",
+  "current_work": "A053 accepted; C075 table/resource helper implementation and review. C074 remains parked research.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": "research/acceptance-053/result.json"
+  "acceptance_pending": null
 }
