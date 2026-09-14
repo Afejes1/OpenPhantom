@@ -120,6 +120,7 @@ static void clip_flag_tests(void)
 #include "scan_behavior.h"
 #include "bgl_state_behavior.c"
 #include "colormap_behavior.c"
+#include "keyframe_lifecycle_behavior.c"
 #include "world_readers_behavior.c"
 #include "world_controls_behavior.c"
 #include "world_names_behavior.c"
@@ -205,6 +206,7 @@ int main(void)
     failures += op_test_font_measure();
     failures += op_test_font_lifecycle();
     failures += op_test_face_keyframe();
+    failures += op_test_keyframe_lifecycle();
     if (failures) return 1;
 #ifdef OP_VC5_BEHAVIOR
     puts("VC5 behavioral fixture passed, including x87 unordered fallback.");

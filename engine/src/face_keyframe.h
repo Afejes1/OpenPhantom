@@ -9,10 +9,18 @@ typedef struct OP_RD_FACE
     int field24;
     unsigned int vector28[2], field30, unknown34, vector38[3], field44, field48;
 } OP_RD_FACE;
+typedef struct OP_KEYFRAME_NODE
+{
+    unsigned char prefix[40];
+    void *payload;
+} OP_KEYFRAME_NODE;
 typedef struct OP_KEYFRAME
 {
     char name[32];
-    unsigned char remainder[100];
+    unsigned char unknown20[24];
+    unsigned int node_count;
+    OP_KEYFRAME_NODE *nodes;
+    unsigned char unknown40[68];
 } OP_KEYFRAME;
 typedef OP_KEYFRAME *(*OP_KEYFRAME_LOAD_HOOK)(char *);
 typedef void (*OP_KEYFRAME_UNLOAD_HOOK)(OP_KEYFRAME *);
@@ -31,4 +39,13 @@ void op_face_free_arrays(OP_RD_FACE *);
 OP_KEYFRAME_LOAD_HOOK op_keyframe_set_load_hook(OP_KEYFRAME_LOAD_HOOK);
 OP_KEYFRAME_UNLOAD_HOOK op_keyframe_set_unload_hook(OP_KEYFRAME_UNLOAD_HOOK);
 void op_keyframe_init_header(OP_KEYFRAME *);
+typedef char
+    keyframe_node_extent[(sizeof(OP_KEYFRAME_NODE) == 44 && offsetof(OP_KEYFRAME_NODE, payload) == 40) ? 1 : -1];
+typedef char
+    keyframe_nodes_offset[(offsetof(OP_KEYFRAME, node_count) == 56 && offsetof(OP_KEYFRAME, nodes) == 60) ? 1 : -1];
+void *op_allocate(unsigned int);
+int op_keyframe_load_entry(char *, OP_KEYFRAME *);
+OP_KEYFRAME *op_keyframe_load(char *);
+void op_keyframe_free(OP_KEYFRAME *);
+void op_keyframe_free_entry(OP_KEYFRAME *);
 #endif

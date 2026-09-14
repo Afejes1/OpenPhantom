@@ -2692,6 +2692,96 @@
         "Full original spans; callback fixtures own all storage and never free real heap objects."
       ],
       "exceptions": []
+    },
+    {
+      "id": "keyframe_load",
+      "module": "keyframe_lifecycle",
+      "analysis_name": "keyframe_load",
+      "purpose": "Use loader hook when nonnull. Otherwise allocate132 bytes, load entry on allocation success, return captured allocation on nonzero load result. Allocation/load failure calls keyframe_free even forNULL then returnsNULL. One allocator argument is established by disassembly; decompiler extra argument is not adopted.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/keyframe-lifecycle-acceptance.md",
+        "research/campaign-039-keyframe-load/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/keyframe_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Actual canonical hooks and load/free/array cleanup are connected. External loader/allocation backends are authored."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "keyframe_free",
+      "module": "keyframe_lifecycle",
+      "analysis_name": "keyframe_free",
+      "purpose": "Null input no-op. Nonnull unload hook replaces all default cleanup. Otherwise call free-entry then release same captured entry; callback changes to hook do not cause a second dispatch.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/keyframe-lifecycle-acceptance.md",
+        "research/campaign-039-keyframe-free/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/keyframe_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Actual canonical hooks and load/free/array cleanup are connected. External loader/allocation backends are authored."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "keyframe_free_entry",
+      "module": "keyframe_lifecycle",
+      "analysis_name": "keyframe_free_entry",
+      "purpose": "Nonnull132-byte entry. Null node-array no-op. Capture array for44-byte traversal; unsigned loop rereads live count+38. Release nonnull payload+28 and clear live field after callback. Final release rereads live entry.nodes+3c then clears it after callback. Bounded authored count mutations, aliases and replacements observe callbacks without actual deallocation.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/keyframe-lifecycle-acceptance.md",
+        "research/campaign-039-keyframe-free-entry/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/keyframe_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Actual canonical hooks and load/free/array cleanup are connected. External loader/allocation backends are authored."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "material_set_load_hook",
+      "module": "material_hooks",
+      "analysis_name": "material_set_load_hook",
+      "purpose": "Exchange typed material loader hook. Consumer47b4ed pushes name/contextA/contextB; callback returns material pointer. No callback invocation by setter.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/keyframe-lifecycle-acceptance.md",
+        "research/campaign-039-material-set-load-hook/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/keyframe_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Actual canonical hooks and load/free/array cleanup are connected. External loader/allocation backends are authored."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "material_set_unload_hook",
+      "module": "material_hooks",
+      "analysis_name": "material_set_unload_hook",
+      "purpose": "Exchange typed material unloader hook. Consumer47b55c passes material pointer and ignores return. Both globals and owned callback identities are checked independently.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/keyframe-lifecycle-acceptance.md",
+        "research/campaign-039-material-set-unload-hook/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/keyframe_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Actual canonical hooks and load/free/array cleanup are connected. External loader/allocation backends are authored."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

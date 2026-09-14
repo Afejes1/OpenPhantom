@@ -148,6 +148,8 @@ static void world_readers_reset_callbacks(void)
 
 void *op_allocate(unsigned int bytes)
 {
+    if (kc_active)
+        return kc_allocate(bytes);
     if (shield_lifecycle_active)
         return shield_lifecycle_allocate(bytes);
     if (world_chunks_active)
