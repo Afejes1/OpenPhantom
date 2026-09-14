@@ -5441,6 +5441,66 @@
         "INT_MIN decrement and partial overlap remain outside the authored fixture contract."
       ],
       "exceptions": []
+    },
+    {
+      "id": "stream_open",
+      "module": "pzip-stream",
+      "analysis_name": "stream_open",
+      "purpose": "Allocate and initialize a plain stream wrapper around an existing file handle.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/stream-lifecycle-acceptance.md",
+        "research/campaign-073-stream-open/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/stream_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "A null file or stream returns null without callbacks.",
+        "Only packed-open closes the captured file when allocation fails.",
+        "Close captures the file before release; it does not close that handle."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "pack_stream_open",
+      "module": "pzip-stream",
+      "analysis_name": "pack_stream_open",
+      "purpose": "Allocate and initialize a compression stream, closing the input handle on allocation failure.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/stream-lifecycle-acceptance.md",
+        "research/campaign-073-pack-stream-open/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/stream_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "A null file or stream returns null without callbacks.",
+        "Only packed-open closes the captured file when allocation fails.",
+        "Close captures the file before release; it does not close that handle."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "stream_close",
+      "module": "pzip-stream",
+      "analysis_name": "stream_close",
+      "purpose": "Release a stream wrapper and return the file handle captured before release.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/stream-lifecycle-acceptance.md",
+        "research/campaign-073-stream-close/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/stream_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "A null file or stream returns null without callbacks.",
+        "Only packed-open closes the captured file when allocation fails.",
+        "Close captures the file before release; it does not close that handle."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

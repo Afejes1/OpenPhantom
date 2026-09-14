@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T17:27:44.431736+00:00",
+  "conclusion": "three-exact-approved",
+  "functions": [
+    "stream_open",
+    "pack_stream_open",
+    "stream_close"
+  ],
+  "observations": [
+    "All three full spans and four call operands independently verified.",
+    "All six selected reports and 42 source-snapshot hashes match current files.",
+    "Native/Docker function and relocation equality; 17472 fixture checks and zero failures.",
+    "Guarded complete-allocation snapshots verify zeroing boundaries and live callback mutation; close returns the pre-release captured handle.",
+    "Header refinement preserves all offsets. No exclusions or waivers."
+  ],
+  "integration_review": {
+    "reviewer": "comparison_inventory",
+    "conclusion": "approved",
+    "utc": "2026-09-14T17:30:32.652130+00:00",
+    "observations": [
+      "The full prior290 target and registry prefixes match HEAD.",
+      "Three canonical bodies differ only by include.",
+      "All three addresses are not_done in the latest contributor manifest.",
+      "Retained matrices preserve all reviewed cases and independent oracles.",
+      "Separate active flags restore inactive state; callback routers fall through unchanged when inactive.",
+      "Main/CMake wire each once; targeted original-VC5 shared harness compile passed."
+    ]
+  }
+}

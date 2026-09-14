@@ -1,0 +1,27 @@
+{
+  "id": "pack_stream_open",
+  "address": 4654821,
+  "size": 161,
+  "body_size": 161,
+  "source": "src/pack_stream_open.c",
+  "symbol": "_op_pack_stream_open",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 24,
+      "address": 4805264,
+      "symbol": "_op_allocate",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 45,
+      "address": 4827904,
+      "symbol": "_op_close_diagnostic_stream",
+      "kind": "rel32-call"
+    }
+  ]
+}

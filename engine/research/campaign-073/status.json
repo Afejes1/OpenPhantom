@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "status": "three-exact-integration-review",
+  "started_utc": "2026-09-14T17:10:44.556700+00:00",
+  "deadline_utc": "2026-09-14T17:50:44.556700+00:00",
+  "functions": [
+    "stream_open",
+    "pack_stream_open",
+    "stream_close"
+  ],
+  "preparation_blockers": [
+    "pack_stream_close at004705AF: nonnull return contract unresolved; no source attempt started."
+  ],
+  "frozen_utc": "2026-09-14T17:27:44.431736+00:00",
+  "implementation_compiles": 3,
+  "full_span_bytes_exact": 291,
+  "verified_operands_exact": 4,
+  "fixture_checks_exact": 17472,
+  "acceptance": "research/acceptance-053/result.json"
+}

@@ -110,6 +110,7 @@ static void clip_flag_tests(void)
     CHECK(op_face_clip_flags(&face, codes) == 0);
 }
 
+#include "stream_lifecycle_behavior.c"
 #include "projection_behavior.h"
 #include "mesh_behavior.h"
 #include "queue_behavior.h"
@@ -180,6 +181,9 @@ int main(void)
     op_viewport viewport;
     op_frustum frustum;
     op_camera_state camera;
+    failures += op_test_stream_open();
+    failures += op_test_pack_stream_open();
+    failures += op_test_stream_close();
     CHECK(sizeof(void *) == 4 && sizeof(int) == 4 && sizeof(float) == 4);
     CHECK(offsetof(op_viewport, width_bits) == 8);
     CHECK(offsetof(op_viewport, edge_18) == 0x18);

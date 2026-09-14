@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "stream_open",
+  "started_utc": "2026-09-14T17:10:44.556700+00:00",
+  "implementation_cutoff_utc": "2026-09-14T17:25:44.556700+00:00",
+  "deadline_utc": "2026-09-14T17:50:44.556700+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial recovered stream lifecycle with typed layout and canonical callbacks",
+      "started_utc": "2026-09-14T17:10:44.930912+00:00",
+      "finished_utc": "2026-09-14T17:10:46.663498+00:00",
+      "returncode": 0,
+      "source_sha256": "6fc2d7775242aac3bc50eee5a215c733eda76d3407d46fc71d5a57b4576413b0",
+      "report": "engine/build/campaign-001-stream_open-cf6cbfadd466/research-result.json",
+      "report_sha256": "430168e30839c7e73cb41752bbf5adc755943475d3a582b0068c71cb36425f83",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 86,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.507256,
+      "stderr": ""
+    }
+  ]
+}

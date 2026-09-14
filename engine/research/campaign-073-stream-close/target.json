@@ -1,0 +1,21 @@
+{
+  "id": "stream_close",
+  "address": 4656316,
+  "size": 44,
+  "body_size": 44,
+  "source": "src/stream_close.c",
+  "symbol": "_op_stream_close",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 30,
+      "address": 4805714,
+      "symbol": "_op_release",
+      "kind": "rel32-call"
+    }
+  ]
+}

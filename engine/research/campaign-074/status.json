@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "status": "parked-near-matches",
+  "started_utc": "2026-09-14T17:15:50.527164+00:00",
+  "deadline_utc": "2026-09-14T17:50:50.527164+00:00",
+  "functions": [
+    "stream_read",
+    "stream_bits"
+  ],
+  "completed_utc": "2026-09-14T17:28:51.658858+00:00",
+  "implementation_compiles": 12,
+  "accepted_functions": 0,
+  "selected_attempts": {
+    "stream_read": 1,
+    "stream_bits": 1
+  },
+  "consecutive_nonimprovements": 5,
+  "fixture_checks": 1046112,
+  "remaining_blocker": "VC5 local stack slot allocation differs; no cap reset."
+}

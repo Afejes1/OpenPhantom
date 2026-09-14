@@ -21,6 +21,9 @@ static int ah_diagnostics_close_calls, ah_diagnostics_close_enabled, ah_diagnost
 static void *ah_diagnostics_close_selected;
 int op_close_diagnostic_stream(void *stream)
 {
+    if(s73o_active)return s73o_close(stream);
+    if(s73p_active)return s73p_close(stream);
+    if(s73c_active)return s73c_close(stream);
     ah_diagnostics_close_CHECK(ah_diagnostics_close_calls++ == 0);
     ah_diagnostics_close_CHECK(stream == ah_diagnostics_close_selected);
     ah_diagnostics_close_CHECK(op_diagnostics_enabled == ah_diagnostics_close_enabled);

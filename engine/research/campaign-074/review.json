@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T17:30:32.652130+00:00",
+  "conclusion": "two-near-matches-research-only",
+  "functions": [
+    "stream_read",
+    "stream_bits"
+  ],
+  "observations": [
+    "Full244/209 spans verified; nonzero11/9 stack-layout differences prohibit acceptance.",
+    "Both final native/Docker report hashes verify with function/relocation equality.",
+    "594528+451584 fixture checks pass; independent read and bit oracles previously approved.",
+    "Each function used six implementation compiles and stopped after five consecutive nonimprovements.",
+    "Thirteen of14 current snapshot members match per case. The sole drift is shared target.json after the C073 append; parent verified captured hash against committed pre-integration HEAD target.",
+    "No exclusions, waivers or registry entries added."
+  ],
+  "captured_target_commit": "f7fdc3a3db572de9a7b0676703eae05608086d54",
+  "captured_target_sha256": "89240cbbe3962d4bc82df48aa7a343be0543d5494a3e49653802162a25571d4b"
+}

@@ -1,0 +1,5 @@
+# stream_read
+
+Full original span0x00470786 to0x0047087A, 244bytes, no tail. Stream-read cdecl arguments are destination, signed element size, signed element count, stream; returns direct adapter result when codec flag is zero, otherwise completed-byte count divided by element size. Refills may mutate live state. Stream-bits cdecl arguments are stream and32-bit count; returns unsigned accumulated bits, or zero on buffer exhaustion even after consuming a prefix. Only bit count1..32 is executed, avoiding undefined C shift inputs; observed callers request4/8/12. Packed read fixtures use positive element size and bounded nonnegative counts; zero count is covered. Negative lengths, overflowing products, zero divisor, and insufficient owned destination capacity are outside executed fixture domains.
+
+Read oracle advances one byte at a time and records independent pre-refill stream/output snapshots. Callback chunks are authored and bounded, and mutate unrelated mode/handle fields to test continuation after mutation. Bit oracle accumulates one bit per step and compares all stream bytes, including partial state updates on exhaustion. No original executable execution.

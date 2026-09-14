@@ -1,0 +1,14 @@
+{
+  "id": "stream_bits",
+  "address": 4656021,
+  "size": 209,
+  "body_size": 209,
+  "source": "src/stream_bits.c",
+  "symbol": "_op_stream_bits",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

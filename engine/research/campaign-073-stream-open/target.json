@@ -1,0 +1,21 @@
+{
+  "id": "stream_open",
+  "address": 4656230,
+  "size": 86,
+  "body_size": 86,
+  "source": "src/stream_open.c",
+  "symbol": "_op_stream_open",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 21,
+      "address": 4805264,
+      "symbol": "_op_allocate",
+      "kind": "rel32-call"
+    }
+  ]
+}
