@@ -1,0 +1,27 @@
+{
+  "id": "directory_close",
+  "address": 4632047,
+  "size": 65,
+  "body_size": 65,
+  "source": "src/directory_close.c",
+  "symbol": "_op_directory_close",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 36,
+      "address": 4831872,
+      "symbol": "_op_file_find_close",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 54,
+      "address": 4805714,
+      "symbol": "_op_release",
+      "kind": "rel32-call"
+    }
+  ]
+}

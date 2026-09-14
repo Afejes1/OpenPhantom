@@ -1,0 +1,45 @@
+{
+  "id": "directory_open",
+  "address": 4631888,
+  "size": 159,
+  "body_size": 159,
+  "source": "src/directory_open.c",
+  "symbol": "_op_directory_open",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 13,
+      "address": 4805264,
+      "symbol": "_op_allocate",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 82,
+      "address": 4945892,
+      "symbol": "_op_directory_all_format",
+      "kind": "dir32"
+    },
+    {
+      "offset": 94,
+      "address": 4826544,
+      "symbol": "_op_format_sprite_name",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 132,
+      "address": 4945884,
+      "symbol": "_op_directory_extension_format",
+      "kind": "dir32"
+    },
+    {
+      "offset": 144,
+      "address": 4826544,
+      "symbol": "_op_format_sprite_name",
+      "kind": "rel32-call"
+    }
+  ]
+}

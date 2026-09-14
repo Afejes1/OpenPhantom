@@ -18,11 +18,11 @@
   "reviewer_model": "gpt-5.6-sol",
   "reviewer_reasoning": "medium",
   "max_concurrent_implementation_workers": 1,
-  "new_exact_functions": 40,
-  "new_exact_bytes": 3133,
+  "new_exact_functions": 44,
+  "new_exact_bytes": 3640,
   "promotions": 43,
   "new_near_matches": 0,
-  "new_research_candidates": 7,
+  "new_research_candidates": 8,
   "checkpoints": [
     {
       "id": "acceptance-028",
@@ -198,6 +198,14 @@
       "source_commit": "917d8bad6f9478dacbcb675b455006e0582f8124",
       "result": "research/acceptance-036/result.json",
       "full_ci": "success"
+    },
+    {
+      "id": "campaign-052",
+      "new_exact": 4,
+      "new_exact_bytes": 507,
+      "team_not_done": 4,
+      "research": 1,
+      "result": "research/campaign-052/results.md"
     }
   ],
   "carried_in_exact_functions": [
@@ -208,13 +216,13 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Campaign052: four directory helpers exact507bytes; one-shot wrapper retains85-byte full target as layout research. Final focused verification and review in progress.",
+  "current_work": "Acceptance037 planning: integrate four exact directory helpers and actual open/read/rewind/close lifecycle; one-shot wrapper remains layout research.",
   "original_game_executed": false,
   "accepted_functions_current": 193,
   "evidence_records_current": 59,
   "weekly_shared_usage_latest_percent": 69,
   "carried_in_promotions": 3,
-  "new_exact_team_not_done": 37,
+  "new_exact_team_not_done": 41,
   "new_exact_team_reported_done": 3,
   "ghidra_metadata_saved_utc": "2026-09-14T05:37:21.971Z"
 }

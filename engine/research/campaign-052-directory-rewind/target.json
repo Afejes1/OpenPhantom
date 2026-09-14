@@ -1,0 +1,21 @@
+{
+  "id": "directory_rewind",
+  "address": 4632112,
+  "size": 63,
+  "body_size": 63,
+  "source": "src/directory_rewind.c",
+  "symbol": "_op_directory_rewind",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 36,
+      "address": 4831872,
+      "symbol": "_op_file_find_close",
+      "kind": "rel32-call"
+    }
+  ]
+}

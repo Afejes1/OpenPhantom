@@ -1,0 +1,5 @@
+# directory_read
+
+Null state returns0 with no output change. Increment the unsigned position word before selecting first/next based on its OLD value, preserving modulo32 wrap. First writes returned find_first(pattern,&data) handle at520 even on -1; next uses captured handle and does not overwrite it afterward. Only result-1 fails. Otherwise intrinsic strcpy copies the terminated name from CRT data@20 to output@0, attributes&0x10 tooutput260 and LAST-WRITE TIME fromdata12 tooutput264; size@16 is not exported. CRT data280 and output268 views are independently supported by backend analysis. Authored names lengths0/1/3/4/31/259 and complete guards define a bounded nonoverlap domain. Failure leaves output untouched and never reads uninitialized find-data.
+
+No original program or real file enumeration/close/heap operation is executed. Strings, records and callbacks are authored. Full snapshots and explicit pre/post-callback expectations support the bounded behavior claims. No byte exclusions or warning waivers; individual functions remain distinct from shared acceptance and whole-executable identity.

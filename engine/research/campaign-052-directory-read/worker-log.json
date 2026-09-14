@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "id": "directory_read",
+  "compiler_invocations": 6,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed directory state and CRT enumeration calls from full static contracts",
+      "started_utc": "2026-09-14T05:56:12.282839+00:00",
+      "finished_utc": "2026-09-14T05:56:13.902190+00:00",
+      "returncode": 1,
+      "source_sha256": "1377baa2a2d8d55f327ca17efc6d6102f43aa51acad4b2f65a3f33d427833822",
+      "report": "engine/build/campaign-001-directory_read-3b982bacd8c8/research-result.json",
+      "report_sha256": "6a767a105572d5d02b8a33cd0383675a5527116c48fa641b4022b395203b3688",
+      "status": "mismatch",
+      "candidate_size": 247,
+      "different_bytes": null,
+      "elapsed_seconds": 1.399512,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Natural search/result/find-data local naming family; same live scalar and280-byte record locals",
+      "local_names": [
+        "search",
+        "status",
+        "find_data"
+      ],
+      "started_utc": "2026-09-14T05:57:32.104207+00:00",
+      "finished_utc": "2026-09-14T05:57:33.694936+00:00",
+      "returncode": 1,
+      "source_sha256": "5f4c1850b101a2c043ac3c4f1ca90c6835b33c9da86928f24c9283452ca285c1",
+      "report": "engine/build/campaign-001-directory_read-bb6a813d5209/research-result.json",
+      "report_sha256": "455310ebdfbfd4aa83a7c73bc60e7e5243fd53800c8273a74b5c7fdf3c72cef8",
+      "status": "mismatch",
+      "candidate_size": 256,
+      "different_bytes": null,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Natural search/result/find-data local naming family; same live scalar and280-byte record locals",
+      "local_names": [
+        "directory_state",
+        "find_result",
+        "find_data"
+      ],
+      "started_utc": "2026-09-14T05:57:33.696242+00:00",
+      "finished_utc": "2026-09-14T05:57:35.278966+00:00",
+      "returncode": 1,
+      "source_sha256": "df1167501c53935a3e23e2cd4090918cf56c3f18aa8dddb03b3f2f0f999ccea3",
+      "report": "engine/build/campaign-001-directory_read-00513ebfe01f/research-result.json",
+      "report_sha256": "766ea0b98828828805a7d5975b7e052158d2e0113cca51b1353a6e11e7510cdd",
+      "status": "mismatch",
+      "candidate_size": 229,
+      "different_bytes": null,
+      "stderr": ""
+    },
+    {
+      "attempt": 4,
+      "hypothesis": "Natural search/result/find-data local naming family; same live scalar and280-byte record locals",
+      "local_names": [
+        "search",
+        "result",
+        "findData"
+      ],
+      "started_utc": "2026-09-14T05:57:35.280293+00:00",
+      "finished_utc": "2026-09-14T05:57:36.865134+00:00",
+      "returncode": 1,
+      "source_sha256": "f98ea132c4a5a160d7d1fefdca680697bffe1b6fbc342e60301016852728ece7",
+      "report": "engine/build/campaign-001-directory_read-9e276d5e601b/research-result.json",
+      "report_sha256": "dd3fd9756aec777188f57f8f64c16ab11b0c7efd2685d9af8a1e0dcd7d3be9b3",
+      "status": "mismatch",
+      "candidate_size": 256,
+      "different_bytes": null,
+      "stderr": ""
+    },
+    {
+      "attempt": 5,
+      "hypothesis": "Natural search/result/find-data local naming family; same live scalar and280-byte record locals",
+      "local_names": [
+        "pSearch",
+        "status",
+        "findData"
+      ],
+      "started_utc": "2026-09-14T05:57:36.866406+00:00",
+      "finished_utc": "2026-09-14T05:57:38.430681+00:00",
+      "returncode": 1,
+      "source_sha256": "116e8eff2dd50e3cea1239bc39cd33c21e90a477b6f66b502bb5c973ca5acfef",
+      "report": "engine/build/campaign-001-directory_read-de2d5b8878bc/research-result.json",
+      "report_sha256": "71d862718ca89c58fe08f65a8dc020534e3c3e25d08b7d8a711ed829968ddca6",
+      "status": "mismatch",
+      "candidate_size": 256,
+      "different_bytes": null,
+      "stderr": ""
+    },
+    {
+      "attempt": 6,
+      "hypothesis": "Natural search/result/find-data local naming family; same live scalar and280-byte record locals",
+      "local_names": [
+        "directory_state",
+        "find_result",
+        "file_data"
+      ],
+      "started_utc": "2026-09-14T05:58:15.366115+00:00",
+      "finished_utc": "2026-09-14T05:58:16.941824+00:00",
+      "returncode": 0,
+      "source_sha256": "073cf4cb8e281de1637ce084308407910e218caec9d8aef5198034f208f808fc",
+      "report": "engine/build/campaign-001-directory_read-f145ccee534d/research-result.json",
+      "report_sha256": "b22a434672f316a0445c43a3bef3b1a7e1d522f9f428940310a6173a750adbef",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 220,
+      "different_bytes": 0,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T06:04:13.221676+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "directory_rewind",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed directory state and CRT enumeration calls from full static contracts",
+      "started_utc": "2026-09-14T05:56:10.670728+00:00",
+      "finished_utc": "2026-09-14T05:56:12.276748+00:00",
+      "returncode": 0,
+      "source_sha256": "b20a9fb2027016ee26bacddbbf7d02b51bb6b0237aeba7a1c5b847d9008e7739",
+      "report": "engine/build/campaign-001-directory_rewind-f6a5724aa565/research-result.json",
+      "report_sha256": "8cc0ab5878efb7f1412040e05c64eb98ca7692af95a211074ba4dad9abf43ece",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 63,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.389672,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T06:04:13.221676+00:00"
+}

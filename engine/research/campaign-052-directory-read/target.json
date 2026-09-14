@@ -1,0 +1,27 @@
+{
+  "id": "directory_read",
+  "address": 4632175,
+  "size": 220,
+  "body_size": 220,
+  "source": "src/directory_read.c",
+  "symbol": "_op_directory_read",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 73,
+      "address": 4831584,
+      "symbol": "_op_file_find_next",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 100,
+      "address": 4831280,
+      "symbol": "_op_file_find_first",
+      "kind": "rel32-call"
+    }
+  ]
+}

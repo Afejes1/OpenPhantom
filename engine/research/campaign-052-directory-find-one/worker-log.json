@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "directory_find_one",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed directory state and CRT enumeration calls from full static contracts",
+      "started_utc": "2026-09-14T05:56:13.908007+00:00",
+      "finished_utc": "2026-09-14T05:56:15.524525+00:00",
+      "returncode": 1,
+      "source_sha256": "d2b7f0de5a291f2626ff2afb11479fc0b280c5ef5054896b119d503095b612e2",
+      "report": "engine/build/campaign-001-directory_find_one-0b033bf81616/research-result.json",
+      "report_sha256": "a2faf7254d015fc25445df821f0576c6bb277e06d676d89f3fcb3705fe27e5af",
+      "status": "mismatch",
+      "candidate_size": 77,
+      "different_bytes": null,
+      "elapsed_seconds": 1.397194,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-layout-research",
+  "frozen_utc": "2026-09-14T06:04:13.221676+00:00"
+}

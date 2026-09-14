@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T06:04:13.221676+00:00",
+  "conclusion": "approved-four-exact-one-layout-research",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "directory_close",
+      "address": 4632047,
+      "full_span_bytes": 65,
+      "body_bytes": 65,
+      "candidate_size": 65,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 5300,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-052-directory-close/result.json"
+    },
+    {
+      "id": "directory_find_one",
+      "address": 4632395,
+      "full_span_bytes": 85,
+      "body_bytes": 77,
+      "candidate_size": 77,
+      "verified_operands": 3,
+      "different_bytes": null,
+      "different_percent": null,
+      "checks": 2760,
+      "evidence_category": "research-candidate",
+      "team_status": "not_done",
+      "result": "research/campaign-052-directory-find-one/result.json"
+    },
+    {
+      "id": "directory_open",
+      "address": 4631888,
+      "full_span_bytes": 159,
+      "body_bytes": 159,
+      "candidate_size": 159,
+      "verified_operands": 5,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 21830,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-052-directory-open/result.json"
+    },
+    {
+      "id": "directory_read",
+      "address": 4632175,
+      "full_span_bytes": 220,
+      "body_bytes": 220,
+      "candidate_size": 220,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 46500,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-052-directory-read/result.json"
+    },
+    {
+      "id": "directory_rewind",
+      "address": 4632112,
+      "full_span_bytes": 63,
+      "body_bytes": 63,
+      "candidate_size": 63,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 3800,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-052-directory-rewind/result.json"
+    }
+  ],
+  "observations": [
+    "All70 current snapshot inputs,10selected final reports and12retained verification invocations rehashed.",
+    "Exact507bytes10operands; one-shot target85 remains complete and unaccepted.",
+    "Open/close/rewind firstcompile; reader exactafter6natural naming-family compiles with unchanged real locals/types/lifetimes.",
+    "Reader checks old unsigned counter branch and wrap, first postcallback handle overwrite, next captured handle, last-write time not file size, and failure output preservation.",
+    "Parent added explicit malformed-candidate row/state/output guards to one-shot callbacks; only its native/Docker pair was repeated."
+  ],
+  "limitations": [
+    "No real file enumeration, handle close or heap operation.",
+    "One-shot candidate extent mismatch has no similarity percentage or body-match claim."
+  ]
+}

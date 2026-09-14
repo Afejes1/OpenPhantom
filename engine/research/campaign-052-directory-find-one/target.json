@@ -1,0 +1,33 @@
+{
+  "id": "directory_find_one",
+  "address": 4632395,
+  "size": 85,
+  "body_size": 77,
+  "source": "src/directory_find_one.c",
+  "symbol": "_op_directory_find_one",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 19,
+      "address": 4631888,
+      "symbol": "_op_directory_open",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 48,
+      "address": 4632175,
+      "symbol": "_op_directory_read",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 63,
+      "address": 4632047,
+      "symbol": "_op_directory_close",
+      "kind": "rel32-call"
+    }
+  ]
+}

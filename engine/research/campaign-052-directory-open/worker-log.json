@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "directory_open",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed directory state and CRT enumeration calls from full static contracts",
+      "started_utc": "2026-09-14T05:56:07.380094+00:00",
+      "finished_utc": "2026-09-14T05:56:09.044229+00:00",
+      "returncode": 0,
+      "source_sha256": "796de348611b136c9598aa743f934a33c6cbe175e36e03d25efdc1d550859de9",
+      "report": "engine/build/campaign-001-directory_open-d4d26c5272a5/research-result.json",
+      "report_sha256": "911c382e6a335e7aff6bba43506146cc17c17e4afed75d511e10b462bf05dbf6",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 159,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.444339,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T06:04:13.221676+00:00"
+}
