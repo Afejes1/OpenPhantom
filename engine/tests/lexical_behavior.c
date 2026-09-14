@@ -196,6 +196,9 @@ static int lquo_scenario;
 char *op_find_character(const char *text, int character)
 {
     unsigned int i;
+    if(p72o_active)return p72o_find(text,character);
+    if(p72n_active)return p72n_find(text,character);
+    if(p72f_active)return p72f_find(text,character);
     if(pcx_active)return pcx_find(text,character);
     if(pcs_active)return pcs_find(text,character);
     if(pcd_active)return pcd_find(text,character);

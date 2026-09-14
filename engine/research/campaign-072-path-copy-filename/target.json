@@ -1,0 +1,21 @@
+{
+  "id": "path_copy_filename",
+  "address": 4650724,
+  "size": 99,
+  "body_size": 99,
+  "source": "src/path_copy_filename.c",
+  "symbol": "_op_path_copy_filename",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 20,
+      "address": 4651702,
+      "symbol": "_op_path_file_offset",
+      "kind": "rel32-call"
+    }
+  ]
+}

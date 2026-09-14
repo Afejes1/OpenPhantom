@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T15:54:08.404472+00:00",
+  "conclusion": "three-exact-approved",
+  "functions": [
+    "path_directory_offset",
+    "path_copy_nth_directory",
+    "path_copy_filename"
+  ],
+  "observations": [
+    "Static full spans, six call operands and parameter order independently verified.",
+    "Independent component enumeration preserves final filename rejection, nonpositive index exhaustion and repeated separator behavior.",
+    "Search observers verify every pointer and order; exact alias clears input only in the copiers.",
+    "INT_MIN is excluded from signed decrement input; partial overlap is outside the fixture contract.",
+    "Reviewer rehashed all 45 source snapshot inputs and six selected reports plus six final attempt links without mismatch.",
+    "Directory C4127 and C4706 failures retained; for(;;) and explicit decrement comparison fix compatibility without waivers."
+  ],
+  "integration_review": {
+    "reviewer": "comparison_inventory",
+    "conclusion": "approved",
+    "utc": "2026-09-14T15:57:51.271410+00:00",
+    "observations": [
+      "All prior 287 target and registry entries unchanged.",
+      "Three canonical candidates differ only by include.",
+      "Canonical Nth copier uses canonical directory offset; no duplicated helpers.",
+      "Three retained matrices preserve separate active routing and restore inactive state.",
+      "Shared declaration/main/CMake wiring approved and targeted original-VC5 compile passed."
+    ]
+  }
+}

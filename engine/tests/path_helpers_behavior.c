@@ -803,6 +803,9 @@ static int op_test_path_separator_offset(void)
 
 int op_toupper(int value)
 {
+    if(p72o_active)return p72o_upper(value);
+    if(p72n_active)return p72n_upper(value);
+    if(p72f_active)return p72f_upper(value);
     if(pcx_active)return pcx_upper(value);
     if(pcs_active)return pcs_upper(value);
     if(pcd_active)return pcd_upper(value);

@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "path_copy_filename",
+  "started_utc": "2026-09-14T15:44:49.806136+00:00",
+  "implementation_cutoff_utc": "2026-09-14T15:59:49.806136+00:00",
+  "deadline_utc": "2026-09-14T16:23:45+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial independently authored recovered path control flow with complete extents and fixed ABI",
+      "started_utc": "2026-09-14T15:44:52.881773+00:00",
+      "finished_utc": "2026-09-14T15:44:54.576362+00:00",
+      "returncode": 0,
+      "source_sha256": "007738ae8a5907df1c2eb5d5ba77b2dc3463471eebd7f704c15daab29fafad73",
+      "report": "engine/build/campaign-001-path_copy_filename-1925759bf9e6/research-result.json",
+      "report_sha256": "d4fa06ce290d6d65c6a12ee346e312cafad2ac4f36ed699abc7f7701e7233998",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 99,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.46268,
+      "stderr": ""
+    }
+  ]
+}

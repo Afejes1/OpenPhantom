@@ -5381,6 +5381,66 @@
         "Partial overlap is outside the authored fixture contract."
       ],
       "exceptions": []
+    },
+    {
+      "id": "path_directory_offset",
+      "module": "pzip-path",
+      "analysis_name": "path_directory_offset",
+      "purpose": "Select or copy an original path component using the recovered path helper chain.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/path-index-acceptance.md",
+        "research/campaign-072-path-directory-offset/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/path_index_behavior.c"
+      ],
+      "quirks": [
+        "Directory indexes are one-based and require a following backslash; nonpositive indexes fail by exhausting the path.",
+        "Copy functions clear destination before reading helpers, so exact source/destination alias empties the live path.",
+        "INT_MIN decrement and partial overlap remain outside the authored fixture contract."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "path_copy_nth_directory",
+      "module": "pzip-path",
+      "analysis_name": "path_copy_nth_directory",
+      "purpose": "Select or copy an original path component using the recovered path helper chain.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/path-index-acceptance.md",
+        "research/campaign-072-path-copy-nth-directory/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/path_index_behavior.c"
+      ],
+      "quirks": [
+        "Directory indexes are one-based and require a following backslash; nonpositive indexes fail by exhausting the path.",
+        "Copy functions clear destination before reading helpers, so exact source/destination alias empties the live path.",
+        "INT_MIN decrement and partial overlap remain outside the authored fixture contract."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "path_copy_filename",
+      "module": "pzip-path",
+      "analysis_name": "path_copy_filename",
+      "purpose": "Select or copy an original path component using the recovered path helper chain.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/path-index-acceptance.md",
+        "research/campaign-072-path-copy-filename/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/path_index_behavior.c"
+      ],
+      "quirks": [
+        "Directory indexes are one-based and require a following backslash; nonpositive indexes fail by exhausting the path.",
+        "Copy functions clear destination before reading helpers, so exact source/destination alias empties the live path.",
+        "INT_MIN decrement and partial overlap remain outside the authored fixture contract."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

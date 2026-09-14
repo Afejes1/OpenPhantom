@@ -1,0 +1,5 @@
+# path_copy_filename
+
+Original interval 0x0046F6E4 to 0x0046F747 contains 99 bytes through RET and no omitted alignment. cdecl parameters: source pointer, destination pointer. Directory indexes are one-based; nonpositive indexes scan to exhaustion and return missing. INT_MIN is excluded from authored signed-C decrement inputs. Directory discovery skips repeated backslashes and leading drive-like pairs, and requires a following backslash. Nth-directory copies only when separator count is positive. Filename uses the same initial-clear and intrinsic-strcat pattern as copy-extension.
+
+Static call mappings and parameter offsets verified against caller/callee instructions. Tests enumerate components independently, include a final filename component to verify failed separator lookup, and assert every observed search pointer and bounded-copy argument. Owned guards preserve all input/output bytes; exact alias clears the live path only for the two copiers. Partial overlap is outside the fixture contract. No game executable runs. Separator remains unaccepted test support; candidates are not yet accepted.

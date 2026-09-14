@@ -362,6 +362,9 @@ char *op_copy_keyframe_name(char *out, const char *in, unsigned int count)
 {
     unsigned int i;
     int ended = 0;
+    if(p72o_active)return p72o_copy(out,in,count);
+    if(p72n_active)return p72n_copy(out,in,count);
+    if(p72f_active)return p72f_copy(out,in,count);
     if(pcx_active)return pcx_copy(out,in,count);
     if(pcs_active)return pcs_copy(out,in,count);
     if(pcd_active)return pcd_copy(out,in,count);
