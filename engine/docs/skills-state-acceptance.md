@@ -1,6 +1,6 @@
 # Skills state acceptance
 
-Three functions contribute105 complete bytes and11 verified operands. Canonical source differs from focused candidates only by header include. Shared acceptance pending.
+Three functions contribute105 complete bytes and11 verified operands. Canonical source differs from focused candidates only by header include. [Acceptance054](../research/acceptance-054/results.md) records the successful shared checkpoint in immutable event77.
 
 A single216-byte object includes signed difficulty at offset192, preserving the observed alias through explicit symbol addends. New game zeroes the whole object, sets difficulty4 and copies the cleared active index to the previous index. Easier decrements when positive; harder increments below9. Values outside0..9 retain those signed one-step rules.
 

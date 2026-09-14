@@ -7,21 +7,14 @@
   "baseline_accepted": 290,
   "baseline_event": 75,
   "baseline_commit": "f7fdc3a3db572de9a7b0676703eae05608086d54",
-  "accepted_new": 3,
-  "accepted_current": 293,
-  "remaining_current": 658,
-  "local_team_not_done_current": 285,
-  "evidence_event_current": 76,
-  "pending_exact": [
-    "random_table_next",
-    "random_table_shuffle_position",
-    "random_table_at",
-    "skills_new_game",
-    "skills_easier",
-    "skills_harder"
-  ],
+  "accepted_new": 9,
+  "accepted_current": 299,
+  "remaining_current": 652,
+  "local_team_not_done_current": 291,
+  "evidence_event_current": 77,
+  "pending_exact": [],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A054 groups three reviewed C075 table matches and three first-attempt C076 difficulty-state matches.",
+  "current_work": "A054 accepted six functions. C077 gameplay RNG core has two first-attempt exact candidates; roll is in bounded implementation.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": "research/acceptance-054/result.json"
+  "acceptance_pending": null
 }

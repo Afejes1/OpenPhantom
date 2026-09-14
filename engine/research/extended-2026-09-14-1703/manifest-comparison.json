@@ -4,15 +4,15 @@
     "manifest_functions": 2241,
     "team_reported_done": 1298,
     "team_reported_not_done": 943,
-    "local_accepted": 293,
-    "local_within_team_not_done": 285,
+    "local_accepted": 299,
+    "local_within_team_not_done": 291,
     "local_overlapping_team_done": 8,
-    "remaining_if_team_claims_are_correct": 658,
-    "combined_covered_if_team_claims_are_correct": 1583
+    "remaining_if_team_claims_are_correct": 652,
+    "combined_covered_if_team_claims_are_correct": 1589
   },
   "local_match_categories": {
     "raw-code-match": 32,
-    "relocation-adjusted-match": 261
+    "relocation-adjusted-match": 267
   },
   "team_source_independently_verified": false,
   "whole_executable_match": false,
@@ -11166,11 +11166,11 @@
       "team_reported_file": null,
       "team_reported_name": "skills_newGame",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "skills_new_game",
+      "local_source": "src/skills_new_game.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00457E93",
@@ -11199,22 +11199,22 @@
       "team_reported_file": null,
       "team_reported_name": "skills_easier",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "skills_easier",
+      "local_source": "src/skills_easier.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00457F09",
       "team_reported_file": null,
       "team_reported_name": "skills_harder",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "skills_harder",
+      "local_source": "src/skills_harder.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00457F24",
@@ -15764,33 +15764,33 @@
       "team_reported_file": null,
       "team_reported_name": "FUN_00470e37",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "random_table_next",
+      "local_source": "src/random_table_next.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00470E6C",
       "team_reported_file": null,
       "team_reported_name": "FUN_00470e6c",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "random_table_shuffle_position",
+      "local_source": "src/random_table_shuffle_position.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00470E85",
       "team_reported_file": null,
       "team_reported_name": "FUN_00470e85",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "random_table_at",
+      "local_source": "src/random_table_at.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00470EAB",
@@ -24674,10 +24674,10 @@
     "manifest": "engine/planning/team-manifest-20260912-1849.json",
     "manifest_sha256": "3c26a8b5f62424864513ffb20dfb644fa582d19600cd2f98bbfd7eca71dfee1f",
     "contributor_attachment_sha256": "0b6de70dfa6b872725cbb8cc4fd14fc71316a2ec28ef9e1dec5762577046592b",
-    "accepted_event": "engine/evidence/runs/000076-0c1c24ed06049913.json",
-    "accepted_event_sha256": "9d71842add0b7a83f80cd768282f19dfdf891cc6835b5e24e0a908fc07aa90ce",
-    "source_commit": "5b1f375d87b7f49c81589dbb696a41dbf9603f96",
-    "build_id": "20260914-133130-c1e62bf2",
+    "accepted_event": "engine/evidence/runs/000077-1e6788f606886975.json",
+    "accepted_event_sha256": "d81ed4f2739427e08b9590ec2fbecbe9bddb1f90d4a578f1d34cf09a78ad6308",
+    "source_commit": "d63340de966db4ba2b79a055f3f7990df3a63da0",
+    "build_id": "20260914-135911-6f3576f4",
     "generator_sha256": "9eeb04c352a48d09f795f4101f5b169dabdc41af21cdb9cc4e2b2956d942845a"
   }
 }

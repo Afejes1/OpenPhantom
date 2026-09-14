@@ -1,6 +1,6 @@
 # Random table acceptance
 
-Three functions contribute116 complete bytes and nine verified operands. Canonical bodies differ from focused candidates only by header include. All previous293 target and registry entries remain unchanged. Shared acceptance pending.
+Three functions contribute116 complete bytes and nine verified operands. Canonical bodies differ from focused candidates only by header include. All previous293 target and registry entries remain unchanged. [Acceptance054](../research/acceptance-054/results.md) records the successful shared checkpoint in immutable event77.
 
 Sequential lookup increments the shared index and wraps only on equality with1117. Indexed lookup applies signed remainder only above1117, so equality reads the adjacent word. Shuffle calls the gameplay RNG and stores its unsigned remainder modulo1117; no return contract is inferred from the incidental quotient in EAX.
 

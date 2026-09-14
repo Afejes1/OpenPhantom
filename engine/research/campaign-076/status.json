@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "three-exact-integration-review",
+  "status": "accepted",
   "started_utc": "2026-09-14T17:52:25.801429+00:00",
   "deadline_utc": "2026-09-14T18:27:25.801429+00:00",
   "functions": [
@@ -13,5 +13,7 @@
   "full_span_bytes_exact": 105,
   "verified_operands_exact": 11,
   "fixture_checks_exact": 124416,
-  "acceptance": "research/acceptance-054/result.json"
+  "acceptance": "research/acceptance-054/result.json",
+  "accepted_event": "engine/evidence/runs/000077-1e6788f606886975.json",
+  "completed_utc": "2026-09-14T18:10:23.535508+00:00"
 }

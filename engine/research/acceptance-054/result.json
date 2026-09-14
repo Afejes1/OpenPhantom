@@ -16,7 +16,7 @@
   "full_span_bytes": 221,
   "verified_operands": 20,
   "raw_functions": 0,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 6,
   "team_reported_done": 0,
   "manifest": "planning/team-manifest-20260912-1849.json",
@@ -28,5 +28,15 @@
     "075",
     "076"
   ],
-  "integration_review": "comparison_inventory approved C075 and C076 exact bodies, full retained matrices, shared state/callback routing and unchanged prior293 entries."
+  "integration_review": "comparison_inventory approved C075 and C076 exact bodies, full retained matrices, shared state/callback routing and unchanged prior293 entries.",
+  "accepted_event": "engine/evidence/runs/000077-1e6788f606886975.json",
+  "source_commit": "d63340de966db4ba2b79a055f3f7990df3a63da0",
+  "build_id": "20260914-135911-6f3576f4",
+  "source_snapshot_inputs": 506,
+  "every_source_input_matches_committed_git_blob": true,
+  "shared_matrix_checks": 340296,
+  "shared_routing_additional_checks": 0,
+  "independent_review": "comparison_inventory approved six include-only bodies, unchanged prior293 entries, retained full matrices, shared table/state aliases and isolated callback routing; final reports rehashed.",
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34878052573",
+  "supplemental_ci_conclusion": "success"
 }

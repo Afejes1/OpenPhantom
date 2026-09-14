@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "kind": "independent-authored-compiler-characterization",
+  "conclusion": "C and C++ produced equal code sections for all six authored examples; local identifiers affected stack placement, while declaration reversal did not in the tested pair.",
+  "compiler": "VC5 RTM 11.00.7022",
+  "flags": [
+    "/c",
+    "/W4",
+    "/WX",
+    "/Zi",
+    "/Od",
+    "/MT",
+    "/FAcs"
+  ],
+  "compile_count": 2,
+  "synthetic_function_count": 6,
+  "no_retail_reference_used": true,
+  "any_program_executed": false,
+  "exact_function_promotions": 0,
+  "parked_candidate_attempt_counts_unchanged": true,
+  "completed_utc": "2026-09-14T18:03:00.820000+00:00",
+  "source_sha256": {
+    "c": "908abd8ebea500e3d1adf728e5cd4b9ad9317099aefa0a2eb4e821689e218a12",
+    "cpp": "908abd8ebea500e3d1adf728e5cd4b9ad9317099aefa0a2eb4e821689e218a12"
+  },
+  "private_results": "engine/private/frontend-probe-20260914/results.json",
+  "private_results_sha256": "9356c24a4a332202139c5b84480908de19b6f690817b8af9f63c8e820ae8b6a5",
+  "object_sha256": {
+    "c": "babded46e7fed5dc57a267caec852e80597b7418e4a78ce1b00475bc556b2773",
+    "cpp": "815f17950935e1c4602bb98b96eb504bffde3d93b4d643f8a83cc984ac2453f8"
+  },
+  "listing_sha256": {
+    "c": "7c2b9563dd4d933da4ca8de597456f777625bfe4fb609a2442a9faf2d6ef934d",
+    "cpp": "87e63dbb77d4c681bc8f164bd41cb3bd06e526bda7e7401dcaf92f28bf3eb719"
+  },
+  "code_section_hashes": {
+    "c": [
+      "80df5adacfaf5e6f654fc0a96aa763e07836dc1b708b7df91e8cf885a559e394"
+    ],
+    "cpp": [
+      "80df5adacfaf5e6f654fc0a96aa763e07836dc1b708b7df91e8cf885a559e394"
+    ]
+  },
+  "local_slot_inventories": {
+    "c": [
+      {
+        "symbol": "_probe_product",
+        "locals": [
+          "_input$ = 8",
+          "_first$ = -4",
+          "_second$ = -8"
+        ]
+      },
+      {
+        "symbol": "_probe_decl_order",
+        "locals": [
+          "_input$ = 8",
+          "_second$ = -8",
+          "_first$ = -4"
+        ]
+      },
+      {
+        "symbol": "_probe_scope",
+        "locals": [
+          "_input$ = 8",
+          "_first$ = -4"
+        ]
+      },
+      {
+        "symbol": "_probe_three",
+        "locals": [
+          "_input$ = 8",
+          "_retained$ = -12",
+          "_steps$ = -4",
+          "_total$ = -8"
+        ]
+      },
+      {
+        "symbol": "_probe_names",
+        "locals": [
+          "_input$ = 8",
+          "_prior$ = -8",
+          "_current$ = -4"
+        ]
+      },
+      {
+        "symbol": "_probe_pointer",
+        "locals": [
+          "_input$ = 8",
+          "_row$ = -4"
+        ]
+      }
+    ],
+    "cpp": [
+      {
+        "symbol": "_probe_product",
+        "locals": [
+          "_input$ = 8",
+          "_first$ = -4",
+          "_second$ = -8"
+        ]
+      },
+      {
+        "symbol": "_probe_decl_order",
+        "locals": [
+          "_input$ = 8",
+          "_second$ = -8",
+          "_first$ = -4"
+        ]
+      },
+      {
+        "symbol": "_probe_scope",
+        "locals": [
+          "_input$ = 8",
+          "_first$ = -4"
+        ]
+      },
+      {
+        "symbol": "_probe_three",
+        "locals": [
+          "_input$ = 8",
+          "_retained$ = -12",
+          "_steps$ = -4",
+          "_total$ = -8"
+        ]
+      },
+      {
+        "symbol": "_probe_names",
+        "locals": [
+          "_input$ = 8",
+          "_prior$ = -8",
+          "_current$ = -4"
+        ]
+      },
+      {
+        "symbol": "_probe_pointer",
+        "locals": [
+          "_input$ = 8",
+          "_row$ = -4"
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "This sample does not prove a universal VC5 local-allocation rule.",
+    "No original target was recompiled or compared and no parked cap was reset.",
+    "Function-body identity for these synthetic examples is not retail executable evidence."
+  ]
+}
