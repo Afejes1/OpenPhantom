@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "save_disk_free_at_least",
+  "candidate": "candidate.c",
+  "symbol": "_op_save_disk_free_at_least",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

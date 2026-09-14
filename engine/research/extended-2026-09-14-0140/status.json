@@ -18,11 +18,11 @@
   "reviewer_model": "gpt-5.6-sol",
   "reviewer_reasoning": "medium",
   "max_concurrent_implementation_workers": 1,
-  "new_exact_functions": 35,
-  "new_exact_bytes": 2909,
+  "new_exact_functions": 40,
+  "new_exact_bytes": 3133,
   "promotions": 38,
   "new_near_matches": 0,
-  "new_research_candidates": 6,
+  "new_research_candidates": 7,
   "checkpoints": [
     {
       "id": "acceptance-028",
@@ -180,6 +180,14 @@
       "source_commit": "c3b0f74473624262b2b41f7d31c4b85f481a4cf3",
       "result": "research/acceptance-035/result.json",
       "full_ci": "success"
+    },
+    {
+      "id": "campaign-051",
+      "new_exact": 5,
+      "new_exact_bytes": 224,
+      "team_not_done": 5,
+      "research": 1,
+      "result": "research/campaign-051/results.md"
     }
   ],
   "carried_in_exact_functions": [
@@ -190,13 +198,13 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Campaign051: five save-slot helpers match first compile; disk-space helper has local allocation differences under bounded investigation.",
+  "current_work": "Acceptance036 planning: integrate five exact save-slot functions and actual path/formatter chains; disk-space candidate remains frozen research.",
   "original_game_executed": false,
   "accepted_functions_current": 188,
   "evidence_records_current": 58,
-  "weekly_shared_usage_latest_percent": 67,
+  "weekly_shared_usage_latest_percent": 69,
   "carried_in_promotions": 3,
-  "new_exact_team_not_done": 32,
+  "new_exact_team_not_done": 37,
   "new_exact_team_reported_done": 3,
   "ghidra_metadata_saved_utc": "2026-09-14T05:37:21.971Z"
 }

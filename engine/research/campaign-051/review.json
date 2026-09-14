@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T05:46:16.838388+00:00",
+  "conclusion": "approved-five-exact-one-research",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "save_delete_slot",
+      "address": 4528544,
+      "full_span_bytes": 39,
+      "candidate_size": 39,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 1470,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-051-save-delete-slot/result.json"
+    },
+    {
+      "id": "save_disk_free_at_least",
+      "address": 4530190,
+      "full_span_bytes": 88,
+      "candidate_size": 88,
+      "verified_operands": 1,
+      "different_bytes": 6,
+      "different_percent": 6.818181818181818,
+      "checks": 1440,
+      "evidence_category": "research-candidate",
+      "team_status": "not_done",
+      "result": "research/campaign-051-save-disk-free-at-least/result.json"
+    },
+    {
+      "id": "save_free_slot_labels",
+      "address": 4529918,
+      "full_span_bytes": 80,
+      "candidate_size": 80,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 2028,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-051-save-free-slot-labels/result.json"
+    },
+    {
+      "id": "save_load_slot",
+      "address": 4528478,
+      "full_span_bytes": 28,
+      "candidate_size": 28,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 1260,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-051-save-load-slot/result.json"
+    },
+    {
+      "id": "save_load_slot_teardown",
+      "address": 4528438,
+      "full_span_bytes": 40,
+      "candidate_size": 40,
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 1890,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-051-save-load-slot-teardown/result.json"
+    },
+    {
+      "id": "save_slot_path",
+      "address": 4530153,
+      "full_span_bytes": 37,
+      "candidate_size": 37,
+      "verified_operands": 5,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 630,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-051-save-slot-path/result.json"
+    }
+  ],
+  "observations": [
+    "All84 snapshot inputs and12 final reports independently rehashed.",
+    "Five complete-span exact functions:224bytes13address operands.",
+    "Disk complete88byte extent and IAT binding verified; six local stack offsets differ.",
+    "Guarded99-row cleanup predicts post-callback clear, future mutations and earlier non-revisit.",
+    "Formatter and wrappers check fixed pointer identity, signed inputs and explicit manifest-name conflicts.",
+    "Disk failure, strict unsigned inequality and overflow behavior use authored stdcall query and literal expected products."
+  ],
+  "limitations": [
+    "No real file/delete/load/lifecycle/free/disk API execution.",
+    "Disk6/88 is research rather than near-match or acceptance."
+  ]
+}

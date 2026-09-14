@@ -1,0 +1,27 @@
+{
+  "id": "save_delete_slot",
+  "address": 4528544,
+  "size": 39,
+  "body_size": 39,
+  "source": "src/save_delete_slot.c",
+  "symbol": "_op_save_delete_slot",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 4530153,
+      "symbol": "_op_save_slot_path",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 17,
+      "address": 4830576,
+      "symbol": "_op_delete_file",
+      "kind": "rel32-call"
+    }
+  ]
+}

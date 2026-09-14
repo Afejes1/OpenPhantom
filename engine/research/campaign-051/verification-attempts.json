@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "attempts": [
+    {
+      "id": "save_load_slot_teardown",
+      "started_utc": "2026-09-14T05:42:06.922702+00:00",
+      "finished_utc": "2026-09-14T05:42:08.562081+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-save_load_slot_teardown-e42cd03bf436\\research-result.json",
+      "report_sha256": "71ccaae4b327f0955d9d4ab4ffa76ca42bf2480d5a221cacfc7db30a21bf5cb4",
+      "stderr": ""
+    },
+    {
+      "id": "save_load_slot_teardown",
+      "started_utc": "2026-09-14T05:42:08.571010+00:00",
+      "finished_utc": "2026-09-14T05:42:14.119844+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-save_load_slot_teardown-42448b416402\\research-result.json",
+      "report_sha256": "7a38d86f35ac7c06dbba9aaf8828716e60f01991b570c523017161493d360ec9",
+      "stderr": ""
+    },
+    {
+      "id": "save_load_slot",
+      "started_utc": "2026-09-14T05:42:14.283523+00:00",
+      "finished_utc": "2026-09-14T05:42:15.886674+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-save_load_slot-bd849f6d8593\\research-result.json",
+      "report_sha256": "f35556f9243a2fe94a8aa205976c23ab673d3160de20ab9b6736b5f43f174510",
+      "stderr": ""
+    },
+    {
+      "id": "save_load_slot",
+      "started_utc": "2026-09-14T05:42:15.893677+00:00",
+      "finished_utc": "2026-09-14T05:42:21.317565+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-save_load_slot-543788a68dea\\research-result.json",
+      "report_sha256": "df7507e4b2cf0aea83286e53769930a2d00b02458cbe9809e4eca0ddc960f8cf",
+      "stderr": ""
+    },
+    {
+      "id": "save_delete_slot",
+      "started_utc": "2026-09-14T05:42:21.480596+00:00",
+      "finished_utc": "2026-09-14T05:42:23.067705+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-save_delete_slot-5969754e1c76\\research-result.json",
+      "report_sha256": "10608601e82103a942846aace632af99cb92a1d37ba055fda75d0e0b1dbe8af9",
+      "stderr": ""
+    },
+    {
+      "id": "save_delete_slot",
+      "started_utc": "2026-09-14T05:42:23.075566+00:00",
+      "finished_utc": "2026-09-14T05:42:28.432990+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-save_delete_slot-c8f149fbeab6\\research-result.json",
+      "report_sha256": "8b0e482c25912c100f10732feb55578990fde54af0ae9fae99905e39b9befad6",
+      "stderr": ""
+    },
+    {
+      "id": "save_free_slot_labels",
+      "started_utc": "2026-09-14T05:42:28.594252+00:00",
+      "finished_utc": "2026-09-14T05:42:30.192534+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-save_free_slot_labels-0aed31c2b38c\\research-result.json",
+      "report_sha256": "9312bc111f20aa3ac71d554f455038f4f8e2680af25b8c2b3a5535caf222a8fe",
+      "stderr": ""
+    },
+    {
+      "id": "save_free_slot_labels",
+      "started_utc": "2026-09-14T05:42:30.199786+00:00",
+      "finished_utc": "2026-09-14T05:42:35.585354+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-save_free_slot_labels-6d0d3a9cf890\\research-result.json",
+      "report_sha256": "ba95b5263d21aa53341568aaa5b2cb8996eee4b3adb9d0e2b4483c8815706035",
+      "stderr": ""
+    },
+    {
+      "id": "save_slot_path",
+      "started_utc": "2026-09-14T05:42:35.748020+00:00",
+      "finished_utc": "2026-09-14T05:42:37.342559+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-save_slot_path-343d5a160279\\research-result.json",
+      "report_sha256": "2fc5148ecc80c225379066fe078c6b94ba335dceb3c51e8ee87516bd819f7886",
+      "stderr": ""
+    },
+    {
+      "id": "save_slot_path",
+      "started_utc": "2026-09-14T05:42:37.349767+00:00",
+      "finished_utc": "2026-09-14T05:42:42.756625+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-save_slot_path-8c9cecd9098c\\research-result.json",
+      "report_sha256": "e4b67a8896aba7c1d9686a8a1d90df532488c07ee039c8d475e19904b19781f9",
+      "stderr": ""
+    },
+    {
+      "id": "save_disk_free_at_least",
+      "started_utc": "2026-09-14T05:42:42.921420+00:00",
+      "finished_utc": "2026-09-14T05:42:44.519508+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-save_disk_free_at_least-4f3c393cfc9e\\research-result.json",
+      "report_sha256": "91c7608281cba8623c962ef5c89cac35b289734cd05d454602e2192081f75aa9",
+      "stderr": ""
+    },
+    {
+      "id": "save_disk_free_at_least",
+      "started_utc": "2026-09-14T05:42:44.527394+00:00",
+      "finished_utc": "2026-09-14T05:42:49.866691+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-save_disk_free_at_least-bf7a0524242e\\research-result.json",
+      "report_sha256": "d3c58f1f112b3742104f6ffa5e546fef6b0e2d0399cea33c134321ac3e2d0cd3",
+      "stderr": ""
+    }
+  ]
+}

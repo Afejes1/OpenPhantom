@@ -1,0 +1,45 @@
+{
+  "id": "save_slot_path",
+  "address": 4530153,
+  "size": 37,
+  "body_size": 37,
+  "source": "src/save_slot_path.c",
+  "symbol": "_op_save_slot_path",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 4909380,
+      "symbol": "_op_save_path_prefix",
+      "kind": "dir32"
+    },
+    {
+      "offset": 13,
+      "address": 4937472,
+      "symbol": "_op_save_path_format",
+      "kind": "dir32"
+    },
+    {
+      "offset": 18,
+      "address": 8917312,
+      "symbol": "_op_save_path",
+      "kind": "dir32"
+    },
+    {
+      "offset": 23,
+      "address": 4826544,
+      "symbol": "_op_format_sprite_name",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 31,
+      "address": 8917312,
+      "symbol": "_op_save_path",
+      "kind": "dir32"
+    }
+  ]
+}

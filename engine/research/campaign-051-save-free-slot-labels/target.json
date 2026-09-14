@@ -1,0 +1,21 @@
+{
+  "id": "save_free_slot_labels",
+  "address": 4529918,
+  "size": 80,
+  "body_size": 80,
+  "source": "src/save_free_slot_labels.c",
+  "symbol": "_op_save_free_slot_labels",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 53,
+      "address": 4805714,
+      "symbol": "_op_release",
+      "kind": "rel32-call"
+    }
+  ]
+}

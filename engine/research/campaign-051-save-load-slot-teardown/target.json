@@ -1,0 +1,33 @@
+{
+  "id": "save_load_slot_teardown",
+  "address": 4528438,
+  "size": 40,
+  "body_size": 40,
+  "source": "src/save_load_slot_teardown.c",
+  "symbol": "_op_save_load_slot_teardown",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 4649923,
+      "symbol": "_op_save_lifecycle",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 22,
+      "address": 4530153,
+      "symbol": "_op_save_slot_path",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 31,
+      "address": 4527503,
+      "symbol": "_op_load_saved_game",
+      "kind": "rel32-call"
+    }
+  ]
+}

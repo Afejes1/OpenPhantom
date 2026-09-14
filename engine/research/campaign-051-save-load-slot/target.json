@@ -1,0 +1,27 @@
+{
+  "id": "save_load_slot",
+  "address": 4528478,
+  "size": 28,
+  "body_size": 28,
+  "source": "src/save_load_slot.c",
+  "symbol": "_op_save_load_slot",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 10,
+      "address": 4530153,
+      "symbol": "_op_save_slot_path",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 19,
+      "address": 4527503,
+      "symbol": "_op_load_saved_game",
+      "kind": "rel32-call"
+    }
+  ]
+}

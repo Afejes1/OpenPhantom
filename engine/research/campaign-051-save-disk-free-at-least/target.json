@@ -1,0 +1,21 @@
+{
+  "id": "save_disk_free_at_least",
+  "address": 4530190,
+  "size": 88,
+  "body_size": 88,
+  "source": "src/save_disk_free_at_least.c",
+  "symbol": "_op_save_disk_free_at_least",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 33,
+      "address": 9180676,
+      "symbol": "_op_disk_free_space",
+      "kind": "dir32"
+    }
+  ]
+}

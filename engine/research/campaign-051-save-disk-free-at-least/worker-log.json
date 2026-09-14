@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "id": "save_disk_free_at_least",
+  "compiler_invocations": 6,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed C wrappers, row cleanup and unsigned disk-space arithmetic from complete static contracts",
+      "started_utc": "2026-09-14T05:38:04.601787+00:00",
+      "finished_utc": "2026-09-14T05:38:06.225214+00:00",
+      "returncode": 1,
+      "source_sha256": "9744660f14537fff454a5256a4a971f4531f33455e9b06ca0a6d8dab93aa51e8",
+      "report": "engine/build/campaign-001-save_disk_free_at_least-5d41564dca49/research-result.json",
+      "report_sha256": "e783a4f94bf8c9acaa96cfc2d369aaae71e6b2fd62c14fdd9f1a25ac19a37448",
+      "status": "mismatch",
+      "candidate_size": 88,
+      "different_bytes": 12,
+      "elapsed_seconds": 1.403819,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Natural Windows disk API local naming family; unchanged scalar types, lifetime and operations",
+      "local_names": [
+        "availableBytes",
+        "sectorsPerCluster",
+        "bytesPerSector",
+        "freeClusters",
+        "totalClusters",
+        "apiResult"
+      ],
+      "started_utc": "2026-09-14T05:40:23.123079+00:00",
+      "finished_utc": "2026-09-14T05:40:24.733742+00:00",
+      "returncode": 1,
+      "source_sha256": "0947ca42a8ccdf59404091a75f0c1b9237826972b280c180478395c1fdf77773",
+      "report": "engine/build/campaign-001-save_disk_free_at_least-15a9cfab399c/research-result.json",
+      "report_sha256": "e8cac6784970d2ea7ce741c29dda08e9324a10a60790a65c65a52b6b1afb0313",
+      "status": "mismatch",
+      "candidate_size": 88,
+      "different_bytes": 10,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Natural Windows disk API local naming family; unchanged scalar types, lifetime and operations",
+      "local_names": [
+        "dwFreeBytes",
+        "dwSectorsPerCluster",
+        "dwBytesPerSector",
+        "dwFreeClusters",
+        "dwTotalClusters",
+        "bResult"
+      ],
+      "started_utc": "2026-09-14T05:40:24.740673+00:00",
+      "finished_utc": "2026-09-14T05:40:26.335976+00:00",
+      "returncode": 1,
+      "source_sha256": "4447ca3722815e515d5451652a2003916a7f068c36ff69af5d100240bd97127f",
+      "report": "engine/build/campaign-001-save_disk_free_at_least-accf25b26d64/research-result.json",
+      "report_sha256": "092b9d50da21c11893f9173849c40c6216baef0548be0914fb38e58b9302e29f",
+      "status": "mismatch",
+      "candidate_size": 88,
+      "different_bytes": 12,
+      "stderr": ""
+    },
+    {
+      "attempt": 4,
+      "hypothesis": "Natural Windows disk API local naming family; unchanged scalar types, lifetime and operations",
+      "local_names": [
+        "freeSpace",
+        "sectorsPerCluster",
+        "bytesPerSector",
+        "numberOfFreeClusters",
+        "totalNumberOfClusters",
+        "success"
+      ],
+      "started_utc": "2026-09-14T05:40:26.342666+00:00",
+      "finished_utc": "2026-09-14T05:40:27.942148+00:00",
+      "returncode": 1,
+      "source_sha256": "c9c31d1c7babd76ac92a5042f276d85d5e677dddfe38c650bdbe396c13f84a55",
+      "report": "engine/build/campaign-001-save_disk_free_at_least-6c4c1055a3ce/research-result.json",
+      "report_sha256": "3e98d422e945d01b22ef02046d2cbeddc7f7d0b214b953c71fd8183d65922999",
+      "status": "mismatch",
+      "candidate_size": 88,
+      "different_bytes": 6,
+      "stderr": ""
+    },
+    {
+      "attempt": 5,
+      "hypothesis": "Natural Windows disk API local naming family; unchanged scalar types, lifetime and operations",
+      "local_names": [
+        "freeBytes",
+        "sectors_per_cluster",
+        "bytes_per_sector",
+        "free_clusters",
+        "total_clusters",
+        "result"
+      ],
+      "started_utc": "2026-09-14T05:40:27.948992+00:00",
+      "finished_utc": "2026-09-14T05:40:29.561952+00:00",
+      "returncode": 1,
+      "source_sha256": "8ebf06c2df163c7e57904f6e392013d68c64345858d56e43d839489a776a95e3",
+      "report": "engine/build/campaign-001-save_disk_free_at_least-813899ce2fdf/research-result.json",
+      "report_sha256": "5042a7934a47c2fd42f316bf6ec721a5245e6cb2bba79a3e07d4dd31dcc5b189",
+      "status": "mismatch",
+      "candidate_size": 88,
+      "different_bytes": 12,
+      "stderr": ""
+    },
+    {
+      "attempt": 6,
+      "hypothesis": "Natural Windows disk API local naming family; unchanged scalar types, lifetime and operations",
+      "local_names": [
+        "available_bytes",
+        "sector_count",
+        "sector_bytes",
+        "free_count",
+        "total_count",
+        "query_result"
+      ],
+      "started_utc": "2026-09-14T05:40:29.569168+00:00",
+      "finished_utc": "2026-09-14T05:40:31.178519+00:00",
+      "returncode": 1,
+      "source_sha256": "3f5fdc74f471b6da37e470df3dcf26ee8f25e27b85ab171a078f34c11aea00b4",
+      "report": "engine/build/campaign-001-save_disk_free_at_least-ed41d798a14a/research-result.json",
+      "report_sha256": "3795a62598d422041bd6bf286eb1de5e782dc4d01b1fcd09f13697a2de372530",
+      "status": "mismatch",
+      "candidate_size": 88,
+      "different_bytes": 12,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-research",
+  "frozen_utc": "2026-09-14T05:46:16.838388+00:00"
+}

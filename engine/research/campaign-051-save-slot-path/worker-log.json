@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "save_slot_path",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed C wrappers, row cleanup and unsigned disk-space arithmetic from complete static contracts",
+      "started_utc": "2026-09-14T05:38:02.987163+00:00",
+      "finished_utc": "2026-09-14T05:38:04.596200+00:00",
+      "returncode": 0,
+      "source_sha256": "80b7b7b6a2948996f1f857d0a12ab7f97c688f4e671afc567d09b23a1bd2c23f",
+      "report": "engine/build/campaign-001-save_slot_path-b8b47f5d8165/research-result.json",
+      "report_sha256": "14adf45785eb32f651d66d9951d8e40f81ddf1986780e4b71236ba1bb567a024",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 37,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.389121,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T05:46:16.838388+00:00"
+}
