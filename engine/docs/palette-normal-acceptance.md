@@ -1,0 +1,11 @@
+# Palette resource and face-normal acceptance
+
+Six exact functions enter the shared target: face-normal construction and five palette resource facade wrappers. Their complete446 bytes and18 individually verified operands remain unchanged from the focused cases; the previous176 target definitions are preserved. The normal helper retains independent literal edge/cross expectations, callback mutations and aliases. Normalize and snap algorithms remain authored observers; the parked snap source is not integrated.
+
+The palette lifecycle fixture connects actual pool-based load, actual colormap reader with open-failure fallback, actual palette free and actual colormap free-entry. All allocated roots are owned nonnull records. The gray observer installs controlled raw handles; real cleanup clears them in order before releasing the captured root. Pool/current replacement, complete zero initialization, flags and ignored gray returns are checked. Historical focused reader-zero and null-free observer cases remain separate from this actual dependency chain.
+
+The installation fixture connects the actual colormap current/hardware setters and actual shared palette installation helper. When hardware installation invokes the authored device callback, it may replace the facade current pointer; the final installation must use the reloaded value. The tests verify callback-visible current/hardware state, complete palettes and the material palette globals before and after their post-callback stores. Connected installation uses nonnull records. The existing material view and colormap both expose palette atoffset48; the ABI-preserving cast does not assert broader type equivalence.
+
+Name selection reuses the reviewed bounded string-copy and acquisition observer cases and calls the actual getter afterward, including null acquisition results. The260-byte authored input region and8-byte trailing guard are a tested domain, not proof of application-wide capacity. Real heap/file/resource acquisition/device behavior, overlong names and arbitrary overlaps remain outside these tests.
+
+Euler placement and the palette release wrapper's seven alignment bytes remain research and are not integrated. No byte exclusions or warning waivers are added. Individual matches and authored integration checks do not establish whole-executable identity.

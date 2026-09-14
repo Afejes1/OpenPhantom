@@ -494,6 +494,7 @@ int op_format_sprite_name(char *dest, char *format, ...)
 void *op_acquire_resource(unsigned int type, char *name)
 {
     void *result;
+    if(pfn_active)return pfn_acquire(type,name);
     if (fl_active)
         return fl_acquire_resource(type, name);
     if (fc_active)

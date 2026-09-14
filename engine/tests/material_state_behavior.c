@@ -115,6 +115,7 @@ void *op_current_palette;
 unsigned int op_current_palette_index;
 void op_install_palette(void *p)
 {
+    if(pfi_active){pfi_install_palette(p);return;}
     if (cs_active)
     {
         cs_install_palette(p);

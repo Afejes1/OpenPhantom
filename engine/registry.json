@@ -3245,6 +3245,114 @@
         "Literal synthetic numeric expectations; scalar angle dependency remains an authored observer."
       ],
       "exceptions": []
+    },
+    {
+      "id": "normal_from_three_points",
+      "module": "geometry",
+      "analysis_name": "normal_from_three_points",
+      "purpose": "Form two binary32 edge vectors next-current and previous-current before either callback, normalize first then second, store their ordered cross product XYZ, normalize the output, then call snap(output, binary32 1e-6). Return void. All three normalize calls return float and their values are discarded from ST0. Full214-byte extent ends immediately at next function0047c686; four call operands map to normalize00486245 at offsets97/111/184 and snap0047c892 at203. Caller rdModel3_CalcFaceNormals passes output,current,next,previous in that order.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/palette-normal-acceptance.md",
+        "research/campaign-048-normal-from-three-points/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/normal_behavior.c"
+      ],
+      "quirks": [
+        "Normalize and snap remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "palette_resource_load",
+      "module": "palette",
+      "analysis_name": "palette_resource_load",
+      "purpose": "Allocate844 bytes via pool wrapper49589b(pool global006ccfb0,size), zero all844 bytes, then call colormap_load_entry(path,map). Return map when that callback returns nonzero, otherwise null; no wrapper cleanup is performed on callback zero. The allocation result is dereferenced without a null guard, so the fixture supplies only owned successful allocations. Pool argument and later global changes are observable even though the original pool wrapper currently forwards only size to the allocator. Reader returns0/1/-1/INT_MIN are varied through an authored observer. Actual accepted reader always returns1, so callback-zero coverage is a wrapper observation, not a connected actual-reader claim.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/palette-normal-acceptance.md",
+        "research/campaign-049-palette-resource-load/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/palette_resources_behavior.c"
+      ],
+      "quirks": [
+        "Shared fixtures connect actual colormap and material helpers; low-level allocation/acquisition/device and gray callbacks remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "palette_resource_free",
+      "module": "palette",
+      "analysis_name": "palette_resource_free",
+      "purpose": "Capture the argument in a typed local, call colormap_free_entry on it, then pool_release on that same pointer. Callback global mutations must not change the second argument. Null is exercised only through non-dereferencing authored callbacks; this does not claim the real free-entry function accepts null.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/palette-normal-acceptance.md",
+        "research/campaign-049-palette-resource-free/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/palette_resources_behavior.c"
+      ],
+      "quirks": [
+        "Shared fixtures connect actual colormap and material helpers; low-level allocation/acquisition/device and gray callbacks remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "palette_resource_install",
+      "module": "palette",
+      "analysis_name": "palette_resource_install",
+      "purpose": "Read current pointer005badf4 and call colormap_set_current. Reload that global after the callback and pass the live value to existing helper0047b993; return1 regardless of the first callback return. The helper's already accepted OP_MATERIAL view exposes palette atoffset48, also present in OP_COLORMAP; an explicit pointer cast preserves the existing ABI and canonical type without claiming every field is interchangeable. External observers cover global replacement and null arguments without real dependency dereferences.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/palette-normal-acceptance.md",
+        "research/campaign-049-palette-resource-install/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/palette_resources_behavior.c"
+      ],
+      "quirks": [
+        "Shared fixtures connect actual colormap and material helpers; low-level allocation/acquisition/device and gray callbacks remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "palette_resource_get",
+      "module": "palette",
+      "analysis_name": "palette_resource_get",
+      "purpose": "Return the current colormap resource pointer at005badf4 without a callback or mutation. Authored cases cover three distinct owned addresses and null, then replace the global and call again.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/palette-normal-acceptance.md",
+        "research/campaign-049-palette-resource-get/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/palette_resources_behavior.c"
+      ],
+      "quirks": [
+        "Shared fixtures connect actual colormap and material helpers; low-level allocation/acquisition/device and gray callbacks remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "palette_resource_set_name",
+      "module": "palette",
+      "analysis_name": "palette_resource_set_name",
+      "purpose": "Copy the NUL-terminated input into name storage005bacf0 with the observed intrinsic strcpy sequence, acquire_resource(0x50414c54,name_storage), store its returned pointer to current005badf4 and return1 even when acquisition returns null. The byte-copy extent and terminator are checked for authored lengths0/1/3/4/31/259. The fixture reserves260 bytes before an8-byte trailing canary; this is a bounded tested domain rather than a universal safe-input claim. No overlapping source/destination or overlong name is tested. Acquisition sees the completed copy and can mutate source/name/current; the returned pointer overwrites the callback's current-pointer mutation.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/palette-normal-acceptance.md",
+        "research/campaign-049-palette-resource-set-name/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/palette_resources_behavior.c"
+      ],
+      "quirks": [
+        "Shared fixtures connect actual colormap and material helpers; low-level allocation/acquisition/device and gray callbacks remain authored observers."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

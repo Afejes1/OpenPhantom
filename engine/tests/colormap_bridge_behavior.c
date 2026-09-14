@@ -17,7 +17,7 @@ static int cm_legacy_pending;
 static OP_CMP_SERVICES cm_legacy_services;
 static OP_FILE_HANDLE cm_legacy_open(const char *path, const char *mode)
 {
-    CMB_CHECK((cc_active && cc_mode == 1) || colormap_active);
+    CMB_CHECK((cc_active && cc_mode == 1) || colormap_active || pfc_active);
     CMB_CHECK(op_colormap_services == &cm_legacy_services && mode == op_colormap_read_mode && path &&
               !cm_legacy_pending);
     cm_legacy_path = path;
@@ -67,6 +67,8 @@ static int cm_legacy_gray(OP_COLORMAP *map)
     cm_legacy_path = 0;
     if (!path)
         return 0;
+    if (pfc_active)
+        return pfc_gray(path, map);
     if (cc_active && cc_mode == 1)
         return cc_gray(path, map);
     if (colormap_active)
