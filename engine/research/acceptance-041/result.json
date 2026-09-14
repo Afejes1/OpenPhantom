@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "acceptance-041",
+  "baseline_commit": "4e0750caa249b98e1183e3afe6d397dbde689c96",
+  "functions": [
+    "util_tokenize",
+    "util_quoted_string",
+    "util_sort_range",
+    "window_set_handle",
+    "window_get_handle",
+    "window_set_instance",
+    "window_get_instance",
+    "window_set_rect",
+    "window_get_rect"
+  ],
+  "promotions": 9,
+  "registered_before": 216,
+  "registered_after": 225,
+  "full_span_bytes": 864,
+  "verified_operands": 18,
+  "status": "integration-pending",
+  "team_not_done": 9,
+  "team_reported_done": 0,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "supplemental_compatibility": "Existing modern target-wide CRT deprecation suppression retained; original VC5 unchanged.",
+  "prebuild_fixture_compile": {
+    "receipt": "engine/private/a041-targeted-compile.json",
+    "sha256": "ef5d61f688dc9ccb9169733855d35cd94d5344b7adc49cab29b57d4092b8816c",
+    "returncode": 0
+  }
+}

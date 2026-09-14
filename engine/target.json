@@ -8107,6 +8107,252 @@
           "kind": "dir32"
         }
       ]
+    },
+    {
+      "id": "util_tokenize",
+      "address": 4813534,
+      "size": 178,
+      "body_size": 178,
+      "source": "src/util_tokenize.c",
+      "symbol": "_op_util_tokenize",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 28,
+          "address": 4836160,
+          "symbol": "_op_span_delimiters",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 56,
+          "address": 4836096,
+          "symbol": "_op_find_delimiter",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 154,
+          "address": 4828192,
+          "symbol": "_op_copy_keyframe_name",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "util_quoted_string",
+      "address": 4813712,
+      "size": 176,
+      "body_size": 176,
+      "source": "src/util_quoted_string.c",
+      "symbol": "_op_util_quoted_string",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 27,
+          "address": 4828592,
+          "symbol": "_op_find_character",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 63,
+          "address": 4828592,
+          "symbol": "_op_find_character",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "util_sort_range",
+      "address": 4814422,
+      "size": 411,
+      "body_size": 411,
+      "source": "src/util_sort_range.c",
+      "symbol": "_op_util_sort_range",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 314,
+          "address": 4814422,
+          "symbol": "_op_util_sort_range",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 342,
+          "address": 4814422,
+          "symbol": "_op_util_sort_range",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 372,
+          "address": 4814422,
+          "symbol": "_op_util_sort_range",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 400,
+          "address": 4814422,
+          "symbol": "_op_util_sort_range",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "window_set_handle",
+      "address": 4819290,
+      "size": 13,
+      "body_size": 13,
+      "source": "src/window_set_handle.c",
+      "symbol": "_op_window_set_handle",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 7,
+          "address": 8790180,
+          "symbol": "_op_window_handle",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "window_get_handle",
+      "address": 4819303,
+      "size": 10,
+      "body_size": 10,
+      "source": "src/window_get_handle.c",
+      "symbol": "_op_window_get_handle",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 8790180,
+          "symbol": "_op_window_handle",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "window_set_instance",
+      "address": 4819313,
+      "size": 13,
+      "body_size": 13,
+      "source": "src/window_set_instance.c",
+      "symbol": "_op_window_set_instance",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 7,
+          "address": 8790184,
+          "symbol": "_op_instance_handle",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "window_get_instance",
+      "address": 4819326,
+      "size": 10,
+      "body_size": 10,
+      "source": "src/window_get_instance.c",
+      "symbol": "_op_window_get_instance",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 8790184,
+          "symbol": "_op_instance_handle",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "window_set_rect",
+      "address": 4819336,
+      "size": 43,
+      "body_size": 43,
+      "source": "src/window_set_rect.c",
+      "symbol": "_op_window_set_rect",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 10,
+          "address": 8791568,
+          "symbol": "_op_window_rect",
+          "kind": "dir32"
+        },
+        {
+          "offset": 19,
+          "address": 8791568,
+          "symbol": "_op_window_rect",
+          "kind": "dir32",
+          "addend": 4
+        },
+        {
+          "offset": 28,
+          "address": 8791568,
+          "symbol": "_op_window_rect",
+          "kind": "dir32",
+          "addend": 8
+        },
+        {
+          "offset": 37,
+          "address": 8791568,
+          "symbol": "_op_window_rect",
+          "kind": "dir32",
+          "addend": 12
+        }
+      ]
+    },
+    {
+      "id": "window_get_rect",
+      "address": 4819379,
+      "size": 10,
+      "body_size": 10,
+      "source": "src/window_get_rect.c",
+      "symbol": "_op_window_get_rect",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 8791568,
+          "symbol": "_op_window_rect",
+          "kind": "dir32"
+        }
+      ]
     }
   ]
 }

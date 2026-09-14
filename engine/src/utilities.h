@@ -21,4 +21,12 @@ char *op_util_strdup(const char *);
 void op_util_snprintf(char *, unsigned int, const char *, ...);
 void op_util_strlwr(char *);
 int op_util_file_exists(const char *);
+typedef int(__cdecl *OP_UTIL_COMPARE)(int, int, void *);
+typedef void(__cdecl *OP_UTIL_SWAP)(int, int, void *);
+unsigned int op_span_delimiters(const char *, const char *);
+char *op_find_delimiter(const char *, const char *);
+char *op_find_character(const char *, int);
+char *op_util_tokenize(char *, char *, unsigned int, const char *);
+char *op_util_quoted_string(const char *, char *, unsigned int);
+void op_util_sort_range(int, int, OP_UTIL_COMPARE, OP_UTIL_SWAP, void *);
 #endif

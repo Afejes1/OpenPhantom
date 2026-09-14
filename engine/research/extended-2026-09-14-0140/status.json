@@ -304,7 +304,7 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Acceptance041 combines three lexical/sort and six window-state matches:9promotions864bytes18operands.",
+  "current_work": "Acceptance041 applied:9 lexical/sort/window functions, all focused fixtures and connected window-state tests; review and clean checkpoint pending.",
   "original_game_executed": false,
   "accepted_functions_current": 216,
   "evidence_records_current": 63,

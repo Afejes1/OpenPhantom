@@ -4001,6 +4001,177 @@
         "Shared tests retain all seven focused fixtures and connect formatting, duplication and lowercase."
       ],
       "exceptions": []
+    },
+    {
+      "id": "util_tokenize",
+      "module": "stdutil",
+      "analysis_name": "util_tokenize",
+      "purpose": "Cdecl returns the delimiter pointer itself, or NULL. Clears nonnull output first, calls span-delimiters, advances captured input pointer, calls find-delimiter, determines length from same-array pointer difference or intrinsic strlen, clamps to unsigned size-1, calls bounded copy for nonnull output, then writes final NUL. Fixture outcomes independently select prefix, token length and separator presence in owned terminated strings; observe exact callback pointers/order, mutate live token content and predict copy before candidate writes. Copy observer transiently writes a sentinel at final terminator to prove the wrapper store. Zero size wraps cap to UINT_MAX rather than underwrites; zero/UINT_MAX sizes are tested only with owned output large enough for the entire selected token. NULL output omits copy and stores while preserving returned delimiter identity. Delimiter/input/output guards and all untouched bytes are checked.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/lexical-window-acceptance.md",
+        "research/campaign-057-util-tokenize/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/lexical_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and type limits remain explicit.",
+        "Lexical callbacks remain authored; window state is exercised through actual setter/getter sequences."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "util_quoted_string",
+      "module": "stdutil",
+      "analysis_name": "util_quoted_string",
+      "purpose": "Cdecl returns one byte past the closing quote, or NULL if either quote is missing. Clears nonnull output first. Second strchr receives captured opening+1; successful content length is clamped to unsigned size-1, intrinsic memcpy copies disjoint owned storage and a final NUL is stored. No escaping. Tests include both missing-quote paths, empty/full/truncated content, all four input/output alignments, outputNULL, size0/1/UINT_MAX with sufficient owned backing, and bounded first/second callback content changes. All output bytes are independently predicted before intrinsic stores, and both guards/input snapshots are checked. Pointer returns stay within the same owned input.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/lexical-window-acceptance.md",
+        "research/campaign-057-util-quoted-string/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/lexical_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and type limits remain explicit.",
+        "Lexical callbacks remain authored; window state is exercised through actual setter/getter sequences."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "util_sort_range",
+      "module": "stdutil",
+      "analysis_name": "util_sort_range",
+      "purpose": "Void cdecl sorts inclusive low/high using compare(index,index,context) and swap(index,index,context). Three genuine locals retain pivot and left/right partition boundaries. Bounded signed high-low<1 is a no-callback path; two-element comparison swaps only for positive return. General partition advances left on <=0, retreats right on <0, exchanges while separated, then adjusts partition limits and recurses on the smaller partition first. All four self-call operands are verified. Tests use independent insertion-sort final values, live snapshots updated only by authored swaps, full array/context guards, duplicates/extreme signed values, ascending/descending order, INT_MIN/0/INT_MAX callback results, empty/single ranges and bounded inclusive indices. A literal seven-event schedule for [3,1,2] also checks representative callback order. Guard failures abort the authored fixture before invalid indexing and a callback budget bounds accidental nontermination. No signed overflow or null active callbacks are claimed.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/lexical-window-acceptance.md",
+        "research/campaign-057-util-sort-range/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/lexical_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and type limits remain explicit.",
+        "Lexical callbacks remain authored; window state is exercised through actual setter/getter sequences."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "window_set_handle",
+      "module": "stdwin95",
+      "analysis_name": "window_set_handle",
+      "purpose": "Void cdecl stores the full32-bit window-handle word. Caller498B10 supplies it; getter result is passed as HWND to SetCapture at48D080. Explicit unsigned32 storage transports all bits without host-width pointer assumptions. Fixtures never dereference a fabricated handle and preserve other documented state.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/lexical-window-acceptance.md",
+        "research/campaign-058-window-set-handle/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/window_state_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and type limits remain explicit.",
+        "Lexical callbacks remain authored; window state is exercised through actual setter/getter sequences."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "window_get_handle",
+      "module": "stdwin95",
+      "analysis_name": "window_get_handle",
+      "purpose": "No-argument cdecl returns the live32-bit window-handle word. Full-word values plus an intervening authored global mutation test fresh reads. SetCapture use corroborates Win32 interpretation; fixture patterns do not claim valid OS handles.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/lexical-window-acceptance.md",
+        "research/campaign-058-window-get-handle/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/window_state_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and type limits remain explicit.",
+        "Lexical callbacks remain authored; window state is exercised through actual setter/getter sequences."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "window_set_instance",
+      "module": "stdwin95",
+      "analysis_name": "window_set_instance",
+      "purpose": "Void cdecl stores the full32-bit instance-handle word. Caller498B10 supplies it and getter result is passed to DirectInputCreateA at48D080. Fixed-width transport preserves every bit without executing an OS API.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/lexical-window-acceptance.md",
+        "research/campaign-058-window-set-instance/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/window_state_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and type limits remain explicit.",
+        "Lexical callbacks remain authored; window state is exercised through actual setter/getter sequences."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "window_get_instance",
+      "module": "stdwin95",
+      "analysis_name": "window_get_instance",
+      "purpose": "No-argument cdecl returns the live32-bit instance word. Tests verify full-word values and intervening global mutation while preserving window, rectangle and owned input state.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/lexical-window-acceptance.md",
+        "research/campaign-058-window-get-instance/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/window_state_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and type limits remain explicit.",
+        "Lexical callbacks remain authored; window state is exercised through actual setter/getter sequences."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "window_set_rect",
+      "module": "stdwin95",
+      "analysis_name": "window_set_rect",
+      "purpose": "Void cdecl copies a16-byte four-word record from a captured source pointer into the global. Static disassembly proves ordered reads/stores for words0..3; snapshots prove final value/preservation, not intermediate concurrent observation. Neutral unsigned words avoid inferred coordinate signedness. Disjoint guarded source and exact self-alias are covered; NULL and partial overlap are excluded.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/lexical-window-acceptance.md",
+        "research/campaign-058-window-set-rect/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/window_state_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and type limits remain explicit.",
+        "Lexical callbacks remain authored; window state is exercised through actual setter/getter sequences."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "window_get_rect",
+      "module": "stdwin95",
+      "analysis_name": "window_get_rect",
+      "purpose": "No-argument cdecl returns the address of the live16-byte global, not a copy. Tests verify identity, safely mutate selected fields through that pointer, then check global state and repeated identity. Only owned storage is dereferenced.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/lexical-window-acceptance.md",
+        "research/campaign-058-window-get-rect/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/window_state_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and type limits remain explicit.",
+        "Lexical callbacks remain authored; window state is exercised through actual setter/getter sequences."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
