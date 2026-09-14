@@ -10159,6 +10159,132 @@
           "kind": "rel32-call"
         }
       ]
+    },
+    {
+      "id": "path_copy_extension",
+      "address": 4650823,
+      "size": 99,
+      "body_size": 99,
+      "source": "src/path_copy_extension.c",
+      "symbol": "_op_path_copy_extension",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 20,
+          "address": 4651826,
+          "symbol": "_op_path_extension_offset",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "path_copy_stem",
+      "address": 4650922,
+      "size": 133,
+      "body_size": 133,
+      "source": "src/path_copy_stem.c",
+      "symbol": "_op_path_copy_stem",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 18,
+          "address": 4651702,
+          "symbol": "_op_path_file_offset",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 33,
+          "address": 4651826,
+          "symbol": "_op_path_extension_offset",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 109,
+          "address": 4828192,
+          "symbol": "_op_copy_keyframe_name",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "path_copy_directory",
+      "address": 4651120,
+      "size": 116,
+      "body_size": 116,
+      "source": "src/path_copy_directory.c",
+      "symbol": "_op_path_copy_directory",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 18,
+          "address": 4651603,
+          "symbol": "_op_path_first_directory_offset",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 33,
+          "address": 4651702,
+          "symbol": "_op_path_file_offset",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 92,
+          "address": 4828192,
+          "symbol": "_op_copy_keyframe_name",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "path_copy_drive_directory",
+      "address": 4651236,
+      "size": 196,
+      "body_size": 196,
+      "source": "src/path_copy_drive_directory.c",
+      "symbol": "_op_path_copy_drive_directory",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 18,
+          "address": 4651055,
+          "symbol": "_op_path_drive",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 92,
+          "address": 4651603,
+          "symbol": "_op_path_first_directory_offset",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 107,
+          "address": 4651702,
+          "symbol": "_op_path_file_offset",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 169,
+          "address": 4828192,
+          "symbol": "_op_copy_keyframe_name",
+          "kind": "rel32-call"
+        }
+      ]
     }
   ]
 }

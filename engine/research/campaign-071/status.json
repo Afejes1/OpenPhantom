@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "status": "four-exact-integration-review",
+  "started_utc": "2026-09-14T15:24:35.649028+00:00",
+  "deadline_utc": "2026-09-14T16:09:35.649028+00:00",
+  "functions": [
+    "path_copy_extension",
+    "path_copy_stem",
+    "path_copy_directory",
+    "path_copy_drive_directory"
+  ],
+  "frozen_utc": "2026-09-14T15:38:06.267286+00:00",
+  "implementation_compiles": 13,
+  "full_span_bytes_exact": 544,
+  "verified_operands_exact": 11,
+  "fixture_checks_exact": 1251840,
+  "acceptance": "research/acceptance-051/result.json"
+}

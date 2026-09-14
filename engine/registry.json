@@ -5301,6 +5301,86 @@
         "Separator dependency remains unaccepted layout research and is supplied only by authored test support."
       ],
       "exceptions": []
+    },
+    {
+      "id": "path_copy_extension",
+      "module": "pzip-path",
+      "analysis_name": "path_copy_extension",
+      "purpose": "Copy the original path component into a caller-owned destination using the recovered path helper chain.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/path-copy-acceptance.md",
+        "research/campaign-071-path-copy-extension/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/path_copy_behavior.c"
+      ],
+      "quirks": [
+        "Destination is cleared before helper calls; exact source/destination alias collapses the live input.",
+        "Original backslash, colon, first-dot and bounded post-NUL behavior is preserved.",
+        "Partial overlap is outside the authored fixture contract."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "path_copy_stem",
+      "module": "pzip-path",
+      "analysis_name": "path_copy_stem",
+      "purpose": "Copy the original path component into a caller-owned destination using the recovered path helper chain.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/path-copy-acceptance.md",
+        "research/campaign-071-path-copy-stem/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/path_copy_behavior.c"
+      ],
+      "quirks": [
+        "Destination is cleared before helper calls; exact source/destination alias collapses the live input.",
+        "Original backslash, colon, first-dot and bounded post-NUL behavior is preserved.",
+        "Partial overlap is outside the authored fixture contract."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "path_copy_directory",
+      "module": "pzip-path",
+      "analysis_name": "path_copy_directory",
+      "purpose": "Copy the original path component into a caller-owned destination using the recovered path helper chain.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/path-copy-acceptance.md",
+        "research/campaign-071-path-copy-directory/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/path_copy_behavior.c"
+      ],
+      "quirks": [
+        "Destination is cleared before helper calls; exact source/destination alias collapses the live input.",
+        "Original backslash, colon, first-dot and bounded post-NUL behavior is preserved.",
+        "Partial overlap is outside the authored fixture contract."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "path_copy_drive_directory",
+      "module": "pzip-path",
+      "analysis_name": "path_copy_drive_directory",
+      "purpose": "Copy the original path component into a caller-owned destination using the recovered path helper chain.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/path-copy-acceptance.md",
+        "research/campaign-071-path-copy-drive-directory/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/path_copy_behavior.c"
+      ],
+      "quirks": [
+        "Destination is cleared before helper calls; exact source/destination alias collapses the live input.",
+        "Original backslash, colon, first-dot and bounded post-NUL behavior is preserved.",
+        "Partial overlap is outside the authored fixture contract."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

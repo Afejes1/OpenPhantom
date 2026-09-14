@@ -196,6 +196,10 @@ static int lquo_scenario;
 char *op_find_character(const char *text, int character)
 {
     unsigned int i;
+    if(pcx_active)return pcx_find(text,character);
+    if(pcs_active)return pcs_find(text,character);
+    if(pcd_active)return pcd_find(text,character);
+    if(pdd_active)return pdd_find(text,character);
     if(pfd_active)return pfd_find(text,character);
     if(pse_active)return pse_find(text,character);
     LQUO_CHECK(character == 34);

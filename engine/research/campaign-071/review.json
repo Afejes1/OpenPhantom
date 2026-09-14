@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T15:38:06.267286+00:00",
+  "conclusion": "four-exact-approved",
+  "functions": [
+    "path_copy_extension",
+    "path_copy_stem",
+    "path_copy_directory",
+    "path_copy_drive_directory"
+  ],
+  "observations": [
+    "Static full extents and actual helper-chain contracts independently reviewed.",
+    "Guarded exhaustive input matrices preserve initial clear, exact alias collapse, intermediate drive prefix and copy-stage writes.",
+    "Parent corrected the initial strcpy hypothesis to the original intrinsic strcat after full instruction inspection.",
+    "Reviewer rehashed 60 snapshot inputs, eight selected native/Docker reports, and eight private attempt links without mismatch.",
+    "All 544 bytes and 11 address operands agree after resolution; all 1251840 assertions pass; zero exclusions or warning waivers."
+  ],
+  "integration_review": {
+    "reviewer": "comparison_inventory",
+    "conclusion": "approved",
+    "utc": "2026-09-14T15:41:42.646432+00:00",
+    "observations": [
+      "Prior 283 target and registry entries identical.",
+      "Four canonical candidate bodies have only include changes.",
+      "All four retained matrices route through actual canonical helpers; one unaccepted separator support definition.",
+      "Shared uppercase, search and bounded-copy routers preserve older observers.",
+      "Main and CMake wire all four once; targeted original-VC5 compile passed."
+    ]
+  }
+}

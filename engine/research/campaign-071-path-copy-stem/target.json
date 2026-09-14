@@ -1,0 +1,33 @@
+{
+  "id": "path_copy_stem",
+  "address": 4650922,
+  "size": 133,
+  "body_size": 133,
+  "source": "src/path_copy_stem.c",
+  "symbol": "_op_path_copy_stem",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 18,
+      "address": 4651702,
+      "symbol": "_op_path_file_offset",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 33,
+      "address": 4651826,
+      "symbol": "_op_path_extension_offset",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 109,
+      "address": 4828192,
+      "symbol": "_op_copy_keyframe_name",
+      "kind": "rel32-call"
+    }
+  ]
+}

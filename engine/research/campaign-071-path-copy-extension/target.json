@@ -1,0 +1,21 @@
+{
+  "id": "path_copy_extension",
+  "address": 4650823,
+  "size": 99,
+  "body_size": 99,
+  "source": "src/path_copy_extension.c",
+  "symbol": "_op_path_copy_extension",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 20,
+      "address": 4651826,
+      "symbol": "_op_path_extension_offset",
+      "kind": "rel32-call"
+    }
+  ]
+}

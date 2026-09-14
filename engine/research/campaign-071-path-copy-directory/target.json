@@ -1,0 +1,33 @@
+{
+  "id": "path_copy_directory",
+  "address": 4651120,
+  "size": 116,
+  "body_size": 116,
+  "source": "src/path_copy_directory.c",
+  "symbol": "_op_path_copy_directory",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 18,
+      "address": 4651603,
+      "symbol": "_op_path_first_directory_offset",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 33,
+      "address": 4651702,
+      "symbol": "_op_path_file_offset",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 92,
+      "address": 4828192,
+      "symbol": "_op_copy_keyframe_name",
+      "kind": "rel32-call"
+    }
+  ]
+}

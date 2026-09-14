@@ -803,6 +803,10 @@ static int op_test_path_separator_offset(void)
 
 int op_toupper(int value)
 {
+    if(pcx_active)return pcx_upper(value);
+    if(pcs_active)return pcs_upper(value);
+    if(pcd_active)return pcd_upper(value);
+    if(pdd_active)return pdd_upper(value);
     pdr_check(pdr_active, __LINE__);
     if (!pdr_active)
         exit(2);

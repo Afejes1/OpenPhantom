@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "path_copy_directory",
+  "implementation_started_utc": "2026-09-14T15:24:35.649028+00:00",
+  "implementation_cutoff_utc": "2026-09-14T15:39:35.649028+00:00",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural copy helper using observed intrinsic and actual reconstructed offset dependencies",
+      "started_utc": "2026-09-14T15:24:39.547137+00:00",
+      "finished_utc": "2026-09-14T15:24:41.286641+00:00",
+      "returncode": 1,
+      "source_sha256": "ee91bef68a3ea52bb1f3bdcfbb07dab79fcbb9ce1c790cb627e7997ec2263d5f",
+      "report": "engine/build/campaign-001-path_copy_directory-263c06c4cce7/research-result.json",
+      "report_sha256": "0810702d8be037c8b3b0abacd4c088eb9476c32ab0420f597b8b8073777a7270",
+      "status": "mismatch",
+      "candidate_size": 117,
+      "different_bytes": null,
+      "elapsed_seconds": 1.489456,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Preserve observed left-associated destination pointer addition/subtraction for final NUL store",
+      "started_utc": "2026-09-14T15:26:01.241771+00:00",
+      "finished_utc": "2026-09-14T15:26:02.896487+00:00",
+      "returncode": 0,
+      "source_sha256": "88ff0f1c3bec52688336ef440115f3963cc83e003486590af1d4f56f41f6c5a9",
+      "report": "engine/build/campaign-001-path_copy_directory-cf71d554b7e8/research-result.json",
+      "report_sha256": "f98c57c6929f32e94e2b99c31a77ce7c4805508e9a1739f9dafabbc5ee0a8028",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 116,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.426709,
+      "stderr": ""
+    }
+  ]
+}

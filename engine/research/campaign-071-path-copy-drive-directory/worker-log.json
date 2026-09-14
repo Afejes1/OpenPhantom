@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "path_copy_drive_directory",
+  "implementation_started_utc": "2026-09-14T15:24:35.649028+00:00",
+  "implementation_cutoff_utc": "2026-09-14T15:39:35.649028+00:00",
+  "compiler_invocations": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural copy helper using observed intrinsic and actual reconstructed offset dependencies",
+      "started_utc": "2026-09-14T15:24:41.293910+00:00",
+      "finished_utc": "2026-09-14T15:24:43.010232+00:00",
+      "returncode": 1,
+      "source_sha256": "091fdad3f587b0ae3d8b50e6b852ebd7ba3eb3a1d0b981d155c6fd305032a104",
+      "report": "engine/build/campaign-001-path_copy_drive_directory-e7a2936adcfc/research-result.json",
+      "report_sha256": "bc3b560d513139153f89755adae5b25fe7f7f0aa2f98cf1529cd607a1228d409",
+      "status": "mismatch",
+      "candidate_size": 197,
+      "different_bytes": null,
+      "elapsed_seconds": 1.477462,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Preserve observed left-associated destination pointer addition/subtraction for final NUL store",
+      "started_utc": "2026-09-14T15:26:02.903423+00:00",
+      "finished_utc": "2026-09-14T15:26:04.547587+00:00",
+      "returncode": 1,
+      "source_sha256": "3454a30093228301c1129feba0fbe499e0f3822bc546223f33af160399a4c27b",
+      "report": "engine/build/campaign-001-path_copy_drive_directory-c8ff145504d4/research-result.json",
+      "report_sha256": "daa7e5da9e00f33a314fa1f880c18420bfe81518f063447f763fe27ec1460470",
+      "status": "mismatch",
+      "candidate_size": 196,
+      "different_bytes": 14,
+      "elapsed_seconds": 1.417286,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Use ordinary semantic local names matching the observed stack-slot allocation; no extra locals or padding",
+      "started_utc": "2026-09-14T15:26:46.803636+00:00",
+      "finished_utc": "2026-09-14T15:26:48.444055+00:00",
+      "returncode": 0,
+      "source_sha256": "82b828c51cc8f7ee8d65e854d05baca3efef89c3a0f88b18a46ba86799c216ab",
+      "report": "engine/build/campaign-001-path_copy_drive_directory-73cd81ce2077/research-result.json",
+      "report_sha256": "77cd5d2194beaf4b24bd096cfb3b18d8c0ae9d9873c15004cf82c52de1431344",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 196,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.41607,
+      "stderr": ""
+    }
+  ]
+}
