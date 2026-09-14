@@ -5057,6 +5057,439 @@
         "/MT"
       ],
       "bindings": []
+    },
+    {
+      "id": "font_get_colours",
+      "address": 4633076,
+      "size": 72,
+      "body_size": 72,
+      "source": "src/font_get_colours.c",
+      "symbol": "_op_font_get_colours",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 19,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 33,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 47,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 61,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "font_last_textbox",
+      "address": 4634423,
+      "size": 29,
+      "body_size": 29,
+      "source": "src/font_last_textbox.c",
+      "symbol": "_op_font_last_textbox",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 20,
+          "address": 4692800,
+          "symbol": "_op_get_last_textbox",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "font_select",
+      "address": 4632891,
+      "size": 62,
+      "body_size": 62,
+      "source": "src/font_select.c",
+      "symbol": "_op_font_select",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 23,
+          "address": 7167360,
+          "symbol": "_op_font_pool",
+          "kind": "dir32",
+          "addend": 8
+        },
+        {
+          "offset": 32,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 50,
+          "address": 7167360,
+          "symbol": "_op_font_pool",
+          "kind": "dir32"
+        },
+        {
+          "offset": 56,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "font_set_align",
+      "address": 4633148,
+      "size": 87,
+      "body_size": 87,
+      "source": "src/font_set_align.c",
+      "symbol": "_op_font_set_align",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 6,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 43,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 58,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 72,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "font_set_backdrop",
+      "address": 4634096,
+      "size": 114,
+      "body_size": 114,
+      "source": "src/font_set_backdrop.c",
+      "symbol": "_op_font_set_backdrop",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 17,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 29,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 41,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 50,
+          "address": 4363764,
+          "symbol": "_op_release_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 75,
+          "address": 4363584,
+          "symbol": "_op_acquire_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 84,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 93,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "font_set_colour",
+      "address": 4632953,
+      "size": 61,
+      "body_size": 61,
+      "source": "src/font_set_colour.c",
+      "symbol": "_op_font_set_colour",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 6,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 44,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "font_set_colours",
+      "address": 4633014,
+      "size": 62,
+      "body_size": 62,
+      "source": "src/font_set_colours.c",
+      "symbol": "_op_font_set_colours",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 15,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 27,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 39,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 50,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "font_set_glyph_scale",
+      "address": 4633235,
+      "size": 39,
+      "body_size": 39,
+      "source": "src/font_set_glyph_scale.c",
+      "symbol": "_op_font_set_glyph_scale",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 15,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 27,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "font_set_position_scale",
+      "address": 4633274,
+      "size": 39,
+      "body_size": 39,
+      "source": "src/font_set_position_scale.c",
+      "symbol": "_op_font_set_position_scale",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 15,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 27,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "font_set_word20",
+      "address": 4633313,
+      "size": 27,
+      "body_size": 27,
+      "source": "src/font_set_word20.c",
+      "symbol": "_op_font_set_word20",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 15,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "font_set_word24",
+      "address": 4634462,
+      "size": 34,
+      "body_size": 34,
+      "source": "src/font_set_word24.c",
+      "symbol": "_op_font_set_word24",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 17,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "font_set_zrange",
+      "address": 4634210,
+      "size": 49,
+      "body_size": 49,
+      "source": "src/font_set_zrange.c",
+      "symbol": "_op_font_set_zrange",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 17,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 35,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        }
+      ]
     }
   ]
 }

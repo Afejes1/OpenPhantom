@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "acceptance-023",
+  "baseline_commit": "c1178e0132a3e07deae8d9463ab39250cbd1081f",
+  "functions": [
+    "font_get_colours",
+    "font_last_textbox",
+    "font_select",
+    "font_set_align",
+    "font_set_backdrop",
+    "font_set_colour",
+    "font_set_colours",
+    "font_set_glyph_scale",
+    "font_set_position_scale",
+    "font_set_word20",
+    "font_set_word24",
+    "font_set_zrange"
+  ],
+  "promotions": 12,
+  "registered_before": 121,
+  "registered_after": 133,
+  "full_span_bytes": 675,
+  "verified_operands": 42,
+  "status": "integration-pending",
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

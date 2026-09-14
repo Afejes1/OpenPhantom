@@ -125,6 +125,7 @@ static void clip_flag_tests(void)
 #include "world_names_behavior.c"
 #include "world_chunks_behavior.c"
 #include "focused_accessors_behavior.c"
+#include "font_state_behavior.c"
 #include "shield_lifecycle_behavior.c"
 #include "effects_state_behavior.c"
 #include "halo_overlay_behavior.c"
@@ -197,6 +198,7 @@ int main(void)
     failures += op_test_application_helpers();
     failures += op_test_puppet_tracks();
     failures += op_test_linked_list();
+    failures += op_test_font_state();
     if (failures) return 1;
 #ifdef OP_VC5_BEHAVIOR
     puts("VC5 behavioral fixture passed, including x87 unordered fallback.");

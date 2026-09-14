@@ -2242,6 +2242,233 @@
         "NonNULL mutators, distinct detached insertion nodes, finite acyclic traversal; raw complete spans with no address operands."
       ],
       "exceptions": []
+    },
+    {
+      "id": "font_get_colours",
+      "module": "font_state",
+      "analysis_name": "font_get_colours",
+      "purpose": "font get colours",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-state-acceptance.md",
+        "research/campaign-036-font-get-colours/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_state_behavior.c",
+        "tests/font_get_colours_behavior.h"
+      ],
+      "quirks": [
+        "Shared 16-record pool; live alias loads and callback-selected record changes are preserved; word20/24 semantics unknown."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "font_last_textbox",
+      "module": "font_state",
+      "analysis_name": "font_last_textbox",
+      "purpose": "font last textbox",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-state-acceptance.md",
+        "research/campaign-036-font-last-textbox/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_state_behavior.c",
+        "tests/font_last_textbox_behavior.h"
+      ],
+      "quirks": [
+        "Shared 16-record pool; live alias loads and callback-selected record changes are preserved; word20/24 semantics unknown."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "font_select",
+      "module": "font_state",
+      "analysis_name": "font_select",
+      "purpose": "font select",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-state-acceptance.md",
+        "research/campaign-036-font-select/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_state_behavior.c",
+        "tests/font_select_behavior.h"
+      ],
+      "quirks": [
+        "Shared 16-record pool; live alias loads and callback-selected record changes are preserved; word20/24 semantics unknown."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "font_set_align",
+      "module": "font_state",
+      "analysis_name": "font_set_align",
+      "purpose": "font set align",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-state-acceptance.md",
+        "research/campaign-036-font-set-align/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_state_behavior.c",
+        "tests/font_set_align_behavior.h"
+      ],
+      "quirks": [
+        "Shared 16-record pool; live alias loads and callback-selected record changes are preserved; word20/24 semantics unknown."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "font_set_backdrop",
+      "module": "font_state",
+      "analysis_name": "font_set_backdrop",
+      "purpose": "font set backdrop",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-state-acceptance.md",
+        "research/campaign-036-font-set-backdrop/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_state_behavior.c"
+      ],
+      "quirks": [
+        "Shared 16-record pool; live alias loads and callback-selected record changes are preserved; word20/24 semantics unknown."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "font_set_colour",
+      "module": "font_state",
+      "analysis_name": "font_set_colour",
+      "purpose": "font set colour",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-state-acceptance.md",
+        "research/campaign-036-font-set-colour/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_state_behavior.c",
+        "tests/font_set_colour_behavior.h"
+      ],
+      "quirks": [
+        "Shared 16-record pool; live alias loads and callback-selected record changes are preserved; word20/24 semantics unknown."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "font_set_colours",
+      "module": "font_state",
+      "analysis_name": "font_set_colours",
+      "purpose": "font set colours",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-state-acceptance.md",
+        "research/campaign-036-font-set-colours/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_state_behavior.c",
+        "tests/font_set_colours_behavior.h"
+      ],
+      "quirks": [
+        "Shared 16-record pool; live alias loads and callback-selected record changes are preserved; word20/24 semantics unknown."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "font_set_glyph_scale",
+      "module": "font_state",
+      "analysis_name": "font_set_glyph_scale",
+      "purpose": "font set glyph scale",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-state-acceptance.md",
+        "research/campaign-036-font-set-glyph-scale/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_state_behavior.c",
+        "tests/font_set_glyph_scale_behavior.h"
+      ],
+      "quirks": [
+        "Shared 16-record pool; live alias loads and callback-selected record changes are preserved; word20/24 semantics unknown."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "font_set_position_scale",
+      "module": "font_state",
+      "analysis_name": "font_set_position_scale",
+      "purpose": "font set position scale",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-state-acceptance.md",
+        "research/campaign-036-font-set-position-scale/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_state_behavior.c",
+        "tests/font_set_position_scale_behavior.h"
+      ],
+      "quirks": [
+        "Shared 16-record pool; live alias loads and callback-selected record changes are preserved; word20/24 semantics unknown."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "font_set_word20",
+      "module": "font_state",
+      "analysis_name": "font_set_word20",
+      "purpose": "font set word20",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-state-acceptance.md",
+        "research/campaign-036-font-set-word20/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_state_behavior.c",
+        "tests/font_set_word20_behavior.h"
+      ],
+      "quirks": [
+        "Shared 16-record pool; live alias loads and callback-selected record changes are preserved; word20/24 semantics unknown."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "font_set_word24",
+      "module": "font_state",
+      "analysis_name": "font_set_word24",
+      "purpose": "font set word24",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-state-acceptance.md",
+        "research/campaign-036-font-set-word24/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_state_behavior.c",
+        "tests/font_set_word24_behavior.h"
+      ],
+      "quirks": [
+        "Shared 16-record pool; live alias loads and callback-selected record changes are preserved; word20/24 semantics unknown."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "font_set_zrange",
+      "module": "font_state",
+      "analysis_name": "font_set_zrange",
+      "purpose": "font set zrange",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-state-acceptance.md",
+        "research/campaign-036-font-set-zrange/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_state_behavior.c",
+        "tests/font_set_zrange_behavior.h"
+      ],
+      "quirks": [
+        "Shared 16-record pool; live alias loads and callback-selected record changes are preserved; word20/24 semantics unknown."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
