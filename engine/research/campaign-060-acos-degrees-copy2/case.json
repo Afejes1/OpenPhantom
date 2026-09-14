@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "acos_degrees_copy2",
+  "candidate": "candidate.c",
+  "symbol": "_op_acos_degrees_copy2",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

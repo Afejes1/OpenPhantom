@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "attempts": [
+    {
+      "id": "sincos_degrees",
+      "started_utc": "2026-09-14T08:59:18.758827+00:00",
+      "finished_utc": "2026-09-14T08:59:20.319841+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-sincos_degrees-f6b1fc606b4d\\research-result.json",
+      "report_sha256": "5b4d9c893d211f0616aff7e543ce268cf0367ea02be9906e4a04b61b96199cd6",
+      "stderr": ""
+    },
+    {
+      "id": "sincos_degrees",
+      "started_utc": "2026-09-14T08:59:20.326472+00:00",
+      "finished_utc": "2026-09-14T08:59:25.950267+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-sincos_degrees-99e1497da89b\\research-result.json",
+      "report_sha256": "43e049d378c4ae1ea5fda42206bab0b5f2f26feb41f2511b557f033f1e5a9189",
+      "stderr": ""
+    },
+    {
+      "id": "cosine_degrees",
+      "started_utc": "2026-09-14T08:59:26.115226+00:00",
+      "finished_utc": "2026-09-14T08:59:27.712340+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-cosine_degrees-3b5921d75a3f\\research-result.json",
+      "report_sha256": "326457a9b7d3a32c89267810f2f52ca8404e2f406a4ac546e8dbc214f25a5088",
+      "stderr": ""
+    },
+    {
+      "id": "cosine_degrees",
+      "started_utc": "2026-09-14T08:59:27.719877+00:00",
+      "finished_utc": "2026-09-14T08:59:33.054463+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-cosine_degrees-cfe29035f7ce\\research-result.json",
+      "report_sha256": "d3453f0b70b1882106ab8452a51305d5e4bc5cf539b717c4807026380aaa7efe",
+      "stderr": ""
+    },
+    {
+      "id": "asine_degrees",
+      "started_utc": "2026-09-14T08:59:33.213911+00:00",
+      "finished_utc": "2026-09-14T08:59:34.806332+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-asine_degrees-4907d8be8c3f\\research-result.json",
+      "report_sha256": "f7f24e25ecd002da6a11fb8db2b51d77f4e97500430b7fb152781c65d702c282",
+      "stderr": ""
+    },
+    {
+      "id": "asine_degrees",
+      "started_utc": "2026-09-14T08:59:34.813299+00:00",
+      "finished_utc": "2026-09-14T08:59:40.147031+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-asine_degrees-2442b4fd88c6\\research-result.json",
+      "report_sha256": "b1e18e80e757875e785c581b7e6435bdf036785eafbe46d41b4bcf429bd08a56",
+      "stderr": ""
+    },
+    {
+      "id": "tangent_degrees",
+      "started_utc": "2026-09-14T08:59:40.309746+00:00",
+      "finished_utc": "2026-09-14T08:59:41.926453+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-tangent_degrees-5acdc0e5cf1a\\research-result.json",
+      "report_sha256": "1153ea117bfca5e172530c0721b03d610694863cdb0310f7f7caac2f64f7f07a",
+      "stderr": ""
+    },
+    {
+      "id": "tangent_degrees",
+      "started_utc": "2026-09-14T08:59:41.933654+00:00",
+      "finished_utc": "2026-09-14T08:59:47.223468+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-tangent_degrees-a37135d18111\\research-result.json",
+      "report_sha256": "fc277254c3a07960f0d4ff44d2fc54c50cd089c2171927694af5af843d0b4c5a",
+      "stderr": ""
+    },
+    {
+      "id": "scalar_angle",
+      "started_utc": "2026-09-14T08:59:47.388778+00:00",
+      "finished_utc": "2026-09-14T08:59:48.973962+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-scalar_angle-ce0457c13e9b\\research-result.json",
+      "report_sha256": "6430e2cded73f2225b88af1ea089f3a1227e0f845d98d68c3e43389b4f0e7e38",
+      "stderr": ""
+    },
+    {
+      "id": "scalar_angle",
+      "started_utc": "2026-09-14T08:59:48.981198+00:00",
+      "finished_utc": "2026-09-14T08:59:54.413367+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-scalar_angle-4ad289546d18\\research-result.json",
+      "report_sha256": "47de057e6e7aef660aa85c0e2c99931327d96c536abd74434228235fcee17628",
+      "stderr": ""
+    },
+    {
+      "id": "acos_degrees_copy2",
+      "started_utc": "2026-09-14T08:59:54.579235+00:00",
+      "finished_utc": "2026-09-14T08:59:56.184122+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-acos_degrees_copy2-34ea71dbf616\\research-result.json",
+      "report_sha256": "229009b3e56f22a3b1d5fd283fe7aa6b6c9c64484d97315907ecc37e5957ea02",
+      "stderr": ""
+    },
+    {
+      "id": "acos_degrees_copy2",
+      "started_utc": "2026-09-14T08:59:56.191431+00:00",
+      "finished_utc": "2026-09-14T09:00:01.527138+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-acos_degrees_copy2-ca908251edbd\\research-result.json",
+      "report_sha256": "e37d4c600d0baa44c1293970683869121a9f8384e27332cf4daf3cc482ed4dc3",
+      "stderr": ""
+    },
+    {
+      "id": "acos_degrees_copy3",
+      "started_utc": "2026-09-14T09:00:01.694731+00:00",
+      "finished_utc": "2026-09-14T09:00:03.486929+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-acos_degrees_copy3-60508ac8bf5a\\research-result.json",
+      "report_sha256": "7bde6f154c0b2f36ab274ab1d9fb0ec3aa974c5babb3f8c32e8c2013e0fd3dec",
+      "stderr": ""
+    },
+    {
+      "id": "acos_degrees_copy3",
+      "started_utc": "2026-09-14T09:00:03.494116+00:00",
+      "finished_utc": "2026-09-14T09:00:09.287133+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-acos_degrees_copy3-943aef199139\\research-result.json",
+      "report_sha256": "11f6912530f76abe49638584ccbd8a39e49740ee7708b7729c9a5b507ecdc1b8",
+      "stderr": ""
+    },
+    {
+      "id": "sine_degrees",
+      "started_utc": "2026-09-14T09:04:59.025491+00:00",
+      "finished_utc": "2026-09-14T09:05:00.635008+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-sine_degrees-88abd3a9ef78\\research-result.json",
+      "report_sha256": "b5e1e07aa14423e463a26966754e06afcc90d3a4ee637690f9a770c0c35f6431",
+      "stderr": ""
+    },
+    {
+      "id": "sine_degrees",
+      "started_utc": "2026-09-14T09:05:00.641695+00:00",
+      "finished_utc": "2026-09-14T09:05:07.009231+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-sine_degrees-9c1187a72c05\\research-result.json",
+      "report_sha256": "01ea3bfb06f2f36613a6eb523a14a9b47424a88e9faa0da94fd3f415a639fbab",
+      "stderr": ""
+    }
+  ]
+}

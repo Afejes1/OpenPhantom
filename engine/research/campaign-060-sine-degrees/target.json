@@ -1,0 +1,26 @@
+{
+  "id": "sine_degrees",
+  "address": 4801138,
+  "size": 27,
+  "body_size": 27,
+  "source": "src/sine_degrees.c",
+  "symbol": "_op_sine_degrees",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 4886160,
+      "float32": 0.01745329238474369
+    },
+    {
+      "offset": 16,
+      "address": 4835312,
+      "symbol": "__CIsin",
+      "kind": "rel32-call"
+    }
+  ]
+}

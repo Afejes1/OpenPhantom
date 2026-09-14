@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "campaign-060",
+  "started_utc": "2026-09-14T08:52:00Z",
+  "stop_implementation_utc": "2026-09-14T09:27:00Z",
+  "deadline_utc": "2026-09-14T09:37:00Z",
+  "prepared_utc": "2026-09-14T08:57:56.887569+00:00",
+  "functions": [
+    "sincos_degrees",
+    "sine_degrees",
+    "cosine_degrees",
+    "asine_degrees",
+    "tangent_degrees",
+    "scalar_angle",
+    "acos_degrees_copy2",
+    "acos_degrees_copy3"
+  ],
+  "full_target_bytes": 250,
+  "address_operands": 18,
+  "status": "complete",
+  "baseline_commit": "d182eff369338f8f0d58310e79ab55e3359c26da",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T09:08:03.897182+00:00"
+}

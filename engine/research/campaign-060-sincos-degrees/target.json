@@ -1,0 +1,32 @@
+{
+  "id": "sincos_degrees",
+  "address": 4801080,
+  "size": 58,
+  "body_size": 58,
+  "source": "src/sincos_degrees.c",
+  "symbol": "_op_sincos_degrees",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 9,
+      "address": 4886160,
+      "float32": 0.01745329238474369
+    },
+    {
+      "offset": 26,
+      "address": 4835312,
+      "symbol": "__CIsin",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 45,
+      "address": 4835136,
+      "symbol": "__CIcos",
+      "kind": "rel32-call"
+    }
+  ]
+}

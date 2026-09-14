@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "acos_degrees_copy3",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural VC5 intrinsic trig source with exact observed constants",
+      "started_utc": "2026-09-14T08:58:08.358403+00:00",
+      "finished_utc": "2026-09-14T08:58:09.951093+00:00",
+      "returncode": 0,
+      "source_sha256": "1e3d2ec843c9fe9169fd7e4fc67e85200b3c67407bb112bce067c0faec34eb33",
+      "report": "engine/build/campaign-001-acos_degrees_copy3-c1b693b5f80e/research-result.json",
+      "report_sha256": "fa66a6c1c638cf55313d2c33d2430a9886745ffa3458c73518d9c534d6626667",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 25,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.370685,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T09:08:03.897182+00:00"
+}

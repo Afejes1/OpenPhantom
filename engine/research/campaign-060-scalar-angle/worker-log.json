@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "scalar_angle",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural VC5 intrinsic trig source with exact observed constants",
+      "started_utc": "2026-09-14T08:58:05.145030+00:00",
+      "finished_utc": "2026-09-14T08:58:06.749761+00:00",
+      "returncode": 0,
+      "source_sha256": "61700dbf146053831a0c839f1beca69f7ecd16b173fd867f299eaaa9506546d3",
+      "report": "engine/build/campaign-001-scalar_angle-f9cf535d31fb/research-result.json",
+      "report_sha256": "59107c419ad90e79e0e9678e816c3b3bd7b3116a4b620a4f9b3bdc103dfbfed5",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 25,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.388551,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T09:08:03.897182+00:00"
+}

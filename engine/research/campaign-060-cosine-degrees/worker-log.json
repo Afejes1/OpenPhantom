@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "cosine_degrees",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural VC5 intrinsic trig source with exact observed constants",
+      "started_utc": "2026-09-14T08:58:00.296909+00:00",
+      "finished_utc": "2026-09-14T08:58:01.887650+00:00",
+      "returncode": 0,
+      "source_sha256": "f72bfdd08715aa02433b59e9200f3a9841056759d801b1f5e1fd265bac482cc6",
+      "report": "engine/build/campaign-001-cosine_degrees-1199b1f0279e/research-result.json",
+      "report_sha256": "c21c6c618de716e9a4481c26362b048055e5b47c8001aa2f94f957cbc37e41fd",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 25,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.370565,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T09:08:03.897182+00:00"
+}

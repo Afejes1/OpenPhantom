@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "tangent_degrees",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural VC5 intrinsic trig source with exact observed constants",
+      "started_utc": "2026-09-14T08:58:03.506116+00:00",
+      "finished_utc": "2026-09-14T08:58:05.139611+00:00",
+      "returncode": 0,
+      "source_sha256": "4418b25dd2cd1817a3e39f356962b135514c8000e6ac1331a12410a05a566527",
+      "report": "engine/build/campaign-001-tangent_degrees-3c9c0fec843d/research-result.json",
+      "report_sha256": "72a4305a1ae1040aa1a3b5c93b7804207f64c2179a34b44f939613ef25e007a3",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 40,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.407008,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T09:08:03.897182+00:00"
+}

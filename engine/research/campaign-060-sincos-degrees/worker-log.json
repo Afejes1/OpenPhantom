@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "sincos_degrees",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural VC5 intrinsic trig source with exact observed constants",
+      "started_utc": "2026-09-14T08:57:57.089041+00:00",
+      "finished_utc": "2026-09-14T08:57:58.705562+00:00",
+      "returncode": 0,
+      "source_sha256": "083613f491567698acef1121ef3b417bf3cc704ff9557a2f099c63d26d2b7ffe",
+      "report": "engine/build/campaign-001-sincos_degrees-a57cc77ab20a/research-result.json",
+      "report_sha256": "a2d6c5196529e72a4aea6d4d84be813bcbe5691f8e639a0b7439783f7472061b",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 58,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.391224,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T09:08:03.897182+00:00"
+}

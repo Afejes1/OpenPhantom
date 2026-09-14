@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T09:08:03.897182+00:00",
+  "conclusion": "approved-seven-exact-one-research",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "acos_degrees_copy2",
+      "address": 4801280,
+      "full_span_bytes": 25,
+      "candidate_size": 25,
+      "verified_operands": 2,
+      "evidence_category": "exact-function-match",
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 39,
+      "team_status": "not_done",
+      "result": "research/campaign-060-acos-degrees-copy2/result.json"
+    },
+    {
+      "id": "acos_degrees_copy3",
+      "address": 4801305,
+      "full_span_bytes": 25,
+      "candidate_size": 25,
+      "verified_operands": 2,
+      "evidence_category": "exact-function-match",
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 39,
+      "team_status": "not_done",
+      "result": "research/campaign-060-acos-degrees-copy3/result.json"
+    },
+    {
+      "id": "asine_degrees",
+      "address": 4801190,
+      "full_span_bytes": 25,
+      "candidate_size": 25,
+      "verified_operands": 2,
+      "evidence_category": "exact-function-match",
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 38,
+      "team_status": "not_done",
+      "result": "research/campaign-060-asine-degrees/result.json"
+    },
+    {
+      "id": "cosine_degrees",
+      "address": 4801165,
+      "full_span_bytes": 25,
+      "candidate_size": 25,
+      "verified_operands": 2,
+      "evidence_category": "exact-function-match",
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 68,
+      "team_status": "not_done",
+      "result": "research/campaign-060-cosine-degrees/result.json"
+    },
+    {
+      "id": "scalar_angle",
+      "address": 4801255,
+      "full_span_bytes": 25,
+      "candidate_size": 25,
+      "verified_operands": 2,
+      "evidence_category": "exact-function-match",
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 39,
+      "team_status": "not_done",
+      "result": "research/campaign-060-scalar-angle/result.json"
+    },
+    {
+      "id": "sincos_degrees",
+      "address": 4801080,
+      "full_span_bytes": 58,
+      "candidate_size": 58,
+      "verified_operands": 3,
+      "evidence_category": "exact-function-match",
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 506,
+      "team_status": "not_done",
+      "result": "research/campaign-060-sincos-degrees/result.json"
+    },
+    {
+      "id": "sine_degrees",
+      "address": 4801138,
+      "full_span_bytes": 27,
+      "candidate_size": 25,
+      "verified_operands": null,
+      "evidence_category": "research-candidate",
+      "different_bytes": null,
+      "different_percent": null,
+      "checks": 66,
+      "team_status": "not_done",
+      "result": "research/campaign-060-sine-degrees/result.json"
+    },
+    {
+      "id": "tangent_degrees",
+      "address": 4801215,
+      "full_span_bytes": 40,
+      "candidate_size": 40,
+      "verified_operands": 3,
+      "evidence_category": "exact-function-match",
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 610,
+      "team_status": "not_done",
+      "result": "research/campaign-060-tangent-degrees/result.json"
+    }
+  ],
+  "observations": [
+    "112 current snapshot inputs and16 reports independently rehashed.",
+    "Seven exact spans223bytes16operands; sine extent mismatch25/27 has no percentage.",
+    "Observed scales and ABI/callback contracts independently reviewed; degree constant is not mathematical180/pi.",
+    "Three acos wrappers are distinct original functions with identical semantics.",
+    "Sincos NULL/alias/guard cases and tangent callback mutation were reviewed; zero results require exact sign bits.",
+    "Optional independent Python table recomputation was blocked twice by automatic approval review; no workaround was used. Manual oracle review and report validation completed."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "cosine_degrees",
+  "address": 4801165,
+  "size": 25,
+  "body_size": 25,
+  "source": "src/cosine_degrees.c",
+  "symbol": "_op_cosine_degrees",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 9,
+      "address": 4886160,
+      "float32": 0.01745329238474369
+    },
+    {
+      "offset": 14,
+      "address": 4835136,
+      "symbol": "__CIcos",
+      "kind": "rel32-call"
+    }
+  ]
+}

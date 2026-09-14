@@ -1,0 +1,26 @@
+{
+  "id": "asine_degrees",
+  "address": 4801190,
+  "size": 25,
+  "body_size": 25,
+  "source": "src/asine_degrees.c",
+  "symbol": "_op_asine_degrees",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 4835488,
+      "symbol": "__CIasin",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 14,
+      "address": 4886168,
+      "float64": 57.296326654336454
+    }
+  ]
+}
