@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **311** team-not-done entries and **5** team-done entries.
-Team-not-done entries without a local recorded match: **658**.
+Our last recorded matches cover **322** team-not-done entries and **5** team-done entries.
+Team-not-done entries without a local recorded match: **647**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -127,13 +127,13 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | std/stdwin95.c | 14 | 6 | 8 |
 | std/wkernel.c | 14 | 9 | 5 |
 | swift/stdbmp.c | 1 | 0 | 1 |
-| swift/sw3d.c | 10 | 1 | 9 |
+| swift/sw3d.c | 10 | 3 | 7 |
 | swift/swchkbox.c | 2 | 0 | 2 |
 | swift/swedit.c | 2 | 0 | 2 |
 | swift/swlistbx.c | 7 | 0 | 7 |
 | swift/swslider.c | 6 | 0 | 6 |
 | swift/swtext.c | 5 | 0 | 5 |
-| swift/swwidget.c | 12 | 0 | 12 |
+| swift/swwidget.c | 12 | 3 | 9 |
 | util/control.c | 3 | 0 | 3 |
 | util/debug.c | 16 | 3 | 13 |
 | util/fileutil.c | 5 | 4 | 1 |
@@ -143,7 +143,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | util/pzip.c | 30 | 14 | 16 |
 | util/res.c | 11 | 0 | 11 |
 | util/taskman.c | 7 | 0 | 7 |
-| File not known yet | 107 | 25 | 82 |
+| File not known yet | 107 | 31 | 76 |
 
 ## Reconciliation when team source arrives
 
