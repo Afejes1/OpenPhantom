@@ -12,9 +12,13 @@
   "remaining_current": 652,
   "local_team_not_done_current": 291,
   "evidence_event_current": 77,
-  "pending_exact": [],
+  "pending_exact": [
+    "gameplay_random",
+    "gameplay_seed",
+    "gameplay_roll"
+  ],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A054 accepted six functions. C077 gameplay RNG core has two first-attempt exact candidates; roll is in bounded implementation.",
+  "current_work": "C077 has three exact reviewed RNG functions; A055 shared acceptance pending.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": null
+  "acceptance_pending": "acceptance-055"
 }

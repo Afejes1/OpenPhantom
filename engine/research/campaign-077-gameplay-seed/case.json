@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "gameplay_seed",
+  "candidate": "candidate.c",
+  "symbol": "_op_gameplay_seed",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

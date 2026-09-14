@@ -112,6 +112,7 @@ static void clip_flag_tests(void)
 
 #include "skills_state_behavior.c"
 #include "random_table_behavior.c"
+#include "gameplay_random_behavior.c"
 #include "stream_lifecycle_behavior.c"
 #include "projection_behavior.h"
 #include "mesh_behavior.h"
@@ -183,6 +184,10 @@ int main(void)
     op_viewport viewport;
     op_frustum frustum;
     op_camera_state camera;
+    failures += op_test_gameplay_random();
+    failures += op_test_gameplay_seed();
+    failures += op_test_gameplay_roll();
+    failures += op_test_gameplay_random_connected();
     failures += op_test_skills_new_game();
     failures += op_test_skills_easier();
     failures += op_test_skills_harder();

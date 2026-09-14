@@ -1,3 +1,4 @@
+int op_test_gameplay_random_observer(void);
 /* Authored table contents and retained C075 matrices. RNG callbacks are test support. */
 int op_random_table_index;
 int op_random_table[1118];
@@ -240,6 +241,13 @@ static void r75s_prepare(int initial)
     op_random_table_index = r75s_expected_index = initial;
     r75s_seed_calls = r75s_random_calls = 0;
 }
+/* Fixture-only source copy preserves the C075 mutation oracle.
+ * Canonical shuffle is exercised separately with the actual RNG implementation. */
+#define op_random_table_shuffle_position op_test_observed_table_shuffle
+#define op_gameplay_random op_test_gameplay_random_observer
+#include "../src/random_table_shuffle_position.c"
+#undef op_gameplay_random
+#undef op_random_table_shuffle_position
 static int op_test_random_table_shuffle_position(void)
 {
     int i, k, n, result, wanted;
@@ -289,7 +297,7 @@ static int op_test_random_table_shuffle_position(void)
                 {
                     r75s_random_result = draws[i];
                     r75s_prepare(17 - r75s_pattern);
-                    op_random_table_shuffle_position();
+                    op_test_observed_table_shuffle();
                     r75s_expected_index =
                         (int)((unsigned int)r75s_random_result - ((unsigned int)r75s_random_result / 1117u) * 1117u);
                     r75s_verify();
@@ -310,7 +318,7 @@ static int op_test_random_table_shuffle_position(void)
                 }
             }
         }
-    printf("random_table_shuffle_position: %d checks, %d failures\n", r75s_checks, r75s_failures);
+    printf("random_table_shuffle_position callback probe: %d checks, %d failures\n", r75s_checks, r75s_failures);
     r75s_active = 0;
     return r75s_failures != 0;
 }
@@ -475,7 +483,7 @@ static int op_test_random_table_at(void)
 
 #undef R75A_CHECK
 
-int op_gameplay_seed(int seed)
+int op_test_gameplay_seed_observer(int seed)
 {
     if (r75n_active)
         return r75n_seed(seed);
@@ -486,7 +494,7 @@ int op_gameplay_seed(int seed)
     CHECK(0);
     return 0;
 }
-int op_gameplay_random(void)
+int op_test_gameplay_random_observer(void)
 {
     if (r75n_active)
         return r75n_random();

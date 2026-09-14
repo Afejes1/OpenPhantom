@@ -10652,6 +10652,99 @@
           "addend": 192
         }
       ]
+    },
+    {
+      "id": "gameplay_random",
+      "address": 4656368,
+      "size": 102,
+      "body_size": 102,
+      "source": "src/gameplay_random.c",
+      "symbol": "_op_gameplay_random",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 7,
+          "address": 4946256,
+          "symbol": "_op_gameplay_random_state",
+          "kind": "dir32"
+        },
+        {
+          "offset": 23,
+          "address": 4946256,
+          "symbol": "_op_gameplay_random_state",
+          "kind": "dir32"
+        },
+        {
+          "offset": 72,
+          "address": 4946256,
+          "symbol": "_op_gameplay_random_state",
+          "kind": "dir32"
+        },
+        {
+          "offset": 89,
+          "address": 4946256,
+          "symbol": "_op_gameplay_random_state",
+          "kind": "dir32"
+        },
+        {
+          "offset": 94,
+          "address": 4946256,
+          "symbol": "_op_gameplay_random_state",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "gameplay_seed",
+      "address": 4656470,
+      "size": 75,
+      "body_size": 75,
+      "source": "src/gameplay_seed.c",
+      "symbol": "_op_gameplay_seed",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 4946256,
+          "symbol": "_op_gameplay_random_state",
+          "kind": "dir32"
+        },
+        {
+          "offset": 64,
+          "address": 4946256,
+          "symbol": "_op_gameplay_random_state",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "gameplay_roll",
+      "address": 4656545,
+      "size": 68,
+      "body_size": 68,
+      "source": "src/gameplay_roll.c",
+      "symbol": "_op_gameplay_roll",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 40,
+          "address": 4656368,
+          "symbol": "_op_gameplay_random",
+          "kind": "rel32-call"
+        }
+      ]
     }
   ]
 }

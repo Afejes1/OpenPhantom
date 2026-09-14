@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "status": "three-exact-integration-review",
+  "started_utc": "2026-09-14T18:06:54.817464+00:00",
+  "deadline_utc": "2026-09-14T18:46:54.817464+00:00",
+  "functions": [
+    "gameplay_random",
+    "gameplay_seed",
+    "gameplay_roll"
+  ],
+  "frozen_utc": "2026-09-14T18:15:38.758118+00:00",
+  "implementation_compiles": 4,
+  "full_span_bytes_exact": 245,
+  "verified_operands_exact": 8,
+  "fixture_checks_exact": 25664,
+  "acceptance": "research/acceptance-055/result.json"
+}

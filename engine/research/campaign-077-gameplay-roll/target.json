@@ -1,0 +1,21 @@
+{
+  "id": "gameplay_roll",
+  "address": 4656545,
+  "size": 68,
+  "body_size": 68,
+  "source": "src/gameplay_roll.c",
+  "symbol": "_op_gameplay_roll",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 40,
+      "address": 4656368,
+      "symbol": "_op_gameplay_random",
+      "kind": "rel32-call"
+    }
+  ]
+}

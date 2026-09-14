@@ -5624,6 +5624,69 @@
         "No API result is claimed from incidental EAX values."
       ],
       "exceptions": []
+    },
+    {
+      "id": "gameplay_random",
+      "module": "gameplay-random",
+      "analysis_name": "gameplay_random",
+      "purpose": "Advance the shared gameplay RNG using the recovered signed Schrage recurrence.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/gameplay-random-acceptance.md",
+        "research/campaign-077-gameplay-random/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/gameplay_random_behavior.c"
+      ],
+      "quirks": [
+        "Signed Schrage state transition is modeled independently with64-bit product/remainder.",
+        "Seed input INT_MIN is not executed because natural C negation overflows; prior INT_MIN state is covered.",
+        "Roll uses unsigned remainder and transported uint32 accumulation; sides0 is valid only on nonpositive-count paths.",
+        "Controlled callback source probes are distinct from linked canonical chain tests and carry no accepted address."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "gameplay_seed",
+      "module": "gameplay-random",
+      "analysis_name": "gameplay_seed",
+      "purpose": "Normalize and store a gameplay seed, returning the prior state.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/gameplay-random-acceptance.md",
+        "research/campaign-077-gameplay-seed/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/gameplay_random_behavior.c"
+      ],
+      "quirks": [
+        "Signed Schrage state transition is modeled independently with64-bit product/remainder.",
+        "Seed input INT_MIN is not executed because natural C negation overflows; prior INT_MIN state is covered.",
+        "Roll uses unsigned remainder and transported uint32 accumulation; sides0 is valid only on nonpositive-count paths.",
+        "Controlled callback source probes are distinct from linked canonical chain tests and carry no accepted address."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "gameplay_roll",
+      "module": "gameplay-random",
+      "analysis_name": "gameplay_roll",
+      "purpose": "Accumulate one plus unsigned random remainder for a bounded signed count of rolls.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/gameplay-random-acceptance.md",
+        "research/campaign-077-gameplay-roll/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/gameplay_random_behavior.c"
+      ],
+      "quirks": [
+        "Signed Schrage state transition is modeled independently with64-bit product/remainder.",
+        "Seed input INT_MIN is not executed because natural C negation overflows; prior INT_MIN state is covered.",
+        "Roll uses unsigned remainder and transported uint32 accumulation; sides0 is valid only on nonpositive-count paths.",
+        "Controlled callback source probes are distinct from linked canonical chain tests and carry no accepted address."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

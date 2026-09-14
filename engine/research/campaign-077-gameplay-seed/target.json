@@ -1,0 +1,27 @@
+{
+  "id": "gameplay_seed",
+  "address": 4656470,
+  "size": 75,
+  "body_size": 75,
+  "source": "src/gameplay_seed.c",
+  "symbol": "_op_gameplay_seed",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 4946256,
+      "symbol": "_op_gameplay_random_state",
+      "kind": "dir32"
+    },
+    {
+      "offset": 64,
+      "address": 4946256,
+      "symbol": "_op_gameplay_random_state",
+      "kind": "dir32"
+    }
+  ]
+}

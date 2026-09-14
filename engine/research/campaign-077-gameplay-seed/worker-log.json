@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "gameplay_seed",
+  "started_utc": "2026-09-14T18:06:54.817464+00:00",
+  "implementation_cutoff_utc": "2026-09-14T18:21:54.817464+00:00",
+  "deadline_utc": "2026-09-14T18:46:54.817464+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial recovered Schrage state transition, seed normalization and unsigned dice accumulation",
+      "started_utc": "2026-09-14T18:08:36.746889+00:00",
+      "finished_utc": "2026-09-14T18:08:38.397583+00:00",
+      "returncode": 0,
+      "source_sha256": "d4abeacbc9746e0c214c73c94de1623f2be31a33e4861863ee73c539763ce066",
+      "report": "engine/build/campaign-001-gameplay_seed-1104f3a2fc23/research-result.json",
+      "report_sha256": "d8d70f9f5da52d60eb3e886e2b1e6e67ab84c54de605982cddd030f747a67da6",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 75,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.424157,
+      "stderr": ""
+    }
+  ]
+}

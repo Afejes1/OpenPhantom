@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "gameplay_roll",
+  "started_utc": "2026-09-14T18:06:54.817464+00:00",
+  "implementation_cutoff_utc": "2026-09-14T18:21:54.817464+00:00",
+  "deadline_utc": "2026-09-14T18:46:54.817464+00:00",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial recovered Schrage state transition, seed normalization and unsigned dice accumulation",
+      "started_utc": "2026-09-14T18:08:38.404135+00:00",
+      "finished_utc": "2026-09-14T18:08:40.055771+00:00",
+      "returncode": 1,
+      "source_sha256": "b1a9e74f0cd76edb5543950cfd8581383d0278892b4a35e45834c9828a1a3e98",
+      "report": "engine/build/campaign-001-gameplay_roll-8065249981b1/research-result.json",
+      "report_sha256": "08614ec0ed94b1490fd64e227973aca412a7e4fcc995e413a7a62d6fa4a3e511",
+      "status": "mismatch",
+      "candidate_size": 68,
+      "different_bytes": 8,
+      "elapsed_seconds": 1.422756,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Use result/i accumulator and iterator names: prior VC5 listings placed that live pair at-4/-8, as required by this original span",
+      "started_utc": "2026-09-14T18:10:56.779370+00:00",
+      "finished_utc": "2026-09-14T18:10:58.499206+00:00",
+      "returncode": 0,
+      "source_sha256": "42d6df657dd93a0cc7322bba025ff42e1a61333447aae8c1fbcdb1fa891a8b64",
+      "report": "engine/build/campaign-001-gameplay_roll-a0c75a97786f/research-result.json",
+      "report_sha256": "db72315194457fef9189a34136712d30349974e50a3525d85be415d9d266cca3",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 68,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.492276,
+      "stderr": ""
+    }
+  ]
+}
