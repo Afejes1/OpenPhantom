@@ -1,0 +1,14 @@
+{
+  "id": "audio_play",
+  "address": 4811835,
+  "size": 52,
+  "body_size": 52,
+  "source": "src/audio_play.c",
+  "symbol": "_op_audio_play",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

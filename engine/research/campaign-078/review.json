@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T18:42:28.894068+00:00",
+  "conclusion": "three-exact-approved",
+  "final_receipt_review": "All42 snapshot members and6 report hashes verified; native/Docker parity and focused fixtures passed; no exclusions or waivers.",
+  "focused_checks": 42620,
+  "integration_review": {
+    "conclusion": "approved",
+    "details": "Include-only three bodies, unchanged prior302 entries, preserved offsets, one shared audio gate and all42620 prefixed checks verified."
+  }
+}

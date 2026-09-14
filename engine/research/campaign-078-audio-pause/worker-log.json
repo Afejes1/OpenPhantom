@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "audio_pause",
+  "started_utc": "2026-09-14T18:27:42.448324+00:00",
+  "implementation_cutoff_utc": "2026-09-14T18:42:42.448324+00:00",
+  "deadline_utc": "2026-09-14T19:07:42.448324+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial recovered cdecl wrapper and stdcall virtual callback with exact slot and status semantics",
+      "started_utc": "2026-09-14T18:27:42.795633+00:00",
+      "finished_utc": "2026-09-14T18:27:44.494983+00:00",
+      "returncode": 0,
+      "source_sha256": "0b56f557a6aeb86ec12e078767e2d5097382ba3372eb56f33872e1dd84b90eac",
+      "report": "engine/build/campaign-001-audio_pause-7645b131d01b/research-result.json",
+      "report_sha256": "24f956ed5004da91b60233704987eabc92dfcda787f436225ee53d0eef70e63e",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 35,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.463764,
+      "stderr": ""
+    }
+  ]
+}

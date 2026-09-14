@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T18:42:28.894534+00:00",
+  "conclusion": "three-exact-approved",
+  "final_receipt_review": "All42 snapshot members and6 report hashes verified; native/Docker parity and focused fixtures passed; no exclusions or waivers.",
+  "focused_checks": 42640,
+  "integration_review": {
+    "conclusion": "approved",
+    "details": "All six canonical bodies are include-only copies; prior302 target and registry entries unchanged; unique music globals and explicit observer assignment preserve42640checks. Audio getters10/24 and prior offsets retained; main/CMake once; targetedVC5 passed."
+  }
+}

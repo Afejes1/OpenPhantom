@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "music_is_playing",
+  "started_utc": "2026-09-14T18:36:58.206184+00:00",
+  "implementation_cutoff_utc": "2026-09-14T18:51:58.206184+00:00",
+  "deadline_utc": "2026-09-14T19:16:58.206184+00:00",
+  "compiler_invocations": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial recovered music status block or live audio vtable reload",
+      "started_utc": "2026-09-14T18:37:00.222147+00:00",
+      "finished_utc": "2026-09-14T18:37:01.854442+00:00",
+      "returncode": 1,
+      "source_sha256": "37d7cce672a413dc37cace8af65684b7da4560fa109e19aa9ea692ae381853a5",
+      "report": "engine/build/campaign-001-music_is_playing-67c357941e52/research-result.json",
+      "report_sha256": "f43bd3960ac711aafe995751e2bb14687774d17c09c88b6e20ac41ed837c6962",
+      "status": "mismatch",
+      "candidate_size": 96,
+      "different_bytes": null,
+      "elapsed_seconds": 1.410203,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Use compiler memset for the16-byte zeroed block; map the three real audio locals to observed VC5 name-dependent stack slots without adding storage",
+      "started_utc": "2026-09-14T18:37:56.845529+00:00",
+      "finished_utc": "2026-09-14T18:37:58.439217+00:00",
+      "returncode": 1,
+      "source_sha256": "31c30dc5ed3598eb80940d7309ecd3d3b6e63cbb7f3483abb6ee6f0a3cdad7db",
+      "report": "engine/build/campaign-001-music_is_playing-6d71e0a11d9a/research-result.json",
+      "report_sha256": "8b91ebbc24107d07530eba4a9daab93fb5129ca4162db9997f559416db6be5d5",
+      "status": "mismatch",
+      "candidate_size": 94,
+      "different_bytes": null,
+      "elapsed_seconds": 1.370961,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Initialize the four actual MCI parameter fields with a right-associated zero chain in observed callback/value/item/track store order",
+      "started_utc": "2026-09-14T18:38:42.241522+00:00",
+      "finished_utc": "2026-09-14T18:38:43.835485+00:00",
+      "returncode": 1,
+      "source_sha256": "f080a9c1960dbf293d17cc93b4dfe58ca83fc62b679572b15f2ccc7a6c821c34",
+      "report": "engine/build/campaign-001-music_is_playing-befb5c73f080/research-result.json",
+      "report_sha256": "e7b1ada1d45e1b066054e464ee0b815096e6b8fbbcda4b1e9eaf96efb1b21ded",
+      "status": "mismatch",
+      "candidate_size": 103,
+      "different_bytes": null,
+      "elapsed_seconds": 1.374367,
+      "stderr": ""
+    },
+    {
+      "attempt": 4,
+      "hypothesis": "Request VC5 intrinsic memset expansion for the recovered16-byte block; no compiler flag change or warning waiver",
+      "started_utc": "2026-09-14T18:39:27.647739+00:00",
+      "finished_utc": "2026-09-14T18:39:29.225971+00:00",
+      "returncode": 0,
+      "source_sha256": "be816fb84826af9b05871b07dbd1e1ad16d5906192aa9c58fe8e2412db4cf430",
+      "report": "engine/build/campaign-001-music_is_playing-74eb83e256db/research-result.json",
+      "report_sha256": "a1caa6f6aa98cb8a35a5de1c5fb6ea424895815bc4cd5fdd24fcdf5a8eb07b9e",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 92,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.354428,
+      "stderr": ""
+    }
+  ]
+}

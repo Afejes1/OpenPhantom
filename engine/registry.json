@@ -5687,6 +5687,132 @@
         "Controlled callback source probes are distinct from linked canonical chain tests and carry no accepted address."
       ],
       "exceptions": []
+    },
+    {
+      "id": "audio_pause",
+      "module": "audio",
+      "analysis_name": "audio_pause",
+      "purpose": "Pause a sound buffer when the audio gate is enabled, without resetting its cursor.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/audio-buffer-acceptance.md",
+        "research/campaign-078-audio-pause/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_buffer_behavior.c"
+      ],
+      "quirks": [
+        "Callbacks are stdcall; wrappers use cdecl stack arguments.",
+        "Pause ignores callback status and does not reset the playback cursor.",
+        "Play and unlock return success only for exactly zero callback status.",
+        "Unlock fixture treats region pointer and count as opaque metadata; it does not dereference claimed ranges."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio_play",
+      "module": "audio",
+      "analysis_name": "audio_play",
+      "purpose": "Start buffer playback with a normalized looping flag and exact-zero status success.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/audio-buffer-acceptance.md",
+        "research/campaign-078-audio-play/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_buffer_behavior.c"
+      ],
+      "quirks": [
+        "Callbacks are stdcall; wrappers use cdecl stack arguments.",
+        "Pause ignores callback status and does not reset the playback cursor.",
+        "Play and unlock return success only for exactly zero callback status.",
+        "Unlock fixture treats region pointer and count as opaque metadata; it does not dereference claimed ranges."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio_unlock",
+      "module": "audio",
+      "analysis_name": "audio_unlock",
+      "purpose": "Release a single locked sound-buffer region with explicit empty second region.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/audio-buffer-acceptance.md",
+        "research/campaign-078-audio-unlock/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_buffer_behavior.c"
+      ],
+      "quirks": [
+        "Callbacks are stdcall; wrappers use cdecl stack arguments.",
+        "Pause ignores callback status and does not reset the playback cursor.",
+        "Play and unlock return success only for exactly zero callback status.",
+        "Unlock fixture treats region pointer and count as opaque metadata; it does not dereference claimed ranges."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "music_stop",
+      "module": "audio",
+      "analysis_name": "music_stop",
+      "purpose": "Send MCI stop for the active music device.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/music-position-acceptance.md",
+        "research/campaign-079-music-stop/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/music_position_behavior.c"
+      ],
+      "quirks": [
+        "MCI status parameters occupy16 bytes; the separate4-byte call result is ignored.",
+        "Music stop/status preserve callback mutations of global gate and device.",
+        "Audio status failure returns-1, inactive status0, active status1; position result is ignored.",
+        "Audio getter reloads the live vtable after status callback mutations."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "music_is_playing",
+      "module": "audio",
+      "analysis_name": "music_is_playing",
+      "purpose": "Query MCI mode and report whether its returned value differs from stopped.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/music-position-acceptance.md",
+        "research/campaign-079-music-is-playing/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/music_position_behavior.c"
+      ],
+      "quirks": [
+        "MCI status parameters occupy16 bytes; the separate4-byte call result is ignored.",
+        "Music stop/status preserve callback mutations of global gate and device.",
+        "Audio status failure returns-1, inactive status0, active status1; position result is ignored.",
+        "Audio getter reloads the live vtable after status callback mutations."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio_get_play_position",
+      "module": "audio",
+      "analysis_name": "audio_get_play_position",
+      "purpose": "Inspect sound playback status and optionally query cursor position through the current buffer vtable.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/music-position-acceptance.md",
+        "research/campaign-079-audio-get-play-position/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/music_position_behavior.c"
+      ],
+      "quirks": [
+        "MCI status parameters occupy16 bytes; the separate4-byte call result is ignored.",
+        "Music stop/status preserve callback mutations of global gate and device.",
+        "Audio status failure returns-1, inactive status0, active status1; position result is ignored.",
+        "Audio getter reloads the live vtable after status callback mutations."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

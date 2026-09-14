@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "status": "three-exact-integration-review",
+  "started_utc": "2026-09-14T18:36:58.206184+00:00",
+  "deadline_utc": "2026-09-14T19:16:58.206184+00:00",
+  "functions": [
+    "music_stop",
+    "music_is_playing",
+    "audio_get_play_position"
+  ],
+  "preparation_correction": "16-byte music parameter block plus separate4-byte result; never inspect whole20-byte stack frame as initialized parameters.",
+  "frozen_utc": "2026-09-14T18:42:28.108380+00:00",
+  "implementation_compiles": 7,
+  "full_span_bytes_exact": 214,
+  "verified_operands_exact": 6,
+  "fixture_checks_exact": 42640,
+  "acceptance": "research/acceptance-056/result.json"
+}

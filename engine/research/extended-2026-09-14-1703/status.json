@@ -15,10 +15,13 @@
   "pending_exact": [
     "audio_pause",
     "audio_play",
-    "audio_unlock"
+    "audio_unlock",
+    "music_stop",
+    "music_is_playing",
+    "audio_get_play_position"
   ],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A055 accepted three RNG functions. C078 has three first-attempt exact audio wrappers with final paired fixtures; integration next.",
+  "current_work": "A056 integrates six exact audio/music helpers from C078/C079, with85260 focused checks retained.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": null
+  "acceptance_pending": "acceptance-056"
 }

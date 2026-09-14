@@ -1,0 +1,14 @@
+{
+  "id": "audio_unlock",
+  "address": 4812857,
+  "size": 50,
+  "body_size": 50,
+  "source": "src/audio_unlock.c",
+  "symbol": "_op_audio_unlock",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

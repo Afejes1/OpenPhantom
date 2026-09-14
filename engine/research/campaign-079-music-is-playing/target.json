@@ -1,0 +1,33 @@
+{
+  "id": "music_is_playing",
+  "address": 4807908,
+  "size": 92,
+  "body_size": 92,
+  "source": "src/music_is_playing.c",
+  "symbol": "_op_music_is_playing",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 8790116,
+      "symbol": "_op_music_gate",
+      "kind": "dir32"
+    },
+    {
+      "offset": 56,
+      "address": 8790108,
+      "symbol": "_op_music_device",
+      "kind": "dir32"
+    },
+    {
+      "offset": 63,
+      "address": 9180848,
+      "symbol": "_op_music_command",
+      "kind": "dir32"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "audio_get_play_position",
+  "started_utc": "2026-09-14T18:36:58.206184+00:00",
+  "implementation_cutoff_utc": "2026-09-14T18:51:58.206184+00:00",
+  "deadline_utc": "2026-09-14T19:16:58.206184+00:00",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial recovered music status block or live audio vtable reload",
+      "started_utc": "2026-09-14T18:37:01.861496+00:00",
+      "finished_utc": "2026-09-14T18:37:03.823533+00:00",
+      "returncode": 1,
+      "source_sha256": "dd108adb66570b8697fe7d45ca3a398666b1e94d98ebe2297fe95721d2702052",
+      "report": "engine/build/campaign-001-audio_get_play_position-a6bae826746f/research-result.json",
+      "report_sha256": "92f1402bafa8bf6a30a29000d444ce7e08b2af36e21e07233859d9702b440650",
+      "status": "mismatch",
+      "candidate_size": 85,
+      "different_bytes": 5,
+      "elapsed_seconds": 1.736814,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Use compiler memset for the16-byte zeroed block; map the three real audio locals to observed VC5 name-dependent stack slots without adding storage",
+      "started_utc": "2026-09-14T18:37:58.445872+00:00",
+      "finished_utc": "2026-09-14T18:38:00.035327+00:00",
+      "returncode": 0,
+      "source_sha256": "9e55c2810c40c633f492c6f3169aca8c9ce07b5ec4c65b6225a0715440468b3d",
+      "report": "engine/build/campaign-001-audio_get_play_position-319b9cfdf595/research-result.json",
+      "report_sha256": "a1d515953cfbf9b23c96d7aab9d78a0dfabb5a9b6c697f0a1d6a5977c3b36180",
+      "status": "raw-code-match",
+      "candidate_size": 85,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.367019,
+      "stderr": ""
+    }
+  ]
+}

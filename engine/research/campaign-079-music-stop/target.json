@@ -1,0 +1,33 @@
+{
+  "id": "music_stop",
+  "address": 4807871,
+  "size": 37,
+  "body_size": 37,
+  "source": "src/music_stop.c",
+  "symbol": "_op_music_stop",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 8790116,
+      "symbol": "_op_music_gate",
+      "kind": "dir32"
+    },
+    {
+      "offset": 24,
+      "address": 8790108,
+      "symbol": "_op_music_device",
+      "kind": "dir32"
+    },
+    {
+      "offset": 31,
+      "address": 9180848,
+      "symbol": "_op_music_command",
+      "kind": "dir32"
+    }
+  ]
+}

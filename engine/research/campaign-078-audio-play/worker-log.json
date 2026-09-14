@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "audio_play",
+  "started_utc": "2026-09-14T18:27:42.448324+00:00",
+  "implementation_cutoff_utc": "2026-09-14T18:42:42.448324+00:00",
+  "deadline_utc": "2026-09-14T19:07:42.448324+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial recovered cdecl wrapper and stdcall virtual callback with exact slot and status semantics",
+      "started_utc": "2026-09-14T18:27:44.501983+00:00",
+      "finished_utc": "2026-09-14T18:27:46.170989+00:00",
+      "returncode": 0,
+      "source_sha256": "87cd7dd8294684ad614860d556ab5b2e1b46479c42db59776704c12cf63716b6",
+      "report": "engine/build/campaign-001-audio_play-21dd39b95eac/research-result.json",
+      "report_sha256": "5bdd59a161576c3e221c6b4e9a4fc10f50c243b1642a24e92eaf486d08b00324",
+      "status": "raw-code-match",
+      "candidate_size": 52,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.439062,
+      "stderr": ""
+    }
+  ]
+}

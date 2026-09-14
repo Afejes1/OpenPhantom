@@ -10745,6 +10745,135 @@
           "kind": "rel32-call"
         }
       ]
+    },
+    {
+      "id": "audio_pause",
+      "address": 4812544,
+      "size": 35,
+      "body_size": 35,
+      "source": "src/audio_pause.c",
+      "symbol": "_op_audio_pause",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 8790132,
+          "symbol": "_op_audio_gate_word",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "audio_play",
+      "address": 4811835,
+      "size": 52,
+      "body_size": 52,
+      "source": "src/audio_play.c",
+      "symbol": "_op_audio_play",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "audio_unlock",
+      "address": 4812857,
+      "size": 50,
+      "body_size": 50,
+      "source": "src/audio_unlock.c",
+      "symbol": "_op_audio_unlock",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "music_stop",
+      "address": 4807871,
+      "size": 37,
+      "body_size": 37,
+      "source": "src/music_stop.c",
+      "symbol": "_op_music_stop",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 8790116,
+          "symbol": "_op_music_gate",
+          "kind": "dir32"
+        },
+        {
+          "offset": 24,
+          "address": 8790108,
+          "symbol": "_op_music_device",
+          "kind": "dir32"
+        },
+        {
+          "offset": 31,
+          "address": 9180848,
+          "symbol": "_op_music_command",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "music_is_playing",
+      "address": 4807908,
+      "size": 92,
+      "body_size": 92,
+      "source": "src/music_is_playing.c",
+      "symbol": "_op_music_is_playing",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 8,
+          "address": 8790116,
+          "symbol": "_op_music_gate",
+          "kind": "dir32"
+        },
+        {
+          "offset": 56,
+          "address": 8790108,
+          "symbol": "_op_music_device",
+          "kind": "dir32"
+        },
+        {
+          "offset": 63,
+          "address": 9180848,
+          "symbol": "_op_music_command",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "audio_get_play_position",
+      "address": 4812655,
+      "size": 85,
+      "body_size": 85,
+      "source": "src/audio_get_play_position.c",
+      "symbol": "_op_audio_get_play_position",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
     }
   ]
 }

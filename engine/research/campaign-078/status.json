@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "status": "three-exact-integration-review",
+  "started_utc": "2026-09-14T18:27:42.448324+00:00",
+  "deadline_utc": "2026-09-14T19:07:42.448324+00:00",
+  "functions": [
+    "audio_pause",
+    "audio_play",
+    "audio_unlock"
+  ],
+  "frozen_utc": "2026-09-14T18:33:53.800843+00:00",
+  "implementation_compiles": 3,
+  "full_span_bytes_exact": 137,
+  "verified_operands_exact": 1,
+  "fixture_checks_exact": 42620,
+  "acceptance": "research/acceptance-056/result.json"
+}

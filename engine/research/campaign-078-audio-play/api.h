@@ -18,11 +18,7 @@ typedef struct OP_AUDIO_BUFFER_VT
 {
     unsigned int unknown00[2];
     unsigned int(__stdcall *release)(OP_AUDIO_BUFFER *);
-    unsigned int unknown0c;
-    int(__stdcall *get_position)(OP_AUDIO_BUFFER *, unsigned int *, unsigned int *);
-    unsigned int unknown14[4];
-    int(__stdcall *get_status)(OP_AUDIO_BUFFER *, unsigned int *);
-    unsigned int unknown28[2];
+    unsigned int unknown0c[9];
     int(__stdcall *play)(OP_AUDIO_BUFFER *, unsigned int, unsigned int, unsigned int);
     int(__stdcall *current_position)(OP_AUDIO_BUFFER *, unsigned int);
     unsigned int unknown38[3];
@@ -62,18 +58,18 @@ struct OP_AUDIO_LISTENER
 {
     OP_AUDIO_LISTENER_VT *vt;
 };
-typedef char audio_layout
-    [(sizeof(void *) == 4 && sizeof(OP_AUDIO_VECTOR) == 12 && offsetof(OP_AUDIO_DEVICE_VT, cooperative) == 0x18 &&
-      offsetof(OP_AUDIO_BUFFER_VT, release) == 8 && offsetof(OP_AUDIO_BUFFER_VT, get_position) == 0x10 &&
-      offsetof(OP_AUDIO_BUFFER_VT, get_status) == 0x24 && offsetof(OP_AUDIO_BUFFER_VT, play) == 0x30 &&
-      offsetof(OP_AUDIO_BUFFER_VT, unlock) == 0x4c && offsetof(OP_AUDIO_BUFFER_VT, current_position) == 0x34 &&
-      offsetof(OP_AUDIO_BUFFER_VT, frequency) == 0x44 && offsetof(OP_AUDIO_BUFFER_VT, stop) == 0x48 &&
-      offsetof(OP_AUDIO_SPATIAL_VT, release) == 8 && offsetof(OP_AUDIO_SPATIAL_VT, maximum) == 0x40 &&
-      offsetof(OP_AUDIO_SPATIAL_VT, minimum) == 0x44 && offsetof(OP_AUDIO_SPATIAL_VT, mode) == 0x48 &&
-      offsetof(OP_AUDIO_SPATIAL_VT, position) == 0x4c && offsetof(OP_AUDIO_SPATIAL_VT, velocity) == 0x50 &&
-      offsetof(OP_AUDIO_LISTENER_VT, commit) == 0x44)
-         ? 1
-         : -1];
+typedef char
+    audio_layout[(sizeof(void *) == 4 && sizeof(OP_AUDIO_VECTOR) == 12 &&
+                  offsetof(OP_AUDIO_DEVICE_VT, cooperative) == 0x18 && offsetof(OP_AUDIO_BUFFER_VT, release) == 8 &&
+                  offsetof(OP_AUDIO_BUFFER_VT, play) == 0x30 && offsetof(OP_AUDIO_BUFFER_VT, unlock) == 0x4c &&
+                  offsetof(OP_AUDIO_BUFFER_VT, current_position) == 0x34 &&
+                  offsetof(OP_AUDIO_BUFFER_VT, frequency) == 0x44 && offsetof(OP_AUDIO_BUFFER_VT, stop) == 0x48 &&
+                  offsetof(OP_AUDIO_SPATIAL_VT, release) == 8 && offsetof(OP_AUDIO_SPATIAL_VT, maximum) == 0x40 &&
+                  offsetof(OP_AUDIO_SPATIAL_VT, minimum) == 0x44 && offsetof(OP_AUDIO_SPATIAL_VT, mode) == 0x48 &&
+                  offsetof(OP_AUDIO_SPATIAL_VT, position) == 0x4c && offsetof(OP_AUDIO_SPATIAL_VT, velocity) == 0x50 &&
+                  offsetof(OP_AUDIO_LISTENER_VT, commit) == 0x44)
+                     ? 1
+                     : -1];
 extern unsigned int op_audio_gate_word;
 extern OP_AUDIO_LISTENER *op_audio_listener;
 extern int(__stdcall *op_audio_co_initialize)(void *);
@@ -93,5 +89,4 @@ void op_audio3d_release(OP_AUDIO_SPATIAL *);
 int op_audio_pause(OP_AUDIO_BUFFER *);
 int op_audio_play(OP_AUDIO_BUFFER *, int);
 int op_audio_unlock(OP_AUDIO_BUFFER *, void *, unsigned int);
-int op_audio_get_play_position(OP_AUDIO_BUFFER *, unsigned int *);
 #endif

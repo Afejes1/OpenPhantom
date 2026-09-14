@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "acceptance-056",
+  "baseline_commit": "4862cdc4ac234b018efe70c87d6f860c665f0980",
+  "functions": [
+    "audio_pause",
+    "audio_play",
+    "audio_unlock",
+    "music_stop",
+    "music_is_playing",
+    "audio_get_play_position"
+  ],
+  "promotions": 6,
+  "registered_before": 302,
+  "registered_after": 308,
+  "full_span_bytes": 351,
+  "verified_operands": 7,
+  "raw_functions": 3,
+  "status": "integration-pending",
+  "team_not_done": 6,
+  "team_reported_done": 0,
+  "manifest": "planning/team-manifest-20260912-1849.json",
+  "retained_focused_checks": 85260,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

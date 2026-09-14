@@ -143,6 +143,8 @@ static void clip_flag_tests(void)
 #include "trig_behavior.c"
 #include "length_behavior.c"
 #include "audio_behavior.c"
+#include "audio_buffer_behavior.c"
+#include "music_position_behavior.c"
 #include "kernel_behavior.c"
 #include "video_behavior.c"
 #include "debug_behavior.c"
@@ -358,6 +360,12 @@ int main(void)
     failures += op_test_audio3d_release();
     failures += op_test_length_connected();
     failures += op_test_audio_connected();
+    failures += op_test_audio_pause();
+    failures += op_test_audio_play();
+    failures += op_test_audio_unlock();
+    failures += op_test_music_stop();
+    failures += op_test_music_is_playing();
+    failures += op_test_audio_get_play_position();
     failures += op_test_kernel_show();
     failures += op_test_kernel_hide();
     failures += op_test_kernel_set_field();

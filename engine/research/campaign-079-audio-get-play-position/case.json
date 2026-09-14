@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "audio_get_play_position",
+  "candidate": "candidate.c",
+  "symbol": "_op_audio_get_play_position",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

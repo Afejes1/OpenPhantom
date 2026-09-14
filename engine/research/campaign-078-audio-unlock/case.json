@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "audio_unlock",
+  "candidate": "candidate.c",
+  "symbol": "_op_audio_unlock",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "audio_get_play_position",
+  "address": 4812655,
+  "size": 85,
+  "body_size": 85,
+  "source": "src/audio_get_play_position.c",
+  "symbol": "_op_audio_get_play_position",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}
