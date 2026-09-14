@@ -16,7 +16,12 @@
     "module_install"
   ],
   "ownership": "Parent sole source/Git writer; existing independent reviewer reads only.",
-  "current_work": "A048 integration review:four exact functions,277 registered;273accepted until shared checkpoint.",
+  "current_work": "A048accepted; C069shutdown and genericdispatcher focusedexact verification/review underway.",
   "focused_new_exact": 3,
-  "acceptance_pending": "research/acceptance-048/result.json"
+  "acceptance_pending": "research/acceptance-048/result.json",
+  "accepted_new": 4,
+  "accepted_current": 277,
+  "evidence_event_current": 71,
+  "remaining_current": 674,
+  "local_team_not_done_current": 269
 }
