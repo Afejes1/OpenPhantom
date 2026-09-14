@@ -1,0 +1,21 @@
+{
+  "id": "video_surface_type",
+  "address": 4816679,
+  "size": 112,
+  "body_size": 112,
+  "source": "src/video_surface_type.c",
+  "symbol": "_op_video_surface_type",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 23,
+      "address": 9180864,
+      "symbol": "_op_video_dd_type",
+      "kind": "dir32"
+    }
+  ]
+}

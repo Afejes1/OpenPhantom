@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "video_close",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural video lifecycle records and observed callbacks",
+      "started_utc": "2026-09-14T10:29:44.293322+00:00",
+      "finished_utc": "2026-09-14T10:29:45.916027+00:00",
+      "returncode": 0,
+      "source_sha256": "03be41010c07e97e667628f25a0d0c33e4919625ac3a9719451e3754cbf31af0",
+      "report": "engine/build/campaign-001-video_close-dca7128c0a49/research-result.json",
+      "report_sha256": "7d47240d2ed79d2682df88e676db47c79f4f398d092556fd75f8973fd1467a8e",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 96,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.401114,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T10:40:35.776753+00:00"
+}

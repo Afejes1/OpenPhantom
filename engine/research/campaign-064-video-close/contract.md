@@ -1,0 +1,5 @@
+# video_close
+
+Cdecl NULL returns0. Copies pointer to a real local and repeats NULL guard as observed. Zero handle releases captured record and returns0; nonzero closes captured handle, explicitly clears handle, releases captured record and returns1. Callback mutation before zeroing and after release is preserved; no actual memory is freed by synthetic observers.
+
+Owned guarded24-byte records and104-byte descriptors, complete names/token backing, globals and import identities are verified. All handles/driver values are owned opaque pointers; no Bink, audio, DirectX, OS or original-game code executes. Imported ignored results use synthetic integer returns solely for testing lack of dependence; no exact SDK return type is inferred. OpenMiles is transported as an opaque identity and never invoked. Original op_allocate/op_release and prior C007 op_sound_get_driver identities are reused. Initial review arithmetic/tail mistakes were corrected before preparation:17 operands total and done23/28 with5CC tail. No byte exclusion or warning waiver.

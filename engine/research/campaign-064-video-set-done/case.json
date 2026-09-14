@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "video_set_done",
+  "candidate": "candidate.c",
+  "symbol": "_op_video_set_done",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

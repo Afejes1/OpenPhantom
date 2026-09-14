@@ -1,0 +1,5 @@
+# video_surface_type
+
+Cdecl descriptor extent104: mode==1 forwards captured word+100 to stdcall BinkDDSurfaceType then ORs04000000 into result. Otherwise reads format at+32, full words+8/+12 and returns2 for both5,3 for first5,4 for second5,5 otherwise. Full descriptor guards/snapshots, callback mutation and full return words are checked. Extent112 decimal, not70 decimal.
+
+Owned guarded24-byte records and104-byte descriptors, complete names/token backing, globals and import identities are verified. All handles/driver values are owned opaque pointers; no Bink, audio, DirectX, OS or original-game code executes. Imported ignored results use synthetic integer returns solely for testing lack of dependence; no exact SDK return type is inferred. OpenMiles is transported as an opaque identity and never invoked. Original op_allocate/op_release and prior C007 op_sound_get_driver identities are reused. Initial review arithmetic/tail mistakes were corrected before preparation:17 operands total and done23/28 with5CC tail. No byte exclusion or warning waiver.

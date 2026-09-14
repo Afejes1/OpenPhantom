@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "attempts": [
+    {
+      "id": "video_close",
+      "started_utc": "2026-09-14T10:35:07.211306+00:00",
+      "finished_utc": "2026-09-14T10:35:08.780447+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-video_close-124775385c00\\research-result.json",
+      "report_sha256": "a93ae40d6cefd160926da93425f3abd7fa5fcfa4b213d9bcd994aa314a37b626",
+      "stderr": ""
+    },
+    {
+      "id": "video_close",
+      "started_utc": "2026-09-14T10:35:08.787612+00:00",
+      "finished_utc": "2026-09-14T10:35:14.075633+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-video_close-ad6f63770581\\research-result.json",
+      "report_sha256": "2c76e8c57cde79b80420381fb85171469a3a7da15a6865a556734f83ea46a446",
+      "stderr": ""
+    },
+    {
+      "id": "video_open",
+      "started_utc": "2026-09-14T10:35:14.237384+00:00",
+      "finished_utc": "2026-09-14T10:35:15.836568+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-video_open-79aee55200c5\\research-result.json",
+      "report_sha256": "3a59892649e5c50371972922932f497c15f011b00d7dd46a0f49d15758095ca2",
+      "stderr": ""
+    },
+    {
+      "id": "video_open",
+      "started_utc": "2026-09-14T10:35:15.843924+00:00",
+      "finished_utc": "2026-09-14T10:35:21.135030+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-video_open-59dba06302b5\\research-result.json",
+      "report_sha256": "62eaa2ebe7f99b49bf774e403fae9ff22ac60cd1bf77cd9925a3b728f5e11d83",
+      "stderr": ""
+    },
+    {
+      "id": "video_set_done",
+      "started_utc": "2026-09-14T10:35:21.297718+00:00",
+      "finished_utc": "2026-09-14T10:35:22.914304+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-video_set_done-23c9bbcad75d\\research-result.json",
+      "report_sha256": "33f99cce09fdd50ec415fd53d022851076b70caa35e8d3ede4010a159526d0b3",
+      "stderr": ""
+    },
+    {
+      "id": "video_set_done",
+      "started_utc": "2026-09-14T10:35:22.921568+00:00",
+      "finished_utc": "2026-09-14T10:35:28.267304+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-video_set_done-9bf3747fa9dd\\research-result.json",
+      "report_sha256": "7cab13f76d2a221fa77206c71acac95c5a8f5f939556ffae103e3ab68b3a8827",
+      "stderr": ""
+    },
+    {
+      "id": "video_set_volume",
+      "started_utc": "2026-09-14T10:35:28.431154+00:00",
+      "finished_utc": "2026-09-14T10:35:30.032728+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-video_set_volume-9adc7beafad8\\research-result.json",
+      "report_sha256": "8bea2c9818ec112f47fc066fa5588777640129d4e201bab7d09993a6262070bf",
+      "stderr": ""
+    },
+    {
+      "id": "video_set_volume",
+      "started_utc": "2026-09-14T10:35:30.039591+00:00",
+      "finished_utc": "2026-09-14T10:35:35.434044+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-video_set_volume-35a4ff0247b0\\research-result.json",
+      "report_sha256": "2bb93ec936cb48107a34bb1529ecb8c82d4b820b0a10af85873a33d4194c8b3d",
+      "stderr": ""
+    },
+    {
+      "id": "video_surface_type",
+      "started_utc": "2026-09-14T10:35:35.596634+00:00",
+      "finished_utc": "2026-09-14T10:35:37.216158+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-video_surface_type-575282aa2647\\research-result.json",
+      "report_sha256": "efccb440fe130ddf8ead2cb2ca6ea4769f65fd241dd3691454851ea9f093ed1d",
+      "stderr": ""
+    },
+    {
+      "id": "video_surface_type",
+      "started_utc": "2026-09-14T10:35:37.223412+00:00",
+      "finished_utc": "2026-09-14T10:35:42.639021+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-video_surface_type-cb8467379ad7\\research-result.json",
+      "report_sha256": "6ed4ee0be2eab9e60e010200fee9d4e22d1461e2ac0bb883a254b86f4a5a7c9e",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T10:40:35.776753+00:00",
+  "conclusion": "approved-three-exact-two-research",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "video_close",
+      "address": 4816978,
+      "full_span_bytes": 96,
+      "body_size": 96,
+      "candidate_size": 96,
+      "verified_operands": 3,
+      "checks": 3792,
+      "evidence_category": "exact-function-match",
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "team_status": "not_done",
+      "result": "research/campaign-064-video-close/result.json"
+    },
+    {
+      "id": "video_open",
+      "address": 4816791,
+      "full_span_bytes": 187,
+      "body_size": 187,
+      "candidate_size": 187,
+      "verified_operands": 11,
+      "checks": 62880,
+      "evidence_category": "exact-function-match",
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "team_status": "not_done",
+      "result": "research/campaign-064-video-open/result.json"
+    },
+    {
+      "id": "video_set_done",
+      "address": 4817348,
+      "full_span_bytes": 28,
+      "body_size": 23,
+      "candidate_size": 23,
+      "verified_operands": 0,
+      "checks": 1728,
+      "evidence_category": "research-candidate",
+      "different_bytes": null,
+      "different_percent": null,
+      "team_status": "not_done",
+      "result": "research/campaign-064-video-set-done/result.json"
+    },
+    {
+      "id": "video_set_volume",
+      "address": 4817309,
+      "full_span_bytes": 39,
+      "body_size": 39,
+      "candidate_size": 39,
+      "verified_operands": 2,
+      "checks": 3264,
+      "evidence_category": "exact-function-match",
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "team_status": "not_done",
+      "result": "research/campaign-064-video-set-volume/result.json"
+    },
+    {
+      "id": "video_surface_type",
+      "address": 4816679,
+      "full_span_bytes": 112,
+      "body_size": 112,
+      "candidate_size": 112,
+      "verified_operands": 1,
+      "checks": 150336,
+      "evidence_category": "research-candidate",
+      "different_bytes": 8,
+      "different_percent": 7.142857142857143,
+      "team_status": "not_done",
+      "result": "research/campaign-064-video-surface-type/result.json"
+    }
+  ],
+  "observations": [
+    "All70 snapshot inputs and10 selected reports independently rehashed; native/Docker function and relocation parity, fixtures pass.",
+    "Open driver/allocation/handle failure matrices, predicted writes across callback boundaries and full owned state reviewed.",
+    "Close captured handle/pointer, post-close clear and release mutation verified; volume guardsNULL only when driverNULL.",
+    "Surface five non-improving declaration/name variants preserve two real values and operations; initial source restored.",
+    "Initial static packet had incorrect operand arithmetic and missed done tail; both corrected before preparation and independently confirmed.",
+    "Imported ignored return types remain unobserved; fixture integer returns test lack of dependence without claiming an exact SDK return declaration."
+  ]
+}

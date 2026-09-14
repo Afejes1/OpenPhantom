@@ -1,0 +1,14 @@
+{
+  "id": "video_set_done",
+  "address": 4817348,
+  "size": 28,
+  "body_size": 23,
+  "source": "src/video_set_done.c",
+  "symbol": "_op_video_set_done",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

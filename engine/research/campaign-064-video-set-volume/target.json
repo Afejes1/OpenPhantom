@@ -1,0 +1,27 @@
+{
+  "id": "video_set_volume",
+  "address": 4817309,
+  "size": 39,
+  "body_size": 39,
+  "source": "src/video_set_volume.c",
+  "symbol": "_op_video_set_volume",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 12,
+      "address": 8790176,
+      "symbol": "_op_video_sound_driver",
+      "kind": "dir32"
+    },
+    {
+      "offset": 31,
+      "address": 9180904,
+      "symbol": "_op_video_bink_volume",
+      "kind": "dir32"
+    }
+  ]
+}
