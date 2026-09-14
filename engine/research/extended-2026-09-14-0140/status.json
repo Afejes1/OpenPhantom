@@ -20,7 +20,7 @@
   "max_concurrent_implementation_workers": 1,
   "new_exact_functions": 85,
   "new_exact_bytes": 6387,
-  "promotions": 75,
+  "promotions": 88,
   "new_near_matches": 0,
   "new_research_candidates": 10,
   "checkpoints": [
@@ -320,6 +320,16 @@
       "team_not_done": 7,
       "research": 1,
       "result": "research/campaign-060/results.md"
+    },
+    {
+      "id": "acceptance-042",
+      "promotions": 13,
+      "carried_in": false,
+      "registered_after": 238,
+      "event": 65,
+      "source_commit": "371444e3748d03f970725f5670bc2c90f104e215",
+      "result": "research/acceptance-042/result.json",
+      "full_ci": "success"
     }
   ],
   "carried_in_exact_functions": [
@@ -330,10 +340,10 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Acceptance042 correcting supplemental modern cosine expectations;13functions405bytes29operands, original fixture passes. C061 four length estimators prepared privately.",
+  "current_work": "C061 four length estimators exact; C062 ten audio wrappers exact and two vector-forwarding layouts being retained as research. Focused review/publication pending.",
   "original_game_executed": false,
-  "accepted_functions_current": 225,
-  "evidence_records_current": 64,
+  "accepted_functions_current": 238,
+  "evidence_records_current": 65,
   "weekly_shared_usage_latest_percent": 75,
   "carried_in_promotions": 3,
   "new_exact_team_not_done": 82,

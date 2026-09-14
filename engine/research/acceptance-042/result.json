@@ -22,7 +22,7 @@
   "registered_after": 238,
   "full_span_bytes": 405,
   "verified_operands": 29,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 13,
   "team_reported_done": 0,
   "original_game_executed": false,
@@ -43,5 +43,18 @@
     "supplemental_ci": "https://github.com/Afejes1/OpenPhantom/actions/runs/34827033087",
     "issue": "Modern cosine argument multiplication rounds to binary32 before promotion; two near-zero cosine results differ from original x87. Separate modern literal expectations added; original exact fixture bounds unchanged."
   },
-  "metadata_correction": "Original integration prose counted31 operands including the excluded sine case; actual promoted bindings are29."
+  "metadata_correction": "Original integration prose counted31 operands including the excluded sine case; actual promoted bindings are29.",
+  "accepted_event": "engine/evidence/runs/000065-778ccb8a19969a5d.json",
+  "source_commit": "371444e3748d03f970725f5670bc2c90f104e215",
+  "build_id": "20260914-052337-484176a3",
+  "source_snapshot_inputs": 422,
+  "retained_focused_checks": 56149,
+  "connected_checks": {
+    "platform heap connected": 2400,
+    "platform timer connected": 13734,
+    "math vector connected": 80
+  },
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34827841775",
+  "supplemental_ci_conclusion": "success",
+  "independent_review": "comparison_inventory approved integrated fixtures, callback routing, canonical vector call chain and separate modern cosine expectations. Parent verified unchanged225-entry prefixes and13 include-only source substitutions."
 }

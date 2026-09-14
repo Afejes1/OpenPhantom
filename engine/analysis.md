@@ -417,3 +417,7 @@ Acceptance040 reaches216 accepted functions at event63. All216 comparisons and s
 ## Lexical and window checkpoint
 
 Acceptance041 reaches225 accepted functions at event64. All225 comparisons and shared tests pass, including1,886,672 retained focused checks and34,992 connected window checks, with successful same-source supplemental CI. Nine functions add864 complete bytes with18 verified operands. The overnight window has72 newly exact functions across5,982 bytes and75 accepted promotions including three carried in. See [acceptance041](research/acceptance-041/results.md). Whole-executable identity remains pending.
+
+## Platform and math checkpoint
+
+Acceptance042 reaches238 accepted functions at event65, with13 promotions matching405 complete bytes and29 operands. All238 comparisons and shared tests pass, including56,149 retained focused and16,214 connected checks; same-source supplemental CI succeeds after a documented modern cosine-oracle correction. The window has85 newly exact functions across6,387 bytes and88 accepted promotions including three carried in. See [acceptance042](research/acceptance-042/results.md). Whole-executable identity remains pending.
