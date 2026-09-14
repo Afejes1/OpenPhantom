@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "material_set_load_hook",
+  "candidate": "candidate.c",
+  "symbol": "_op_material_set_load_hook",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

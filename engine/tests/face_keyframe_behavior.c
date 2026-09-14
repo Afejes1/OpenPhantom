@@ -366,7 +366,9 @@ char *op_copy_keyframe_name(char *out, const char *in, unsigned int count)
     kh_CHECK(memcmp(kh_entries, kh_want_entries, sizeof(kh_entries)) == 0);
     for (i = 0; i < count; ++i)
     {
-        char value = ended ? 0 : in[i];
+        char value = 0;
+        if (!ended)
+            value = in[i];
         if (!value)
             ended = 1;
         out[i] = value;

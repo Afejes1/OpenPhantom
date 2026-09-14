@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "keyframe_free_entry",
+  "compiler_invocations": 5,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Two function-scope pointer/index locals",
+      "started_utc": "2026-09-14T01:10:29.133167+00:00",
+      "finished_utc": "2026-09-14T01:10:30.784582+00:00",
+      "returncode": 1,
+      "source_sha256": "d021c8c6248254931633b33bc0279c708e214f3fb6ca4e66ec3734e1572f4dac",
+      "report": "engine/build/campaign-001-keyframe_free_entry-ace04f12f2ad/research-result.json",
+      "report_sha256": "60a1ce522959109bc7f165b72c89626b995410d9cf2d50b701f5c47792f99396",
+      "status": "mismatch",
+      "candidate_size": 127,
+      "different_bytes": 10,
+      "elapsed_seconds": 1.428261,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Ordinary current/i local names",
+      "started_utc": "2026-09-14T01:12:07.988829+00:00",
+      "finished_utc": "2026-09-14T01:12:09.625563+00:00",
+      "returncode": 1,
+      "source_sha256": "95b9d9956093163e3254e6bcfe054dd302cbfd1bb05e52d4e0694a308a504146",
+      "report": "engine/build/campaign-001-keyframe_free_entry-970cfa627c7f/research-result.json",
+      "report_sha256": "284695ebd97f01d553ef7acbeed2343117bad0dca13b044f3d0d69939ace0a8b",
+      "status": "mismatch",
+      "candidate_size": 127,
+      "different_bytes": 10,
+      "elapsed_seconds": 1.411723,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Ordinary pNode/i pointer name",
+      "started_utc": "2026-09-14T01:13:04.254740+00:00",
+      "finished_utc": "2026-09-14T01:13:05.881976+00:00",
+      "returncode": 1,
+      "source_sha256": "fcfd19b7466c9dc59d37e2cf33098e95e8fd0f4c9c5198f181c065d0ed5e0180",
+      "report": "engine/build/campaign-001-keyframe_free_entry-62bc95b4ca03/research-result.json",
+      "report_sha256": "2ea323642c2940f1b2680f5211b9737e2a5774802211a34077754854a21ce660",
+      "status": "mismatch",
+      "candidate_size": 127,
+      "different_bytes": 10,
+      "elapsed_seconds": 1.4033,
+      "stderr": ""
+    },
+    {
+      "attempt": 4,
+      "hypothesis": "Reverse declaration order; same generated slots",
+      "started_utc": "2026-09-14T01:14:17.821949+00:00",
+      "finished_utc": "2026-09-14T01:14:19.475451+00:00",
+      "returncode": 1,
+      "source_sha256": "04bc4359506cd80b5cee94c8717302c1fffcc497ccc96e0fb7e777ef2b58ba10",
+      "report": "engine/build/campaign-001-keyframe_free_entry-e7503ad153e6/research-result.json",
+      "report_sha256": "2034d7b75607f89ae51d107855e0db19918597262004b8778f7729edeaa3812d",
+      "status": "mismatch",
+      "candidate_size": 127,
+      "different_bytes": 10,
+      "elapsed_seconds": 1.427588,
+      "stderr": ""
+    },
+    {
+      "attempt": 5,
+      "hypothesis": "Scope traversal pointer inside its actual nonnull-array block, leaving unsigned index at function scope",
+      "started_utc": "2026-09-14T01:14:49.907038+00:00",
+      "finished_utc": "2026-09-14T01:14:51.549337+00:00",
+      "returncode": 0,
+      "source_sha256": "1f58ce49a2ee9bc9d653edd609d384b3b82e32d0774700f6a9e5188cb1aed183",
+      "report": "engine/build/campaign-001-keyframe_free_entry-6b5ed4b8d241/research-result.json",
+      "report_sha256": "1c5ae3c02ffc54087ee5148484c3abe6c00d45ed8a44e996f75c041b5c7bd65b",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 127,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.416559,
+      "stderr": ""
+    }
+  ]
+}

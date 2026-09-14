@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "material_set_unload_hook",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed function from independently reviewed ABI and control flow",
+      "started_utc": "2026-09-14T01:10:32.429789+00:00",
+      "finished_utc": "2026-09-14T01:10:34.059290+00:00",
+      "returncode": 0,
+      "source_sha256": "68ec8ead65eee23578638a643e4445d720f48356da5a80367b0af84ecce9cb75",
+      "report": "engine/build/campaign-001-material_set_unload_hook-c4d94fe96bca/research-result.json",
+      "report_sha256": "e4f6b962d2f02a80847eb626396774a15e499fa57def5526f017b7eb9ad3d282",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 28,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.40963,
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "material_set_load_hook",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed function from independently reviewed ABI and control flow",
+      "started_utc": "2026-09-14T01:10:30.791229+00:00",
+      "finished_utc": "2026-09-14T01:10:32.423580+00:00",
+      "returncode": 0,
+      "source_sha256": "2435a358c05066ad0ec729388532cf4c6eeec652a68786a6d4fc72752898d886",
+      "report": "engine/build/campaign-001-material_set_load_hook-fc1bf3c4fc1b/research-result.json",
+      "report_sha256": "da5ed847c5e1ca42e5fe3ac6bbc99681fcea0fbac17f07919c60c0ff41cd3f02",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 28,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.407494,
+      "stderr": ""
+    }
+  ]
+}

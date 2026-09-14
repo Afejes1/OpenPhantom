@@ -1,0 +1,39 @@
+{
+  "id": "keyframe_free",
+  "address": 4695766,
+  "size": 59,
+  "body_size": 59,
+  "source": "src/keyframe_free.c",
+  "symbol": "_op_keyframe_free",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 7309508,
+      "symbol": "_op_keyframe_unload_hook",
+      "kind": "dir32"
+    },
+    {
+      "offset": 24,
+      "address": 7309508,
+      "symbol": "_op_keyframe_unload_hook",
+      "kind": "dir32"
+    },
+    {
+      "offset": 38,
+      "address": 4695825,
+      "symbol": "_op_keyframe_free_entry",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 50,
+      "address": 4805714,
+      "symbol": "_op_release",
+      "kind": "rel32-call"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "keyframe_load",
+  "address": 4693013,
+  "size": 102,
+  "body_size": 102,
+  "source": "src/keyframe_load.c",
+  "symbol": "_op_keyframe_load",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 13,
+      "address": 7309504,
+      "symbol": "_op_keyframe_load_hook",
+      "kind": "dir32"
+    },
+    {
+      "offset": 26,
+      "address": 7309504,
+      "symbol": "_op_keyframe_load_hook",
+      "kind": "dir32"
+    },
+    {
+      "offset": 41,
+      "address": 4805264,
+      "symbol": "_op_allocate",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 68,
+      "address": 4693115,
+      "symbol": "_op_keyframe_load_entry",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 89,
+      "address": 4695766,
+      "symbol": "_op_keyframe_free",
+      "kind": "rel32-call"
+    }
+  ]
+}

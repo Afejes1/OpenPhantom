@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "new_exact_functions": 5,
+  "new_exact_bytes": 344,
+  "new_near_matches": 0,
+  "new_research_candidates": 0,
+  "implementation_compiler_invocations": 10,
+  "implementation_compile_failures": 0,
+  "final_verification_invocations": 10,
+  "fixture_compile_failures": 0,
+  "fixture_checks": 1392,
+  "verified_snapshot_inputs": 70,
+  "shared_promotions": 0,
+  "original_game_executed": false
+}

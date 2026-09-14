@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T01:21:38.316490+00:00",
+  "conclusion": "no-material-findings",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "keyframe_free",
+      "address": 4695766,
+      "full_span_bytes": 59,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 4,
+      "different_bytes": 0,
+      "checks": 84,
+      "implementation_attempts": 1,
+      "result": "research/campaign-039-keyframe-free/result.json"
+    },
+    {
+      "id": "keyframe_free_entry",
+      "address": 4695825,
+      "full_span_bytes": 127,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 804,
+      "implementation_attempts": 5,
+      "result": "research/campaign-039-keyframe-free-entry/result.json"
+    },
+    {
+      "id": "keyframe_load",
+      "address": 4693013,
+      "full_span_bytes": 102,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 5,
+      "different_bytes": 0,
+      "checks": 324,
+      "implementation_attempts": 2,
+      "result": "research/campaign-039-keyframe-load/result.json"
+    },
+    {
+      "id": "material_set_load_hook",
+      "address": 4697808,
+      "full_span_bytes": 28,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 90,
+      "implementation_attempts": 1,
+      "result": "research/campaign-039-material-set-load-hook/result.json"
+    },
+    {
+      "id": "material_set_unload_hook",
+      "address": 4697836,
+      "full_span_bytes": 28,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 90,
+      "implementation_attempts": 1,
+      "result": "research/campaign-039-material-set-unload-hook/result.json"
+    }
+  ],
+  "corrections": [
+    "Operand inventory total corrected from preliminary13 to15; enumerated bindings were already correct."
+  ],
+  "limitations": [
+    "Keyframe array cleanup requires nonnull owned header and bounded live count.",
+    "Callbacks observe releases without actual deallocation.",
+    "Material callback ABI derives from observed consumers; original resources and whole executable layout remain pending."
+  ]
+}

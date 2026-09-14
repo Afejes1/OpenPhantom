@@ -1,0 +1,27 @@
+{
+  "id": "material_set_load_hook",
+  "address": 4697808,
+  "size": 28,
+  "body_size": 28,
+  "source": "src/material_set_load_hook.c",
+  "symbol": "_op_material_set_load_hook",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7313608,
+      "symbol": "_op_material_load_hook",
+      "kind": "dir32"
+    },
+    {
+      "offset": 17,
+      "address": 7313608,
+      "symbol": "_op_material_load_hook",
+      "kind": "dir32"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "keyframe_free",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed function from independently reviewed ABI and control flow",
+      "started_utc": "2026-09-14T01:10:27.477538+00:00",
+      "finished_utc": "2026-09-14T01:10:29.126993+00:00",
+      "returncode": 0,
+      "source_sha256": "6bec8beb0b38e82fafc6e1ce6cd1f6f7b01aacbe4bfbc174f6226427b32776f3",
+      "report": "engine/build/campaign-001-keyframe_free-6b8eac67a006/research-result.json",
+      "report_sha256": "87f69bc435d1cc4c0ad001fda2fffd6eeea59aeabff260fa83384da292688bae",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 59,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.415831,
+      "stderr": ""
+    }
+  ]
+}

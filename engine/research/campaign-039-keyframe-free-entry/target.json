@@ -1,0 +1,27 @@
+{
+  "id": "keyframe_free_entry",
+  "address": 4695825,
+  "size": 127,
+  "body_size": 127,
+  "source": "src/keyframe_free_entry.c",
+  "symbol": "_op_keyframe_free_entry",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 70,
+      "address": 4805714,
+      "symbol": "_op_release",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 106,
+      "address": 4805714,
+      "symbol": "_op_release",
+      "kind": "rel32-call"
+    }
+  ]
+}
