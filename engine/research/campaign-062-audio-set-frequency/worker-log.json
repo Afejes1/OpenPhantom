@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "audio_set_frequency",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed COM-shaped audio wrapper with captured return status",
+      "started_utc": "2026-09-14T09:34:35.676067+00:00",
+      "finished_utc": "2026-09-14T09:34:37.309272+00:00",
+      "returncode": 0,
+      "source_sha256": "afb361d9510bb363a6f1f5b6aee091e950208c2fbe9ea2d30d6e8d7d245d8008",
+      "report": "engine/build/campaign-001-audio_set_frequency-9cf0b568237f/research-result.json",
+      "report_sha256": "3443076195a1e574ba717932ed798ba349388a85f8ccba1d65b57d5f6a4c2fd4",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 38,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.40075,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T09:48:56.220450+00:00"
+}

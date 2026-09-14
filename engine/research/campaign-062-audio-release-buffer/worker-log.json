@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "audio_release_buffer",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed COM-shaped audio wrapper with captured return status",
+      "started_utc": "2026-09-14T09:34:46.873414+00:00",
+      "finished_utc": "2026-09-14T09:34:48.452186+00:00",
+      "returncode": 0,
+      "source_sha256": "5f395fe167bc3a978d63f83b25b077812f002f344bf1a4d9a98873ac250e7694",
+      "report": "engine/build/campaign-001-audio_release_buffer-e1db7b7b4203/research-result.json",
+      "report_sha256": "3a3ab1955dabf0061aa5c18cfe4620c5cbda1ce9b61583fac1e8002fee18b8c2",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 42,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.361826,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T09:48:56.220450+00:00"
+}

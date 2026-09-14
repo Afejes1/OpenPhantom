@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T09:48:56.220450+00:00",
+  "conclusion": "approved",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "fast_length2_best",
+      "address": 4803602,
+      "full_span_bytes": 216,
+      "candidate_size": 216,
+      "verified_operands": 6,
+      "evidence_category": "exact-function-match",
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 33291,
+      "implementation_compiles": 2,
+      "team_status": "not_done",
+      "result": "research/campaign-061-fast-length2-best/result.json"
+    },
+    {
+      "id": "fast_length2_half",
+      "address": 4803110,
+      "full_span_bytes": 164,
+      "candidate_size": 164,
+      "verified_operands": 3,
+      "evidence_category": "exact-function-match",
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 33291,
+      "implementation_compiles": 2,
+      "team_status": "not_done",
+      "result": "research/campaign-061-fast-length2-half/result.json"
+    },
+    {
+      "id": "fast_length2_quarter",
+      "address": 4803274,
+      "full_span_bytes": 164,
+      "candidate_size": 164,
+      "verified_operands": 3,
+      "evidence_category": "exact-function-match",
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 33291,
+      "implementation_compiles": 2,
+      "team_status": "not_done",
+      "result": "research/campaign-061-fast-length2-quarter/result.json"
+    },
+    {
+      "id": "fast_length2_three_eighths",
+      "address": 4803438,
+      "full_span_bytes": 164,
+      "candidate_size": 164,
+      "verified_operands": 3,
+      "evidence_category": "exact-function-match",
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 33291,
+      "implementation_compiles": 2,
+      "team_status": "not_done",
+      "result": "research/campaign-061-fast-length2-three-eighths/result.json"
+    }
+  ],
+  "observations": [
+    "Original bodies are frozen after semantic local names max/min corrected VC5 local allocation; no padding or fabricated variables.",
+    "Independent integer arithmetic oracle covers 129 by 129 dyadic input grid plus all signed-zero input pairs.",
+    "All selected native/Docker comparisons, reports and current snapshot hashes independently verified.",
+    "Three related 3D estimators were excluded during preparation because some paths read uninitialized locals; no source experiments started."
+  ]
+}

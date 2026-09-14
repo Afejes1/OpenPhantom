@@ -1,0 +1,14 @@
+{
+  "id": "audio_set_cooperative",
+  "address": 4811202,
+  "size": 29,
+  "body_size": 29,
+  "source": "src/audio_set_cooperative.c",
+  "symbol": "_op_audio_set_cooperative",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

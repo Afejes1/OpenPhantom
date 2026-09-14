@@ -1,0 +1,30 @@
+{
+  "id": "fast_length2_three_eighths",
+  "address": 4803438,
+  "size": 164,
+  "body_size": 164,
+  "source": "src/fast_length2_three_eighths.c",
+  "symbol": "_op_fast_length2_three_eighths",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 4886144,
+      "float32": 0.0
+    },
+    {
+      "offset": 49,
+      "address": 4886144,
+      "float32": 0.0
+    },
+    {
+      "offset": 153,
+      "address": 4886220,
+      "float32": 0.375
+    }
+  ]
+}

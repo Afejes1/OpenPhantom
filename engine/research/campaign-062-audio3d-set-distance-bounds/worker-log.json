@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "audio3d_set_distance_bounds",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed COM-shaped audio wrapper with captured return status",
+      "started_utc": "2026-09-14T09:34:37.314780+00:00",
+      "finished_utc": "2026-09-14T09:34:38.935163+00:00",
+      "returncode": 0,
+      "source_sha256": "4b60aec4e8addf119daa64e382935ace3cd09ec84ad983afa4fe0cbb1775711f",
+      "report": "engine/build/campaign-001-audio3d_set_distance_bounds-47ca5c95f477/research-result.json",
+      "report_sha256": "47985992a6937e795bdef4fab512e499e8d5da37e35f9467db381ed64053901d",
+      "status": "raw-code-match",
+      "candidate_size": 50,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.393204,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T09:48:56.220450+00:00"
+}

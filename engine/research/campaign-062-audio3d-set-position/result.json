@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "campaign": "062",
+  "id": "audio3d_set_position",
+  "status": "focused-mismatch",
+  "comparison": {
+    "id": "audio3d_set_position",
+    "address": 4812173,
+    "size": 51,
+    "candidate_size": 45,
+    "body_size": 51,
+    "status": "mismatch",
+    "literal_function_match": false,
+    "layout_verified": false,
+    "adjusted_bytes": 0,
+    "object_sha256": "445ba723403b83b088a1e9d6c5a30e6eb34f084500b644efce634637bf9be309",
+    "reason": "complete function extent differs"
+  },
+  "different_percent": null,
+  "source_snapshot": {
+    "research/campaign-062-audio3d-set-position/candidate.c": "523486a71f2516533085e740fdd36d46e77dce2765b98bae2e384e2bd87c85e5",
+    "research/campaign-062-audio3d-set-position/api.h": "37b856d3dd5eddfa781dd4ae4e3edd23b9520012bd481ae5a12e575540981333",
+    "research/campaign-062-audio3d-set-position/behavior.c": "8d54346cf49f892e00e349f2bfbca3a96278e16aaf586df2c079263046bd9f28",
+    "research/campaign-062-audio3d-set-position/case.json": "876f840c96f77b6fcc6f851d24a3ab515cbdc89efb926394f28322a77f7df9f6",
+    "research/campaign-001/verify.py": "78bcf92d994fdab04d1a983838fe9f492162d2626b35390259d9976b92cbbe78",
+    "target.json": "1a9f247ce570d40f25d13661ee4b779fcf9559105e536c40d4251fb36d6a11cd",
+    "research/campaign-062-audio3d-set-position/target.json": "070d6708e14bcbcc661d0fbe297e786b5567209e5415384aae396d03b38d6b77",
+    "research/surface-emission/probe.py": "cd4ef4126dacfc16197636a4b0c7007639efe1033e8e2b329e4939a6083c5f1b",
+    "research/surface-emission/native_listing_diagnostic.py": "3cad0339396c73301ef5861eed3c40f925482fd7c2e4ec45f801e9d0e5d34665",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "959d15268c4d927e57271424dbcb1c709cf89cbf3e48ff545e4e15c4d6425f27",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "reference": {
+    "sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
+    "size": 829952
+  },
+  "native_report": "engine/build/campaign-001-audio3d_set_position-37f7fb252c9a/research-result.json",
+  "native_report_sha256": "8f8ebdbdb594a3551915c8b89f74c84dbfac70af7f0b7f19d7e68f2723b040f1",
+  "docker_report": "engine/build/campaign-001-audio3d_set_position-4819de846ac1/research-result.json",
+  "docker_report_sha256": "e50372e02d4e8527c334be89f8afa5aab3107254f9ebfe53d5558bbea2ab67d8",
+  "artifact": {
+    "id": "audio3d_set_position",
+    "source": "candidate.c",
+    "symbol": "_op_audio3d_set_position",
+    "object": "candidate.obj",
+    "object_sha256": "445ba723403b83b088a1e9d6c5a30e6eb34f084500b644efce634637bf9be309",
+    "function_section_bytes": 45,
+    "function_section_sha256": "2c8b7d8030e6e6b502c2fead0168fa3ff0233a4eb3f0eb54e72f5f9dce6973ed",
+    "relocation_count": 0,
+    "assembly_listing": "candidate.native.cod",
+    "assembly_listing_sha256": "b5a468175b96496fb1778ddf0a45ed7c587fdacd3bd3330ae30a2bbbe412187b",
+    "assembly_listing_has_terminators": true,
+    "function_inventory": "candidate.function.json",
+    "function_inventory_sha256": "e23d766c24646e2c336f07374a34eadde2aff102dc60af2907234eb7ec97652b",
+    "listing_fallback": {
+      "kind": "verified-native-peer-listing",
+      "original_docker_listing": "candidate.cod",
+      "original_docker_listing_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "native_peer_report_sha256": "8f8ebdbdb594a3551915c8b89f74c84dbfac70af7f0b7f19d7e68f2723b040f1",
+      "native_peer_object_sha256": "ad366ce89f65c800c31efc2cf59d5e170c6da356f01c9c179abebe3e7aa63fcf",
+      "native_peer_listing_sha256": "b5a468175b96496fb1778ddf0a45ed7c587fdacd3bd3330ae30a2bbbe412187b",
+      "function_and_relocations_equal_before_fixture": true
+    }
+  },
+  "fixture": {
+    "sha256": "38ad43c0a32c9a4745e0a3845e1315c651ec12761ed066c92d4b96ad43733463",
+    "passed": true,
+    "stdout": "audio3d_set_position: 30720 checks, 0 failures\n",
+    "checks": 30720,
+    "failures": 0
+  },
+  "native_docker_function_and_relocations_equal": true,
+  "native_elapsed_seconds": 1.401743,
+  "docker_elapsed_seconds": 5.900188,
+  "accepted_history_record": false,
+  "original_game_executed": false,
+  "whole_executable_match": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "review": "research/campaign-062/review.json",
+  "limitations": [
+    "Only owned synthetic COM objects and callbacks execute; no real audio, COM initialization or original game execution.",
+    "Assertion totals include repeated combinations of dimensions irrelevant to individual wrappers.",
+    "Position/velocity are research with unequal complete extents; no valid mismatch percentage or exact forwarding claim."
+  ],
+  "evidence_category": "research-candidate"
+}

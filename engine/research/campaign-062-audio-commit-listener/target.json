@@ -1,0 +1,33 @@
+{
+  "id": "audio_commit_listener",
+  "address": 4812416,
+  "size": 37,
+  "body_size": 37,
+  "source": "src/audio_commit_listener.c",
+  "symbol": "_op_audio_commit_listener",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 8790152,
+      "symbol": "_op_audio_listener",
+      "kind": "dir32"
+    },
+    {
+      "offset": 14,
+      "address": 8790152,
+      "symbol": "_op_audio_listener",
+      "kind": "dir32"
+    },
+    {
+      "offset": 21,
+      "address": 8790152,
+      "symbol": "_op_audio_listener",
+      "kind": "dir32"
+    }
+  ]
+}

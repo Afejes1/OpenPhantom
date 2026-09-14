@@ -1,0 +1,21 @@
+{
+  "id": "audio_release_buffer",
+  "address": 4812579,
+  "size": 42,
+  "body_size": 42,
+  "source": "src/audio_release_buffer.c",
+  "symbol": "_op_audio_release_buffer",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 14,
+      "address": 8790132,
+      "symbol": "_op_audio_gate_word",
+      "kind": "dir32"
+    }
+  ]
+}

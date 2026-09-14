@@ -1,0 +1,14 @@
+{
+  "id": "audio3d_set_distance_bounds",
+  "address": 4812123,
+  "size": 50,
+  "body_size": 50,
+  "source": "src/audio3d_set_distance_bounds.c",
+  "symbol": "_op_audio3d_set_distance_bounds",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

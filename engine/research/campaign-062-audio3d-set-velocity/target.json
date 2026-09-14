@@ -1,0 +1,14 @@
+{
+  "id": "audio3d_set_velocity",
+  "address": 4812224,
+  "size": 51,
+  "body_size": 51,
+  "source": "src/audio3d_set_velocity.c",
+  "symbol": "_op_audio3d_set_velocity",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

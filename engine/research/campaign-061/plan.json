@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "campaign-061",
+  "started_utc": "2026-09-14T09:14:00Z",
+  "stop_implementation_utc": "2026-09-14T09:49:00Z",
+  "deadline_utc": "2026-09-14T09:59:00Z",
+  "prepared_utc": "2026-09-14T09:19:14.887021+00:00",
+  "functions": [
+    "fast_length2_half",
+    "fast_length2_quarter",
+    "fast_length2_three_eighths",
+    "fast_length2_best"
+  ],
+  "full_target_bytes": 708,
+  "address_operands": 15,
+  "status": "complete",
+  "baseline_commit": "3916466ce4f378e6c5bdac9e517064c2367ac0dc",
+  "original_game_executed": false,
+  "excluded_preparation_findings": "Three related3D estimators have paths reading uninitialized locals; no source experiments started for them.",
+  "completed_utc": "2026-09-14T09:48:56.220450+00:00"
+}

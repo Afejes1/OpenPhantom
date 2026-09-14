@@ -1,0 +1,21 @@
+{
+  "id": "audio_com_initialize",
+  "address": 4810528,
+  "size": 22,
+  "body_size": 22,
+  "source": "src/audio_com_initialize.c",
+  "symbol": "_op_audio_com_initialize",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 9181132,
+      "symbol": "_op_audio_co_initialize",
+      "kind": "dir32"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "fast_length2_quarter",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural conditional-absolute two-dimensional length estimator",
+      "started_utc": "2026-09-14T09:29:47.649095+00:00",
+      "finished_utc": "2026-09-14T09:29:49.258095+00:00",
+      "returncode": 1,
+      "source_sha256": "8e4eb1010947744e06d58a86655f666574377bec7d0d026c682428b8ebd1911d",
+      "report": "engine/build/campaign-001-fast_length2_quarter-5006c01ee65c/research-result.json",
+      "report_sha256": "46b2cb08162773106e78ec1e9ca963b3993dd07095c72aa80bbc1c80bb078781",
+      "status": "mismatch",
+      "candidate_size": 164,
+      "different_bytes": 4,
+      "elapsed_seconds": 1.390723,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Semantic max/min local names test VC5 local-slot allocation",
+      "started_utc": "2026-09-14T09:35:12.822720+00:00",
+      "finished_utc": "2026-09-14T09:35:14.386994+00:00",
+      "returncode": 0,
+      "source_sha256": "8ebfc0c2cf3ac7d93dd17746f17433312fdd7c34441c6e421f90b246f216976b",
+      "report": "engine/build/campaign-001-fast_length2_quarter-6ab695054808/research-result.json",
+      "report_sha256": "26eada547799beea97fccec07e5679f0c4c036a72f8c688a3f5dfc7bf215c249",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 164,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.345858,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T09:48:56.220450+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "audio_set_cooperative",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed COM-shaped audio wrapper with captured return status",
+      "started_utc": "2026-09-14T09:34:34.034159+00:00",
+      "finished_utc": "2026-09-14T09:34:35.670309+00:00",
+      "returncode": 0,
+      "source_sha256": "ebfe74062a107ec51c5db2d74fbefc0df1381b0deb44373a7ddd7d571d2643ee",
+      "report": "engine/build/campaign-001-audio_set_cooperative-a15a54f6f074/research-result.json",
+      "report_sha256": "a48b52d5c596517e1d182eeeab4ff9038faec19509c9556385c83a801a24fe70",
+      "status": "raw-code-match",
+      "candidate_size": 29,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.418922,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T09:48:56.220450+00:00"
+}

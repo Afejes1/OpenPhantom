@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "audio3d_set_position",
+  "compiler_invocations": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed COM-shaped audio wrapper with captured return status",
+      "started_utc": "2026-09-14T09:34:38.942125+00:00",
+      "finished_utc": "2026-09-14T09:34:40.518465+00:00",
+      "returncode": 1,
+      "source_sha256": "523486a71f2516533085e740fdd36d46e77dce2765b98bae2e384e2bd87c85e5",
+      "report": "engine/build/campaign-001-audio3d_set_position-5f2522ea43fb/research-result.json",
+      "report_sha256": "536659e77754b90cefa4a9c013a4395bb5a959e731aef977881805db8486d529",
+      "status": "mismatch",
+      "candidate_size": 45,
+      "different_bytes": null,
+      "elapsed_seconds": 1.353869,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Explicit float-double-float conversions reflect observed Y/Z x87 load/store transport",
+      "started_utc": "2026-09-14T09:36:47.174923+00:00",
+      "finished_utc": "2026-09-14T09:36:48.760164+00:00",
+      "returncode": 1,
+      "source_sha256": "cc3fb1b7194a7a97d1d433088524d1c3f6faf192ece37bc3a6b6a43dfadcbc2b",
+      "report": "engine/build/campaign-001-audio3d_set_position-eae181dcd42b/research-result.json",
+      "report_sha256": "b2840b0dc30aec8472b8dbcd94756b5256526130d8f281ea79864d064a7bd343",
+      "status": "mismatch",
+      "candidate_size": 59,
+      "different_bytes": null,
+      "elapsed_seconds": 1.366796,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Explicit float argument conversions preserve observed Y/Z narrowing without a double temporary",
+      "started_utc": "2026-09-14T09:37:36.205096+00:00",
+      "finished_utc": "2026-09-14T09:37:37.811357+00:00",
+      "returncode": 1,
+      "source_sha256": "f9f9a769503fe34de7bda27e1b173bd099197267354dab836476ca72892af8a5",
+      "report": "engine/build/campaign-001-audio3d_set_position-4e8889cf9bc8/research-result.json",
+      "report_sha256": "a9e241a58136c2dd3b381560e4d63b675b8cb2209c18ac28a96e7ceb5c20c420",
+      "status": "mismatch",
+      "candidate_size": 45,
+      "different_bytes": null,
+      "elapsed_seconds": 1.387701,
+      "stderr": ""
+    },
+    {
+      "attempt": 4,
+      "hypothesis": "Model the observed contiguous vector as a true three-float array",
+      "started_utc": "2026-09-14T09:38:52.258350+00:00",
+      "finished_utc": "2026-09-14T09:38:53.882234+00:00",
+      "returncode": 1,
+      "source_sha256": "5c9d4ab25fb8842114d1f65be1736e190ef65e39e85fc89b2783b28ef9c97f62",
+      "report": "engine/build/campaign-001-audio3d_set_position-ba1f3ad73132/research-result.json",
+      "report_sha256": "ba7bbbf912aee47eaba5d72cabe13cb32a08fd217f4a7e30525ffa404fdc508e",
+      "status": "mismatch",
+      "candidate_size": 45,
+      "different_bytes": null,
+      "elapsed_seconds": 1.398744,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-research",
+  "selected_attempt": 1,
+  "frozen_utc": "2026-09-14T09:48:56.220450+00:00",
+  "stop_reason": "Four natural source/type/conversion forms leave the complete span unresolved. No grounded next experiment; retain first45-byte source against51-byte target and investigate original vector-argument promotion form. No valid percentage for differing extents."
+}

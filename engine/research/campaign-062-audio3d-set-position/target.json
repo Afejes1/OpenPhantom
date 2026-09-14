@@ -1,0 +1,14 @@
+{
+  "id": "audio3d_set_position",
+  "address": 4812173,
+  "size": 51,
+  "body_size": 51,
+  "source": "src/audio3d_set_position.c",
+  "symbol": "_op_audio3d_set_position",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

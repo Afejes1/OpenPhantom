@@ -1,0 +1,221 @@
+{
+  "schema": 1,
+  "attempts": [
+    {
+      "id": "audio_com_initialize",
+      "started_utc": "2026-09-14T09:37:39.631458+00:00",
+      "finished_utc": "2026-09-14T09:37:41.247060+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio_com_initialize-8791d25cd070\\research-result.json",
+      "report_sha256": "bc963525173a5724c982431460c776e0c3fd043f5d3a8fed2f75e13af79091a4",
+      "stderr": ""
+    },
+    {
+      "id": "audio_com_initialize",
+      "started_utc": "2026-09-14T09:37:41.254269+00:00",
+      "finished_utc": "2026-09-14T09:37:46.710979+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio_com_initialize-7c7eddc3e666\\research-result.json",
+      "report_sha256": "b952cbb6144a6e59f81bc80f0270d29b9e300dcfec766d3e5451076cb156f706",
+      "stderr": ""
+    },
+    {
+      "id": "audio_com_uninitialize",
+      "started_utc": "2026-09-14T09:37:46.874349+00:00",
+      "finished_utc": "2026-09-14T09:37:48.464694+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio_com_uninitialize-aa1bd9c71263\\research-result.json",
+      "report_sha256": "6e843ec83f69f12060cbfc808bb16e038cfa8482184deff70a2c1d69ff96dd92",
+      "stderr": ""
+    },
+    {
+      "id": "audio_com_uninitialize",
+      "started_utc": "2026-09-14T09:37:48.471756+00:00",
+      "finished_utc": "2026-09-14T09:37:53.838479+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio_com_uninitialize-69277f47aa8c\\research-result.json",
+      "report_sha256": "fbc062e0594eb3fbfd4c5f28533cfd87eccdda3f108e6543da403c6ee581a0cc",
+      "stderr": ""
+    },
+    {
+      "id": "audio_set_cooperative",
+      "started_utc": "2026-09-14T09:37:54.010478+00:00",
+      "finished_utc": "2026-09-14T09:37:55.605419+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio_set_cooperative-8a30812a3556\\research-result.json",
+      "report_sha256": "85ae4cd98540d42ca7e12944f5b060a90688696a19332e814be1bb788408f473",
+      "stderr": ""
+    },
+    {
+      "id": "audio_set_cooperative",
+      "started_utc": "2026-09-14T09:37:55.613100+00:00",
+      "finished_utc": "2026-09-14T09:38:01.142758+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio_set_cooperative-03add6e813d8\\research-result.json",
+      "report_sha256": "df735cadb25a26fcae75dc999048c1bcc6b2c1ba922a712a66ca3998e59e1bef",
+      "stderr": ""
+    },
+    {
+      "id": "audio_set_frequency",
+      "started_utc": "2026-09-14T09:38:01.302101+00:00",
+      "finished_utc": "2026-09-14T09:38:02.900672+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio_set_frequency-64a997796a3e\\research-result.json",
+      "report_sha256": "14652534bc95da07a5d911a7bee1615c05a7c27bcadac51f2c40f58c73dda15b",
+      "stderr": ""
+    },
+    {
+      "id": "audio_set_frequency",
+      "started_utc": "2026-09-14T09:38:02.907743+00:00",
+      "finished_utc": "2026-09-14T09:38:08.727334+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio_set_frequency-a57fce3ce563\\research-result.json",
+      "report_sha256": "79ae1c2408d7b2ed7813dbcf64e760774114c72d3164902da689753d25bab0f3",
+      "stderr": ""
+    },
+    {
+      "id": "audio3d_set_distance_bounds",
+      "started_utc": "2026-09-14T09:38:08.892650+00:00",
+      "finished_utc": "2026-09-14T09:38:10.506252+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio3d_set_distance_bounds-9a29b5e7147f\\research-result.json",
+      "report_sha256": "380ef2aad5642dd88c6076ee24d4c21ea606db6f87c29c43ed9fbbc2158bc222",
+      "stderr": ""
+    },
+    {
+      "id": "audio3d_set_distance_bounds",
+      "started_utc": "2026-09-14T09:38:10.513863+00:00",
+      "finished_utc": "2026-09-14T09:38:16.189021+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio3d_set_distance_bounds-d5ee30f6ffb7\\research-result.json",
+      "report_sha256": "a43a8e4b646d5e69356c902d77a7426cd2a6e4f48c11082cca9b5c9475bed239",
+      "stderr": ""
+    },
+    {
+      "id": "audio_commit_listener",
+      "started_utc": "2026-09-14T09:38:16.351663+00:00",
+      "finished_utc": "2026-09-14T09:38:17.940749+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio_commit_listener-8b3a2357fbe8\\research-result.json",
+      "report_sha256": "93c277b17496079e87ec42957bc467e9a2511927174d4cd4b4fc33cad93e1dba",
+      "stderr": ""
+    },
+    {
+      "id": "audio_commit_listener",
+      "started_utc": "2026-09-14T09:38:17.948597+00:00",
+      "finished_utc": "2026-09-14T09:38:23.405841+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio_commit_listener-dc1c9fe87797\\research-result.json",
+      "report_sha256": "b5912d4112ff8c0327b30402891bbbf19a81c085a2872021f7bccab492e7aa8a",
+      "stderr": ""
+    },
+    {
+      "id": "audio3d_set_mode",
+      "started_utc": "2026-09-14T09:38:23.567605+00:00",
+      "finished_utc": "2026-09-14T09:38:25.170612+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio3d_set_mode-4d30532b3328\\research-result.json",
+      "report_sha256": "f282ea0da466cdf25ce78872db9398de3c434f53034e69b3b04e4aaf121434c2",
+      "stderr": ""
+    },
+    {
+      "id": "audio3d_set_mode",
+      "started_utc": "2026-09-14T09:38:25.177806+00:00",
+      "finished_utc": "2026-09-14T09:38:30.571028+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio3d_set_mode-9bcebf62f96a\\research-result.json",
+      "report_sha256": "613de00a1b9b9dfc040090f0dd33a9184b78f482ee6df34681f71acdd5020983",
+      "stderr": ""
+    },
+    {
+      "id": "audio_stop",
+      "started_utc": "2026-09-14T09:38:30.731899+00:00",
+      "finished_utc": "2026-09-14T09:38:32.321721+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio_stop-ecd3382e8176\\research-result.json",
+      "report_sha256": "b7d382dc670e777bcd6830730543d7d90f857d111370f4122c43e2e63b1d13ea",
+      "stderr": ""
+    },
+    {
+      "id": "audio_stop",
+      "started_utc": "2026-09-14T09:38:32.328638+00:00",
+      "finished_utc": "2026-09-14T09:38:37.886552+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio_stop-0fb94d4fa6da\\research-result.json",
+      "report_sha256": "92ca9e0fd1ed248f9dc4dde18114bab0b4d26e7c2e40db1a03b064a69e7ea847",
+      "stderr": ""
+    },
+    {
+      "id": "audio_release_buffer",
+      "started_utc": "2026-09-14T09:38:38.050677+00:00",
+      "finished_utc": "2026-09-14T09:38:39.648614+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio_release_buffer-172b2ee19420\\research-result.json",
+      "report_sha256": "5901b8ba3f5c112c18433174c41100e72512cb135489db293702a40589284f55",
+      "stderr": ""
+    },
+    {
+      "id": "audio_release_buffer",
+      "started_utc": "2026-09-14T09:38:39.656290+00:00",
+      "finished_utc": "2026-09-14T09:38:45.254409+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio_release_buffer-351c842a8f70\\research-result.json",
+      "report_sha256": "2c4de13b6358d457bc25bc3f27bdce84fb832c07a2f2e3300d22221a9564872f",
+      "stderr": ""
+    },
+    {
+      "id": "audio3d_release",
+      "started_utc": "2026-09-14T09:38:45.416118+00:00",
+      "finished_utc": "2026-09-14T09:38:47.025223+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio3d_release-9a9627cd9530\\research-result.json",
+      "report_sha256": "45537f6fdd27d783b96016c9eeffc8ae22d915bedc794a514ee6f118acf85ca4",
+      "stderr": ""
+    },
+    {
+      "id": "audio3d_release",
+      "started_utc": "2026-09-14T09:38:47.032496+00:00",
+      "finished_utc": "2026-09-14T09:38:52.532808+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio3d_release-df04ed90ae8c\\research-result.json",
+      "report_sha256": "c00865b4c1fa74528a09ead7969974fb504e4fecf78cfb4a2e7faa5e9a500afd",
+      "stderr": ""
+    },
+    {
+      "id": "audio3d_set_position",
+      "started_utc": "2026-09-14T09:41:08.475412+00:00",
+      "finished_utc": "2026-09-14T09:41:10.093364+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio3d_set_position-37f7fb252c9a\\research-result.json",
+      "report_sha256": "8f8ebdbdb594a3551915c8b89f74c84dbfac70af7f0b7f19d7e68f2723b040f1",
+      "stderr": ""
+    },
+    {
+      "id": "audio3d_set_position",
+      "started_utc": "2026-09-14T09:41:10.100041+00:00",
+      "finished_utc": "2026-09-14T09:41:16.217523+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio3d_set_position-4819de846ac1\\research-result.json",
+      "report_sha256": "e50372e02d4e8527c334be89f8afa5aab3107254f9ebfe53d5558bbea2ab67d8",
+      "stderr": ""
+    },
+    {
+      "id": "audio3d_set_velocity",
+      "started_utc": "2026-09-14T09:41:16.385327+00:00",
+      "finished_utc": "2026-09-14T09:41:18.020074+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio3d_set_velocity-a4533cd711de\\research-result.json",
+      "report_sha256": "fe7d4203b77e62f993e9509b2dfe4535dd7df7ed8fbddaaf87addfeb0ea9567d",
+      "stderr": ""
+    },
+    {
+      "id": "audio3d_set_velocity",
+      "started_utc": "2026-09-14T09:41:18.027740+00:00",
+      "finished_utc": "2026-09-14T09:41:23.388877+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-audio3d_set_velocity-2a1e8aa6f49a\\research-result.json",
+      "report_sha256": "9d59a901f311f7ccdd2f0be7939ff4cc11265907b5430b2c33c165ec6d0fa705",
+      "stderr": ""
+    }
+  ]
+}

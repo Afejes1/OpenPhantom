@@ -1,0 +1,21 @@
+{
+  "id": "audio_set_frequency",
+  "address": 4812085,
+  "size": 38,
+  "body_size": 38,
+  "source": "src/audio_set_frequency.c",
+  "symbol": "_op_audio_set_frequency",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 8790132,
+      "symbol": "_op_audio_gate_word",
+      "kind": "dir32"
+    }
+  ]
+}

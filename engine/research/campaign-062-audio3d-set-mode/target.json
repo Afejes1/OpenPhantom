@@ -1,0 +1,14 @@
+{
+  "id": "audio3d_set_mode",
+  "address": 4812453,
+  "size": 29,
+  "body_size": 29,
+  "source": "src/audio3d_set_mode.c",
+  "symbol": "_op_audio3d_set_mode",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

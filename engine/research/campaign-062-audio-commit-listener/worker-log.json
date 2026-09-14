@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "audio_commit_listener",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed COM-shaped audio wrapper with captured return status",
+      "started_utc": "2026-09-14T09:34:42.114068+00:00",
+      "finished_utc": "2026-09-14T09:34:43.692895+00:00",
+      "returncode": 0,
+      "source_sha256": "a8e2e40abfab7b8e98952bee5c7450f27bf9e3216268ba4e92f26fc94f3eb8a7",
+      "report": "engine/build/campaign-001-audio_commit_listener-7d416170063c/research-result.json",
+      "report_sha256": "69df231871b32fb119a2bd13820de4f0d99d0e821f07e2766767bf747e8681a8",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 37,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.362128,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T09:48:56.220450+00:00"
+}

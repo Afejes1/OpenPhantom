@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "campaign-062",
+  "started_utc": "2026-09-14T09:25:00Z",
+  "stop_implementation_utc": "2026-09-14T10:00:00Z",
+  "deadline_utc": "2026-09-14T10:10:00Z",
+  "prepared_utc": "2026-09-14T09:34:30.477538+00:00",
+  "functions": [
+    "audio_com_initialize",
+    "audio_com_uninitialize",
+    "audio_set_cooperative",
+    "audio_set_frequency",
+    "audio3d_set_distance_bounds",
+    "audio3d_set_position",
+    "audio3d_set_velocity",
+    "audio_commit_listener",
+    "audio3d_set_mode",
+    "audio_stop",
+    "audio_release_buffer",
+    "audio3d_release"
+  ],
+  "full_target_bytes": 456,
+  "address_operands": 9,
+  "status": "complete",
+  "baseline_commit": "371444e3748d03f970725f5670bc2c90f104e215",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T09:48:56.220450+00:00"
+}

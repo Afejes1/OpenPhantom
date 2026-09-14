@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "new_exact_functions": 10,
+  "new_exact_bytes": 354,
+  "team_not_done_exact_functions": 10,
+  "team_reported_done_exact_functions": 0,
+  "new_near_matches": 0,
+  "new_research_candidates": 2,
+  "full_target_bytes": 456,
+  "verified_exact_operands": 9,
+  "implementation_compiler_invocations": 18,
+  "implementation_compile_failures": 0,
+  "final_verification_invocations": 24,
+  "fixture_compile_failures": 0,
+  "fixture_checks": 330624,
+  "exact_fixture_checks": 269184,
+  "verified_snapshot_inputs": 168,
+  "shared_promotions": 0,
+  "original_game_executed": false
+}

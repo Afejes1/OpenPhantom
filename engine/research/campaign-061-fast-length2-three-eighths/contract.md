@@ -1,0 +1,5 @@
+# fast_length2_three_eighths
+
+Cdecl float(float,float) conditional absolute-value and magnitude estimator. Conditional abs preserves negative zero; both equal-value ternaries select the second argument. Half and quarter divide the smaller magnitude before adding the larger; three-eighths multiplies it by0.375. Best compares0.875*largest+smallest/2 to largest and recomputes the expression on the selected branch, with a binary32 merge temporary. Exact observed constants and operand placements are mandatory.
+
+An independent integer sum/difference magnitude oracle covers all16,641 pairs on a bounded eighth-unit grid[-8,8], including signs, zero, ties and the best-estimate clamp boundary. Dyadic weights make the expected stored results exact. Four signed-zero combinations require exact second-argument zero sign and complete owned input/guard preservation. PC53 round-nearest and masked exceptions are restored and checked. Nonfinite values, overflow, underflow and extended-ST0 equality are outside this fixture contract. No external callback, exclusion or warning waiver. Whole-executable identity remains separate.

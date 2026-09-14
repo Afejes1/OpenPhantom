@@ -1,0 +1,30 @@
+{
+  "id": "fast_length2_quarter",
+  "address": 4803274,
+  "size": 164,
+  "body_size": 164,
+  "source": "src/fast_length2_quarter.c",
+  "symbol": "_op_fast_length2_quarter",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 4886144,
+      "float32": 0.0
+    },
+    {
+      "offset": 49,
+      "address": 4886144,
+      "float32": 0.0
+    },
+    {
+      "offset": 153,
+      "address": 4886216,
+      "float32": 4.0
+    }
+  ]
+}

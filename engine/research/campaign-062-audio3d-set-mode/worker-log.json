@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "audio3d_set_mode",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed COM-shaped audio wrapper with captured return status",
+      "started_utc": "2026-09-14T09:34:43.698744+00:00",
+      "finished_utc": "2026-09-14T09:34:45.273116+00:00",
+      "returncode": 0,
+      "source_sha256": "2f3b3184b7cf85e75c54ceba9db1cc7a912653148cc2d1af20ae1afa421579d4",
+      "report": "engine/build/campaign-001-audio3d_set_mode-3b69a87bcc20/research-result.json",
+      "report_sha256": "7d517419ce70c19c35dc1cf9610d1caa5998a7f0155e5b3733c77f29a5f4c5a4",
+      "status": "raw-code-match",
+      "candidate_size": 29,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.359528,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T09:48:56.220450+00:00"
+}

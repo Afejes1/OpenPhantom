@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "audio3d_set_distance_bounds",
+  "candidate": "candidate.c",
+  "symbol": "_op_audio3d_set_distance_bounds",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

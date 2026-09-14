@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "fast_length2_quarter",
+  "candidate": "candidate.c",
+  "symbol": "_op_fast_length2_quarter",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

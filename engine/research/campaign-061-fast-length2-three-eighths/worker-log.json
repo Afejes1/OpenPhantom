@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "fast_length2_three_eighths",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural conditional-absolute two-dimensional length estimator",
+      "started_utc": "2026-09-14T09:29:49.260192+00:00",
+      "finished_utc": "2026-09-14T09:29:50.874259+00:00",
+      "returncode": 1,
+      "source_sha256": "9d8f1f2138a0e2c69618b054d074402761ea499a8bd2d77d7e4d1853aa932eb6",
+      "report": "engine/build/campaign-001-fast_length2_three_eighths-c59c242dc80f/research-result.json",
+      "report_sha256": "443582d5fe4804339cb7fea8a92efae7b2960e9a3ce14ec44a505a9c6b5b93c4",
+      "status": "mismatch",
+      "candidate_size": 164,
+      "different_bytes": 4,
+      "elapsed_seconds": 1.396349,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Semantic max/min local names test VC5 local-slot allocation",
+      "started_utc": "2026-09-14T09:35:14.392848+00:00",
+      "finished_utc": "2026-09-14T09:35:15.959180+00:00",
+      "returncode": 0,
+      "source_sha256": "ab587bfb81af02e65c6188676ae4afa4b3f549cc01db333a5d5b4991e87e5b51",
+      "report": "engine/build/campaign-001-fast_length2_three_eighths-f6d713532b11/research-result.json",
+      "report_sha256": "3046d4c7b1580c1a6af3b8a6a0d9b854762210ac16f3c5c6d0b5563d30840b66",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 164,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.348642,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T09:48:56.220450+00:00"
+}
