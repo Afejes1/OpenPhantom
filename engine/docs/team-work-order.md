@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **137** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **832**.
+Our last recorded matches cover **143** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **826**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -103,9 +103,9 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | rdroid/rdcanvas.c | 4 | 0 | 4 |
 | rdroid/rdclip.c | 2 | 0 | 2 |
 | rdroid/rdcolor.c | 10 | 0 | 10 |
-| rdroid/rdface.c | 4 | 0 | 4 |
+| rdroid/rdface.c | 4 | 3 | 1 |
 | rdroid/rdfont.c | 2 | 0 | 2 |
-| rdroid/rdkeyf.c | 8 | 0 | 8 |
+| rdroid/rdkeyf.c | 8 | 3 | 5 |
 | rdroid/rdlight.c | 8 | 0 | 8 |
 | rdroid/rdmat.c | 17 | 0 | 17 |
 | rdroid/rdmatrix.c | 9 | 0 | 9 |
