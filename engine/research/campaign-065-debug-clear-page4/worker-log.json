@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "debug_clear_page4",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural debug-state words and live record traversal",
+      "started_utc": "2026-09-14T10:58:06.532558+00:00",
+      "finished_utc": "2026-09-14T10:58:08.198939+00:00",
+      "returncode": 1,
+      "source_sha256": "9f1ba8b91ff4eae9955619a2602aaf067b6896e78af369f1ecfb81717ef7db44",
+      "report": "engine/build/campaign-001-debug_clear_page4-348d1c3bdb7b/research-result.json",
+      "report_sha256": "ccbef1730f0459cde5f5f417a522c49cb8e35f0073d1dd515a8cd0a83748fe2b",
+      "status": "mismatch",
+      "candidate_size": 100,
+      "different_bytes": 11,
+      "elapsed_seconds": 1.444603,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-research",
+  "frozen_utc": "2026-09-14T11:03:23.442407+00:00",
+  "stop_reason": "Fixed campaign implementation cutoff"
+}

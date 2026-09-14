@@ -1,0 +1,5 @@
+# debug_clear_page4
+
+Cdecl live signed-count traversal of24-byte records. Only page4/nonNULL text calls release with captured pointer, then clears the current record text after callback. Pointer/index remain captured; future page/text and live count are reread. Fixture has eight owned rows, signed counts-1/0/1/3/8, first eligible row0, and independently planned release positions for unchanged, shrink-to0 and grow-to8 counts. Callback replaces current text before the required clear and can change future row7 to an eligible record.
+
+All documented globals, the complete eight-row fixture prefix, and guarded text backing are snapshotted. The production extern array has unspecified extent; no claim about original total capacity or physical global adjacency is made. Live positive counts never exceed owned backing. Opaque output labels are authored substitutes bound to original addresses, not original content. No actual frees, renderer, window API, original game, byte exclusion or warning waiver. Whole-executable identity remains pending.

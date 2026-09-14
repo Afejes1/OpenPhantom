@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "campaign-065",
+  "started_utc": "2026-09-14T10:25:00Z",
+  "stop_implementation_utc": "2026-09-14T11:00:00Z",
+  "deadline_utc": "2026-09-14T11:10:00Z",
+  "functions": [
+    "debug_clear_page4",
+    "debug_toggle_visible",
+    "debug_next_page",
+    "debug_reset",
+    "debug_toggle_size",
+    "debug_disable"
+  ],
+  "full_target_bytes": 516,
+  "address_operands": 36,
+  "status": "complete",
+  "prepared_utc": "2026-09-14T10:38:47.632582+00:00",
+  "baseline_commit": "ea7f42dce080f84f001c99115a23c74b09b23c90",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T11:03:23.442407+00:00"
+}

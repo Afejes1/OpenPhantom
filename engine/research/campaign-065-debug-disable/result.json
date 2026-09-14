@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "campaign": "065",
+  "id": "debug_disable",
+  "status": "focused-mismatch",
+  "comparison": {
+    "id": "debug_disable",
+    "address": 4631858,
+    "size": 30,
+    "candidate_size": 25,
+    "body_size": 25,
+    "status": "mismatch",
+    "literal_function_match": false,
+    "layout_verified": false,
+    "adjusted_bytes": 0,
+    "object_sha256": "dc85ffbc3648f4c0156dbebc1c35dc1213dc26931db836605cfc97598fce3e21",
+    "reason": "complete function extent differs"
+  },
+  "different_percent": null,
+  "source_snapshot": {
+    "research/campaign-065-debug-disable/candidate.c": "cc777e25ee1468aef69ecc83a100e440efa70b0070f5eca9033d6be70ba3b6e4",
+    "research/campaign-065-debug-disable/api.h": "addd3f15a5cd925a4581bda896352877a89a024fcce112af8c246007f5b26852",
+    "research/campaign-065-debug-disable/behavior.c": "d603bb7555dffc04fc4bb4777dae15544b78c53928779124c48d0b4747ff3509",
+    "research/campaign-065-debug-disable/case.json": "fb3c0efeb37c7884593ed17397336d861f0590b049e07f3d439cc8b66a410cce",
+    "research/campaign-001/verify.py": "78bcf92d994fdab04d1a983838fe9f492162d2626b35390259d9976b92cbbe78",
+    "target.json": "4969afd3b9897be53856ab1d0e69b6db3c3806eca89cd08acb327003bf0f9158",
+    "research/campaign-065-debug-disable/target.json": "9e0b342337bd6758b59d04dba859ac767d4508e091c4c3308061c22440b4bf3b",
+    "research/surface-emission/probe.py": "cd4ef4126dacfc16197636a4b0c7007639efe1033e8e2b329e4939a6083c5f1b",
+    "research/surface-emission/native_listing_diagnostic.py": "3cad0339396c73301ef5861eed3c40f925482fd7c2e4ec45f801e9d0e5d34665",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "959d15268c4d927e57271424dbcb1c709cf89cbf3e48ff545e4e15c4d6425f27",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "reference": {
+    "sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
+    "size": 829952
+  },
+  "native_report": "engine/build/campaign-001-debug_disable-ff8d896cb5c5/research-result.json",
+  "native_report_sha256": "a559bbc56428e876616a509f177bfd1b5bada875de92700cbcb32ac8434b74bb",
+  "docker_report": "engine/build/campaign-001-debug_disable-f3d085a55d43/research-result.json",
+  "docker_report_sha256": "2ddefc9870bba88ca126089ced8d0353ca6e347f96601c3661f4fac1a5902caa",
+  "artifact": {
+    "id": "debug_disable",
+    "source": "candidate.c",
+    "symbol": "_op_debug_disable",
+    "object": "candidate.obj",
+    "object_sha256": "dc85ffbc3648f4c0156dbebc1c35dc1213dc26931db836605cfc97598fce3e21",
+    "function_section_bytes": 25,
+    "function_section_sha256": "f40d1e638f328e2703ae2d89a483ae618303c538d388bc75ab3c0c3fdbbe0194",
+    "relocation_count": 2,
+    "assembly_listing": "candidate.native.cod",
+    "assembly_listing_sha256": "51046df599ff89a75c1a5f10ad9a9569052ba8104e9660313e9a4b9d0dfa45d3",
+    "assembly_listing_has_terminators": true,
+    "function_inventory": "candidate.function.json",
+    "function_inventory_sha256": "828d324386d90dd4e815db6f9764cc401a6a0c2844c0bf7ab93d9444c8d11538",
+    "listing_fallback": {
+      "kind": "verified-native-peer-listing",
+      "original_docker_listing": "candidate.cod",
+      "original_docker_listing_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "native_peer_report_sha256": "a559bbc56428e876616a509f177bfd1b5bada875de92700cbcb32ac8434b74bb",
+      "native_peer_object_sha256": "c6995419237ac41967db8d0501d2cef674f2847d3da7942ec250b122ffc60059",
+      "native_peer_listing_sha256": "51046df599ff89a75c1a5f10ad9a9569052ba8104e9660313e9a4b9d0dfa45d3",
+      "function_and_relocations_equal_before_fixture": true
+    }
+  },
+  "fixture": {
+    "sha256": "ef9fb23777a8978956af72c83e4f22405682a487234f1dfa27779449c0716df2",
+    "passed": true,
+    "stdout": "debug_disable: 6561 checks, 0 failures\n",
+    "checks": 6561,
+    "failures": 0
+  },
+  "native_docker_function_and_relocations_equal": true,
+  "native_elapsed_seconds": 1.432026,
+  "docker_elapsed_seconds": 5.416341,
+  "accepted_history_record": false,
+  "original_game_executed": false,
+  "whole_executable_match": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "review": "research/campaign-065/review.json",
+  "limitations": [
+    "All callback services and label contents are authored; original game does not execute.",
+    "Clear-page4 has 11 differing local-slot bytes across 100 bytes; reset has 10 across 183 bytes. The fixed cohort cutoff stopped further experiments.",
+    "Disable has a 25-byte candidate versus full 30 including five CC alignment bytes; no mismatch percentage is valid.",
+    "Only three exact wrappers are eligible for later shared acceptance; whole-executable layout remains pending."
+  ],
+  "evidence_category": "research-candidate"
+}

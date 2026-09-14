@@ -1,0 +1,33 @@
+{
+  "id": "debug_clear_page4",
+  "address": 4630444,
+  "size": 100,
+  "body_size": 100,
+  "source": "src/debug_clear_page4.c",
+  "symbol": "_op_debug_clear_page4",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 16,
+      "address": 8823904,
+      "symbol": "_op_debug_rows",
+      "kind": "dir32"
+    },
+    {
+      "offset": 45,
+      "address": 8835904,
+      "symbol": "_op_debug_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 77,
+      "address": 4805714,
+      "symbol": "_op_release",
+      "kind": "rel32-call"
+    }
+  ]
+}

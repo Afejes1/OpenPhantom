@@ -1,0 +1,27 @@
+{
+  "id": "debug_disable",
+  "address": 4631858,
+  "size": 30,
+  "body_size": 25,
+  "source": "src/debug_disable.c",
+  "symbol": "_op_debug_disable",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7167340,
+      "symbol": "_op_debug_pulse",
+      "kind": "dir32"
+    },
+    {
+      "offset": 15,
+      "address": 7167332,
+      "symbol": "_op_debug_visible",
+      "kind": "dir32"
+    }
+  ]
+}

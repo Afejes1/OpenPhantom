@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T11:03:23.638815+00:00",
+  "conclusion": "approved-three-exact-three-research",
+  "source_snapshots_verified": true,
+  "verified_snapshot_inputs": 84,
+  "verified_reports": 12,
+  "observations": [
+    "All 84 inputs and 12 native/Docker reports independently rehashed; function and relocation parity and all 187815 fixture checks pass.",
+    "Exact set: toggle-visible 47 bytes, next-page 86, toggle-size 70; total 203 bytes and 19 operands.",
+    "Research: clear-page4 has 11/100 differing bytes, reset 10/183, disable candidate25/full30 with no percentage.",
+    "Each function had one actual implementation compiler attempt. The post-cutoff guard prevented the planned rename command before any edit or compile.",
+    "Signed count traversal, callback count changes, captured pointers and post-callback state updates verified."
+  ]
+}

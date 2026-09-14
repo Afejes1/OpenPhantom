@@ -1,0 +1,87 @@
+{
+  "id": "debug_reset",
+  "address": 4631406,
+  "size": 183,
+  "body_size": 183,
+  "source": "src/debug_reset.c",
+  "symbol": "_op_debug_reset",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 16,
+      "address": 8823904,
+      "symbol": "_op_debug_rows",
+      "kind": "dir32"
+    },
+    {
+      "offset": 45,
+      "address": 8835904,
+      "symbol": "_op_debug_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 68,
+      "address": 4805714,
+      "symbol": "_op_release",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 89,
+      "address": 8835904,
+      "symbol": "_op_debug_count",
+      "kind": "dir32"
+    },
+    {
+      "offset": 104,
+      "address": 4945868,
+      "symbol": "_op_debug_label0",
+      "kind": "dir32"
+    },
+    {
+      "offset": 115,
+      "address": 4630677,
+      "symbol": "_op_debug_upsert",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 123,
+      "address": 4945860,
+      "symbol": "_op_debug_label1",
+      "kind": "dir32"
+    },
+    {
+      "offset": 134,
+      "address": 4630677,
+      "symbol": "_op_debug_upsert",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 142,
+      "address": 4945852,
+      "symbol": "_op_debug_label2",
+      "kind": "dir32"
+    },
+    {
+      "offset": 153,
+      "address": 4630677,
+      "symbol": "_op_debug_upsert",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 161,
+      "address": 4945844,
+      "symbol": "_op_debug_label3",
+      "kind": "dir32"
+    },
+    {
+      "offset": 172,
+      "address": 4630677,
+      "symbol": "_op_debug_upsert",
+      "kind": "rel32-call"
+    }
+  ]
+}

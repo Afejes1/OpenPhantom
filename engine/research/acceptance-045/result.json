@@ -12,7 +12,7 @@
   "registered_after": 264,
   "full_span_bytes": 322,
   "verified_operands": 16,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 3,
   "team_reported_done": 0,
   "original_game_executed": false,
@@ -23,5 +23,14 @@
     "receipt": "engine/private/a045-targeted-compile.json",
     "sha256": "43b3088f2d560cbb4968943b029c5f040f7b188ba15f5573479a961112e778fd",
     "returncode": 0
-  }
+  },
+  "accepted_event": "engine/evidence/runs/000068-268367cfb5c08b38.json",
+  "source_commit": "61d35bc56c38e2c444edbcc5851648da2310013b",
+  "build_id": "20260914-065138-0f493b9e",
+  "source_snapshot_inputs": 456,
+  "retained_focused_checks": 69936,
+  "connected_checks": 100224,
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34835292325",
+  "supplemental_ci_conclusion": "success",
+  "publication_ci_note": "Prior C064 publication push34834364422 failed only the generated progress freshness check; progress was regenerated before A045 source61d35bc, whose push34835254384 and full dispatch34835292325 passed."
 }

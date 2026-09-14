@@ -1,0 +1,45 @@
+{
+  "id": "debug_toggle_size",
+  "address": 4631651,
+  "size": 70,
+  "body_size": 70,
+  "source": "src/debug_toggle_size.c",
+  "symbol": "_op_debug_toggle_size",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7167344,
+      "symbol": "_op_debug_size",
+      "kind": "dir32"
+    },
+    {
+      "offset": 25,
+      "address": 4820102,
+      "symbol": "_op_debug_resize",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 44,
+      "address": 4820102,
+      "symbol": "_op_debug_resize",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 55,
+      "address": 7167344,
+      "symbol": "_op_debug_size",
+      "kind": "dir32"
+    },
+    {
+      "offset": 64,
+      "address": 7167344,
+      "symbol": "_op_debug_size",
+      "kind": "dir32"
+    }
+  ]
+}

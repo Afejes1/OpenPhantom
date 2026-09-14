@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "debug_toggle_size",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural debug-state words and live record traversal",
+      "started_utc": "2026-09-14T10:58:13.170230+00:00",
+      "finished_utc": "2026-09-14T10:58:14.806345+00:00",
+      "returncode": 0,
+      "source_sha256": "757cd8828805c5915fd3459a2650daf270e08a2b1939f5a632b92ab69ac15869",
+      "report": "engine/build/campaign-001-debug_toggle_size-245b3c0846ef/research-result.json",
+      "report_sha256": "2c25920b8b7d11063ba72413ea727d8bceb8855b67f34dbd6fa89552fca16a02",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 70,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.418299,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T11:03:23.442407+00:00",
+  "stop_reason": "Fixed campaign implementation cutoff"
+}

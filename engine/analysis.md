@@ -429,3 +429,7 @@ Acceptance043 reaches252 accepted functions at event66, with14 promotions matchi
 ## Kernel window checkpoint
 
 Acceptance044 reaches261 accepted functions at event67, with9 promotions matching520 complete bytes and34 operands. All261 comparisons and shared tests pass, including570,560 retained focused and 24448 connected checks; same-source supplemental CI succeeds. This window has108 newly exact functions across7,969 bytes and111 promotions including three carried in. See [acceptance044](research/acceptance-044/results.md). Whole-executable identity remains pending.
+
+## Video lifecycle checkpoint
+
+Acceptance 045 reaches 264 accepted functions at event 68, with three promotions matching 322 complete bytes and 16 operands. All 264 comparisons and shared tests pass, including 69,936 retained focused and 100224 connected checks; same-source supplemental CI succeeds. This window has 111 newly exact functions across 8,291 bytes and 114 promotions including three carried in. See [acceptance 045](research/acceptance-045/results.md). Whole-executable identity remains pending.

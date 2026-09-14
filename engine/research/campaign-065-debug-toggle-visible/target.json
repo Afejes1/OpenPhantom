@@ -1,0 +1,45 @@
+{
+  "id": "debug_toggle_visible",
+  "address": 4630544,
+  "size": 47,
+  "body_size": 47,
+  "source": "src/debug_toggle_visible.c",
+  "symbol": "_op_debug_toggle_visible",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 7167332,
+      "symbol": "_op_debug_visible",
+      "kind": "dir32"
+    },
+    {
+      "offset": 12,
+      "address": 7167332,
+      "symbol": "_op_debug_visible",
+      "kind": "dir32"
+    },
+    {
+      "offset": 18,
+      "address": 7167332,
+      "symbol": "_op_debug_visible",
+      "kind": "dir32"
+    },
+    {
+      "offset": 28,
+      "address": 4631406,
+      "symbol": "_op_debug_reset",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 37,
+      "address": 7167332,
+      "symbol": "_op_debug_visible",
+      "kind": "dir32"
+    }
+  ]
+}
