@@ -9,3 +9,5 @@ The installation fixture connects the actual colormap current/hardware setters a
 Name selection reuses the reviewed bounded string-copy and acquisition observer cases and calls the actual getter afterward, including null acquisition results. The260-byte authored input region and8-byte trailing guard are a tested domain, not proof of application-wide capacity. Real heap/file/resource acquisition/device behavior, overlong names and arbitrary overlaps remain outside these tests.
 
 Euler placement and the palette release wrapper's seven alignment bytes remain research and are not integrated. No byte exclusions or warning waivers are added. Individual matches and authored integration checks do not establish whole-executable identity.
+
+The supplemental modern MSVC target defines `_CRT_SECURE_NO_WARNINGS` to allow the historical `strcpy` API. The original VC5 sources and compiler options are unchanged; `/W4 /WX` remains enabled for supplemental compilation. The first supplemental run failed C4996, and its receipt is retained in the acceptance metadata.

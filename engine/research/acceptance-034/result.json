@@ -26,5 +26,13 @@
     "sha256": "09115aa919b47384ea925721bfb948621e27ea7d332fbb63640b322d76d8f8f0",
     "returncode": 0
   },
-  "independent_review": "comparison_inventory: final applied review approved after adding full facade name/pool preservation oracles; prior176 target and registry entries unchanged"
+  "independent_review": "comparison_inventory: final applied review approved after adding full facade name/pool preservation oracles; prior176 target and registry entries unchanged",
+  "supplemental_compatibility": {
+    "definition": "_CRT_SECURE_NO_WARNINGS",
+    "scope": "modern supplemental CMake target only",
+    "reason": "Historical strcpy is required for the verified VC5 instruction sequence. Keep /W4 /WX and original sources/options unchanged.",
+    "initial_ci_failure": "https://github.com/Afejes1/OpenPhantom/actions/runs/34808479610",
+    "initial_source": "92669bb152b80ea6e1275138643330b7584aaca3",
+    "initial_build": "20260914-010747-274097d2"
+  }
 }
