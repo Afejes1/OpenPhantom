@@ -119,12 +119,15 @@ static void clip_flag_tests(void)
 #include "surface_entry_behavior.h"
 #include "scan_behavior.h"
 #include "bgl_state_behavior.c"
+#include "geometry_behavior.c"
+#include "colormap_io_behavior.c"
 #include "matrix_helpers_behavior.c"
 #include "canvas_face_behavior.c"
 #include "colormap_lifecycle_behavior.c"
 #include "light_behavior.c"
 #include "colormap_state_behavior.c"
 #include "colormap_behavior.c"
+#include "colormap_bridge_behavior.c"
 #include "material_state_behavior.c"
 #include "keyframe_lifecycle_behavior.c"
 #include "world_readers_behavior.c"
@@ -218,6 +221,11 @@ int main(void)
     failures += op_test_colormap_lifecycle();
     failures += op_test_light();
     failures += op_test_canvas();
+    failures += op_test_colormap_reader();
+    failures += op_test_colormap_writer();
+    failures += op_test_point_plane_distance();
+    failures += op_test_vector_angle();
+    failures += op_test_colormap_bridge();
     failures += op_test_matrix_helpers();
     failures += op_test_matrix_translation();
     failures += op_test_face_constructor();

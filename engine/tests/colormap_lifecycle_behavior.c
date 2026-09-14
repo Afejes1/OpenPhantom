@@ -141,7 +141,7 @@ typedef struct CC_MAP
 } CC_MAP;
 static CC_MAP cc_maps[4], cc_expected[4];
 static unsigned int cc_tokens[5];
-static int cc_checks, cc_failures, cc_row, cc_reader_result, cc_a, cc_b, cc_stage, cc_release_count, cc_plan_count;
+static int cc_checks, cc_failures, cc_row, cc_fallback_result, cc_a, cc_b, cc_stage, cc_release_count, cc_plan_count;
 static unsigned int cc_flags;
 static void *cc_plan[3];
 static int cc_kind[3];
@@ -168,7 +168,7 @@ static void *cc_allocate(unsigned int bytes)
     cc_stage = 1;
     return &cc_maps[cc_row].value;
 }
-static int cc_read(const char *name, OP_COLORMAP *map)
+static int cc_gray(const char *name, OP_COLORMAP *map)
 {
     CC_CHECK(cc_stage == 1 && name == cc_name && map == &cc_maps[cc_row].value);
     if (map != &cc_maps[cc_row].value)
@@ -194,7 +194,7 @@ static int cc_read(const char *name, OP_COLORMAP *map)
     cc_plan[cc_plan_count] = map;
     cc_kind[cc_plan_count++] = 2;
     cc_stage = 2;
-    return cc_reader_result;
+    return cc_fallback_result;
 }
 static void cc_release(void *p)
 {
@@ -237,6 +237,7 @@ static int op_test_colormap_lifecycle(void)
     OP_COLORMAP *result;
     static int answers[] = {0, 1, -1, INT_MIN};
     static unsigned int flags[] = {0, 1, 2, 0xffffffffu, 0x80000000u};
+    cm_use_legacy_services();
     cc_active = 1;
     cc_mode = 0;
     test_colormap_free_entry();
@@ -253,11 +254,11 @@ static int op_test_colormap_lifecycle(void)
                         cc_release_count = 0;
                         cc_plan_count = 0;
                         cc_flags = flags[f];
-                        cc_reader_result = answers[r];
+                        cc_fallback_result = answers[r];
                         op_colormap_current = op_colormap_hardware = &cc_maps[cc_row].value;
                         result = op_rd_colormap_load(cc_name);
-                        CC_CHECK(result == (answers[r] ? &cc_maps[cc_row].value : 0));
-                        CC_CHECK(cc_stage == (answers[r] ? 2 : 3));
+                        CC_CHECK(result == &cc_maps[cc_row].value);
+                        CC_CHECK(cc_stage == 2);
                         if (result)
                             op_rd_colormap_free(result);
                         CC_CHECK(cc_stage == 3 && cc_release_count == cc_plan_count);

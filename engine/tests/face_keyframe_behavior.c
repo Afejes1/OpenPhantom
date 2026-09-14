@@ -362,6 +362,8 @@ char *op_copy_keyframe_name(char *out, const char *in, unsigned int count)
 {
     unsigned int i;
     int ended = 0;
+    if(cmr_active)return cmr_copy(out,in,count);
+    if(cmw_active)return cmw_copy(out,in,count);
     kh_CHECK(kh_stage == 0 && out == kh_entries[kh_row].value.name && in == op_default_resource_name && count == 31);
     kh_CHECK(memcmp(kh_entries, kh_want_entries, sizeof(kh_entries)) == 0);
     for (i = 0; i < count; ++i)

@@ -110,11 +110,9 @@ static void *colormap_allocate(unsigned int bytes)
     ++colormap_allocate_calls;
     return p;
 }
-int op_colormap_load_entry(const char *name, OP_COLORMAP *map)
+static int colormap_gray(const char *name, OP_COLORMAP *map)
 {
     int call, i;
-    if (cc_active)
-        return cc_read(name, map);
     colormap_check(colormap_active);
     i = colormap_find(map);
     if (i < 0)
@@ -201,10 +199,10 @@ static void colormap_test_repeated_load_and_free(void)
     colormap_check(memcmp(op_extended_colormaps, before, sizeof(before)) == 0);
 }
 
-static void colormap_test_failed_and_capacity_loads(void)
+static void colormap_test_fallback_and_capacity_loads(void)
 {
     void *before[128];
-    const char failed_name[] = "fixture-map-failed";
+    const char fallback_name[] = "fixture-map-fallback";
     const char capacity_name[] = "fixture-map-capacity";
     void *actual;
 
@@ -213,12 +211,16 @@ static void colormap_test_failed_and_capacity_loads(void)
     colormap_reset_callbacks();
     memcpy(before, op_extended_colormaps, sizeof(before));
     colormap_load_result = 0;
-    actual = op_extended_load_colormap(failed_name);
-    colormap_check(actual == 0);
+    actual = op_extended_load_colormap(fallback_name);
+    colormap_check(actual == &colormap_objects[139].value);
     colormap_check(colormap_load_calls == 1);
-    colormap_check(colormap_load_names[0] == failed_name);
-    colormap_check(op_extended_colormap_count == 3);
+    colormap_check(colormap_load_names[0] == fallback_name);
+    colormap_check(op_extended_colormap_count == 4);
+    before[3] = &colormap_objects[139].value;
     colormap_check(memcmp(op_extended_colormaps, before, sizeof(before)) == 0);
+    if (actual)
+        op_rd_colormap_free(actual);
+    colormap_check(colormap_free_calls == 1 && colormap_free_arguments[0] == actual);
 
     colormap_fill_slots();
     op_extended_colormap_count = 128;
@@ -231,6 +233,9 @@ static void colormap_test_failed_and_capacity_loads(void)
     colormap_check(colormap_load_names[0] == capacity_name);
     colormap_check(op_extended_colormap_count == 128);
     colormap_check(memcmp(op_extended_colormaps, before, sizeof(before)) == 0);
+    if (actual)
+        op_rd_colormap_free(actual);
+    colormap_check(colormap_free_calls == 1 && colormap_free_arguments[0] == actual);
 }
 
 static void colormap_test_last_slot_and_full_free(void)
@@ -285,6 +290,9 @@ static void colormap_test_loader_count_change(void)
     colormap_check(colormap_load_names[0] == changed_name);
     colormap_check(op_extended_colormap_count == 6);
     colormap_check(memcmp(op_extended_colormaps, expected, sizeof(expected)) == 0);
+    if (actual)
+        op_rd_colormap_free(actual);
+    colormap_check(colormap_free_calls == 1 && colormap_free_arguments[0] == actual);
 }
 
 static void colormap_test_nonpositive_and_owned_free(void)
@@ -365,11 +373,12 @@ static void colormap_test_live_free_bounds(void)
 
 int op_test_colormaps(void)
 {
+    cm_use_legacy_services();
     colormap_active = 1;
     colormap_checks = 0;
     colormap_failures = 0;
     colormap_test_repeated_load_and_free();
-    colormap_test_failed_and_capacity_loads();
+    colormap_test_fallback_and_capacity_loads();
     colormap_test_last_slot_and_full_free();
     colormap_test_loader_count_change();
     colormap_test_nonpositive_and_owned_free();

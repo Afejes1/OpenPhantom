@@ -180,6 +180,7 @@ int op_stream_seek(void *handle, long offset, int origin)
 }
 void op_release(void *memory)
 {
+    if(cmr_active){cmr_release(memory);return;}
     if (cv_active)
     {
         cv_release(memory);

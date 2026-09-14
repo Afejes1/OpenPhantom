@@ -3173,6 +3173,78 @@
         "External builders and composers remain authored observers; their matrix algorithms are not covered."
       ],
       "exceptions": []
+    },
+    {
+      "id": "colormap_load_entry",
+      "module": "colormap",
+      "analysis_name": "colormap_load_entry",
+      "purpose": "Read into an844-byte colormap through global services at00868640. Open(path,readmode) occurs before basename/copy. Open0 skips name/read/close, invokes gray fallback and returns1. Otherwise copy31 basename bytes and force name[31]=0. Read64-byte header and store four words atmap32..44 before marker validation. Ignore version and read return values. Invalid marker closes then falls back. Valid marker reads768 palette bytes, allocates0x4100, stores raw handle820 and rounds table816 upward to256-byte alignment, then reads0x4000 bytes. Reload live flags bit0 after that read; if set, allocate0x10100 and publish raw828/aligned824, then read0x10000 bytes. Close and return1. Either allocation failure closes then calls gray and returns1, without invented cleanup or resetting untouched fields.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/colormap-geometry-acceptance.md",
+        "research/campaign-046-colormap-load-entry/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/colormap_io_behavior.c"
+      ],
+      "quirks": [
+        "Authored service and fallback observers; no original file contents or runtime execution."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "colormap_write",
+      "module": "colormap",
+      "analysis_name": "colormap_write",
+      "purpose": "Construct a complete64-byte header before opening: external4-byte marker, version30, four words copied frommap32..44, then40 zero bytes. Open0 returns0 without writes/close. Nonzero open writes header64,palette768,live light-table pointer16384, then live flags bit0 selects an optional65536-byte alpha write; close and return1. Ignore write/close return values. Reload the services global before each operation and read current map fields/pointers at the observed stages.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/colormap-geometry-acceptance.md",
+        "research/campaign-046-colormap-write/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/colormap_io_behavior.c"
+      ],
+      "quirks": [
+        "Authored service and fallback observers; no original file contents or runtime execution."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "point_plane_distance",
+      "module": "geometry",
+      "analysis_name": "point_plane_distance",
+      "purpose": "Cdecl float(point,normal,origin), three const12-byte vector pointers. Return (point.x-origin.x)*normal.x plus correspondingY thenZ products, preserving observed x87 evaluation order. No writes/calls/operands; complete60-byte span with no tail. Callers in directional/omni face-light accumulation pass point,normal,origin and store binary32 result before thresholds. Authored dyadic vector pool with all64 argument-index combinations covers disjoint and exact aliases. Independent literal result words, negative-zero case, full guarded input snapshots; no nonfinite/overflow claims in this fixture.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/colormap-geometry-acceptance.md",
+        "research/campaign-047-point-plane-distance/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/geometry_behavior.c"
+      ],
+      "quirks": [
+        "Bounded dyadic inputs and exact aliases; fixed floating-point control."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "vector_angle",
+      "module": "geometry",
+      "analysis_name": "vector_angle",
+      "purpose": "Cdecl float(a,b), two const12-byte vector pointers. Compute x*y sum inXYZ order and explicitly store dot to binary32. Compare exact dot word0x3f800000; that case returns external+0 and skips helper. Otherwise pass captured float by value to004942E7 and return external90.0 minus its ST0 result. This caller has no direct XREFs; no inference about the external helper mathematics is accepted. Complete84-byte span and3 operands. Natural union exposes the stored float word without artificial padding. Literal cases cover exact+1 bypass, rounding to+1, adjacent value, negative/out-of-domain finite dots, signedzero, quietNaN forwarding, multi-component cancellation, and exact argument alias. The authored scalar callback observes captured dot, mutates input vectors, and returns dyadic values with independent result words.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/colormap-geometry-acceptance.md",
+        "research/campaign-047-vector-angle/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/geometry_behavior.c"
+      ],
+      "quirks": [
+        "Literal synthetic numeric expectations; scalar angle dependency remains an authored observer."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

@@ -3,15 +3,14 @@
 #include <stddef.h>
 typedef struct OP_COLORMAP
 {
-    unsigned char prefix[32];
-    unsigned int flags;
-    unsigned char unknown24[12];
-    unsigned char palette[1];
-    unsigned char unknown31[771];
+    char name[32];
+    unsigned int flags, field24, field28, field2c;
+    unsigned char palette[768];
+    unsigned char *light_table;
     void *handle334;
-    unsigned int unknown338;
+    unsigned char *alpha_table;
     void *handle33c;
-    unsigned char unknown340[12];
+    unsigned char tail[12];
 } OP_COLORMAP;
 typedef char colormap_extent[(sizeof(OP_COLORMAP) == 844 && offsetof(OP_COLORMAP, palette) == 48 &&
                               offsetof(OP_COLORMAP, flags) == 32 && offsetof(OP_COLORMAP, handle334) == 820 &&

@@ -1,0 +1,11 @@
+# Colormap I/O and geometry acceptance
+
+Four independently reviewed focused exact functions enter the shared target: the colormap reader and writer, point-to-plane distance and vector angle. Existing 172 target definitions are unchanged. Their complete spans total 996 bytes with 28 individually verified relocation operands and no exclusions.
+
+The 844-byte colormap layout now exposes the recovered name, header fields, full palette, aligned table views and original raw allocation handles. Existing handle offsets and teardown behavior are preserved. The real reader is connected to the existing allocation, load, free-entry, free and extended-colormap functions. Its open-failure fallback returns success regardless of the gray observer's return value; historical focused fake-reader failure tests remain historical evidence rather than a claim that this real reader returns zero. Gray synthesis remains an authored observer.
+
+The reader fixture retains all focused paths and additionally runs every scenario through real root allocation and cleanup, checking raw-handle release order, zeroed root input, alignment, failed table allocations and complete owned memory snapshots. Shared callbacks retain their active-context dispatch and local header guards. The writer retains captured header fields, live palette/table/flag reads and alternating service-provider callbacks. Services operate only on authored in-memory content; short reported counts still populate all requested bytes and do not claim actual truncated-file safety.
+
+Existing extended-colormap tests now observe fallback roots being registered and explicitly release fallback, full-capacity and live-count roots. Nested loading during root release remains covered with the actual reader. The separate C045 palette builders remain research.
+
+Numerical fixtures retain literal authored binary32 expectations, exact aliases and saved/restored floating-point control. The angle helper preserves its observed single-precision capture and exact positive-one word gate; the external scalar helper is an authored observer, so its mathematical algorithm remains unclaimed. The snap helper remains research and is not integrated. These checks establish individual function matches, not whole-executable identity.
