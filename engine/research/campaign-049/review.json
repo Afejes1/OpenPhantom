@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T04:58:48.603485+00:00",
+  "conclusion": "approved-five-exact-one-layout-research",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "palette_resource_free",
+      "address": 4279830,
+      "full_span_bytes": 38,
+      "body_bytes": 38,
+      "candidate_size": 38,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 96,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-049-palette-resource-free/result.json"
+    },
+    {
+      "id": "palette_resource_get",
+      "address": 4279907,
+      "full_span_bytes": 10,
+      "body_bytes": 10,
+      "candidate_size": 10,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 72,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-049-palette-resource-get/result.json"
+    },
+    {
+      "id": "palette_resource_install",
+      "address": 4279868,
+      "full_span_bytes": 39,
+      "body_bytes": 39,
+      "candidate_size": 39,
+      "verified_operands": 4,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 416,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-049-palette-resource-install/result.json"
+    },
+    {
+      "id": "palette_resource_load",
+      "address": 4279759,
+      "full_span_bytes": 71,
+      "body_bytes": 71,
+      "candidate_size": 71,
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 936,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-049-palette-resource-load/result.json"
+    },
+    {
+      "id": "palette_resource_release",
+      "address": 4279991,
+      "full_span_bytes": 41,
+      "body_bytes": 34,
+      "candidate_size": 34,
+      "verified_operands": 3,
+      "different_bytes": null,
+      "different_percent": null,
+      "checks": 96,
+      "evidence_category": "research-candidate",
+      "team_status": "not_done",
+      "result": "research/campaign-049-palette-resource-release/result.json"
+    },
+    {
+      "id": "palette_resource_set_name",
+      "address": 4279917,
+      "full_span_bytes": 74,
+      "body_bytes": 74,
+      "candidate_size": 74,
+      "verified_operands": 4,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 2688,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-049-palette-resource-set-name/result.json"
+    }
+  ],
+  "observations": [
+    "All84 source snapshot inputs, twelve selected final reports and sixteen verification-history reports rehashed.",
+    "Five exact functions preserve all first-compile source bodies.",
+    "Two callback-state hardenings were requested and applied; only their four verification runs were repeated. Earlier passing receipts remain retained.",
+    "Release body diagnostic verifies both inventories and all3address operands without modifying its41-byte target.",
+    "Full target total is273 bytes, calculated from immutable targets; preliminary272 arithmetic was corrected before publication."
+  ],
+  "limitations": [
+    "Release is not a full-span exact or near match.",
+    "Authored pools/callbacks and bounded names do not establish backend safety or application-wide name capacity."
+  ]
+}

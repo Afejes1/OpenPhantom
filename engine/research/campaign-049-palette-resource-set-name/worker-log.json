@@ -5,7 +5,7 @@
   "attempts": [
     {
       "attempt": 1,
-      "hypothesis": "Natural scalar/vector expressions from complete static and floating-point contracts",
+      "hypothesis": "Natural typed wrapper and intrinsic operations from complete static ABI and operand inventory",
       "started_utc": "2026-09-14T04:50:44.632686+00:00",
       "finished_utc": "2026-09-14T04:50:46.214982+00:00",
       "returncode": 0,
@@ -18,5 +18,7 @@
       "elapsed_seconds": 1.362231,
       "stderr": ""
     }
-  ]
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T04:58:48.603485+00:00"
 }

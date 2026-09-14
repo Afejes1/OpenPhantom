@@ -92,7 +92,9 @@
   "warning_waivers": [],
   "review": "research/campaign-049/review.json",
   "limitations": [
-    "Complete function evidence; external callbacks are authored fixtures. Shared types and final linked executable placement remain pending."
+    "Shared acceptance and final executable identity remain separate.",
+    "All dependencies and memory are authored observers/static pools. Null forwarding does not establish real backend null safety.",
+    "Resource-name length/guard cases do not establish universal application capacity or overlong/overlap safety."
   ],
   "evidence_category": "exact-function-match"
 }

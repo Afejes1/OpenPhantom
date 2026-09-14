@@ -13,6 +13,7 @@
     "palette_resource_set_name",
     "palette_resource_release"
   ],
-  "status": "prepared",
-  "original_game_executed": false
+  "status": "complete",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T04:58:48.603485+00:00"
 }
