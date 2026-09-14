@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **133** team-not-done entries and **2** team-done entries.
-Team-not-done entries without a local recorded match: **836**.
+Our last recorded matches cover **137** team-not-done entries and **2** team-done entries.
+Team-not-done entries without a local recorded match: **832**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -88,7 +88,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | bp/bpsprite.c | 1 | 0 | 1 |
 | bp/extended.c | 22 | 2 | 20 |
 | bp/features.c | 1 | 0 | 1 |
-| bp/texture.c | 7 | 3 | 4 |
+| bp/texture.c | 7 | 4 | 3 |
 | game/aiext.c | 30 | 0 | 30 |
 | game/enemy.c | 9 | 0 | 9 |
 | game/fxfade.c | 34 | 28 | 6 |
@@ -137,7 +137,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | util/control.c | 3 | 0 | 3 |
 | util/debug.c | 16 | 0 | 16 |
 | util/fileutil.c | 5 | 0 | 5 |
-| util/font3d.c | 21 | 15 | 6 |
+| util/font3d.c | 21 | 18 | 3 |
 | util/inter.c | 14 | 0 | 14 |
 | util/module.c | 20 | 0 | 20 |
 | util/pzip.c | 30 | 0 | 30 |

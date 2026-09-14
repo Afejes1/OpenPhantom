@@ -1,0 +1,9 @@
+# Acceptance025 results
+
+Four functions are accepted, bringing the shared baseline from135 to139. Font module, creation and destruction were newly matched in campaign037; the sprite-material getter is a previously matched campaign016 promotion. Their566 complete bytes match with29 verified address operands and zero exclusions. The clean build `20260913-204536-9f9f2f12` at `71c03ded1d3e4324e4a5347cf521352c020214fb` passes all139 comparisons and authored fixtures. [Event48](../../evidence/runs/000048-912b72f676fb6daa.json) records the immutable source snapshot. [Full supplemental CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34794109900) passes on that source. Independent review found no material issues.
+
+The lifecycle fixture reports15434 checks. Creation uses actual sprite acquire/material lookup/release and all nine actual default setters. Cases cover every free slot, exhaustion, acquisition/load failures, backdrop cleanup, callback replacements and selection changes. Destruction follows live font/backdrop pointers and captured slot clearing; module event3 clears the entire pool before optional creation and event4 writes the signed unloaded slot. Valid destruction requires a populated font after the first release, as in the original code. Guarded typed sprites and font resources provide real field storage; whole-pool, resource and material snapshots detect unintended mutation.
+
+Ripple tests now use the same actual material getter and guarded typed sprite objects. Null sprite input yields a null material; synthetic release callbacks occur only when the actual release wrapper invokes them. The6322 ripple integration checks pass. Prior fixture callback counts that depended on a fake getter are superseded by these connected observations.
+
+These are four promotions, not four additional new research matches. Whole-executable identity remains pending.

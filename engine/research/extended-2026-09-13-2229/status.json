@@ -20,7 +20,7 @@
   "max_concurrent_implementation_workers": 1,
   "new_exact_functions": 26,
   "new_exact_bytes": 1826,
-  "promotions": 30,
+  "promotions": 34,
   "new_near_matches": 0,
   "new_research_candidates": 3,
   "checkpoints": [
@@ -116,11 +116,20 @@
       "source_commit": "e722b7f6cb5fe27177f641a059c080dc8da8a625",
       "result": "research/acceptance-024/result.json",
       "full_ci": "success"
+    },
+    {
+      "id": "acceptance-025",
+      "promotions": 4,
+      "registered_after": 139,
+      "event": 48,
+      "source_commit": "71c03ded1d3e4324e4a5347cf521352c020214fb",
+      "result": "research/acceptance-025/result.json",
+      "full_ci": "success"
     }
   ],
-  "current_work": "Acceptance025: three font lifecycle functions plus prior exact sprite-material getter; typed ripple fixtures and actual resource wrappers.",
+  "current_work": "Campaign038: six untouched face and keyframe functions; all six first-attempt exact, paired verification in progress.",
   "original_game_executed": false,
-  "accepted_functions_current": 135,
-  "evidence_records_current": 47,
+  "accepted_functions_current": 139,
+  "evidence_records_current": 48,
   "weekly_shared_usage_latest_percent": 61
 }
