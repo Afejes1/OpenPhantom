@@ -33,5 +33,13 @@
     "sha256": "5b2ac9ab29cb2924dd2154e67f6f51901c6e6ae5092f13548d156f391c3d7336",
     "returncode": 0
   },
-  "independent_review": "comparison_inventory: approved unchanged197-entry prefixes, include-only source parity, guarded real lookup/flags/removal chains and active-gated shared observers; registry description clarified to separate focused finder mutation from actual side-effect-free lookup."
+  "independent_review": "comparison_inventory: approved unchanged197-entry prefixes, include-only source parity, guarded real lookup/flags/removal chains and active-gated shared observers; registry description clarified to separate focused finder mutation from actual side-effect-free lookup.",
+  "initial_clean_build": {
+    "source_commit": "9708806e8a99ecc4efdbd24de332e5bf6632f5d5",
+    "build_id": "20260914-023358-73742328",
+    "status": "compiled; not recorded",
+    "ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34813998361",
+    "ci_conclusion": "failure",
+    "reason": "Generated progress page was not regenerated after registry wording correction; no code-test failure reported."
+  }
 }
