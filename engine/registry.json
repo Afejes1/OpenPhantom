@@ -2584,6 +2584,114 @@
         "Actual canonical resource and font state functions are connected; only external resource backends are authored."
       ],
       "exceptions": []
+    },
+    {
+      "id": "face_init",
+      "module": "face_keyframe",
+      "analysis_name": "face_init",
+      "purpose": "Initialize observed fields of the76-byte face prefix; preserve offsets8,12,16,52. Two small intrinsic vector clears match observed register reuse. Null input is outside domain; allocation extent beyond this prefix is not claimed.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/face-keyframe-acceptance.md",
+        "research/campaign-038-face-init/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/face_keyframe_behavior.c"
+      ],
+      "quirks": [
+        "Full original spans; callback fixtures own all storage and never free real heap objects."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "face_free",
+      "module": "face_keyframe",
+      "analysis_name": "face_free",
+      "purpose": "Null input no-op. On nonnull input call array cleanup then release the same captured face. Authored release records calls without freeing fixture storage.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/face-keyframe-acceptance.md",
+        "research/campaign-038-face-free/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/face_keyframe_behavior.c"
+      ],
+      "quirks": [
+        "Full original spans; callback fixtures own all storage and never free real heap objects."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "face_free_arrays",
+      "module": "face_keyframe",
+      "analysis_name": "face_free_arrays",
+      "purpose": "Nonnull face required. Release nonnull array18 then live array1c, reloading after first callback. Fields are not cleared. Aliased pointers test call observations only, not actual double-free safety.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/face-keyframe-acceptance.md",
+        "research/campaign-038-face-free-arrays/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/face_keyframe_behavior.c"
+      ],
+      "quirks": [
+        "Full original spans; callback fixtures own all storage and never free real heap objects."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "keyframe_set_load_hook",
+      "module": "face_keyframe",
+      "analysis_name": "keyframe_set_load_hook",
+      "purpose": "Return previous loader hook and install new hook. Consumer479c2d passes name and consumes keyframe pointer return. Hooks are never invoked by setter. Correct stale decompiler no-argument signature.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/face-keyframe-acceptance.md",
+        "research/campaign-038-keyframe-set-load-hook/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/face_keyframe_behavior.c"
+      ],
+      "quirks": [
+        "Full original spans; callback fixtures own all storage and never free real heap objects."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "keyframe_set_unload_hook",
+      "module": "face_keyframe",
+      "analysis_name": "keyframe_set_unload_hook",
+      "purpose": "Return previous unloader hook and install new hook. Consumer47a6ec passes keyframe pointer and ignores result. Manifest duplicates load-hook name; trustworthy existing unloader symbol and separate consumer establish this role.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/face-keyframe-acceptance.md",
+        "research/campaign-038-keyframe-set-unload-hook/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/face_keyframe_behavior.c"
+      ],
+      "quirks": [
+        "Full original spans; callback fixtures own all storage and never free real heap objects."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "keyframe_init_header",
+      "module": "face_keyframe",
+      "analysis_name": "keyframe_init_header",
+      "purpose": "Clear132-byte header, copy31 bytes maximum from external default-name resource using original strncpy, then force byte31 zero. Caller allocation confirms132 bytes. Fixture content is authored; original shared default name is never copied into Git.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/face-keyframe-acceptance.md",
+        "research/campaign-038-keyframe-init-header/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/face_keyframe_behavior.c"
+      ],
+      "quirks": [
+        "Full original spans; callback fixtures own all storage and never free real heap objects."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

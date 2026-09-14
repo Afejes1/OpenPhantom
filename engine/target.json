@@ -5796,6 +5796,155 @@
         "/MT"
       ],
       "bindings": []
+    },
+    {
+      "id": "face_init",
+      "address": 4689934,
+      "size": 138,
+      "body_size": 138,
+      "source": "src/face_init.c",
+      "symbol": "_op_face_init",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "face_free",
+      "address": 4690072,
+      "size": 35,
+      "body_size": 35,
+      "source": "src/face_free.c",
+      "symbol": "_op_face_free",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 14,
+          "address": 4690107,
+          "symbol": "_op_face_free_arrays",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 26,
+          "address": 4805714,
+          "symbol": "_op_release",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "face_free_arrays",
+      "address": 4690107,
+      "size": 53,
+      "body_size": 53,
+      "source": "src/face_free_arrays.c",
+      "symbol": "_op_face_free_arrays",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 20,
+          "address": 4805714,
+          "symbol": "_op_release",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 44,
+          "address": 4805714,
+          "symbol": "_op_release",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "keyframe_set_load_hook",
+      "address": 4692912,
+      "size": 28,
+      "body_size": 28,
+      "source": "src/keyframe_set_load_hook.c",
+      "symbol": "_op_keyframe_set_load_hook",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7309504,
+          "symbol": "_op_keyframe_load_hook",
+          "kind": "dir32"
+        },
+        {
+          "offset": 17,
+          "address": 7309504,
+          "symbol": "_op_keyframe_load_hook",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "keyframe_set_unload_hook",
+      "address": 4692940,
+      "size": 28,
+      "body_size": 28,
+      "source": "src/keyframe_set_unload_hook.c",
+      "symbol": "_op_keyframe_set_unload_hook",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7309508,
+          "symbol": "_op_keyframe_unload_hook",
+          "kind": "dir32"
+        },
+        {
+          "offset": 17,
+          "address": 7309508,
+          "symbol": "_op_keyframe_unload_hook",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "keyframe_init_header",
+      "address": 4692968,
+      "size": 45,
+      "body_size": 45,
+      "source": "src/keyframe_init_header.c",
+      "symbol": "_op_keyframe_init_header",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 19,
+          "address": 4947368,
+          "symbol": "_op_default_resource_name",
+          "kind": "dir32"
+        },
+        {
+          "offset": 28,
+          "address": 4828192,
+          "symbol": "_op_copy_keyframe_name",
+          "kind": "rel32-call"
+        }
+      ]
     }
   ]
 }

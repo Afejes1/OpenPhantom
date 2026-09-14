@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "acceptance-026",
+  "baseline_commit": "d276a40d10c71c949568c814bfbfb11c9724d336",
+  "functions": [
+    "face_init",
+    "face_free",
+    "face_free_arrays",
+    "keyframe_set_load_hook",
+    "keyframe_set_unload_hook",
+    "keyframe_init_header"
+  ],
+  "promotions": 6,
+  "registered_before": 139,
+  "registered_after": 145,
+  "full_span_bytes": 327,
+  "verified_operands": 10,
+  "status": "integration-pending",
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

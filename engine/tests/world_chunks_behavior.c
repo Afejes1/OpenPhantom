@@ -180,6 +180,11 @@ int op_stream_seek(void *handle, long offset, int origin)
 }
 void op_release(void *memory)
 {
+    if (fk_active)
+    {
+        fk_release(memory);
+        return;
+    }
     if (shield_lifecycle_active)
     {
         shield_lifecycle_release(memory);
