@@ -1,0 +1,21 @@
+{
+  "id": "conf_get_file",
+  "address": 4768105,
+  "size": 10,
+  "body_size": 10,
+  "source": "src/conf_get_file.c",
+  "symbol": "_op_conf_get_file",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 8784752,
+      "symbol": "_op_conf_read_handle",
+      "kind": "dir32"
+    }
+  ]
+}

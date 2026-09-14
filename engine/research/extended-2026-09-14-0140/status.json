@@ -18,8 +18,8 @@
   "reviewer_model": "gpt-5.6-sol",
   "reviewer_reasoning": "medium",
   "max_concurrent_implementation_workers": 1,
-  "new_exact_functions": 50,
-  "new_exact_bytes": 4125,
+  "new_exact_functions": 56,
+  "new_exact_bytes": 4461,
   "promotions": 53,
   "new_near_matches": 0,
   "new_research_candidates": 8,
@@ -234,6 +234,14 @@
       "source_commit": "51d95a36317964f1f02c8f8a95e43cc2494b0f28",
       "result": "research/acceptance-038/result.json",
       "full_ci": "success"
+    },
+    {
+      "id": "campaign-054",
+      "new_exact": 6,
+      "new_exact_bytes": 336,
+      "team_not_done": 6,
+      "research": 0,
+      "result": "research/campaign-054/results.md"
     }
   ],
   "carried_in_exact_functions": [
@@ -244,13 +252,13 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Campaign054: six configuration helpers match all336bytes; string writer matched second compile after enabling the observed VC5 strlen intrinsic. Paired authored verification underway.",
+  "current_work": "Acceptance039 planning: integrate six exact configuration stream helpers and shared service callback sequencing.",
   "original_game_executed": false,
   "accepted_functions_current": 203,
   "evidence_records_current": 61,
-  "weekly_shared_usage_latest_percent": 69,
+  "weekly_shared_usage_latest_percent": 71,
   "carried_in_promotions": 3,
-  "new_exact_team_not_done": 47,
+  "new_exact_team_not_done": 53,
   "new_exact_team_reported_done": 3,
   "ghidra_metadata_saved_utc": "2026-09-14T06:42:05.867Z"
 }

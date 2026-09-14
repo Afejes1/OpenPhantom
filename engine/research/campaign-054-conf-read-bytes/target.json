@@ -1,0 +1,39 @@
+{
+  "id": "conf_read_bytes",
+  "address": 4767149,
+  "size": 67,
+  "body_size": 67,
+  "source": "src/conf_read_bytes.c",
+  "symbol": "_op_conf_read_bytes",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 8784748,
+      "symbol": "_op_conf_read_active",
+      "kind": "dir32"
+    },
+    {
+      "offset": 14,
+      "address": 8784752,
+      "symbol": "_op_conf_read_handle",
+      "kind": "dir32"
+    },
+    {
+      "offset": 35,
+      "address": 8784752,
+      "symbol": "_op_conf_read_handle",
+      "kind": "dir32"
+    },
+    {
+      "offset": 41,
+      "address": 8816192,
+      "symbol": "_op_conf_services",
+      "kind": "dir32"
+    }
+  ]
+}

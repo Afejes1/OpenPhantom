@@ -1,0 +1,27 @@
+{
+  "id": "conf_open_read",
+  "address": 4766320,
+  "size": 22,
+  "body_size": 22,
+  "source": "src/conf_open_read.c",
+  "symbol": "_op_conf_open_read",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 4933692,
+      "symbol": "_op_conf_read_mode",
+      "kind": "dir32"
+    },
+    {
+      "offset": 13,
+      "address": 4766440,
+      "symbol": "_op_conf_open",
+      "kind": "rel32-call"
+    }
+  ]
+}

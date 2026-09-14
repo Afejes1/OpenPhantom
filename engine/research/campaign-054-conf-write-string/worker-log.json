@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "conf_write_string",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed configuration stream wrappers with verified cdecl services",
+      "started_utc": "2026-09-14T06:45:42.038861+00:00",
+      "finished_utc": "2026-09-14T06:45:43.676517+00:00",
+      "returncode": 1,
+      "source_sha256": "dc64aa3750b97c66b5dfab55c03163990e468b151b544dd6e914c8b41609b188",
+      "report": "engine/build/campaign-001-conf_write_string-ed2965a76669/research-result.json",
+      "report_sha256": "7af726e765ff2be438acbc252b0f2772f008a6a32706eec8ac827cb3a623c8d9",
+      "status": "mismatch",
+      "candidate_size": 90,
+      "different_bytes": null,
+      "elapsed_seconds": 1.411043,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Use original observed inline strlen intrinsic; same real locals and call order",
+      "started_utc": "2026-09-14T06:47:50.376619+00:00",
+      "finished_utc": "2026-09-14T06:47:51.996083+00:00",
+      "returncode": 0,
+      "source_sha256": "de511d41028ddcc4c7acfaf6a874750dabe76f96179043233b2aff3dda3d35cd",
+      "report": "engine/build/campaign-001-conf_write_string-2d2bc275e0d9/research-result.json",
+      "report_sha256": "7250421719583c5aaec6da34d84ce663f129744dab2981f4018f5de1ee9b53d8",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 95,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.39871,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T06:55:37.314669+00:00"
+}

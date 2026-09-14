@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "conf_write_bytes",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural typed configuration stream wrappers with verified cdecl services",
+      "started_utc": "2026-09-14T06:45:43.682554+00:00",
+      "finished_utc": "2026-09-14T06:45:45.304291+00:00",
+      "returncode": 0,
+      "source_sha256": "20fe9453bd4a43e91e21fbd19791ccae892e0a7b29222f0ce099bb6cd8aa5e5c",
+      "report": "engine/build/campaign-001-conf_write_bytes-b88d5742b1d4/research-result.json",
+      "report_sha256": "59261191d9eb59bec6a1185b1856aac85742b427807254e3852a08af2566142a",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 73,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.402693,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T06:55:37.314669+00:00"
+}

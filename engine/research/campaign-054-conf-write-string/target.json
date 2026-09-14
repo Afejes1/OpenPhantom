@@ -1,0 +1,33 @@
+{
+  "id": "conf_write_string",
+  "address": 4766862,
+  "size": 95,
+  "body_size": 95,
+  "source": "src/conf_write_string.c",
+  "symbol": "_op_conf_write_string",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 9,
+      "address": 8784756,
+      "symbol": "_op_conf_write_handle",
+      "kind": "dir32"
+    },
+    {
+      "offset": 54,
+      "address": 8784756,
+      "symbol": "_op_conf_write_handle",
+      "kind": "dir32"
+    },
+    {
+      "offset": 60,
+      "address": 8816192,
+      "symbol": "_op_conf_services",
+      "kind": "dir32"
+    }
+  ]
+}

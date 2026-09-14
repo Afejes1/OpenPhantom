@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "conf_write_bytes",
+  "candidate": "candidate.c",
+  "symbol": "_op_conf_write_bytes",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "campaign-054",
+  "started_utc": "2026-09-14T06:31:00Z",
+  "stop_implementation_utc": "2026-09-14T07:06:00Z",
+  "deadline_utc": "2026-09-14T07:16:00Z",
+  "functions": [
+    "conf_open_read",
+    "conf_close_write",
+    "conf_write_string",
+    "conf_write_bytes",
+    "conf_read_bytes",
+    "conf_get_file"
+  ],
+  "full_target_bytes": 336,
+  "address_operands": 21,
+  "status": "complete",
+  "prepared_utc": "2026-09-14T06:44:00Z",
+  "independent_packet_review": "comparison_inventory approved spans/ABIs/oracles; removed callback mutation of mode token and pinned partial service-view size",
+  "baseline_commit": "51d95a36317964f1f02c8f8a95e43cc2494b0f28",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T06:55:37.314669+00:00"
+}

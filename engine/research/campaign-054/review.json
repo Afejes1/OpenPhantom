@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T06:55:37.314669+00:00",
+  "conclusion": "approved-six-exact",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "conf_close_write",
+      "address": 4766793,
+      "full_span_bytes": 69,
+      "body_bytes": 69,
+      "candidate_size": 69,
+      "verified_operands": 8,
+      "different_bytes": 0,
+      "checks": 140832,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-054-conf-close-write/result.json"
+    },
+    {
+      "id": "conf_get_file",
+      "address": 4768105,
+      "full_span_bytes": 10,
+      "body_bytes": 10,
+      "candidate_size": 10,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 1296,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-054-conf-get-file/result.json"
+    },
+    {
+      "id": "conf_open_read",
+      "address": 4766320,
+      "full_span_bytes": 22,
+      "body_bytes": 22,
+      "candidate_size": 22,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 29376,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-054-conf-open-read/result.json"
+    },
+    {
+      "id": "conf_read_bytes",
+      "address": 4767149,
+      "full_span_bytes": 67,
+      "body_bytes": 67,
+      "candidate_size": 67,
+      "verified_operands": 4,
+      "different_bytes": 0,
+      "checks": 100608,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-054-conf-read-bytes/result.json"
+    },
+    {
+      "id": "conf_write_bytes",
+      "address": 4766957,
+      "full_span_bytes": 73,
+      "body_bytes": 73,
+      "candidate_size": 73,
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "checks": 85248,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-054-conf-write-bytes/result.json"
+    },
+    {
+      "id": "conf_write_string",
+      "address": 4766862,
+      "full_span_bytes": 95,
+      "body_bytes": 95,
+      "candidate_size": 95,
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "checks": 85248,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-054-conf-write-string/result.json"
+    }
+  ],
+  "observations": [
+    "All84 current snapshot inputs and12 selected final reports rehashed;16 invocation receipts retained.",
+    "Five functions matched first compile; string writer matched second after the observed VC5 strlen intrinsic directive.",
+    "Caller/callee evidence corrects stale void open_read and thiscall write_bytes decompiler signatures.",
+    "Read/write callbacks are cdecl(handle,data,count); close(handle) is cdecl, and complete service offsets are asserted.",
+    "Full expected snapshots cover disabled paths, exact counts, captured string length, service-table mutation and close-clear-copy-last-byte ordering.",
+    "Callback-time mode-token mutation was removed before first compile.",
+    "Two fixture compile failures retained: expected-char conversion changed to explicit constant branches; unused getter helper removed."
+  ],
+  "limitations": [
+    "NULL read data and very large lengths are observer-forwarding cases only.",
+    "No original stream operation or external token content executes; whole-executable identity remains pending."
+  ]
+}
