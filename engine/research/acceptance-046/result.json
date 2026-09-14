@@ -23,5 +23,15 @@
     "sha256": "6f0fb1fe9cacc65ccea0e851bb1d931b0504188de4c84c6eed1f42a12f3d869d",
     "returncode": 0
   },
-  "independent_review": "comparison_inventory approved three include-only source substitutions, authored reset/resize dispatch and connected live-state oracles; parent proved exact 264-entry target and registry prefixes"
+  "independent_review": "comparison_inventory approved three include-only source substitutions, authored reset/resize dispatch and connected live-state oracles; parent proved exact 264-entry target and registry prefixes",
+  "initial_validation_attempt": {
+    "source_commit": "68a63bbe8b78b385cf1fc579aed6f45ba8b5c34c",
+    "build_id": "20260914-070726-6056aa13",
+    "original_build_completed": true,
+    "accepted": false,
+    "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34836620444",
+    "supplemental_ci_conclusion": "failure",
+    "reason": "Modern C4702 rejected an unreachable fixture return after exit(2); source fingerprint audit also found two older local CRLF fixture files differed from Git LF bytes.",
+    "correction": "Remove the unreachable fixture return and normalize the two older fixture files to their existing committed Git bytes. No canonical source, target, registry, ABI, or byte-comparison changes."
+  }
 }

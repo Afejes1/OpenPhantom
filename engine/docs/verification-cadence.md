@@ -49,3 +49,9 @@ continues to certify only its named source checkpoint.
 [Campaign rules](campaign-rules.md) define preparation, worker ownership, time
 caps, independent review and the 5% near-match scheduling category. That category
 does not change this document's exact acceptance or batch-checkpoint requirements.
+
+## Checkout byte identity
+
+The final ten-hour audit found that Git could report a clean tree while two local fixture files retained CRLF endings and their committed blobs used LF under `.gitattributes`. Function comparisons still passed, but the build source fingerprint differed from a fresh checkout and caused publication progress checks to fail. Preserve those historical receipts and disclose the discrepancy.
+
+Before publishing a new accepted checkpoint, compare every input in its source snapshot against the bytes of the corresponding Git blob at the recorded source revision. A clean `git status` alone is insufficient. Normalize any proven line-ending-only mismatch to the existing committed bytes, then rebuild and record fresh evidence. Do not rewrite old evidence or silently normalize its hashes. Regenerate and check progress after all source edits and after recording the accepted event.

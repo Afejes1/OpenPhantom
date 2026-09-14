@@ -430,7 +430,6 @@ int op_debug_resize(unsigned int window, int width, int height)
         return dr2_resize(window, width, height);
     default:
         exit(2);
-        return 0;
     }
 }
 
