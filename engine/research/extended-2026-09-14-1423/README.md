@@ -1,0 +1,3 @@
+# Two-hour module continuation
+
+Fixed window: 2026-09-14 14:23:45 to 16:23:45 UTC. Stop new implementation at 16:08:45. Start at 273 accepted functions (event70), with reviewed module_start_all pending integration. Prioritize open/close, then install and evidence-driven module followups. Follow engine/docs/campaign-rules.md: bounded candidate attempts, exact full function extents and operands, meaningful authored fixtures, independent review, grouped acceptance. Research remains separate from accepted counts. Parent owns all writes. Original program remains static/read-only; only authored fixtures execute inside the locked Docker environment. No automatic deadline extension.

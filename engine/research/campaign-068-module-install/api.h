@@ -1,5 +1,5 @@
-#ifndef OP_MODULE_H
-#define OP_MODULE_H
+#ifndef OP_C068_INSTALL_H
+#define OP_C068_INSTALL_H
 #include <stddef.h>
 typedef union OP_MODULE_STATUS {
     unsigned int raw;
@@ -42,11 +42,7 @@ int op_module_broadcast_event(int, unsigned int, unsigned int);
 int op_module_suspend_all(int);
 int op_module_resume_all(int);
 int op_module_stop_all(int);
-extern int op_module_open;
-int op_module_start_all(int);
-int op_module_open_all(void);
-void op_module_close_all(void);
-int op_module_install(unsigned int, const char *);
 void *op_allocate(unsigned int);
+int op_module_install(unsigned int, const char *);
 char *op_copy_keyframe_name(char *, const char *, unsigned int);
 #endif

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "status": "active",
+  "started_utc": "2026-09-14T14:23:45Z",
+  "implementation_stop_utc": "2026-09-14T16:08:45Z",
+  "deadline_utc": "2026-09-14T16:23:45Z",
+  "baseline_accepted": 273,
+  "baseline_event": 70,
+  "baseline_commit": "368496a3afd9d4c7f71003d246dabb6165c243c7",
+  "pending_exact": [
+    "module_start_all"
+  ],
+  "priority": [
+    "module_open_all",
+    "module_close_all",
+    "module_install"
+  ],
+  "ownership": "Parent sole source/Git writer; existing independent reviewer reads only.",
+  "current_work": "A048 integration review:four exact functions,277 registered;273accepted until shared checkpoint.",
+  "focused_new_exact": 3,
+  "acceptance_pending": "research/acceptance-048/result.json"
+}

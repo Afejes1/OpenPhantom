@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "module_close_all",
+  "implementation_started_utc": "2026-09-14T14:31:08.523580+00:00",
+  "implementation_cutoff_utc": "2026-09-14T14:46:08.523580+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural module open/close gates, live traversal and callback state ordering",
+      "started_utc": "2026-09-14T14:31:10.894583+00:00",
+      "finished_utc": "2026-09-14T14:31:12.534214+00:00",
+      "returncode": 0,
+      "source_sha256": "7825e35fb574732971fab1906c44ba5aedc8c3cace7723f01bbd3e4b760bf1ee",
+      "report": "engine/build/campaign-001-module_close_all-3b897373758e/research-result.json",
+      "report_sha256": "ab74ac0bd69f24bb2c48e5e37a341c92f14c41a8d7567cf6be5684bab45708b7",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 86,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.402771,
+      "stderr": ""
+    }
+  ],
+  "frozen_utc": "2026-09-14T14:34:29.664844+00:00",
+  "status": "exact-final-verified-awaiting-review"
+}

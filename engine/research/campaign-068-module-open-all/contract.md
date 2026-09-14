@@ -1,0 +1,3 @@
+# module_open_all
+
+Complete no-tail span and all operands were independently confirmed against Ghidra before experiments. See ../extended-2026-09-14-1325/module-queue.json. Authored guarded five-node fixtures cover both gate values across zero/signed extremes, rotated lists, high status words, callback identity and arguments, reverse/forward live-link truncation/skipping, global replacements and live status writes. Expected visit plans and full node/global snapshots precede execution. Open publishes flag1 before callbacks and preserves later callback writes; close clears only the open flag at final cleanup and never clears status. No original execution, exclusions or warning waivers.

@@ -5105,6 +5105,82 @@
         "Broadcasts read current links after callbacks; targeted dispatch propagates the signed callback return."
       ],
       "exceptions": []
+    },
+    {
+      "id": "module_start_all",
+      "module": "module",
+      "analysis_name": "module_start_all",
+      "purpose": "Reconstruct module lifecycle, allocation and callback state transitions.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-lifecycle-acceptance.md",
+        "research/campaign-067-module-start-all/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Full callback-visible state, live list traversal and post-callback status/ID writes are retained.",
+        "External allocator and bounded-copy symbols preserve their existing original addresses."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "module_open_all",
+      "module": "module",
+      "analysis_name": "module_open_all",
+      "purpose": "Reconstruct module lifecycle, allocation and callback state transitions.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-lifecycle-acceptance.md",
+        "research/campaign-068-module-open-all/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Full callback-visible state, live list traversal and post-callback status/ID writes are retained.",
+        "External allocator and bounded-copy symbols preserve their existing original addresses."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "module_close_all",
+      "module": "module",
+      "analysis_name": "module_close_all",
+      "purpose": "Reconstruct module lifecycle, allocation and callback state transitions.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-lifecycle-acceptance.md",
+        "research/campaign-068-module-close-all/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Full callback-visible state, live list traversal and post-callback status/ID writes are retained.",
+        "External allocator and bounded-copy symbols preserve their existing original addresses."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "module_install",
+      "module": "module",
+      "analysis_name": "module_install",
+      "purpose": "Reconstruct module lifecycle, allocation and callback state transitions.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-lifecycle-acceptance.md",
+        "research/campaign-068-module-install/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_lifecycle_behavior.c"
+      ],
+      "quirks": [
+        "Full callback-visible state, live list traversal and post-callback status/ID writes are retained.",
+        "External allocator and bounded-copy symbols preserve their existing original addresses."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

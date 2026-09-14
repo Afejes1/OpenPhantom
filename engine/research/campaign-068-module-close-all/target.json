@@ -1,0 +1,33 @@
+{
+  "id": "module_close_all",
+  "address": 4648206,
+  "size": 86,
+  "body_size": 86,
+  "source": "src/module_close_all.c",
+  "symbol": "_op_module_close_all",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 7169232,
+      "symbol": "_op_module_open",
+      "kind": "dir32"
+    },
+    {
+      "offset": 16,
+      "address": 7169220,
+      "symbol": "_op_module_head",
+      "kind": "dir32"
+    },
+    {
+      "offset": 74,
+      "address": 7169232,
+      "symbol": "_op_module_open",
+      "kind": "dir32"
+    }
+  ]
+}

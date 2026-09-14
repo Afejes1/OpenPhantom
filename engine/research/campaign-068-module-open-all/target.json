@@ -1,0 +1,39 @@
+{
+  "id": "module_open_all",
+  "address": 4648069,
+  "size": 137,
+  "body_size": 137,
+  "source": "src/module_open_all.c",
+  "symbol": "_op_module_open_all",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 15,
+      "address": 7169228,
+      "symbol": "_op_module_initialized",
+      "kind": "dir32"
+    },
+    {
+      "offset": 24,
+      "address": 7169232,
+      "symbol": "_op_module_open",
+      "kind": "dir32"
+    },
+    {
+      "offset": 33,
+      "address": 7169232,
+      "symbol": "_op_module_open",
+      "kind": "dir32"
+    },
+    {
+      "offset": 42,
+      "address": 7169224,
+      "symbol": "_op_module_tail",
+      "kind": "dir32"
+    }
+  ]
+}

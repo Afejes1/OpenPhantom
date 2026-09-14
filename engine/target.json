@@ -9848,6 +9848,168 @@
           "kind": "dir32"
         }
       ]
+    },
+    {
+      "id": "module_start_all",
+      "address": 4648958,
+      "size": 193,
+      "body_size": 193,
+      "source": "src/module_start_all.c",
+      "symbol": "_op_module_start_all",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 24,
+          "address": 4650281,
+          "symbol": "_op_module_find_by_id",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 99,
+          "address": 7169220,
+          "symbol": "_op_module_head",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "module_open_all",
+      "address": 4648069,
+      "size": 137,
+      "body_size": 137,
+      "source": "src/module_open_all.c",
+      "symbol": "_op_module_open_all",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 15,
+          "address": 7169228,
+          "symbol": "_op_module_initialized",
+          "kind": "dir32"
+        },
+        {
+          "offset": 24,
+          "address": 7169232,
+          "symbol": "_op_module_open",
+          "kind": "dir32"
+        },
+        {
+          "offset": 33,
+          "address": 7169232,
+          "symbol": "_op_module_open",
+          "kind": "dir32"
+        },
+        {
+          "offset": 42,
+          "address": 7169224,
+          "symbol": "_op_module_tail",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "module_close_all",
+      "address": 4648206,
+      "size": 86,
+      "body_size": 86,
+      "source": "src/module_close_all.c",
+      "symbol": "_op_module_close_all",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 6,
+          "address": 7169232,
+          "symbol": "_op_module_open",
+          "kind": "dir32"
+        },
+        {
+          "offset": 16,
+          "address": 7169220,
+          "symbol": "_op_module_head",
+          "kind": "dir32"
+        },
+        {
+          "offset": 74,
+          "address": 7169232,
+          "symbol": "_op_module_open",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "module_install",
+      "address": 4648292,
+      "size": 299,
+      "body_size": 299,
+      "source": "src/module_install.c",
+      "symbol": "_op_module_install",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 23,
+          "address": 4805264,
+          "symbol": "_op_allocate",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 117,
+          "address": 4828192,
+          "symbol": "_op_copy_keyframe_name",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 129,
+          "address": 7169224,
+          "symbol": "_op_module_tail",
+          "kind": "dir32"
+        },
+        {
+          "offset": 147,
+          "address": 7169224,
+          "symbol": "_op_module_tail",
+          "kind": "dir32"
+        },
+        {
+          "offset": 155,
+          "address": 7169224,
+          "symbol": "_op_module_tail",
+          "kind": "dir32"
+        },
+        {
+          "offset": 169,
+          "address": 7169224,
+          "symbol": "_op_module_tail",
+          "kind": "dir32"
+        },
+        {
+          "offset": 175,
+          "address": 7169220,
+          "symbol": "_op_module_head",
+          "kind": "dir32"
+        },
+        {
+          "offset": 186,
+          "address": 7169220,
+          "symbol": "_op_module_head",
+          "kind": "dir32"
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "module_install",
+  "candidate": "candidate.c",
+  "symbol": "_op_module_install",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

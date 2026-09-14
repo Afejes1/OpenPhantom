@@ -362,6 +362,7 @@ char *op_copy_keyframe_name(char *out, const char *in, unsigned int count)
 {
     unsigned int i;
     int ended = 0;
+    if(mii_active)return mii_copy(out,in,count);
     if(ltok_active)return ltok_copy(out,in,count);
     if(cfcy_active)return cfcy_copy(out,in,count);
     if(cfcw_active)return cfcw_copy(out,in,count);

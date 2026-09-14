@@ -22,6 +22,7 @@ typedef struct MIN_OWNED_MODULE
 static MIN_OWNED_MODULE min_nodes[5], min_expected_nodes[5];
 OP_MODULE *op_module_head, *op_module_tail;
 int op_module_initialized;
+int op_module_open;
 static OP_MODULE *min_expected_head, *min_expected_tail;
 static int min_expected_initialized;
 static const int min_keys[] = {0, 1, -1, INT_MIN, INT_MAX, 73};

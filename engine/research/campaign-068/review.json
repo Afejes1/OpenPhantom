@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T14:39:27.767691+00:00",
+  "conclusion": "approved-three-exact",
+  "functions": [
+    "module_open_all",
+    "module_close_all",
+    "module_install"
+  ],
+  "observations": [
+    "Static full spans and all15operand bindings independently confirmed.",
+    "Open/close guarded live-list and state oracles approved;725760/1108800checks and nativeDockerparity.",
+    "Install allocation/copy/callback ordering and complete guarded states independently approved;119040checks and14source snapshots verified.",
+    "Existing copy-helper alias retained; one VC5fixture cast correction preserved without waiver.",
+    "Parent rehashed all four focused cases and eight final reports before integration."
+  ]
+}

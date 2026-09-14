@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "status": "focused-exact-integration-review",
+  "started_utc": "2026-09-14T14:31:08.523580+00:00",
+  "deadline_utc": "2026-09-14T15:16:08.523580+00:00",
+  "functions": [
+    "module_open_all",
+    "module_close_all",
+    "module_install"
+  ],
+  "frozen_utc": "2026-09-14T14:40:32.949839+00:00",
+  "implementation_compiles": 4,
+  "exact_functions": 3,
+  "full_span_bytes": 522,
+  "verified_operands": 15,
+  "fixture_checks": 1953600,
+  "acceptance": "research/acceptance-048/result.json"
+}
