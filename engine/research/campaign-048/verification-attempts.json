@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "attempts": [
+    {
+      "id": "normal_from_three_points",
+      "started_utc": "2026-09-14T04:39:02.124181+00:00",
+      "finished_utc": "2026-09-14T04:39:03.735144+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-normal_from_three_points-c12103e066f2\\research-result.json",
+      "report_sha256": "b19f3db0c00a11f51b6b993bb049eaffbc62a47d8d4211d7d73aa047d422227b",
+      "stderr": ""
+    },
+    {
+      "id": "normal_from_three_points",
+      "started_utc": "2026-09-14T04:39:03.742435+00:00",
+      "finished_utc": "2026-09-14T04:39:09.568995+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-normal_from_three_points-aeec9fd3e9c3\\research-result.json",
+      "report_sha256": "529db701f43c6b2f5b91116a581c3284a0da829a534d111c4c79b1ca0842550e",
+      "stderr": ""
+    },
+    {
+      "id": "euler_affine_transform",
+      "started_utc": "2026-09-14T04:41:53.603595+00:00",
+      "finished_utc": "2026-09-14T04:41:55.206471+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-euler_affine_transform-fa3764b6f2fa\\research-result.json",
+      "report_sha256": "1cce9b5f3f15faf4d4229ba7ebf6b46c0eac9126c606097e780054db017c7b6b",
+      "stderr": ""
+    },
+    {
+      "id": "euler_affine_transform",
+      "started_utc": "2026-09-14T04:41:55.213566+00:00",
+      "finished_utc": "2026-09-14T04:42:00.847856+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-euler_affine_transform-2052851ed6fe\\research-result.json",
+      "report_sha256": "f5835193f5977066731091fcedfb3350c732a88113d047fe723e6a37dc078426",
+      "stderr": ""
+    }
+  ]
+}

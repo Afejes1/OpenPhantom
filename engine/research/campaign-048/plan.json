@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "campaign-048",
+  "started_utc": "2026-09-14T04:31:00Z",
+  "stop_implementation_utc": "2026-09-14T05:06:00Z",
+  "deadline_utc": "2026-09-14T05:16:00Z",
+  "baseline_commit": "fa734164a4abb7e5bed9ed8d4ef80f3f2bf22750",
+  "functions": [
+    "normal_from_three_points",
+    "euler_affine_transform"
+  ],
+  "status": "complete",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T04:45:56.062653+00:00"
+}

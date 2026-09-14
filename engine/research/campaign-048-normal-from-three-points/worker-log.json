@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "normal_from_three_points",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Two semantic edge vectors and ordered callback/cross sequence match first compile",
+      "started_utc": "2026-09-14T04:37:35.882905+00:00",
+      "finished_utc": "2026-09-14T04:37:37.525296+00:00",
+      "returncode": 0,
+      "source_sha256": "4d48f96393dff95f7fe5a7983d88c8186b02252120afdacd59d79876369adddb",
+      "report": "engine/build/campaign-001-normal_from_three_points-c09a24697164/research-result.json",
+      "report_sha256": "76df75dc1f1749842b4492772e359d847a06d9143130fc30ccbd737f2fd0d038",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 214,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.422042,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T04:45:56.062653+00:00"
+}

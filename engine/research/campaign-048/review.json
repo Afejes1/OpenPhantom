@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T04:45:56.062653+00:00",
+  "conclusion": "approved-one-exact-one-research",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "euler_affine_transform",
+      "address": 4704960,
+      "full_span_bytes": 263,
+      "verified_operands": 3,
+      "different_bytes": 38,
+      "different_percent": 14.448669201520913,
+      "checks": 2593,
+      "evidence_category": "research-candidate",
+      "team_status": "not_done",
+      "result": "research/campaign-048-euler-affine-transform/result.json"
+    },
+    {
+      "id": "normal_from_three_points",
+      "address": 4703664,
+      "full_span_bytes": 214,
+      "verified_operands": 4,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 3841,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-048-normal-from-three-points/result.json"
+    }
+  ],
+  "observations": [
+    "All28 final source snapshot members, four final report hashes and seven attempt-report hashes verified.",
+    "Normal edge and cross-product literal oracles preserve capture order, callback mutations and exact owned aliases.",
+    "Euler dyadic basis word oracles recompute independently; live angle reload and late translation reads are covered.",
+    "All dependencies remain authored observers and floating-point state is restored."
+  ],
+  "limitations": [
+    "Euler remains38-byte-mismatch research and is frozen early.",
+    "Four normal address operands plus a separately verified fixed threshold immediate; the immediate is not a relocation binding."
+  ]
+}

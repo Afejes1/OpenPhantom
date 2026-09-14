@@ -1,0 +1,39 @@
+{
+  "id": "normal_from_three_points",
+  "address": 4703664,
+  "size": 214,
+  "body_size": 214,
+  "source": "src/normal_from_three_points.c",
+  "symbol": "_op_normal_from_three_points",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 97,
+      "address": 4743749,
+      "symbol": "_op_vector_normalize",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 111,
+      "address": 4743749,
+      "symbol": "_op_vector_normalize",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 184,
+      "address": 4743749,
+      "symbol": "_op_vector_normalize",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 203,
+      "address": 4704402,
+      "symbol": "_op_vector_snap_small",
+      "kind": "rel32-call"
+    }
+  ]
+}
