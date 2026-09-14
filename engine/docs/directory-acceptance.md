@@ -1,0 +1,9 @@
+# Directory enumeration acceptance
+
+Four exact directory-enumeration functions add507 complete bytes and10 verified address operands. Prior193 target and registry entries remain unchanged; each source body differs from its frozen case only by the shared header include. The one-shot wrapper remains research with a77-byte candidate versus85-byte full target.
+
+The four reviewed focused fixtures remain present under unique local names and route through shared allocation, formatter, enumeration and release observers. Signed modes, NULL allocation/state, one leading extension dot, complete524-byte zero initialization, ignored close/formatter returns, position wrap and failure output preservation retain their original coverage.
+
+A connected lifecycle additionally calls actual open->first read->next read->rewind->first read->close on the same guarded owned object. It includes first/next failure scenarios, callback position/handle/pattern replacement, the rewind's postcallback position reset, new first-search handle storage, retained outputs on failure, and final root release. Names, attributes and last-write time have authored expectations; file-size remains a distinct ignored field. Every callback checks full object/output/input/format snapshots. Failure handle words are mechanically observed and do not claim real OS-handle validity.
+
+The single variadic formatter reads additional extension arguments only while the directory fixture is active; existing sprite/font/save paths retain their routing. All heap, formatter and CRT/OS enumeration/close services are authored observers. No original game or actual enumeration/free operation runs. No byte exclusions or VC5 warning waivers; modern supplemental CRT compatibility remains documented. Function matches and authored integration tests do not establish whole-executable identity.

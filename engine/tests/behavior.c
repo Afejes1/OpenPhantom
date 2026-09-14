@@ -124,6 +124,7 @@ static void clip_flag_tests(void)
 #include "normal_behavior.c"
 #include "save_stream_behavior.c"
 #include "save_slots_behavior.c"
+#include "directory_behavior.c"
 #include "palette_resources_behavior.c"
 #include "matrix_helpers_behavior.c"
 #include "canvas_face_behavior.c"
@@ -229,6 +230,11 @@ int main(void)
     failures += op_test_colormap_writer();
     failures += op_test_point_plane_distance();
     failures += op_test_vector_angle();
+    failures += op_test_directory_open();
+    failures += op_test_directory_close();
+    failures += op_test_directory_rewind();
+    failures += op_test_directory_read();
+    failures += op_test_directory_lifecycle();
     failures += op_test_save_stream();
     failures += op_test_save_slot_labels();
     failures += op_test_save_slot_chains();

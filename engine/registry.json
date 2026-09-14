@@ -3568,6 +3568,78 @@
         "Numeric team address is authoritative when manifest names conflict with observed behavior."
       ],
       "exceptions": []
+    },
+    {
+      "id": "directory_open",
+      "module": "fileutil",
+      "analysis_name": "directory_open",
+      "purpose": "Allocate524bytes and returnnull on allocation failure; otherwise zero all524bytes. Signed modes0/1/2 format pattern@8 with external all-format and path. Mode3 dereferences extension, skips exactly one leading dot, and formats with external extension-format,path,selected extension pointer. Other modes return the zeroed object without formatting. ExtensionNULL is tested only outside mode3. Formatter returns ignored. All allocation/path/extension/format state is authored and guarded; no input/object overlap.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/directory-acceptance.md",
+        "research/campaign-052-directory-open/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/directory_behavior.c"
+      ],
+      "quirks": [
+        "Real open/read/rewind/close lifecycle connected; allocation/formatter/CRT enumeration and handle/heap release remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "directory_close",
+      "module": "fileutil",
+      "analysis_name": "directory_close",
+      "purpose": "Capture the original state pointer. If nonnull and position is nonzero, call find_close(captured find_handle), ignoring its result. If state is nonnull, release that same state, with all callback mutations still visible. No field is cleared. Null states and mechanically forwarded handle words are observer-only, not real OS-handle safety claims.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/directory-acceptance.md",
+        "research/campaign-052-directory-close/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/directory_behavior.c"
+      ],
+      "quirks": [
+        "Real open/read/rewind/close lifecycle connected; allocation/formatter/CRT enumeration and handle/heap release remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "directory_rewind",
+      "module": "fileutil",
+      "analysis_name": "directory_rewind",
+      "purpose": "If state is nonnull and position is nonzero, call find_close(captured handle), ignoring result. For every nonnull state store position0 afterward, overwriting callback position replacement while retaining other mutations; the handle is not cleared. Null state does nothing.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/directory-acceptance.md",
+        "research/campaign-052-directory-rewind/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/directory_behavior.c"
+      ],
+      "quirks": [
+        "Real open/read/rewind/close lifecycle connected; allocation/formatter/CRT enumeration and handle/heap release remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "directory_read",
+      "module": "fileutil",
+      "analysis_name": "directory_read",
+      "purpose": "Null state returns0 with no output change. Increment the unsigned position word before selecting first/next based on its OLD value, preserving modulo32 wrap. First writes returned find_first(pattern,&data) handle at520 even on -1; next uses captured handle and does not overwrite it afterward. Only result-1 fails. Otherwise intrinsic strcpy copies the terminated name from CRT data@20 to output@0, attributes&0x10 tooutput260 and LAST-WRITE TIME fromdata12 tooutput264; size@16 is not exported. CRT data280 and output268 views are independently supported by backend analysis. Authored names lengths0/1/3/4/31/259 and complete guards define a bounded nonoverlap domain. Failure leaves output untouched and never reads uninitialized find-data.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/directory-acceptance.md",
+        "research/campaign-052-directory-read/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/directory_behavior.c"
+      ],
+      "quirks": [
+        "Real open/read/rewind/close lifecycle connected; allocation/formatter/CRT enumeration and handle/heap release remain authored observers."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

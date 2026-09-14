@@ -216,7 +216,7 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Acceptance037 planning: integrate four exact directory helpers and actual open/read/rewind/close lifecycle; one-shot wrapper remains layout research.",
+  "current_work": "Acceptance037 integration applied: four exact directory helpers and real open/read/rewind/close lifecycle; pending review and clean checkpoint.",
   "original_game_executed": false,
   "accepted_functions_current": 193,
   "evidence_records_current": 59,

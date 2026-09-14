@@ -464,6 +464,8 @@ int op_format_sprite_name(char *dest, char *format, ...)
     va_list args;
     char *base;
     unsigned int length;
+    if(dcy_active){char *ext;va_start(args,format);base=va_arg(args,char *);ext=va_arg(args,char *);va_end(args);return dcy_format(dest,format,base,ext);}
+    if(dop_active){char *ext=0;va_start(args,format);base=va_arg(args,char *);if(dop_modes[dop_mode_case]==3)ext=va_arg(args,char *);va_end(args);if(dop_modes[dop_mode_case]==3)return dop_format(dest,format,base,ext);return dop_format(dest,format,base);}
     if(ssp_active){int slot;va_start(args,format);base=va_arg(args,char *);slot=va_arg(args,int);va_end(args);return ssp_format(dest,format,base,slot);}
     va_start(args, format);
     base = va_arg(args, char *);
