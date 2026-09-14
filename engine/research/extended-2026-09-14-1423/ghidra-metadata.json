@@ -2,7 +2,7 @@
   "schema": 1,
   "program": "TPM/WMAIN.EXE",
   "port": 8192,
-  "comments_saved_utc": "2026-09-14T15:57:14Z",
+  "comments_saved_utc": "2026-09-14T16:16:10Z",
   "changes": [
     {
       "address": "0046EC0C",
@@ -52,6 +52,21 @@
     {
       "address": "0046F8E4",
       "acceptance_event": 74,
+      "kind": "plate-evidence-comment"
+    },
+    {
+      "address": "0046F9A8",
+      "acceptance_event": 75,
+      "kind": "plate-evidence-comment"
+    },
+    {
+      "address": "0046F680",
+      "acceptance_event": 75,
+      "kind": "plate-evidence-comment"
+    },
+    {
+      "address": "0046F6E4",
+      "acceptance_event": 75,
       "kind": "plate-evidence-comment"
     }
   ],

@@ -13,7 +13,7 @@
   "full_span_bytes": 370,
   "verified_operands": 6,
   "raw_functions": 0,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 3,
   "team_reported_done": 0,
   "manifest": "planning/team-manifest-20260912-1849.json",
@@ -30,5 +30,15 @@
     "correction": "Keep unconditional failed assertion and return, remove unreachable return-after-exit shape; candidates and warning policy unchanged.",
     "focused_pairs_repeated": 3,
     "shared_build_repeated": true
-  }
+  },
+  "accepted_event": "engine/evidence/runs/000075-90c2809306c715ca.json",
+  "source_commit": "70044c1afcdf54b8445e1439e079cdaaf0ca866d",
+  "build_id": "20260914-120637-0d3e87cd",
+  "source_snapshot_inputs": 491,
+  "every_source_input_matches_committed_git_blob": true,
+  "shared_matrix_checks": 6111472,
+  "shared_routing_additional_checks": 0,
+  "independent_review": "comparison_inventory approved three include-only bodies, unchanged prior 287 entries, connected path helper chain and corrected test observers; selected final receipts rehashed. Separator remains unaccepted test support.",
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34866515644",
+  "supplemental_ci_conclusion": "success"
 }

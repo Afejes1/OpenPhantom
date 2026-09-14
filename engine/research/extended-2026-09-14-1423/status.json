@@ -1,25 +1,21 @@
 {
   "schema": 1,
-  "status": "active",
+  "status": "validation-complete-closing-window",
   "started_utc": "2026-09-14T14:23:45Z",
   "implementation_stop_utc": "2026-09-14T16:08:45Z",
   "deadline_utc": "2026-09-14T16:23:45Z",
   "baseline_accepted": 273,
   "baseline_event": 70,
   "baseline_commit": "368496a3afd9d4c7f71003d246dabb6165c243c7",
-  "pending_exact": [
-    "path_directory_offset",
-    "path_copy_nth_directory",
-    "path_copy_filename"
-  ],
+  "pending_exact": [],
   "priority": [],
   "ownership": "Parent sole source/Git writer; existing independent reviewer reads only.",
-  "current_work": "A052 corrected fixture passes focused validation; replacement shared build and CI pending. No new implementation planned.",
+  "current_work": "All five checkpoints complete; final publication and fixed-deadline closeout remain.",
   "focused_new_exact": 16,
-  "acceptance_pending": "research/acceptance-052/result.json",
-  "accepted_new": 14,
-  "accepted_current": 287,
-  "evidence_event_current": 74,
-  "remaining_current": 664,
-  "local_team_not_done_current": 279
+  "acceptance_pending": null,
+  "accepted_new": 17,
+  "accepted_current": 290,
+  "evidence_event_current": 75,
+  "remaining_current": 661,
+  "local_team_not_done_current": 282
 }
