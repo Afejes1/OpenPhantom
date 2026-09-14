@@ -1,0 +1,7 @@
+# Acceptance039 results
+
+Six configuration-stream functions bring the accepted baseline from 203 to 209. Their complete 336 bytes and 21 verified address operands match with zero differences after verified relocation adjustment, no byte exclusions, and no VC5 warning waivers. Clean source df7855f627e2ee141fdc30e554c3ca5023533a67 builds as 20260914-030407-8f2a686b. All 209 comparisons and shared authored tests pass. [Event62](../../evidence/runs/000062-b7c3bbcb76882b23.json) records the source snapshot; [same-source supplemental CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34816118340) succeeds.
+
+All 442,608 focused checks remain in the shared fixture. A further 20,400 connected checks execute the actual getter/read/byte-write/string-write/close functions, validate changed service tables and handles, and confirm that closing disables subsequent writes while preserving separate input state. Callback snapshots enforce handle clearing before the bounded copy and the final name-byte store afterward. Independent review confirmed unchanged 203-entry prefixes, include-only candidate substitution, unique callback routing and guarded owned storage. All six additions are team-not_done.
+
+The core open and external services remain authored observers; no actual stream or original content runs. Null reader data and very large counts remain observer-forwarding cases. The partial service view and original token content limits are explicit. Whole-executable identity remains pending.

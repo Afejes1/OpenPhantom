@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **198** team-not-done entries and **5** team-done entries.
-Team-not-done entries without a local recorded match: **771**.
+Our last recorded matches cover **204** team-not-done entries and **5** team-done entries.
+Team-not-done entries without a local recorded match: **765**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -114,7 +114,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | rdroid/rdpuppet.c | 20 | 5 | 15 |
 | rdroid/rdsprite.c | 5 | 0 | 5 |
 | std/std3d.c | 11 | 0 | 11 |
-| std/stdconf.c | 16 | 0 | 16 |
+| std/stdconf.c | 16 | 6 | 10 |
 | std/stdcont.c | 1 | 0 | 1 |
 | std/stddisp.c | 7 | 0 | 7 |
 | std/stdlinkl.c | 10 | 9 | 1 |
