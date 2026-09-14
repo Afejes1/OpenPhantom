@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "material_destroy",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full material and colour contract",
+      "started_utc": "2026-09-14T01:32:04.017754+00:00",
+      "finished_utc": "2026-09-14T01:32:05.679271+00:00",
+      "returncode": 0,
+      "source_sha256": "a50068aa862c0001a5cf87352b790dd2ca00675ec8d752b484b48b4bf2547610",
+      "report": "engine/build/campaign-001-material_destroy-00d8a1aefaf3/research-result.json",
+      "report_sha256": "ddf750e043261944fa926467408d56106c5e52d2d18e53ef5059c4f7dfc6e9dd",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 53,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.440358,
+      "stderr": ""
+    }
+  ]
+}

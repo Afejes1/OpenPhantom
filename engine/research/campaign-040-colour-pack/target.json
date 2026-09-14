@@ -1,0 +1,14 @@
+{
+  "id": "colour_pack",
+  "address": 4703480,
+  "size": 184,
+  "body_size": 170,
+  "source": "src/colour_pack.c",
+  "symbol": "_op_colour_pack",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

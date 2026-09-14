@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "material_install_palette",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full material and colour contract",
+      "started_utc": "2026-09-14T01:32:05.685846+00:00",
+      "finished_utc": "2026-09-14T01:32:07.341176+00:00",
+      "returncode": 0,
+      "source_sha256": "9e8033add73feec40371ff424701b6477e666d1c270623a828e0bb326414c42d",
+      "report": "engine/build/campaign-001-material_install_palette-2111bab7be41/research-result.json",
+      "report_sha256": "89e51d7bff0799df91f54f757b7c863c3621505e093366493eeb326536a4f58e",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 42,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.433382,
+      "stderr": ""
+    }
+  ]
+}

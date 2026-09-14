@@ -1,0 +1,39 @@
+{
+  "id": "material_destroy",
+  "address": 4699484,
+  "size": 53,
+  "body_size": 53,
+  "source": "src/material_destroy.c",
+  "symbol": "_op_material_destroy",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7313612,
+      "symbol": "_op_material_unload_hook",
+      "kind": "dir32"
+    },
+    {
+      "offset": 18,
+      "address": 7313612,
+      "symbol": "_op_material_unload_hook",
+      "kind": "dir32"
+    },
+    {
+      "offset": 32,
+      "address": 4699537,
+      "symbol": "_op_material_free_contents",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 44,
+      "address": 4805714,
+      "symbol": "_op_release",
+      "kind": "rel32-call"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "colour_pack",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full material and colour contract",
+      "started_utc": "2026-09-14T01:32:09.000585+00:00",
+      "finished_utc": "2026-09-14T01:32:10.641897+00:00",
+      "returncode": 1,
+      "source_sha256": "5689fe0a803e8ac028dc971b22288b44b17c75b13243a5ee21310c0a4dcb2467",
+      "report": "engine/build/campaign-001-colour_pack-6edfea236465/research-result.json",
+      "report_sha256": "1ca2e543df26f7908dc1d793532788a74a57d41fa578969defa02e79e88bad02",
+      "status": "mismatch",
+      "candidate_size": 170,
+      "different_bytes": null,
+      "elapsed_seconds": 1.412304,
+      "stderr": ""
+    }
+  ]
+}

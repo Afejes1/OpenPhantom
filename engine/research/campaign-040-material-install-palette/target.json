@@ -1,0 +1,33 @@
+{
+  "id": "material_install_palette",
+  "address": 4700563,
+  "size": 42,
+  "body_size": 42,
+  "source": "src/material_install_palette.c",
+  "symbol": "_op_material_install_palette",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 4752816,
+      "symbol": "_op_install_palette",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 26,
+      "address": 8816296,
+      "symbol": "_op_current_palette",
+      "kind": "dir32"
+    },
+    {
+      "offset": 32,
+      "address": 8816300,
+      "symbol": "_op_current_palette_index",
+      "kind": "dir32"
+    }
+  ]
+}

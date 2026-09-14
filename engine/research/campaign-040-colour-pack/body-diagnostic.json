@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "kind": "body-only-diagnostic-not-acceptance",
+  "immutable_full_target_size": 184,
+  "diagnostic_body_size": 170,
+  "unresolved_tail_bytes": 14,
+  "comparison": {
+    "id": "colour_pack",
+    "address": 4703480,
+    "size": 170,
+    "candidate_size": 170,
+    "body_size": 170,
+    "status": "raw-code-match",
+    "literal_function_match": false,
+    "layout_verified": false,
+    "adjusted_bytes": 0,
+    "object_sha256": "5ae3a52058cfdbf10d7f7dae852e8d664f8d1b05031a9af1e3770bcc547a06e9",
+    "compared_bytes": 170,
+    "dir32_bytes": 0,
+    "rel32_call_bytes": 0,
+    "internal_dir32_bytes": 0,
+    "different_bytes": 0,
+    "raw_bytes_equal": true,
+    "relocated_bytes_equal": true,
+    "reference_span_sha256": "4c4d9428ca9fc7ad264fc90f34ba64ab51e06002fd93c5b5933e2916419da418",
+    "resolved_span_sha256": "4c4d9428ca9fc7ad264fc90f34ba64ab51e06002fd93c5b5933e2916419da418"
+  },
+  "counts_as_exact_function": false,
+  "target_modified": false
+}

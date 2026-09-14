@@ -1,0 +1,7 @@
+# Acceptance027 results
+
+Five keyframe lifecycle/material-hook functions are accepted, bringing the baseline from145 to150. Their344 complete bytes match with15 verified address operands and no exclusions or warning waivers. The clean build `20260913-212841-5e5ff57d` at `9f0a705b02464c22b82db0b24e001e2afa6d5168` passes all150 comparisons and authored fixtures. [Event50](../../evidence/runs/000050-17455faa6d72cfea.json) records the immutable source snapshot; [full supplemental CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34796301129) passes on the same source.
+
+The connected lifecycle reports17801 checks. Actual hook setters, loader, free and nested free-entry run together through owned allocation/load backends. Cases cover every count0..4 and payload mask, allocation/load failure, nonzero results, custom unload bypass, callback hook mutation, captured payload clearing, final live-base clearing and root release. Direct free-entry fixtures retain bounded live-count shrink/expand and base/payload mutation checks. The132-byte header now names node_count+56 and nodes+60;44-byte nodes expose payload+40 while preserving unknown storage. All prior baseline fixtures still pass.
+
+Independent review caught a possible observer plan overrun on an unexpected extra release. Both connected and direct observers now record failure and return before indexing. No canonical function or target changed for this guard. Five promotions here were already counted as new exact research in campaign039. Whole-executable identity remains pending.

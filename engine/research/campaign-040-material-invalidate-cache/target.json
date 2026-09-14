@@ -1,0 +1,14 @@
+{
+  "id": "material_invalidate_cache",
+  "address": 4701069,
+  "size": 144,
+  "body_size": 144,
+  "source": "src/material_invalidate_cache.c",
+  "symbol": "_op_material_invalidate_cache",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

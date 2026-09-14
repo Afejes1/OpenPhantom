@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "material_invalidate_cache",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full material and colour contract",
+      "started_utc": "2026-09-14T01:32:07.347662+00:00",
+      "finished_utc": "2026-09-14T01:32:08.994932+00:00",
+      "returncode": 0,
+      "source_sha256": "afeb87e8ee37a9c5fdf0e1507ac8d8e2d9c4ee524830f16b734823f99ddf4232",
+      "report": "engine/build/campaign-001-material_invalidate_cache-4daaae5d5d60/research-result.json",
+      "report_sha256": "f27d3a9f6d79568877fd28dfe604748a20d68da1f5259c74989c4a740f37a329",
+      "status": "raw-code-match",
+      "candidate_size": 144,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.420473,
+      "stderr": ""
+    }
+  ]
+}

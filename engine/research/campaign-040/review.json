@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T01:37:43.270240+00:00",
+  "conclusion": "no-material-findings-after-span-correction",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "colour_pack",
+      "address": 4703480,
+      "full_span_bytes": 184,
+      "body_bytes": 170,
+      "evidence_category": "research-candidate",
+      "team_status": "not_done",
+      "verified_operands": 0,
+      "different_bytes": null,
+      "checks": 608,
+      "implementation_attempts": 1,
+      "result": "research/campaign-040-colour-pack/result.json"
+    },
+    {
+      "id": "material_destroy",
+      "address": 4699484,
+      "full_span_bytes": 53,
+      "body_bytes": 53,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 4,
+      "different_bytes": 0,
+      "checks": 96,
+      "implementation_attempts": 1,
+      "result": "research/campaign-040-material-destroy/result.json"
+    },
+    {
+      "id": "material_install_palette",
+      "address": 4700563,
+      "full_span_bytes": 42,
+      "body_bytes": 42,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "checks": 20,
+      "implementation_attempts": 1,
+      "result": "research/campaign-040-material-install-palette/result.json"
+    },
+    {
+      "id": "material_invalidate_cache",
+      "address": 4701069,
+      "full_span_bytes": 144,
+      "body_bytes": 144,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 0,
+      "different_bytes": 0,
+      "checks": 4097,
+      "implementation_attempts": 1,
+      "result": "research/campaign-040-material-invalidate-cache/result.json"
+    }
+  ],
+  "corrections": [
+    "Initial review packet incorrectly called the color body184 bytes. Parent disassembly confirmed RET0047C5A1: body170 plus14 tail bytes to next entry0047C5B0. Full184-byte target was retained from case creation."
+  ],
+  "limitations": [
+    "Palette anchor denotes an embedded address, not inferred capacity.",
+    "Cache fixture entries0..3 and rows0..3 stay within owned disjoint storage; no concurrent mutation or alias self-modification claim.",
+    "Portable color fixture shifts stay0..31. Body diagnostic does not count as a full exact function."
+  ]
+}
