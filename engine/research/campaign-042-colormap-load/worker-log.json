@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "colormap_load",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full colormap contents and light lifecycle contract",
+      "started_utc": "2026-09-14T02:07:46.269475+00:00",
+      "finished_utc": "2026-09-14T02:07:47.952891+00:00",
+      "returncode": 0,
+      "source_sha256": "ded884b44e12521ed99aef718b1bcf77a63d5f14782ce0a09e3753fdfd724939",
+      "report": "engine/build/campaign-001-colormap_load-dc0a2ad5008f/research-result.json",
+      "report_sha256": "ce513c23a7b02b22e38bce4fefd17d293926b3d3bcdad3f39cb43c4cce8547cf",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 85,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.464118,
+      "stderr": ""
+    }
+  ]
+}

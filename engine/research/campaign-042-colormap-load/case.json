@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "colormap_load",
+  "candidate": "candidate.c",
+  "symbol": "_op_rd_colormap_load",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

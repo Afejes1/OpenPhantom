@@ -1,0 +1,27 @@
+{
+  "id": "light_new",
+  "address": 4695952,
+  "size": 46,
+  "body_size": 46,
+  "source": "src/light_new.c",
+  "symbol": "_op_light_new",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 7,
+      "address": 4805264,
+      "symbol": "_op_allocate",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 32,
+      "address": 4695998,
+      "symbol": "_op_light_init",
+      "kind": "rel32-call"
+    }
+  ]
+}

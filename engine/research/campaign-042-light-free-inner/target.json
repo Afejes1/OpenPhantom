@@ -1,0 +1,14 @@
+{
+  "id": "light_free_inner",
+  "address": 4696172,
+  "size": 5,
+  "body_size": 5,
+  "source": "src/light_free_inner.c",
+  "symbol": "_op_light_free_inner",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

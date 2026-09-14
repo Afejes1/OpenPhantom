@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "light_free_inner",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full colormap contents and light lifecycle contract",
+      "started_utc": "2026-09-14T02:07:54.494907+00:00",
+      "finished_utc": "2026-09-14T02:07:56.106392+00:00",
+      "returncode": 0,
+      "source_sha256": "3de42d93bf7137df4c3881a0086a5f3d9baae06bad0146f610e5205b4b12cc0b",
+      "report": "engine/build/campaign-001-light_free_inner-057f6dd0c5eb/research-result.json",
+      "report_sha256": "374a5d2026ba418cc32dcaba97cb2b33144dacc4675576f95b9d4c61d68d5a11",
+      "status": "raw-code-match",
+      "candidate_size": 5,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.395364,
+      "stderr": ""
+    }
+  ]
+}

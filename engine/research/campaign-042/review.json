@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T02:20:22.736007+00:00",
+  "conclusion": "approved-after-correction",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "colormap_free_entry",
+      "address": 4688366,
+      "full_span_bytes": 104,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 1456,
+      "implementation_attempts": 1,
+      "result": "research/campaign-042-colormap-free-entry/result.json"
+    },
+    {
+      "id": "colormap_load",
+      "address": 4687671,
+      "full_span_bytes": 85,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "checks": 232,
+      "implementation_attempts": 1,
+      "result": "research/campaign-042-colormap-load/result.json"
+    },
+    {
+      "id": "light_free",
+      "address": 4696137,
+      "full_span_bytes": 35,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 26,
+      "implementation_attempts": 1,
+      "result": "research/campaign-042-light-free/result.json"
+    },
+    {
+      "id": "light_free_inner",
+      "address": 4696172,
+      "full_span_bytes": 5,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 0,
+      "different_bytes": 0,
+      "checks": 5,
+      "implementation_attempts": 1,
+      "result": "research/campaign-042-light-free-inner/result.json"
+    },
+    {
+      "id": "light_init",
+      "address": 4695998,
+      "full_span_bytes": 139,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 0,
+      "different_bytes": 0,
+      "checks": 24,
+      "implementation_attempts": 1,
+      "result": "research/campaign-042-light-init/result.json"
+    },
+    {
+      "id": "light_new",
+      "address": 4695952,
+      "full_span_bytes": 46,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 224,
+      "implementation_attempts": 1,
+      "result": "research/campaign-042-light-new/result.json"
+    }
+  ],
+  "corrections": [
+    {
+      "kind": "erroneous-review-finding",
+      "description": "Reviewer incorrectly called seed loop index i unused. Parent applied removal without checking its use, causing one fixture compilation failure. The required declaration was restored and all final paired receipts were independently re-audited. No candidate source was changed."
+    }
+  ],
+  "limitations": [
+    "Colormap allocation NULL is observed only with a non-dereferencing focused cleanup stub; real cleanup requires valid storage and remains unsafe for NULL.",
+    "The focused loader uses void* return spelling to preserve the existing canonical external declaration; the allocated object is the asserted844-byte colormap.",
+    "External callbacks are authored observers and perform no real deallocation."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "light_new",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full colormap contents and light lifecycle contract",
+      "started_utc": "2026-09-14T02:07:49.594887+00:00",
+      "finished_utc": "2026-09-14T02:07:51.229104+00:00",
+      "returncode": 0,
+      "source_sha256": "10ca7540c94243a3fb7ac731a200c04f36d6d7e893b8be68fead47d3e6828883",
+      "report": "engine/build/campaign-001-light_new-7a2b8dfae249/research-result.json",
+      "report_sha256": "99c30a2c170c5350b9d6650b4edd17df1af9d55f4e1fe194b445fc1a325c55d8",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 46,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.414798,
+      "stderr": ""
+    }
+  ]
+}

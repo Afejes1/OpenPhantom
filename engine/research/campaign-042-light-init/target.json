@@ -1,0 +1,14 @@
+{
+  "id": "light_init",
+  "address": 4695998,
+  "size": 139,
+  "body_size": 139,
+  "source": "src/light_init.c",
+  "symbol": "_op_light_init",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "light_free",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed C from reviewed full colormap contents and light lifecycle contract",
+      "started_utc": "2026-09-14T02:07:52.857763+00:00",
+      "finished_utc": "2026-09-14T02:07:54.489184+00:00",
+      "returncode": 0,
+      "source_sha256": "e98c6370223b2620030f372c590bc061fd53ae64822c4a9846e82b1955d9f240",
+      "report": "engine/build/campaign-001-light_free-17cec1377fa8/research-result.json",
+      "report_sha256": "60c1f7a4be3aea03070f408ea3d54bf49dbff9b42ab3565928409b9d6cc95b75",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 35,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.412596,
+      "stderr": ""
+    }
+  ]
+}
