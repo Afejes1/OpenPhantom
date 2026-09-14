@@ -1,0 +1,7 @@
+# Acceptance035 results
+
+Six save-stream functions bring the accepted baseline from182 to188. Their complete264 bytes and16 verified operands match without byte exclusions or VC5 warning waivers. Clean sourcec3b0f74473624262b2b41f7d31c4b85f481a4cf3 builds as20260914-013310-cd80ed50. All188 comparisons and shared authored tests pass. [Event58](../../evidence/runs/000058-792ae1135d3f3ae7.json) records the source snapshot; [same-source supplemental CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34810041715) succeeds.
+
+Connected save-stream coverage passes640,808 checks. Existing effects/overlay fixtures make2,485 reads and684 writes through actual reconstructed wrappers and raw helpers. New direct and chunk chains verify signed results, exact header failure gating, low16 kind, callback mutation visibility, and ordered zero-write diagnostics with full context guards. All previous182 target/registry definitions remain unchanged and compare exactly after ABI declaration refinements.
+
+An initial targeted fixture compile caught a name collision between the distinct B3D reader and CRT file reader. The new CRT callbacks were renamed to op_save_file_read/write with the explicit mapping and failed receipt retained; resolved addresses and instruction operands are unchanged. Modern supplemental CRT compatibility remains disclosed from acceptance034. File, header and diagnostic callbacks remain authored observers. All six additions are team-not_done. Whole-executable identity remains pending.

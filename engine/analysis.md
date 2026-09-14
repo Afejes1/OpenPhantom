@@ -389,3 +389,7 @@ Acceptance033 connects the real colormap reader and writer plus point-plane dist
 ## Palette resource and face-normal checkpoint
 
 Acceptance034 reaches182 accepted functions at event57 with six complete-span matches and real palette dependency-chain fixtures. All182 original-toolchain comparisons and shared authored tests pass; same-source supplemental CI passes with its historical-CRT compatibility setting documented. This overnight window has29 newly exact functions (26 team-not_done,3 team-reported_done),2,645 complete bytes and32 promotions including3 carried-in cases. The Euler transform and palette release alignment tail remain research. Whole-executable identity remains pending. See [acceptance034](research/acceptance-034/results.md).
+
+## Save stream checkpoint
+
+Acceptance035 reaches188 accepted functions at event58. All188 original-toolchain comparisons and shared authored tests pass with same-source supplemental CI. Six new save functions connect actual effects/overlay read/write chains and pass640,808 stream checks, including2,485 legacy reads and684 writes. Existing182 definitions remain unchanged after accurate save ABI declarations and explicit distinct CRT reader/writer symbols. This overnight window has35 newly exact functions,2,909 bytes and38 accepted promotions including3 carried in. Save-slot functions are next; whole-executable identity remains pending. See [acceptance035](research/acceptance-035/results.md).
