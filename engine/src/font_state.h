@@ -26,7 +26,6 @@ extern OP_FONT3D *op_current_font;
 int op_release_sprite(void **);
 void *op_acquire_sprite(char *);
 void op_get_last_textbox(unsigned int *, unsigned int *, unsigned int *, unsigned int *);
-unsigned int op_query_font_resource(void *);
 void op_font_select(int index);
 void op_font_set_colour(unsigned int colour);
 void op_font_set_colours(unsigned int a, unsigned int b, unsigned int c, unsigned int d);
@@ -39,4 +38,9 @@ int op_font_set_backdrop(char *name, float width, float height);
 int op_font_set_zrange(float start, float range);
 void op_font_last_textbox(unsigned int *a, unsigned int *b, unsigned int *c, unsigned int *d);
 int op_font_set_word24(unsigned int word);
+extern int op_system_font;
+void op_set_font_scale(float, float);
+int op_font_char_size(void *, char, float *, float *);
+int op_font_measure_char(char, float *, float *);
+float op_font_measure_string(char *);
 #endif

@@ -42,13 +42,7 @@ static int model_load_state_main(void)
     return model_load_state_failures != 0;
 }
 
-struct OP_FONT
-{
-    unsigned int marker;
-    unsigned char payload[28];
-};
-OP_FONT *op_system_font;
-static OP_FONT get_system_font_objects[3], get_system_font_expected[3];
+int op_system_font;
 static int get_system_font_checks, get_system_font_failures;
 static void get_system_font_check(int ok)
 {
@@ -59,23 +53,17 @@ static void get_system_font_check(int ok)
 static int get_system_font_main(void)
 {
     int i;
-    OP_FONT *p;
-    memset(get_system_font_objects, 0x6d, sizeof(get_system_font_objects));
-    memcpy(get_system_font_expected, get_system_font_objects, sizeof(get_system_font_objects));
-    for (i = 0; i < 4; ++i)
+    static int slots[] = {INT_MIN, -1, 0, 1, 15, 16, INT_MAX};
+    for (i = 0; i < 7; ++i)
     {
-        p = i == 3 ? 0 : &get_system_font_objects[i];
-        op_system_font = p;
-        get_system_font_check(op_get_system_font() == p);
-        get_system_font_check(op_system_font == p);
-        get_system_font_check(
-            memcmp(get_system_font_objects, get_system_font_expected, sizeof(get_system_font_objects)) == 0);
-        get_system_font_check(op_get_system_font() == p);
-        get_system_font_check(op_system_font == p);
-        get_system_font_check(
-            memcmp(get_system_font_objects, get_system_font_expected, sizeof(get_system_font_objects)) == 0);
+        op_system_font = slots[i];
+        get_system_font_check(op_get_system_font() == slots[i]);
+        get_system_font_check(op_system_font == slots[i]);
+        get_system_font_check(op_get_system_font() == slots[i]);
+        get_system_font_check(op_system_font == slots[i]);
     }
-    printf("system font getter: %d checks, %d failures\n", get_system_font_checks, get_system_font_failures);
+    printf("system font signed slot getter: %d checks, %d failures\n", get_system_font_checks,
+           get_system_font_failures);
     return get_system_font_failures != 0;
 }
 

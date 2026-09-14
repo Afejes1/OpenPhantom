@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "acceptance-024",
+  "baseline_commit": "8f8cbc35318803fbdf4e0374b57f3a7464bbbc6a",
+  "functions": [
+    "font_measure_char",
+    "font_measure_string"
+  ],
+  "promotions": 2,
+  "registered_before": 133,
+  "registered_after": 135,
+  "full_span_bytes": 196,
+  "verified_operands": 7,
+  "semantic_type_corrections": [
+    "get_system_font and global004b77ec: signed slot int, not pointer"
+  ],
+  "status": "integration-pending",
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

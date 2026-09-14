@@ -55,10 +55,9 @@ typedef struct OP_MODEL
 } OP_MODEL;
 typedef char model_load_offset[offsetof(OP_MODEL, load_state) == 0xd0 ? 1 : -1];
 typedef char model_partial_size[sizeof(OP_MODEL) == 0xd4 ? 1 : -1];
-typedef struct OP_FONT OP_FONT;
-extern OP_FONT *op_system_font;
+extern int op_system_font;
 int op_model_load_state(const OP_MODEL *model);
-OP_FONT *op_get_system_font(void);
+int op_get_system_font(void);
 float op_shield_radius(int slot);
 int op_shield_set_colour(int slot, unsigned char red, unsigned char green, unsigned char blue, unsigned char alpha);
 int op_shield_set_visible(int slot, int value);

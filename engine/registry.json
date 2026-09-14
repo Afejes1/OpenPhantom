@@ -675,16 +675,19 @@
       "id": "get_system_font",
       "module": "focused_accessors",
       "analysis_name": "get_current_system_font",
-      "purpose": "Read the current system-font pointer unchanged",
+      "purpose": "Return the signed system font slot index; negative values indicate an unloaded slot.",
       "confidence": "HIGH",
       "evidence": [
         "docs/focused-accessors-acceptance.md",
-        "research/campaign-022-get-system-font/README.md"
+        "research/campaign-022-get-system-font/README.md",
+        "docs/font-measurement-acceptance.md"
       ],
       "behavior_tests": [
         "tests/focused_accessors_behavior.c"
       ],
-      "quirks": [],
+      "quirks": [
+        "Lifecycle module0046afa0 proves004b77ec is a signed integer slot, superseding the earlier pointer interpretation; original10-byte code identity remains valid."
+      ],
       "exceptions": []
     },
     {
@@ -2467,6 +2470,42 @@
       ],
       "quirks": [
         "Shared 16-record pool; live alias loads and callback-selected record changes are preserved; word20/24 semantics unknown."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "font_measure_char",
+      "module": "font_state",
+      "analysis_name": "font_measure_char",
+      "purpose": "font measure char",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-measurement-acceptance.md",
+        "research/campaign-037-font-measure-char/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_measure_behavior.c"
+      ],
+      "quirks": [
+        "String width requires first measurement to write a width for a defined nonempty result; subsequent failures reuse the previous width."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "font_measure_string",
+      "module": "font_state",
+      "analysis_name": "font_measure_string",
+      "purpose": "font measure string",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-measurement-acceptance.md",
+        "research/campaign-037-font-measure-string/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_measure_behavior.c"
+      ],
+      "quirks": [
+        "String width requires first measurement to write a width for a defined nonempty result; subsequent failures reuse the previous width."
       ],
       "exceptions": []
     }
