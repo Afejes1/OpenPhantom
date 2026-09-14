@@ -1,6 +1,7 @@
 #ifndef OP_RIPPLE_EFFECTS_H
 #define OP_RIPPLE_EFFECTS_H
 #include <stddef.h>
+#include "sprite_resources.h"
 typedef struct OP_RIPPLE_MATERIAL
 {
     char *color_name, *alpha_name;
@@ -12,7 +13,6 @@ typedef char op_ripple_material_offsets
 extern OP_RIPPLE_MATERIAL op_ripple_materials[8];
 void *op_acquire_sprite(char *name);
 int op_release_sprite(void **sprite);
-void *op_sprite_get_material(void *sprite);
 void *op_compose_materials(void *color, void *alpha);
 void *op_ripple_material(int appearance);
 #endif

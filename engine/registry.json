@@ -2508,6 +2508,82 @@
         "String width requires first measurement to write a width for a defined nonempty result; subsequent failures reuse the previous width."
       ],
       "exceptions": []
+    },
+    {
+      "id": "font_module",
+      "module": "font_state",
+      "analysis_name": "font_module",
+      "purpose": "Initialize or shut down the default signed font slot",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-lifecycle-acceptance.md",
+        "research/campaign-037-font-module/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_lifecycle_behavior.c",
+        "tests/ripple_material_behavior.h"
+      ],
+      "quirks": [
+        "Actual canonical resource and font state functions are connected; only external resource backends are authored."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "font_create",
+      "module": "font_state",
+      "analysis_name": "font_create",
+      "purpose": "Acquire a free font slot and initialize its default state",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-lifecycle-acceptance.md",
+        "research/campaign-037-font-create/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_lifecycle_behavior.c",
+        "tests/ripple_material_behavior.h"
+      ],
+      "quirks": [
+        "Actual canonical resource and font state functions are connected; only external resource backends are authored."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "font_destroy",
+      "module": "font_state",
+      "analysis_name": "font_destroy",
+      "purpose": "Release a font slot and detach its borrowed material",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-lifecycle-acceptance.md",
+        "research/campaign-037-font-destroy/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/font_lifecycle_behavior.c",
+        "tests/ripple_material_behavior.h"
+      ],
+      "quirks": [
+        "Actual canonical resource and font state functions are connected; only external resource backends are authored."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "texture_get_material",
+      "module": "sprite_resources",
+      "analysis_name": "texture_get_material",
+      "purpose": "Read the material pointer from a nullable sprite",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/font-lifecycle-acceptance.md",
+        "research/campaign-016-texture-get-material/packet.md"
+      ],
+      "behavior_tests": [
+        "tests/font_lifecycle_behavior.c",
+        "tests/ripple_material_behavior.h"
+      ],
+      "quirks": [
+        "Actual canonical resource and font state functions are connected; only external resource backends are authored."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

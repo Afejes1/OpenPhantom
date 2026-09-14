@@ -22,4 +22,5 @@ void *op_acquire_resource(unsigned int, char *);
 void *op_acquire_sprite(char *);
 void op_release_resource(void *);
 int op_release_sprite(void **);
+void *op_sprite_get_material(void *);
 #endif

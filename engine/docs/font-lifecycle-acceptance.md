@@ -1,0 +1,7 @@
+# Connected font lifecycle and sprite material
+
+Three campaign037 lifecycle functions connect to actual canonical font defaults, sprite acquire/release and the33-byte material getter previously exact in campaign016. The getter has one canonical symbol at0042985F. Ripple tests now use guarded typed sprites/materials and no synthetic getter callbacks. Null sprites yield null materials; compose argument order and live callback effects remain checked.
+
+The connected lifecycle owns all sprite, material and partial20-byte font objects. It covers every first-free slot, full pool, acquisition/load failure, captured-slot replacement/clearing, default-state writes, selection retargeting during backdrop release, borrowed-material detachment, live font replacement and final backdrop release. The module uses the signed system slot, clear-before-create, nonnegative initialization skip, final-1 shutdown and unknown-event no-op behavior. Destruction requires a populated valid font after the first release, matching original preconditions. External resource/font backends remain authored; original resources and names are not distributed.
+
+This checkpoint promotes three new campaign037 exacts and one previously exact campaign016 getter. It does not count the getter as newly reconstructed. Shared types preserve offsets and runtime behavior; final whole-executable placement/data/CRT identity remain pending.

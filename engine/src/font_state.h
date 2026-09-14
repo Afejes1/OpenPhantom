@@ -43,4 +43,19 @@ void op_set_font_scale(float, float);
 int op_font_char_size(void *, char, float *, float *);
 int op_font_measure_char(char, float *, float *);
 float op_font_measure_string(char *);
+typedef struct OP_FONT_RESOURCE
+{
+    unsigned char prefix[16];
+    void *material;
+} OP_FONT_RESOURCE;
+typedef char
+    font_resource_material_offset[(offsetof(OP_FONT_RESOURCE, material) == 16 && sizeof(OP_FONT_RESOURCE) == 20) ? 1
+                                                                                                                 : -1];
+int op_get_system_font(void);
+extern char op_system_font_name[];
+void *op_load_font_resource(char *, void *);
+void op_free_font_resource(void *);
+int op_font_module(int);
+int op_font_create(char *);
+void op_font_destroy(int);
 #endif

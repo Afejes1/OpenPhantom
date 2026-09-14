@@ -24,11 +24,6 @@ static void ripple_effects_release_sprite(void *resource)
     RP_CHECK(ripple_effects_active);
     lc_ripple_material_op_release_sprite(resource);
 }
-void *op_sprite_get_material(void *sprite)
-{
-    RP_CHECK(ripple_effects_active);
-    return lc_ripple_material_op_sprite_get_material(sprite);
-}
 void *op_compose_materials(void *color, void *alpha)
 {
     RP_CHECK(ripple_effects_active);

@@ -393,6 +393,11 @@ static void shield_lifecycle_release(void *memory)
 }
 void op_release_resource(void *resource)
 {
+    if (fl_active)
+    {
+        fl_release_resource(resource);
+        return;
+    }
     if (fc_active)
     {
         fc_release_resource(resource);
@@ -462,6 +467,8 @@ int op_format_sprite_name(char *dest, char *format, ...)
     va_start(args, format);
     base = va_arg(args, char *);
     va_end(args);
+    if (fl_active)
+        return fl_format_sprite(dest, format, base);
     if (fc_active)
         return fc_format_sprite(dest, format, base);
     if (sa_active)
@@ -487,6 +494,8 @@ int op_format_sprite_name(char *dest, char *format, ...)
 void *op_acquire_resource(unsigned int type, char *name)
 {
     void *result;
+    if (fl_active)
+        return fl_acquire_resource(type, name);
     if (fc_active)
         return fc_acquire_resource(type, name);
     if (sa_active)

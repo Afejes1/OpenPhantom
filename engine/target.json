@@ -5562,6 +5562,240 @@
           "kind": "rel32-call"
         }
       ]
+    },
+    {
+      "id": "font_module",
+      "address": 4632480,
+      "size": 109,
+      "body_size": 109,
+      "source": "src/font_module.c",
+      "symbol": "_op_font_module",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 33,
+          "address": 7167360,
+          "symbol": "_op_font_pool",
+          "kind": "dir32"
+        },
+        {
+          "offset": 41,
+          "address": 4945900,
+          "symbol": "_op_system_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 49,
+          "address": 4933428,
+          "symbol": "_op_system_font_name",
+          "kind": "dir32"
+        },
+        {
+          "offset": 54,
+          "address": 4632589,
+          "symbol": "_op_font_create",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 62,
+          "address": 4945900,
+          "symbol": "_op_system_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 72,
+          "address": 4945900,
+          "symbol": "_op_system_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 78,
+          "address": 4633974,
+          "symbol": "_op_font_destroy",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 87,
+          "address": 4945900,
+          "symbol": "_op_system_font",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "font_create",
+      "address": 4632589,
+      "size": 302,
+      "body_size": 302,
+      "source": "src/font_create.c",
+      "symbol": "_op_font_create",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 38,
+          "address": 7167360,
+          "symbol": "_op_font_pool",
+          "kind": "dir32",
+          "addend": 8
+        },
+        {
+          "offset": 71,
+          "address": 7167360,
+          "symbol": "_op_font_pool",
+          "kind": "dir32"
+        },
+        {
+          "offset": 83,
+          "address": 4363584,
+          "symbol": "_op_acquire_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 126,
+          "address": 4364383,
+          "symbol": "_op_sprite_get_material",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 139,
+          "address": 4690464,
+          "symbol": "_op_load_font_resource",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 166,
+          "address": 4363764,
+          "symbol": "_op_release_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 183,
+          "address": 4632891,
+          "symbol": "_op_font_select",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 193,
+          "address": 4632953,
+          "symbol": "_op_font_set_colour",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 203,
+          "address": 4633148,
+          "symbol": "_op_font_set_align",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 221,
+          "address": 4633235,
+          "symbol": "_op_font_set_glyph_scale",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 239,
+          "address": 4633274,
+          "symbol": "_op_font_set_position_scale",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 249,
+          "address": 4633313,
+          "symbol": "_op_font_set_word20",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 263,
+          "address": 4634096,
+          "symbol": "_op_font_set_backdrop",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 278,
+          "address": 4634210,
+          "symbol": "_op_font_set_zrange",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 288,
+          "address": 4634462,
+          "symbol": "_op_font_set_word24",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "font_destroy",
+      "address": 4633974,
+      "size": 122,
+      "body_size": 122,
+      "source": "src/font_destroy.c",
+      "symbol": "_op_font_destroy",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 25,
+          "address": 7167360,
+          "symbol": "_op_font_pool",
+          "kind": "dir32"
+        },
+        {
+          "offset": 34,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 45,
+          "address": 7168512,
+          "symbol": "_op_current_font",
+          "kind": "dir32"
+        },
+        {
+          "offset": 58,
+          "address": 4363764,
+          "symbol": "_op_release_sprite",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 86,
+          "address": 4690688,
+          "symbol": "_op_free_font_resource",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 111,
+          "address": 4363764,
+          "symbol": "_op_release_sprite",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "texture_get_material",
+      "address": 4364383,
+      "size": 33,
+      "body_size": 33,
+      "source": "src/texture_get_material.c",
+      "symbol": "_op_sprite_get_material",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
     }
   ]
 }

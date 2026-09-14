@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "acceptance-025",
+  "baseline_commit": "d19e95ac3a6c318ac5b9630e00decf6e962e9df3",
+  "functions": [
+    "font_module",
+    "font_create",
+    "font_destroy",
+    "texture_get_material"
+  ],
+  "promotions": 4,
+  "registered_before": 135,
+  "registered_after": 139,
+  "full_span_bytes": 566,
+  "verified_operands": 29,
+  "status": "integration-pending",
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}
