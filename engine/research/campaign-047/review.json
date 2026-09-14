@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T04:13:47.371626+00:00",
+  "conclusion": "approved-two-exact-one-research",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "point_plane_distance",
+      "address": 4703878,
+      "evidence_category": "exact-function-match",
+      "full_span_bytes": 60,
+      "candidate_size": 60,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "verified_operands": 0,
+      "checks": 131,
+      "team_status": "not_done",
+      "result": "research/campaign-047-point-plane-distance/result.json"
+    },
+    {
+      "id": "vector_angle",
+      "address": 4703938,
+      "evidence_category": "exact-function-match",
+      "full_span_bytes": 84,
+      "candidate_size": 84,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "verified_operands": 3,
+      "checks": 1729,
+      "team_status": "not_done",
+      "result": "research/campaign-047-vector-angle/result.json"
+    },
+    {
+      "id": "vector_snap_small",
+      "address": 4704402,
+      "evidence_category": "research-candidate",
+      "full_span_bytes": 248,
+      "candidate_size": 248,
+      "different_bytes": 25,
+      "different_percent": 10.080645161290322,
+      "verified_operands": 3,
+      "checks": 1262,
+      "team_status": "not_done",
+      "result": "research/campaign-047-vector-snap-small/result.json"
+    }
+  ],
+  "observations": [
+    "All42 source snapshot members and six private report files rehashed successfully.",
+    "Point-plane literal table and negative-zero case preserve every guarded input and exact aliases.",
+    "Angle explicit intermediate promotions and final float capture reproduce the observed instruction order and binary32 bit gate.",
+    "Angle callback mutations prove dot capture; helper mathematics remain separate.",
+    "Snap independent word table covers finite boundaries, signed zeros, infinities, quietNaNs and explicit VC5/modern unordered differences."
+  ],
+  "limitations": [
+    "Snap remains full-span research with25 differences; neither accepted nor near-match."
+  ]
+}

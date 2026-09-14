@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vector_snap_small",
+  "compiler_invocations": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural C nested ternaries: complete248-byte span,25 differences",
+      "started_utc": "2026-09-14T04:05:34.988632+00:00",
+      "finished_utc": "2026-09-14T04:05:36.556285+00:00",
+      "returncode": 1,
+      "source_sha256": "5361d84912699d36242ade6de1deb9fd0e7215533d5a36cb9b27c07435365c2a",
+      "report": "engine/build/campaign-001-vector_snap_small-b1191a5bf447/research-result.json",
+      "report_sha256": "dc324a10479254f9728bf7a7277a72618aed33e85f09d234476453bdfae421a5",
+      "status": "mismatch",
+      "candidate_size": 248,
+      "different_bytes": 25,
+      "elapsed_seconds": 1.351778,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Explicit float reads retain25 differences",
+      "started_utc": "2026-09-14T04:07:04.532205+00:00",
+      "finished_utc": "2026-09-14T04:07:06.104373+00:00",
+      "returncode": 1,
+      "source_sha256": "0c26cdf8155fb33380e88e35fa8991bf1c89ccc67a93f75c846c9a2e04727bb6",
+      "report": "engine/build/campaign-001-vector_snap_small-35bd7551f612/research-result.json",
+      "report_sha256": "ca29801fb3fc6fa0bd719e8917aa7e145fb3724125ab49395c0e124b27215a47",
+      "status": "mismatch",
+      "candidate_size": 248,
+      "different_bytes": 25,
+      "elapsed_seconds": 1.350993,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Original VC5 C++ frontend with C linkage retains25 differences; reverted to C",
+      "started_utc": "2026-09-14T04:08:49.633739+00:00",
+      "finished_utc": "2026-09-14T04:08:51.219298+00:00",
+      "returncode": 1,
+      "source_sha256": "5361d84912699d36242ade6de1deb9fd0e7215533d5a36cb9b27c07435365c2a",
+      "report": "engine/build/campaign-001-vector_snap_small-0f057e3822f4/research-result.json",
+      "report_sha256": "9aa498aa8e6ffc2247b4c5e9f1bddcdd4e3c764180a6290873507399bef0bb47",
+      "status": "mismatch",
+      "candidate_size": 248,
+      "different_bytes": 25,
+      "elapsed_seconds": 1.366263,
+      "stderr": ""
+    },
+    {
+      "attempt": 4,
+      "hypothesis": "Widened ternary experiment increases extent to254 bytes; rejected and original natural C restored",
+      "started_utc": "2026-09-14T04:09:51.857934+00:00",
+      "finished_utc": "2026-09-14T04:09:53.437897+00:00",
+      "returncode": 1,
+      "source_sha256": "127cd442ca60cbedaa636ed7c54056c803dca93c329a5210ac10acfe2e841e1f",
+      "report": "engine/build/campaign-001-vector_snap_small-3393cabe7352/research-result.json",
+      "report_sha256": "8425627e0e7694c76dec1a52b55726b889742d26d66b54c1f12286d9f3aef515",
+      "status": "mismatch",
+      "candidate_size": 254,
+      "different_bytes": null,
+      "elapsed_seconds": 1.364758,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-research",
+  "frozen_utc": "2026-09-14T04:13:47.371626+00:00"
+}

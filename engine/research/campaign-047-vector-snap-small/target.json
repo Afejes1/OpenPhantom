@@ -1,0 +1,33 @@
+{
+  "id": "vector_snap_small",
+  "address": 4704402,
+  "size": 248,
+  "body_size": 248,
+  "source": "src/vector_snap_small.c",
+  "symbol": "_op_vector_snap_small",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 13,
+      "address": 4885476,
+      "symbol": "_op_geometry_zero",
+      "kind": "dir32"
+    },
+    {
+      "offset": 90,
+      "address": 4885476,
+      "symbol": "_op_geometry_zero",
+      "kind": "dir32"
+    },
+    {
+      "offset": 171,
+      "address": 4885476,
+      "symbol": "_op_geometry_zero",
+      "kind": "dir32"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "vector_angle",
+  "address": 4703938,
+  "size": 84,
+  "body_size": 84,
+  "source": "src/vector_angle.c",
+  "symbol": "_op_vector_angle",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 56,
+      "address": 4885476,
+      "symbol": "_op_geometry_zero",
+      "kind": "dir32"
+    },
+    {
+      "offset": 67,
+      "address": 4801255,
+      "symbol": "_op_scalar_angle",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 76,
+      "address": 4885480,
+      "symbol": "_op_geometry_right_angle",
+      "kind": "dir32"
+    }
+  ]
+}

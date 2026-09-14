@@ -1,0 +1,14 @@
+{
+  "id": "point_plane_distance",
+  "address": 4703878,
+  "size": 60,
+  "body_size": 60,
+  "source": "src/point_plane_distance.c",
+  "symbol": "_op_point_plane_distance",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

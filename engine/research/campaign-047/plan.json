@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "id": "campaign-047",
+  "started_utc": "2026-09-14T04:00:00Z",
+  "stop_implementation_utc": "2026-09-14T04:35:00Z",
+  "deadline_utc": "2026-09-14T04:45:00Z",
+  "baseline_commit": "050ef96314e55193b5140a959475f60ff9443622",
+  "functions": [
+    "point_plane_distance",
+    "vector_angle",
+    "vector_snap_small"
+  ],
+  "status": "complete",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T04:13:47.371626+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "point_plane_distance",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural XYZ expression matches complete60-byte span on first compile",
+      "started_utc": "2026-09-14T04:05:31.798224+00:00",
+      "finished_utc": "2026-09-14T04:05:33.394525+00:00",
+      "returncode": 0,
+      "source_sha256": "62206ed0d0e5c6a8b28e9b390b672761fd2246ffc51394c76a120b7957fddef5",
+      "report": "engine/build/campaign-001-point_plane_distance-22de05fee5bd/research-result.json",
+      "report_sha256": "97ff0d9b331e5ff2393c8e4d37a73cde02759ebae5fd89fc4c3bbacb903d1cab",
+      "status": "raw-code-match",
+      "candidate_size": 60,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.378154,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T04:13:47.371626+00:00"
+}

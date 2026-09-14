@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "attempts": [
+    {
+      "id": "point_plane_distance",
+      "started_utc": "2026-09-14T04:10:53.607164+00:00",
+      "finished_utc": "2026-09-14T04:10:55.184641+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-point_plane_distance-a8b5157b9174\\research-result.json",
+      "report_sha256": "40461317fa8c20f7fdb13bc987cda383b93b4422832b5b7922f805dd8462a7e8",
+      "stderr": ""
+    },
+    {
+      "id": "point_plane_distance",
+      "started_utc": "2026-09-14T04:10:55.191525+00:00",
+      "finished_utc": "2026-09-14T04:11:00.918980+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-point_plane_distance-86244c4ae98c\\research-result.json",
+      "report_sha256": "2b3bab2adaf1edf2b87f6e21e58a7a64956f49ea3a9c0b15c4161b218de6cd46",
+      "stderr": ""
+    },
+    {
+      "id": "vector_angle",
+      "started_utc": "2026-09-14T04:11:01.079060+00:00",
+      "finished_utc": "2026-09-14T04:11:02.689212+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-vector_angle-23fd3057357f\\research-result.json",
+      "report_sha256": "bd770bfc3cfa37aeb19d7d850e3e846dc843c7aebfb1cf9ab0821ce812497b3a",
+      "stderr": ""
+    },
+    {
+      "id": "vector_angle",
+      "started_utc": "2026-09-14T04:11:02.696144+00:00",
+      "finished_utc": "2026-09-14T04:11:08.115846+00:00",
+      "returncode": 0,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-vector_angle-53794a816ffd\\research-result.json",
+      "report_sha256": "951d11d032a27641dec85206903bea07f4809d67af6e6451847a19e5fffcfb28",
+      "stderr": ""
+    },
+    {
+      "id": "vector_snap_small",
+      "started_utc": "2026-09-14T04:11:08.276580+00:00",
+      "finished_utc": "2026-09-14T04:11:09.871412+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-vector_snap_small-3a6bbad22179\\research-result.json",
+      "report_sha256": "cb0d4fbd431808900bfe495ab0d7d15185ddeb89b9a5582affa696fb3bfd7b8d",
+      "stderr": ""
+    },
+    {
+      "id": "vector_snap_small",
+      "started_utc": "2026-09-14T04:11:09.879002+00:00",
+      "finished_utc": "2026-09-14T04:11:15.307546+00:00",
+      "returncode": 1,
+      "report": "C:\\Dev\\Ghidra\\release-verification\\openphantom-vc5-baseline\\engine\\build\\campaign-001-vector_snap_small-b0cd7727fe8f\\research-result.json",
+      "report_sha256": "cba4a148b06a5bee40cce57f9ada0f110eb69157d782e1e819afdf4886fdb02e",
+      "stderr": ""
+    }
+  ]
+}
