@@ -4,15 +4,15 @@
     "manifest_functions": 2241,
     "team_reported_done": 1298,
     "team_reported_not_done": 943,
-    "local_accepted": 308,
-    "local_within_team_not_done": 300,
+    "local_accepted": 316,
+    "local_within_team_not_done": 308,
     "local_overlapping_team_done": 8,
-    "remaining_if_team_claims_are_correct": 643,
-    "combined_covered_if_team_claims_are_correct": 1598
+    "remaining_if_team_claims_are_correct": 635,
+    "combined_covered_if_team_claims_are_correct": 1606
   },
   "local_match_categories": {
     "raw-code-match": 35,
-    "relocation-adjusted-match": 273
+    "relocation-adjusted-match": 281
   },
   "team_source_independently_verified": false,
   "whole_executable_match": false,
@@ -12838,22 +12838,22 @@
       "team_reported_file": null,
       "team_reported_name": "swrle_getCursor",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "ui_get_cursor",
+      "local_source": "src/ui_get_cursor.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00460A4A",
       "team_reported_file": null,
       "team_reported_name": "swrle_navCodePtr",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "ui_navigation_code_pointer",
+      "local_source": "src/ui_navigation_code_pointer.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00460A54",
@@ -12882,22 +12882,22 @@
       "team_reported_file": null,
       "team_reported_name": "swrle_setJoyMenuNav",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "ui_set_joy_navigation",
+      "local_source": "src/ui_set_joy_navigation.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x004612A1",
       "team_reported_file": null,
       "team_reported_name": "swrle_clearJoyLatches",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "ui_clear_joy_latches",
+      "local_source": "src/ui_clear_joy_latches.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x004612BA",
@@ -16831,44 +16831,44 @@
       "team_reported_file": null,
       "team_reported_name": "sys_elapsedMs",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "elapsed_ticks",
+      "local_source": "src/elapsed_ticks.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00475B2D",
       "team_reported_file": null,
       "team_reported_name": "time_seconds",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "elapsed_seconds",
+      "local_source": "src/elapsed_seconds.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00475B3D",
       "team_reported_file": null,
       "team_reported_name": "time_deltaMs",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "delta_ticks",
+      "local_source": "src/delta_ticks.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00475B67",
       "team_reported_file": null,
       "team_reported_name": "sys_msToSeconds",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "signed_ms_to_seconds",
+      "local_source": "src/signed_ms_to_seconds.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00475B75",
@@ -24674,10 +24674,10 @@
     "manifest": "engine/planning/team-manifest-20260912-1849.json",
     "manifest_sha256": "3c26a8b5f62424864513ffb20dfb644fa582d19600cd2f98bbfd7eca71dfee1f",
     "contributor_attachment_sha256": "0b6de70dfa6b872725cbb8cc4fd14fc71316a2ec28ef9e1dec5762577046592b",
-    "accepted_event": "engine/evidence/runs/000079-5eb6d26429734471.json",
-    "accepted_event_sha256": "562adafb9405290817d924cce00e6a9efd9e7bf84d2e5ee7227396083586f46e",
-    "source_commit": "35486f8f67946156f2d36522aa39dfecc1367190",
-    "build_id": "20260914-144446-3d69b57d",
+    "accepted_event": "engine/evidence/runs/000080-4d436a5b6af0067d.json",
+    "accepted_event_sha256": "5d6043b9a2e5c976d0690b497f5e1a0cad17e3d198fdb6bdef4fa1f110dad684",
+    "source_commit": "126f314c0d0bf118ee803de7cbbcb8455f786e9c",
+    "build_id": "20260914-151042-267f0abf",
     "generator_sha256": "9eeb04c352a48d09f795f4101f5b169dabdc41af21cdb9cc4e2b2956d942845a"
   }
 }

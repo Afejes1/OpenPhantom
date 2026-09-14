@@ -18,12 +18,12 @@
   "full_span_bytes": 162,
   "verified_operands": 14,
   "raw_functions": 0,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 8,
   "team_reported_done": 0,
   "manifest": "planning/team-manifest-20260912-1849.json",
   "retained_focused_checks": 73736,
-  "canonical_chain_checks": "pending shared run",
+  "canonical_chain_checks": 12096,
   "fixture_source_probes": [
     "elapsed_ticks",
     "elapsed_seconds",
@@ -40,5 +40,14 @@
   "initial_build_id": "20260914-150206-ebf67ea3",
   "initial_original_toolchain_fixture_passed": true,
   "initial_all316_comparisons_passed": true,
-  "modern_adjustment_independent_review": "comparison_inventory verified the two-row modern-only table correction and unchanged VC5 oracle/canonical source."
+  "modern_adjustment_independent_review": "comparison_inventory verified the two-row modern-only table correction and unchanged VC5 oracle/canonical source.",
+  "accepted_event": "engine/evidence/runs/000080-4d436a5b6af0067d.json",
+  "source_commit": "126f314c0d0bf118ee803de7cbbcb8455f786e9c",
+  "build_id": "20260914-151042-267f0abf",
+  "source_snapshot_inputs": 532,
+  "every_source_input_matches_committed_git_blob": true,
+  "shared_matrix_checks": 73736,
+  "independent_review": "comparison_inventory verified16frozen reports, eightinclude-only bodies, unchangedprior308, scoped sourceprobes and real low/high timingchains; separately approved modern-only two-row expectedtable while preserving fullVC5oracle.",
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34885297857",
+  "supplemental_ci_conclusion": "success"
 }

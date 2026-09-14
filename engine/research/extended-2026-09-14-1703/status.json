@@ -7,23 +7,20 @@
   "baseline_accepted": 290,
   "baseline_event": 75,
   "baseline_commit": "f7fdc3a3db572de9a7b0676703eae05608086d54",
-  "accepted_new": 18,
-  "accepted_current": 308,
-  "remaining_current": 643,
-  "local_team_not_done_current": 300,
-  "evidence_event_current": 79,
+  "accepted_new": 26,
+  "accepted_current": 316,
+  "remaining_current": 635,
+  "local_team_not_done_current": 308,
+  "evidence_event_current": 80,
   "pending_exact": [
-    "elapsed_ticks",
-    "elapsed_seconds",
-    "delta_ticks",
-    "signed_ms_to_seconds",
-    "ui_get_cursor",
-    "ui_navigation_code_pointer",
-    "ui_set_joy_navigation",
-    "ui_clear_joy_latches"
+    "ui_toggle_debug_boxes",
+    "ui_set_mouse_focus_clears",
+    "ui_widget_activation_id",
+    "ui3d_begin",
+    "ui3d_end"
   ],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A057 integrates eight exact timer/UI helpers with73736 focused checks and separate actual platform chains.",
+  "current_work": "A057 accepted eight timer/UI functions after an explicit modern-only expectation correction and clean rebuild. C082five exact UIcontrol functions are frozen and reviewed; console helpers are in preparation.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": "acceptance-057"
+  "acceptance_pending": null
 }
