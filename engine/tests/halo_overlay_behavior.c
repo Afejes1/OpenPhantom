@@ -124,7 +124,7 @@ static void halo_overlay_release_sprite(void *resource)
     *hl_handle(n) = hl_owned[3];
     hl_expected_handles[n] = 0;
 }
-void op_save_write(const void *memory, unsigned int bytes)
+static void sv_legacy_write(const void *memory, unsigned int bytes)
 {
     if (effects_chain_active)
     {
@@ -148,7 +148,7 @@ void op_save_write(const void *memory, unsigned int bytes)
     op_letterbox_previous = -10;
     op_letterbox_step = -8;
 }
-int op_save_read(void *memory, unsigned int bytes)
+static int sv_legacy_read(void *memory, unsigned int bytes)
 {
     if (effects_chain_active)
         return effects_chain_read(memory, bytes);

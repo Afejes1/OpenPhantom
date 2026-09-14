@@ -3353,6 +3353,126 @@
         "Shared fixtures connect actual colormap and material helpers; low-level allocation/acquisition/device and gray callbacks remain authored observers."
       ],
       "exceptions": []
+    },
+    {
+      "id": "save_write",
+      "module": "save",
+      "analysis_name": "save_write",
+      "purpose": "Forward the original data pointer and unsigned byte count to save_write_raw and preserve its full EAX return word. The stale void decompiler signature is contradicted by callers testing EAX.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/save-stream-acceptance.md",
+        "research/campaign-050-save-write/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/save_stream_behavior.c",
+        "tests/halo_overlay_behavior.c",
+        "tests/effects_chain_behavior.c"
+      ],
+      "quirks": [
+        "Actual wrappers and raw stream helpers are connected; file backend, header writer and diagnostic helpers remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "save_write_chunk",
+      "module": "save",
+      "analysis_name": "save_write_chunk",
+      "purpose": "Call save_header(context,bytes,low16 kind). Return1 immediately only if header returns exactly1. Otherwise call save_write(data,bytes), returning1 on zero and0 on every nonzero result. The context is a numeric resource identifier, not a C string. Header callback mutations remain visible to the write callback. Upper16 bits of the push carrying kind have no defined meaning.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/save-stream-acceptance.md",
+        "research/campaign-050-save-write-chunk/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/save_stream_behavior.c",
+        "tests/halo_overlay_behavior.c",
+        "tests/effects_chain_behavior.c"
+      ],
+      "quirks": [
+        "Actual wrappers and raw stream helpers are connected; file backend, header writer and diagnostic helpers remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "save_read",
+      "module": "save",
+      "analysis_name": "save_read",
+      "purpose": "Forward the data pointer and unsigned byte count to save_read_raw and preserve EAX.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/save-stream-acceptance.md",
+        "research/campaign-050-save-read/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/save_stream_behavior.c",
+        "tests/halo_overlay_behavior.c",
+        "tests/effects_chain_behavior.c"
+      ],
+      "quirks": [
+        "Actual wrappers and raw stream helpers are connected; file backend, header writer and diagnostic helpers remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "save_write_raw",
+      "module": "save",
+      "analysis_name": "save_write_raw",
+      "purpose": "Capture stream_write(data,bytes,1,output_stream) result. Only zero invokes error_begin(context), error_notify(17,-1,0,text,3840), error_end(same context), in that order. Return the captured word unchanged. Context is a fixed-address object used through at least108 bytes, not a pointer global. Authored context116 includes8 trailing guard bytes. Diagnostic callbacks are observers, not the real UI/context implementation.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/save-stream-acceptance.md",
+        "research/campaign-050-save-write-raw/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/save_stream_behavior.c",
+        "tests/halo_overlay_behavior.c",
+        "tests/effects_chain_behavior.c"
+      ],
+      "quirks": [
+        "Actual wrappers and raw stream helpers are connected; file backend, header writer and diagnostic helpers remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "save_read_raw",
+      "module": "save",
+      "analysis_name": "save_read_raw",
+      "purpose": "Call stream_read(data,bytes,1,input_stream), preserving its full EAX word and callback mutations. The backend receives the input-stream value at call entry.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/save-stream-acceptance.md",
+        "research/campaign-050-save-read-raw/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/save_stream_behavior.c",
+        "tests/halo_overlay_behavior.c",
+        "tests/effects_chain_behavior.c"
+      ],
+      "quirks": [
+        "Actual wrappers and raw stream helpers are connected; file backend, header writer and diagnostic helpers remain authored observers."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "save_seek_restore",
+      "module": "save",
+      "analysis_name": "save_seek_restore",
+      "purpose": "Call existing stream_seek(input_stream,offset,origin), preserving its full EAX word. Signed offsets and origins are forwarded unchanged.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/save-stream-acceptance.md",
+        "research/campaign-050-save-seek-restore/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/save_stream_behavior.c",
+        "tests/halo_overlay_behavior.c",
+        "tests/effects_chain_behavior.c"
+      ],
+      "quirks": [
+        "Actual wrappers and raw stream helpers are connected; file backend, header writer and diagnostic helpers remain authored observers."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

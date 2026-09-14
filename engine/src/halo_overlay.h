@@ -1,5 +1,6 @@
 #ifndef OP_HALO_OVERLAY_H
 #define OP_HALO_OVERLAY_H
+#include "save_stream.h"
 #include "focused_accessors.h"
 typedef struct OP_OVERLAY_SAVE
 {
@@ -27,8 +28,6 @@ extern char op_halo_name_a[], op_halo_name_b[], op_halo_name_c[];
 extern void *op_halo_sprite_a, *op_halo_sprite_b, *op_halo_sprite_c;
 extern OP_HALO op_halos[32];
 extern int op_halo_count;
-void op_save_write(const void *memory, unsigned int bytes);
-int op_save_read(void *memory, unsigned int bytes);
 void *op_acquire_sprite(char *name);
 int op_release_sprite(void **sprite);
 void op_halo_draw_actor(OP_ATTACHED_ACTOR *actor);

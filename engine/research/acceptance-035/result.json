@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "acceptance-035",
+  "baseline_commit": "27b0b383e09cb1f26ab71c8b1ebaba67efcf6b75",
+  "functions": [
+    "save_write",
+    "save_write_chunk",
+    "save_read",
+    "save_write_raw",
+    "save_read_raw",
+    "save_seek_restore"
+  ],
+  "promotions": 6,
+  "registered_before": 182,
+  "registered_after": 188,
+  "full_span_bytes": 264,
+  "verified_operands": 16,
+  "status": "integration-pending",
+  "team_not_done": 6,
+  "team_reported_done": 0,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "supplemental_compatibility": "Existing target-wide _CRT_SECURE_NO_WARNINGS retained only for modern supplemental build; VC5 unchanged.",
+  "canonical_symbol_mapping": {
+    "op_stream_read": "op_save_file_read",
+    "op_stream_write": "op_save_file_write"
+  },
+  "initial_fixture_compile": {
+    "status": "failed-name-collision",
+    "receipt": "engine/private/a035-initial-collision.json",
+    "sha256": "bf2bcf7a566ea6ec834f873946e225d3492c9186dab21a319ea7026d98e01423",
+    "reason": "Focused CRT stream_read observer collided with preexisting B3D stream_read helper at a different address; only new CRT backend symbols renamed."
+  },
+  "prebuild_fixture_compile": {
+    "receipt": "engine/private/a035-targeted-compile.json",
+    "sha256": "023ecc0d82f94fb3281a1e97706391d744dd41543cb1f006aac81dae7b99a77b",
+    "returncode": 0
+  },
+  "independent_review": "comparison_inventory: approved applied source, unchanged182-entry prefixes, mapped CRT bindings, guarded connected save chains and refined ABI"
+}

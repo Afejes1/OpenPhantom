@@ -1,0 +1,11 @@
+# Save stream acceptance
+
+Six exact save-stream functions enter the shared target with264 complete bytes and16 verified operands. Previous182 target and registry entries remain structurally unchanged. The source bodies remain identical to the frozen focused cases apart from their shared header include and explicit CRT backend symbol mapping.
+
+The shared header refines older void save-write and save-header declarations to observed int results and unsigned-short kind. Existing effects and overlay callers ignore those results; strict re-comparison checks their machine code. Original authored read/write callbacks now sit at the file-service boundary, so effects/overlay tests invoke actual save_read/write plus actual raw stream helpers. Distinct owned stream tokens, count1 and untouched diagnostic context are checked on every legacy call. The legacy authored writer returns1, representing successful backend output; read fixtures retain their existing return values.
+
+New connected tests exercise direct raw helpers and wrappers, then actual chunk->write->raw-write with the real zero-result diagnostic branch. Header exactly1 short-circuits; all other signed header values continue. Low16 kind values, full EAX words, callback-visible stream and data mutations, context108+8guard storage, and begin/notify/end ordering are checked. The existing shared seek observer dispatches to owned seek tests when active. The original diagnostic helpers and file/header services remain authored observers. Large counts through UINT_MAX are forwarding observations only, not actual I/O extents. No original game executes.
+
+No byte exclusions or VC5 warning waivers. Modern supplemental CRT compatibility remains as documented by acceptance034. Individual function and authored integration evidence does not establish whole-executable identity.
+
+The focused op_stream_read name collided with the existing B3D stream helper at a different address. Canonical CRT callbacks are therefore op_save_file_read and op_save_file_write. Only the new relocation symbol names change; offsets, resolved addresses, addends, source operations and full target extents remain identical. The initial fixture compile failure is retained in acceptance metadata.

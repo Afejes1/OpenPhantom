@@ -170,6 +170,7 @@ int op_compare_tag(const char *left, const char *right, unsigned int limit)
 }
 int op_stream_seek(void *handle, long offset, int origin)
 {
+    if(sv_active)return sv_seek(handle,offset,origin);
     WC_CHECK(world_chunks_active && wc_stage == 1);
     WC_CHECK(wc_backend_events++ == 0);
     wc_check_state();

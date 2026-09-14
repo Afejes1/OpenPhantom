@@ -122,6 +122,7 @@ static void clip_flag_tests(void)
 #include "geometry_behavior.c"
 #include "colormap_io_behavior.c"
 #include "normal_behavior.c"
+#include "save_stream_behavior.c"
 #include "palette_resources_behavior.c"
 #include "matrix_helpers_behavior.c"
 #include "canvas_face_behavior.c"
@@ -227,6 +228,7 @@ int main(void)
     failures += op_test_colormap_writer();
     failures += op_test_point_plane_distance();
     failures += op_test_vector_angle();
+    failures += op_test_save_stream();
     failures += op_test_normal_from_points();
     failures += op_test_palette_lifecycle();
     failures += op_test_palette_name_get();

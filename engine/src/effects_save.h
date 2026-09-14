@@ -1,5 +1,6 @@
 #ifndef OP_EFFECTS_SAVE_H
 #define OP_EFFECTS_SAVE_H
+#include "save_stream.h"
 #include "effects_state.h"
 typedef struct OP_EFFECTS_SAVE
 {
@@ -21,7 +22,6 @@ typedef char
                                 ? 1
                                 : -1];
 extern OP_EFFECTS_SAVE op_effects_save;
-int op_save_read(void *memory, unsigned int bytes);
 int op_shield_load(void);
 int op_overlay_read_state(void);
 int op_effects_load(int kind);
@@ -36,8 +36,6 @@ typedef struct OP_SHIELD_SAVE
 typedef char shield_save_extent[sizeof(OP_SHIELD_SAVE) == 52 ? 1 : -1];
 void op_get_fog_rgb(int *, int *, int *);
 void op_get_fog_range(float *, float *);
-void op_save_header(int, int, int);
-void op_save_write(const void *, unsigned int);
 int op_shield_save_size(void);
 int op_overlay_save_size(void);
 int op_overlay_save_state(void);

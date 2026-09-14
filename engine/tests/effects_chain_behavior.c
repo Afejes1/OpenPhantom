@@ -267,14 +267,16 @@ void op_get_fog_range(float *start, float *end)
     *start = -12.5f;
     *end = 900.25f;
 }
-void op_save_header(int context, int bytes, int kind)
+int op_save_header(int context, int bytes, unsigned short kind)
 {
+    if(sv_active)return sv_header(context,bytes,kind);
     EC_CHECK(ec_mode == EC_STREAM && ec_stage++ == 2);
     EC_CHECK(context == -73 && bytes == 128 + 52 * ec_rows && kind == 0x103);
     EC_CHECK(op_effects_save.shield_size == 4 + 52 * ec_rows);
     EC_CHECK(op_effects_save.overlay_size == 28);
     if (ec_mutation)
         op_effects_save.overlay_size = 700;
+    return 0;
 }
 static void effects_chain_write(const void *memory, unsigned int bytes)
 {

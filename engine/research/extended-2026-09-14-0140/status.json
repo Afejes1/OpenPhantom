@@ -180,7 +180,7 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Acceptance035 planning: six exact save-stream functions, refine historical save ABI and connect actual wrappers to effects/overlay fixtures.",
+  "current_work": "Acceptance035 integration applied: six exact save functions and actual effects/overlay stream chains; pending review and clean checkpoint.",
   "original_game_executed": false,
   "accepted_functions_current": 182,
   "evidence_records_current": 57,
