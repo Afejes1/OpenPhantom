@@ -9049,6 +9049,349 @@
           "kind": "dir32"
         }
       ]
+    },
+    {
+      "id": "kernel_show",
+      "address": 4820262,
+      "size": 24,
+      "body_size": 24,
+      "source": "src/kernel_show.c",
+      "symbol": "_op_kernel_show",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 8790264,
+          "symbol": "_op_kernel_show_command",
+          "kind": "dir32"
+        },
+        {
+          "offset": 11,
+          "address": 8790256,
+          "symbol": "_op_kernel_window",
+          "kind": "dir32"
+        },
+        {
+          "offset": 18,
+          "address": 9180780,
+          "symbol": "_op_kernel_show_window",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "kernel_hide",
+      "address": 4820286,
+      "size": 19,
+      "body_size": 19,
+      "source": "src/kernel_hide.c",
+      "symbol": "_op_kernel_hide",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 6,
+          "address": 8790256,
+          "symbol": "_op_kernel_window",
+          "kind": "dir32"
+        },
+        {
+          "offset": 13,
+          "address": 9180780,
+          "symbol": "_op_kernel_show_window",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "kernel_set_field",
+      "address": 4820305,
+      "size": 13,
+      "body_size": 13,
+      "source": "src/kernel_set_field.c",
+      "symbol": "_op_kernel_set_field",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 7,
+          "address": 8790508,
+          "symbol": "_op_kernel_field",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "kernel_set_callback",
+      "address": 4820414,
+      "size": 33,
+      "body_size": 33,
+      "source": "src/kernel_set_callback.c",
+      "symbol": "_op_kernel_set_callback",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 7,
+          "address": 8790272,
+          "symbol": "_op_kernel_callback",
+          "kind": "dir32"
+        },
+        {
+          "offset": 22,
+          "address": 8790276,
+          "symbol": "_op_kernel_callback_enabled",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "kernel_get_window",
+      "address": 4821514,
+      "size": 10,
+      "body_size": 10,
+      "source": "src/kernel_get_window.c",
+      "symbol": "_op_kernel_get_window",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 8790256,
+          "symbol": "_op_kernel_window",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "kernel_add_hook",
+      "address": 4820318,
+      "size": 96,
+      "body_size": 96,
+      "source": "src/kernel_add_hook.c",
+      "symbol": "_op_kernel_add_hook",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 34,
+          "address": 8790368,
+          "symbol": "_op_kernel_hooks",
+          "kind": "dir32",
+          "addend": 4
+        },
+        {
+          "offset": 54,
+          "address": 8790368,
+          "symbol": "_op_kernel_hooks",
+          "kind": "dir32"
+        },
+        {
+          "offset": 64,
+          "address": 8790368,
+          "symbol": "_op_kernel_hooks",
+          "kind": "dir32",
+          "addend": 4
+        },
+        {
+          "offset": 74,
+          "address": 8790504,
+          "symbol": "_op_kernel_hook_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 83,
+          "address": 8790504,
+          "symbol": "_op_kernel_hook_count",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "kernel_remove_hook",
+      "address": 4820447,
+      "size": 122,
+      "body_size": 122,
+      "source": "src/kernel_remove_hook.c",
+      "symbol": "_op_kernel_remove_hook",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 6,
+          "address": 8790504,
+          "symbol": "_op_kernel_hook_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 47,
+          "address": 8790368,
+          "symbol": "_op_kernel_hooks",
+          "kind": "dir32"
+        },
+        {
+          "offset": 76,
+          "address": 8790368,
+          "symbol": "_op_kernel_hooks",
+          "kind": "dir32"
+        },
+        {
+          "offset": 90,
+          "address": 8790368,
+          "symbol": "_op_kernel_hooks",
+          "kind": "dir32",
+          "addend": 4
+        },
+        {
+          "offset": 100,
+          "address": 8790504,
+          "symbol": "_op_kernel_hook_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 109,
+          "address": 8790504,
+          "symbol": "_op_kernel_hook_count",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "kernel_add_dialog",
+      "address": 4820569,
+      "size": 53,
+      "body_size": 53,
+      "source": "src/kernel_add_dialog.c",
+      "symbol": "_op_kernel_add_dialog",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 8790500,
+          "symbol": "_op_kernel_dialog_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 13,
+          "address": 8790500,
+          "symbol": "_op_kernel_dialog_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 23,
+          "address": 8790192,
+          "symbol": "_op_kernel_dialogs",
+          "kind": "dir32"
+        },
+        {
+          "offset": 29,
+          "address": 8790500,
+          "symbol": "_op_kernel_dialog_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 38,
+          "address": 8790500,
+          "symbol": "_op_kernel_dialog_count",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "kernel_remove_dialog",
+      "address": 4820622,
+      "size": 150,
+      "body_size": 150,
+      "source": "src/kernel_remove_dialog.c",
+      "symbol": "_op_kernel_remove_dialog",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 27,
+          "address": 8790500,
+          "symbol": "_op_kernel_dialog_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 42,
+          "address": 8790192,
+          "symbol": "_op_kernel_dialogs",
+          "kind": "dir32"
+        },
+        {
+          "offset": 57,
+          "address": 8790500,
+          "symbol": "_op_kernel_dialog_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 69,
+          "address": 8790500,
+          "symbol": "_op_kernel_dialog_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 90,
+          "address": 8790192,
+          "symbol": "_op_kernel_dialogs",
+          "kind": "dir32",
+          "addend": 4
+        },
+        {
+          "offset": 97,
+          "address": 8790192,
+          "symbol": "_op_kernel_dialogs",
+          "kind": "dir32"
+        },
+        {
+          "offset": 118,
+          "address": 8790192,
+          "symbol": "_op_kernel_dialogs",
+          "kind": "dir32"
+        },
+        {
+          "offset": 128,
+          "address": 8790500,
+          "symbol": "_op_kernel_dialog_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 137,
+          "address": 8790500,
+          "symbol": "_op_kernel_dialog_count",
+          "kind": "dir32"
+        }
+      ]
     }
   ]
 }

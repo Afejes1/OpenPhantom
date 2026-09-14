@@ -1,0 +1,7 @@
+# Kernel window acceptance
+
+Nine exact functions add 520 complete bytes and 34 address operands. Canonical bodies change only their include. All 252 prior target and registry entries remain unchanged. Each of the nine focused fixtures keeps its reviewed cases in a separate local namespace, with global bindings defined once and its own ShowWindow observer installed before use.
+
+Connected tests call actual show, getter, hide, opaque setter and callback setter; fill and empty the actual hook and dialog tables; verify dialog-capacity rejection, duplicate-first removal and missing removals; then clear the callback. Full scalar/array state is checked after every operation, carrying show-callback mutations throughout without reseeding. Hook insertion always has a free slot, preserving the original required precondition. Full table snapshots do not claim physical adjacency of separately linked globals. The kernel window at8620F0 remains distinct from the earlier window-state handle at8620A4.
+
+The initial focused preflight caught an offset transcription error in add-dialog: the live count reload operand starts at +29, not +28. Correcting the target metadata required no source change. All nine natural sources matched on their first actual compile; the failed preflight is retained separately. No byte exclusions, new warning waivers or real window/OS/game execution. Whole-executable layout remains pending.

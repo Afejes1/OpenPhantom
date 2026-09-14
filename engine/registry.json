@@ -4685,6 +4685,186 @@
         "Connected tests invoke actual canonical functions without reseeding between sequence steps."
       ],
       "exceptions": []
+    },
+    {
+      "id": "kernel_show",
+      "module": "wkernel",
+      "analysis_name": "kernel_show",
+      "purpose": "Void cdecl captures command and kernel window word, calls stdcall ShowWindow, ignores return. Callback mutates live state after observing captured arguments; mutation is preserved. Kernel window8620F0 is distinct from the prior window state8620A4.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/kernel-acceptance.md",
+        "research/campaign-063-kernel-show/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/kernel_behavior.c"
+      ],
+      "quirks": [
+        "Kernel handle is distinct from the earlier window-state handle.",
+        "Hook insertion requires at least one free slot; original lacks a full-capacity guard.",
+        "Full array snapshots do not assert physical adjacency of separately linked globals."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "kernel_hide",
+      "module": "wkernel",
+      "analysis_name": "kernel_hide",
+      "purpose": "Void cdecl calls stdcall ShowWindow with live kernel window and literal0, ignoring its result. Captured arguments and callback mutation preservation are tested.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/kernel-acceptance.md",
+        "research/campaign-063-kernel-hide/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/kernel_behavior.c"
+      ],
+      "quirks": [
+        "Kernel handle is distinct from the earlier window-state handle.",
+        "Hook insertion requires at least one free slot; original lacks a full-capacity guard.",
+        "Full array snapshots do not assert physical adjacency of separately linked globals."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "kernel_set_field",
+      "module": "wkernel",
+      "analysis_name": "kernel_set_field",
+      "purpose": "Void cdecl stores an opaque32-bit field at8621EC. Semantic meaning is unresolved; no stronger interpretation is claimed.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/kernel-acceptance.md",
+        "research/campaign-063-kernel-set-field/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/kernel_behavior.c"
+      ],
+      "quirks": [
+        "Kernel handle is distinct from the earlier window-state handle.",
+        "Hook insertion requires at least one free slot; original lacks a full-capacity guard.",
+        "Full array snapshots do not assert physical adjacency of separately linked globals."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "kernel_set_callback",
+      "module": "wkernel",
+      "analysis_name": "kernel_set_callback",
+      "purpose": "Cdecl stores opaque32-bit callback identity and full-word boolean identity!=0, returns1. Callers supply function addresses, but the pointee signature is unresolved; no fixture dereferences synthetic words.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/kernel-acceptance.md",
+        "research/campaign-063-kernel-set-callback/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/kernel_behavior.c"
+      ],
+      "quirks": [
+        "Kernel handle is distinct from the earlier window-state handle.",
+        "Hook insertion requires at least one free slot; original lacks a full-capacity guard.",
+        "Full array snapshots do not assert physical adjacency of separately linked globals."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "kernel_get_window",
+      "module": "wkernel",
+      "analysis_name": "kernel_get_window",
+      "purpose": "No-argument cdecl returns live kernel window word8620F0, distinct from the prior graphics/window handle. Intervening authored mutations test fresh reads.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/kernel-acceptance.md",
+        "research/campaign-063-kernel-get-window/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/kernel_behavior.c"
+      ],
+      "quirks": [
+        "Kernel handle is distinct from the earlier window-state handle.",
+        "Hook insertion requires at least one free slot; original lacks a full-capacity guard.",
+        "Full array snapshots do not assert physical adjacency of separately linked globals."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "kernel_add_hook",
+      "module": "wkernel",
+      "analysis_name": "kernel_add_hook",
+      "purpose": "Cdecl signed index scans16 active words, publishes callback identity then active1 into first free record, increments unsigned live count and returns1. Original lacks a full-capacity guard and writes index16 if all slots are active. Fixture precondition guarantees one free slot; count can vary independently, including modulo wrap. No attempt to repair original behavior.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/kernel-acceptance.md",
+        "research/campaign-063-kernel-add-hook/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/kernel_behavior.c"
+      ],
+      "quirks": [
+        "Kernel handle is distinct from the earlier window-state handle.",
+        "Hook insertion requires at least one free slot; original lacks a full-capacity guard.",
+        "Full array snapshots do not assert physical adjacency of separately linked globals."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "kernel_remove_hook",
+      "module": "wkernel",
+      "analysis_name": "kernel_remove_hook",
+      "purpose": "Cdecl rejects signed count<=0, searches all16 identity words without checking active flags, clears first matching identity and flag, decrements count, returns1; absent returns0. Duplicate and inactive matches are intentional; opaque words never execute.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/kernel-acceptance.md",
+        "research/campaign-063-kernel-remove-hook/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/kernel_behavior.c"
+      ],
+      "quirks": [
+        "Kernel handle is distinct from the earlier window-state handle.",
+        "Hook insertion requires at least one free slot; original lacks a full-capacity guard.",
+        "Full array snapshots do not assert physical adjacency of separately linked globals."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "kernel_add_dialog",
+      "module": "wkernel",
+      "analysis_name": "kernel_add_dialog",
+      "purpose": "Cdecl unsigned count<16 appends opaque dialog word, increments count and returns1; unsigned count>=16 returns0 without writes. Rejected counts include high-bit patterns.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/kernel-acceptance.md",
+        "research/campaign-063-kernel-add-dialog/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/kernel_behavior.c"
+      ],
+      "quirks": [
+        "Kernel handle is distinct from the earlier window-state handle.",
+        "Hook insertion requires at least one free slot; original lacks a full-capacity guard.",
+        "Full array snapshots do not assert physical adjacency of separately linked globals."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "kernel_remove_dialog",
+      "module": "wkernel",
+      "analysis_name": "kernel_remove_dialog",
+      "purpose": "Cdecl searches first matching dialog within unsigned count, stably shifts suffix left, clears former last and decrements count, returns1. Missing returns0. Fixture domain count0..16, first duplicate removal, all positions and irrelevant suffix preservation. Independent filter oracle predicts output from original fixture inputs.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/kernel-acceptance.md",
+        "research/campaign-063-kernel-remove-dialog/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/kernel_behavior.c"
+      ],
+      "quirks": [
+        "Kernel handle is distinct from the earlier window-state handle.",
+        "Hook insertion requires at least one free slot; original lacks a full-capacity guard.",
+        "Full array snapshots do not assert physical adjacency of separately linked globals."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

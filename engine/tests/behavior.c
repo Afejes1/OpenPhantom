@@ -133,6 +133,7 @@ static void clip_flag_tests(void)
 #include "trig_behavior.c"
 #include "length_behavior.c"
 #include "audio_behavior.c"
+#include "kernel_behavior.c"
 #include "directory_behavior.c"
 #include "palette_resources_behavior.c"
 #include "matrix_helpers_behavior.c"
@@ -308,6 +309,16 @@ int main(void)
     failures += op_test_audio3d_release();
     failures += op_test_length_connected();
     failures += op_test_audio_connected();
+    failures += op_test_kernel_show();
+    failures += op_test_kernel_hide();
+    failures += op_test_kernel_set_field();
+    failures += op_test_kernel_set_callback();
+    failures += op_test_kernel_get_window();
+    failures += op_test_kernel_add_hook();
+    failures += op_test_kernel_remove_hook();
+    failures += op_test_kernel_add_dialog();
+    failures += op_test_kernel_remove_dialog();
+    failures += op_test_kernel_connected();
     failures += op_test_normal_from_points();
     failures += op_test_palette_lifecycle();
     failures += op_test_palette_name_get();

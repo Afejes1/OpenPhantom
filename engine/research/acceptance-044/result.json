@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "acceptance-044",
+  "baseline_commit": "3b23c8fe734a970e6ab1f47337ab4ac65fa9b743",
+  "functions": [
+    "kernel_show",
+    "kernel_hide",
+    "kernel_set_field",
+    "kernel_set_callback",
+    "kernel_get_window",
+    "kernel_add_hook",
+    "kernel_remove_hook",
+    "kernel_add_dialog",
+    "kernel_remove_dialog"
+  ],
+  "promotions": 9,
+  "registered_before": 252,
+  "registered_after": 261,
+  "full_span_bytes": 520,
+  "verified_operands": 34,
+  "status": "integration-pending",
+  "team_not_done": 9,
+  "team_reported_done": 0,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "independent_review": "comparison_inventory approved nine include-only sources and connected kernel fixtures; parent verified exact252-entry prefixes",
+  "prebuild_fixture_compile": {
+    "receipt": "engine/private/a044-targeted-compile.json",
+    "sha256": "4ed249c7b87d073a92bcf09bc853b450845cfad8e5e41320b36634e19ca90a7c",
+    "returncode": 0
+  }
+}
