@@ -24,5 +24,11 @@
   "byte_exclusions": [],
   "warning_waivers": [],
   "original_game_executed": false,
-  "whole_executable_match": false
+  "whole_executable_match": false,
+  "work_completed_utc": "2026-09-14T14:20:29.652292+00:00",
+  "elapsed_work_seconds": 3329.652292,
+  "module_file_functions": 20,
+  "module_file_accepted": 12,
+  "module_file_focused_exact_pending": 1,
+  "module_file_other_remaining": 7
 }

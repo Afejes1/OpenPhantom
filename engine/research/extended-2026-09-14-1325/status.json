@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "active",
+  "status": "completed",
   "start_utc": "2026-09-14T13:25:00Z",
   "stop_implementation_utc": "2026-09-14T14:10:00Z",
   "deadline_utc": "2026-09-14T14:25:00Z",
@@ -17,7 +17,7 @@
     "067"
   ],
   "accepted_new": 6,
-  "current_work": "Six accepted at event70; one more focused exact and one research candidate reviewed separately. Final publication and fixed14:25stop.",
+  "current_work": "Window complete:6promotions to273/event70,1focusedexact awaiting nextbatch,1research; module queue and verified handoff saved. Closing publication before14:25.",
   "focused_exact_new": 7,
   "focused_checks": 2300160,
   "usage_observation": {
@@ -31,7 +31,11 @@
   "local_team_not_done_current": 265,
   "source_commit": "4789186cfddc4781d88da548aa2807ea120171ec",
   "acceptance": "research/acceptance-047/results.md",
-  "ghidra_metadata_saved_utc": "2026-09-14T13:54:57.143Z",
+  "ghidra_metadata_saved_utc": "2026-09-14T14:19:14.010Z",
   "focused_exact_pending_acceptance": 1,
-  "research_candidates_new": 1
+  "research_candidates_new": 1,
+  "completed_utc": "2026-09-14T14:20:29.652292+00:00",
+  "elapsed_seconds": 3329.652292,
+  "heartbeat_status": "PAUSED",
+  "heartbeat_pause_verified_utc": "2026-09-14T14:21:12.285229+00:00"
 }

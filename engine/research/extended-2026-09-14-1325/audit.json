@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "checked_utc": "2026-09-14T14:11:31.006893+00:00",
+  "publication_commit": "eb939b1667b7cba040d1af674b2ec5e665df54bb",
+  "accepted_source_commit": "4789186cfddc4781d88da548aa2807ea120171ec",
+  "accepted_event": "engine/evidence/runs/000070-5617c8a530e377e3.json",
+  "source_snapshot_inputs": 468,
+  "all_current_source_inputs_equal_event_and_git": true,
+  "focused_report_hashes_verified": 16,
+  "focused_case_input_hashes_equal_git": 48,
+  "manifest_unique_addresses": 2241,
+  "manifest_remaining_rows": 678,
+  "original_game_executed": false,
+  "scope": "C066 global target snapshot is historical pre-integration; its independent full-snapshot review occurred before integration. Current event70 and all published case-local input bytes were verified against Git here.",
+  "publication_ci": {
+    "run_id": 34853853408,
+    "url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34853853408",
+    "conclusion": "success"
+  },
+  "shared_ci": {
+    "run_id": 34851910959,
+    "url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34851910959",
+    "conclusion": "success",
+    "source_commit": "4789186cfddc4781d88da548aa2807ea120171ec"
+  },
+  "acceptance_review": "research/campaign-066/review.json",
+  "focused_followup_review": "research/campaign-067/review.json",
+  "new_manifest_generator_checks": [
+    "Known old event69 counts707remaining",
+    "Known latest event69 counts684remaining",
+    "Latest event70 counts678remaining and exact row partition",
+    "Duplicate accepted address rejected",
+    "Nonzero byte difference rejected",
+    "Different retail target rejected"
+  ]
+}

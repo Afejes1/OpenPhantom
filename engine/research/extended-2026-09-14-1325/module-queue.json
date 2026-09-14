@@ -1,0 +1,319 @@
+{
+  "schema": 1,
+  "module": "util/module.c",
+  "team_functions": 20,
+  "accepted": 12,
+  "focused_exact_pending": 1,
+  "research": 1,
+  "otherwise_not_implemented": 6,
+  "coordination": "Local focus only; no contributor message or exclusive reservation.",
+  "queue": [
+    "Carry in reviewed module_start_all at the next grouped acceptance.",
+    "Implement open/close together with shared open flag and paired state fixtures.",
+    "Study install switch lowering before revisiting scalar-capture cases.",
+    "Preserve the existing save_lifecycle symbol for generic dispatcher integration; keep name-helper alignment separate."
+  ],
+  "static_packets": [
+    {
+      "address": "0x0046EC0C",
+      "name": "module_shutdown_all",
+      "full_bytes": 121,
+      "abi": "cdecl void(void)",
+      "bindings": [
+        [
+          15,
+          "0x006D64CC",
+          "dir32"
+        ],
+        [
+          23,
+          "0x006D64C8",
+          "dir32"
+        ],
+        [
+          98,
+          "0x00495452",
+          "rel32-call"
+        ],
+        [
+          109,
+          "0x006D64CC",
+          "dir32"
+        ]
+      ],
+      "contract": "If initialized, cache tail and walk backward. Bit0-set callback(2,0,0), result ignored. Read current previous AFTER callback and capture BEFORE release; release every visited node and advance using captured previous. Always initialized0; head/tail remain unchanged.",
+      "fixture": "Owned nodes and release observer: callback link changes affect traversal; release link changes do not. Verify callback/capture/release order, eligibility, all releases, final init0 and retained endpoints.",
+      "source_shape": "Observed result initialized1 despite void return and extra callback-result copy at stack-16; preserve genuine observed stores without artificial padding.",
+      "body_bytes": 121,
+      "alignment_tail_bytes": 0,
+      "implementation_started": false,
+      "parent_full_disassembly_reviewed": true,
+      "existing_callee_bindings": []
+    },
+    {
+      "address": "0x0046EC85",
+      "name": "module_open_all",
+      "full_bytes": 137,
+      "abi": "cdecl int(void)",
+      "bindings": [
+        [
+          15,
+          "0x006D64CC",
+          "dir32"
+        ],
+        [
+          24,
+          "0x006D64D0",
+          "dir32"
+        ],
+        [
+          33,
+          "0x006D64D0",
+          "dir32"
+        ],
+        [
+          42,
+          "0x006D64C8",
+          "dir32"
+        ]
+      ],
+      "contract": "Uninitialized or already open returns1 unchanged. Otherwise openflag1 before callbacks, cache tail/live previous, bit1-clear callback(3,0,0); zero return reloads live status and sets bit1. Final0; callback global mutations persist.",
+      "fixture": "Init/open gate matrix, callback-visible openflag1, reverse traversal, live previous skip/truncate, status/global replacement and full guarded state.",
+      "body_bytes": 137,
+      "alignment_tail_bytes": 0,
+      "implementation_started": false,
+      "parent_full_disassembly_reviewed": true,
+      "existing_callee_bindings": []
+    },
+    {
+      "address": "0x0046ED0E",
+      "name": "module_close_all",
+      "full_bytes": 86,
+      "abi": "cdecl void(void)",
+      "bindings": [
+        [
+          6,
+          "0x006D64D0",
+          "dir32"
+        ],
+        [
+          16,
+          "0x006D64C4",
+          "dir32"
+        ],
+        [
+          74,
+          "0x006D64D0",
+          "dir32"
+        ]
+      ],
+      "contract": "When open, cache head/live next; bit1-set callback(4,0,0), return ignored, no status clear. Always openflag0 afterward, overriding callback flag mutation.",
+      "fixture": "Closed gate, forward order/filtering, live link changes, preserved callback status writes, final flag0.",
+      "source_shape": "Entry has explicit JNZ plus cleanup JMP; an early-cleanup goto may be needed to preserve observed control flow.",
+      "body_bytes": 86,
+      "alignment_tail_bytes": 0,
+      "implementation_started": false,
+      "parent_full_disassembly_reviewed": true,
+      "existing_callee_bindings": []
+    },
+    {
+      "address": "0x0046ED64",
+      "name": "module_install",
+      "full_bytes": 299,
+      "abi": "cdecl unsigned32(callback_word,const char *name)",
+      "bindings": [
+        [
+          23,
+          "0x00495290",
+          "rel32-call"
+        ],
+        [
+          117,
+          "0x0049AC20",
+          "rel32-call"
+        ],
+        [
+          129,
+          "0x006D64C8",
+          "dir32"
+        ],
+        [
+          147,
+          "0x006D64C8",
+          "dir32"
+        ],
+        [
+          155,
+          "0x006D64C8",
+          "dir32"
+        ],
+        [
+          169,
+          "0x006D64C8",
+          "dir32"
+        ],
+        [
+          175,
+          "0x006D64C4",
+          "dir32"
+        ],
+        [
+          186,
+          "0x006D64C4",
+          "dir32"
+        ]
+      ],
+      "contract": "Allocate36, failure0. ID=node address; clear bits1/3/2 in that order, retaining other allocator bits. Install callback and name16; append at current tail, publish tail before filling empty head. Callback(1,0,0): result0/2 sets live bit0,1 clears it,others preserve it. Return live post-callback ID. Callback failure does not unlink/free.",
+      "fixture": "Owned allocator failure/success, raw status patterns, bounded authored names with padding/truncation, allocator endpoint mutation, callback-visible insertion state, results0/1/2/extremes with ID/status mutation, full guarded list.",
+      "source_shape": "Observed switch lowering copies result-4 to selector-12, then compares0/1/2 with distinct case bodies. This is a concrete comparison point for nearby redundant scalar captures; an empty-case-switch explanation remains an uncompiled hypothesis.",
+      "body_bytes": 299,
+      "alignment_tail_bytes": 0,
+      "implementation_started": false,
+      "parent_full_disassembly_reviewed": true,
+      "existing_callee_bindings": []
+    }
+  ],
+  "functions": [
+    {
+      "address": "0x0046EBE0",
+      "team_name": "module_reset",
+      "team_status": "not_done",
+      "local_state": "accepted",
+      "canonical_id": "module_initialize_once"
+    },
+    {
+      "address": "0x0046EC0C",
+      "team_name": "module_shutdownAll",
+      "team_status": "not_done",
+      "local_state": "not-implemented",
+      "canonical_id": null
+    },
+    {
+      "address": "0x0046EC85",
+      "team_name": "module_openAll",
+      "team_status": "not_done",
+      "local_state": "not-implemented",
+      "canonical_id": null
+    },
+    {
+      "address": "0x0046ED0E",
+      "team_name": "module_closeAll",
+      "team_status": "not_done",
+      "local_state": "not-implemented",
+      "canonical_id": null
+    },
+    {
+      "address": "0x0046ED64",
+      "team_name": "module_install",
+      "team_status": "not_done",
+      "local_state": "not-implemented",
+      "canonical_id": null
+    },
+    {
+      "address": "0x0046EE8F",
+      "team_name": "module_removeVoid",
+      "team_status": "not_done",
+      "local_state": "accepted",
+      "canonical_id": "module_remove_void"
+    },
+    {
+      "address": "0x0046EEA0",
+      "team_name": "module_getFlags",
+      "team_status": "not_done",
+      "local_state": "accepted",
+      "canonical_id": "module_get_flags"
+    },
+    {
+      "address": "0x0046EF38",
+      "team_name": "module_sendShutdown",
+      "team_status": "not_done",
+      "local_state": "research",
+      "canonical_id": null
+    },
+    {
+      "address": "0x0046EFFE",
+      "team_name": "module_startAll",
+      "team_status": "not_done",
+      "local_state": "focused-exact-pending",
+      "canonical_id": null
+    },
+    {
+      "address": "0x0046F0BF",
+      "team_name": "module_stopAll",
+      "team_status": "not_done",
+      "local_state": "accepted",
+      "canonical_id": "module_stop_all"
+    },
+    {
+      "address": "0x0046F180",
+      "team_name": "module_broadcastSave",
+      "team_status": "not_done",
+      "local_state": "accepted",
+      "canonical_id": "module_broadcast_save"
+    },
+    {
+      "address": "0x0046F1FD",
+      "team_name": "module_sendRestore",
+      "team_status": "not_done",
+      "local_state": "accepted",
+      "canonical_id": "module_send_restore"
+    },
+    {
+      "address": "0x0046F240",
+      "team_name": "module_suspendAll",
+      "team_status": "not_done",
+      "local_state": "accepted",
+      "canonical_id": "module_suspend_all"
+    },
+    {
+      "address": "0x0046F301",
+      "team_name": "module_resumeAll",
+      "team_status": "not_done",
+      "local_state": "accepted",
+      "canonical_id": "module_resume_all"
+    },
+    {
+      "address": "0x0046F3C3",
+      "team_name": "module_broadcast",
+      "team_status": "not_done",
+      "local_state": "not-implemented",
+      "canonical_id": null
+    },
+    {
+      "address": "0x0046F4A9",
+      "team_name": "module_broadcastDt",
+      "team_status": "not_done",
+      "local_state": "accepted",
+      "canonical_id": "module_broadcast_event"
+    },
+    {
+      "address": "0x0046F529",
+      "team_name": "module_findById",
+      "team_status": "not_done",
+      "local_state": "accepted",
+      "canonical_id": "module_find_by_id"
+    },
+    {
+      "address": "0x0046F55D",
+      "team_name": "module_remove",
+      "team_status": "not_done",
+      "local_state": "accepted",
+      "canonical_id": "module_remove"
+    },
+    {
+      "address": "0x0046F5F2",
+      "team_name": "module_findByName",
+      "team_status": "not_done",
+      "local_state": "accepted",
+      "canonical_id": "module_find_by_name"
+    },
+    {
+      "address": "0x0046F639",
+      "team_name": "module_getName",
+      "team_status": "not_done",
+      "local_state": "not-implemented",
+      "canonical_id": null
+    }
+  ],
+  "prepared_utc": "2026-09-14T14:18:36.534748+00:00"
+}

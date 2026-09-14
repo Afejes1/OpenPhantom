@@ -443,3 +443,15 @@ Acceptance 046 reaches 267 accepted functions at event 69. Three new debug wrapp
 Static follow-up on451BC2 found that its name helper46F639 looks up a module ID, then strncpy-copies node+20 into the caller buffer. It takes three stack arguments; entry PUSH ECX is local allocation, and the caller cleans12 bytes. Ghidra previously displayed a misleading four-argument thiscall form. The bridge rejected an explicit cdecl prototype but accepted the corrected three-argument signature; re-decompilation now shows the right argument flow with an unresolved calling-convention warning. An evidence comment is saved, no function was renamed, and no candidate was compiled. Missing-module lookup leaves the name region untouched, while the header writer ignores the helper return; future fixture domains must account for that. See [next-work](research/extended-2026-09-14-0140/next-work.json).
 
 Re-decompiling the save-header caller still injects an extra receiver-like argument despite the corrected helper body. This metadata inconsistency remains unresolved and is explicit in next-work.json; the observed three-stack-argument contract is the authority. No source acceptance or test result depends on this preliminary metadata.
+
+## September 14 one-hour continuation
+
+Acceptance 047 reaches 273 accepted functions at event 70: six module dispatchers
+add 900 complete bytes and eleven verified operands. All shared comparisons and
+authored tests pass, and the same-source supplemental CI succeeds. One additional
+193-byte start helper is focused-exact and awaits the next batch; shutdown remains
+research at 193 candidate bytes versus a 198-byte full target. The latest contributor
+snapshot now has 265 of its 943 unfinished functions locally accepted, leaving 678
+assuming the reported-done entries are correct. See the [window report](research/extended-2026-09-14-1325/results.md)
+and [module queue](research/extended-2026-09-14-1325/module-queue.json). No original
+game execution or whole-executable identity is claimed.

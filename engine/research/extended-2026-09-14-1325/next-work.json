@@ -82,5 +82,6 @@
       "original_implementation_started_utc": "2026-09-14T14:05:27.434981+00:00",
       "do_not_reset_cap": true
     }
-  ]
+  ],
+  "source_shape_investigation_note": "The redundant scalar stores are directly observed instructions, not merely a desired frame size. Distinguish reconstruction of an observed scalar capture from fabricating padding or arbitrary dead storage. Any later candidate should document that instruction-level correspondence and preserve existing attempt/cutoff history; no original macro purpose or variable name is known."
 }

@@ -57,3 +57,12 @@ candidate. The [eight-function ledger](functions.json) keeps these statuses sepa
 The [next assignment](next-work.json) also documents the general lifecycle
 dispatcher's verified ABI and complete span, its existing save-chain symbol, and
 an unresolved source-layout question. No second shared regression was run.
+
+The [final audit](audit.json) verifies all 468 current accepted inputs against
+event 70 and Git, all 16 focused report hashes, 48 case-local input hashes
+against Git, and the exact 2,241-address/678-remaining partition.
+
+The [module queue](module-queue.json) covers all 20 entries in util/module.c:
+12 accepted, one focused exact awaiting acceptance, one research candidate and
+six otherwise unimplemented. Four further static assignment packets record
+complete extents, operands, callback ordering, global writes and lifetime rules.
