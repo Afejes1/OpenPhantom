@@ -6552,6 +6552,44 @@
         "All focused matrices retained with full registry/pending/globals and bounded output aliases."
       ],
       "exceptions": []
+    },
+    {
+      "id": "time_module_proc",
+      "module": "elapsed-time",
+      "analysis_name": "time_module_proc",
+      "purpose": "Initialize timer baselines through the actual platform clock chain.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/timer-scheduler-acceptance.md",
+        "research/campaign-091-time-module-proc/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/time_module_behavior.c"
+      ],
+      "quirks": [
+        "Signed stored-tick conversion and live second-clock baseline.",
+        "All focused matrices retained; no original execution or byte exceptions."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "task_run_all",
+      "module": "task-manager",
+      "analysis_name": "task_run_all",
+      "purpose": "Scan active task callbacks, reschedule or clean up with live global state.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/timer-scheduler-acceptance.md",
+        "research/campaign-092-task-run-all/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/task_scheduler_behavior.c"
+      ],
+      "quirks": [
+        "Unsigned countdown decrement, signed due/result decisions and live current/cursor after callbacks.",
+        "All focused matrices retained; no original execution or byte exceptions."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T21:20:20.839610+00:00",
+  "conclusion": "focused-exact-approved",
+  "snapshot_members": 14,
+  "selected_reports": 2,
+  "checks": 1592448,
+  "details": "All14 snapshots andtwo reports rehashclean;30operands, full297-byte span, known desiredcursor oracle; callback/release prestate and sequential count/current/index effects; typedcallback removesC4055 withoutwaiver.",
+  "integration_review": {
+    "conclusion": "approved",
+    "details": "Prior345target/registry unchanged; twoinclude-only bodies; task_register signature-only typedcallbackrefinement, four distinct authored callbackidentities; all1696848newchecks andpriorcases retained; scoped release route/APIcontrolrestoration. Fullcomparison must prove priorregistrationbytes. Interpolationglobal documented asraw32-bit zero-storeview, notsemanticmode."
+  }
+}

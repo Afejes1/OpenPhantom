@@ -1,4 +1,9 @@
 #include "../src/task_manager.h"
+static int tr_update0(void){return 0;}
+static int tr_update1(void){return 1;}
+static int tr_update2(void){return 2;}
+static int tr_update3(void){return 3;}
+static OP_TASK_UPDATE tr_updates[4]={tr_update0,tr_update1,tr_update2,tr_update3};
 OP_TASK_RECORD op_tasks[64];
 unsigned char op_task_pending[20];
 unsigned int op_task_count, op_task_cursor, op_task_target, op_task_simulation;
@@ -41,7 +46,7 @@ static void t890_setup(int pattern)
     for (i = 0; i < (int)sizeof(op_tasks); ++i)
         b[i] = (unsigned char)(i * 37 + pattern * 11 + 3);
     for (i = 0; i < 64; ++i)
-        op_tasks[i].update = &t890_tokens[i % 4];
+        op_tasks[i].update = tr_updates[i % 4];
     memcpy(t890_expected, op_tasks, sizeof(t890_expected));
     for (i = 0; i < 20; ++i)
         op_task_pending[i] = t890_pending[i] = (unsigned char)(i * 17 + pattern * 5 + 11);
@@ -120,7 +125,7 @@ static void t891_setup(int pattern)
     for (i = 0; i < (int)sizeof(op_tasks); ++i)
         b[i] = (unsigned char)(i * 37 + pattern * 11 + 3);
     for (i = 0; i < 64; ++i)
-        op_tasks[i].update = &t891_tokens[i % 4];
+        op_tasks[i].update = tr_updates[i % 4];
     memcpy(t891_expected, op_tasks, sizeof(t891_expected));
     for (i = 0; i < 20; ++i)
         op_task_pending[i] = t891_pending[i] = (unsigned char)(i * 17 + pattern * 5 + 11);
@@ -135,7 +140,7 @@ static int op_test_task_register(void)
 {
     static const unsigned int counts[6] = {0u, 1u, 63u, 64u, 0xfffffffeu, 0xffffffffu};
     int free_index, extra, p, c, k;
-    void *callback;
+    OP_TASK_UPDATE callback;
     OP_TASK_RECORD *result, *wanted;
     unsigned int token_before[4];
     for (free_index = 0; free_index <= 64; ++free_index)
@@ -147,7 +152,7 @@ static int op_test_task_register(void)
                         t891_setup(p);
                         memcpy(token_before, t891_tokens, sizeof(t891_tokens));
                         op_task_count = t891_wanted_count = counts[c];
-                        callback = k ? &t891_tokens[k] : NULL;
+                        callback = k ? tr_updates[k] : NULL;
                         if (free_index < 64)
                         {
                             op_tasks[free_index].update = NULL;

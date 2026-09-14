@@ -1,0 +1,9 @@
+# Task registry scheduler
+
+Complete original0047582A..00475953 interval297bytes, no tail. The body reads no arguments and has a plain RET; one legacy caller supplies an ignored word. Reconstructed cdecl void(void) does not invent a used argument. Thirty verified operands are listed individually; the inventory list originally said29 but contained30 entries, corrected before source acceptance.
+
+Initial countzero preserves everything. Otherwise globalcursor starts0 and scans64slots. Each nonnull update decrements unsignedcountdown then tests signed<=0, publishescurrent, optionallybindsdata, calls the indexed callback, then handles negative cleanup or nonnegative rescheduling using liveglobals. Negative decrements livecount, optionallycalls externalrelease with livecurrent.data, and clears update on the livecursor afterrelease. Current is not restored and cursor increments from its live value.
+
+Authored fixtures use full64-record/pending/sixglobal snapshots, literal signed-countdown wrap/due tables and result boundaries. Callback and release phases independently verify state before known mutations. Current retargets, forwardcursor jumps to63, countunderflow, output aliases and post-releasecursor mutation are covered. A separate64-position sweep covers non-due andnullupdate behavior. The domain excludes backwardcursor cycles, invalid/currentnullptr retargeting, new registrations duringcallbacks and arbitraryoutput aliases; a callbackcountguard aborts unexpected repeats. Initial opaque data-pointer cast was rejected byVC5C4055. Updatefield andregistration API are now recovered as cdecl int(void) functionpointers with unchangedfieldoffset/ABI; priorcanonical registration bytes must be reverified after its signature-only refinement. Externalrelease uses an owned token and never frees game memory.
+
+No original execution, bytepadding/exclusions, shortenedspan or warningwaivers.

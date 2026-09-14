@@ -2,7 +2,7 @@
 #define OP_TASK_MANAGER_H
 #include <stddef.h>
 #include <string.h>
-typedef int(__cdecl *OP_TASK_UPDATE)(void);
+typedef int (__cdecl *OP_TASK_UPDATE)(void);
 typedef struct OP_TASK_RECORD
 {
     unsigned char prefix[20];

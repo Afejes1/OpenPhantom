@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "status": "integration-review",
+  "started_utc": "2026-09-14T21:04:37.874419+00:00",
+  "deadline_utc": "2026-09-14T21:44:37.874419+00:00",
+  "functions": [
+    "time_module_proc"
+  ],
+  "acceptance": "research/acceptance-063/result.json"
+}

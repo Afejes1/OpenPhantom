@@ -13,10 +13,11 @@
   "local_team_not_done_current": 337,
   "evidence_event_current": 84,
   "pending_exact": [
-    "time_module_proc"
+    "time_module_proc",
+    "task_run_all"
   ],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A062 accepted two task helpers; timer initializer is exact and scheduler type recovery is in progress.",
+  "current_work": "A063 integrating timer initializer and scheduler with recovered update callback type.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": null
+  "acceptance_pending": "acceptance-063"
 }

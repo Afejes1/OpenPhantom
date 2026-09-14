@@ -1,7 +1,7 @@
 #include "task_manager.h"
 #pragma intrinsic(memset, memcpy)
 // FUNCTION: WMAIN 0x0047563d
-OP_TASK_RECORD *op_task_register(void *callback)
+OP_TASK_RECORD *op_task_register(OP_TASK_UPDATE callback)
 {
     unsigned int index = 0;
     for (index = 0; index < 64; ++index)

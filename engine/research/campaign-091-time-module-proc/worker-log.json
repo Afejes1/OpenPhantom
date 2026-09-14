@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "time_module_proc",
+  "started_utc": "2026-09-14T21:04:37.874419+00:00",
+  "implementation_cutoff_utc": "2026-09-14T21:19:37.874419+00:00",
+  "deadline_utc": "2026-09-14T21:44:37.874419+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial timer initialization using actual accepted timer chain",
+      "started_utc": "2026-09-14T21:04:38.115074+00:00",
+      "finished_utc": "2026-09-14T21:04:39.840667+00:00",
+      "returncode": 0,
+      "source_sha256": "a6cbf52ca982c5ec1b6428b73cac7cfdd13bf262c790dc0c491f99a44e57ba33",
+      "report": "engine/build/campaign-001-time_module_proc-7d94fd9dcc98/research-result.json",
+      "report_sha256": "a349c9f9372b57f05ce1f2bcbc85aaf0a93dbc52865ef7e2486bc850d27aa17c",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 109,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.492248,
+      "stderr": ""
+    }
+  ]
+}

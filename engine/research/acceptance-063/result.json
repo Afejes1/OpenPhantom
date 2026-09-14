@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "acceptance-063",
+  "baseline_commit": "fe033f6b6211d588144ee6326d6d2e664bb865b4",
+  "functions": [
+    "time_module_proc",
+    "task_run_all"
+  ],
+  "promotions": 2,
+  "registered_before": 345,
+  "registered_after": 347,
+  "full_span_bytes": 406,
+  "verified_operands": 40,
+  "raw_functions": 0,
+  "status": "integration-pending",
+  "team_not_done": 2,
+  "team_reported_done": 0,
+  "manifest": "planning/team-manifest-20260912-1849.json",
+  "retained_focused_checks": 1696848,
+  "actual_callee_coverage": "Timer uses accepted platform_ticks/elapsed_ticks/signed_ms_to_seconds; scheduler external release is explicitly selected/restored.",
+  "prior_type_refinements": [
+    "task_register signature and record.update now use recovered int cdecl(void) callback type; four distinct authored callbacks replace never-invoked data-pointer identities in prior shared fixtures; all prior byte comparisons and check counts must pass."
+  ],
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

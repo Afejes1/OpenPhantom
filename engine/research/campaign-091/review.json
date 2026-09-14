@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T21:20:20.839112+00:00",
+  "conclusion": "focused-exact-approved",
+  "snapshot_members": 17,
+  "selected_reports": 2,
+  "checks": 104400,
+  "details": "All17 snapshotmembers andtwo reports rehash clean; actual platform/elapsed/conversion supportcopies, two APIstages, signed division and live mutation oracles verified.",
+  "integration_review": {
+    "conclusion": "approved",
+    "details": "Prior345target/registry unchanged; twoinclude-only bodies; task_register signature-only typedcallbackrefinement, four distinct authored callbackidentities; all1696848newchecks andpriorcases retained; scoped release route/APIcontrolrestoration. Fullcomparison must prove priorregistrationbytes. Interpolationglobal documented asraw32-bit zero-storeview, notsemanticmode."
+  }
+}

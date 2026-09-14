@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "task_run_all",
+  "started_utc": "2026-09-14T21:10:54.943685+00:00",
+  "implementation_cutoff_utc": "2026-09-14T21:25:54.943685+00:00",
+  "deadline_utc": "2026-09-14T21:50:54.943685+00:00",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial complete scheduler with live cursor/current cleanup",
+      "started_utc": "2026-09-14T21:10:55.168414+00:00",
+      "finished_utc": "2026-09-14T21:10:56.138400+00:00",
+      "returncode": 2,
+      "source_sha256": "e1af15b6837228acc67f33cb404ebe7257c1c9f12d95fcc0885d988be649a4cb",
+      "report": "engine/build/campaign-001-task_run_all-9661ff0de913/research-result.json",
+      "report_sha256": "f1de87a2cd9b5ecab1dde342ad2e5dc03cfaead9ae5535778ebe821bddd8310f",
+      "status": "not-attempted",
+      "candidate_size": null,
+      "different_bytes": null,
+      "elapsed_seconds": 0.744156,
+      "stderr": "FAILED: command failed: candidate-compile\n"
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Recover real update function-pointer type and use direct call",
+      "started_utc": "2026-09-14T21:14:03.967999+00:00",
+      "finished_utc": "2026-09-14T21:14:05.579998+00:00",
+      "returncode": 0,
+      "source_sha256": "bbc3a5aedeb549c6b2df768ea6a389bac1a182b4828ae2312c09f990467579fc",
+      "report": "engine/build/campaign-001-task_run_all-bb94ae6ffe0d/research-result.json",
+      "report_sha256": "3614f5faa70cc276d110ef5f767505b515f4aa805a6c341d5dbd612f1b29633f",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 297,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.393429,
+      "stderr": ""
+    }
+  ]
+}

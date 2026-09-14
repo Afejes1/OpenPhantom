@@ -12229,6 +12229,283 @@
           "kind": "dir32"
         }
       ]
+    },
+    {
+      "id": "time_module_proc",
+      "address": 4676272,
+      "size": 109,
+      "body_size": 109,
+      "source": "src/time_module_proc.c",
+      "symbol": "_op_time_module_proc",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 29,
+          "address": 8816412,
+          "symbol": "_op_time_mode",
+          "kind": "dir32"
+        },
+        {
+          "offset": 38,
+          "address": 4808926,
+          "symbol": "_op_platform_ticks",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 43,
+          "address": 7308232,
+          "symbol": "_op_time_start_ticks",
+          "kind": "dir32"
+        },
+        {
+          "offset": 49,
+          "address": 7308232,
+          "symbol": "_op_time_start_ticks",
+          "kind": "dir32"
+        },
+        {
+          "offset": 55,
+          "address": 4885352,
+          "symbol": "_op_time_thousand",
+          "kind": "dir32"
+        },
+        {
+          "offset": 61,
+          "address": 7308228,
+          "symbol": "_op_time_start_seconds",
+          "kind": "dir32"
+        },
+        {
+          "offset": 67,
+          "address": 7308236,
+          "symbol": "_op_time_previous_ticks",
+          "kind": "dir32"
+        },
+        {
+          "offset": 76,
+          "address": 4676381,
+          "symbol": "_op_elapsed_ticks",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 82,
+          "address": 4676455,
+          "symbol": "_op_signed_ms_to_seconds",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 91,
+          "address": 7308256,
+          "symbol": "_op_time_previous_seconds",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "task_run_all",
+      "address": 4675626,
+      "size": 297,
+      "body_size": 297,
+      "source": "src/task_run_all.c",
+      "symbol": "_op_task_run_all",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 6,
+          "address": 8816416,
+          "symbol": "_op_task_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 20,
+          "address": 8819352,
+          "symbol": "_op_task_cursor",
+          "kind": "dir32"
+        },
+        {
+          "offset": 30,
+          "address": 8819352,
+          "symbol": "_op_task_cursor",
+          "kind": "dir32"
+        },
+        {
+          "offset": 42,
+          "address": 8819352,
+          "symbol": "_op_task_cursor",
+          "kind": "dir32"
+        },
+        {
+          "offset": 51,
+          "address": 8816448,
+          "symbol": "_op_tasks",
+          "kind": "dir32",
+          "addend": 20
+        },
+        {
+          "offset": 64,
+          "address": 8819352,
+          "symbol": "_op_task_cursor",
+          "kind": "dir32"
+        },
+        {
+          "offset": 73,
+          "address": 8816448,
+          "symbol": "_op_tasks",
+          "kind": "dir32",
+          "addend": 36
+        },
+        {
+          "offset": 81,
+          "address": 8819352,
+          "symbol": "_op_task_cursor",
+          "kind": "dir32"
+        },
+        {
+          "offset": 90,
+          "address": 8816448,
+          "symbol": "_op_tasks",
+          "kind": "dir32",
+          "addend": 36
+        },
+        {
+          "offset": 96,
+          "address": 8819352,
+          "symbol": "_op_task_cursor",
+          "kind": "dir32"
+        },
+        {
+          "offset": 105,
+          "address": 8816448,
+          "symbol": "_op_tasks",
+          "kind": "dir32",
+          "addend": 36
+        },
+        {
+          "offset": 118,
+          "address": 8819352,
+          "symbol": "_op_task_cursor",
+          "kind": "dir32"
+        },
+        {
+          "offset": 127,
+          "address": 8816448,
+          "symbol": "_op_tasks",
+          "kind": "dir32"
+        },
+        {
+          "offset": 133,
+          "address": 8816420,
+          "symbol": "_op_task_current",
+          "kind": "dir32"
+        },
+        {
+          "offset": 138,
+          "address": 8816420,
+          "symbol": "_op_task_current",
+          "kind": "dir32"
+        },
+        {
+          "offset": 150,
+          "address": 8816420,
+          "symbol": "_op_task_current",
+          "kind": "dir32"
+        },
+        {
+          "offset": 158,
+          "address": 8816420,
+          "symbol": "_op_task_current",
+          "kind": "dir32"
+        },
+        {
+          "offset": 169,
+          "address": 8819352,
+          "symbol": "_op_task_cursor",
+          "kind": "dir32"
+        },
+        {
+          "offset": 178,
+          "address": 8816448,
+          "symbol": "_op_tasks",
+          "kind": "dir32",
+          "addend": 20
+        },
+        {
+          "offset": 192,
+          "address": 8816416,
+          "symbol": "_op_task_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 200,
+          "address": 8816416,
+          "symbol": "_op_task_count",
+          "kind": "dir32"
+        },
+        {
+          "offset": 206,
+          "address": 8816420,
+          "symbol": "_op_task_current",
+          "kind": "dir32"
+        },
+        {
+          "offset": 218,
+          "address": 8816420,
+          "symbol": "_op_task_current",
+          "kind": "dir32"
+        },
+        {
+          "offset": 227,
+          "address": 4805714,
+          "symbol": "_op_release",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 236,
+          "address": 8819352,
+          "symbol": "_op_task_cursor",
+          "kind": "dir32"
+        },
+        {
+          "offset": 245,
+          "address": 8816448,
+          "symbol": "_op_tasks",
+          "kind": "dir32",
+          "addend": 20
+        },
+        {
+          "offset": 257,
+          "address": 8819352,
+          "symbol": "_op_task_cursor",
+          "kind": "dir32"
+        },
+        {
+          "offset": 269,
+          "address": 8816448,
+          "symbol": "_op_tasks",
+          "kind": "dir32",
+          "addend": 36
+        },
+        {
+          "offset": 275,
+          "address": 8819352,
+          "symbol": "_op_task_cursor",
+          "kind": "dir32"
+        },
+        {
+          "offset": 284,
+          "address": 8819352,
+          "symbol": "_op_task_cursor",
+          "kind": "dir32"
+        }
+      ]
     }
   ]
 }

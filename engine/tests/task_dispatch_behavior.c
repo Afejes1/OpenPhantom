@@ -37,7 +37,7 @@ static void t900_setup(int pattern)
     for (i = 0; i < (int)sizeof(op_tasks); ++i)
         b[i] = (unsigned char)(i * 37 + pattern * 11 + 3);
     for (i = 0; i < 64; ++i)
-        op_tasks[i].update = &t900_tokens[i % 4];
+        op_tasks[i].update = tr_updates[i % 4];
     memcpy(t900_expected, op_tasks, sizeof(t900_expected));
     for (i = 0; i < 20; ++i)
         op_task_pending[i] = t900_pending[i] = (unsigned char)(i * 17 + pattern * 5 + 11);
@@ -173,7 +173,7 @@ static void t901_setup(int pattern)
     for (i = 0; i < (int)sizeof(op_tasks); ++i)
         b[i] = (unsigned char)(i * 37 + pattern * 11 + 3);
     for (i = 0; i < 64; ++i)
-        op_tasks[i].update = &t901_tokens[i % 4];
+        op_tasks[i].update = tr_updates[i % 4];
     memcpy(t901_expected, op_tasks, sizeof(t901_expected));
     for (i = 0; i < 20; ++i)
         op_task_pending[i] = t901_pending[i] = (unsigned char)(i * 17 + pattern * 5 + 11);
