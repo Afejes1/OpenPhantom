@@ -4,15 +4,15 @@
     "manifest_functions": 2241,
     "team_reported_done": 1298,
     "team_reported_not_done": 943,
-    "local_accepted": 283,
-    "local_within_team_not_done": 275,
+    "local_accepted": 287,
+    "local_within_team_not_done": 279,
     "local_overlapping_team_done": 8,
-    "remaining_if_team_claims_are_correct": 668,
-    "combined_covered_if_team_claims_are_correct": 1573
+    "remaining_if_team_claims_are_correct": 664,
+    "combined_covered_if_team_claims_are_correct": 1577
   },
   "local_match_categories": {
     "raw-code-match": 32,
-    "relocation-adjusted-match": 251
+    "relocation-adjusted-match": 255
   },
   "team_source_independently_verified": false,
   "whole_executable_match": false,
@@ -15412,22 +15412,22 @@
       "team_reported_file": "util/pzip.c",
       "team_reported_name": "pzip_pathCopyExt",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "path_copy_extension",
+      "local_source": "src/path_copy_extension.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x0046F7AA",
       "team_reported_file": "util/pzip.c",
       "team_reported_name": "pzip_pathCopyStem",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "path_copy_stem",
+      "local_source": "src/path_copy_stem.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x0046F82F",
@@ -15445,22 +15445,22 @@
       "team_reported_file": "util/pzip.c",
       "team_reported_name": "pzip_pathCopyDir",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "path_copy_directory",
+      "local_source": "src/path_copy_directory.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x0046F8E4",
       "team_reported_file": "util/pzip.c",
       "team_reported_name": "pzip_pathCopyDriveDir",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "path_copy_drive_directory",
+      "local_source": "src/path_copy_drive_directory.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x0046F9A8",
@@ -24674,10 +24674,10 @@
     "manifest": "engine/planning/team-manifest-20260912-1849.json",
     "manifest_sha256": "3c26a8b5f62424864513ffb20dfb644fa582d19600cd2f98bbfd7eca71dfee1f",
     "contributor_attachment_sha256": "0b6de70dfa6b872725cbb8cc4fd14fc71316a2ec28ef9e1dec5762577046592b",
-    "accepted_event": "engine/evidence/runs/000073-37bfebdbc1b0c831.json",
-    "accepted_event_sha256": "c06fee1f42b7ff384d0ed4ad6c8b2e22b51c8005538ce7293775f9a997350ff7",
-    "source_commit": "c97aea49f7059ba630cda3e30a3b8f6f06b2e1f2",
-    "build_id": "20260914-111923-7c28bc7f",
+    "accepted_event": "engine/evidence/runs/000074-e6f64c34221567d6.json",
+    "accepted_event_sha256": "e7cdabb7d088c4e5e98bc2859b9846d60224adff653fe376e84cedaa69201d40",
+    "source_commit": "7e83420278b8bb3923f0b66c665146ceb16b4a72",
+    "build_id": "20260914-114255-a8f152d8",
     "generator_sha256": "9eeb04c352a48d09f795f4101f5b169dabdc41af21cdb9cc4e2b2956d942845a"
   }
 }

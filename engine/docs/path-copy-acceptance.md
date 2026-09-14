@@ -1,6 +1,6 @@
 # Path component copy acceptance
 
-Four functions add 544 complete bytes and 11 verified address operands. Canonical candidate bodies differ from their final focused versions only by header include. The prior 283 target and registry entries remain identical. Shared acceptance pending.
+Four functions add 544 complete bytes and 11 verified address operands. Canonical candidate bodies differ from their final focused versions only by header include. The prior 283 target and registry entries remain identical. [Acceptance 051](../research/acceptance-051/results.md) records the successful shared checkpoint in immutable event 74.
 
 Extension uses original intrinsic strcat after clearing destination. Stem selects the first dot after the basename and copies through the preceding byte; directory copies the selected range with its original trailing separator; drive-directory emits the uppercase drive, colon and backslash before appending the directory. The original path helpers are linked in the shared fixture. Separator remains unaccepted authored test support because its full alignment extent is unresolved.
 

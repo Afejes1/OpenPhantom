@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **278** team-not-done entries and **5** team-done entries.
-Team-not-done entries without a local recorded match: **691**.
+Our last recorded matches cover **282** team-not-done entries and **5** team-done entries.
+Team-not-done entries without a local recorded match: **687**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -140,7 +140,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | util/font3d.c | 21 | 18 | 3 |
 | util/inter.c | 14 | 0 | 14 |
 | util/module.c | 20 | 18 | 2 |
-| util/pzip.c | 30 | 4 | 26 |
+| util/pzip.c | 30 | 8 | 22 |
 | util/res.c | 11 | 0 | 11 |
 | util/taskman.c | 7 | 0 | 7 |
 | File not known yet | 107 | 8 | 99 |

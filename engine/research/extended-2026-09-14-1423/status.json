@@ -8,10 +8,9 @@
   "baseline_event": 70,
   "baseline_commit": "368496a3afd9d4c7f71003d246dabb6165c243c7",
   "pending_exact": [
-    "path_copy_extension",
-    "path_copy_stem",
-    "path_copy_directory",
-    "path_copy_drive_directory"
+    "path_directory_offset",
+    "path_copy_nth_directory",
+    "path_copy_filename"
   ],
   "priority": [
     "module_open_all",
@@ -19,12 +18,12 @@
     "module_install"
   ],
   "ownership": "Parent sole source/Git writer; existing independent reviewer reads only.",
-  "current_work": "A050 accepted; C071 four exact copy routines under integration review.",
+  "current_work": "A051 accepted; C072 three exact path routines ready for shared integration.",
   "focused_new_exact": 3,
-  "acceptance_pending": "research/acceptance-051/result.json",
-  "accepted_new": 10,
-  "accepted_current": 283,
-  "evidence_event_current": 73,
-  "remaining_current": 668,
-  "local_team_not_done_current": 275
+  "acceptance_pending": "research/acceptance-052/result.json",
+  "accepted_new": 14,
+  "accepted_current": 287,
+  "evidence_event_current": 74,
+  "remaining_current": 664,
+  "local_team_not_done_current": 279
 }
