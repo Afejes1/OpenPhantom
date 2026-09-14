@@ -16,7 +16,7 @@
   "registered_after": 216,
   "full_span_bytes": 657,
   "verified_operands": 6,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 7,
   "team_reported_done": 0,
   "original_game_executed": false,
@@ -27,5 +27,14 @@
     "receipt": "engine/private/a040-targeted-compile.json",
     "sha256": "15e5c13842e6a0e831abfe3ac51140877ad37d9db9aa843e484491d56b28721f",
     "returncode": 0
-  }
+  },
+  "accepted_event": "engine/evidence/runs/000063-6dee9449d76434c3.json",
+  "source_commit": "30e2899bdbdafd893add0bd7bf79fa193133f553",
+  "build_id": "20260914-034410-3a7512dc",
+  "source_snapshot_inputs": 393,
+  "connected_utility_checks": 3296,
+  "retained_focused_checks": 247920,
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34819496510",
+  "supplemental_ci_conclusion": "success",
+  "independent_review": "comparison_inventory approved the complete integrated fixture and callback routing after its direct read path recovered"
 }

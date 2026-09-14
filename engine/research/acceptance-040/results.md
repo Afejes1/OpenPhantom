@@ -1,0 +1,9 @@
+# Acceptance040 results
+
+Seven utility functions bring the accepted baseline from209 to216. Three rectangles match407 raw bytes; four wrappers match250 complete bytes after all six address operands are verified. Zero differing bytes, no exclusions and no VC5 warning waivers. Clean source 30e2899bdbdafd893add0bd7bf79fa193133f553 builds as 20260914-034410-3a7512dc. All216 comparisons and shared authored tests pass. [Event63](../../evidence/runs/000063-6dee9449d76434c3.json) records the source snapshot; [same-source supplemental CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34819496510) succeeds.
+
+The shared fixture retains247,920 focused checks and adds 3,296 connected checks through actual formatting, duplication and lowercase functions. Expected snapshots enforce final termination, allocation size captured before callback mutation, live source copying afterward, allocation failure and complete character traversal. Service recovery adds the open callback at0x30 while preserving sizeof0x44 and established offsets. The file-existence fixture proves closing through a reloaded table and uses the existing16-byte authored mode token. Independent review approved all seven retained focused fixtures, the connected fixture and callback routing. Parent verified unchanged209-entry target/registry prefixes and seven include-only source substitutions.
+
+All seven additions are team-not_done. External callbacks remain authored observers; no actual file, heap, original executable or game content runs. Formatting tests require positive sizes; negative lowercase inputs remain observer-only evidence. The existing supplemental modern CRT deprecation suppression and original VC5 policy are unchanged. Whole-executable identity remains pending.
+
+Temporary approval-service capacity failures initially blocked the independent final read. The same direct read later succeeded and full review completed before recording acceptance.

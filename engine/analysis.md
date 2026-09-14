@@ -409,3 +409,7 @@ Acceptance038 reaches 203 accepted functions at event61. All 203 comparisons and
 ## Configuration stream checkpoint
 
 Acceptance039 reaches 209 accepted functions at event62. All 209 comparisons and shared authored tests pass with same-source supplemental CI. Six exact configuration helpers preserve prior 203 definitions and pass 442,608 focused checks plus 20,400 connected checks. The overnight window has 56 newly exact functions, 4,461 bytes and 59 accepted promotions including three carried in. Integer rectangle utilities and checksum layout research are next; whole-executable identity remains pending. See [acceptance039](research/acceptance-039/results.md).
+
+## Utility checkpoint
+
+Acceptance040 reaches216 accepted functions at event63. All216 comparisons and shared tests pass, including247,920 retained focused checks and 3296 connected checks, with same-source supplemental CI. Seven utilities add657 complete bytes with six verified operands. The overnight window has63 newly exact functions across5,118 bytes and66 accepted promotions including three carried in. See [acceptance040](research/acceptance-040/results.md). Whole-executable identity remains pending.

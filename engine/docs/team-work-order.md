@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **204** team-not-done entries and **5** team-done entries.
-Team-not-done entries without a local recorded match: **765**.
+Our last recorded matches cover **211** team-not-done entries and **5** team-done entries.
+Team-not-done entries without a local recorded match: **758**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -122,7 +122,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | std/stdmusic.c | 7 | 0 | 7 |
 | std/stdplat.c | 15 | 0 | 15 |
 | std/stdsound.c | 29 | 0 | 29 |
-| std/stdutil.c | 12 | 0 | 12 |
+| std/stdutil.c | 12 | 7 | 5 |
 | std/stdvideo.c | 8 | 0 | 8 |
 | std/stdwin95.c | 14 | 0 | 14 |
 | std/wkernel.c | 14 | 0 | 14 |
