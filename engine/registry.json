@@ -4172,6 +4172,253 @@
         "Lexical callbacks remain authored; window state is exercised through actual setter/getter sequences."
       ],
       "exceptions": []
+    },
+    {
+      "id": "platform_alloc_debug",
+      "module": "stdplat",
+      "analysis_name": "platform_alloc_debug",
+      "purpose": "Cdecl wrapper preserves argument words and returned pointer identity; free is void. Owned/null pointers and all unsigned size patterns are observed without actual allocation or dereferencing fabricated storage. Identity returns its input with no backend call.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/platform-math-acceptance.md",
+        "research/campaign-059-platform-alloc-debug/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/platform_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and numeric bounds remain explicit.",
+        "Connected tests invoke canonical functions; historical callback probes remain test-local."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "platform_free_debug",
+      "module": "stdplat",
+      "analysis_name": "platform_free_debug",
+      "purpose": "Cdecl wrapper preserves argument words and returned pointer identity; free is void. Owned/null pointers and all unsigned size patterns are observed without actual allocation or dereferencing fabricated storage. Identity returns its input with no backend call.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/platform-math-acceptance.md",
+        "research/campaign-059-platform-free-debug/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/platform_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and numeric bounds remain explicit.",
+        "Connected tests invoke canonical functions; historical callback probes remain test-local."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "platform_realloc_debug",
+      "module": "stdplat",
+      "analysis_name": "platform_realloc_debug",
+      "purpose": "Cdecl wrapper preserves argument words and returned pointer identity; free is void. Owned/null pointers and all unsigned size patterns are observed without actual allocation or dereferencing fabricated storage. Identity returns its input with no backend call.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/platform-math-acceptance.md",
+        "research/campaign-059-platform-realloc-debug/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/platform_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and numeric bounds remain explicit.",
+        "Connected tests invoke canonical functions; historical callback probes remain test-local."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "platform_lock_identity",
+      "module": "stdplat",
+      "analysis_name": "platform_lock_identity",
+      "purpose": "Cdecl wrapper preserves argument words and returned pointer identity; free is void. Owned/null pointers and all unsigned size patterns are observed without actual allocation or dereferencing fabricated storage. Identity returns its input with no backend call.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/platform-math-acceptance.md",
+        "research/campaign-059-platform-lock-identity/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/platform_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and numeric bounds remain explicit.",
+        "Connected tests invoke canonical functions; historical callback probes remain test-local."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "platform_ticks",
+      "module": "stdplat",
+      "analysis_name": "platform_ticks",
+      "purpose": "No-argument timer reads high-resolution flag before callback. Fallback time callback returns unsigned32. Ticks transports fallback bits as int; high-resolution uses signed64 times the live double scale then original ftol. Seconds widens fallback unsigned32 before division by1000 and returns through ST0; the fixture checks caller-stored binary32, not extended precision equivalence. QPC BOOL is ignored, counter storage is candidate-owned and written by the authored callback; scales are loaded after it. Fixtures vary branch flags, callbacks returning -1/0/1, flag and scale mutation, high-bit fallback words and finite dyadic signed64 vectors. Masked PC53 round-nearest is restored afterward. NaN, overflow, arbitrary counter write widths and concurrent observation are outside this bounded contract.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/platform-math-acceptance.md",
+        "research/campaign-059-platform-ticks/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/platform_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and numeric bounds remain explicit.",
+        "Connected tests invoke canonical functions; historical callback probes remain test-local."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "platform_seconds",
+      "module": "stdplat",
+      "analysis_name": "platform_seconds",
+      "purpose": "No-argument timer reads high-resolution flag before callback. Fallback time callback returns unsigned32. Ticks transports fallback bits as int; high-resolution uses signed64 times the live double scale then original ftol. Seconds widens fallback unsigned32 before division by1000 and returns through ST0; the fixture checks caller-stored binary32, not extended precision equivalence. QPC BOOL is ignored, counter storage is candidate-owned and written by the authored callback; scales are loaded after it. Fixtures vary branch flags, callbacks returning -1/0/1, flag and scale mutation, high-bit fallback words and finite dyadic signed64 vectors. Masked PC53 round-nearest is restored afterward. NaN, overflow, arbitrary counter write widths and concurrent observation are outside this bounded contract.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/platform-math-acceptance.md",
+        "research/campaign-059-platform-seconds/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/platform_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and numeric bounds remain explicit.",
+        "Connected tests invoke canonical functions; historical callback probes remain test-local."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "sincos_degrees",
+      "module": "stdmath",
+      "analysis_name": "sincos_degrees",
+      "purpose": "Original cdecl float input and scalar ST0 float return, or void paired-output sincos. Exact observed radian scale0.01745329238474369f and degree scale57.296326654336454 are preserved. The latter is not mathematical180/pi. Scalar inverse inputs stay in[-1,1]. Scalar trig uses live x87 products; sincos first stores one binary32 radian local and writes sine before cosine. Exact output alias leaves cosine last. Tan calls the ordinary wrap function once with original input, stores its result and product without popping, and invokes original CItan on live ST0. The wrap fixture is an authored observer, not a reconstructed wrap implementation.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/platform-math-acceptance.md",
+        "research/campaign-060-sincos-degrees/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/trig_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and numeric bounds remain explicit.",
+        "Connected tests invoke canonical functions; historical callback probes remain test-local."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "cosine_degrees",
+      "module": "stdmath",
+      "analysis_name": "cosine_degrees",
+      "purpose": "Original cdecl float input and scalar ST0 float return, or void paired-output sincos. Exact observed radian scale0.01745329238474369f and degree scale57.296326654336454 are preserved. The latter is not mathematical180/pi. Scalar inverse inputs stay in[-1,1]. Scalar trig uses live x87 products; sincos first stores one binary32 radian local and writes sine before cosine. Exact output alias leaves cosine last. Tan calls the ordinary wrap function once with original input, stores its result and product without popping, and invokes original CItan on live ST0. The wrap fixture is an authored observer, not a reconstructed wrap implementation.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/platform-math-acceptance.md",
+        "research/campaign-060-cosine-degrees/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/trig_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and numeric bounds remain explicit.",
+        "Connected tests invoke canonical functions; historical callback probes remain test-local."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "asine_degrees",
+      "module": "stdmath",
+      "analysis_name": "asine_degrees",
+      "purpose": "Original cdecl float input and scalar ST0 float return, or void paired-output sincos. Exact observed radian scale0.01745329238474369f and degree scale57.296326654336454 are preserved. The latter is not mathematical180/pi. Scalar inverse inputs stay in[-1,1]. Scalar trig uses live x87 products; sincos first stores one binary32 radian local and writes sine before cosine. Exact output alias leaves cosine last. Tan calls the ordinary wrap function once with original input, stores its result and product without popping, and invokes original CItan on live ST0. The wrap fixture is an authored observer, not a reconstructed wrap implementation.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/platform-math-acceptance.md",
+        "research/campaign-060-asine-degrees/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/trig_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and numeric bounds remain explicit.",
+        "Connected tests invoke canonical functions; historical callback probes remain test-local."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "tangent_degrees",
+      "module": "stdmath",
+      "analysis_name": "tangent_degrees",
+      "purpose": "Original cdecl float input and scalar ST0 float return, or void paired-output sincos. Exact observed radian scale0.01745329238474369f and degree scale57.296326654336454 are preserved. The latter is not mathematical180/pi. Scalar inverse inputs stay in[-1,1]. Scalar trig uses live x87 products; sincos first stores one binary32 radian local and writes sine before cosine. Exact output alias leaves cosine last. Tan calls the ordinary wrap function once with original input, stores its result and product without popping, and invokes original CItan on live ST0. The wrap fixture is an authored observer, not a reconstructed wrap implementation.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/platform-math-acceptance.md",
+        "research/campaign-060-tangent-degrees/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/trig_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and numeric bounds remain explicit.",
+        "Connected tests invoke canonical functions; historical callback probes remain test-local."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "scalar_angle",
+      "module": "stdmath",
+      "analysis_name": "scalar_angle",
+      "purpose": "Original cdecl float input and scalar ST0 float return, or void paired-output sincos. Exact observed radian scale0.01745329238474369f and degree scale57.296326654336454 are preserved. The latter is not mathematical180/pi. Scalar inverse inputs stay in[-1,1]. Scalar trig uses live x87 products; sincos first stores one binary32 radian local and writes sine before cosine. Exact output alias leaves cosine last. Tan calls the ordinary wrap function once with original input, stores its result and product without popping, and invokes original CItan on live ST0. The wrap fixture is an authored observer, not a reconstructed wrap implementation.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/platform-math-acceptance.md",
+        "research/campaign-060-scalar-angle/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/trig_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and numeric bounds remain explicit.",
+        "Connected tests invoke canonical functions; historical callback probes remain test-local."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "acos_degrees_copy2",
+      "module": "stdmath",
+      "analysis_name": "acos_degrees_copy2",
+      "purpose": "Original cdecl float input and scalar ST0 float return, or void paired-output sincos. Exact observed radian scale0.01745329238474369f and degree scale57.296326654336454 are preserved. The latter is not mathematical180/pi. Scalar inverse inputs stay in[-1,1]. Scalar trig uses live x87 products; sincos first stores one binary32 radian local and writes sine before cosine. Exact output alias leaves cosine last. Tan calls the ordinary wrap function once with original input, stores its result and product without popping, and invokes original CItan on live ST0. The wrap fixture is an authored observer, not a reconstructed wrap implementation.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/platform-math-acceptance.md",
+        "research/campaign-060-acos-degrees-copy2/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/trig_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and numeric bounds remain explicit.",
+        "Connected tests invoke canonical functions; historical callback probes remain test-local."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "acos_degrees_copy3",
+      "module": "stdmath",
+      "analysis_name": "acos_degrees_copy3",
+      "purpose": "Original cdecl float input and scalar ST0 float return, or void paired-output sincos. Exact observed radian scale0.01745329238474369f and degree scale57.296326654336454 are preserved. The latter is not mathematical180/pi. Scalar inverse inputs stay in[-1,1]. Scalar trig uses live x87 products; sincos first stores one binary32 radian local and writes sine before cosine. Exact output alias leaves cosine last. Tan calls the ordinary wrap function once with original input, stores its result and product without popping, and invokes original CItan on live ST0. The wrap fixture is an authored observer, not a reconstructed wrap implementation.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/platform-math-acceptance.md",
+        "research/campaign-060-acos-degrees-copy3/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/trig_behavior.c"
+      ],
+      "quirks": [
+        "Focused fixture domains and numeric bounds remain explicit.",
+        "Connected tests invoke canonical functions; historical callback probes remain test-local."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

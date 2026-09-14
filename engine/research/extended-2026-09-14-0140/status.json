@@ -330,7 +330,7 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Acceptance042 integrates six platform helpers and seven math wrappers:13promotions405bytes31operands.",
+  "current_work": "Acceptance042 applied:13 platform/math functions with retained focused probes and connected heap/timer/vector tests; review and clean checkpoint pending.",
   "original_game_executed": false,
   "accepted_functions_current": 225,
   "evidence_records_current": 64,

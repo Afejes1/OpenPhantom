@@ -129,6 +129,8 @@ static void clip_flag_tests(void)
 #include "utilities_behavior.c"
 #include "lexical_behavior.c"
 #include "window_state_behavior.c"
+#include "platform_behavior.c"
+#include "trig_behavior.c"
 #include "directory_behavior.c"
 #include "palette_resources_behavior.c"
 #include "matrix_helpers_behavior.c"
@@ -272,6 +274,22 @@ int main(void)
     failures += op_test_window_set_rect();
     failures += op_test_window_get_rect();
     failures += op_test_window_connected();
+    failures += op_test_platform_alloc_debug();
+    failures += op_test_platform_free_debug();
+    failures += op_test_platform_realloc_debug();
+    failures += op_test_platform_lock_identity();
+    failures += op_test_platform_ticks();
+    failures += op_test_platform_seconds();
+    failures += op_test_sincos_degrees();
+    failures += op_test_cosine_degrees();
+    failures += op_test_asine_degrees();
+    failures += op_test_tangent_degrees();
+    failures += op_test_scalar_angle();
+    failures += op_test_acos_degrees_copy2();
+    failures += op_test_acos_degrees_copy3();
+    failures += op_test_platform_heap_connected();
+    failures += op_test_platform_timer_connected();
+    failures += op_test_math_connected();
     failures += op_test_normal_from_points();
     failures += op_test_palette_lifecycle();
     failures += op_test_palette_name_get();

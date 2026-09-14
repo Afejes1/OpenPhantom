@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "acceptance-042",
+  "baseline_commit": "5522402727a5cb84c813871408ebc1e9b97f4040",
+  "functions": [
+    "platform_alloc_debug",
+    "platform_free_debug",
+    "platform_realloc_debug",
+    "platform_lock_identity",
+    "platform_ticks",
+    "platform_seconds",
+    "sincos_degrees",
+    "cosine_degrees",
+    "asine_degrees",
+    "tangent_degrees",
+    "scalar_angle",
+    "acos_degrees_copy2",
+    "acos_degrees_copy3"
+  ],
+  "promotions": 13,
+  "registered_before": 225,
+  "registered_after": 238,
+  "full_span_bytes": 405,
+  "verified_operands": 31,
+  "status": "integration-pending",
+  "team_not_done": 13,
+  "team_reported_done": 0,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "supplemental_compatibility": "Existing modern target-wide CRT deprecation suppression retained; original VC5 unchanged.",
+  "prebuild_fixture_compile": {
+    "receipt": "engine/private/a042-targeted-compile.json",
+    "sha256": "612b53a57b7f09c2a64fdf57746b2eedb500fbc9994a6cda53cb5c5f9e3a9db1",
+    "returncode": 0,
+    "prior_failure_receipt": "engine/private/a042-targeted-compile-first.json",
+    "prior_failure_reason": "Unsigned test counter compared to signed failure counter; corrected declaration without waiver."
+  }
+}

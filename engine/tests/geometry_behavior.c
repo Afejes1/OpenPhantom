@@ -184,11 +184,19 @@ static const gva_DOT_CASE gva_cases[] = {
     {{0x40000000, 0, 0}, {0, 0, 0}, 0x40800000, 1},
     {{0x3f800000, 0, 0}, {0, 0, 0}, 0x3f800000, 1},
     {{0x3f800000, 0xc0000000, 0x40400000}, {0x40800000, 0x3f000000, 0xbf800000}, 0, 0}};
+/* Fixture-only compile of the same source preserves callback observability.
+ * This probe is not an accepted byte artifact; canonical objects are compared separately. */
+static float gva_observe_scalar_angle(float);
+#define op_vector_angle gva_probe_vector_angle
+#define op_scalar_angle gva_observe_scalar_angle
+#include "../src/vector_angle.c"
+#undef op_scalar_angle
+#undef op_vector_angle
 static const unsigned int gva_returns[] = {0xc2b40000, 0, 0x40f00000, 0x43480000};
 static const unsigned int gva_answers[] = {0x43340000, 0x42b40000, 0x42a50000, 0xc2dc0000};
 static int gva_row, gva_case_index, gva_return_index, gva_mutate, gva_calls;
 static OP_VECTOR3 *gva_input_a, *gva_input_b;
-float op_scalar_angle(float dot)
+static float gva_observe_scalar_angle(float dot)
 {
     GVA_CHECK(gva_calls == 0 && gva_bits(dot) == gva_cases[gva_case_index].dot);
     gva_verify();
@@ -225,7 +233,7 @@ static int op_test_vector_angle(void)
                     memcpy(gva_expected, gva_vectors, sizeof(gva_vectors));
                     gva_calls = 0;
                     want = gva_cases[gva_case_index].dot == 0x3f800000 ? 0 : gva_answers[gva_return_index];
-                    GVA_CHECK(gva_bits(op_vector_angle(gva_input_a, gva_input_b)) == want);
+                    GVA_CHECK(gva_bits(gva_probe_vector_angle(gva_input_a, gva_input_b)) == want);
                     GVA_CHECK(gva_calls == (gva_cases[gva_case_index].dot != 0x3f800000));
                     gva_verify();
                 }
