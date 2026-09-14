@@ -168,6 +168,12 @@ static const unsigned int mco_vectors[][2] = {
     {0x3f800000u, 0x3f7ff605u}, {0x41f00000u, 0x3f5db3d7u}, {0x42340000u, 0x3f3504f3u}, {0x42700000u, 0x3f000000u},
     {0x42b40000u, 0x32510b46u}, {0x43340000u, 0xbf800000u}, {0x43b3c000u, 0x3f7ffd81u}, {0x43b40000u, 0x3f800000u},
     {0x44340000u, 0x3f800000u}};
+#if _MSC_VER != 1100
+/* Modern float multiplication rounds the radian argument before promotion. */
+static const unsigned int mco_modern_expected[] = {
+    0x3f800000u, 0x3f800000u, 0xbf800000u, 0xb33bbd2eu, 0x3f3504f3u, 0x3f7ff605u, 0x3f800000u, 0x3f800000u, 0x3f7ff605u,
+    0x3f5db3d7u, 0x3f3504f3u, 0x3effffffu, 0xb33bbd2eu, 0xbf800000u, 0x3f7ffd81u, 0x3f800000u, 0x3f800000u};
+#endif
 static int op_test_cosine_degrees(void)
 {
     unsigned int i, old_control;
@@ -178,7 +184,11 @@ static int op_test_cosine_degrees(void)
     {
         mco_seed();
         mco_input = mco_from_bits(mco_vectors[i][0]);
+#if _MSC_VER == 1100
         mco_result_check(op_cosine_degrees(mco_input), mco_vectors[i][1]);
+#else
+        mco_result_check(op_cosine_degrees(mco_input), mco_modern_expected[i]);
+#endif
         MCO_CHECK(mco_float_bits(mco_input) == mco_vectors[i][0]);
         MCO_CHECK(memcmp(&mco_owned, &mco_expected_owned, sizeof(mco_owned)) == 0);
     }

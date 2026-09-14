@@ -21,7 +21,7 @@
   "registered_before": 225,
   "registered_after": 238,
   "full_span_bytes": 405,
-  "verified_operands": 31,
+  "verified_operands": 29,
   "status": "integration-pending",
   "team_not_done": 13,
   "team_reported_done": 0,
@@ -35,5 +35,13 @@
     "returncode": 0,
     "prior_failure_receipt": "engine/private/a042-targeted-compile-first.json",
     "prior_failure_reason": "Unsigned test counter compared to signed failure counter; corrected declaration without waiver."
-  }
+  },
+  "superseded_integration_attempt": {
+    "source_commit": "3916466ce4f378e6c5bdac9e517064c2367ac0dc",
+    "build_id": "20260914-051519-82af87fb",
+    "original_fixture": "passed",
+    "supplemental_ci": "https://github.com/Afejes1/OpenPhantom/actions/runs/34827033087",
+    "issue": "Modern cosine argument multiplication rounds to binary32 before promotion; two near-zero cosine results differ from original x87. Separate modern literal expectations added; original exact fixture bounds unchanged."
+  },
+  "metadata_correction": "Original integration prose counted31 operands including the excluded sine case; actual promoted bindings are29."
 }
