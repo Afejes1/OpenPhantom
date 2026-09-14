@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "acceptance-057",
+  "baseline_commit": "3810230faf1284931d1b97fcffbcc2333fe65383",
+  "functions": [
+    "elapsed_ticks",
+    "elapsed_seconds",
+    "delta_ticks",
+    "signed_ms_to_seconds",
+    "ui_get_cursor",
+    "ui_navigation_code_pointer",
+    "ui_set_joy_navigation",
+    "ui_clear_joy_latches"
+  ],
+  "promotions": 8,
+  "registered_before": 308,
+  "registered_after": 316,
+  "full_span_bytes": 162,
+  "verified_operands": 14,
+  "raw_functions": 0,
+  "status": "integration-pending",
+  "team_not_done": 8,
+  "team_reported_done": 0,
+  "manifest": "planning/team-manifest-20260912-1849.json",
+  "retained_focused_checks": 73736,
+  "canonical_chain_checks": "pending shared run",
+  "fixture_source_probes": [
+    "elapsed_ticks",
+    "elapsed_seconds",
+    "delta_ticks"
+  ],
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

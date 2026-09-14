@@ -10874,6 +10874,212 @@
         "/MT"
       ],
       "bindings": []
+    },
+    {
+      "id": "elapsed_ticks",
+      "address": 4676381,
+      "size": 16,
+      "body_size": 16,
+      "source": "src/elapsed_ticks.c",
+      "symbol": "_op_elapsed_ticks",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 4808926,
+          "symbol": "_op_platform_ticks",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 10,
+          "address": 7308232,
+          "symbol": "_op_time_start_ticks",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "elapsed_seconds",
+      "address": 4676397,
+      "size": 16,
+      "body_size": 16,
+      "source": "src/elapsed_seconds.c",
+      "symbol": "_op_elapsed_seconds",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 4808977,
+          "symbol": "_op_platform_seconds",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 10,
+          "address": 7308228,
+          "symbol": "_op_time_start_seconds",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "delta_ticks",
+      "address": 4676413,
+      "size": 42,
+      "body_size": 42,
+      "source": "src/delta_ticks.c",
+      "symbol": "_op_delta_ticks",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 7,
+          "address": 4676381,
+          "symbol": "_op_elapsed_ticks",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 19,
+          "address": 7308236,
+          "symbol": "_op_time_previous_ticks",
+          "kind": "dir32"
+        },
+        {
+          "offset": 31,
+          "address": 7308236,
+          "symbol": "_op_time_previous_ticks",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "signed_ms_to_seconds",
+      "address": 4676455,
+      "size": 14,
+      "body_size": 14,
+      "source": "src/signed_ms_to_seconds.c",
+      "symbol": "_op_signed_ms_to_seconds",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 8,
+          "address": 4885356,
+          "symbol": "_op_time_millisecond_unit",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "ui_get_cursor",
+      "address": 4590128,
+      "size": 26,
+      "body_size": 26,
+      "source": "src/ui_get_cursor.c",
+      "symbol": "_op_ui_get_cursor",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 8,
+          "address": 4943000,
+          "symbol": "_op_ui_cursor",
+          "kind": "dir32"
+        },
+        {
+          "offset": 18,
+          "address": 4943000,
+          "symbol": "_op_ui_cursor",
+          "kind": "dir32",
+          "addend": 4
+        }
+      ]
+    },
+    {
+      "id": "ui_navigation_code_pointer",
+      "address": 4590154,
+      "size": 10,
+      "body_size": 10,
+      "source": "src/ui_navigation_code_pointer.c",
+      "symbol": "_op_ui_navigation_code_pointer",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 7142816,
+          "symbol": "_op_ui_navigation_code",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "ui_set_joy_navigation",
+      "address": 4592276,
+      "size": 13,
+      "body_size": 13,
+      "source": "src/ui_set_joy_navigation.c",
+      "symbol": "_op_ui_set_joy_navigation",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 7,
+          "address": 4943008,
+          "symbol": "_op_ui_joy_menu_navigation",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "ui_clear_joy_latches",
+      "address": 4592289,
+      "size": 25,
+      "body_size": 25,
+      "source": "src/ui_clear_joy_latches.c",
+      "symbol": "_op_ui_clear_joy_latches",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 4943024,
+          "symbol": "_op_ui_joy_latches",
+          "kind": "dir32"
+        },
+        {
+          "offset": 15,
+          "address": 4943024,
+          "symbol": "_op_ui_joy_latches",
+          "kind": "dir32",
+          "addend": 4
+        }
+      ]
     }
   ]
 }

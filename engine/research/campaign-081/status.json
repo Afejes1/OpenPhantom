@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "status": "four-exact-integration-review",
+  "started_utc": "2026-09-14T18:53:41.657067+00:00",
+  "deadline_utc": "2026-09-14T19:33:41.657067+00:00",
+  "functions": [
+    "ui_get_cursor",
+    "ui_navigation_code_pointer",
+    "ui_set_joy_navigation",
+    "ui_clear_joy_latches"
+  ],
+  "frozen_utc": "2026-09-14T18:58:51.430049+00:00",
+  "implementation_compiles": 4,
+  "full_span_bytes_exact": 74,
+  "verified_operands_exact": 6,
+  "fixture_checks_exact": 15168,
+  "acceptance": "research/acceptance-057/result.json"
+}

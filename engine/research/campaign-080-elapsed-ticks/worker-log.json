@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "elapsed_ticks",
+  "started_utc": "2026-09-14T18:50:14.929251+00:00",
+  "implementation_cutoff_utc": "2026-09-14T19:05:14.929251+00:00",
+  "deadline_utc": "2026-09-14T19:30:14.929251+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial modular elapsed-tick subtraction and original x87 timing conversion",
+      "started_utc": "2026-09-14T18:50:15.322700+00:00",
+      "finished_utc": "2026-09-14T18:50:17.023828+00:00",
+      "returncode": 0,
+      "source_sha256": "1db6b23920f53009a2dd5920b74c06b4f7c1fef1c8637e02c04025d5b7af62b8",
+      "report": "engine/build/campaign-001-elapsed_ticks-ba2dbb7ca355/research-result.json",
+      "report_sha256": "41d2f1cedf374481e1a30d013a9c6b3e73b8119b2b1f7d84cf8a5f557c02873f",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 16,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.466268,
+      "stderr": ""
+    }
+  ]
+}

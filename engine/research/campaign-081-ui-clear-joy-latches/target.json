@@ -1,0 +1,28 @@
+{
+  "id": "ui_clear_joy_latches",
+  "address": 4592289,
+  "size": 25,
+  "body_size": 25,
+  "source": "src/ui_clear_joy_latches.c",
+  "symbol": "_op_ui_clear_joy_latches",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 4943024,
+      "symbol": "_op_ui_joy_latches",
+      "kind": "dir32"
+    },
+    {
+      "offset": 15,
+      "address": 4943024,
+      "symbol": "_op_ui_joy_latches",
+      "kind": "dir32",
+      "addend": 4
+    }
+  ]
+}

@@ -145,6 +145,8 @@ static void clip_flag_tests(void)
 #include "audio_behavior.c"
 #include "audio_buffer_behavior.c"
 #include "music_position_behavior.c"
+#include "elapsed_time_behavior.c"
+#include "ui_input_behavior.c"
 #include "kernel_behavior.c"
 #include "video_behavior.c"
 #include "debug_behavior.c"
@@ -366,6 +368,15 @@ int main(void)
     failures += op_test_music_stop();
     failures += op_test_music_is_playing();
     failures += op_test_audio_get_play_position();
+    failures += op_test_elapsed_ticks();
+    failures += op_test_elapsed_seconds();
+    failures += op_test_delta_ticks();
+    failures += op_test_signed_ms_to_seconds();
+    failures += op_test_ui_get_cursor();
+    failures += op_test_ui_navigation_code_pointer();
+    failures += op_test_ui_set_joy_navigation();
+    failures += op_test_ui_clear_joy_latches();
+    failures += op_test_elapsed_time_connected();
     failures += op_test_kernel_show();
     failures += op_test_kernel_hide();
     failures += op_test_kernel_set_field();

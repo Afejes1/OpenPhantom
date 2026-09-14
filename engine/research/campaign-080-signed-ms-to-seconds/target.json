@@ -1,0 +1,21 @@
+{
+  "id": "signed_ms_to_seconds",
+  "address": 4676455,
+  "size": 14,
+  "body_size": 14,
+  "source": "src/signed_ms_to_seconds.c",
+  "symbol": "_op_signed_ms_to_seconds",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 4885356,
+      "symbol": "_op_time_millisecond_unit",
+      "kind": "dir32"
+    }
+  ]
+}

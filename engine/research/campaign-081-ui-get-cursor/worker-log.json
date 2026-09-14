@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "ui_get_cursor",
+  "started_utc": "2026-09-14T18:53:41.657067+00:00",
+  "implementation_cutoff_utc": "2026-09-14T19:08:41.657067+00:00",
+  "deadline_utc": "2026-09-14T19:33:41.657067+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial UI input-state stores with explicit alias-preserving source order",
+      "started_utc": "2026-09-14T18:53:42.060123+00:00",
+      "finished_utc": "2026-09-14T18:53:43.758782+00:00",
+      "returncode": 0,
+      "source_sha256": "7b6d37162583ee0394c27ab809825bf390d902f1e9f3dc1abb0aa8adc805df0a",
+      "report": "engine/build/campaign-001-ui_get_cursor-e73b5ba30f19/research-result.json",
+      "report_sha256": "762db8a39d2b0692e4940b636dc149b7f755e23f0298f24e2e8fb45285d5e27e",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 26,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.472812,
+      "stderr": ""
+    }
+  ]
+}

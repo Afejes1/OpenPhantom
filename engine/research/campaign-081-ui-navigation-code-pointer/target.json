@@ -1,0 +1,21 @@
+{
+  "id": "ui_navigation_code_pointer",
+  "address": 4590154,
+  "size": 10,
+  "body_size": 10,
+  "source": "src/ui_navigation_code_pointer.c",
+  "symbol": "_op_ui_navigation_code_pointer",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 7142816,
+      "symbol": "_op_ui_navigation_code",
+      "kind": "dir32"
+    }
+  ]
+}

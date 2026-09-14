@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T18:58:52.328574+00:00",
+  "conclusion": "four-exact-approved",
+  "final_receipt_review": "All56 snapshot members and8 report hashes verified; native/Docker parity and focused fixtures passed; no exclusions or waivers.",
+  "focused_checks": 58568,
+  "integration_review": {
+    "conclusion": "approved",
+    "details": "Eight include-only canonical bodies, prior308 entries unchanged, unique timer/UI globals and retained73736focused checks verified. Scoped source probes and real low/high platform chains preserve callback timing, arithmetic and saved control state; main/CMake once."
+  }
+}

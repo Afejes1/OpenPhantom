@@ -1,0 +1,27 @@
+{
+  "id": "elapsed_seconds",
+  "address": 4676397,
+  "size": 16,
+  "body_size": 16,
+  "source": "src/elapsed_seconds.c",
+  "symbol": "_op_elapsed_seconds",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 4808977,
+      "symbol": "_op_platform_seconds",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 10,
+      "address": 7308228,
+      "symbol": "_op_time_start_seconds",
+      "kind": "dir32"
+    }
+  ]
+}

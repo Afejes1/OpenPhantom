@@ -1,0 +1,21 @@
+{
+  "id": "ui_set_joy_navigation",
+  "address": 4592276,
+  "size": 13,
+  "body_size": 13,
+  "source": "src/ui_set_joy_navigation.c",
+  "symbol": "_op_ui_set_joy_navigation",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 7,
+      "address": 4943008,
+      "symbol": "_op_ui_joy_menu_navigation",
+      "kind": "dir32"
+    }
+  ]
+}

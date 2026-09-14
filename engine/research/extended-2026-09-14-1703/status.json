@@ -12,9 +12,18 @@
   "remaining_current": 643,
   "local_team_not_done_current": 300,
   "evidence_event_current": 79,
-  "pending_exact": [],
+  "pending_exact": [
+    "elapsed_ticks",
+    "elapsed_seconds",
+    "delta_ticks",
+    "signed_ms_to_seconds",
+    "ui_get_cursor",
+    "ui_navigation_code_pointer",
+    "ui_set_joy_navigation",
+    "ui_clear_joy_latches"
+  ],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A056 accepted six audio/music functions. Four timer wrappers and four UI input-state helpers are in bounded preparation.",
+  "current_work": "A057 integrates eight exact timer/UI helpers with73736 focused checks and separate actual platform chains.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": null
+  "acceptance_pending": "acceptance-057"
 }

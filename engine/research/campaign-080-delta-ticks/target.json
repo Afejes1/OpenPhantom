@@ -1,0 +1,33 @@
+{
+  "id": "delta_ticks",
+  "address": 4676413,
+  "size": 42,
+  "body_size": 42,
+  "source": "src/delta_ticks.c",
+  "symbol": "_op_delta_ticks",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 7,
+      "address": 4676381,
+      "symbol": "_op_elapsed_ticks",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 19,
+      "address": 7308236,
+      "symbol": "_op_time_previous_ticks",
+      "kind": "dir32"
+    },
+    {
+      "offset": 31,
+      "address": 7308236,
+      "symbol": "_op_time_previous_ticks",
+      "kind": "dir32"
+    }
+  ]
+}

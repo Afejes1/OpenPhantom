@@ -1,0 +1,28 @@
+{
+  "id": "ui_get_cursor",
+  "address": 4590128,
+  "size": 26,
+  "body_size": 26,
+  "source": "src/ui_get_cursor.c",
+  "symbol": "_op_ui_get_cursor",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 4943000,
+      "symbol": "_op_ui_cursor",
+      "kind": "dir32"
+    },
+    {
+      "offset": 18,
+      "address": 4943000,
+      "symbol": "_op_ui_cursor",
+      "kind": "dir32",
+      "addend": 4
+    }
+  ]
+}

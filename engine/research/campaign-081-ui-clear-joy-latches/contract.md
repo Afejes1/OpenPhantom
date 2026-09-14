@@ -1,0 +1,5 @@
+# ui_clear_joy_latches
+
+Complete interval 0x004612A1 to0x004612BA, 25 bytes, no tail. Static Ghidra body/next-function evidence and contributor not_done label agree. All functions use cdecl. Global cursor pair4B6C98/4B6C9C and latch pair4B6CB0/4B6CB4 are represented as two-word structs with asserted sizes/offsets. Navigation storage6CFDA0 and joystick navigation word4B6CA0 remain separate.
+
+Cursor output stores occur sequentially, with y loaded after the x store. Fixture covers64 valid output-alias pairs, including aliases of cursor source fields, both outputs sharing storage, unrelated globals and guarded owned local words. Expected stores are applied in sequence to separate pre-call state. Pointer accessor tests exact address identity before any authored write through the returned pointer. Joystick setter preserves all signed bits without boolean normalization; latch clear is idempotent and preserves all other fields. No NULL output execution, arbitrary pointers or original binary execution.

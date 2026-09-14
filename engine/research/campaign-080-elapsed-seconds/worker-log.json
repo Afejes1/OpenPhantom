@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "elapsed_seconds",
+  "started_utc": "2026-09-14T18:50:14.929251+00:00",
+  "implementation_cutoff_utc": "2026-09-14T19:05:14.929251+00:00",
+  "deadline_utc": "2026-09-14T19:30:14.929251+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial modular elapsed-tick subtraction and original x87 timing conversion",
+      "started_utc": "2026-09-14T18:50:17.030590+00:00",
+      "finished_utc": "2026-09-14T18:50:18.724527+00:00",
+      "returncode": 0,
+      "source_sha256": "4c724a0c3565816dc99285a097e0873ec94f134b5e2dba4049f0fda1088b2297",
+      "report": "engine/build/campaign-001-elapsed_seconds-8671fb90d007/research-result.json",
+      "report_sha256": "e4198580837d0e2697651efa1cc3d98482d779cc6f8b75b1cc498a6e69c755fc",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 16,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.459348,
+      "stderr": ""
+    }
+  ]
+}

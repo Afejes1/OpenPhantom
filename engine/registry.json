@@ -5813,6 +5813,166 @@
         "Audio getter reloads the live vtable after status callback mutations."
       ],
       "exceptions": []
+    },
+    {
+      "id": "elapsed_ticks",
+      "module": "time",
+      "analysis_name": "elapsed_ticks",
+      "purpose": "elapsed ticks: preserve the recovered original control and data flow.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/time-ui-acceptance.md",
+        "research/campaign-080-elapsed-ticks/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/elapsed_time_behavior.c"
+      ],
+      "quirks": [
+        "Full original extent and every address operand verified.",
+        "Timer words use modular32-bit transport; floating controls are saved/restored.",
+        "Controlled timer source probes are explicitly separate from registered objects and real platform chains."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "elapsed_seconds",
+      "module": "time",
+      "analysis_name": "elapsed_seconds",
+      "purpose": "elapsed seconds: preserve the recovered original control and data flow.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/time-ui-acceptance.md",
+        "research/campaign-080-elapsed-seconds/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/elapsed_time_behavior.c"
+      ],
+      "quirks": [
+        "Full original extent and every address operand verified.",
+        "Timer words use modular32-bit transport; floating controls are saved/restored.",
+        "Controlled timer source probes are explicitly separate from registered objects and real platform chains."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "delta_ticks",
+      "module": "time",
+      "analysis_name": "delta_ticks",
+      "purpose": "delta ticks: preserve the recovered original control and data flow.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/time-ui-acceptance.md",
+        "research/campaign-080-delta-ticks/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/elapsed_time_behavior.c"
+      ],
+      "quirks": [
+        "Full original extent and every address operand verified.",
+        "Timer words use modular32-bit transport; floating controls are saved/restored.",
+        "Controlled timer source probes are explicitly separate from registered objects and real platform chains."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "signed_ms_to_seconds",
+      "module": "time",
+      "analysis_name": "signed_ms_to_seconds",
+      "purpose": "signed ms to seconds: preserve the recovered original control and data flow.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/time-ui-acceptance.md",
+        "research/campaign-080-signed-ms-to-seconds/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/elapsed_time_behavior.c"
+      ],
+      "quirks": [
+        "Full original extent and every address operand verified.",
+        "Timer words use modular32-bit transport; floating controls are saved/restored.",
+        "Controlled timer source probes are explicitly separate from registered objects and real platform chains."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ui_get_cursor",
+      "module": "ui-input",
+      "analysis_name": "ui_get_cursor",
+      "purpose": "ui get cursor: preserve the recovered original control and data flow.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/time-ui-acceptance.md",
+        "research/campaign-081-ui-get-cursor/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/ui_input_behavior.c"
+      ],
+      "quirks": [
+        "Full original extent and every address operand verified.",
+        "Cursor writes are sequential and may alias source fields; joystick values retain all32bits.",
+        "Owned cursor/latch pairs preserve interior-global aliases and exact source order."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ui_navigation_code_pointer",
+      "module": "ui-input",
+      "analysis_name": "ui_navigation_code_pointer",
+      "purpose": "ui navigation code pointer: preserve the recovered original control and data flow.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/time-ui-acceptance.md",
+        "research/campaign-081-ui-navigation-code-pointer/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/ui_input_behavior.c"
+      ],
+      "quirks": [
+        "Full original extent and every address operand verified.",
+        "Cursor writes are sequential and may alias source fields; joystick values retain all32bits.",
+        "Owned cursor/latch pairs preserve interior-global aliases and exact source order."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ui_set_joy_navigation",
+      "module": "ui-input",
+      "analysis_name": "ui_set_joy_navigation",
+      "purpose": "ui set joy navigation: preserve the recovered original control and data flow.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/time-ui-acceptance.md",
+        "research/campaign-081-ui-set-joy-navigation/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/ui_input_behavior.c"
+      ],
+      "quirks": [
+        "Full original extent and every address operand verified.",
+        "Cursor writes are sequential and may alias source fields; joystick values retain all32bits.",
+        "Owned cursor/latch pairs preserve interior-global aliases and exact source order."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ui_clear_joy_latches",
+      "module": "ui-input",
+      "analysis_name": "ui_clear_joy_latches",
+      "purpose": "ui clear joy latches: preserve the recovered original control and data flow.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/time-ui-acceptance.md",
+        "research/campaign-081-ui-clear-joy-latches/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/ui_input_behavior.c"
+      ],
+      "quirks": [
+        "Full original extent and every address operand verified.",
+        "Cursor writes are sequential and may alias source fields; joystick values retain all32bits.",
+        "Owned cursor/latch pairs preserve interior-global aliases and exact source order."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

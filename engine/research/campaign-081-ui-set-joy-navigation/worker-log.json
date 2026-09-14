@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "ui_set_joy_navigation",
+  "started_utc": "2026-09-14T18:53:41.657067+00:00",
+  "implementation_cutoff_utc": "2026-09-14T19:08:41.657067+00:00",
+  "deadline_utc": "2026-09-14T19:33:41.657067+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial UI input-state stores with explicit alias-preserving source order",
+      "started_utc": "2026-09-14T18:53:45.430275+00:00",
+      "finished_utc": "2026-09-14T18:53:47.084126+00:00",
+      "returncode": 0,
+      "source_sha256": "25129d8860f35eb5e539a1539ee9c98f80899e8c7012509c5292c3a905b4565a",
+      "report": "engine/build/campaign-001-ui_set_joy_navigation-3150f2d536cb/research-result.json",
+      "report_sha256": "4d36aaa5e33dd115fd811844bdb007a253c360bba0650de75e7046d69ffa6ffe",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 13,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.424886,
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "delta_ticks",
+  "started_utc": "2026-09-14T18:50:14.929251+00:00",
+  "implementation_cutoff_utc": "2026-09-14T19:05:14.929251+00:00",
+  "deadline_utc": "2026-09-14T19:30:14.929251+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial modular elapsed-tick subtraction and original x87 timing conversion",
+      "started_utc": "2026-09-14T18:50:18.732558+00:00",
+      "finished_utc": "2026-09-14T18:50:20.408633+00:00",
+      "returncode": 0,
+      "source_sha256": "5e455556b5d8b4a438bb3270d9349e049afd856aa01dba6745ab99ec08024f0f",
+      "report": "engine/build/campaign-001-delta_ticks-72f0fef20f82/research-result.json",
+      "report_sha256": "72e803411a8b19b4536a5a5007965edf9af4599f71c3deb832b1926d15533752",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 42,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.446846,
+      "stderr": ""
+    }
+  ]
+}

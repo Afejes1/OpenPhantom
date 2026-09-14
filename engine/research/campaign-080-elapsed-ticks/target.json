@@ -1,0 +1,27 @@
+{
+  "id": "elapsed_ticks",
+  "address": 4676381,
+  "size": 16,
+  "body_size": 16,
+  "source": "src/elapsed_ticks.c",
+  "symbol": "_op_elapsed_ticks",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 4808926,
+      "symbol": "_op_platform_ticks",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 10,
+      "address": 7308232,
+      "symbol": "_op_time_start_ticks",
+      "kind": "dir32"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "status": "four-exact-integration-review",
+  "started_utc": "2026-09-14T18:50:14.929251+00:00",
+  "deadline_utc": "2026-09-14T19:30:14.929251+00:00",
+  "functions": [
+    "elapsed_ticks",
+    "elapsed_seconds",
+    "delta_ticks",
+    "signed_ms_to_seconds"
+  ],
+  "frozen_utc": "2026-09-14T18:58:51.430049+00:00",
+  "implementation_compiles": 4,
+  "full_span_bytes_exact": 88,
+  "verified_operands_exact": 8,
+  "fixture_checks_exact": 58568,
+  "acceptance": "research/acceptance-057/result.json"
+}
