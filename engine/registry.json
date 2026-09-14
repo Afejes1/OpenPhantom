@@ -2782,6 +2782,60 @@
         "Actual canonical hooks and load/free/array cleanup are connected. External loader/allocation backends are authored."
       ],
       "exceptions": []
+    },
+    {
+      "id": "material_destroy",
+      "module": "material_state",
+      "analysis_name": "material_destroy",
+      "purpose": "No null guard. Hook dispatch replaces both default callbacks. Default contents cleanup followed by root release uses captured input despite hook installation or object mutation by first callback. Owned nonnull roots are the fixture domain.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/material-state-acceptance.md",
+        "research/campaign-040-material-destroy/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/material_state_behavior.c"
+      ],
+      "quirks": [
+        "Palette anchor denotes an embedded address; frame/cache share the existing pointer at176."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "material_install_palette",
+      "module": "material_state",
+      "analysis_name": "material_install_palette",
+      "purpose": "Pass address of embedded palette anchor+30, not a loaded pointer. Callback mutations retained; afterward publish original object+30 and overwrite index0. Palette capacity is not inferred from its one-byte anchor.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/material-state-acceptance.md",
+        "research/campaign-040-material-install-palette/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/material_state_behavior.c"
+      ],
+      "quirks": [
+        "Palette anchor denotes an embedded address; frame/cache share the existing pointer at176."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "material_invalidate_cache",
+      "module": "material_state",
+      "analysis_name": "material_invalidate_cache",
+      "purpose": "Capture table+ B0; unsigned outer loop against count+AC, inner against row+18. Clear words row+100+i*EC and+108+i*EC; row stride3DC. No callbacks or globals. Authored disjoint rows have0..3 entries within explicitly represented row storage; no concurrent count mutation or alias self-modification claim. Existing canonical material frame+176 is the same table-pointer slot.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/material-state-acceptance.md",
+        "research/campaign-040-material-invalidate-cache/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/material_state_behavior.c"
+      ],
+      "quirks": [
+        "Palette anchor denotes an embedded address; frame/cache share the existing pointer at176."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

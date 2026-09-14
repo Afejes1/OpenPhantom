@@ -4,7 +4,10 @@
 /* Partial views; original allocation extents remain unknown. */
 typedef struct OP_MATERIAL
 {
-    unsigned char prefix[176];
+    unsigned char prefix[48];
+    unsigned char palette[1];
+    unsigned char unknown31[123];
+    unsigned int cache_count;
     unsigned char *frame;
 } OP_MATERIAL;
 typedef struct OP_SPRITE
