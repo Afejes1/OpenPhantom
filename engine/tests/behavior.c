@@ -119,6 +119,7 @@ static void clip_flag_tests(void)
 #include "surface_entry_behavior.h"
 #include "scan_behavior.h"
 #include "bgl_state_behavior.c"
+#include "matrix_helpers_behavior.c"
 #include "canvas_face_behavior.c"
 #include "colormap_lifecycle_behavior.c"
 #include "light_behavior.c"
@@ -217,6 +218,8 @@ int main(void)
     failures += op_test_colormap_lifecycle();
     failures += op_test_light();
     failures += op_test_canvas();
+    failures += op_test_matrix_helpers();
+    failures += op_test_matrix_translation();
     failures += op_test_face_constructor();
     if (failures) return 1;
 #ifdef OP_VC5_BEHAVIOR

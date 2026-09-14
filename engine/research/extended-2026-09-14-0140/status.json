@@ -110,12 +110,13 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Acceptance032: integrate six exact matrix helpers; preserve C045 palette builders as research without promoting them.",
+  "current_work": "Acceptance032 review and targeted compile pass; clean original-compiler/shared-fixture checkpoint begins for172 targets.",
   "original_game_executed": false,
   "accepted_functions_current": 166,
   "evidence_records_current": 54,
-  "weekly_shared_usage_latest_percent": 64,
+  "weekly_shared_usage_latest_percent": 65,
   "carried_in_promotions": 3,
   "new_exact_team_not_done": 16,
-  "new_exact_team_reported_done": 3
+  "new_exact_team_reported_done": 3,
+  "ghidra_metadata_saved_utc": "2026-09-14T03:38:30.736764+00:00"
 }

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "acceptance-032",
+  "baseline_commit": "a53438c17657a1bca7785594735d5ddfd4cb244d",
+  "functions": [
+    "matrix_post_rotate",
+    "matrix_pre_rotate",
+    "matrix_post_translate",
+    "matrix_pre_translate",
+    "matrix_post_scale",
+    "matrix_pre_scale"
+  ],
+  "promotions": 6,
+  "registered_before": 166,
+  "registered_after": 172,
+  "full_span_bytes": 268,
+  "verified_operands": 10,
+  "status": "integration-pending",
+  "team_not_done": 3,
+  "team_reported_done": 3,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "independent_review": "comparison_inventory: applied source/fixture/target review approved before clean checkpoint",
+  "prebuild_fixture_compile": {
+    "receipt": "engine/private/a032-targeted-compile.json",
+    "sha256": "b6028bb4d9100dd5e7427810ec4d079f962985da3d42c0aaf4495f2fde857959",
+    "returncode": 0
+  }
+}

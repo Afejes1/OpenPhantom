@@ -3065,6 +3065,114 @@
       ],
       "quirks": [],
       "exceptions": []
+    },
+    {
+      "id": "matrix_post_rotate",
+      "module": "matrix",
+      "analysis_name": "matrix_post_rotate",
+      "purpose": "Cdecl void(matrix48*, vector12*). Allocate natural48-byte local; op_matrix_build_rotation(local,vector), then op_matrix_multiply_post(original matrix,local). No source/destination argument reversal. Static caller/callee stack and memory evidence confirms the order. Focused callbacks fully initialize local before read, verify exact forwarded pointers and48-byte payload, mutate destination/input before composition, then retain composer effects. Builder/composer mathematics remain external authored observations. Input may be disjoint or exact destination-translation alias; local must be separate.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/matrix-helper-acceptance.md",
+        "research/campaign-044-matrix-post-rotate/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/matrix_helpers_behavior.c"
+      ],
+      "quirks": [
+        "External builders and composers remain authored observers; their matrix algorithms are not covered."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "matrix_pre_rotate",
+      "module": "matrix",
+      "analysis_name": "matrix_pre_rotate",
+      "purpose": "Cdecl void(matrix48*, vector12*). Allocate natural48-byte local; op_matrix_build_rotation(local,vector), then op_matrix_multiply_pre(original matrix,local). No source/destination argument reversal. Static caller/callee stack and memory evidence confirms the order. Focused callbacks fully initialize local before read, verify exact forwarded pointers and48-byte payload, mutate destination/input before composition, then retain composer effects. Builder/composer mathematics remain external authored observations. Input may be disjoint or exact destination-translation alias; local must be separate.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/matrix-helper-acceptance.md",
+        "research/campaign-044-matrix-pre-rotate/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/matrix_helpers_behavior.c"
+      ],
+      "quirks": [
+        "External builders and composers remain authored observers; their matrix algorithms are not covered."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "matrix_post_translate",
+      "module": "matrix",
+      "analysis_name": "matrix_post_translate",
+      "purpose": "Cdecl void(matrix48*, vector12*). Allocate natural48-byte local; op_matrix_build_translation(local,vector), then op_matrix_multiply_post(original matrix,local). No source/destination argument reversal. Static caller/callee stack and memory evidence confirms the order. Focused callbacks fully initialize local before read, verify exact forwarded pointers and48-byte payload, mutate destination/input before composition, then retain composer effects. Builder/composer mathematics remain external authored observations. Input may be disjoint or exact destination-translation alias; local must be separate.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/matrix-helper-acceptance.md",
+        "research/campaign-044-matrix-post-translate/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/matrix_helpers_behavior.c"
+      ],
+      "quirks": [
+        "External builders and composers remain authored observers; their matrix algorithms are not covered."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "matrix_pre_translate",
+      "module": "matrix",
+      "analysis_name": "matrix_pre_translate",
+      "purpose": "Cdecl direct signed-float component addition to translation offsets36/40/44, with sequential stores and no calls. Full58-byte raw target. Literal binary32 oracles under saved/restored masked x87,53-bit precision,round-nearest include signed zeros,cancellation,ties-to-even,subnormals,overflow and infinities. Test disjoint input and exact translation self-alias. Arbitrary partial overlap is outside the authored fixture domain because earlier stores may change later inputs.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/matrix-helper-acceptance.md",
+        "research/campaign-044-matrix-pre-translate/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/matrix_helpers_behavior.c"
+      ],
+      "quirks": [
+        "Component additions preserve sequential stores and exact translation alias."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "matrix_post_scale",
+      "module": "matrix",
+      "analysis_name": "matrix_post_scale",
+      "purpose": "Cdecl void(matrix48*, vector12*). Allocate natural48-byte local; op_matrix_build_scale(local,vector), then op_matrix_multiply_post(original matrix,local). No source/destination argument reversal. Static caller/callee stack and memory evidence confirms the order. Focused callbacks fully initialize local before read, verify exact forwarded pointers and48-byte payload, mutate destination/input before composition, then retain composer effects. Builder/composer mathematics remain external authored observations. Input may be disjoint or exact destination-translation alias; local must be separate.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/matrix-helper-acceptance.md",
+        "research/campaign-044-matrix-post-scale/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/matrix_helpers_behavior.c"
+      ],
+      "quirks": [
+        "External builders and composers remain authored observers; their matrix algorithms are not covered."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "matrix_pre_scale",
+      "module": "matrix",
+      "analysis_name": "matrix_pre_scale",
+      "purpose": "Cdecl void(matrix48*, vector12*). Allocate natural48-byte local; op_matrix_build_scale(local,vector), then op_matrix_multiply_pre(original matrix,local). No source/destination argument reversal. Static caller/callee stack and memory evidence confirms the order. Focused callbacks fully initialize local before read, verify exact forwarded pointers and48-byte payload, mutate destination/input before composition, then retain composer effects. Builder/composer mathematics remain external authored observations. Input may be disjoint or exact destination-translation alias; local must be separate.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/matrix-helper-acceptance.md",
+        "research/campaign-044-matrix-pre-scale/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/matrix_helpers_behavior.c"
+      ],
+      "quirks": [
+        "External builders and composers remain authored observers; their matrix algorithms are not covered."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
