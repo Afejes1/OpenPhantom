@@ -23,7 +23,7 @@
   "registered_after": 252,
   "full_span_bytes": 1062,
   "verified_operands": 24,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 14,
   "team_reported_done": 0,
   "original_game_executed": false,
@@ -41,5 +41,16 @@
     "issue": "Modern /W4 rejects fixture helper locals shadowing global word/failure counters. Only fixture local names changed; original canonical source and numeric/behavior oracles unchanged. No warning waiver.",
     "build_id": "20260914-055819-c0ec2add",
     "original_fixture": "passed"
-  }
+  },
+  "accepted_event": "engine/evidence/runs/000066-ef96a162fba0f9fd.json",
+  "source_commit": "282dd1acaf65e781bf245e6422eb7f11fcb779ef",
+  "build_id": "20260914-060456-b793d40f",
+  "source_snapshot_inputs": 440,
+  "retained_focused_checks": 402348,
+  "connected_checks": {
+    "length connected": 12676,
+    "audio connected": 10280
+  },
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34831369244",
+  "supplemental_ci_conclusion": "success"
 }
