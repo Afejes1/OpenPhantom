@@ -425,3 +425,7 @@ Acceptance042 reaches238 accepted functions at event65, with13 promotions matchi
 ## Length and audio checkpoint
 
 Acceptance043 reaches252 accepted functions at event66, with14 promotions matching1062 complete bytes and24 operands. All252 comparisons and shared tests pass, including402,348 retained focused checks and 22956 connected checks; same-source supplemental CI succeeds. This window has99 newly exact functions across7,449 bytes and102 promotions including three carried in. See [acceptance043](research/acceptance-043/results.md). Whole-executable identity remains pending.
+
+## Kernel window checkpoint
+
+Acceptance044 reaches261 accepted functions at event67, with9 promotions matching520 complete bytes and34 operands. All261 comparisons and shared tests pass, including570,560 retained focused and 24448 connected checks; same-source supplemental CI succeeds. This window has108 newly exact functions across7,969 bytes and111 promotions including three carried in. See [acceptance044](research/acceptance-044/results.md). Whole-executable identity remains pending.

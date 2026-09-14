@@ -18,7 +18,7 @@
   "registered_after": 261,
   "full_span_bytes": 520,
   "verified_operands": 34,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 9,
   "team_reported_done": 0,
   "original_game_executed": false,
@@ -29,5 +29,13 @@
     "receipt": "engine/private/a044-targeted-compile.json",
     "sha256": "4ed249c7b87d073a92bcf09bc853b450845cfad8e5e41320b36634e19ca90a7c",
     "returncode": 0
-  }
+  },
+  "accepted_event": "engine/evidence/runs/000067-cdb4adfbc0e5d10d.json",
+  "source_commit": "9e8799442e376db9a8e22b8d494be8b85d2e4b15",
+  "build_id": "20260914-062333-5cbb4ce7",
+  "source_snapshot_inputs": 451,
+  "retained_focused_checks": 570560,
+  "connected_checks": 24448,
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34832997452",
+  "supplemental_ci_conclusion": "success"
 }

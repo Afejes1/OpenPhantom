@@ -1,0 +1,7 @@
+# Acceptance 044 results
+
+Nine kernel window functions bring the accepted baseline from252 to261. They match520 complete original bytes after34 verified operands, with zero differences and no exclusions or new warning waivers. Clean source 9e8799442e376db9a8e22b8d494be8b85d2e4b15 builds as 20260914-062333-5cbb4ce7. All261 comparisons and shared authored tests pass. [Event67](../../evidence/runs/000067-cdb4adfbc0e5d10d.json) records the source snapshot; [same-source supplemental CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34832997452) succeeds.
+
+The shared fixture retains570,560 focused checks and adds 24448 connected checks. Actual show/hide/get/set/callback wrappers carry callback mutations into complete hook/dialog table fill-and-empty sequences. Hook insertion always has a free slot; dialog insertion safely rejects its17th entry, while duplicate removal preserves first-match order. All documented scalar and array state is checked after every operation without reseeding.
+
+Independent review approved9 include-only source substitutions, callback routing and connected sequence oracles. Parent verified exact preservation of all252 prior target and registry entries. One earlier focused preflight failure caught an operand-offset transcription error (+28 corrected to+29); it did not compile a candidate, and all9 actual first compiles matched. All additions are team-not_done. Kernel window8620F0 is distinct from earlier handle8620A4. No original game or window API executes; whole-executable identity remains pending.
