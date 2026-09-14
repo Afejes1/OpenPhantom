@@ -1,0 +1,5 @@
+# util_quoted_string
+
+Cdecl returns one byte past the closing quote, or NULL if either quote is missing. Clears nonnull output first. Second strchr receives captured opening+1; successful content length is clamped to unsigned size-1, intrinsic memcpy copies disjoint owned storage and a final NUL is stored. No escaping. Tests include both missing-quote paths, empty/full/truncated content, all four input/output alignments, outputNULL, size0/1/UINT_MAX with sufficient owned backing, and bounded first/second callback content changes. All output bytes are independently predicted before intrinsic stores, and both guards/input snapshots are checked. Pointer returns stay within the same owned input.
+
+Independent static review confirmed all765 full bytes and9 address operands, with no alignment tails. Tokenize has one path-search caller, quote has no direct entry XREFs, and sort has its four recursive self-calls. All data/callbacks are authored; no original executable or decompiler output is included. No byte exclusions, warning waivers or whole-executable claim.

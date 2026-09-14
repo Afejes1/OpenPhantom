@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T08:10:11.186349+00:00",
+  "conclusion": "approved-three-exact",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "util_quoted_string",
+      "address": 4813712,
+      "full_span_bytes": 176,
+      "candidate_size": 176,
+      "verified_operands": 2,
+      "different_bytes": 0,
+      "checks": 454656,
+      "team_status": "not_done",
+      "result": "research/campaign-057-util-quoted-string/result.json"
+    },
+    {
+      "id": "util_sort_range",
+      "address": 4814422,
+      "full_span_bytes": 411,
+      "candidate_size": 411,
+      "verified_operands": 4,
+      "different_bytes": 0,
+      "checks": 1085920,
+      "team_status": "not_done",
+      "result": "research/campaign-057-util-sort-range/result.json"
+    },
+    {
+      "id": "util_tokenize",
+      "address": 4813534,
+      "full_span_bytes": 178,
+      "candidate_size": 178,
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "checks": 326656,
+      "team_status": "not_done",
+      "result": "research/campaign-057-util-tokenize/result.json"
+    }
+  ],
+  "observations": [
+    "All42 current snapshot inputs and6 final report hashes independently verified.",
+    "All765 complete bytes and9 operands match, including four recursive sort calls.",
+    "Both parser fixtures predict pointer returns, callback-visible state and bounded copy/termination effects.",
+    "Sort combines an independent insertion-sort final oracle, complete live state snapshots, context/index guards and a literal seven-event trace.",
+    "Nine implementation compiles and six final invocations; no fixture failures, exclusions or warning waivers."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "util_sort_range",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural lexical and callback-sort source with real locals and complete spans",
+      "started_utc": "2026-09-14T08:00:05.350247+00:00",
+      "finished_utc": "2026-09-14T08:00:06.970032+00:00",
+      "returncode": 0,
+      "source_sha256": "63be7fc9a2a46ed5ec8150806d6c053596a5791f07ec9a38dca607f2369a79fa",
+      "report": "engine/build/campaign-001-util_sort_range-48c579e5be26/research-result.json",
+      "report_sha256": "e01b758c36889aad44c3aeefd8f278adbdde62a9805d41958a4eb4becadf049f",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 411,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.397332,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T08:10:11.186349+00:00"
+}

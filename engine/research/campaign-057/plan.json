@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "campaign-057",
+  "started_utc": "2026-09-14T07:52:00Z",
+  "stop_implementation_utc": "2026-09-14T08:27:00Z",
+  "deadline_utc": "2026-09-14T08:37:00Z",
+  "functions": [
+    "util_tokenize",
+    "util_quoted_string",
+    "util_sort_range"
+  ],
+  "full_target_bytes": 765,
+  "address_operands": 9,
+  "status": "complete",
+  "prepared_utc": "2026-09-14T07:59:19.680850+00:00",
+  "independent_packet_review": "comparison_inventory confirmed complete spans, all bindings, ABI and bounded callback domains",
+  "baseline_commit": "6e408cb4465c2809dc9b496762bb5b1169af952c",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T08:10:11.186349+00:00"
+}

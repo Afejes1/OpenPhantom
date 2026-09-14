@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "util_tokenize",
+  "compiler_invocations": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural lexical and callback-sort source with real locals and complete spans",
+      "started_utc": "2026-09-14T08:00:02.077232+00:00",
+      "finished_utc": "2026-09-14T08:00:03.733505+00:00",
+      "returncode": 1,
+      "source_sha256": "7c81f90e134f3eab60c23eab8df4603678dff2c4ae38fbf8dd6344717954fedd",
+      "report": "engine/build/campaign-001-util_tokenize-fb9e0cc86c37/research-result.json",
+      "report_sha256": "af4cf1f5ae3d05146df8a54872b1ba4364d0c736e4c45368c0c3df41378865b5",
+      "status": "mismatch",
+      "candidate_size": 178,
+      "different_bytes": 11,
+      "elapsed_seconds": 1.432844,
+      "stderr": "",
+      "analysis_note": "Natural source has correct full span;11 local-displacement differences."
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Natural lexical and callback-sort source with real locals and complete spans",
+      "started_utc": "2026-09-14T08:02:26.614901+00:00",
+      "finished_utc": "2026-09-14T08:02:28.213784+00:00",
+      "returncode": 1,
+      "source_sha256": "27122f9633030cf887a942c3143047793a5969c09438077a38494d40413bc575",
+      "report": "engine/build/campaign-001-util_tokenize-98d1bd9947c4/research-result.json",
+      "report_sha256": "162a8e17b80af9b73359153c63821a3c94410e4edf3072b3703bba578f291c96",
+      "status": "mismatch",
+      "candidate_size": 178,
+      "different_bytes": 11,
+      "elapsed_seconds": 1.381249,
+      "stderr": "",
+      "analysis_note": "Reordering the same genuine declarations leaves11 differences."
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Natural lexical and callback-sort source with real locals and complete spans",
+      "started_utc": "2026-09-14T08:03:54.022950+00:00",
+      "finished_utc": "2026-09-14T08:03:55.627814+00:00",
+      "returncode": 1,
+      "source_sha256": "486bd6474ada29356ed3f1f5c985c5ea1cb6dcb0a2becfd470d25d2a15abde37",
+      "report": "engine/build/campaign-001-util_tokenize-011bf3a8df70/research-result.json",
+      "report_sha256": "5c953c8539ef5d70fcff225a7fbbac97281bb97679787ad5a28bc4914915c255",
+      "status": "mismatch",
+      "candidate_size": 178,
+      "different_bytes": 13,
+      "elapsed_seconds": 1.381158,
+      "stderr": "",
+      "analysis_note": "Descriptive token-aware local renames change compiler allocation;13 differences."
+    },
+    {
+      "attempt": 4,
+      "hypothesis": "Natural lexical and callback-sort source with real locals and complete spans",
+      "started_utc": "2026-09-14T08:05:23.789831+00:00",
+      "finished_utc": "2026-09-14T08:05:25.382709+00:00",
+      "returncode": 0,
+      "source_sha256": "6b45b980d87e1632f5a6977c580ad190185e7617daaf8dcff265d6e239226591",
+      "report": "engine/build/campaign-001-util_tokenize-829ee70ef9c8/research-result.json",
+      "report_sha256": "ee21981174617d9a8e313ff58c0130f7a77282f15a46fa92fad220b488726f6e",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 178,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.374535,
+      "stderr": "",
+      "analysis_note": "One further semantic local rename yields exact original allocation without additional locals or padding."
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T08:10:11.186349+00:00"
+}

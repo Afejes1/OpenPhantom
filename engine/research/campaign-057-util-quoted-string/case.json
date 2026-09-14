@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "util_quoted_string",
+  "candidate": "candidate.c",
+  "symbol": "_op_util_quoted_string",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

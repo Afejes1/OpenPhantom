@@ -1,0 +1,39 @@
+{
+  "id": "util_sort_range",
+  "address": 4814422,
+  "size": 411,
+  "body_size": 411,
+  "source": "src/util_sort_range.c",
+  "symbol": "_op_util_sort_range",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 314,
+      "address": 4814422,
+      "symbol": "_op_util_sort_range",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 342,
+      "address": 4814422,
+      "symbol": "_op_util_sort_range",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 372,
+      "address": 4814422,
+      "symbol": "_op_util_sort_range",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 400,
+      "address": 4814422,
+      "symbol": "_op_util_sort_range",
+      "kind": "rel32-call"
+    }
+  ]
+}

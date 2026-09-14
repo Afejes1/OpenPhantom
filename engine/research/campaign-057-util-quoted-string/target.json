@@ -1,0 +1,27 @@
+{
+  "id": "util_quoted_string",
+  "address": 4813712,
+  "size": 176,
+  "body_size": 176,
+  "source": "src/util_quoted_string.c",
+  "symbol": "_op_util_quoted_string",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 27,
+      "address": 4828592,
+      "symbol": "_op_find_character",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 63,
+      "address": 4828592,
+      "symbol": "_op_find_character",
+      "kind": "rel32-call"
+    }
+  ]
+}

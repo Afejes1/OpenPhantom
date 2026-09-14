@@ -1,0 +1,33 @@
+{
+  "id": "util_tokenize",
+  "address": 4813534,
+  "size": 178,
+  "body_size": 178,
+  "source": "src/util_tokenize.c",
+  "symbol": "_op_util_tokenize",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 28,
+      "address": 4836160,
+      "symbol": "_op_span_delimiters",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 56,
+      "address": 4836096,
+      "symbol": "_op_find_delimiter",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 154,
+      "address": 4828192,
+      "symbol": "_op_copy_keyframe_name",
+      "kind": "rel32-call"
+    }
+  ]
+}

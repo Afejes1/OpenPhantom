@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "util_sort_range",
+  "candidate": "candidate.c",
+  "symbol": "_op_util_sort_range",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "extra_fixture_sources": [],
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}
