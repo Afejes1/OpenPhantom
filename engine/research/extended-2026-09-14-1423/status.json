@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "validation-complete-closing-window",
+  "status": "completed",
   "started_utc": "2026-09-14T14:23:45Z",
   "implementation_stop_utc": "2026-09-14T16:08:45Z",
   "deadline_utc": "2026-09-14T16:23:45Z",
@@ -10,12 +10,17 @@
   "pending_exact": [],
   "priority": [],
   "ownership": "Parent sole source/Git writer; existing independent reviewer reads only.",
-  "current_work": "All five checkpoints complete; final publication and fixed-deadline closeout remain.",
+  "current_work": "Five accepted checkpoints published; clean fork verified; continuation heartbeat paused before the fixed deadline.",
   "focused_new_exact": 16,
   "acceptance_pending": null,
   "accepted_new": 17,
   "accepted_current": 290,
   "evidence_event_current": 75,
   "remaining_current": 661,
-  "local_team_not_done_current": 282
+  "local_team_not_done_current": 282,
+  "completed_utc": "2026-09-14T16:19:07.049188+00:00",
+  "heartbeat_status": "PAUSED",
+  "last_verified_publication_commit": "c39acf1c029811892f65080904f18fa5653e544b",
+  "last_verified_publication_ci": "https://github.com/Afejes1/OpenPhantom/actions/runs/34867625439",
+  "reference_fingerprint_reverified": true
 }

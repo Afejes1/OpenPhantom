@@ -35,5 +35,7 @@
   "linked_placement_verified": false,
   "original_executable_executed": false,
   "byte_exclusions_added": [],
-  "warning_waivers_added": []
+  "warning_waivers_added": [],
+  "completed_utc": "2026-09-14T16:19:07.049188+00:00",
+  "elapsed_minutes_to_closeout": 115.37
 }

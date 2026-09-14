@@ -35,3 +35,5 @@ All five shared acceptance checkpoints passed the original-toolchain fixture/com
 [Next queue](next-queue.md) records nearby layout/ABI blockers and preserves capped attempts. The separator remains unaccepted at 42 compiled versus 56 target bytes; module send-shutdown remains parked. Ghidra evidence comments were saved; two attempted calling-convention signature corrections were rejected by the bridge and remain explicitly unresolved in [metadata notes](ghidra-metadata.json).
 
 [Final acceptance](../acceptance-052/results.md) pins the original-toolchain build, all source hashes and CI. No upstream/develop merge or original-binary modification occurred.
+
+Completed the planned batches and closeout before the fixed deadline. The continuation heartbeat is paused. Publication commit `c39acf1c029811892f65080904f18fa5653e544b` passed its lightweight CI and matched the remote branch; the original executable fingerprint was reverified unchanged. Exact closeout time is recorded in status.json.
