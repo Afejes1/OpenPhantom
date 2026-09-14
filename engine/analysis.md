@@ -413,3 +413,7 @@ Acceptance039 reaches 209 accepted functions at event62. All 209 comparisons and
 ## Utility checkpoint
 
 Acceptance040 reaches216 accepted functions at event63. All216 comparisons and shared tests pass, including247,920 retained focused checks and 3296 connected checks, with same-source supplemental CI. Seven utilities add657 complete bytes with six verified operands. The overnight window has63 newly exact functions across5,118 bytes and66 accepted promotions including three carried in. See [acceptance040](research/acceptance-040/results.md). Whole-executable identity remains pending.
+
+## Lexical and window checkpoint
+
+Acceptance041 reaches225 accepted functions at event64. All225 comparisons and shared tests pass, including1,886,672 retained focused checks and34,992 connected window checks, with successful same-source supplemental CI. Nine functions add864 complete bytes with18 verified operands. The overnight window has72 newly exact functions across5,982 bytes and75 accepted promotions including three carried in. See [acceptance041](research/acceptance-041/results.md). Whole-executable identity remains pending.

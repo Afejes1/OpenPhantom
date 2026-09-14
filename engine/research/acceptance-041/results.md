@@ -1,0 +1,7 @@
+# Acceptance041 results
+
+Nine lexical/sort and window-state functions bring the accepted baseline from216 to225. They match864 complete original bytes after18 verified address operands, with zero differences and no exclusions or original-VC5 warning waivers. Clean source 1c93eb740062ebfd8876af52ce7c3fd96d80a721 builds as 20260914-043315-f8e16a76. All225 comparisons and shared authored tests pass. [Event64](../../evidence/runs/000064-0cac02750a95e9f3.json) records the source snapshot; [same-source supplemental CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34824024570) succeeds.
+
+The shared fixture retains1,886,672 focused checks and adds 34,992 connected window checks. Those sequences exercise both handle pairs, disjoint rectangle transfer, live getter mutation and self-alias copying with independent state expectations and guarded input. Lexical fixtures preserve callback mutation/copy ordering, unsigned capacity behavior and independent sort ordering. Reviewer approved all integrated fixtures and routing. Parent verified unchanged216-entry target/registry prefixes and nine include-only source substitutions.
+
+All nine additions are team-not_done. External callbacks remain authored observers. Handles carry32-bit words; rectangle signedness and partial overlap remain outside scope. No actual OS operation or original game executes. Existing supplemental modern CRT deprecation suppression remains unchanged; original VC5 has no added waiver. Whole-executable identity remains pending.
