@@ -7,18 +7,18 @@
   "baseline_accepted": 290,
   "baseline_event": 75,
   "baseline_commit": "f7fdc3a3db572de9a7b0676703eae05608086d54",
-  "accepted_new": 9,
-  "accepted_current": 299,
-  "remaining_current": 652,
-  "local_team_not_done_current": 291,
-  "evidence_event_current": 77,
+  "accepted_new": 12,
+  "accepted_current": 302,
+  "remaining_current": 649,
+  "local_team_not_done_current": 294,
+  "evidence_event_current": 78,
   "pending_exact": [
-    "gameplay_random",
-    "gameplay_seed",
-    "gameplay_roll"
+    "audio_pause",
+    "audio_play",
+    "audio_unlock"
   ],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "C077 has three exact reviewed RNG functions; A055 shared acceptance pending.",
+  "current_work": "A055 accepted three RNG functions. C078 has three first-attempt exact audio wrappers with final paired fixtures; integration next.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": "acceptance-055"
+  "acceptance_pending": null
 }

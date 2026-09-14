@@ -4,15 +4,15 @@
     "manifest_functions": 2241,
     "team_reported_done": 1298,
     "team_reported_not_done": 943,
-    "local_accepted": 299,
-    "local_within_team_not_done": 291,
+    "local_accepted": 302,
+    "local_within_team_not_done": 294,
     "local_overlapping_team_done": 8,
-    "remaining_if_team_claims_are_correct": 652,
-    "combined_covered_if_team_claims_are_correct": 1589
+    "remaining_if_team_claims_are_correct": 649,
+    "combined_covered_if_team_claims_are_correct": 1592
   },
   "local_match_categories": {
     "raw-code-match": 32,
-    "relocation-adjusted-match": 267
+    "relocation-adjusted-match": 270
   },
   "team_source_independently_verified": false,
   "whole_executable_match": false,
@@ -15720,33 +15720,33 @@
       "team_reported_file": null,
       "team_reported_name": "rand_u32",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "gameplay_random",
+      "local_source": "src/gameplay_random.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00470D56",
       "team_reported_file": null,
       "team_reported_name": "rng_seedA",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "gameplay_seed",
+      "local_source": "src/gameplay_seed.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00470DA1",
       "team_reported_file": null,
       "team_reported_name": "FUN_00470da1",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "gameplay_roll",
+      "local_source": "src/gameplay_roll.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00470DE5",
@@ -24674,10 +24674,10 @@
     "manifest": "engine/planning/team-manifest-20260912-1849.json",
     "manifest_sha256": "3c26a8b5f62424864513ffb20dfb644fa582d19600cd2f98bbfd7eca71dfee1f",
     "contributor_attachment_sha256": "0b6de70dfa6b872725cbb8cc4fd14fc71316a2ec28ef9e1dec5762577046592b",
-    "accepted_event": "engine/evidence/runs/000077-1e6788f606886975.json",
-    "accepted_event_sha256": "d81ed4f2739427e08b9590ec2fbecbe9bddb1f90d4a578f1d34cf09a78ad6308",
-    "source_commit": "d63340de966db4ba2b79a055f3f7990df3a63da0",
-    "build_id": "20260914-135911-6f3576f4",
+    "accepted_event": "engine/evidence/runs/000078-971ca0c356ac53a4.json",
+    "accepted_event_sha256": "5a17cb7e53dcd368cd2bd32ae78343799635d20fab7f3b95cfe6cf37ab07c489",
+    "source_commit": "e6df1f908e133fb65dcdb4a189e22a697048dede",
+    "build_id": "20260914-142447-6281f129",
     "generator_sha256": "9eeb04c352a48d09f795f4101f5b169dabdc41af21cdb9cc4e2b2956d942845a"
   }
 }

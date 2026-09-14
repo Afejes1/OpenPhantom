@@ -1,6 +1,6 @@
 # Gameplay RNG acceptance
 
-Three functions contribute245 complete bytes and eight verified operands. Canonical source differs from focused candidates only by include. All previous299 target and registry entries remain unchanged. Shared acceptance pending.
+Three functions contribute245 complete bytes and eight verified operands. Canonical source differs from focused candidates only by include. All previous299 target and registry entries remain unchanged. [Acceptance 055](../research/acceptance-055/results.md) records the successful shared checkpoint in immutable event 78.
 
 Next advances the signed Schrage state; seed normalizes input and returns the previous state; roll accumulates one plus unsigned remainder. The independent RNG oracle uses64-bit product/remainder, avoiding a duplicate of the candidate's32-bit algorithm. Input and arithmetic limits are explicit in the focused contracts.
 

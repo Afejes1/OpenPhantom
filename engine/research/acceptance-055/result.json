@@ -13,7 +13,7 @@
   "full_span_bytes": 245,
   "verified_operands": 8,
   "raw_functions": 0,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 3,
   "team_reported_done": 0,
   "manifest": "planning/team-manifest-20260912-1849.json",
@@ -22,8 +22,18 @@
     "random_table_shuffle_position",
     "gameplay_roll"
   ],
-  "canonical_chain_checks": "pending shared run",
+  "canonical_chain_checks": 4605,
   "original_game_executed": false,
   "byte_exclusions": [],
-  "warning_waivers": []
+  "warning_waivers": [],
+  "accepted_event": "engine/evidence/runs/000078-971ca0c356ac53a4.json",
+  "source_commit": "e6df1f908e133fb65dcdb4a189e22a697048dede",
+  "build_id": "20260914-142447-6281f129",
+  "source_snapshot_inputs": 511,
+  "every_source_input_matches_committed_git_blob": true,
+  "shared_matrix_checks": 25664,
+  "retained_c075_shuffle_probe_checks": 792,
+  "independent_review": "comparison_inventory approved frozen receipts, include-only bodies, prior299 entries, scoped source probes and actual linked canonical chains.",
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34880626483",
+  "supplemental_ci_conclusion": "success"
 }
