@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "read_only": true,
+  "reviewed_utc": "2026-09-14T11:22:47.185859+00:00",
+  "conclusion": "approved with historical source-fingerprint discrepancy explicitly preserved and corrected in final checkpoint",
+  "campaign_snapshot_entries": 1836,
+  "historical_aggregate_target_entries": 131,
+  "current_other_snapshot_entries_matching": 1705,
+  "final_source_inputs_matching_git": 461,
+  "historical_fingerprint_discrepancy": {
+    "events": [
+      66,
+      67,
+      68
+    ],
+    "paths": [
+      "tests/audio_behavior.c",
+      "tests/length_behavior.c"
+    ],
+    "cause": "Local CRLF bytes versus committed LF bytes",
+    "normalized_bytes_identical": true,
+    "original_events_unchanged": true,
+    "correction_event": 69
+  },
+  "research_percentages": "No percentage assigned to any of the nine different-size candidates; eight same-size mismatches remain research.",
+  "limits": [
+    "Function comparisons account for verified relocations; original linked placement and whole executable identity remain unverified.",
+    "Authored fixture assertion counts are not a measure of whole-game behavior coverage.",
+    "Shared account usage is account-wide, not attributable exactly to this thread."
+  ],
+  "final_independent_review": "All totals,267 event functions and461 source inputs independently rechecked against working files and committed Git blobs. Historical events remain unchanged. Function index uses accepted_by_final_checkpoint to distinguish cumulative acceptance from final-batch promotions.",
+  "original_reference_hash_unchanged": true,
+  "no_tracked_private_or_compiled_artifacts_in_window_diff": true
+}

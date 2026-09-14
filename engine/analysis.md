@@ -433,3 +433,7 @@ Acceptance044 reaches261 accepted functions at event67, with9 promotions matchin
 ## Video lifecycle checkpoint
 
 Acceptance 045 reaches 264 accepted functions at event 68, with three promotions matching 322 complete bytes and 16 operands. All 264 comparisons and shared tests pass, including 69,936 retained focused and 100224 connected checks; same-source supplemental CI succeeds. This window has 111 newly exact functions across 8,291 bytes and 114 promotions including three carried in. See [acceptance 045](research/acceptance-045/results.md). Whole-executable identity remains pending.
+
+## Final debug and provenance checkpoint
+
+Acceptance 046 reaches 267 accepted functions at event 69. Three new debug wrappers match 203 complete bytes and 19 operands. All 267 comparisons and shared tests pass, including 62,694 focused and 93312 connected debug checks; same-source supplemental CI succeeds. All 461 source inputs match their recorded Git blobs after correcting two historical local line-ending discrepancies. This ten-hour window has 114 newly exact functions across 8,494 bytes and 117 promotions including three carried in. See [acceptance 046](research/acceptance-046/results.md). Whole-executable identity remains pending.

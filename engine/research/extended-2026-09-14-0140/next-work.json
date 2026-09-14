@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "status": "preliminary-static-handoff",
+  "prepared_utc": "2026-09-14T11:26:05.153548+00:00",
+  "preparation_started_utc": "2026-09-14T11:24:00Z",
+  "compiler_attempts": 0,
+  "implementation_started": false,
+  "ready_for_compilation": false,
+  "no_existing_primary_campaign_targets_found": true,
+  "original_game_executed": false,
+  "notes": [
+    "Selected from unresolved relative-call bindings in the267-function accepted target, filtered by numeric team-manifest status and by unaccepted addresses.",
+    "Static Ghidra decompilation, complete disassembly, next-entry boundaries and incoming calls were inspected.",
+    "This is a follow-up inventory, not a completed assignment packet or an extension of any parked campaign cap.",
+    "Do not combine the rendering profile/layout case with the two I/O contracts solely to fill a batch."
+  ],
+  "functions": [
+    {
+      "id": "stream_read",
+      "address": "0x00470786",
+      "team_reported_status": "not_done",
+      "team_reported_name": "res_readStream",
+      "accepted_callers": 8,
+      "observed_call_sites": 26,
+      "body_bytes": 244,
+      "full_interval_bytes": 244,
+      "priority": "High connection value",
+      "observed": [
+        "Four stack arguments: destination, element size, element count, stream record.",
+        "Uncompressed path forwards to the CRT read routine; compressed path consumes an embedded byte buffer and invokes a refill helper.",
+        "Record offsets: file0, compressed flag4, available48, consumed52, embedded bytes56.",
+        "Signed comparisons and signed division are visible; zero element size and overflowing products require explicit domain treatment."
+      ],
+      "remaining": [
+        "Confirm precise signedness and callback ABI from callers and refill body.",
+        "Verify every operand offset and compiler intrinsic/profile choice for the inline copy.",
+        "Create bounded synthetic fixtures for partial reads, refill, EOF, callback mutation and byte-count return division."
+      ]
+    },
+    {
+      "id": "save_chunk_header",
+      "address": "0x00451BC2",
+      "team_reported_status": "not_done",
+      "team_reported_name": "save_writeChunkHeader",
+      "accepted_callers": 2,
+      "observed_call_sites": 8,
+      "body_bytes": 150,
+      "full_interval_bytes": 150,
+      "priority": "Save subsystem connection",
+      "observed": [
+        "Constructs a 24-byte stack record with an eight-byte name region, size field, fixed version byte, 16-bit kind and zero fields.",
+        "Writes one record to the active save stream; zero write result invokes a context/diagnostic/context sequence and returns failure.",
+        "Diagnostic text must remain an authored external label in fixtures."
+      ],
+      "remaining": [
+        "Confirm copy-helper source/destination ABI and precise truncation/termination semantics.",
+        "Verify all nine observed address operands against disassembly before creating a target.",
+        "Test full record bytes and callback-visible stack record lifetime, write success/failure and context ordering."
+      ]
+    },
+    {
+      "id": "set_clear_rgb",
+      "address": "0x00487B50",
+      "team_reported_status": "not_done",
+      "team_reported_name": "FUN_00487b50",
+      "accepted_callers": 2,
+      "observed_call_sites": 3,
+      "body_bytes": 75,
+      "full_interval_bytes": 80,
+      "alignment_tail_bytes": 5,
+      "alignment_tail_kind": "NOP",
+      "priority": "Separate layout/profile investigation",
+      "observed": [
+        "Three low-byte colour arguments are shifted using a descriptor and combined into a 16-bit global store.",
+        "Descriptor pointer global862018; left-shift words at48/52/56 and right-shift bytes at60/64/68; destination word86700C.",
+        "Frameless register code differs from the common unoptimized helper pattern.",
+        "Static memory confirms five NOP alignment bytes after RET before the next entry."
+      ],
+      "remaining": [
+        "Establish original optimization profile and byte-shift semantics; do not assume the common /Od profile.",
+        "Confirm descriptor field types and caller argument transport.",
+        "Preserve the full80-byte interval; do not pad source or claim a body-only acceptance."
+      ]
+    }
+  ]
+}

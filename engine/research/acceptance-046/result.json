@@ -12,7 +12,7 @@
   "registered_after": 267,
   "full_span_bytes": 203,
   "verified_operands": 19,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 3,
   "team_reported_done": 0,
   "original_game_executed": false,
@@ -33,5 +33,14 @@
     "supplemental_ci_conclusion": "failure",
     "reason": "Modern C4702 rejected an unreachable fixture return after exit(2); source fingerprint audit also found two older local CRLF fixture files differed from Git LF bytes.",
     "correction": "Remove the unreachable fixture return and normalize the two older fixture files to their existing committed Git bytes. No canonical source, target, registry, ABI, or byte-comparison changes."
-  }
+  },
+  "accepted_event": "engine/evidence/runs/000069-f54357411cbc413e.json",
+  "source_commit": "3c27ef174bfd4c89ef93a2c9782dbfa051f2c503",
+  "build_id": "20260914-071516-c96c42c5",
+  "source_snapshot_inputs": 461,
+  "every_source_input_matches_committed_git_blob": true,
+  "retained_focused_checks": 62694,
+  "connected_checks": 93312,
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34837312621",
+  "supplemental_ci_conclusion": "success"
 }

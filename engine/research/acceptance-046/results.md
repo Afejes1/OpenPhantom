@@ -1,0 +1,9 @@
+# Acceptance 046 results
+
+Three debug wrappers bring the accepted baseline from 264 to 267. They match 203 complete original bytes after 19 verified operands, with zero differences and no exclusions or new warning waivers. Clean source 3c27ef174bfd4c89ef93a2c9782dbfa051f2c503 builds as 20260914-071516-c96c42c5. All 267 comparisons and shared authored tests pass. [Event 69](../../evidence/runs/000069-f54357411cbc413e.json) records the source snapshot; [same-source supplemental CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34837312621) succeeds. All 461 source inputs were also verified byte-for-byte against their committed Git blobs.
+
+The shared fixture retains 62,694 focused checks and adds 93312 connected checks. Actual visibility, page and size wrappers carry live state and callback mutations between operations without reseeding. Reset and resize remain authored dependencies; the three research debug helpers are not promoted.
+
+Independent review approved the three include-only sources, scoped callback dispatch and expected state transitions. Parent proved all prior 264 target/registry entries unchanged. An initial full build was preserved but not accepted: modern CI rejected an unreachable fixture return after exit(2), and a separate provenance audit found local CRLF endings in two older fixtures differed from Git LF bytes. The return was removed, the two files normalized to their exact existing Git blobs, and the complete final build was repeated. No canonical function or target definition changed.
+
+Historical events 66 through 68 retain their original hashes and are explicitly documented in the final window audit. The final checkpoint resolves the current checkout discrepancy without rewriting history. All additions are team-not_done. No original game or operating-system function executes; whole-executable identity remains pending.
