@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "console_get_xy",
+  "candidate": "candidate.c",
+  "symbol": "_op_console_get_xy",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

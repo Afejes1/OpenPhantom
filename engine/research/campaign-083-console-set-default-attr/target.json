@@ -1,0 +1,21 @@
+{
+  "id": "console_set_default_attr",
+  "address": 4769291,
+  "size": 20,
+  "body_size": 20,
+  "source": "src/console_set_default_attr.c",
+  "symbol": "_op_console_set_default_attr",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 9,
+      "address": 8784772,
+      "symbol": "_op_console_default_attr",
+      "kind": "dir32"
+    }
+  ]
+}

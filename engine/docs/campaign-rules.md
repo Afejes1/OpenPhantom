@@ -30,6 +30,8 @@ Start from existing candidates and small functions reported unfinished by the
 team. Before source experiments, establish the full original interval, signature,
 constants, external/global/call mappings and intended focused behavior cases.
 Missing inventory is an explicit preparation task, not permission to guess values.
+Validate object size and initialized extent independently from rounded stack
+allocation; stack reservation alone does not establish a structure layout.
 The coordinator independently verifies the inventory before relying on its claims.
 Packets spell out every callback's complete parameter order. Verify it against
 both caller stack setup and callee access before experiments; a fixture sharing

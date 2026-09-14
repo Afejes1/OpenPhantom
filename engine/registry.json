@@ -5973,6 +5973,237 @@
         "Owned cursor/latch pairs preserve interior-global aliases and exact source order."
       ],
       "exceptions": []
+    },
+    {
+      "id": "ui_toggle_debug_boxes",
+      "module": "ui-widget",
+      "analysis_name": "ui_toggle_debug_boxes",
+      "purpose": "Toggle widget debug boxes using logical zero/nonzero normalization.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/ui-widget-acceptance.md",
+        "research/campaign-082-ui-toggle-debug-boxes/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/ui_widget_behavior.c"
+      ],
+      "quirks": [
+        "Begin preserves nonzero state; end acts only on exactly1.",
+        "End preserves ordered callback side effects and clears active after allthree stages.",
+        "Render-stage bodies remain authored observers in these tests and are not claimed reconstructed by this batch.",
+        "Widget layout claims only an8-byte prefix and the identifier atoffset4."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ui_set_mouse_focus_clears",
+      "module": "ui-widget",
+      "analysis_name": "ui_set_mouse_focus_clears",
+      "purpose": "Set the full-word mouse-focus clearing mode.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/ui-widget-acceptance.md",
+        "research/campaign-082-ui-set-mouse-focus-clears/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/ui_widget_behavior.c"
+      ],
+      "quirks": [
+        "Begin preserves nonzero state; end acts only on exactly1.",
+        "End preserves ordered callback side effects and clears active after allthree stages.",
+        "Render-stage bodies remain authored observers in these tests and are not claimed reconstructed by this batch.",
+        "Widget layout claims only an8-byte prefix and the identifier atoffset4."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ui_widget_activation_id",
+      "module": "ui-widget",
+      "analysis_name": "ui_widget_activation_id",
+      "purpose": "Return the widget activation identifier at offset4.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/ui-widget-acceptance.md",
+        "research/campaign-082-ui-widget-activation-id/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/ui_widget_behavior.c"
+      ],
+      "quirks": [
+        "Begin preserves nonzero state; end acts only on exactly1.",
+        "End preserves ordered callback side effects and clears active after allthree stages.",
+        "Render-stage bodies remain authored observers in these tests and are not claimed reconstructed by this batch.",
+        "Widget layout claims only an8-byte prefix and the identifier atoffset4."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ui3d_begin",
+      "module": "ui-widget",
+      "analysis_name": "ui3d_begin",
+      "purpose": "Mark UI3D rendering active only when its state was zero.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/ui-widget-acceptance.md",
+        "research/campaign-082-ui3d-begin/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/ui_widget_behavior.c"
+      ],
+      "quirks": [
+        "Begin preserves nonzero state; end acts only on exactly1.",
+        "End preserves ordered callback side effects and clears active after allthree stages.",
+        "Render-stage bodies remain authored observers in these tests and are not claimed reconstructed by this batch.",
+        "Widget layout claims only an8-byte prefix and the identifier atoffset4."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ui3d_end",
+      "module": "ui-widget",
+      "analysis_name": "ui3d_end",
+      "purpose": "Flush three UI3D stages in order when state equals1, then reset the state.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/ui-widget-acceptance.md",
+        "research/campaign-082-ui3d-end/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/ui_widget_behavior.c"
+      ],
+      "quirks": [
+        "Begin preserves nonzero state; end acts only on exactly1.",
+        "End preserves ordered callback side effects and clears active after allthree stages.",
+        "Render-stage bodies remain authored observers in these tests and are not claimed reconstructed by this batch.",
+        "Widget layout claims only an8-byte prefix and the identifier atoffset4."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "console_close",
+      "module": "console",
+      "analysis_name": "console_close",
+      "purpose": "Release the console and ignore the API result.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-acceptance.md",
+        "research/campaign-083-console-close/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/console_behavior.c"
+      ],
+      "quirks": [
+        "Console info object is22bytes with24-byte rounded stack reservation.",
+        "GetXY fixture initializes22bytes even on synthetic API failure because the wrapper ignores the return.",
+        "Only defined16-bit coordinate/attribute arguments are asserted; neighboring attribute storage is preserved.",
+        "External APIs are authored observers, not real console operations."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "console_goto",
+      "module": "console",
+      "analysis_name": "console_goto",
+      "purpose": "Set signed16-bit console cursor coordinates.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-acceptance.md",
+        "research/campaign-083-console-goto/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/console_behavior.c"
+      ],
+      "quirks": [
+        "Console info object is22bytes with24-byte rounded stack reservation.",
+        "GetXY fixture initializes22bytes even on synthetic API failure because the wrapper ignores the return.",
+        "Only defined16-bit coordinate/attribute arguments are asserted; neighboring attribute storage is preserved.",
+        "External APIs are authored observers, not real console operations."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "console_get_xy",
+      "module": "console",
+      "analysis_name": "console_get_xy",
+      "purpose": "Read cursor coordinates from the console info object.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-acceptance.md",
+        "research/campaign-083-console-get-xy/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/console_behavior.c"
+      ],
+      "quirks": [
+        "Console info object is22bytes with24-byte rounded stack reservation.",
+        "GetXY fixture initializes22bytes even on synthetic API failure because the wrapper ignores the return.",
+        "Only defined16-bit coordinate/attribute arguments are asserted; neighboring attribute storage is preserved.",
+        "External APIs are authored observers, not real console operations."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "console_set_default_attr",
+      "module": "console",
+      "analysis_name": "console_set_default_attr",
+      "purpose": "Store the default16-bit text attribute and return1.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-acceptance.md",
+        "research/campaign-083-console-set-default-attr/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/console_behavior.c"
+      ],
+      "quirks": [
+        "Console info object is22bytes with24-byte rounded stack reservation.",
+        "GetXY fixture initializes22bytes even on synthetic API failure because the wrapper ignores the return.",
+        "Only defined16-bit coordinate/attribute arguments are asserted; neighboring attribute storage is preserved.",
+        "External APIs are authored observers, not real console operations."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "console_set_attr",
+      "module": "console",
+      "analysis_name": "console_set_attr",
+      "purpose": "Store the current16-bit attribute before setting console text attributes.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-acceptance.md",
+        "research/campaign-083-console-set-attr/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/console_behavior.c"
+      ],
+      "quirks": [
+        "Console info object is22bytes with24-byte rounded stack reservation.",
+        "GetXY fixture initializes22bytes even on synthetic API failure because the wrapper ignores the return.",
+        "Only defined16-bit coordinate/attribute arguments are asserted; neighboring attribute storage is preserved.",
+        "External APIs are authored observers, not real console operations."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "console_flush",
+      "module": "console",
+      "analysis_name": "console_flush",
+      "purpose": "Flush the console input buffer and ignore the API result.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-acceptance.md",
+        "research/campaign-083-console-flush/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/console_behavior.c"
+      ],
+      "quirks": [
+        "Console info object is22bytes with24-byte rounded stack reservation.",
+        "GetXY fixture initializes22bytes even on synthetic API failure because the wrapper ignores the return.",
+        "Only defined16-bit coordinate/attribute arguments are asserted; neighboring attribute storage is preserved.",
+        "External APIs are authored observers, not real console operations."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

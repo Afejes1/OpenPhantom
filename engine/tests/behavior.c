@@ -147,6 +147,8 @@ static void clip_flag_tests(void)
 #include "music_position_behavior.c"
 #include "elapsed_time_behavior.c"
 #include "ui_input_behavior.c"
+#include "ui_widget_behavior.c"
+#include "console_behavior.c"
 #include "kernel_behavior.c"
 #include "video_behavior.c"
 #include "debug_behavior.c"
@@ -377,6 +379,19 @@ int main(void)
     failures += op_test_ui_set_joy_navigation();
     failures += op_test_ui_clear_joy_latches();
     failures += op_test_elapsed_time_connected();
+    failures += op_test_ui_toggle_debug_boxes();
+    failures += op_test_ui_set_mouse_focus_clears();
+    failures += op_test_ui_widget_activation_id();
+    failures += op_test_ui3d_begin();
+    failures += op_test_ui3d_end();
+    failures += op_test_ui_widget_connected();
+    failures += op_test_console_close();
+    failures += op_test_console_goto();
+    failures += op_test_console_get_xy();
+    failures += op_test_console_set_default_attr();
+    failures += op_test_console_set_attr();
+    failures += op_test_console_flush();
+    failures += op_test_console_connected();
     failures += op_test_kernel_show();
     failures += op_test_kernel_hide();
     failures += op_test_kernel_set_field();

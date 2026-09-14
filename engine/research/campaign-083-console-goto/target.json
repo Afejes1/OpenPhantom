@@ -1,0 +1,27 @@
+{
+  "id": "console_goto",
+  "address": 4769081,
+  "size": 40,
+  "body_size": 40,
+  "source": "src/console_goto.c",
+  "symbol": "_op_console_goto",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 25,
+      "address": 8809080,
+      "symbol": "_op_console_output",
+      "kind": "dir32"
+    },
+    {
+      "offset": 32,
+      "address": 9180552,
+      "symbol": "_op_console_set_position",
+      "kind": "dir32"
+    }
+  ]
+}

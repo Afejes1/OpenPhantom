@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "status": "six-exact-integration-review",
+  "started_utc": "2026-09-14T19:21:02.273065+00:00",
+  "deadline_utc": "2026-09-14T20:01:02.273065+00:00",
+  "functions": [
+    "console_close",
+    "console_goto",
+    "console_get_xy",
+    "console_set_default_attr",
+    "console_set_attr",
+    "console_flush"
+  ],
+  "preparation_correction": "Consoleinfo22-byte object versus24-byte stackreservation; verifySDKfieldlayout andsizeof beforecallback writes.",
+  "implementation_compiles": 6,
+  "full_span_bytes_exact": 169,
+  "verified_operands_exact": 11,
+  "fixture_checks_exact": 96000,
+  "acceptance": "research/acceptance-058/result.json"
+}

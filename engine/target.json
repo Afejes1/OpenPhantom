@@ -11080,6 +11080,296 @@
           "addend": 4
         }
       ]
+    },
+    {
+      "id": "ui_toggle_debug_boxes",
+      "address": 4597584,
+      "size": 22,
+      "body_size": 22,
+      "source": "src/ui_toggle_debug_boxes.c",
+      "symbol": "_op_ui_toggle_debug_boxes",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 7,
+          "address": 7142848,
+          "symbol": "_op_ui_debug_boxes",
+          "kind": "dir32"
+        },
+        {
+          "offset": 16,
+          "address": 7142848,
+          "symbol": "_op_ui_debug_boxes",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "ui_set_mouse_focus_clears",
+      "address": 4597606,
+      "size": 13,
+      "body_size": 13,
+      "source": "src/ui_set_mouse_focus_clears.c",
+      "symbol": "_op_ui_set_mouse_focus_clears",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 7,
+          "address": 4943040,
+          "symbol": "_op_ui_mouse_focus_clears",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "ui_widget_activation_id",
+      "address": 4598008,
+      "size": 11,
+      "body_size": 11,
+      "source": "src/ui_widget_activation_id.c",
+      "symbol": "_op_ui_widget_activation_id",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "ui3d_begin",
+      "address": 4571644,
+      "size": 24,
+      "body_size": 24,
+      "source": "src/ui3d_begin.c",
+      "symbol": "_op_ui3d_begin",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7142716,
+          "symbol": "_op_ui3d_active",
+          "kind": "dir32"
+        },
+        {
+          "offset": 14,
+          "address": 7142716,
+          "symbol": "_op_ui3d_active",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "ui3d_end",
+      "address": 4571668,
+      "size": 39,
+      "body_size": 39,
+      "source": "src/ui3d_end.c",
+      "symbol": "_op_ui3d_end",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 7142716,
+          "symbol": "_op_ui3d_active",
+          "kind": "dir32"
+        },
+        {
+          "offset": 13,
+          "address": 4202837,
+          "symbol": "_op_ui3d_flush_material_buckets",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 18,
+          "address": 4751360,
+          "symbol": "_op_ui3d_flush_draw_queue",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 23,
+          "address": 4636970,
+          "symbol": "_op_ui3d_finish_backend",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 29,
+          "address": 7142716,
+          "symbol": "_op_ui3d_active",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "console_close",
+      "address": 4768616,
+      "size": 11,
+      "body_size": 11,
+      "source": "src/console_close.c",
+      "symbol": "_op_console_close",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 5,
+          "address": 9180548,
+          "symbol": "_op_console_free",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "console_goto",
+      "address": 4769081,
+      "size": 40,
+      "body_size": 40,
+      "source": "src/console_goto.c",
+      "symbol": "_op_console_goto",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 25,
+          "address": 8809080,
+          "symbol": "_op_console_output",
+          "kind": "dir32"
+        },
+        {
+          "offset": 32,
+          "address": 9180552,
+          "symbol": "_op_console_set_position",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "console_get_xy",
+      "address": 4769121,
+      "size": 48,
+      "body_size": 48,
+      "source": "src/console_get_xy.c",
+      "symbol": "_op_console_get_xy",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 12,
+          "address": 8809080,
+          "symbol": "_op_console_output",
+          "kind": "dir32"
+        },
+        {
+          "offset": 19,
+          "address": 9180556,
+          "symbol": "_op_console_get_info",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "console_set_default_attr",
+      "address": 4769291,
+      "size": 20,
+      "body_size": 20,
+      "source": "src/console_set_default_attr.c",
+      "symbol": "_op_console_set_default_attr",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 9,
+          "address": 8784772,
+          "symbol": "_op_console_default_attr",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "console_set_attr",
+      "address": 4769311,
+      "size": 33,
+      "body_size": 33,
+      "source": "src/console_set_attr.c",
+      "symbol": "_op_console_set_attr",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 9,
+          "address": 8784768,
+          "symbol": "_op_console_current_attr",
+          "kind": "dir32"
+        },
+        {
+          "offset": 20,
+          "address": 8809080,
+          "symbol": "_op_console_output",
+          "kind": "dir32"
+        },
+        {
+          "offset": 27,
+          "address": 9180564,
+          "symbol": "_op_console_set_text_attribute",
+          "kind": "dir32"
+        }
+      ]
+    },
+    {
+      "id": "console_flush",
+      "address": 4769344,
+      "size": 17,
+      "body_size": 17,
+      "source": "src/console_flush.c",
+      "symbol": "_op_console_flush",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 4,
+          "address": 8809084,
+          "symbol": "_op_console_input",
+          "kind": "dir32"
+        },
+        {
+          "offset": 11,
+          "address": 9180568,
+          "symbol": "_op_console_flush_input",
+          "kind": "dir32"
+        }
+      ]
     }
   ]
 }

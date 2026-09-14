@@ -17,10 +17,16 @@
     "ui_set_mouse_focus_clears",
     "ui_widget_activation_id",
     "ui3d_begin",
-    "ui3d_end"
+    "ui3d_end",
+    "console_close",
+    "console_goto",
+    "console_get_xy",
+    "console_set_default_attr",
+    "console_set_attr",
+    "console_flush"
   ],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A057 accepted eight timer/UI functions after an explicit modern-only expectation correction and clean rebuild. C082five exact UIcontrol functions are frozen and reviewed; console helpers are in preparation.",
+  "current_work": "A058 shared acceptance in progress for eleven exact UI widget and console helpers.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": null
+  "acceptance_pending": "acceptance-058"
 }

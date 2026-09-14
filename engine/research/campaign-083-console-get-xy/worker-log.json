@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "console_get_xy",
+  "started_utc": "2026-09-14T19:21:02.273065+00:00",
+  "implementation_cutoff_utc": "2026-09-14T19:36:02.273065+00:00",
+  "deadline_utc": "2026-09-14T20:01:02.273065+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial recovered console IAT wrappers with16-bit coordinates/attributes and22-byte info layout",
+      "started_utc": "2026-09-14T19:21:06.091451+00:00",
+      "finished_utc": "2026-09-14T19:21:07.735493+00:00",
+      "returncode": 0,
+      "source_sha256": "5f37c115f6f80c4ec54f87021eb4e15fd46b12e93afed4a0d85b89b974e56f9c",
+      "report": "engine/build/campaign-001-console_get_xy-47a8ec9efcdd/research-result.json",
+      "report_sha256": "7b2ca530d1fa6dde30243a1f106a2046cab2b6b607cb532fecc99db27d74de5c",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 48,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.419665,
+      "stderr": ""
+    }
+  ]
+}

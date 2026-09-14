@@ -1,0 +1,21 @@
+{
+  "id": "console_close",
+  "address": 4768616,
+  "size": 11,
+  "body_size": 11,
+  "source": "src/console_close.c",
+  "symbol": "_op_console_close",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 9180548,
+      "symbol": "_op_console_free",
+      "kind": "dir32"
+    }
+  ]
+}

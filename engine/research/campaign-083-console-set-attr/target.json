@@ -1,0 +1,33 @@
+{
+  "id": "console_set_attr",
+  "address": 4769311,
+  "size": 33,
+  "body_size": 33,
+  "source": "src/console_set_attr.c",
+  "symbol": "_op_console_set_attr",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 9,
+      "address": 8784768,
+      "symbol": "_op_console_current_attr",
+      "kind": "dir32"
+    },
+    {
+      "offset": 20,
+      "address": 8809080,
+      "symbol": "_op_console_output",
+      "kind": "dir32"
+    },
+    {
+      "offset": 27,
+      "address": 9180564,
+      "symbol": "_op_console_set_text_attribute",
+      "kind": "dir32"
+    }
+  ]
+}

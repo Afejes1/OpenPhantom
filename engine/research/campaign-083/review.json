@@ -3,9 +3,9 @@
   "reviewer": "comparison_inventory",
   "model": "gpt-5.6-sol",
   "mode": "read-only",
-  "reviewed_utc": "2026-09-14T19:10:32.852254+00:00",
-  "conclusion": "five-exact-approved",
-  "final_receipt_review": "All70 snapshot members and10 report hashes verified; exact native/Docker parity,9744focused checks, no exclusions or waivers. Ordered callbacks, preserved state and8-byte widget prefix reviewed.",
+  "reviewed_utc": "2026-09-14T19:30:42.310142+00:00",
+  "conclusion": "six-exact-approved",
+  "final_receipt_review": "All84 snapshot members and12 report hashes verified;169 complete bytes,11 operands,96000checks, native/Docker parity and no exclusions/waivers. Consoleinfo object22bytes; frame24bytes, padding untouched. Captured handles, low16 stores and post-callback alias stores independently reviewed.",
   "integration_review": {
     "conclusion": "approved",
     "details": "All11 canonical bodies include-only identical; prior316 target/registry entries unchanged; unique globals/API pointers and per-matrix observer reassignment; all105744focused checks retained with coherent actual UI and console connected chains. Main/CMake wired once."

@@ -1,0 +1,7 @@
+# console_goto
+
+Complete interval 0x0048C539 to0x0048C561, 40 bytes with no tail. Allsix helpers are latest-manifest not_done and independently statically reviewed. Wrapper calls are cdecl; Windows API observers are stdcall. Coordinates/attributes use signed16/unsigned16 types, with4-byte x86 argument slots; callback attribute assertions concern only its defined low16 bits.
+
+Console info has a22-byte SDK field layout with cursor at4, attributes8 and maximum18; stack reservation rounds to24. The authored header asserts22 and the callback writes exactly sizeof(info), never the stack padding. Original VC5 WINCON.H corroborates the field list. A direct Windows-header probe encountered existing SDK W4 warnings; no waiver was added. GetXY's synthetic API always initializes all22 bytes even when returning a synthetic failure because the wrapper ignores BOOL. Destinations include guarded owned storage and named union coordinate aliases of console globals. Expected output stores apply independently to captured expected state.
+
+SetAttr must store its low16 current attribute before the API callback; its captured handle and defined argument bits are checked, then callback mutations remain intact. DefaultAttr returns1 and preserves its upper guard word. Close/flush ignore API return values. All observers verify prestate and deliberate mutations with full globals/owned snapshots. No original executable or real console APIs are executed.

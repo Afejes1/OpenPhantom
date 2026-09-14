@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "five-exact-frozen-research",
+  "status": "five-exact-integration-review",
   "started_utc": "2026-09-14T19:03:57.506288+00:00",
   "deadline_utc": "2026-09-14T19:43:57.506288+00:00",
   "functions": [
@@ -15,5 +15,5 @@
   "full_span_bytes_exact": 109,
   "verified_operands_exact": 10,
   "fixture_checks_exact": 9744,
-  "acceptance": "pending next shared batch"
+  "acceptance": "research/acceptance-058/result.json"
 }

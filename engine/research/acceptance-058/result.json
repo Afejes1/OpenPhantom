@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "acceptance-058",
+  "baseline_commit": "3ba07d82d3d1e425656a3db857d38722666814a9",
+  "functions": [
+    "ui_toggle_debug_boxes",
+    "ui_set_mouse_focus_clears",
+    "ui_widget_activation_id",
+    "ui3d_begin",
+    "ui3d_end",
+    "console_close",
+    "console_goto",
+    "console_get_xy",
+    "console_set_default_attr",
+    "console_set_attr",
+    "console_flush"
+  ],
+  "promotions": 11,
+  "registered_before": 316,
+  "registered_after": 327,
+  "full_span_bytes": 278,
+  "verified_operands": 21,
+  "raw_functions": 1,
+  "status": "integration-pending",
+  "team_not_done": 11,
+  "team_reported_done": 0,
+  "manifest": "planning/team-manifest-20260912-1849.json",
+  "retained_focused_checks": 105744,
+  "canonical_chain_checks": "pending shared run",
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

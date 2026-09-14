@@ -1,0 +1,27 @@
+{
+  "id": "console_flush",
+  "address": 4769344,
+  "size": 17,
+  "body_size": 17,
+  "source": "src/console_flush.c",
+  "symbol": "_op_console_flush",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 4,
+      "address": 8809084,
+      "symbol": "_op_console_input",
+      "kind": "dir32"
+    },
+    {
+      "offset": 11,
+      "address": 9180568,
+      "symbol": "_op_console_flush_input",
+      "kind": "dir32"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "console_get_xy",
+  "address": 4769121,
+  "size": 48,
+  "body_size": 48,
+  "source": "src/console_get_xy.c",
+  "symbol": "_op_console_get_xy",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 12,
+      "address": 8809080,
+      "symbol": "_op_console_output",
+      "kind": "dir32"
+    },
+    {
+      "offset": 19,
+      "address": 9180556,
+      "symbol": "_op_console_get_info",
+      "kind": "dir32"
+    }
+  ]
+}
