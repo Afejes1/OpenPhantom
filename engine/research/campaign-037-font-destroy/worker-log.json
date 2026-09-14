@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "font_destroy",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed source from independently reviewed ABI and control flow",
+      "started_utc": "2026-09-14T00:20:45.247428+00:00",
+      "finished_utc": "2026-09-14T00:20:46.840314+00:00",
+      "returncode": 0,
+      "source_sha256": "7367393479e1d5f0af739d3b9557abb4a5eb9cece9c0fb25baae73f8d2e9406c",
+      "report": "engine/build/campaign-001-font_destroy-cfdd9aedd5d8/research-result.json",
+      "report_sha256": "e9e62d3397c7261a67129e24a2c3bf144e661676a09ad9f4bb571780eef47fa2",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 122,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.375783,
+      "stderr": ""
+    }
+  ]
+}

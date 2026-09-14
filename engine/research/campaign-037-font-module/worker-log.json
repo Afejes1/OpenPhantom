@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "font_module",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial typed switch with library memset",
+      "started_utc": "2026-09-14T00:20:38.787293+00:00",
+      "finished_utc": "2026-09-14T00:20:40.431413+00:00",
+      "returncode": 1,
+      "source_sha256": "372747b763bae809dc7d3e00bbbe0ae742eaa35d785b2ca0d5900d9e54dc7ffc",
+      "report": "engine/build/campaign-001-font_module-ec5a43d0a233/research-result.json",
+      "report_sha256": "6a214e2fea367785df556fdde1db97bb6f2070754fbd5f5f8ece290f8b4c39aa",
+      "status": "mismatch",
+      "candidate_size": 113,
+      "different_bytes": null,
+      "elapsed_seconds": 1.4261,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Established intrinsic memset lowering reproduces original REP STOSD",
+      "started_utc": "2026-09-14T00:22:17.151078+00:00",
+      "finished_utc": "2026-09-14T00:22:18.730883+00:00",
+      "returncode": 0,
+      "source_sha256": "edb3018e4ea2c653341ec9fc72eb19aaeccbf2eca30ebf37eba15027f3f60877",
+      "report": "engine/build/campaign-001-font_module-450f63ebca76/research-result.json",
+      "report_sha256": "03491ffc2fb76de48dd9579b48f41fd5445de6c59c0361fb8d60d27e8875eb01",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 109,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.35888,
+      "stderr": ""
+    }
+  ]
+}

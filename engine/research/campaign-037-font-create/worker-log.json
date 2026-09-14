@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "font_create",
+  "compiler_invocations": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial typed creator with observed local sprite snapshot",
+      "started_utc": "2026-09-14T00:20:40.437455+00:00",
+      "finished_utc": "2026-09-14T00:20:42.068469+00:00",
+      "returncode": 1,
+      "source_sha256": "d9469ac7e4a07287e3cacd8a5ce01c256a9624f0d1a8c65fe6598a87bca364c1",
+      "report": "engine/build/campaign-001-font_create-8999334b510f/research-result.json",
+      "report_sha256": "80ad81d09cba7f5e2f329af095fdf6c32882a71efd5eb23a32ee7e3d7a702ef8",
+      "status": "mismatch",
+      "candidate_size": 302,
+      "different_bytes": 18,
+      "elapsed_seconds": 1.413798,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Semantic slot/index names; unchanged18 stack-offset differences",
+      "started_utc": "2026-09-14T00:22:18.736917+00:00",
+      "finished_utc": "2026-09-14T00:22:20.345378+00:00",
+      "returncode": 1,
+      "source_sha256": "3825a4a237b884df7b2211f1af83faa461b625828a5626ba08a1a4b04b6ce750",
+      "report": "engine/build/campaign-001-font_create-c5d9f5c06b67/research-result.json",
+      "report_sha256": "a035cf12f996059b4a6c7e8c286d3eeac4b061674c86078dc28efbf384c37c29",
+      "status": "mismatch",
+      "candidate_size": 302,
+      "different_bytes": 18,
+      "elapsed_seconds": 1.389817,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Measured current/i/texture names; member-name collision caught by compiler",
+      "started_utc": "2026-09-14T00:24:49.578762+00:00",
+      "finished_utc": "2026-09-14T00:24:50.530324+00:00",
+      "returncode": 2,
+      "source_sha256": "fbf583a32dc4a6edd3bcb59e6461b9e746df138c13e844f19cfce18f722cc9cd",
+      "report": "engine/build/campaign-001-font_create-6b7d49931dc6/research-result.json",
+      "report_sha256": "3d9971e82a6ed96aad151efe775c4d7bfbd2c19633b8e00e4d2d8f497f5d1de9",
+      "status": "not-attempted",
+      "candidate_size": null,
+      "different_bytes": null,
+      "elapsed_seconds": 0.72268,
+      "stderr": "FAILED: command failed: candidate-compile\n"
+    },
+    {
+      "attempt": 4,
+      "hypothesis": "Correct member name; ordinary locals now match original stack allocation",
+      "started_utc": "2026-09-14T00:25:46.135761+00:00",
+      "finished_utc": "2026-09-14T00:25:47.760397+00:00",
+      "returncode": 0,
+      "source_sha256": "0ce3b86e698c698183da1691910d29a258f02c3fd00aeec687d413b6fc021090",
+      "report": "engine/build/campaign-001-font_create-d5fedb0db81c/research-result.json",
+      "report_sha256": "476418f899f18841e9008f17255e844e5692703f55ec3e0deaf9932f2d2e06fd",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 302,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.40669,
+      "stderr": ""
+    }
+  ]
+}

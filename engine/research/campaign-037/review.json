@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T00:29:33.230246+00:00",
+  "conclusion": "no-material-findings-after-fixture-correction",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "font_create",
+      "address": 4632589,
+      "full_span_bytes": 302,
+      "candidate_bytes": 302,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 15,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 1696,
+      "implementation_attempts": 4,
+      "result": "research/campaign-037-font-create/result.json"
+    },
+    {
+      "id": "font_destroy",
+      "address": 4633974,
+      "full_span_bytes": 122,
+      "candidate_bytes": 122,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 6,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 1160,
+      "implementation_attempts": 1,
+      "result": "research/campaign-037-font-destroy/result.json"
+    },
+    {
+      "id": "font_draw_backdrop",
+      "address": 4634259,
+      "full_span_bytes": 164,
+      "candidate_bytes": 164,
+      "evidence_category": "research-candidate",
+      "team_status": "not_done",
+      "verified_operands": 9,
+      "different_bytes": 15,
+      "different_percent": 9.146341463414634,
+      "checks": 564,
+      "implementation_attempts": 5,
+      "result": "research/campaign-037-font-draw-backdrop/result.json"
+    },
+    {
+      "id": "font_measure_char",
+      "address": 4633340,
+      "full_span_bytes": 126,
+      "candidate_bytes": 126,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 6,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 47280,
+      "implementation_attempts": 1,
+      "result": "research/campaign-037-font-measure-char/result.json"
+    },
+    {
+      "id": "font_measure_string",
+      "address": 4633466,
+      "full_span_bytes": 70,
+      "candidate_bytes": 70,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 100,
+      "implementation_attempts": 1,
+      "result": "research/campaign-037-font-measure-string/result.json"
+    },
+    {
+      "id": "font_module",
+      "address": 4632480,
+      "full_span_bytes": 109,
+      "candidate_bytes": 109,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "verified_operands": 8,
+      "different_bytes": 0,
+      "different_percent": 0.0,
+      "checks": 900,
+      "implementation_attempts": 2,
+      "result": "research/campaign-037-font-module/result.json"
+    }
+  ],
+  "corrections": [
+    "Backdrop retarget case now uses distinct original/alternate dimensions and literal expected bounds; initial identical dimensions did not prove live reloads.",
+    "One creator compiler failure caught a local/member rename collision; corrected without byte patch or waiver.",
+    "Original system-font global is signed slot index; canonical pointer interpretation will be superseded at next acceptance."
+  ],
+  "limitations": [
+    "First character measurement failure can leave an uninitialized width; no defined result is claimed. Late authored failures retain a previously written width.",
+    "Valid font destruction requires a live font after first resource release.",
+    "Original rdFont_GetCharSize always returns1 in inspected body; wrapper failure cases are authored branch coverage, not claimed original runtime outcomes.",
+    "Backdrop renderer remains research15/164 differences; no forced stack frames or padding."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "font_measure_char",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Typed source from independently reviewed ABI and control flow",
+      "started_utc": "2026-09-14T00:20:42.074712+00:00",
+      "finished_utc": "2026-09-14T00:20:43.667218+00:00",
+      "returncode": 0,
+      "source_sha256": "937a90c46122c07ebb98532cdc6c348921eac8568ba0b57d253ea85edde14375",
+      "report": "engine/build/campaign-001-font_measure_char-750b721ae80e/research-result.json",
+      "report_sha256": "6ccae16db1a2865d5a41aba4b0da20947bf4bb3b4d4754ab9fa92107d2a082b5",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 126,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.374449,
+      "stderr": ""
+    }
+  ]
+}

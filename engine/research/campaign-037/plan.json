@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "campaign-037",
+  "started_utc": "2026-09-14T00:08:00Z",
+  "stop_implementation_utc": "2026-09-14T00:43:00Z",
+  "deadline_utc": "2026-09-14T00:53:00Z",
+  "baseline_commit": "5624d900f06aa71ad5b7bf745d690f08935aec50",
+  "functions": [
+    "font_module",
+    "font_create",
+    "font_measure_char",
+    "font_measure_string",
+    "font_destroy",
+    "font_draw_backdrop"
+  ],
+  "status": "complete",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T00:29:33.230246+00:00"
+}

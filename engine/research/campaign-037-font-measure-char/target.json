@@ -1,0 +1,51 @@
+{
+  "id": "font_measure_char",
+  "address": 4633340,
+  "size": 126,
+  "body_size": 126,
+  "source": "src/font_measure_char.c",
+  "symbol": "_op_font_measure_char",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 20,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 30,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 39,
+      "address": 4690160,
+      "symbol": "_op_set_font_scale",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 60,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 69,
+      "address": 4692576,
+      "symbol": "_op_font_char_size",
+      "kind": "rel32-call"
+    }
+  ]
+}

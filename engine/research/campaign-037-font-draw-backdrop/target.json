@@ -1,0 +1,69 @@
+{
+  "id": "font_draw_backdrop",
+  "address": 4634259,
+  "size": 164,
+  "body_size": 164,
+  "source": "src/font_draw_backdrop.c",
+  "symbol": "_op_font_draw_backdrop",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 16,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 48,
+      "address": 4692800,
+      "symbol": "_op_get_last_textbox",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 57,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 66,
+      "address": 8823872,
+      "symbol": "_op_font_screen_width",
+      "kind": "dir32"
+    },
+    {
+      "offset": 92,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 101,
+      "address": 8823864,
+      "symbol": "_op_font_screen_height",
+      "kind": "dir32"
+    },
+    {
+      "offset": 144,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 153,
+      "address": 4432425,
+      "symbol": "_op_draw_font_backdrop",
+      "kind": "rel32-call"
+    }
+  ]
+}

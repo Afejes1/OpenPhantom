@@ -18,11 +18,11 @@
   "reviewer_model": "gpt-5.6-sol",
   "reviewer_reasoning": "medium",
   "max_concurrent_implementation_workers": 1,
-  "new_exact_functions": 21,
-  "new_exact_bytes": 1097,
+  "new_exact_functions": 26,
+  "new_exact_bytes": 1826,
   "promotions": 28,
   "new_near_matches": 0,
-  "new_research_candidates": 2,
+  "new_research_candidates": 3,
   "checkpoints": [
     {
       "id": "acceptance-017",
@@ -100,9 +100,16 @@
       "source_commit": "596c5ea89c12083e875e02df210e01b6e0161d88",
       "result": "research/acceptance-023/result.json",
       "full_ci": "success-on-same-implementation-inputs"
+    },
+    {
+      "id": "campaign-037",
+      "new_exact": 5,
+      "new_exact_bytes": 729,
+      "research": 1,
+      "result": "research/campaign-037/results.md"
     }
   ],
-  "current_work": "Campaign037 font lifecycle/measurement: six untouched functions, plus planned canonical signed-slot type correction in acceptance024.",
+  "current_work": "Acceptance024: integrate five font lifecycle/measurement exacts and correct signed system-font slot type.",
   "original_game_executed": false,
   "accepted_functions_current": 133,
   "evidence_records_current": 46

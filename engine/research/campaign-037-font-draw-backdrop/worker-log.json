@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "font_draw_backdrop",
+  "compiler_invocations": 5,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial six semantic float locals",
+      "started_utc": "2026-09-14T00:20:46.845366+00:00",
+      "finished_utc": "2026-09-14T00:20:48.447635+00:00",
+      "returncode": 1,
+      "source_sha256": "ee4d5ba6192e8f9ade7a124809aa136a4e15961a91e5df6033135e384f4e70a0",
+      "report": "engine/build/campaign-001-font_draw_backdrop-5fcd35eb8115/research-result.json",
+      "report_sha256": "3fc33a04dac032d56985bfe38d028adebc9f2335b46e12fddb0787f7fe0ea64e",
+      "status": "mismatch",
+      "candidate_size": 164,
+      "different_bytes": 22,
+      "elapsed_seconds": 1.386476,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Coordinate names improve22 to18 stack-offset differences",
+      "started_utc": "2026-09-14T00:22:20.351579+00:00",
+      "finished_utc": "2026-09-14T00:22:21.927242+00:00",
+      "returncode": 1,
+      "source_sha256": "56940fcb07c870f1c855418a82d3cb1c6a5026232dd580680a9393e353bfeef4",
+      "report": "engine/build/campaign-001-font_draw_backdrop-03cfff3ecc3f/research-result.json",
+      "report_sha256": "afa07e15f4b0a6588c5b8a1308791457bebd2fc6df80d816c2daab3b311b72c1",
+      "status": "mismatch",
+      "candidate_size": 164,
+      "different_bytes": 18,
+      "elapsed_seconds": 1.357139,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Extent/padding names yield19 differences",
+      "started_utc": "2026-09-14T00:24:50.536856+00:00",
+      "finished_utc": "2026-09-14T00:24:52.130600+00:00",
+      "returncode": 1,
+      "source_sha256": "c94cbfe9fd444d3ca3f67c6fcf198ed244aabc132ec871c9a0ba4e79de6bb2f7",
+      "report": "engine/build/campaign-001-font_draw_backdrop-c71d976263c5/research-result.json",
+      "report_sha256": "6e30eb6d0a33a4bf1961b14cdbf10be88254d7c246f19d922ebc5ba58d37a0e4",
+      "status": "mismatch",
+      "candidate_size": 164,
+      "different_bytes": 19,
+      "elapsed_seconds": 1.368886,
+      "stderr": ""
+    },
+    {
+      "attempt": 4,
+      "hypothesis": "Min/max and width/height names retain19 differences",
+      "started_utc": "2026-09-14T00:25:47.766603+00:00",
+      "finished_utc": "2026-09-14T00:25:49.337150+00:00",
+      "returncode": 1,
+      "source_sha256": "0f24dde7d498c2bf2c63298efab0030faeb45608a96fe250215cac44df388fae",
+      "report": "engine/build/campaign-001-font_draw_backdrop-7125a3e28df0/research-result.json",
+      "report_sha256": "b7c6dee1108820a83243f89305e9ae4fcf9bf5b592960ef3a0226d1128798859",
+      "status": "mismatch",
+      "candidate_size": 164,
+      "different_bytes": 19,
+      "elapsed_seconds": 1.350967,
+      "stderr": ""
+    },
+    {
+      "attempt": 5,
+      "hypothesis": "Bound/border names improve to15 differences; frozen for diminishing returns",
+      "started_utc": "2026-09-14T00:26:48.866991+00:00",
+      "finished_utc": "2026-09-14T00:26:50.460789+00:00",
+      "returncode": 1,
+      "source_sha256": "1fc9e06c64d483df8c019a5744653287019ba7f03b026cf2b6df1bdea64c247b",
+      "report": "engine/build/campaign-001-font_draw_backdrop-ce02e4b8dc8c/research-result.json",
+      "report_sha256": "21785d2508fbee8a1b304710f1452d6d6ac8c818ca01f02c864f7107310a16f4",
+      "status": "mismatch",
+      "candidate_size": 164,
+      "different_bytes": 15,
+      "elapsed_seconds": 1.373876,
+      "stderr": ""
+    }
+  ]
+}

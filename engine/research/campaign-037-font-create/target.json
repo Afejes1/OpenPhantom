@@ -1,0 +1,106 @@
+{
+  "id": "font_create",
+  "address": 4632589,
+  "size": 302,
+  "body_size": 302,
+  "source": "src/font_create.c",
+  "symbol": "_op_font_create",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 38,
+      "address": 7167360,
+      "symbol": "_op_font_pool",
+      "kind": "dir32",
+      "addend": 8
+    },
+    {
+      "offset": 71,
+      "address": 7167360,
+      "symbol": "_op_font_pool",
+      "kind": "dir32"
+    },
+    {
+      "offset": 83,
+      "address": 4363584,
+      "symbol": "_op_acquire_sprite",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 126,
+      "address": 4364383,
+      "symbol": "_op_sprite_get_material",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 139,
+      "address": 4690464,
+      "symbol": "_op_load_font_resource",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 166,
+      "address": 4363764,
+      "symbol": "_op_release_sprite",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 183,
+      "address": 4632891,
+      "symbol": "_op_font_select",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 193,
+      "address": 4632953,
+      "symbol": "_op_font_set_colour",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 203,
+      "address": 4633148,
+      "symbol": "_op_font_set_align",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 221,
+      "address": 4633235,
+      "symbol": "_op_font_set_glyph_scale",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 239,
+      "address": 4633274,
+      "symbol": "_op_font_set_position_scale",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 249,
+      "address": 4633313,
+      "symbol": "_op_font_set_word20",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 263,
+      "address": 4634096,
+      "symbol": "_op_font_set_backdrop",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 278,
+      "address": 4634210,
+      "symbol": "_op_font_set_zrange",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 288,
+      "address": 4634462,
+      "symbol": "_op_font_set_word24",
+      "kind": "rel32-call"
+    }
+  ]
+}

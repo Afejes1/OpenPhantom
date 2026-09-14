@@ -1,0 +1,63 @@
+{
+  "id": "font_module",
+  "address": 4632480,
+  "size": 109,
+  "body_size": 109,
+  "source": "src/font_module.c",
+  "symbol": "_op_font_module",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 33,
+      "address": 7167360,
+      "symbol": "_op_font_pool",
+      "kind": "dir32"
+    },
+    {
+      "offset": 41,
+      "address": 4945900,
+      "symbol": "_op_system_font_slot",
+      "kind": "dir32"
+    },
+    {
+      "offset": 49,
+      "address": 4933428,
+      "symbol": "_op_system_font_name",
+      "kind": "dir32"
+    },
+    {
+      "offset": 54,
+      "address": 4632589,
+      "symbol": "_op_font_create",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 62,
+      "address": 4945900,
+      "symbol": "_op_system_font_slot",
+      "kind": "dir32"
+    },
+    {
+      "offset": 72,
+      "address": 4945900,
+      "symbol": "_op_system_font_slot",
+      "kind": "dir32"
+    },
+    {
+      "offset": 78,
+      "address": 4633974,
+      "symbol": "_op_font_destroy",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 87,
+      "address": 4945900,
+      "symbol": "_op_system_font_slot",
+      "kind": "dir32"
+    }
+  ]
+}

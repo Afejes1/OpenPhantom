@@ -1,0 +1,51 @@
+{
+  "id": "font_destroy",
+  "address": 4633974,
+  "size": 122,
+  "body_size": 122,
+  "source": "src/font_destroy.c",
+  "symbol": "_op_font_destroy",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 25,
+      "address": 7167360,
+      "symbol": "_op_font_pool",
+      "kind": "dir32"
+    },
+    {
+      "offset": 34,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 45,
+      "address": 7168512,
+      "symbol": "_op_current_font",
+      "kind": "dir32"
+    },
+    {
+      "offset": 58,
+      "address": 4363764,
+      "symbol": "_op_release_sprite",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 86,
+      "address": 4690688,
+      "symbol": "_op_free_font_resource",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 111,
+      "address": 4363764,
+      "symbol": "_op_release_sprite",
+      "kind": "rel32-call"
+    }
+  ]
+}

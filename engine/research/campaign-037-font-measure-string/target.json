@@ -1,0 +1,21 @@
+{
+  "id": "font_measure_string",
+  "address": 4633466,
+  "size": 70,
+  "body_size": 70,
+  "source": "src/font_measure_string.c",
+  "symbol": "_op_font_measure_string",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 36,
+      "address": 4633340,
+      "symbol": "_op_font_measure_char",
+      "kind": "rel32-call"
+    }
+  ]
+}
