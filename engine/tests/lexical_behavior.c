@@ -196,6 +196,8 @@ static int lquo_scenario;
 char *op_find_character(const char *text, int character)
 {
     unsigned int i;
+    if(pfd_active)return pfd_find(text,character);
+    if(pse_active)return pse_find(text,character);
     LQUO_CHECK(character == 34);
     LQUO_CHECK(lquo_stage == 0 || lquo_stage == 1);
     lquo_verify();

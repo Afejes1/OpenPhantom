@@ -1,0 +1,21 @@
+{
+  "id": "path_drive",
+  "address": 4651055,
+  "size": 65,
+  "body_size": 65,
+  "source": "src/path_drive.c",
+  "symbol": "_op_path_drive",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 49,
+      "address": 4832048,
+      "symbol": "_op_toupper",
+      "kind": "rel32-call"
+    }
+  ]
+}

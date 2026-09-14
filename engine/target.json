@@ -10082,6 +10082,83 @@
           "kind": "dir32"
         }
       ]
+    },
+    {
+      "id": "path_drive",
+      "address": 4651055,
+      "size": 65,
+      "body_size": 65,
+      "source": "src/path_drive.c",
+      "symbol": "_op_path_drive",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 49,
+          "address": 4832048,
+          "symbol": "_op_toupper",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "path_first_directory_offset",
+      "address": 4651603,
+      "size": 99,
+      "body_size": 99,
+      "source": "src/path_first_directory_offset.c",
+      "symbol": "_op_path_first_directory_offset",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 70,
+          "address": 4651928,
+          "symbol": "_op_path_separator_offset",
+          "kind": "rel32-call"
+        }
+      ]
+    },
+    {
+      "id": "path_file_offset",
+      "address": 4651702,
+      "size": 124,
+      "body_size": 124,
+      "source": "src/path_file_offset.c",
+      "symbol": "_op_path_file_offset",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "path_extension_offset",
+      "address": 4651826,
+      "size": 102,
+      "body_size": 102,
+      "source": "src/path_extension_offset.c",
+      "symbol": "_op_path_extension_offset",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 11,
+          "address": 4651702,
+          "symbol": "_op_path_file_offset",
+          "kind": "rel32-call"
+        }
+      ]
     }
   ]
 }

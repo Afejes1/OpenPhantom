@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T15:16:22.576349+00:00",
+  "conclusion": "four-exact-one-layout-research",
+  "functions": [
+    "path_drive",
+    "path_first_directory_offset",
+    "path_file_offset",
+    "path_extension_offset",
+    "path_separator_offset"
+  ],
+  "observations": [
+    "Static contracts and full extents independently verified.",
+    "Drive char ABI corrected after both callers showed AL-only consumption; no full-EAXzero claim.",
+    "Exhaustive guarded offsets and bounded trailing-dot post-NUL oracle approved.",
+    "Fixture escaping/alphabet failures retained; explicit byte alphabet fixed, no candidate changes or waivers.",
+    "Parent rehashed all five final source snapshots and ten final receipts before integration."
+  ],
+  "final_snapshot_members_verified": 72,
+  "final_reports_verified": 10,
+  "final_fixture_checks": 610807,
+  "final_fixture_alphabet": [
+    97,
+    92,
+    58,
+    46,
+    47
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "path_first_directory_offset",
+  "candidate": "candidate.c",
+  "symbol": "_op_path_first_directory_offset",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c",
+    "dependency.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "extra_fixture_sources": [
+    "dependency.c"
+  ]
+}

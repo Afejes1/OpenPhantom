@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "path_separator_offset",
+  "candidate": "candidate.c",
+  "symbol": "_op_path_separator_offset",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

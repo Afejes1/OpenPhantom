@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "status": "four-exact-integration-review",
+  "started_utc": "2026-09-14T15:07:11.582596+00:00",
+  "deadline_utc": "2026-09-14T15:52:11.582596+00:00",
+  "functions": [
+    "path_drive",
+    "path_first_directory_offset",
+    "path_file_offset",
+    "path_extension_offset",
+    "path_separator_offset"
+  ],
+  "frozen_utc": "2026-09-14T15:16:22.583268+00:00",
+  "exact_functions": 4,
+  "research_functions": 1,
+  "implementation_compiles": 5,
+  "full_span_bytes_exact": 390,
+  "verified_operands_exact": 3,
+  "fixture_checks_exact": 454567,
+  "fixture_checks_research": 156240,
+  "acceptance": "research/acceptance-050/result.json"
+}

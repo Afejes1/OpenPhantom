@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "path_drive",
+  "implementation_started_utc": "2026-09-14T15:07:11.582596+00:00",
+  "implementation_cutoff_utc": "2026-09-14T15:22:11.582596+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural original path parsing with recovered char/offset ABI and explicit strlen intrinsic",
+      "started_utc": "2026-09-14T15:07:11.955450+00:00",
+      "finished_utc": "2026-09-14T15:07:13.653473+00:00",
+      "returncode": 0,
+      "source_sha256": "7c15e79c4757a42ec3c7de0d7202522bd50743777f7e9e2937da37273b64ee93",
+      "report": "engine/build/campaign-001-path_drive-cdce9469e3f2/research-result.json",
+      "report_sha256": "2619e8390fd3fa430f0e49aecf21d53951912e20eaf8ed53bf804a1b31bdfc99",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 65,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.47122,
+      "stderr": ""
+    }
+  ],
+  "fixture_corrections": [
+    {
+      "reason": "Shared fixture-generation escaping produced an invalid backslash character literal.",
+      "correction": "Use explicit delimiter byte92 consistently in fixture alphabet/oracle; source candidates unchanged.",
+      "failed_report": "engine/build/campaign-001-path_drive-e18aab34727c/research-result.json"
+    },
+    {
+      "reason": "Formatting malformed backslash literal also changed neighboring alphabet literals into multicharacter constants.",
+      "correction": "Replace entire five-byte alphabet initializer with97,92,58,46,47; candidate source untouched.",
+      "failed_report": "engine/build/campaign-001-path_drive-548cdbb80c1d/research-result.json"
+    }
+  ],
+  "frozen_utc": "2026-09-14T15:14:52.743660+00:00",
+  "status": "exact-final-verified-awaiting-review"
+}

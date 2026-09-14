@@ -1,0 +1,21 @@
+{
+  "id": "path_separator_offset",
+  "address": 4651928,
+  "size": 56,
+  "body_size": 42,
+  "source": "src/path_separator_offset.c",
+  "symbol": "_op_path_separator_offset",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 4828592,
+      "symbol": "_op_find_character",
+      "kind": "rel32-call"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "path_first_directory_offset",
+  "address": 4651603,
+  "size": 99,
+  "body_size": 99,
+  "source": "src/path_first_directory_offset.c",
+  "symbol": "_op_path_first_directory_offset",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 70,
+      "address": 4651928,
+      "symbol": "_op_path_separator_offset",
+      "kind": "rel32-call"
+    }
+  ]
+}

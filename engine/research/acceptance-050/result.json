@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "acceptance-050",
+  "baseline_commit": "55f82f37c0f80860a4d5734c2df2b58c9e98cb91",
+  "functions": [
+    "path_drive",
+    "path_first_directory_offset",
+    "path_file_offset",
+    "path_extension_offset"
+  ],
+  "promotions": 4,
+  "registered_before": 279,
+  "registered_after": 283,
+  "full_span_bytes": 390,
+  "verified_operands": 3,
+  "raw_functions": 1,
+  "status": "integration-pending",
+  "team_not_done": 4,
+  "team_reported_done": 0,
+  "manifest": "planning/team-manifest-20260912-1849.json",
+  "dependency_research": {
+    "id": "path_separator_offset",
+    "target_bytes": 56,
+    "candidate_bytes": 42,
+    "counted_accepted": false,
+    "fixture_checks": 156240
+  },
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "integration_corrections": [
+    {
+      "reason": "Synthetic pfi prefix collided with existing palette-resource fixture helpers.",
+      "correction": "Rename path-file fixture namespace to ppfi only.",
+      "failed_receipt": null,
+      "retained_diagnostic": "First targeted compile reported C2084 for pfi_check and pfi_verify already defined in palette_resources_behavior.c. The private helper overwrote its JSON on the passing retry; this note preserves the tool-reported failure, not a separate original receipt."
+    }
+  ]
+}

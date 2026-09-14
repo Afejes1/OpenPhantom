@@ -1,0 +1,3 @@
+# Campaign070
+
+Four exact functions and one layout-research candidate. The four complete functions matched on their first source compile. The separator compiled to42bytes, but its full56-byte extent is not represented; no percentage or accepted claim is made for it. Drive/first-directory/file/extension total390bytes, with three resolved call operands and one raw function match. All five final native/Docker pairs agree and fixtures pass. Two fixture-only generation failures are retained. [Acceptance050](../acceptance-050/result.json) tracks the four-function checkpoint, with separator kept only as an explicitly unaccepted test dependency.

@@ -1,0 +1,21 @@
+{
+  "id": "path_extension_offset",
+  "address": 4651826,
+  "size": 102,
+  "body_size": 102,
+  "source": "src/path_extension_offset.c",
+  "symbol": "_op_path_extension_offset",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 4651702,
+      "symbol": "_op_path_file_offset",
+      "kind": "rel32-call"
+    }
+  ]
+}

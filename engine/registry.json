@@ -5221,6 +5221,86 @@
         "Release observers retain owned storage; real dispatcher replaces prior save-chain stub."
       ],
       "exceptions": []
+    },
+    {
+      "id": "path_drive",
+      "module": "pzip-path",
+      "analysis_name": "path_drive",
+      "purpose": "Reconstruct original byte-oriented path parsing and return conventions.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/path-helpers-acceptance.md",
+        "research/campaign-070-path-drive/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/path_helpers_behavior.c"
+      ],
+      "quirks": [
+        "Backslash and colon handling follows original instructions, not modern path normalization.",
+        "Drive returns only char(AL); extension preserves bounded observed post-NUL behavior after a trailing dot.",
+        "Separator dependency remains unaccepted layout research and is supplied only by authored test support."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "path_first_directory_offset",
+      "module": "pzip-path",
+      "analysis_name": "path_first_directory_offset",
+      "purpose": "Reconstruct original byte-oriented path parsing and return conventions.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/path-helpers-acceptance.md",
+        "research/campaign-070-path-first-directory-offset/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/path_helpers_behavior.c"
+      ],
+      "quirks": [
+        "Backslash and colon handling follows original instructions, not modern path normalization.",
+        "Drive returns only char(AL); extension preserves bounded observed post-NUL behavior after a trailing dot.",
+        "Separator dependency remains unaccepted layout research and is supplied only by authored test support."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "path_file_offset",
+      "module": "pzip-path",
+      "analysis_name": "path_file_offset",
+      "purpose": "Reconstruct original byte-oriented path parsing and return conventions.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/path-helpers-acceptance.md",
+        "research/campaign-070-path-file-offset/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/path_helpers_behavior.c"
+      ],
+      "quirks": [
+        "Backslash and colon handling follows original instructions, not modern path normalization.",
+        "Drive returns only char(AL); extension preserves bounded observed post-NUL behavior after a trailing dot.",
+        "Separator dependency remains unaccepted layout research and is supplied only by authored test support."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "path_extension_offset",
+      "module": "pzip-path",
+      "analysis_name": "path_extension_offset",
+      "purpose": "Reconstruct original byte-oriented path parsing and return conventions.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/path-helpers-acceptance.md",
+        "research/campaign-070-path-extension-offset/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/path_helpers_behavior.c"
+      ],
+      "quirks": [
+        "Backslash and colon handling follows original instructions, not modern path normalization.",
+        "Drive returns only char(AL); extension preserves bounded observed post-NUL behavior after a trailing dot.",
+        "Separator dependency remains unaccepted layout research and is supplied only by authored test support."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

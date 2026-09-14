@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "campaign": "070",
+  "id": "path_separator_offset",
+  "status": "focused-mismatch",
+  "comparison": {
+    "id": "path_separator_offset",
+    "address": 4651928,
+    "size": 56,
+    "candidate_size": 42,
+    "body_size": 42,
+    "status": "mismatch",
+    "literal_function_match": false,
+    "layout_verified": false,
+    "adjusted_bytes": 0,
+    "object_sha256": "b3e50b6bbedad56fea2fd4aa5c7d159a9c198ae454dc4ad5a892e94533258f67",
+    "reason": "complete function extent differs"
+  },
+  "different_percent": null,
+  "source_snapshot": {
+    "research/campaign-070-path-separator-offset/candidate.c": "a6ed6263343d155959d7ee84b58f696c711d68b6c98fe9b2e39940d93a188156",
+    "research/campaign-070-path-separator-offset/api.h": "4d8e086a6ca5dd7dd24704bc2a94d1a416ec3aa65b734b67eaa2620941ad1a37",
+    "research/campaign-070-path-separator-offset/behavior.c": "83f0fa2db9b0d29372ae30d91065be13f836ced483e204fcf4907411e47730d5",
+    "research/campaign-070-path-separator-offset/case.json": "94a2f4aa42edd63bc83059f531e5776d64d2809a28164935273f5a0410f771c2",
+    "research/campaign-001/verify.py": "78bcf92d994fdab04d1a983838fe9f492162d2626b35390259d9976b92cbbe78",
+    "target.json": "3f3659bcfa0ed29b6af81cabd77bbf37b9132fff03a35988c77c2fe0ea53b99d",
+    "research/campaign-070-path-separator-offset/target.json": "d242707f17942e9f99e33489e940e69b3f3580dd2ad18eaa3acc549361e0b839",
+    "research/surface-emission/probe.py": "cd4ef4126dacfc16197636a4b0c7007639efe1033e8e2b329e4939a6083c5f1b",
+    "research/surface-emission/native_listing_diagnostic.py": "3cad0339396c73301ef5861eed3c40f925482fd7c2e4ec45f801e9d0e5d34665",
+    "tools/build.py": "15adf8c09950f92cfa3f060cbd197ae67f3331327bb72b1e338ba2bef0e048f4",
+    "tools/formats.py": "526a58d89b22507686022a37f32ab2d570b421ee99eac3073787a9055fedbc0c",
+    "tools/matching.py": "959d15268c4d927e57271424dbcb1c709cf89cbf3e48ff545e4e15c4d6425f27",
+    "tools/runners.py": "f62ef3fd9e726eb922b56109df75d4ea2a98f8855df871bb433ac151edb99158",
+    "tools/source_policy.py": "af6e23b02efbcca5d26c6edb7bc195b934f396bff5629f21e9da05f17ce6db4a"
+  },
+  "toolchain_lock_sha256": "8a97faf8a20112d4a46da8154a4ebb03888f393eeeb1a0d2ddeacb1685f19333",
+  "docker_image": "sha256:1837b4cfa8c6d4b48ca11f14e58a248265c3ee16a4b0103b1bde143050d4fa7d",
+  "reference": {
+    "sha256": "02babee8d64bc0bf47451aaae9af630f4a028cf63f9996bda6df497caba34f11",
+    "size": 829952
+  },
+  "native_report": "engine/build/campaign-001-path_separator_offset-5d52f02479bb/research-result.json",
+  "native_report_sha256": "f37bcd6855fd52ed6179e70167b6d5c1cf94afaa0581edec596ee0fab9cb5ff2",
+  "docker_report": "engine/build/campaign-001-path_separator_offset-385122056a15/research-result.json",
+  "docker_report_sha256": "806dc14b2ed2eae5ea0e62704350b3f6aa7a46a6517e3485f97b443605014d44",
+  "artifact": {
+    "id": "path_separator_offset",
+    "source": "candidate.c",
+    "symbol": "_op_path_separator_offset",
+    "object": "candidate.obj",
+    "object_sha256": "b3e50b6bbedad56fea2fd4aa5c7d159a9c198ae454dc4ad5a892e94533258f67",
+    "function_section_bytes": 42,
+    "function_section_sha256": "d17d7f16c6013acad1ce17daab331adce93fa2d5c3d5aac33f3d044f2a0e94b3",
+    "relocation_count": 1,
+    "assembly_listing": "candidate.native.cod",
+    "assembly_listing_sha256": "33178ea2ea3eae40abb27a0600531d97f8e994d87a0879c8ec08444134857031",
+    "assembly_listing_has_terminators": true,
+    "function_inventory": "candidate.function.json",
+    "function_inventory_sha256": "191fffd187f4c066323ffc2ba294bbd708687474ffa2e9d5a65c76599f37708d",
+    "listing_fallback": {
+      "kind": "verified-native-peer-listing",
+      "original_docker_listing": "candidate.cod",
+      "original_docker_listing_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "native_peer_report_sha256": "f37bcd6855fd52ed6179e70167b6d5c1cf94afaa0581edec596ee0fab9cb5ff2",
+      "native_peer_object_sha256": "3fe68db923660f86b4c6ffa85788a5454c598e9cbd27334c3210be7786ba0ae7",
+      "native_peer_listing_sha256": "33178ea2ea3eae40abb27a0600531d97f8e994d87a0879c8ec08444134857031",
+      "function_and_relocations_equal_before_fixture": true
+    }
+  },
+  "fixture": {
+    "sha256": "c33ef782932d1899fd3c01eb1a53201675014f571239411617fc86f5517d8dd6",
+    "passed": true,
+    "stdout": "path_separator_offset: 156240 checks, 0 failures\n",
+    "checks": 156240,
+    "failures": 0
+  },
+  "native_docker_function_and_relocations_equal": true,
+  "native_elapsed_seconds": 1.411074,
+  "docker_elapsed_seconds": 5.719145,
+  "accepted_history_record": false,
+  "original_game_executed": false,
+  "whole_executable_match": false,
+  "byte_exclusions": [],
+  "warning_waivers": [],
+  "review": "research/campaign-070/review.json",
+  "limitations": [
+    "Complete function evidence; external callbacks are authored fixtures. Shared types and final linked executable placement remain pending."
+  ],
+  "evidence_category": "research-candidate"
+}

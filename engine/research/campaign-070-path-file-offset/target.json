@@ -1,0 +1,14 @@
+{
+  "id": "path_file_offset",
+  "address": 4651702,
+  "size": 124,
+  "body_size": 124,
+  "source": "src/path_file_offset.c",
+  "symbol": "_op_path_file_offset",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

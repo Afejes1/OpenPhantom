@@ -130,6 +130,7 @@ static void clip_flag_tests(void)
 #include "module_cleanup_behavior.c"
 #include "conf_stream_behavior.c"
 #include "utilities_behavior.c"
+#include "path_helpers_behavior.c"
 #include "lexical_behavior.c"
 #include "window_state_behavior.c"
 #include "platform_behavior.c"
@@ -269,6 +270,11 @@ int main(void)
     failures += op_test_module_install();
     failures += op_test_module_shutdown_all();
     failures += op_test_module_broadcast();
+    failures += op_test_path_drive();
+    failures += op_test_path_first_directory_offset();
+    failures += op_test_path_file_offset();
+    failures += op_test_path_extension_offset();
+    failures += op_test_path_separator_offset();
     failures += op_test_conf_open_read();
     failures += op_test_conf_close_write();
     failures += op_test_conf_write_string();
