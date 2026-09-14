@@ -1,0 +1,27 @@
+{
+  "id": "ui_toggle_debug_boxes",
+  "address": 4597584,
+  "size": 22,
+  "body_size": 22,
+  "source": "src/ui_toggle_debug_boxes.c",
+  "symbol": "_op_ui_toggle_debug_boxes",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 7,
+      "address": 7142848,
+      "symbol": "_op_ui_debug_boxes",
+      "kind": "dir32"
+    },
+    {
+      "offset": 16,
+      "address": 7142848,
+      "symbol": "_op_ui_debug_boxes",
+      "kind": "dir32"
+    }
+  ]
+}

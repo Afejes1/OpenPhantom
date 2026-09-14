@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "ui3d_end",
+  "candidate": "candidate.c",
+  "symbol": "_op_ui3d_end",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

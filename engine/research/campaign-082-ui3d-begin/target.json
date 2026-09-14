@@ -1,0 +1,27 @@
+{
+  "id": "ui3d_begin",
+  "address": 4571644,
+  "size": 24,
+  "body_size": 24,
+  "source": "src/ui3d_begin.c",
+  "symbol": "_op_ui3d_begin",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7142716,
+      "symbol": "_op_ui3d_active",
+      "kind": "dir32"
+    },
+    {
+      "offset": 14,
+      "address": 7142716,
+      "symbol": "_op_ui3d_active",
+      "kind": "dir32"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ui_widget_activation_id",
+  "address": 4598008,
+  "size": 11,
+  "body_size": 11,
+  "source": "src/ui_widget_activation_id.c",
+  "symbol": "_op_ui_widget_activation_id",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

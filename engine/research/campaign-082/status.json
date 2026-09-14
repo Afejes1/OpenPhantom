@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "status": "five-exact-frozen-research",
+  "started_utc": "2026-09-14T19:03:57.506288+00:00",
+  "deadline_utc": "2026-09-14T19:43:57.506288+00:00",
+  "functions": [
+    "ui_toggle_debug_boxes",
+    "ui_set_mouse_focus_clears",
+    "ui_widget_activation_id",
+    "ui3d_begin",
+    "ui3d_end"
+  ],
+  "frozen_utc": "2026-09-14T19:08:54.446237+00:00",
+  "implementation_compiles": 5,
+  "full_span_bytes_exact": 109,
+  "verified_operands_exact": 10,
+  "fixture_checks_exact": 9744,
+  "acceptance": "pending next shared batch"
+}

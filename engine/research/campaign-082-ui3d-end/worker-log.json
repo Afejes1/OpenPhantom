@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "ui3d_end",
+  "started_utc": "2026-09-14T19:03:57.506288+00:00",
+  "implementation_cutoff_utc": "2026-09-14T19:18:57.506288+00:00",
+  "deadline_utc": "2026-09-14T19:43:57.506288+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial recovered UI widget controls and gated three-stage render completion",
+      "started_utc": "2026-09-14T19:04:04.886880+00:00",
+      "finished_utc": "2026-09-14T19:04:06.585746+00:00",
+      "returncode": 0,
+      "source_sha256": "c0626766264d73ab9471af93b6e1c2d3a27fb59ec207591e54798f2accef7588",
+      "report": "engine/build/campaign-001-ui3d_end-5a75ae8dcc8f/research-result.json",
+      "report_sha256": "7d9363e760f728899da4ddf41f8e85888655caaea687de18825af8a9913ef77f",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 39,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.45961,
+      "stderr": ""
+    }
+  ]
+}

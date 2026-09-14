@@ -1,0 +1,45 @@
+{
+  "id": "ui3d_end",
+  "address": 4571668,
+  "size": 39,
+  "body_size": 39,
+  "source": "src/ui3d_end.c",
+  "symbol": "_op_ui3d_end",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 7142716,
+      "symbol": "_op_ui3d_active",
+      "kind": "dir32"
+    },
+    {
+      "offset": 13,
+      "address": 4202837,
+      "symbol": "_op_ui3d_flush_material_buckets",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 18,
+      "address": 4751360,
+      "symbol": "_op_ui3d_flush_draw_queue",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 23,
+      "address": 4636970,
+      "symbol": "_op_ui3d_finish_backend",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 29,
+      "address": 7142716,
+      "symbol": "_op_ui3d_active",
+      "kind": "dir32"
+    }
+  ]
+}

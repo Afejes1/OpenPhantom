@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "ui_widget_activation_id",
+  "started_utc": "2026-09-14T19:03:57.506288+00:00",
+  "implementation_cutoff_utc": "2026-09-14T19:18:57.506288+00:00",
+  "deadline_utc": "2026-09-14T19:43:57.506288+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial recovered UI widget controls and gated three-stage render completion",
+      "started_utc": "2026-09-14T19:04:01.475357+00:00",
+      "finished_utc": "2026-09-14T19:04:03.187005+00:00",
+      "returncode": 0,
+      "source_sha256": "2b2dfe99d4fd83185ff95c753b6c9f3367997ce4910fcf9304804a30446754f5",
+      "report": "engine/build/campaign-001-ui_widget_activation_id-f05c0a36c7df/research-result.json",
+      "report_sha256": "7eaa36bc652f02dbff93869c5090efbcf1fa33bf2afeb3fa1f195c5ea8e7133d",
+      "status": "raw-code-match",
+      "candidate_size": 11,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.476895,
+      "stderr": ""
+    }
+  ]
+}

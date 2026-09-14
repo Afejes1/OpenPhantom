@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "ui_toggle_debug_boxes",
+  "started_utc": "2026-09-14T19:03:57.506288+00:00",
+  "implementation_cutoff_utc": "2026-09-14T19:18:57.506288+00:00",
+  "deadline_utc": "2026-09-14T19:43:57.506288+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial recovered UI widget controls and gated three-stage render completion",
+      "started_utc": "2026-09-14T19:03:58.011133+00:00",
+      "finished_utc": "2026-09-14T19:03:59.752397+00:00",
+      "returncode": 0,
+      "source_sha256": "f1c21c3697397c4d5bc9c572c70bcbdc0bd6e9177e5af261646f15f0a9338c7d",
+      "report": "engine/build/campaign-001-ui_toggle_debug_boxes-0a77608d0851/research-result.json",
+      "report_sha256": "dfb7746bc2ec2686ab693a0869f54389a52bb804c671a0d539ce68cc97ee7e76",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 22,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.507761,
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "ui_set_mouse_focus_clears",
+  "candidate": "candidate.c",
+  "symbol": "_op_ui_set_mouse_focus_clears",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T19:10:32.852254+00:00",
+  "conclusion": "five-exact-approved",
+  "final_receipt_review": "All70 snapshot members and10 report hashes verified; exact native/Docker parity,9744focused checks, no exclusions or waivers. Ordered callbacks, preserved state and8-byte widget prefix reviewed."
+}
