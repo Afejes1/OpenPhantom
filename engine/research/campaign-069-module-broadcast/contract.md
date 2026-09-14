@@ -1,0 +1,5 @@
+# Generic module lifecycle dispatch
+
+Complete230-byte no-tail function at0046F3C3;24callers. Cdecl int(int id,unsigned event). Preserve existing op_save_lifecycle symbol. Nonzero ID uses real first-match lookup, missing1 or signed callback(event,0,0) result. ID0 chooses live forward traversal for events4/6, backward otherwise; no status filtering, final0. Fixtures vary zero/signed/duplicate/missing IDs, eight event words including4/6/high bits, all flag patterns, callback returns, live link truncation/skips, future ID changes and endpoint replacements with guarded full snapshots.
+
+Effect-free event/result switches model the six directly observed compiler selector copies and have no behavioral side effects. This is an experimentally testable source-shape explanation supported by exact install/shutdown compiler output, not proof of original source text or extra lifecycle semantics. No fabricated locals, shortened span or byte exclusions. Shared integration must replace the old save-chain stub with the actual dispatcher and an owned callback while preserving existing path/load assertions.

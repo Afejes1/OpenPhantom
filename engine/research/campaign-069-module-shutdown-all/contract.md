@@ -1,0 +1,5 @@
+# Module shutdown
+
+Complete121-byte no-tail function at0046EC0C. Cdecl void(void). If initialized, cache tail and traverse backward. Bit0-set nodes receive callback(2,0,0), all visited nodes are released. Capture current previous AFTER callback but BEFORE release. Always initialized0; head/tail/open are not otherwise rewritten. Authored release observers retain owned storage and mutate released links to prove captured traversal. No claim of safety when production callers dereference the retained dangling endpoints. Fixtures guard full states, callback/release ordering, eligibility, truncation/skips, status/global mutations, signed return extremes and initialized gate.
+
+Source-shape hypothesis: exact install demonstrates a compiler-generated switch selector copy. Shutdown result/selector stores are modeled with an effect-free result switch whose return cases are explicitly ignored. No manually invented temporary, padding, raw bytes or exclusions. This is the first implementation assignment for shutdown_all; existing send_shutdown research remains frozen with its earlier history.

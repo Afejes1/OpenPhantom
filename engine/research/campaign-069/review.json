@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T14:56:33.608365+00:00",
+  "conclusion": "approved-two-exact",
+  "functions": [
+    "module_shutdown_all",
+    "module_broadcast"
+  ],
+  "observations": [
+    "Shutdown attempt4 supersedes earlier research classification;121bytes4operands912960checks.",
+    "Generic230bytes3operands498240checks; real finder and event-selected live traversal verified.",
+    "29source snapshot entries and4final reports rehashed by independent reviewer.",
+    "Source-shape switches are disclosed as codegen hypotheses for observed stores, not extra behavior."
+  ]
+}

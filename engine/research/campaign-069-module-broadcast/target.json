@@ -1,0 +1,33 @@
+{
+  "id": "module_broadcast",
+  "address": 4649923,
+  "size": 230,
+  "body_size": 230,
+  "source": "src/module_broadcast.c",
+  "symbol": "_op_save_lifecycle",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 24,
+      "address": 4650281,
+      "symbol": "_op_module_find_by_id",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 91,
+      "address": 7169220,
+      "symbol": "_op_module_head",
+      "kind": "dir32"
+    },
+    {
+      "offset": 158,
+      "address": 7169224,
+      "symbol": "_op_module_tail",
+      "kind": "dir32"
+    }
+  ]
+}

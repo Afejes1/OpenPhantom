@@ -5181,6 +5181,46 @@
         "External allocator and bounded-copy symbols preserve their existing original addresses."
       ],
       "exceptions": []
+    },
+    {
+      "id": "module_shutdown_all",
+      "module": "module",
+      "analysis_name": "module_shutdown_all",
+      "purpose": "Dispatch lifecycle callbacks with exact live traversal and shutdown capture/release order.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-cleanup-acceptance.md",
+        "research/campaign-069-module-shutdown-all/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_cleanup_behavior.c",
+        "tests/save_slots_behavior.c"
+      ],
+      "quirks": [
+        "Effect-free switches reproduce directly observed compiler selector copies; original source spelling remains unknown.",
+        "Release observers retain owned storage; real dispatcher replaces prior save-chain stub."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "module_broadcast",
+      "module": "module",
+      "analysis_name": "module_broadcast",
+      "purpose": "Dispatch lifecycle callbacks with exact live traversal and shutdown capture/release order.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/module-cleanup-acceptance.md",
+        "research/campaign-069-module-broadcast/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/module_cleanup_behavior.c",
+        "tests/save_slots_behavior.c"
+      ],
+      "quirks": [
+        "Effect-free switches reproduce directly observed compiler selector copies; original source spelling remains unknown.",
+        "Release observers retain owned storage; real dispatcher replaces prior save-chain stub."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

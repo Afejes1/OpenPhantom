@@ -1,0 +1,7 @@
+# Module cleanup and generic dispatch
+
+Shutdown and generic dispatch add351complete bytes and7verified operands. Candidate bodies change only the header include. Prior277target/registry entries remain identical. Both functions reproduce observed compiler selector copies using effect-free switches; these are source-shape explanations, not a claim to the original textual source. Shutdown needed a descriptive predecessor-local name to obtain the observed VC5 local allocation. No fabricated stack storage, byte insertion, exclusions or warning waivers.
+
+The shared fixture retains both focused matrices (1,411,200assertions) and adds a scoped shutdown release observer. Callbacks may alter live traversal; release cannot redirect a predecessor already captured by the source. Owned release fixtures never actually free storage. Original shutdown retains head/tail pointers and always clears initialized.
+
+Generic dispatch preserves the op_save_lifecycle identity and identical int(int,unsigned int) headers. The former save-chain stub is replaced by an owned module callback reached through the real dispatcher. All prior path/format/load order checks remain, including callback path mutation and signed callback results; new guards check module storage/globals, and the fixture restores its prior global pointers/flags. Full function fixtures use the real accepted finder. Shared acceptance pending. Whole-executable identity remains unfinished.

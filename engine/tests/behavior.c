@@ -127,6 +127,7 @@ static void clip_flag_tests(void)
 #include "module_behavior.c"
 #include "module_dispatch_behavior.c"
 #include "module_lifecycle_behavior.c"
+#include "module_cleanup_behavior.c"
 #include "conf_stream_behavior.c"
 #include "utilities_behavior.c"
 #include "lexical_behavior.c"
@@ -266,6 +267,8 @@ int main(void)
     failures += op_test_module_open_all();
     failures += op_test_module_close_all();
     failures += op_test_module_install();
+    failures += op_test_module_shutdown_all();
+    failures += op_test_module_broadcast();
     failures += op_test_conf_open_read();
     failures += op_test_conf_close_write();
     failures += op_test_conf_write_string();

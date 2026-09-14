@@ -183,6 +183,7 @@ int op_stream_seek(void *handle, long offset, int origin)
 }
 void op_release(void *memory)
 {
+    if(msha_active){msha_release(memory);return;}
     if(video_route){video_release(memory);return;}
     if(mlc_active){mlc_release(memory);return;}
     if(dcy_active){dcy_release(memory);return;}

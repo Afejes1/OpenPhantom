@@ -1,5 +1,5 @@
-#ifndef OP_MODULE_H
-#define OP_MODULE_H
+#ifndef OP_C069_BROADCAST_H
+#define OP_C069_BROADCAST_H
 #include <stddef.h>
 typedef union OP_MODULE_STATUS {
     unsigned int raw;
@@ -49,6 +49,5 @@ void op_module_close_all(void);
 int op_module_install(unsigned int, const char *);
 void *op_allocate(unsigned int);
 char *op_copy_keyframe_name(char *, const char *, unsigned int);
-void op_module_shutdown_all(void);
 int op_save_lifecycle(int, unsigned int);
 #endif

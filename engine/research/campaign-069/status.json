@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "status": "exact-integration-review",
+  "started_utc": "2026-09-14T14:45:18.495998+00:00",
+  "deadline_utc": "2026-09-14T15:30:18.495998+00:00",
+  "functions": [
+    "module_shutdown_all",
+    "module_broadcast"
+  ],
+  "frozen_utc": "2026-09-14T14:57:37.385199+00:00",
+  "exact_functions": 2,
+  "full_span_bytes": 351,
+  "verified_operands": 7,
+  "fixture_checks": 1411200,
+  "implementation_compiles": 5,
+  "acceptance": "research/acceptance-049/result.json"
+}

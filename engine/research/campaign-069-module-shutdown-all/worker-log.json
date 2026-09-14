@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "module_shutdown_all",
+  "implementation_started_utc": "2026-09-14T14:45:18.495998+00:00",
+  "implementation_cutoff_utc": "2026-09-14T15:00:18.495998+00:00",
+  "compiler_invocations": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Effect-free result switch reproduces observed compiler selector while preserving callback/capture/release order",
+      "started_utc": "2026-09-14T14:45:18.729754+00:00",
+      "finished_utc": "2026-09-14T14:45:20.470571+00:00",
+      "returncode": 1,
+      "source_sha256": "afc7ca4abcd254cab55ba1782dd671ec2c009888244aa207355b9ecfb6c45c45",
+      "report": "engine/build/campaign-001-module_shutdown_all-baefbefbc7fc/research-result.json",
+      "report_sha256": "fbc6eb43218c87b8bad6d3fd210f4c006493cd8b5204a90d5ce2ba37ec5121ba",
+      "status": "mismatch",
+      "candidate_size": 121,
+      "different_bytes": 9,
+      "elapsed_seconds": 1.502888,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Separate module and previous declarations recover observed -8/-12 local allocation; switch lowering already matches",
+      "started_utc": "2026-09-14T14:46:20.075456+00:00",
+      "finished_utc": "2026-09-14T14:46:21.770701+00:00",
+      "returncode": 1,
+      "source_sha256": "4ad473dd102f71dfc07b59699a2958bc8d504d5e31e40f798a13b6958958990f",
+      "report": "engine/build/campaign-001-module_shutdown_all-9e8d24fe7487/research-result.json",
+      "report_sha256": "9df5c902835af61580fbc87381b30f83b0266032887b8f71b648f54ac1b75a8b",
+      "status": "mismatch",
+      "candidate_size": 121,
+      "different_bytes": 9,
+      "elapsed_seconds": 1.46192,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "hypothesis": "Reverse ordinary uninitialized pointer declaration order to recover observed module-8/previous-12 slots",
+      "started_utc": "2026-09-14T14:47:16.958544+00:00",
+      "finished_utc": "2026-09-14T14:47:18.755734+00:00",
+      "returncode": 1,
+      "source_sha256": "00aca243e6ba63643a1d638541c77a7b2fe8fd4b522ed2709f741b2b16752ba0",
+      "report": "engine/build/campaign-001-module_shutdown_all-85bc3b871b31/research-result.json",
+      "report_sha256": "8cf08bdf40bbfb865dbe2a4a08b508cb00d3880c16b2fa324ec0423a5f2954c3",
+      "status": "mismatch",
+      "candidate_size": 121,
+      "different_bytes": 9,
+      "elapsed_seconds": 1.558428,
+      "stderr": ""
+    },
+    {
+      "attempt": 4,
+      "hypothesis": "Use descriptive previous_module local name; declaration order alone did not change VC5 local allocation",
+      "started_utc": "2026-09-14T14:47:39.514297+00:00",
+      "finished_utc": "2026-09-14T14:47:41.205134+00:00",
+      "returncode": 0,
+      "source_sha256": "6a24bdd13b83bc33b4a817478781d3f384f38ae39fe7e824c08d0a79647c7358",
+      "report": "engine/build/campaign-001-module_shutdown_all-881e0a991b8a/research-result.json",
+      "report_sha256": "74925943c65482df7a1226f683b470fceb8ca9daf7a4dd27461d918ce01cca6e",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 121,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.456797,
+      "stderr": ""
+    }
+  ],
+  "frozen_utc": "2026-09-14T14:48:16.669597+00:00",
+  "status": "exact-final-verified-awaiting-review"
+}

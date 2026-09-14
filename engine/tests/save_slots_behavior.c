@@ -1,3 +1,4 @@
+#include "../src/module.h"
 #include "../src/save_slots.h"
 #include <stdio.h>
 #include <string.h>
@@ -110,13 +111,23 @@ static void ssp_verify(void)
     SSP_CHECK(memcmp(op_save_path_format, ssp_expected_format, sizeof(ssp_expected_format)) == 0);
     SSP_CHECK(memcmp(op_save_path_prefix, ssp_expected_prefix, sizeof(ssp_expected_prefix)) == 0);
 }
-void op_save_lifecycle(int a, int b)
+typedef struct SSP_OWNED_MODULE
 {
-    SSP_CHECK(ssp_active && ssp_mode == 1 && ssp_stage == 0 && a == 0 && b == 6);
+    unsigned int before;
+    OP_MODULE value;
+    unsigned int after;
+} SSP_OWNED_MODULE;
+static SSP_OWNED_MODULE ssp_module, ssp_expected_module;
+static int ssp_lifecycle_callback(unsigned int event, unsigned int argument, unsigned int bits)
+{
+    SSP_CHECK(ssp_active && ssp_mode == 1 && ssp_stage == 0 && event == 6 && argument == 0 && bits == 0);
+    SSP_CHECK(op_module_head == &ssp_module.value && op_module_tail == &ssp_module.value);
+    SSP_CHECK(memcmp(&ssp_module, &ssp_expected_module, sizeof(ssp_module)) == 0);
     ssp_verify();
     if (ssp_mutate)
         op_save_path[2] = ssp_expected_path[2] = 'L';
     ++ssp_stage;
+    return ssp_answers[ssp_answer];
 }
 static int ssp_format(char *dest, char *format, char *prefix, int slot)
 {
@@ -155,6 +166,8 @@ int op_delete_file(const char *path)
 }
 static int op_test_save_slot_chains(void)
 {
+    OP_MODULE *saved_head = op_module_head, *saved_tail = op_module_tail;
+    int saved_initialized = op_module_initialized, saved_open = op_module_open;
     ssp_active = 1;
     for (ssp_mode = 0; ssp_mode < 4; ++ssp_mode)
         for (ssp_slot_case = 0; ssp_slot_case < 7; ++ssp_slot_case)
@@ -167,6 +180,15 @@ static int op_test_save_slot_chains(void)
                         memcpy(ssp_expected_format, op_save_path_format, sizeof(ssp_expected_format));
                         memcpy(ssp_expected_prefix, op_save_path_prefix, sizeof(ssp_expected_prefix));
                         ssp_stage = 0;
+                        memset(&ssp_module, 0x53, sizeof(ssp_module));
+                        ssp_module.value.next = ssp_module.value.previous = 0;
+                        ssp_module.value.id = 17;
+                        ssp_module.value.status.raw = 0;
+                        ssp_module.value.callback_word = (unsigned int)ssp_lifecycle_callback;
+                        memcpy(&ssp_expected_module, &ssp_module, sizeof(ssp_module));
+                        op_module_head = op_module_tail = &ssp_module.value;
+                        op_module_initialized = 123;
+                        op_module_open = -7;
                         if (ssp_mode == 0)
                             SSP_CHECK(op_save_slot_path(ssp_slots[ssp_slot_case]) == op_save_path);
                         else if (ssp_mode == 1)
@@ -177,8 +199,15 @@ static int op_test_save_slot_chains(void)
                             SSP_CHECK(op_save_delete_slot(ssp_slots[ssp_slot_case]) == (ssp_answers[ssp_answer] != 0));
                         SSP_CHECK(ssp_stage == (ssp_mode == 0 ? 1 : ssp_mode == 1 ? 3 : 2));
                         ssp_verify();
+                        SSP_CHECK(memcmp(&ssp_module, &ssp_expected_module, sizeof(ssp_module)) == 0);
+                        SSP_CHECK(op_module_head == &ssp_module.value && op_module_tail == &ssp_module.value);
+                        SSP_CHECK(op_module_initialized == 123 && op_module_open == -7);
                     }
     ssp_active = 0;
+    op_module_head = saved_head;
+    op_module_tail = saved_tail;
+    op_module_initialized = saved_initialized;
+    op_module_open = saved_open;
     printf("save slot connected: %d checks, %d failures\n", ssp_checks, ssp_failures);
     return ssp_failures != 0;
 }
