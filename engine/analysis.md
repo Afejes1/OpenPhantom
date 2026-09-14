@@ -397,3 +397,7 @@ Acceptance035 reaches188 accepted functions at event58. All188 original-toolchai
 ## Save slot checkpoint
 
 Acceptance036 reaches193 accepted functions at event59. All193 comparisons and shared authored tests pass with same-source supplemental CI. Five exact save-slot helpers preserve prior188 definitions and pass17,850 connected path checks plus2,028 guarded label-cleanup checks. This overnight window has40 newly exact functions,3,133 bytes and43 accepted promotions including3 carried in. Manifest-name conflicts are documented by numeric address. Disk-space checking remains research; directory enumeration is next. Whole-executable identity remains pending. See [acceptance036](research/acceptance-036/results.md).
+
+## Directory enumeration checkpoint
+
+Acceptance037 reaches 197 accepted functions at event60. All 197 comparisons and shared authored tests pass with same-source supplemental CI. Four exact directory helpers preserve prior 193 definitions and pass 77,430 focused checks plus 558 connected lifecycle checks. The overnight window now has 44 newly exact functions, 3,640 bytes and 47 accepted promotions including three carried in. One-shot enumeration remains layout research; the next module cohort has matched first compile and awaits focused verification. Whole-executable identity remains pending. See [acceptance037](research/acceptance-037/results.md).

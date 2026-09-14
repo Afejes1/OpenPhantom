@@ -13,7 +13,7 @@
   "registered_after": 197,
   "full_span_bytes": 507,
   "verified_operands": 10,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 4,
   "team_reported_done": 0,
   "original_game_executed": false,
@@ -25,5 +25,18 @@
     "sha256": "d38c7a6aebd8a7ffe219e2ba6b46d0af760049138650bdcf4940e2d9f3dd7070",
     "returncode": 0
   },
-  "independent_review": "comparison_inventory: approved unchanged193-entry prefixes, include-only source parity, unique observer dispatch and guarded actual directory lifecycle; optional explicit metadata-field offset assertions added"
+  "independent_review": "comparison_inventory: approved unchanged193-entry prefixes, include-only source parity, unique observer dispatch and guarded actual directory lifecycle; optional explicit metadata-field offset assertions added",
+  "accepted_event": "engine/evidence/runs/000060-710a51ce81a30c60.json",
+  "source_commit": "3e26c1b89a354afd1053ffa439c24bfe35d030ee",
+  "build_id": "20260914-021120-36659c6d",
+  "source_snapshot_inputs": 368,
+  "connected_directory_checks": 558,
+  "focused_directory_checks": {
+    "open": 21830,
+    "close": 5300,
+    "rewind": 3800,
+    "read": 46500
+  },
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34812390394",
+  "supplemental_ci_conclusion": "success"
 }

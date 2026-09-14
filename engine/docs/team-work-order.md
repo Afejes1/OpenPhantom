@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **188** team-not-done entries and **5** team-done entries.
-Team-not-done entries without a local recorded match: **781**.
+Our last recorded matches cover **192** team-not-done entries and **5** team-done entries.
+Team-not-done entries without a local recorded match: **777**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -136,7 +136,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | swift/swwidget.c | 12 | 0 | 12 |
 | util/control.c | 3 | 0 | 3 |
 | util/debug.c | 16 | 0 | 16 |
-| util/fileutil.c | 5 | 0 | 5 |
+| util/fileutil.c | 5 | 4 | 1 |
 | util/font3d.c | 21 | 18 | 3 |
 | util/inter.c | 14 | 0 | 14 |
 | util/module.c | 20 | 0 | 20 |

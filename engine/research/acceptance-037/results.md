@@ -1,0 +1,7 @@
+# Acceptance037 results
+
+Four directory functions bring the accepted baseline from 193 to 197. Their complete 507 bytes and 10 verified address operands match with zero byte differences after the verified relocation adjustment, no byte exclusions, and no VC5 warning waivers. Clean source 3e26c1b89a354afd1053ffa439c24bfe35d030ee builds as 20260914-021120-36659c6d. All 197 comparisons and shared authored tests pass. [Event60](../../evidence/runs/000060-710a51ce81a30c60.json) records the source snapshot; [same-source supplemental CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34812390394) succeeds.
+
+Actual open/read/rewind/close chains pass 558 checks, in addition to 77,430 focused checks retained in the shared fixture. Guarded state verifies first/next dispatch, post-callback handle stores, rewind ordering, ignored close returns and mutations visible to subsequent calls. Explicit assertions pin the recovered structure sizes and metadata offsets. Independent review verified unchanged 193-entry prefixes, include-only candidate substitution, unique observer dispatch and guarded lifecycle paths. All four additions are team-not_done.
+
+The one-shot directory wrapper remains layout research. Enumeration, formatting, allocation and release backends remain authored observers. Existing modern supplemental CRT compatibility is disclosed at acceptance034; original VC5 options remain unchanged. Whole-executable identity remains pending.
