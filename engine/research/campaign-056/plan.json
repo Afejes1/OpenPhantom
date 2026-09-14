@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "campaign-056",
+  "started_utc": "2026-09-14T07:13:00Z",
+  "stop_implementation_utc": "2026-09-14T07:48:00Z",
+  "deadline_utc": "2026-09-14T07:58:00Z",
+  "functions": [
+    "util_strdup",
+    "util_snprintf",
+    "util_strlwr",
+    "util_file_exists"
+  ],
+  "full_target_bytes": 250,
+  "address_operands": 6,
+  "status": "complete",
+  "prepared_utc": "2026-09-14T07:27:07.502584+00:00",
+  "independent_packet_review": "comparison_inventory confirmed four full spans, six bindings, cdecl ABI and bounded fixture domains",
+  "baseline_commit": "65f89e9decdcd9caa1be95c11e06df9dd7eaf7f1",
+  "original_game_executed": false,
+  "completed_utc": "2026-09-14T07:39:09.856665+00:00"
+}

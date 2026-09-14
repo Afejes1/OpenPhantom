@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "util_snprintf",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural cdecl utility source with observed intrinsics and complete callback ordering",
+      "started_utc": "2026-09-14T07:27:50.802016+00:00",
+      "finished_utc": "2026-09-14T07:27:52.392444+00:00",
+      "returncode": 0,
+      "source_sha256": "f997974406c8d0048a98822a2d9b01d24e17b866c92e16f6438058e469e7291e",
+      "report": "engine/build/campaign-001-util_snprintf-2c0e8d068766/research-result.json",
+      "report_sha256": "7e32321e506eb6cb575c4ac139787d709e9d179028aa059dc5282867afcccc5d",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 58,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.368721,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T07:39:09.856665+00:00"
+}

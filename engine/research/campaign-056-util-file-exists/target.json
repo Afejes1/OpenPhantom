@@ -1,0 +1,33 @@
+{
+  "id": "util_file_exists",
+  "address": 4813934,
+  "size": 62,
+  "body_size": 62,
+  "source": "src/util_file_exists.c",
+  "symbol": "_op_util_file_exists",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 4933692,
+      "symbol": "_op_conf_read_mode",
+      "kind": "dir32"
+    },
+    {
+      "offset": 15,
+      "address": 8816192,
+      "symbol": "_op_conf_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 43,
+      "address": 8816192,
+      "symbol": "_op_conf_services",
+      "kind": "dir32"
+    }
+  ]
+}

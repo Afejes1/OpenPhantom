@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T07:39:09.856665+00:00",
+  "conclusion": "approved-four-exact",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "util_file_exists",
+      "address": 4813934,
+      "full_span_bytes": 62,
+      "candidate_size": 62,
+      "verified_operands": 3,
+      "different_bytes": 0,
+      "checks": 2448,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-056-util-file-exists/result.json"
+    },
+    {
+      "id": "util_snprintf",
+      "address": 4813476,
+      "full_span_bytes": 58,
+      "candidate_size": 58,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 1008,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-056-util-snprintf/result.json"
+    },
+    {
+      "id": "util_strdup",
+      "address": 4813392,
+      "full_span_bytes": 84,
+      "candidate_size": 84,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 9216,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-056-util-strdup/result.json"
+    },
+    {
+      "id": "util_strlwr",
+      "address": 4813888,
+      "full_span_bytes": 46,
+      "candidate_size": 46,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 211248,
+      "evidence_category": "exact-function-match",
+      "team_status": "not_done",
+      "result": "research/campaign-056-util-strlwr/result.json"
+    }
+  ],
+  "observations": [
+    "All56 current snapshot inputs and8 final reports independently rehashed with zero mismatches.",
+    "All250 full-span bytes match after resolving all6 independently verified address operands.",
+    "Three first-compile matches; lowercase for-to-while rewrite matches on second compile without changing its callback contract.",
+    "Fixtures independently predict post-callback writes and verify owned guards, variadic forwarding, signed byte conversion, and reloaded service pointer.",
+    "All223920 checks pass; original execution, byte exclusions and warning waivers are absent."
+  ],
+  "limitations": [
+    "The parent encountered transient automatic-review selected-model-capacity rejections; rejected actions were not executed and direct access later recovered.",
+    "The optional Ghidra snprintf comment was not applied during that interruption; it is not reconstruction evidence."
+  ]
+}

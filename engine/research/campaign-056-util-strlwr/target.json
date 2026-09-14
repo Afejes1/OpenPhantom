@@ -1,0 +1,21 @@
+{
+  "id": "util_strlwr",
+  "address": 4813888,
+  "size": 46,
+  "body_size": 46,
+  "source": "src/util_strlwr.c",
+  "symbol": "_op_util_strlwr",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 21,
+      "address": 4832304,
+      "symbol": "_op_tolower",
+      "kind": "rel32-call"
+    }
+  ]
+}

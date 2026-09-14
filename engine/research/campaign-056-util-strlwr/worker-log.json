@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "util_strlwr",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural cdecl utility source with observed intrinsics and complete callback ordering",
+      "started_utc": "2026-09-14T07:27:52.398390+00:00",
+      "finished_utc": "2026-09-14T07:27:53.987827+00:00",
+      "returncode": 1,
+      "source_sha256": "653cf2b013e4956540c3fdd0d172db20c002e5af91be5e50678b19778696bdf3",
+      "report": "engine/build/campaign-001-util_strlwr-6e1f0ee9bf50/research-result.json",
+      "report_sha256": "fa2f977e99d7d842464fb72222d4001b41aa25df24d0b45f4b9249c0a688559e",
+      "status": "mismatch",
+      "candidate_size": 48,
+      "different_bytes": null,
+      "elapsed_seconds": 1.369248,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Natural cdecl utility source with observed intrinsics and complete callback ordering",
+      "started_utc": "2026-09-14T07:31:59.345795+00:00",
+      "finished_utc": "2026-09-14T07:32:00.940668+00:00",
+      "returncode": 0,
+      "source_sha256": "5748d2c5808158c73aba4f17dc015a65deb26a1ed913ebb5f5a5172d217fa9a2",
+      "report": "engine/build/campaign-001-util_strlwr-ce3993e0a16d/research-result.json",
+      "report_sha256": "46c7274c44b264706e6d5cada4ec836cf8b75ab85072d23b14f06458913d1b05",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 46,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.377963,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T07:39:09.856665+00:00"
+}

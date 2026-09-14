@@ -1,0 +1,21 @@
+{
+  "id": "util_snprintf",
+  "address": 4813476,
+  "size": 58,
+  "body_size": 58,
+  "source": "src/util_snprintf.c",
+  "symbol": "_op_util_snprintf",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 30,
+      "address": 4829728,
+      "symbol": "_op_vsnprintf",
+      "kind": "rel32-call"
+    }
+  ]
+}

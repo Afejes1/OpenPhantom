@@ -1,0 +1,21 @@
+{
+  "id": "util_strdup",
+  "address": 4813392,
+  "size": 84,
+  "body_size": 84,
+  "source": "src/util_strdup.c",
+  "symbol": "_op_util_strdup",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 20,
+      "address": 4805264,
+      "symbol": "_op_allocate",
+      "kind": "rel32-call"
+    }
+  ]
+}
