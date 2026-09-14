@@ -1,0 +1,9 @@
+# Acceptance026 results
+
+Six face/keyframe helpers are accepted, bringing the shared baseline from139 to145. Their327 complete bytes match with10 verified external operands, no exclusions and no warning waivers. The final clean build `20260913-212145-739e2b7d` at `25dbe85102fe78d1e050d9abd46fea1b93d58387` passes all145 comparisons and authored fixtures. [Event49](../../evidence/runs/000049-996ee17a0f11b673.json) preserves the source snapshot. [Full supplemental CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34795666389) succeeds on that exact source.
+
+Connected fixtures report1922 checks. Actual face initialization, free and array cleanup share guarded owned storage; release callbacks prove live second-array activation/replacement/clear, retained first-array changes and final captured-face release. Keyframe hooks keep distinct typed globals, return prior callbacks and do not invoke them. The header fixture verifies132-byte clear-before-copy, bounded authored default names and the final forced NUL.
+
+The first original-toolchain build passed but modern supplemental MSVC rejected fixture strncpy use. An authored bounded copy removed deprecated CRT use; its first ternary implementation then hit VC5 integer-promotion warning C4244. Explicit character initialization/assignment passed a targeted aggregate compile and the final clean build. A diagnostic rebuild also began with untracked research and was not accepted. Both superseded builds remain private diagnostic evidence; only the clean final build is recorded. Canonical source/targets were unchanged by these fixture corrections.
+
+These six promotions were already counted as new research matches in campaign038. Null initialization/array-cleanup inputs and real double-free behavior remain outside fixture claims. Whole-executable identity is pending.

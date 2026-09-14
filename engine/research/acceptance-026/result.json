@@ -15,8 +15,20 @@
   "registered_after": 145,
   "full_span_bytes": 327,
   "verified_operands": 10,
-  "status": "integration-pending",
+  "status": "accepted",
   "original_game_executed": false,
   "byte_exclusions": [],
-  "warning_waivers": []
+  "warning_waivers": [],
+  "accepted_event": "engine/evidence/runs/000049-996ee17a0f11b673.json",
+  "source_commit": "25dbe85102fe78d1e050d9abd46fea1b93d58387",
+  "build_id": "20260913-212145-739e2b7d",
+  "source_snapshot_inputs": 289,
+  "connected_checks": 1922,
+  "independent_review": "comparison_inventory: no material findings after fixture portability correction",
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34795666389",
+  "supplemental_ci_conclusion": "success",
+  "superseded_builds": [
+    "20260913-210655-58af193f",
+    "20260913-211554-7a7045dd"
+  ]
 }
