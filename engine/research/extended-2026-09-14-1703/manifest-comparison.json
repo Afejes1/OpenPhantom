@@ -4,15 +4,15 @@
     "manifest_functions": 2241,
     "team_reported_done": 1298,
     "team_reported_not_done": 943,
-    "local_accepted": 327,
-    "local_within_team_not_done": 319,
+    "local_accepted": 333,
+    "local_within_team_not_done": 325,
     "local_overlapping_team_done": 8,
-    "remaining_if_team_claims_are_correct": 624,
-    "combined_covered_if_team_claims_are_correct": 1617
+    "remaining_if_team_claims_are_correct": 618,
+    "combined_covered_if_team_claims_are_correct": 1623
   },
   "local_match_categories": {
     "raw-code-match": 36,
-    "relocation-adjusted-match": 291
+    "relocation-adjusted-match": 297
   },
   "team_source_independently_verified": false,
   "whole_executable_match": false,
@@ -21407,11 +21407,11 @@
       "team_reported_file": null,
       "team_reported_name": "conbox_destroy",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "console_box_destroy",
+      "local_source": "src/console_box_destroy.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x0048C539",
@@ -21440,11 +21440,11 @@
       "team_reported_file": null,
       "team_reported_name": "con_showCursor",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "console_show_cursor",
+      "local_source": "src/console_show_cursor.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x0048C60B",
@@ -21484,22 +21484,22 @@
       "team_reported_file": null,
       "team_reported_name": "con_clear",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "console_clear",
+      "local_source": "src/console_clear.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x0048C6A8",
       "team_reported_file": null,
       "team_reported_name": "con_clearRow",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "console_clear_row",
+      "local_source": "src/console_clear_row.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x0048C6EF",
@@ -23618,11 +23618,11 @@
       "team_reported_file": "std/stdmusic.c",
       "team_reported_name": "stdmusic_setVolume",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "music_set_volume",
+      "local_source": "src/music_set_volume.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00495CBF",
@@ -23948,11 +23948,11 @@
       "team_reported_file": "std/stdsound.c",
       "team_reported_name": "stdsound_setPan",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "audio_set_pan",
+      "local_source": "src/audio_set_pan.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00496CA0",
@@ -24674,10 +24674,10 @@
     "manifest": "engine/planning/team-manifest-20260912-1849.json",
     "manifest_sha256": "3c26a8b5f62424864513ffb20dfb644fa582d19600cd2f98bbfd7eca71dfee1f",
     "contributor_attachment_sha256": "0b6de70dfa6b872725cbb8cc4fd14fc71316a2ec28ef9e1dec5762577046592b",
-    "accepted_event": "engine/evidence/runs/000081-b581575239647125.json",
-    "accepted_event_sha256": "0cf8e11c7099fd14935f8ccc9b9b1f8ae20ab946736cbb0a4911745421739b83",
-    "source_commit": "3ee1cba09bba5c867170d6615895975dd3b8e85a",
-    "build_id": "20260914-153055-2f76ffa5",
+    "accepted_event": "engine/evidence/runs/000082-8425769f31a9f75f.json",
+    "accepted_event_sha256": "c542e9108fd5c2f617a379fe63db6d295fd6bc89e509517e72b416cf6701eda5",
+    "source_commit": "970a19aa4ec220d7ffd83cd8aa67e0c8cf979d61",
+    "build_id": "20260914-155929-6282a515",
     "generator_sha256": "9eeb04c352a48d09f795f4101f5b169dabdc41af21cdb9cc4e2b2956d942845a"
   }
 }

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "exact-integration-review",
+  "status": "accepted",
   "started_utc": "2026-09-14T19:49:29.725652+00:00",
   "deadline_utc": "2026-09-14T20:29:29.725652+00:00",
   "functions": [
@@ -16,5 +16,7 @@
     "music_set_volume": 2,
     "audio_set_pan": 1
   },
-  "incomplete_final_attempt": "Pan firstDockerfixture andbytechecks passed, but finaltoolchainhash encountered hostMemoryError. Entire native/Docker pair retried unchanged; original incomplete report retained."
+  "incomplete_final_attempt": "Pan firstDockerfixture andbytechecks passed, but finaltoolchainhash encountered hostMemoryError. Entire native/Docker pair retried unchanged; original incomplete report retained.",
+  "accepted_event": "engine/evidence/runs/000082-8425769f31a9f75f.json",
+  "completed_utc": "2026-09-14T20:07:20.205992+00:00"
 }

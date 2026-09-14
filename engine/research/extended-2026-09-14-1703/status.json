@@ -7,21 +7,19 @@
   "baseline_accepted": 290,
   "baseline_event": 75,
   "baseline_commit": "f7fdc3a3db572de9a7b0676703eae05608086d54",
-  "accepted_new": 37,
-  "accepted_current": 327,
-  "remaining_current": 624,
-  "local_team_not_done_current": 319,
-  "evidence_event_current": 81,
+  "accepted_new": 43,
+  "accepted_current": 333,
+  "remaining_current": 618,
+  "local_team_not_done_current": 325,
+  "evidence_event_current": 82,
   "pending_exact": [
-    "console_box_destroy",
-    "console_show_cursor",
-    "console_clear",
-    "console_clear_row",
-    "music_set_volume",
-    "audio_set_pan"
+    "console_put_char",
+    "console_put_string",
+    "console_box_clear",
+    "console_box_clear_row"
   ],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A059 integrating four console controls and two audio level controls.",
+  "current_work": "A059 accepted six console/audio controls; C086four first-attempt exact text/buffer functions are in focused verification.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": "acceptance-059"
+  "acceptance_pending": null
 }

@@ -3,8 +3,8 @@
 Snapshot: 2026-09-12. Scheduling evidence supplied by the contributor; team code/build evidence is pending.
 
 Reported done: **1272**. Reported not done: **969**.
-Our last recorded matches cover **322** team-not-done entries and **5** team-done entries.
-Team-not-done entries without a local recorded match: **647**.
+Our last recorded matches cover **328** team-not-done entries and **5** team-done entries.
+Team-not-done entries without a local recorded match: **641**.
 
 These are separate status columns, not a combined completion certificate. See [current build evidence](progress.md) for source freshness and byte-match scope.
 
@@ -119,9 +119,9 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | std/stddisp.c | 7 | 0 | 7 |
 | std/stdlinkl.c | 10 | 9 | 1 |
 | std/stdmath.c | 24 | 11 | 13 |
-| std/stdmusic.c | 7 | 2 | 5 |
+| std/stdmusic.c | 7 | 3 | 4 |
 | std/stdplat.c | 15 | 6 | 9 |
-| std/stdsound.c | 29 | 14 | 15 |
+| std/stdsound.c | 29 | 15 | 14 |
 | std/stdutil.c | 12 | 10 | 2 |
 | std/stdvideo.c | 8 | 3 | 5 |
 | std/stdwin95.c | 14 | 6 | 8 |
@@ -143,7 +143,7 @@ The manifest asks for file-level coordination. Relay the active file above to th
 | util/pzip.c | 30 | 14 | 16 |
 | util/res.c | 11 | 0 | 11 |
 | util/taskman.c | 7 | 0 | 7 |
-| File not known yet | 107 | 31 | 76 |
+| File not known yet | 107 | 35 | 72 |
 
 ## Reconciliation when team source arrives
 

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "exact-integration-review",
+  "status": "accepted",
   "started_utc": "2026-09-14T19:38:03.922029+00:00",
   "deadline_utc": "2026-09-14T20:18:03.922029+00:00",
   "preparation_started_utc": "2026-09-14T19:31:00Z",
@@ -24,5 +24,7 @@
     "console_clear": 6,
     "console_clear_row": 6
   },
-  "fixture_correction": "Outerushort cast for promotedternary under unchanged W4WX; native/Docker finalpairs rerun."
+  "fixture_correction": "Outerushort cast for promotedternary under unchanged W4WX; native/Docker finalpairs rerun.",
+  "accepted_event": "engine/evidence/runs/000082-8425769f31a9f75f.json",
+  "completed_utc": "2026-09-14T20:07:20.204881+00:00"
 }
