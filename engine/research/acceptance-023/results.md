@@ -1,0 +1,7 @@
+# Acceptance023 results
+
+Twelve font helpers are accepted, bringing121 to133 registered functions. All675 full bytes and42 operands match with zero exclusions. The first shared build `20260913-200813-14bc25c5` at `596c5ea89c12083e875e02df210e01b6e0161d88` passes all function comparisons and authored fixtures. [Event46](../../evidence/runs/000046-5312e085e2711625.json) preserves its clean source snapshot. [Supplemental CI](https://github.com/Afejes1/OpenPhantom/actions/runs/34792019799) passes on identical implementation inputs after refreshing the generated progress document. Initial CI stopped before modern compilation because that document was stale; no source correction was needed.
+
+Font fixtures report32522 checks, including eleven focused suites and the connected state/resource paths. Actual canonical sprite acquire/release functions run, with only their low-level resource and formatter backends authored. Release-slot replacement, three callback retarget stages, absent backdrop, failed acquisition, NULL name, all16 records and field preservation are covered. The shared pool has exactly16 records, excluding the research-only tail guard. Independent review found no material blocker.
+
+These twelve are campaign036 promotions, not additional new exacts. The query remains research because13 alignment bytes are unresolved. The next lifecycle batch will correct the older system-font getter semantic type from pointer to signed slot index; its10-byte matching machine code remains valid. Whole-executable identity remains pending.

@@ -20,7 +20,7 @@
   "max_concurrent_implementation_workers": 1,
   "new_exact_functions": 21,
   "new_exact_bytes": 1097,
-  "promotions": 16,
+  "promotions": 28,
   "new_near_matches": 0,
   "new_research_candidates": 2,
   "checkpoints": [
@@ -91,10 +91,19 @@
       "new_exact_bytes": 675,
       "research": 1,
       "result": "research/campaign-036/results.md"
+    },
+    {
+      "id": "acceptance-023",
+      "promotions": 12,
+      "registered_after": 133,
+      "event": 46,
+      "source_commit": "596c5ea89c12083e875e02df210e01b6e0161d88",
+      "result": "research/acceptance-023/result.json",
+      "full_ci": "success-on-same-implementation-inputs"
     }
   ],
-  "current_work": "Integrate twelve exact font-state helpers with actual canonical sprite resource callbacks.",
+  "current_work": "Campaign037 font lifecycle/measurement: six untouched functions, plus planned canonical signed-slot type correction in acceptance024.",
   "original_game_executed": false,
-  "accepted_functions_current": 121,
-  "evidence_records_current": 45
+  "accepted_functions_current": 133,
+  "evidence_records_current": 46
 }
