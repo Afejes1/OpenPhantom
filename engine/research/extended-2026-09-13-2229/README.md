@@ -1,3 +1,5 @@
+> User extended the run for a new ten hours at2026-09-14 01:40:41 UTC. The prior four-hour deadline is superseded by [the new fixed window](../extended-2026-09-14-0140/README.md). Historical timestamps and metrics below remain unchanged.
+
 # Authorized four-hour continuation
 
 Continue the user's newly authorized four-hour OpenPhantom reconstruction window in this existing thread. The fixed start is 2026-09-13 22:29:21 UTC and the hard stop is 2026-09-14 02:29:21 UTC (10:29 p.m. Eastern on September13). Check the clock first and never extend the deadline. Stop new implementation at02:19:21 UTC; finish verification/publication and pause this existing heartbeat by02:29:21 UTC.

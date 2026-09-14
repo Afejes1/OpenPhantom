@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "extended-2026-09-13-2229",
-  "status": "active",
+  "status": "superseded-by-explicit-user-extension",
   "window_start_utc": "2026-09-13T22:29:21Z",
   "stop_new_implementation_utc": "2026-09-14T02:19:21Z",
   "hard_stop_utc": "2026-09-14T02:29:21Z",
@@ -170,5 +170,8 @@
   "original_game_executed": false,
   "accepted_functions_current": 150,
   "evidence_records_current": 50,
-  "weekly_shared_usage_latest_percent": 62
+  "weekly_shared_usage_latest_percent": 62,
+  "superseded_utc": "2026-09-14T01:40:41Z",
+  "elapsed_seconds_before_extension": 11480,
+  "next_window": "research/extended-2026-09-14-0140/status.json"
 }
