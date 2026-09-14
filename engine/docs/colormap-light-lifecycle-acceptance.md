@@ -1,0 +1,9 @@
+# Colormap and light lifecycle acceptance
+
+Six campaign042 functions connect the original colormap loader/contents cleanup and full light new/init/free/inner chain. Canonical colormap fields retain extent844 and palette48 while exposing flags32 and handles820/828. The loader now uses OP_COLORMAP* consistently; its existing external symbol and calling convention remain unchanged.
+
+The focused contents oracle is retained, including callback-driven flag/secondary-handle changes and current-handle replacement followed by clear. Connected loading supplies valid guarded roots, confirms complete clearing before the reader, exercises reader success/failure and two owned handle releases followed by the captured root. Reader failure still frees its valid allocation. The original allocator-NULL path would dereference NULL through actual cleanup, so it is not executed in this connected fixture; prior focused evidence preserves the observed forwarding contract.
+
+Extended-colormap tests now use full guarded objects and actual load/free implementations. Capacity, last slot, loader-mutated count, and cleanup-mutated count contraction/expansion remain covered. Cleanup count mutation is observed at root release, which remains before the outer loop reload. A prior NULL-slot forwarding case is retained in historical focused evidence and replaced here with a second valid owned root because the real contents implementation cannot accept NULL. No defensive source changes are introduced.
+
+Light initialization is checked by independent literal field-bit oracles including0.2f, with bytes36/40/60 and all guards preserved. Connected allocation/init/free covers allocation failure, three initial fill patterns and four distinct roots; actual inner cleanup is empty. Authored release observers never free original data or execute the original game. Whole-executable identity remains pending.

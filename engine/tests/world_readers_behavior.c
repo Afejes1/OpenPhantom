@@ -148,6 +148,12 @@ static void world_readers_reset_callbacks(void)
 
 void *op_allocate(unsigned int bytes)
 {
+    if (cc_active)
+        return cc_allocate(bytes);
+    if (lc_active)
+        return lc_allocate(bytes);
+    if (colormap_active)
+        return colormap_allocate(bytes);
     if (kc_active)
         return kc_allocate(bytes);
     if (shield_lifecycle_active)

@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <limits.h>
-static int cg_active, cs_active, cs_mode;
+static int cs_active, cs_mode;
 
 #include <stdio.h>
 #include <string.h>
@@ -41,7 +41,11 @@ static void ch_verify(void)
 static OP_COLORMAP *ch_argument;
 void ch_install_palette(void *p)
 {
-    if (!ch_argument) { ch_CHECK(0); return; }
+    if (!ch_argument)
+    {
+        ch_CHECK(0);
+        return;
+    }
     ch_CHECK(ch_stage == 0 && ch_argument && p == ch_argument->palette && op_colormap_hardware == ch_argument);
     ch_verify();
     ch_argument->palette[0] = ch_expected[ch_row].value.palette[0] = 0xa5;
@@ -84,68 +88,6 @@ static int cs_test_colormap_set_hardware(void)
 #include <stdio.h>
 #include <string.h>
 #include <limits.h>
-
-typedef struct cg_OWNED_COLORMAP
-{
-    unsigned int before;
-    OP_COLORMAP value;
-    unsigned int after;
-} cg_OWNED_COLORMAP;
-static cg_OWNED_COLORMAP cg_maps[4], cg_expected[4];
-static int cg_checks, cg_failures, cg_row, cg_stage;
-static void cg_check(int ok, int line)
-{
-    ++cg_checks;
-    if (!ok)
-    {
-        ++cg_failures;
-        printf("line%d failed\n", line);
-    }
-}
-#define cg_CHECK(x) cg_check(!!(x), __LINE__)
-static void cg_seed(void)
-{
-    memset(cg_maps, 0x69, sizeof(cg_maps));
-    memcpy(cg_expected, cg_maps, sizeof(cg_maps));
-    cg_stage = 0;
-    op_palette_device_count = 0;
-}
-static void cg_verify(void)
-{
-    cg_CHECK(memcmp(cg_maps, cg_expected, sizeof(cg_maps)) == 0);
-}
-void cg_free_entry(void *p)
-{
-    cg_CHECK(cg_stage == 0 && p == &cg_maps[cg_row].value);
-    cg_verify();
-    cg_maps[cg_row].value.palette[0] = cg_expected[cg_row].value.palette[0] = 0xa5;
-    op_colormap_current = &cg_maps[(cg_row + 1) % 4].value;
-    op_colormap_hardware = &cg_maps[(cg_row + 2) % 4].value;
-    cg_stage = 1;
-}
-void cg_release(void *p)
-{
-    cg_CHECK(cg_stage == 1 && p == &cg_maps[cg_row].value);
-    cg_verify();
-    cg_CHECK(op_colormap_current == &cg_maps[(cg_row + 1) % 4].value &&
-             op_colormap_hardware == &cg_maps[(cg_row + 2) % 4].value);
-    cg_stage = 2;
-}
-static int cs_test_colormap_free(void)
-{
-    for (cg_row = 0; cg_row < 4; ++cg_row)
-    {
-        cg_seed();
-        op_colormap_current = op_colormap_hardware = &cg_maps[cg_row].value;
-        op_rd_colormap_free(&cg_maps[cg_row].value);
-        cg_CHECK(cg_stage == 2);
-        cg_verify();
-    }
-    printf("colormap_free: %d checks, %d failures\n", cg_checks, cg_failures);
-    return cg_failures != 0;
-}
-
-#undef cg_CHECK
 
 typedef struct CS_MAP
 {
@@ -202,9 +144,6 @@ static int op_test_colormap_state(void)
     cs_active = 1;
     cs_mode = 0;
     cs_test_colormap_set_hardware();
-    cg_active = 1;
-    cs_test_colormap_free();
-    cg_active = 0;
     cs_mode = 1;
     for (cs_row = -1; cs_row < 4; ++cs_row)
         for (old = 0; old < 3; ++old)
@@ -230,7 +169,6 @@ static int op_test_colormap_state(void)
                         cs_verify();
                     }
     cs_active = 0;
-    printf("colormap state connected: %d checks, %d failures\n", cs_checks + ch_checks + cg_checks,
-           cs_failures + ch_failures + cg_failures);
-    return cs_failures + ch_failures + cg_failures != 0;
+    printf("colormap state connected: %d checks, %d failures\n", cs_checks + ch_checks, cs_failures + ch_failures);
+    return cs_failures + ch_failures != 0;
 }

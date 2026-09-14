@@ -2893,6 +2893,108 @@
         "Original op_rd_colormap_free symbol is retained; actual current/hardware setters are connected."
       ],
       "exceptions": []
+    },
+    {
+      "id": "colormap_load",
+      "module": "colormap_lifecycle",
+      "analysis_name": "colormap_load",
+      "purpose": "Allocate844 bytes, clear entire allocation before read-entry, return captured pointer for any nonzero reader result. Allocation/read failure follows common free(original pointer),NULL return. Focused allocator-NULL path uses non-dereferencing authored free observer only; actual free-entry dereferences its argument, so that path is not safe once real cleanup is connected. No defensive null behavior invented.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/colormap-light-lifecycle-acceptance.md",
+        "research/campaign-042-colormap-load/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/colormap_lifecycle_behavior.c",
+        "tests/colormap_behavior.c"
+      ],
+      "quirks": [
+        "No defensive behavior is added; original allocation-NULL colormap cleanup is outside connected execution."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "colormap_free_entry",
+      "module": "colormap_lifecycle",
+      "analysis_name": "colormap_free_entry",
+      "purpose": "Nonnull844-byte map. Release live first handle+334 then clear it after callback. Reload flags+20 and release live second handle+33c only if bit0 set and handle nonnull; clear after callback. First callback can activate/clear/replace second handle or flags; replacement of current handle is overwritten.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/colormap-light-lifecycle-acceptance.md",
+        "research/campaign-042-colormap-free-entry/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/colormap_lifecycle_behavior.c",
+        "tests/colormap_behavior.c"
+      ],
+      "quirks": [
+        "No defensive behavior is added; original allocation-NULL colormap cleanup is outside connected execution."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "light_new",
+      "module": "light",
+      "analysis_name": "light_new",
+      "purpose": "Cdecl zero-argument constructor. Allocate64;NULL returnsNULL. Otherwise init captured allocation, ignore initializer result, return captured allocation. Stale decompiler fastcall/phantom argument is rejected by stack evidence.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/colormap-light-lifecycle-acceptance.md",
+        "research/campaign-042-light-new/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/light_behavior.c"
+      ],
+      "quirks": [],
+      "exceptions": []
+    },
+    {
+      "id": "light_init",
+      "module": "light",
+      "analysis_name": "light_init",
+      "purpose": "Initialize observed fields in64-byte light and return1; preserve words+24,+28,+3c. Ordered integer/float constants match original stores. Fixture expected words independently include exact binary32 encodings for1.0 and0.2. Nonnull required.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/colormap-light-lifecycle-acceptance.md",
+        "research/campaign-042-light-init/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/light_behavior.c"
+      ],
+      "quirks": [],
+      "exceptions": []
+    },
+    {
+      "id": "light_free",
+      "module": "light",
+      "analysis_name": "light_free",
+      "purpose": "NULL-safe light release: call the actual empty inner cleanup, then release the same captured root. Connected authored fixtures preserve full guarded storage and verify the final root pointer.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/colormap-light-lifecycle-acceptance.md",
+        "research/campaign-042-light-free/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/light_behavior.c"
+      ],
+      "quirks": [],
+      "exceptions": []
+    },
+    {
+      "id": "light_free_inner",
+      "module": "light",
+      "analysis_name": "light_free_inner",
+      "purpose": "Observed empty cdecl body (push/mov/pop/ret), included to complete real light-free dependency chain. Parameter ignored; owned/null input and all storage unchanged. Cast-to-void avoids unused-parameter warnings without added code.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/colormap-light-lifecycle-acceptance.md",
+        "research/campaign-042-light-free-inner/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/light_behavior.c"
+      ],
+      "quirks": [],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

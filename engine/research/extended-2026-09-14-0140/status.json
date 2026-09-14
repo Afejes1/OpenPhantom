@@ -67,7 +67,7 @@
   "prior_window_new_exact_functions": 40,
   "prior_window_new_exact_bytes": 2736,
   "prior_window_promotions": 45,
-  "current_work": "Acceptance030: integrate full colormap cleanup/loading and light lifecycle from campaign042.",
+  "current_work": "Acceptance030 applied: full guarded colormap/extended-loader and light lifecycle tests under independent review.",
   "original_game_executed": false,
   "accepted_functions_current": 156,
   "evidence_records_current": 52,
