@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T08:54:15.730693+00:00",
+  "conclusion": "approved-six-exact",
+  "source_snapshots_verified": true,
+  "functions": [
+    {
+      "id": "platform_alloc_debug",
+      "address": 4808584,
+      "full_span_bytes": 17,
+      "candidate_size": 17,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 2916,
+      "team_status": "not_done",
+      "result": "research/campaign-059-platform-alloc-debug/result.json"
+    },
+    {
+      "id": "platform_free_debug",
+      "address": 4808601,
+      "full_span_bytes": 17,
+      "candidate_size": 17,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 2430,
+      "team_status": "not_done",
+      "result": "research/campaign-059-platform-free-debug/result.json"
+    },
+    {
+      "id": "platform_lock_identity",
+      "address": 4808639,
+      "full_span_bytes": 8,
+      "candidate_size": 8,
+      "verified_operands": 0,
+      "different_bytes": 0,
+      "checks": 1458,
+      "team_status": "not_done",
+      "result": "research/campaign-059-platform-lock-identity/result.json"
+    },
+    {
+      "id": "platform_realloc_debug",
+      "address": 4808618,
+      "full_span_bytes": 21,
+      "candidate_size": 21,
+      "verified_operands": 1,
+      "different_bytes": 0,
+      "checks": 3402,
+      "team_status": "not_done",
+      "result": "research/campaign-059-platform-realloc-debug/result.json"
+    },
+    {
+      "id": "platform_seconds",
+      "address": 4808977,
+      "full_span_bytes": 68,
+      "candidate_size": 68,
+      "verified_operands": 5,
+      "different_bytes": 0,
+      "checks": 22302,
+      "team_status": "not_done",
+      "result": "research/campaign-059-platform-seconds/result.json"
+    },
+    {
+      "id": "platform_ticks",
+      "address": 4808926,
+      "full_span_bytes": 51,
+      "candidate_size": 51,
+      "verified_operands": 5,
+      "different_bytes": 0,
+      "checks": 22302,
+      "team_status": "not_done",
+      "result": "research/campaign-059-platform-ticks/result.json"
+    }
+  ],
+  "observations": [
+    "All84 current snapshot inputs and12 final report hashes independently verified.",
+    "All182 complete bytes and13 operands match on first compile.",
+    "Static packet arithmetic and realloc operand offset corrected before candidate creation:13 total and realloc+12.",
+    "Heap fixtures preserve backing storage and pointer identity; timer cases establish branch capture, ignored QPC BOOL and live scale reload.",
+    "Stored binary32 expectations and finite dyadic vectors bound the numeric claim; PC53 round-nearest state is restored.",
+    "All54810 checks pass with native/Docker parity, no exclusions and no warning waivers."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "platform_realloc_debug",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural heap forwarding and signed64 high-resolution timer source",
+      "started_utc": "2026-09-14T08:47:22.376511+00:00",
+      "finished_utc": "2026-09-14T08:47:23.980559+00:00",
+      "returncode": 0,
+      "source_sha256": "effbd896d8c4ba9d6abcdda54ac377db150230361e7af33481041efaa41a8b75",
+      "report": "engine/build/campaign-001-platform_realloc_debug-d00b592251a3/research-result.json",
+      "report_sha256": "de6b5bf785157874b71ac8a0d83b7f36e98d77ec7e94c9bfd382762dd922c70f",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 21,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.380807,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T08:54:15.730693+00:00"
+}

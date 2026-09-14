@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "platform_lock_identity",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural heap forwarding and signed64 high-resolution timer source",
+      "started_utc": "2026-09-14T08:47:23.986849+00:00",
+      "finished_utc": "2026-09-14T08:47:25.578525+00:00",
+      "returncode": 0,
+      "source_sha256": "73e254921da40869a60d41cc6d956c40f7c57ced84cca2aa7e06111ca8b9b576",
+      "report": "engine/build/campaign-001-platform_lock_identity-4087b3c37b3b/research-result.json",
+      "report_sha256": "1410c97717c51b99adb97609f00a50f3aed73fcd7b823a7c40693bc87390aa7b",
+      "status": "raw-code-match",
+      "candidate_size": 8,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.370469,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T08:54:15.730693+00:00"
+}

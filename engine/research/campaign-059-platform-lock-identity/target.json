@@ -1,0 +1,14 @@
+{
+  "id": "platform_lock_identity",
+  "address": 4808639,
+  "size": 8,
+  "body_size": 8,
+  "source": "src/platform_lock_identity.c",
+  "symbol": "_op_platform_lock_identity",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

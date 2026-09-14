@@ -1,0 +1,21 @@
+{
+  "id": "platform_realloc_debug",
+  "address": 4808618,
+  "size": 21,
+  "body_size": 21,
+  "source": "src/platform_realloc_debug.c",
+  "symbol": "_op_platform_realloc_debug",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 12,
+      "address": 4834176,
+      "symbol": "_op_platform_heap_realloc",
+      "kind": "rel32-call"
+    }
+  ]
+}

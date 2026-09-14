@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "platform_free_debug",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Natural heap forwarding and signed64 high-resolution timer source",
+      "started_utc": "2026-09-14T08:47:20.755960+00:00",
+      "finished_utc": "2026-09-14T08:47:22.371084+00:00",
+      "returncode": 0,
+      "source_sha256": "ba8f6fec12d559c6322384856de7d16ba4921a4d6dc2bdb8ea15618f3d600977",
+      "report": "engine/build/campaign-001-platform_free_debug-900de02e4ef8/research-result.json",
+      "report_sha256": "b2e8e0430841f9a14e44abb8f3456abd85070cbd868512e562518c83a3953c0b",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 17,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.387913,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "frozen_utc": "2026-09-14T08:54:15.730693+00:00"
+}

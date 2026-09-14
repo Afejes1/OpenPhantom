@@ -1,0 +1,21 @@
+{
+  "id": "platform_free_debug",
+  "address": 4808601,
+  "size": 17,
+  "body_size": 17,
+  "source": "src/platform_free_debug.c",
+  "symbol": "_op_platform_free_debug",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 4834096,
+      "symbol": "_op_platform_heap_free",
+      "kind": "rel32-call"
+    }
+  ]
+}

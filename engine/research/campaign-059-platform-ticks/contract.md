@@ -1,0 +1,5 @@
+# platform_ticks
+
+No-argument timer reads high-resolution flag before callback. Fallback time callback returns unsigned32. Ticks transports fallback bits as int; high-resolution uses signed64 times the live double scale then original ftol. Seconds widens fallback unsigned32 before division by1000 and returns through ST0; the fixture checks caller-stored binary32, not extended precision equivalence. QPC BOOL is ignored, counter storage is candidate-owned and written by the authored callback; scales are loaded after it. Fixtures vary branch flags, callbacks returning -1/0/1, flag and scale mutation, high-bit fallback words and finite dyadic signed64 vectors. Masked PC53 round-nearest is restored afterward. NaN, overflow, arbitrary counter write widths and concurrent observation are outside this bounded contract.
+
+Independent static review confirms complete extents without tails. The service installer corroborates heap roles; timer callers consume the integer/float results. Original constant1000 and initial scales1.0 verified read-only. No game execution, byte exclusions or warning waivers. Shared acceptance and whole-executable identity remain separate.

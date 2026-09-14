@@ -1,0 +1,45 @@
+{
+  "id": "platform_ticks",
+  "address": 4808926,
+  "size": 51,
+  "body_size": 51,
+  "source": "src/platform_ticks.c",
+  "symbol": "_op_platform_ticks",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 8790120,
+      "symbol": "_op_platform_highres",
+      "kind": "dir32"
+    },
+    {
+      "offset": 17,
+      "address": 9180856,
+      "symbol": "_op_platform_time_get_time",
+      "kind": "dir32"
+    },
+    {
+      "offset": 29,
+      "address": 9180520,
+      "symbol": "_op_platform_query_counter",
+      "kind": "dir32"
+    },
+    {
+      "offset": 38,
+      "address": 4957000,
+      "symbol": "_op_platform_millisecond_scale",
+      "kind": "dir32"
+    },
+    {
+      "offset": 43,
+      "address": 4826188,
+      "symbol": "__ftol",
+      "kind": "rel32-call"
+    }
+  ]
+}
