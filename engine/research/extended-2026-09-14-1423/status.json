@@ -16,12 +16,12 @@
     "module_install"
   ],
   "ownership": "Parent sole source/Git writer; existing independent reviewer reads only.",
-  "current_work": "A048accepted; C069shutdown and genericdispatcher focusedexact verification/review underway.",
+  "current_work": "A049accepted; C070four exact path helpers and one layout-research case under focused review.",
   "focused_new_exact": 3,
   "acceptance_pending": "research/acceptance-048/result.json",
-  "accepted_new": 4,
-  "accepted_current": 277,
-  "evidence_event_current": 71,
-  "remaining_current": 674,
-  "local_team_not_done_current": 269
+  "accepted_new": 6,
+  "accepted_current": 279,
+  "evidence_event_current": 72,
+  "remaining_current": 672,
+  "local_team_not_done_current": 271
 }

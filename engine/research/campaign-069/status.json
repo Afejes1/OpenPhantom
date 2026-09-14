@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "exact-integration-review",
+  "status": "accepted",
   "started_utc": "2026-09-14T14:45:18.495998+00:00",
   "deadline_utc": "2026-09-14T15:30:18.495998+00:00",
   "functions": [
@@ -13,5 +13,7 @@
   "verified_operands": 7,
   "fixture_checks": 1411200,
   "implementation_compiles": 5,
-  "acceptance": "research/acceptance-049/result.json"
+  "acceptance": "research/acceptance-049/result.json",
+  "accepted_event": "engine/evidence/runs/000072-5e9f90fc82fc4da0.json",
+  "completed_utc": "2026-09-14T15:12:29.813924+00:00"
 }

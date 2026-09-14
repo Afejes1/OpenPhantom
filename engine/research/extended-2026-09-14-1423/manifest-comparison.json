@@ -4,15 +4,15 @@
     "manifest_functions": 2241,
     "team_reported_done": 1298,
     "team_reported_not_done": 943,
-    "local_accepted": 277,
-    "local_within_team_not_done": 269,
+    "local_accepted": 279,
+    "local_within_team_not_done": 271,
     "local_overlapping_team_done": 8,
-    "remaining_if_team_claims_are_correct": 674,
-    "combined_covered_if_team_claims_are_correct": 1567
+    "remaining_if_team_claims_are_correct": 672,
+    "combined_covered_if_team_claims_are_correct": 1569
   },
   "local_match_categories": {
     "raw-code-match": 31,
-    "relocation-adjusted-match": 246
+    "relocation-adjusted-match": 248
   },
   "team_source_independently_verified": false,
   "whole_executable_match": false,
@@ -15181,11 +15181,11 @@
       "team_reported_file": "util/module.c",
       "team_reported_name": "module_shutdownAll",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "module_shutdown_all",
+      "local_source": "src/module_shutdown_all.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x0046EC85",
@@ -15324,11 +15324,11 @@
       "team_reported_file": "util/module.c",
       "team_reported_name": "module_broadcast",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "module_broadcast",
+      "local_source": "src/module_broadcast.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x0046F4A9",
@@ -24674,10 +24674,10 @@
     "manifest": "engine/planning/team-manifest-20260912-1849.json",
     "manifest_sha256": "3c26a8b5f62424864513ffb20dfb644fa582d19600cd2f98bbfd7eca71dfee1f",
     "contributor_attachment_sha256": "0b6de70dfa6b872725cbb8cc4fd14fc71316a2ec28ef9e1dec5762577046592b",
-    "accepted_event": "engine/evidence/runs/000071-d3e2e5509935e222.json",
-    "accepted_event_sha256": "f28121751fad1047173849f6565717747bea7d69858f53fee4128cf7e6e327f3",
-    "source_commit": "14f81651f7b5228aefa949a5802440942dc3facb",
-    "build_id": "20260914-104301-f33c874f",
+    "accepted_event": "engine/evidence/runs/000072-5e9f90fc82fc4da0.json",
+    "accepted_event_sha256": "17a88b2defb5462a5e7ff92ba0387670b085b970ee88a4ed55f436be201f3a10",
+    "source_commit": "a1c4a202882effd4a351b6e9308b4bd6c8db6bbb",
+    "build_id": "20260914-105902-c0326795",
     "generator_sha256": "9eeb04c352a48d09f795f4101f5b169dabdc41af21cdb9cc4e2b2956d942845a"
   }
 }

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "acceptance-049",
-  "baseline_commit": "63be5d5",
+  "baseline_commit": "63be5d59dc8b9679d01647e0368b2abbdf85a30a",
   "functions": [
     "module_shutdown_all",
     "module_broadcast"
@@ -11,11 +11,21 @@
   "registered_after": 279,
   "full_span_bytes": 351,
   "verified_operands": 7,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 2,
   "team_reported_done": 0,
   "manifest": "planning/team-manifest-20260912-1849.json",
   "original_game_executed": false,
   "byte_exclusions": [],
-  "warning_waivers": []
+  "warning_waivers": [],
+  "accepted_event": "engine/evidence/runs/000072-5e9f90fc82fc4da0.json",
+  "source_commit": "a1c4a202882effd4a351b6e9308b4bd6c8db6bbb",
+  "build_id": "20260914-105902-c0326795",
+  "source_snapshot_inputs": 476,
+  "every_source_input_matches_committed_git_blob": true,
+  "retained_focused_checks": 1411200,
+  "actual_dispatcher_connected_to_save_chain": true,
+  "independent_review": "comparison_inventory approved include-only bodies, unchanged prior277entries, active release routing and real save-chain callback with preserved prior stages and restored globals.",
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34859182815",
+  "supplemental_ci_conclusion": "success"
 }
