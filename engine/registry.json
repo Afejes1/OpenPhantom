@@ -6324,6 +6324,120 @@
         "Finite dyadic conversion domain; invalid and out-of-range floating conversions are not claimed."
       ],
       "exceptions": []
+    },
+    {
+      "id": "console_put_char",
+      "module": "console-text",
+      "analysis_name": "console_put_char",
+      "purpose": "Write one character after any needed low16attribute update.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-skills-acceptance.md",
+        "research/campaign-086-console-put-char/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/console_text_behavior.c"
+      ],
+      "quirks": [
+        "All focused matrices are retained; actual already accepted callees are linked.",
+        "Callback order, live state and full object/context snapshots are verified."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "console_put_string",
+      "module": "console-text",
+      "analysis_name": "console_put_string",
+      "purpose": "Write the live string after any needed attribute callback.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-skills-acceptance.md",
+        "research/campaign-086-console-put-string/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/console_text_behavior.c"
+      ],
+      "quirks": [
+        "All focused matrices are retained; actual already accepted callees are linked.",
+        "Callback order, live state and full object/context snapshots are verified."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "console_box_clear",
+      "module": "console-text",
+      "analysis_name": "console_box_clear",
+      "purpose": "Fill the inner console buffer with spaces and reset cursor words.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-skills-acceptance.md",
+        "research/campaign-086-console-box-clear/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/console_text_behavior.c"
+      ],
+      "quirks": [
+        "All focused matrices are retained; actual already accepted callees are linked.",
+        "Callback order, live state and full object/context snapshots are verified."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "console_box_clear_row",
+      "module": "console-text",
+      "analysis_name": "console_box_clear_row",
+      "purpose": "Fill one owned console box row using the inner width.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-skills-acceptance.md",
+        "research/campaign-086-console-box-clear-row/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/console_text_behavior.c"
+      ],
+      "quirks": [
+        "All focused matrices are retained; actual already accepted callees are linked.",
+        "Callback order, live state and full object/context snapshots are verified."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "skills_save",
+      "module": "skills-state",
+      "analysis_name": "skills_save",
+      "purpose": "Write the skills-state chunk and return the helper result as a boolean.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-skills-acceptance.md",
+        "research/campaign-087-skills-save/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/skills_io_behavior.c"
+      ],
+      "quirks": [
+        "All focused matrices are retained; actual already accepted callees are linked.",
+        "Callback order, live state and full object/context snapshots are verified."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "skills_restore",
+      "module": "skills-state",
+      "analysis_name": "skills_restore",
+      "purpose": "Restore skills state for mode2 and preserve the observed zero-success convention.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/console-skills-acceptance.md",
+        "research/campaign-087-skills-restore/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/skills_io_behavior.c"
+      ],
+      "quirks": [
+        "All focused matrices are retained; actual already accepted callees are linked.",
+        "Callback order, live state and full object/context snapshots are verified."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

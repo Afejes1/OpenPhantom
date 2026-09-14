@@ -42,8 +42,8 @@ static void c840_heap_free(void *ptr)
     {
         c840_input->buffer = &c840_bytes[7];
         c840_expected_boxes[c840_input == &c840_boxes[1].box].box.buffer = &c840_bytes[7];
-        c840_input->tail[3] = 0x71;
-        c840_expected_boxes[c840_input == &c840_boxes[1].box].box.tail[3] = 0x71;
+        c840_input->unknown7c[3] = 0x71;
+        c840_expected_boxes[c840_input == &c840_boxes[1].box].box.unknown7c[3] = 0x71;
     }
     ++c840_calls;
 }

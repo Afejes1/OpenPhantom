@@ -151,6 +151,8 @@ static void clip_flag_tests(void)
 #include "console_behavior.c"
 #include "console_control_behavior.c"
 #include "audio_level_behavior.c"
+#include "console_text_behavior.c"
+#include "skills_io_behavior.c"
 #include "kernel_behavior.c"
 #include "video_behavior.c"
 #include "debug_behavior.c"
@@ -400,6 +402,13 @@ int main(void)
     failures += op_test_console_clear_row();
     failures += op_test_music_set_volume();
     failures += op_test_audio_set_pan();
+    failures += op_test_console_put_char();
+    failures += op_test_console_put_string();
+    failures += op_test_console_box_clear();
+    failures += op_test_console_box_clear_row();
+    failures += op_test_skills_save();
+    failures += op_test_skills_restore();
+
 
     failures += op_test_kernel_show();
     failures += op_test_kernel_hide();

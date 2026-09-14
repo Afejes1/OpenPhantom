@@ -1,0 +1,39 @@
+{
+  "id": "console_put_string",
+  "address": 4769586,
+  "size": 83,
+  "body_size": 83,
+  "source": "src/console_put_string.c",
+  "symbol": "_op_console_put_string",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 9,
+      "address": 8784768,
+      "symbol": "_op_console_current_attr",
+      "kind": "dir32"
+    },
+    {
+      "offset": 32,
+      "address": 4769311,
+      "symbol": "_op_console_set_attr",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 67,
+      "address": 8809080,
+      "symbol": "_op_console_output",
+      "kind": "dir32"
+    },
+    {
+      "offset": 74,
+      "address": 9180576,
+      "symbol": "_op_console_write",
+      "kind": "dir32"
+    }
+  ]
+}

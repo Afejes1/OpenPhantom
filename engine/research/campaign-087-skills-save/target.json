@@ -1,0 +1,27 @@
+{
+  "id": "skills_save",
+  "address": 4554387,
+  "size": 42,
+  "body_size": 42,
+  "source": "src/skills_save.c",
+  "symbol": "_op_skills_save",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 8859360,
+      "symbol": "_op_skills_state",
+      "kind": "dir32"
+    },
+    {
+      "offset": 20,
+      "address": 4529261,
+      "symbol": "_op_save_write_chunk",
+      "kind": "rel32-call"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "console_put_string",
+  "candidate": "candidate.c",
+  "symbol": "_op_console_put_string",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c",
+    "set_attr_support.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

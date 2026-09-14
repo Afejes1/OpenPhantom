@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "status": "exact-subset-integration-review",
+  "started_utc": "2026-09-14T20:12:01.530692+00:00",
+  "deadline_utc": "2026-09-14T20:52:01.530692+00:00",
+  "preparation_started_utc": "2026-09-14T20:06:00Z",
+  "functions": [
+    "skills_save",
+    "skills_restore",
+    "skills_effective"
+  ],
+  "deferred": "skills_tick457FC5 preparation only; reserve shared acceptance beforeC086deadline20:42:28.",
+  "acceptance": "research/acceptance-060/result.json"
+}

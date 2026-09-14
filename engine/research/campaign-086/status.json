@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "status": "exact-subset-integration-review",
+  "started_utc": "2026-09-14T20:02:28.359026+00:00",
+  "deadline_utc": "2026-09-14T20:42:28.359026+00:00",
+  "preparation_started_utc": "2026-09-14T19:55:00Z",
+  "functions": [
+    "console_put_char",
+    "console_put_string",
+    "console_box_clear",
+    "console_box_clear_row"
+  ],
+  "full_span_bytes_exact": 277,
+  "verified_operands_exact": 8,
+  "raw_functions": 2,
+  "focused_checks": 200992,
+  "implementation_compiles": 4,
+  "acceptance": "research/acceptance-060/result.json"
+}

@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "skills_restore",
+  "started_utc": "2026-09-14T20:12:01.530692+00:00",
+  "implementation_cutoff_utc": "2026-09-14T20:27:01.530692+00:00",
+  "deadline_utc": "2026-09-14T20:52:01.530692+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial skills serialization and effective-difficulty source with actual save support",
+      "started_utc": "2026-09-14T20:12:03.575204+00:00",
+      "finished_utc": "2026-09-14T20:12:05.240025+00:00",
+      "returncode": 0,
+      "source_sha256": "c9d57cb77c45ff312ad8be2e3e491e4f8201261ab5e3cabc8b5c9fa7f24bc923",
+      "report": "engine/build/campaign-001-skills_restore-0785861703fd/research-result.json",
+      "report_sha256": "6e4706b55b1d1e52cfc7035efe1300fdaec14c1ab74f35d8a0792acdffca8605",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 49,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.434556,
+      "stderr": ""
+    }
+  ]
+}

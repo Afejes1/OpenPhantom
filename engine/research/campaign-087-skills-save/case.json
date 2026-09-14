@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "skills_save",
+  "candidate": "candidate.c",
+  "symbol": "_op_skills_save",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c",
+    "save_write_chunk_support.c",
+    "save_write_support.c",
+    "save_write_raw_support.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

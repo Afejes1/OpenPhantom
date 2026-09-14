@@ -1,0 +1,14 @@
+{
+  "id": "console_box_clear",
+  "address": 4769669,
+  "size": 67,
+  "body_size": 67,
+  "source": "src/console_box_clear.c",
+  "symbol": "_op_console_box_clear",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": []
+}

@@ -15,4 +15,6 @@ extern int op_skills_active_index, op_skills_previous_index;
 void op_skills_new_game(void);
 void op_skills_easier(void);
 void op_skills_harder(void);
+int op_skills_save(int);
+int op_skills_restore(int);
 #endif

@@ -269,6 +269,7 @@ void op_get_fog_range(float *start, float *end)
 }
 int op_save_header(int context, int bytes, unsigned short kind)
 {
+    if(skio_active)return skio_header(context,bytes,kind);
     if(sv_active)return sv_header(context,bytes,kind);
     EC_CHECK(ec_mode == EC_STREAM && ec_stage++ == 2);
     EC_CHECK(context == -73 && bytes == 128 + 52 * ec_rows && kind == 0x103);

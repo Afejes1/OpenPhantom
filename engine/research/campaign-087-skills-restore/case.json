@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "skills_restore",
+  "candidate": "candidate.c",
+  "symbol": "_op_skills_restore",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c",
+    "save_read_support.c",
+    "save_read_raw_support.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "reviewer": "comparison_inventory",
+  "model": "gpt-5.6-sol",
+  "mode": "read-only",
+  "reviewed_utc": "2026-09-14T20:23:48.395989+00:00",
+  "conclusion": "two-exact-approved-one-research",
+  "final_receipt_review": "All47 snapshots and6 selected reports match; five supportbodies include-only canonical copies. Save/restore91bytes,4operands,70560checks. Correctreturnpolarity, live streams, exact216-byte state reads, errorcallbacks and stateoracles verified. Effective remains13/156 research with22400checks, bestattempt3 after8attempts andfiveconsecutivenonimprovements.",
+  "integration_review": {
+    "conclusion": "approved",
+    "details": "Six include-onlycanonical bodies; prior333 unchanged\u2192339;271552checks retained through actualsetAttr/savechains; unique scopedexternalroutes withstream/context restoration; boxrefinement retains byte7F semantics; main/CMakeonce. Four dispatchdefaults corrected toexplicitfailurecounters andreachable return; final narrowreview andVC5compile passed."
+  }
+}

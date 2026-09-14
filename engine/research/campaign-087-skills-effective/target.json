@@ -1,0 +1,36 @@
+{
+  "id": "skills_effective",
+  "address": 4554532,
+  "size": 156,
+  "body_size": 156,
+  "source": "src/skills_effective.c",
+  "symbol": "_op_skills_effective",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 7,
+      "address": 8859360,
+      "symbol": "_op_skills_state",
+      "kind": "dir32",
+      "addend": 192
+    },
+    {
+      "offset": 16,
+      "address": 8859360,
+      "symbol": "_op_skills_state",
+      "kind": "dir32",
+      "addend": 40
+    },
+    {
+      "offset": 25,
+      "address": 8859360,
+      "symbol": "_op_skills_state",
+      "kind": "dir32",
+      "addend": 28
+    }
+  ]
+}

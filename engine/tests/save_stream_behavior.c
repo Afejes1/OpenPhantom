@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <string.h>
 #include <limits.h>
+static int skio_active;
+static int skio_header(int,int,unsigned short);
+static int skio_file_write(const void *,unsigned int,unsigned int,void *);
+static int skio_file_read(void *,unsigned int,unsigned int,void *);
+static void skio_error_begin(void *);
+static int skio_error_notify(int,int,int,const char *,int);
+static void skio_error_end(void *);
 static int sv_checks, sv_failures;
 static void sv_check(int ok, int line)
 {
@@ -73,6 +80,7 @@ static void sv_check_legacy(void)
 }
 int op_save_file_write(const void *data, unsigned int bytes, unsigned int count, void *stream)
 {
+    if(skio_active)return skio_file_write(data,bytes,count,stream);
     if (!sv_active)
     {
         sv_check_legacy();
@@ -93,6 +101,7 @@ int op_save_file_write(const void *data, unsigned int bytes, unsigned int count,
 int op_save_file_read(void *data, unsigned int bytes, unsigned int count, void *stream)
 {
     int result;
+    if(skio_active)return skio_file_read(data,bytes,count,stream);
     if (!sv_active)
     {
         sv_check_legacy();
@@ -129,6 +138,7 @@ static int sv_header(int context, int bytes, unsigned short kind)
 }
 void op_save_error_begin(void *context)
 {
+    if(skio_active){skio_error_begin(context);return;}
     SV_CHECK(sv_active && sv_answers[sv_answer] == 0 && sv_stage == (sv_mode == 4 ? 2 : 1) &&
              context == op_save_error_context);
     sv_verify();
@@ -137,6 +147,7 @@ void op_save_error_begin(void *context)
 }
 int op_save_error_notify(int code, int value, int zero, const char *text, int flags)
 {
+    if(skio_active)return skio_error_notify(code,value,zero,text,flags);
     SV_CHECK(sv_active && sv_stage == (sv_mode == 4 ? 3 : 2) && code == 17 && value == -1 && zero == 0 &&
              text == op_save_failure_text && flags == 3840);
     sv_verify();
@@ -147,6 +158,7 @@ int op_save_error_notify(int code, int value, int zero, const char *text, int fl
 }
 void op_save_error_end(void *context)
 {
+    if(skio_active){skio_error_end(context);return;}
     SV_CHECK(sv_active && sv_stage == (sv_mode == 4 ? 4 : 3) && context == op_save_error_context);
     sv_verify();
     op_save_error_context[107] = sv_expected_context[107] = 0x23;

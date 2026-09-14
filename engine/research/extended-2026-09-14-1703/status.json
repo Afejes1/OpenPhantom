@@ -16,10 +16,12 @@
     "console_put_char",
     "console_put_string",
     "console_box_clear",
-    "console_box_clear_row"
+    "console_box_clear_row",
+    "skills_save",
+    "skills_restore"
   ],
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A059 accepted six console/audio controls; C086four first-attempt exact text/buffer functions are in focused verification.",
+  "current_work": "A060 integrating four console text/buffer and two skills IO functions; effective difficulty remains capped research.",
   "heartbeat_status": "ACTIVE",
-  "acceptance_pending": null
+  "acceptance_pending": "acceptance-060"
 }

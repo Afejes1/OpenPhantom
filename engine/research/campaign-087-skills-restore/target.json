@@ -1,0 +1,27 @@
+{
+  "id": "skills_restore",
+  "address": 4554429,
+  "size": 49,
+  "body_size": 49,
+  "source": "src/skills_restore.c",
+  "symbol": "_op_skills_restore",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 22,
+      "address": 8859360,
+      "symbol": "_op_skills_state",
+      "kind": "dir32"
+    },
+    {
+      "offset": 27,
+      "address": 4529328,
+      "symbol": "_op_save_read",
+      "kind": "rel32-call"
+    }
+  ]
+}
