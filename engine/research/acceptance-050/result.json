@@ -14,7 +14,7 @@
   "full_span_bytes": 390,
   "verified_operands": 3,
   "raw_functions": 1,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 4,
   "team_reported_done": 0,
   "manifest": "planning/team-manifest-20260912-1849.json",
@@ -35,5 +35,17 @@
       "failed_receipt": null,
       "retained_diagnostic": "First targeted compile reported C2084 for pfi_check and pfi_verify already defined in palette_resources_behavior.c. The private helper overwrote its JSON on the passing retry; this note preserves the tool-reported failure, not a separate original receipt."
     }
-  ]
+  ],
+  "accepted_event": "engine/evidence/runs/000073-37bfebdbc1b0c831.json",
+  "source_commit": "c97aea49f7059ba630cda3e30a3b8f6f06b2e1f2",
+  "build_id": "20260914-111923-7c28bc7f",
+  "source_snapshot_inputs": 482,
+  "every_source_input_matches_committed_git_blob": true,
+  "retained_focused_checks": 454567,
+  "shared_matrix_checks": 462082,
+  "shared_routing_additional_checks": 7515,
+  "unaccepted_separator_fixture_checks": 156240,
+  "independent_review": "comparison_inventory approved include-only bodies, unchanged prior 279 entries, connected extension/file helpers and scoped uppercase/search routing. Separator remains unaccepted research test support.",
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34861418643",
+  "supplemental_ci_conclusion": "success"
 }
