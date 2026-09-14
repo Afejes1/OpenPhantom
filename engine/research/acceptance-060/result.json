@@ -16,7 +16,7 @@
   "full_span_bytes": 368,
   "verified_operands": 12,
   "raw_functions": 2,
-  "status": "integration-pending",
+  "status": "accepted",
   "team_not_done": 6,
   "team_reported_done": 0,
   "manifest": "planning/team-manifest-20260912-1849.json",
@@ -25,5 +25,14 @@
   "original_game_executed": false,
   "byte_exclusions": [],
   "warning_waivers": [],
-  "precommit_review_correction": "Four nonvoid external-observer dispatch defaults used exit(2);return0, risking modernC4702. Replaced with explicit failures in both IO matrix counters thenreturn0; targetedVC5 recompile passed. No canonical candidate, target or oracle expectation changed."
+  "precommit_review_correction": "Four nonvoid external-observer dispatch defaults used exit(2);return0, risking modernC4702. Replaced with explicit failures in both IO matrix counters thenreturn0; targetedVC5 recompile passed. No canonical candidate, target or oracle expectation changed.",
+  "accepted_event": "engine/evidence/runs/000083-7bd583582e27b2c5.json",
+  "source_commit": "9423db2917b860d6ec21267d1bdc44dd9c8caa1b",
+  "build_id": "20260914-162433-8d53825d",
+  "source_snapshot_inputs": 564,
+  "every_source_input_matches_committed_git_blob": true,
+  "shared_matrix_checks": 271552,
+  "independent_review": "comparison_inventory approved selected focused reports and snapshots, actual setAttr/save callees, full-object matrices, live callbacks and precommit observer dispatch correction.",
+  "supplemental_ci_url": "https://github.com/Afejes1/OpenPhantom/actions/runs/34892725257",
+  "supplemental_ci_conclusion": "success"
 }

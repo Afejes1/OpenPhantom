@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "exact-subset-integration-review",
+  "status": "accepted",
   "started_utc": "2026-09-14T20:12:01.530692+00:00",
   "deadline_utc": "2026-09-14T20:52:01.530692+00:00",
   "preparation_started_utc": "2026-09-14T20:06:00Z",
@@ -10,5 +10,7 @@
     "skills_effective"
   ],
   "deferred": "skills_tick457FC5 preparation only; reserve shared acceptance beforeC086deadline20:42:28.",
-  "acceptance": "research/acceptance-060/result.json"
+  "acceptance": "research/acceptance-060/result.json",
+  "accepted_event": "engine/evidence/runs/000083-7bd583582e27b2c5.json",
+  "completed_utc": "2026-09-14T20:34:30.686540+00:00"
 }
