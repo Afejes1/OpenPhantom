@@ -21,5 +21,7 @@
       "elapsed_seconds": 1.518202,
       "stderr": ""
     }
-  ]
+  ],
+  "selected_attempt": 1,
+  "verification_attempts": 1
 }

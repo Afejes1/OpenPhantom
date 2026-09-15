@@ -1,6 +1,6 @@
 id,address,source,complete_bytes,verified_operands,category,acceptance_event,accepted_source_commit,accepted_build_id,focused_checks,selected_worker_attempt
-advance_runtime_fixed_steps,0x004756FC,src/advance_runtime_fixed_steps.c,302,36,relocation-adjusted-match,87,5839d02485eff5b59e89067874cdd4e8d14b2794,20260914-193642-dff17c0a,93808,
-pace_frame_clock,0x00475B75,src/pace_frame_clock.c,108,11,relocation-adjusted-match,88,73d3081d13921ce8bc2b3d028eda7a74333923cd,20260914-201101-6cf63fe2,30696,
+advance_runtime_fixed_steps,0x004756FC,src/advance_runtime_fixed_steps.c,302,36,relocation-adjusted-match,87,5839d02485eff5b59e89067874cdd4e8d14b2794,20260914-193642-dff17c0a,93808,2
+pace_frame_clock,0x00475B75,src/pace_frame_clock.c,108,11,relocation-adjusted-match,88,73d3081d13921ce8bc2b3d028eda7a74333923cd,20260914-201101-6cf63fe2,30696,1
 audio_get_spatial,0x00496BCD,src/audio_get_spatial.c,46,1,relocation-adjusted-match,89,bdb00bd62f3b19b1f5bc9a5b94c6476158ba779e,20260914-203242-b1f57736,48640,2
 audio_duplicate,0x00496BFB,src/audio_duplicate.c,64,3,relocation-adjusted-match,89,bdb00bd62f3b19b1f5bc9a5b94c6476158ba779e,20260914-203242-b1f57736,32640,2
 audio_shutdown,0x004969DF,src/audio_shutdown.c,103,11,relocation-adjusted-match,89,bdb00bd62f3b19b1f5bc9a5b94c6476158ba779e,20260914-203242-b1f57736,47360,2

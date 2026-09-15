@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "status": "preparation-only-no-source-attempt",
+  "verified_utc": "2026-09-15T01:04:53.500017+00:00",
+  "address": "0x496ca0",
+  "end_exclusive": "0x496d35",
+  "full_span_bytes": 149,
+  "body_bytes": 149,
+  "trailing_alignment_bytes": 0,
+  "team_manifest": {
+    "address": 4811936,
+    "reported_file": "std/stdsound.c",
+    "reported_name": "stdsound_setBufferVolume",
+    "reported_status": "not_done",
+    "source_line": 2201
+  },
+  "abi": "void __cdecl(OP_AUDIO_BUFFER *, float)",
+  "caller": "004106CC pushes float then buffer and cleans8 stack bytes",
+  "bindings": [
+    {
+      "offset": 15,
+      "address": "0x862074",
+      "symbol": "_op_audio_gate_word",
+      "kind": "dir32"
+    },
+    {
+      "offset": 36,
+      "address": "0x4a9474",
+      "float32": 0.0
+    },
+    {
+      "offset": 49,
+      "address": "0x4a9468",
+      "float32": 1.0
+    },
+    {
+      "offset": 58,
+      "address": "0x4a9468",
+      "float32": 1.0
+    },
+    {
+      "offset": 69,
+      "address": "0x4a9478",
+      "float32": -2500.0
+    },
+    {
+      "offset": 74,
+      "address": "0x49a44c",
+      "symbol": "__ftol",
+      "kind": "rel32-call"
+    }
+  ],
+  "observed_behavior": [
+    "Initialize raw integer volume0 before gate.",
+    "If unsigned device gate word00862074 is zero, return before dereferencing buffer.",
+    "Set raw volume-10000. For input>0, truncate (1-input)^2*-2500 through original __ftol.",
+    "Evaluate but discard clamp[-9999,-1]. Pass original raw integer to buffer vtable3C; ignore HRESULT."
+  ],
+  "fixture_plan": [
+    "Negative values and signed zero produce-10000.",
+    "Finite positive dyadics and one-ULP neighbors around1 test fractional truncation and raw0.",
+    "Values beyond the nominal clamp test that the clamp result remains discarded.",
+    "Gate0 permits null buffer; gate1 uses guarded owned buffer/vtable; assert callbacks, HRESULT classes, exact snapshots and planned mutations.",
+    "Exclude nonfinite or out-of-signed-range conversion cases from authored execution."
+  ],
+  "integration_notes": [
+    "C006 caller at004106CC uses legacy alias _op_music_apply_volume for this address. It is research, not an accepted caller.",
+    "C006 id/symbol music_set_volume is not the same function as current accepted music_set_volume at00495C6F. Reconcile by original address and preserve all historical receipts before integration.",
+    "Parent independently rechecked the original instructions and PE operands after reviewer preparation. No source or fixture was written for this target."
+  ]
+}

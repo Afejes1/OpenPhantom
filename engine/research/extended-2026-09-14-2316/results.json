@@ -3,7 +3,7 @@
   "started_utc": "2026-09-14T23:16:41+00:00",
   "report_generated_utc": "2026-09-15T00:59:56.543153+00:00",
   "deadline_utc": "2026-09-15T01:16:41Z",
-  "elapsed_minutes": 103.26,
+  "elapsed_minutes": 116.0,
   "baseline_accepted": 347,
   "accepted_total": 354,
   "new_accepted_count": 7,
@@ -19,7 +19,7 @@
       "accepted_source_commit": "5839d02485eff5b59e89067874cdd4e8d14b2794",
       "accepted_build_id": "20260914-193642-dff17c0a",
       "focused_checks": 93808,
-      "selected_worker_attempt": null,
+      "selected_worker_attempt": 2,
       "reference_span_sha256": "fb6291ddf38d2a246e0db2d434489d9008114149312a07f3ccbeb7299fd9868e",
       "resolved_span_sha256": "fb6291ddf38d2a246e0db2d434489d9008114149312a07f3ccbeb7299fd9868e",
       "byte_exclusions": []
@@ -35,7 +35,7 @@
       "accepted_source_commit": "73d3081d13921ce8bc2b3d028eda7a74333923cd",
       "accepted_build_id": "20260914-201101-6cf63fe2",
       "focused_checks": 30696,
-      "selected_worker_attempt": null,
+      "selected_worker_attempt": 1,
       "reference_span_sha256": "2a14501a65c2b0779d44c5293029c1f1ae85926bc7e1ac409f3108601b133ee4",
       "resolved_span_sha256": "2a14501a65c2b0779d44c5293029c1f1ae85926bc7e1ac409f3108601b133ee4",
       "byte_exclusions": []
@@ -182,5 +182,7 @@
   "original_game_executed": false,
   "byte_exclusions": [],
   "warning_waivers": [],
-  "whole_executable_identity": false
+  "whole_executable_identity": false,
+  "completed_utc": "2026-09-15T01:12:41.1329093+00:00",
+  "heartbeat_status": "PAUSED"
 }

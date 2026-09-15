@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "inventory_utc": "2026-09-15T01:08:44.114591+00:00",
+  "reviewer": "/root/comparison_inventory",
+  "scope": "Historical focused exact claims, not freshly reproduced or acceptance-ready.",
+  "functions": [
+    {
+      "address": "0x004106CC",
+      "historical_id": "music_set_volume",
+      "historical_case": "research/campaign-006-music-set-volume",
+      "reported_complete_bytes": 115,
+      "historical_reported_status": "relocation-adjusted-match",
+      "currently_accepted": false,
+      "team_status": "not_done",
+      "accepted_id_collision_address": "0x00495C6F",
+      "requires": "Fresh complete-span, source/API, symbol and oracle review. Preserve all historical receipts and caps; do not count as accepted."
+    },
+    {
+      "address": "0x0041073F",
+      "historical_id": "music_get_volume",
+      "historical_case": "research/campaign-005-music-volume",
+      "reported_complete_bytes": 11,
+      "historical_reported_status": "relocation-adjusted-match",
+      "currently_accepted": false,
+      "team_status": "not_done",
+      "accepted_id_collision_address": null,
+      "requires": "Fresh complete-span, source/API, symbol and oracle review. Preserve all historical receipts and caps; do not count as accepted."
+    },
+    {
+      "address": "0x004107B5",
+      "historical_id": "music_get_state",
+      "historical_case": "research/campaign-005-music-state",
+      "reported_complete_bytes": 26,
+      "historical_reported_status": "relocation-adjusted-match",
+      "currently_accepted": false,
+      "team_status": "not_done",
+      "accepted_id_collision_address": null,
+      "requires": "Fresh complete-span, source/API, symbol and oracle review. Preserve all historical receipts and caps; do not count as accepted."
+    },
+    {
+      "address": "0x004107CF",
+      "historical_id": "music_get_sequence",
+      "historical_case": "research/campaign-005-music-sequence",
+      "reported_complete_bytes": 26,
+      "historical_reported_status": "relocation-adjusted-match",
+      "currently_accepted": false,
+      "team_status": "not_done",
+      "accepted_id_collision_address": null,
+      "requires": "Fresh complete-span, source/API, symbol and oracle review. Preserve all historical receipts and caps; do not count as accepted."
+    },
+    {
+      "address": "0x0041074A",
+      "historical_id": "music_save_cached_ids",
+      "historical_case": "research/campaign-005-music-save",
+      "reported_complete_bytes": 61,
+      "historical_reported_status": "relocation-adjusted-match",
+      "currently_accepted": false,
+      "team_status": "not_done",
+      "accepted_id_collision_address": null,
+      "requires": "Fresh complete-span, source/API, symbol and oracle review. Preserve all historical receipts and caps; do not count as accepted."
+    },
+    {
+      "address": "0x00410787",
+      "historical_id": "music_restore_cached_ids",
+      "historical_case": "research/campaign-005-music-restore",
+      "reported_complete_bytes": 46,
+      "historical_reported_status": "relocation-adjusted-match",
+      "currently_accepted": false,
+      "team_status": "not_done",
+      "accepted_id_collision_address": null,
+      "requires": "Fresh complete-span, source/API, symbol and oracle review. Preserve all historical receipts and caps; do not count as accepted."
+    },
+    {
+      "address": "0x00410527",
+      "historical_id": "music_disable",
+      "historical_case": "research/campaign-005-music-disable",
+      "reported_complete_bytes": 47,
+      "historical_reported_status": "relocation-adjusted-match",
+      "currently_accepted": false,
+      "team_status": "not_done",
+      "accepted_id_collision_address": null,
+      "requires": "Fresh complete-span, source/API, symbol and oracle review. Preserve all historical receipts and caps; do not count as accepted."
+    },
+    {
+      "address": "0x00410556",
+      "historical_id": "music_enable",
+      "historical_case": "research/campaign-005-music-enable",
+      "reported_complete_bytes": 60,
+      "historical_reported_status": "relocation-adjusted-match",
+      "currently_accepted": false,
+      "team_status": "not_done",
+      "accepted_id_collision_address": null,
+      "requires": "Fresh complete-span, source/API, symbol and oracle review. Preserve all historical receipts and caps; do not count as accepted."
+    }
+  ],
+  "notes": [
+    "Address is the identity key; current and historical research ids can collide.",
+    "The4106CC candidate id/symbol music_set_volume conflicts with accepted495C6F; use a fresh canonical identity during a separately reviewed integration.",
+    "Historical4106CC uses _op_music_apply_volume for prepared496CA0.",
+    "Old focused fixtures contain8-to42 checks; refresh bounded ABI/oracle review before promotion.",
+    "Team calls both4107B5 and4107CF bapMusicGetState; revalidate the distinct state/sequence interpretation."
+  ]
+}

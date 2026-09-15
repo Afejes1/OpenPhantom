@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "final-audit",
+  "status": "completed",
   "started_utc": "2026-09-14T23:16:41Z",
   "implementation_stop_utc": "2026-09-15T01:01:41Z",
   "deadline_utc": "2026-09-15T01:16:41Z",
@@ -15,8 +15,8 @@
   "pending_exact": [],
   "acceptance_pending": null,
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "Seven accepted functions and three research candidates documented; publication and heartbeat closeout.",
-  "heartbeat_status": "ACTIVE",
+  "current_work": "Implementation, full acceptance, independent review and next-batch preparation completed; final documentation publication.",
+  "heartbeat_status": "PAUSED",
   "research_current": [
     "resource_close",
     "resource_eof",
@@ -25,5 +25,6 @@
   "report": "research/extended-2026-09-14-2316/results.md",
   "new_full_span_bytes": 888,
   "new_verified_operands": 76,
-  "focused_checks_retained": 369624
+  "focused_checks_retained": 369624,
+  "completed_utc": "2026-09-15T01:12:41.1329093+00:00"
 }
