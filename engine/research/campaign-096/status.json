@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "integration-review",
+  "status": "accepted",
   "started_utc": "2026-09-15T00:18:27.521169+00:00",
   "deadline_utc": "2026-09-15T00:58:27.521169+00:00",
   "functions": [
@@ -12,5 +12,7 @@
   "preparation_reviewer": "/root/comparison_inventory",
   "full_span_bytes": 354,
   "operands": 22,
-  "acceptance": "research/acceptance-066/result.json"
+  "acceptance": "research/acceptance-066/result.json",
+  "accepted_event": "engine/evidence/runs/000089-77088e7567ae9235.json",
+  "completed_utc": "2026-09-15T00:42:29.635970+00:00"
 }

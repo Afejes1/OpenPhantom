@@ -4,15 +4,15 @@
     "manifest_functions": 2241,
     "team_reported_done": 1298,
     "team_reported_not_done": 943,
-    "local_accepted": 349,
-    "local_within_team_not_done": 341,
+    "local_accepted": 353,
+    "local_within_team_not_done": 345,
     "local_overlapping_team_done": 8,
-    "remaining_if_team_claims_are_correct": 602,
-    "combined_covered_if_team_claims_are_correct": 1639
+    "remaining_if_team_claims_are_correct": 598,
+    "combined_covered_if_team_claims_are_correct": 1643
   },
   "local_match_categories": {
     "raw-code-match": 39,
-    "relocation-adjusted-match": 310
+    "relocation-adjusted-match": 314
   },
   "team_source_independently_verified": false,
   "whole_executable_match": false,
@@ -23882,11 +23882,11 @@
       "team_reported_file": "std/stdsound.c",
       "team_reported_name": "stdsound_shutdown",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "audio_shutdown",
+      "local_source": "src/audio_shutdown.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00496A46",
@@ -23915,22 +23915,22 @@
       "team_reported_file": "std/stdsound.c",
       "team_reported_name": "stdsound_get3DInterface",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "audio_get_spatial",
+      "local_source": "src/audio_get_spatial.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00496BFB",
       "team_reported_file": "std/stdsound.c",
       "team_reported_name": "stdsound_duplicate",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "audio_duplicate",
+      "local_source": "src/audio_duplicate.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00496C3B",
@@ -24014,11 +24014,11 @@
       "team_reported_file": "std/stdsound.c",
       "team_reported_name": "stdsound_setListener",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "audio_set_listener",
+      "local_source": "src/audio_set_listener.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00496E80",
@@ -24674,10 +24674,10 @@
     "manifest": "engine/planning/team-manifest-20260912-1849.json",
     "manifest_sha256": "3c26a8b5f62424864513ffb20dfb644fa582d19600cd2f98bbfd7eca71dfee1f",
     "contributor_attachment_sha256": "0b6de70dfa6b872725cbb8cc4fd14fc71316a2ec28ef9e1dec5762577046592b",
-    "accepted_event": "engine/evidence/runs/000088-9944010aaa6536ca.json",
-    "accepted_event_sha256": "66b15e51e4267fb0f4684dfc7417814443fa6113d549199fd8465e7214675ee6",
-    "source_commit": "73d3081d13921ce8bc2b3d028eda7a74333923cd",
-    "build_id": "20260914-201101-6cf63fe2",
+    "accepted_event": "engine/evidence/runs/000089-77088e7567ae9235.json",
+    "accepted_event_sha256": "99d25a8799d14a039cde079f77e0f2ef8499df7230c358587490363204ee0da4",
+    "source_commit": "bdb00bd62f3b19b1f5bc9a5b94c6476158ba779e",
+    "build_id": "20260914-203242-b1f57736",
     "generator_sha256": "9eeb04c352a48d09f795f4101f5b169dabdc41af21cdb9cc4e2b2956d942845a"
   }
 }

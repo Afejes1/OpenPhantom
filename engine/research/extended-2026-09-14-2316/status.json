@@ -7,20 +7,17 @@
   "baseline_accepted": 347,
   "baseline_event": 86,
   "baseline_commit": "facdb8f0d08c2e022eb46348b9b417961cef034e",
-  "accepted_new": 2,
-  "accepted_current": 349,
-  "remaining_current": 602,
-  "local_team_not_done_current": 341,
-  "evidence_event_current": 88,
+  "accepted_new": 6,
+  "accepted_current": 353,
+  "remaining_current": 598,
+  "local_team_not_done_current": 345,
+  "evidence_event_current": 89,
   "pending_exact": [
-    "audio_get_spatial",
-    "audio_duplicate",
-    "audio_shutdown",
-    "audio_set_listener"
+    "audio_set_master_volume"
   ],
-  "acceptance_pending": "acceptance-066",
+  "acceptance_pending": null,
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A066 shared acceptance for four exact sound lifecycle functions.",
+  "current_work": "A066 accepted four sound functions; final exact master-volume candidate pending shared acceptance.",
   "heartbeat_status": "ACTIVE",
   "research_current": [
     "resource_close",
