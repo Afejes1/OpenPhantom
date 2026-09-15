@@ -10,5 +10,11 @@
     "conclusion": "approved",
     "reviewed_utc": "2026-09-15T00:47:03.970431+00:00",
     "findings": "Canonical source include-only equal;353 target/registry prefixes unchanged. Sole prototype and once-only wiring. All16 literal cases/51200checks retained; shared primary/signed volume and FP controls restored."
+  },
+  "annotation_correction_review": {
+    "conclusion": "approved",
+    "reviewer": "/root/comparison_inventory",
+    "reviewed_utc": "2026-09-15T00:54:05.505244+00:00",
+    "findings": "Diff against3e79ac2 is exactly uppercase-to-lowercase annotation change in both candidate and canonical source. All executable statements unchanged; regenerated snapshots and both selected report hashes rechecked. Exact124bytes/7operands,51200checks."
   }
 }

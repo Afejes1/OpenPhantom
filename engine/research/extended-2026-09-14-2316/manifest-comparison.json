@@ -4,15 +4,15 @@
     "manifest_functions": 2241,
     "team_reported_done": 1298,
     "team_reported_not_done": 943,
-    "local_accepted": 353,
-    "local_within_team_not_done": 345,
+    "local_accepted": 354,
+    "local_within_team_not_done": 346,
     "local_overlapping_team_done": 8,
-    "remaining_if_team_claims_are_correct": 598,
-    "combined_covered_if_team_claims_are_correct": 1643
+    "remaining_if_team_claims_are_correct": 597,
+    "combined_covered_if_team_claims_are_correct": 1644
   },
   "local_match_categories": {
     "raw-code-match": 39,
-    "relocation-adjusted-match": 314
+    "relocation-adjusted-match": 315
   },
   "team_source_independently_verified": false,
   "whole_executable_match": false,
@@ -23893,11 +23893,11 @@
       "team_reported_file": "std/stdsound.c",
       "team_reported_name": "stdsound_setMasterVolume",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "audio_set_master_volume",
+      "local_source": "src/audio_set_master_volume.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00496AC2",
@@ -24674,10 +24674,10 @@
     "manifest": "engine/planning/team-manifest-20260912-1849.json",
     "manifest_sha256": "3c26a8b5f62424864513ffb20dfb644fa582d19600cd2f98bbfd7eca71dfee1f",
     "contributor_attachment_sha256": "0b6de70dfa6b872725cbb8cc4fd14fc71316a2ec28ef9e1dec5762577046592b",
-    "accepted_event": "engine/evidence/runs/000089-77088e7567ae9235.json",
-    "accepted_event_sha256": "99d25a8799d14a039cde079f77e0f2ef8499df7230c358587490363204ee0da4",
-    "source_commit": "bdb00bd62f3b19b1f5bc9a5b94c6476158ba779e",
-    "build_id": "20260914-203242-b1f57736",
+    "accepted_event": "engine/evidence/runs/000090-3abdc6aedee0f297.json",
+    "accepted_event_sha256": "6931473ce4ee2c5633b2da5b26ac1df9388cdf63ac9cdceebf9f51b9470318c2",
+    "source_commit": "7b117d06e95ff1d9b6b95c95ef18eded00dea8a2",
+    "build_id": "20260914-205123-72f844cf",
     "generator_sha256": "9eeb04c352a48d09f795f4101f5b169dabdc41af21cdb9cc4e2b2956d942845a"
   }
 }

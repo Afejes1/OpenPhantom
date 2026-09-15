@@ -1,27 +1,29 @@
 {
   "schema": 1,
-  "status": "active",
+  "status": "final-audit",
   "started_utc": "2026-09-14T23:16:41Z",
   "implementation_stop_utc": "2026-09-15T01:01:41Z",
   "deadline_utc": "2026-09-15T01:16:41Z",
   "baseline_accepted": 347,
   "baseline_event": 86,
   "baseline_commit": "facdb8f0d08c2e022eb46348b9b417961cef034e",
-  "accepted_new": 6,
-  "accepted_current": 353,
-  "remaining_current": 598,
-  "local_team_not_done_current": 345,
-  "evidence_event_current": 89,
-  "pending_exact": [
-    "audio_set_master_volume"
-  ],
-  "acceptance_pending": "acceptance-067",
+  "accepted_new": 7,
+  "accepted_current": 354,
+  "remaining_current": 597,
+  "local_team_not_done_current": 346,
+  "evidence_event_current": 90,
+  "pending_exact": [],
+  "acceptance_pending": null,
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "Final A067 master-volume shared acceptance and window closeout.",
+  "current_work": "Seven accepted functions and three research candidates documented; publication and heartbeat closeout.",
   "heartbeat_status": "ACTIVE",
   "research_current": [
     "resource_close",
     "resource_eof",
     "resource_tell"
-  ]
+  ],
+  "report": "research/extended-2026-09-14-2316/results.md",
+  "new_full_span_bytes": 888,
+  "new_verified_operands": 76,
+  "focused_checks_retained": 369624
 }

@@ -1,10 +1,12 @@
 {
   "schema": 1,
-  "status": "integration-review",
+  "status": "accepted",
   "started_utc": "2026-09-15T00:38:44.369067+00:00",
   "deadline_utc": "2026-09-15T01:10:00+00:00",
   "functions": [
     "audio_set_master_volume"
   ],
-  "acceptance": "research/acceptance-067/result.json"
+  "acceptance": "research/acceptance-067/result.json",
+  "accepted_event": "engine/evidence/runs/000090-3abdc6aedee0f297.json",
+  "completed_utc": "2026-09-15T00:59:54.823298+00:00"
 }
