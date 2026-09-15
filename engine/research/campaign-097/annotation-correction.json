@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "corrected_utc": "2026-09-15T00:50:22.087173+00:00",
+  "finding": "reccmp-decomplint --warnfail requires lowercase address hex in source annotations.",
+  "old": "// FUNCTION: WMAIN 0x00496A46",
+  "new": "// FUNCTION: WMAIN 0x00496a46",
+  "semantic_source_changed": false,
+  "failed_ci_runs": [
+    34914611431,
+    34914641660
+  ],
+  "aborted_source_commit": "3e79ac275882e02795302a776c4a2348f50d7744",
+  "action": "Stopped unfinished full build; preserve its folder. Re-finalize focused pair, commit corrected annotation and rebuild against the corrected Git snapshot. No warning waiver."
+}

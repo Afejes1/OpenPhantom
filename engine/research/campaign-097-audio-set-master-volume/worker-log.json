@@ -39,5 +39,6 @@
   ],
   "status": "frozen-exact",
   "selected_attempt": 2,
-  "freeze_utc": "2026-09-15T00:43:57.247732+00:00"
+  "freeze_utc": "2026-09-15T00:43:57.247732+00:00",
+  "post_freeze_annotation_correction": "Lowercase address comment only; selected experiment2 executable statements unchanged. Final verification pair regenerated and logged separately."
 }

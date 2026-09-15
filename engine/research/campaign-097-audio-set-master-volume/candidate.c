@@ -1,5 +1,5 @@
 #include "api.h"
-// FUNCTION: WMAIN 0x00496A46
+// FUNCTION: WMAIN 0x00496a46
 void op_audio_set_master_volume(float value)
 {
  int result;
