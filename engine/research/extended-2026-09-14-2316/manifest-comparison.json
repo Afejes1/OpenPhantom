@@ -4,15 +4,15 @@
     "manifest_functions": 2241,
     "team_reported_done": 1298,
     "team_reported_not_done": 943,
-    "local_accepted": 348,
-    "local_within_team_not_done": 340,
+    "local_accepted": 349,
+    "local_within_team_not_done": 341,
     "local_overlapping_team_done": 8,
-    "remaining_if_team_claims_are_correct": 603,
-    "combined_covered_if_team_claims_are_correct": 1638
+    "remaining_if_team_claims_are_correct": 602,
+    "combined_covered_if_team_claims_are_correct": 1639
   },
   "local_match_categories": {
     "raw-code-match": 39,
-    "relocation-adjusted-match": 309
+    "relocation-adjusted-match": 310
   },
   "team_source_independently_verified": false,
   "whole_executable_match": false,
@@ -16875,11 +16875,11 @@
       "team_reported_file": null,
       "team_reported_name": "sys_waitForFrame",
       "team_reported_status": "not_done",
-      "local_accepted_at_event": false,
-      "local_id": null,
-      "local_source": null,
-      "local_match_status": null,
-      "remaining": true
+      "local_accepted_at_event": true,
+      "local_id": "pace_frame_clock",
+      "local_source": "src/pace_frame_clock.c",
+      "local_match_status": "relocation-adjusted-match",
+      "remaining": false
     },
     {
       "address": "0x00475BE1",
@@ -24674,10 +24674,10 @@
     "manifest": "engine/planning/team-manifest-20260912-1849.json",
     "manifest_sha256": "3c26a8b5f62424864513ffb20dfb644fa582d19600cd2f98bbfd7eca71dfee1f",
     "contributor_attachment_sha256": "0b6de70dfa6b872725cbb8cc4fd14fc71316a2ec28ef9e1dec5762577046592b",
-    "accepted_event": "engine/evidence/runs/000087-03c028f16dc057d0.json",
-    "accepted_event_sha256": "5429a70bc92afcfdc7927dcf66de169dafba0332cd7ac9573332f5f2e90909ee",
-    "source_commit": "5839d02485eff5b59e89067874cdd4e8d14b2794",
-    "build_id": "20260914-193642-dff17c0a",
+    "accepted_event": "engine/evidence/runs/000088-9944010aaa6536ca.json",
+    "accepted_event_sha256": "66b15e51e4267fb0f4684dfc7417814443fa6113d549199fd8465e7214675ee6",
+    "source_commit": "73d3081d13921ce8bc2b3d028eda7a74333923cd",
+    "build_id": "20260914-201101-6cf63fe2",
     "generator_sha256": "9eeb04c352a48d09f795f4101f5b169dabdc41af21cdb9cc4e2b2956d942845a"
   }
 }
