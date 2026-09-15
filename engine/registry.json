@@ -6611,6 +6611,25 @@
         "Legacy opaque payload uses VC5/MSVC raw-word alias semantics; whole-program layout remains pending."
       ],
       "exceptions": []
+    },
+    {
+      "id": "pace_frame_clock",
+      "module": "time",
+      "analysis_name": "time_paceFrame",
+      "purpose": "Pump messages and measure elapsed frame time until the selected frame interval is met, yielding through Sleep(0).",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/frame-pacing-acceptance.md",
+        "research/campaign-094-pace-frame-clock/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/frame_pacing_behavior.c"
+      ],
+      "quirks": [
+        "Rate threshold is captured once; wait flag and previous time are reloaded after callbacks.",
+        "Uses accepted elapsed/platform clock functions; message pump and Sleep remain authored observers in fixtures."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [

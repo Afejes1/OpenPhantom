@@ -159,6 +159,7 @@ static void clip_flag_tests(void)
 #include "time_module_behavior.c"
 #include "task_scheduler_behavior.c"
 #include "fixed_steps_behavior.c"
+#include "frame_pacing_behavior.c"
 #include "kernel_behavior.c"
 #include "video_behavior.c"
 #include "debug_behavior.c"
@@ -423,6 +424,7 @@ int main(void)
     failures += op_test_time_module_proc();
     failures += op_test_task_run_all();
     failures += op_test_advance_runtime_fixed_steps();
+    failures += op_test_pace_frame_clock();
 
 
 

@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "resource_eof",
+  "candidate": "candidate.c",
+  "symbol": "_op_resource_eof",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "conf_stream.h",
+    "behavior.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "resource_close",
+  "address": 4665479,
+  "size": 176,
+  "body_size": 176,
+  "source": "src/resource_close.c",
+  "symbol": "_op_resource_close",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 16,
+      "address": 7167348,
+      "symbol": "_op_resource_slots",
+      "kind": "dir32"
+    },
+    {
+      "offset": 41,
+      "address": 4947044,
+      "symbol": "_op_resource_source",
+      "kind": "dir32"
+    },
+    {
+      "offset": 46,
+      "address": 4947008,
+      "symbol": "_op_resource_invalid_close",
+      "kind": "dir32"
+    },
+    {
+      "offset": 52,
+      "address": 8816192,
+      "symbol": "_op_conf_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 88,
+      "address": 7308224,
+      "symbol": "_op_resource_log_handle",
+      "kind": "dir32"
+    },
+    {
+      "offset": 100,
+      "address": 4946980,
+      "symbol": "_op_resource_close_format",
+      "kind": "dir32"
+    },
+    {
+      "offset": 106,
+      "address": 7308224,
+      "symbol": "_op_resource_log_handle",
+      "kind": "dir32"
+    },
+    {
+      "offset": 113,
+      "address": 8816192,
+      "symbol": "_op_conf_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 131,
+      "address": 7308112,
+      "symbol": "_op_resource_backend",
+      "kind": "dir32"
+    }
+  ]
+}

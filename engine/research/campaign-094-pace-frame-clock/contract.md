@@ -1,0 +1,7 @@
+# Frame pacing
+
+Complete interval00475B75..00475BE1,108bytes,11verifiedoperands, no tail. Five callers confirm void(void). The message pump returns an unsigned Windows word that this caller ignores; the fixture observes it externally. Threshold1/30 or1/60 is captured once before looping. Each iteration pumps messages, uses actual accepted elapsed_seconds/platform_seconds, stores elapsed and live-previous delta, then exits if waiting is disabled or the delta reaches the captured threshold; otherwise calls imported Sleep(0). The final elapsed bits become previous.
+
+Thirty-one explicit finite plans include threshold-adjacent encodings, equality, zero/one/two sleeps, both rates and nonzero FFFFFFFF, wait toggles in message/time callbacks, previous-time mutation, and sleep-side previous/wait/rate/scratch mutation. Eight initial patterns and three query return codes repeat each plan. The high-resolution counter path is controlled and initialized on every callback, even query return0/-1. The low-resolution path was covered in previous accepted clock fixtures; this connected fixture selects high-resolution to deliver exact binary32 boundary values. No real message loop, Sleep, game code, nonfinite value or unbounded sequence is executed. Callback budgets abort unexpected extra iterations. Shared integration must preserve clock APIs, platform controls, timing globals and callback routes.
+
+No byte exclusions, warning waivers, padding or cap reset. Whole executable matching remains unfinished.

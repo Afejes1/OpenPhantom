@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "resource_close",
+  "started_utc": "2026-09-14T23:50:00+00:00",
+  "implementation_cutoff_utc": "2026-09-15T00:05:00+00:00",
+  "deadline_utc": "2026-09-15T00:30:00+00:00",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial typed resource slot with live host/backend callbacks",
+      "started_utc": "2026-09-14T23:53:31.959981+00:00",
+      "finished_utc": "2026-09-14T23:53:33.613095+00:00",
+      "returncode": 1,
+      "source_sha256": "85b96c42389fac9a1fb23b42f58490d66a68668e86ace118ba617b4eb79e23a6",
+      "report": "engine/build/campaign-001-resource_close-bfc71c653646/research-result.json",
+      "report_sha256": "cca07937b34b6e9c8b3b9a09ea8c0fb376168a005814d8d9bd77bdb0bb70415f",
+      "status": "mismatch",
+      "candidate_size": 173,
+      "different_bytes": null,
+      "elapsed_seconds": 1.427683,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Use observed signed handle<=0 guard and explicit byte-stride slot address",
+      "started_utc": "2026-09-14T23:54:55.622364+00:00",
+      "finished_utc": "2026-09-14T23:54:57.212465+00:00",
+      "returncode": 1,
+      "source_sha256": "5da1362969cef9d826ba8adf12bffb099672030ff03951a4157195bc49003fdb",
+      "report": "engine/build/campaign-001-resource_close-28c292f6334a/research-result.json",
+      "report_sha256": "7f47eb0d8af3f5eea8e7cc7f51a666a28e4972e7f6d6a5c1cc84bd617f031350",
+      "status": "mismatch",
+      "candidate_size": 173,
+      "different_bytes": null,
+      "elapsed_seconds": 1.363388,
+      "stderr": ""
+    }
+  ],
+  "status": "research-frozen-address-generation",
+  "selected_attempt": 2,
+  "freeze_utc": "2026-09-15T00:01:09.496448+00:00",
+  "selected_reason": "Supported byte-stride candidate with observed signed guard retained. Further source-shape attempts do not improve extent; negative-addend frontend experiment is unsupported. No fabricated layout or matcher change. Restoration is not a new experiment.",
+  "verification_attempts": 2
+}

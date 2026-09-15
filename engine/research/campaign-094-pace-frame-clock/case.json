@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "pace_frame_clock",
+  "candidate": "candidate.c",
+  "symbol": "_op_pace_frame_clock",
+  "inputs": [
+    "candidate.c",
+    "api.h",
+    "behavior.c",
+    "oracle.h",
+    "elapsed_time.h",
+    "platform_helpers.h",
+    "elapsed_seconds_support.c",
+    "platform_seconds_support.c"
+  ],
+  "fixture": "behavior.c",
+  "target": "target.json",
+  "flags": [
+    "/Od",
+    "/MT"
+  ]
+}

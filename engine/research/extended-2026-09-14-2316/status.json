@@ -15,8 +15,8 @@
   "pending_exact": [
     "pace_frame_clock"
   ],
-  "acceptance_pending": null,
+  "acceptance_pending": "acceptance-065",
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A064 accepted fixed-step routine and shared float recovery; C094 exact pacing candidate queued for integration.",
+  "current_work": "A065 frame-pacing shared acceptance.",
   "heartbeat_status": "ACTIVE"
 }

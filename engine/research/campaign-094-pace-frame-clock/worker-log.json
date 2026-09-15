@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "pace_frame_clock",
+  "started_utc": "2026-09-14T23:40:00+00:00",
+  "implementation_cutoff_utc": "2026-09-14T23:55:00+00:00",
+  "deadline_utc": "2026-09-15T00:20:00+00:00",
+  "compiler_invocations": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial bounded frame pacer with captured threshold and actual elapsed chain",
+      "started_utc": "2026-09-14T23:41:44.195490+00:00",
+      "finished_utc": "2026-09-14T23:41:45.945341+00:00",
+      "returncode": 0,
+      "source_sha256": "ea4055a6cbf77a3af039a962ea3a55cd53f5014aa6c6d186e8f3ea8548ef4d69",
+      "report": "engine/build/campaign-001-pace_frame_clock-40c06be4d40e/research-result.json",
+      "report_sha256": "bf374f3d91a18c4c541d453e0cd9591e9ef4dd860f1773fa9a88b2c3ea427178",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 108,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.518202,
+      "stderr": ""
+    }
+  ]
+}

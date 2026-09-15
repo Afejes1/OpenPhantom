@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "acceptance-065",
+  "baseline_commit": "1dc1e7068e58755e2e215774c466b94a35e03d6c",
+  "functions": [
+    "pace_frame_clock"
+  ],
+  "promotions": 1,
+  "registered_before": 348,
+  "registered_after": 349,
+  "full_span_bytes": 108,
+  "verified_operands": 11,
+  "raw_functions": 0,
+  "status": "integration-pending",
+  "team_not_done": 1,
+  "team_reported_done": 0,
+  "manifest": "planning/team-manifest-20260912-1849.json",
+  "retained_focused_checks": 30696,
+  "original_game_executed": false,
+  "byte_exclusions": [],
+  "warning_waivers": []
+}

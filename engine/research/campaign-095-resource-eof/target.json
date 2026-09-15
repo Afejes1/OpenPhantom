@@ -1,0 +1,45 @@
+{
+  "id": "resource_eof",
+  "address": 4666692,
+  "size": 115,
+  "body_size": 115,
+  "source": "src/resource_eof.c",
+  "symbol": "_op_resource_eof",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 15,
+      "address": 7167348,
+      "symbol": "_op_resource_slots",
+      "kind": "dir32"
+    },
+    {
+      "offset": 40,
+      "address": 4947044,
+      "symbol": "_op_resource_source",
+      "kind": "dir32"
+    },
+    {
+      "offset": 45,
+      "address": 4947156,
+      "symbol": "_op_resource_invalid_access",
+      "kind": "dir32"
+    },
+    {
+      "offset": 51,
+      "address": 8816192,
+      "symbol": "_op_conf_services",
+      "kind": "dir32"
+    },
+    {
+      "offset": 93,
+      "address": 7308112,
+      "symbol": "_op_resource_backend",
+      "kind": "dir32"
+    }
+  ]
+}

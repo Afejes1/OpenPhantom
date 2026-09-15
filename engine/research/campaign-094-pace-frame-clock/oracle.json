@@ -1,0 +1,587 @@
+{
+  "schema": 1,
+  "method": "Explicit bounded callback plans and literal binary32 expected words; no candidate execution used.",
+  "cases": [
+    {
+      "gate": 0,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1023969416,
+          "delta": 1023969416,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1023969417,
+          "delta": 1023969417,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 0,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1023969418,
+          "delta": 1023969418,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 0,
+      "wait": 0,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 3170893824,
+          "delta": 3170893824,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 0,
+      "wait": 4294967295,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 0,
+          "delta": 0,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1023969416,
+          "delta": 1023969416,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1023969417,
+          "delta": 1023969417,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 0,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1023969416,
+          "delta": 1023969416,
+          "pump": 1,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1023969417,
+          "delta": 1023969417,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 0,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 0,
+          "delta": 0,
+          "pump": 2,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 0,
+      "wait": 0,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1023969416,
+          "delta": 1023969416,
+          "pump": 4,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1023969417,
+          "delta": 1023969417,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 0,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 0,
+          "delta": 0,
+          "pump": 0,
+          "time": 2,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 0,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1023969416,
+          "delta": 1023969416,
+          "pump": 0,
+          "time": 0,
+          "sleep": 15
+        },
+        {
+          "clock": 3170893824,
+          "delta": 3183476736,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 1,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1015580808,
+          "delta": 1015580808,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1015580809,
+          "delta": 1015580809,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 1,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1015580810,
+          "delta": 1015580810,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 1,
+      "wait": 0,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 3170893824,
+          "delta": 3170893824,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 1,
+      "wait": 4294967295,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 0,
+          "delta": 0,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1015580808,
+          "delta": 1015580808,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1015580809,
+          "delta": 1015580809,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 1,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1015580808,
+          "delta": 1015580808,
+          "pump": 1,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1015580809,
+          "delta": 1015580809,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 1,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 0,
+          "delta": 0,
+          "pump": 2,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 1,
+      "wait": 0,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1015580808,
+          "delta": 1015580808,
+          "pump": 4,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1015580809,
+          "delta": 1015580809,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 1,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 0,
+          "delta": 0,
+          "pump": 0,
+          "time": 2,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 1,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1015580808,
+          "delta": 1015580808,
+          "pump": 0,
+          "time": 0,
+          "sleep": 15
+        },
+        {
+          "clock": 3170893824,
+          "delta": 3183476736,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 4294967295,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1015580808,
+          "delta": 1015580808,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1015580809,
+          "delta": 1015580809,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 4294967295,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1015580810,
+          "delta": 1015580810,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 4294967295,
+      "wait": 0,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 3170893824,
+          "delta": 3170893824,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 4294967295,
+      "wait": 4294967295,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 0,
+          "delta": 0,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1015580808,
+          "delta": 1015580808,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1015580809,
+          "delta": 1015580809,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 4294967295,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1015580808,
+          "delta": 1015580808,
+          "pump": 1,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1015580809,
+          "delta": 1015580809,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 4294967295,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 0,
+          "delta": 0,
+          "pump": 2,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 4294967295,
+      "wait": 0,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1015580808,
+          "delta": 1015580808,
+          "pump": 4,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1015580809,
+          "delta": 1015580809,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 4294967295,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 0,
+          "delta": 0,
+          "pump": 0,
+          "time": 2,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 4294967295,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1015580808,
+          "delta": 1015580808,
+          "pump": 0,
+          "time": 0,
+          "sleep": 15
+        },
+        {
+          "clock": 3170893824,
+          "delta": 3183476736,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 0,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1031798784,
+          "delta": 1023410176,
+          "pump": 0,
+          "time": 1,
+          "sleep": 0
+        },
+        {
+          "clock": 1035993088,
+          "delta": 1031798784,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 0,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1023410176,
+          "delta": 1015021568,
+          "pump": 8,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1031798784,
+          "delta": 1027604480,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 0,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1017370378,
+          "delta": 1017370378,
+          "pump": 1,
+          "time": 0,
+          "sleep": 0
+        },
+        {
+          "clock": 1023969417,
+          "delta": 1023969417,
+          "pump": 0,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    },
+    {
+      "gate": 1,
+      "wait": 1,
+      "previous": 0,
+      "rows": [
+        {
+          "clock": 1017370378,
+          "delta": 1017370378,
+          "pump": 1,
+          "time": 0,
+          "sleep": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "reviewer": "/root/comparison_inventory",
+  "mode": "read-only",
+  "conclusion": "research-approved",
+  "reviewed_utc": "2026-09-15T00:10:53.259458+00:00",
+  "findings": "All current source snapshots and final paired report hashes rechecked. Native/Docker function and relocation parity passes. Stable selected_operation expectations and42240+36360+36360checks approved. Complete extents differ; no percentage or accepted status.",
+  "accepted_count": 0
+}

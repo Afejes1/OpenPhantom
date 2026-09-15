@@ -12737,6 +12737,87 @@
           "kind": "dir32"
         }
       ]
+    },
+    {
+      "id": "pace_frame_clock",
+      "address": 4676469,
+      "size": 108,
+      "body_size": 108,
+      "source": "src/pace_frame_clock.c",
+      "symbol": "_op_pace_frame_clock",
+      "language": "c",
+      "flags": [
+        "/Od",
+        "/MT"
+      ],
+      "bindings": [
+        {
+          "offset": 6,
+          "address": 8921748,
+          "symbol": "_op_fixed_rate_gate",
+          "kind": "dir32"
+        },
+        {
+          "offset": 30,
+          "address": 4819914,
+          "symbol": "_op_pump_messages",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 35,
+          "address": 4676397,
+          "symbol": "_op_elapsed_seconds",
+          "kind": "rel32-call"
+        },
+        {
+          "offset": 41,
+          "address": 8816408,
+          "symbol": "_op_frame_elapsed",
+          "kind": "dir32"
+        },
+        {
+          "offset": 47,
+          "address": 7308256,
+          "symbol": "_op_time_previous_seconds",
+          "kind": "dir32"
+        },
+        {
+          "offset": 53,
+          "address": 8816404,
+          "symbol": "_op_skills_frame_delta",
+          "kind": "dir32"
+        },
+        {
+          "offset": 59,
+          "address": 4947320,
+          "symbol": "_op_frame_wait_enabled",
+          "kind": "dir32"
+        },
+        {
+          "offset": 68,
+          "address": 8816404,
+          "symbol": "_op_skills_frame_delta",
+          "kind": "dir32"
+        },
+        {
+          "offset": 88,
+          "address": 9180532,
+          "symbol": "_op_sleep",
+          "kind": "dir32"
+        },
+        {
+          "offset": 95,
+          "address": 8816408,
+          "symbol": "_op_frame_elapsed",
+          "kind": "dir32"
+        },
+        {
+          "offset": 100,
+          "address": 7308256,
+          "symbol": "_op_time_previous_seconds",
+          "kind": "dir32"
+        }
+      ]
     }
   ]
 }

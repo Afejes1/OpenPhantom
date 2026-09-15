@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "status": "research-frozen",
+  "started_utc": "2026-09-14T23:50:00+00:00",
+  "deadline_utc": "2026-09-15T00:30:00+00:00",
+  "functions": [
+    "resource_close",
+    "resource_eof",
+    "resource_tell"
+  ],
+  "implementation_frozen_utc": "2026-09-15T00:01:09+00:00",
+  "acceptance_count": 0,
+  "final_focused_checks": 114960
+}
