@@ -1,0 +1,57 @@
+{
+  "id": "audio_set_listener",
+  "address": 4812275,
+  "size": 141,
+  "body_size": 141,
+  "source": "src/audio_set_listener.c",
+  "symbol": "_op_audio_set_listener",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 6,
+      "address": 8790152,
+      "symbol": "_op_audio_listener",
+      "kind": "dir32"
+    },
+    {
+      "offset": 36,
+      "address": 8790152,
+      "symbol": "_op_audio_listener",
+      "kind": "dir32"
+    },
+    {
+      "offset": 43,
+      "address": 8790152,
+      "symbol": "_op_audio_listener",
+      "kind": "dir32"
+    },
+    {
+      "offset": 98,
+      "address": 8790152,
+      "symbol": "_op_audio_listener",
+      "kind": "dir32"
+    },
+    {
+      "offset": 105,
+      "address": 8790152,
+      "symbol": "_op_audio_listener",
+      "kind": "dir32"
+    },
+    {
+      "offset": 118,
+      "address": 8790152,
+      "symbol": "_op_audio_listener",
+      "kind": "dir32"
+    },
+    {
+      "offset": 125,
+      "address": 8790152,
+      "symbol": "_op_audio_listener",
+      "kind": "dir32"
+    }
+  ]
+}

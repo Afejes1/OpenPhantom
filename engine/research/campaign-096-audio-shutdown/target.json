@@ -1,0 +1,81 @@
+{
+  "id": "audio_shutdown",
+  "address": 4811231,
+  "size": 103,
+  "body_size": 103,
+  "source": "src/audio_shutdown.c",
+  "symbol": "_op_audio_shutdown",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 5,
+      "address": 8790132,
+      "symbol": "_op_audio_gate_word",
+      "kind": "dir32"
+    },
+    {
+      "offset": 14,
+      "address": 8790148,
+      "symbol": "_op_audio_primary",
+      "kind": "dir32"
+    },
+    {
+      "offset": 22,
+      "address": 8790128,
+      "symbol": "_op_audio_primary_volume",
+      "kind": "dir32"
+    },
+    {
+      "offset": 29,
+      "address": 8790148,
+      "symbol": "_op_audio_primary",
+      "kind": "dir32"
+    },
+    {
+      "offset": 36,
+      "address": 8790148,
+      "symbol": "_op_audio_primary",
+      "kind": "dir32"
+    },
+    {
+      "offset": 47,
+      "address": 8790148,
+      "symbol": "_op_audio_primary",
+      "kind": "dir32"
+    },
+    {
+      "offset": 54,
+      "address": 8790148,
+      "symbol": "_op_audio_primary",
+      "kind": "dir32"
+    },
+    {
+      "offset": 65,
+      "address": 8790148,
+      "symbol": "_op_audio_primary",
+      "kind": "dir32"
+    },
+    {
+      "offset": 75,
+      "address": 8790132,
+      "symbol": "_op_audio_gate_word",
+      "kind": "dir32"
+    },
+    {
+      "offset": 82,
+      "address": 8790132,
+      "symbol": "_op_audio_gate_word",
+      "kind": "dir32"
+    },
+    {
+      "offset": 93,
+      "address": 8790132,
+      "symbol": "_op_audio_gate_word",
+      "kind": "dir32"
+    }
+  ]
+}

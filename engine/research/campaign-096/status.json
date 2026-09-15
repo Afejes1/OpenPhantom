@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "status": "integration-review",
+  "started_utc": "2026-09-15T00:18:27.521169+00:00",
+  "deadline_utc": "2026-09-15T00:58:27.521169+00:00",
+  "functions": [
+    "audio_get_spatial",
+    "audio_duplicate",
+    "audio_shutdown",
+    "audio_set_listener"
+  ],
+  "preparation_reviewer": "/root/comparison_inventory",
+  "full_span_bytes": 354,
+  "operands": 22,
+  "acceptance": "research/acceptance-066/result.json"
+}

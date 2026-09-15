@@ -8,5 +8,7 @@
   ],
   "acceptance": "research/acceptance-065/result.json",
   "accepted_event": "engine/evidence/runs/000088-9944010aaa6536ca.json",
-  "completed_utc": "2026-09-15T00:19:30.519311+00:00"
+  "completed_utc": "2026-09-15T00:19:30.519311+00:00",
+  "publication_commit": "d3d730c",
+  "publication_note": "Acceptance and recording completed00:19:30 before the00:20 campaign deadline; the public receipt commit followed at00:23. No source experiments were extended."
 }

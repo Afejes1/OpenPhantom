@@ -1,0 +1,5 @@
+# Sound lifecycle and listener reconstruction
+
+Four original-toolchain functions cover spatial-interface query, buffer duplication, primary/device shutdown and listener settings. The two HRESULT success conditions differ intentionally: signed nonnegative for QueryInterface, exactly zero for duplication. Shutdown and listener callbacks can retarget globals between live reloads.
+
+The fixtures use owned guarded objects, tables, vectors and synthetic return classes. Failed callbacks may leave output unwritten only when the caller must not read it. Float words include signed zero and finite bounds. No real COM object or original program executes. Symbolic GUID data is an authored fixture identity, not a claim of linked original GUID-data equality. Existing device storage retains its unsigned32-bit symbol, converted to a typed pointer only when observed code dereferences it. Recovered table slots preserve every prior field offset. Shared acceptance pending; whole executable matching remains unfinished.

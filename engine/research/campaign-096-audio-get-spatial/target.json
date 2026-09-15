@@ -1,0 +1,21 @@
+{
+  "id": "audio_get_spatial",
+  "address": 4811725,
+  "size": 46,
+  "body_size": 46,
+  "source": "src/audio_get_spatial.c",
+  "symbol": "_op_audio_get_spatial",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 11,
+      "address": 4887576,
+      "symbol": "_op_audio_spatial_iid",
+      "kind": "dir32"
+    }
+  ]
+}

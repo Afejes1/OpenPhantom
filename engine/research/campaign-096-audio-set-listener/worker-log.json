@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "audio_set_listener",
+  "started_utc": "2026-09-15T00:18:27.521169+00:00",
+  "implementation_cutoff_utc": "2026-09-15T00:33:27.521169+00:00",
+  "deadline_utc": "2026-09-15T00:58:27.521169+00:00",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial typed COM lifecycle wrappers preserving observed HRESULT branches and live reloads",
+      "started_utc": "2026-09-15T00:18:32.691177+00:00",
+      "finished_utc": "2026-09-15T00:18:34.333279+00:00",
+      "returncode": 0,
+      "source_sha256": "2feab9f988bf5b3458488bad0de0e6b2901cd5082f146534cfe436152d4a49f0",
+      "report": "engine/build/campaign-001-audio_set_listener-2f731105de43/research-result.json",
+      "report_sha256": "00b198f87043f3f860710b50533f2ad4d5c684ded82d47a6d0b6df7252001fd7",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 141,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.421329,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Correct new primary volume slot and signed global type using496A46 attenuation caller evidence; preserve exact ABI widths",
+      "started_utc": "2026-09-15T00:28:08.247806+00:00",
+      "finished_utc": "2026-09-15T00:28:09.830953+00:00",
+      "returncode": 0,
+      "source_sha256": "2feab9f988bf5b3458488bad0de0e6b2901cd5082f146534cfe436152d4a49f0",
+      "report": "engine/build/campaign-001-audio_set_listener-ae6c902eb9f8/research-result.json",
+      "report_sha256": "b592c9b26f6241d68e7f49f7b0f6dc887681f72c15f8689d81f8fdafcdf699c7",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 141,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.356087,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "selected_attempt": 2,
+  "freeze_utc": "2026-09-15T00:28:09.830953+00:00",
+  "selected_reason": "Typed signed-volume correction confirmed by neighboring attenuation caller and startup GetVolume. All four retain exact spans after shared header refinement."
+}

@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "observed_utc": "2026-09-15T00:28:02.432858+00:00",
+  "review_stage": "before-shared-acceptance",
+  "finding": "Parent inferred format pointer for buffer slot3C and862070; neighboring496A46 attenuation calculation identifies a signed volume argument instead.",
+  "correction": "Use volume(OP_AUDIO_BUFFER*,int) and int op_audio_primary_volume. Literal owned levels replace pointer-token fixture. Same32-bit ABI; all final pairs repeated; original first attempts preserved.",
+  "acceptance_rules_unchanged": true
+}

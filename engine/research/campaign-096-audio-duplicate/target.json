@@ -1,0 +1,33 @@
+{
+  "id": "audio_duplicate",
+  "address": 4811771,
+  "size": 64,
+  "body_size": 64,
+  "source": "src/audio_duplicate.c",
+  "symbol": "_op_audio_duplicate",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 8790132,
+      "symbol": "_op_audio_gate_word",
+      "kind": "dir32"
+    },
+    {
+      "offset": 29,
+      "address": 8790132,
+      "symbol": "_op_audio_gate_word",
+      "kind": "dir32"
+    },
+    {
+      "offset": 35,
+      "address": 8790132,
+      "symbol": "_op_audio_gate_word",
+      "kind": "dir32"
+    }
+  ]
+}

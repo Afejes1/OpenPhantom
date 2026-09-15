@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "reviewer": "/root/comparison_inventory",
+  "mode": "read-only",
+  "focused_review": {
+    "conclusion": "approved",
+    "findings": "Observed COM ABI and complete extents; guarded callbacks, HRESULT/output initialization conditions, full snapshots, live shutdown state and listener/vector mutation order approved. Signed volume correction independently confirmed by496A46 attenuation caller and startup GetVolume at496910; final corrected snapshots and both reports rehashed.",
+    "checks": {
+      "audio_get_spatial": 48640,
+      "audio_duplicate": 32640,
+      "audio_shutdown": 47360,
+      "audio_set_listener": 65280
+    }
+  },
+  "integration_review": {
+    "conclusion": "approved",
+    "reviewed_utc": "2026-09-15T00:32:34.980567+00:00",
+    "findings": "All four canonical candidates include-only equal; prior349 entries unchanged; exact353 registry targets. Original vtable offsets preserved. Signed primary volume, sole storage definitions,193920 retained checks and all shared state restoration approved."
+  }
+}

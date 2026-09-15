@@ -144,6 +144,10 @@ static void clip_flag_tests(void)
 #include "length_behavior.c"
 #include "audio_behavior.c"
 #include "audio_buffer_behavior.c"
+#include "audio_get_spatial_behavior.c"
+#include "audio_duplicate_behavior.c"
+#include "audio_shutdown_behavior.c"
+#include "audio_set_listener_behavior.c"
 #include "music_position_behavior.c"
 #include "elapsed_time_behavior.c"
 #include "ui_input_behavior.c"
@@ -378,6 +382,10 @@ int main(void)
     failures += op_test_audio_pause();
     failures += op_test_audio_play();
     failures += op_test_audio_unlock();
+    failures += op_test_audio_get_spatial();
+    failures += op_test_audio_duplicate();
+    failures += op_test_audio_shutdown();
+    failures += op_test_audio_set_listener();
     failures += op_test_music_stop();
     failures += op_test_music_is_playing();
     failures += op_test_audio_get_play_position();

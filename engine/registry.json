@@ -6630,6 +6630,82 @@
         "Uses accepted elapsed/platform clock functions; message pump and Sleep remain authored observers in fixtures."
       ],
       "exceptions": []
+    },
+    {
+      "id": "audio_get_spatial",
+      "module": "audio-lifecycle",
+      "analysis_name": "stdsound_get3DInterface",
+      "purpose": "Query the spatial interface and preserve the signed HRESULT success rule.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/audio-lifecycle-acceptance.md",
+        "research/campaign-096-audio-get-spatial/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_get_spatial_behavior.c"
+      ],
+      "quirks": [
+        "Observed stdcall COM callbacks; frozen device storage symbol remains an unsigned32-bit pointer word.",
+        "Authored guarded fixture observers; final linked data and whole-executable layout remain pending."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio_duplicate",
+      "module": "audio-lifecycle",
+      "analysis_name": "stdsound_duplicateBuffer",
+      "purpose": "Duplicate a sound buffer using the live device and the exact zero HRESULT success rule.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/audio-lifecycle-acceptance.md",
+        "research/campaign-096-audio-duplicate/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_duplicate_behavior.c"
+      ],
+      "quirks": [
+        "Observed stdcall COM callbacks; frozen device storage symbol remains an unsigned32-bit pointer word.",
+        "Authored guarded fixture observers; final linked data and whole-executable layout remain pending."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio_shutdown",
+      "module": "audio-lifecycle",
+      "analysis_name": "stdsound_shutdown",
+      "purpose": "Restore primary volume and release primary and device objects with live global reloads.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/audio-lifecycle-acceptance.md",
+        "research/campaign-096-audio-shutdown/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_shutdown_behavior.c"
+      ],
+      "quirks": [
+        "Observed stdcall COM callbacks; frozen device storage symbol remains an unsigned32-bit pointer word.",
+        "Authored guarded fixture observers; final linked data and whole-executable layout remain pending."
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "audio_set_listener",
+      "module": "audio-lifecycle",
+      "analysis_name": "stdsound_setListener",
+      "purpose": "Apply listener position and orientation, then commit deferred settings.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/audio-lifecycle-acceptance.md",
+        "research/campaign-096-audio-set-listener/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_set_listener_behavior.c"
+      ],
+      "quirks": [
+        "Observed stdcall COM callbacks; frozen device storage symbol remains an unsigned32-bit pointer word.",
+        "Authored guarded fixture observers; final linked data and whole-executable layout remain pending."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
