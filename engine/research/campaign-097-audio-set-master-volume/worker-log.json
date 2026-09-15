@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "audio_set_master_volume",
+  "started_utc": "2026-09-15T00:38:44.369067+00:00",
+  "implementation_cutoff_utc": "2026-09-15T00:53:44.369067+00:00",
+  "deadline_utc": "2026-09-15T01:10:00+00:00",
+  "compiler_invocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "hypothesis": "Initial attenuation expression retaining the observed discarded clamp and raw volume argument",
+      "started_utc": "2026-09-15T00:38:44.611191+00:00",
+      "finished_utc": "2026-09-15T00:38:46.362120+00:00",
+      "returncode": 1,
+      "source_sha256": "b3b11f9bdc15a21fbe13b319985fec1d8db7a14714cecb59528b43d3366c1af2",
+      "report": "engine/build/campaign-001-audio_set_master_volume-949b3593421e/research-result.json",
+      "report_sha256": "eb22c481da7b60a37f1906b44b72e5be5df8fbbc03beacd4cb109f3ef3aee854",
+      "status": "mismatch",
+      "candidate_size": 124,
+      "different_bytes": 34,
+      "elapsed_seconds": 1.509879,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "hypothesis": "Express the same discarded clamp with the original observed >= outer and <= inner branch orientation",
+      "started_utc": "2026-09-15T00:39:37.802007+00:00",
+      "finished_utc": "2026-09-15T00:39:39.454796+00:00",
+      "returncode": 0,
+      "source_sha256": "d018bcea2483eea50fff4ada3de5446c4b736b53942404ad892dc541852d7736",
+      "report": "engine/build/campaign-001-audio_set_master_volume-b9923c304147/research-result.json",
+      "report_sha256": "f0a13d06d9338e0da24911b4fe900cc9643c8bb449595864f4b82a46843493cf",
+      "status": "relocation-adjusted-match",
+      "candidate_size": 124,
+      "different_bytes": 0,
+      "elapsed_seconds": 1.420807,
+      "stderr": ""
+    }
+  ],
+  "status": "frozen-exact",
+  "selected_attempt": 2,
+  "freeze_utc": "2026-09-15T00:43:57.247732+00:00"
+}

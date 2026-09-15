@@ -15,9 +15,9 @@
   "pending_exact": [
     "audio_set_master_volume"
   ],
-  "acceptance_pending": null,
+  "acceptance_pending": "acceptance-067",
   "ownership": "Parent sole source/Git/Ghidra writer; existing Sol reviewer reads independently.",
-  "current_work": "A066 accepted four sound functions; final exact master-volume candidate pending shared acceptance.",
+  "current_work": "Final A067 master-volume shared acceptance and window closeout.",
   "heartbeat_status": "ACTIVE",
   "research_current": [
     "resource_close",

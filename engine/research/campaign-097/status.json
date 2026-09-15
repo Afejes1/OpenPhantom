@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "status": "integration-review",
+  "started_utc": "2026-09-15T00:38:44.369067+00:00",
+  "deadline_utc": "2026-09-15T01:10:00+00:00",
+  "functions": [
+    "audio_set_master_volume"
+  ],
+  "acceptance": "research/acceptance-067/result.json"
+}

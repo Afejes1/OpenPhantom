@@ -1,0 +1,54 @@
+{
+  "id": "audio_set_master_volume",
+  "address": 4811334,
+  "size": 124,
+  "body_size": 124,
+  "source": "src/audio_set_master_volume.c",
+  "symbol": "_op_audio_set_master_volume",
+  "language": "c",
+  "flags": [
+    "/Od",
+    "/MT"
+  ],
+  "bindings": [
+    {
+      "offset": 8,
+      "address": 8790148,
+      "symbol": "_op_audio_primary",
+      "kind": "dir32"
+    },
+    {
+      "offset": 19,
+      "address": 4887656,
+      "float32": 1.0
+    },
+    {
+      "offset": 28,
+      "address": 4887656,
+      "float32": 1.0
+    },
+    {
+      "offset": 39,
+      "address": 4887660,
+      "float32": -5000.0
+    },
+    {
+      "offset": 44,
+      "address": 4826188,
+      "symbol": "__ftol",
+      "kind": "rel32-call"
+    },
+    {
+      "offset": 101,
+      "address": 8790148,
+      "symbol": "_op_audio_primary",
+      "kind": "dir32"
+    },
+    {
+      "offset": 108,
+      "address": 8790148,
+      "symbol": "_op_audio_primary",
+      "kind": "dir32"
+    }
+  ]
+}

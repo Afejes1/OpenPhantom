@@ -6706,6 +6706,25 @@
         "Authored guarded fixture observers; final linked data and whole-executable layout remain pending."
       ],
       "exceptions": []
+    },
+    {
+      "id": "audio_set_master_volume",
+      "module": "audio-lifecycle",
+      "analysis_name": "stdsound_setMasterVolume",
+      "purpose": "Convert master gain into signed attenuation and pass the raw result to the primary buffer.",
+      "confidence": "HIGH",
+      "evidence": [
+        "docs/audio-master-volume-acceptance.md",
+        "research/campaign-097-audio-set-master-volume/contract.md"
+      ],
+      "behavior_tests": [
+        "tests/audio_set_master_volume_behavior.c"
+      ],
+      "quirks": [
+        "Original evaluates but discards its [-10000,-1] clamp; raw attenuation is deliberately preserved.",
+        "Finite fixture domain; overflow and nonfinite float-to-int conversion are outside the behavioral claim."
+      ],
+      "exceptions": []
     }
   ],
   "open_program_questions": [
